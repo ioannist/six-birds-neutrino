@@ -1,0 +1,4 @@
+- run_bundle: /home/repos/six-birds-neutrino/runs/20260212_090307_579916_planck_like_list
+- cobaya_version: 3.6.1
+- n_planck_modules: 41
+- planckpr4lensing_importable: False

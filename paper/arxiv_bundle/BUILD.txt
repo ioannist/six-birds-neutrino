@@ -1,0 +1,11 @@
+Build instructions
+==================
+
+cd paper/arxiv_bundle
+pdflatex main.tex
+bibtex main
+pdflatex main.tex
+pdflatex main.tex
+
+If using latexmk:
+latexmk -pdf -interaction=nonstopmode main.tex

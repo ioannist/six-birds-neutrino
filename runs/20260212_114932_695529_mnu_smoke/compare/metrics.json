@@ -1,0 +1,30 @@
+{
+  "run2018": {
+    "path": "/home/repos/six-birds-neutrino/runs/20260212_114932_695529_mnu_smoke/spt2018",
+    "chains_prefix": "/home/repos/six-birds-neutrino/runs/20260212_114932_695529_mnu_smoke/spt2018/chains/spt2018_lcdm_mnu",
+    "mnu_median": 0.15800392784313727,
+    "mnu_p95_upper": 0.17616998745454543,
+    "mnu_mode": 0.16660027324999999,
+    "boundary_fraction": 0.0,
+    "n_samples_used": 20,
+    "mnu_split_rhat": 1.0775272233704367,
+    "mnu_ess": 3.078968942690788,
+    "mnu_p95_half_diff": 0.005213166787878781
+  },
+  "runD1": {
+    "path": "/home/repos/six-birds-neutrino/runs/20260212_114932_695529_mnu_smoke/sptd1",
+    "chains_prefix": "/home/repos/six-birds-neutrino/runs/20260212_114932_695529_mnu_smoke/sptd1/chains/sptd1_lcdm_mnu",
+    "mnu_median": 0.0734026355,
+    "mnu_p95_upper": 0.12442676136666668,
+    "mnu_mode": 0.07440866903333333,
+    "boundary_fraction": 0.0,
+    "n_samples_used": 20,
+    "mnu_split_rhat": 1.0010439048821977,
+    "mnu_ess": 2.8655148167726145,
+    "mnu_p95_half_diff": 0.0014074150333333452
+  },
+  "shift": {
+    "delta_p95_upper": 0.05174322608787875,
+    "delta_median": 0.08460129234313728
+  }
+}

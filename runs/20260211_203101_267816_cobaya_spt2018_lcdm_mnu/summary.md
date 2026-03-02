@@ -1,0 +1,7 @@
+- run_name: spt2018_lcdm_mnu
+- config: /home/repos/six-birds-neutrino/configs/neutrino/spt2018_lcdm_mnu.yaml
+- output_prefix: /home/repos/six-birds-neutrino/runs/20260211_203101_267816_cobaya_spt2018_lcdm_mnu/chains/spt2018_lcdm_mnu
+- cobaya_success: False
+- extraction_success: False
+- metrics_path: missing
+- error: LoggedError: Could not find anything to use input parameter(s) {'logA'}.

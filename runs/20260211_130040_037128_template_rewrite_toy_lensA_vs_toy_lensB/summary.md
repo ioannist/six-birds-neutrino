@@ -1,0 +1,24 @@
+# Template Rewrite Summary
+
+- runA: `toy_lensA` (/home/repos/six-birds-neutrino/runs/20260211_115444_728228_toy_lensA)
+- runB: `toy_lensB` (/home/repos/six-birds-neutrino/runs/20260211_115444_750542_toy_lensB)
+- direction: `both`
+- template_mode: `dominant_whitened`
+- B_given_A.chi2_before: `2.29081643346`
+- B_given_A.chi2_after: `0.25`
+- B_given_A.improvement: `2.04081643346`
+- B_given_A.fraction_removed: `0.890868601976`
+- B_given_A.a_star: `1.428571466`
+- B_given_A.dominant_mode_index: `1`
+- B_given_A.alignment_cos: `0.943858359064`
+- B_given_A.cond_cov: `2.12017828681`
+- A_given_B.chi2_before: `8.29081594388`
+- A_given_B.chi2_after: `2.04081622449`
+- A_given_B.improvement: `6.24999971939`
+- A_given_B.fraction_removed: `0.753846154793`
+- A_given_B.a_star: `2.49999994388`
+- A_given_B.dominant_mode_index: `0`
+- A_given_B.alignment_cos: `0.86824314267`
+- A_given_B.cond_cov: `2.12017828681`
+- figure: `/home/repos/six-birds-neutrino/runs/20260211_130040_037128_template_rewrite_toy_lensA_vs_toy_lensB/figures/template_rewrite_before_after.png`
+- warnings: none

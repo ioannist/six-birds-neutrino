@@ -1,0 +1,5 @@
+- run_bundle: /home/repos/six-birds-neutrino/runs/20260212_093554_507732_eval_cmb_plancksubset_desi
+- n_configs: 2
+- failed: False
+- cmb_spt2018_plancksubset_desi_mnu.yaml: finite_total=True
+- cmb_sptd1_plancksubset_desi_mnu.yaml: finite_total=True

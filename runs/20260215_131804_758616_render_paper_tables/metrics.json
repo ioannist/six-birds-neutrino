@@ -1,0 +1,104 @@
+{
+  "rendered": {
+    "tab_mnu_shift": {
+      "rows": [
+        [
+          "SPT-only + DESI DR2 BAO",
+          "SPT2018",
+          "0.071",
+          "0.194",
+          "0.050",
+          "0.00223"
+        ],
+        [
+          "SPT-only + DESI DR2 BAO",
+          "SPT D1",
+          "0.042",
+          "0.085",
+          "0.070",
+          "0"
+        ],
+        [
+          "SPT-only + DESI DR2 BAO",
+          "Shift (2018 - D1)",
+          "0.029",
+          "0.109",
+          "---",
+          "---"
+        ],
+        [
+          "Planck-subset baseline + PR4 lensing + SPT + DESI DR2 BAO",
+          "SPT2018 baseline",
+          "0.068",
+          "0.080",
+          "0.075",
+          "0"
+        ],
+        [
+          "Planck-subset baseline + PR4 lensing + SPT + DESI DR2 BAO",
+          "SPT D1 baseline",
+          "0.054",
+          "0.068",
+          "0.054",
+          "0"
+        ],
+        [
+          "Planck-subset baseline + PR4 lensing + SPT + DESI DR2 BAO",
+          "Shift (2018 - D1)",
+          "0.013",
+          "0.012",
+          "---",
+          "---"
+        ]
+      ]
+    },
+    "tab_audit_summary": {
+      "rows": [
+        [
+          "Unprofiled",
+          "D1|2018",
+          "2222.17",
+          "2222.18",
+          "-0.00"
+        ],
+        [
+          "Unprofiled",
+          "2018|D1",
+          "313.57",
+          "315.06",
+          "-0.48"
+        ],
+        [
+          "Profiled",
+          "D1|2018",
+          "859.64",
+          "840.19",
+          "2.26"
+        ],
+        [
+          "Profiled",
+          "2018|D1",
+          "369.52",
+          "370.46",
+          "-0.25"
+        ]
+      ]
+    },
+    "tab_baseline_defs": {
+      "rows": [
+        [
+          "CMB (SPT2018)",
+          "TT [$\\ell_{\\min}$,$\\ell_{\\max}$]=[750,3000]; TE/EE [$\\ell_{\\min}$,$\\ell_{\\max}$]=[300,3000]",
+          "TT $\\ell<30$ (Commander); EE $\\ell<30$ (SRoll2); TT $30<\\ell<756$ (Plik).",
+          "SPT lensing + Planck PR4 lensing"
+        ],
+        [
+          "CMB-D1",
+          "TT [$\\ell_{\\min}$,$\\ell_{\\max}$]=[400,3000]; TE/EE [$\\ell_{\\min}$,$\\ell_{\\max}$]=[400,4000]",
+          "TT $\\ell<30$ (Commander); EE $\\ell<30$ (SRoll2); TT $30<\\ell<756$ (Plik).",
+          "SPT lensing + Planck PR4 lensing"
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,54 @@
+run_name: sptd1_lcdm_mnu
+
+likelihood:
+  sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood:
+    dataset_expr: spt_candl_data.SPT3G_D1_TnE_multifreq
+
+theory:
+  camb:
+    extra_args:
+      num_massive_neutrinos: 3
+      nnu: 3.046
+
+params:
+  omegabh2:
+    prior: {min: 0.005, max: 0.04}
+    ref: 0.0224
+    proposal: 0.00025
+  omegach2:
+    prior: {min: 0.001, max: 0.99}
+    ref: 0.12
+    proposal: 0.002
+  H0:
+    prior: {min: 40, max: 100}
+    ref: 67.0
+    proposal: 0.6
+  logA:
+    prior: {min: 1.5, max: 4.0}
+    ref: 3.05
+    proposal: 0.02
+    drop: true
+  As:
+    value: "lambda logA: 1e-10*np.exp(logA)"
+  ns:
+    prior: {min: 0.8, max: 1.2}
+    ref: 0.965
+    proposal: 0.01
+  tau:
+    prior: {min: 0.01, max: 0.8}
+    ref: 0.055
+    proposal: 0.01
+  mnu:
+    prior: {min: 0.0, max: 5.0}
+    ref: 0.10
+    proposal: 0.05
+
+sampler:
+  mcmc:
+    seed: 0
+    max_samples: 25
+    learn_proposal: false
+    Rminus1_stop: 0.2
+
+notes:
+  mnu_prior_choice: "N0 found no explicit sum_mnu upper prior bound in 2601.16277; smoke choice uses flat [0, 5] eV."

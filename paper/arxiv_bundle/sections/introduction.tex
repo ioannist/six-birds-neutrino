@@ -1,0 +1,25 @@
+\section{Introduction}
+\label{sec:intro}
+
+The summed neutrino mass $\mnu$ is a primary target of cosmological inference, with constraints driven by the interplay between early-universe information from the CMB and late-time distance/growth information from large-scale structure. As limits approach the minimal-mass scale, however, it becomes increasingly important to understand how much of an apparent ``tightening'' reflects cosmology versus how much reflects sensitivity to data processing, compression, nuisance parameterization, and dataset-combination route choices.
+
+A sharp example is reported in \cite{arxiv2601_16277}. They compare constraints obtained from two closely related SPT-3G likelihood releases: an SPT-3G 2018 TT/TE/EE baseline and a later 2019--2020 ``D1'' release. Holding fixed an otherwise matched baseline built from selected Planck 2018 (PR3) products and Planck PR4 lensing, they find that replacing SPT-3G 2018 with SPT D1 can tighten the $\mnu$ upper bound and shift the posterior toward the physical boundary $\mnu=0$, which they describe as a ``curious shift'' given that both releases analyze essentially the same sky field but differ in observing seasons and analysis pipeline choices. They also emphasize that a decisive diagnostic would be to reprocess the 2018 raw data through the D1 pipeline; we explicitly acknowledge that this test is not our proposal and should not be treated as a novel idea here \cite{arxiv2601_16277}.
+
+This note is intentionally narrow in scope: we do not attempt to identify the physical or instrumental root cause of the discrepancy, nor do we claim that any particular $\mnu$ bound is ``the'' correct answer. Instead, we operationalize the situation as a \emph{lens-swap stability} problem and apply the Six Birds / SBT audit discipline \cite{sixbirds_foundations,sixbirds_darkenergy}. In SBT language, each likelihood release constitutes a distinct \emph{lens} $f$ (a data-processing and compression map into a likelihood object; not gravitational lensing), while a chosen macro-model class and nuisance parameterization define a \emph{completion} $U$. The resulting packaged inference $E = U\circ f$ should be stable under benign lens variations if the package is coherent. When it is not, SBT recommends explicit audits and staging controls that localize where and how the mismatch enters.
+
+\paragraph{What we do.}
+We provide three concrete, falsifiable artifacts:
+
+\begin{enumerate}[leftmargin=*, itemsep=2pt]
+  \item \textbf{Replication of the direction of the $\mnu$ shift under a lens swap.}
+  Using a fully reproducible Cobaya-based pipeline, we reproduce the qualitative behavior that swapping SPT2018$\rightarrow$D1 tightens $\mnu$ when combined with DESI DR2 BAO, both in an SPT-only+DESI setting and in a baseline that matches the Planck-subset+PR4-lensing structure of \cite{arxiv2601_16277}. A compact summary is given in Table~\ref{tab:mnu-shift}.
+  \item \textbf{Cross-lens audits with localization.}
+  We quantify directional held-out mismatch between the two lenses using $\dchi$-style audit statistics and localize the mismatch by spectrum and multipole, producing a concrete ``where to look'' map rather than an abstract parameter-level tension.
+  \item \textbf{Common-staging controls and boundary-mode mechanism.}
+  We explicitly control for multipole-support differences by enforcing a common staging, and we provide a minimal toy mechanism illustrating how boundary modes (``quasi-negative'' behavior under an $\mnu\ge0$ gate) can arise generically when inconsistent packaged constraints are combined and tightened.
+\end{enumerate}
+
+A compact numerical summary of these shifts is given in Table~\ref{tab:mnu-shift}.
+
+\paragraph{Paper structure.}
+Related literature is briefly summarized in \cref{sec:related-work}. We restate the Six Birds / SBT primitives and map them to this setting in \cref{sec:sbt-framework}. Baseline definitions and implementation details follow in \cref{sec:baselines,sec:methods}. Audit and staging results are presented in \cref{sec:results-audits}, and the $\mnu$ shift results are presented in \cref{sec:results-mnu}. We discuss boundary-mode interpretation in \cref{sec:boundary-mode} and conclude with limitations and next diagnostics in \cref{sec:discussion,sec:conclusion}.

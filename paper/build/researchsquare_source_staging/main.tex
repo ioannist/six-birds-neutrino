@@ -1,0 +1,90 @@
+\documentclass[11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+  pdfauthor={Ioannis Tsiokos},
+  pdftitle={Six Birds for Neutrino Mass: Lens-Swap Stability and Packaging Audits}
+}
+\usepackage{cleveref}
+\crefname{section}{Section}{Sections}
+\crefname{figure}{Figure}{Figures}
+\crefname{table}{Table}{Tables}
+\crefname{equation}{Eq.}{Eqs.}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{orcidlink}
+
+\graphicspath{{figures/}}
+
+% Operators / notation
+\newcommand{\Lens}{f}
+\newcommand{\Completion}{U}
+\newcommand{\Pack}{E}
+\newcommand{\PackageOp}{\mathcal{E}}
+\newcommand{\RouteMismatch}{\Delta_{\mathrm{route}}}
+\newcommand{\Staging}{\mathrm{staging}}
+\newcommand{\dchi}{\Delta \chi^2}
+\newcommand{\mnu}{\sum m_\nu}
+
+\numberwithin{equation}{section}
+
+% Prevent widows and orphans
+\widowpenalty=10000
+\clubpenalty=10000
+\raggedbottom
+
+% Affiliation helper (submission-style author block).
+\makeatletter
+\newcommand{\affiliation}[1]{\gdef\@affiliation{#1}}
+\newcommand{\printaffiliation}{\begin{center}\small \@affiliation\end{center}}
+\makeatother
+
+\title{Six Birds for Neutrino Mass:\texorpdfstring{\\}{ } Lens-Swap Stability and Packaging Audits}
+\author{Ioannis Tsiokos\,\orcidlink{0009-0009-7659-5964}}
+\affiliation{}
+\date{2 March 2026\\[4pt]{\small Version 1}}
+
+\fancypagestyle{firstpage}{%
+  \fancyhf{}
+  \fancyfoot[C]{\scriptsize Automorph Inc., Wilmington, DE, USA \quad \texttt{ioannis@automorph.io} \quad \textcopyright\ 2026 \quad CC-BY 4.0 \quad Preprint --- not peer reviewed.}
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0pt}
+}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{firstpage}
+\printaffiliation
+
+\begin{abstract}
+\input{sections/abstract.tex}
+\end{abstract}
+
+\noindent\textbf{keywords:} neutrino mass; cosmological bounds; SPT-3G; lens stability; cross-lens audit; packaging mismatch; Six Birds framework
+
+\input{sections/introduction.tex}
+\input{sections/related_work.tex}
+\input{sections/sbt_framework.tex}
+\input{sections/baselines.tex}
+\input{sections/methods.tex}
+\input{sections/results_audits.tex}
+\input{sections/results_mnu.tex}
+\input{sections/boundary_mode.tex}
+\input{sections/discussion.tex}
+\input{sections/conclusion.tex}
+
+\bibliographystyle{unsrt}
+\bibliography{references}
+
+\end{document}

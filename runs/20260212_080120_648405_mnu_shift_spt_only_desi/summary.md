@@ -1,0 +1,5 @@
+- run2018: /home/repos/six-birds-neutrino/runs/20260212_060311_662922_cobaya_spt2018_desi_lcdm_mnu
+- runD1: /home/repos/six-birds-neutrino/runs/20260212_072014_910159_cobaya_sptd1_desi_lcdm_mnu
+- delta_p95_upper: 0.10860629275736843
+- delta_median: 0.029326701118852466
+- overlay_plot: /home/repos/six-birds-neutrino/runs/20260212_080120_648405_mnu_shift_spt_only_desi/figures/mnu_posterior_overlay.png

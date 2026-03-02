@@ -1,0 +1,168 @@
+model:
+  name: "LambdaCDM + sum_mnu"
+  models_defined:
+    - name: "LambdaCDM"
+      summary: "Base model varies six cosmological parameters and fixes total neutrino mass to 0.06 eV with normal hierarchy."
+      citations: [cite_lcdm_param_list, cite_lcdm_neutrino_fix]
+    - name: "LambdaCDM+sum_mnu"
+      summary: "Extension varies sum_mnu and approximates neutrinos as three degenerate massive states with no hierarchy assumption."
+      citations: [cite_lcdm_sum_mnu_definition]
+  neutrino_assumptions:
+    hierarchy: "normal in LambdaCDM; no hierarchy assumption in LambdaCDM+sum_mnu"
+    Neff_fixed: "unknown"
+    sum_mnu_physical_bound: true
+    citations: [cite_lcdm_neutrino_fix, cite_lcdm_sum_mnu_definition, cite_prior_border_zero]
+
+parameters:
+  lcdm_base: ["omega_cdm", "omega_b", "H0", "ln10^10A_s", "n_s", "tau"]
+  extended: ["sum_mnu"]
+  sampled_in_text: "The paper explicitly states the six LambdaCDM parameters and then adds sum_mnu in the extended model."
+  citations: [cite_lcdm_param_list, cite_lcdm_sum_mnu_definition]
+
+priors:
+  sum_mnu:
+    type: "unknown"
+    bounds_eV:
+      lower: 0.0
+      upper: "unknown"
+    notes: "Text indicates a 0 eV prior border for the posterior but does not state an explicit upper prior bound."
+    citations: [cite_prior_border_zero]
+  tau:
+    type: "special prior in one data configuration"
+    bounds: "unknown"
+    notes: "A tau prior is mentioned when SPT-3G 2018 TT/TE/EE is used without SRoll2 EE."
+    citations: [cite_tau_prior_note]
+  other_parameter_bounds: "unknown"
+  citations: [cite_lcdm_param_list]
+
+datasets:
+  baselines:
+    CMB:
+      components:
+        - "SPT-3G 2018 TT/TE/EE in candl"
+        - "Planck PR3 TT, ell<30 (Commander)"
+        - "Planck PR3 EE, ell<30 (SRoll2)"
+        - "Planck PR3 TT, 30<ell<756 (Plik)"
+        - "SPT-3G 2018 lensing potential"
+        - "Planck PR4 lensing potential"
+      planck_selection: "Include low-ell TT/EE and TT 30<ell<756; do not include Planck high-ell TE/EE."
+      citations: [cite_cmb_baseline_items, cite_planck_teee_exclusion]
+    CMB-D1:
+      components:
+        - "SPT-3G D1 (2019-2020) TT/TE/EE in candl"
+        - "SPT-3G 2019-2020 MUSE EE lensing"
+        - "Same Planck PR3 primary and PR4 lensing spectra as CMB"
+      planck_selection: "Planck high-ell cut kept unchanged relative to CMB baseline."
+      citations: [cite_cmbd1_baseline_items, cite_cmbd1_same_planck]
+  spt_multipoles:
+    SPT2018:
+      TT: [750, 3000]
+      TE: [300, 3000]
+      EE: [300, 3000]
+      citations: [cite_cmb_baseline_items]
+    SPTD1:
+      TT: [400, 3000]
+      TE: [400, 4000]
+      EE: [400, 4000]
+      citations: [cite_cmbd1_baseline_items]
+  external_datasets:
+    - "DESI DR2 BAO"
+    - "DES Y1 weak lensing"
+    - "Pantheon+ supernovae"
+  external_dataset_citations: [cite_external_datasets]
+
+table_combos:
+  "tab:3":
+    columns: ["CMB", "+DESI", "+DES\\,Y1", "+Pantheon+"]
+    notes: "Column order is cumulative left-to-right per caption."
+    citations: [cite_tab3_columns, cite_tab3_caption]
+  "tab:3a":
+    columns: ["CMB-D1", "+DESI", "+Pantheon+", "+DES Y1"]
+    notes: "Column order is cumulative left-to-right per caption."
+    citations: [cite_tab3a_columns, cite_tab3a_caption]
+
+implementation_notes:
+  - note: "Chains are run in Cobaya with CLASS; first 20% of each chain is discarded; plotting uses getdist."
+    citations: [cite_pipeline_toolchain]
+  - note: "No explicit numeric prior table is provided in main.tex for sum_mnu upper bound or full parameter prior ranges."
+    citations: [cite_lcdm_param_list, cite_prior_border_zero]
+  - note: "The paper itself suggests reanalyzing 2018 raw data with the D1 pipeline."
+    citations: [cite_reanalyze_2018_with_d1]
+
+found_configs:
+  status: "none"
+  files: []
+  searched_extensions: [".yaml", ".yml", ".ini", ".toml", ".json", ".py"]
+  searched_strings: ["cobaya", "class", "camb", "montepython", "cosmomc", "getdist", "likelihood", "prior"]
+  notes: "No standalone run/config files were found in the arXiv source directory besides metadata (00README.json)."
+  citations: [cite_arxiv_readme_sources]
+
+citations_local:
+  cite_cmb_baseline_items:
+    file: "docs/knowledge_base/arXiv-2601.16277v1 (1)/main.tex"
+    section: "The pipeline"
+    lines: "245-253"
+  cite_planck_teee_exclusion:
+    file: "docs/knowledge_base/arXiv-2601.16277v1 (1)/main.tex"
+    section: "The pipeline"
+    lines: "254-254"
+  cite_cmbd1_baseline_items:
+    file: "docs/knowledge_base/arXiv-2601.16277v1 (1)/main.tex"
+    section: "The pipeline"
+    lines: "256-262"
+  cite_cmbd1_same_planck:
+    file: "docs/knowledge_base/arXiv-2601.16277v1 (1)/main.tex"
+    section: "The pipeline"
+    lines: "260-262"
+  cite_external_datasets:
+    file: "docs/knowledge_base/arXiv-2601.16277v1 (1)/main.tex"
+    section: "The pipeline"
+    lines: "265-270"
+  cite_pipeline_toolchain:
+    file: "docs/knowledge_base/arXiv-2601.16277v1 (1)/main.tex"
+    section: "The pipeline"
+    lines: "274-274"
+  cite_lcdm_param_list:
+    file: "docs/knowledge_base/arXiv-2601.16277v1 (1)/main.tex"
+    section: "The pipeline"
+    lines: "276-277"
+  cite_lcdm_neutrino_fix:
+    file: "docs/knowledge_base/arXiv-2601.16277v1 (1)/main.tex"
+    section: "The pipeline"
+    lines: "278-278"
+  cite_lcdm_sum_mnu_definition:
+    file: "docs/knowledge_base/arXiv-2601.16277v1 (1)/main.tex"
+    section: "The pipeline"
+    lines: "279-279"
+  cite_tau_prior_note:
+    file: "docs/knowledge_base/arXiv-2601.16277v1 (1)/main.tex"
+    section: "LambdaCDM constraints"
+    lines: "369-370"
+  cite_tab3_columns:
+    file: "docs/knowledge_base/arXiv-2601.16277v1 (1)/main.tex"
+    section: "LambdaCDM+sum_mnu constraints"
+    lines: "465-465"
+  cite_tab3_caption:
+    file: "docs/knowledge_base/arXiv-2601.16277v1 (1)/main.tex"
+    section: "LambdaCDM+sum_mnu constraints"
+    lines: "515-516"
+  cite_tab3a_columns:
+    file: "docs/knowledge_base/arXiv-2601.16277v1 (1)/main.tex"
+    section: "LambdaCDM+sum_mnu constraints"
+    lines: "538-538"
+  cite_tab3a_caption:
+    file: "docs/knowledge_base/arXiv-2601.16277v1 (1)/main.tex"
+    section: "LambdaCDM+sum_mnu constraints"
+    lines: "588-589"
+  cite_prior_border_zero:
+    file: "docs/knowledge_base/arXiv-2601.16277v1 (1)/main.tex"
+    section: "Discussion and Conclusions"
+    lines: "606-606"
+  cite_reanalyze_2018_with_d1:
+    file: "docs/knowledge_base/arXiv-2601.16277v1 (1)/main.tex"
+    section: "Discussion and Conclusions"
+    lines: "608-608"
+  cite_arxiv_readme_sources:
+    file: "docs/knowledge_base/arXiv-2601.16277v1 (1)/00README.json"
+    section: "ArXiv source manifest"
+    lines: "2-15"

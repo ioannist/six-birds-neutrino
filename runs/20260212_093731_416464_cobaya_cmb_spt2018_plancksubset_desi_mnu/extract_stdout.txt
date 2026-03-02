@@ -1,0 +1,21 @@
+/home/repos/six-birds-neutrino/runs/20260212_093731_416464_cobaya_cmb_spt2018_plancksubset_desi_mnu/chains/cmb_spt2018_plancksubset_desi_mnu.1.txt
+Removed 0.2 as burn in
+{
+  "chains_prefix": "/home/repos/six-birds-neutrino/runs/20260212_093731_416464_cobaya_cmb_spt2018_plancksubset_desi_mnu/chains/cmb_spt2018_plancksubset_desi_mnu",
+  "param": "mnu",
+  "loader": "getdist",
+  "burnin_frac": 0.2,
+  "eps": 0.001,
+  "prior_lower_bound": 0.0,
+  "mnu_median": 0.067766928,
+  "mnu_p95_upper": 0.0798142259,
+  "mnu_mode": 0.074695958475,
+  "boundary_fraction": 0.0,
+  "n_samples_used": 480,
+  "mnu_split_rhat": 0.9980745809635944,
+  "mnu_ess": 10.405829999220963,
+  "mnu_p95_upper_first_half": 0.08334805,
+  "mnu_p95_upper_second_half": 0.079208214,
+  "mnu_p95_half_diff": 0.004139836000000008,
+  "warnings": []
+}

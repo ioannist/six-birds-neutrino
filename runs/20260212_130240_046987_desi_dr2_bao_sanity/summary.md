@@ -1,0 +1,5 @@
+- subset: all
+- n_points: 13
+- chi2: 29.869343
+- mean_file: desi_gaussian_bao_ALL_GCcomb_mean.txt
+- cov_file: desi_gaussian_bao_ALL_GCcomb_cov.txt

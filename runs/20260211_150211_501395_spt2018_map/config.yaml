@@ -1,0 +1,16 @@
+run_name: "spt2018_map"
+lens:
+  type: "candl"
+  likelihood_id: "candl_data.SPT3G_2018_TTTEEE_multifreq"
+parameters:
+  TT_tSZ_Amp:
+    initial: 2.0
+    bounds: [0.0, 10.0]
+  TT_kSZ_Amp:
+    initial: 2.0
+    bounds: [0.0, 10.0]
+optimizer:
+  method: "L-BFGS-B"
+  tol: 1.0e-10
+  options:
+    maxiter: 400

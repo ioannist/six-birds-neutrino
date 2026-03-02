@@ -1,0 +1,6 @@
+- run_name: cmb_spt2018_plancksubset_desi_mnu
+- config: /home/repos/six-birds-neutrino/configs/neutrino/cmb_spt2018_plancksubset_desi_mnu.yaml
+- output_prefix: /home/repos/six-birds-neutrino/runs/20260212_093731_416464_cobaya_cmb_spt2018_plancksubset_desi_mnu/chains/cmb_spt2018_plancksubset_desi_mnu
+- cobaya_success: True
+- extraction_success: True
+- metrics_path: /home/repos/six-birds-neutrino/runs/20260212_093731_416464_cobaya_cmb_spt2018_plancksubset_desi_mnu/metrics.json

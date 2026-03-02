@@ -1,0 +1,123 @@
+claims:
+  baseline_shift_summary:
+    summary: "The paper reports a tighter neutrino-mass limit when replacing the 2018 SPT-3G baseline with D1 (2019-2020), and calls this shift curious."
+    citations: [cite_abstract_shift, cite_comparison_section]
+  curious_shift_phrase_anchor:
+    summary: "Anchor phrase identifier for the paper's wording about a curious shift in the same field across seasons/pipelines."
+    snippet_id: "curious_shift_same_field_different_analysis_pipelines"
+    citations: [cite_abstract_shift]
+
+definitions:
+  baseline_CMB:
+    summary: "Baseline CMB setup centered on SPT-3G 2018 TT/TE/EE plus selected Planck PR3 primary cuts and SPT-3G 2018 + Planck PR4 lensing."
+    citations: [cite_pipeline_cmb_items]
+  baseline_CMB_D1:
+    summary: "CMB-D1 swaps in SPT-3G D1 (2019-2020) primary maps and MUSE EE lensing while keeping the same Planck PR3 primary cuts and PR4 lensing."
+    citations: [cite_pipeline_cmbd1_items, cite_cmbd1_swap_statement]
+
+datasets:
+  CMB:
+    summary: "SPT-3G 2018 baseline used as the primary CMB anchor dataset."
+    components:
+      primary_cmb: "SPT-3G 2018 TT/TE/EE in candl."
+      planck_pr3_primary:
+        - "TT, l < 30, Commander"
+        - "EE, l < 30, SRoll2"
+        - "TT, 30 < l < 756, Plik"
+      lensing:
+        - "SPT-3G 2018 lensing potential spectra"
+        - "Planck PR4 lensing potential spectra"
+    ell_ranges:
+      TT: [750, 3000]
+      TE: [300, 3000]
+      EE: [300, 3000]
+    citations: [cite_pipeline_cmb_items]
+  CMB-D1:
+    summary: "D1 baseline over the same field but 2019-2020 seasons, with updated primary and lensing products."
+    swapped_relative_to_CMB:
+      primary_cmb: "Replace SPT-3G 2018 TT/TE/EE with SPT-3G D1 (2019-2020) TT/TE/EE."
+      lensing: "Replace SPT-3G 2018 TT-based lensing with SPT-3G 2019-2020 MUSE EE-based lensing."
+      planck_products: "Keep same Planck PR3 primary cuts and Planck PR4 lensing as CMB."
+    ell_ranges:
+      TT: [400, 3000]
+      TE: [400, 4000]
+      EE: [400, 4000]
+    citations: [cite_pipeline_cmbd1_items, cite_cmbd1_swap_statement]
+  low_redshift_complements:
+    summary: "Additional non-CMB probes combined with baselines."
+    probes: ["DESI DR2 BAO", "DES Y1 weak lensing", "Pantheon+ SNIa"]
+    citations: [cite_lowz_probe_list]
+
+tables_figures:
+  "tab:3":
+    summary: "SPT-3G 2018-based constraints in LambdaCDM + sum m_nu."
+    sum_mnu_95_upper_eV:
+      CMB: 0.451
+      "+DESI": 0.110
+      "+DES Y1": 0.125
+      "+Pantheon+": 0.138
+    notes: "Caption states upper limits are quoted at 95% CL."
+    citations: [cite_tab3_values, cite_tab3_caption]
+  "tab:3a":
+    summary: "SPT-3G D1-based constraints in LambdaCDM + sum m_nu."
+    sum_mnu_95_upper_eV:
+      CMB-D1: 0.300
+      "+DESI": 0.069
+      "+Pantheon+": 0.075
+      "+DES Y1": 0.082
+    notes: "Caption states upper limits are quoted at 95% CL."
+    citations: [cite_tab3a_values, cite_tab3a_caption]
+
+do_not_claim_novelty:
+  reanalyze_2018_with_d1_pipeline:
+    summary: "The paper itself suggests testing constraints by reanalyzing 2018 raw data with the D1 pipeline."
+    citations: [cite_reanalyze_2018_d1_pipeline]
+  acknowledge_same_field_pipeline_shift:
+    summary: "Any claim about this shift should acknowledge the paper's own same-field/different-pipeline framing."
+    citations: [cite_abstract_shift, cite_comparison_section]
+
+citations_local:
+  cite_abstract_shift:
+    file: "docs/knowledge_base/arXiv-2601.16277v1 (1)/main.tex"
+    section: "Abstract"
+    lines: "208-210"
+  cite_pipeline_cmb_items:
+    file: "docs/knowledge_base/arXiv-2601.16277v1 (1)/main.tex"
+    section: "The pipeline"
+    lines: "245-253"
+  cite_pipeline_cmbd1_items:
+    file: "docs/knowledge_base/arXiv-2601.16277v1 (1)/main.tex"
+    section: "The pipeline"
+    lines: "256-262"
+  cite_lowz_probe_list:
+    file: "docs/knowledge_base/arXiv-2601.16277v1 (1)/main.tex"
+    section: "The pipeline"
+    lines: "265-270"
+  cite_tab3_values:
+    file: "docs/knowledge_base/arXiv-2601.16277v1 (1)/main.tex"
+    section: "LambdaCDM + sum m_nu constraints"
+    lines: "465-471"
+  cite_tab3_caption:
+    file: "docs/knowledge_base/arXiv-2601.16277v1 (1)/main.tex"
+    section: "LambdaCDM + sum m_nu constraints"
+    lines: "515-516"
+  cite_tab3a_values:
+    file: "docs/knowledge_base/arXiv-2601.16277v1 (1)/main.tex"
+    section: "Comparison to SPT-3G 2019-2020"
+    lines: "538-544"
+  cite_tab3a_caption:
+    file: "docs/knowledge_base/arXiv-2601.16277v1 (1)/main.tex"
+    section: "Comparison to SPT-3G 2019-2020"
+    lines: "588-589"
+  cite_cmbd1_swap_statement:
+    file: "docs/knowledge_base/arXiv-2601.16277v1 (1)/main.tex"
+    section: "Comparison to SPT-3G 2019-2020"
+    lines: "596-597"
+  cite_comparison_section:
+    file: "docs/knowledge_base/arXiv-2601.16277v1 (1)/main.tex"
+    section: "Comparison to SPT-3G 2019-2020"
+    lines: "594-599"
+  cite_reanalyze_2018_d1_pipeline:
+    file: "docs/knowledge_base/arXiv-2601.16277v1 (1)/main.tex"
+    section: "Discussion and Conclusions"
+    lines: "608-608"

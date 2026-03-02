@@ -1,0 +1,20 @@
+run_name: "sptd1_map_common_staging"
+lens:
+  type: "candl"
+  likelihood_id: "spt_candl_data.SPT3G_D1_TnE_multifreq"
+  ell_cuts:
+    TT: [750, 3000]
+    TE: [400, 3000]
+    EE: [400, 3000]
+parameters:
+  TT_tSZ_Amp:
+    initial: 2.0
+    bounds: [0.0, 10.0]
+  TT_kSZ_Amp:
+    initial: 2.0
+    bounds: [0.0, 10.0]
+optimizer:
+  method: "L-BFGS-B"
+  tol: 1.0e-10
+  options:
+    maxiter: 400

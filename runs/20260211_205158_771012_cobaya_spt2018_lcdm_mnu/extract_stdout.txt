@@ -1,0 +1,15 @@
+/home/repos/six-birds-neutrino/runs/20260211_205158_771012_cobaya_spt2018_lcdm_mnu/chains/spt2018_lcdm_mnu.1.txt
+Removed 0.2 as burn in
+{
+  "chains_prefix": "/home/repos/six-birds-neutrino/runs/20260211_205158_771012_cobaya_spt2018_lcdm_mnu/chains/spt2018_lcdm_mnu",
+  "param": "mnu",
+  "loader": "getdist",
+  "burnin_frac": 0.2,
+  "eps": 0.001,
+  "prior_lower_bound": 0.0,
+  "mnu_median": 0.15800392784313727,
+  "mnu_p95_upper": 0.17616998745454543,
+  "mnu_mode": 0.16660027324999999,
+  "boundary_fraction": 0.0,
+  "n_samples_used": 20
+}

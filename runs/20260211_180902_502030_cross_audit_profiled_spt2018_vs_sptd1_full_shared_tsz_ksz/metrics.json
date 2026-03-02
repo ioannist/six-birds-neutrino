@@ -1,0 +1,392 @@
+{
+  "shared_param_keys": [
+    "TT_tSZ_Amp",
+    "TT_kSZ_Amp"
+  ],
+  "shared_param_keys_explicit": [
+    "TT_tSZ_Amp",
+    "TT_kSZ_Amp"
+  ],
+  "profile_set_requested": "TT_cal_beta",
+  "profile_set_used": {
+    "B_given_A": "TT_cal_beta",
+    "A_given_B": "TT_cal_beta"
+  },
+  "B_given_A": {
+    "shared_keys_test_lens": [
+      "TT_tSZ_Amp",
+      "TT_kSZ_Amp"
+    ],
+    "shared_values_from_A": {
+      "TT_tSZ_Amp": 2.6248863660540183,
+      "TT_kSZ_Amp": 10.0
+    },
+    "shared_values_from_B": {
+      "TT_tSZ_Amp": 1.2826783466224576,
+      "TT_kSZ_Amp": 1.900633917618081
+    },
+    "profile_params": [
+      "Tcal_ext150",
+      "Tcal_rel90",
+      "Tcal_rel220",
+      "Ecal_ext150",
+      "Ecal_rel90",
+      "Ecal_rel220",
+      "TT_CIBClustering_Alpha",
+      "TT_CIB_150x150",
+      "TT_CIB_150x220",
+      "TT_CIB_220x220",
+      "TT_GalCirrus_Alpha",
+      "TT_GalCirrus_Amp"
+    ],
+    "n_profile_params": 12,
+    "logL_at_train_unprofiled": -1800.6459310444566,
+    "logL_profiled_at_train_shared": -1118.8179864628298,
+    "logL_profiled_best": -688.9975642844489,
+    "delta_chi2_unprofiled": 2223.2967335200156,
+    "delta_chi2_profiled": 859.6408443567618,
+    "reduction_pct": 61.33485776341951,
+    "profiling_train_diag": {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "nit": 74,
+      "nfev": 1092,
+      "chi2": 2237.6359729256596,
+      "loglike": -1118.8179864628298
+    },
+    "profiling_best_diag": {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "nit": 23,
+      "nfev": 351,
+      "chi2": 1377.9951285688978,
+      "loglike": -688.9975642844489
+    }
+  },
+  "A_given_B": {
+    "shared_keys_test_lens": [
+      "TT_tSZ_Amp",
+      "TT_kSZ_Amp"
+    ],
+    "shared_values_from_B": {
+      "TT_tSZ_Amp": 1.2826783466224576,
+      "TT_kSZ_Amp": 1.900633917618081
+    },
+    "shared_values_from_A": {
+      "TT_tSZ_Amp": 2.6248863660540183,
+      "TT_kSZ_Amp": 10.0
+    },
+    "profile_params": [
+      "TT_tSZ_CIB_Corr_Amp",
+      "TT_tSZ_CIB_corr",
+      "Ecal150",
+      "Ecal220",
+      "Ecal90",
+      "TT_CIBClustering_Alpha",
+      "TT_CIBClustering_Amp",
+      "TT_CIBClustering_Beta",
+      "TT_GalCirrus_Alpha",
+      "TT_GalCirrus_Amp",
+      "TT_GalCirrus_Beta",
+      "TT_Poisson_150x150"
+    ],
+    "n_profile_params": 12,
+    "logL_at_train_unprofiled": -1433.7550864431346,
+    "logL_profiled_at_train_shared": -1234.54035207003,
+    "logL_profiled_best": -1049.7808472513345,
+    "delta_chi2_unprofiled": 767.9484783836001,
+    "delta_chi2_profiled": 369.5190096373908,
+    "reduction_pct": 51.88231762433269,
+    "profiling_train_diag": {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "nit": 49,
+      "nfev": 793,
+      "chi2": 2469.08070414006,
+      "loglike": -1234.54035207003
+    },
+    "profiling_best_diag": {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "nit": 78,
+      "nfev": 1183,
+      "chi2": 2099.561694502669,
+      "loglike": -1049.7808472513345
+    }
+  },
+  "localization": {
+    "ell_bin_edges": [
+      400.0,
+      750.0,
+      1000.0,
+      1500.0,
+      2000.0,
+      2500.0,
+      3000.0,
+      3500.0,
+      4000.0
+    ],
+    "spectra_present": [
+      "TT",
+      "TE",
+      "EE"
+    ],
+    "B_given_A": {
+      "deltaQ_by_spec_ell": {
+        "TT": [
+          22.770917947722843,
+          34.17236600056873,
+          65.6304542223719,
+          98.16228535120045,
+          142.13273330225636,
+          504.57669600274073,
+          0.0,
+          0.0
+        ],
+        "TE": [
+          -0.8351041927945317,
+          -1.3272620254652026,
+          4.109286865663293,
+          -0.3910763228504379,
+          0.7724978723080369,
+          -0.7781382224268185,
+          -2.767930919177843,
+          2.7610904073699203
+        ],
+        "EE": [
+          0.15102940909023488,
+          0.14599937250180517,
+          -0.08665623337918049,
+          0.3543774679931033,
+          -0.4232100622523518,
+          -0.14815629734293623,
+          0.007845574032025127,
+          -0.01671133218691523
+        ]
+      },
+      "top_groups": [
+        {
+          "spec": "TT",
+          "ell": [
+            2500,
+            3000
+          ],
+          "deltaQ": 504.57669600274073,
+          "n_bins": 60
+        },
+        {
+          "spec": "TT",
+          "ell": [
+            2000,
+            2500
+          ],
+          "deltaQ": 142.13273330225636,
+          "n_bins": 60
+        },
+        {
+          "spec": "TT",
+          "ell": [
+            1500,
+            2000
+          ],
+          "deltaQ": 98.16228535120045,
+          "n_bins": 60
+        },
+        {
+          "spec": "TT",
+          "ell": [
+            1000,
+            1500
+          ],
+          "deltaQ": 65.6304542223719,
+          "n_bins": 60
+        },
+        {
+          "spec": "TT",
+          "ell": [
+            750,
+            1000
+          ],
+          "deltaQ": 34.17236600056873,
+          "n_bins": 30
+        },
+        {
+          "spec": "TT",
+          "ell": [
+            400,
+            750
+          ],
+          "deltaQ": 22.770917947722843,
+          "n_bins": 42
+        },
+        {
+          "spec": "TE",
+          "ell": [
+            1000,
+            1500
+          ],
+          "deltaQ": 4.109286865663293,
+          "n_bins": 90
+        },
+        {
+          "spec": "TE",
+          "ell": [
+            3500,
+            4000
+          ],
+          "deltaQ": 2.7610904073699203,
+          "n_bins": 90
+        },
+        {
+          "spec": "TE",
+          "ell": [
+            2000,
+            2500
+          ],
+          "deltaQ": 0.7724978723080369,
+          "n_bins": 90
+        },
+        {
+          "spec": "EE",
+          "ell": [
+            1500,
+            2000
+          ],
+          "deltaQ": 0.3543774679931033,
+          "n_bins": 60
+        }
+      ]
+    },
+    "A_given_B": {
+      "deltaQ_by_spec_ell": {
+        "TT": [
+          0.0,
+          2.639486719131817,
+          11.313698134713576,
+          47.62774498381162,
+          97.19104971752509,
+          427.3682340420456,
+          0.0,
+          0.0
+        ],
+        "TE": [
+          -0.11249001136059888,
+          0.09025890880678133,
+          -0.1392795854298967,
+          -0.01833024089757629,
+          0.08863331010942233,
+          -0.013159846285788035,
+          0.0,
+          0.0
+        ],
+        "EE": [
+          -0.16601563284024934,
+          0.1549201587354112,
+          -0.6985967580015853,
+          0.684006804108499,
+          0.10499323222964563,
+          -0.02827288288928642,
+          0.0,
+          0.0
+        ]
+      },
+      "top_groups": [
+        {
+          "spec": "TT",
+          "ell": [
+            2500,
+            3000
+          ],
+          "deltaQ": 427.3682340420456,
+          "n_bins": 30
+        },
+        {
+          "spec": "TT",
+          "ell": [
+            2000,
+            2500
+          ],
+          "deltaQ": 97.19104971752509,
+          "n_bins": 30
+        },
+        {
+          "spec": "TT",
+          "ell": [
+            1500,
+            2000
+          ],
+          "deltaQ": 47.62774498381162,
+          "n_bins": 60
+        },
+        {
+          "spec": "TT",
+          "ell": [
+            1000,
+            1500
+          ],
+          "deltaQ": 11.313698134713576,
+          "n_bins": 60
+        },
+        {
+          "spec": "TT",
+          "ell": [
+            750,
+            1000
+          ],
+          "deltaQ": 2.639486719131817,
+          "n_bins": 20
+        },
+        {
+          "spec": "EE",
+          "ell": [
+            1500,
+            2000
+          ],
+          "deltaQ": 0.684006804108499,
+          "n_bins": 60
+        },
+        {
+          "spec": "EE",
+          "ell": [
+            750,
+            1000
+          ],
+          "deltaQ": 0.1549201587354112,
+          "n_bins": 30
+        },
+        {
+          "spec": "EE",
+          "ell": [
+            2000,
+            2500
+          ],
+          "deltaQ": 0.10499323222964563,
+          "n_bins": 30
+        },
+        {
+          "spec": "TE",
+          "ell": [
+            750,
+            1000
+          ],
+          "deltaQ": 0.09025890880678133,
+          "n_bins": 30
+        },
+        {
+          "spec": "TE",
+          "ell": [
+            2000,
+            2500
+          ],
+          "deltaQ": 0.08863331010942233,
+          "n_bins": 30
+        }
+      ]
+    }
+  },
+  "warnings": [
+    "profile set `TT_cal_beta` reduced from 28 to 12 params for finite-difference runtime tractability.",
+    "profile set `TT_cal_beta` reduced from 20 to 12 params for finite-difference runtime tractability."
+  ],
+  "errors": {}
+}

@@ -1,0 +1,11 @@
+WARNING:root:outlier fraction 0.125 
+Traceback (most recent call last):
+  File "/home/repos/six-birds-neutrino/scripts/extract_mnu_limits.py", line 314, in <module>
+    raise SystemExit(main())
+  File "/home/repos/six-birds-neutrino/scripts/extract_mnu_limits.py", line 241, in main
+    seq_values, seq_weights = _load_sequence_raw(prefix, args.param, args.burnin_frac)
+  File "/home/repos/six-birds-neutrino/scripts/extract_mnu_limits.py", line 108, in _load_sequence_raw
+    names = _read_paramnames(prefix)
+  File "/home/repos/six-birds-neutrino/scripts/extract_mnu_limits.py", line 97, in _read_paramnames
+    raise FileNotFoundError(f"Missing paramnames file: {paramnames_path}")
+FileNotFoundError: Missing paramnames file: /home/repos/six-birds-neutrino/runs/20260212_060311_662922_cobaya_spt2018_desi_lcdm_mnu/chains/spt2018_desi_lcdm_mnu.paramnames

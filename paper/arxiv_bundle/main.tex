@@ -1,0 +1,55 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\usepackage{xcolor}
+\usepackage{microtype}
+\usepackage{enumitem}
+
+% Operators / notation
+\newcommand{\Lens}{f}
+\newcommand{\Completion}{U}
+\newcommand{\Pack}{E}
+\newcommand{\PackageOp}{\mathcal{E}}
+\newcommand{\RouteMismatch}{\Delta_{\mathrm{route}}}
+\newcommand{\Staging}{\mathrm{staging}}
+\newcommand{\dchi}{\Delta \chi^2}
+\newcommand{\mnu}{\sum m_\nu}
+
+\numberwithin{equation}{section}
+\crefname{section}{Section}{Sections}
+\crefname{figure}{Figure}{Figures}
+\crefname{table}{Table}{Tables}
+\crefname{equation}{Eq.}{Eqs.}
+
+\title{Title Placeholder}
+\author{Author Placeholder}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+\input{sections/abstract.tex}
+\end{abstract}
+
+\input{sections/introduction.tex}
+\input{sections/related_work.tex}
+\input{sections/sbt_framework.tex}
+\input{sections/baselines.tex}
+\input{sections/methods.tex}
+\input{sections/results_audits.tex}
+\input{sections/results_mnu.tex}
+\input{sections/boundary_mode.tex}
+\input{sections/discussion.tex}
+\input{sections/conclusion.tex}
+
+\bibliographystyle{unsrt}
+\bibliography{references}
+
+\end{document}

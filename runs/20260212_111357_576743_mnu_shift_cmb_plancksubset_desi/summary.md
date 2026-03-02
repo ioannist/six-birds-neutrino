@@ -1,0 +1,6 @@
+- run2018: /home/repos/six-birds-neutrino/runs/20260212_093731_416464_cobaya_cmb_spt2018_plancksubset_desi_mnu
+- runD1: /home/repos/six-birds-neutrino/runs/20260212_100807_462875_cobaya_cmb_sptd1_plancksubset_desi_mnu
+- delta_p95_upper: 0.012161063899999991
+- delta_median: 0.013425414000000004
+- overlay_plot: /home/repos/six-birds-neutrino/runs/20260212_111357_576743_mnu_shift_cmb_plancksubset_desi/figures/mnu_posterior_overlay.png
+- table_plot: /home/repos/six-birds-neutrino/runs/20260212_111357_576743_mnu_shift_cmb_plancksubset_desi/figures/mnu_bounds_table.png

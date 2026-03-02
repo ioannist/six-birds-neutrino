@@ -1,0 +1,6 @@
+- run2018: /home/repos/six-birds-neutrino/runs/20260212_114932_695529_mnu_smoke/spt2018
+- runD1: /home/repos/six-birds-neutrino/runs/20260212_114932_695529_mnu_smoke/sptd1
+- delta_p95_upper: 0.05174322608787875
+- delta_median: 0.08460129234313728
+- overlay_plot: /home/repos/six-birds-neutrino/runs/20260212_114932_695529_mnu_smoke/compare/figures/mnu_posterior_overlay.png
+- table_plot: /home/repos/six-birds-neutrino/runs/20260212_114932_695529_mnu_smoke/compare/figures/mnu_bounds_table.png

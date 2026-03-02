@@ -1,0 +1,48 @@
+cobaya_version=3.6.1
+available_planck_like_modules:
+- base_classes.planck_2018_CamSpec_python
+- base_classes.planck_clik
+- base_classes.planck_pliklite
+- planck_2018_highl_CamSpec
+- planck_2018_highl_CamSpec.TT
+- planck_2018_highl_CamSpec.TTTEEE
+- planck_2018_highl_CamSpec2021
+- planck_2018_highl_CamSpec2021.EE
+- planck_2018_highl_CamSpec2021.TE
+- planck_2018_highl_CamSpec2021.TEEE
+- planck_2018_highl_CamSpec2021.TT
+- planck_2018_highl_CamSpec2021.TTTE
+- planck_2018_highl_CamSpec2021.TTTEEE
+- planck_2018_highl_CamSpec2021.planck_2018_CamSpec2021_python
+- planck_2018_highl_plik
+- planck_2018_highl_plik.EE
+- planck_2018_highl_plik.TE
+- planck_2018_highl_plik.TT
+- planck_2018_highl_plik.TTTEEE
+- planck_2018_highl_plik.TTTEEE_lite
+- planck_2018_highl_plik.TTTEEE_lite_native
+- planck_2018_highl_plik.TTTEEE_unbinned
+- planck_2018_highl_plik.TT_lite
+- planck_2018_highl_plik.TT_lite_native
+- planck_2018_highl_plik.TT_unbinned
+- planck_2018_lensing
+- planck_2018_lensing.clik
+- planck_2018_lowl
+- planck_2018_lowl.EE
+- planck_2018_lowl.EE_clik
+- planck_2018_lowl.EE_sroll2
+- planck_2018_lowl.TT
+- planck_2018_lowl.TT_clik
+- planck_NPIPE_highl_CamSpec
+- planck_NPIPE_highl_CamSpec.EE
+- planck_NPIPE_highl_CamSpec.TE
+- planck_NPIPE_highl_CamSpec.TEEE
+- planck_NPIPE_highl_CamSpec.TT
+- planck_NPIPE_highl_CamSpec.TTTE
+- planck_NPIPE_highl_CamSpec.TTTEEE
+- planck_NPIPE_highl_CamSpec.planck_NPIPE_CamSpec_python
+planckpr4lensing_importable=False error=ModuleNotFoundError: No module named 'planckpr4lensing'
+planckpr4lensing_external_path=/home/repos/six-birds-neutrino/external/cobaya_packages/code/planck_PR4_lensing
+planckpr4lensing_external_yaml_classes:
+- PlanckPR4Lensing
+- PlanckPR4LensingMarged

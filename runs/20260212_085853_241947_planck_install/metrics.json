@@ -1,0 +1,46 @@
+{
+  "packages_path": "/home/repos/six-birds-neutrino/external/cobaya_packages",
+  "attempted_targets": [
+    "planck_2018_lowl.TT",
+    "planck_2018_lowl.EE_sroll2",
+    "planck_2018_highl_plik.TT_lite_native",
+    "planckpr4lensing.PlanckPR4Lensing",
+    "planckpr4lensing.PlanckPR4LensingMarged"
+  ],
+  "results": [
+    {
+      "target": "planck_2018_lowl.TT",
+      "returncode": 0,
+      "ok": true
+    },
+    {
+      "target": "planck_2018_lowl.EE_sroll2",
+      "returncode": 0,
+      "ok": true
+    },
+    {
+      "target": "planck_2018_highl_plik.TT_lite_native",
+      "returncode": 0,
+      "ok": true
+    },
+    {
+      "target": "planckpr4lensing.PlanckPR4Lensing",
+      "returncode": 1,
+      "ok": false
+    },
+    {
+      "target": "planckpr4lensing.PlanckPR4LensingMarged",
+      "returncode": 1,
+      "ok": false
+    }
+  ],
+  "succeeded_targets": [
+    "planck_2018_lowl.TT",
+    "planck_2018_lowl.EE_sroll2",
+    "planck_2018_highl_plik.TT_lite_native"
+  ],
+  "failed_targets": [
+    "planckpr4lensing.PlanckPR4Lensing",
+    "planckpr4lensing.PlanckPR4LensingMarged"
+  ]
+}

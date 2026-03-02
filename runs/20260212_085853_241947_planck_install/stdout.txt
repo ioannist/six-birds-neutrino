@@ -1,0 +1,122 @@
+=== target: planck_2018_lowl.TT rc=0 ===
+[install] Installing external packages at '/home/repos/six-birds-neutrino/external/cobaya_packages'
+
+================================================================================
+planck_2018_lowl.TT
+================================================================================
+
+[install] Checking if dependencies have already been installed...
+[install] Check found no existing installation
+[install] (If you expected this to be already installed, re-run `cobaya-install` with --debug to get more verbose output.)
+[install] Installing...
+[planck_2018_lowl.TT] Downloading CobayaSampler/planck_native_data data...
+[planck_2018_lowl.TT] Downloaded filename planck_2018_lowT.zip
+[planck_2018_lowl.TT] planck_2018_lowT.zip from planck_native_data v1 downloaded and decompressed correctly.
+[install] Successfully installed! Let's check it...
+[install] Installation check successful.
+
+================================================================================
+* Summary * 
+================================================================================
+
+[install] All requested components' dependencies correctly installed at /home/repos/six-birds-neutrino/external/cobaya_packages
+=== target: planck_2018_lowl.EE_sroll2 rc=0 ===
+[install] Installing external packages at '/home/repos/six-birds-neutrino/external/cobaya_packages'
+
+================================================================================
+planck_2018_lowl.EE_sroll2
+================================================================================
+
+[install] Checking if dependencies have already been installed...
+[install] Check found no existing installation
+[install] (If you expected this to be already installed, re-run `cobaya-install` with --debug to get more verbose output.)
+[install] Installing...
+[planck_2018_lowl.EE_sroll2] Downloading CobayaSampler/planck_native_data data...
+[planck_2018_lowl.EE_sroll2] Downloaded filename planck_sroll2_lowE.zip
+[planck_2018_lowl.EE_sroll2] planck_sroll2_lowE.zip from planck_native_data v1 downloaded and decompressed correctly.
+[install] Successfully installed! Let's check it...
+[install] Installation check successful.
+
+================================================================================
+* Summary * 
+================================================================================
+
+[install] All requested components' dependencies correctly installed at /home/repos/six-birds-neutrino/external/cobaya_packages
+=== target: planck_2018_highl_plik.TT_lite_native rc=0 ===
+[install] Installing external packages at '/home/repos/six-birds-neutrino/external/cobaya_packages'
+
+================================================================================
+planck_2018_highl_plik.TT_lite_native
+================================================================================
+
+[install] Checking if dependencies have already been installed...
+[install] Check found no existing installation
+[install] (If you expected this to be already installed, re-run `cobaya-install` with --debug to get more verbose output.)
+[install] Installing...
+[planck_2018_highl_plik.TT_lite_native] Downloading CobayaSampler/planck_native_data data...
+[planck_2018_highl_plik.TT_lite_native] Downloaded filename plik_lite_2018_AL.zip
+[planck_2018_highl_plik.TT_lite_native] plik_lite_2018_AL.zip from planck_native_data v1 downloaded and decompressed correctly.
+[install] Successfully installed! Let's check it...
+[install] Installation check successful.
+
+================================================================================
+* Summary * 
+================================================================================
+
+[install] All requested components' dependencies correctly installed at /home/repos/six-birds-neutrino/external/cobaya_packages
+=== target: planckpr4lensing.PlanckPR4Lensing rc=1 ===
+[install] Installing external packages at '/home/repos/six-birds-neutrino/external/cobaya_packages'
+
+================================================================================
+planckpr4lensing.PlanckPR4Lensing
+================================================================================
+
+[install] *ERROR* 'planckpr4lensing.PlanckPR4Lensing' could not be found. Tried loading internal and external classes. No component path was given.
+[install] *ERROR* Component 'planckpr4lensing.PlanckPR4Lensing' could not be identified. Skipping.
+
+================================================================================
+* Summary * 
+================================================================================
+
+[install] *ERROR* The following components could not be identified and were skipped:
+ - planckpr4lensing.PlanckPR4Lensing: did you mean any of the following? {'likelihood': ['planck_2018_lensing.clik', 'planck_2018_lensing.native', 'planck_2018_lensing.CMBMarged']} (mind capitalization!)
+[exception handler] ---------------------------------------
+
+Traceback (most recent call last):
+  File "/home/ioannis/.local/bin/cobaya-install", line 8, in <module>
+    sys.exit(install_script())
+  File "/home/ioannis/.local/lib/python3.10/site-packages/cobaya/install.py", line 845, in install_script
+    install(
+  File "/home/ioannis/.local/lib/python3.10/site-packages/cobaya/install.py", line 444, in install
+    raise LoggedError(
+cobaya.log.LoggedError: The following components could not be identified and were skipped:
+ - planckpr4lensing.PlanckPR4Lensing: did you mean any of the following? {'likelihood': ['planck_2018_lensing.clik', 'planck_2018_lensing.native', 'planck_2018_lensing.CMBMarged']} (mind capitalization!)
+-------------------------------------------------------------
+=== target: planckpr4lensing.PlanckPR4LensingMarged rc=1 ===
+[install] Installing external packages at '/home/repos/six-birds-neutrino/external/cobaya_packages'
+
+================================================================================
+planckpr4lensing.PlanckPR4LensingMarged
+================================================================================
+
+[install] *ERROR* 'planckpr4lensing.PlanckPR4LensingMarged' could not be found. Tried loading internal and external classes. No component path was given.
+[install] *ERROR* Component 'planckpr4lensing.PlanckPR4LensingMarged' could not be identified. Skipping.
+
+================================================================================
+* Summary * 
+================================================================================
+
+[install] *ERROR* The following components could not be identified and were skipped:
+ - planckpr4lensing.PlanckPR4LensingMarged: did you mean any of the following? {'likelihood': ['planck_2018_lensing.CMBMarged', 'planck_2018_lensing.clik', 'planck_2018_lensing.native']} (mind capitalization!)
+[exception handler] ---------------------------------------
+
+Traceback (most recent call last):
+  File "/home/ioannis/.local/bin/cobaya-install", line 8, in <module>
+    sys.exit(install_script())
+  File "/home/ioannis/.local/lib/python3.10/site-packages/cobaya/install.py", line 845, in install_script
+    install(
+  File "/home/ioannis/.local/lib/python3.10/site-packages/cobaya/install.py", line 444, in install
+    raise LoggedError(
+cobaya.log.LoggedError: The following components could not be identified and were skipped:
+ - planckpr4lensing.PlanckPR4LensingMarged: did you mean any of the following? {'likelihood': ['planck_2018_lensing.CMBMarged', 'planck_2018_lensing.clik', 'planck_2018_lensing.native']} (mind capitalization!)
+-------------------------------------------------------------

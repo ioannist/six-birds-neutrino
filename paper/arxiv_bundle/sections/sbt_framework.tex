@@ -1,0 +1,70 @@
+\section{Six Birds / SBT framing}
+\label{sec:sbt-framework}
+
+We summarize the minimal Six Birds / SBT primitives needed for this note and map them to the SPT2018$\rightarrow$D1 lens swap \cite{sixbirds_foundations,sixbirds_darkenergy}. The role of this section is operational: it explains why a shift in a packaged parameter bound under a pipeline change should be treated as a first-class stability question, and why explicit audits and staging controls are the appropriate response.
+
+\paragraph{Lenses, completions, and packaging.}
+A \emph{lens} is any data-processing and compression map that produces an inference object (here: a likelihood) from an underlying microstate. In this paper, a lens is emphatically \emph{not} gravitational lensing; it is a pipeline/likelihood release. Let $X$ denote the relevant microstate (cosmology plus nuisance/systematic degrees of freedom) and let
+\begin{equation}
+  \Lens : X \to \mathcal{L}
+  \label{eq:lens_map}
+\end{equation}
+denote the map that takes the microstate to a likelihood object (or its sufficient summary). A \emph{completion} specifies how we close the discarded information: a macro-model class, nuisance parameterization, and priors. In our setting, $U$ is $\Lambda$CDM+$\mnu$ with an explicit physical gate $\mnu\ge 0$ and the nuisance/foreground parameterization appropriate to each likelihood release. Packaging is the composition
+\begin{equation}
+  \Pack \;=\; \Completion \circ \Lens,
+  \label{eq:packaging_def}
+\end{equation}
+which maps the (unobserved) microstate to a packaged macro object such as a posterior distribution or a best-fit point. In the idealized limit of a coherent package, benign changes to the lens (e.g.\ changing observing season or pipeline implementation while viewing the same sky) should not drastically change the packaged macro output.
+
+\paragraph{A directional audit statistic for lens swaps.}
+SBT emphasizes that when two lenses disagree, one should quantify the mismatch \emph{directionally} via train/test style audits \cite{sixbirds_darkenergy}. Let $\log \mathcal{L}_A(\theta)$ and $\log \mathcal{L}_B(\theta)$ be the log-likelihoods for two lenses $A$ and $B$ under a shared parameter vector $\theta$. Define the (possibly non-unique) best-fit estimator for each lens,
+\begin{equation}
+  \hat\theta_{L} \in \arg\max_{\theta}\, \log \mathcal{L}_{L}(\theta), \qquad L\in\{A,B\}.
+  \label{eq:theta_hat_def}
+\end{equation}
+The basic held-out mismatch statistic we use throughout is the directional improvement in $B$ when moving from the $A$-fit to the $B$-fit:
+\begin{equation}
+  \dchi_{B|A} \;\equiv\; -2\left[\log \mathcal{L}_B(\hat\theta_A) - \log \mathcal{L}_B(\hat\theta_B)\right].
+  \label{eq:dchi_def}
+\end{equation}
+By construction, $\dchi_{B|A}\ge 0$ when $\hat\theta_B$ is the maximizer found by our optimizer/sampler; large $\dchi_{B|A}$ indicates that the $A$-packaged macro object predicts $B$ poorly, even after accounting for $B$'s own internal best-fit. Importantly, $\dchi_{B|A}$ need not equal $\dchi_{A|B}$: route mismatch is typically \emph{directional}. When the likelihood supports blockwise decomposition (e.g.\ by spectrum and multipole band), $\dchi_{B|A}$ can be localized as a sum of per-block contributions, turning an abstract mismatch into a concrete ``where to look'' diagnostic.
+
+\paragraph{Staging and common-support controls.}
+SBT distinguishes intrinsic lens mismatch from artifacts of \emph{staging}---changes in effective resolution, smoothing, cuts, or support that can change the packaged object even under perfect internal consistency \cite{sixbirds_foundations}. In CMB likelihoods, multipole cuts are a primary staging control. When comparing SPT2018 and SPT D1, we therefore implement a \emph{common-staging} control in which the D1 likelihood is restricted (as much as feasible) to the SPT2018 multipole support, and we repeat the same directional audits. If mismatch persists under common-staging and remains localized inside the overlap region, the evidence points away from simple support/cut explanations.
+
+\paragraph{Six Birds primitives (P1--P6) in this note.}
+Table~\ref{tab:sixbirds_primitives} summarizes the primitives and their instantiation here. The table is not meant to be exhaustive; it is a compact guide to the audit logic used in the remainder of the paper.
+
+\begin{table}[t]
+  \centering
+  \caption{Six Birds primitives (P1--P6) and their instantiation in the SPT2018$\leftrightarrow$D1 lens swap setting.}
+  \label{tab:sixbirds_primitives}
+  \small
+  \begin{tabular}{p{0.07\linewidth} p{0.34\linewidth} p{0.53\linewidth}}
+    \toprule
+    Primitive & SBT meaning (informal) & Instantiation in this work \\
+    \midrule
+    \textbf{P1 Rewrite} &
+    Minimal correction needed for macro closure when packaged dynamics fail to commute &
+    We treat boundary sensitivity as a generic truncation effect under mismatch; \emph{in a toy-only demonstration}, a one-mode surrogate rewrite reduces cross-lens $\dchi$ without invoking new physics. We do not apply a rewrite-mode correction to the real SPT lens swap in this note. \\
+    \textbf{P2 Gating} &
+    Constraints defining admissible macro objects and completions &
+    Physical gate $\mnu\ge 0$; dataset inclusion/exclusion (e.g.\ no Planck high-$\ell$ TE/EE); nuisance parameterization choices. \\
+    \textbf{P3 Route mismatch} &
+    Non-commutation / staging dependence of packaged outputs across routes &
+    The lens swap $A=\text{SPT2018}$ vs $B=\text{SPT D1}$ yields different packaged inferences; we quantify route mismatch via directional $\dchi_{B|A}$ and $\dchi_{A|B}$. \\
+    \textbf{P4 Staging} &
+    Dependence on scale, resolution, support, or cut choices &
+    Common-staging control by matching multipole support across lenses; we test whether the mismatch is explained by $\ell$-range differences. \\
+    \textbf{P5 Packaging} &
+    The packaged macro object produced by $(\Completion\circ\Lens)$ &
+    Posteriors/best-fits for $\mnu$ and nuisance parameters are treated as packaged objects; instability under lens swap is a packaging-stability failure. \\
+    \textbf{P6 Accounting / audit} &
+    Held-out prediction and decomposition of failures &
+    Cross-lens audits and localization by spectrum and multipole provide an actionable diagnosis of where the packaged summaries disagree. \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\paragraph{Mapping to the inconsistency.}
+In the remainder of the paper, we treat the two SPT likelihood releases as two lenses on (nearly) the same sky. The question is not ``which lens is correct,'' but whether a packaged inference is \emph{stable} under this lens change. When it is not, SBT prescribes two immediate steps: (i) quantify and localize mismatch via audits (\cref{eq:dchi_def}), and (ii) test whether staging controls eliminate the mismatch. Only after these checks does it become meaningful to interpret parameter-level shifts---including $\mnu$ tightening or boundary motion---as potentially cosmological rather than packaging-sensitive.

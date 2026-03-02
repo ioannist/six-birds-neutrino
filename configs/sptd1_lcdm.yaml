@@ -1,0 +1,14 @@
+run_name: "sptd1_lcdm"
+enabled: false
+status: "blocked"
+blocked_reason: "Correct cosmology candl likelihood distribution + SPT likelihood IDs not available yet (see runs/20260211_112049_candl_spt_probe)."
+lens:
+  type: "candl_spt"
+  likelihood_id: null
+  ell_cuts:
+    TT: [400, 3000]
+    TE: [400, 4000]
+    EE: [400, 4000]
+  notes: "TBD after installing correct cosmology candl distribution"
+parameters: {}
+optimizer: {}

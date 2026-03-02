@@ -1,0 +1,7 @@
+- run_name: cmb_spt2018_plancksubset_desi_mnu
+- config: /home/repos/six-birds-neutrino/configs/neutrino/cmb_spt2018_plancksubset_desi_mnu.yaml
+- output_prefix: /home/repos/six-birds-neutrino/runs/20260212_093608_164561_cobaya_cmb_spt2018_plancksubset_desi_mnu/chains/cmb_spt2018_plancksubset_desi_mnu
+- cobaya_success: False
+- extraction_success: False
+- metrics_path: missing
+- error: ComponentNotInstalledError: The data for this likelihood has not been correctly installed. To install it, run `cobaya-install planck_2018_lowl.TT`

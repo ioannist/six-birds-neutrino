@@ -1,0 +1,57 @@
+{
+  "allowed_roots": {
+    "data": {
+      "extensions": [".txt", ".md", ".json", ".yaml", ".yml", ".csv"]
+    },
+    "configs": {
+      "extensions": [".yaml", ".yml", ".json", ".toml", ".ini", ".txt", ".md"]
+    },
+    "docs": {
+      "extensions": [".md", ".txt", ".tex", ".bib", ".sty", ".bst", ".cls", ".png", ".pdf", ".svg", ".csv", ".json", ".yaml", ".yml"]
+    },
+    "lean": {
+      "extensions": [".lean", ".toml"],
+      "filenames": ["lean-toolchain", "lakefile.lean", "lakefile.toml"]
+    },
+    "paper": {
+      "extensions": [".tex", ".bib", ".md", ".png", ".pdf", ".csv", ".json"]
+    },
+    "runs": {
+      "extensions": [".yaml", ".yml", ".json", ".md", ".txt", ".png", ".pdf", ".csv"]
+    },
+    "scripts": {
+      "extensions": [".sh", ".py", ".txt", ".md"]
+    },
+    "src": {
+      "extensions": [".py", ".txt", ".md"]
+    },
+    "tests": {
+      "extensions": [".py", ".txt", ".md"]
+    }
+  },
+  "allowed_root_files": [
+    "README.md",
+    "AGENTS.md",
+    "Makefile",
+    "justfile",
+    "pyproject.toml",
+    "plan.md",
+    "PLAN.MD",
+    ".package-repo-snapshot.json",
+    ".gitignore"
+  ],
+  "exclude_dirs": [
+    ".git",
+    ".lake",
+    ".venv",
+    "venv",
+    "__pycache__",
+    ".mypy_cache",
+    ".pytest_cache",
+    ".ruff_cache",
+    ".ipynb_checkpoints",
+    "build",
+    "dist",
+    "tmp"
+  ]
+}

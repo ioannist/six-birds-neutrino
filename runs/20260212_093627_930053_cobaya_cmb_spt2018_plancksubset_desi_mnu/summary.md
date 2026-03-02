@@ -1,0 +1,7 @@
+- run_name: cmb_spt2018_plancksubset_desi_mnu
+- config: /home/repos/six-birds-neutrino/configs/neutrino/cmb_spt2018_plancksubset_desi_mnu.yaml
+- output_prefix: /home/repos/six-birds-neutrino/runs/20260212_093627_930053_cobaya_cmb_spt2018_plancksubset_desi_mnu/chains/cmb_spt2018_plancksubset_desi_mnu
+- cobaya_success: False
+- extraction_success: False
+- metrics_path: missing
+- error: LoggedError: Was expecting float for derived parameter 'm_ncdm', but got '0.02000000,0.02000000,0.02000000' (type <class 'type'>) instead. If you have defined this parameter manually (e.g. with a 'lambda') either make sure that it returns a number (or nan), or set 'derived: False' for this parameter, so that its value is not stored in the sample.

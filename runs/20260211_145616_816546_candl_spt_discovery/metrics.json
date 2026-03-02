@@ -1,0 +1,29 @@
+{
+  "candl_importable": true,
+  "candl_data_importable": true,
+  "spt_candl_data_importable": true,
+  "camb_importable": true,
+  "classy_importable": true,
+  "cobaya_importable": true,
+  "spt2018_id_guess": "candl_data.SPT3G_2018_TTTEEE_multifreq",
+  "sptd1_id_guess": "spt_candl_data.SPT3G_D1_TnE_multifreq",
+  "spt2018": {
+    "dataset_expr": "candl_data.SPT3G_2018_TTTEEE_multifreq",
+    "dataset_path": "/home/ioannis/.local/lib/python3.10/site-packages/candl_data/SPT3G_2018_TTTEEE_v0/SPT3G_2018_TTTEEE.yaml",
+    "test_yaml": "/home/ioannis/.local/lib/python3.10/site-packages/candl_data/tests/SPT3G_2018_TTTEEE.yaml",
+    "like_name": "SPT-3G 2018 TT/TE/EE (Balkenhol et al. 2023)",
+    "chi2": 1528.8739637258693,
+    "loglike": -1336.1606429493984,
+    "finite": true
+  },
+  "sptd1": {
+    "dataset_expr": "spt_candl_data.SPT3G_D1_TnE_multifreq",
+    "dataset_path": "/home/ioannis/.local/lib/python3.10/site-packages/spt_candl_data/SPT3G_D1_TnE_v0/SPT3G_D1_TnE.yaml",
+    "test_yaml": "/home/ioannis/.local/lib/python3.10/site-packages/spt_candl_data/tests/SPT3G_D1_TnE_test.yaml",
+    "like_name": "SPT-3G D1 TnE (Camphuis et al. 2025, Quan et al. 2025)",
+    "chi2": 1373.2802544894303,
+    "loglike": -690.2754524216625,
+    "finite": true
+  },
+  "errors": {}
+}

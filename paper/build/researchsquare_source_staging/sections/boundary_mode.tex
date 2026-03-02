@@ -1,0 +1,51 @@
+\section{Boundary modes as a generic truncation mechanism}
+\label{sec:boundary-mode}
+
+A recurring qualitative feature in near-minimal $\mnu$ inference is posterior behavior near the physical gate $\mnu \ge 0$. In particular, \cite{arxiv2601_16277} describes cases in which swapping the SPT lens (SPT2018 $\rightarrow$ D1) and combining with external data can push the posterior toward the prior border at $\mnu=0$. Here we provide a deliberately minimal mechanism showing that such boundary behavior can arise generically from (i) combining incompatible packaged constraints and (ii) applying a hard truncation, without invoking negative masses as a physical possibility.
+
+\subsection{Two constraints plus a gate: mode at the boundary when the unconstrained optimum is negative}
+Consider a single nonnegative parameter $m \ge 0$ (standing in for $\mnu$) and suppose two independent packaged constraints yield approximately Gaussian log-likelihood contributions,
+\begin{equation}
+  \log \mathcal{L}_i(m) \;=\; -\frac{(m-\mu_i)^2}{2\sigma_i^2} + \text{const}, \qquad i\in\{1,2\},
+  \label{eq:toy_gaussian_constraints}
+\end{equation}
+with $\sigma_i>0$. The combined (unconstrained) likelihood is proportional to a Gaussian with mean and variance
+\begin{equation}
+  \mu_\star \;=\; \frac{\mu_1/\sigma_1^2 + \mu_2/\sigma_2^2}{1/\sigma_1^2 + 1/\sigma_2^2},
+  \qquad
+  \sigma_\star^2 \;=\; \frac{1}{1/\sigma_1^2 + 1/\sigma_2^2}.
+  \label{eq:toy_combined_gaussian}
+\end{equation}
+If the two packaged constraints are in tension, it is possible for $\mu_\star < 0$ even though the physical parameter space is $m\ge 0$. Enforcing the gate $m\ge 0$ corresponds to truncating the Gaussian at 0, producing a (normalized) truncated density on $[0,\infty)$. In that case the mode occurs at
+\begin{equation}
+  m_{\mathrm{mode}} \;=\; \max(0,\mu_\star),
+  \label{eq:toy_trunc_mode}
+\end{equation}
+so whenever the unconstrained optimum lies at $\mu_\star \le 0$, the \emph{constrained} mode is exactly at the boundary $m=0$. This is the sense in which ``boundary modes'' (sometimes informally described as ``quasi-negative'' behavior) can arise: the negative optimum is not physical, but it is the optimizer's reconciliation point for incompatible packaged constraints, and truncation forces the packaged macro object to pile up at the boundary.
+
+Figure~\ref{fig:toy-trunc-density} illustrates one such case: the unconstrained combined density peaks at a negative $\mu_\star$, while the truncated density on $m\ge 0$ peaks at $m=0$.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.85\linewidth]{figures/fig_toy_density.png}
+  \caption{Toy mechanism: combining two Gaussian constraints can yield an unconstrained optimum at $\mu_\star<0$. Enforcing a physical gate $m\ge 0$ truncates the density and forces the mode to the boundary at $m=0$. This illustrates a generic mechanism for boundary modes without interpreting negative masses as physical.}
+  \label{fig:toy-trunc-density}
+\end{figure}
+
+\paragraph{Optional formal check (Lean).}
+For completeness, we mechanically verified the key monotonicity statement underlying \cref{eq:toy_trunc_mode} in Lean4 \cite{lean4,mathlib}: for $\sigma>0$ and $\mu\le 0$, the unnormalized density $x\mapsto \exp(-((x-\mu)^2/(2\sigma^2)))$ is decreasing on $[0,\infty)$ and hence achieves its maximum at $x=0$. The proof is included in the repository.\footnote{See \texttt{lean/trunc\_gauss\_proof}; lemmas \texttt{TruncGaussProof.\allowbreak unnorm\_antitoneOn\_Ici} and \texttt{TruncGaussProof.\allowbreak unnorm\_le\_at\_zero}.} This is not essential to the cosmological argument, but it documents the boundary-mode claim as a simple, checkable mathematical fact.
+
+\subsection{Tightening increases boundary-mode frequency}
+The practical relevance is that as constraints tighten (smaller $\sigma_i$), modest shifts in the effective means $\mu_i$---including shifts induced by lens mismatch---can more readily push $\mu_\star$ below 0. We therefore performed a small sweep in which one constraint is held fixed while the other is tightened, and we estimated the fraction of sweep points for which the truncated posterior mode lies at the boundary. Figure~\ref{fig:toy-boundary-sweep} shows that the boundary-mode frequency can rise sharply as one constraint tightens.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.85\linewidth]{figures/fig_toy_boundary_sweep.png}
+  \caption{Toy sweep: as one constraint tightens, boundary-mode behavior (mode at $m=0$ after truncation) becomes more frequent. This illustrates how tightening can amplify boundary sensitivity when packaged constraints are not mutually consistent.}
+  \label{fig:toy-boundary-sweep}
+\end{figure}
+
+\subsection{Interpretation for $\mnu$ under lens swaps}
+This toy model does not claim that any specific real-data run must exhibit a boundary mode, and indeed our baseline+DESI production runs have near-zero boundary fraction for $\mnu$ (\cref{sec:results-mnu}). Rather, it clarifies why boundary motion can be a \emph{generic symptom} of packaging instability when a hard physical gate is present. In the SBT framing, the boundary is a gating constraint (P2), and strong boundary sensitivity is naturally interpreted as an indicator that the completion is being asked to reconcile incompatible packaged summaries (a route mismatch symptom, P3), especially when the mismatch is localized in the overlap region (\cref{sec:results-audits}).
+
+Therefore, when \cite{arxiv2601_16277} observes that swapping SPT2018$\rightarrow$D1 can push $\mnu$ toward the $\mnu=0$ prior border in some dataset combinations, a conservative reading is: the packaged constraints are sufficiently tight and sufficiently route-sensitive that small lens differences can move the unconstrained optimum across the gate. This strengthens (rather than weakens) the case for reporting explicit lens-swap audits and staging controls alongside headline bounds.

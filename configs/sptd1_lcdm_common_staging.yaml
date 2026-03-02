@@ -1,0 +1,15 @@
+run_name: "sptd1_lcdm_common_staging"
+enabled: false
+status: "blocked"
+blocked_reason: "Correct cosmology candl likelihood distribution + SPT likelihood IDs not available yet (see runs/20260211_112049_candl_spt_probe)."
+common_staging_target: "spt2018"
+lens:
+  type: "candl_spt"
+  likelihood_id: null
+  ell_cuts:
+    TT: [750, 3000]
+    TE: [400, 3000]
+    EE: [400, 3000]
+  notes: "D1 truncated to match SPT2018 multipole support as closely as feasible."
+parameters: {}
+optimizer: {}

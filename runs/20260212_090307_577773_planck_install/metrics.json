@@ -1,0 +1,40 @@
+{
+  "packages_path": "/home/repos/six-birds-neutrino/external/cobaya_packages",
+  "attempted_targets": [
+    "planck_2018_lowl.TT",
+    "planck_2018_lowl.EE_sroll2",
+    "planck_2018_highl_plik.TT_lite_native",
+    "planckpr4lensing (fallback yaml install)"
+  ],
+  "results": [
+    {
+      "target": "planck_2018_lowl.TT",
+      "returncode": 0,
+      "ok": true
+    },
+    {
+      "target": "planck_2018_lowl.EE_sroll2",
+      "returncode": 0,
+      "ok": true
+    },
+    {
+      "target": "planck_2018_highl_plik.TT_lite_native",
+      "returncode": 0,
+      "ok": true
+    },
+    {
+      "target": "planckpr4lensing (fallback yaml install)",
+      "returncode": 1,
+      "ok": true,
+      "verification_path": "/home/repos/six-birds-neutrino/external/cobaya_packages/code/planck_PR4_lensing/planckpr4lensing",
+      "verification_exists": true
+    }
+  ],
+  "succeeded_targets": [
+    "planck_2018_lowl.TT",
+    "planck_2018_lowl.EE_sroll2",
+    "planck_2018_highl_plik.TT_lite_native",
+    "planckpr4lensing (fallback yaml install)"
+  ],
+  "failed_targets": []
+}

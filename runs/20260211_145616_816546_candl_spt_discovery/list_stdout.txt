@@ -1,0 +1,165 @@
+candl version=2.2.0 path=/home/ioannis/.local/lib/python3.10/site-packages/candl/__init__.py
+
+Module walk keyword hits
+- candl: 0 hit(s)
+- candl_data: 0 hit(s)
+- spt_candl_data: 5 hit(s)
+  - spt_candl_data.spt_candl_data
+  - spt_candl_data.transformations
+  - spt_candl_data.transformations.CIB
+  - spt_candl_data.transformations.beams
+  - spt_candl_data.transformations.t2p_leakage
+
+candl_data version=2.0.0 path=/home/ioannis/.local/lib/python3.10/site-packages/candl_data/__init__.py
+
+candl_data.print_all_shortcuts():
+SPT-3G 2018 TT/TE/EE: 'candl_data.SPT3G_2018_TTTEEE' (index file)
+  Multiple variants available, access with index file (above) and 'variant' keyword or with specific shortcut for desired variant.
+  'variant = multifreq' or 'candl_data.SPT3G_2018_TTTEEE_multifreq' (default, original multi-frequency likelihood)
+  (data files located at: /home/ioannis/.local/lib/python3.10/site-packages/candl_data/SPT3G_2018_TTTEEE_v0/SPT3G_2018_TTTEEE.yaml)
+  'variant = lite' or 'candl_data.SPT3G_2018_TTTEEE_lite' (foreground-marginalised CMBlite version)
+  (data files located at: /home/ioannis/.local/lib/python3.10/site-packages/candl_data/SPT3G_2018_TTTEEE_v0/SPT3G_2018_TTTEEE_lite.yaml)
+SPT-3G 2018 Lensing: 'candl_data.SPT3G_2018_Lens' (index file)
+  Multiple variants available, access with index file (above) and 'variant' keyword or with specific shortcut for desired variant.
+  'variant = lens_only' or 'candl_data.SPT3G_2018_Lens_only' (default)
+  (data files located at: /home/ioannis/.local/lib/python3.10/site-packages/candl_data/SPT3G_2018_Lens_v0/SPT3G_2018_PP_lens_only.yaml)
+  'variant = use_cmb' or 'candl_data.SPT3G_2018_Lens_and_CMB' (for combining with primary CMB)
+  (data files located at: /home/ioannis/.local/lib/python3.10/site-packages/candl_data/SPT3G_2018_Lens_v0/SPT3G_2018_PP_lens_and_CMB.yaml)
+ACT DR4 TT/TE/EE: 'candl_data.ACT_DR4_TTTEEE'
+  (data files located at: /home/ioannis/.local/lib/python3.10/site-packages/candl_data/ACT_DR4_CMB_only_v0/ACT_DR4_CMB_only.yaml)
+ACT DR6 TT/TE/EE: 'candl_data.ACT_DR6_TTTEEE'
+  (data files located at: /home/ioannis/.local/lib/python3.10/site-packages/candl_data/ACT_DR6_CMB_only_v0/ACT_DR6_CMB_only.yaml)
+ACT DR6 Lensing: 'candl_data.ACT_DR6_Lens' (index file)
+  Multiple variants available, access with index file (above) and 'variant' keyword or with specific shortcut for desired variant.
+  'variant = lens_only' or 'candl_data.ACT_DR6_Lens_only' (default)
+  (data files located at: /home/ioannis/.local/lib/python3.10/site-packages/candl_data/ACT_DR6_Lens_v1/ACT_DR6_KK_lens_only.yaml)
+  'variant = use_cmb' or 'candl_data.ACT_DR6_Lens_and_CMB' (for combining with primary CMB)
+  (data files located at: /home/ioannis/.local/lib/python3.10/site-packages/candl_data/ACT_DR6_Lens_v1/ACT_DR6_KK_lens_and_CMB.yaml)
+SPTpol BB: 'candl_data.SPTpol_BB' (index file)
+  Multiple variants available, access with index file (above) and 'variant' keyword or with specific shortcut for desired variant.
+  'variant = multifreq' or 'candl_data.SPTpol_BB_multifreq' (default, original multi-frequency likelihood)
+  (data files located at: /home/ioannis/.local/lib/python3.10/site-packages/candl_data/SPTpol_BB_v0/SPTpol_BB.yaml)
+  'variant = lite' or 'candl_data.SPTpol_BB_lite' (foreground-marginalised CMBlite version)
+  (data files located at: /home/ioannis/.local/lib/python3.10/site-packages/candl_data/SPTpol_BB_v0/SPTpol_BB_lite.yaml)
+SPT-3G D1 BB lite: 'candl_data.SPT3G_D1_BB_lite'
+  (data files located at: /home/ioannis/.local/lib/python3.10/site-packages/candl_data/SPT3G_D1_BB_lite_v0/SPT3G_D1_BB_lite.yaml)
+
+spt_candl_data version=2.0.0 path=/home/ioannis/.local/lib/python3.10/site-packages/spt_candl_data/__init__.py
+
+spt_candl_data.print_all_shortcuts():
+SPT-3G D1 TnE: 'spt_candl_data.SPT3G_D1_TnE' (index file)
+  Multiple variants available, access with index file (above) and 'variant' keyword or with specific shortcut for desired variant:
+  * 'variant = multifreq' or 'spt_candl_data.SPT3G_D1_TnE_multifreq'  (data files located at: /home/ioannis/.local/lib/python3.10/site-packages/spt_candl_data/SPT3G_D1_TnE_v0/SPT3G_D1_TnE.yaml)
+    Complete multi-frequency likelihood.
+    Default variant. Using spt_candl_data.SPT3G_D1_TnE will initialise this variant.
+  * 'variant = lite' or 'spt_candl_data.SPT3G_D1_TnE_lite'  (data files located at: /home/ioannis/.local/lib/python3.10/site-packages/spt_candl_data/SPT3G_D1_TnE_v0/lite/SPT3G_D1_TnE_lite.yaml)
+    SPTlite, CMB-only (lite) likelihood.
+  * 'variant = TT' or 'spt_candl_data.SPT3G_D1_TT'  (data files located at: /home/ioannis/.local/lib/python3.10/site-packages/spt_candl_data/SPT3G_D1_TnE_v0/subsets/SPT3G_D1_TT.yaml)
+    TT-only multi-frequency likelihood.
+  * 'variant = TE' or 'spt_candl_data.SPT3G_D1_TE'  (data files located at: /home/ioannis/.local/lib/python3.10/site-packages/spt_candl_data/SPT3G_D1_TnE_v0/subsets/SPT3G_D1_TE.yaml)
+    TE-only multi-frequency likelihood.
+  * 'variant = EE' or 'spt_candl_data.SPT3G_D1_EE'  (data files located at: /home/ioannis/.local/lib/python3.10/site-packages/spt_candl_data/SPT3G_D1_TnE_v0/subsets/SPT3G_D1_EE.yaml)
+    EE-only multi-frequency likelihood.
+  * 'variant = TEEE' or 'spt_candl_data.SPT3G_D1_TEEE'  (data files located at: /home/ioannis/.local/lib/python3.10/site-packages/spt_candl_data/SPT3G_D1_TnE_v0/subsets/SPT3G_D1_TEEE.yaml)
+    TE/EE multi-frequency likelihood.
+  * 'variant = TTTE' or 'spt_candl_data.SPT3G_D1_TTTE'  (data files located at: /home/ioannis/.local/lib/python3.10/site-packages/spt_candl_data/SPT3G_D1_TnE_v0/subsets/SPT3G_D1_TTTE.yaml)
+    TT/TE multi-frequency likelihood.
+  * 'variant = 90x90' or 'spt_candl_data.SPT3G_D1_TnE_90x90'  (data files located at: /home/ioannis/.local/lib/python3.10/site-packages/spt_candl_data/SPT3G_D1_TnE_v0/subsets/SPT3G_D1_TnE_90x90.yaml)
+    TT/TE/EE likelihood using only 90x90 spectra.
+  * 'variant = 90x150' or 'spt_candl_data.SPT3G_D1_TnE_90x150'  (data files located at: /home/ioannis/.local/lib/python3.10/site-packages/spt_candl_data/SPT3G_D1_TnE_v0/subsets/SPT3G_D1_TnE_90x150.yaml)
+    TT/TE/EE likelihood using only 90x150 spectra.
+  * 'variant = 90x220' or 'spt_candl_data.SPT3G_D1_TnE_90x220'  (data files located at: /home/ioannis/.local/lib/python3.10/site-packages/spt_candl_data/SPT3G_D1_TnE_v0/subsets/SPT3G_D1_TnE_90x220.yaml)
+    TT/TE/EE likelihood using only 90x220 spectra.
+  * 'variant = 150x150' or 'spt_candl_data.SPT3G_D1_TnE_150x150'  (data files located at: /home/ioannis/.local/lib/python3.10/site-packages/spt_candl_data/SPT3G_D1_TnE_v0/subsets/SPT3G_D1_TnE_150x150.yaml)
+    TT/TE/EE likelihood using only 150x150 spectra.
+  * 'variant = 150x220' or 'spt_candl_data.SPT3G_D1_TnE_150x220'  (data files located at: /home/ioannis/.local/lib/python3.10/site-packages/spt_candl_data/SPT3G_D1_TnE_v0/subsets/SPT3G_D1_TnE_150x220.yaml)
+    TT/TE/EE likelihood using only 150x220 spectra.
+  * 'variant = 220x220' or 'spt_candl_data.SPT3G_D1_TnE_220x220'  (data files located at: /home/ioannis/.local/lib/python3.10/site-packages/spt_candl_data/SPT3G_D1_TnE_v0/subsets/SPT3G_D1_TnE_220x220.yaml)
+    TT/TE/EE likelihood using only 220x220 spectra.
+  * 'variant = TT_90x90' or 'spt_candl_data.SPT3G_D1_TT_90x90'  (data files located at: /home/ioannis/.local/lib/python3.10/site-packages/spt_candl_data/SPT3G_D1_TnE_v0/subsets/SPT3G_D1_TT_90x90.yaml)
+    TT likelihood using only the 90x90 spectrum.
+  * 'variant = TT_90x150' or 'spt_candl_data.SPT3G_D1_TT_90x150'  (data files located at: /home/ioannis/.local/lib/python3.10/site-packages/spt_candl_data/SPT3G_D1_TnE_v0/subsets/SPT3G_D1_TT_90x150.yaml)
+    TT likelihood using only the 90x150 spectrum.
+  * 'variant = TT_90x220' or 'spt_candl_data.SPT3G_D1_TT_90x220'  (data files located at: /home/ioannis/.local/lib/python3.10/site-packages/spt_candl_data/SPT3G_D1_TnE_v0/subsets/SPT3G_D1_TT_90x220.yaml)
+    TT likelihood using only the 90x220 spectrum.
+  * 'variant = TT_150x150' or 'spt_candl_data.SPT3G_D1_TT_150x150'  (data files located at: /home/ioannis/.local/lib/python3.10/site-packages/spt_candl_data/SPT3G_D1_TnE_v0/subsets/SPT3G_D1_TT_150x150.yaml)
+    TT likelihood using only the 150x150 spectrum.
+  * 'variant = TT_150x220' or 'spt_candl_data.SPT3G_D1_TT_150x220'  (data files located at: /home/ioannis/.local/lib/python3.10/site-packages/spt_candl_data/SPT3G_D1_TnE_v0/subsets/SPT3G_D1_TT_150x220.yaml)
+    TT likelihood using only the 150x220 spectrum.
+  * 'variant = TT_220x220' or 'spt_candl_data.SPT3G_D1_TT_220x220'  (data files located at: /home/ioannis/.local/lib/python3.10/site-packages/spt_candl_data/SPT3G_D1_TnE_v0/subsets/SPT3G_D1_TT_220x220.yaml)
+    TT likelihood using only the 220x220 spectrum.
+  * 'variant = TE_90x90' or 'spt_candl_data.SPT3G_D1_TE_90x90'  (data files located at: /home/ioannis/.local/lib/python3.10/site-packages/spt_candl_data/SPT3G_D1_TnE_v0/subsets/SPT3G_D1_TE_90x90.yaml)
+    TE likelihood using only the 90x90 spectrum.
+  * 'variant = TE_90x150' or 'spt_candl_data.SPT3G_D1_TE_90x150'  (data files located at: /home/ioannis/.local/lib/python3.10/site-packages/spt_candl_data/SPT3G_D1_TnE_v0/subsets/SPT3G_D1_TE_90x150.yaml)
+    TE likelihood using only the 90x150 spectrum.
+  * 'variant = TE_90x220' or 'spt_candl_data.SPT3G_D1_TE_90x220'  (data files located at: /home/ioannis/.local/lib/python3.10/site-packages/spt_candl_data/SPT3G_D1_TnE_v0/subsets/SPT3G_D1_TE_90x220.yaml)
+    TE likelihood using only the 90x220 spectrum.
+  * 'variant = TE_150x150' or 'spt_candl_data.SPT3G_D1_TE_150x150'  (data files located at: /home/ioannis/.local/lib/python3.10/site-packages/spt_candl_data/SPT3G_D1_TnE_v0/subsets/SPT3G_D1_TE_150x150.yaml)
+    TE likelihood using only the 150x150 spectrum.
+  * 'variant = TE_150x220' or 'spt_candl_data.SPT3G_D1_TE_150x220'  (data files located at: /home/ioannis/.local/lib/python3.10/site-packages/spt_candl_data/SPT3G_D1_TnE_v0/subsets/SPT3G_D1_TE_150x220.yaml)
+    TE likelihood using only the 150x220 spectrum.
+  * 'variant = TE_220x220' or 'spt_candl_data.SPT3G_D1_TE_220x220'  (data files located at: /home/ioannis/.local/lib/python3.10/site-packages/spt_candl_data/SPT3G_D1_TnE_v0/subsets/SPT3G_D1_TE_220x220.yaml)
+    TE likelihood using only the 220x220 spectrum.
+  * 'variant = EE_90x90' or 'spt_candl_data.SPT3G_D1_EE_90x90'  (data files located at: /home/ioannis/.local/lib/python3.10/site-packages/spt_candl_data/SPT3G_D1_TnE_v0/subsets/SPT3G_D1_EE_90x90.yaml)
+    EE likelihood using only the 90x90 spectrum.
+  * 'variant = EE_90x150' or 'spt_candl_data.SPT3G_D1_EE_90x150'  (data files located at: /home/ioannis/.local/lib/python3.10/site-packages/spt_candl_data/SPT3G_D1_TnE_v0/subsets/SPT3G_D1_EE_90x150.yaml)
+    EE likelihood using only the 90x150 spectrum.
+  * 'variant = EE_90x220' or 'spt_candl_data.SPT3G_D1_EE_90x220'  (data files located at: /home/ioannis/.local/lib/python3.10/site-packages/spt_candl_data/SPT3G_D1_TnE_v0/subsets/SPT3G_D1_EE_90x220.yaml)
+    EE likelihood using only the 90x220 spectrum.
+  * 'variant = EE_150x150' or 'spt_candl_data.SPT3G_D1_EE_150x150'  (data files located at: /home/ioannis/.local/lib/python3.10/site-packages/spt_candl_data/SPT3G_D1_TnE_v0/subsets/SPT3G_D1_EE_150x150.yaml)
+    EE likelihood using only the 150x220 spectrum.
+  * 'variant = EE_150x220' or 'spt_candl_data.SPT3G_D1_EE_150x220'  (data files located at: /home/ioannis/.local/lib/python3.10/site-packages/spt_candl_data/SPT3G_D1_TnE_v0/subsets/SPT3G_D1_EE_150x220.yaml)
+    EE likelihood using only the 150x150 spectrum.
+  * 'variant = EE_220x220' or 'spt_candl_data.SPT3G_D1_EE_220x220'  (data files located at: /home/ioannis/.local/lib/python3.10/site-packages/spt_candl_data/SPT3G_D1_TnE_v0/subsets/SPT3G_D1_EE_220x220.yaml)
+    EE likelihood using only the 220x220 spectrum.
+SPT-3G D1 BB: 'spt_candl_data.SPT3G_D1_BB'
+(data files located at: /home/ioannis/.local/lib/python3.10/site-packages/spt_candl_data/SPT3G_D1_BB_v0/SPT3G_D1_BB_BK_HL.yaml)
+
+SPT-focused shortcut rows
+- group=SPT-3G 2018 TT/TE/EE variant=index id=SPT3G_2018_TTTEEE expr=candl_data.SPT3G_2018_TTTEEE
+- group=SPT-3G 2018 TT/TE/EE variant=multifreq id=SPT3G_2018_TTTEEE_multifreq expr=candl_data.SPT3G_2018_TTTEEE_multifreq
+- group=SPT-3G 2018 TT/TE/EE variant=lite id=SPT3G_2018_TTTEEE_lite expr=candl_data.SPT3G_2018_TTTEEE_lite
+- group=SPT-3G 2018 Lensing variant=index id=SPT3G_2018_Lens expr=candl_data.SPT3G_2018_Lens
+- group=SPT-3G 2018 Lensing variant=lens_only id=SPT3G_2018_Lens_only expr=candl_data.SPT3G_2018_Lens_only
+- group=SPT-3G 2018 Lensing variant=use_cmb id=SPT3G_2018_Lens_and_CMB expr=candl_data.SPT3G_2018_Lens_and_CMB
+- group=SPTpol BB variant=index id=SPTpol_BB expr=candl_data.SPTpol_BB
+- group=SPTpol BB variant=multifreq id=SPTpol_BB_multifreq expr=candl_data.SPTpol_BB_multifreq
+- group=SPTpol BB variant=lite id=SPTpol_BB_lite expr=candl_data.SPTpol_BB_lite
+- group=SPT-3G D1 BB lite variant=index id=SPT3G_D1_BB_lite expr=candl_data.SPT3G_D1_BB_lite
+- group=SPT-3G D1 TnE variant=index id=SPT3G_D1_TnE expr=spt_candl_data.SPT3G_D1_TnE
+- group=SPT-3G D1 TnE variant=multifreq id=SPT3G_D1_TnE_multifreq expr=spt_candl_data.SPT3G_D1_TnE_multifreq
+- group=SPT-3G D1 TnE variant=lite id=SPT3G_D1_TnE_lite expr=spt_candl_data.SPT3G_D1_TnE_lite
+- group=SPT-3G D1 TnE variant=TT id=SPT3G_D1_TT expr=spt_candl_data.SPT3G_D1_TT
+- group=SPT-3G D1 TnE variant=TE id=SPT3G_D1_TE expr=spt_candl_data.SPT3G_D1_TE
+- group=SPT-3G D1 TnE variant=EE id=SPT3G_D1_EE expr=spt_candl_data.SPT3G_D1_EE
+- group=SPT-3G D1 TnE variant=TEEE id=SPT3G_D1_TEEE expr=spt_candl_data.SPT3G_D1_TEEE
+- group=SPT-3G D1 TnE variant=TTTE id=SPT3G_D1_TTTE expr=spt_candl_data.SPT3G_D1_TTTE
+- group=SPT-3G D1 TnE variant=90x90 id=SPT3G_D1_TnE_90x90 expr=spt_candl_data.SPT3G_D1_TnE_90x90
+- group=SPT-3G D1 TnE variant=90x150 id=SPT3G_D1_TnE_90x150 expr=spt_candl_data.SPT3G_D1_TnE_90x150
+- group=SPT-3G D1 TnE variant=90x220 id=SPT3G_D1_TnE_90x220 expr=spt_candl_data.SPT3G_D1_TnE_90x220
+- group=SPT-3G D1 TnE variant=150x150 id=SPT3G_D1_TnE_150x150 expr=spt_candl_data.SPT3G_D1_TnE_150x150
+- group=SPT-3G D1 TnE variant=150x220 id=SPT3G_D1_TnE_150x220 expr=spt_candl_data.SPT3G_D1_TnE_150x220
+- group=SPT-3G D1 TnE variant=220x220 id=SPT3G_D1_TnE_220x220 expr=spt_candl_data.SPT3G_D1_TnE_220x220
+- group=SPT-3G D1 TnE variant=TT_90x90 id=SPT3G_D1_TT_90x90 expr=spt_candl_data.SPT3G_D1_TT_90x90
+- group=SPT-3G D1 TnE variant=TT_90x150 id=SPT3G_D1_TT_90x150 expr=spt_candl_data.SPT3G_D1_TT_90x150
+- group=SPT-3G D1 TnE variant=TT_90x220 id=SPT3G_D1_TT_90x220 expr=spt_candl_data.SPT3G_D1_TT_90x220
+- group=SPT-3G D1 TnE variant=TT_150x150 id=SPT3G_D1_TT_150x150 expr=spt_candl_data.SPT3G_D1_TT_150x150
+- group=SPT-3G D1 TnE variant=TT_150x220 id=SPT3G_D1_TT_150x220 expr=spt_candl_data.SPT3G_D1_TT_150x220
+- group=SPT-3G D1 TnE variant=TT_220x220 id=SPT3G_D1_TT_220x220 expr=spt_candl_data.SPT3G_D1_TT_220x220
+- group=SPT-3G D1 TnE variant=TE_90x90 id=SPT3G_D1_TE_90x90 expr=spt_candl_data.SPT3G_D1_TE_90x90
+- group=SPT-3G D1 TnE variant=TE_90x150 id=SPT3G_D1_TE_90x150 expr=spt_candl_data.SPT3G_D1_TE_90x150
+- group=SPT-3G D1 TnE variant=TE_90x220 id=SPT3G_D1_TE_90x220 expr=spt_candl_data.SPT3G_D1_TE_90x220
+- group=SPT-3G D1 TnE variant=TE_150x150 id=SPT3G_D1_TE_150x150 expr=spt_candl_data.SPT3G_D1_TE_150x150
+- group=SPT-3G D1 TnE variant=TE_150x220 id=SPT3G_D1_TE_150x220 expr=spt_candl_data.SPT3G_D1_TE_150x220
+- group=SPT-3G D1 TnE variant=TE_220x220 id=SPT3G_D1_TE_220x220 expr=spt_candl_data.SPT3G_D1_TE_220x220
+- group=SPT-3G D1 TnE variant=EE_90x90 id=SPT3G_D1_EE_90x90 expr=spt_candl_data.SPT3G_D1_EE_90x90
+- group=SPT-3G D1 TnE variant=EE_90x150 id=SPT3G_D1_EE_90x150 expr=spt_candl_data.SPT3G_D1_EE_90x150
+- group=SPT-3G D1 TnE variant=EE_90x220 id=SPT3G_D1_EE_90x220 expr=spt_candl_data.SPT3G_D1_EE_90x220
+- group=SPT-3G D1 TnE variant=EE_150x150 id=SPT3G_D1_EE_150x150 expr=spt_candl_data.SPT3G_D1_EE_150x150
+- group=SPT-3G D1 TnE variant=EE_150x220 id=SPT3G_D1_EE_150x220 expr=spt_candl_data.SPT3G_D1_EE_150x220
+- group=SPT-3G D1 TnE variant=EE_220x220 id=SPT3G_D1_EE_220x220 expr=spt_candl_data.SPT3G_D1_EE_220x220
+- group=SPT-3G D1 BB variant=index id=SPT3G_D1_BB expr=spt_candl_data.SPT3G_D1_BB
+
+Best guess likelihood IDs
+- SPT2018: candl_data.SPT3G_2018_TTTEEE_multifreq
+- SPT D1: spt_candl_data.SPT3G_D1_TnE_multifreq

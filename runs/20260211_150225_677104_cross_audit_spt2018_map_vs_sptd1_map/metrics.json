@@ -1,0 +1,23 @@
+{
+  "runA": {
+    "path": "/home/repos/six-birds-neutrino/runs/20260211_150211_501395_spt2018_map",
+    "run_name": "spt2018_map"
+  },
+  "runB": {
+    "path": "/home/repos/six-birds-neutrino/runs/20260211_150212_741064_sptd1_map",
+    "run_name": "sptd1_map"
+  },
+  "lens_type": "candl",
+  "delta_chi2": {
+    "B_given_A": 2222.172359975601,
+    "A_given_B": 313.5678894802195
+  },
+  "blockwise": {
+    "B_given_A": {
+      "loglike_scalar": 2222.172359975601
+    },
+    "A_given_B": {
+      "loglike_scalar": 313.5678894802195
+    }
+  }
+}

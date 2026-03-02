@@ -1,0 +1,7 @@
+- run_bundle: /home/repos/six-birds-neutrino/runs/20260212_090307_577773_planck_install
+- packages_path: /home/repos/six-birds-neutrino/external/cobaya_packages
+- attempted: 4
+- succeeded: 4
+- failed: 0
+- succeeded_targets: ['planck_2018_lowl.TT', 'planck_2018_lowl.EE_sroll2', 'planck_2018_highl_plik.TT_lite_native', 'planckpr4lensing (fallback yaml install)']
+- failed_targets: []

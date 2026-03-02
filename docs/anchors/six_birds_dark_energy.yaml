@@ -1,0 +1,112 @@
+claims:
+  closure_first_dark_energy_interpretation:
+    summary: "Dark energy is framed as an operator rewrite required for macro closure under a chosen lens/completion."
+    citations: [cite_intro_route_mismatch, cite_rewrite_view]
+  scope_boundary_non_refutation:
+    summary: "The manuscript states it does not refute a fundamental cosmological constant; the claim is methodological/audit-oriented."
+    citations: [cite_scope_boundary]
+
+definitions:
+  packaging_operator:
+    label: "eq:packaging_def"
+    summary: "Defines packaging as E = U o f (Completion o Lens) on state space."
+    citations: [cite_packaging_def]
+  route_noncommutation_intro:
+    label: "eq:route_mismatch_intro"
+    summary: "Introduces noncommutation PackageOp o T != T o PackageOp."
+    citations: [cite_intro_route_mismatch]
+  idempotence_defect:
+    label: "eq:idempotence_defect"
+    summary: "State-space idempotence defect diagnostic for approximate packaging stability."
+    citations: [cite_idempotence_defect]
+  route_mismatch_diagnostic:
+    label: "eq:route_mismatch_def"
+    summary: "Defines RM(x) as distance between evolve-then-package and package-then-evolve routes."
+    citations: [cite_route_mismatch_def]
+  rewrite_condition:
+    label: "eq:rewrite_condition"
+    summary: "Operator rewrite condition PackageOp o T approx T_tilde o PackageOp."
+    citations: [cite_rewrite_view]
+  audit_train_estimator:
+    label: "eq:theta_hat_train"
+    summary: "Train-side estimator from minimizing chi-square on probe block A."
+    citations: [cite_audit_train]
+  audit_held_out_chi2:
+    label: "eq:chi2_test"
+    summary: "Held-out predictive discrepancy chi-square for block B given parameters fit on A."
+    citations: [cite_audit_chi2]
+  audit_rmse_metrics:
+    label: "eq:rmse_defs"
+    summary: "Defines unweighted and covariance-weighted held-out RMSE metrics."
+    citations: [cite_audit_rmse]
+
+datasets:
+  probe_split_protocol:
+    summary: "Audit protocol uses disjoint probe blocks (e.g., SN vs BAO, shear vs clustering+ggl) for train-test checks."
+    citations: [cite_audit_protocol]
+
+tables_figures:
+  "tab:p1p6_map":
+    summary: "P1-P6 mapping table used in this paper."
+    rows_of_interest:
+      packaging:
+        primitive: "P5"
+        row_summary: "Macro object as fixed point of PackageOp; FLRW fit interpreted as PackageOp = U o f."
+      staging:
+        primitive: "P4"
+        row_summary: "Dependence on lens scale/smoothing/scale cuts."
+      audit:
+        primitive: "P6"
+        row_summary: "PPD-style cross-probe fit/predict audits."
+    citations: [cite_p1p6_table]
+
+do_not_claim_novelty:
+  do_not_overclaim_fundamental_refutation:
+    summary: "The manuscript explicitly frames claims as closure/audit methodology, not a refutation of fundamental Lambda."
+    citations: [cite_scope_boundary]
+
+citations_local:
+  cite_intro_route_mismatch:
+    file: "docs/knowledge_base/2026_Ioannis_A_Six_Birds_Eye_View_of_Dark_Energy.tex"
+    section: "Introduction"
+    lines: "59-64"
+  cite_scope_boundary:
+    file: "docs/knowledge_base/2026_Ioannis_A_Six_Birds_Eye_View_of_Dark_Energy.tex"
+    section: "Introduction (Scope boundary)"
+    lines: "68-69"
+  cite_packaging_def:
+    file: "docs/knowledge_base/2026_Ioannis_A_Six_Birds_Eye_View_of_Dark_Energy.tex"
+    section: "Lens, completion, and packaging"
+    lines: "101-107"
+  cite_idempotence_defect:
+    file: "docs/knowledge_base/2026_Ioannis_A_Six_Birds_Eye_View_of_Dark_Energy.tex"
+    section: "Coherence: idempotence and route mismatch"
+    lines: "117-123"
+  cite_route_mismatch_def:
+    file: "docs/knowledge_base/2026_Ioannis_A_Six_Birds_Eye_View_of_Dark_Energy.tex"
+    section: "Coherence: idempotence and route mismatch"
+    lines: "134-140"
+  cite_rewrite_view:
+    file: "docs/knowledge_base/2026_Ioannis_A_Six_Birds_Eye_View_of_Dark_Energy.tex"
+    section: "Coherence: idempotence and route mismatch"
+    lines: "143-151"
+  cite_p1p6_table:
+    file: "docs/knowledge_base/2026_Ioannis_A_Six_Birds_Eye_View_of_Dark_Energy.tex"
+    section: "Six Birds (P1-P6) and their cosmology roles"
+    lines: "154-177"
+  cite_audit_protocol:
+    file: "docs/knowledge_base/2026_Ioannis_A_Six_Birds_Eye_View_of_Dark_Energy.tex"
+    section: "Posterior-predictive (PPD-style) audit protocol"
+    lines: "333-338"
+  cite_audit_train:
+    file: "docs/knowledge_base/2026_Ioannis_A_Six_Birds_Eye_View_of_Dark_Energy.tex"
+    section: "Posterior-predictive (PPD-style) audit protocol"
+    lines: "339-343"
+  cite_audit_chi2:
+    file: "docs/knowledge_base/2026_Ioannis_A_Six_Birds_Eye_View_of_Dark_Energy.tex"
+    section: "Posterior-predictive (PPD-style) audit protocol"
+    lines: "346-351"
+  cite_audit_rmse:
+    file: "docs/knowledge_base/2026_Ioannis_A_Six_Birds_Eye_View_of_Dark_Energy.tex"
+    section: "Posterior-predictive (PPD-style) audit protocol"
+    lines: "352-357"

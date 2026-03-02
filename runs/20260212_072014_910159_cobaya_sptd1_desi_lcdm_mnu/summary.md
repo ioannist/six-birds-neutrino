@@ -1,0 +1,6 @@
+- run_name: sptd1_desi_lcdm_mnu
+- config: /home/repos/six-birds-neutrino/configs/neutrino/sptd1_desi_lcdm_mnu.yaml
+- output_prefix: /home/repos/six-birds-neutrino/runs/20260212_072014_910159_cobaya_sptd1_desi_lcdm_mnu/chains/sptd1_desi_lcdm_mnu
+- cobaya_success: True
+- extraction_success: True
+- metrics_path: /home/repos/six-birds-neutrino/runs/20260212_072014_910159_cobaya_sptd1_desi_lcdm_mnu/metrics.json

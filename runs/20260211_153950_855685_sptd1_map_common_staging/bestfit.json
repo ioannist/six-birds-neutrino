@@ -1,0 +1,34 @@
+{
+  "theta_hat": {
+    "TT_tSZ_Amp": 1.2978962565321874,
+    "TT_kSZ_Amp": 1.8565830241075256
+  },
+  "theta_init": {
+    "TT_tSZ_Amp": 2.0,
+    "TT_kSZ_Amp": 2.0
+  },
+  "likelihood_id": "spt_candl_data.SPT3G_D1_TnE_multifreq",
+  "test_yaml": "/home/ioannis/.local/lib/python3.10/site-packages/spt_candl_data/tests/SPT3G_D1_TnE_test.yaml",
+  "ell_cuts": {
+    "TT": [
+      750.0,
+      3000.0
+    ],
+    "TE": [
+      400.0,
+      3000.0
+    ],
+    "EE": [
+      400.0,
+      3000.0
+    ]
+  },
+  "dataset_yaml_used": "/home/ioannis/.local/lib/python3.10/site-packages/spt_candl_data/SPT3G_D1_TnE_v0/SPT3G_D1_TnE.yaml",
+  "n_bins_total": 1392,
+  "n_bins_used": 1050,
+  "spectra_present": [
+    "EE",
+    "TE",
+    "TT"
+  ]
+}

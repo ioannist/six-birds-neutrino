@@ -1,0 +1,75 @@
+claims:
+  certificates_are_logically_distinct:
+    summary: "Stability, novelty, and directionality are explicitly separated; none implies the others by default."
+    citations: [cite_certificate_interoperability]
+  primitives_unavoidable_theorem_claim:
+    summary: "The theorem states P1-P6 arise canonically as closure mechanics under stated interface/refinement assumptions."
+    citations: [cite_meta_prim_theorem]
+
+definitions:
+  finite_theory_package_tuple:
+    label: "def:tk-theory-package"
+    summary: "Defines theory package tuple T = (Z, f, Sigma_f, E, A) and roles of lens, completion/packaging, and audit."
+    tuple:
+      - "Z"
+      - "f"
+      - "Sigma_f"
+      - "E"
+      - "A"
+    role_note: "Fixed points of E are the internally complete objects recognized at the chosen scale/lens."
+    citations: [cite_theory_package_definition]
+  idempotence_defect_tv:
+    label: "eq:tk-idem-def"
+    summary: "TV idempotence defect for a packaging/completion map E on distributions."
+    citations: [cite_idempotence_defect_tv]
+  route_mismatch_defect:
+    label: "eq:tk-rm"
+    summary: "Abstract route mismatch defect between direct two-step packaging and compositional route."
+    citations: [cite_route_mismatch_defect]
+  stability_not_novelty_guardrail:
+    label: "rem:tk-interoperability"
+    summary: "Guardrail explicitly states stability does not imply novelty; novelty does not imply directionality."
+    citations: [cite_certificate_interoperability]
+
+datasets:
+  not_applicable:
+    summary: "This anchors file targets formal definitions/theorems rather than empirical datasets."
+    citations: [cite_theory_package_definition]
+
+tables_figures:
+  theorem_anchor_meta_prim:
+    label: "thm:meta-prim"
+    summary: "Self-generated primitives theorem used as the local anchor for 'primitives are unavoidable.'"
+    short_meaning: "Under process+lens+refinement+bounded-interface assumptions, P1-P6 are structurally forced."
+    citations: [cite_meta_prim_theorem]
+
+do_not_claim_novelty:
+  open_endedness_requires_extension_not_iteration:
+    summary: "Open-endedness requires strict extension of definability/completion, not repeated iteration of a fixed completion."
+    citations: [cite_open_endedness_not_iteration]
+
+citations_local:
+  cite_certificate_interoperability:
+    file: "docs/knowledge_base/2026_Ioannis_Six_Birds.tex"
+    section: "Interoperability of certificates (toolkit safety)"
+    lines: "72-89"
+  cite_theory_package_definition:
+    file: "docs/knowledge_base/2026_Ioannis_Six_Birds.tex"
+    section: "A unified theory package viewpoint"
+    lines: "263-282"
+  cite_open_endedness_not_iteration:
+    file: "docs/knowledge_base/2026_Ioannis_Six_Birds.tex"
+    section: "A unified theory package viewpoint / minimal instantiation recipe"
+    lines: "257-259"
+  cite_idempotence_defect_tv:
+    file: "docs/knowledge_base/2026_Ioannis_Six_Birds.tex"
+    section: "Appendix E: Toolkit theory-defects"
+    lines: "1868-1875"
+  cite_route_mismatch_defect:
+    file: "docs/knowledge_base/2026_Ioannis_Six_Birds.tex"
+    section: "Appendix E: Toolkit theory-defects"
+    lines: "1887-1895"
+  cite_meta_prim_theorem:
+    file: "docs/knowledge_base/2026_Ioannis_Six_Birds.tex"
+    section: "Why the primitives are unavoidable"
+    lines: "1130-1148"

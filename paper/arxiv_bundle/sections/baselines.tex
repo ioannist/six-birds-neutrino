@@ -1,0 +1,48 @@
+\section{Data sets and baselines}
+\label{sec:baselines}
+
+Our goal is to isolate the effect of swapping one CMB \emph{lens} for another while holding fixed, as much as feasible, the rest of the ``baseline'' structure emphasized in \cite{arxiv2601_16277}. Throughout, we treat likelihood releases as lenses (pipeline likelihood objects), not as immutable ground truth. This section defines the two SPT lenses and the baseline dataset combinations used later for both audits and $\mnu$ inference.
+
+\subsection{SPT-3G lenses: 2018 vs D1}
+\label{sec:spt-lenses}
+
+We work with two SPT-3G multifrequency TT/TE/EE likelihood releases, treated as distinct lenses and evaluated through \texttt{candl} \cite{candl}:
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+  \item \textbf{SPT2018 lens:} SPT-3G 2018 TT/TE/EE likelihood \cite{spt3g2018_ttteee} (Candl ID \texttt{candl\_data.SPT3G\_2018\_TTTEEE\_multifreq}). The effective multipole ranges are TT $750\le \ell\le 3000$ and TE/EE $300\le \ell\le 3000$.
+  \item \textbf{SPT D1 lens:} SPT-3G D1 (2019--2020) TT/TE/EE likelihood \cite{spt3g_d1} (Candl ID \texttt{spt\_candl\_data.SPT3G\_D1\_TnE\_multifreq}). The effective multipole ranges are TT $400\le \ell\le 3000$ and TE/EE $400\le \ell\le 4000$.
+\end{itemize}
+These definitions and ranges follow the baseline description in \cite{arxiv2601_16277}.
+
+\subsection{Planck subset and PR4 lensing baseline}
+\label{sec:planck-subset}
+
+To match the structure of the ``CMB baseline'' used in \cite{arxiv2601_16277}, we implement a Planck PR3 subset together with Planck PR4 lensing \cite{planck2018_likelihood}:
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+  \item \textbf{Low-$\ell$ Planck PR3:} TT for $\ell<30$ and EE for $\ell<30$ (we use the \texttt{EE\_sroll2} variant available in Cobaya's Planck likelihood family).
+  \item \textbf{Truncated high-$\ell$ Planck PR3 TT:} TT only for $30\le \ell\le 756$ via \texttt{planck\_2018\_highl\_plik.TT\_lite\_native} with \texttt{bins\_for\_L\_range=[30,756]}.
+  \item \textbf{No Planck high-$\ell$ TE/EE:} in accordance with \cite{arxiv2601_16277}, we do not include high-$\ell$ Planck TE/EE likelihoods.
+  \item \textbf{Planck PR4 lensing:} we include the public PR4 (NPIPE) lensing likelihood via \texttt{planckpr4lensing.PlanckPR4Lensing} \cite{planck_pr4_lensing,planck_pr4_lensing_maps}.
+\end{itemize}
+We emphasize that this is an operational baseline intended to match the selection described in \cite{arxiv2601_16277}; it is not the full Planck 2018 likelihood \cite{planck2018_cosmoparams}.
+
+A compact summary of the two CMB baselines used throughout is given in Table~\ref{tab:baseline-defs}.
+
+\begin{table}[t]
+  \centering
+  \caption{Baseline definitions as described in \cite{arxiv2601_16277} (CMB and CMB-D1). In our implementation we match the Planck-subset + PR4 lensing structure and swap only the SPT TT/TE/EE likelihood release; see text for any deviations.}
+  \label{tab:baseline-defs}
+  \small
+  \input{tables/tab_baseline_defs.tex}
+\end{table}
+
+Implementation note: our runs use the released SPT TT/TE/EE likelihood objects for SPT2018 and D1, together with the Planck subset and Planck PR4 lensing. We do not include a separate SPT lensing-reconstruction likelihood component. Therefore, our ``Planck-subset baseline'' should be read as matching the Planck selection in \cite{arxiv2601_16277} while only partially matching their CMB baseline composition; this is a plausible contributor to residual numerical differences in $\mnu$ bounds.
+
+\subsection{DESI DR2 BAO likelihood}
+\label{sec:desi-bao}
+
+For BAO, we implement a Gaussian likelihood for DESI DR2 BAO using the publicly documented DR2 BAO mean vectors and covariance matrices \cite{desi_dr2_bao_docs,bao_data_v26,desi_dr2_results_ii_bao,desi_dr2_results_i_lya}. The implemented observable vector includes $(D_M/r_d)$, $(D_H/r_d)$, and $(D_V/r_d)$ points from the DR2 Gaussian BAO compression for the ``ALL'' combined set \cite{desi_dr2_bao_docs,bao_data_v26,eisenstein2005_baopeak}. This combined set includes low-redshift galaxy BAO and Ly$\alpha$ forest BAO points, so our ``ALL'' vector is not purely galaxy BAO. Theory predictions are computed from the same cosmological backend used for CMB inference (\cref{sec:mnu-inference}).
+
+\subsection{Non-novelty note: pipeline reprocessing diagnostic}
+\label{sec:non-novelty}
+
+The baseline-swap sensitivity highlighted in \cite{arxiv2601_16277} naturally motivates a decisive diagnostic: reprocessing the 2018 raw data through the D1 pipeline to separate sky information from pipeline effects. We explicitly acknowledge that this diagnostic is already emphasized in \cite{arxiv2601_16277}; we do not claim novelty for proposing it. Our focus here is complementary: we provide a packaging/audit framework and a set of concrete, localizable metrics that quantify and stage-control the lens mismatch in the packaged likelihood objects available today.

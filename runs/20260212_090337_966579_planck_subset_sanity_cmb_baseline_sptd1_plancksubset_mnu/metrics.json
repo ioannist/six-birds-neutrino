@@ -1,0 +1,46 @@
+{
+  "config": "/home/repos/six-birds-neutrino/configs/neutrino/cmb_baseline_sptd1_plancksubset_mnu.yaml",
+  "packages_path": "/home/repos/six-birds-neutrino/external/cobaya_packages",
+  "planck_components": {
+    "planck_2018_lowl.TT": {
+      "component": "planck_2018_lowl.TT",
+      "class": "cobaya.likelihoods.planck_2018_lowl.TT.TT",
+      "spectra": [],
+      "lmin": 2,
+      "lmax": 29
+    },
+    "planck_2018_lowl.EE_sroll2": {
+      "component": "planck_2018_lowl.EE_sroll2",
+      "class": "cobaya.likelihoods.planck_2018_lowl.EE_sroll2.EE_sroll2",
+      "spectra": [],
+      "lmin": 2,
+      "lmax": 29
+    },
+    "planck_2018_highl_plik.TT_lite_native": {
+      "component": "planck_2018_highl_plik.TT_lite_native",
+      "class": "cobaya.likelihoods.planck_2018_highl_plik.TT_lite_native.TT_lite_native",
+      "spectra": [
+        "TT"
+      ],
+      "lmin": 30,
+      "lmax": 756,
+      "n_used_bins": 87
+    },
+    "planckpr4lensing.PlanckPR4Lensing": {
+      "component": "planckpr4lensing.PlanckPR4Lensing",
+      "class": "planckpr4lensing.planckpr4lensing.PlanckPR4Lensing",
+      "spectra": [
+        "PP"
+      ],
+      "lmax": 2500
+    }
+  },
+  "loglike_components": {
+    "sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": -691.6092703725003,
+    "planck_2018_lowl.TT": -11.745820672134812,
+    "planck_2018_lowl.EE_sroll2": -194.9965502898371,
+    "planck_2018_highl_plik.TT_lite_native": -34.76917372836813,
+    "planckpr4lensing.PlanckPR4Lensing": -4.364577386581316
+  },
+  "loglike_total": -937.4853924494219
+}

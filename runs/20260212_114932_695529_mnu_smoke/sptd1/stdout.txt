@@ -1,0 +1,19 @@
+[output] Output to be read-from/written-into folder '/home/repos/six-birds-neutrino/runs/20260212_114932_695529_mnu_smoke/sptd1/chains', with prefix 'sptd1_lcdm_mnu'
+[camb] `camb` module loaded successfully from /home/ioannis/.local/lib/python3.10/site-packages/camb
+[mcmc] *WARNING* This run has been SEEDED with seed 0
+[mcmc] Getting initial point... (this may take a few seconds)
+[mcmc] Initial point: omegabh2:0.0224, omegach2:0.12, H0:67, logA:3.05, ns:0.965, tau:0.055, mnu:0.1
+[model] Measuring speeds... (this may take a few seconds)
+[model] Setting measured speeds (per sec): {sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood: 13.9, camb.transfers: 6.84, camb: 0.364}
+[mcmc] Sampling!
+[mcmc] Progress @ 2026-02-12 11:55:06 : 1 steps taken, and 0 accepted.
+[mcmc] Progress @ 2026-02-12 11:56:08 : 62 steps taken, and 2 accepted.
+[mcmc] Progress @ 2026-02-12 11:57:09 : 113 steps taken, and 4 accepted.
+[mcmc] Progress @ 2026-02-12 11:58:11 : 163 steps taken, and 8 accepted.
+[mcmc] Progress @ 2026-02-12 11:59:13 : 208 steps taken, and 12 accepted.
+[mcmc] Progress @ 2026-02-12 12:00:13 : 264 steps taken, and 16 accepted.
+[mcmc] Progress @ 2026-02-12 12:01:14 : 338 steps taken, and 20 accepted.
+[mcmc] Progress @ 2026-02-12 12:02:14 : 402 steps taken, and 21 accepted.
+[mcmc] Progress @ 2026-02-12 12:03:14 : 459 steps taken, and 24 accepted.
+[mcmc] Reached maximum number of accepted steps allowed (25). Stopping.
+[mcmc] Sampling complete after 25 accepted steps.

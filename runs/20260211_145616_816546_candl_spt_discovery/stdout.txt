@@ -1,0 +1,19 @@
+run_bundle: /home/repos/six-birds-neutrino/runs/20260211_145616_816546_candl_spt_discovery
+candl_importable=True
+candl_data_importable=True
+spt_candl_data_importable=True
+camb_importable=True
+classy_importable=True
+cobaya_importable=True
+spt2018_id=candl_data.SPT3G_2018_TTTEEE_multifreq
+sptd1_id=spt_candl_data.SPT3G_D1_TnE_multifreq
+spt2018: like=SPT-3G 2018 TT/TE/EE (Balkenhol et al. 2023)
+spt2018: test_yaml=/home/ioannis/.local/lib/python3.10/site-packages/candl_data/tests/SPT3G_2018_TTTEEE.yaml
+spt2018: chi2=1528.8739637258693
+spt2018: loglike=-1336.1606429493984
+spt2018: finite=True
+sptd1: like=SPT-3G D1 TnE (Camphuis et al. 2025, Quan et al. 2025)
+sptd1: test_yaml=/home/ioannis/.local/lib/python3.10/site-packages/spt_candl_data/tests/SPT3G_D1_TnE_test.yaml
+sptd1: chi2=1373.2802544894303
+sptd1: loglike=-690.2754524216625
+sptd1: finite=True

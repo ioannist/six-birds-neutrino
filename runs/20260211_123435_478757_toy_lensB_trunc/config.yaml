@@ -1,0 +1,20 @@
+run_name: "toy_lensB_trunc"
+lens:
+  type: "gaussian"
+  params: ["x1", "x2"]
+  mean: [0.05, 0.15]
+  cov:
+    - [0.0400, 0.0080]
+    - [0.0080, 0.0800]
+parameters:
+  x1:
+    initial: 0.00
+    bounds: [0.0, 1.0]
+  x2:
+    initial: 0.00
+    bounds: [-1.0, 1.0]
+optimizer:
+  method: "L-BFGS-B"
+  tol: 1.0e-12
+  options:
+    maxiter: 2000

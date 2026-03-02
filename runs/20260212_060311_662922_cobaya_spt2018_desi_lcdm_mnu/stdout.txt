@@ -1,0 +1,55 @@
+[output] Output to be read-from/written-into folder '/home/repos/six-birds-neutrino/runs/20260212_060311_662922_cobaya_spt2018_desi_lcdm_mnu/chains', with prefix 'spt2018_desi_lcdm_mnu'
+[camb] `camb` module loaded successfully from /home/ioannis/.local/lib/python3.10/site-packages/camb
+[mcmc] *WARNING* This run has been SEEDED with seed 0
+[mcmc] Getting initial point... (this may take a few seconds)
+[mcmc] Initial point: omegabh2:0.0224, omegach2:0.12, H0:67, logA:3.05, ns:0.965, tau:0.055, mnu:0.1
+[model] Measuring speeds... (this may take a few seconds)
+[model] Setting measured speeds (per sec): {sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood: 46.5, sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian: 1360.0, camb.transfers: 6.76, camb: 0.34}
+[mcmc] Covariance matrix not present. We will start learning the covariance of the proposal earlier: R-1 = 30 (would be 2 if all params loaded).
+[mcmc] Sampling!
+[mcmc] Progress @ 2026-02-12 06:03:28 : 1 steps taken, and 0 accepted.
+[mcmc] Progress @ 2026-02-12 06:04:30 : 25 steps taken, and 1 accepted.
+[mcmc] Progress @ 2026-02-12 06:05:32 : 47 steps taken, and 5 accepted.
+[mcmc] Progress @ 2026-02-12 06:06:33 : 70 steps taken, and 11 accepted.
+[mcmc] Progress @ 2026-02-12 06:07:34 : 90 steps taken, and 14 accepted.
+[mcmc] Progress @ 2026-02-12 06:08:37 : 110 steps taken, and 17 accepted.
+[mcmc] Progress @ 2026-02-12 06:09:39 : 130 steps taken, and 20 accepted.
+[mcmc] Progress @ 2026-02-12 06:10:40 : 149 steps taken, and 22 accepted.
+[mcmc] Progress @ 2026-02-12 06:11:42 : 170 steps taken, and 24 accepted.
+[mcmc] Progress @ 2026-02-12 06:12:44 : 191 steps taken, and 27 accepted.
+[mcmc] Progress @ 2026-02-12 06:13:44 : 210 steps taken, and 28 accepted.
+[mcmc] Progress @ 2026-02-12 06:14:47 : 230 steps taken, and 29 accepted.
+[mcmc] Progress @ 2026-02-12 06:15:49 : 253 steps taken, and 34 accepted.
+[mcmc] Progress @ 2026-02-12 06:16:51 : 275 steps taken, and 35 accepted.
+[mcmc] Progress @ 2026-02-12 06:17:52 : 294 steps taken, and 37 accepted.
+[mcmc] Progress @ 2026-02-12 06:18:54 : 318 steps taken, and 41 accepted.
+[mcmc] Progress @ 2026-02-12 06:19:56 : 343 steps taken, and 41 accepted.
+[mcmc] Progress @ 2026-02-12 06:20:59 : 366 steps taken, and 42 accepted.
+[mcmc] Progress @ 2026-02-12 06:21:59 : 391 steps taken, and 43 accepted.
+[mcmc] Progress @ 2026-02-12 06:23:02 : 416 steps taken, and 44 accepted.
+[mcmc] Progress @ 2026-02-12 06:24:04 : 441 steps taken, and 47 accepted.
+[mcmc] Progress @ 2026-02-12 06:25:05 : 467 steps taken, and 48 accepted.
+[mcmc] Progress @ 2026-02-12 06:26:07 : 489 steps taken, and 52 accepted.
+[mcmc] Progress @ 2026-02-12 06:27:09 : 514 steps taken, and 52 accepted.
+[mcmc] Progress @ 2026-02-12 06:28:12 : 542 steps taken, and 52 accepted.
+[mcmc] Progress @ 2026-02-12 06:29:13 : 564 steps taken, and 53 accepted.
+[mcmc] Progress @ 2026-02-12 06:30:14 : 598 steps taken, and 54 accepted.
+[mcmc] Progress @ 2026-02-12 06:31:15 : 628 steps taken, and 55 accepted.
+[mcmc] Progress @ 2026-02-12 06:32:17 : 655 steps taken, and 57 accepted.
+[mcmc] Progress @ 2026-02-12 06:33:19 : 730 steps taken, and 62 accepted.
+[mcmc] Progress @ 2026-02-12 06:34:19 : 788 steps taken, and 67 accepted.
+[mcmc] Progress @ 2026-02-12 06:35:19 : 849 steps taken, and 70 accepted.
+[mcmc] Progress @ 2026-02-12 06:36:21 : 907 steps taken, and 76 accepted.
+[mcmc] Progress @ 2026-02-12 06:37:21 : 954 steps taken, and 81 accepted.
+[mcmc] Progress @ 2026-02-12 06:38:22 : 987 steps taken, and 83 accepted.
+[mcmc] Progress @ 2026-02-12 06:39:23 : 1052 steps taken, and 87 accepted.
+[mcmc] Progress @ 2026-02-12 06:40:24 : 1110 steps taken, and 92 accepted.
+[mcmc] Progress @ 2026-02-12 06:41:26 : 1165 steps taken, and 93 accepted.
+[mcmc] Progress @ 2026-02-12 06:42:26 : 1204 steps taken, and 97 accepted.
+[mcmc] Progress @ 2026-02-12 06:43:27 : 1262 steps taken, and 99 accepted.
+[mcmc] Progress @ 2026-02-12 06:44:28 : 1329 steps taken, and 102 accepted.
+[mcmc] Progress @ 2026-02-12 06:45:30 : 1386 steps taken, and 106 accepted.
+[mcmc] Progress @ 2026-02-12 06:46:33 : 1440 steps taken, and 113 accepted.
+[mcmc] Progress @ 2026-02-12 06:47:33 : 1504 steps taken, and 117 accepted.
+[mcmc] Reached maximum number of accepted steps allowed (120). Stopping.
+[mcmc] Sampling complete after 120 accepted steps.

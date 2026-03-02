@@ -1,0 +1,20 @@
+run_name: "spt2018_map_fullnuis"
+lens:
+  type: "candl"
+  likelihood_id: "candl_data.SPT3G_2018_TTTEEE_multifreq"
+parameters:
+  strategy: "candl_defaults"
+  free:
+    mode: "all_nuisance"
+    include: []
+    exclude: []
+  bounds:
+    TT_tSZ_Amp: [0.0, 10.0]
+    TT_kSZ_Amp: [0.0, 10.0]
+optimizer:
+  method: "L-BFGS-B"
+  tol: 1.0e-10
+  options:
+    maxiter: 5000
+    maxfun: 200000
+    gtol: 1000000.0

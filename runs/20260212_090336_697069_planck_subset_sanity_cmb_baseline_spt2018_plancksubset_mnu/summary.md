@@ -1,0 +1,4 @@
+- run_bundle: /home/repos/six-birds-neutrino/runs/20260212_090336_697069_planck_subset_sanity_cmb_baseline_spt2018_plancksubset_mnu
+- config: /home/repos/six-birds-neutrino/configs/neutrino/cmb_baseline_spt2018_plancksubset_mnu.yaml
+- planck_components_n: 4
+- loglike_total: -1559.195202608062

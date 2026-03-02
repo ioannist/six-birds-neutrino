@@ -1,0 +1,5 @@
+We investigate a lens-swap instability in cosmological neutrino-mass inference highlighted by arXiv:2601.16277. Replacing the SPT-3G 2018 TT/TE/EE likelihood with SPT-3G D1, while keeping the rest of the setup matched, can tighten constraints on the summed neutrino mass (sum m_nu).
+
+We treat this as a packaging-stability problem and run directional cross-lens audits, localization by spectrum and multipole, and a common-staging support control. The mismatch is large and asymmetric, remains after profiling, and is concentrated in high-l TT structure within overlap. Staging changes are small, so support differences alone do not explain the effect.
+
+Under DESI DR2 BAO, the D1 swap tightens the 95 percent upper bound on sum m_nu in both tested baselines, with a larger shift in SPT-only plus DESI and a smaller shift in the Planck-subset baseline plus DESI. We present an audit-first, reproducible diagnosis of likelihood disagreement, not a claim of pipeline root cause or a definitive sum m_nu value.

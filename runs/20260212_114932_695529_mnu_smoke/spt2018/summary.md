@@ -1,0 +1,6 @@
+- run_name: spt2018_lcdm_mnu
+- config: /home/repos/six-birds-neutrino/configs/neutrino/spt2018_lcdm_mnu.yaml
+- output_prefix: /home/repos/six-birds-neutrino/runs/20260212_114932_695529_mnu_smoke/spt2018/chains/spt2018_lcdm_mnu
+- cobaya_success: True
+- extraction_success: True
+- metrics_path: /home/repos/six-birds-neutrino/runs/20260212_114932_695529_mnu_smoke/spt2018/metrics.json

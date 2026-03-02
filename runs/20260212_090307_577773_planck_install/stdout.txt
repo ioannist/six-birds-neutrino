@@ -1,0 +1,81 @@
+=== target: planck_2018_lowl.TT rc=0 ===
+[install] Installing external packages at '/home/repos/six-birds-neutrino/external/cobaya_packages'
+
+================================================================================
+planck_2018_lowl.TT
+================================================================================
+
+[install] Checking if dependencies have already been installed...
+[install] External dependencies for this component already installed.
+[install] Doing nothing.
+
+================================================================================
+* Summary * 
+================================================================================
+
+[install] All requested components' dependencies correctly installed at /home/repos/six-birds-neutrino/external/cobaya_packages
+=== target: planck_2018_lowl.EE_sroll2 rc=0 ===
+[install] Installing external packages at '/home/repos/six-birds-neutrino/external/cobaya_packages'
+
+================================================================================
+planck_2018_lowl.EE_sroll2
+================================================================================
+
+[install] Checking if dependencies have already been installed...
+[install] External dependencies for this component already installed.
+[install] Doing nothing.
+
+================================================================================
+* Summary * 
+================================================================================
+
+[install] All requested components' dependencies correctly installed at /home/repos/six-birds-neutrino/external/cobaya_packages
+=== target: planck_2018_highl_plik.TT_lite_native rc=0 ===
+[install] Installing external packages at '/home/repos/six-birds-neutrino/external/cobaya_packages'
+
+================================================================================
+planck_2018_highl_plik.TT_lite_native
+================================================================================
+
+[install] Checking if dependencies have already been installed...
+[install] External dependencies for this component already installed.
+[install] Doing nothing.
+
+================================================================================
+* Summary * 
+================================================================================
+
+[install] All requested components' dependencies correctly installed at /home/repos/six-birds-neutrino/external/cobaya_packages
+=== target: planckpr4lensing (fallback yaml install) rc=1 verified=True ===
+[install] Installing external packages at '/home/repos/six-birds-neutrino/external/cobaya_packages'
+
+================================================================================
+likelihood:planckpr4lensing
+================================================================================
+
+[install] *ERROR* 'planckpr4lensing' could not be found. Tried loading external classes. No component path was given.
+[install] Downloading code from github (carronj/planck_PR4_lensing)
+[install] Downloaded filename planck_PR4_lensing-main.tar.gz
+[install] planck_PR4_lensing main downloaded and decompressed correctly.
+[install] pip installing .
+[install] *ERROR* 'planckpr4lensing' could not be found. Tried loading external classes. No component path was given.
+[install] *ERROR* Component 'likelihood:planckpr4lensing' could not be identified. Skipping.
+
+================================================================================
+* Summary * 
+================================================================================
+
+[install] *ERROR* The following components could not be identified and were skipped:
+ - likelihood:planckpr4lensing: did you mean any of the following? {'likelihood': ['planck_2018_lensing.clik', 'planck_2018_lensing.native', 'planck_2018_lensing.CMBMarged']} (mind capitalization!)
+[exception handler] ---------------------------------------
+
+Traceback (most recent call last):
+  File "/home/ioannis/.local/bin/cobaya-install", line 8, in <module>
+    sys.exit(install_script())
+  File "/home/ioannis/.local/lib/python3.10/site-packages/cobaya/install.py", line 845, in install_script
+    install(
+  File "/home/ioannis/.local/lib/python3.10/site-packages/cobaya/install.py", line 444, in install
+    raise LoggedError(
+cobaya.log.LoggedError: The following components could not be identified and were skipped:
+ - likelihood:planckpr4lensing: did you mean any of the following? {'likelihood': ['planck_2018_lensing.clik', 'planck_2018_lensing.native', 'planck_2018_lensing.CMBMarged']} (mind capitalization!)
+-------------------------------------------------------------

@@ -1,0 +1,173 @@
+[F1] run_dir=runs/20260211_145014_232068_candl_install_verify
+[F1] python=Python 3.10.12
+[F1] pip=pip 22.0.2 from /usr/lib/python3/dist-packages/pip (python 3.10)
+[F1] uninstalling wrong candl
+Found existing installation: candl 0.0.7
+Uninstalling candl-0.0.7:
+  Successfully uninstalled candl-0.0.7
+[F1] installing candl-like
+Defaulting to user installation because normal site-packages is not writeable
+Collecting candl-like
+  Downloading candl_like-2.2.0-py3-none-any.whl (87 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 87.7/87.7 KB 4.0 MB/s eta 0:00:00
+Collecting clipy-like>=0.11
+  Downloading clipy_like-0.15-py3-none-any.whl (41 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 41.4/41.4 KB 14.0 MB/s eta 0:00:00
+Requirement already satisfied: matplotlib>=3.7.1 in /home/ioannis/.local/lib/python3.10/site-packages (from candl-like) (3.10.8)
+Requirement already satisfied: numpy>=1.23.5 in /home/ioannis/.local/lib/python3.10/site-packages (from candl-like) (2.2.6)
+Requirement already satisfied: pyyaml>=6.0 in /home/ioannis/.local/lib/python3.10/site-packages (from candl-like) (6.0.3)
+Requirement already satisfied: scipy>=1.10.1 in /home/ioannis/.local/lib/python3.10/site-packages (from candl-like) (1.15.3)
+Requirement already satisfied: astropy>=2.0 in /home/ioannis/.local/lib/python3.10/site-packages (from clipy-like>=0.11->candl-like) (6.1.7)
+Requirement already satisfied: pillow>=8 in /home/ioannis/.local/lib/python3.10/site-packages (from matplotlib>=3.7.1->candl-like) (12.1.0)
+Requirement already satisfied: pyparsing>=3 in /home/ioannis/.local/lib/python3.10/site-packages (from matplotlib>=3.7.1->candl-like) (3.3.1)
+Requirement already satisfied: python-dateutil>=2.7 in /usr/local/lib/python3.10/dist-packages (from matplotlib>=3.7.1->candl-like) (2.9.0.post0)
+Requirement already satisfied: fonttools>=4.22.0 in /home/ioannis/.local/lib/python3.10/site-packages (from matplotlib>=3.7.1->candl-like) (4.61.1)
+Requirement already satisfied: cycler>=0.10 in /home/ioannis/.local/lib/python3.10/site-packages (from matplotlib>=3.7.1->candl-like) (0.12.1)
+Requirement already satisfied: packaging>=20.0 in /usr/local/lib/python3.10/dist-packages (from matplotlib>=3.7.1->candl-like) (25.0)
+Requirement already satisfied: kiwisolver>=1.3.1 in /home/ioannis/.local/lib/python3.10/site-packages (from matplotlib>=3.7.1->candl-like) (1.4.9)
+Requirement already satisfied: contourpy>=1.0.1 in /home/ioannis/.local/lib/python3.10/site-packages (from matplotlib>=3.7.1->candl-like) (1.3.2)
+Requirement already satisfied: pyerfa>=2.0.1.1 in /home/ioannis/.local/lib/python3.10/site-packages (from astropy>=2.0->clipy-like>=0.11->candl-like) (2.0.1.5)
+Requirement already satisfied: astropy-iers-data>=0.2024.10.28.0.34.7 in /home/ioannis/.local/lib/python3.10/site-packages (from astropy>=2.0->clipy-like>=0.11->candl-like) (0.2026.2.2.0.48.1)
+Requirement already satisfied: six>=1.5 in /usr/lib/python3/dist-packages (from python-dateutil>=2.7->matplotlib>=3.7.1->candl-like) (1.16.0)
+Installing collected packages: clipy-like, candl-like
+Successfully installed candl-like-2.2.0 clipy-like-0.15
+[F1] installing candl_data
+Defaulting to user installation because normal site-packages is not writeable
+Collecting git+https://github.com/Lbalkenhol/candl_data.git
+  Cloning https://github.com/Lbalkenhol/candl_data.git to /tmp/pip-req-build-u50zzr7m
+  Running command git clone --filter=blob:none --quiet https://github.com/Lbalkenhol/candl_data.git /tmp/pip-req-build-u50zzr7m
+  Resolved https://github.com/Lbalkenhol/candl_data.git to commit c4eb8fbc5b0eb259ba487494b3cff918eac5c47a
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: candl_data
+  Building wheel for candl_data (pyproject.toml): started
+  Building wheel for candl_data (pyproject.toml): finished with status 'done'
+  Created wheel for candl_data: filename=candl_data-2.0.0-py3-none-any.whl size=72743529 sha256=4921397c71251416cba1bc7d5d7ab5614a664d0651bc608a0cffa7c2a4d818f5
+  Stored in directory: /tmp/pip-ephem-wheel-cache-rons4zxw/wheels/42/f3/d1/6943f4a6f249b3d647a03125a26fed92aa4c7c1cf70f323cb6
+Successfully built candl_data
+Installing collected packages: candl_data
+Successfully installed candl_data-2.0.0
+[F1] installing spt_candl_data
+Defaulting to user installation because normal site-packages is not writeable
+Collecting git+https://github.com/SouthPoleTelescope/spt_candl_data.git
+  Cloning https://github.com/SouthPoleTelescope/spt_candl_data.git to /tmp/pip-req-build-994i4224
+  Running command git clone --filter=blob:none --quiet https://github.com/SouthPoleTelescope/spt_candl_data.git /tmp/pip-req-build-994i4224
+  Resolved https://github.com/SouthPoleTelescope/spt_candl_data.git to commit bfe809a140087d19412aa6bc8c8d4ba18840b315
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: spt_candl_data
+  Building wheel for spt_candl_data (pyproject.toml): started
+  Building wheel for spt_candl_data (pyproject.toml): finished with status 'done'
+  Created wheel for spt_candl_data: filename=spt_candl_data-2.0.0-py3-none-any.whl size=156627466 sha256=b85207209c9dc2c1a683f63862255111e91e3659b7c689fb4a69c5166649784e
+  Stored in directory: /tmp/pip-ephem-wheel-cache-u8nn1mhs/wheels/55/f9/d0/8b388b3f5a258a68b22df5ef4a6aaf9c248ee8fe33da92a3a2
+Successfully built spt_candl_data
+Installing collected packages: spt_candl_data
+Successfully installed spt_candl_data-2.0.0
+[F1] final pip show
+WARNING: Package(s) not found: candl
+Name: candl-like
+Version: 2.2.0
+Summary: Differentiable Likelihood for CMB Analysis
+Home-page: 
+Author: 
+Author-email: "L. Balkenhol" <lennart.balkenhol@iap.fr>, "C. Trendafilova" <ctrendaf@illinois.edu>, "K. Benabed" <benabed@iap.fr>, "S. Galli" <gallis@iap.fr>
+License: 
+Location: /home/ioannis/.local/lib/python3.10/site-packages
+Requires: clipy-like, matplotlib, numpy, pyyaml, scipy
+Required-by: 
+---
+Name: candl_data
+Version: 2.0.0
+Summary: Data for candl, the differentiable likelihood for CMB analysis
+Home-page: 
+Author: 
+Author-email: "L. Balkenhol" <lennart.balkenhol@iap.fr>, "C. Trendafilova" <ctrendaf@illinois.edu>, "K. Benabed" <benabed@iap.fr>, "S. Galli" <gallis@iap.fr>
+License: 
+Location: /home/ioannis/.local/lib/python3.10/site-packages
+Requires: 
+Required-by: 
+---
+Name: spt_candl_data
+Version: 2.0.0
+Summary: Data for candl, the differentiable likelihood for CMB analysis
+Home-page: 
+Author: 
+Author-email: 
+License: 
+Location: /home/ioannis/.local/lib/python3.10/site-packages
+Requires: 
+Required-by: 
+[F1 verify] versions:
+  candl-like: 2.2.0
+  candl_data: 2.0.0
+  spt_candl_data: 2.0.0
+[F1 verify] candl import OK: /home/ioannis/.local/lib/python3.10/site-packages/candl/__init__.py
+[F1 verify] candl_data import OK: /home/ioannis/.local/lib/python3.10/site-packages/candl_data/__init__.py
+[F1 verify] candl_data shortcuts object found; count=7
+[F1 verify] running candl_data.run_all_tests() ...
+Test passed for SPT-3G 2018 TT/TE/EE (Balkenhol et al. 2023):
+  (relative difference = -0.0)!
+Test passed for SPTpol BB lite (Balkenhol et al. 2025 based on Sayre et al. 2019):
+  (relative difference = 0.0)!
+Test passed for SPT-3G 2018 PP, CMB corr. (Pan et al. 2023):
+  (relative difference = -0.0)!
+Test passed for SPTpol BB (Sayre et al. 2019):
+  (relative difference = -7.6e-05)!
+Test passed for ACT DR4 TT/TE/EE (Choi et al. 2020, Aiola et al. 2020):
+  (relative difference = 1e-06)!
+Test passed for SPT-3G 2018 PP (Pan et al. 2023):
+  (relative difference = 0.0)!
+Test passed for ACT DR6 PP (Madhavacheril et al. 2023, Qu et al. 2023, Carron et al. 2023):
+  (relative difference = -0.0)!
+Test passed for SPT-3G 2018 TT/TE/EE (lite):
+  (relative difference = 0.0)!
+Test passed for ACT DR6 PP, CMB corr. (Madhavacheril et al. 2023, Qu et al. 2023, Carron et al. 2023):
+  (relative difference = -1e-06)!
+Test passed for SPT-3G D1 BB lite (Balkenhol et al. 2025 based on Zebrowski et al. 2025):
+  (relative difference = -0.0)!
+Test passed for ACT DR6 TT/TE/EE CMB only likelihood (Naess et al. 2025, Louis et al. 2025, Calabrese et al. 2025):
+  (relative difference = -0.0)!
+[F1 verify] candl_data.run_all_tests() succeeded, return=None
+[F1 verify] spt_candl_data import OK: /home/ioannis/.local/lib/python3.10/site-packages/spt_candl_data/__init__.py
+[F1 verify] spt_candl_data shortcuts object found; count=2
+[F1 verify] running spt_candl_data.run_all_tests() ...
+Test passed for SPT-3G D1 TnE, SPTlite (Camphuis et al. 2025, Quan et al. 2025):
+  (relative difference = 0.0)!
+Test passed for SPT-3G D1 BB (Zebrowski et al. 2025):
+  (relative difference = -0.0)!
+Test passed for SPT-3G D1 TnE (Camphuis et al. 2025, Quan et al. 2025):
+  (relative difference = 0.000181)!
+[F1 verify] spt_candl_data.run_all_tests() succeeded, return=None
+[F1 verify] wrote runs/20260211_145014_232068_candl_install_verify/metrics.json
+[F1 verify] candl_data shortcuts (7):
+  - ACT DR4 TT/TE/EE
+  - ACT DR6 Lensing
+  - ACT DR6 TT/TE/EE
+  - SPT-3G 2018 Lensing
+  - SPT-3G 2018 TT/TE/EE
+  - SPT-3G D1 BB lite
+  - SPTpol BB
+[F1 verify] spt_candl_data shortcuts (2):
+  - SPT-3G D1 BB
+  - SPT-3G D1 TnE
+[F1 verify] updated metrics with shortcut names
+timestamp_utc: 2026-02-11T14:52:09.421020+00:00
+
+Availability Matrix (pre-install)
+package    import_ok  version        notes
+cobaya     True       3.6.1          
+candl      True       2.2.0          
+classy     True       3.3.4.0        
+camb       True       1.6.5          
+getdist    True       1.7.5          
+
+classy sanity: ok (Omega_m=0.317220, h=0.670000)
+no candl-related env vars set | candl installed but no obvious local SPT likelihood assets detected in package path; external data requirements likely but exact bundle unknown
