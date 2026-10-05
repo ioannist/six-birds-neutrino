@@ -8,7 +8,7 @@ STAGE_DIR="$BUILD_DIR/researchsquare_source_staging"
 ZIP_PATH="$BUILD_DIR/researchsquare_source_upload.zip"
 
 rm -rf "$STAGE_DIR"
-mkdir -p "$STAGE_DIR/sections" "$STAGE_DIR/tables" "$STAGE_DIR/figures"
+mkdir -p "$STAGE_DIR/sections" "$STAGE_DIR/tables" "$STAGE_DIR/figures" "$STAGE_DIR/includes"
 
 # Ensure .bbl exists (submission portals often do not run BibTeX).
 if ! [[ -f "$BUILD_DIR/main.bbl" ]]; then
@@ -31,6 +31,9 @@ cp "$BUILD_DIR/main.bbl" "$STAGE_DIR/main.bbl"
 # Copy section and table inputs.
 cp "$PAPER_DIR/sections/"*.tex "$STAGE_DIR/sections/"
 cp "$PAPER_DIR/tables/"*.tex "$STAGE_DIR/tables/"
+if compgen -G "$PAPER_DIR/includes/*.tex" > /dev/null; then
+  cp "$PAPER_DIR/includes/"*.tex "$STAGE_DIR/includes/"
+fi
 
 # Copy figures used by manuscript.
 for ext in png jpg jpeg pdf; do

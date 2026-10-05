@@ -18,7 +18,7 @@ help:
 	@echo "  make toy   - Run toy truncated Gaussian script into runs/<timestamp>_toy_trunc_gauss"
 	@echo "  make audit - Run toy MAP + cross-audit pipeline (or skip with clear message if deps missing)"
 	@echo "  make validate - Validate anchor YAML files"
-	@echo "  make tables - Render paper table fragments from canonical artifacts"
+	@echo "  make tables - Render paper figures and table fragments from verified run bundles"
 	@echo "  make paper - Check LaTeX stack and build paper/main.tex with latexmk when available"
 	@echo "  make paper-clean - Clean LaTeX build artifacts under paper/ when latexmk is available"
 	@echo "  make paper_check - Run paper consistency checks, then build the paper"
@@ -64,7 +64,7 @@ validate:
 	@python scripts/validate_anchors.py
 
 tables:
-	@python scripts/render_paper_tables.py
+	@$(PYTHON) scripts/make_paper_figures.py
 
 paper:
 	@set -euo pipefail; \

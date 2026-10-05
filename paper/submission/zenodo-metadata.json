@@ -1,0 +1,183 @@
+{
+  "metadata": {
+    "access_right": "open",
+    "creators": [
+      {
+        "affiliation": "Automorph Inc.",
+        "name": "Tsiokos, Ioannis",
+        "orcid": "0009-0009-7659-5964"
+      }
+    ],
+    "custom": {
+      "code:codeRepository": "https://github.com/ioannist/six-birds-neutrino",
+      "code:programmingLanguage": [
+        {
+          "id": "lean",
+          "title": {
+            "en": "Lean"
+          }
+        },
+        {
+          "id": "python",
+          "title": {
+            "en": "Python"
+          }
+        },
+        {
+          "id": "tex",
+          "title": {
+            "en": "TeX"
+          }
+        }
+      ]
+    },
+    "description": "<p>When the SPT-3G 2018 temperature and polarization likelihood is replaced by the later SPT-3G D1 release, which observes essentially the same patch of sky, cosmological upper limits on the summed neutrino mass have been reported to tighten (arXiv:2601.16277). We ask a prior question: do the two released likelihoods make mutually consistent predictions? Following the Six Birds framework, we treat each release as a <em>lens</em> on the same sky and measure, in each direction, how much worse one lens fits at parameters chosen by the other. We split the SPT quadratic part of this mismatch across spectra and multipoles with a signed allocation that respects the full covariance, so the pieces add up exactly to that part.</p>\n<p>At numerically optimized (but not certified-global) fits, the mismatch is large and strongly asymmetric. Testing D1 at the 2018 fit costs &Delta;&chi;&sup2; &asymp; 488 for SPT with DESI DR2 BAO and &asymp; 63 with a Planck-subset baseline added; the reverse direction costs &asymp; 79 and &asymp; 23. Where the mismatch sits depends on both baseline and direction: temperature at 2000 &le; &ell; &lt; 3000 leads both directions of the SPT+DESI audit, whereas polarization (EE) leads the D1-given-2018 direction once the Planck subset is included. Cutting D1 back to the 2018 multipole coverage, dropping the SPT optical-depth prior, or raising Boltzmann precision changes each tested total by less than 4%.</p>\n<p>Our archived single-chain neutrino-mass runs, and a later multi-chain campaign, do not meet pre-declared convergence and precision criteria, and the likelihoods themselves proved sensitive to solver version and numerical settings. We therefore report no tightening magnitude. We also give a short, machine-checked (Lean 4) analysis of two Gaussian constraints with the physical gate &Sigma;m<sub>&nu;</sub> &ge; 0. It shows when the posterior mode sits exactly at zero, that tension between two constraints that both prefer positive masses can never put it there, and that tightening one constraint raises the chance of a boundary mode only when the other constraint's mean is positive.</p>\n<p><strong>Version 2 (5 October 2026).</strong> This version follows a complete mathematical, numerical and formal review of the analysis. It withdraws the Version 1 tightening magnitudes as unsupported, replaces the localization with an exact full-covariance accounting, restates the boundary-mode mathematics with explicit hypotheses (97 Lean declarations), and rewrites the text and figures. Version 1 (2 March 2026) was posted on Research Square: <a href=\"https://doi.org/10.21203/rs.3.rs-9009357/v1\">doi:10.21203/rs.3.rs-9009357/v1</a>.</p>\n<p>Code, run bundles, Lean proofs and manuscript sources: <a href=\"https://github.com/ioannist/six-birds-neutrino\">https://github.com/ioannist/six-birds-neutrino</a>.</p>",
+    "imprint_publisher": "Zenodo",
+    "keywords": [
+      "neutrino mass",
+      "cosmological parameter inference",
+      "CMB likelihoods",
+      "SPT-3G",
+      "DESI DR2 BAO",
+      "likelihood stability",
+      "covariance accounting",
+      "formal verification",
+      "Lean 4",
+      "Six Birds",
+      "Six Birds Theory",
+      "emergence calculus"
+    ],
+    "language": "eng",
+    "license": "cc-by-4.0",
+    "prereserve_doi": {
+      "doi": "10.5281/zenodo.23161613",
+      "recid": 23161613
+    },
+    "publication_date": "2026-10-05",
+    "publication_type": "preprint",
+    "related_identifiers": [
+      {
+        "identifier": "arXiv:2601.16277",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.48550/arXiv.2602.00134",
+        "relation": "cites",
+        "resource_type": "publication-preprint"
+      },
+      {
+        "identifier": "10.5281/zenodo.18494480",
+        "relation": "cites",
+        "resource_type": "publication-preprint"
+      },
+      {
+        "identifier": "10.1088/1475-7516/2021/05/057",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.1088/1475-7516/2011/07/034",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.1086/309179",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "https://data.desi.lbl.gov/public/papers/y3/bao-cosmo-params/README.html",
+        "relation": "cites",
+        "resource_type": "publication-other"
+      },
+      {
+        "identifier": "https://github.com/CobayaSampler/bao_data",
+        "relation": "cites",
+        "resource_type": "publication-other"
+      },
+      {
+        "identifier": "10.1051/0004-6361/201833910",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "https://github.com/carronj/planck_PR4_lensing",
+        "relation": "cites",
+        "resource_type": "publication-other"
+      },
+      {
+        "identifier": "10.1051/0004-6361/202449432",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.1103/PhysRevD.108.023510",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "arXiv:2506.20707",
+        "relation": "cites",
+        "resource_type": "publication-preprint"
+      },
+      {
+        "identifier": "10.1103/tr6y-kpc6",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.1103/2wwn-xjm5",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.1051/0004-6361/201936386",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.1088/1475-7516/2022/09/039",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.1007/978-3-030-79876-5_37",
+        "relation": "cites",
+        "resource_type": "publication-conferencepaper"
+      },
+      {
+        "identifier": "10.1145/3372885.3373824",
+        "relation": "cites",
+        "resource_type": "publication-conferencepaper"
+      },
+      {
+        "identifier": "10.1214/ss/1177011136",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.1214/20-BA1221",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "https://www3.stat.sinica.edu.tw/statistica/j6n4/j6n41/j6n41.htm",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.1086/466512",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.21203/rs.3.rs-9009357/v1",
+        "relation": "cites",
+        "resource_type": "publication-preprint"
+      }
+    ],
+    "title": "Six Birds for Neutrino Mass: Lens-Swap Stability and Packaging Audits",
+    "upload_type": "publication"
+  }
+}

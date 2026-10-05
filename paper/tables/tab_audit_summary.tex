@@ -1,10 +1,17 @@
-\begin{tabular}{l l r r r}
+\begin{tabular}{@{}l l r r@{}}
 \toprule
-Audit & Direction & Baseline $\Delta\chi^2$ & Common-staging $\Delta\chi^2$ & Reduction (\%) \\
+Audit scope & Variant & $\dchi_{\mathrm{D1}|2018}$ & $\dchi_{2018|\mathrm{D1}}$ \\
 \midrule
-Unprofiled & D1|2018 & 2222.17 & 2222.18 & -0.00 \\
-Unprofiled & 2018|D1 & 313.57 & 315.06 & -0.48 \\
-Profiled & D1|2018 & 859.64 & 840.19 & 2.26 \\
-Profiled & 2018|D1 & 369.52 & 370.46 & -0.25 \\
+SPT only, fixed spectra & nuisance-profiled & 849.63 & 414.39 \\
+ & + support cut & 837.15 & 415.79 \\
+\addlinespace
+SPT + DESI & baseline & 488.30 & 79.13 \\
+ & + support cut & 486.61 & 80.52 \\
+\addlinespace
+Full CMB + DESI & baseline (multistart) & 62.59 & 23.17 \\
+ & baseline (warm start) & 62.39 & 23.19 \\
+ & + support cut & 64.62 & 23.39 \\
+ & $-$ SPT $\tau$ prior & 61.28 & 23.11 \\
+ & + CLASS precision & 61.39 & 23.08 \\
 \bottomrule
 \end{tabular}

@@ -3,3 +3,30 @@ external/
 __pycache__/
 *.pyc
 .pytest_cache/
+
+# Credentials and local secrets (never commit)
+.env
+.env.*
+*.env
+!assets/*.env.example
+*.pem
+*.key
+*.p12
+.netrc
+*secret*
+*credentials*
+*token*.txt
+
+# AI agent local state, transcripts and session identifiers
+.claude/
+.codex/
+.cursor/
+.aider*
+CLAUDE.local.md
+**/.codex_thread_id
+*.transcript.jsonl
+*rollout-*.jsonl
+
+# Local Python environments
+.venv/
+venv/

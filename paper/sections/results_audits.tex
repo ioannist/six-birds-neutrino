@@ -1,45 +1,42 @@
-\section{Audit results: lens mismatch, localization, and staging}
+\section{Audit results}
 \label{sec:results-audits}
 
-We now treat the SPT2018 likelihood and the SPT D1 likelihood as two \emph{lenses} on (nearly) the same sky field. The central question is whether packaged outputs are stable under swapping these lenses. Following \cref{eq:dchi_def}, we quantify stability via directional held-out mismatch statistics and then localize the mismatch by spectrum and multipole.
-
-\subsection{Directional mismatch is large and asymmetric}
-Table~\ref{tab:audit-summary} summarizes the directional cross-lens audit statistics for both the \emph{unprofiled} audit (evaluating each lens at the other lens's best-fit point) and the \emph{profiled} audit (re-optimizing a tractable subset of the test lens's nuisance parameters; \cref{sec:profiled-audit}). Two qualitative features are immediate:
-\begin{enumerate}[leftmargin=*, itemsep=2pt]
-  \item \textbf{Mismatch is directional.} The values of $\dchi_{B|A}$ and $\dchi_{A|B}$ differ substantially, indicating that route mismatch is not symmetric across the two lenses.
-  \item \textbf{Mismatch is large even after profiling.} Profiling reduces sensitivity to purely lens-specific nuisance packaging, but does not eliminate the held-out failure, indicating that the mismatch is not solely a matter of nuisance retuning.
-\end{enumerate}
+\Cref{tab:audit-summary} and \cref{fig:audit-totals} collect every directional audit. \Cref{fig:localization} shows where the mismatch sits for the two cosmological baselines.
 
 \begin{table}[t]
   \centering
-  \caption{Directional cross-lens audit summary for SPT2018 vs SPT D1, with and without common-staging. The unprofiled audit uses direct evaluation of the test lens at the train lens's best-fit point; the profiled audit re-optimizes a tractable subset of test-lens nuisance parameters at fixed shared parameters (\cref{sec:profiled-audit}). ``Common-staging'' restricts the D1 lens to the SPT2018 multipole support (\cref{sec:common-staging}).}
+  \caption{Directional mismatch for SPT 2018 ($A$) and SPT D1 ($B$). $\dchi_{\mathrm{D1}|2018}$ evaluates D1 at the 2018 fit. Cosmological rows give the joint value (SPT plus completion) at retained numerical candidates. The fixed-spectrum row is the SPT-only nuisance-transfer diagnostic of \cref{sec:audit-metrics}. In the full CMB+DESI block, the three controls were started from the warm-start baseline fits and should be compared with that row.}
   \label{tab:audit-summary}
-  \resizebox{\linewidth}{!}{\input{tables/tab_audit_summary.tex}}
+  \small
+  \input{tables/tab_audit_summary.tex}
 \end{table}
 
-\subsection{Localization points to TT high-$\ell$ structure in the overlap region}
-To make the mismatch actionable, we localize $\dchi$ by decomposing it into contributions grouped by spectrum type and multipole ranges. Figure~\ref{fig:profiled-localization} shows the resulting localization heatmaps for the \emph{profiled} audit in both directions. The dominant contributions arise from TT at high multipoles (notably the $\ell\sim 2000$--$3000$ range), while TE/EE contributions are comparatively small.
-Because high-$\ell$ TT is foreground- and calibration-sensitive, this localization should be read as identifying where the \emph{packaged likelihood objects} disagree (e.g., foreground modeling, calibration/beam/transfer-function conventions, or covariance structure), not as a map-level diagnosis of the sky.
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.9\linewidth]{figures/fig_audit_totals.pdf}
+  \caption{Directional mismatch for every audit (values in \cref{tab:audit-summary}; logarithmic axis). Blue: D1 tested at the 2018 fit. Orange: 2018 tested at the D1 fit. In every setting the D1-given-2018 direction is the larger one, and no control moves either direction by more than a few percent.}
+  \label{fig:audit-totals}
+\end{figure}
 
-A key observation is that these multipoles lie well \emph{inside} the overlap region of the two SPT lenses. In other words, the mismatch is not primarily driven by the fact that D1 extends to lower $\ell$ in TT or to higher $\ell$ in TE/EE. Rather, the held-out failure is concentrated in TT structure that both lenses nominally cover. This localization supports interpreting the ``curious shift'' highlighted in \cite{arxiv2601_16277} as a packaging stability failure tied to how the two lenses compress and model the same underlying sky information.
+\subsection{The mismatch is large and asymmetric}
+With SPT and DESI alone, transferring the 2018 cosmology to D1 costs $\dchi_{\mathrm{D1}|2018}=488.3$, of which the SPT likelihood contributes $487.8$ and BAO $+0.5$. The reverse transfer costs $\dchi_{2018|\mathrm{D1}}=79.1$ (SPT $79.6$, BAO $-0.5$). With the Planck subset and PR4 lensing added, both values are smaller, $62.6$ and $23.2$. This is consistent with the additional shared data holding the two fits closer together, although the baselines also differ in Boltzmann code and free foregrounds. The asymmetry remains (SPT contributions $60.6$ and $25.1$). The fixed-spectrum audit gives the same picture in nuisance space: even after the test lens re-fits twelve calibration and foreground parameters, the mismatch is $849.6$ and $414.4$. Within that run, re-fitting lowers the transferred mismatch from $2214.8$ to $849.6$ ($62\%$) and from $813.5$ to $414.4$ ($49\%$). Nuisance freedom thus absorbs a large share of the disagreement, but a substantial remainder survives the capped re-fit.
+
+These numbers are differences between retained numerical candidates. In one instance, a later search found a better 2018 source fit in the full CMB baseline at higher CLASS precision, and the forward mismatch at that source changed by $4.5\%$ (from $61.4$ to $64.2$). Optimizer choices therefore move the values at the level of a few percent. This is far below the asymmetry and far below the size of the effects themselves. We do not convert these values into significances.
+
+\subsection{Where the mismatch sits depends on baseline and direction}
 
 \begin{figure}[t]
   \centering
-  \includegraphics[width=0.49\linewidth]{figures/fig_profiled_localization_B_given_A.png}
-  \hfill
-  \includegraphics[width=0.49\linewidth]{figures/fig_profiled_localization_A_given_B.png}
-  \caption{Profiled localization heatmaps for the SPT lens swap, decomposing the directional held-out mismatch into contributions grouped by spectrum type and multipole ranges. \textbf{Left:} $\dchi_{B|A}$ (SPT D1 given SPT2018). \textbf{Right:} $\dchi_{A|B}$ (SPT2018 given SPT D1). Darker regions indicate larger contributions to the held-out failure. In both directions, the dominant contributions arise from TT at high multipoles within the overlap region.}
-  \label{fig:profiled-localization}
+  \includegraphics[width=\linewidth]{figures/fig_localization.pdf}
+  \caption{Signed localization of the SPT quadratic part of each audit (\cref{eq:signed_alloc,eq:block_dchi}) by spectrum and multipole band. Columns are bands starting at the indicated $\ell$, each extending to the next (the last band covers $3000\le\ell<4000$). Red cells add to the mismatch and blue cells reduce it; each panel has its own symmetric color scale. The title gives the total SPT quadratic difference $\Delta Q$. Cells sum exactly to it, apart from bins below $\ell=400$, which are reported separately ($2.0$ in the SPT+DESI 2018-given-D1 panel and below $0.05$ elsewhere). The numbers are allocations of one correlated quadratic form, not independent chi-squares.}
+  \label{fig:localization}
 \end{figure}
 
-\subsection{Common-staging changes mismatch only at the few-percent level}
-A natural hypothesis is that the mismatch is driven by differences in multipole support between SPT2018 and D1. To test this, we implement a common-staging control in which the D1 lens is restricted (as much as feasible) to the SPT2018 multipole support and we repeat the same audits (\cref{sec:common-staging}).
+With SPT and DESI, high-multipole temperature leads in both directions (\cref{fig:localization}, top). Over $2000\le\ell<3000$, TT contributes $291.3$ of the D1-given-2018 mismatch and EE $121.5$. In the reverse direction TT contributes $74.5$ and EE $0.7$. The single largest band in both directions is TT at $2500\le\ell<3000$. The fixed-spectrum audit agrees: there the same TT band contributes $620.5$ and $375.3$ in the two directions.
 
-Figure~\ref{fig:profiled-staging-compare} visualizes the baseline-vs-common-staging comparison for the \emph{profiled} audit. The resulting changes are modest: common-staging does not qualitatively resolve the mismatch, and the localization remains dominated by TT high-$\ell$ structure within the overlap region. This control therefore argues against a purely support/cut explanation for the lens mismatch and motivates treating parameter-level shifts (including $\mnu$ tightening) as packaging-sensitive unless accompanied by explicit lens-swap audits.
+With the Planck subset added, the picture changes (\cref{fig:localization}, bottom). In the D1-given-2018 direction, polarization leads. Over $2000\le\ell<3000$, EE contributes $36.1$, TT $14.1$ and TE $4.7$, and the largest bands are EE at $2000\le\ell<2500$ ($23.5$) and $2500\le\ell<3000$ ($12.6$). In the reverse direction, TT still leads over $2000\le\ell<3000$ ($12.6$, against $0.9$ for EE), with its largest band at $2500\le\ell<3000$ ($10.4$). Summed over all bands, however, the reverse direction receives comparable TT and EE contributions ($11.3$ and $11.7$), because EE adds at intermediate multipoles. This direction-dependent pattern persists under the support cut, without the $\tau$ prior, at higher CLASS precision, and at the improved 2018 source fit mentioned above.
 
-\begin{figure}[t]
-  \centering
-  \includegraphics[width=0.85\linewidth]{figures/fig_profiled_staging_compare.png}
-  \caption{Common-staging control for the profiled cross-lens audit. Baseline uses the full D1 multipole support; common-staging restricts D1 to the SPT2018 support. The change in $\dchi$ is small compared to the overall mismatch, indicating that staging alone does not explain the held-out failures.}
-  \label{fig:profiled-staging-compare}
-\end{figure}
+A statement that the disagreement ``lives in high-$\ell$ TT'' is therefore true for the SPT+DESI audits but not in general. Because the two baselines also differ in Boltzmann code and in free foreground parameters, this comparison does not show that the Planck subset alone causes the change. All of these multipoles lie inside the range covered by both lenses. The allocations identify where the packaged likelihood objects disagree. They do not identify which part of the processing (calibration, beams, foreground modeling, covariance) is responsible.
+
+\subsection{Controls change the totals by a few percent}
+Cutting D1 back to the 2018 multipole coverage changes the SPT+DESI mismatch by $-0.35\%$ and $+1.8\%$ in the two directions. It changes the full CMB+DESI values by $+3.6\%$ and $+0.9\%$ relative to the warm-start baseline, and the fixed-spectrum values by $-1.5\%$ and $+0.3\%$. Removing the native SPT optical-depth priors changes the full CMB+DESI values by $-1.8\%$ and $-0.4\%$, and raising CLASS precision changes them by $-1.6\%$ and $-0.5\%$. None of these controls changes the leading localization. Extra D1 multipole coverage, the differing $\tau$ priors and default Boltzmann precision therefore do not explain the mismatch at the audited candidates. Each control is a separate numerical refit, so these small differences combine the effect of the control with optimizer variation. They should not be read as exact isolated effects.

@@ -1,0 +1,55 @@
+{
+  "citation_policy": {
+    "allowed_entries_without_identifiers": []
+  },
+  "paper": {
+    "title": "Six Birds for Neutrino Mass: Lens-Swap Stability and Packaging Audits",
+    "version": "Version 2"
+  },
+  "profile": "ioannis-tsiokos",
+  "release_policy": {
+    "expected_remote": "https://github.com/ioannist/six-birds-neutrino"
+  },
+  "schema_version": 1,
+  "zenodo": {
+    "metadata": {
+      "custom": {
+        "code:codeRepository": "https://github.com/ioannist/six-birds-neutrino",
+        "code:programmingLanguage": [
+          {
+            "id": "lean",
+            "title": {
+              "en": "Lean"
+            }
+          },
+          {
+            "id": "python",
+            "title": {
+              "en": "Python"
+            }
+          },
+          {
+            "id": "tex",
+            "title": {
+              "en": "TeX"
+            }
+          }
+        ]
+      },
+      "keywords": [
+        "neutrino mass",
+        "cosmological parameter inference",
+        "CMB likelihoods",
+        "SPT-3G",
+        "DESI DR2 BAO",
+        "likelihood stability",
+        "covariance accounting",
+        "formal verification",
+        "Lean 4",
+        "Six Birds",
+        "Six Birds Theory",
+        "emergence calculus"
+      ]
+    }
+  }
+}

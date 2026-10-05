@@ -1,55 +1,34 @@
-\section{Results: $\mnu$ shift under a lens swap}
+\section{What the sampled \texorpdfstring{$\mnu$}{neutrino-mass} posteriors show}
 \label{sec:results-mnu}
 
-We now report the $\mnu$-posterior shifts induced by swapping the SPT lens (SPT2018 $\rightarrow$ SPT D1) under a fixed completion (\cref{sec:mnu-inference}). We emphasize the intended interpretation: these shifts are \emph{packaged} outputs and should be read alongside the lens-swap audits in \cref{sec:results-audits}, which localize where the two lenses disagree and test whether staging controls resolve the mismatch.
+The audits compare best fits. The quantity of physical interest is the marginal posterior of $\mnu$ and its 95th percentile, which is the usual upper limit. This section asks what our sampling supports about how the limit changes when D1 replaces 2018.
+
+\subsection{Archived single-chain runs}
+Our first production runs were one Metropolis chain per baseline and lens. \Cref{tab:archived-chains} lists their empirical 95th percentiles together with diagnostics computed with chronological half-splits and exact holding-time weights.
 
 \begin{table}[t]
   \centering
-  \caption{Summary of $\mnu$ shifts reproduced in this note. Values are in eV; ``Shift'' denotes (SPT2018 minus SPT D1) for the corresponding setup.}
-  \label{tab:mnu-shift}
-  \resizebox{\linewidth}{!}{\input{tables/tab_mnu_shift.tex}}
+  \caption{Archived single-chain $\mnu$ runs. Percentiles are empirical summaries of the stored samples after removing the first 20\% of rows. ``First half'' and ``second half'' are chronological halves of the retained chain. Split $\hat R$ and the effective-sample-size proxy are classical scalar diagnostics. None of these runs meets the convergence criteria of \cref{sec:mnu-inference}, so the percentiles are not posterior bounds.}
+  \label{tab:archived-chains}
+  \small
+  \input{tables/tab_archived_chains.tex}
 \end{table}
 
-\subsection{SPT-only + DESI DR2 BAO: a large tightening under D1}
-We first consider an intentionally simplified regime: the SPT TT/TE/EE likelihood alone (SPT2018 or D1) combined with DESI DR2 BAO. This setting is useful because it isolates the effect of swapping the SPT lens while holding fixed the late-time distance information. As summarized in Table~\ref{tab:mnu-shift}, the D1 lens yields a substantially tighter $\mnu$ upper bound than the 2018 lens in this regime.
+These chains are far from converged. The SPT 2018 + DESI chain gives an empirical 95th percentile of $0.084$\,eV in its first half and $0.217$\,eV in its second half, with an effective sample size near five. The full CMB (2018) + DESI chain has split $\hat R\approx1.00$ but an effective sample size near nine. Cobaya's internal multivariate check for that chain reports $R-1\approx22$, and a short independent repeat with another seed fails rank-normalized and tail diagnostics. A single scalar $\hat R$ near one cannot overrule such evidence. Differences between the percentiles in \cref{tab:archived-chains} therefore do not measure the effect of the lens swap. In both archived pairs the D1 value is the lower one, but chains this short cannot establish even that ordering.
 
-Figure~\ref{fig:mnu-overlay-spt-desi} overlays the $\mnu$ posteriors for this SPT-only+DESI comparison. The qualitative effect is robust: under the same BAO likelihood and completion class, swapping SPT2018$\rightarrow$D1 tightens $\mnu$.
-
-\begin{figure}[t]
-  \centering
-  \includegraphics[width=0.85\linewidth]{figures/fig_mnu_overlay_spt_desi.png}
-  \caption{$\mnu$ posterior overlay for SPT-only + DESI DR2 BAO. The D1 lens yields a tighter $\mnu$ constraint than the SPT2018 lens under the same BAO likelihood and completion. Numerical summaries are given in Table~\ref{tab:mnu-shift}.}
-  \label{fig:mnu-overlay-spt-desi}
-\end{figure}
-
-\subsection{Planck-subset baseline + PR4 lensing + DESI: headline replication with a smaller shift}
-We next run a baseline designed to mirror the Planck-subset+PR4-lensing structure described in \cite{arxiv2601_16277} (\cref{sec:planck-subset}), and we again combine with DESI DR2 BAO. In this setting the \emph{direction} of the lens-swap effect matches the headline behavior emphasized in \cite{arxiv2601_16277}: swapping SPT2018$\rightarrow$D1 tightens the $\mnu$ upper bound. However, the magnitude of the tightening in our reproduction is smaller than the difference between the corresponding values quoted in \cite{arxiv2601_16277} (Table~\ref{tab:mnu-shift}).
-Because this baseline shift is at the $\mathcal{O}(10^{-2},\mathrm{eV})$ level, we treat it as a \emph{directional} replication: its magnitude is comparable to our seed-based stability proxy for the 95\% upper bound, so we avoid over-interpreting small numerical differences.
-
-Figure~\ref{fig:mnu-plancksubset-desi} shows the $\mnu$ posterior overlay for this baseline+DESI setting together with a compact bounds summary table. In these production runs we do not observe strong posterior piling at the physical boundary $\mnu=0$ (the boundary-fraction diagnostic is near zero), but a boundary mode can arise generically under truncation when inconsistent packaged constraints are tightened; we return to this mechanism in \cref{sec:boundary-mode}.
-
-\begin{figure}[t]
-  \centering
-  \includegraphics[width=0.85\linewidth]{figures/fig_mnu_overlay_plancksubset_desi.png}
-
-  \vspace{6pt}
-  \includegraphics[width=0.85\linewidth]{figures/fig_mnu_bounds_plancksubset_desi.png}
-  \caption{$\mnu$ posterior overlay (top) and bounds summary (bottom) for the Planck-subset baseline + PR4 lensing + SPT + DESI DR2 BAO setting. The D1 lens again yields a tighter $\mnu$ constraint than SPT2018, but the shift magnitude is smaller than the gap reported in \cite{arxiv2601_16277}. See Table~\ref{tab:mnu-shift} for the numerical comparison.}
-  \label{fig:mnu-plancksubset-desi}
-\end{figure}
-
-\subsection{Comparison to \cite{arxiv2601_16277} and likely drivers of residual differences}
-For context, \cite{arxiv2601_16277} reports 95\% upper bounds of $\mnu<0.11\,\mathrm{eV}$ for their SPT2018-based CMB baseline + DESI DR2 BAO, and $\mnu<0.069\,\mathrm{eV}$ for the corresponding CMB-D1 baseline + DESI DR2 BAO.
-Our reproduction matches the \emph{direction} highlighted in \cite{arxiv2601_16277}: under DESI DR2 BAO, swapping SPT2018$\rightarrow$D1 tightens the $\mnu$ upper bound. The \emph{magnitude} of the shift depends on details of the completion and likelihood packaging. Several plausible contributors to the remaining numerical differences (particularly in the SPT2018 baseline bound) include:
+\subsection{Multi-chain sampling and the stability of the target}
+We then ran four to six independently seeded chains per baseline and lens, with the thresholds of \cref{sec:mnu-inference} fixed in advance. This campaign showed that defining the target, and not only sampling it, required care:
 \begin{itemize}[leftmargin=*, itemsep=2pt]
-  \item \textbf{Nuisance freedom and priors.} We use a deliberately minimal nuisance sampling set for computational tractability in production chains; tighter or looser bounds can result when additional nuisance parameters are varied, reparameterized, or assigned different priors.
-  \item \textbf{Planck low-$\ell$ EE variant.} Our Planck subset uses the \texttt{EE\_sroll2} low-$\ell$ EE likelihood variant available in Cobaya; small baseline differences can propagate into tight derived bounds.
-  \item \textbf{Likelihood and pipeline versions.} Even when dataset selections are conceptually matched, differences in released likelihood implementations, calibration conventions, and default settings can shift posteriors in the sub-0.1\,eV regime.
-  \item \textbf{Baseline components.} Our baseline matches the Planck-subset and PR4 lensing structure described in \cite{arxiv2601_16277}, but exact numerical agreement can depend on whether additional baseline components (and their nuisance couplings) are included and how they are parameterized in a given code stack.
-  \item \textbf{SPT lensing component.} The CMB baseline in \cite{arxiv2601_16277} includes an SPT lensing-reconstruction likelihood component; our baseline implementation does not, which can affect absolute tight bounds and may reduce the shift magnitude.
+  \item \textbf{Solver version.} Evaluating the same SPT+DESI points with CAMB 1.6.5 and CAMB 2.0.4 changes the total $\chi^2$ by up to about 9. The change varies from point to point by up to about 3.7, and the $\chi^2$ response to a $0.01$\,eV mass step changes by up to about 0.7. A version change therefore alters the shape of the likelihood, not just its normalization, and cannot be treated as a sampling correction.
+  \item \textbf{Evaluation-order dependence.} With caching enabled, returning to an earlier CAMB transfer state after evaluating a different cosmology changed the TT spectra slightly. One stored chain row then differed from a fresh evaluation by $0.195$ in $\chi^2$. Forcing a fresh transfer calculation at every point removed the discrepancy in all traced comparisons.
+  \item \textbf{Boltzmann robustness and precision.} One CLASS run stopped at a mass of about $0.027$\,eV with a non-finite photon scattering rate at the start of the perturbation integration. We traced this to a finite-difference Jacobian step crossing a helium freeze-out cutoff, and patched it. At tested points, raising CLASS precision settings shifts $\chi^2$ by a few tenths, by different amounts at different points.
 \end{itemize}
-These sensitivities are precisely why we advocate pairing headline parameter bounds with explicit lens-swap audits and staging controls (\cref{sec:results-audits}): when the packaged likelihood objects disagree in localized regions of the summary statistics, parameter-level shifts should be interpreted as packaging-sensitive until the mismatch is resolved.
+Before the evaluation-order dependence was found, twelve SPT+DESI chains (six per lens) had passed every pre-declared gate. Their likelihood evaluations used cached transfer states, so those readouts no longer count as qualified. No other cohort of either baseline passed every gate on a fixed numerical target. The unqualified cohort readouts also do not establish the direction of the shift, and we draw no conclusion about it from them.
 
-\subsection{Implementation caveat: sampled \texttt{mnu\_sample} and derived $\mnu$}
-\label{sec:mnu-impl-caveat}
-As noted in \cref{sec:mnu-inference}, our Planck-subset baseline production runs are CLASS-based and parameterize massive neutrinos via three degenerate species masses $m_{\mathrm{ncdm}}=(\mnu/3,\mnu/3,\mnu/3)$. To keep $\mnu$ explicit in chain outputs while providing CLASS the required per-species masses, we sample an internal parameter \texttt{mnu\_sample} and expose $\mnu$ as a derived parameter used for reporting and plotting. This is a bookkeeping choice for tool compatibility; it does not change the intended meaning of the reported $\mnu$ posterior.
+\subsection{What is and is not supported}
+We draw three conclusions.
+\begin{enumerate}[leftmargin=*, itemsep=2pt]
+  \item We report no value for the change in the $\mnu$ upper limit under the lens swap, neither for SPT+DESI nor for the full baseline. This is a statement about what our sampling supports. It does not show that the limit is unchanged, and it does not contradict \cite{arxiv2601_16277}, whose CMB+DESI and CMB-D1+DESI limits are $\mnu<0.11$\,eV and $\mnu<0.069$\,eV with their own pipeline and SPT lensing included.
+  \item A qualified claim of a tightening needs error control for each of the two upper-limit estimates. If each estimated 95th percentile is within $\varepsilon_A$ and $\varepsilon_B$ of its target, the estimated shift is within $\varepsilon_A+\varepsilon_B$ of the true shift. This bound is sharp, and the failure probabilities add without any independence assumption (\cref{prop:readout}). A tightening is then established only if the estimated shift exceeds $\varepsilon_A+\varepsilon_B$. These are bounds on estimation error relative to a fixed likelihood target. Solver-version and numerical-precision effects must be controlled separately.
+  \item The small posterior mass near the boundary in our chains is a descriptive property of unconverged chains. At most about $0.22\%$ of retained samples lie below $10^{-3}$\,eV in the four archived chains, and up to about $2\%$ in some later campaign chains. It says nothing either way about a boundary mode in the true posterior. \Cref{sec:boundary-mode} explains why boundary behavior must be read with care.
+\end{enumerate}

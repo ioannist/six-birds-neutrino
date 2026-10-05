@@ -9,7 +9,7 @@
 - Computational Physics
 
 ## Suggested keywords
-neutrino mass; cosmological parameter inference; cmb likelihoods; spt-3g; desi dr2 bao; pipeline stability; posterior predictive checks; six birds
+neutrino mass; cosmological parameter inference; cmb likelihoods; spt-3g; desi dr2 bao; likelihood stability; covariance accounting; formal verification; six birds
 
 ## Author information
 - **Ioannis Tsiokos**

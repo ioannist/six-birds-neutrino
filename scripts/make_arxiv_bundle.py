@@ -61,6 +61,9 @@ def main() -> int:
     for tex_file in sorted((paper_dir / "tables").glob("*.tex")):
         copy_file(tex_file, outdir / "tables" / tex_file.name)
 
+    for tex_file in sorted((paper_dir / "includes").glob("*.tex")):
+        copy_file(tex_file, outdir / "includes" / tex_file.name)
+
     copied_figures = 0
     for fig_file in sorted((paper_dir / "figures").glob("*")):
         if fig_file.is_file() and fig_file.suffix.lower() in IMAGE_EXTENSIONS:

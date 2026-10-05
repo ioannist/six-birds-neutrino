@@ -1,82 +1,59 @@
 \section{Methods}
 \label{sec:methods}
 
-This section summarizes (i) the audit metrics used to quantify and localize cross-lens mismatch, (ii) the common-staging control, and (iii) the cosmological inference setup used to estimate $\mnu$ posteriors in the presence of lens swaps.
-
-\subsection{Directional cross-lens audits and localization}
+\subsection{Two audit scopes}
 \label{sec:audit-metrics}
 
-Our primary audit statistic is the directional held-out mismatch $\dchi_{B|A}$ defined in \cref{eq:dchi_def}. Intuitively, $\dchi_{B|A}$ asks: if we package the macro object using lens $A$, how poorly does that packaged solution predict lens $B$ relative to $B$'s own internal best fit? Because route mismatch is directional, we report both $\dchi_{B|A}$ and $\dchi_{A|B}$.
+We run the directional audit of \cref{eq:dchi_def} at two levels.
 
-When the likelihood supports blockwise decomposition (e.g.\ by spectrum and multipole band), we additionally localize mismatch by writing $\dchi_{B|A}$ as a sum over blocks. In our implementation, blocks correspond to a spectrum type (TT/TE/EE) and an $\ell$-bin group. The result is a heatmap-style diagnostic that turns a global mismatch into a concrete localization: which spectrum and which multipole ranges dominate the held-out failure.
+\paragraph{Cosmological candidate transfer (main audit).}
+Both SPT likelihoods and the completion are placed in a single Cobaya model with one shared Boltzmann calculation, so the two lenses see identical theory spectra at identical parameters. The model rejects any difference between the two sides in theory settings, sampled parameterization, hard prior bounds or completion components. Each lens is fitted by maximizing the sum of its own native log-likelihood and the completion's log-likelihoods within the hard prior bounds, without the separate Cobaya prior density. The native \texttt{candl} priors, including the optical-depth priors, remain part of each lens. The transferred vector $\phi$ contains the seven cosmological parameters, including $\mnu$. In the full CMB+DESI baseline the test lens also re-fits the Planck calibration $A_{\mathrm{planck}}$ and the tSZ and kSZ amplitudes. In the SPT+DESI baseline no parameters are re-fitted. Other SPT nuisance parameters stay at their packaged default values. The joint $\dchi$ includes the completion terms, and we report the SPT and completion contributions separately.
 
-\paragraph{Blockwise accounting.}
-When a likelihood provides additive blockwise contributions (e.g.\ by spectrum and multipole groups), we write
+The fits use bounded derivative-free optimization (BOBYQA) from several starting points. The reference fit for the test lens is started from, among other points, the transferred candidate, and the better candidate is retained. All endpoints are re-evaluated with a freshly built model, which reproduces the native likelihoods, spectra and accounting to better than $10^{-10}$ in $\chi^2$. The fits are numerical candidates and are not certified global optima.
+
+\paragraph{Fixed-spectrum nuisance transfer (secondary).}
+To isolate nuisance packaging, we also run the audit at fixed theory spectra: the packaged test spectra shipped with each release, not cosmologies fitted to each survey. The tSZ and kSZ amplitudes are shared between the lenses. In addition, a capped set of twelve calibration and foreground parameters of the test lens is re-fitted. The transferred profile starts from the transferred point. The reference fit releases both the shared and the capped parameters and is searched from two starting points: the transferred profile and the lens's own fit. The capped sets are listed in Appendix~\ref{app:reproducibility}. This scope probes how far nuisance re-tuning can absorb the disagreement between the packaged spectra. It does not test cosmological cross-prediction.
+
+\subsection{Exact localization with correlated data}
+\label{sec:ledger}
+
+For a Gaussian likelihood with residual $r=d-t(\theta)$ and covariance $C$, the quadratic form is $Q=r^\top C^{-1}r$. A tempting localization inverts each block of $C$ separately and sums the block chi-squares. When blocks are correlated this sum differs from $Q$. For example, with
+\[
+  C=\begin{pmatrix}1&0.9\\0.9&1\end{pmatrix},\qquad r=\begin{pmatrix}1\\2\end{pmatrix},
+\]
+the full form is $Q\approx7.37$, while the two one-dimensional block chi-squares sum to $1+4=5$. Instead we allocate the full form to coordinates,
 \begin{equation}
-  \log \mathcal{L}_B(\theta) \;=\; \sum_{g\in\mathcal{G}} \log \mathcal{L}_{B,g}(\theta),
-  \label{eq:block_decomp}
+  q_i \;=\; r_i\,(C^{-1}r)_i, \qquad \sum_i q_i = Q,
+  \label{eq:signed_alloc}
 \end{equation}
-and define the blockwise held-out mismatch contributions
+which shares each cross term $r_iC^{-1}_{ij}r_j$ equally between $i$ and $j$. Summing $q_i$ over any partition into groups $g$ (here spectrum $\times$ multipole band) gives group contributions that add up exactly to $Q$. The audit uses the difference of these allocations between the transferred and reference endpoints,
 \begin{equation}
-  \dchi_{B|A,g} \;\equiv\; -2\left[\log \mathcal{L}_{B,g}(\hat\theta_A) - \log \mathcal{L}_{B,g}(\hat\theta_B)\right].
+  \Delta Q_g \;=\; \sum_{i\in g}\bigl[q_i(\hat\theta_A)-q_i(\hat\theta_B)\bigr],
   \label{eq:block_dchi}
 \end{equation}
-Under \cref{eq:block_decomp} these satisfy the sum rule $\dchi_{B|A}=\sum_{g\in\mathcal{G}}\dchi_{B|A,g}$ (and similarly for $A|B$), so the localization heatmaps should be read as an accounting decomposition of the same directional audit statistic rather than an unrelated diagnostic.
-We emphasize that $\dchi$ is reported in the native $-2\Delta\log\mathcal{L}$ units of the packaged likelihood objects and is used here as a comparative diagnostic (across directions and staging controls), not as a calibrated hypothesis-test p-value; null calibration would require additional held-out or posterior-predictive constructions beyond the scope of this short note.
+where each endpoint uses its own effective covariance. This matters because the SPT 2018 beam covariance depends on the parameters, and a Hartlap correction applies where present. Individual $q_i$ and $\Delta Q_g$ can be negative. They are an accounting of one quadratic form and not independent chi-square variables. Only the full form $Q$ is guaranteed to be nonnegative.
 
-\subsection{Profiled audits: separating shared parameters from nuisance packaging}
-\label{sec:profiled-audit}
-
-A key subtlety is that lenses can differ in nuisance parameterization and calibration degrees of freedom. To more closely align the audit with SBT's ``completion'' semantics, we also implement a \emph{profiled} variant of the cross-lens audit. For direction $B|A$, we:
-\begin{enumerate}[leftmargin=*, itemsep=2pt]
-  \item hold fixed a small set of \emph{shared} parameters (the intersection of parameters we choose to treat as common across lenses), and
-  \item re-optimize a tractable subset of $B$'s nuisance parameters (a calibration/bandpower-mode subset) to maximize $\log \mathcal{L}_B$ under those shared parameters.
-\end{enumerate}
-We then compute a profiled $\dchi_{B|A}$ by comparing $B$'s likelihood at the profiled $A$-shared point against $B$'s own profiled best fit. Operationally, this separates (i) mismatch that can be absorbed by lens-specific nuisance packaging from (ii) mismatch that persists even after giving the test lens freedom to retune its nuisance degrees of freedom.
-
-In practice, full profiling over all nuisance parameters can be computationally expensive. We therefore use a runtime-capped profiling set consisting of a calibration/beta subset (referred to internally as \texttt{TT\_cal\_beta}), reduced to a tractable number of parameters for deterministic optimization.
-\paragraph{Formal definition.}
-Let parameters be partitioned as $\theta=(\phi,\eta_B)$ where $\phi$ denotes the shared parameters we hold fixed in the audit direction $B|A$ and $\eta_B$ denotes nuisance parameters specific to lens $B$. Define the profiled log-likelihood
+The SPT part of the audit then reconciles exactly with the native likelihood:
 \begin{equation}
-  \log \widetilde{\mathcal{L}}_B(\phi) \;\equiv\; \max_{\eta_B}\, \log \mathcal{L}_B(\phi,\eta_B),
-  \label{eq:profile_loglike}
+  \dchi_{\mathrm{SPT}} \;=\; \sum_g\Delta Q_g \;+\; \Delta Q_{\mathrm{unlocalized}} \;+\; \Delta(\text{native prior penalty}) \;+\; \Delta(\log\det C).
+  \label{eq:ledger}
 \end{equation}
-and the profiled directional mismatch
-\begin{equation}
-  \widetilde{\dchi}_{B|A} \;\equiv\; -2\left[\log \widetilde{\mathcal{L}}_B(\hat\phi_A) - \log \widetilde{\mathcal{L}}_B(\hat\phi_B)\right],
-  \label{eq:profile_dchi}
-\end{equation}
-where $\hat\phi_L$ is the shared-parameter component of the best-fit point under lens $L$.
-In practice we approximate \cref{eq:profile_loglike} by profiling only a tractable subset of $B$'s nuisance parameters under a runtime cap; the intent is not to ``profile away'' all mismatch, but to reduce sensitivity to purely lens-specific packaging degrees of freedom.
-In our implementation, the profiled set comprises the following calibration/beta parameters: \texttt{Tcal\_ext150}, \texttt{Tcal\_rel90}, \texttt{Tcal\_rel220}, \texttt{Ecal\_ext150}, \texttt{Ecal\_rel90}, \texttt{Ecal\_rel220}, \texttt{TT\_CIBClustering\_Alpha}, \texttt{TT\_CIB\_150x150}, \texttt{TT\_CIB\_150x220}, \texttt{TT\_CIB\_220x220}, \texttt{TT\_GalCirrus\_Alpha}, \texttt{TT\_GalCirrus\_Amp}; for the reverse direction, the capped set is \texttt{TT\_tSZ\_CIB\_Corr\_Amp}, \texttt{TT\_tSZ\_CIB\_corr}, \texttt{Ecal150}, \texttt{Ecal220}, \texttt{Ecal90}, \texttt{TT\_CIBClustering\_Alpha}, \texttt{TT\_CIBClustering\_Amp}, \texttt{TT\_CIBClustering\_Beta}, \texttt{TT\_GalCirrus\_Alpha}, \texttt{TT\_GalCirrus\_Amp}, \texttt{TT\_GalCirrus\_Beta}, \texttt{TT\_Poisson\_150x150} (runtime-capped to 12 parameters; see run metadata).
+Bins outside the plotted bands are kept as an explicit ``unlocalized'' term. For example, the 2018 TE and EE bins with $300\le\ell<400$ fall below the first band edge. The exact-algebra parts of this ledger (solve, allocation and grouping) are verified in Lean (Appendix~\ref{app:formal}, \texttt{CovarianceLedger}). The numerical reconstruction is checked against the native likelihood in every run.
 
-\subsection{Common-staging control}
+\subsection{Controls}
 \label{sec:common-staging}
+We repeat the cosmological audits under three controls, each of which re-runs all four fits:
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+  \item \textbf{Support cut.} D1 is restricted to TT $750\le\ell\le3000$ and TE/EE $\ell\le3000$, removing its extra coverage, while the 2018 lens is left unchanged. D1 cannot supply the 2018 TE/EE modes with $300\le\ell<400$, and binning and window functions are not matched.
+  \item \textbf{Optical-depth prior} (full CMB+DESI). The native SPT Gaussian prior on $\tau$ is removed from both lenses; all other priors and the Planck low-$\ell$ EE likelihood are kept.
+  \item \textbf{Boltzmann precision} (full CMB+DESI). Seven CLASS integration, sampling and quadrature settings are raised towards the upstream reference values, with the physical model unchanged.
+\end{itemize}
 
-Because the two SPT lenses differ in multipole support, a basic staging control is to restrict the broader-support lens to the narrower-support range and repeat the same audits. We implement a \emph{common-staging} control in which the D1 lens is restricted (as much as feasible) to the SPT2018 multipole support (TT: $\ell\ge 750$; TE/EE: $\ell\ge 300$; all with $\ell\le 3000$). The restriction is implemented at likelihood-instantiation time via selection masks recorded in the run metadata. If mismatch persists under common-staging and remains localized inside the overlap region, this points away from a pure support/cut explanation.
-This common-staging control matches \emph{multipole support} but does not fully equalize the compressed summaries: the two releases retain their own bandpower binning/window functions and internal covariance conventions, so this test should be interpreted as a support/cut control rather than an identity-of-data-vector comparison.
-
-\subsection{$\mnu$ inference pipeline}
+\subsection{Posterior sampling and diagnostics}
 \label{sec:mnu-inference}
 
-We estimate $\mnu$ posteriors using Cobaya \cite{cobaya} with a standard Boltzmann backend (CLASS \cite{class} and/or CAMB \cite{camb}, depending on the configuration). The canonical SPT-only+DESI results use \textbf{CAMB} while the Planck-subset baseline+DESI results use \textbf{CLASS}; see run metadata for exact configs. We sample the standard six $\Lambda$CDM parameters $\{\omega_b h^2, \omega_c h^2, H_0, \ln(10^{10}A_s), n_s, \tau\}$ together with $\mnu$ under a physical gate $\mnu\ge 0$. Following the neutrino modeling description in \cite{arxiv2601_16277}, our $\Lambda$CDM+$\mnu$ completion assumes three degenerate massive neutrino states when $\mnu$ is allowed to vary.
+We sample the seven parameters $\omega_b$, $\omega_c$, $H_0$, $\ln(10^{10}A_s)$, $n_s$, $\tau$ and $\mnu$ with Cobaya's Metropolis sampler. The full CMB+DESI runs also sample $A_{\mathrm{planck}}$ and the tSZ and kSZ amplitudes. The SPT+DESI runs keep all SPT nuisance parameters at their packaged defaults. For CLASS we sample an internal mass parameter, identical to $\mnu$, and pass $m_{\mathrm{ncdm}}=(\mnu/3,\mnu/3,\mnu/3)$ for three degenerate species. The identity between the sampled and reported mass is pure bookkeeping. Passing the species masses with seventeen significant digits, not eight decimal places, makes the numerical mapping faithful to the intended masses.
 
-\paragraph{Implementation caveat (CLASS parameterization).}
-CLASS expects massive neutrinos to be specified via $N_{\mathrm{ncdm}}$ and per-species masses $m_{\mathrm{ncdm}}$. To keep $\mnu$ explicitly present in the recorded chains and summaries while providing CLASS the required per-species masses, we sample an internal parameter (denoted \texttt{mnu\_sample}) and define a derived parameter $\mnu$ together with $m_{\mathrm{ncdm}}=(\mnu/3,\mnu/3,\mnu/3)$. This is a parameterization workaround; it preserves the reported $\mnu$ posterior but should be kept in mind when comparing config syntax to other pipelines.
+Empirical quantiles are computed from the inverse weighted empirical CDF, with integer holding times treated exactly. Such quantiles do not depend on how identical samples are split into rows. Convergence is assessed with independent chains using rank-normalized split $\hat R$, bulk and tail effective sample sizes, and the Monte Carlo standard error (MCSE) of the 95th-percentile, against thresholds fixed in advance \cite{gelman_rubin1992,vehtari2021_rhat}. A sampled parameter passes when $\hat R\le1.01$; the bulk, tail and quantile ESS are all at least 400; the quantile MCSE is positive and within its limit; and the chronological drift of the quantile and its sensitivity to equal-length chain truncation are within fixed multiples of that limit. For $\mnu$ the MCSE limit applies to the 95th percentile and is absolute: $0.005$\,eV in the first SPT+DESI campaign and $0.001$\,eV in the full CMB+DESI campaign and in all later SPT+DESI campaigns. For other parameters it is $5\%$ of the empirical posterior standard deviation. A group of chains qualifies only if every sampled parameter passes. Chains from different temperatures, solver versions or numerical settings are never pooled. These thresholds are empirical checks, not convergence proofs. History-dependent proposal adaptation is in particular not covered by any theorem we invoke.
 
-\paragraph{Priors and stability checks.}
-The lower bound $\mnu\ge 0$ is explicit in \cite{arxiv2601_16277}. The upper bound of the prior is not stated in the paper source we audited; for reproducibility we therefore use a broad flat prior with upper bound $5\,\mathrm{eV}$ and report this choice explicitly. Since the resulting posteriors and 95\% upper bounds we report are all $\ll 1,\mathrm{eV}$, this upper bound is not active in practice; the relevant gate for boundary behavior is the physical constraint $\mnu\ge 0$. For each production run we record basic chain diagnostics (split-$\hat R$ \cite{gelman_rubin1992,vehtari2021_rhat} and a crude ESS estimate \cite{vehtari2021_rhat} for $\mnu$) and a half-chain stability proxy for the 95\% upper bound. We also perform a mild stability check by repeating (or partially re-running) one production configuration with a distinct random seed and verifying that the 95\% upper bound does not change materially.
-Posterior summaries (quantiles, KDE-based 1D densities, and simple convergence heuristics) are computed using GetDist \cite{getdist}.
-
-\subsection{Reproducibility note}
-\label{sec:reproducibility}
-
-All results in this note are tied to canonical run bundles recorded in \path{docs/findings/freeze_checklist.md} and summarized in \path{docs/findings/canonical_results.json}.
-All figures and tables appearing in the paper are curated from, or auto-generated against, canonical run bundles and a canonical results summary, so the numerical claims in the text are backed by a deterministic artifact pipeline rather than manual transcription.
-The figures curated under \path{paper/figures/} and the tables under \path{paper/tables/} are generated from these canonical artifacts. For convenience, the primary run bundles cited later include:
-\begin{itemize}[leftmargin=*, itemsep=2pt]
-  \item SPT-only + DESI $\mnu$ shift comparison: \path{runs/20260212_080120_648405_mnu_shift_spt_only_desi}.
-  \item Planck-subset baseline + DESI $\mnu$ shift comparison: \path{runs/20260212_111357_576743_mnu_shift_cmb_plancksubset_desi}.
-  \item Profiled baseline vs common-staging audit comparison: \path{runs/20260211_181258_958327_spt_profiled_common_staging_compare}.
-\end{itemize}
-A one-command rebuild of key artifacts is provided by \texttt{make freeze\_check}, and the neutrino inference workflows are exposed via \texttt{make mnu\_smoke} and \texttt{make mnu\_full} when required external assets are present.
+In the 28 default-prior chain families examined for this purpose, the largest saved post-burn-in mass is about $0.36$\,eV, far from the prior box $\mnu\le5$\,eV. (Some later trial cohorts with modified numerical settings reached the box during unconverged start-up phases.) Lack of contact with the upper gate does not show that a wider prior would leave the 95th percentile unchanged, as \cref{prop:upper-gate} makes precise.

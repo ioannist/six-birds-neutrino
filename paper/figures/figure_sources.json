@@ -1,0 +1,147 @@
+{
+  "toy": {
+    "panel_a": {
+      "mu1": 0.05,
+      "sigma1": 0.02,
+      "mu2": -0.02,
+      "sigma2": 0.01,
+      "mu_star": -0.006,
+      "sd_star": 0.00894427190999916
+    },
+    "panel_b": {
+      "sigma1": 0.02,
+      "d": 0.0,
+      "s": 0.03,
+      "mu1_values": [
+        0.02,
+        0.0,
+        -0.02
+      ],
+      "sigma2_range": [
+        0.002,
+        0.05
+      ]
+    }
+  },
+  "audit_rows": [
+    {
+      "group": "SPT only, fixed spectra",
+      "label": "nuisance-profiled",
+      "run": "20261003_math_review_profiled_multistart",
+      "B_given_A": 849.627049933014,
+      "A_given_B": 414.389922973402
+    },
+    {
+      "group": "SPT only, fixed spectra",
+      "label": "+ support cut",
+      "run": "20261003_math_review_profiled_staging_multistart",
+      "B_given_A": 837.1527121886479,
+      "A_given_B": 415.7929062054427
+    },
+    {
+      "group": "SPT + DESI",
+      "label": "baseline",
+      "run": "20261003_math_review_cosmological_spt_desi",
+      "B_given_A": 488.29677851801944,
+      "A_given_B": 79.13301836406436
+    },
+    {
+      "group": "SPT + DESI",
+      "label": "+ support cut",
+      "run": "20261003_math_review_cosmological_spt_desi_staging",
+      "B_given_A": 486.60985869534056,
+      "A_given_B": 80.52264217012316
+    },
+    {
+      "group": "Full CMB + DESI",
+      "label": "baseline (multistart)",
+      "run": "20261003_math_review_cosmological_cmb_desi",
+      "B_given_A": 62.590454268304256,
+      "A_given_B": 23.165820562259796
+    },
+    {
+      "group": "Full CMB + DESI",
+      "label": "baseline (warm start)",
+      "run": "20261003_math_review_cosmological_cmb_desi_warm",
+      "B_given_A": 62.39013570828752,
+      "A_given_B": 23.190777408661233
+    },
+    {
+      "group": "Full CMB + DESI",
+      "label": "+ support cut",
+      "run": "20261003_math_review_cosmological_cmb_desi_staging",
+      "B_given_A": 64.62198135935068,
+      "A_given_B": 23.394509904473125
+    },
+    {
+      "group": "Full CMB + DESI",
+      "label": "$-$ SPT $\\tau$ prior",
+      "run": "20261003_math_review_cosmological_cmb_desi_tau_control",
+      "B_given_A": 61.28074587771198,
+      "A_given_B": 23.1061070066894
+    },
+    {
+      "group": "Full CMB + DESI",
+      "label": "+ CLASS precision",
+      "run": "20261003_math_review_cosmological_cmb_desi_accuracy",
+      "B_given_A": 61.38755851800374,
+      "A_given_B": 23.075645935928605
+    }
+  ],
+  "localization": {
+    "20261003_math_review_cosmological_spt_desi:B_given_A": {
+      "unlocalized_deltaQ": 0.0,
+      "deltaQ_full": 487.98567175440394
+    },
+    "20261003_math_review_cosmological_spt_desi:A_given_B": {
+      "unlocalized_deltaQ": 1.9987374013331305,
+      "deltaQ_full": 79.60151161046952
+    },
+    "20261003_math_review_cosmological_cmb_desi:B_given_A": {
+      "unlocalized_deltaQ": 0.0,
+      "deltaQ_full": 59.690214817425044
+    },
+    "20261003_math_review_cosmological_cmb_desi:A_given_B": {
+      "unlocalized_deltaQ": -0.011784276714383424,
+      "deltaQ_full": 25.430961775426283
+    }
+  },
+  "chains": [
+    {
+      "label": "SPT 2018 + DESI",
+      "p95": 0.19452529,
+      "p95_first_half": 0.084156919,
+      "p95_second_half": 0.21734975,
+      "rhat": 1.8604233345661814,
+      "ess": 4.8073793022254305,
+      "n_chains": 1
+    },
+    {
+      "label": "SPT D1 + DESI",
+      "p95": 0.09807736,
+      "p95_first_half": 0.069211378,
+      "p95_second_half": 0.09807736,
+      "rhat": 1.2010885838466545,
+      "ess": 11.386545039515662,
+      "n_chains": 1
+    },
+    {
+      "label": "Full CMB (2018) + DESI",
+      "p95": 0.079818013,
+      "p95_first_half": 0.079208214,
+      "p95_second_half": 0.08334805,
+      "rhat": 0.9997898142604631,
+      "ess": 8.987732786804878,
+      "n_chains": 1
+    },
+    {
+      "label": "Full CMB (D1) + DESI",
+      "p95": 0.067653162,
+      "p95_first_half": 0.058539213,
+      "p95_second_half": 0.072080174,
+      "rhat": 1.4835249609183858,
+      "ess": 5.03917834711618,
+      "n_chains": 1
+    }
+  ]
+}

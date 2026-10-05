@@ -1,36 +1,28 @@
-\section{Discussion, limitations, and next diagnostics}
+\section{Discussion}
 \label{sec:discussion}
 
-\subsection{What we learn from lens-swap auditing}
-The inconsistency emphasized by \cite{arxiv2601_16277} is not merely a parameter-level curiosity; it is a stability question about packaged inference under a lens swap. In the Six Birds / SBT framing \cite{sixbirds_foundations,sixbirds_darkenergy}, the two SPT likelihood releases define two lenses, and the posterior for $\mnu$ is a packaged macro object $E=\Completion\circ\Lens$. Our audits operationalize the question ``are these packages mutually predictive?'' and the answer is: \emph{not reliably}.
+\subsection{What the audits tell us}
+The SPT 2018 and D1 likelihoods do not predict each other well. At the audited fits, parameters chosen by one lens cost the other tens to hundreds of units of $\chi^2$, and the cost depends strongly on direction: testing D1 at a 2018 fit is always the more expensive transfer. Extra D1 multipole coverage, the two releases' different optical-depth priors and default Boltzmann precision change these numbers by a few percent at most. Re-fitting a capped set of nuisance parameters absorbs a large share of the fixed-spectrum disagreement, but not all of it. Where the disagreement sits depends on what else is in the fit. Temperature at $2000\le\ell<3000$ leads both directions with SPT and DESI. Polarization leads the D1-given-2018 direction once the Planck subset and PR4 lensing are added.
 
-Three takeaways are most relevant for interpreting $\mnu$ shifts:
-\begin{enumerate}[leftmargin=*, itemsep=2pt]
-  \item \textbf{Mismatch is large and directional.} The held-out mismatch statistics $\dchi_{B|A}$ and $\dchi_{A|B}$ are both substantial and asymmetric (\cref{tab:audit-summary}), reinforcing that route mismatch is not captured by a single symmetric ``tension'' number.
-  \item \textbf{Mismatch is localized in TT high-$\ell$ within the overlap region.} The localization heatmaps (\cref{fig:profiled-localization}) show that the dominant held-out failures arise from TT structure at high multipoles that both lenses cover. This supports treating the ``curious shift'' in \cite{arxiv2601_16277} as entangled with packaging differences in how the two releases compress and model the same sky information.
-  \item \textbf{Common-staging does not resolve the mismatch.} Restricting D1 to the SPT2018 multipole support changes the profiled mismatch only at the few-percent level (\cref{fig:profiled-staging-compare}). This argues against a purely support/cut explanation and motivates reporting lens-swap audits alongside headline bounds when pipeline changes are in play.
-\end{enumerate}
-
-Together with the reproduced direction of the DESI-driven $\mnu$ tightening under SPT2018$\rightarrow$D1 (\cref{sec:results-mnu}), these results support a conservative reading: $\mnu$ shifts can be \emph{packaging-sensitive} whenever the packaged likelihood objects disagree in localized regions of the summary statistics.
+Read through the SBT lens, the $\mnu$ shift reported in \cite{arxiv2601_16277} is a change of package under a lens swap, and the two lenses disagree at the level of the packaged likelihoods themselves. Until that disagreement is understood, a shift in a tight limit should be regarded as sensitive to packaging. This conclusion does not depend on the size of the shift, and it does not imply that either release is wrong.
 
 \subsection{Limitations}
-This note is deliberately scoped and has several limitations:
 \begin{itemize}[leftmargin=*, itemsep=2pt]
-  \item \textbf{Completion/nuisance choices.} Our production $\mnu$ chains use a minimal nuisance sampling set for computational tractability, and our profiled audits optimize only a runtime-capped subset of nuisance parameters (\cref{sec:profiled-audit}). Broader nuisance freedom and alternative priors can shift tight sub-0.1\,eV bounds.
-  \item \textbf{Likelihood and baseline implementation details.} While we match the Planck-subset+PR4-lensing structure described in \cite{arxiv2601_16277}, small implementation choices (e.g.\ the low-$\ell$ EE variant available in a given likelihood wrapper) can propagate into tight derived bounds.
-  \item \textbf{Finite compute and crude diagnostics.} Some of our MCMC diagnostics for $\mnu$ (ESS and split-$\hat R$ proxies \cite{gelman_rubin1992,vehtari2021_rhat}) are necessarily crude given the expense of CMB+Boltzmann runs. Our aim is to reproduce qualitative behavior and provide audit localization, not to provide definitive converged limits beyond what is needed for the lens-swap comparison.
-  \item \textbf{Audits over likelihood objects, not raw maps.} Our analyses operate on released likelihood objects. As such, the audits identify where the packaged summaries disagree, but they do not by themselves pinpoint whether the origin is calibration, beam/transfer functions, foreground modeling, mapmaking, or other pipeline components.
+  \item \textbf{Optimization.} All audit values are differences between numerically optimized candidates without a global-optimality certificate. Improved source fits moved individual values by up to a few percent. The positivity of $\dchi$ is guaranteed only between the retained candidates.
+  \item \textbf{Significance.} The two releases differ in seasons, noise and nuisance models. Without a declared null distribution the $\dchi$ values are comparative diagnostics, not $p$-values. Signed allocations are not independent chi-squares.
+  \item \textbf{Nuisance scope.} The SPT+DESI audits and chains fix SPT nuisance parameters at packaged defaults. The full baseline frees only three, and the fixed-spectrum audit re-fits a capped set of twelve. Broader nuisance freedom could change both the audit values and the posteriors.
+  \item \textbf{Baseline scope.} Our full baseline omits SPT lensing and differs from the SPT+DESI baseline in Boltzmann code and free foregrounds. Comparisons between the two baselines do not isolate a single cause.
+  \item \textbf{Posteriors.} We have no converged $\mnu$ posterior on a qualified numerical target (\cref{sec:results-mnu}). The likelihoods' sensitivity to solver version, caching and precision settings is part of the reason.
+  \item \textbf{Released objects only.} The audits operate on released likelihoods. They say where the packaged summaries disagree, not whether calibration, beams, transfer functions, foreground modeling, map-making or covariance construction is responsible.
 \end{itemize}
 
-\subsection{Next diagnostics (and non-novelty acknowledgement)}
-A decisive next step, emphasized already by \cite{arxiv2601_16277}, is to reprocess the 2018 raw data through the D1 pipeline. We explicitly \emph{do not} claim novelty for proposing this idea. Our contribution is to clarify why such a test is well-motivated in packaging terms and to provide a set of quantitative artifacts that can be used to evaluate it.
-
-Beyond reprocessing, SBT suggests two complementary diagnostic directions:
+\subsection{Next diagnostics}
+The decisive test remains the one proposed in \cite{arxiv2601_16277}: reprocess the 2018 raw data through the D1 pipeline. Short of that, three steps follow from this work.
 \begin{enumerate}[leftmargin=*, itemsep=2pt]
-  \item \textbf{Cross-lens posterior predictive checks (PPD-style audits) \cite{gelman_meng_stern1996_ppc}.} Rather than comparing only best-fit points, one can fit $\theta$ under lens $A$ and forward-predict the summary statistics used by lens $B$ (and vice versa), quantifying discrepancies as a function of spectrum and multipole. This would turn the localization maps here into a full predictive audit over posterior uncertainty.
-  \item \textbf{Minimal ``rewrite mode'' tests.} When mismatch localizes to specific blocks (e.g.\ TT high-$\ell$), one can introduce a small surrogate correction (a template mode or calibration mode) whose role is to reduce cross-lens mismatch without being interpreted as new physics. Success would be measured by improved cross-lens predictivity and increased stability of $\mnu$ under staging and dataset routing; failure would sharpen the case that a deeper inconsistency (or missing modeling) remains.
+  \item \textbf{Predictive audits.} Replace best-fit transfer with posterior predictive checks across lenses \cite{gelman_meng_stern1996_ppc}, with a declared null that accounts for differing noise and seasons. This would turn the localization maps into calibrated statements.
+  \item \textbf{Controlled targets.} Fix and record the solver version, precision settings and caching behavior. Verify stored chain rows against fresh evaluations. Only then sample to the quantile precision required by \cref{prop:readout}, given the size of the shift to be resolved.
+  \item \textbf{Targeted rewrites.} Where the mismatch localizes (EE at $2000\le\ell<3000$ in the full baseline, TT in the same range with SPT and DESI), test small template or calibration corrections fitted on one lens and evaluated on the other. A correction selected to fit the residual it removes improves the fit by construction. Its value must be judged on held-out data.
 \end{enumerate}
-Both directions are concrete and falsifiable and naturally complement standard parameter-tension narratives.
 
 \subsection{Practical recommendation}
-When pipeline/likelihood changes are known to move tight constraints, we recommend that headline parameter bounds (such as $\mnu$) be reported together with: (i) a directional cross-lens audit statistic (e.g.\ $\dchi_{B|A}$ and $\dchi_{A|B}$), (ii) a localization map by spectrum and multipole, and (iii) a common-staging control. These artifacts are small enough to be routine, yet they materially change how one should interpret shifts in packaged constraints under lens swaps.
+When a likelihood update moves a tight bound, we suggest reporting, alongside the bound: the directional mismatch in both directions; its signed, covariance-respecting localization by spectrum and multipole, for each baseline used; at least one support control; and posterior diagnostics with quantile-precision targets matched to the size of the claimed shift. These are inexpensive compared with the inference itself, and they change how a moving bound should be read.

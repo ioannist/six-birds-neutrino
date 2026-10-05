@@ -1,0 +1,28 @@
+\section{Formal verification}
+\label{app:formal}
+
+The mathematical statements of \cref{sec:sbt-framework,sec:methods,sec:boundary-mode} are proved in the Lean~4 library \path{lean/trunc_gauss_proof} (Lean 4.27.0 with a pinned Mathlib revision \cite{lean4,mathlib}). The library exports 97 public declarations. An automated audit (\path{AuditAxioms.lean}) prints the transitive axiom dependencies of each one. All of them depend only on Lean's standard axioms \texttt{propext}, \texttt{Classical.choice} and \texttt{Quot.sound}, with no \texttt{sorry}, \texttt{admit} or added axioms. Running \texttt{make math\_check} from the repository root builds the library, runs the axiom audit and runs the numerical regression tests. \Cref{tab:lean} maps each statement in the text to its formal counterpart.
+
+\begin{table}[h]
+  \centering
+  \caption{Statements in the text and their Lean counterparts (module and representative declarations).}
+  \label{tab:lean}
+  \footnotesize
+  \setlength{\tabcolsep}{4pt}
+  \begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.27\linewidth} >{\raggedright\arraybackslash}p{0.21\linewidth} >{\raggedright\arraybackslash}p{0.46\linewidth}@{}}
+    \toprule
+    Statement & Module & Representative declarations \\
+    \midrule
+    Sign and sum rule of $\dchi$ (\cref{sec:sbt-framework}) & \texttt{Audit} & \texttt{directionalDelta\_\allowbreak{}nonneg}, \texttt{directionalDelta\_\allowbreak{}sum} \\
+    Signed covariance ledger, \cref{eq:signed_alloc,eq:block_dchi} & \texttt{CovarianceLedger} & \texttt{covariance\_\allowbreak{}solve\_\allowbreak{}eq\_\allowbreak{}inverse}, \texttt{covariance\_\allowbreak{}solve\_\allowbreak{}allocation\_\allowbreak{}sum}, \texttt{groupedQuadraticDifference\_\allowbreak{}with\_\allowbreak{}remainder}, \texttt{residualQuadratic\_\allowbreak{}inverse\_\allowbreak{}nonneg} \\
+    Completed square and gated mode, \cref{prop:mode} & \texttt{TruncGauss}, \texttt{Mode}, \texttt{Product} & \texttt{combine\_\allowbreak{}completed\_\allowbreak{}square}, \texttt{gaussianProduct\_\allowbreak{}unique\_\allowbreak{}mode}, \texttt{gaussianProduct\_\allowbreak{}boundary\_\allowbreak{}max\_\allowbreak{}iff}, \texttt{combinedMean\_\allowbreak{}nonneg}, \texttt{combinedMean\_\allowbreak{}nonpos\_\allowbreak{}iff}, \texttt{combinedMean\_\allowbreak{}common\_\allowbreak{}scale} \\
+    Normalizer, law, CDF and quantiles, \cref{prop:law} & \texttt{Normalization}, \texttt{Gaussian\-Normalization}, \texttt{GaussianMeasure}, \texttt{GaussianGatedCDF}, \texttt{GaussianQuantile} & \texttt{truncatedNormalizer\_\allowbreak{}eq\_\allowbreak{}cdf}, \texttt{truncatedGaussianLaw\_\allowbreak{}isProbability}, \texttt{truncatedGaussianLaw\_\allowbreak{}singleton}, \texttt{truncatedGaussianLaw\_\allowbreak{}boundary\_\allowbreak{}interval\_\allowbreak{}pos}, \texttt{truncatedGaussianLaw\_\allowbreak{}cdf\_\allowbreak{}of\_\allowbreak{}nonneg}, \texttt{truncatedGaussianLaw\_\allowbreak{}cdf\_\allowbreak{}strictMonoOn}, \texttt{truncatedGaussianLaw\_\allowbreak{}existsUnique\_\allowbreak{}quantile} \\
+    Boundary probability and its monotonicity, \cref{prop:sweep} & \texttt{Tightening}, \texttt{GaussianSweep} & \texttt{product\_\allowbreak{}boundary\_\allowbreak{}iff\_\allowbreak{}offset\_\allowbreak{}event}, \texttt{offsetBoundaryEvent\_\allowbreak{}common\_\allowbreak{}scale}, \texttt{standardDeviation\-Boundary\-Gaussian\-Probability\_\allowbreak{}cdf}, \texttt{\dots\_\allowbreak{}strictAnti}, \texttt{\dots\_\allowbreak{}strictMono}, \texttt{\dots\_\allowbreak{}zero} \\
+    Finite upper gate, \cref{prop:upper-gate} & \texttt{UpperGate} & \texttt{upperConditionedLaw\_\allowbreak{}cdf}, \texttt{upperConditionedLaw\_\allowbreak{}cdf\_\allowbreak{}error}, \texttt{upperConditionedLaw\_\allowbreak{}cdf\_\allowbreak{}error\_\allowbreak{}at\_\allowbreak{}gate}, \texttt{upperConditionedGaussian\_\allowbreak{}existsUnique\_\allowbreak{}quantile} \\
+    Comparing two upper limits, \cref{prop:readout} & \texttt{Readout} & \texttt{tighteningReadout\_\allowbreak{}error\_\allowbreak{}le}, \texttt{tighteningReadout\_\allowbreak{}pos\_\allowbreak{}of\_\allowbreak{}error\_\allowbreak{}bound}, \texttt{tighteningReadout\_\allowbreak{}error\_\allowbreak{}bound\_\allowbreak{}sharp}, \texttt{tighteningReadout\_\allowbreak{}failure\_\allowbreak{}risk\_\allowbreak{}le} \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\paragraph{Scope of the formal results.}
+The proofs concern exact real numbers and exact probability measures. They take as hypotheses the conditions stated in the text: Gaussian factors, positive widths, independence of the two constraints, a constant prior on the gate when a product is read as a posterior, a fixed offset law in \cref{prop:sweep}, and, for the audit sign, the stated likelihood ordering. They do not certify the floating-point implementation, show that the cosmological likelihoods are Gaussian, prove MCMC convergence, or establish that any optimizer has found a global maximum. The exact-rational counterexample after \cref{prop:upper-gate} was checked separately and is not part of the Lean library.

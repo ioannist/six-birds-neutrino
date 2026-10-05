@@ -1,0 +1,16 @@
+\section{Version history}
+\label{app:versions}
+
+\paragraph{\manuscriptversion\ (\manuscriptdate).}
+This version follows a complete mathematical, numerical and formal review of the analysis. The main changes from Version 1 are:
+\begin{itemize}[leftmargin=*, itemsep=1pt]
+  \item The Version 1 tightening magnitudes (about $0.109$\,eV with SPT and DESI, and about $0.012$\,eV with the Planck-subset baseline) were derived from single, unconverged chains. They are withdrawn as unsupported. They have not been shown to be false. No replacement magnitude is given.
+  \item Localization previously inverted each block of the covariance separately. It now uses the exact signed allocation of \cref{sec:ledger}. The audits were re-run, including cosmological audits with a shared Boltzmann calculation and multi-start fits. The claim that high-$\ell$ TT dominates the mismatch in general is replaced by the baseline- and direction-dependent statement of \cref{sec:results-audits}.
+  \item The fixed-spectrum profiled audit now releases the shared parameters in the reference fit and uses multiple starting points. Its values change from $859.6$/$369.5$ to $849.6$/$414.4$.
+  \item The boundary-mode discussion now states its hypotheses explicitly. It shows that a boundary mode requires a nonpositive combined mean, which two constraints with positive means cannot produce, corrects the claim that tightening generally increases boundary-mode frequency (\cref{prop:sweep}), and adds the finite-upper-gate and readout results. The Lean library grew from two lemmas to 97 audited declarations.
+  \item Chain summaries now use the inverse weighted empirical CDF with exact holding-time weights, together with chronological split diagnostics. For the same stored samples, this changes the archived SPT D1 + DESI 95th percentile from $0.085$ to $0.098$\,eV, and it shows that none of the archived chains is converged (\cref{tab:archived-chains}).
+  \item The abstract and main text were rewritten. The audit figures and tables are now generated directly from the verified run bundles, and the two-constraint figure is re-evaluated from the analytic formulas.
+\end{itemize}
+
+\paragraph{Version 1 (2 March 2026).}
+First public version, posted on Research Square \cite{tsiokos2026_neutrino_v1}.
