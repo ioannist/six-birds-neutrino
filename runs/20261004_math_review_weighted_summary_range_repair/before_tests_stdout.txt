@@ -1,0 +1,364 @@
+FFFFF....FFF                                                             [100%]
+=================================== FAILURES ===================================
+___________ test_histogram_mode_preserves_overflowing_bin_mass_order ___________
+
+    def test_histogram_mode_preserves_overflowing_bin_mass_order():
+        scale = np.ldexp(1., 1023)
+        weights = np.array([scale, scale, 1.5 * scale, 1.5 * scale])
+        with np.errstate(over="ignore", invalid="ignore"):
+>           assert extractor._weighted_hist_mode(np.array([0., 0., 1., 1.]), weights, 2) == .75
+E           assert 0.25 == 0.75
+E            +  where 0.25 = <function _weighted_hist_mode at 0x713a73de6fc0>(array([0., 0., 1., 1.]), array([8.98846567e+307, 8.98846567e+307, 1.34826985e+308, 1.34826985e+308]), 2)
+E            +    where <function _weighted_hist_mode at 0x713a73de6fc0> = extractor._weighted_hist_mode
+E            +    and   array([0., 0., 1., 1.]) = <built-in function array>([0.0, 0.0, 1.0, 1.0])
+E            +      where <built-in function array> = np.array
+
+tests/test_weighted_chain_summaries.py:18: AssertionError
+______________ test_tiny_positive_weight_breaks_histogram_bin_tie ______________
+
+    def test_tiny_positive_weight_breaks_histogram_bin_tie():
+>       assert extractor._weighted_hist_mode(
+            np.array([0., 1., 1.]), np.array([1e308, 1e308, 1e-300]), 2
+        ) == .75
+E       assert 0.25 == 0.75
+E        +  where 0.25 = <function _weighted_hist_mode at 0x713a73de6fc0>(array([0., 1., 1.]), array([1.e+308, 1.e+308, 1.e-300]), 2)
+E        +    where <function _weighted_hist_mode at 0x713a73de6fc0> = extractor._weighted_hist_mode
+E        +    and   array([0., 1., 1.]) = <built-in function array>([0.0, 1.0, 1.0])
+E        +      where <built-in function array> = np.array
+E        +    and   array([1.e+308, 1.e+308, 1.e-300]) = <built-in function array>([1e+308, 1e+308, 1e-300])
+E        +      where <built-in function array> = np.array
+
+tests/test_weighted_chain_summaries.py:22: AssertionError
+___________ test_zero_weight_outlier_does_not_change_histogram_range ___________
+
+    def test_zero_weight_outlier_does_not_change_histogram_range():
+>       assert extractor._weighted_hist_mode(
+            np.array([0., 1., 100.]), np.array([1., 2., 0.]), 2
+        ) == .75
+E       assert 25.0 == 0.75
+E        +  where 25.0 = <function _weighted_hist_mode at 0x713a73de6fc0>(array([  0.,   1., 100.]), array([1., 2., 0.]), 2)
+E        +    where <function _weighted_hist_mode at 0x713a73de6fc0> = extractor._weighted_hist_mode
+E        +    and   array([  0.,   1., 100.]) = <built-in function array>([0.0, 1.0, 100.0])
+E        +      where <built-in function array> = np.array
+E        +    and   array([1., 2., 0.]) = <built-in function array>([1.0, 2.0, 0.0])
+E        +      where <built-in function array> = np.array
+
+tests/test_weighted_chain_summaries.py:28: AssertionError
+_______ test_histogram_mode_midpoint_remains_finite_at_large_coordinates _______
+
+    def test_histogram_mode_midpoint_remains_finite_at_large_coordinates():
+        values = np.array([1e308, 1.5e308])
+        edges = np.linspace(values[0], values[1], 3)
+        expected = float((Fraction(float(edges[1])) + Fraction(float(edges[2]))) / 2)
+        with np.errstate(over="ignore", invalid="ignore"):
+>           assert extractor._weighted_hist_mode(values, np.array([1., 2.]), 2) == expected
+E           assert inf == 1.375e+308
+E            +  where inf = <function _weighted_hist_mode at 0x713a73de6fc0>(array([1.0e+308, 1.5e+308]), array([1., 2.]), 2)
+E            +    where <function _weighted_hist_mode at 0x713a73de6fc0> = extractor._weighted_hist_mode
+E            +    and   array([1., 2.]) = <built-in function array>([1.0, 2.0])
+E            +      where <built-in function array> = np.array
+
+tests/test_weighted_chain_summaries.py:38: AssertionError
+_______ test_histogram_mode_supports_finite_opposite_extreme_coordinates _______
+
+    def test_histogram_mode_supports_finite_opposite_extreme_coordinates():
+        with np.errstate(over="ignore", invalid="ignore"):
+>           assert extractor._weighted_hist_mode(
+                np.array([-1e308, 1e308]), np.array([1., 2.]), 2
+            ) == 5e307
+
+tests/test_weighted_chain_summaries.py:43: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+scripts/extract_mnu_limits.py:46: in _weighted_hist_mode
+    hist, edges = np.histogram(values, bins=bins, range=(vmin, vmax), weights=weights)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/home/ioannis/.local/lib/python3.12/site-packages/numpy/lib/_histograms_impl.py:792: in histogram
+    bin_edges, uniform_bins = _get_bin_edges(a, bins, range, weights)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+a = array([-1.e+308,  1.e+308]), bins = 2, range = (-1e+308, 1e+308)
+weights = array([1., 2.])
+
+    def _get_bin_edges(a, bins, range, weights):
+        """
+        Computes the bins used internally by `histogram`.
+    
+        Parameters
+        ==========
+        a : ndarray
+            Ravelled data array
+        bins, range
+            Forwarded arguments from `histogram`.
+        weights : ndarray, optional
+            Ravelled weights array, or None
+    
+        Returns
+        =======
+        bin_edges : ndarray
+            Array of bin edges
+        uniform_bins : (Number, Number, int):
+            The upper bound, lowerbound, and number of bins, used in the optimized
+            implementation of `histogram` that works on uniform bins.
+        """
+        # parse the overloaded bins argument
+        n_equal_bins = None
+        bin_edges = None
+    
+        if isinstance(bins, str):
+            bin_name = bins
+            # if `bins` is a string for an automatic method,
+            # this will replace it with the number of bins calculated
+            if bin_name not in _hist_bin_selectors:
+                raise ValueError(
+                    f"{bin_name!r} is not a valid estimator for `bins`")
+            if weights is not None:
+                raise TypeError("Automated estimation of the number of "
+                                "bins is not supported for weighted data")
+    
+            first_edge, last_edge = _get_outer_edges(a, range)
+    
+            # truncate the range if needed
+            if range is not None:
+                keep = (a >= first_edge)
+                keep &= (a <= last_edge)
+                if not np.logical_and.reduce(keep):
+                    a = a[keep]
+    
+            if a.size == 0:
+                n_equal_bins = 1
+            else:
+                # Do not call selectors on empty arrays
+                width = _hist_bin_selectors[bin_name](a, (first_edge, last_edge))
+                if width:
+                    if np.issubdtype(a.dtype, np.integer) and width < 1:
+                        width = 1
+                    delta = _unsigned_subtract(last_edge, first_edge)
+                    n_equal_bins = int(np.ceil(delta / width))
+                else:
+                    # Width can be zero for some estimators, e.g. FD when
+                    # the IQR of the data is zero.
+                    n_equal_bins = 1
+    
+        elif np.ndim(bins) == 0:
+            try:
+                n_equal_bins = operator.index(bins)
+            except TypeError as e:
+                raise TypeError(
+                    '`bins` must be an integer, a string, or an array') from e
+            if n_equal_bins < 1:
+                raise ValueError('`bins` must be positive, when an integer')
+    
+            first_edge, last_edge = _get_outer_edges(a, range)
+    
+        elif np.ndim(bins) == 1:
+            bin_edges = np.asarray(bins)
+            if np.any(bin_edges[:-1] > bin_edges[1:]):
+                raise ValueError(
+                    '`bins` must increase monotonically, when an array')
+    
+        else:
+            raise ValueError('`bins` must be 1d, when an array')
+    
+        if n_equal_bins is not None:
+            # gh-10322 means that type resolution rules are dependent on array
+            # shapes. To avoid this causing problems, we pick a type now and stick
+            # with it throughout.
+            bin_type = np.result_type(first_edge, last_edge, a)
+            if np.issubdtype(bin_type, np.integer):
+                bin_type = np.result_type(bin_type, float)
+    
+            # bin edges must be computed
+            bin_edges = np.linspace(
+                first_edge, last_edge, n_equal_bins + 1,
+                endpoint=True, dtype=bin_type)
+            if np.any(bin_edges[:-1] >= bin_edges[1:]):
+>               raise ValueError(
+                    f'Too many bins for data range. Cannot create {n_equal_bins} '
+                    f'finite-sized bins.')
+E               ValueError: Too many bins for data range. Cannot create 2 finite-sized bins.
+
+/home/ioannis/.local/lib/python3.12/site-packages/numpy/lib/_histograms_impl.py:449: ValueError
+_ test_boundary_fraction_handles_finite_weights_with_overflowing_total[some-0.4] _
+
+tmp_path = PosixPath('/tmp/pytest-of-ioannis/pytest-900/test_boundary_fraction_handles1')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x713a73e025a0>
+case = 'some', expected = 0.4
+
+    @pytest.mark.parametrize("case, expected", [("none", 0.), ("some", .4), ("all", 1.)])
+    def test_boundary_fraction_handles_finite_weights_with_overflowing_total(tmp_path, monkeypatch,
+                                                                           case, expected):
+        scale = np.ldexp(1., 1023)
+        weights = np.array([scale, scale, 1.5 * scale, 1.5 * scale])
+        values = np.array({"none": [.1, .1, 1., 1.], "some": [0., 0., 1., 1.],
+                           "all": [0., 0., 0., 0.]}[case])
+>       result = _extract(tmp_path, monkeypatch, values, weights)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_weighted_chain_summaries.py:80: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_weighted_chain_summaries.py:70: in _extract
+    return json.loads(output.read_text(), parse_constant=nonfinite)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/usr/lib/python3.12/json/__init__.py:359: in loads
+    return cls(**kw).decode(s)
+           ^^^^^^^^^^^^^^^^^^^
+/usr/lib/python3.12/json/decoder.py:337: in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/usr/lib/python3.12/json/decoder.py:353: in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+value = 'NaN'
+
+    def nonfinite(value):
+>       raise AssertionError(f"Nonfinite value serialized: {value}")
+E       AssertionError: Nonfinite value serialized: NaN
+
+tests/test_weighted_chain_summaries.py:69: AssertionError
+----------------------------- Captured stdout call -----------------------------
+{
+  "chains_prefix": "/tmp/pytest-of-ioannis/pytest-900/test_boundary_fraction_handles1/run/chains/posterior",
+  "param": "mnu",
+  "loader": "raw_per_chain",
+  "burnin_frac": 0.0,
+  "eps": 0.001,
+  "prior_lower_bound": 0.0,
+  "mnu_median": 1.0,
+  "mnu_p95_upper": 1.0,
+  "mnu_mode": 0.008333333333333333,
+  "boundary_fraction": NaN,
+  "n_samples_used": 4,
+  "n_chains": 1,
+  "n_represented_steps": null,
+  "quantile_definition": "inverse_weighted_empirical_cdf",
+  "diagnostic_method": "classical_chronological_split_rhat_integer_holding_times",
+  "ess_method": "sum_per_chain_scalar_initial_positive_monotone_fft_proxy",
+  "diagnostic_scope": "scalar_proxies_not_rank_normalized_or_multivariate_certificates",
+  "mnu_split_rhat": "unknown",
+  "mnu_ess": "unknown",
+  "mnu_p95_upper_first_half": "unknown",
+  "mnu_p95_upper_second_half": "unknown",
+  "mnu_p95_half_diff": "unknown",
+  "warnings": [
+    "Sequential diagnostics unavailable: chain expansion exceeds diagnostic resource limit; summaries remain available."
+  ]
+}
+_ test_boundary_fraction_handles_finite_weights_with_overflowing_total[all-1.0] _
+
+tmp_path = PosixPath('/tmp/pytest-of-ioannis/pytest-900/test_boundary_fraction_handles2')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x713a73cc7ec0>
+case = 'all', expected = 1.0
+
+    @pytest.mark.parametrize("case, expected", [("none", 0.), ("some", .4), ("all", 1.)])
+    def test_boundary_fraction_handles_finite_weights_with_overflowing_total(tmp_path, monkeypatch,
+                                                                           case, expected):
+        scale = np.ldexp(1., 1023)
+        weights = np.array([scale, scale, 1.5 * scale, 1.5 * scale])
+        values = np.array({"none": [.1, .1, 1., 1.], "some": [0., 0., 1., 1.],
+                           "all": [0., 0., 0., 0.]}[case])
+>       result = _extract(tmp_path, monkeypatch, values, weights)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_weighted_chain_summaries.py:80: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_weighted_chain_summaries.py:70: in _extract
+    return json.loads(output.read_text(), parse_constant=nonfinite)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/usr/lib/python3.12/json/__init__.py:359: in loads
+    return cls(**kw).decode(s)
+           ^^^^^^^^^^^^^^^^^^^
+/usr/lib/python3.12/json/decoder.py:337: in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/usr/lib/python3.12/json/decoder.py:353: in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+value = 'NaN'
+
+    def nonfinite(value):
+>       raise AssertionError(f"Nonfinite value serialized: {value}")
+E       AssertionError: Nonfinite value serialized: NaN
+
+tests/test_weighted_chain_summaries.py:69: AssertionError
+----------------------------- Captured stdout call -----------------------------
+{
+  "chains_prefix": "/tmp/pytest-of-ioannis/pytest-900/test_boundary_fraction_handles2/run/chains/posterior",
+  "param": "mnu",
+  "loader": "raw_per_chain",
+  "burnin_frac": 0.0,
+  "eps": 0.001,
+  "prior_lower_bound": 0.0,
+  "mnu_median": 0.0,
+  "mnu_p95_upper": 0.0,
+  "mnu_mode": 0.0,
+  "boundary_fraction": NaN,
+  "n_samples_used": 4,
+  "n_chains": 1,
+  "n_represented_steps": null,
+  "quantile_definition": "inverse_weighted_empirical_cdf",
+  "diagnostic_method": "classical_chronological_split_rhat_integer_holding_times",
+  "ess_method": "sum_per_chain_scalar_initial_positive_monotone_fft_proxy",
+  "diagnostic_scope": "scalar_proxies_not_rank_normalized_or_multivariate_certificates",
+  "mnu_split_rhat": "unknown",
+  "mnu_ess": "unknown",
+  "mnu_p95_upper_first_half": "unknown",
+  "mnu_p95_upper_second_half": "unknown",
+  "mnu_p95_half_diff": "unknown",
+  "warnings": [
+    "Sequential diagnostics unavailable: chain expansion exceeds diagnostic resource limit; summaries remain available."
+  ]
+}
+________ test_positive_boundary_fraction_underflow_is_reported_unknown _________
+
+tmp_path = PosixPath('/tmp/pytest-of-ioannis/pytest-900/test_positive_boundary_fractio0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x713a73cc7dd0>
+
+    def test_positive_boundary_fraction_underflow_is_reported_unknown(tmp_path, monkeypatch):
+        result = _extract(tmp_path, monkeypatch, np.array([0., 1.]), np.array([1e-300, 1e308]))
+>       assert result["boundary_fraction"] == "unknown"
+E       AssertionError: assert 0.0 == 'unknown'
+
+tests/test_weighted_chain_summaries.py:87: AssertionError
+----------------------------- Captured stdout call -----------------------------
+{
+  "chains_prefix": "/tmp/pytest-of-ioannis/pytest-900/test_positive_boundary_fractio0/run/chains/posterior",
+  "param": "mnu",
+  "loader": "raw_per_chain",
+  "burnin_frac": 0.0,
+  "eps": 0.001,
+  "prior_lower_bound": 0.0,
+  "mnu_median": 1.0,
+  "mnu_p95_upper": 1.0,
+  "mnu_mode": 0.9916666666666667,
+  "boundary_fraction": 0.0,
+  "n_samples_used": 2,
+  "n_chains": 1,
+  "n_represented_steps": null,
+  "quantile_definition": "inverse_weighted_empirical_cdf",
+  "diagnostic_method": "classical_chronological_split_rhat_integer_holding_times",
+  "ess_method": "sum_per_chain_scalar_initial_positive_monotone_fft_proxy",
+  "diagnostic_scope": "scalar_proxies_not_rank_normalized_or_multivariate_certificates",
+  "mnu_split_rhat": "unknown",
+  "mnu_ess": "unknown",
+  "mnu_p95_upper_first_half": "unknown",
+  "mnu_p95_upper_second_half": "unknown",
+  "mnu_p95_half_diff": "unknown",
+  "warnings": [
+    "Sequential diagnostics unavailable: noninteger weights do not specify Markov holding times; sequential diagnostics unavailable."
+  ]
+}
+=========================== short test summary info ============================
+FAILED tests/test_weighted_chain_summaries.py::test_histogram_mode_preserves_overflowing_bin_mass_order
+FAILED tests/test_weighted_chain_summaries.py::test_tiny_positive_weight_breaks_histogram_bin_tie
+FAILED tests/test_weighted_chain_summaries.py::test_zero_weight_outlier_does_not_change_histogram_range
+FAILED tests/test_weighted_chain_summaries.py::test_histogram_mode_midpoint_remains_finite_at_large_coordinates
+FAILED tests/test_weighted_chain_summaries.py::test_histogram_mode_supports_finite_opposite_extreme_coordinates
+FAILED tests/test_weighted_chain_summaries.py::test_boundary_fraction_handles_finite_weights_with_overflowing_total[some-0.4]
+FAILED tests/test_weighted_chain_summaries.py::test_boundary_fraction_handles_finite_weights_with_overflowing_total[all-1.0]
+FAILED tests/test_weighted_chain_summaries.py::test_positive_boundary_fraction_underflow_is_reported_unknown
+8 failed, 4 passed in 2.52s

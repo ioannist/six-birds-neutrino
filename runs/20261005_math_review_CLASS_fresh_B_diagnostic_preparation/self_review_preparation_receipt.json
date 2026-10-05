@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-05T05:20:36.744227+00:00",
+  "source": "runs/20261005_math_review_CLASS_fresh_recovery_diagnostic_preparation_v2/self_review.py",
+  "source_sha256": "773428c15d93fbd1858d0a051226e39da55663e2b3a1e2a4f290c2d76a2244ee",
+  "changes": [
+    [
+      "runs/20261005_math_review_CLASS_fresh_recovery_prethreshold_controls",
+      "runs/20261005_math_review_CLASS_fresh_B_prethreshold_controls"
+    ],
+    [
+      "set(state['fresh_CLASS_recovery_cohorts'])",
+      "set(state['CLASS_fresh_B_preparation']['cohorts'])"
+    ],
+    [
+      "state['fresh_CLASS_recovery_cohorts'][group]['seeds']",
+      "state['CLASS_fresh_B_preparation']['cohorts'][group]['seeds']"
+    ]
+  ]
+}

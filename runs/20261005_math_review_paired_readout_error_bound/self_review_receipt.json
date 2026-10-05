@@ -1,0 +1,41 @@
+{
+  "utc": "2026-10-05T07:24:33.048237+00:00",
+  "reviewer": "distinct_self_review_not_independent_agent",
+  "new_theorems": [
+    "tighteningReadout_error_le",
+    "tighteningReadout_interval",
+    "tighteningReadout_pos_of_error_bound",
+    "tighteningReadout_error_bound_sharp",
+    "tighteningReadout_failure_subset",
+    "tighteningReadout_failure_measure_le",
+    "tighteningReadout_failure_risk_le",
+    "tighteningReadout_failure_measurable"
+  ],
+  "all_public_theorem_and_lemma_axiom_outputs_checked": 97,
+  "only_standard_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "roles": {
+    "coordinate_inputs": "Two supplied absolute errors for fixed real true/estimated quantile coordinates.",
+    "derived_error_interval": "Algebra and triangle inequality give error at most epsilonA+epsilonB.",
+    "derived_positive_direction": "Strictly larger measured shift than the summed actual errors implies positive true shift.",
+    "sharpness": "Four strictly positive coordinates attain the summed bound; no density or posterior is constructed.",
+    "risk_inputs": "A common measurable space, measure and supplied marginal failure bounds; probabilities require a probability law.",
+    "derived_risk": "Paired failure is contained in the marginal union, so measure subadditivity gives summed risk.",
+    "measurability": "Measurable estimators give a measurable paired-failure event.",
+    "absent_inputs": "MCSE is not an absolute error or calibrated failure probability; no sampler or physical error bridge is supplied.",
+    "false_targets": "Imported sum mechanism accepts a sharp witness; max, quadrature and non-strict sign margin are refuted on it."
+  },
+  "source_sha256": "f70d07025341d18070107cd1ca0fdb5bb5219e409d9424b98595f9a67d169e69",
+  "root_import_sha256": "71d2e6507f2c5271e58decb78d32ca1cd2ed1349147a4fd39f59399dd44476e3",
+  "axiom_requests_sha256": "32c2212fe6f2f3a8ca7bafa86eb296fdfd547d4929351daa51eb9f02eac4cee1",
+  "axiom_output_sha256": "43e7cfb9b28e76da65bd3b1d0de04ccbf4c7b54ff24a8fa19a4ec1487173f160",
+  "false_target_source_sha256": "414088b0d057d829953d6c7a01c6a280801c12626cdc8148d4f9e4664bd0eade",
+  "conditional_inputs_not_reported_as_constructed": true,
+  "independence_not_required_or_inferred": true,
+  "RMS_MCSE_and_absolute_coordinate_errors_not_identified": true,
+  "no_current_cosmological_readout_qualified": true,
+  "paper_or_main_claim_revision_adopted": false
+}

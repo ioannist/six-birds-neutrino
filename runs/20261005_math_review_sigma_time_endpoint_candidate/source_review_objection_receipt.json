@@ -1,0 +1,9 @@
+{
+  "utc": "2026-10-05T02:14:31.109318+00:00",
+  "reviewer": "distinct_self_review_not_independent_agent",
+  "location": "CAMBdata_TimeOfzArr final new loop",
+  "objection": "Unconditional reuse of tau0 can override an explicit caller tolerance. Current transfer initialization uses default tolerance, but the wider API precision request must remain honored.",
+  "repair": "Apply zero-endpoint reuse only when tol is absent.",
+  "native_controls_executed": false,
+  "production_adopted": false
+}

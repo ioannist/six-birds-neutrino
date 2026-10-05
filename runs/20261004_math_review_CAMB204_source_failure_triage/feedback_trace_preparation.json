@@ -1,0 +1,17 @@
+{
+  "source": "runs/20261004_math_review_CAMB204_source_failure_triage/classify_reproduced_point.py",
+  "source_sha256": "7f08bd490a1a0c2994cb3c893e002819c006c2ab3e23f801e5748a1b2539a258",
+  "script": "runs/20261004_math_review_CAMB204_source_failure_triage/trace_hmcode_feedback.py",
+  "script_sha256": "01af23ebc6d8e368bddde7f8d3c081367dea43be500946ade0022bf1035b63ce",
+  "changes": [
+    [
+      "folder = HERE / f'seed{args.seed}_phase_classification'",
+      "folder = HERE / f'seed{args.seed}_feedback_phase_classification'"
+    ],
+    [
+      "assert sha(entry['wrapper']) == entry['wrapper_sha256']",
+      "assert sha(entry['wrapper']) == entry['wrapper_sha256']\nimport camb\ncamb.set_feedback_level(2)"
+    ]
+  ],
+  "scope": "stock FeedbackLevel=2 and separate output path; verbosity also selects serial HMcode redshift loop, so outputs must be compared"
+}

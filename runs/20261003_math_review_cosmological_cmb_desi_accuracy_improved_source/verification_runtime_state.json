@@ -1,0 +1,17 @@
+{
+  "pid": 2352691,
+  "status": "fresh_native_endpoint_verification_completed",
+  "command": [
+    "/tmp/neutrino-math-review-venv/bin/python",
+    "scripts/verify_cosmological_audit.py",
+    "--audit-dir",
+    "runs/20261003_math_review_cosmological_cmb_desi_accuracy_improved_source",
+    "--direction",
+    "B_given_A",
+    "--output",
+    "runs/20261003_math_review_cosmological_cmb_desi_accuracy_improved_source/accounting_verification.json"
+  ],
+  "exec_session": 36783,
+  "process_exit_code": 0,
+  "verification_sha256": "24290d702d1ce725c3d4a8ae46bdd537ffe985c9c27c922fdffb97c7532bd90f"
+}

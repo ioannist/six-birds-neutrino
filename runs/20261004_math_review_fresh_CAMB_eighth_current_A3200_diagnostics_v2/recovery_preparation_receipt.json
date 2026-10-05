@@ -1,0 +1,23 @@
+{
+  "utc": "2026-10-04T23:24:31.181789+00:00",
+  "failed_root": "runs/20261004_math_review_fresh_CAMB_eighth_current_A3200_diagnostics",
+  "failed_execution_receipt": "runs/20261004_math_review_fresh_CAMB_eighth_current_A3200_diagnostics/failed_execution_receipt.json",
+  "source_snapshot_receipt_sha256": "bd6d38c67ec02f148eec86b4fb414e2b01c0f4b4732a6bc6ee64c7d4b01eb66a",
+  "source_native_receipt_sha256": "d6b7e1eced444e4268bfe472308d47085135930ba3b84fc76407970ce0694b21",
+  "source_native_stage_completion": "runs/20261004_math_review_fresh_CAMB_eighth_current_A3200_diagnostics/verify_native_rows.py.completion.json",
+  "source_native_stage_completion_sha256": "9c28029e80c1b4b6ab5dc2bd6a763dffdba71f25b5add488a0cb57064a6691b6",
+  "frozen_chain_bytes_and_native_checks_reused_exactly": true,
+  "all_family_scientific_provenance_unchanged": true,
+  "config_changes_only_snapshot_output_path": true,
+  "worker_only_change": [
+    "['verify_native_rows.py', 'run_diagnostic.py', 'verify_snapshot.py']",
+    "['run_diagnostic.py', 'verify_snapshot.py']"
+  ],
+  "reverse_byte_identity_verified": true,
+  "new_outer_wrapper_log_names": [
+    "verification_worker_stdout.txt",
+    "verification_worker_stderr.txt"
+  ],
+  "prior_frozen_prefixes_preserved": true,
+  "target_or_gates_changed": false
+}

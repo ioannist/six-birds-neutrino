@@ -1,0 +1,229 @@
+{
+  "utc": "2026-10-04T10:48:28.107429+00:00",
+  "review_type": "distinct_self_review_not_independent_review",
+  "scope": "integral_derived_gated_Gaussian_law_to_conditional_measure_interval_probabilities_and_CDF",
+  "new_exported_theorems": [
+    "truncatedGaussianLaw_Ioc_cdf",
+    "truncatedGaussianLaw_cdf_of_nonneg",
+    "truncatedGaussianLaw_cdf_of_nonpos",
+    "truncatedGaussianLaw_cdf_strictMonoOn",
+    "truncatedGaussianLaw_eq_smul_restrict",
+    "truncatedGaussianLaw_real_apply"
+  ],
+  "total_exported_theorems_axiom_checked": 71,
+  "allowed_transitive_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "Python_tests_passed": 130,
+  "formal_review_examples": 10,
+  "managed_phases": [
+    {
+      "session": 30636,
+      "phase": "first_measure_identity_restriction_commutation_missing",
+      "exit_code": 1
+    },
+    {
+      "session": 78699,
+      "phase": "two_measure_identity_theorems",
+      "exit_code": 0
+    },
+    {
+      "session": 44579,
+      "phase": "first_CDF_build_derived_Gaussian_finiteness_not_explicit",
+      "exit_code": 1
+    },
+    {
+      "session": 61005,
+      "phase": "full_six_theorem_build",
+      "exit_code": 0
+    },
+    {
+      "session": 69772,
+      "phase": "first_formal_review_zero_membership_elaboration",
+      "exit_code": 1
+    },
+    {
+      "session": 32451,
+      "phase": "ten_example_formal_review",
+      "exit_code": 0
+    },
+    {
+      "session": 57060,
+      "phase": "combined_make_math_check",
+      "exit_code": 0
+    }
+  ],
+  "normalization_bridge": "derived Gaussian PDF identity plus actual Lebesgue withDensity, restriction and scalar multiplication; denominator positivity derived from integral normalizer",
+  "CDF_formula_for_nonnegative_x": "[Phi((x-mu)/sigma)-Phi(-mu/sigma)]/Phi(mu/sigma)",
+  "CDF_for_nonpositive_x": "zero_including_boundary",
+  "strictness_scope": "all real means and positive sigma, CDF strictly increasing on the physical half-line; no exact-real strictness asserted for rounded numerical readouts",
+  "interval_formula_scope": "0<=a<=b and sigma>0 for Ioc(a,b); arbitrary measurable conditional event identity also proved",
+  "quantile_scope": "at most one nonnegative coordinate for a specified CDF value; no quantile existence or numerical inverse algorithm claimed",
+  "zero_width_control": "constructed law has zero boundary atom while actual zero-variance Gaussian is Dirac; positive-sigma hypothesis is essential",
+  "finite_upper_gate_or_varying_prior_covered": false,
+  "native_cosmological_Gaussianity_or_convergence_certified": false,
+  "floating_point_accuracy_certified": false,
+  "owned_live_samplers": 28,
+  "paper_modified": false,
+  "scope_or_magnitude_revision_adopted": false,
+  "files": [
+    {
+      "path": "lean/trunc_gauss_proof/AuditAxioms.lean",
+      "sha256": "c2711019bc2df360af90c1a6d3f535df3392096d16eb94ddf7c4fdcb6446a3ff"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/TruncGaussProof/Audit.lean",
+      "sha256": "10c8f3ebced74cc26f509948e8c6b6a2f32a7502cbb9eb5c078d4c728db2bd59"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/TruncGaussProof/Basic.lean",
+      "sha256": "a88fef4d3efa63c9f9f5c948dd5ba1de3ea09d828ce8388ee83fa3d039e734a4"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/TruncGaussProof/CovarianceLedger.lean",
+      "sha256": "c4c34185f9900be5d7f6dcdf079bfd0e5fb4a389e510757bf03bcee3f86795d3"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/TruncGaussProof/GaussianGatedCDF.lean",
+      "sha256": "a741de95ddedae4467a4185e498a8cc323111fe0420f68d29dc89f6d45da9e53"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/TruncGaussProof/GaussianMeasure.lean",
+      "sha256": "2c1cfc3298c94411831f4030313485733cdfbd247ce43c1a565f4a6d0049a865"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/TruncGaussProof/GaussianNormalization.lean",
+      "sha256": "479525ccc03b459b51c118a2793874268bc4ab12cb4f3216e9d1ee0c3a646486"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/TruncGaussProof/GaussianSweep.lean",
+      "sha256": "dfeb0920f48c290fd8325885e84edabce5b7f03b56a7e5beedc2b3ca046944e1"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/TruncGaussProof/Mode.lean",
+      "sha256": "f4200937d87b548c7bbbbd58568dc21909fe5ba964c144ea539988981fdd2a21"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/TruncGaussProof/Normalization.lean",
+      "sha256": "797977dfb5e0be7bdcccaebebaa66f4f15040710df4851ac888ef5e8a3eaf623"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/TruncGaussProof/Product.lean",
+      "sha256": "bbcbc989862979f52e7b1bbf97d4acf30b59564d2b7c42a9e7c3ac1e457bc9bb"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/TruncGaussProof/Tightening.lean",
+      "sha256": "638dab7a8721e704ee4a3708411703d7b145a40ffd5669a33abbdf359a6a75d3"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/TruncGaussProof/TruncGauss.lean",
+      "sha256": "895cfb7e6f733728b2b98e36c2468310ca110535cd912d750e389943350f6e0c"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/TruncGaussProof.lean",
+      "sha256": "58eff2612ddd866745e370eb2fae984885124249feef43abe113769efb37672d"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_gated_CDF/AuditAxioms_before.lean",
+      "sha256": "eb233b64abf3b39ecb36dd37571bb916c4c49f7c781ef0dd6325f199fec49f0c"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_gated_CDF/GaussianGatedCDFReview.lean",
+      "sha256": "ec1528c61cef7e404fa5b7640a1080dd935213abb1643501ca6273712c6d3fd1"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_gated_CDF/GaussianGatedCDFReview_first_attempt.lean",
+      "sha256": "1985d48e708c0d6d386d368ad83c17b5e59503e60329ff8fc0a9954206d817a2"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_gated_CDF/GaussianGatedCDF_first_attempt.lean",
+      "sha256": "295bb637f7b44fab52697a33939790f9cdfc94098000b29ad1d39b1662e386cc"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_gated_CDF/GaussianGatedCDF_first_full_attempt.lean",
+      "sha256": "7d687a7ce8d3ddb686950c82ddb24c9f48c87bc42a29be5f5229dd7da1e57eed"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_gated_CDF/GaussianGatedCDF_measure_identity.lean",
+      "sha256": "0cb9dc81931900f17796ea5a5b33c2a3ab56138fc8428db42dd38b7f38f5611c"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_gated_CDF/TruncGaussProof_before.lean",
+      "sha256": "6ccde4f220cc698675aea675fc5e6a7265969a74ddbdd2b96f524453d14a217d"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_gated_CDF/build_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_gated_CDF/build_stdout.txt",
+      "sha256": "76f383650acb3dab54011f8bb63daccf1e3f2af3270c236d4a7359878a1e8b9a"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_gated_CDF/first_build_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_gated_CDF/first_build_stdout.txt",
+      "sha256": "5c8928c7c470790c9859adc9bbf2f603184721bc1662893b98064458064d3e89"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_gated_CDF/first_formal_review_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_gated_CDF/first_formal_review_stdout.txt",
+      "sha256": "940ebf9ec5dff1c041a1a73631b77ec45fc0311e499c43e47e05af0272a301f3"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_gated_CDF/formal_review_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_gated_CDF/formal_review_stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_gated_CDF/full_CDF_build_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_gated_CDF/full_CDF_build_stdout.txt",
+      "sha256": "b1603364d6de041af0b4f9f65bdb81f44de5b5f556e5e7bf74164ae1806916f6"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_gated_CDF/math_check_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_gated_CDF/math_check_stdout.txt",
+      "sha256": "91e3645955e05b09bb1edefe1a9b83d7310980b41609e6463c96daceb02657c6"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_gated_CDF/measure_identity_build_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_gated_CDF/measure_identity_build_stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_gated_CDF/observe_runtime.py",
+      "sha256": "939d0d1c5205236985847e43eb4081e5dc9d6f81febb407bbb87589a73525dd0"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_gated_CDF/runtime_observation.json",
+      "sha256": "ec4900922192b020f4ab106c99b6950d5a0f8830c9f80649b8869b001a519131"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_gated_CDF/setup_path_correction.json",
+      "sha256": "785e888ac56a59758fda78afc9a7ab5f984013cb27235be212f70d9717871cc6"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_gated_CDF/verify_gated_CDF.py",
+      "sha256": "51fbe2f046f93dd50e962fc6f3d2c72116446acb0f3a9c1700a5498afece0b12"
+    }
+  ]
+}

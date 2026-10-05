@@ -1,0 +1,43 @@
+{
+  "utc": "2026-10-04T16:08:43.190112+00:00",
+  "reviewer": "self_review_no_independent_agent",
+  "old_failure_reproduced": true,
+  "tracked_bundles_checked": 547,
+  "unchanged_prefixes": 441,
+  "external_outputs_rebased_to_local_chains": 70,
+  "new_refusals_without_local_chain_data": 27,
+  "twenty_first_native_rows_read_from_exact_frozen_data": true,
+  "four_latest_CLASS_reports_exactly_unchanged": true,
+  "make_math_check": {
+    "session": 76779,
+    "exit_code": 0,
+    "Python_tests": 175,
+    "Lean_public_axiom_outputs": 74
+  },
+  "targeted_tests": {
+    "session": 28458,
+    "exit_code": 0,
+    "passed": 101
+  },
+  "before_tests": {
+    "session": 93196,
+    "exit_code": 1,
+    "expected_failed": 5,
+    "passed": 1
+  },
+  "impact_verification": {
+    "session": 40549,
+    "exit_code": 0
+  },
+  "CLASS_replay": {
+    "session": 63645,
+    "exit_code": 0
+  },
+  "source_sha256": {
+    "scripts/extract_mnu_limits.py": "e7ae24109521b204acee2aef13614e7db8b8aca86038534914e2b47488514ae1",
+    "tests/test_bundle_chain_resolution.py": "62d463ea513917192086c45a5633b705934075822e29c5721ceedb32d8f47291"
+  },
+  "native_inference_and_acceptance_gates_changed": false,
+  "paper_and_canonical_unchanged": true,
+  "posterior_convergence_or_uniform_solver_accuracy_certified": false
+}

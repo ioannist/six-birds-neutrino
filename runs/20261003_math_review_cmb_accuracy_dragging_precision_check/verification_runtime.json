@@ -1,0 +1,24 @@
+{
+  "scope": "four_pointwise_native_checks_after_dragging_activation",
+  "checks": [
+    {
+      "lens": "A",
+      "seed": 701,
+      "pid": 2418096,
+      "exec_session": 93368,
+      "command": "printf 'owned_dragging_verifier_pid=%s\\n' \"$$\"\nexec env OMP_NUM_THREADS=8 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 /tmp/neutrino-math-review-venv/bin/python scripts/verify_chain_targets.py --run-dir runs/20261003_math_review_cmb_accuracy_dragging_precision_check/chain_A_seed701 --rows-per-chain 2 --atol 1e-7 --rtol 1e-10 --output runs/20261003_math_review_cmb_accuracy_dragging_precision_check/A701_native_target_verification.json > runs/20261003_math_review_cmb_accuracy_dragging_precision_check/A701_verification_stdout.txt 2>&1",
+      "status": "complete",
+      "managed_exec_exit_code": 0
+    },
+    {
+      "lens": "B",
+      "seed": 702,
+      "pid": 2420220,
+      "exec_session": 49295,
+      "command": "printf 'owned_dragging_verifier_pid=%s\\n' \"$$\"\nexec env OMP_NUM_THREADS=8 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 /tmp/neutrino-math-review-venv/bin/python scripts/verify_chain_targets.py --run-dir runs/20261003_math_review_cmb_accuracy_dragging_precision_check/chain_B_seed702 --rows-per-chain 2 --atol 1e-7 --rtol 1e-10 --output runs/20261003_math_review_cmb_accuracy_dragging_precision_check/B702_native_target_verification.json > runs/20261003_math_review_cmb_accuracy_dragging_precision_check/B702_verification_stdout.txt 2>&1",
+      "status": "complete",
+      "managed_exec_exit_code": 0
+    }
+  ],
+  "completion_checked_utc": "2026-10-03T17:23:45.812565+00:00"
+}

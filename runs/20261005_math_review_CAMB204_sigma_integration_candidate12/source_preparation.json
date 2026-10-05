@@ -1,0 +1,33 @@
+{
+  "original_source": "/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_source_failure_triage_20261004/source/camb-2.0.4/fortran/halofit.f90",
+  "original_sha256": "78dab0862709a94346c5cb300ad790836b5144f1b2f803ae9c6599ee7f1a9257",
+  "candidate_source": "/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_sigma_probe_20261005/source_candidate12/fortran/halofit.f90",
+  "candidate_sha256": "ea847e6b24f46398db21c41dc8c6c1a993a2df58b279882fbd479c9035423295",
+  "changes": [
+    [
+      "real(dl), parameter :: acc_sigma_integration = 1e-4",
+      "real(dl), parameter :: acc_sigma_integration = 1e-6"
+    ],
+    [
+      "sigma_integral = sqrt(integrate(tmin, tmax, sigma_integrand, r, z, itype, cosm, acc))",
+      "sigma_integral = sqrt(integrate(tmin, tmax, sigma_integrand, r, z, itype, cosm, acc, minimum_level=12))"
+    ],
+    [
+      "function integrate(a, b, f, y, z, itype, cosm, acc)",
+      "function integrate(a, b, f, y, z, itype, cosm, acc, minimum_level)"
+    ],
+    [
+      "    integer, parameter :: jmin = 5",
+      "    integer, parameter :: jmin = 5\n    integer, intent(in), optional :: minimum_level\n    integer :: active_minimum"
+    ],
+    [
+      "    if (a == b) then\n\n        ! Fix the answer to zero",
+      "    active_minimum = jmin\n    if (present(minimum_level)) active_minimum = minimum_level\n\n    if (a == b) then\n\n        ! Fix the answer to zero"
+    ],
+    [
+      "if (j >= jmin .and. sum_old /= 0) then",
+      "if (j >= active_minimum .and. sum_old /= 0) then"
+    ]
+  ],
+  "scope": "candidate changes sigma integral stopping tolerance and minimum refinement only; integrand and nonlinear model unchanged; unvalidated, not adopted in production"
+}

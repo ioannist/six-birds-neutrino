@@ -24,6 +24,8 @@ theory:
     extra_args:
       N_ncdm: 3
       N_ur: 0.00641
+      # Background quadrature setting; the declared guarded backend repairs the native failure.
+      tol_ncdm_bg: 1.0e-8
 
 params:
   omegabh2:
@@ -59,11 +61,15 @@ params:
     proposal: 0.03
     drop: true
   m_ncdm:
-    value: "lambda mnu: '{0:.8f},{0:.8f},{0:.8f}'.format(mnu/3.0)"
+    value: "lambda mnu: '{0:.17g},{0:.17g},{0:.17g}'.format(mnu/3.0)"
 
   A_planck:
     value: 1.0
 
 notes:
+  classy_backend:
+    build_receipt: runs/20261004_math_review_class_python_repair/build_verification_receipt.json
+    module_sha256: 7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539
+  class_precision: "Background quadrature tightened after a native default-precision startup failure. Historical default runs use different numerical settings; posterior accuracy remains uncertified."
   planck_subset: "PR3 low-l TT/EE + PR3 high-l TT (Plik-lite native) with bins_for_L_range [30,756]; no high-l TE/EE."
   lensing: "PR4 lensing via planckpr4lensing external package path under external/cobaya_packages/code/planck_PR4_lensing."

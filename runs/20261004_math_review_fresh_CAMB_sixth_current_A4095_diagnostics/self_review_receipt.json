@@ -1,0 +1,117 @@
+{
+  "utc": "2026-10-04T22:17:23.888550+00:00",
+  "reviewer": "self_review_no_independent_agent",
+  "group": "current_A4095",
+  "retained_represented_steps": [
+    2881,
+    2773,
+    2880,
+    2790
+  ],
+  "all_seven_parameter_gate_sets_reconstructed": {
+    "omegabh2": {
+      "gates": {
+        "separate_starts": true,
+        "finite": true,
+        "Rhat": false,
+        "bulk_ESS": false,
+        "tail_ESS": true,
+        "quantile_ESS": true,
+        "MCSE": false,
+        "chronological_drift": true,
+        "equalized_selection": true
+      },
+      "pass": false
+    },
+    "omegach2": {
+      "gates": {
+        "separate_starts": true,
+        "finite": true,
+        "Rhat": false,
+        "bulk_ESS": false,
+        "tail_ESS": true,
+        "quantile_ESS": true,
+        "MCSE": false,
+        "chronological_drift": true,
+        "equalized_selection": true
+      },
+      "pass": false
+    },
+    "H0": {
+      "gates": {
+        "separate_starts": true,
+        "finite": true,
+        "Rhat": true,
+        "bulk_ESS": false,
+        "tail_ESS": true,
+        "quantile_ESS": true,
+        "MCSE": false,
+        "chronological_drift": true,
+        "equalized_selection": true
+      },
+      "pass": false
+    },
+    "logA": {
+      "gates": {
+        "separate_starts": true,
+        "finite": true,
+        "Rhat": false,
+        "bulk_ESS": false,
+        "tail_ESS": true,
+        "quantile_ESS": true,
+        "MCSE": false,
+        "chronological_drift": true,
+        "equalized_selection": true
+      },
+      "pass": false
+    },
+    "ns": {
+      "gates": {
+        "separate_starts": true,
+        "finite": true,
+        "Rhat": false,
+        "bulk_ESS": false,
+        "tail_ESS": true,
+        "quantile_ESS": true,
+        "MCSE": false,
+        "chronological_drift": true,
+        "equalized_selection": true
+      },
+      "pass": false
+    },
+    "tau": {
+      "gates": {
+        "separate_starts": true,
+        "finite": true,
+        "Rhat": false,
+        "bulk_ESS": false,
+        "tail_ESS": true,
+        "quantile_ESS": true,
+        "MCSE": false,
+        "chronological_drift": true,
+        "equalized_selection": true
+      },
+      "pass": false
+    },
+    "mnu": {
+      "gates": {
+        "separate_starts": true,
+        "finite": true,
+        "Rhat": false,
+        "bulk_ESS": false,
+        "tail_ESS": false,
+        "quantile_ESS": false,
+        "MCSE": false,
+        "chronological_drift": true,
+        "equalized_selection": true
+      },
+      "pass": false
+    }
+  },
+  "next_minimum_history": 3328,
+  "snapshot_receipt_sha256": "b42f51e7108beb42b2176b3e5eee04331829e61e3249a440de3ab36794d77072",
+  "native_row_verification_sha256": "1d3c573ca25febbf9236c1dfc35ae3b63a1bc9debfd7e8d8f85e3ed87694573c",
+  "diagnostics_sha256": "75ff36a1748317b079fb886af8ce25a59538da3174eea423d444ed5cd72d09bc",
+  "posterior_convergence_or_uniform_accuracy_proved": false,
+  "different_targets_or_cache_policies_pooled": false
+}

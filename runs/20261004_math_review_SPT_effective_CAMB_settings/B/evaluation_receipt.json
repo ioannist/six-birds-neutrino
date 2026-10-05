@@ -1,0 +1,1125 @@
+{
+  "runtime": {
+    "utc": "2026-10-04T12:29:05.176690+00:00",
+    "pid": 3701546,
+    "omp_threads": "2",
+    "CAMB_module": "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/camb/camblib.so",
+    "CAMB_module_sha256": "306640a8948cd5246fc9b21e76525f6adebdff5ba3bc792a57d50bba67225ad5",
+    "Cobaya_CAMB_wrapper": "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/cobaya/theories/camb/camb.py",
+    "Cobaya_CAMB_wrapper_sha256": "ed8a9ea708caa437e72732adb1cb32182330f55b4c3c9fb1e18e36e604424214",
+    "versions": {
+      "camb": "2.0.4",
+      "cobaya": "3.6.2",
+      "candl-like": "2.2.0",
+      "candl-data": "2.0.0",
+      "spt-candl-data": "2.0.0"
+    }
+  },
+  "records": {
+    "original_style": {
+      "requested_Cl": {
+        "tt": 4095,
+        "te": 4095,
+        "ee": 4095,
+        "bb": 4095
+      },
+      "effective_CAMB_extra_args": {
+        "num_massive_neutrinos": 3,
+        "nnu": 3.046,
+        "lmax": 4095
+      },
+      "internal_prior_policy": {
+        "excluded_parameters": [],
+        "retained_factors": [
+          {
+            "parameters": [
+              "tau"
+            ],
+            "multiplicative_log_coordinates": false,
+            "central_value": [
+              0.051
+            ],
+            "covariance": [
+              [
+                3.6e-05
+              ]
+            ]
+          },
+          {
+            "parameters": [
+              "TT_CIBClustering_Alpha"
+            ],
+            "multiplicative_log_coordinates": false,
+            "central_value": [
+              0.53
+            ],
+            "covariance": [
+              [
+                0.010000000000000002
+              ]
+            ]
+          },
+          {
+            "parameters": [
+              "EE_PolGalDust_Amp"
+            ],
+            "multiplicative_log_coordinates": false,
+            "central_value": [
+              0.05
+            ],
+            "covariance": [
+              [
+                0.00048399999999999995
+              ]
+            ]
+          },
+          {
+            "parameters": [
+              "EE_PolGalDust_Alpha"
+            ],
+            "multiplicative_log_coordinates": false,
+            "central_value": [
+              -2.42
+            ],
+            "covariance": [
+              [
+                0.0016
+              ]
+            ]
+          },
+          {
+            "parameters": [
+              "EE_PolGalDust_Beta"
+            ],
+            "multiplicative_log_coordinates": false,
+            "central_value": [
+              1.51
+            ],
+            "covariance": [
+              [
+                0.0016
+              ]
+            ]
+          },
+          {
+            "parameters": [
+              "TE_PolGalDust_Amp"
+            ],
+            "multiplicative_log_coordinates": false,
+            "central_value": [
+              0.12
+            ],
+            "covariance": [
+              [
+                0.0026009999999999996
+              ]
+            ]
+          },
+          {
+            "parameters": [
+              "TE_PolGalDust_Alpha"
+            ],
+            "multiplicative_log_coordinates": false,
+            "central_value": [
+              -2.42
+            ],
+            "covariance": [
+              [
+                0.0016
+              ]
+            ]
+          },
+          {
+            "parameters": [
+              "TE_PolGalDust_Beta"
+            ],
+            "multiplicative_log_coordinates": false,
+            "central_value": [
+              1.51
+            ],
+            "covariance": [
+              [
+                0.0016
+              ]
+            ]
+          },
+          {
+            "parameters": [
+              "TT_GalCirrus_Amp"
+            ],
+            "multiplicative_log_coordinates": false,
+            "central_value": [
+              1.88
+            ],
+            "covariance": [
+              [
+                0.9216
+              ]
+            ]
+          },
+          {
+            "parameters": [
+              "TT_GalCirrus_Alpha"
+            ],
+            "multiplicative_log_coordinates": false,
+            "central_value": [
+              -2.53
+            ],
+            "covariance": [
+              [
+                0.0025000000000000005
+              ]
+            ]
+          },
+          {
+            "parameters": [
+              "TT_GalCirrus_Beta"
+            ],
+            "multiplicative_log_coordinates": false,
+            "central_value": [
+              1.48
+            ],
+            "covariance": [
+              [
+                0.0004
+              ]
+            ]
+          },
+          {
+            "parameters": [
+              "TT_tSZ_Amp"
+            ],
+            "multiplicative_log_coordinates": false,
+            "central_value": [
+              3.2279
+            ],
+            "covariance": [
+              [
+                5.647276959999999
+              ]
+            ]
+          },
+          {
+            "parameters": [
+              "TT_kSZ_Amp"
+            ],
+            "multiplicative_log_coordinates": false,
+            "central_value": [
+              3.7287
+            ],
+            "covariance": [
+              [
+                21.566736000000002
+              ]
+            ]
+          },
+          {
+            "parameters": [
+              "Kappa"
+            ],
+            "multiplicative_log_coordinates": false,
+            "central_value": [
+              0.0
+            ],
+            "covariance": [
+              [
+                2.025e-07
+              ]
+            ]
+          },
+          {
+            "parameters": [
+              "Tcal_ext150"
+            ],
+            "multiplicative_log_coordinates": false,
+            "central_value": [
+              1.0
+            ],
+            "covariance": [
+              [
+                1.296e-05
+              ]
+            ]
+          },
+          {
+            "parameters": [
+              "beta_1",
+              "beta_2",
+              "beta_3",
+              "beta_4",
+              "beta_5",
+              "beta_6",
+              "beta_7",
+              "beta_8",
+              "beta_9"
+            ],
+            "multiplicative_log_coordinates": false,
+            "central_value": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "covariance": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "parameters": [
+              "T2P2_90"
+            ],
+            "multiplicative_log_coordinates": false,
+            "central_value": [
+              -0.00649
+            ],
+            "covariance": [
+              [
+                1.110916e-06
+              ]
+            ]
+          },
+          {
+            "parameters": [
+              "T2P2_150"
+            ],
+            "multiplicative_log_coordinates": false,
+            "central_value": [
+              -0.011941
+            ],
+            "covariance": [
+              [
+                4.422608999999999e-06
+              ]
+            ]
+          },
+          {
+            "parameters": [
+              "T2P2_220"
+            ],
+            "multiplicative_log_coordinates": false,
+            "central_value": [
+              -0.022684
+            ],
+            "covariance": [
+              [
+                4.4102881e-05
+              ]
+            ]
+          }
+        ]
+      },
+      "sampled_scalar_inputs": [
+        "tau"
+      ],
+      "fixed_scalar_defaults": {
+        "EE_PolGalDust_Alpha": -2.416948469628746,
+        "EE_PolGalDust_Amp": 0.05641839314384644,
+        "EE_PolGalDust_Beta": 1.5079133349386509,
+        "Ecal_ext150": 1.0076405454047297,
+        "Ecal_rel220": 0.9964693016822793,
+        "Ecal_rel90": 0.9986385065087208,
+        "Kappa": -1.3074709916453854e-06,
+        "T2P2_150": -0.0148257514852964,
+        "T2P2_220": -0.028847682695253007,
+        "T2P2_90": -0.007061620977020776,
+        "TE_PolGalDust_Alpha": -2.431327989020431,
+        "TE_PolGalDust_Amp": 0.10357080110350363,
+        "TE_PolGalDust_Beta": 1.5142220958478207,
+        "TT_CIBClustering_Alpha": 0.5276388037710124,
+        "TT_CIB_150x150": 3.372664057141892,
+        "TT_CIB_150x220": 9.803597104455331,
+        "TT_CIB_220x220": 38.16630414680614,
+        "TT_GalCirrus_Alpha": -2.533490025529438,
+        "TT_GalCirrus_Amp": 2.031179656170132,
+        "TT_GalCirrus_Beta": 1.4806375901813167,
+        "TT_Poisson_150x150": 10.543485617963562,
+        "TT_Poisson_150x220": 30.32108732944455,
+        "TT_Poisson_220x220": 92.81062436339475,
+        "TT_Poisson_90x150": 7.7417934999912354,
+        "TT_Poisson_90x220": 15.272878557390591,
+        "TT_Poisson_90x90": 10.241083430354012,
+        "TT_kSZ_Amp": 1.8939370023109963,
+        "TT_tSZ_Amp": 1.4022524382082406,
+        "Tcal_ext150": 1.0001004216209306,
+        "Tcal_rel220": 1.0086928699462658,
+        "Tcal_rel90": 1.0001542349250023,
+        "beta_1": -0.40934426677445335,
+        "beta_2": -0.5633753858004659,
+        "beta_3": 0.5376250403732576,
+        "beta_4": -0.9467294295776222,
+        "beta_5": -0.07041787958212677,
+        "beta_6": -1.065651007597262,
+        "beta_7": -0.02382373032224524,
+        "beta_8": -0.26443910378668817,
+        "beta_9": 0.18710739252780326,
+        "beta_pol_150": 0.6609933886951525,
+        "beta_pol_220": 0.6055745525326284,
+        "beta_pol_90": 0.5394255886190052
+      },
+      "native_dataset_path": "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/spt_candl_data/SPT3G_D1_TnE_v0/SPT3G_D1_TnE.yaml",
+      "evaluations": {
+        "original_median": {
+          "point": {
+            "omegabh2": 0.02208835,
+            "omegach2": 0.11613327,
+            "H0": 68.761625,
+            "logA": 3.0437372,
+            "ns": 0.97829051,
+            "tau": 0.05867819,
+            "mnu": 0.043870311
+          },
+          "chi2_components": {
+            "sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 1383.396315451058,
+            "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 11.087529478888994
+          },
+          "chi2_total": 1394.4838449299468,
+          "logpriors": [
+            -2.1045919762829826
+          ],
+          "logposterior": -699.3465144412564,
+          "elapsed_seconds": 4.935519379097968
+        },
+        "original_p95": {
+          "point": {
+            "omegabh2": 0.022120855,
+            "omegach2": 0.11597874,
+            "H0": 68.503086,
+            "logA": 3.0411487,
+            "ns": 0.98037252,
+            "tau": 0.058208856,
+            "mnu": 0.09807736
+          },
+          "chi2_components": {
+            "sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 1385.8918144694348,
+            "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 10.385809092254155
+          },
+          "chi2_total": 1396.277623561689,
+          "logpriors": [
+            -2.1045919762829826
+          ],
+          "logposterior": -700.2434037571276,
+          "elapsed_seconds": 3.972432615701109
+        },
+        "restoration_median": {
+          "point": {
+            "omegabh2": 0.022464771,
+            "omegach2": 0.11745252,
+            "H0": 68.556883,
+            "logA": 3.0717521,
+            "ns": 0.95011047,
+            "tau": 0.060983927,
+            "mnu": 0.035568232
+          },
+          "chi2_components": {
+            "sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 1383.1258645720814,
+            "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 10.857967375427942
+          },
+          "chi2_total": 1393.9838319475093,
+          "logpriors": [
+            -2.1045919762829826
+          ],
+          "logposterior": -699.0965079500377,
+          "elapsed_seconds": 4.139723086729646
+        },
+        "restoration_p95": {
+          "point": {
+            "omegabh2": 0.022235335,
+            "omegach2": 0.1160284,
+            "H0": 68.350928,
+            "logA": 3.0272667,
+            "ns": 0.96508102,
+            "tau": 0.045088023,
+            "mnu": 0.10874537
+          },
+          "chi2_components": {
+            "sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 1384.9554194227087,
+            "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 10.387875916696997
+          },
+          "chi2_total": 1395.3432953394056,
+          "logpriors": [
+            -2.1045919762829826
+          ],
+          "logposterior": -699.7762396459858,
+          "elapsed_seconds": 3.699399814940989
+        },
+        "restoration_median_mass_plus_001": {
+          "point": {
+            "omegabh2": 0.022464771,
+            "omegach2": 0.11745252,
+            "H0": 68.556883,
+            "logA": 3.0717521,
+            "ns": 0.95011047,
+            "tau": 0.060983927,
+            "mnu": 0.045568232
+          },
+          "chi2_components": {
+            "sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 1382.3120997301999,
+            "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 10.776779294925813
+          },
+          "chi2_total": 1393.0888790251256,
+          "logpriors": [
+            -2.1045919762829826
+          ],
+          "logposterior": -698.6490314888458,
+          "elapsed_seconds": 4.962462498340756
+        }
+      }
+    },
+    "restoration_style": {
+      "requested_Cl": {
+        "tt": 4095,
+        "te": 4095,
+        "ee": 4095,
+        "bb": 4095
+      },
+      "effective_CAMB_extra_args": {
+        "num_massive_neutrinos": 3,
+        "nnu": 3.046,
+        "lmax": 4095
+      },
+      "internal_prior_policy": {
+        "excluded_parameters": [],
+        "retained_factors": [
+          {
+            "parameters": [
+              "tau"
+            ],
+            "multiplicative_log_coordinates": false,
+            "central_value": [
+              0.051
+            ],
+            "covariance": [
+              [
+                3.6e-05
+              ]
+            ]
+          },
+          {
+            "parameters": [
+              "TT_CIBClustering_Alpha"
+            ],
+            "multiplicative_log_coordinates": false,
+            "central_value": [
+              0.53
+            ],
+            "covariance": [
+              [
+                0.010000000000000002
+              ]
+            ]
+          },
+          {
+            "parameters": [
+              "EE_PolGalDust_Amp"
+            ],
+            "multiplicative_log_coordinates": false,
+            "central_value": [
+              0.05
+            ],
+            "covariance": [
+              [
+                0.00048399999999999995
+              ]
+            ]
+          },
+          {
+            "parameters": [
+              "EE_PolGalDust_Alpha"
+            ],
+            "multiplicative_log_coordinates": false,
+            "central_value": [
+              -2.42
+            ],
+            "covariance": [
+              [
+                0.0016
+              ]
+            ]
+          },
+          {
+            "parameters": [
+              "EE_PolGalDust_Beta"
+            ],
+            "multiplicative_log_coordinates": false,
+            "central_value": [
+              1.51
+            ],
+            "covariance": [
+              [
+                0.0016
+              ]
+            ]
+          },
+          {
+            "parameters": [
+              "TE_PolGalDust_Amp"
+            ],
+            "multiplicative_log_coordinates": false,
+            "central_value": [
+              0.12
+            ],
+            "covariance": [
+              [
+                0.0026009999999999996
+              ]
+            ]
+          },
+          {
+            "parameters": [
+              "TE_PolGalDust_Alpha"
+            ],
+            "multiplicative_log_coordinates": false,
+            "central_value": [
+              -2.42
+            ],
+            "covariance": [
+              [
+                0.0016
+              ]
+            ]
+          },
+          {
+            "parameters": [
+              "TE_PolGalDust_Beta"
+            ],
+            "multiplicative_log_coordinates": false,
+            "central_value": [
+              1.51
+            ],
+            "covariance": [
+              [
+                0.0016
+              ]
+            ]
+          },
+          {
+            "parameters": [
+              "TT_GalCirrus_Amp"
+            ],
+            "multiplicative_log_coordinates": false,
+            "central_value": [
+              1.88
+            ],
+            "covariance": [
+              [
+                0.9216
+              ]
+            ]
+          },
+          {
+            "parameters": [
+              "TT_GalCirrus_Alpha"
+            ],
+            "multiplicative_log_coordinates": false,
+            "central_value": [
+              -2.53
+            ],
+            "covariance": [
+              [
+                0.0025000000000000005
+              ]
+            ]
+          },
+          {
+            "parameters": [
+              "TT_GalCirrus_Beta"
+            ],
+            "multiplicative_log_coordinates": false,
+            "central_value": [
+              1.48
+            ],
+            "covariance": [
+              [
+                0.0004
+              ]
+            ]
+          },
+          {
+            "parameters": [
+              "TT_tSZ_Amp"
+            ],
+            "multiplicative_log_coordinates": false,
+            "central_value": [
+              3.2279
+            ],
+            "covariance": [
+              [
+                5.647276959999999
+              ]
+            ]
+          },
+          {
+            "parameters": [
+              "TT_kSZ_Amp"
+            ],
+            "multiplicative_log_coordinates": false,
+            "central_value": [
+              3.7287
+            ],
+            "covariance": [
+              [
+                21.566736000000002
+              ]
+            ]
+          },
+          {
+            "parameters": [
+              "Kappa"
+            ],
+            "multiplicative_log_coordinates": false,
+            "central_value": [
+              0.0
+            ],
+            "covariance": [
+              [
+                2.025e-07
+              ]
+            ]
+          },
+          {
+            "parameters": [
+              "Tcal_ext150"
+            ],
+            "multiplicative_log_coordinates": false,
+            "central_value": [
+              1.0
+            ],
+            "covariance": [
+              [
+                1.296e-05
+              ]
+            ]
+          },
+          {
+            "parameters": [
+              "beta_1",
+              "beta_2",
+              "beta_3",
+              "beta_4",
+              "beta_5",
+              "beta_6",
+              "beta_7",
+              "beta_8",
+              "beta_9"
+            ],
+            "multiplicative_log_coordinates": false,
+            "central_value": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "covariance": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "parameters": [
+              "T2P2_90"
+            ],
+            "multiplicative_log_coordinates": false,
+            "central_value": [
+              -0.00649
+            ],
+            "covariance": [
+              [
+                1.110916e-06
+              ]
+            ]
+          },
+          {
+            "parameters": [
+              "T2P2_150"
+            ],
+            "multiplicative_log_coordinates": false,
+            "central_value": [
+              -0.011941
+            ],
+            "covariance": [
+              [
+                4.422608999999999e-06
+              ]
+            ]
+          },
+          {
+            "parameters": [
+              "T2P2_220"
+            ],
+            "multiplicative_log_coordinates": false,
+            "central_value": [
+              -0.022684
+            ],
+            "covariance": [
+              [
+                4.4102881e-05
+              ]
+            ]
+          }
+        ]
+      },
+      "sampled_scalar_inputs": [
+        "tau"
+      ],
+      "fixed_scalar_defaults": {
+        "EE_PolGalDust_Alpha": -2.416948469628746,
+        "EE_PolGalDust_Amp": 0.05641839314384644,
+        "EE_PolGalDust_Beta": 1.5079133349386509,
+        "Ecal_ext150": 1.0076405454047297,
+        "Ecal_rel220": 0.9964693016822793,
+        "Ecal_rel90": 0.9986385065087208,
+        "Kappa": -1.3074709916453854e-06,
+        "T2P2_150": -0.0148257514852964,
+        "T2P2_220": -0.028847682695253007,
+        "T2P2_90": -0.007061620977020776,
+        "TE_PolGalDust_Alpha": -2.431327989020431,
+        "TE_PolGalDust_Amp": 0.10357080110350363,
+        "TE_PolGalDust_Beta": 1.5142220958478207,
+        "TT_CIBClustering_Alpha": 0.5276388037710124,
+        "TT_CIB_150x150": 3.372664057141892,
+        "TT_CIB_150x220": 9.803597104455331,
+        "TT_CIB_220x220": 38.16630414680614,
+        "TT_GalCirrus_Alpha": -2.533490025529438,
+        "TT_GalCirrus_Amp": 2.031179656170132,
+        "TT_GalCirrus_Beta": 1.4806375901813167,
+        "TT_Poisson_150x150": 10.543485617963562,
+        "TT_Poisson_150x220": 30.32108732944455,
+        "TT_Poisson_220x220": 92.81062436339475,
+        "TT_Poisson_90x150": 7.7417934999912354,
+        "TT_Poisson_90x220": 15.272878557390591,
+        "TT_Poisson_90x90": 10.241083430354012,
+        "TT_kSZ_Amp": 1.8939370023109963,
+        "TT_tSZ_Amp": 1.4022524382082406,
+        "Tcal_ext150": 1.0001004216209306,
+        "Tcal_rel220": 1.0086928699462658,
+        "Tcal_rel90": 1.0001542349250023,
+        "beta_1": -0.40934426677445335,
+        "beta_2": -0.5633753858004659,
+        "beta_3": 0.5376250403732576,
+        "beta_4": -0.9467294295776222,
+        "beta_5": -0.07041787958212677,
+        "beta_6": -1.065651007597262,
+        "beta_7": -0.02382373032224524,
+        "beta_8": -0.26443910378668817,
+        "beta_9": 0.18710739252780326,
+        "beta_pol_150": 0.6609933886951525,
+        "beta_pol_220": 0.6055745525326284,
+        "beta_pol_90": 0.5394255886190052
+      },
+      "native_dataset_path": "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/spt_candl_data/SPT3G_D1_TnE_v0/SPT3G_D1_TnE.yaml",
+      "evaluations": {
+        "original_median": {
+          "point": {
+            "omegabh2": 0.02208835,
+            "omegach2": 0.11613327,
+            "H0": 68.761625,
+            "logA": 3.0437372,
+            "ns": 0.97829051,
+            "tau": 0.05867819,
+            "mnu": 0.043870311
+          },
+          "chi2_components": {
+            "sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 1383.396315451058,
+            "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 11.087529478888994
+          },
+          "chi2_total": 1394.4838449299468,
+          "logpriors": [
+            -2.1045919762829826
+          ],
+          "logposterior": -699.3465144412564,
+          "elapsed_seconds": 4.640427136793733
+        },
+        "original_p95": {
+          "point": {
+            "omegabh2": 0.022120855,
+            "omegach2": 0.11597874,
+            "H0": 68.503086,
+            "logA": 3.0411487,
+            "ns": 0.98037252,
+            "tau": 0.058208856,
+            "mnu": 0.09807736
+          },
+          "chi2_components": {
+            "sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 1385.8918144694348,
+            "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 10.385809092254155
+          },
+          "chi2_total": 1396.277623561689,
+          "logpriors": [
+            -2.1045919762829826
+          ],
+          "logposterior": -700.2434037571276,
+          "elapsed_seconds": 3.7314992621541023
+        },
+        "restoration_median": {
+          "point": {
+            "omegabh2": 0.022464771,
+            "omegach2": 0.11745252,
+            "H0": 68.556883,
+            "logA": 3.0717521,
+            "ns": 0.95011047,
+            "tau": 0.060983927,
+            "mnu": 0.035568232
+          },
+          "chi2_components": {
+            "sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 1383.1258645720814,
+            "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 10.857967375427942
+          },
+          "chi2_total": 1393.9838319475093,
+          "logpriors": [
+            -2.1045919762829826
+          ],
+          "logposterior": -699.0965079500377,
+          "elapsed_seconds": 4.197489538230002
+        },
+        "restoration_p95": {
+          "point": {
+            "omegabh2": 0.022235335,
+            "omegach2": 0.1160284,
+            "H0": 68.350928,
+            "logA": 3.0272667,
+            "ns": 0.96508102,
+            "tau": 0.045088023,
+            "mnu": 0.10874537
+          },
+          "chi2_components": {
+            "sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 1384.9554194227087,
+            "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 10.387875916696997
+          },
+          "chi2_total": 1395.3432953394056,
+          "logpriors": [
+            -2.1045919762829826
+          ],
+          "logposterior": -699.7762396459858,
+          "elapsed_seconds": 3.485223669093102
+        },
+        "restoration_median_mass_plus_001": {
+          "point": {
+            "omegabh2": 0.022464771,
+            "omegach2": 0.11745252,
+            "H0": 68.556883,
+            "logA": 3.0717521,
+            "ns": 0.95011047,
+            "tau": 0.060983927,
+            "mnu": 0.045568232
+          },
+          "chi2_components": {
+            "sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 1382.3120997301999,
+            "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 10.776779294925813
+          },
+          "chi2_total": 1393.0888790251256,
+          "logpriors": [
+            -2.1045919762829826
+          ],
+          "logposterior": -698.6490314888458,
+          "elapsed_seconds": 3.90762633504346
+        }
+      }
+    }
+  },
+  "scope": "selected_current_stack_points_not_historical_replay_or_posterior_accuracy_certificate"
+}

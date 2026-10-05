@@ -1,0 +1,40 @@
+{
+  "utc": "2026-10-03T16:04:06.789244+00:00",
+  "scope": "eight_first_stored_rows_pointwise_native_target_consistency_only",
+  "all_four_managed_verifiers_exit_zero": true,
+  "all_snapshots_hash_verified_and_equal_live_source_prefix": true,
+  "verified_rows": 8,
+  "max_abs_native_prior_posterior_error": 0,
+  "cases": [
+    {
+      "lens": "A",
+      "seed": 601,
+      "verified_rows": 2,
+      "max_abs_native_prior_posterior_error": 0.0,
+      "output_sha256": "bb24b13fe95c587f3bd13c89e6741d2f247d233a05fbd0720dd1363d9858bf97"
+    },
+    {
+      "lens": "A",
+      "seed": 602,
+      "verified_rows": 2,
+      "max_abs_native_prior_posterior_error": 0.0,
+      "output_sha256": "4f751826468f1b89b6b9638926ba091a0d76b843029c4d2570c191450a08b958"
+    },
+    {
+      "lens": "B",
+      "seed": 603,
+      "verified_rows": 2,
+      "max_abs_native_prior_posterior_error": 0.0,
+      "output_sha256": "817d6345fb8fe87bb188de044d91fddc544e6830804bcf4838f675f13fc2d35f"
+    },
+    {
+      "lens": "B",
+      "seed": 604,
+      "verified_rows": 2,
+      "max_abs_native_prior_posterior_error": 0.0,
+      "output_sha256": "97dbed5acc804620544e86d1339ab62885a88793dc0dc529060129c3cbf3e98f"
+    }
+  ],
+  "posterior_convergence_certified": false,
+  "numerical_accuracy_certified": false
+}

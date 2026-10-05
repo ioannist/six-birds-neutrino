@@ -1,0 +1,27 @@
+{
+  "utc": "2026-10-05T01:26:18.073090+00:00",
+  "actual_exit_code": 0,
+  "raw_capture_exclusions": [
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_probe_preparation_v2/seed2003_stdout.txt",
+      "sha256": "0b2e970ced882f4d804e574444aee679c06926e799991364e66d51edf74ce859"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_probe_preparation_v2/seed2004_stdout.txt",
+      "sha256": "747e8c24cf2e831f4007838e76dd44c47c85628dccfd4bbb79897a95067d3f43"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_table_probe_preparation_v3/seed2003_stdout.txt",
+      "sha256": "50ecf4dc76e6416fab052fe9d146b4f1d5b90a839b1b1561030a6d8a45b1b419"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_table_probe_preparation_v3/seed2004_stdout.txt",
+      "sha256": "e7f336be90a66d66284b2e070d32d8be5219528fa117c38e57134b8ebc939767"
+    },
+    {
+      "path": "runs/20261005_math_review_sigma_policy_checkpoint/initial_full_whitespace_check.txt",
+      "sha256": "35962cfee55de349a4cba6028089d79bc57c80960a47b16268ab36471af287d5"
+    }
+  ],
+  "reason": "Fortran list-directed native captures and the raw check output quoting them retain trailing spaces. Immutable raw evidence preserved; all other staged text checked."
+}

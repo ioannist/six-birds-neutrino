@@ -1,0 +1,12 @@
+[model] *WARNING* Ignored blocks/options: ['run_name', 'sampler', 'notes']
+[classy] `classy` module loaded successfully from /tmp/neutrino-math-review-venv/lib/python3.12/site-packages/classy
+Actual L range: 30 - 756
+[exception handler] ---------------------------------------
+
+Traceback (most recent call last):
+  File "/home/repos/six-birds-neutrino/runs/20261004_math_review_class_tca_failure_seed505/verify_repaired_configs.py", line 52, in <module>
+    assert actual == expected, (name, actual, expected)
+           ^^^^^^^^^^^^^^^^^^
+AssertionError: ('cmb_spt2018_plancksubset_desi_mnu', {'N_ncdm': 3, 'N_ur': 0.00641, 'tol_ncdm_bg': 1e-08, 'non_linear': 'hmcode', 'l_max_scalars': 3200, 'lensing': 'yes'}, {'N_ncdm': 3, 'N_ur': 0.00641, 'l_max_scalars': 4095, 'non_linear': 'hmcode', 'lensing': 'yes', 'tol_ncdm_bg': 1e-08})
+-------------------------------------------------------------
+

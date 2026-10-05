@@ -1,0 +1,69 @@
+{
+  "utc": "2026-10-04T04:34:52.373214+00:00",
+  "scope": "backend_import_contract_and_actual_Cobaya_initialization",
+  "initial_wrong_path_attempts": {
+    "original_session": 26186,
+    "original_exit_code": 2,
+    "guarded_session": 71205,
+    "guarded_exit_code": 1,
+    "reason": "incorrect_config_directory",
+    "backend_contract_exercised": false
+  },
+  "original_sampler_preflight": {
+    "session": 90394,
+    "exit_code": 2,
+    "output_created": false
+  },
+  "original_reference_preflight": {
+    "session": 98458,
+    "exit_code": 2,
+    "output_created": false
+  },
+  "actual_canonical_initialization": {
+    "session": 53635,
+    "exit_code": 0,
+    "models": 4,
+    "source_bound_receipt": "runs/20261004_math_review_class_backend_transition/canonical_cobaya_initialization.json"
+  },
+  "final_python_tests": {
+    "session": 5111,
+    "exit_code": 0,
+    "passed": 73
+  },
+  "selected_fresh_native_rows": 30,
+  "selected_parent_native_rows": 30,
+  "physical_canonical_yaml_unchanged_except_backend_notes": true,
+  "self_review": "checked before-output failure, module and receipt identity, global selection, conflicting-path rejection, selected-point evidence scope, and legacy loading behavior",
+  "posterior_convergence_certified": false,
+  "uniform_numerical_accuracy_certified": false,
+  "files": [
+    {
+      "path": "scripts/run_cobaya.py",
+      "sha256": "2c99ac66c93dc76070862ddf22c630816cf8558305600a82d6ffd30402ce71bc"
+    },
+    {
+      "path": "scripts/eval_cmb_plancksubset_desi.py",
+      "sha256": "68d19ef29ab73b77c9824d4cd6a1a54ace5ab8dabe236beed145c0591f99c6d9"
+    },
+    {
+      "path": "runs/20261004_math_review_class_backend_transition/canonical_cobaya_initialization.json",
+      "sha256": "f2aed62196f84f6ec69ea4d5c3d8d68b1cc6743c05cbd549165c8b609372e067"
+    },
+    {
+      "path": "runs/20261004_math_review_class_backend_transition/canonical_config_preservation.json",
+      "sha256": "0d54d78ea7c0d6fd9bb7a3372c77a4e754ab17d057174e5a604a136ed4bec08a"
+    },
+    {
+      "path": "runs/20261004_math_review_class_backend_transition/canonical_original_backend_stderr.txt",
+      "sha256": "f3722c97cc7e983219506483bd9952bc9a11e0455b028793fbb39bac55467b20"
+    },
+    {
+      "path": "runs/20261004_math_review_class_backend_transition/canonical_original_eval_stderr.txt",
+      "sha256": "7c3657146037a7a3b5cd0e94cd183ff780b567d2ee7a7bc20874aa184b235f9f"
+    },
+    {
+      "path": "runs/20261004_math_review_class_backend_transition/canonical_backend_final_pytest_stdout.txt",
+      "sha256": "5e32f3cffe236489bf98f255c589105126c4dd200a85601abf361d764446dccf"
+    }
+  ]
+}

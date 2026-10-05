@@ -1,0 +1,32 @@
+{
+  "utc": "2026-10-04T09:31:36.604098+00:00",
+  "review_type": "distinct_self_review_not_independent_review",
+  "scope": "configuration_and_initialization_provenance_not_native_or_convergence_evidence",
+  "preparation_receipt_sha256": "f7e3ca5efc7a1414bcab0afb97d3dffd3aa0ed9225557a69f9cb3f18be5bc109",
+  "self_review_script_sha256": "871f29ea40e5ead311969fc71bba5a77cdc4181a08507b814c70d30da8431e0a",
+  "records": [
+    {
+      "seed": 1502,
+      "source": "runs/20261004_math_review_guarded_posterior_precision/B/seed1305.txt",
+      "mass_eV": 0.10517729141318302,
+      "all_target_definitions_match": true
+    },
+    {
+      "seed": 1503,
+      "source": "runs/20261004_math_review_guarded_posterior_precision/B/seed1403.txt",
+      "mass_eV": 0.06274914263898455,
+      "all_target_definitions_match": true
+    },
+    {
+      "seed": 1504,
+      "source": "runs/20261004_math_review_guarded_CLASS_second_diagnostics/quad_B/seed1308/chains/math_guarded_quad_B_seed1308.1.txt",
+      "mass_eV": 0.02985981732602771,
+      "all_target_definitions_match": true
+    }
+  ],
+  "four_distinct_starts": true,
+  "initializations_are_not_posterior_draws_or_independence_certificates": true,
+  "sampler_rules_changed_except_distinct_seeds": false,
+  "different_precision_histories_pooled": false,
+  "native_checks_required_before_launch": true
+}

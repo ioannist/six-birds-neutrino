@@ -1,0 +1,100 @@
+{
+  "utc": "2026-10-05T05:16:06.709468+00:00",
+  "source": "runs/20261005_math_review_registered72_post_CLASS_recovery_workflow/observe_registered_runtime.py",
+  "source_sha256": "7a86b756de30aa935ebb8c611bfd3a028ba986c629138e715eddcdea3a699a61",
+  "changes": [
+    [
+      "'CLASS_recovery_companion_posterior_chains']",
+      "'CLASS_recovery_companion_posterior_chains', 'CLASS_fresh_B_posterior_chains']"
+    ],
+    [
+      "== 72",
+      "== 80"
+    ],
+    [
+      "e['seed'] >= 2300 and e['status'].endswith('first_saved_row_pending')",
+      "e['seed'] in range(2401, 2409) and e['status'].endswith('first_saved_row_pending')"
+    ],
+    [
+      "'CLASS_recovery_cohort_activation')",
+      "'CLASS_recovery_cohort_activation' if e['seed'] < 2400 else\n                           'CLASS_fresh_B_activation')"
+    ],
+    [
+      "assert len(growth) == 18",
+      "assert len(growth) == 20"
+    ],
+    [
+      "'registered_families': 72",
+      "'registered_families': 80"
+    ]
+  ],
+  "records": [
+    {
+      "name": "observe_registered_runtime.py",
+      "source": "runs/20261005_math_review_registered72_post_CLASS_recovery_workflow/observe_registered_runtime.py",
+      "source_sha256": "7a86b756de30aa935ebb8c611bfd3a028ba986c629138e715eddcdea3a699a61",
+      "changes": [
+        [
+          "'CLASS_recovery_companion_posterior_chains']",
+          "'CLASS_recovery_companion_posterior_chains', 'CLASS_fresh_B_posterior_chains']"
+        ],
+        [
+          "== 72",
+          "== 80"
+        ],
+        [
+          "e['seed'] >= 2300 and e['status'].endswith('first_saved_row_pending')",
+          "e['seed'] in range(2401, 2409) and e['status'].endswith('first_saved_row_pending')"
+        ],
+        [
+          "'CLASS_recovery_cohort_activation')",
+          "'CLASS_recovery_cohort_activation' if e['seed'] < 2400 else\n                           'CLASS_fresh_B_activation')"
+        ],
+        [
+          "assert len(growth) == 18",
+          "assert len(growth) == 20"
+        ],
+        [
+          "'registered_families': 72",
+          "'registered_families': 80"
+        ]
+      ]
+    },
+    {
+      "name": "self_review.py",
+      "source": "runs/20261005_math_review_registered72_post_CLASS_recovery_workflow/self_review.py",
+      "source_sha256": "ace326006d76f1cd86f6e1c9e903974d8c9ef0cfbcb8a09118ccfeb6c4b94bfa",
+      "changes": [
+        [
+          "'CLASS_recovery_companion_posterior_chains']",
+          "'CLASS_recovery_companion_posterior_chains', 'CLASS_fresh_B_posterior_chains']"
+        ],
+        [
+          "== 72",
+          "== 80"
+        ],
+        [
+          "== 57",
+          "== 65"
+        ],
+        [
+          "== 18",
+          "== 20"
+        ],
+        [
+          "'registrations_reconstructed': 72, 'live_at_observation': 57",
+          "'registrations_reconstructed': 80, 'live_at_observation': 65"
+        ],
+        [
+          "72 registrations verified",
+          "80 registrations verified"
+        ],
+        [
+          "for before, after in reversed(prep['changes']):\n    assert reverse.count(after) == 1\n    reverse = reverse.replace(after, before, 1)\nassert reverse.encode() == source.read_bytes()",
+          "expected = source.read_text()\nfor before, after in prep['changes']:\n    assert before in expected\n    expected = expected.replace(before, after)\nassert reverse.encode() == expected.encode()"
+        ]
+      ]
+    }
+  ],
+  "pending_first_row_permission_restricted_to_new_B": true
+}

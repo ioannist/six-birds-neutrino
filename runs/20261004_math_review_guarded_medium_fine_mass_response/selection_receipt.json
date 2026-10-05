@@ -1,0 +1,29 @@
+{
+  "utc": "2026-10-04T07:07:13.111571+00:00",
+  "scope": "two_lenses_identical_fixed_median_and_mass_plus_coordinates_medium_vs_fine",
+  "parent_verified_comparison": "runs/20261004_math_review_guarded_posterior_precision/completion_verification.json",
+  "parent_verified_comparison_sha256": "0d8de2f41b9baa30385ee6a604905113c6595bb34b01c64d0fa6218b3b4408eb",
+  "native_module_path": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+  "native_module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+  "mass_offset_eV": 0.01,
+  "sources": [
+    {
+      "path": "runs/20261004_math_review_guarded_posterior_precision/A/evaluation/selected_reference_settings.yaml",
+      "sha256": "dd2a233b4de4e6c1e0cccfccd11b72b624bad030ece4aaafa84b0c07242fd2c1"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_posterior_precision/A/points.json",
+      "sha256": "0b4d1a5a61c9488bb6a1165e14293603131ea0cc58cbac8b2f4a090c8d3e5cc4"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_posterior_precision/B/evaluation/selected_reference_settings.yaml",
+      "sha256": "b804f7bb1159352c5657cc80e82cfb33c5c6f15e3da172096ed205769d1e3e4d"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_posterior_precision/B/points.json",
+      "sha256": "b3196d340c1efe30f3edfe2257173bec8b0cfd93048fa06a012d0335bab84711"
+    }
+  ],
+  "posterior_accuracy_certified": false,
+  "posterior_convergence_certified": false
+}

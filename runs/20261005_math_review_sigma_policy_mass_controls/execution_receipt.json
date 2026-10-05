@@ -1,0 +1,21 @@
+{
+  "utc": "2026-10-05T01:41:58.927866+00:00",
+  "workers": [
+    {
+      "variant": "candidate12",
+      "managed_session": 9264,
+      "exit_code": 1
+    },
+    {
+      "variant": "packaged14",
+      "managed_session": 55393,
+      "exit_code": 1
+    }
+  ],
+  "all_workers_terminal": true,
+  "native_evaluations_reached_per_variant": 1,
+  "native_evaluations_completed_per_variant": 0,
+  "declared_points_per_variant": 12,
+  "error_counted_as_posterior_rejection": false,
+  "failure_receipt": "initial_failure_receipt.json"
+}

@@ -1,0 +1,20 @@
+{
+  "utc": "2026-10-05T04:19:19.558763+00:00",
+  "source": "runs/20261005_math_review_CLASS_fresh_recovery_activation/verify_first_row.py",
+  "source_sha256": "33c5038712389fb00fde901cd4e8b96c51a80f9cec48992b8936924912bd9951",
+  "changes": [
+    [
+      "runs/20261005_math_review_CLASS_fresh_recovery_preparation",
+      "runs/20261005_math_review_CLASS_recovery_cohort_companions_v3"
+    ],
+    [
+      "CLASS_fresh_recovery_{entry[\"group\"]}_seed{seed}.1.txt",
+      "CLASS_recovery_companion_{entry[\"group\"].removeprefix(\"fresh_recovery_\")}_seed{seed}.1.txt"
+    ],
+    [
+      "'parent_seed': entry['parent_seed']",
+      "'source_seed': entry['source_seed']"
+    ]
+  ],
+  "scope": "Same exact complete-row holding history and forced-fresh native replay for six new companion identities."
+}

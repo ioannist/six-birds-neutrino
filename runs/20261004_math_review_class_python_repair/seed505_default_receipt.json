@@ -1,0 +1,232 @@
+{
+  "utc": "2026-10-04T02:35:33.959214+00:00",
+  "case": "seed505_default",
+  "arguments": {
+    "omega_b": 0.02225891404331876,
+    "omega_cdm": 0.11776947724676447,
+    "H0": 68.46760971622076,
+    "A_s": 2.1219159399068406e-09,
+    "n_s": 0.9574692565988652,
+    "tau_reio": 0.05665132037440848,
+    "m_ncdm": "0.0088989885790305336,0.0088989885790305336,0.0088989885790305336",
+    "N_ncdm": 3,
+    "N_ur": 0.00641,
+    "l_max_scalars": 4095,
+    "output": "tCl pCl lCl",
+    "non_linear": "hmcode",
+    "lensing": "yes"
+  },
+  "source_sha256": "b8b005631d134e23de8309368140c2833dbf6248ba3211eb35e04553a4f70982",
+  "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+  "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+  "omp_threads": "8",
+  "scope": "fixed_coordinate_native_Python_backend_validation",
+  "posterior_convergence_certified": false,
+  "uniform_numerical_accuracy_certified": false,
+  "spectra_sha256": "a2c7b188fa99355d680f35ec7693759d82a5cc11bbbe25061ac63a7a1bd87ac4",
+  "spectrum_ell_max": 4095,
+  "tables": {
+    "background": {
+      "z": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "5069715e04e4562dd3053b0eddf23b6170ba4e927c102d1146ccdf33e751f3b3"
+      },
+      "proper time [Gyr]": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "bc5532c6dd12067fdaf928658f552c47e91d9d7bbf24312bdb0f9000feec4a8a"
+      },
+      "conf. time [Mpc]": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "3fe44faf444c617a016d9ccced0a477859ff6d00d5818c1b9ffe5b6603c61c6a"
+      },
+      "H [1/Mpc]": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "9b88aa6492923e818586766a4a1641275ac0da043ae38e708255ee49329c8f80"
+      },
+      "comov. dist.": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "fca092bfd3c1a40c07be4e5cfcf1ad7d47459f8e40cb7b23b31e48d70aad700e"
+      },
+      "ang.diam.dist.": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "6c640d224e6529cebcfda8b99e4e83a3d535b6be5218b285c7d78779269c395f"
+      },
+      "lum. dist.": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "ec0b51f2a8e9e1f5c7a857f6ed0cc07203f41645552a576207db6bea9b8cba78"
+      },
+      "comov.snd.hrz.": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "55907c095a8b332472bdb020f97410d888f5b7470ee7bfe185e7842b46519269"
+      },
+      "(.)rho_g": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "9296c63b7cb09a72013e6ae5e747c3c30ed8af4078e02b3bd4ada43c98e5e7d4"
+      },
+      "(.)rho_b": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "1a77a3e57521b2a1f6cb6b0cf53f8760676d6458360d3a547aee5f9f7e19acb3"
+      },
+      "(.)rho_cdm": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "550cc4ea99ac1d7e1e18ef617bd05439d4993ea6d34f99f8b6a6342c49f57e1c"
+      },
+      "(.)rho_ncdm[0]": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "06a40141627ebd24a67f5c0e5d21b35426d9819524a8db25c59bf8c2838dae3b"
+      },
+      "(.)p_ncdm[0]": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "678db9f0c51e0b4ffe7c3ccf7bd83df33507bcd4cc8b79ac5bdaeee20148a34c"
+      },
+      "(.)rho_ncdm[1]": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "06a40141627ebd24a67f5c0e5d21b35426d9819524a8db25c59bf8c2838dae3b"
+      },
+      "(.)p_ncdm[1]": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "678db9f0c51e0b4ffe7c3ccf7bd83df33507bcd4cc8b79ac5bdaeee20148a34c"
+      },
+      "(.)rho_ncdm[2]": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "06a40141627ebd24a67f5c0e5d21b35426d9819524a8db25c59bf8c2838dae3b"
+      },
+      "(.)p_ncdm[2]": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "678db9f0c51e0b4ffe7c3ccf7bd83df33507bcd4cc8b79ac5bdaeee20148a34c"
+      },
+      "(.)rho_lambda": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "d139f3f4e56b2b9d59809d569c4b3e7ef77461584e8f6e4f74b572a37510756e"
+      },
+      "(.)rho_ur": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "98526de758c8af0069ff048f21a1422d6e7829bc81dace9fb02abe0dda09d930"
+      },
+      "(.)rho_crit": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "2fb0a65ed0da277f3f2f02df49dba3f8ac7d2d85528ea17223aec121ef410181"
+      },
+      "(.)rho_tot": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "2fb0a65ed0da277f3f2f02df49dba3f8ac7d2d85528ea17223aec121ef410181"
+      },
+      "(.)p_tot": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "7801d589b184f7c23fce4f4b06a34a4eb7c2045404f299de9e9562cb4f23088d"
+      },
+      "(.)p_tot_prime": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "1f4dc7be3875a4df6e2ed228611a9496c740817a5e78afa44c59a0adab026fbb"
+      },
+      "Omega_r(z)": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "c647784d4e15473d2bd58b3f50f0c657662229bf93a34639718f2ae76ca5d0b4"
+      },
+      "Omega_m(z)": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "bd7217fd38e7f55d8120d93a8a8bf9bc32119fb0726ffd1d45d6cf05903b8d5c"
+      },
+      "gr.fac. D": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "30f5605286ce27bfbf684557f2b6953af186e843daf6c928cabfa208be96f54f"
+      },
+      "gr.fac. f": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "ba2d414a1975118591b97ec667496da657cb2807af655b10d4999637babbe888"
+      }
+    },
+    "thermodynamics": {
+      "scale factor a": {
+        "rows": 28333,
+        "nonfinite": 0,
+        "array_sha256": "9c32c67f307b33ea7c9b28c61c2843a231c9ab1f0c086d7486ddacb2a13976e0"
+      },
+      "z": {
+        "rows": 28333,
+        "nonfinite": 0,
+        "array_sha256": "d4a7dfcf01a141bda652d3f162402d0b1a4e7c9b716c7ad45495d23cc2bdfe3c"
+      },
+      "conf. time [Mpc]": {
+        "rows": 28333,
+        "nonfinite": 0,
+        "array_sha256": "5aa4e3c945809a42dd0a6df9526c0fc0a134f0f3c8e85b83a458c649029629fb"
+      },
+      "x_e": {
+        "rows": 28333,
+        "nonfinite": 0,
+        "array_sha256": "3d3f8218bb85ea1cfdf705b027e8211387748794dc5e09fbb6302c6c46ab28fc"
+      },
+      "kappa' [Mpc^-1]": {
+        "rows": 28333,
+        "nonfinite": 0,
+        "array_sha256": "fb3aaad4194f2d1ca697bf617f38bab72c333b13f110d9cd74df70de84285d29"
+      },
+      "exp(-kappa)": {
+        "rows": 28333,
+        "nonfinite": 0,
+        "array_sha256": "4f685b3a0357619130785b08295b7973fdd741ebd087fdaecd59dc10792d196f"
+      },
+      "g [Mpc^-1]": {
+        "rows": 28333,
+        "nonfinite": 0,
+        "array_sha256": "2ed82bc561232b393e87735933bbf33dfec2066290f39c5f257befe5f395206b"
+      },
+      "Tb [K]": {
+        "rows": 28333,
+        "nonfinite": 0,
+        "array_sha256": "dfcb44b040b6f292709acbe34087f860bef8a7a57dfeb4d52f32e54294d2ecce"
+      },
+      "dTb [K]": {
+        "rows": 28333,
+        "nonfinite": 0,
+        "array_sha256": "58f730575867a2be5a457fc1e5144884188a3b166160ae262f10454d8555249c"
+      },
+      "w_b": {
+        "rows": 28333,
+        "nonfinite": 0,
+        "array_sha256": "2de01ac7f632e772d3869c512422211889dd6fda94f508e42e99a6c888322b0c"
+      },
+      "c_b^2": {
+        "rows": 28333,
+        "nonfinite": 0,
+        "array_sha256": "1504914f0799101a899df5f1d393048cc25f3358e17f980631346f49e060e948"
+      },
+      "kappa_b": {
+        "rows": 28333,
+        "nonfinite": 0,
+        "array_sha256": "ba91a62d8d613ec98856dcf8977dbce85c5628fc1c107fae978a6005cb2dccdf"
+      }
+    }
+  },
+  "thermodynamics_sha256": "86f23de266dfe195e5da62be8ceaf7f0e4aa14ee2bd9f9cba3490acf7fb531fa",
+  "elapsed_seconds": 14.331074273679405,
+  "succeeded": true
+}

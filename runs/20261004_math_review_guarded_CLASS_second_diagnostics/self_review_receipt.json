@@ -1,0 +1,54 @@
+{
+  "utc": "2026-10-04T09:15:56.641357+00:00",
+  "review_type": "distinct_self_review_not_independent_review",
+  "completion_verification_sha256": "a52b8c0564b5efb257dce8ce7dbd8d38ec2103c9d4851ccbc483bb04918372b8",
+  "runtime_observation_sha256": "f3e07369efb675b104e1252838a11dc1477633dbd2fa36bd19cdf32355a76550",
+  "self_review_script_sha256": "7ea4b691eaa4316f19c44d7406f5275165fcb39fd767a2e691897ca557964bb7",
+  "integer_recount_and_reconstructed_gates": {
+    "quad_A": {
+      "retained_represented_steps": [
+        1733,
+        1693,
+        1748,
+        1670
+      ],
+      "passing_parameters": [],
+      "next_minimum_history": 2004
+    },
+    "quad_B": {
+      "retained_represented_steps": [
+        1510,
+        1534,
+        1536,
+        1462
+      ],
+      "passing_parameters": [],
+      "next_minimum_history": 1755
+    },
+    "medium_A": {
+      "retained_represented_steps": [
+        489,
+        607,
+        592,
+        486
+      ],
+      "passing_parameters": [],
+      "next_minimum_history": 584
+    },
+    "medium_B": {
+      "retained_represented_steps": [
+        481,
+        375,
+        325,
+        404
+      ],
+      "passing_parameters": [],
+      "next_minimum_history": 390
+    }
+  },
+  "all_sixteen_fresh_families_retained": true,
+  "precision_cohorts_or_grid12_trial_pooled": false,
+  "growth_gate_met_in_every_cohort": true,
+  "convergence_or_uniform_accuracy_certified": false,
+  "judgment": "all four cohorts remain provisional; zero of ten parameters pass all unchanged gates"
+}

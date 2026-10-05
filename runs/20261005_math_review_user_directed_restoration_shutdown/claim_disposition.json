@@ -1,0 +1,80 @@
+{
+  "utc": "2026-10-05T08:35:44.398645+00:00",
+  "user_instruction": "[paraphrased] stop trying to justify original claims that are wrong or likely wrong",
+  "policy": "Follow evidence; no additional sampling to recover original claims.",
+  "claims": [
+    {
+      "claim": "Generic Gaussian boundary mechanism",
+      "status": "retain conditionally",
+      "scope": "Exact Gaussian factors, constant prior on gated domain and stated independence/noise assumptions; actual cosmological approximation and uniform error bridge not established."
+    },
+    {
+      "claim": "Large asymmetric directional disagreement",
+      "status": "retain scoped finite comparisons",
+      "scope": "Replayed endpoints and actual additive likelihood accounting; no global optimization, null calibration, or packaging-only causal attribution."
+    },
+    {
+      "claim": "Profiling reduces but does not remove mismatch",
+      "status": "retain only tested best-found comparisons",
+      "scope": "Declared nuisance/parameter domains and recorded starts; no globally certified profile extrema."
+    },
+    {
+      "claim": "Common staging changes mismatch at the few-percent level",
+      "status": "retain for the specified support restriction",
+      "scope": "Recorded comparisons; not equivalence of window functions, resolution or all staging choices."
+    },
+    {
+      "claim": "High-ell TT dominates the overlap mismatch",
+      "status": "withdraw broad wording; retain supported directional subset",
+      "scope": "SPT-only forward TT; matched full-CMB forward EE and reverse TT. Counterexamples affect broad full-CMB scope."
+    },
+    {
+      "claim": "Approximately0.109eV SPT-only95-percent upper-bound tightening",
+      "status": "unsupported; withdraw as an established empirical result",
+      "scope": "Original chains lack reliable convergence/precision; no currently qualified numerical replacement. This is lack of support, not numerical disproof."
+    },
+    {
+      "claim": "Approximately0.01eV full-CMB95-percent upper-bound tightening",
+      "status": "unsupported as a converged posterior result",
+      "scope": "Archived full-CMB chains also lack adequate mixing/tail evidence; finite best-found mass coordinates do not supply posterior bounds."
+    },
+    {
+      "claim": "Historical near0.030eV replacement",
+      "status": "withhold",
+      "scope": "Native qualification suspended after cache defect; historical empirical diagnostic passage does not restore it."
+    }
+  ],
+  "sources": [
+    {
+      "path": "paper/sections/abstract.tex",
+      "sha256": "fd404a03c618d07fb6513005fd4dbd7e334911f9cfe37eee0583491514ae192d"
+    },
+    {
+      "path": "paper/sections/conclusion.tex",
+      "sha256": "fdc4bef01f013809f124f8d7608bd027b0cc92ff5131035ba15b0a2bbdf31ccf"
+    },
+    {
+      "path": "docs/findings/canonical_results.json",
+      "sha256": "bb09d7fe655482218d7d75889338a0d9e48b140e47b8b51d9be876aff3a64811"
+    },
+    {
+      "path": "runs/20261005_math_review_main_claim_decision_packet/decision_packet.json",
+      "sha256": "fa9153c8afac4d117bfe9d946f8b5d2b37e26d80900376df02b348761478a972"
+    },
+    {
+      "path": "runs/20261003_math_review_cosmological_cmb_desi_accuracy_improved_source/comparison_verification.json",
+      "sha256": "db528df73c6507cf7b45ef214155bacda07b4c75af373e0c6b8cd21915d9aa84"
+    },
+    {
+      "path": "runs/20261003_math_review_localization_range_check/range_verification.json",
+      "sha256": "2b0d86f3af6ad0e1f72400580be68880d273393ce9bac83e46b5a1bca02328a6"
+    },
+    {
+      "path": "runs/20261004_math_review_SPT_headline_magnitude_audit/headline_magnitude_receipt.json",
+      "sha256": "6309018857b2bfae1a3c4a8272d1bd069156fcec785b614659ec09cb1e95c52f"
+    }
+  ],
+  "main_claim_changes_discussed_with_user": true,
+  "paper_modified": false,
+  "physical_or_posterior_error_bridges_not_invented": true
+}

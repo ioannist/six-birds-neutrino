@@ -1,0 +1,117 @@
+{
+  "utc": "2026-10-04T16:56:33.011788+00:00",
+  "reviewer": "self_review_no_independent_agent",
+  "group": "current_A3200",
+  "retained_represented_steps": [
+    779,
+    754,
+    739,
+    733
+  ],
+  "all_seven_parameter_gate_sets_reconstructed": {
+    "omegabh2": {
+      "gates": {
+        "separate_starts": true,
+        "finite": true,
+        "Rhat": false,
+        "bulk_ESS": false,
+        "tail_ESS": false,
+        "quantile_ESS": false,
+        "MCSE": false,
+        "chronological_drift": true,
+        "equalized_selection": true
+      },
+      "pass": false
+    },
+    "omegach2": {
+      "gates": {
+        "separate_starts": true,
+        "finite": true,
+        "Rhat": false,
+        "bulk_ESS": false,
+        "tail_ESS": false,
+        "quantile_ESS": false,
+        "MCSE": false,
+        "chronological_drift": true,
+        "equalized_selection": true
+      },
+      "pass": false
+    },
+    "H0": {
+      "gates": {
+        "separate_starts": true,
+        "finite": true,
+        "Rhat": false,
+        "bulk_ESS": false,
+        "tail_ESS": false,
+        "quantile_ESS": false,
+        "MCSE": false,
+        "chronological_drift": true,
+        "equalized_selection": true
+      },
+      "pass": false
+    },
+    "logA": {
+      "gates": {
+        "separate_starts": true,
+        "finite": true,
+        "Rhat": false,
+        "bulk_ESS": false,
+        "tail_ESS": false,
+        "quantile_ESS": false,
+        "MCSE": false,
+        "chronological_drift": true,
+        "equalized_selection": true
+      },
+      "pass": false
+    },
+    "ns": {
+      "gates": {
+        "separate_starts": true,
+        "finite": true,
+        "Rhat": false,
+        "bulk_ESS": false,
+        "tail_ESS": false,
+        "quantile_ESS": false,
+        "MCSE": false,
+        "chronological_drift": true,
+        "equalized_selection": true
+      },
+      "pass": false
+    },
+    "tau": {
+      "gates": {
+        "separate_starts": true,
+        "finite": true,
+        "Rhat": false,
+        "bulk_ESS": false,
+        "tail_ESS": false,
+        "quantile_ESS": false,
+        "MCSE": false,
+        "chronological_drift": true,
+        "equalized_selection": true
+      },
+      "pass": false
+    },
+    "mnu": {
+      "gates": {
+        "separate_starts": true,
+        "finite": true,
+        "Rhat": false,
+        "bulk_ESS": false,
+        "tail_ESS": false,
+        "quantile_ESS": false,
+        "MCSE": false,
+        "chronological_drift": true,
+        "equalized_selection": true
+      },
+      "pass": false
+    }
+  },
+  "next_minimum_history": 880,
+  "snapshot_receipt_sha256": "7f3079a1ba0980d6d453edfb2136b6a3aadce7f0fe022d0d7a6488ee92690339",
+  "native_row_verification_sha256": "8db63c54a168f302e4b79af641541bb69ab99c0a727674fe0a3e2f67c472d204",
+  "diagnostics_sha256": "e9730eb3bc093c6e50885b0760bd2f445b6f1e2f5cef3bd9e94f0df1798379e3",
+  "posterior_convergence_or_uniform_accuracy_proved": false,
+  "different_targets_or_cache_policies_pooled": false
+}

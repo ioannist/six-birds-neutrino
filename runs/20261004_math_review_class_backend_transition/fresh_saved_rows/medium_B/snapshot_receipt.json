@@ -1,0 +1,173 @@
+{
+  "utc": "2026-10-04T04:18:22.817152+00:00",
+  "group": "medium_B",
+  "records": [
+    {
+      "seed": 1403,
+      "source": "runs/20261004_math_review_guarded_medium_chain_B_seed1403/chains/math_guarded_medium_B_seed1403.1.txt",
+      "snapshot": "runs/20261004_math_review_class_backend_transition/fresh_saved_rows/medium_B/seed1403/chains/math_guarded_medium_B_seed1403.1.txt",
+      "stored_rows": 11,
+      "chain_sha256": "7198b813e44a30f0f9e6e45a26a6417fd2998ba2d9bc7b08cad4ddb7dba6254d",
+      "source_config_sha256": "21f130dc9aedd2c65538688d3bf173170d9d48901cef1fcad003b5c12cb9b847",
+      "snapshot_config_sha256": "dcde4f7e728600a3013cfb75f22b37242889bec46f5a75f9eabde1a1e461a285",
+      "stdout_sha256": "81bdfdc79945b2ab7a3cb91e2d94eb17590b2f2d8e7adb4ef43ffc31f90ee937",
+      "actual_options_sha256": "261a482509a0b3ce641b190add99bfecd288bed29bcf2c7d4588ae03ee053410",
+      "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+      "actual_blocking": [
+        [
+          1,
+          [
+            "omegabh2",
+            "omegach2",
+            "H0",
+            "logA",
+            "ns",
+            "tau",
+            "mnu_sample"
+          ]
+        ],
+        [
+          1,
+          [
+            "TT_tSZ_Amp",
+            "TT_kSZ_Amp"
+          ]
+        ],
+        [
+          1,
+          [
+            "A_planck"
+          ]
+        ]
+      ],
+      "actual_dragging_lines": []
+    },
+    {
+      "seed": 1404,
+      "source": "runs/20261004_math_review_guarded_medium_chain_B_seed1404/chains/math_guarded_medium_B_seed1404.1.txt",
+      "snapshot": "runs/20261004_math_review_class_backend_transition/fresh_saved_rows/medium_B/seed1404/chains/math_guarded_medium_B_seed1404.1.txt",
+      "stored_rows": 8,
+      "chain_sha256": "7b6620fbf06db0e177007a1371ca8b638bf2883ac2aebac0e19598c9000e5174",
+      "source_config_sha256": "2d12c387f4ec1dfbc8856853b4797acf5cbc47bf45795e2f555aaa48b9443aa5",
+      "snapshot_config_sha256": "ba4c417b5833a8babc4d89f9cbd908c7609ccce4971b77b4815c239c5503ed9a",
+      "stdout_sha256": "17b4e6cc098ed6516333656591fb2784665ad748179dd2eb01ba234c403b0b5f",
+      "actual_options_sha256": "2c38ccea17e65226ae7a7a48a3187537402e3011a364dad89cccc6da5f87ab71",
+      "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+      "actual_blocking": [
+        [
+          1,
+          [
+            "omegabh2",
+            "omegach2",
+            "H0",
+            "logA",
+            "ns",
+            "tau",
+            "mnu_sample"
+          ]
+        ],
+        [
+          1,
+          [
+            "TT_tSZ_Amp",
+            "TT_kSZ_Amp"
+          ]
+        ],
+        [
+          1,
+          [
+            "A_planck"
+          ]
+        ]
+      ],
+      "actual_dragging_lines": []
+    },
+    {
+      "seed": 1405,
+      "source": "runs/20261004_math_review_guarded_medium_chain_B_seed1405/chains/math_guarded_medium_B_seed1405.1.txt",
+      "snapshot": "runs/20261004_math_review_class_backend_transition/fresh_saved_rows/medium_B/seed1405/chains/math_guarded_medium_B_seed1405.1.txt",
+      "stored_rows": 4,
+      "chain_sha256": "8bd515589551049ac47df35398e4dfc0d57ed82e815352b1a561c7f0e5efe25f",
+      "source_config_sha256": "38a755eefc9e198a6b74ea835ae7853daf5101f33b702276cbe13a31741b14bf",
+      "snapshot_config_sha256": "5e449528a2a2e77eca0a09c35205ec678ed8ba902aade8fc6f9a51368247b06b",
+      "stdout_sha256": "4be66c2b9d7cc24f8eb6308248c630fbd301bc33a3cb0e705f2b8c813c468794",
+      "actual_options_sha256": "70865d11780289f9e4e639bd036ace7e8d0eaf9f41e614710e94b26ca19cde54",
+      "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+      "actual_blocking": [
+        [
+          1,
+          [
+            "omegabh2",
+            "omegach2",
+            "H0",
+            "logA",
+            "ns",
+            "tau",
+            "mnu_sample"
+          ]
+        ],
+        [
+          10,
+          [
+            "TT_tSZ_Amp",
+            "TT_kSZ_Amp"
+          ]
+        ],
+        [
+          10,
+          [
+            "A_planck"
+          ]
+        ]
+      ],
+      "actual_dragging_lines": [
+        "[sbt_spt_audit.samplers.fullprecisionmcmc] * 1 : [['omegabh2', 'omegach2', 'H0', 'logA', 'ns', 'tau', 'mnu_sample']]",
+        "[sbt_spt_audit.samplers.fullprecisionmcmc] * 4 : [['TT_tSZ_Amp', 'TT_kSZ_Amp'], ['A_planck']]"
+      ]
+    },
+    {
+      "seed": 1407,
+      "source": "runs/20261004_math_review_guarded_medium_chain_B_seed1407/chains/math_guarded_medium_B_seed1407.1.txt",
+      "snapshot": "runs/20261004_math_review_class_backend_transition/fresh_saved_rows/medium_B/seed1407/chains/math_guarded_medium_B_seed1407.1.txt",
+      "stored_rows": 2,
+      "chain_sha256": "dc9d7ee57fc2ef4e1242303289e5391c0ff61dabf977caf462d2a6b7d8e061af",
+      "source_config_sha256": "b3147eea40997d1eb188c214a383f11bc24e5da7450420c793df16c499647c82",
+      "snapshot_config_sha256": "3f083678f211e47e7ce657727bf3b935fa82a433a78c78f9eaadb434687d7d0d",
+      "stdout_sha256": "02896638359a52bf8846836b647aab7a6cd33b14e4e6fa6652bf02ca7f370e6f",
+      "actual_options_sha256": "043bd987e11441478291fea37997d46f6ccad04a0e0c405ddd59f033cca78503",
+      "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+      "actual_blocking": [
+        [
+          1,
+          [
+            "omegabh2",
+            "omegach2",
+            "H0",
+            "logA",
+            "ns",
+            "tau",
+            "mnu_sample"
+          ]
+        ],
+        [
+          1,
+          [
+            "TT_tSZ_Amp",
+            "TT_kSZ_Amp"
+          ]
+        ],
+        [
+          1,
+          [
+            "A_planck"
+          ]
+        ]
+      ],
+      "actual_dragging_lines": []
+    }
+  ],
+  "historical_prefixes_appended": false,
+  "native_saved_row_checks_pending": true,
+  "sampler_stopping_and_integer_holding_options_verified": true,
+  "posterior_convergence_certified": false
+}

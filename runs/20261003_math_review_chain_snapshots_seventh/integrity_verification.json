@@ -1,0 +1,31 @@
+{
+  "utc": "2026-10-03T18:24:15.047031+00:00",
+  "snapshot_receipt_sha256": "cf365aa8b320aadcdd694d4067e918f607d8d12a6cc294e82bfbbc309264b5cb",
+  "all_20_chain_hashes_and_live_prefixes_verified": true,
+  "all_20_extend_sixth_snapshot_prefixes": true,
+  "all_40_configuration_hashes_verified": true,
+  "resolved_changes_only_output_relocation": true,
+  "posterior_convergence_certified": false,
+  "growth_from_sixth": {
+    "chain_A": {
+      "sixth_rows": 20824,
+      "seventh_rows": 26624,
+      "growth_fraction": 0.27852477910103723
+    },
+    "chain_B": {
+      "sixth_rows": 17491,
+      "seventh_rows": 22702,
+      "growth_fraction": 0.2979246469612944
+    },
+    "cmb_chain_A": {
+      "sixth_rows": 5251,
+      "seventh_rows": 6715,
+      "growth_fraction": 0.2788040373262235
+    },
+    "cmb_chain_B": {
+      "sixth_rows": 5043,
+      "seventh_rows": 6439,
+      "growth_fraction": 0.27681935355938925
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "utc": "2026-10-04T02:12:47.767241+00:00",
+  "exact_cutoff_crossings": [
+    {
+      "source": "runs/20261004_math_review_class_tca_diagnostic/helium_first_invalid_stderr.txt",
+      "exact_binary_rational_products_straddle_cutoff": true,
+      "finite_difference_increment_positive": true,
+      "base_rate_zero": true,
+      "perturbed_rate_infinite": true,
+      "redshift": 0.3158436049325699
+    },
+    {
+      "source": "runs/20261004_math_review_class_tca_failure_seed701/helium_trace_stderr.txt",
+      "exact_binary_rational_products_straddle_cutoff": true,
+      "finite_difference_increment_positive": true,
+      "base_rate_zero": true,
+      "perturbed_rate_infinite": true,
+      "redshift": 0.3207440245121288
+    }
+  ],
+  "candidate_finite_outputs_at_both_failed_coordinates_verified": true,
+  "quadrature_control_saved_lensed_spectra_equal_original_exactly": true,
+  "second_failed_chain_archive_hashes_verified": true,
+  "all_eight_first_quad_learning_checks_skip_updates_verified": true,
+  "current_owned_live_sampler_count": 27,
+  "active_inference_backend_unchanged": true,
+  "uniform_numerical_accuracy_certified": false,
+  "posterior_convergence_certified": false,
+  "candidate_repair_installed_in_inference": false
+}

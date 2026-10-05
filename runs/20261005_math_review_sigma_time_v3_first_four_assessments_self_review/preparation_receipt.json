@@ -1,0 +1,32 @@
+{
+  "utc": "2026-10-05T06:38:07.329814+00:00",
+  "source": "runs/20261005_math_review_sigma_time_v3_first_assessments_self_review/review_v2.py",
+  "source_sha256": "c947637a2babdc8a058b305ffee41f7a93ee4982b4f2537fe78dc4e0275edd44",
+  "changes": [
+    [
+      "['sigma_time_v3_A4095_cap5', 'sigma_time_v3_B4095_cap5', 'sigma_time_v3_B4095_cap20']",
+      "['sigma_time_v3_A4095_cap5', 'sigma_time_v3_B4095_cap5', 'sigma_time_v3_B4095_cap20', 'sigma_time_v3_A4095_cap20']"
+    ],
+    [
+      "assert len(records) == 3",
+      "assert len(records) == 4"
+    ],
+    [
+      "'selected_native_rows_exact': 36",
+      "'selected_native_rows_exact': 48"
+    ],
+    [
+      "'all_three_production_snapshots_refused_qualification'",
+      "'all_four_production_snapshots_refused_qualification'"
+    ],
+    [
+      "Three production candidates reviewed: 36 native rows exact; all seven parameters fail qualification.",
+      "Four production candidates reviewed: 48 native rows exact; all seven parameters fail qualification."
+    ],
+    [
+      "Reconstruct the three first production candidates",
+      "Reconstruct the four first production candidates"
+    ]
+  ],
+  "original_three_assessment_review_preserved": true
+}

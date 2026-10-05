@@ -1,5 +1,11 @@
 # Freeze Checklist
 
+The bundles below are the historical frozen snapshot. The 2026-10-03
+[mathematics review](math_review.md) repairs covariance accounting, profiling
+domains, and chain diagnostics. Original localization and convergence diagnostics
+are superseded; these chains do not verify stable posterior limits. Use the
+review's fresh artifacts and verification receipts when continuing the work.
+
 ## Canonical run bundle IDs (frozen snapshot)
 
 - Toy / mechanism:

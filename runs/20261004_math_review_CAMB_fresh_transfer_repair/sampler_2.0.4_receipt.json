@@ -1,0 +1,144 @@
+{
+  "utc": "2026-10-04T14:59:10.821255+00:00",
+  "records": [
+    {
+      "lens": "A",
+      "seed": 1604,
+      "stored_rows": 2,
+      "checks": [
+        {
+          "row": 0,
+          "point": {
+            "omegabh2": 0.022699735,
+            "omegach2": 0.11515536,
+            "H0": 68.530016,
+            "logA": 3.0226339111165847,
+            "ns": 1.0208507570056111,
+            "tau": 0.060991682,
+            "mnu": 0.14275261
+          },
+          "fresh_minus_stored": {
+            "minuslogpost": 0.0,
+            "minuslogprior": 0.0,
+            "chi2": 0.0,
+            "chi2__sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 0.0,
+            "chi2__sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 0.0
+          },
+          "exactly_equal": true,
+          "within_fixed_1e_minus9": true
+        },
+        {
+          "row": 1,
+          "point": {
+            "omegabh2": 0.022699735,
+            "omegach2": 0.11515536,
+            "H0": 68.530016,
+            "logA": 3.002378135352611,
+            "ns": 1.0491568047623006,
+            "tau": 0.060991682,
+            "mnu": 0.14275261
+          },
+          "fresh_minus_stored": {
+            "minuslogpost": 0.0,
+            "minuslogprior": 0.0,
+            "chi2": 0.0,
+            "chi2__sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 0.0,
+            "chi2__sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 0.0
+          },
+          "exactly_equal": true,
+          "within_fixed_1e_minus9": true
+        }
+      ],
+      "chain": "runs/20261004_math_review_CAMB_fresh_transfer_repair/sampler_2.0.4_A/chains/finite_probe.1.txt",
+      "chain_sha256": "1f0fc3a51f10275966cec69ea0b84299f5b19f449b1374acb610534755bc64d8",
+      "sampler_transfer_helper_class": "FreshCAMBTransfers",
+      "ordinary_sampler_options_except_finite_sample_cap": true,
+      "proposal_blocks": [
+        [
+          "omegabh2",
+          "omegach2",
+          "H0",
+          "tau",
+          "mnu"
+        ],
+        [
+          "logA",
+          "ns"
+        ]
+      ]
+    },
+    {
+      "lens": "B",
+      "seed": 1608,
+      "stored_rows": 2,
+      "checks": [
+        {
+          "row": 0,
+          "point": {
+            "omegabh2": 0.02230972780173031,
+            "omegach2": 0.11671607274725432,
+            "H0": 68.4698665736714,
+            "logA": 3.0272667,
+            "ns": 0.96508102,
+            "tau": 0.04378219864361493,
+            "mnu": 0.09127535067655584
+          },
+          "fresh_minus_stored": {
+            "minuslogpost": 0.0,
+            "minuslogprior": 0.0,
+            "chi2": 0.0,
+            "chi2__sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 0.0,
+            "chi2__sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 0.0
+          },
+          "exactly_equal": true,
+          "within_fixed_1e_minus9": true
+        },
+        {
+          "row": 1,
+          "point": {
+            "omegabh2": 0.02230972780173031,
+            "omegach2": 0.11671607274725432,
+            "H0": 68.4698665736714,
+            "logA": 3.027713375754643,
+            "ns": 0.9651532309955607,
+            "tau": 0.04378219864361493,
+            "mnu": 0.09127535067655584
+          },
+          "fresh_minus_stored": {
+            "minuslogpost": 0.0,
+            "minuslogprior": 0.0,
+            "chi2": 0.0,
+            "chi2__sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 0.0,
+            "chi2__sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 0.0
+          },
+          "exactly_equal": true,
+          "within_fixed_1e_minus9": true
+        }
+      ],
+      "chain": "runs/20261004_math_review_CAMB_fresh_transfer_repair/sampler_2.0.4_B/chains/finite_probe.1.txt",
+      "chain_sha256": "f2b1d07707847fb708eb67eace4abc80af815876e49a14b3057c770ef04aa693",
+      "sampler_transfer_helper_class": "FreshCAMBTransfers",
+      "ordinary_sampler_options_except_finite_sample_cap": true,
+      "proposal_blocks": [
+        [
+          "omegabh2",
+          "omegach2",
+          "H0",
+          "tau",
+          "mnu"
+        ],
+        [
+          "logA",
+          "ns"
+        ]
+      ]
+    }
+  ],
+  "CAMB_version": "2.0.4",
+  "native_path": "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/camb/camblib.so",
+  "native_sha256": "306640a8948cd5246fc9b21e76525f6adebdff5ba3bc792a57d50bba67225ad5",
+  "production_adapter_sha256": "a2100f8f48f98988580c21ddaca04ed86a9b956f4b22135a942b05dd8265f355",
+  "scope": "actual short native MCMC row reproduction on both SPT recipes; excluded from posterior diagnostics",
+  "sampler_resize_reintroduced_cached_transfer_reuse": false,
+  "all_rows_match_fresh_within_predeclared_1e_minus9": true
+}

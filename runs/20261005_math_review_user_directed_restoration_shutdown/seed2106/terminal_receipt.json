@@ -1,0 +1,191 @@
+{
+  "utc": "2026-10-05T08:31:54.326412+00:00",
+  "registered_entry": {
+    "seed": 2106,
+    "lens": "A",
+    "group": "sigma_time_v3_A4095_cap20",
+    "prior_upper_eV": 20,
+    "kind": "spt_desi_fresh_CAMB_sigma_time_v3_candidate",
+    "config": "runs/20261005_math_review_sigma_time_v3_posterior_preparation_v2/seed2106/input.yaml",
+    "config_sha256": "a28b6e020fcf9a1e8bd9188764383927c00e83f992e3914260d947dee2a9e226",
+    "run_dir": "runs/20261005_math_review_fresh_CAMB_sigma_time_v3_A4095_cap20_seed2106",
+    "initial_point": {
+      "omegabh2": 0.02282449592863893,
+      "omegach2": 0.11664986847460365,
+      "H0": 68.75301948686611,
+      "logA": 3.0180738025724474,
+      "ns": 1.018826611596793,
+      "tau": 0.057005242595730525,
+      "mnu": 0.05300723110956623
+    },
+    "initial_point_label": "selected_frozen_row",
+    "source_config": "runs/20261004_math_review_upper_prior_posterior_preparation/seed2002/input.yaml",
+    "source_config_sha256": "131dff51c00165099bf4d6fb703bcc6214a2b8baa618d8078f25969525aa2e77",
+    "source_entry_seed": 2002,
+    "proposal": {
+      "source": "runs/20261003_math_review_chain_A_seed401/chains/math_restoration_A_seed401.covmat",
+      "path": "runs/20261005_math_review_sigma_time_v3_posterior_preparation_v2/proposal_A.covmat",
+      "sha256": "27eebf2cb99c8b73aab845ce5d930a407ff4ebe7359ec8515bd8c939ec9cd4c2",
+      "completion_receipt": "runs/20261004_math_review_spt_sample_cap_completion/completion_receipt.json",
+      "completion_receipt_sha256": "63418a24af29123aed7f63f7cb3ce14ae8b36d832986ba7e1c9273d448e1f2e7",
+      "sampled_parameters": [
+        "omegabh2",
+        "omegach2",
+        "H0",
+        "logA",
+        "ns",
+        "tau",
+        "mnu"
+      ],
+      "maximum_asymmetry": 2.710505431213761e-20,
+      "role": "same proposal heuristic for both mass caps; no historical samples pooled",
+      "copied_from": "runs/20261004_math_review_upper_prior_posterior_preparation/proposal_A.covmat"
+    },
+    "implementation_sha256": {
+      "scripts/run_cobaya.py": "883640961f35a782bdec0979fe28c98eb92b96098d1d083a9d62a8b3382d0c11",
+      "runs/20261005_math_review_sigma_time_v3_posterior_preparation_v2/launch_chain.py": "36d32bed6f812e0b5368bbb028e71a9292086e0d59e131311737a6144cbaf8ab",
+      "src/sbt_spt_audit/_numerics.py": "1b34997880ba12172943c6198c435023feb26952e64126dc592746f219cd8580",
+      "src/sbt_spt_audit/candl_support.py": "ddf70460d7662a2f1e4e5130635b6c09cdc2381ef78f0febaa0c88391533f162",
+      "src/sbt_spt_audit/mcmc_diagnostics.py": "babe3e043fdb7fa0062f71d47446e6e0109444fd83050625124a50dc1fc1ac53",
+      "src/sbt_spt_audit/mcmc.py": "557006c5101152322564810dcba6c4c8a536164486973a0326275464c551862c",
+      "src/sbt_spt_audit/localization.py": "b18f5257185987774eaa84d894fc789f6e16e82852962ad936f5b72d95c1d1c6",
+      "src/sbt_spt_audit/hello.py": "052f01caf3cbcc1e78689a02fae093f6d8e3369a01b2bb0974e65ed1a050c607",
+      "src/sbt_spt_audit/likelihood.py": "69fae0146365fb086fc0702ee19d34a4cd381a14324e7d350d04405052fadaa0",
+      "src/sbt_spt_audit/boltzmann.py": "a2100f8f48f98988580c21ddaca04ed86a9b956f4b22135a942b05dd8265f355",
+      "src/sbt_spt_audit/__init__.py": "2fe4cfb76c3908ca1b089ac085f5d5d3c6ba4bbaf3c95b1c797daa6a1d7a9857",
+      "src/sbt_spt_audit/metrics.py": "fd8617103d1ccb3f8a7494e09fff362caf14e0b4e612064860539e041197fbf1",
+      "src/sbt_spt_audit/samplers.py": "2a7c7e99597b6c5bc48f72bbaa9e8df81dd6987ba36e8ab0a81b8c36b10f33e9",
+      "src/sbt_spt_audit/likelihoods/candl_cobaya.py": "b695b32235d04a2b287786260c5c02fb87c43d787d0949907a7247518aa37a90",
+      "src/sbt_spt_audit/likelihoods/desi_dr2_bao.py": "f9e8872fd1c4c737b9e4e9a143cb8ac1d8e31b8a087d687db9ebe14b076939aa",
+      "src/sbt_spt_audit/likelihoods/__init__.py": "34ecc40b8eb6a6b8e87dc120366fa1a7fd93ddc08222d3dc2c53a5c4418a1001"
+    },
+    "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_sigma_time_v3_packaged_20261005/camb-2.0.4/camb/camblib.so",
+    "module_sha256": "85a091c53d9c81ee6443a1a4492ee45a35b487f7d360dfd6df190b9e3856cfc6",
+    "wrapper": "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/cobaya/theories/camb/camb.py",
+    "wrapper_sha256": "ed8a9ea708caa437e72732adb1cb32182330f55b4c3c9fb1e18e36e604424214",
+    "solver_version": "2.0.4",
+    "Cobaya_version": "3.6.2",
+    "policy": "native_policies/camb204_sigma_time_v3.json",
+    "policy_sha256": "d2869a552811ccd510cc7cb15bd945c9e3e5598a0d5ec298b87971576756fa27",
+    "build_receipt": "runs/20261005_math_review_sigma_time_v3_packaged/build_receipt.json",
+    "build_receipt_sha256": "ecc8d04d759cf03db4702c7ca50b8cc015bd778657cd1272949c37bbcfbb8b50",
+    "required_LD_LIBRARY_PATH": "/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_native_debug_20261005/compiler/usr/lib/x86_64-linux-gnu",
+    "launch_receipt": "runs/20261005_math_review_sigma_time_v3_posterior_preparation_v2/seed2106/launch_receipt.json",
+    "scheduling_nice": 5,
+    "posterior_qualified": false,
+    "production_adopted": false,
+    "pid": 2740620,
+    "session": 55526,
+    "process_start_ticks": 343921249,
+    "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261005_math_review_sigma_time_v3_posterior_preparation_v2/launch_chain.py 2106 ",
+    "status": "running_candidate_native_first_saved_row_verified",
+    "native_module_sha256": "85a091c53d9c81ee6443a1a4492ee45a35b487f7d360dfd6df190b9e3856cfc6",
+    "effective_config_sha256": "e5be9a93d223f8ce50d535d82905a08ac76f19aac1b375b67282f0b6c14343c5",
+    "native_backend_receipt_sha256": "2ee39ed21aff327dadd6d9cdf9b0b2be020cdf708ebd3f96b825f74ee9f8afee",
+    "launch_receipt_sha256": "1c4600ea0c5392e655dff4d25a3810cdbdf5debe5821435ab7c656e977802967",
+    "first_saved_row_receipt": "runs/20261005_math_review_sigma_time_v3_posterior_activation/seed2106/first_saved_rows/completion_receipt.json",
+    "first_saved_row_receipt_sha256": "30c6d740f307118a16dd6689911a7a12823474ecbbe1e29d01f80732b6260369"
+  },
+  "last_verified_live_identity": {
+    "seed": 2106,
+    "pid": 2740620,
+    "process_start_ticks": 343921249,
+    "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261005_math_review_sigma_time_v3_posterior_preparation_v2/launch_chain.py 2106 ",
+    "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_sigma_time_v3_packaged_20261005/camb-2.0.4/camb/camblib.so",
+    "module_sha256": "85a091c53d9c81ee6443a1a4492ee45a35b487f7d360dfd6df190b9e3856cfc6",
+    "status": "live_same_owned_native_identity",
+    "retained_represented_steps": 1814,
+    "group": "sigma_time_v3_A4095_cap20",
+    "posterior_qualified": false
+  },
+  "identity_observation": {
+    "pid": 2740620,
+    "expected_start_ticks": 343921249,
+    "status": "PID_not_present",
+    "original_identity_absent": true
+  },
+  "exit_code": 130,
+  "managed_session": 55526,
+  "exit_reason": "user_directed_claim_restoration_stop",
+  "stop_request": {
+    "utc": "2026-10-05T08:28:43.048521+00:00",
+    "seed": 2106,
+    "pid": 2740620,
+    "process_start_ticks": 343921249,
+    "managed_session": 55526,
+    "run_dir": "runs/20261005_math_review_fresh_CAMB_sigma_time_v3_A4095_cap20_seed2106",
+    "signal": "SIGINT",
+    "reason": "user instructed dropping attempts to justify unsupported or contradicted original claims",
+    "signal_sent": true,
+    "owned_identity_revalidated": true
+  },
+  "native_failure_established": false,
+  "terminal_output_files": [
+    {
+      "source": "runs/20261005_math_review_fresh_CAMB_sigma_time_v3_A4095_cap20_seed2106/chains/fresh_CAMB_sigma_time_v3_A4095_cap20_seed2106.1.txt",
+      "frozen": "runs/20261005_math_review_user_directed_restoration_shutdown/seed2106/outputs/chains/fresh_CAMB_sigma_time_v3_A4095_cap20_seed2106.1.txt",
+      "sha256": "b06fb67f9c91bc3b7e67c63430515ec24e0b0638737cd7e13749333a7ae0ffcf"
+    },
+    {
+      "source": "runs/20261005_math_review_fresh_CAMB_sigma_time_v3_A4095_cap20_seed2106/chains/fresh_CAMB_sigma_time_v3_A4095_cap20_seed2106.checkpoint",
+      "frozen": "runs/20261005_math_review_user_directed_restoration_shutdown/seed2106/outputs/chains/fresh_CAMB_sigma_time_v3_A4095_cap20_seed2106.checkpoint",
+      "sha256": "24b7519497cab370fa9e3fa14d47d60bbe2b17fcfa3f901d0d0cf81ea248cccf"
+    },
+    {
+      "source": "runs/20261005_math_review_fresh_CAMB_sigma_time_v3_A4095_cap20_seed2106/chains/fresh_CAMB_sigma_time_v3_A4095_cap20_seed2106.covmat",
+      "frozen": "runs/20261005_math_review_user_directed_restoration_shutdown/seed2106/outputs/chains/fresh_CAMB_sigma_time_v3_A4095_cap20_seed2106.covmat",
+      "sha256": "5ec14d870c0ae94549a1c6f3840cfb7e50b2a2124301ccba5fc0e55de5084588"
+    },
+    {
+      "source": "runs/20261005_math_review_fresh_CAMB_sigma_time_v3_A4095_cap20_seed2106/chains/fresh_CAMB_sigma_time_v3_A4095_cap20_seed2106.input.yaml",
+      "frozen": "runs/20261005_math_review_user_directed_restoration_shutdown/seed2106/outputs/chains/fresh_CAMB_sigma_time_v3_A4095_cap20_seed2106.input.yaml",
+      "sha256": "78bd15b5a28ae04ccd66ca35f8a2f8020cfd4b809c122d646618c44d345f3027"
+    },
+    {
+      "source": "runs/20261005_math_review_fresh_CAMB_sigma_time_v3_A4095_cap20_seed2106/chains/fresh_CAMB_sigma_time_v3_A4095_cap20_seed2106.progress",
+      "frozen": "runs/20261005_math_review_user_directed_restoration_shutdown/seed2106/outputs/chains/fresh_CAMB_sigma_time_v3_A4095_cap20_seed2106.progress",
+      "sha256": "50928691b6fdcf9e2fa242a493f10ccdf44385bf391706b70fbf815ed48f5033"
+    },
+    {
+      "source": "runs/20261005_math_review_fresh_CAMB_sigma_time_v3_A4095_cap20_seed2106/chains/fresh_CAMB_sigma_time_v3_A4095_cap20_seed2106.updated.yaml",
+      "frozen": "runs/20261005_math_review_user_directed_restoration_shutdown/seed2106/outputs/chains/fresh_CAMB_sigma_time_v3_A4095_cap20_seed2106.updated.yaml",
+      "sha256": "1addfad0689d05c9e26a9d447a18ce6a632c7de86a9afe1ebd314e2e63c10397"
+    },
+    {
+      "source": "runs/20261005_math_review_fresh_CAMB_sigma_time_v3_A4095_cap20_seed2106/env.txt",
+      "frozen": "runs/20261005_math_review_user_directed_restoration_shutdown/seed2106/outputs/env.txt",
+      "sha256": "3348efd2358125cbb4772a310f2dd7be30a3eeff4bf28d9fc26e898eb6e867da"
+    },
+    {
+      "source": "runs/20261005_math_review_fresh_CAMB_sigma_time_v3_A4095_cap20_seed2106/input.yaml",
+      "frozen": "runs/20261005_math_review_user_directed_restoration_shutdown/seed2106/outputs/input.yaml",
+      "sha256": "a28b6e020fcf9a1e8bd9188764383927c00e83f992e3914260d947dee2a9e226"
+    },
+    {
+      "source": "runs/20261005_math_review_fresh_CAMB_sigma_time_v3_A4095_cap20_seed2106/resolved.yaml",
+      "frozen": "runs/20261005_math_review_user_directed_restoration_shutdown/seed2106/outputs/resolved.yaml",
+      "sha256": "e5be9a93d223f8ce50d535d82905a08ac76f19aac1b375b67282f0b6c14343c5"
+    },
+    {
+      "source": "runs/20261005_math_review_fresh_CAMB_sigma_time_v3_A4095_cap20_seed2106/solver_backend.json",
+      "frozen": "runs/20261005_math_review_user_directed_restoration_shutdown/seed2106/outputs/solver_backend.json",
+      "sha256": "2ee39ed21aff327dadd6d9cdf9b0b2be020cdf708ebd3f96b825f74ee9f8afee"
+    },
+    {
+      "source": "runs/20261005_math_review_fresh_CAMB_sigma_time_v3_A4095_cap20_seed2106/stderr.txt",
+      "frozen": "runs/20261005_math_review_user_directed_restoration_shutdown/seed2106/outputs/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "runs/20261005_math_review_fresh_CAMB_sigma_time_v3_A4095_cap20_seed2106/stdout.txt",
+      "frozen": "runs/20261005_math_review_user_directed_restoration_shutdown/seed2106/outputs/stdout.txt",
+      "sha256": "0f790c7dd352e13b8bb06e89581d28881517c2eb7e3e31227b264fd9f5239a21"
+    }
+  ],
+  "stored_chain_rows": 685,
+  "incomplete_trailing_chain_bytes": 0,
+  "retained_represented_steps": 1828,
+  "posterior_qualified": false,
+  "scientific_claim_disproved_by_interruption": false,
+  "exact_PRNG_resume_asserted": false
+}

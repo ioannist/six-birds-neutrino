@@ -1,0 +1,49 @@
+{
+  "files": [
+    {
+      "source": "runs/20261004_math_review_guarded_CLASS_eighth_quad_B_diagnostics/prepare_snapshot.py",
+      "source_sha256": "193595a92a299e7f76b6f459712fce82b857ad7c0d5d262541dd366d6e29562c",
+      "target": "runs/20261005_math_review_guarded_CLASS_ninth_quad_B_diagnostics/prepare_snapshot.py",
+      "target_sha256": "b3de4051cbe529714b5311b3ad8555a32bd050f16052f58b6b61b7a90fd581a5",
+      "changes": [
+        [
+          "20261004_math_review_guarded_CLASS_seventh_quad_B_diagnostics/snapshot_receipt.json",
+          "20261004_math_review_guarded_CLASS_eighth_quad_B_diagnostics/snapshot_receipt.json"
+        ],
+        [
+          "eighth_guarded_CLASS_quad_B_cohort_diagnostics",
+          "ninth_guarded_CLASS_quad_B_cohort_diagnostics"
+        ]
+      ]
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_CLASS_eighth_quad_B_diagnostics/run_diagnostics.py",
+      "source_sha256": "21d3c1584c115d84e6d21ea094e3755d8087d88076f19fa5489f3ad4aac74656",
+      "target": "runs/20261005_math_review_guarded_CLASS_ninth_quad_B_diagnostics/run_diagnostics.py",
+      "target_sha256": "21d3c1584c115d84e6d21ea094e3755d8087d88076f19fa5489f3ad4aac74656",
+      "changes": []
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_CLASS_eighth_quad_B_diagnostics/verify_snapshot.py",
+      "source_sha256": "274095674ef23765d5d1e315dc52251280a4f2c1da6bdc22fb86b6035fcdb3eb",
+      "target": "runs/20261005_math_review_guarded_CLASS_ninth_quad_B_diagnostics/verify_snapshot.py",
+      "target_sha256": "274095674ef23765d5d1e315dc52251280a4f2c1da6bdc22fb86b6035fcdb3eb",
+      "changes": []
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_CLASS_eighth_quad_B_diagnostics/self_review.py",
+      "source_sha256": "bac3b448c3a3ef5310d327331b66c14704374f56e8a992997b69bc31997a8e70",
+      "target": "runs/20261005_math_review_guarded_CLASS_ninth_quad_B_diagnostics/self_review.py",
+      "target_sha256": "bac3b448c3a3ef5310d327331b66c14704374f56e8a992997b69bc31997a8e70",
+      "changes": []
+    },
+    {
+      "source": "runs/20261004_math_review_retired_PID_identity_repair/observe_primary_runtime.py",
+      "source_sha256": "64d27708c0c1ce5749b7e336746644926ae8a6b7f826be8ab2caa3f9f36afa6c",
+      "target": "runs/20261005_math_review_guarded_CLASS_ninth_quad_B_diagnostics/observe_runtime.py",
+      "target_sha256": "64d27708c0c1ce5749b7e336746644926ae8a6b7f826be8ab2caa3f9f36afa6c",
+      "changes": []
+    }
+  ],
+  "scope": "ninth quad_B growth assessment, corrected process-identity observer preserved"
+}

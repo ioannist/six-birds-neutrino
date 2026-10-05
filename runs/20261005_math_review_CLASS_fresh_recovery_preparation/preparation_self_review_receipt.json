@@ -1,0 +1,40 @@
+{
+  "utc": "2026-10-05T03:35:29.552639+00:00",
+  "reviewer": "distinct_self_review_not_independent_agent",
+  "records": [
+    {
+      "seed": 2201,
+      "parent_seed": 1201,
+      "proof_sha256": "8dc590491d0b28ddcda5787a89badc278ea2e6d1ecf4b2579286f6313b19f789",
+      "maximum_native_component_error": 0.0,
+      "preserved_checkpoint_fields": [
+        "Rminus1_last",
+        "burn_in",
+        "converged",
+        "mpi_size"
+      ],
+      "proposal_positive_definite": true
+    },
+    {
+      "seed": 2202,
+      "parent_seed": 1301,
+      "proof_sha256": "2b5e13670b0ce4fbe26811b9d0df2eb5968f02788a4adccfb0a426380ea1df86",
+      "maximum_native_component_error": 0.0,
+      "preserved_checkpoint_fields": [
+        "Rminus1_last",
+        "burn_in",
+        "converged",
+        "mpi_size"
+      ],
+      "proposal_positive_definite": true
+    }
+  ],
+  "both_recovery_targets_rederived": true,
+  "declared_physics_likelihood_priors_and_native_settings_preserved": true,
+  "fresh_seed_and_output_required": true,
+  "exact_resume_state_supplied": false,
+  "global_floating_target_equivalence_asserted": false,
+  "original_terminal_histories_pooled": false,
+  "unknown_exit_causes_inferred": false,
+  "posterior_qualified": false
+}

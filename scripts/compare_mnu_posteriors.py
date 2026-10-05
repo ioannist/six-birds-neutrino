@@ -11,6 +11,7 @@ from typing import Any
 import matplotlib.pyplot as plt
 import numpy as np
 import yaml
+from extract_mnu_limits import _resolve_prefix_from_run_dir, _require_untempered_metadata, _load_chains_raw
 
 
 def parse_args() -> argparse.Namespace:
@@ -30,18 +31,9 @@ def _stamp() -> str:
 
 
 def _resolve_prefix(run_dir: Path) -> Path:
-    resolved = run_dir / "resolved.yaml"
-    if resolved.exists():
-        data = yaml.safe_load(resolved.read_text(encoding="utf-8"))
-        if isinstance(data, dict):
-            output = data.get("output")
-            if isinstance(output, str) and output.strip():
-                return Path(output)
-
-    candidates = sorted((run_dir / "chains").glob("*.1.txt"))
-    if not candidates:
-        raise FileNotFoundError(f"Could not resolve chain prefix under {run_dir}")
-    return candidates[0].with_suffix("").with_suffix("")
+    prefix = _resolve_prefix_from_run_dir(run_dir)
+    _require_untempered_metadata(prefix, run_dir)
+    return prefix
 
 
 def _load_metrics(run_dir: Path) -> dict[str, Any]:
@@ -63,6 +55,10 @@ def _as_float(value: Any) -> float | None:
 def _load_density(prefix: Path, burnin_frac: float):
     from getdist.mcsamples import loadMCSamples
 
+    # GetDist can silently select another column when names are duplicated or
+    # disagree with the chain header. Use the extractor's coordinate contract
+    # before interpreting its smoothed curve as the mass density.
+    _load_chains_raw(prefix, "mnu", burnin_frac)
     samples = loadMCSamples(str(prefix), settings={"ignore_rows": burnin_frac})
     density = samples.get1DDensityGridData("mnu")
     if density is None:
@@ -82,11 +78,13 @@ def _plot_overlay(
     ax.plot(density_2018.x, density_2018.P, label=label_2018)
     ax.plot(density_d1.x, density_d1.P, label=label_d1)
     ax.set_xlabel("mnu [eV]")
-    ax.set_ylabel("Posterior density (arb. norm)")
+    ax.set_ylabel("Empirical density (arb. norm)")
     ax.set_title(title)
+    fig.text(0.5, 0.01, "Empirical chain densities; convergence and quantile precision are not verified by this plot.",
+             ha="center", fontsize=8)
     ax.legend(loc="best")
     ax.grid(alpha=0.25)
-    fig.tight_layout()
+    fig.tight_layout(rect=(0, .04, 1, 1))
     fig.savefig(outpath, dpi=160)
     plt.close(fig)
 
@@ -124,6 +122,8 @@ def _plot_bounds_table(
 
     fig, ax = plt.subplots(figsize=(11, 2.5))
     ax.axis("off")
+    ax.set_title("Empirical chain summaries; posterior bounds require separate convergence and precision checks.",
+                 fontsize=10)
     tbl = ax.table(cellText=rows, colLabels=headers, cellLoc="center", loc="center")
     tbl.auto_set_font_size(False)
     tbl.set_fontsize(9)
@@ -190,6 +190,8 @@ def main() -> int:
     delta_median = None if (med_2018 is None or med_d1 is None) else float(med_2018 - med_d1)
 
     output_metrics: dict[str, Any] = {
+        "scope": "empirical_chain_summary_comparison",
+        "posterior_convergence_verified": False,
         "run2018": {
             "path": str(run2018),
             "chains_prefix": str(prefix_2018),
@@ -201,6 +203,8 @@ def main() -> int:
             "mnu_split_rhat": metrics_2018.get("mnu_split_rhat"),
             "mnu_ess": metrics_2018.get("mnu_ess"),
             "mnu_p95_half_diff": metrics_2018.get("mnu_p95_half_diff"),
+            "warnings": metrics_2018.get("warnings", []),
+            "diagnostic_method": metrics_2018.get("diagnostic_method", "legacy_unverified"),
         },
         "runD1": {
             "path": str(run_d1),
@@ -213,12 +217,22 @@ def main() -> int:
             "mnu_split_rhat": metrics_d1.get("mnu_split_rhat"),
             "mnu_ess": metrics_d1.get("mnu_ess"),
             "mnu_p95_half_diff": metrics_d1.get("mnu_p95_half_diff"),
+            "warnings": metrics_d1.get("warnings", []),
+            "diagnostic_method": metrics_d1.get("diagnostic_method", "legacy_unverified"),
         },
         "shift": {
             "delta_p95_upper": delta_p95,
             "delta_median": delta_median,
         },
     }
+
+    output_metrics["warnings"] = [
+        f"{label}: {warning}"
+        for label, m in [("SPT2018", metrics_2018), ("D1", metrics_d1)]
+        for warning in m.get("warnings", [])
+    ]
+    if any("diagnostic_method" not in m for m in [metrics_2018, metrics_d1]):
+        output_metrics["warnings"].append("Legacy chain diagnostics require re-extraction before interpreting convergence.")
 
     _plot_bounds_table(
         outpath=table_fig_path,
@@ -231,6 +245,8 @@ def main() -> int:
     (outdir / "metrics.json").write_text(json.dumps(output_metrics, indent=2), encoding="utf-8")
 
     summary_lines = [
+        "Empirical chain summaries. This comparison does not establish posterior convergence or quantile precision.",
+        "",
         f"- run2018: {run2018}",
         f"- runD1: {run_d1}",
         f"- delta_p95_upper: {delta_p95}",
@@ -238,6 +254,9 @@ def main() -> int:
         f"- overlay_plot: {fig_path}",
         f"- table_plot: {table_fig_path}",
     ]
+    if output_metrics["warnings"]:
+        summary_lines.extend(["", "Warnings:", ""])
+        summary_lines.extend(f"- {warning}" for warning in output_metrics["warnings"])
     (outdir / "summary.md").write_text("\n".join(summary_lines) + "\n", encoding="utf-8")
 
     print(f"Comparison bundle: {outdir}")

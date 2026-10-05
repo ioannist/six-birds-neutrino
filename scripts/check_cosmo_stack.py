@@ -25,7 +25,7 @@ class PackageStatus:
 
 PACKAGE_SPECS: list[tuple[str, str]] = [
     ("cobaya", "cobaya"),
-    ("candl", "candl"),
+    ("candl-like", "candl"),
     ("classy", "classy"),
     ("camb", "camb"),
     ("getdist", "getdist"),
@@ -110,7 +110,7 @@ def maybe_attempt_install(statuses: list[PackageStatus]) -> list[str]:
             outcome = "installed" if success else "failed"
             notes.append(f"{base_pkg}: {outcome} ({msg})")
 
-    install_order = ["cobaya", "getdist", "camb", "classy", "candl"]
+    install_order = ["cobaya", "getdist", "camb", "classy", "candl-like"]
     for pkg in install_order:
         if pkg not in missing:
             notes.append(f"{pkg}: already present, skipped")

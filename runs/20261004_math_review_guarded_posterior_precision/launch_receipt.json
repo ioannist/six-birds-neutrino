@@ -1,0 +1,58 @@
+{
+  "utc": "2026-10-04T06:54:47.809782+00:00",
+  "status": "launched_running_checks_not_a_precision_certificate",
+  "jobs": [
+    {
+      "lens": "A",
+      "exec_session": 64201,
+      "threads": 4
+    },
+    {
+      "lens": "B",
+      "exec_session": 27270,
+      "threads": 4
+    }
+  ],
+  "files": [
+    {
+      "path": "runs/20261004_math_review_guarded_posterior_precision/prepare.py",
+      "sha256": "72ecfd90f3bcad032320e8ab3cc3a07dc2c2ef95268b4d0e541c751a2f195525"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_posterior_precision/runner.py",
+      "sha256": "479456bff3eb36a3b696936e625fcd6d0b51bf96a54bae3077567bc4e12e5f72"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_posterior_precision/runner_snapshot.py",
+      "sha256": "9f08954880417ed8f63accf5a06eeb83bd1d7383aa577fec9a2263357a79ace9"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_posterior_precision/selection_receipt.json",
+      "sha256": "3c93dd64d88b7039246931e983ccc655efffdafb47118f88dd389da375e722bc"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_posterior_precision/A/input.yaml",
+      "sha256": "7e0f74080e0e49267aa509440c24016f2ce7a1c002a44b70604bf5dbf10870e0"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_posterior_precision/A/points.json",
+      "sha256": "0b4d1a5a61c9488bb6a1165e14293603131ea0cc58cbac8b2f4a090c8d3e5cc4"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_posterior_precision/A/precision_settings.json",
+      "sha256": "fe5f9ccfe876c26eafa9d5ebe0d00bf0a10eb71dcc79d0863b90a62f3f13ba1a"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_posterior_precision/B/input.yaml",
+      "sha256": "d5997c216333c2b99de026b9a722f836322f7ec9d29886ba522584ff6edbac27"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_posterior_precision/B/points.json",
+      "sha256": "b3196d340c1efe30f3edfe2257173bec8b0cfd93048fa06a012d0335bab84711"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_posterior_precision/B/precision_settings.json",
+      "sha256": "fe5f9ccfe876c26eafa9d5ebe0d00bf0a10eb71dcc79d0863b90a62f3f13ba1a"
+    }
+  ]
+}

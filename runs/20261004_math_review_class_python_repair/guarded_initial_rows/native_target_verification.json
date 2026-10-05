@@ -1,0 +1,87 @@
+{
+  "utc": "2026-10-04T03:27:03.042948+00:00",
+  "scope": "selected_new_guarded_saved_rows_full_native_target",
+  "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+  "chain_sha256": "362187fded534fc03e547bbec2607082422d130bb016fb2b85749348b9ab88b2",
+  "snapshot_config_sha256": "bc17077e9a644e1062ae935a137de8fa52f8b449f8850e7139fc8e305f683b84",
+  "actual_initialized_native_extra_args": {
+    "N_ncdm": 3,
+    "N_ur": 0.00641,
+    "tol_ncdm_bg": 1e-08,
+    "tol_perturbations_integration": 1e-06,
+    "perturbations_sampling_stepsize": 0.01,
+    "tol_ncdm_synchronous": 1e-06,
+    "tol_ncdm_newtonian": 1e-06,
+    "l_logstep": 1.026,
+    "l_linstep": 25,
+    "l_max_scalars": 4095,
+    "output": "pCl tCl lCl",
+    "non_linear": "hmcode",
+    "lensing": "yes"
+  },
+  "current_covariance_helper_source_sha256": {
+    "src/sbt_spt_audit/metrics.py": "af96ec7f08f9acaea313e5416229ca33df1abd927b73311438c4ecd9b7cea406",
+    "src/sbt_spt_audit/likelihoods/desi_dr2_bao.py": "00fdc02856aa608d7b68c242a3cf46bd96200f61fd9b00adf3c0073598bfeaf9"
+  },
+  "atol": 1e-07,
+  "rtol": 1e-10,
+  "checks": [
+    {
+      "row_index": 0,
+      "point": {
+        "omegabh2": 0.022874495554180557,
+        "omegach2": 0.11665484940236061,
+        "H0": 68.76458860074025,
+        "logA": 3.0293658068090084,
+        "ns": 0.9799495764421775,
+        "tau": 0.053875916728697834,
+        "mnu_sample": 0.06588833869071323,
+        "A_planck": 0.9933212998154841,
+        "TT_tSZ_Amp": 2.255902401354315,
+        "TT_kSZ_Amp": 9.482833847822382
+      },
+      "fresh_minuslogpost": 1520.7755014177205,
+      "fresh_minus_recorded": {
+        "minuslogpost": 0.0,
+        "minuslogprior": 0.0,
+        "chi2": 0.0,
+        "chi2__sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 0.0,
+        "chi2__sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 0.0,
+        "chi2__planck_2018_lowl.TT": 0.0,
+        "chi2__planck_2018_lowl.EE_sroll2": 0.0,
+        "chi2__planck_2018_highl_plik.TT_lite_native": 0.0,
+        "chi2__planckpr4lensing.PlanckPR4Lensing": 0.0
+      }
+    },
+    {
+      "row_index": 2,
+      "point": {
+        "omegabh2": 0.022632970278846885,
+        "omegach2": 0.1179096765419854,
+        "H0": 68.32673079914989,
+        "logA": 3.033077751977367,
+        "ns": 0.9743745876964713,
+        "tau": 0.053113799713695155,
+        "mnu_sample": 0.04196897561196354,
+        "A_planck": 0.9963667129046236,
+        "TT_tSZ_Amp": 1.6827048202267583,
+        "TT_kSZ_Amp": 9.909375235403706
+      },
+      "fresh_minuslogpost": 1519.7972333935304,
+      "fresh_minus_recorded": {
+        "minuslogpost": 0.0,
+        "minuslogprior": 0.0,
+        "chi2": 0.0,
+        "chi2__sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 0.0,
+        "chi2__sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 0.0,
+        "chi2__planck_2018_lowl.TT": 0.0,
+        "chi2__planck_2018_lowl.EE_sroll2": 0.0,
+        "chi2__planck_2018_highl_plik.TT_lite_native": 0.0,
+        "chi2__planckpr4lensing.PlanckPR4Lensing": 0.0
+      }
+    }
+  ],
+  "every_transition_verified": false,
+  "posterior_convergence_certified": false,
+  "uniform_numerical_accuracy_certified": false
+}

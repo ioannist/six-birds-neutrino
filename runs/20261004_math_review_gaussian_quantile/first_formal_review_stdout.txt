@@ -1,0 +1,15 @@
+/home/repos/six-birds-neutrino/runs/20261004_math_review_gaussian_quantile/GaussianQuantileReview.lean:50:19: warning: unused variable `hσ`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/repos/six-birds-neutrino/runs/20261004_math_review_gaussian_quantile/GaussianQuantileReview.lean:62:2: error: unsolved goals
+case pos
+x : ℝ
+h : 0 ≤ x
+hx : 1 = 19 / 20
+⊢ False
+/home/repos/six-birds-neutrino/runs/20261004_math_review_gaussian_quantile/GaussianQuantileReview.lean:63:2: error: unsolved goals
+case neg
+x : ℝ
+h : ¬0 ≤ x
+hx : 0 = 19 / 20
+⊢ False

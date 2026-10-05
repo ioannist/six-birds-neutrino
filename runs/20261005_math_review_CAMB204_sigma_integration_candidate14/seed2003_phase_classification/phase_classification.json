@@ -1,0 +1,141 @@
+{
+  "utc": "2026-10-05T00:52:00.131171+00:00",
+  "seed": 2003,
+  "sampled": {
+    "omegabh2": 0.029575663512100336,
+    "omegach2": 0.0028630562619511857,
+    "H0": 54.38876723029562,
+    "logA": 2.9440199295646825,
+    "ns": 0.9141040602339817,
+    "tau": 0.07344339439339485,
+    "mnu": 11.436878239360212
+  },
+  "capture": "runs/20261004_math_review_upper_prior_native_failure_reproduction_preparation/seed2003/failed_proposal.json",
+  "capture_sha256": "b9f0e84c0945084e286e2c132d43418c9cd7c06ec1c73a0674ffd8900819aa0b",
+  "original_native_module_sha256": "306640a8948cd5246fc9b21e76525f6adebdff5ba3bc792a57d50bba67225ad5",
+  "original_resolved_sha256": "06d1fca5f260acbd788ac04ca278f0f8a76589f326f4f800a9788808c653b8fe",
+  "theory_class": "sbt_spt_audit.boltzmann.FreshCAMB",
+  "numerical_settings_changed": true,
+  "debug_module": "/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_sigma_probe_20261005/source_candidate14/camb/camblib.so",
+  "debug_module_sha256": "c68feb80ac65ef75654bb3f0f9012dc64a2d2ebe6948e70219dcb7d4911b09da",
+  "scope": "selected sigma-integration candidate14 with unchanged physical model; no production adoption or posterior qualification",
+  "isolated_point_status": "finite_evaluation",
+  "finite_target_components": {
+    "logpost": -2718.2798599490907,
+    "logpriors": [
+      -3.4908863374028734
+    ],
+    "loglikes": [
+      -1860.0454511528917,
+      -854.743522458796
+    ]
+  },
+  "provider_spectra": {
+    "ell": {
+      "shape": [
+        4101
+      ],
+      "all_finite": true,
+      "nan_count": 0,
+      "inf_count": 0,
+      "finite_min": 0.0,
+      "finite_max": 4100.0
+    },
+    "tt": {
+      "shape": [
+        4101
+      ],
+      "all_finite": true,
+      "nan_count": 0,
+      "inf_count": 0,
+      "finite_min": 0.0,
+      "finite_max": 1022.2421214872635
+    },
+    "ee": {
+      "shape": [
+        4101
+      ],
+      "all_finite": true,
+      "nan_count": 0,
+      "inf_count": 0,
+      "finite_min": 0.0,
+      "finite_max": 0.059157824706716135
+    },
+    "bb": {
+      "shape": [
+        4101
+      ],
+      "all_finite": true,
+      "nan_count": 0,
+      "inf_count": 0,
+      "finite_min": 0.0,
+      "finite_max": 3.703823361576287e-07
+    },
+    "te": {
+      "shape": [
+        4101
+      ],
+      "all_finite": true,
+      "nan_count": 0,
+      "inf_count": 0,
+      "finite_min": -0.015111989891269478,
+      "finite_max": 4.726781820362796
+    },
+    "et": {
+      "shape": [
+        4101
+      ],
+      "all_finite": true,
+      "nan_count": 0,
+      "inf_count": 0,
+      "finite_min": -0.015111989891269478,
+      "finite_max": 4.726781820362796
+    }
+  },
+  "native_parameters": {
+    "H0": 54.38876723029562,
+    "ombh2": 0.029575663512100336,
+    "omch2": 0.0028630562619511857,
+    "omnuh2": 0.12292100903021423,
+    "YHe": 0.24830945618711373,
+    "TCMB": 2.7255,
+    "NonLinear": "NonLinear_lens",
+    "halofit_version": "mead2020"
+  },
+  "native_spectra": {
+    "unlensed_scalar": {
+      "shape": [
+        4096,
+        4
+      ],
+      "all_finite": true,
+      "nan_count": 0,
+      "inf_count": 0,
+      "finite_min": -0.015120634045993668,
+      "finite_max": 1022.2405281831273
+    },
+    "lensed_scalar": {
+      "shape": [
+        4096,
+        4
+      ],
+      "all_finite": true,
+      "nan_count": 0,
+      "inf_count": 0,
+      "finite_min": -0.015111989891269478,
+      "finite_max": 1022.2421214872635
+    },
+    "lens_potential": {
+      "shape": [
+        4096,
+        3
+      ],
+      "all_finite": true,
+      "nan_count": 0,
+      "inf_count": 0,
+      "finite_min": -7.971330635836681e-06,
+      "finite_max": 0.0006562139651819686
+    }
+  },
+  "native_arrays_sha256": "b1c381c242007b28f8dcf23d17616d5430079336a55f5b09dda10b3ddea43f10"
+}

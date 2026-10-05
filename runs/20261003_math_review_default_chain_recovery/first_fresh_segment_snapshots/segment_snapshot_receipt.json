@@ -1,0 +1,35 @@
+{
+  "utc": "2026-10-03T23:27:38.006811+00:00",
+  "scope": "recorded_saved_post_recovery_segments_no_convergence_claim",
+  "boundary_manifest_sha256": "8f1cc8e34551d6a9ebdfb26808f38e13d93762446fd29d47aa3b625526db33b4",
+  "records": {
+    "503": {
+      "original_seed": 503,
+      "resume_seed": 1003,
+      "source": "runs/20261003_math_review_cmb_chain_A_seed503/chains/math_restoration_A_seed503.1.txt",
+      "first_source_row_index": 2478,
+      "saved_segment_rows": 26,
+      "segment_sha256": "85c813eed52e4a93509b610c62346ffe4eccba09b09523f91263fa2d7a6fadbf",
+      "source_complete_prefix_sha256": "ff2c474753671b2507e7871c0703f6ebae8f2d84978f6be4044f8ecfbc7da75c",
+      "resume_input_sha256": "12a0dea76b8cdc0cd408750a1375a356638132ed445818819dce42454a74a9e0",
+      "historical_prefix_preserved": true,
+      "snapshot_config_sha256": "4ff9a27bd299b600a44867851b728122b886cd975f93b3a750ba2d14221d527f"
+    },
+    "507": {
+      "original_seed": 507,
+      "resume_seed": 1007,
+      "source": "runs/20261003_math_review_cmb_chain_B_seed507/chains/math_restoration_B_seed507.1.txt",
+      "first_source_row_index": 2430,
+      "saved_segment_rows": 18,
+      "segment_sha256": "cf3d7fe5860d42f6dc1f5d6400ce832b7b9c1b7042766b2cf93c1088dff6483b",
+      "source_complete_prefix_sha256": "b517550194d885eafef8abde4b12d9365ed719f4385189342858a61b5675f7d1",
+      "resume_input_sha256": "41dbb368d6c65e5d2835bb252558362109772ff4c87ce5510422a552b092879e",
+      "historical_prefix_preserved": true,
+      "snapshot_config_sha256": "840b7c55c3baa0f56d9d674f0b6d6e103c5b1c5c52dfb10f2d857c5afe286a0d"
+    }
+  },
+  "burn_in_must_be_applied_within_each_segment": true,
+  "uninterrupted_rng_trajectory_reconstructed": false,
+  "posterior_convergence_verified": false,
+  "segment_count": 2
+}

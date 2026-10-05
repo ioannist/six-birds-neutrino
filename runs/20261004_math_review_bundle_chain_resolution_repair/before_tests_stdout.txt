@@ -1,0 +1,70 @@
+FFFF.F                                                                   [100%]
+=================================== FAILURES ===================================
+_____ test_frozen_bundle_reads_its_rows_while_original_live_output_exists ______
+
+tmp_path = PosixPath('/tmp/pytest-of-ioannis/pytest-882/test_frozen_bundle_reads_its_r0')
+
+    def test_frozen_bundle_reads_its_rows_while_original_live_output_exists(tmp_path):
+        active=tmp_path/'active'/'chains'/'sample';write_chain(active,[.1,.2,.3])
+        frozen=tmp_path/'frozen';local=frozen/'chains'/'sample';write_chain(local,[.9])
+        (frozen/'resolved.yaml').write_text(yaml.safe_dump({'output':str(active)}))
+        prefix=_resolve_prefix_from_run_dir(frozen)
+        values,weights=_load_chains_raw(prefix,'mnu',0)[0]
+>       assert prefix==local
+E       AssertionError: assert PosixPath('/tmp/pytest-of-ioannis/pytest-882/test_frozen_bundle_reads_its_r0/active/chains/sample') == PosixPath('/tmp/pytest-of-ioannis/pytest-882/test_frozen_bundle_reads_its_r0/frozen/chains/sample')
+
+tests/test_bundle_chain_resolution.py:25: AssertionError
+______ test_bundle_without_local_advertised_chain_refuses_external_output ______
+
+tmp_path = PosixPath('/tmp/pytest-of-ioannis/pytest-882/test_bundle_without_local_adve0')
+
+    def test_bundle_without_local_advertised_chain_refuses_external_output(tmp_path):
+        active=tmp_path/'active'/'chains'/'sample';write_chain(active,[.1,.2])
+        bundle=tmp_path/'bundle';bundle.mkdir()
+        (bundle/'resolved.yaml').write_text(yaml.safe_dump({'output':str(active)}))
+>       with pytest.raises(FileNotFoundError,match='inside.*bundle'):
+E       Failed: DID NOT RAISE <class 'FileNotFoundError'>
+
+tests/test_bundle_chain_resolution.py:36: Failed
+_____ test_metadata_selects_matching_local_prefix_instead_of_another_chain _____
+
+tmp_path = PosixPath('/tmp/pytest-of-ioannis/pytest-882/test_metadata_selects_matching0')
+
+    def test_metadata_selects_matching_local_prefix_instead_of_another_chain(tmp_path):
+        run=tmp_path/'run';first=run/'chains'/'first';second=run/'chains'/'second'
+        write_chain(first,[.1]);write_chain(second,[.2])
+        (run/'resolved.yaml').write_text(yaml.safe_dump({'output':'chains/second'}))
+        assert _resolve_prefix_from_run_dir(run)==second
+        (run/'resolved.yaml').write_text(yaml.safe_dump({'output':'chains/missing'}))
+>       with pytest.raises(FileNotFoundError,match='inside.*bundle'):
+E       Failed: DID NOT RAISE <class 'FileNotFoundError'>
+
+tests/test_bundle_chain_resolution.py:46: Failed
+___________ test_no_output_metadata_refuses_multiple_local_prefixes ____________
+
+tmp_path = PosixPath('/tmp/pytest-of-ioannis/pytest-882/test_no_output_metadata_refuse0')
+
+    def test_no_output_metadata_refuses_multiple_local_prefixes(tmp_path):
+        run=tmp_path/'run';write_chain(run/'chains'/'first',[.1]);write_chain(run/'chains'/'second',[.2])
+>       with pytest.raises(ValueError,match='Ambiguous'):
+E       Failed: DID NOT RAISE <class 'ValueError'>
+
+tests/test_bundle_chain_resolution.py:52: Failed
+_______ test_two_local_copies_of_stale_prefix_require_an_explicit_choice _______
+
+tmp_path = PosixPath('/tmp/pytest-of-ioannis/pytest-882/test_two_local_copies_of_stale0')
+
+    def test_two_local_copies_of_stale_prefix_require_an_explicit_choice(tmp_path):
+        run=tmp_path/'run';write_chain(run/'chains'/'sample',[.1]);write_chain(run/'sample',[.2])
+        (run/'resolved.yaml').write_text(yaml.safe_dump({'output':str(tmp_path/'elsewhere'/'sample')}))
+>       with pytest.raises(ValueError,match='Ambiguous'):
+E       Failed: DID NOT RAISE <class 'ValueError'>
+
+tests/test_bundle_chain_resolution.py:66: Failed
+=========================== short test summary info ============================
+FAILED tests/test_bundle_chain_resolution.py::test_frozen_bundle_reads_its_rows_while_original_live_output_exists
+FAILED tests/test_bundle_chain_resolution.py::test_bundle_without_local_advertised_chain_refuses_external_output
+FAILED tests/test_bundle_chain_resolution.py::test_metadata_selects_matching_local_prefix_instead_of_another_chain
+FAILED tests/test_bundle_chain_resolution.py::test_no_output_metadata_refuses_multiple_local_prefixes
+FAILED tests/test_bundle_chain_resolution.py::test_two_local_copies_of_stale_prefix_require_an_explicit_choice
+5 failed, 1 passed in 2.49s

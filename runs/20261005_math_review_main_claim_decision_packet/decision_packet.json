@@ -1,0 +1,216 @@
+{
+  "utc": "2026-10-05T06:01:12.934266+00:00",
+  "scope": "Concrete main-claim options for user discussion; no manuscript edit or adopted numerical revision.",
+  "magnitude": {
+    "original_canonical_shift_eV": 0.10860629275736843,
+    "original_archived_chain_diagnostics": {
+      "spt2018_desi": {
+        "chains": 1,
+        "scalar_split_Rhat": 1.8604233345661814,
+        "scalar_ESS_proxy": 4.8073793022254305,
+        "posterior_qualified": false
+      },
+      "sptd1_desi": {
+        "chains": 1,
+        "scalar_split_Rhat": 1.2010885838466545,
+        "scalar_ESS_proxy": 11.386545039515662,
+        "posterior_qualified": false
+      }
+    },
+    "historical_current_stack_shift_eV": 0.030201470000000008,
+    "historical_current_stack_shift_scope": "Passed the then-fixed empirical gates; numerical-target qualification was subsequently suspended after cache defects. This is not a current qualified replacement number.",
+    "fresh_validated_policy_comparisons": {
+      "current_A3200": {
+        "diagnostics": "runs/20261005_math_review_fresh_CAMB_eleventh_current_A3200_diagnostics/diagnostics.json",
+        "minimum_saved_postburn_history": 8049,
+        "next_minimum_history": 9659,
+        "all_parameter_gate_sets_pass": false,
+        "mass_quantile_MCSE_eV": 0.0043646588086091315,
+        "mass_quantile_MCSE_limit_eV": 0.001,
+        "mass_rank_Rhat": 1.0045333224873627,
+        "posterior_qualified": false
+      },
+      "old_A3200": {
+        "diagnostics": "runs/20261005_math_review_fresh_CAMB_tenth_old_A3200_diagnostics/diagnostics.json",
+        "minimum_saved_postburn_history": 7059,
+        "next_minimum_history": 8471,
+        "all_parameter_gate_sets_pass": false,
+        "mass_quantile_MCSE_eV": 0.005697468991772689,
+        "mass_quantile_MCSE_limit_eV": 0.001,
+        "mass_rank_Rhat": 1.008894842561612,
+        "posterior_qualified": false
+      },
+      "old_B4095": {
+        "diagnostics": "runs/20261005_math_review_fresh_CAMB_tenth_old_B4095_diagnostics/diagnostics.json",
+        "minimum_saved_postburn_history": 6880,
+        "next_minimum_history": 8256,
+        "all_parameter_gate_sets_pass": false,
+        "mass_quantile_MCSE_eV": 0.0037721442767497115,
+        "mass_quantile_MCSE_limit_eV": 0.001,
+        "mass_rank_Rhat": 1.010478924393212,
+        "posterior_qualified": false
+      },
+      "current_A4095": {
+        "diagnostics": "runs/20261005_math_review_fresh_CAMB_ninth_current_A4095_diagnostics_v2/diagnostics.json",
+        "minimum_saved_postburn_history": 5172,
+        "next_minimum_history": 6207,
+        "all_parameter_gate_sets_pass": false,
+        "mass_quantile_MCSE_eV": 0.007228138645056906,
+        "mass_quantile_MCSE_limit_eV": 0.001,
+        "mass_rank_Rhat": 1.0092977441913873,
+        "posterior_qualified": false
+      },
+      "current_B4095": {
+        "diagnostics": "runs/20261005_math_review_fresh_CAMB_ninth_current_B4095_diagnostics_v2/diagnostics.json",
+        "minimum_saved_postburn_history": 5003,
+        "next_minimum_history": 6004,
+        "all_parameter_gate_sets_pass": false,
+        "mass_quantile_MCSE_eV": 0.0036085990842822657,
+        "mass_quantile_MCSE_limit_eV": 0.001,
+        "mass_rank_Rhat": 1.0166641795994966,
+        "posterior_qualified": false
+      }
+    },
+    "current_qualified_numeric_replacement_available": false,
+    "restoration_route": "Complete unchanged all-parameter gates on separately bound archived/current solver and cutoff targets; verify native evaluations and compare declared targets before assigning the original magnitude discrepancy to sampling. Preserve the wider-prior sigma-time candidate and CLASS precision cohorts separately.",
+    "future_narrowing_route": "Retain the reproducible lens-swap audit mechanism, mark the original 0.109 eV empirical magnitude unsupported, and state a numerical tightening only for a specifically identified qualified target once such evidence exists. Do not promote the suspended near-0.030 eV readout.",
+    "restoration_of_original_point109_guaranteed": false
+  },
+  "localization": {
+    "range": "2000 <= effective_ell < 3000",
+    "full_CMB_same_source_pair": {
+      "B_given_A": {
+        "joint_candidate_delta_chi2": 64.17407476919902,
+        "range_signed_deltaQ": {
+          "TT": 14.537741237139958,
+          "TE": 4.2818923865690355,
+          "EE": 37.13992184353293
+        },
+        "range_dominant_allocated_spec": "EE",
+        "fresh_native_reconstruction_error": -5.8122395785176195e-12
+      },
+      "A_given_B": {
+        "joint_candidate_delta_chi2": 23.075645935928605,
+        "range_signed_deltaQ": {
+          "TT": 12.370136025383072,
+          "TE": -0.1640244297905024,
+          "EE": 0.9168874718686066
+        },
+        "range_dominant_allocated_spec": "TT",
+        "fresh_native_reconstruction_error": 5.88897819397971e-11
+      }
+    },
+    "SPT_only_B_given_A": {
+      "TT": 291.3215733663935,
+      "TE": 2.0576764191539754,
+      "EE": 121.51875431149992
+    },
+    "strongest_current_scope": "Signed high-ell allocation depends on baseline and transfer direction: the recorded SPT-only forward allocation is TT-dominated, while the same-pair full-CMB forward allocation is EE-dominated and its reverse is TT-dominated.",
+    "broad_full_CMB_TT_dominance_established": false,
+    "restoration_route": "A broader TT statement needs a prespecified baseline/direction/domain and controlled new evidence explaining the observed EE-dominated forward cases. More chain history alone does not change these finite signed allocations.",
+    "future_narrowing_route": "State TT dominance for the supported SPT-only/directional controls and explicitly report the full-CMB EE forward allocation. Retain directional mismatch and staging audits; do not interpret signed correlated allocations as independent chi-square blocks or causal root-cause proof.",
+    "global_profile_optimality_or_pure_packaging_causality_proved": false
+  },
+  "mathematical_content_retained": [
+    "Gaussian product, physical-gate CDF/quantile and boundary-mode results under their explicit hypotheses.",
+    "Directional likelihood accounting under actual extremality or best-found scope, with correlated signed localization.",
+    "Conditional quantitative transfer results retain their CDF-error, positive-slope, domain and law hypotheses; no cosmological uniform-error bridge is silently supplied."
+  ],
+  "proposed_strategy": "Continue the already authorized restoration cohorts while preparing a scoped localization recommendation for discussion. Do not silently adopt either material change.",
+  "material_claim_revision_adopted": false,
+  "paper_or_canonical_modified": false,
+  "sources": [
+    {
+      "path": "docs/findings/canonical_results.json",
+      "sha256": "bb09d7fe655482218d7d75889338a0d9e48b140e47b8b51d9be876aff3a64811"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/TruncGaussProof/Audit.lean",
+      "sha256": "10c8f3ebced74cc26f509948e8c6b6a2f32a7502cbb9eb5c078d4c728db2bd59"
+    },
+    {
+      "path": "paper/sections/abstract.tex",
+      "sha256": "fd404a03c618d07fb6513005fd4dbd7e334911f9cfe37eee0583491514ae192d"
+    },
+    {
+      "path": "paper/sections/conclusion.tex",
+      "sha256": "fdc4bef01f013809f124f8d7608bd027b0cc92ff5131035ba15b0a2bbdf31ccf"
+    },
+    {
+      "path": "runs/20261003_math_review_cosmological_cmb_desi_accuracy_improved_source/comparison_verification.json",
+      "sha256": "db528df73c6507cf7b45ef214155bacda07b4c75af373e0c6b8cd21915d9aa84"
+    },
+    {
+      "path": "runs/20261003_math_review_localization_range_check/range_verification.json",
+      "sha256": "2b0d86f3af6ad0e1f72400580be68880d273393ce9bac83e46b5a1bca02328a6"
+    },
+    {
+      "path": "runs/20261004_math_review_SPT_headline_magnitude_audit/headline_magnitude_receipt.json",
+      "sha256": "6309018857b2bfae1a3c4a8272d1bd069156fcec785b614659ec09cb1e95c52f"
+    },
+    {
+      "path": "runs/20261004_math_review_spt_chain_snapshots_fifteenth_B/paired_SPT_readout.json",
+      "sha256": "3ff009b425445c25e3170cf2c96c0712aa5cf2a4aaa6520971cc689742a200f9"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eleventh_current_A3200_diagnostics/diagnostics.json",
+      "sha256": "8cee1eb931dfb2b6eb3017d97dbcb664c5e9a79922c2cae1914fb9775af22d41"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eleventh_current_A3200_diagnostics/native_rows_verification.json",
+      "sha256": "b0e8a147136e644d07a3491012bd6affa40de0bb718e39e6c5fef832cdc6da69"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eleventh_current_A3200_diagnostics/self_review_receipt.json",
+      "sha256": "b6068614729357e2fce5e94837f5d71b300cf553a7b106dd8777e1d1002c49e0"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A4095_diagnostics_v2/diagnostics.json",
+      "sha256": "dbcc6bd64b4de03dedb6e42ec01f870d455aba09f657a38cde058e88cba98935"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A4095_diagnostics_v2/native_rows_verification.json",
+      "sha256": "e589e40a3ef67cbcf534d2250a03be582d5b39d591aa65d363efc5af695c7730"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A4095_diagnostics_v2/self_review_receipt.json",
+      "sha256": "f43d745754b8460e698aefd52b07e5b9822e4dd5e2177164545ec6deec346de0"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_B4095_diagnostics_v2/diagnostics.json",
+      "sha256": "f0be4180b3e9776f1a65587cc71e114cbfd96678342c78ab87c241d44d2726f7"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_B4095_diagnostics_v2/native_rows_verification.json",
+      "sha256": "86f74c2fb878b03edfc805441f432a233ed28e279f87cb3eeac297d0cbe45593"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_B4095_diagnostics_v2/self_review_receipt.json",
+      "sha256": "f2264ba68a2ccf04323aae10347bc05050d9623d3f86133175300cb1439385fe"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_tenth_old_A3200_diagnostics/diagnostics.json",
+      "sha256": "9f302df8026a2ecd577305241d5ac4a210b78f246efb839ff24db6c6fa105c31"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_tenth_old_A3200_diagnostics/native_rows_verification.json",
+      "sha256": "40ae85bd4d0bf6a14cf7e19681404f32484edec6875067d099240daaa1c48df4"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_tenth_old_A3200_diagnostics/self_review_receipt.json",
+      "sha256": "49c356ab4620bf22582e78f627538ffca0502c9a6fd76330a397abf4457c5703"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_tenth_old_B4095_diagnostics/diagnostics.json",
+      "sha256": "a91d7d3ef7a6a81bce883bd5e51c878221c93890df9957c029310c128ebc1f9a"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_tenth_old_B4095_diagnostics/native_rows_verification.json",
+      "sha256": "373ada785c7e27750df716b0eface6c070bcfa35083ca8bf3fbb94bb4a7a65bf"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_tenth_old_B4095_diagnostics/self_review_receipt.json",
+      "sha256": "6805a920c34426829e6bc5b0cb3a9ea8f177624614d6d4772b56c0b2bdf09cf5"
+    }
+  ]
+}

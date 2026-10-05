@@ -1,0 +1,62 @@
+{
+  "utc": "2026-10-04T00:45:39.638036+00:00",
+  "scope": "eight_new_configuration_and_native_target_contracts_before_sampling",
+  "records": [
+    {
+      "lens": "A",
+      "replicas": 4,
+      "initialized_native_extra_args": {
+        "N_ncdm": 3,
+        "N_ur": 0.00641,
+        "l_max_scalars": 4095,
+        "tol_ncdm_bg": 1e-08,
+        "output": "lCl tCl pCl",
+        "non_linear": "hmcode",
+        "lensing": "yes"
+      },
+      "all_four_native_targets_identical_within_lens": true,
+      "sampled_parameter_order": [
+        "omegabh2",
+        "omegach2",
+        "H0",
+        "logA",
+        "ns",
+        "tau",
+        "mnu_sample",
+        "A_planck",
+        "TT_tSZ_Amp",
+        "TT_kSZ_Amp"
+      ]
+    },
+    {
+      "lens": "B",
+      "replicas": 4,
+      "initialized_native_extra_args": {
+        "N_ncdm": 3,
+        "N_ur": 0.00641,
+        "l_max_scalars": 4095,
+        "tol_ncdm_bg": 1e-08,
+        "output": "lCl tCl pCl",
+        "non_linear": "hmcode",
+        "lensing": "yes"
+      },
+      "all_four_native_targets_identical_within_lens": true,
+      "sampled_parameter_order": [
+        "omegabh2",
+        "omegach2",
+        "H0",
+        "logA",
+        "ns",
+        "tau",
+        "mnu_sample",
+        "A_planck",
+        "TT_tSZ_Amp",
+        "TT_kSZ_Amp"
+      ]
+    }
+  ],
+  "manifest_sha256": "ad9073ee655a550d28e0932489a74f5f4c0de8a257fc1178936ac94d2c07bbbd",
+  "pool_with_other_precision_targets": false,
+  "posterior_convergence_verified": false,
+  "posterior_accuracy_certified": false
+}

@@ -1,0 +1,151 @@
+{
+  "utc": "2026-10-05T00:55:42.606457+00:00",
+  "variant": "candidate12",
+  "records": [
+    {
+      "selection_index": 0,
+      "point": {
+        "omegabh2": 0.023027917,
+        "omegach2": 0.11612066,
+        "H0": 68.927728,
+        "logA": 3.001454952164164,
+        "ns": 1.0140642054328897,
+        "tau": 0.050845913,
+        "mnu": 0.071601591
+      },
+      "logpost": -1293.5023371455966,
+      "logpriors": [
+        -3.4908863374028734
+      ],
+      "loglikes": [
+        -1284.64315168735,
+        -5.36829912084396
+      ],
+      "provider_arrays": "runs/20261005_math_review_sigma_candidate_low_mass_controls/candidate12/point0_provider_arrays.npz",
+      "provider_arrays_sha256": "411f005023f22419e6dff18d78793864f7d51889fd2d3ca90d7033b642b01dc3",
+      "all_spectra_finite": true
+    },
+    {
+      "selection_index": 1,
+      "point": {
+        "omegabh2": 0.022734239369355425,
+        "omegach2": 0.11565855549914986,
+        "H0": 68.60889420134944,
+        "logA": 2.993455056393338,
+        "ns": 1.0368344643361398,
+        "tau": 0.05280893393638526,
+        "mnu": 0.077003390079904
+      },
+      "logpost": -1290.2479974617963,
+      "logpriors": [
+        -3.4908863374028734
+      ],
+      "loglikes": [
+        -1281.2735295475459,
+        -5.483581576847549
+      ],
+      "provider_arrays": "runs/20261005_math_review_sigma_candidate_low_mass_controls/candidate12/point1_provider_arrays.npz",
+      "provider_arrays_sha256": "df735b02029be26dac6da37906280f86520e2c13143be37c482064289d4498fa",
+      "all_spectra_finite": true
+    },
+    {
+      "selection_index": 2,
+      "point": {
+        "omegabh2": 0.02285715756080193,
+        "omegach2": 0.117453181247565,
+        "H0": 68.60662862057427,
+        "logA": 2.995476959089847,
+        "ns": 1.0320751716778127,
+        "tau": 0.0477232798109113,
+        "mnu": 0.008608952959254384
+      },
+      "logpost": -1291.6043599163204,
+      "logpriors": [
+        -3.4908863374028734
+      ],
+      "loglikes": [
+        -1281.6671640561156,
+        -6.446309522801967
+      ],
+      "provider_arrays": "runs/20261005_math_review_sigma_candidate_low_mass_controls/candidate12/point2_provider_arrays.npz",
+      "provider_arrays_sha256": "30a3d7b9dbb9d129c3e2ae82f4ded60118cf3d94e63a754226761203271a953c",
+      "all_spectra_finite": true
+    },
+    {
+      "selection_index": 3,
+      "point": {
+        "omegabh2": 0.02208835,
+        "omegach2": 0.11613327,
+        "H0": 68.761625,
+        "logA": 3.0431775963340426,
+        "ns": 0.9779809833959313,
+        "tau": 0.05867819,
+        "mnu": 0.043870311
+      },
+      "logpost": -1324.92175885479,
+      "logpriors": [
+        -3.4908863374028734
+      ],
+      "loglikes": [
+        -1315.8871077779427,
+        -5.543764739444497
+      ],
+      "provider_arrays": "runs/20261005_math_review_sigma_candidate_low_mass_controls/candidate12/point3_provider_arrays.npz",
+      "provider_arrays_sha256": "eaf9a7e806982c6eac9a159d8161dc7d38764c723c7621d0118af92d2f328632",
+      "all_spectra_finite": true
+    },
+    {
+      "selection_index": 4,
+      "point": {
+        "omegabh2": 0.02229508659134042,
+        "omegach2": 0.11756634516688139,
+        "H0": 68.43629857611299,
+        "logA": 3.039627142531277,
+        "ns": 0.9610391601448661,
+        "tau": 0.05083002945055451,
+        "mnu": 0.03567493833996502
+      },
+      "logpost": -1329.367922715367,
+      "logpriors": [
+        -3.4908863374028734
+      ],
+      "loglikes": [
+        -1320.4386009102955,
+        -5.438435467668857
+      ],
+      "provider_arrays": "runs/20261005_math_review_sigma_candidate_low_mass_controls/candidate12/point4_provider_arrays.npz",
+      "provider_arrays_sha256": "6c32b4975f0c943c208ec7e895d60753c09adbbdf8312b0fec62b89f02e28151",
+      "all_spectra_finite": true
+    },
+    {
+      "selection_index": 5,
+      "point": {
+        "omegabh2": 0.02226667347275189,
+        "omegach2": 0.11854609845872062,
+        "H0": 68.39627970218578,
+        "logA": 3.05103751940621,
+        "ns": 0.9605809252776596,
+        "tau": 0.05355413791222377,
+        "mnu": 0.009021653446876868
+      },
+      "logpost": -1327.540118126114,
+      "logpriors": [
+        -3.4908863374028734
+      ],
+      "loglikes": [
+        -1318.2978410144087,
+        -5.751390774302576
+      ],
+      "provider_arrays": "runs/20261005_math_review_sigma_candidate_low_mass_controls/candidate12/point5_provider_arrays.npz",
+      "provider_arrays_sha256": "33b61640a77b66c5356c6f27a79e8009d459db0680ba56975def7c7e21d60977",
+      "all_spectra_finite": true
+    }
+  ],
+  "native_module": "/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_sigma_probe_20261005/source_candidate12/camb/camblib.so",
+  "native_module_sha256": "8f16f0e1085da80b172767e63391f0d65f2eabe5ec25429f1fe97ebe23bb0b54",
+  "evaluation_config_sha256": "06d1fca5f260acbd788ac04ca278f0f8a76589f326f4f800a9788808c653b8fe",
+  "selection_receipt_sha256": "225f33a84fd5e464b99ade6e63cf814ed4fd45a2232c300698cdb6dc22f5b1ac",
+  "scope": "six low-mass first/middle/last saved points; common wider-prior A4095 evaluation configuration solely for comparing numerical solver candidates; not original A/B posterior comparison",
+  "production_adopted": false,
+  "posterior_qualified": false
+}

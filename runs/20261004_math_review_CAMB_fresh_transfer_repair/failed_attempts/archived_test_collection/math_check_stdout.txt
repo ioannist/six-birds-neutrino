@@ -1,0 +1,17 @@
+/tmp/neutrino-math-review-venv/bin/python -m pytest -q
+
+==================================== ERRORS ====================================
+_ ERROR collecting runs/20261004_math_review_CAMB_fresh_transfer_repair/failed_attempts/upstream_class_import/test_fresh_camb_transfers.py _
+ImportError while importing test module '/home/repos/six-birds-neutrino/runs/20261004_math_review_CAMB_fresh_transfer_repair/failed_attempts/upstream_class_import/test_fresh_camb_transfers.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+runs/20261004_math_review_CAMB_fresh_transfer_repair/failed_attempts/upstream_class_import/test_fresh_camb_transfers.py:7: in <module>
+    from cobaya.theories.camb.camb import CambTransfers, camb
+E   ImportError: cannot import name 'camb' from 'cobaya.theories.camb.camb' (/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/cobaya/theories/camb/camb.py)
+=========================== short test summary info ============================
+ERROR runs/20261004_math_review_CAMB_fresh_transfer_repair/failed_attempts/upstream_class_import/test_fresh_camb_transfers.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+1 error in 5.12s

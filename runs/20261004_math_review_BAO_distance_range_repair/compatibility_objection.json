@@ -1,0 +1,7 @@
+{
+  "utc": "2026-10-04T17:23:56.585578+00:00",
+  "declared_requires_python": ">=3.9",
+  "objection": "new math.cbrt import is not available on every declared Python version",
+  "repair": "use existing NumPy cube-root ufunc in fallback; ordinary branch unchanged",
+  "attempt1_source_sha256": "7375976130061f3d0293272ba94eb09d6ede58429cc66a52645954e23ba87f98"
+}

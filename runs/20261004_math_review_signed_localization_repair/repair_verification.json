@@ -1,0 +1,159 @@
+{
+  "finite_endpoint_Q_coordinate_difference_overflow": {
+    "covariance_determinant": 0.9999999999999998,
+    "covariance_eigenvalues": [
+      0.17157287525380993,
+      5.82842712474619
+    ],
+    "train_allocations": [
+      -4.999999999999998e+307,
+      1.4999999999999994e+308
+    ],
+    "best_allocations": [
+      1.4999999999999994e+308,
+      -0.0
+    ],
+    "train_Q_exact_floating_allocation_sum": 9.999999999999996e+307,
+    "best_Q_exact_floating_allocation_sum": 1.4999999999999994e+308,
+    "difference_exact_floating_allocation_sum": -4.999999999999998e+307,
+    "before": {
+      "returned": [
+        {
+          "TT": [
+            "-inf"
+          ]
+        },
+        [
+          {
+            "spec": "TT",
+            "ell": [
+              400.0,
+              3000.0
+            ],
+            "deltaQ": "-inf",
+            "n_bins": 2
+          }
+        ],
+        [
+          "TT"
+        ],
+        {
+          "method": "r_i_times_full_precision_r_i_signed_cross_term_allocation",
+          "deltaQ_full": "-inf",
+          "deltaQ_heatmap": "-inf",
+          "unlocalized_deltaQ": 0.0,
+          "n_bins_unlocalized": 0,
+          "accounting_error": "nan"
+        }
+      ],
+      "warnings": [
+        "overflow encountered in subtract"
+      ]
+    },
+    "after": {
+      "returned": [
+        {
+          "TT": [
+            -4.999999999999998e+307
+          ]
+        },
+        [
+          {
+            "spec": "TT",
+            "ell": [
+              400.0,
+              3000.0
+            ],
+            "deltaQ": -4.999999999999998e+307,
+            "n_bins": 2
+          }
+        ],
+        [
+          "TT"
+        ],
+        {
+          "method": "r_i_times_full_precision_r_i_signed_cross_term_allocation",
+          "deltaQ_full": -4.999999999999998e+307,
+          "deltaQ_heatmap": -4.999999999999998e+307,
+          "unlocalized_deltaQ": 0.0,
+          "n_bins_unlocalized": 0,
+          "accounting_error": 0.0
+        }
+      ],
+      "warnings": []
+    },
+    "split_unrepresentable_group": {
+      "error": "quadratic accounting is not representable as a finite binary64 output.",
+      "warnings": []
+    }
+  },
+  "dimension_broadcasting": {
+    "before": {
+      "returned": [
+        {
+          "TT": [
+            0.0
+          ]
+        },
+        [
+          {
+            "spec": "TT",
+            "ell": [
+              400.0,
+              3000.0
+            ],
+            "deltaQ": 0.0,
+            "n_bins": 2
+          }
+        ],
+        [
+          "TT"
+        ],
+        {
+          "method": "r_i_times_full_precision_r_i_signed_cross_term_allocation",
+          "deltaQ_full": 0.0,
+          "deltaQ_heatmap": 0.0,
+          "unlocalized_deltaQ": 0.0,
+          "n_bins_unlocalized": 0,
+          "accounting_error": 0.0
+        }
+      ],
+      "warnings": []
+    },
+    "after": {
+      "error": "train and reference residual vectors must have matching shape.",
+      "warnings": []
+    }
+  },
+  "native_audit_comparisons": {
+    "20261003_math_review_profiled_multistart": {
+      "B_given_A": {
+        "max_cell_change": 2.1332935418172383e-13,
+        "ranked_group_identities_unchanged": true,
+        "native_reconstruction_absolute_error": 5.522906576516107e-10,
+        "accounting_error": 0.0
+      },
+      "A_given_B": {
+        "max_cell_change": 2.842170943040401e-14,
+        "ranked_group_identities_unchanged": true,
+        "native_reconstruction_absolute_error": 3.387867764104158e-11,
+        "accounting_error": 7.438494264988549e-14
+      }
+    },
+    "20261003_math_review_profiled_staging_multistart": {
+      "B_given_A": {
+        "max_cell_change": 9.254819133275305e-13,
+        "ranked_group_identities_unchanged": true,
+        "native_reconstruction_absolute_error": 3.821014615823515e-10,
+        "accounting_error": 0.0
+      },
+      "A_given_B": {
+        "max_cell_change": 5.684341886080802e-14,
+        "ranked_group_identities_unchanged": true,
+        "native_reconstruction_absolute_error": 1.460875864722766e-11,
+        "accounting_error": -2.0650148258027912e-14
+      }
+    }
+  },
+  "scope": "selected floating endpoint allocations; no uniform solve-error certificate"
+}

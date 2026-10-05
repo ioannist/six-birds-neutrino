@@ -1,0 +1,20 @@
+{
+  "utc": "2026-10-04T22:50:33.022958+00:00",
+  "diagnostic": {
+    "managed_session": 5979,
+    "actual_terminal_exit_code": 0
+  },
+  "original_primary_runtime_attempt": {
+    "managed_session": 1217,
+    "actual_terminal_exit_code": 1,
+    "failure_receipt": "runs/20261004_math_review_guarded_CLASS_seventh_medium_A_diagnostics/runtime_failure_receipt.json"
+  },
+  "corrected_primary_runtime": {
+    "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_guarded_CLASS_seventh_medium_A_diagnostics/observe_runtime_v2.py",
+    "actual_exit_code": 0,
+    "scope": "forty original primary processes; identity-aware retirement check"
+  },
+  "snapshot_verification_actual_exit_code": 0,
+  "self_review_actual_exit_code": 0,
+  "all_diagnostic_and_primary_runtime_workers_complete": true
+}

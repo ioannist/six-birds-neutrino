@@ -1,0 +1,88 @@
+{
+  "scope": "new_posterior_chains_not_certified_converged",
+  "shared_backend_lmax": 4095,
+  "runs": [
+    {
+      "lens": "A",
+      "seed": 401,
+      "config": "/home/repos/six-birds-neutrino/runs/20261003_math_review_spt_parallel_chain_configs/A_seed401.yaml"
+    },
+    {
+      "lens": "A",
+      "seed": 402,
+      "config": "/home/repos/six-birds-neutrino/runs/20261003_math_review_spt_parallel_chain_configs/A_seed402.yaml"
+    },
+    {
+      "lens": "B",
+      "seed": 403,
+      "config": "/home/repos/six-birds-neutrino/runs/20261003_math_review_spt_parallel_chain_configs/B_seed403.yaml"
+    },
+    {
+      "lens": "B",
+      "seed": 404,
+      "config": "/home/repos/six-birds-neutrino/runs/20261003_math_review_spt_parallel_chain_configs/B_seed404.yaml"
+    }
+  ],
+  "starting_fits": [
+    "/home/repos/six-birds-neutrino/runs/20261003_math_review_cosmological_spt_desi/lensA_fit_0.json",
+    "/home/repos/six-birds-neutrino/runs/20261003_math_review_cosmological_spt_desi/lensB_fit_0.json"
+  ],
+  "starting_fit_snapshots": [
+    {
+      "point": {
+        "omegabh2": 0.02267181103868432,
+        "omegach2": 0.11701987403028599,
+        "H0": 68.7645627062782,
+        "logA": 3.005944464174175,
+        "ns": 1.0292346445390579,
+        "tau": 0.05437119496798635,
+        "mnu": 0.005918390346731512
+      },
+      "loglike": -1284.8046923503932,
+      "success": true,
+      "flag": 0,
+      "message": "Success: rho has reached rhoend",
+      "free": [
+        "omegabh2",
+        "omegach2",
+        "H0",
+        "logA",
+        "ns",
+        "tau",
+        "mnu"
+      ],
+      "n_evals": 65,
+      "elapsed_seconds": 295.41617754707113,
+      "scope": "bounded_numerical_candidate_not_global_certificate"
+    },
+    {
+      "point": {
+        "omegabh2": 0.022271938072361185,
+        "omegach2": 0.11774253917474942,
+        "H0": 68.62288658860297,
+        "logA": 3.051305859081379,
+        "ns": 0.9600288115853028,
+        "tau": 0.05516072150495439,
+        "mnu": 0.001474025138696284
+      },
+      "loglike": -693.7709926902041,
+      "success": true,
+      "flag": 0,
+      "message": "Success: rho has reached rhoend",
+      "free": [
+        "omegabh2",
+        "omegach2",
+        "H0",
+        "logA",
+        "ns",
+        "tau",
+        "mnu"
+      ],
+      "n_evals": 84,
+      "elapsed_seconds": 378.6605086950585,
+      "scope": "bounded_numerical_candidate_not_global_certificate"
+    }
+  ],
+  "fit_scope": "numerical_candidate_used_only_to_initialize_sampler",
+  "sampler_weights": "integer_holding_times_no_oversampling_thinning"
+}

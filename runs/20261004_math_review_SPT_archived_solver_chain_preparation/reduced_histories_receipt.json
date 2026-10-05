@@ -1,0 +1,667 @@
+{
+  "utc": "2026-10-04T14:08:53.269323+00:00",
+  "records": [
+    {
+      "case": "initial_then_target",
+      "sequence": [
+        0,
+        35
+      ],
+      "independent_copy": false,
+      "values": [
+        {
+          "call": 0,
+          "loglikes": [
+            -1287.9765007730948,
+            -5.283605001873935
+          ],
+          "getter_call_count": 1,
+          "transfer_state_params": {
+            "omegabh2": 0.022699735,
+            "omegach2": 0.11515536,
+            "H0": 68.530016,
+            "tau": 0.060991682,
+            "mnu": 0.14275261
+          }
+        },
+        {
+          "call": 35,
+          "loglikes": [
+            -1288.7342224863173,
+            -5.283605001873935
+          ],
+          "getter_call_count": 2,
+          "transfer_state_params": {
+            "omegabh2": 0.022699735,
+            "omegach2": 0.11515536,
+            "H0": 68.530016,
+            "tau": 0.060991682,
+            "mnu": 0.14275261
+          }
+        }
+      ],
+      "getter_calls": [
+        {
+          "state_params": {
+            "omegabh2": 0.022699735,
+            "omegach2": 0.11515536,
+            "H0": 68.530016,
+            "tau": 0.060991682,
+            "mnu": 0.14275261
+          },
+          "As_before_spectra": 2e-09,
+          "ns_before_spectra": 0.96,
+          "has_scalar_time_sources": true
+        },
+        {
+          "state_params": {
+            "omegabh2": 0.022699735,
+            "omegach2": 0.11515536,
+            "H0": 68.530016,
+            "tau": 0.060991682,
+            "mnu": 0.14275261
+          },
+          "As_before_spectra": 2.0515500040875523e-09,
+          "ns_before_spectra": 1.0244569,
+          "has_scalar_time_sources": true
+        },
+        {
+          "state_params": {
+            "omegabh2": 0.022699735,
+            "omegach2": 0.11515536,
+            "H0": 68.530016,
+            "tau": 0.060991682,
+            "mnu": 0.14275261
+          },
+          "As_before_spectra": 2e-09,
+          "ns_before_spectra": 0.96,
+          "has_scalar_time_sources": true
+        }
+      ],
+      "fresh_target_loglikes": [
+        -1288.7342224863173,
+        -5.283605001873935
+      ],
+      "cached_minus_fresh_chi2": [
+        -0.0,
+        -0.0
+      ],
+      "helper_non_linear_sources": true
+    },
+    {
+      "case": "earlier_fast_then_target",
+      "sequence": [
+        0,
+        32,
+        35
+      ],
+      "independent_copy": false,
+      "values": [
+        {
+          "call": 0,
+          "loglikes": [
+            -1287.9765007730948,
+            -5.283605001873935
+          ],
+          "getter_call_count": 1,
+          "transfer_state_params": {
+            "omegabh2": 0.022699735,
+            "omegach2": 0.11515536,
+            "H0": 68.530016,
+            "tau": 0.060991682,
+            "mnu": 0.14275261
+          }
+        },
+        {
+          "call": 32,
+          "loglikes": [
+            -2066.5442907555193,
+            -5.283605001873935
+          ],
+          "getter_call_count": 2,
+          "transfer_state_params": {
+            "omegabh2": 0.022699735,
+            "omegach2": 0.11515536,
+            "H0": 68.530016,
+            "tau": 0.060991682,
+            "mnu": 0.14275261
+          }
+        },
+        {
+          "call": 35,
+          "loglikes": [
+            -1288.7342224863173,
+            -5.283605001873935
+          ],
+          "getter_call_count": 3,
+          "transfer_state_params": {
+            "omegabh2": 0.022699735,
+            "omegach2": 0.11515536,
+            "H0": 68.530016,
+            "tau": 0.060991682,
+            "mnu": 0.14275261
+          }
+        }
+      ],
+      "getter_calls": [
+        {
+          "state_params": {
+            "omegabh2": 0.022699735,
+            "omegach2": 0.11515536,
+            "H0": 68.530016,
+            "tau": 0.060991682,
+            "mnu": 0.14275261
+          },
+          "As_before_spectra": 2e-09,
+          "ns_before_spectra": 0.96,
+          "has_scalar_time_sources": true
+        },
+        {
+          "state_params": {
+            "omegabh2": 0.022699735,
+            "omegach2": 0.11515536,
+            "H0": 68.530016,
+            "tau": 0.060991682,
+            "mnu": 0.14275261
+          },
+          "As_before_spectra": 2.0515500040875523e-09,
+          "ns_before_spectra": 1.0244569,
+          "has_scalar_time_sources": true
+        },
+        {
+          "state_params": {
+            "omegabh2": 0.022699735,
+            "omegach2": 0.11515536,
+            "H0": 68.530016,
+            "tau": 0.060991682,
+            "mnu": 0.14275261
+          },
+          "As_before_spectra": 1.7908298152637606e-09,
+          "ns_before_spectra": 1.0107639194054527,
+          "has_scalar_time_sources": true
+        },
+        {
+          "state_params": {
+            "omegabh2": 0.022699735,
+            "omegach2": 0.11515536,
+            "H0": 68.530016,
+            "tau": 0.060991682,
+            "mnu": 0.14275261
+          },
+          "As_before_spectra": 2e-09,
+          "ns_before_spectra": 0.96,
+          "has_scalar_time_sources": true
+        }
+      ],
+      "fresh_target_loglikes": [
+        -1288.7342224863173,
+        -5.283605001873935
+      ],
+      "cached_minus_fresh_chi2": [
+        -0.0,
+        -0.0
+      ],
+      "helper_non_linear_sources": true
+    },
+    {
+      "case": "slow_then_target",
+      "sequence": [
+        0,
+        1,
+        35
+      ],
+      "independent_copy": false,
+      "values": [
+        {
+          "call": 0,
+          "loglikes": [
+            -1287.9765007730948,
+            -5.283605001873935
+          ],
+          "getter_call_count": 1,
+          "transfer_state_params": {
+            "omegabh2": 0.022699735,
+            "omegach2": 0.11515536,
+            "H0": 68.530016,
+            "tau": 0.060991682,
+            "mnu": 0.14275261
+          }
+        },
+        {
+          "call": 1,
+          "loglikes": [
+            -1349.0322169410044,
+            -5.305177282013071
+          ],
+          "getter_call_count": 2,
+          "transfer_state_params": {
+            "omegabh2": 0.022644474750838115,
+            "omegach2": 0.11374794171285806,
+            "H0": 68.39628664117006,
+            "tau": 0.04225403934985642,
+            "mnu": 0.171528381985736
+          }
+        },
+        {
+          "call": 35,
+          "loglikes": [
+            -1288.7584444558852,
+            -5.283605001873935
+          ],
+          "getter_call_count": 3,
+          "transfer_state_params": {
+            "omegabh2": 0.022699735,
+            "omegach2": 0.11515536,
+            "H0": 68.530016,
+            "tau": 0.060991682,
+            "mnu": 0.14275261
+          }
+        }
+      ],
+      "getter_calls": [
+        {
+          "state_params": {
+            "omegabh2": 0.022699735,
+            "omegach2": 0.11515536,
+            "H0": 68.530016,
+            "tau": 0.060991682,
+            "mnu": 0.14275261
+          },
+          "As_before_spectra": 2e-09,
+          "ns_before_spectra": 0.96,
+          "has_scalar_time_sources": true
+        },
+        {
+          "state_params": {
+            "omegabh2": 0.022644474750838115,
+            "omegach2": 0.11374794171285806,
+            "H0": 68.39628664117006,
+            "tau": 0.04225403934985642,
+            "mnu": 0.171528381985736
+          },
+          "As_before_spectra": 2e-09,
+          "ns_before_spectra": 0.96,
+          "has_scalar_time_sources": true
+        },
+        {
+          "state_params": {
+            "omegabh2": 0.022699735,
+            "omegach2": 0.11515536,
+            "H0": 68.530016,
+            "tau": 0.060991682,
+            "mnu": 0.14275261
+          },
+          "As_before_spectra": 2.0515500040875523e-09,
+          "ns_before_spectra": 1.0244569,
+          "has_scalar_time_sources": true
+        },
+        {
+          "state_params": {
+            "omegabh2": 0.022699735,
+            "omegach2": 0.11515536,
+            "H0": 68.530016,
+            "tau": 0.060991682,
+            "mnu": 0.14275261
+          },
+          "As_before_spectra": 2e-09,
+          "ns_before_spectra": 0.96,
+          "has_scalar_time_sources": true
+        }
+      ],
+      "fresh_target_loglikes": [
+        -1288.7342224863173,
+        -5.283605001873935
+      ],
+      "cached_minus_fresh_chi2": [
+        0.04844393913572276,
+        -0.0
+      ],
+      "helper_non_linear_sources": true
+    },
+    {
+      "case": "late_window",
+      "sequence": [
+        0,
+        32,
+        33,
+        34,
+        35
+      ],
+      "independent_copy": false,
+      "values": [
+        {
+          "call": 0,
+          "loglikes": [
+            -1287.9765007730948,
+            -5.283605001873935
+          ],
+          "getter_call_count": 1,
+          "transfer_state_params": {
+            "omegabh2": 0.022699735,
+            "omegach2": 0.11515536,
+            "H0": 68.530016,
+            "tau": 0.060991682,
+            "mnu": 0.14275261
+          }
+        },
+        {
+          "call": 32,
+          "loglikes": [
+            -2066.5442907555193,
+            -5.283605001873935
+          ],
+          "getter_call_count": 2,
+          "transfer_state_params": {
+            "omegabh2": 0.022699735,
+            "omegach2": 0.11515536,
+            "H0": 68.530016,
+            "tau": 0.060991682,
+            "mnu": 0.14275261
+          }
+        },
+        {
+          "call": 33,
+          "loglikes": [
+            -1299.6610496062865,
+            -5.343884781568094
+          ],
+          "getter_call_count": 3,
+          "transfer_state_params": {
+            "omegabh2": 0.022725608516527836,
+            "omegach2": 0.11467681815998682,
+            "H0": 68.87490082950796,
+            "tau": 0.05146888224444111,
+            "mnu": 0.12111744130272065
+          }
+        },
+        {
+          "call": 34,
+          "loglikes": [
+            -1440.603401585283,
+            -7.5642801481341
+          ],
+          "getter_call_count": 4,
+          "transfer_state_params": {
+            "omegabh2": 0.023380198436963012,
+            "omegach2": 0.10983733429188104,
+            "H0": 68.87027480600675,
+            "tau": 0.08214015105933646,
+            "mnu": 0.05377321420615043
+          }
+        },
+        {
+          "call": 35,
+          "loglikes": [
+            -1288.831818260454,
+            -5.283605001873935
+          ],
+          "getter_call_count": 5,
+          "transfer_state_params": {
+            "omegabh2": 0.022699735,
+            "omegach2": 0.11515536,
+            "H0": 68.530016,
+            "tau": 0.060991682,
+            "mnu": 0.14275261
+          }
+        }
+      ],
+      "getter_calls": [
+        {
+          "state_params": {
+            "omegabh2": 0.022699735,
+            "omegach2": 0.11515536,
+            "H0": 68.530016,
+            "tau": 0.060991682,
+            "mnu": 0.14275261
+          },
+          "As_before_spectra": 2e-09,
+          "ns_before_spectra": 0.96,
+          "has_scalar_time_sources": true
+        },
+        {
+          "state_params": {
+            "omegabh2": 0.022699735,
+            "omegach2": 0.11515536,
+            "H0": 68.530016,
+            "tau": 0.060991682,
+            "mnu": 0.14275261
+          },
+          "As_before_spectra": 2.0515500040875523e-09,
+          "ns_before_spectra": 1.0244569,
+          "has_scalar_time_sources": true
+        },
+        {
+          "state_params": {
+            "omegabh2": 0.022725608516527836,
+            "omegach2": 0.11467681815998682,
+            "H0": 68.87490082950796,
+            "tau": 0.05146888224444111,
+            "mnu": 0.12111744130272065
+          },
+          "As_before_spectra": 2e-09,
+          "ns_before_spectra": 0.96,
+          "has_scalar_time_sources": true
+        },
+        {
+          "state_params": {
+            "omegabh2": 0.023380198436963012,
+            "omegach2": 0.10983733429188104,
+            "H0": 68.87027480600675,
+            "tau": 0.08214015105933646,
+            "mnu": 0.05377321420615043
+          },
+          "As_before_spectra": 2e-09,
+          "ns_before_spectra": 0.96,
+          "has_scalar_time_sources": true
+        },
+        {
+          "state_params": {
+            "omegabh2": 0.022699735,
+            "omegach2": 0.11515536,
+            "H0": 68.530016,
+            "tau": 0.060991682,
+            "mnu": 0.14275261
+          },
+          "As_before_spectra": 1.7908298152637606e-09,
+          "ns_before_spectra": 1.0107639194054527,
+          "has_scalar_time_sources": true
+        },
+        {
+          "state_params": {
+            "omegabh2": 0.022699735,
+            "omegach2": 0.11515536,
+            "H0": 68.530016,
+            "tau": 0.060991682,
+            "mnu": 0.14275261
+          },
+          "As_before_spectra": 2e-09,
+          "ns_before_spectra": 0.96,
+          "has_scalar_time_sources": true
+        }
+      ],
+      "fresh_target_loglikes": [
+        -1288.7342224863173,
+        -5.283605001873935
+      ],
+      "cached_minus_fresh_chi2": [
+        0.19519154827321472,
+        -0.0
+      ],
+      "helper_non_linear_sources": true
+    },
+    {
+      "case": "late_window_independent_copy",
+      "sequence": [
+        0,
+        32,
+        33,
+        34,
+        35
+      ],
+      "independent_copy": true,
+      "values": [
+        {
+          "call": 0,
+          "loglikes": [
+            -1287.9765007730948,
+            -5.283605001873935
+          ],
+          "getter_call_count": 1,
+          "transfer_state_params": {
+            "omegabh2": 0.022699735,
+            "omegach2": 0.11515536,
+            "H0": 68.530016,
+            "tau": 0.060991682,
+            "mnu": 0.14275261
+          }
+        },
+        {
+          "call": 32,
+          "loglikes": [
+            -2066.5442907555193,
+            -5.283605001873935
+          ],
+          "getter_call_count": 2,
+          "transfer_state_params": {
+            "omegabh2": 0.022699735,
+            "omegach2": 0.11515536,
+            "H0": 68.530016,
+            "tau": 0.060991682,
+            "mnu": 0.14275261
+          }
+        },
+        {
+          "call": 33,
+          "loglikes": [
+            -1299.6610496062865,
+            -5.343884781568094
+          ],
+          "getter_call_count": 3,
+          "transfer_state_params": {
+            "omegabh2": 0.022725608516527836,
+            "omegach2": 0.11467681815998682,
+            "H0": 68.87490082950796,
+            "tau": 0.05146888224444111,
+            "mnu": 0.12111744130272065
+          }
+        },
+        {
+          "call": 34,
+          "loglikes": [
+            -1440.603401585283,
+            -7.5642801481341
+          ],
+          "getter_call_count": 4,
+          "transfer_state_params": {
+            "omegabh2": 0.023380198436963012,
+            "omegach2": 0.10983733429188104,
+            "H0": 68.87027480600675,
+            "tau": 0.08214015105933646,
+            "mnu": 0.05377321420615043
+          }
+        },
+        {
+          "call": 35,
+          "loglikes": [
+            -1288.831818260454,
+            -5.283605001873935
+          ],
+          "getter_call_count": 5,
+          "transfer_state_params": {
+            "omegabh2": 0.022699735,
+            "omegach2": 0.11515536,
+            "H0": 68.530016,
+            "tau": 0.060991682,
+            "mnu": 0.14275261
+          }
+        }
+      ],
+      "getter_calls": [
+        {
+          "state_params": {
+            "omegabh2": 0.022699735,
+            "omegach2": 0.11515536,
+            "H0": 68.530016,
+            "tau": 0.060991682,
+            "mnu": 0.14275261
+          },
+          "As_before_spectra": 2e-09,
+          "ns_before_spectra": 0.96,
+          "has_scalar_time_sources": true
+        },
+        {
+          "state_params": {
+            "omegabh2": 0.022699735,
+            "omegach2": 0.11515536,
+            "H0": 68.530016,
+            "tau": 0.060991682,
+            "mnu": 0.14275261
+          },
+          "As_before_spectra": 2e-09,
+          "ns_before_spectra": 0.96,
+          "has_scalar_time_sources": true
+        },
+        {
+          "state_params": {
+            "omegabh2": 0.022725608516527836,
+            "omegach2": 0.11467681815998682,
+            "H0": 68.87490082950796,
+            "tau": 0.05146888224444111,
+            "mnu": 0.12111744130272065
+          },
+          "As_before_spectra": 2e-09,
+          "ns_before_spectra": 0.96,
+          "has_scalar_time_sources": true
+        },
+        {
+          "state_params": {
+            "omegabh2": 0.023380198436963012,
+            "omegach2": 0.10983733429188104,
+            "H0": 68.87027480600675,
+            "tau": 0.08214015105933646,
+            "mnu": 0.05377321420615043
+          },
+          "As_before_spectra": 2e-09,
+          "ns_before_spectra": 0.96,
+          "has_scalar_time_sources": true
+        },
+        {
+          "state_params": {
+            "omegabh2": 0.022699735,
+            "omegach2": 0.11515536,
+            "H0": 68.530016,
+            "tau": 0.060991682,
+            "mnu": 0.14275261
+          },
+          "As_before_spectra": 2e-09,
+          "ns_before_spectra": 0.96,
+          "has_scalar_time_sources": true
+        },
+        {
+          "state_params": {
+            "omegabh2": 0.022699735,
+            "omegach2": 0.11515536,
+            "H0": 68.530016,
+            "tau": 0.060991682,
+            "mnu": 0.14275261
+          },
+          "As_before_spectra": 2e-09,
+          "ns_before_spectra": 0.96,
+          "has_scalar_time_sources": true
+        }
+      ],
+      "fresh_target_loglikes": [
+        -1288.7342224863173,
+        -5.283605001873935
+      ],
+      "cached_minus_fresh_chi2": [
+        0.19519154827321472,
+        -0.0
+      ],
+      "helper_non_linear_sources": true
+    }
+  ],
+  "native_path": "/mnt/8tb/six-birds-ml/tmp/neutrino_spt_archived_solver_control_20261004/packages/camb/camblib.so",
+  "native_sha256": "6a54f98bcc65601fd1ad5e760a99a0072cdc45fe49197ba5c3a1282889c2ee0d",
+  "scope": "selected history-localization controls, no inference or production changes"
+}

@@ -1,0 +1,161 @@
+{
+  "utc": "2026-10-04T07:33:38.269961+00:00",
+  "scope": "selected_B_two_factor_precision_response_comparison",
+  "managed_exits": [
+    {
+      "variant": "grid_only",
+      "session": 76865,
+      "exit_code": 0
+    },
+    {
+      "variant": "dynamics_only",
+      "session": 94304,
+      "exit_code": 0
+    }
+  ],
+  "native_mass_plus_0_01_responses": {
+    "medium": 3.188711440239908,
+    "fine": 3.080373278106693,
+    "grid_only": 3.07979172796154,
+    "dynamics_only": 3.189732199479881
+  },
+  "native_component_mass_responses": {
+    "medium": {
+      "sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 2.8017088232647893,
+      "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": -0.020053204932414914,
+      "planck_2018_lowl.TT": 0.005147671136455756,
+      "planck_2018_lowl.EE_sroll2": 0.004858099909029079,
+      "planck_2018_highl_plik.TT_lite_native": 0.05480934638953272,
+      "planckpr4lensing.PlanckPR4Lensing": 0.3422407044725162
+    },
+    "fine": {
+      "sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 2.693029634292543,
+      "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": -0.020053204932414914,
+      "planck_2018_lowl.TT": 0.005149323180319243,
+      "planck_2018_lowl.EE_sroll2": 0.004858099909029079,
+      "planck_2018_highl_plik.TT_lite_native": 0.055938863769910085,
+      "planckpr4lensing.PlanckPR4Lensing": 0.3414505618873065
+    },
+    "grid_only": {
+      "sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 2.6924264823262547,
+      "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": -0.020053204932414914,
+      "planck_2018_lowl.TT": 0.005147677239790482,
+      "planck_2018_lowl.EE_sroll2": 0.004858099909029079,
+      "planck_2018_highl_plik.TT_lite_native": 0.05582352354753084,
+      "planckpr4lensing.PlanckPR4Lensing": 0.3415891498713499
+    },
+    "dynamics_only": {
+      "sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 2.80268706187303,
+      "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": -0.020053204932414914,
+      "planck_2018_lowl.TT": 0.005149317144628185,
+      "planck_2018_lowl.EE_sroll2": 0.004858099909029079,
+      "planck_2018_highl_plik.TT_lite_native": 0.054851467717128344,
+      "planckpr4lensing.PlanckPR4Lensing": 0.3422394577684802
+    }
+  },
+  "factor_effects_relative_to_medium": {
+    "grid_only": -0.10891971227836805,
+    "dynamics_only": 0.0010207592399726906,
+    "fine": -0.10833816213321512
+  },
+  "nonadditive_factor_interaction": -0.0004392090948197591,
+  "fine_minus_grid_only_mass_response": 0.0005815501451529315,
+  "reused_medium_and_fine_anchors_not_new_evaluations": true,
+  "physical_models_priors_and_likelihoods_unchanged": true,
+  "uniform_accuracy_or_posterior_convergence_certified": false,
+  "paper_modified": false,
+  "files": [
+    {
+      "path": "runs/20261004_math_review_guarded_precision_factor_controls_B/dynamics_only/evaluation/metrics.json",
+      "sha256": "18df354c06b5bc51bc1562fac46df8360aa158a17d5ac7d1db1c256e1c794584"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_precision_factor_controls_B/dynamics_only/evaluation/progress.json",
+      "sha256": "2caa313ffc9836d0fedc07cfa9188ccfa9a6e4a14e9ff367f6d3f931f14bd7db"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_precision_factor_controls_B/dynamics_only/evaluation/quad_q50_mass_plus_spectra.npz",
+      "sha256": "ba90a415383422c6974323fdac814e714c3ae630bc3f49d700378631ceb43b4d"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_precision_factor_controls_B/dynamics_only/evaluation/quad_q50_spectra.npz",
+      "sha256": "55354da7f89e8df24cc05237dffee2c9a1cea9de78dd571758d05de5ec0f0a4c"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_precision_factor_controls_B/dynamics_only/evaluation/runtime_state.json",
+      "sha256": "6815ea868021d164943a9526be6d9113619edd75c0907dc36e9005b0436c9850"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_precision_factor_controls_B/dynamics_only/input.yaml",
+      "sha256": "85d45bdb4c57ca34e2e83f3cf6130ecccfcf0f828878e68d6c889388bbb88650"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_precision_factor_controls_B/dynamics_only/points.json",
+      "sha256": "5c706baad7bb8a1e0d30a789e2de8c4bbeb74f7f6a45867a3bc99695e0fedacc"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_precision_factor_controls_B/dynamics_only/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_precision_factor_controls_B/dynamics_only/stdout.txt",
+      "sha256": "0c93e1a320a466c0bb9825aad8a028b9db2c3f6f683d6e742ccb401f5f15548a"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_precision_factor_controls_B/grid_only/evaluation/metrics.json",
+      "sha256": "539550dcf479596b51f07af2e7ab58906cccaaef39ff494c2093b8d00182c7bd"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_precision_factor_controls_B/grid_only/evaluation/progress.json",
+      "sha256": "71ea2b1477418665eaafbfde300798ee19765b2f870f6a81b4ff35c61d251ca6"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_precision_factor_controls_B/grid_only/evaluation/quad_q50_mass_plus_spectra.npz",
+      "sha256": "f342c725456032523fc827fa0e847b12818a21093a39a14b247dc7a95a41a5fe"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_precision_factor_controls_B/grid_only/evaluation/quad_q50_spectra.npz",
+      "sha256": "48c35aba4c3c72e5ea1ae47547bd60c05a47652a0f9537eb250289ce70d8d270"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_precision_factor_controls_B/grid_only/evaluation/runtime_state.json",
+      "sha256": "8f4f3a1cdb0c5a56519e01fc38d5f78d970cef6dbd1d0fd29dede1947e07c954"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_precision_factor_controls_B/grid_only/input.yaml",
+      "sha256": "14e44f14a2188401c07f21d46015f869c68a482c2d7a8619e4c4aff4f4295776"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_precision_factor_controls_B/grid_only/points.json",
+      "sha256": "5c706baad7bb8a1e0d30a789e2de8c4bbeb74f7f6a45867a3bc99695e0fedacc"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_precision_factor_controls_B/grid_only/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_precision_factor_controls_B/grid_only/stdout.txt",
+      "sha256": "eceace9cc88370aadfbb6e6c7ced514a5659d4f6bcf9cb30edbcde1e9aeb6c6b"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_precision_factor_controls_B/launch_receipt.json",
+      "sha256": "0c66e5e576253af4ebf4c667b9f9fec79df5888c188762848e541e293ab6a728"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_precision_factor_controls_B/prepare.py",
+      "sha256": "ee99d0549b77dbc68ad029ed12d62a5e0f9ddcfeda4bace52571b2fc9f6727e4"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_precision_factor_controls_B/runner.py",
+      "sha256": "1fde79bf3e741b231f79d4acb32af3a61e1e69c50dcad318f83a4bf98d835cb9"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_precision_factor_controls_B/selection_receipt.json",
+      "sha256": "eb35e4009d317d8b6c2e0f592aed97a6d340cd6b9903d33930324d37297776b9"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_precision_factor_controls_B/verify_completed.py",
+      "sha256": "9256c47a6bb46a9ff55795d2b02ddd2650793d2d2fafcbe3e64f5c505ee40190"
+    }
+  ]
+}

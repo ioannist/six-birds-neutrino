@@ -1,0 +1,8 @@
+/home/repos/six-birds-neutrino/runs/20261004_math_review_gaussian_probability_law/GaussianMeasureReview.lean:68:4: error: linarith failed to find a contradiction
+case left
+hn : 0 < √2 * √Real.pi * standardNormalCDF 0
+h : ¬0 < standardNormalCDF 0
+hnonpos : standardNormalCDF 0 ≤ 0
+hprod : √(2 * Real.pi) * standardNormalCDF 0 ≤ 0
+⊢ False
+failed

@@ -1,0 +1,55 @@
+{
+  "utc": "2026-10-04T09:00:37.542560+00:00",
+  "scope": "one_fresh_B_grid12_frozen_quad_pilot_trial",
+  "seed": 1501,
+  "lens": "B",
+  "outdir": "runs/20261004_math_review_guarded_grid12_trial_B_seed1501/run",
+  "config": "runs/20261004_math_review_guarded_grid12_trial_B_seed1501/input.yaml",
+  "config_sha256": "e92e86464d17471d0a38d6e1bd7e4bed091e8af1802c0bf6cbc1a63f5feaacaa",
+  "covariance": "runs/20261004_math_review_guarded_medium_proposal_scout/pilot_B.covmat",
+  "covariance_sha256": "ef2238b7ea2e5da618d7fddb17b82a8b408597153d11ee5729396b7626d1c3ad",
+  "initial_point": {
+    "omegabh2": 0.0222020335543916,
+    "omegach2": 0.11772862069101062,
+    "H0": 68.54868775438271,
+    "logA": 3.0341601688936954,
+    "ns": 0.9664391710998197,
+    "tau": 0.04852223927387122,
+    "mnu_sample": 0.02910542422698892,
+    "A_planck": 1.0038968574958045,
+    "TT_tSZ_Amp": 0.9960033361831536,
+    "TT_kSZ_Amp": 2.773372732700484
+  },
+  "expected_native_chi2": {
+    "sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 1383.7307854360074,
+    "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 10.362793400314786,
+    "planck_2018_lowl.TT": 22.88916006803106,
+    "planck_2018_lowl.EE_sroll2": 392.035731363073,
+    "planck_2018_highl_plik.TT_lite_native": 68.15212032718509,
+    "planckpr4lensing.PlanckPR4Lensing": 9.135201603829884
+  },
+  "native_module_path": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+  "native_module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+  "physical_model_and_priors_unchanged": true,
+  "existing_chains_modified_or_restarted": false,
+  "distinct_target_no_historical_prefix_append": true,
+  "pilot_efficiency_or_accuracy_certified": false,
+  "sources": [
+    {
+      "path": "runs/20261004_math_review_guarded_precision_factor_controls_B/grid_only/input.yaml",
+      "sha256": "14e44f14a2188401c07f21d46015f869c68a482c2d7a8619e4c4aff4f4295776"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_precision_factor_controls_B/completion_verification.json",
+      "sha256": "81071b4defe20d2476c9aa05772273ad8dc9f31379de30f63fe5c582b93caafb"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_medium_proposal_scout/scout_receipt.json",
+      "sha256": "f77495274a9d4d73ef7313bce166b6267c7956560f7628a64b0f07c805f22661"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_medium_proposal_scout/pilot_B.covmat",
+      "sha256": "ef2238b7ea2e5da618d7fddb17b82a8b408597153d11ee5729396b7626d1c3ad"
+    }
+  ]
+}

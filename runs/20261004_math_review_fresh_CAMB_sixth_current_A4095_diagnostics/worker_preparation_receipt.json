@@ -1,0 +1,20 @@
+{
+  "snapshot_preparation_exit_code": 0,
+  "files": [
+    {
+      "source": "runs/20261004_math_review_fresh_CAMB_fifth_current_A4095_diagnostics/run_verification.py",
+      "destination": "runs/20261004_math_review_fresh_CAMB_sixth_current_A4095_diagnostics/run_verification.py",
+      "sha256": "f026bcba9d2e0593d8dd2d18d8da35edea5334be42b96cb67191951382c014d5",
+      "byte_identical": true
+    },
+    {
+      "source": "runs/20261004_math_review_upper_prior_posterior_preparation/observe_all_runtime.py",
+      "destination": "runs/20261004_math_review_fresh_CAMB_sixth_current_A4095_diagnostics/observe_all_runtime.py",
+      "sha256": "8b14757f2f52de2c6e40a2fb41a80613f70e1949ac650ef33aa374ab8d47b714",
+      "byte_identical": true
+    }
+  ],
+  "current_solver_PYTHONPATH_preserved": true,
+  "targets_and_gates_changed": false,
+  "runtime_observer_scope": 48
+}

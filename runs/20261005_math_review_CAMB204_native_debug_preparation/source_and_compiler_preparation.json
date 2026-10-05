@@ -1,0 +1,263 @@
+{
+  "official_source": "/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_source_failure_triage_20261004/source/camb-2.0.4",
+  "scratch_source": "/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_native_debug_20261005/source",
+  "unchanged_Fortran_files": [
+    {
+      "path": "fortran/DarkAge21cm.f90",
+      "sha256": "398d4c31bee98368acf2bfcc32e1e882c470a5ef450216ba544c480e01b0bce7"
+    },
+    {
+      "path": "fortran/DarkEnergyFluid.f90",
+      "sha256": "e6dd4aff01052de80c5ead53854a6f9bb6d9f2b0fee40bec21ab77d6242a451f"
+    },
+    {
+      "path": "fortran/DarkEnergyInterface.f90",
+      "sha256": "7f3ce5bec37e6b7f47922425789dddee4b9ce90750289b924ba0b173a87150ef"
+    },
+    {
+      "path": "fortran/DarkEnergyPPF.f90",
+      "sha256": "e744c2695a7b3659712ae061db46a83ff2443d91017fade882d20f7690591472"
+    },
+    {
+      "path": "fortran/DarkEnergyQuintessence.f90",
+      "sha256": "fe392ee9222bab35540ae82f7fa13b00427dd6144ac39b11b87ac1cd8d981dee"
+    },
+    {
+      "path": "fortran/ExternalNonLinearRatio.f90",
+      "sha256": "255d32cfc9a5e337462e56ecfadf4f9e1dafc763ba4b72974dc4eb7d3fe473cf"
+    },
+    {
+      "path": "fortran/InitialPower.f90",
+      "sha256": "42e1fc0593bdaddf14794befe6cf92544700dd7d904685534f26747d5b63892a"
+    },
+    {
+      "path": "fortran/MathUtils.f90",
+      "sha256": "1a5250708e925a5c32df0c44b52e386ef8265df711471396aeca695a221c2999"
+    },
+    {
+      "path": "fortran/PowellMinimize.f90",
+      "sha256": "4dba40199484949abab25135d91e8c97fcfe38e2cb575bae6a622300fccaf057"
+    },
+    {
+      "path": "fortran/RungeKuttaDP45.f90",
+      "sha256": "639c386da3a8adfb69db3cad5144ed1d508b217f8dce5b9c062d4aaf9dc838df"
+    },
+    {
+      "path": "fortran/SPkNonLinear.f90",
+      "sha256": "8371df80f12e16104188819de8e722c8d9ba2d46ebe1f69a181a9addd1c08c28"
+    },
+    {
+      "path": "fortran/SecondOrderPK.f90",
+      "sha256": "79c424507b2e224084cffe8ddedcdb37d2579ac7335cd6634be21a00b472f0e5"
+    },
+    {
+      "path": "fortran/SeparableBispectrum.f90",
+      "sha256": "14b7db955347840bca596ada748d423b8f1441aa1e8ec7fefb97df3667e92ccc"
+    },
+    {
+      "path": "fortran/SourceWindows.f90",
+      "sha256": "c9c6fbd718239fe8c5f83aeb2b3c1eeec1c9ca6c380f59dca05861c4e1fa77ea"
+    },
+    {
+      "path": "fortran/bessels.f90",
+      "sha256": "457cb5e349c0aa8f1fcf4ec7c5b366c6613ead524a9c67a9fbd74f6701535bb5"
+    },
+    {
+      "path": "fortran/camb.f90",
+      "sha256": "8001f969cd90aaa7a048ff9aa1c59eb54dd75ea3130870207eaeb4cbfdaadf5e"
+    },
+    {
+      "path": "fortran/camb_python.f90",
+      "sha256": "1b4b4705fdc192c8a038ae4a17137d5fbedf0d48fa72fc76c77eb808072bc0cf"
+    },
+    {
+      "path": "fortran/classes.f90",
+      "sha256": "9a0456434032b37de1c59abd8a5a10780aba49df28374d266f48f1d6e76ce4f4"
+    },
+    {
+      "path": "fortran/cmbmain.f90",
+      "sha256": "4c53df4ac8f26789602d489da0889b495436d70a2051efaedf42c86f911a07eb"
+    },
+    {
+      "path": "fortran/config.f90",
+      "sha256": "402c7541eac3a81d5b90f82091439108a22efc40c6c488e170c3e6dc650eb47f"
+    },
+    {
+      "path": "fortran/constants.f90",
+      "sha256": "b955435d8059179b42553d63ef589d464e3cc5f5fc277b4889f59320fe5346ba"
+    },
+    {
+      "path": "fortran/cosmorec.f90",
+      "sha256": "c1b3b919f3c7d4db61cb2dade05469549cae0c2e22be50f5bf0d473fc455c1ec"
+    },
+    {
+      "path": "fortran/equations.f90",
+      "sha256": "b70887cd1bef9d8bff4784abb70913ec06dc29ca02786196576ec89792071dc8"
+    },
+    {
+      "path": "fortran/halofit.f90",
+      "sha256": "78dab0862709a94346c5cb300ad790836b5144f1b2f803ae9c6599ee7f1a9257"
+    },
+    {
+      "path": "fortran/hyperspherical_bessels.f90",
+      "sha256": "0a6b8087f01a5f3983a9c973302d0b1ed8f65396ead78ad5421b7f4251d403d3"
+    },
+    {
+      "path": "fortran/hyperspherical_bessels_airy.f90",
+      "sha256": "a9694673f46670cb4e9d767827429279e8f6015a48b35ce96f0795c7195affac"
+    },
+    {
+      "path": "fortran/hyperspherical_bessels_olver.f90",
+      "sha256": "45fe4a5eec34740055635c2a875f6374c5f74d416fcfae3551b1990233386e05"
+    },
+    {
+      "path": "fortran/hyperspherical_bessels_smallnu.f90",
+      "sha256": "9ad9751a6fca17d5bdfcc641dfb57b63bf40b0783b4af4f4a60271f1f1c6e44d"
+    },
+    {
+      "path": "fortran/hyrec.f90",
+      "sha256": "c3fc2a1a8f5815b619b8d78f90b0146b8818c203050cc126972803158018a9d6"
+    },
+    {
+      "path": "fortran/inidriver.f90",
+      "sha256": "87c5042b3ca8c875263e592aae8af5013fde6fd9f3aa5c3fa8569d33c10b8676"
+    },
+    {
+      "path": "fortran/lensing.f90",
+      "sha256": "9b2bbb83c0cc40eee96496671a6bc46c57b4530cc9208ba90fd900d8735d7b4e"
+    },
+    {
+      "path": "fortran/massive_neutrinos.f90",
+      "sha256": "2e8ce7f2fdfaa2d1ea9ec530dfbb0f48d45cc0071ec819e30a23316192efb504"
+    },
+    {
+      "path": "fortran/model.f90",
+      "sha256": "f9642b09718a87f31f07aaeea207fd980dd78b4f31414790182b8a70c375acba"
+    },
+    {
+      "path": "fortran/recfast.f90",
+      "sha256": "d3919543a004688af4272b18b43be3f99d51a5523add4099e31dd4ac4ce654ae"
+    },
+    {
+      "path": "fortran/reionization.f90",
+      "sha256": "d841545e4e3977920a8693ee921928c92d28cd6fac8efde88582568e8e2f7653"
+    },
+    {
+      "path": "fortran/results.f90",
+      "sha256": "884a2942ee946b03982cc0be7e809f4acde62e7a69ce4906a94934ffc29abb33"
+    },
+    {
+      "path": "fortran/tester.f90",
+      "sha256": "c41cb6796b632521395f279112860a138931688e6da5f420742e104d9d69d975"
+    },
+    {
+      "path": "fortran/tests/bjl_recurrence_validation.f90",
+      "sha256": "cf503e2aa901c590805fff27e2843f32029cb364efc79b5f8a840e40bd9999cd"
+    },
+    {
+      "path": "fortran/tests/phi_olver_gate_validation.f90",
+      "sha256": "f84111901ddfb8f0cee35ca73d85aeb3b77af926bf38e92dc0fc6b20098585c3"
+    },
+    {
+      "path": "forutils/ArrayUtils.f90",
+      "sha256": "f29b6068b8910cd4b96d00ae442b837a718d1ced2294f4389a6285d5133a7540"
+    },
+    {
+      "path": "forutils/FileUtils.f90",
+      "sha256": "7b4347ba01396e6f5269971fa9eee8e0fccafc980bb70976197232d8e609317b"
+    },
+    {
+      "path": "forutils/IniObjects.f90",
+      "sha256": "522e88f292c74dae34de938d11d6c89be38f8e3a2a92d0e8bd85a0a624884ebe"
+    },
+    {
+      "path": "forutils/Interpolation.f90",
+      "sha256": "ef303a411139f4cc288669b6542e27a781497dd8727c1b40b4eab161020ff11d"
+    },
+    {
+      "path": "forutils/MatrixUtils.f90",
+      "sha256": "244458663fbb794a2ea09baa307954aa6d093505b4aec4ece4f4d5ea8f5e3501"
+    },
+    {
+      "path": "forutils/MiscUtils.f90",
+      "sha256": "e4976ecd38d77e92bb77b6f5af2c2dba779ae5806a843756c3c9e3b0818cdbe1"
+    },
+    {
+      "path": "forutils/MpiUtils.f90",
+      "sha256": "19034669c218c916157c3424688fc43e07e5101260eba9e2e5cb0dd05de0d1d9"
+    },
+    {
+      "path": "forutils/ObjectLists.f90",
+      "sha256": "eb63af7a8b79be084802cd531f9eecf7ff8b1af27e5883d67695119150c16fd3"
+    },
+    {
+      "path": "forutils/RandUtils.f90",
+      "sha256": "0a97717d897bc95750f05064057a940f770bd0a12be7d1cb49b51757fb39b620"
+    },
+    {
+      "path": "forutils/RangeUtils.f90",
+      "sha256": "f60c57f3cf61de39e8e2759ac6792575d6342e0506b8a3930ae536f3f32d7ea4"
+    },
+    {
+      "path": "forutils/StringUtils.f90",
+      "sha256": "bbffeb445220b657b09b6436f2fdaf09c43de82ff9f99c2077f80906241691f5"
+    },
+    {
+      "path": "forutils/tests/ObjectLists_tests.f90",
+      "sha256": "1078953620197d75d60e6ad11caf03d53b1fe7ffabe60bb1454a8f649f0d3286"
+    },
+    {
+      "path": "forutils/tests/array_tests.f90",
+      "sha256": "b22d3b40c502feea31075d7597c077a94d3df3eca57cc808bb3d5bf698785ae2"
+    },
+    {
+      "path": "forutils/tests/file_tests.f90",
+      "sha256": "fcd135f81e6bd2a9ce9d1d1bf3bc891eb48e32dd4d96642e8f99e29efd9c6439"
+    },
+    {
+      "path": "forutils/tests/inifile_tests.f90",
+      "sha256": "a2506daf786b33d474c3174b0491c24f260748e0d555a7ea9b31ba0fff4e50d3"
+    },
+    {
+      "path": "forutils/tests/interpolation_tests.f90",
+      "sha256": "3e30f27541fe17fa281ec7354e9d8a70f9240a62c7dacd7504507914dcb8427b"
+    },
+    {
+      "path": "forutils/tests/matrix_tests.f90",
+      "sha256": "828191ff0fa81dbca9cd104128f049b328986b243c6690facd501deaf87b2ed7"
+    },
+    {
+      "path": "forutils/tests/misc_tests.f90",
+      "sha256": "d2c46462b7a20acd08c118aed4068d6fc3c8d49570d089c27985b900ef1987e5"
+    },
+    {
+      "path": "forutils/tests/rand_tests.f90",
+      "sha256": "702cf00d1ad29c67f3fa968a1beaf24ef04cf6457d843d5ccf8efbe864bbb4a1"
+    },
+    {
+      "path": "forutils/tests/ranges_tests.f90",
+      "sha256": "ca5a349f9f2b61b9dafa9c7b1c050850a58acbd09ac7797c329acdc3063d3a3c"
+    },
+    {
+      "path": "forutils/tests/run_tests.f90",
+      "sha256": "f0fbd90c2563b7a636c22e0786b691dff131fd6bcf438ca59e66f053cd152321"
+    },
+    {
+      "path": "forutils/tests/string_tests.f90",
+      "sha256": "ab6269c829259c6b3550b7fd792cc3b3933404f28c3ec8efe2d630cf6d71764c"
+    }
+  ],
+  "compiler_debs": [
+    {
+      "path": "/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_native_debug_20261005/debs/gfortran-13-x86-64-linux-gnu_13.3.0-6ubuntu2~24.04.1_amd64.deb",
+      "bytes": 11408640,
+      "sha256": "82382cb8506616ef7df5b9927694bfaacf97bdfb317b1f995453cc17c96aa071"
+    },
+    {
+      "path": "/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_native_debug_20261005/debs/libgfortran-13-dev_13.3.0-6ubuntu2~24.04.1_amd64.deb",
+      "bytes": 928110,
+      "sha256": "ce0fdf0d9e7eadb33947ca7cdd0fc3477b570603cb721b108c96ebdfbb7cd80a"
+    }
+  ],
+  "compiler_installation_scope": "extracted in scratch only, no system installation or production native module change"
+}

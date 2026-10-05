@@ -1,0 +1,62 @@
+{
+  "quad_q50": {
+    "point": {
+      "omegabh2": 0.0222020335543916,
+      "omegach2": 0.11772862069101062,
+      "H0": 68.54868775438271,
+      "logA": 3.0341601688936954,
+      "ns": 0.9664391710998197,
+      "tau": 0.04852223927387122,
+      "mnu_sample": 0.02910542422698892,
+      "A_planck": 1.0038968574958045,
+      "TT_tSZ_Amp": 0.9960033361831536,
+      "TT_kSZ_Amp": 2.773372732700484
+    },
+    "native_chi2": {
+      "sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 1383.7297460859322,
+      "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 10.362793400314786,
+      "planck_2018_lowl.TT": 22.889160072997356,
+      "planck_2018_lowl.EE_sroll2": 392.035731363073,
+      "planck_2018_highl_plik.TT_lite_native": 68.14944311226805,
+      "planckpr4lensing.PlanckPR4Lensing": 9.135175990294119
+    },
+    "elapsed_seconds": 166.54695578338578,
+    "requested_spectrum_ell_max": {
+      "bb": 4095,
+      "pp": 2500,
+      "te": 4095,
+      "tt": 4095,
+      "ee": 4095
+    }
+  },
+  "quad_q50_mass_plus": {
+    "point": {
+      "omegabh2": 0.0222020335543916,
+      "omegach2": 0.11772862069101062,
+      "H0": 68.54868775438271,
+      "logA": 3.0341601688936954,
+      "ns": 0.9664391710998197,
+      "tau": 0.04852223927387122,
+      "mnu_sample": 0.03910542422698892,
+      "A_planck": 1.0038968574958045,
+      "TT_tSZ_Amp": 0.9960033361831536,
+      "TT_kSZ_Amp": 2.773372732700484
+    },
+    "native_chi2": {
+      "sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 1386.42293770932,
+      "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 10.34274019538237,
+      "planck_2018_lowl.TT": 22.894307750603616,
+      "planck_2018_lowl.EE_sroll2": 392.04058946298204,
+      "planck_2018_highl_plik.TT_lite_native": 68.20492420456105,
+      "planckpr4lensing.PlanckPR4Lensing": 9.47669745569597
+    },
+    "elapsed_seconds": 183.50665467698127,
+    "requested_spectrum_ell_max": {
+      "bb": 4095,
+      "pp": 2500,
+      "te": 4095,
+      "tt": 4095,
+      "ee": 4095
+    }
+  }
+}

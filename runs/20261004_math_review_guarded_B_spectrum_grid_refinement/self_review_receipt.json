@@ -1,0 +1,17 @@
+{
+  "utc": "2026-10-04T07:51:36.765273+00:00",
+  "reviewer": "distinct_self_review_no_independent_agent",
+  "scope": "two_fixed_B_coordinates_with_identical_physical_prior_and_medium_dynamics",
+  "judgment": "denser grids produce smaller nonmonotone response changes; no numerical convergence rate follows",
+  "independent_recomputation": "math.fsum of six native component differences agrees within 1e-12; only mass differs within each pair",
+  "anchor": "grid12 reused completed native outputs, not fresh evaluation",
+  "native_mass_responses": {
+    "grid12": 3.07979172796154,
+    "grid6": 3.082343483679008,
+    "grid3": 3.0801467536654794
+  },
+  "mass_response_changes_nonmonotone": true,
+  "accuracy_or_posterior_convergence_certified": false,
+  "paper_modified": false,
+  "next_obligation": "source-grounded dense-multipole endpoint comparison, with posterior-wide numerical accuracy unresolved"
+}

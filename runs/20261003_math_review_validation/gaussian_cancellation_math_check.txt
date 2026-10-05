@@ -1,0 +1,26 @@
+/tmp/neutrino-math-review-venv/bin/python -m pytest -q
+.......................................................                  [100%]
+55 passed in 4.53s
+cd lean/trunc_gauss_proof && lake build
+Build completed successfully (7891 jobs).
+cd lean/trunc_gauss_proof && lake env lean AuditAxioms.lean
+'TruncGaussProof.unnorm_antitoneOn_Ici' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TruncGaussProof.unnorm_le_at_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TruncGaussProof.mode_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TruncGaussProof.squared_distance_min' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TruncGaussProof.squared_distance_eq_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TruncGaussProof.unnorm_le_at_mode' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TruncGaussProof.unnorm_eq_at_mode_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TruncGaussProof.scaled_unnorm_unique_mode' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TruncGaussProof.combine_completed_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TruncGaussProof.combinedMean_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TruncGaussProof.combinedMean_nonpos_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TruncGaussProof.combinedMean_common_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TruncGaussProof.gaussianProduct_inverse_variance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TruncGaussProof.gaussianProduct_completed_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TruncGaussProof.gaussianProduct_unique_mode' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TruncGaussProof.unnorm_product_unique_mode' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TruncGaussProof.gaussianProduct_boundary_max_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TruncGaussProof.combinedMean_offset_gate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TruncGaussProof.directionalDelta_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TruncGaussProof.directionalDelta_sum' depends on axioms: [propext, Classical.choice, Quot.sound]

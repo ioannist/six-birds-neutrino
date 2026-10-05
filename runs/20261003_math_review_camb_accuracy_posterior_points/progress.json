@@ -1,0 +1,174 @@
+{
+  "baseline": {
+    "chain_A_q50": {
+      "point": {
+        "omegabh2": 0.022380831,
+        "omegach2": 0.11613063,
+        "H0": 68.833314,
+        "logA": 3.002559,
+        "ns": 1.0422959,
+        "tau": 0.059028326,
+        "mnu": 0.037940042
+      },
+      "native_chi2": {
+        "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 10.600851478460132,
+        "lensA": 2564.11988511143,
+        "lensB": 1766.617486565632
+      },
+      "spectrum_ell_max": {
+        "tt": 4095,
+        "ee": 4095
+      },
+      "elapsed_seconds": 25.597468092106283
+    },
+    "chain_A_q95": {
+      "point": {
+        "omegabh2": 0.022914148,
+        "omegach2": 0.11373228,
+        "H0": 69.145672,
+        "logA": 3.013492,
+        "ns": 1.0416751,
+        "tau": 0.066867289,
+        "mnu": 0.150591
+      },
+      "native_chi2": {
+        "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 11.976729315378183,
+        "lensA": 2572.48085109068,
+        "lensB": 1860.8138405336542
+      },
+      "spectrum_ell_max": {
+        "tt": 4095,
+        "ee": 4095
+      },
+      "elapsed_seconds": 21.869806500151753
+    },
+    "chain_B_q50": {
+      "point": {
+        "omegabh2": 0.022303374,
+        "omegach2": 0.11846226,
+        "H0": 68.23165,
+        "logA": 3.02083,
+        "ns": 0.95460588,
+        "tau": 0.036473147,
+        "mnu": 0.034125622
+      },
+      "native_chi2": {
+        "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 12.67672859850955,
+        "lensA": 2651.9853945507157,
+        "lensB": 1386.1274619168437
+      },
+      "spectrum_ell_max": {
+        "tt": 4095,
+        "ee": 4095
+      },
+      "elapsed_seconds": 23.965234817937016
+    },
+    "chain_B_q95": {
+      "point": {
+        "omegabh2": 0.021988451,
+        "omegach2": 0.11690637,
+        "H0": 67.833066,
+        "logA": 3.067757,
+        "ns": 0.97536411,
+        "tau": 0.068081432,
+        "mnu": 0.12229679
+      },
+      "native_chi2": {
+        "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 12.477988877630223,
+        "lensA": 2644.178661374076,
+        "lensB": 1390.921970654411
+      },
+      "spectrum_ell_max": {
+        "tt": 4095,
+        "ee": 4095
+      },
+      "elapsed_seconds": 22.31599896494299
+    }
+  },
+  "selected_reference_settings": {
+    "chain_A_q50": {
+      "point": {
+        "omegabh2": 0.022380831,
+        "omegach2": 0.11613063,
+        "H0": 68.833314,
+        "logA": 3.002559,
+        "ns": 1.0422959,
+        "tau": 0.059028326,
+        "mnu": 0.037940042
+      },
+      "native_chi2": {
+        "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 10.600851478460132,
+        "lensA": 2564.3332016241325,
+        "lensB": 1764.1410308425188
+      },
+      "spectrum_ell_max": {
+        "tt": 4095,
+        "ee": 4095
+      },
+      "elapsed_seconds": 102.60698174312711
+    },
+    "chain_A_q95": {
+      "point": {
+        "omegabh2": 0.022914148,
+        "omegach2": 0.11373228,
+        "H0": 69.145672,
+        "logA": 3.013492,
+        "ns": 1.0416751,
+        "tau": 0.066867289,
+        "mnu": 0.150591
+      },
+      "native_chi2": {
+        "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 11.976729315378183,
+        "lensA": 2572.699031214848,
+        "lensB": 1858.1503812995043
+      },
+      "spectrum_ell_max": {
+        "tt": 4095,
+        "ee": 4095
+      },
+      "elapsed_seconds": 95.66276065027341
+    },
+    "chain_B_q50": {
+      "point": {
+        "omegabh2": 0.022303374,
+        "omegach2": 0.11846226,
+        "H0": 68.23165,
+        "logA": 3.02083,
+        "ns": 0.95460588,
+        "tau": 0.036473147,
+        "mnu": 0.034125622
+      },
+      "native_chi2": {
+        "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 12.67672859850955,
+        "lensA": 2652.4522200688193,
+        "lensB": 1386.1559107369883
+      },
+      "spectrum_ell_max": {
+        "tt": 4095,
+        "ee": 4095
+      },
+      "elapsed_seconds": 99.74516094196588
+    },
+    "chain_B_q95": {
+      "point": {
+        "omegabh2": 0.021988451,
+        "omegach2": 0.11690637,
+        "H0": 67.833066,
+        "logA": 3.067757,
+        "ns": 0.97536411,
+        "tau": 0.068081432,
+        "mnu": 0.12229679
+      },
+      "native_chi2": {
+        "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 12.477988877630223,
+        "lensA": 2644.634215062256,
+        "lensB": 1390.8180729859607
+      },
+      "spectrum_ell_max": {
+        "tt": 4095,
+        "ee": 4095
+      },
+      "elapsed_seconds": 94.99491340527311
+    }
+  }
+}

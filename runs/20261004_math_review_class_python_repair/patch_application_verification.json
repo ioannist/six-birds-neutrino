@@ -1,0 +1,16 @@
+{
+  "patch_applies_without_fuzz": true,
+  "patched_source_hash_matches": true,
+  "original_installed_source_unchanged": true,
+  "command": [
+    "patch",
+    "--batch",
+    "--fuzz=0",
+    "-p1",
+    "-i",
+    "/home/repos/six-birds-neutrino/patches/class-3.4.0-finite-jacobian.patch"
+  ],
+  "stdout": "patching file tools/evolver_ndf15.c\n",
+  "stderr": "",
+  "exit_code": 0
+}

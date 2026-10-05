@@ -1,0 +1,58 @@
+{
+  "utc": "2026-10-04T07:25:46.219195+00:00",
+  "scope": "two_B_factor_jobs_launched_same_pinned_backend",
+  "jobs": [
+    {
+      "variant": "grid_only",
+      "session": 76865,
+      "pid": 578865,
+      "process_start_ticks": 336825028,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_guarded_precision_factor_controls_B/runner.py grid_only ",
+      "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+      "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+      "status": "live_owned_process"
+    },
+    {
+      "variant": "dynamics_only",
+      "session": 94304,
+      "pid": 578901,
+      "process_start_ticks": 336825029,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_guarded_precision_factor_controls_B/runner.py dynamics_only ",
+      "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+      "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+      "status": "live_owned_process"
+    }
+  ],
+  "completed_medium_fine_anchors_reused_not_new_evaluations": true,
+  "uniform_accuracy_or_convergence_certified": false,
+  "files": [
+    {
+      "path": "runs/20261004_math_review_guarded_precision_factor_controls_B/prepare.py",
+      "sha256": "ee99d0549b77dbc68ad029ed12d62a5e0f9ddcfeda4bace52571b2fc9f6727e4"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_precision_factor_controls_B/runner.py",
+      "sha256": "1fde79bf3e741b231f79d4acb32af3a61e1e69c50dcad318f83a4bf98d835cb9"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_precision_factor_controls_B/selection_receipt.json",
+      "sha256": "eb35e4009d317d8b6c2e0f592aed97a6d340cd6b9903d33930324d37297776b9"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_precision_factor_controls_B/grid_only/input.yaml",
+      "sha256": "14e44f14a2188401c07f21d46015f869c68a482c2d7a8619e4c4aff4f4295776"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_precision_factor_controls_B/grid_only/points.json",
+      "sha256": "5c706baad7bb8a1e0d30a789e2de8c4bbeb74f7f6a45867a3bc99695e0fedacc"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_precision_factor_controls_B/dynamics_only/input.yaml",
+      "sha256": "85d45bdb4c57ca34e2e83f3cf6130ecccfcf0f828878e68d6c889388bbb88650"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_precision_factor_controls_B/dynamics_only/points.json",
+      "sha256": "5c706baad7bb8a1e0d30a789e2de8c4bbeb74f7f6a45867a3bc99695e0fedacc"
+    }
+  ]
+}

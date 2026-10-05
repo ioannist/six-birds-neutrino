@@ -1,0 +1,47 @@
+{
+  "target": [
+    "1/2",
+    "1/2"
+  ],
+  "slow_kernel": [
+    [
+      "3/4",
+      "1/4"
+    ],
+    [
+      "1/4",
+      "3/4"
+    ]
+  ],
+  "fast_kernel": [
+    [
+      "1/4",
+      "3/4"
+    ],
+    [
+      "3/4",
+      "1/4"
+    ]
+  ],
+  "each_kernel_target_reversible_irreducible_aperiodic": true,
+  "selection": "fast if current state is 0; slow if current state is 1",
+  "selected_transition": [
+    [
+      "1/4",
+      "3/4"
+    ],
+    [
+      "1/4",
+      "3/4"
+    ]
+  ],
+  "unique_stationary_distribution": [
+    "1/4",
+    "3/4"
+  ],
+  "distribution_after_one_step_from_any_initial_distribution": [
+    "1/4",
+    "3/4"
+  ],
+  "scope": "refutes arbitrary state-dependent adaptation inference; no claim of this behavior in Cobaya"
+}

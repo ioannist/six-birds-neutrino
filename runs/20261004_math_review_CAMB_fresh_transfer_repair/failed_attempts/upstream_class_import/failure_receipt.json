@@ -1,0 +1,9 @@
+{
+  "utc": "2026-10-04T14:39:56.208693+00:00",
+  "session": 59277,
+  "exit_code": 2,
+  "stage": "pytest_collection_before_native_adapter_evaluation",
+  "reason": "ImportError: upstream class is CAMB, not camb",
+  "failed_command": "PYTHONPATH=src /tmp/neutrino-math-review-venv/bin/python -m pytest -q tests/test_fresh_camb_transfers.py tests/test_native_backend_launch.py tests/test_cosmological_audit.py",
+  "independent_native_spectrum_controls_modified": false
+}

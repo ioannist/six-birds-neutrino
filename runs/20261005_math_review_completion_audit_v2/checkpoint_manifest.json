@@ -1,0 +1,259 @@
+{
+  "utc": "2026-10-05T09:11:59.422229+00:00",
+  "scope": "Final toy rewrite numerical repairs, preserved initial failures,245-test evidence, closing mathematical statement/source audit, and evidence-led review completion. Original manuscript and canonical data remain unchanged.",
+  "files": [
+    {
+      "path": "runs/20261005_math_review_completion_audit/audit_completion.py",
+      "sha256": "e123a441577b3c5718f53f6add4b68088036bdfdb31930c27d97ff06de4aa1d7",
+      "bytes": 11860
+    },
+    {
+      "path": "runs/20261005_math_review_completion_audit/completion_audit.json",
+      "sha256": "ec6ad809c1a619b6d61f8175055a25fcdc43d4fc8ab50780035036037d1d327b",
+      "bytes": 5710
+    },
+    {
+      "path": "runs/20261005_math_review_completion_audit/execution_receipt.json",
+      "sha256": "e8a8ef01c78e97222bf1cac143dafc6123ca51a48f60a31f608618c5e2000a6e",
+      "bytes": 569
+    },
+    {
+      "path": "runs/20261005_math_review_completion_audit/final_terminal_self_review.json",
+      "sha256": "257f4f62813569fbde0b7d8cd6f6dc7603fbe856f9b59f7b9d9e7fe79d3f1c11",
+      "bytes": 682
+    },
+    {
+      "path": "runs/20261005_math_review_completion_audit/source_inventory.json",
+      "sha256": "1250ffcb77cf7391c510b0e1c34ff49641933448ffe5f7c7892f3a42eea94c63",
+      "bytes": 19040
+    },
+    {
+      "path": "runs/20261005_math_review_completion_audit/statement_inventory.json",
+      "sha256": "f56bd6b65aeebf2f9c05d90c8799ed3c56b8bdeceaffe0cde7e7de6d86255c99",
+      "bytes": 6615
+    },
+    {
+      "path": "runs/20261005_math_review_completion_audit_v2/audit_completion.py",
+      "sha256": "8fbcbae9d1c2836f5c4f322a7fa0facb81f729c1a102b3935dd3ca95964dc461",
+      "bytes": 11875
+    },
+    {
+      "path": "runs/20261005_math_review_completion_audit_v2/completion_audit.json",
+      "sha256": "0fa5ae4a9cf22f1726638d72ed7d6753f4ba9f9be0146f150894379d3988e34a",
+      "bytes": 5710
+    },
+    {
+      "path": "runs/20261005_math_review_completion_audit_v2/execution_receipt.json",
+      "sha256": "6c3428ac6b8a7a44faef7c43b9f8c6ca6be186177494d2f41c221dad3a911d66",
+      "bytes": 528
+    },
+    {
+      "path": "runs/20261005_math_review_completion_audit_v2/final_self_review.py",
+      "sha256": "45faefeb69b20181e1667c3d1f6f66b8d0a2a4213404dfdbd16d767b8f9a43f1",
+      "bytes": 3567
+    },
+    {
+      "path": "runs/20261005_math_review_completion_audit_v2/final_self_review_execution.json",
+      "sha256": "2d69a9c6a5273e8ed0184ca2d3f3c23b1ac342452394504fd356010de18f1ba3",
+      "bytes": 158
+    },
+    {
+      "path": "runs/20261005_math_review_completion_audit_v2/final_self_review_receipt.json",
+      "sha256": "341f55ee96fccd36a54253012182cbf4f442060530e8bbf378e4619e7f599e9f",
+      "bytes": 709
+    },
+    {
+      "path": "runs/20261005_math_review_completion_audit_v2/preparation_receipt.json",
+      "sha256": "00e8a6feb9bff344b07530e18b255169023c8fef722699ed8cca52364b87cf4c",
+      "bytes": 889
+    },
+    {
+      "path": "runs/20261005_math_review_completion_audit_v2/source_inventory.json",
+      "sha256": "23392b2e275639151841b3c97d025ca686003919898207cb65c99dce2252ff30",
+      "bytes": 19040
+    },
+    {
+      "path": "runs/20261005_math_review_completion_audit_v2/statement_inventory.json",
+      "sha256": "f56bd6b65aeebf2f9c05d90c8799ed3c56b8bdeceaffe0cde7e7de6d86255c99",
+      "bytes": 6615
+    },
+    {
+      "path": "runs/20261005_math_review_template_rewrite_repair/before_failure_receipt.json",
+      "sha256": "62d269305cdcfc75b4c88b91e674aaa409fecaf88c842cfda506207a08cff1e0",
+      "bytes": 855
+    },
+    {
+      "path": "runs/20261005_math_review_template_rewrite_repair/before_run_template_rewrite.py",
+      "sha256": "51f97db27a2924dce1f198eefd377b1090d6cda5f73dd55c1647b843c8663c8f",
+      "bytes": 13890
+    },
+    {
+      "path": "runs/20261005_math_review_template_rewrite_repair/cli_controls_receipt.json",
+      "sha256": "0290714f5f5d0d924f3f67ceda5d58727a276bec23529a70bc5ac28cc240aea1",
+      "bytes": 2408
+    },
+    {
+      "path": "runs/20261005_math_review_template_rewrite_repair/cli_dominant_whitened/env.txt",
+      "sha256": "6e53770a58ac437285f8f6c75cfa446fcac4c8916dd142c39ec375ecd725d20d",
+      "bytes": 449
+    },
+    {
+      "path": "runs/20261005_math_review_template_rewrite_repair/cli_dominant_whitened/figures/template_rewrite_before_after.png",
+      "sha256": "a7972c59bf226822a0235fa4e3d7f6fbacfd09cd8ae698189c84197dfc088cdf",
+      "bytes": 33564
+    },
+    {
+      "path": "runs/20261005_math_review_template_rewrite_repair/cli_dominant_whitened/inputs.yaml",
+      "sha256": "d5f3c136aa8ae5265ffe622902b187c95f463c2b2722adc303caf0240988a6c3",
+      "bytes": 262
+    },
+    {
+      "path": "runs/20261005_math_review_template_rewrite_repair/cli_dominant_whitened/metrics.json",
+      "sha256": "992da0848ceaa0166c4408f8a10255f911d2e667d1b28bf8dd390b75533cc5ea",
+      "bytes": 814
+    },
+    {
+      "path": "runs/20261005_math_review_template_rewrite_repair/cli_dominant_whitened/summary.md",
+      "sha256": "b3c24a1872513b2793870ecc10ae29cbf3719ae61a184614d8d0b013a27a9bae",
+      "bytes": 1081
+    },
+    {
+      "path": "runs/20261005_math_review_template_rewrite_repair/cli_full_residual/env.txt",
+      "sha256": "6e53770a58ac437285f8f6c75cfa446fcac4c8916dd142c39ec375ecd725d20d",
+      "bytes": 449
+    },
+    {
+      "path": "runs/20261005_math_review_template_rewrite_repair/cli_full_residual/figures/template_rewrite_before_after.png",
+      "sha256": "dbb6caf2e11b26e6d007e3bea1810415d76dbf82b2e72ce35166417484b8a47a",
+      "bytes": 33182
+    },
+    {
+      "path": "runs/20261005_math_review_template_rewrite_repair/cli_full_residual/inputs.yaml",
+      "sha256": "42ef0e71bb102ad1aa5858b1659a056acb7c2c12b08d89fde23575671b6b2da8",
+      "bytes": 258
+    },
+    {
+      "path": "runs/20261005_math_review_template_rewrite_repair/cli_full_residual/metrics.json",
+      "sha256": "a0a192d013d7c444617f904e2dd93751dda9efe9f7d2dc3b3cf2d090b0254de8",
+      "bytes": 887
+    },
+    {
+      "path": "runs/20261005_math_review_template_rewrite_repair/cli_full_residual/summary.md",
+      "sha256": "890b8da4df3885ef8e288908cac01da2e24068b5e2b898cd4a9d2fabab837678",
+      "bytes": 1154
+    },
+    {
+      "path": "runs/20261005_math_review_template_rewrite_repair/dominant_whitened_completion.json",
+      "sha256": "70eead56bc11c866da02783b36f13f40e7249547d075db8b68f855aaf42a2574",
+      "bytes": 599
+    },
+    {
+      "path": "runs/20261005_math_review_template_rewrite_repair/dominant_whitened_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "runs/20261005_math_review_template_rewrite_repair/dominant_whitened_stdout.txt",
+      "sha256": "c4e2105bbfcdabf877a1379d91ee98d404a1e104e1dad1e0efd8267a6acd0d1d",
+      "bytes": 314
+    },
+    {
+      "path": "runs/20261005_math_review_template_rewrite_repair/execution_receipt.json",
+      "sha256": "263df81a30adde0e4bad2f9d723b6272e20e4874d6a3ab146703821d14847c7c",
+      "bytes": 928
+    },
+    {
+      "path": "runs/20261005_math_review_template_rewrite_repair/final_execution_receipt.json",
+      "sha256": "df6d1ba21dc84cc5828face90f6d57ed9000df1f8f06ae9d7f07d56d5331f8bc",
+      "bytes": 995
+    },
+    {
+      "path": "runs/20261005_math_review_template_rewrite_repair/final_python_tests_stdout.txt",
+      "sha256": "8b9d33602e835dad448033903cf94d9aa050cc2858bc6df42c5de212fc0ff3f3",
+      "bytes": 340
+    },
+    {
+      "path": "runs/20261005_math_review_template_rewrite_repair/final_self_review_preparation.json",
+      "sha256": "bd866e5536f2b2618fba0adbfce9a4aa2419a45fd8518e21614e04ce70e4824a",
+      "bytes": 429
+    },
+    {
+      "path": "runs/20261005_math_review_template_rewrite_repair/final_self_review_receipt.json",
+      "sha256": "47616ed4e0a6f95147bfe5df90f1d8ef131038cb3002eb39d9166488bef766f2",
+      "bytes": 33209
+    },
+    {
+      "path": "runs/20261005_math_review_template_rewrite_repair/full_residual_completion.json",
+      "sha256": "54e6882a8122964735dce21c52509c59804d5e78eb6ccf26d4fb9ce2b962bc86",
+      "bytes": 587
+    },
+    {
+      "path": "runs/20261005_math_review_template_rewrite_repair/full_residual_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "runs/20261005_math_review_template_rewrite_repair/full_residual_stdout.txt",
+      "sha256": "8884871c05524d8dd1f3d30f3a6d3db35b46d7de4f7002d5614c1810e795b14b",
+      "bytes": 438
+    },
+    {
+      "path": "runs/20261005_math_review_template_rewrite_repair/python_tests_stdout.txt",
+      "sha256": "f3d902c2a1ccd50f46282ef4d5ffc934a3bb19ce57e06a3bdc5f68608957e0cf",
+      "bytes": 340
+    },
+    {
+      "path": "runs/20261005_math_review_template_rewrite_repair/run_cli_controls.py",
+      "sha256": "6ff159cc345961d43fafef8d8c6eed07944baba5633b785f2ad27f727202e772",
+      "bytes": 2570
+    },
+    {
+      "path": "runs/20261005_math_review_template_rewrite_repair/self_review.py",
+      "sha256": "ef7a1065c735e3ec2bb13fb1ca9e9d6720259cc01766b0191fd0ef2f99cab738",
+      "bytes": 6329
+    },
+    {
+      "path": "runs/20261005_math_review_template_rewrite_repair/self_review_final.py",
+      "sha256": "d271fc5db7c44e1f4889daa36b69c3aab30fb72aff1ff077f849d0caa54c6394",
+      "bytes": 6384
+    },
+    {
+      "path": "runs/20261005_math_review_template_rewrite_repair/self_review_preparation_repair.json",
+      "sha256": "f73c836574c2ba754f1659953efdf46671e902f6f806fd1709da65b8489b9579",
+      "bytes": 540
+    },
+    {
+      "path": "runs/20261005_math_review_template_rewrite_repair/self_review_receipt.json",
+      "sha256": "adf114c4a8becaba9a73edd340aaadc8126cdc63658308a3f2cdda1974a2b3f3",
+      "bytes": 33209
+    },
+    {
+      "path": "runs/20261005_math_review_template_rewrite_repair/self_review_v2.py",
+      "sha256": "e08a8fea58aee024a310abd3b3fdf7ed350dcd55253ff114a93152004cc57f18",
+      "bytes": 6378
+    },
+    {
+      "path": "scripts/run_template_rewrite.py",
+      "sha256": "f194983dc67f3dc0c34e26c963cf48a2270526c80e10f2a87c0075a03a5fe3e1",
+      "bytes": 17403
+    },
+    {
+      "path": "tests/test_template_rewrite_numerics.py",
+      "sha256": "ba600d88684de2c814028b301b11a7bae99adcee5ab819ccbfd5b60ac38003e8",
+      "bytes": 4933
+    },
+    {
+      "path": "docs/findings/math_review.md",
+      "sha256": "99862f3b57720ebcdabf0ca752306013b97b479d669ddf3f553be1fb09030d19",
+      "bytes": 356407
+    },
+    {
+      "path": "runs/20261003_math_review_validation/review_state.json",
+      "sha256": "6f6b7d1d0a7be1427f3de2e61ef4687d60fb238ac0ac964df00a8b171a68400a",
+      "bytes": 615021
+    }
+  ],
+  "no_live_inference_trees_or_python_caches_staged": true,
+  "paper_and_canonical_unchanged_from": "ffdaf4b",
+  "Lean_sources_unchanged_from": "752e8ab"
+}

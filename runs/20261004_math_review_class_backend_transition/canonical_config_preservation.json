@@ -1,0 +1,34 @@
+[
+  {
+    "config": "configs/neutrino/cmb_spt2018_plancksubset_desi_mnu.yaml",
+    "only_yaml_change": "notes.classy_backend",
+    "contract": {
+      "build_receipt": "runs/20261004_math_review_class_python_repair/build_verification_receipt.json",
+      "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539"
+    }
+  },
+  {
+    "config": "configs/neutrino/cmb_sptd1_plancksubset_desi_mnu.yaml",
+    "only_yaml_change": "notes.classy_backend",
+    "contract": {
+      "build_receipt": "runs/20261004_math_review_class_python_repair/build_verification_receipt.json",
+      "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539"
+    }
+  },
+  {
+    "config": "configs/neutrino/cmb_baseline_spt2018_plancksubset_mnu.yaml",
+    "only_yaml_change": "notes.classy_backend",
+    "contract": {
+      "build_receipt": "runs/20261004_math_review_class_python_repair/build_verification_receipt.json",
+      "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539"
+    }
+  },
+  {
+    "config": "configs/neutrino/cmb_baseline_sptd1_plancksubset_mnu.yaml",
+    "only_yaml_change": "notes.classy_backend",
+    "contract": {
+      "build_receipt": "runs/20261004_math_review_class_python_repair/build_verification_receipt.json",
+      "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539"
+    }
+  }
+]

@@ -1,0 +1,140 @@
+{
+  "utc": "2026-10-04T06:00:58.779519+00:00",
+  "subnormal_cases": [
+    {
+      "subnormal_units": 1,
+      "variance": 5e-324,
+      "before": {
+        "error": "covariance must be positive definite."
+      },
+      "after": 1.0,
+      "native_Cholesky_solve": 1.0,
+      "allocation": 5e-324
+    },
+    {
+      "subnormal_units": 3,
+      "variance": 1.5e-323,
+      "before": {
+        "value": 0.75
+      },
+      "after": 1.0000000000000002,
+      "native_Cholesky_solve": 1.0000000000000002,
+      "allocation": 1.5e-323
+    },
+    {
+      "subnormal_units": 17,
+      "variance": 8.4e-323,
+      "before": {
+        "value": 1.0625
+      },
+      "after": 1.0,
+      "native_Cholesky_solve": 1.0,
+      "allocation": 8.4e-323
+    }
+  ],
+  "ordinary_controls": [
+    {
+      "dimension": 2,
+      "roundoff_asymmetry": false,
+      "solve_and_allocations_bit_identical": true
+    },
+    {
+      "dimension": 2,
+      "roundoff_asymmetry": true,
+      "solve_and_allocations_bit_identical": true
+    },
+    {
+      "dimension": 3,
+      "roundoff_asymmetry": false,
+      "solve_and_allocations_bit_identical": true
+    },
+    {
+      "dimension": 3,
+      "roundoff_asymmetry": true,
+      "solve_and_allocations_bit_identical": true
+    },
+    {
+      "dimension": 4,
+      "roundoff_asymmetry": false,
+      "solve_and_allocations_bit_identical": true
+    },
+    {
+      "dimension": 4,
+      "roundoff_asymmetry": true,
+      "solve_and_allocations_bit_identical": true
+    },
+    {
+      "dimension": 5,
+      "roundoff_asymmetry": false,
+      "solve_and_allocations_bit_identical": true
+    },
+    {
+      "dimension": 5,
+      "roundoff_asymmetry": true,
+      "solve_and_allocations_bit_identical": true
+    },
+    {
+      "dimension": 6,
+      "roundoff_asymmetry": false,
+      "solve_and_allocations_bit_identical": true
+    },
+    {
+      "dimension": 6,
+      "roundoff_asymmetry": true,
+      "solve_and_allocations_bit_identical": true
+    },
+    {
+      "dimension": 7,
+      "roundoff_asymmetry": false,
+      "solve_and_allocations_bit_identical": true
+    },
+    {
+      "dimension": 7,
+      "roundoff_asymmetry": true,
+      "solve_and_allocations_bit_identical": true
+    },
+    {
+      "dimension": 8,
+      "roundoff_asymmetry": false,
+      "solve_and_allocations_bit_identical": true
+    },
+    {
+      "dimension": 8,
+      "roundoff_asymmetry": true,
+      "solve_and_allocations_bit_identical": true
+    },
+    {
+      "dimension": 9,
+      "roundoff_asymmetry": false,
+      "solve_and_allocations_bit_identical": true
+    },
+    {
+      "dimension": 9,
+      "roundoff_asymmetry": true,
+      "solve_and_allocations_bit_identical": true
+    },
+    {
+      "dimension": 10,
+      "roundoff_asymmetry": false,
+      "solve_and_allocations_bit_identical": true
+    },
+    {
+      "dimension": 10,
+      "roundoff_asymmetry": true,
+      "solve_and_allocations_bit_identical": true
+    },
+    {
+      "dimension": 11,
+      "roundoff_asymmetry": false,
+      "solve_and_allocations_bit_identical": true
+    },
+    {
+      "dimension": 11,
+      "roundoff_asymmetry": true,
+      "solve_and_allocations_bit_identical": true
+    }
+  ],
+  "scope": "selected representable Cholesky solves and exact-symmetric projection repair",
+  "input_matrix_mutated": false,
+  "uniform_float_error_certificate": false
+}

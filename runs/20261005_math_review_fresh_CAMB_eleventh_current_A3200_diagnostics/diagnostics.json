@@ -1,0 +1,330 @@
+{
+  "runs": [
+    "/home/repos/six-birds-neutrino/runs/20261005_math_review_fresh_CAMB_eleventh_current_A3200_diagnostics/seed1901",
+    "/home/repos/six-birds-neutrino/runs/20261005_math_review_fresh_CAMB_eleventh_current_A3200_diagnostics/seed1902",
+    "/home/repos/six-birds-neutrino/runs/20261005_math_review_fresh_CAMB_eleventh_current_A3200_diagnostics/seed1903",
+    "/home/repos/six-birds-neutrino/runs/20261005_math_review_fresh_CAMB_eleventh_current_A3200_diagnostics/seed1904"
+  ],
+  "prefixes": [
+    "/home/repos/six-birds-neutrino/runs/20261005_math_review_fresh_CAMB_eleventh_current_A3200_diagnostics/seed1901/chains/fresh_CAMB_current_A3200_seed1901",
+    "/home/repos/six-birds-neutrino/runs/20261005_math_review_fresh_CAMB_eleventh_current_A3200_diagnostics/seed1902/chains/fresh_CAMB_current_A3200_seed1902",
+    "/home/repos/six-birds-neutrino/runs/20261005_math_review_fresh_CAMB_eleventh_current_A3200_diagnostics/seed1903/chains/fresh_CAMB_current_A3200_seed1903",
+    "/home/repos/six-birds-neutrino/runs/20261005_math_review_fresh_CAMB_eleventh_current_A3200_diagnostics/seed1904/chains/fresh_CAMB_current_A3200_seed1904"
+  ],
+  "seeds": [
+    1901,
+    1902,
+    1903,
+    1904
+  ],
+  "burnin_fraction_of_stored_rows": 0.2,
+  "diagnostics": {
+    "omegabh2": {
+      "method": "ArviZ_rank_folded_split_rhat_bulk_tail_quantile_ESS_and_MCSE",
+      "arviz_version": "1.3.0",
+      "n_chains": 4,
+      "draws_per_chain": 8049,
+      "dropped_prefix_draws_per_chain": [
+        74,
+        56,
+        295,
+        0
+      ],
+      "quantile_probability": 0.95,
+      "quantile_full_draws": 0.023177493848323925,
+      "quantile_retained_draws": 0.02317911833319623,
+      "quantile_half_difference": 3.693298424713512e-05,
+      "quantile_mcse_limit": 1.418491720788008e-05,
+      "quantile_mcse_scope": "population_quantile_estimated_from_equal_length_last_draws",
+      "rank_folded_split_rhat": 1.0048999747859249,
+      "bulk_ess": 863.8586217832191,
+      "tail_ess_05_95": 1368.1463883368478,
+      "quantile_ess": 1480.5522277598598,
+      "quantile_mcse": 1.6893689223709818e-05,
+      "diagnostic_thresholds_pass": false,
+      "mathematical_convergence_certificate": false,
+      "warnings": [
+        "Quantile MCSE exceeds the declared precision target."
+      ],
+      "precision_target_scope": "fraction_of_empirical_posterior_standard_deviation"
+    },
+    "omegach2": {
+      "method": "ArviZ_rank_folded_split_rhat_bulk_tail_quantile_ESS_and_MCSE",
+      "arviz_version": "1.3.0",
+      "n_chains": 4,
+      "draws_per_chain": 8049,
+      "dropped_prefix_draws_per_chain": [
+        74,
+        56,
+        295,
+        0
+      ],
+      "quantile_probability": 0.95,
+      "quantile_full_draws": 0.11789740150124713,
+      "quantile_retained_draws": 0.11789503364395794,
+      "quantile_half_difference": 0.00017208514405096798,
+      "quantile_mcse_limit": 5.279900420545815e-05,
+      "quantile_mcse_scope": "population_quantile_estimated_from_equal_length_last_draws",
+      "rank_folded_split_rhat": 1.0059695845176766,
+      "bulk_ess": 821.8464588756345,
+      "tail_ess_05_95": 1322.7434320866964,
+      "quantile_ess": 1411.2921441539231,
+      "quantile_mcse": 6.241524843854374e-05,
+      "diagnostic_thresholds_pass": false,
+      "mathematical_convergence_certificate": false,
+      "warnings": [
+        "Quantile MCSE exceeds the declared precision target."
+      ],
+      "precision_target_scope": "fraction_of_empirical_posterior_standard_deviation"
+    },
+    "H0": {
+      "method": "ArviZ_rank_folded_split_rhat_bulk_tail_quantile_ESS_and_MCSE",
+      "arviz_version": "1.3.0",
+      "n_chains": 4,
+      "draws_per_chain": 8049,
+      "dropped_prefix_draws_per_chain": [
+        74,
+        56,
+        295,
+        0
+      ],
+      "quantile_probability": 0.95,
+      "quantile_full_draws": 69.34555486154575,
+      "quantile_retained_draws": 69.34615674871782,
+      "quantile_half_difference": 0.03832694156247385,
+      "quantile_mcse_limit": 0.018456751190857275,
+      "quantile_mcse_scope": "population_quantile_estimated_from_equal_length_last_draws",
+      "rank_folded_split_rhat": 1.0043072855950828,
+      "bulk_ess": 937.3421886138478,
+      "tail_ess_05_95": 1007.1400224832907,
+      "quantile_ess": 1007.1400224832907,
+      "quantile_mcse": 0.02902045704402667,
+      "diagnostic_thresholds_pass": false,
+      "mathematical_convergence_certificate": false,
+      "warnings": [
+        "Quantile MCSE exceeds the declared precision target."
+      ],
+      "precision_target_scope": "fraction_of_empirical_posterior_standard_deviation"
+    },
+    "logA": {
+      "method": "ArviZ_rank_folded_split_rhat_bulk_tail_quantile_ESS_and_MCSE",
+      "arviz_version": "1.3.0",
+      "n_chains": 4,
+      "draws_per_chain": 8049,
+      "dropped_prefix_draws_per_chain": [
+        74,
+        56,
+        295,
+        0
+      ],
+      "quantile_probability": 0.95,
+      "quantile_full_draws": 3.0394716406267515,
+      "quantile_retained_draws": 3.0394472109618142,
+      "quantile_half_difference": 0.0005585143598683118,
+      "quantile_mcse_limit": 0.0008543572919373085,
+      "quantile_mcse_scope": "population_quantile_estimated_from_equal_length_last_draws",
+      "rank_folded_split_rhat": 1.0023148550310654,
+      "bulk_ess": 903.502495114299,
+      "tail_ess_05_95": 1769.014614492939,
+      "quantile_ess": 1908.3233930495235,
+      "quantile_mcse": 0.0007298083576132708,
+      "diagnostic_thresholds_pass": true,
+      "mathematical_convergence_certificate": false,
+      "warnings": [],
+      "precision_target_scope": "fraction_of_empirical_posterior_standard_deviation"
+    },
+    "ns": {
+      "method": "ArviZ_rank_folded_split_rhat_bulk_tail_quantile_ESS_and_MCSE",
+      "arviz_version": "1.3.0",
+      "n_chains": 4,
+      "draws_per_chain": 8049,
+      "dropped_prefix_draws_per_chain": [
+        74,
+        56,
+        295,
+        0
+      ],
+      "quantile_probability": 0.95,
+      "quantile_full_draws": 1.0521770056887898,
+      "quantile_retained_draws": 1.052226930346763,
+      "quantile_half_difference": 0.0021254948709790167,
+      "quantile_mcse_limit": 0.0006660722378169391,
+      "quantile_mcse_scope": "population_quantile_estimated_from_equal_length_last_draws",
+      "rank_folded_split_rhat": 1.0026360115098838,
+      "bulk_ess": 1099.0032172604065,
+      "tail_ess_05_95": 1622.6527911537185,
+      "quantile_ess": 1625.1553222081643,
+      "quantile_mcse": 0.0007207007726631742,
+      "diagnostic_thresholds_pass": false,
+      "mathematical_convergence_certificate": false,
+      "warnings": [
+        "Quantile MCSE exceeds the declared precision target."
+      ],
+      "precision_target_scope": "fraction_of_empirical_posterior_standard_deviation"
+    },
+    "tau": {
+      "method": "ArviZ_rank_folded_split_rhat_bulk_tail_quantile_ESS_and_MCSE",
+      "arviz_version": "1.3.0",
+      "n_chains": 4,
+      "draws_per_chain": 8049,
+      "dropped_prefix_draws_per_chain": [
+        74,
+        56,
+        295,
+        0
+      ],
+      "quantile_probability": 0.95,
+      "quantile_full_draws": 0.06853985687824657,
+      "quantile_retained_draws": 0.06840403758916229,
+      "quantile_half_difference": 0.00026151060183139674,
+      "quantile_mcse_limit": 0.00033775678236220555,
+      "quantile_mcse_scope": "population_quantile_estimated_from_equal_length_last_draws",
+      "rank_folded_split_rhat": 1.0035788587337013,
+      "bulk_ess": 865.8690538559866,
+      "tail_ess_05_95": 1458.1508510509946,
+      "quantile_ess": 1458.1508510509946,
+      "quantile_mcse": 0.00032719072046272224,
+      "diagnostic_thresholds_pass": true,
+      "mathematical_convergence_certificate": false,
+      "warnings": [],
+      "precision_target_scope": "fraction_of_empirical_posterior_standard_deviation"
+    },
+    "mnu": {
+      "method": "ArviZ_rank_folded_split_rhat_bulk_tail_quantile_ESS_and_MCSE",
+      "arviz_version": "1.3.0",
+      "n_chains": 4,
+      "draws_per_chain": 8049,
+      "dropped_prefix_draws_per_chain": [
+        74,
+        56,
+        295,
+        0
+      ],
+      "quantile_probability": 0.95,
+      "quantile_full_draws": 0.1298138274020226,
+      "quantile_retained_draws": 0.12986864423217312,
+      "quantile_half_difference": 0.01854233812072162,
+      "quantile_mcse_limit": 0.001,
+      "quantile_mcse_scope": "population_quantile_estimated_from_equal_length_last_draws",
+      "rank_folded_split_rhat": 1.0045333224873627,
+      "bulk_ess": 739.4435953731168,
+      "tail_ess_05_95": 1078.61468113622,
+      "quantile_ess": 1078.61468113622,
+      "quantile_mcse": 0.0043646588086091315,
+      "diagnostic_thresholds_pass": false,
+      "mathematical_convergence_certificate": false,
+      "warnings": [
+        "Quantile MCSE exceeds the declared precision target.",
+        "Chronological quantile drift exceeds four times the precision scale."
+      ],
+      "precision_target_scope": "absolute_parameter_units"
+    }
+  },
+  "all_diagnostic_thresholds_pass": false,
+  "independence_scope": "separate recorded seeds and chain files; initialization independence assumed",
+  "native_backend_provenance": [
+    {
+      "run": "/home/repos/six-birds-neutrino/runs/20261005_math_review_fresh_CAMB_eleventh_current_A3200_diagnostics/seed1901",
+      "module_sha256": "306640a8948cd5246fc9b21e76525f6adebdff5ba3bc792a57d50bba67225ad5",
+      "witnesses": [
+        {
+          "path": "/home/repos/six-birds-neutrino/runs/20261005_math_review_fresh_CAMB_eleventh_current_A3200_diagnostics/seed1901/solver_backend.json",
+          "sha256": "83d363c0bbc79c20d5a38c218709e85cdbf23571cdbb0e58b388b60042bf9053",
+          "module_sha256": "306640a8948cd5246fc9b21e76525f6adebdff5ba3bc792a57d50bba67225ad5"
+        }
+      ],
+      "solver_version": "2.0.4",
+      "version_witnesses": [
+        {
+          "path": "/home/repos/six-birds-neutrino/runs/20261005_math_review_fresh_CAMB_eleventh_current_A3200_diagnostics/seed1901/solver_backend.json",
+          "version": "2.0.4",
+          "sha256": "83d363c0bbc79c20d5a38c218709e85cdbf23571cdbb0e58b388b60042bf9053"
+        },
+        {
+          "path": "/home/repos/six-birds-neutrino/runs/20261005_math_review_fresh_CAMB_eleventh_current_A3200_diagnostics/seed1901/chains/fresh_CAMB_current_A3200_seed1901.updated.yaml",
+          "version": "2.0.4",
+          "sha256": "84036934a7ac9782a014af314b74baa8a0a1b3717826e2aab394a6b0d8240e72"
+        }
+      ]
+    },
+    {
+      "run": "/home/repos/six-birds-neutrino/runs/20261005_math_review_fresh_CAMB_eleventh_current_A3200_diagnostics/seed1902",
+      "module_sha256": "306640a8948cd5246fc9b21e76525f6adebdff5ba3bc792a57d50bba67225ad5",
+      "witnesses": [
+        {
+          "path": "/home/repos/six-birds-neutrino/runs/20261005_math_review_fresh_CAMB_eleventh_current_A3200_diagnostics/seed1902/solver_backend.json",
+          "sha256": "83d363c0bbc79c20d5a38c218709e85cdbf23571cdbb0e58b388b60042bf9053",
+          "module_sha256": "306640a8948cd5246fc9b21e76525f6adebdff5ba3bc792a57d50bba67225ad5"
+        }
+      ],
+      "solver_version": "2.0.4",
+      "version_witnesses": [
+        {
+          "path": "/home/repos/six-birds-neutrino/runs/20261005_math_review_fresh_CAMB_eleventh_current_A3200_diagnostics/seed1902/solver_backend.json",
+          "version": "2.0.4",
+          "sha256": "83d363c0bbc79c20d5a38c218709e85cdbf23571cdbb0e58b388b60042bf9053"
+        },
+        {
+          "path": "/home/repos/six-birds-neutrino/runs/20261005_math_review_fresh_CAMB_eleventh_current_A3200_diagnostics/seed1902/chains/fresh_CAMB_current_A3200_seed1902.updated.yaml",
+          "version": "2.0.4",
+          "sha256": "d36101b614376c7977de28799375208aeb6ee319746eadd2dac407b317fd089a"
+        }
+      ]
+    },
+    {
+      "run": "/home/repos/six-birds-neutrino/runs/20261005_math_review_fresh_CAMB_eleventh_current_A3200_diagnostics/seed1903",
+      "module_sha256": "306640a8948cd5246fc9b21e76525f6adebdff5ba3bc792a57d50bba67225ad5",
+      "witnesses": [
+        {
+          "path": "/home/repos/six-birds-neutrino/runs/20261005_math_review_fresh_CAMB_eleventh_current_A3200_diagnostics/seed1903/solver_backend.json",
+          "sha256": "83d363c0bbc79c20d5a38c218709e85cdbf23571cdbb0e58b388b60042bf9053",
+          "module_sha256": "306640a8948cd5246fc9b21e76525f6adebdff5ba3bc792a57d50bba67225ad5"
+        }
+      ],
+      "solver_version": "2.0.4",
+      "version_witnesses": [
+        {
+          "path": "/home/repos/six-birds-neutrino/runs/20261005_math_review_fresh_CAMB_eleventh_current_A3200_diagnostics/seed1903/solver_backend.json",
+          "version": "2.0.4",
+          "sha256": "83d363c0bbc79c20d5a38c218709e85cdbf23571cdbb0e58b388b60042bf9053"
+        },
+        {
+          "path": "/home/repos/six-birds-neutrino/runs/20261005_math_review_fresh_CAMB_eleventh_current_A3200_diagnostics/seed1903/chains/fresh_CAMB_current_A3200_seed1903.updated.yaml",
+          "version": "2.0.4",
+          "sha256": "b3e1d709e9e3b40c4b8266d6817c103fa0f7a24c939bb0b33d7f9eecb3632c90"
+        }
+      ]
+    },
+    {
+      "run": "/home/repos/six-birds-neutrino/runs/20261005_math_review_fresh_CAMB_eleventh_current_A3200_diagnostics/seed1904",
+      "module_sha256": "306640a8948cd5246fc9b21e76525f6adebdff5ba3bc792a57d50bba67225ad5",
+      "witnesses": [
+        {
+          "path": "/home/repos/six-birds-neutrino/runs/20261005_math_review_fresh_CAMB_eleventh_current_A3200_diagnostics/seed1904/solver_backend.json",
+          "sha256": "83d363c0bbc79c20d5a38c218709e85cdbf23571cdbb0e58b388b60042bf9053",
+          "module_sha256": "306640a8948cd5246fc9b21e76525f6adebdff5ba3bc792a57d50bba67225ad5"
+        }
+      ],
+      "solver_version": "2.0.4",
+      "version_witnesses": [
+        {
+          "path": "/home/repos/six-birds-neutrino/runs/20261005_math_review_fresh_CAMB_eleventh_current_A3200_diagnostics/seed1904/solver_backend.json",
+          "version": "2.0.4",
+          "sha256": "83d363c0bbc79c20d5a38c218709e85cdbf23571cdbb0e58b388b60042bf9053"
+        },
+        {
+          "path": "/home/repos/six-birds-neutrino/runs/20261005_math_review_fresh_CAMB_eleventh_current_A3200_diagnostics/seed1904/chains/fresh_CAMB_current_A3200_seed1904.updated.yaml",
+          "version": "2.0.4",
+          "sha256": "db31c0f4447ac311e5a7c422bec02b88f97eee004b6a3bb23caea6a9e0af6e1f"
+        }
+      ]
+    }
+  ],
+  "native_backend_identity_scope": "recorded_native_module_hash_agreement_not_uniform_solver_accuracy",
+  "packages": {
+    "arviz": "1.3.0",
+    "arviz_stats": "1.3.3",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1"
+  }
+}

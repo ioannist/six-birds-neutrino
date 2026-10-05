@@ -1,0 +1,33 @@
+{
+  "utc": "2026-10-05T06:56:05.210735+00:00",
+  "source": "runs/20261005_math_review_fresh_CAMB_tenth_4095_combined_review/review.py",
+  "source_sha256": "7713dbb27d495038f8bb4cffb17454bdb422f58123d07ca91b196db07a5f7d78",
+  "changes": [
+    [
+      "Reconstruct both expanded-history assessments without promoting either posterior.",
+      "Reconstruct three expanded-history assessments without promoting a posterior."
+    ],
+    [
+      "for group in (\"current_A4095\", \"current_B4095\"):",
+      "for group in (\"sigma_time_v3_A4095_cap5\", \"sigma_time_v3_B4095_cap5\", \"sigma_time_v3_B4095_cap20\"):"
+    ],
+    [
+      "state[\"fresh_CAMB_production_assessments\"][group]",
+      "state[\"native_candidate_production_assessments\"][group]"
+    ],
+    [
+      "\"selected_native_rows_exact\": 24",
+      "\"selected_native_rows_exact\": 36"
+    ],
+    [
+      "\"both_posteriors_unqualified\"",
+      "\"all_three_posteriors_unqualified\""
+    ],
+    [
+      "Both tenth 4095 assessments reviewed; 24 native rows exact, both posteriors unqualified.",
+      "Three second sigma_time_v3 assessments reviewed; 36 native rows exact, all posteriors unqualified."
+    ]
+  ],
+  "same_target_predecessor_and_history_gates_preserved": true,
+  "three_groups_not_pooled": true
+}

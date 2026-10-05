@@ -1,0 +1,24 @@
+{
+  "utc": "2026-10-04T13:07:31.633887+00:00",
+  "command": [
+    "/tmp/neutrino-math-review-venv/bin/python",
+    "/home/repos/six-birds-neutrino/scripts/diagnose_cobaya_chains.py",
+    "--run-dir",
+    "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_CLASS_fifth_quad_B_diagnostics/quad_B/seed1305",
+    "--run-dir",
+    "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_CLASS_fifth_quad_B_diagnostics/quad_B/seed1306",
+    "--run-dir",
+    "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_CLASS_fifth_quad_B_diagnostics/quad_B/seed1307",
+    "--run-dir",
+    "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_CLASS_fifth_quad_B_diagnostics/quad_B/seed1308",
+    "--burnin-frac",
+    ".2",
+    "--quantile-mcse-limit",
+    ".001",
+    "--relative-quantile-mcse-limit",
+    ".05",
+    "--output",
+    "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_CLASS_fifth_quad_B_diagnostics/quad_B_diagnostics.json"
+  ],
+  "exit_code": 0
+}

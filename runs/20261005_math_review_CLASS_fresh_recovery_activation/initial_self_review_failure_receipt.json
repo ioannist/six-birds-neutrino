@@ -1,0 +1,7 @@
+{
+  "utc": "2026-10-05T03:57:59.303764+00:00",
+  "actual_exit_code": 1,
+  "worker_sha256": "142159b86150d095b26e2912cc2f6069e024676c47c396ef55312cf4b814b700",
+  "failed_assertion": "set(errors) == expected and all(v == 0.0 for v in errors.values())",
+  "scope": "Review expectation mismatch; no change to native verification or inference."
+}

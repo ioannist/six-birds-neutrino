@@ -1,0 +1,71 @@
+{
+  "scope": "actual_managed_terminal_collection_after_agent_requested_sigterm",
+  "records": [
+    {
+      "seed": 502,
+      "session": 80275,
+      "chunk_id": "00e2fa",
+      "wall_time_seconds": 0.000019437,
+      "exit_code": 143,
+      "original_token_count": 0,
+      "output": ""
+    },
+    {
+      "seed": 501,
+      "session": 72059,
+      "chunk_id": "1c1824",
+      "wall_time_seconds": 0.000016372,
+      "exit_code": 143,
+      "original_token_count": 0,
+      "output": ""
+    },
+    {
+      "seed": 506,
+      "session": 79536,
+      "chunk_id": "7b2ee1",
+      "wall_time_seconds": 0.000016041,
+      "exit_code": 143,
+      "original_token_count": 0,
+      "output": ""
+    },
+    {
+      "seed": 503,
+      "session": 50401,
+      "chunk_id": "65d898",
+      "wall_time_seconds": 0.000009358,
+      "exit_code": 143,
+      "original_token_count": 3,
+      "output": "Terminated\n"
+    },
+    {
+      "seed": 504,
+      "session": 49195,
+      "chunk_id": "bc22b7",
+      "wall_time_seconds": 0.000011722,
+      "exit_code": 143,
+      "original_token_count": 0,
+      "output": ""
+    },
+    {
+      "seed": 507,
+      "session": 56407,
+      "chunk_id": "fe6695",
+      "wall_time_seconds": 0.000012775,
+      "exit_code": 143,
+      "original_token_count": 3,
+      "output": "Terminated\n"
+    },
+    {
+      "seed": 508,
+      "session": 63122,
+      "chunk_id": "493858",
+      "wall_time_seconds": 0.000008416,
+      "exit_code": 143,
+      "original_token_count": 3,
+      "output": "Terminated\n"
+    }
+  ],
+  "all_seven_managed_exit_codes_143": true,
+  "managed_exit_collection_pending": false,
+  "termination_cause": "agent_requested_SIGTERM_for_verified_numerical_target_replacement"
+}

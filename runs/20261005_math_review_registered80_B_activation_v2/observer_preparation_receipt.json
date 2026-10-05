@@ -1,0 +1,41 @@
+{
+  "utc": "2026-10-05T05:18:02.722520+00:00",
+  "source": "runs/20261005_math_review_registered80_B_activation/observe_registered_runtime.py",
+  "source_sha256": "46001a06342b11793f75359ea267ebd2037c0a0f46473a10f7fc5bab8212b62e",
+  "changes": [],
+  "records": [
+    {
+      "name": "observe_registered_runtime.py",
+      "source": "runs/20261005_math_review_registered80_B_activation/observe_registered_runtime.py",
+      "source_sha256": "46001a06342b11793f75359ea267ebd2037c0a0f46473a10f7fc5bab8212b62e",
+      "changes": []
+    },
+    {
+      "name": "self_review.py",
+      "source": "runs/20261005_math_review_registered80_B_activation/self_review.py",
+      "source_sha256": "b79661e507ca13fbb20de20ce728256f197ab19a4ac98c2168b916d250faae36",
+      "changes": [
+        [
+          "== 65",
+          "== 62"
+        ],
+        [
+          "== 15",
+          "== 18"
+        ],
+        [
+          "{1201, 1301, 1302, 1303, 1307, 1308, 1401, 1402, 1403, 1404, 1405}",
+          "{1201, 1301, 1302, 1303, 1307, 1308, 1401, 1402, 1403, 1404, 1405, 1406, 1407, 1502}"
+        ],
+        [
+          "'live_at_observation': 65",
+          "'live_at_observation': 62"
+        ],
+        [
+          "'unknown_exit_families': 11",
+          "'unknown_exit_families': 14"
+        ]
+      ]
+    }
+  ]
+}

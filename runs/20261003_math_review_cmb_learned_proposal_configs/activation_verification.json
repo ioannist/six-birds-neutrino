@@ -1,0 +1,32 @@
+{
+  "utc": "2026-10-04T00:04:53.395899+00:00",
+  "scope": "actual_native_target_configuration_and_proposal_activation",
+  "records": [
+    {
+      "lens": "A",
+      "seed": 811,
+      "pid": 1989199,
+      "actual_target_configuration_reconstruction_pass": true,
+      "actual_seed_verified": true,
+      "all_parameter_covariance_loaded": true,
+      "covariance_sha256": "fd7d6e7cff0b8f996f87f2b5215b90afcc1c245916047011992542abf9859fc3",
+      "resolved_configuration_sha256": "a85da18270357ca9cc54fc92b2538d34cbab8436b2cf080e8f1d36076700e31d",
+      "startup_snapshot_sha256": "a8301ddcdb52ac182d0c9100a8e190171fe15ddff20972e9d7bb01893c4fc67c",
+      "native_saved_row_checks_pending": true
+    },
+    {
+      "lens": "B",
+      "seed": 813,
+      "pid": 1991822,
+      "actual_target_configuration_reconstruction_pass": true,
+      "actual_seed_verified": true,
+      "all_parameter_covariance_loaded": true,
+      "covariance_sha256": "1644982bf1a966b873a48fd62aaed2095d33467e801292d042ffeee09baf63ff",
+      "resolved_configuration_sha256": "130c154369160fa4c3acde56f746e0d6fb0d0c991ba543efdb32b980012a9c30",
+      "startup_snapshot_sha256": "4fd9a2d76c1ae6d91ab4ec259a354cb1ff862ae9301b2cc431a74adcb191010e",
+      "native_saved_row_checks_pending": true
+    }
+  ],
+  "efficiency_improvement_verified": false,
+  "posterior_convergence_verified": false
+}

@@ -1,0 +1,895 @@
+{
+  "scope": "exact_quantile_repair_impact_on_stable_archived_and_snapshot_summaries",
+  "checks": [
+    {
+      "run": "spt2018_desi",
+      "field": "mnu_median",
+      "before": 0.071601591,
+      "after": 0.071601591
+    },
+    {
+      "run": "spt2018_desi",
+      "field": "mnu_p95_upper",
+      "before": 0.19452529,
+      "after": 0.19452529
+    },
+    {
+      "run": "spt2018_desi",
+      "field": "mnu_p95_upper_first_half",
+      "before": 0.084156919,
+      "after": 0.084156919
+    },
+    {
+      "run": "spt2018_desi",
+      "field": "mnu_p95_upper_second_half",
+      "before": 0.21734975,
+      "after": 0.21734975
+    },
+    {
+      "run": "spt2018_desi",
+      "field": "mnu_p95_half_diff",
+      "before": 0.133192831,
+      "after": 0.133192831
+    },
+    {
+      "run": "sptd1_desi",
+      "field": "mnu_median",
+      "before": 0.043870311,
+      "after": 0.043870311
+    },
+    {
+      "run": "sptd1_desi",
+      "field": "mnu_p95_upper",
+      "before": 0.09807736,
+      "after": 0.09807736
+    },
+    {
+      "run": "sptd1_desi",
+      "field": "mnu_p95_upper_first_half",
+      "before": 0.069211378,
+      "after": 0.069211378
+    },
+    {
+      "run": "sptd1_desi",
+      "field": "mnu_p95_upper_second_half",
+      "before": 0.09807736,
+      "after": 0.09807736
+    },
+    {
+      "run": "sptd1_desi",
+      "field": "mnu_p95_half_diff",
+      "before": 0.028865982,
+      "after": 0.028865982
+    },
+    {
+      "run": "cmb2018_desi",
+      "field": "mnu_median",
+      "before": 0.067766928,
+      "after": 0.067766928
+    },
+    {
+      "run": "cmb2018_desi",
+      "field": "mnu_p95_upper",
+      "before": 0.079818013,
+      "after": 0.079818013
+    },
+    {
+      "run": "cmb2018_desi",
+      "field": "mnu_p95_upper_first_half",
+      "before": 0.079208214,
+      "after": 0.079208214
+    },
+    {
+      "run": "cmb2018_desi",
+      "field": "mnu_p95_upper_second_half",
+      "before": 0.08334805,
+      "after": 0.08334805
+    },
+    {
+      "run": "cmb2018_desi",
+      "field": "mnu_p95_half_diff",
+      "before": 0.004139836000000008,
+      "after": 0.004139836000000008
+    },
+    {
+      "run": "cmbd1_desi",
+      "field": "mnu_median",
+      "before": 0.054341514,
+      "after": 0.054341514
+    },
+    {
+      "run": "cmbd1_desi",
+      "field": "mnu_p95_upper",
+      "before": 0.067653162,
+      "after": 0.067653162
+    },
+    {
+      "run": "cmbd1_desi",
+      "field": "mnu_p95_upper_first_half",
+      "before": 0.058539213,
+      "after": 0.058539213
+    },
+    {
+      "run": "cmbd1_desi",
+      "field": "mnu_p95_upper_second_half",
+      "before": 0.072080174,
+      "after": 0.072080174
+    },
+    {
+      "run": "cmbd1_desi",
+      "field": "mnu_p95_half_diff",
+      "before": 0.013540960999999997,
+      "after": 0.013540960999999997
+    },
+    {
+      "run": "cmb2018_seed1",
+      "field": "mnu_median",
+      "before": 0.069084717,
+      "after": 0.069084717
+    },
+    {
+      "run": "cmb2018_seed1",
+      "field": "mnu_p95_upper",
+      "before": 0.089262826,
+      "after": 0.089262826
+    },
+    {
+      "run": "cmb2018_seed1",
+      "field": "mnu_p95_upper_first_half",
+      "before": 0.080682985,
+      "after": 0.080682985
+    },
+    {
+      "run": "cmb2018_seed1",
+      "field": "mnu_p95_upper_second_half",
+      "before": 0.089262826,
+      "after": 0.089262826
+    },
+    {
+      "run": "cmb2018_seed1",
+      "field": "mnu_p95_half_diff",
+      "before": 0.008579841000000005,
+      "after": 0.008579841000000005
+    },
+    {
+      "run": "chain_A_diagnostics.json",
+      "param": "omegabh2",
+      "field": "quantile_full_draws",
+      "before": 0.023171493,
+      "after": 0.023171493
+    },
+    {
+      "run": "chain_A_diagnostics.json",
+      "param": "omegabh2",
+      "field": "quantile_retained_draws",
+      "before": 0.023173779,
+      "after": 0.023173779
+    },
+    {
+      "run": "chain_A_diagnostics.json",
+      "param": "omegabh2",
+      "field": "quantile_half_difference",
+      "before": 4.940000000001887e-07,
+      "after": 4.940000000001887e-07
+    },
+    {
+      "run": "chain_A_diagnostics.json",
+      "param": "omegach2",
+      "field": "quantile_full_draws",
+      "before": 0.11778097,
+      "after": 0.11778097
+    },
+    {
+      "run": "chain_A_diagnostics.json",
+      "param": "omegach2",
+      "field": "quantile_retained_draws",
+      "before": 0.11780134,
+      "after": 0.11780134
+    },
+    {
+      "run": "chain_A_diagnostics.json",
+      "param": "omegach2",
+      "field": "quantile_half_difference",
+      "before": 0.00025301000000001184,
+      "after": 0.00025301000000001184
+    },
+    {
+      "run": "chain_A_diagnostics.json",
+      "param": "H0",
+      "field": "quantile_full_draws",
+      "before": 69.296326,
+      "after": 69.296326
+    },
+    {
+      "run": "chain_A_diagnostics.json",
+      "param": "H0",
+      "field": "quantile_retained_draws",
+      "before": 69.292337,
+      "after": 69.292337
+    },
+    {
+      "run": "chain_A_diagnostics.json",
+      "param": "H0",
+      "field": "quantile_half_difference",
+      "before": 0.04296699999999021,
+      "after": 0.04296699999999021
+    },
+    {
+      "run": "chain_A_diagnostics.json",
+      "param": "logA",
+      "field": "quantile_full_draws",
+      "before": 3.0394725,
+      "after": 3.0394725
+    },
+    {
+      "run": "chain_A_diagnostics.json",
+      "param": "logA",
+      "field": "quantile_retained_draws",
+      "before": 3.0393695,
+      "after": 3.0393695
+    },
+    {
+      "run": "chain_A_diagnostics.json",
+      "param": "logA",
+      "field": "quantile_half_difference",
+      "before": 0.004068599999999645,
+      "after": 0.004068599999999645
+    },
+    {
+      "run": "chain_A_diagnostics.json",
+      "param": "ns",
+      "field": "quantile_full_draws",
+      "before": 1.0547058,
+      "after": 1.0547058
+    },
+    {
+      "run": "chain_A_diagnostics.json",
+      "param": "ns",
+      "field": "quantile_retained_draws",
+      "before": 1.0548081,
+      "after": 1.0548081
+    },
+    {
+      "run": "chain_A_diagnostics.json",
+      "param": "ns",
+      "field": "quantile_half_difference",
+      "before": 0.002028600000000047,
+      "after": 0.002028600000000047
+    },
+    {
+      "run": "chain_A_diagnostics.json",
+      "param": "tau",
+      "field": "quantile_full_draws",
+      "before": 0.068829759,
+      "after": 0.068829759
+    },
+    {
+      "run": "chain_A_diagnostics.json",
+      "param": "tau",
+      "field": "quantile_retained_draws",
+      "before": 0.068559133,
+      "after": 0.068559133
+    },
+    {
+      "run": "chain_A_diagnostics.json",
+      "param": "tau",
+      "field": "quantile_half_difference",
+      "before": 0.0009861629999999982,
+      "after": 0.0009861629999999982
+    },
+    {
+      "run": "chain_A_diagnostics.json",
+      "param": "mnu",
+      "field": "quantile_full_draws",
+      "before": 0.14247805,
+      "after": 0.14247805
+    },
+    {
+      "run": "chain_A_diagnostics.json",
+      "param": "mnu",
+      "field": "quantile_retained_draws",
+      "before": 0.14188953,
+      "after": 0.14188953
+    },
+    {
+      "run": "chain_A_diagnostics.json",
+      "param": "mnu",
+      "field": "quantile_half_difference",
+      "before": 0.026004289999999985,
+      "after": 0.026004289999999985
+    },
+    {
+      "run": "chain_B_diagnostics.json",
+      "param": "omegabh2",
+      "field": "quantile_full_draws",
+      "before": 0.022551314,
+      "after": 0.022551314
+    },
+    {
+      "run": "chain_B_diagnostics.json",
+      "param": "omegabh2",
+      "field": "quantile_retained_draws",
+      "before": 0.022532165,
+      "after": 0.022532165
+    },
+    {
+      "run": "chain_B_diagnostics.json",
+      "param": "omegabh2",
+      "field": "quantile_half_difference",
+      "before": 4.5467000000000424e-05,
+      "after": 4.5467000000000424e-05
+    },
+    {
+      "run": "chain_B_diagnostics.json",
+      "param": "omegach2",
+      "field": "quantile_full_draws",
+      "before": 0.11876882,
+      "after": 0.11876882
+    },
+    {
+      "run": "chain_B_diagnostics.json",
+      "param": "omegach2",
+      "field": "quantile_retained_draws",
+      "before": 0.11877484,
+      "after": 0.11877484
+    },
+    {
+      "run": "chain_B_diagnostics.json",
+      "param": "omegach2",
+      "field": "quantile_half_difference",
+      "before": 2.0889999999995634e-05,
+      "after": 2.0889999999995634e-05
+    },
+    {
+      "run": "chain_B_diagnostics.json",
+      "param": "H0",
+      "field": "quantile_full_draws",
+      "before": 68.997279,
+      "after": 68.997279
+    },
+    {
+      "run": "chain_B_diagnostics.json",
+      "param": "H0",
+      "field": "quantile_retained_draws",
+      "before": 68.913667,
+      "after": 68.913667
+    },
+    {
+      "run": "chain_B_diagnostics.json",
+      "param": "H0",
+      "field": "quantile_half_difference",
+      "before": 0.10696799999999484,
+      "after": 0.10696799999999484
+    },
+    {
+      "run": "chain_B_diagnostics.json",
+      "param": "logA",
+      "field": "quantile_full_draws",
+      "before": 3.0888059,
+      "after": 3.0888059
+    },
+    {
+      "run": "chain_B_diagnostics.json",
+      "param": "logA",
+      "field": "quantile_retained_draws",
+      "before": 3.0888059,
+      "after": 3.0888059
+    },
+    {
+      "run": "chain_B_diagnostics.json",
+      "param": "logA",
+      "field": "quantile_half_difference",
+      "before": 0.008430600000000066,
+      "after": 0.008430600000000066
+    },
+    {
+      "run": "chain_B_diagnostics.json",
+      "param": "ns",
+      "field": "quantile_full_draws",
+      "before": 0.97482012,
+      "after": 0.97482012
+    },
+    {
+      "run": "chain_B_diagnostics.json",
+      "param": "ns",
+      "field": "quantile_retained_draws",
+      "before": 0.97533642,
+      "after": 0.97533642
+    },
+    {
+      "run": "chain_B_diagnostics.json",
+      "param": "ns",
+      "field": "quantile_half_difference",
+      "before": 0.004851319999999992,
+      "after": 0.004851319999999992
+    },
+    {
+      "run": "chain_B_diagnostics.json",
+      "param": "tau",
+      "field": "quantile_full_draws",
+      "before": 0.069323081,
+      "after": 0.069323081
+    },
+    {
+      "run": "chain_B_diagnostics.json",
+      "param": "tau",
+      "field": "quantile_retained_draws",
+      "before": 0.069323081,
+      "after": 0.069323081
+    },
+    {
+      "run": "chain_B_diagnostics.json",
+      "param": "tau",
+      "field": "quantile_half_difference",
+      "before": 0.00012462000000000584,
+      "after": 0.00012462000000000584
+    },
+    {
+      "run": "chain_B_diagnostics.json",
+      "param": "mnu",
+      "field": "quantile_full_draws",
+      "before": 0.10816018,
+      "after": 0.10816018
+    },
+    {
+      "run": "chain_B_diagnostics.json",
+      "param": "mnu",
+      "field": "quantile_retained_draws",
+      "before": 0.10257756,
+      "after": 0.10257756
+    },
+    {
+      "run": "chain_B_diagnostics.json",
+      "param": "mnu",
+      "field": "quantile_half_difference",
+      "before": 0.002277680000000004,
+      "after": 0.002277680000000004
+    },
+    {
+      "run": "cmb_chain_A_diagnostics.json",
+      "param": "omegabh2",
+      "field": "quantile_full_draws",
+      "before": 0.022991625,
+      "after": 0.022991625
+    },
+    {
+      "run": "cmb_chain_A_diagnostics.json",
+      "param": "omegabh2",
+      "field": "quantile_retained_draws",
+      "before": 0.022989164176366365,
+      "after": 0.022989164176366365
+    },
+    {
+      "run": "cmb_chain_A_diagnostics.json",
+      "param": "omegabh2",
+      "field": "quantile_half_difference",
+      "before": 0.00019411189359980902,
+      "after": 0.00019411189359980902
+    },
+    {
+      "run": "cmb_chain_A_diagnostics.json",
+      "param": "omegach2",
+      "field": "quantile_full_draws",
+      "before": 0.11755639,
+      "after": 0.11755639
+    },
+    {
+      "run": "cmb_chain_A_diagnostics.json",
+      "param": "omegach2",
+      "field": "quantile_retained_draws",
+      "before": 0.11745773,
+      "after": 0.11745773
+    },
+    {
+      "run": "cmb_chain_A_diagnostics.json",
+      "param": "omegach2",
+      "field": "quantile_half_difference",
+      "before": 0.00018701000000000134,
+      "after": 0.00018701000000000134
+    },
+    {
+      "run": "cmb_chain_A_diagnostics.json",
+      "param": "H0",
+      "field": "quantile_full_draws",
+      "before": 69.340549,
+      "after": 69.340549
+    },
+    {
+      "run": "cmb_chain_A_diagnostics.json",
+      "param": "H0",
+      "field": "quantile_retained_draws",
+      "before": 69.23105161615047,
+      "after": 69.23105161615047
+    },
+    {
+      "run": "cmb_chain_A_diagnostics.json",
+      "param": "H0",
+      "field": "quantile_half_difference",
+      "before": 0.2838289999999972,
+      "after": 0.2838289999999972
+    },
+    {
+      "run": "cmb_chain_A_diagnostics.json",
+      "param": "logA",
+      "field": "quantile_full_draws",
+      "before": 3.0555149004297584,
+      "after": 3.0555149004297584
+    },
+    {
+      "run": "cmb_chain_A_diagnostics.json",
+      "param": "logA",
+      "field": "quantile_retained_draws",
+      "before": 3.0528663581354283,
+      "after": 3.0528663581354283
+    },
+    {
+      "run": "cmb_chain_A_diagnostics.json",
+      "param": "logA",
+      "field": "quantile_half_difference",
+      "before": 0.0007671995702414058,
+      "after": 0.0007671995702414058
+    },
+    {
+      "run": "cmb_chain_A_diagnostics.json",
+      "param": "ns",
+      "field": "quantile_full_draws",
+      "before": 0.99221792,
+      "after": 0.99221792
+    },
+    {
+      "run": "cmb_chain_A_diagnostics.json",
+      "param": "ns",
+      "field": "quantile_retained_draws",
+      "before": 0.98943894,
+      "after": 0.98943894
+    },
+    {
+      "run": "cmb_chain_A_diagnostics.json",
+      "param": "ns",
+      "field": "quantile_half_difference",
+      "before": 0.004211680000000051,
+      "after": 0.004211680000000051
+    },
+    {
+      "run": "cmb_chain_A_diagnostics.json",
+      "param": "tau",
+      "field": "quantile_full_draws",
+      "before": 0.06385852,
+      "after": 0.06385852
+    },
+    {
+      "run": "cmb_chain_A_diagnostics.json",
+      "param": "tau",
+      "field": "quantile_retained_draws",
+      "before": 0.06286372,
+      "after": 0.06286372
+    },
+    {
+      "run": "cmb_chain_A_diagnostics.json",
+      "param": "tau",
+      "field": "quantile_half_difference",
+      "before": 0.0016298494550556347,
+      "after": 0.0016298494550556347
+    },
+    {
+      "run": "cmb_chain_A_diagnostics.json",
+      "param": "mnu_sample",
+      "field": "quantile_full_draws",
+      "before": 0.11556942,
+      "after": 0.11556942
+    },
+    {
+      "run": "cmb_chain_A_diagnostics.json",
+      "param": "mnu_sample",
+      "field": "quantile_retained_draws",
+      "before": 0.1025486981430595,
+      "after": 0.1025486981430595
+    },
+    {
+      "run": "cmb_chain_A_diagnostics.json",
+      "param": "mnu_sample",
+      "field": "quantile_half_difference",
+      "before": 0.001992630000000009,
+      "after": 0.001992630000000009
+    },
+    {
+      "run": "cmb_chain_A_diagnostics.json",
+      "param": "A_planck",
+      "field": "quantile_full_draws",
+      "before": 1.0047163,
+      "after": 1.0047163
+    },
+    {
+      "run": "cmb_chain_A_diagnostics.json",
+      "param": "A_planck",
+      "field": "quantile_retained_draws",
+      "before": 1.0044053,
+      "after": 1.0044053
+    },
+    {
+      "run": "cmb_chain_A_diagnostics.json",
+      "param": "A_planck",
+      "field": "quantile_half_difference",
+      "before": 0.0002742000000000022,
+      "after": 0.0002742000000000022
+    },
+    {
+      "run": "cmb_chain_A_diagnostics.json",
+      "param": "TT_tSZ_Amp",
+      "field": "quantile_full_draws",
+      "before": 2.6589886,
+      "after": 2.6589886
+    },
+    {
+      "run": "cmb_chain_A_diagnostics.json",
+      "param": "TT_tSZ_Amp",
+      "field": "quantile_retained_draws",
+      "before": 2.6795129,
+      "after": 2.6795129
+    },
+    {
+      "run": "cmb_chain_A_diagnostics.json",
+      "param": "TT_tSZ_Amp",
+      "field": "quantile_half_difference",
+      "before": 0.08505619999999992,
+      "after": 0.08505619999999992
+    },
+    {
+      "run": "cmb_chain_A_diagnostics.json",
+      "param": "TT_kSZ_Amp",
+      "field": "quantile_full_draws",
+      "before": 9.99241030011325,
+      "after": 9.99241030011325
+    },
+    {
+      "run": "cmb_chain_A_diagnostics.json",
+      "param": "TT_kSZ_Amp",
+      "field": "quantile_retained_draws",
+      "before": 9.9946528,
+      "after": 9.9946528
+    },
+    {
+      "run": "cmb_chain_A_diagnostics.json",
+      "param": "TT_kSZ_Amp",
+      "field": "quantile_half_difference",
+      "before": 0.017707100000000864,
+      "after": 0.017707100000000864
+    },
+    {
+      "run": "cmb_chain_B_diagnostics.json",
+      "param": "omegabh2",
+      "field": "quantile_full_draws",
+      "before": 0.022371473,
+      "after": 0.022371473
+    },
+    {
+      "run": "cmb_chain_B_diagnostics.json",
+      "param": "omegabh2",
+      "field": "quantile_retained_draws",
+      "before": 0.0223804937900779,
+      "after": 0.0223804937900779
+    },
+    {
+      "run": "cmb_chain_B_diagnostics.json",
+      "param": "omegabh2",
+      "field": "quantile_half_difference",
+      "before": 0.00011100362916433015,
+      "after": 0.00011100362916433015
+    },
+    {
+      "run": "cmb_chain_B_diagnostics.json",
+      "param": "omegach2",
+      "field": "quantile_full_draws",
+      "before": 0.11872774,
+      "after": 0.11872774
+    },
+    {
+      "run": "cmb_chain_B_diagnostics.json",
+      "param": "omegach2",
+      "field": "quantile_retained_draws",
+      "before": 0.11884148,
+      "after": 0.11884148
+    },
+    {
+      "run": "cmb_chain_B_diagnostics.json",
+      "param": "omegach2",
+      "field": "quantile_half_difference",
+      "before": 0.00043905321915566065,
+      "after": 0.00043905321915566065
+    },
+    {
+      "run": "cmb_chain_B_diagnostics.json",
+      "param": "H0",
+      "field": "quantile_full_draws",
+      "before": 68.89273886427279,
+      "after": 68.89273886427279
+    },
+    {
+      "run": "cmb_chain_B_diagnostics.json",
+      "param": "H0",
+      "field": "quantile_retained_draws",
+      "before": 68.9671855480626,
+      "after": 68.9671855480626
+    },
+    {
+      "run": "cmb_chain_B_diagnostics.json",
+      "param": "H0",
+      "field": "quantile_half_difference",
+      "before": 0.15984554806260576,
+      "after": 0.15984554806260576
+    },
+    {
+      "run": "cmb_chain_B_diagnostics.json",
+      "param": "logA",
+      "field": "quantile_full_draws",
+      "before": 3.0644895,
+      "after": 3.0644895
+    },
+    {
+      "run": "cmb_chain_B_diagnostics.json",
+      "param": "logA",
+      "field": "quantile_retained_draws",
+      "before": 3.0669752,
+      "after": 3.0669752
+    },
+    {
+      "run": "cmb_chain_B_diagnostics.json",
+      "param": "logA",
+      "field": "quantile_half_difference",
+      "before": 0.004629699999999737,
+      "after": 0.004629699999999737
+    },
+    {
+      "run": "cmb_chain_B_diagnostics.json",
+      "param": "ns",
+      "field": "quantile_full_draws",
+      "before": 0.97270085,
+      "after": 0.97270085
+    },
+    {
+      "run": "cmb_chain_B_diagnostics.json",
+      "param": "ns",
+      "field": "quantile_retained_draws",
+      "before": 0.9732305846447059,
+      "after": 0.9732305846447059
+    },
+    {
+      "run": "cmb_chain_B_diagnostics.json",
+      "param": "ns",
+      "field": "quantile_half_difference",
+      "before": 0.0025496000000000407,
+      "after": 0.0025496000000000407
+    },
+    {
+      "run": "cmb_chain_B_diagnostics.json",
+      "param": "tau",
+      "field": "quantile_full_draws",
+      "before": 0.064209507,
+      "after": 0.064209507
+    },
+    {
+      "run": "cmb_chain_B_diagnostics.json",
+      "param": "tau",
+      "field": "quantile_retained_draws",
+      "before": 0.065950016,
+      "after": 0.065950016
+    },
+    {
+      "run": "cmb_chain_B_diagnostics.json",
+      "param": "tau",
+      "field": "quantile_half_difference",
+      "before": 0.007039750515589235,
+      "after": 0.007039750515589235
+    },
+    {
+      "run": "cmb_chain_B_diagnostics.json",
+      "param": "mnu_sample",
+      "field": "quantile_full_draws",
+      "before": 0.10637798937779223,
+      "after": 0.10637798937779223
+    },
+    {
+      "run": "cmb_chain_B_diagnostics.json",
+      "param": "mnu_sample",
+      "field": "quantile_retained_draws",
+      "before": 0.09477325349775863,
+      "after": 0.09477325349775863
+    },
+    {
+      "run": "cmb_chain_B_diagnostics.json",
+      "param": "mnu_sample",
+      "field": "quantile_half_difference",
+      "before": 0.06141699089067802,
+      "after": 0.06141699089067802
+    },
+    {
+      "run": "cmb_chain_B_diagnostics.json",
+      "param": "A_planck",
+      "field": "quantile_full_draws",
+      "before": 1.0125898,
+      "after": 1.0125898
+    },
+    {
+      "run": "cmb_chain_B_diagnostics.json",
+      "param": "A_planck",
+      "field": "quantile_retained_draws",
+      "before": 1.0171636835318136,
+      "after": 1.0171636835318136
+    },
+    {
+      "run": "cmb_chain_B_diagnostics.json",
+      "param": "A_planck",
+      "field": "quantile_half_difference",
+      "before": 0.007085082485091876,
+      "after": 0.007085082485091876
+    },
+    {
+      "run": "cmb_chain_B_diagnostics.json",
+      "param": "TT_tSZ_Amp",
+      "field": "quantile_full_draws",
+      "before": 1.5043821,
+      "after": 1.5043821
+    },
+    {
+      "run": "cmb_chain_B_diagnostics.json",
+      "param": "TT_tSZ_Amp",
+      "field": "quantile_retained_draws",
+      "before": 1.5043821,
+      "after": 1.5043821
+    },
+    {
+      "run": "cmb_chain_B_diagnostics.json",
+      "param": "TT_tSZ_Amp",
+      "field": "quantile_half_difference",
+      "before": 0.0022283999999999082,
+      "after": 0.0022283999999999082
+    },
+    {
+      "run": "cmb_chain_B_diagnostics.json",
+      "param": "TT_kSZ_Amp",
+      "field": "quantile_full_draws",
+      "before": 2.7476761,
+      "after": 2.7476761
+    },
+    {
+      "run": "cmb_chain_B_diagnostics.json",
+      "param": "TT_kSZ_Amp",
+      "field": "quantile_retained_draws",
+      "before": 2.5983439910102333,
+      "after": 2.5983439910102333
+    },
+    {
+      "run": "cmb_chain_B_diagnostics.json",
+      "param": "TT_kSZ_Amp",
+      "field": "quantile_half_difference",
+      "before": 0.04889562745287268,
+      "after": 0.04889562745287268
+    }
+  ],
+  "changed": [],
+  "artificial_control": {
+    "original_weights": [
+      418,
+      22
+    ],
+    "split_weights": [
+      201,
+      217,
+      22
+    ],
+    "original_values": [
+      0,
+      10
+    ],
+    "split_values": [
+      0,
+      0,
+      10
+    ],
+    "q": 0.95,
+    "old_original": 0.0,
+    "old_split": 10.0,
+    "new_original": 0.0,
+    "new_split": 0.0
+  }
+}

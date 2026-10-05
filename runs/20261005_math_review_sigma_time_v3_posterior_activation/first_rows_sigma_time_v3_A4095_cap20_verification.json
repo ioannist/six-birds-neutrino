@@ -1,0 +1,141 @@
+{
+  "utc": "2026-10-05T03:10:39.653610+00:00",
+  "group": "sigma_time_v3_A4095_cap20",
+  "records": [
+    {
+      "seed": 2105,
+      "group": "sigma_time_v3_A4095_cap20",
+      "point": {
+        "omegabh2": 0.023000855958567174,
+        "omegach2": 0.11615334009896322,
+        "H0": 68.92398814907831,
+        "logA": 3.0222409272984767,
+        "ns": 1.0120921927038413,
+        "tau": 0.054058134729513964,
+        "mnu": 0.0711742647658023
+      },
+      "holding_time": 1,
+      "source": "runs/20261005_math_review_fresh_CAMB_sigma_time_v3_A4095_cap20_seed2105/chains/fresh_CAMB_sigma_time_v3_A4095_cap20_seed2105.1.txt",
+      "frozen": "runs/20261005_math_review_sigma_time_v3_posterior_activation/seed2105/first_saved_rows/chains/fresh_CAMB_sigma_time_v3_A4095_cap20_seed2105.1.txt",
+      "snapshot_sha256": "c4c748ea34b8b19ea4150d8fc39a3c0ad0fe5555a3f11dbf0e652373d871909e",
+      "complete_prefix_matches": true,
+      "out": "runs/20261005_math_review_sigma_time_v3_posterior_activation/seed2105/first_saved_rows",
+      "utc": "2026-10-05T03:09:36.754208+00:00",
+      "native_row_verified": true,
+      "module_sha256": "85a091c53d9c81ee6443a1a4492ee45a35b487f7d360dfd6df190b9e3856cfc6",
+      "native_row_replay_discrepancies": {
+        "sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 0.0,
+        "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 0.0,
+        "total_chi2": 0.0,
+        "logprior": 0.0,
+        "logposterior": 0.0
+      },
+      "native_row_replay_tolerance": 1e-09,
+      "FreshCAMB_exact_to_independent_upstream_fresh": true,
+      "sampler_cache_resize_challenge": 50,
+      "scope": "selected first saved row; no convergence or uniform accuracy certification"
+    },
+    {
+      "seed": 2107,
+      "group": "sigma_time_v3_A4095_cap20",
+      "point": {
+        "omegabh2": 0.023027917,
+        "omegach2": 0.11612066,
+        "H0": 68.927728,
+        "logA": 3.0016425874724013,
+        "ns": 1.0285595211129201,
+        "tau": 0.050845913,
+        "mnu": 6.0
+      },
+      "holding_time": 1,
+      "source": "runs/20261005_math_review_fresh_CAMB_sigma_time_v3_A4095_cap20_seed2107/chains/fresh_CAMB_sigma_time_v3_A4095_cap20_seed2107.1.txt",
+      "frozen": "runs/20261005_math_review_sigma_time_v3_posterior_activation/seed2107/first_saved_rows/chains/fresh_CAMB_sigma_time_v3_A4095_cap20_seed2107.1.txt",
+      "snapshot_sha256": "95e21cd43f472da7cd9ad1a4f1611167669cbf6d4a6684e3a015e7e3b79f37ed",
+      "complete_prefix_matches": true,
+      "out": "runs/20261005_math_review_sigma_time_v3_posterior_activation/seed2107/first_saved_rows",
+      "utc": "2026-10-05T03:09:56.131974+00:00",
+      "native_row_verified": true,
+      "module_sha256": "85a091c53d9c81ee6443a1a4492ee45a35b487f7d360dfd6df190b9e3856cfc6",
+      "native_row_replay_discrepancies": {
+        "sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 0.0,
+        "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 0.0,
+        "total_chi2": 0.0,
+        "logprior": 0.0,
+        "logposterior": 0.0
+      },
+      "native_row_replay_tolerance": 1e-09,
+      "FreshCAMB_exact_to_independent_upstream_fresh": true,
+      "sampler_cache_resize_challenge": 50,
+      "scope": "selected first saved row; no convergence or uniform accuracy certification"
+    },
+    {
+      "seed": 2108,
+      "group": "sigma_time_v3_A4095_cap20",
+      "point": {
+        "omegabh2": 0.023187092971806506,
+        "omegach2": 0.11617383762016781,
+        "H0": 68.65954550529754,
+        "logA": 3.0068840666506467,
+        "ns": 1.0040601027871798,
+        "tau": 0.044620063805797125,
+        "mnu": 12.00586994051204
+      },
+      "holding_time": 3,
+      "source": "runs/20261005_math_review_fresh_CAMB_sigma_time_v3_A4095_cap20_seed2108/chains/fresh_CAMB_sigma_time_v3_A4095_cap20_seed2108.1.txt",
+      "frozen": "runs/20261005_math_review_sigma_time_v3_posterior_activation/seed2108/first_saved_rows/chains/fresh_CAMB_sigma_time_v3_A4095_cap20_seed2108.1.txt",
+      "snapshot_sha256": "0321b826b9ca01a43b115f6ad5874007cb1c212eb8ce3bc87f2b85743fbeb23d",
+      "complete_prefix_matches": true,
+      "out": "runs/20261005_math_review_sigma_time_v3_posterior_activation/seed2108/first_saved_rows",
+      "utc": "2026-10-05T03:10:16.159155+00:00",
+      "native_row_verified": true,
+      "module_sha256": "85a091c53d9c81ee6443a1a4492ee45a35b487f7d360dfd6df190b9e3856cfc6",
+      "native_row_replay_discrepancies": {
+        "sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 0.0,
+        "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 0.0,
+        "total_chi2": 0.0,
+        "logprior": 0.0,
+        "logposterior": 0.0
+      },
+      "native_row_replay_tolerance": 1e-09,
+      "FreshCAMB_exact_to_independent_upstream_fresh": true,
+      "sampler_cache_resize_challenge": 50,
+      "scope": "selected first saved row; no convergence or uniform accuracy certification"
+    },
+    {
+      "seed": 2106,
+      "group": "sigma_time_v3_A4095_cap20",
+      "point": {
+        "omegabh2": 0.023065676586565418,
+        "omegach2": 0.11734925800764918,
+        "H0": 68.91487125480491,
+        "logA": 3.0308235761231543,
+        "ns": 1.0086073088976601,
+        "tau": 0.05997725481180966,
+        "mnu": 0.009282471672708709
+      },
+      "holding_time": 1,
+      "source": "runs/20261005_math_review_fresh_CAMB_sigma_time_v3_A4095_cap20_seed2106/chains/fresh_CAMB_sigma_time_v3_A4095_cap20_seed2106.1.txt",
+      "frozen": "runs/20261005_math_review_sigma_time_v3_posterior_activation/seed2106/first_saved_rows/chains/fresh_CAMB_sigma_time_v3_A4095_cap20_seed2106.1.txt",
+      "snapshot_sha256": "21414dcb4d1113aa112fae4e4d919aa41ea0ccb6d5c5f7534a6d2e7f8746d08c",
+      "complete_prefix_matches": true,
+      "out": "runs/20261005_math_review_sigma_time_v3_posterior_activation/seed2106/first_saved_rows",
+      "utc": "2026-10-05T03:10:39.651147+00:00",
+      "native_row_verified": true,
+      "module_sha256": "85a091c53d9c81ee6443a1a4492ee45a35b487f7d360dfd6df190b9e3856cfc6",
+      "native_row_replay_discrepancies": {
+        "sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 0.0,
+        "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 0.0,
+        "total_chi2": 0.0,
+        "logprior": 0.0,
+        "logposterior": 0.0
+      },
+      "native_row_replay_tolerance": 1e-09,
+      "FreshCAMB_exact_to_independent_upstream_fresh": true,
+      "sampler_cache_resize_challenge": 50,
+      "scope": "selected first saved row; no convergence or uniform accuracy certification"
+    }
+  ],
+  "first_saved_native_rows_verified": 4,
+  "worker_pid": 2831949,
+  "posterior_certified": false
+}

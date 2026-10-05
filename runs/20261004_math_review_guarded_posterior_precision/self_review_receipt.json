@@ -1,0 +1,14 @@
+{
+  "utc": "2026-10-04T07:05:54.328581+00:00",
+  "reviewer": "distinct_self_review_no_independent_agent",
+  "judgment": "selected matching-target native closures verified; coordinate-dependent precision discrepancies remain",
+  "scope": "six frozen guarded-chain coordinates and two 0.01 eV mass offsets; all native likelihood components, not fresh posterior/prior evaluation",
+  "physical_target_checks": "within each lens, identical likelihoods, physical theory arguments, prior definitions, and fixed/derived mappings; only numerical controls differ between evaluation variants",
+  "statistical_scope": "selection uses empirical quantiles of unconverged snapshots; no reported selection mass is a verified posterior bound",
+  "numerical_scope": "same pinned CLASS module; requested likelihood TT/EE coverage matched within each lens; solver l_max_scalars=4095 for both",
+  "verifier_correction": "initial verifier required requested coverage 4095 for both lenses; actual A likelihood requests 3200 and B requests 4095. Corrected before acceptance; solver l_max remains 4095",
+  "finding": "B local mass response differs by 0.3157205694 native chi2; absolute offsets vary across selected coordinates, so common-constant cancellation cannot be assumed",
+  "next_obligation": "test intermediate target against finer controls at identical median and mass-offset points; keep posterior cohorts separate",
+  "paper_modified": false,
+  "uniform_accuracy_or_convergence_certified": false
+}

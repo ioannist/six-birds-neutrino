@@ -1,0 +1,9 @@
+{
+  "utc": "2026-10-05T02:08:04.254711+00:00",
+  "actual_direct_exit_code": 1,
+  "failed_assertion": "assert set(warnings.values()) == {512}",
+  "cause": "Assumed warning count from incomplete progress logs; terminal logs contain521 each. Numeric comparisons and source review had passed before this assertion.",
+  "corrected_review": "review_limit_controls_v2.py",
+  "original_script_sha256": "0bda122cf54983b11c2f72720ed193840691ec06980d5e48156dd940553d354c",
+  "native_outputs_modified": false
+}

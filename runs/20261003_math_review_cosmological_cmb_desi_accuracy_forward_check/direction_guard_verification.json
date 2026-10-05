@@ -1,0 +1,24 @@
+{
+  "utc": "2026-10-03T18:01:06.285509+00:00",
+  "scope": "partial_verification_selection_guards",
+  "records": [
+    {
+      "case": "default_requires_both",
+      "exit_code": 1,
+      "expected_error": "Both directions must be complete before verification.",
+      "output_created": false
+    },
+    {
+      "case": "missing_reverse",
+      "exit_code": 1,
+      "expected_error": "All selected directions must be complete before verification.",
+      "output_created": false
+    },
+    {
+      "case": "duplicate_forward",
+      "exit_code": 1,
+      "expected_error": "Select distinct known directions for partial verification.",
+      "output_created": false
+    }
+  ]
+}

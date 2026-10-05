@@ -1,0 +1,40 @@
+{
+  "retained_represented_steps": [
+    1057,
+    1046,
+    1008,
+    1033
+  ],
+  "next_minimum_history": 1210,
+  "mass": {
+    "method": "ArviZ_rank_folded_split_rhat_bulk_tail_quantile_ESS_and_MCSE",
+    "arviz_version": "1.3.0",
+    "n_chains": 4,
+    "draws_per_chain": 1008,
+    "dropped_prefix_draws_per_chain": [
+      49,
+      38,
+      0,
+      25
+    ],
+    "quantile_probability": 0.95,
+    "quantile_full_draws": 0.10372105627730255,
+    "quantile_retained_draws": 0.10467387434064182,
+    "quantile_half_difference": 0.01032510923039856,
+    "quantile_mcse_limit": 0.001,
+    "quantile_mcse_scope": "population_quantile_estimated_from_equal_length_last_draws",
+    "rank_folded_split_rhat": 1.0341947040581585,
+    "bulk_ess": 131.81991109063222,
+    "tail_ess_05_95": 159.10278762558167,
+    "quantile_ess": 159.10278762558167,
+    "quantile_mcse": 0.007998666456841025,
+    "diagnostic_thresholds_pass": false,
+    "mathematical_convergence_certificate": false,
+    "warnings": [
+      "Rank/folded split Rhat exceeds 1.01.",
+      "Bulk, tail, or quantile ESS is below 400.",
+      "Quantile MCSE exceeds the declared precision target."
+    ],
+    "precision_target_scope": "absolute_parameter_units"
+  }
+}

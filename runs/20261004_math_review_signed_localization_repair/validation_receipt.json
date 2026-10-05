@@ -1,0 +1,199 @@
+{
+  "utc": "2026-10-04T05:29:36.955172+00:00",
+  "scope": "finite_signed_covariance_aggregation_and_exact_real_solve_partition_bridges",
+  "native_verifications": [
+    {
+      "session": 36553,
+      "exit_code": 0,
+      "artifact": "native_multistart_verification.json"
+    },
+    {
+      "session": 83228,
+      "exit_code": 0,
+      "artifact": "native_staging_verification.json"
+    }
+  ],
+  "repair_probe": {
+    "exit_code": 0,
+    "script": "verify_repair.py",
+    "result": "repair_verification.json"
+  },
+  "first_Lean_build": {
+    "session": 20767,
+    "exit_code": 0,
+    "unused_instance_linter_warnings_repaired": true
+  },
+  "final_Lean_build": {
+    "session": 73341,
+    "exit_code": 0,
+    "warnings": false
+  },
+  "axiom_check": {
+    "session": 51138,
+    "exit_code": 0,
+    "exported_theorems": 49,
+    "standard_axioms_only": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "formal_self_review": {
+    "first_session": 72725,
+    "first_exit_code": 1,
+    "second_session": 94041,
+    "second_exit_code": 1,
+    "final_session": 93827,
+    "final_exit_code": 0,
+    "tactic_failures_preserved": true,
+    "examples": 8,
+    "positive_definite_signed_allocation_counterexample": true,
+    "independent_review": false
+  },
+  "math_check": {
+    "session": 26934,
+    "exit_code": 0,
+    "python_tests": 85,
+    "exported_Lean_theorems": 49
+  },
+  "exact_rational_fallback_scope": "exact sum of computed binary64 endpoint allocations, not exact matrix-solve error certification",
+  "finite_endpoint_failure_reproduced": true,
+  "shape_broadcast_failure_reproduced": true,
+  "native_ranked_groups_unchanged": true,
+  "native_target_or_profile_domain_changed": false,
+  "paper_modified": false,
+  "floating_point_uniform_accuracy_certificate": false,
+  "sources": [
+    {
+      "path": "src/sbt_spt_audit/localization.py",
+      "sha256": "c8fe5655af631e989ea34a7e17aad0343bf32195567e38f70e745c7c8456219e"
+    },
+    {
+      "path": "tests/test_math_repairs.py",
+      "sha256": "15176ef1371babfd0098fa6a2afd7d2d505661cea1cc76e763a5586fbbecdc47"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/TruncGaussProof/CovarianceLedger.lean",
+      "sha256": "c4c34185f9900be5d7f6dcdf079bfd0e5fb4a389e510757bf03bcee3f86795d3"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/TruncGaussProof.lean",
+      "sha256": "4a8e6247596f576cc0ce2b53064f69ee17af327b74297685ddba582b985ee93e"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/AuditAxioms.lean",
+      "sha256": "dde6c7208cfae0c46254176a32a5e43cf337e7ae0031e357e714fc561fd72dc2"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "runs/20261004_math_review_signed_localization_repair/CovarianceLedgerReview.lean",
+      "sha256": "6e936be6d059c30db41afef451a17f7d3fa46c3258a73c577f156c50364cc379"
+    },
+    {
+      "path": "runs/20261004_math_review_signed_localization_repair/axioms_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_signed_localization_repair/axioms_stdout.txt",
+      "sha256": "dd0721281e8447f1bdee35afce5660791a4d75ca64c7d48ca4da88c7c36b2714"
+    },
+    {
+      "path": "runs/20261004_math_review_signed_localization_repair/before_localization.py",
+      "sha256": "286fc0be0e3120b29d32a4eae5597baeaa224f187414186e5191845147b14d3a"
+    },
+    {
+      "path": "runs/20261004_math_review_signed_localization_repair/first_CovarianceLedgerReview.lean",
+      "sha256": "78aa13fa0d14a0b1fe6ccf9f68b2495a0adfa53fea995a9503dcd77d76753ba9"
+    },
+    {
+      "path": "runs/20261004_math_review_signed_localization_repair/first_formal_review_stdout.txt",
+      "sha256": "4089d54506b4eee877755b0bf2fce7698faa213fd5568e1c324dc6bc7f70ced2"
+    },
+    {
+      "path": "runs/20261004_math_review_signed_localization_repair/formal_review_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_signed_localization_repair/formal_review_stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_signed_localization_repair/lean_build_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_signed_localization_repair/lean_build_stdout.txt",
+      "sha256": "cd3917467caea3bc37bcf4642cfa675b0395104bd85ec29c4502857d51866cfb"
+    },
+    {
+      "path": "runs/20261004_math_review_signed_localization_repair/lean_final_build_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_signed_localization_repair/lean_final_build_stdout.txt",
+      "sha256": "5b3a10aba4b324e32c6de230e8546a9c83416d9fe4612d7859c89619a582f129"
+    },
+    {
+      "path": "runs/20261004_math_review_signed_localization_repair/math_check_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_signed_localization_repair/math_check_stdout.txt",
+      "sha256": "d08d2d95478c2e1102baf323a5a3cf775e5fb33dea05b643f038977725c56756"
+    },
+    {
+      "path": "runs/20261004_math_review_signed_localization_repair/native_multistart_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_signed_localization_repair/native_multistart_stdout.txt",
+      "sha256": "baf65aa398a0ea95a1e38cfdc1f305f7f902f0e69f7864b0905e9307b53378a1"
+    },
+    {
+      "path": "runs/20261004_math_review_signed_localization_repair/native_multistart_verification.json",
+      "sha256": "be06e2d6a97809e066d1b3f811c9c0adda50074b9159b0f7c1b60e5287408f48"
+    },
+    {
+      "path": "runs/20261004_math_review_signed_localization_repair/native_staging_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_signed_localization_repair/native_staging_stdout.txt",
+      "sha256": "25112bc733207ffde3404ed8016b1b8ad569316ab8dd49dcae3c300bea221382"
+    },
+    {
+      "path": "runs/20261004_math_review_signed_localization_repair/native_staging_verification.json",
+      "sha256": "555cfc5a5b53def7b46d0aeee2737cd36469cd8f147296518f60b31da354c52d"
+    },
+    {
+      "path": "runs/20261004_math_review_signed_localization_repair/pytest_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_signed_localization_repair/pytest_stdout.txt",
+      "sha256": "3ead8e29ad363e87a4999292333748038bd392990569d3b6130cd79443253b61"
+    },
+    {
+      "path": "runs/20261004_math_review_signed_localization_repair/repair_probe_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_signed_localization_repair/repair_probe_stdout.txt",
+      "sha256": "41155ecfe0c119a8d8d1169649c19dd4f60e3b5727895c06ab46c57005bb2bce"
+    },
+    {
+      "path": "runs/20261004_math_review_signed_localization_repair/repair_verification.json",
+      "sha256": "64707b357ccaab6c4ec1f5b6c9c51a3820a07427d79dc359d1a91a9b16cc3c24"
+    },
+    {
+      "path": "runs/20261004_math_review_signed_localization_repair/second_formal_review_stdout.txt",
+      "sha256": "e441d18b2ae54d6b9f0753234d619f16e447436875b402734d3c5712d5d8f52e"
+    },
+    {
+      "path": "runs/20261004_math_review_signed_localization_repair/verify_repair.py",
+      "sha256": "4980a69d174aba9515cbd7506d98ed279d842c9be33116b31817560267332313"
+    }
+  ],
+  "post_check_docstring_clarification": "Signed accumulation docstring does not assert universally correct rounding; runtime arithmetic unchanged."
+}

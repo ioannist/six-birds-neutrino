@@ -1,0 +1,250 @@
+{
+  "utc": "2026-10-05T05:53:26.499523+00:00",
+  "reviewer": "distinct_self_review_not_independent_agent",
+  "records": [
+    {
+      "group": "quad_A",
+      "seeds": [
+        1301,
+        1302,
+        1303,
+        1304
+      ],
+      "next_minimum_history": 7353,
+      "minimum_saved_postburn_history": 7236,
+      "due": false
+    },
+    {
+      "group": "quad_B",
+      "seeds": [
+        1305,
+        1306,
+        1307,
+        1308
+      ],
+      "next_minimum_history": 7212,
+      "minimum_saved_postburn_history": 6992,
+      "due": false
+    },
+    {
+      "group": "medium_A",
+      "seeds": [
+        1201,
+        1401,
+        1402,
+        1406
+      ],
+      "next_minimum_history": 1706,
+      "minimum_saved_postburn_history": 1664,
+      "due": false
+    },
+    {
+      "group": "medium_B",
+      "seeds": [
+        1403,
+        1404,
+        1405,
+        1407
+      ],
+      "next_minimum_history": 1456,
+      "minimum_saved_postburn_history": 1280,
+      "due": false
+    },
+    {
+      "group": "grid12_B",
+      "seeds": [
+        1501,
+        1502,
+        1503,
+        1504
+      ],
+      "next_minimum_history": 1000,
+      "minimum_saved_postburn_history": 855,
+      "due": false
+    },
+    {
+      "group": "old_A3200",
+      "seeds": [
+        1701,
+        1702,
+        1703,
+        1704
+      ],
+      "next_minimum_history": 8471,
+      "minimum_saved_postburn_history": 7379,
+      "due": false
+    },
+    {
+      "group": "old_B4095",
+      "seeds": [
+        1705,
+        1706,
+        1707,
+        1708
+      ],
+      "next_minimum_history": 8256,
+      "minimum_saved_postburn_history": 7006,
+      "due": false
+    },
+    {
+      "group": "current_A4095",
+      "seeds": [
+        1801,
+        1802,
+        1803,
+        1804
+      ],
+      "next_minimum_history": 6207,
+      "minimum_saved_postburn_history": 6055,
+      "due": false
+    },
+    {
+      "group": "current_B4095",
+      "seeds": [
+        1805,
+        1806,
+        1807,
+        1808
+      ],
+      "next_minimum_history": 6004,
+      "minimum_saved_postburn_history": 5914,
+      "due": false
+    },
+    {
+      "group": "current_A3200",
+      "seeds": [
+        1901,
+        1902,
+        1903,
+        1904
+      ],
+      "next_minimum_history": 9659,
+      "minimum_saved_postburn_history": 8184,
+      "due": false
+    },
+    {
+      "group": "upper20_A4095",
+      "seeds": [
+        2001,
+        2002,
+        2003,
+        2004
+      ],
+      "next_minimum_history": 1000,
+      "minimum_saved_postburn_history": 349,
+      "due": false
+    },
+    {
+      "group": "upper20_B4095",
+      "seeds": [
+        2005,
+        2006,
+        2007,
+        2008
+      ],
+      "next_minimum_history": 1000,
+      "minimum_saved_postburn_history": 612,
+      "due": false
+    },
+    {
+      "group": "sigma_time_v3_A4095_cap20",
+      "seeds": [
+        2105,
+        2106,
+        2107,
+        2108
+      ],
+      "next_minimum_history": 1000,
+      "minimum_saved_postburn_history": 797,
+      "due": false
+    },
+    {
+      "group": "sigma_time_v3_B4095_cap5",
+      "seeds": [
+        2109,
+        2110,
+        2111,
+        2112
+      ],
+      "next_minimum_history": 1000,
+      "minimum_saved_postburn_history": 931,
+      "due": false
+    },
+    {
+      "group": "sigma_time_v3_B4095_cap20",
+      "seeds": [
+        2113,
+        2114,
+        2115,
+        2116
+      ],
+      "next_minimum_history": 1000,
+      "minimum_saved_postburn_history": 902,
+      "due": false
+    },
+    {
+      "group": "sigma_time_v3_A4095_cap5",
+      "seeds": [
+        2101,
+        2102,
+        2103,
+        2104
+      ],
+      "next_minimum_history": 1000,
+      "minimum_saved_postburn_history": 914,
+      "due": false
+    },
+    {
+      "group": "fresh_recovery_medium_A",
+      "seeds": [
+        2201,
+        2301,
+        2302,
+        2303
+      ],
+      "next_minimum_history": 1000,
+      "minimum_saved_postburn_history": 63,
+      "due": false
+    },
+    {
+      "group": "fresh_recovery_quad_A",
+      "seeds": [
+        2202,
+        2304,
+        2305,
+        2306
+      ],
+      "next_minimum_history": 1000,
+      "minimum_saved_postburn_history": 440,
+      "due": false
+    },
+    {
+      "group": "fresh_recovery_medium_B",
+      "seeds": [
+        2401,
+        2402,
+        2403,
+        2404
+      ],
+      "next_minimum_history": 1000,
+      "minimum_saved_postburn_history": 11,
+      "due": false
+    },
+    {
+      "group": "fresh_recovery_quad_B",
+      "seeds": [
+        2405,
+        2406,
+        2407,
+        2408
+      ],
+      "next_minimum_history": 1000,
+      "minimum_saved_postburn_history": 152,
+      "due": false
+    }
+  ],
+  "closed_assessment_growth_exactly_reconstructed": true,
+  "first_candidate_and_CLASS_gate_remains_1000": true,
+  "short_control_contracts_not_used_as_production_predecessors": true,
+  "posterior_qualified": false
+}

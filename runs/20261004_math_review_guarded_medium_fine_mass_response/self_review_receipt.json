@@ -1,0 +1,15 @@
+{
+  "utc": "2026-10-04T07:22:26.313986+00:00",
+  "reviewer": "distinct_self_review_no_independent_agent",
+  "judgment": "medium replay closed; A selected mass response nearly stable while B still changes by 0.108338 native chi2",
+  "scope": "identical fixed median and +0.01 eV points, two models, six native components per point; no posterior/prior recalculation",
+  "controls_changed": 6,
+  "changes_only_numerical_controls": true,
+  "native_module_unchanged": true,
+  "coverage": "likelihood requirements matched: A3200, B4095; common configured scalar lmax4095",
+  "source_identity": "all committed launch input hashes and prior completed comparison hashes checked",
+  "limitation": "shrinking differences between selected precision levels do not prove a uniform error bound or convergence rate",
+  "next_obligation": "isolate spectrum grids from integration/neutrino tolerances in B mass-response sensitivity",
+  "convergence_or_accuracy_certified": false,
+  "paper_modified": false
+}

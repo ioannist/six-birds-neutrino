@@ -19,10 +19,14 @@ SRC_DIR = REPO_ROOT / "src"
 if str(SRC_DIR) not in sys.path:
     sys.path.insert(0, str(SRC_DIR))
 
+from sbt_spt_audit.localization import localize_quadratic_difference
+from sbt_spt_audit.metrics import covariance_solve
+
 from sbt_spt_audit.candl_support import (  # noqa: E402
     CandlLikeMetadata,
     CandlTestVector,
-    compute_residual_from_base,
+    compute_gaussian_residual_and_covariance,
+    gaussian_native_adjustment,
     evaluate_loglike_from_base,
     get_bin_spec_types,
     instantiate_like_with_metadata,
@@ -123,6 +127,7 @@ def _validate_gaussian_lens(config: dict[str, Any]) -> tuple[str, list[str], np.
             raise ValueError("lens.cov rows must all have length len(params).")
     mu = np.asarray(mean, dtype=float)
     c = np.asarray(cov, dtype=float)
+    covariance_solve(c, mu)
     return run_name, params, mu, c
 
 
@@ -280,14 +285,6 @@ def _plot_blockwise(
     plt.close(fig)
 
 
-def _safe_quadratic_form(cov: np.ndarray, residual: np.ndarray) -> float:
-    try:
-        solved = np.linalg.solve(cov, residual)
-    except np.linalg.LinAlgError:
-        solved = np.linalg.pinv(cov) @ residual
-    return float(residual @ solved)
-
-
 def _format_ell_label(lo: float, hi: float) -> str:
     return f"[{int(lo)},{int(hi)})"
 
@@ -298,52 +295,34 @@ def _compute_candl_localization_direction(
     theta_train: dict[str, float],
     theta_test: dict[str, float],
     ell_bin_edges: list[float],
-) -> tuple[dict[str, list[float]], list[dict[str, Any]], list[str]]:
+) -> tuple[dict[str, list[float]], list[dict[str, Any]], list[str], dict[str, Any]]:
     spec_by_bin = get_bin_spec_types(like_obj)
     eff_ells = np.asarray(getattr(like_obj, "effective_ells"), dtype=float)
     cov = np.asarray(getattr(like_obj, "covariance"), dtype=float)
 
-    residual_train = compute_residual_from_base(
+    residual_train, cov_residual_train = compute_gaussian_residual_and_covariance(
         like_obj=like_obj,
         base_params=base_params,
         overrides=theta_train,
     )
-    residual_test = compute_residual_from_base(
+    residual_test, cov_residual_test = compute_gaussian_residual_and_covariance(
         like_obj=like_obj,
         base_params=base_params,
         overrides=theta_test,
     )
 
-    spectra_present = [s for s in ["TT", "TE", "EE"] if np.any(spec_by_bin == s)]
-    delta_by_spec_ell: dict[str, list[float]] = {}
-    ranked_groups: list[dict[str, Any]] = []
-    for spec in spectra_present:
-        values: list[float] = []
-        spec_mask = spec_by_bin == spec
-        for i in range(len(ell_bin_edges) - 1):
-            lo = float(ell_bin_edges[i])
-            hi = float(ell_bin_edges[i + 1])
-            idx = np.where(spec_mask & (eff_ells >= lo) & (eff_ells < hi))[0]
-            if idx.size == 0:
-                values.append(0.0)
-                continue
-            cov_g = cov[np.ix_(idx, idx)]
-            q_train = _safe_quadratic_form(cov_g, residual_train[idx])
-            q_test = _safe_quadratic_form(cov_g, residual_test[idx])
-            delta_q = float(q_train - q_test)
-            values.append(delta_q)
-            ranked_groups.append(
-                {
-                    "spec": spec,
-                    "ell": [int(lo), int(hi)],
-                    "deltaQ": delta_q,
-                    "n_bins": int(idx.size),
-                }
-            )
-        delta_by_spec_ell[spec] = values
-
-    ranked_groups.sort(key=lambda item: item["deltaQ"], reverse=True)
-    return delta_by_spec_ell, ranked_groups[:10], spectra_present
+    native_train = gaussian_native_adjustment(like_obj, base_params, theta_train, residual_train, cov_residual_train)
+    native_best = gaussian_native_adjustment(like_obj, base_params, theta_test, residual_test, cov_residual_test)
+    result = localize_quadratic_difference(
+        cov_residual_train, residual_train, residual_test, spec_by_bin, eff_ells, ell_bin_edges,
+        best_cov=cov_residual_test,
+    )
+    ledger = result[3]
+    ledger["delta_prior_penalty"] = native_train["prior_penalty"] - native_best["prior_penalty"]
+    ledger["delta_covariance_normalization"] = native_train["covariance_normalization"] - native_best["covariance_normalization"]
+    ledger["native_bridge_error_at_train"] = native_train["native_reconstruction_error"]
+    ledger["native_bridge_error_at_reference"] = native_best["native_reconstruction_error"]
+    return result
 
 
 def _plot_localization_heatmap(
@@ -453,14 +432,14 @@ def main() -> int:
             blocks_a_given_b = {"loglike_scalar": delta_a_given_b}
 
             if do_localize:
-                b_delta, b_top, b_specs = _compute_candl_localization_direction(
+                b_delta, b_top, b_specs, b_accounting = _compute_candl_localization_direction(
                     like_obj=candl_b.like_obj,
                     base_params=candl_b.test_vector.base_params,
                     theta_train=theta_a_map,
                     theta_test=theta_b_map,
                     ell_bin_edges=ell_bin_edges,
                 )
-                a_delta, a_top, a_specs = _compute_candl_localization_direction(
+                a_delta, a_top, a_specs, a_accounting = _compute_candl_localization_direction(
                     like_obj=candl_a.like_obj,
                     base_params=candl_a.test_vector.base_params,
                     theta_train=theta_b_map,
@@ -468,16 +447,21 @@ def main() -> int:
                     ell_bin_edges=ell_bin_edges,
                 )
                 spectra_present = [s for s in ["TT", "TE", "EE"] if s in set(b_specs) | set(a_specs)]
+                b_accounting["native_likelihood_adjustment"] = delta_b_given_a - b_accounting["deltaQ_full"]
+                a_accounting["native_likelihood_adjustment"] = delta_a_given_b - a_accounting["deltaQ_full"]
                 localization_payload = {
+                    "audit_scope": "fixed_packaged_test_spectra_scalar_nuisance_transfer",
                     "ell_bin_edges": ell_bin_edges,
                     "spectra_present": spectra_present,
                     "B_given_A": {
                         "deltaQ_by_spec_ell": b_delta,
                         "top_groups": b_top,
+                        "accounting": b_accounting,
                     },
                     "A_given_B": {
                         "deltaQ_by_spec_ell": a_delta,
                         "top_groups": a_top,
+                        "accounting": a_accounting,
                     },
                 }
     except Exception as exc:  # noqa: BLE001

@@ -1,0 +1,76 @@
+{
+  "scope": "refitted_numerical_candidates_not_global_optimum_or_posterior_control",
+  "baseline": "runs/20261003_math_review_cosmological_cmb_desi_warm",
+  "control": "runs/20261003_math_review_cosmological_cmb_desi_tau_control",
+  "intervention": "remove_only_native_tau_prior_in_both_SPT_lenses",
+  "directions": {
+    "B_given_A": {
+      "baseline_joint": 62.39013570828752,
+      "control_joint": 61.28074587771198,
+      "relative_change_percent": -1.7781494109303186,
+      "control_top_groups": [
+        {
+          "spec": "EE",
+          "ell": [
+            2000.0,
+            2500.0
+          ],
+          "deltaQ": 23.423077965251345,
+          "n_bins": 60
+        },
+        {
+          "spec": "EE",
+          "ell": [
+            2500.0,
+            3000.0
+          ],
+          "deltaQ": 12.46814441502834,
+          "n_bins": 60
+        },
+        {
+          "spec": "TT",
+          "ell": [
+            2000.0,
+            2500.0
+          ],
+          "deltaQ": 10.069952012483062,
+          "n_bins": 60
+        }
+      ]
+    },
+    "A_given_B": {
+      "baseline_joint": 23.190777408661233,
+      "control_joint": 23.1061070066894,
+      "relative_change_percent": -0.3651037672424584,
+      "control_top_groups": [
+        {
+          "spec": "TT",
+          "ell": [
+            2500.0,
+            3000.0
+          ],
+          "deltaQ": 10.369927155773825,
+          "n_bins": 30
+        },
+        {
+          "spec": "EE",
+          "ell": [
+            1600.0,
+            2000.0
+          ],
+          "deltaQ": 5.542847395176651,
+          "n_bins": 48
+        },
+        {
+          "spec": "TT",
+          "ell": [
+            1600.0,
+            2000.0
+          ],
+          "deltaQ": 2.751470228325737,
+          "n_bins": 48
+        }
+      ]
+    }
+  }
+}

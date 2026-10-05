@@ -1,0 +1,47 @@
+{
+  "utc": "2026-10-03T14:57:26.451915+00:00",
+  "scope": "same_target_candidate_comparison_not_global_optimization_or_posterior_certificate",
+  "physical_parameterization_likelihoods_and_priors_match": true,
+  "audit_managed_exec_exit_code": 0,
+  "fresh_verifier_managed_exec_exit_code": 0,
+  "source_sha256": {
+    "metrics.json": "6b2547c49eebc3fc13039a2045b33a21bb68d57d771ba3d2625c4ac7a4b5b931",
+    "fits.json": "a15f952da6f1aebaffe05a130337d9c3c199b203d28b9631797e848d73e0fa96",
+    "accounting_verification.json": "890bda11564caf662c14ebaa24ec825023a862f2253c2e41d505d8c99dd9f173",
+    "resolved.yaml": "1cb9d4d84fa60146be82a7bede3dbdacfa9adb62b6ff42dd5f112b533d418993"
+  },
+  "directions": {
+    "B_given_A": {
+      "joint_delta_chi2": 62.590454268304256,
+      "warm_joint_delta_chi2": 62.39013570828752,
+      "percent_change_from_warm": 0.3210740892652497,
+      "signed_spt_delta_chi2": 60.61037743171278,
+      "spt_native_reconstruction_error": -7.94386778579792e-12,
+      "largest_positive_group": {
+        "spec": "EE",
+        "ell": [
+          2000.0,
+          2500.0
+        ],
+        "deltaQ": 23.524811826059643,
+        "n_bins": 60
+      }
+    },
+    "A_given_B": {
+      "joint_delta_chi2": 23.165820562259796,
+      "warm_joint_delta_chi2": 23.190777408661233,
+      "percent_change_from_warm": -0.10761539366126449,
+      "signed_spt_delta_chi2": 25.14680897916378,
+      "spt_native_reconstruction_error": -7.226219622680219e-12,
+      "largest_positive_group": {
+        "spec": "TT",
+        "ell": [
+          2500.0,
+          3000.0
+        ],
+        "deltaQ": 10.446527985956418,
+        "n_bins": 30
+      }
+    }
+  }
+}

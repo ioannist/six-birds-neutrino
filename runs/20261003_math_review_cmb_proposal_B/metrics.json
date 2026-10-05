@@ -1,0 +1,88 @@
+{
+  "scope": "regularized_Gauss_Newton_MCMC_proposal_only",
+  "posterior_covariance_certified": false,
+  "parameter_names": [
+    "omegabh2",
+    "omegach2",
+    "H0",
+    "logA",
+    "ns",
+    "tau",
+    "mnu_sample",
+    "A_planck",
+    "TT_tSZ_Amp",
+    "TT_kSZ_Amp"
+  ],
+  "anchor": {
+    "omegabh2": 0.022172856,
+    "omegach2": 0.11718673,
+    "H0": 68.282233,
+    "logA": 3.048048,
+    "ns": 0.96525897,
+    "tau": 0.054851336,
+    "mnu_sample": 0.063859201,
+    "A_planck": 1.0056219,
+    "TT_tSZ_Amp": 1.1919766,
+    "TT_kSZ_Amp": 2.3661487
+  },
+  "step_in_proposal_units": 0.5,
+  "source_config": "/home/repos/six-birds-neutrino/runs/20261003_math_review_cmb_desi_chain_configs/B_seed505.yaml",
+  "source_config_sha256": "d709d173e2f930f8aa120241eca4224cee36262538203e416eac48b5587efe41",
+  "native_gaussian_completion_bridges_verified": [
+    "planck_2018_highl_plik.TT_lite_native",
+    "planckpr4lensing.PlanckPR4Lensing"
+  ],
+  "lowell_diagonal_curvature_scaled": {
+    "planck_2018_lowl.TT": [
+      0.0019538889318937436,
+      0.06314353892855706,
+      0.004639556265715328,
+      0.14771441416689868,
+      0.3437597841380011,
+      0.10103372882110762,
+      -0.004850476790807079,
+      0.15334180450997792,
+      -0.0,
+      -0.0
+    ],
+    "planck_2018_lowl.EE_sroll2": [
+      0.16694021902867462,
+      0.17340027760246812,
+      0.08974246947968822,
+      0.34948844670179824,
+      0.19422461716021644,
+      3.4074845700376954,
+      0.04682578397751058,
+      0.33735274782384295,
+      -0.0,
+      -0.0
+    ]
+  },
+  "elapsed_seconds": 414.7116896221414,
+  "fisher_eigenvalues_scaled": [
+    0.1882619669571313,
+    0.3849913519275499,
+    2.31417037487652,
+    3.2226471881108045,
+    3.3962671941666978,
+    4.2448916143132065,
+    7.400643929107145,
+    49.51516227019341,
+    95.83452393515618,
+    391.0444767279585
+  ],
+  "regularized_eigenvalues_scaled": [
+    0.1882619669571313,
+    0.3849913519275499,
+    2.31417037487652,
+    3.2226471881108045,
+    3.3962671941666978,
+    4.2448916143132065,
+    7.400643929107145,
+    49.51516227019341,
+    95.83452393515618,
+    391.0444767279585
+  ],
+  "eigenvalue_floor": 0.0003910444767279585,
+  "n_regularized_directions": 0
+}

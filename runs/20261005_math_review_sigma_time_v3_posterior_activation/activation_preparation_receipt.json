@@ -1,0 +1,14 @@
+{
+  "utc": "2026-10-05T03:06:47.413257+00:00",
+  "preparation": "runs/20261005_math_review_sigma_time_v3_posterior_preparation_v2",
+  "preparation_receipt_sha256": "a21c9e70f80213e8d99fe4df471517eeb3d20ee10745598920aa47ee2b48851a",
+  "preparation_self_review_sha256": "9248a4c9e32caae952cce79144b94a8f6cc8ed65362295afd9151252397558e6",
+  "checkpoint_commit": "edba123",
+  "source_helpers": {
+    "runs/20261004_math_review_upper_prior_posterior_preparation/verify_activation.py": "b87112bdce3f42d291393650beca920edf36722231d3f1a84b23d8de3368758a",
+    "runs/20261004_math_review_upper_prior_posterior_preparation/verify_first_rows.py": "7ae0336300ef50c04dfeebce41a91c06b8a65e5ccb152535d2a0860e72d5dae2"
+  },
+  "changes": "Read immutable v2 preparation, separate live launcher captures and first-row snapshots; activation16/fourtargets; loaded version checked for source overlay. Same native/source identity and frozen-prefix/native discrepancy requirements.",
+  "production_adopted": false,
+  "posterior_certified": false
+}

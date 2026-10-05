@@ -1,0 +1,28 @@
+{
+  "utc": "2026-10-04T06:25:46.019887+00:00",
+  "scope": "completion_receipt_seed_to_session_label_correction",
+  "corrections": [
+    {
+      "seed": 401,
+      "prior_mislabeled_session": 92240,
+      "verified_original_session": 44762,
+      "managed_exit_code": 0,
+      "runtime_scientific_pid": 2333842,
+      "scientific_bundle_hashes_unchanged": true
+    },
+    {
+      "seed": 402,
+      "prior_mislabeled_session": 44762,
+      "verified_original_session": 92240,
+      "managed_exit_code": 0,
+      "runtime_scientific_pid": 2333841,
+      "scientific_bundle_hashes_unchanged": true
+    }
+  ],
+  "source": "original launch and terminal tool records in this thread",
+  "prior_receipt_sha256": "611159b551a90ce9e7f56cb15d2f66d12c60abec3e7c6df54f462d561c49a4ae",
+  "corrected_receipt_sha256": "63418a24af29123aed7f63f7cb3ce14ae8b36d832986ba7e1c9273d448e1f2e7",
+  "primary_tool_evidence_sha256": "721e2a9f7dbf721ec17ede0e4760070383eeb9207daa71117b2cab3b9901dccf",
+  "scientific_data_or_diagnostics_changed": false,
+  "historical_mislabeled_receipt_preserved": true
+}

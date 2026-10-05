@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import argparse
 from datetime import datetime
+from fractions import Fraction
 import json
 from pathlib import Path
 import subprocess
@@ -10,7 +11,8 @@ import sys
 
 import matplotlib.pyplot as plt
 import numpy as np
-from scipy.stats import norm
+from scipy.special import erfcx
+from scipy.stats import norm, truncnorm
 import yaml
 
 
@@ -20,37 +22,143 @@ def combine_gaussians(
     mu2: float | np.ndarray,
     sigma2: float | np.ndarray,
 ) -> tuple[np.ndarray, np.ndarray]:
-    """Combine two Gaussian constraints via product of densities."""
-    if sigma1 <= 0:
+    """Combine binary64 Gaussian inputs; reject mean underflow losing its sign."""
+    if not np.isfinite(sigma1) or sigma1 <= 0 or not np.isfinite(mu1):
         raise ValueError(f"sigma1 must be > 0, got {sigma1}.")
     sigma2_arr = np.asarray(sigma2, dtype=float)
-    if np.any(sigma2_arr <= 0):
+    if np.any(~np.isfinite(sigma2_arr)) or np.any(sigma2_arr <= 0):
         raise ValueError("sigma2 must be > 0.")
 
     mu2_arr = np.asarray(mu2, dtype=float)
-    prec1 = 1.0 / (sigma1**2)
-    prec2 = 1.0 / (sigma2_arr**2)
-    var_star = 1.0 / (prec1 + prec2)
-    mu_star = var_star * (mu1 * prec1 + mu2_arr * prec2)
-    sigma_star = np.sqrt(var_star)
-    return np.asarray(mu_star), np.asarray(sigma_star)
+    if np.any(~np.isfinite(mu2_arr)):
+        raise ValueError("means must be finite.")
+    # Scale so precisions do not overflow. Wide intermediates also retain tiny
+    # weights whose product with a large mean is representable in binary64.
+    sigma1_wide = np.longdouble(sigma1)
+    sigma2_wide = sigma2_arr.astype(np.longdouble)
+    scale = np.minimum(sigma1_wide, sigma2_wide)
+    with np.errstate(over='ignore', invalid='ignore', under='ignore'):
+        p1 = (scale / sigma1_wide) ** 2
+        p2 = (scale / sigma2_wide) ** 2
+        term1 = p1 * np.longdouble(mu1)
+        term2 = p2 * mu2_arr.astype(np.longdouble)
+        numerator = term1 + term2
+        mu_star = np.array(numerator / (p1 + p2), dtype=np.longdouble, copy=True)
+        # Wide arithmetic can still erase the sign under near-cancellation. For
+        # example, (1 + 2^-52)^2 - (1 + 2^-51) is strictly positive. Evaluate such
+        # cases as exact rational expressions of the binary64 inputs before rounding.
+        opposite = ((term1 > 0) & (term2 < 0)) | ((term1 < 0) & (term2 > 0))
+        close = opposite & (np.abs(numerator) <= 16 * np.finfo(np.longdouble).eps
+                            * (np.abs(term1) + np.abs(term2)))
+    # A convex mean can be finite even if its unnormalized numerator overflows
+    # on platforms whose longdouble has no additional exponent range. Subnormal
+    # precision weights also lose relative accuracy before rounding all the way
+    # to zero; a large component mean can make that error significant.
+    tiny_weight = np.finfo(np.longdouble).tiny
+    repair = close | (p1 < tiny_weight) | (p2 < tiny_weight) | ~np.isfinite(mu_star)
+    if np.any(repair):
+        means = np.broadcast_to(mu2_arr, mu_star.shape)
+        widths = np.broadcast_to(sigma2_arr, mu_star.shape)
+        first_mean, first_variance = Fraction(float(mu1)), Fraction(float(sigma1)) ** 2
+        for index in np.ndindex(mu_star.shape):
+            if repair[index]:
+                second_variance = Fraction(float(widths[index])) ** 2
+                exact = (first_mean * second_variance
+                         + Fraction(float(means[index])) * first_variance
+                         ) / (first_variance + second_variance)
+                rounded = float(exact)
+                if exact != 0 and rounded == 0:
+                    raise ValueError('Combined mean underflows binary64; its mode sign would be lost.')
+                mu_star[index] = rounded
+    sigma_star = scale / np.sqrt(p1 + p2)
+    with np.errstate(over='ignore', under='ignore'):
+        result_mean = np.asarray(mu_star, dtype=float)
+        result_sigma = np.asarray(sigma_star, dtype=float)
+    if np.any(~np.isfinite(result_mean)):
+        raise ValueError('Combined mean is not representable as a finite binary64 output.')
+    if np.any(~np.isfinite(result_sigma)) or np.any(result_sigma <= 0):
+        raise ValueError('Combined standard deviation is not representable as a positive finite binary64 output.')
+    if np.any((mu_star != 0) & (result_mean == 0)):
+        raise ValueError('Combined mean underflows binary64; its mode sign would be lost.')
+    return result_mean, result_sigma
 
 
 def truncated_gaussian_pdf(x: np.ndarray, mu: float, sigma: float) -> np.ndarray:
     """Normalized truncated Gaussian density on m >= 0."""
-    if sigma <= 0:
+    if not np.isfinite(mu) or not np.isfinite(sigma) or sigma <= 0:
         raise ValueError(f"sigma must be > 0, got {sigma}.")
     x_arr = np.asarray(x, dtype=float)
-    z = 1.0 - norm.cdf((0.0 - mu) / sigma)
-    if z <= 0:
-        raise ValueError("Invalid truncation normalization (Z <= 0).")
-    pdf = norm.pdf(x_arr, loc=mu, scale=sigma) / z
-    return np.where(x_arr >= 0.0, pdf, 0.0)
+    if np.any(np.isnan(x_arr)):
+        raise ValueError('Density coordinates must not be NaN.')
+    with np.errstate(over='ignore', invalid='ignore', under='ignore'):
+        if mu < 0:
+            width = np.longdouble(sigma)
+            alpha = -np.longdouble(mu) / width
+            y = np.maximum(x_arr, 0).astype(np.longdouble) / width
+            # phi(alpha+y)/SF(alpha) = h(alpha)*exp(-alpha*y-y^2/2).
+            # This avoids subtracting two enormous, nearly equal log tails.
+            if alpha < 1e150:
+                log_hazard = (.5 * np.log(np.longdouble(2) / np.longdouble(np.pi))
+                              - np.log(np.longdouble(erfcx(float(alpha / np.sqrt(2.))))))
+            else:
+                # Mills bounds alpha < h(alpha) < alpha+1/alpha limit
+                # this approximation's relative error to <1e-300.
+                log_hazard = np.log(alpha)
+            pdf = np.asarray(np.exp(log_hazard - np.log(width) - alpha * y - y ** 2 / 2),
+                             dtype=float)
+        else:
+            pdf = truncnorm.pdf(x_arr, a=-mu / sigma, b=np.inf, loc=mu, scale=sigma)
+        result = np.where(x_arr >= 0.0, pdf, 0.0)
+    if np.any(~np.isfinite(result)):
+        raise ValueError('Truncated density is not representable as a finite binary64 output.')
+    return result
 
 
 def truncated_mode(mu: float) -> float:
     """Mode under m >= 0 truncation."""
+    if not np.isfinite(mu):
+        raise ValueError("mean must be finite.")
     return max(0.0, mu)
+
+
+def boundary_mode_probability(mu1: float, sigma1: float, d: float, s: float, sigma2):
+    """Analytic sweep probability when mu2 = mu1 + Normal(-d, s^2).
+
+    Boundary iff epsilon <= -mu1 * (1 + sigma2^2/sigma1^2).
+    Tightening sigma2 raises this probability for mu1 > 0, lowers it for
+    mu1 < 0, and has no effect for mu1 = 0. It is not a universal effect
+    of tightening both constraints.
+    """
+    widths = np.asarray(sigma2, dtype=float)
+    if not np.all(np.isfinite([mu1, sigma1, d, s])) or sigma1 <= 0 or s <= 0:
+        raise ValueError("mu1 and d must be finite; sigma1 and s finite and positive.")
+    if np.any(~np.isfinite(widths)) or np.any(widths <= 0):
+        raise ValueError("sigma2 must be finite and positive.")
+    # A width ratio can overflow in binary64 even when the final standardized
+    # threshold is moderate. Keep intermediates wide, then round the CDF input.
+    if mu1 == 0:
+        z = np.full(widths.shape, np.longdouble(d) / np.longdouble(s))
+    else:
+        ratio = widths.astype(np.longdouble) / np.longdouble(sigma1)
+        term = np.longdouble(mu1) * (1 + ratio ** 2)
+        threshold = np.longdouble(d) - term
+        z = np.array(threshold / np.longdouble(s), dtype=np.longdouble, copy=True)
+        close = (np.abs(threshold) <= 16 * np.finfo(np.longdouble).eps
+                 * (np.abs(np.longdouble(d)) + np.abs(term)))
+        repair = close | ~np.isfinite(z) | ~np.isfinite(term)
+        if np.any(repair):
+            first_width = Fraction(float(sigma1))
+            for index in np.ndindex(widths.shape):
+                if repair[index]:
+                    exact = (Fraction(float(d)) - Fraction(float(mu1))
+                             * (1 + (Fraction(float(widths[index])) / first_width) ** 2)
+                             ) / Fraction(float(s))
+                    try:
+                        z[index] = float(exact)
+                    except OverflowError:
+                        z[index] = np.inf if exact > 0 else -np.inf
+    with np.errstate(over="ignore"):
+        return norm.cdf(np.asarray(z, dtype=float))
 
 
 def make_default_outdir(repo_root: Path) -> Path:
@@ -127,6 +235,7 @@ def main() -> int:
         boundary_fraction_grid.append(float(np.mean(mu_star_draws <= 0.0)))
 
     boundary_fraction_arr = np.asarray(boundary_fraction_grid, dtype=float)
+    exact_probability = boundary_mode_probability(args.mu1, args.sigma1, args.d, args.s, sigma2_grid)
     min_idx = int(np.argmin(boundary_fraction_arr))
     max_idx = int(np.argmax(boundary_fraction_arr))
 
@@ -165,6 +274,8 @@ def main() -> int:
 
     fig_b, ax_b = plt.subplots(figsize=(8, 5))
     ax_b.plot(sigma2_grid, boundary_fraction_arr, marker="o", ms=3, lw=1.8)
+    ax_b.plot(sigma2_grid, exact_probability, ls="--", label="Exact probability")
+    ax_b.legend()
     ax_b.set_xscale("log")
     ax_b.set_xlabel("sigma2")
     ax_b.set_ylabel("boundary mode fraction: P(mu* <= 0)")
@@ -188,6 +299,8 @@ def main() -> int:
         "sweep": {
             "sigma2_grid": [float(v) for v in sigma2_grid.tolist()],
             "boundary_mode_fraction_grid": [float(v) for v in boundary_fraction_arr.tolist()],
+            "boundary_mode_probability_exact": exact_probability.tolist(),
+            "monte_carlo_standard_error": np.sqrt(exact_probability * (1 - exact_probability) / args.n_mc).tolist(),
             "boundary_mode_fraction_min": float(boundary_fraction_arr[min_idx]),
             "boundary_mode_fraction_max": float(boundary_fraction_arr[max_idx]),
             "boundary_mode_fraction_min_sigma2": float(sigma2_grid[min_idx]),

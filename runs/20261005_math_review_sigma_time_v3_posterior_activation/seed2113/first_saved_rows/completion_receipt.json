@@ -1,0 +1,33 @@
+{
+  "seed": 2113,
+  "group": "sigma_time_v3_B4095_cap20",
+  "point": {
+    "omegabh2": 0.022100240486527777,
+    "omegach2": 0.11626853792887061,
+    "H0": 68.69359955377082,
+    "logA": 3.045325207664238,
+    "ns": 0.9774981108465467,
+    "tau": 0.05914550841635784,
+    "mnu": 0.04720656660257387
+  },
+  "holding_time": 2,
+  "source": "runs/20261005_math_review_fresh_CAMB_sigma_time_v3_B4095_cap20_seed2113/chains/fresh_CAMB_sigma_time_v3_B4095_cap20_seed2113.1.txt",
+  "frozen": "runs/20261005_math_review_sigma_time_v3_posterior_activation/seed2113/first_saved_rows/chains/fresh_CAMB_sigma_time_v3_B4095_cap20_seed2113.1.txt",
+  "snapshot_sha256": "814c8cfae22d693319e1ae6bf23a2d9ace32d3a4b8bfe2415beb6a449c1b7004",
+  "complete_prefix_matches": true,
+  "out": "runs/20261005_math_review_sigma_time_v3_posterior_activation/seed2113/first_saved_rows",
+  "utc": "2026-10-05T03:10:58.479350+00:00",
+  "native_row_verified": true,
+  "module_sha256": "85a091c53d9c81ee6443a1a4492ee45a35b487f7d360dfd6df190b9e3856cfc6",
+  "native_row_replay_discrepancies": {
+    "sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 0.0,
+    "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 0.0,
+    "total_chi2": 0.0,
+    "logprior": 0.0,
+    "logposterior": 0.0
+  },
+  "native_row_replay_tolerance": 1e-09,
+  "FreshCAMB_exact_to_independent_upstream_fresh": true,
+  "sampler_cache_resize_challenge": 50,
+  "scope": "selected first saved row; no convergence or uniform accuracy certification"
+}

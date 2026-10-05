@@ -1,0 +1,35 @@
+{
+  "utc": "2026-10-04T23:39:32.324282+00:00",
+  "source": "runs/20261004_math_review_upper_prior_native_failure_reproduction_preparation/verify_early_prefixes.py",
+  "source_sha256": "725bc7d9ee235ecbf613acf0724fd710145b7e891fcfb833929e3809c99a5dc5",
+  "worker_sha256": "bf60ce399c17355451e6c48506539dcd70f80b33b20f014cae63ad0b79e1d899",
+  "changes": [
+    [
+      "contract = json.loads((HERE / 'reproduction_contract.json').read_text())",
+      "REPRO = ROOT / 'runs/20261004_math_review_upper_prior_native_failure_reproduction_preparation'\ncontract = json.loads((REPRO / 'reproduction_contract.json').read_text())"
+    ],
+    [
+      "HERE / f'seed{seed}/launch_receipt.json'",
+      "REPRO / f'seed{seed}/launch_receipt.json'"
+    ],
+    [
+      "HERE / 'early_prefixes'",
+      "HERE / 'later_prefixes'"
+    ],
+    [
+      "HERE / 'early_prefix_verification.json'",
+      "HERE / 'later_prefix_verification.json'"
+    ],
+    [
+      "early saved trajectory prefixes only",
+      "later saved trajectory prefixes only"
+    ],
+    [
+      "Exact early saved prefixes verified:",
+      "Exact later saved prefixes verified:"
+    ]
+  ],
+  "reverse_byte_identity_verified": true,
+  "original_reproduction_contract_and_launch_records_used": true,
+  "new_frozen_prefix_destination_only": true
+}

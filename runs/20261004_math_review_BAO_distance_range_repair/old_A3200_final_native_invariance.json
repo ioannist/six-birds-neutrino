@@ -1,0 +1,91 @@
+{
+  "utc": "2026-10-04T17:25:40.862993+00:00",
+  "group": "old_A3200",
+  "seed": 1701,
+  "frozen_sha256": "4e71f96a6d16e2c12228c231c643abe172d30645c510cb1511211113ab244eeb",
+  "module_sha256": "6a54f98bcc65601fd1ad5e760a99a0072cdc45fe49197ba5c3a1282889c2ee0d",
+  "solver_version": "1.6.5",
+  "checks": [
+    {
+      "row_index": 0,
+      "native": {
+        "point": {
+          "omegabh2": 0.022776973256548733,
+          "omegach2": 0.11611168301025741,
+          "H0": 68.79065690394701,
+          "logA": 3.0141286188407785,
+          "ns": 1.0178296765514914,
+          "tau": 0.052078624130604545,
+          "mnu": 0.06238672414490042
+        },
+        "fresh_minuslogpost": 1293.6140968735785,
+        "fresh_minus_recorded": {
+          "minuslogpost": 0.0,
+          "minuslogprior": 0.0,
+          "chi2": 0.0,
+          "chi2__sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 0.0,
+          "chi2__sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 0.0
+        }
+      },
+      "BAO_predictions": [
+        7.904263058992566,
+        13.261886619605182,
+        22.496956771160857,
+        17.425728232097555,
+        20.033877949640978,
+        21.698861092409206,
+        17.51379531086768,
+        27.779723882338327,
+        14.078098032089738,
+        29.977060266144335,
+        12.907409076837485,
+        38.91975926154063,
+        8.66388194395855
+      ],
+      "ordinary_BAO_before_after_exact": true
+    },
+    {
+      "row_index": 236,
+      "native": {
+        "point": {
+          "omegabh2": 0.023009272022731474,
+          "omegach2": 0.11678529057207174,
+          "H0": 69.17729676385176,
+          "logA": 3.0155290157944674,
+          "ns": 1.0286460677107667,
+          "tau": 0.05929518697682737,
+          "mnu": 0.028962054479343417
+        },
+        "fresh_minuslogpost": 1293.0084911209588,
+        "fresh_minus_recorded": {
+          "minuslogpost": 0.0,
+          "minuslogprior": 0.0,
+          "chi2": 0.0,
+          "chi2__sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 0.0,
+          "chi2__sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 0.0
+        }
+      },
+      "BAO_predictions": [
+        7.888264913819827,
+        13.236921825248317,
+        22.471760498155923,
+        17.39702771616173,
+        20.020217059367987,
+        21.66811408486886,
+        17.508786751612202,
+        27.748684797210505,
+        14.080462419952225,
+        29.946538186375083,
+        12.911279449612096,
+        38.89379166084756,
+        8.669769605717041
+      ],
+      "ordinary_BAO_before_after_exact": true
+    }
+  ],
+  "native_atol": 1e-09,
+  "native_rtol": 0,
+  "scope": "selected native rows and ordinary observable invariance; no uniform accuracy certificate",
+  "production_source_sha256": "f9e8872fd1c4c737b9e4e9a143cb8ac1d8e31b8a087d687db9ebe14b076939aa",
+  "script_sha256": "6eda4bda696577a6a363f4db34b198f5199093879da72b2407aadf81c682e32f"
+}

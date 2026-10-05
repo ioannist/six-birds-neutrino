@@ -1,0 +1,68 @@
+{
+  "utc": "2026-10-04T00:31:33.530287+00:00",
+  "scope": "exact_known_failure_and_explicit_numerical_repair_only",
+  "records": [
+    {
+      "replay": "fresh_default_omp1.json",
+      "sha256": "22d16624e780a48942304d5cb9b8dd7894a67fa188878a84f056039e00ce727c",
+      "succeeded": false,
+      "exec_exit_code": 1,
+      "omp_threads": "1",
+      "l_max_scalars": 4095
+    },
+    {
+      "replay": "fresh_default_omp8.json",
+      "sha256": "79b3148a99e3794cf166b606050a9d7bee5e53940d618873b3f424b3ff08f9cf",
+      "succeeded": false,
+      "exec_exit_code": 1,
+      "omp_threads": "8",
+      "l_max_scalars": 4095
+    },
+    {
+      "replay": "earlier_start_omp8.json",
+      "sha256": "3077379bb7e046046b805d885a44a119f82ecfe67b9ad0f616a3d5f7e76621c0",
+      "succeeded": false,
+      "exec_exit_code": 1,
+      "omp_threads": "8",
+      "l_max_scalars": 4095
+    },
+    {
+      "replay": "intermediate_omp8.json",
+      "sha256": "0755c80a8e45eab506479986ea922dc3c9e8267e2eb5c005ea576fa816b531b4",
+      "succeeded": true,
+      "exec_exit_code": 0,
+      "omp_threads": "8",
+      "l_max_scalars": 4095
+    },
+    {
+      "replay": "background_quadrature_omp8.json",
+      "sha256": "9ef9bef81e280ff71ae5fdd5dbea4f8b587b25c09291765d4ad5875ac6354232",
+      "succeeded": true,
+      "exec_exit_code": 0,
+      "omp_threads": "8",
+      "l_max_scalars": 4095
+    },
+    {
+      "replay": "canonical_default_ell3200_omp8.json",
+      "sha256": "4e64c6988e5f83df88e5024f84cbac3cb846f93db3e98fa737add94970962e20",
+      "succeeded": false,
+      "exec_exit_code": 1,
+      "omp_threads": "8",
+      "l_max_scalars": 3200
+    },
+    {
+      "replay": "canonical_background_quadrature_ell3200_omp8.json",
+      "sha256": "30c623370df182a43ebd6b3b73103b044b3417c320ac0c1ec94816bfc680890b",
+      "succeeded": true,
+      "exec_exit_code": 0,
+      "omp_threads": "8",
+      "l_max_scalars": 3200
+    }
+  ],
+  "all_physical_inputs_preserved": true,
+  "single_native_module_used": true,
+  "all_four_canonical_configuration_replays_bound": true,
+  "uniform_numerical_error_certified": false,
+  "posterior_accuracy_certified": false,
+  "stopped_default_sampler_resumed": false
+}

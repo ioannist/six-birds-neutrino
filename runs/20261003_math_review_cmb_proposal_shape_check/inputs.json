@@ -1,0 +1,24 @@
+{
+  "utc": "2026-10-03T19:44:17.613326+00:00",
+  "scope": "proposal_shape_comparison_to_covariance_learned_by_unconverged_default_target_chains",
+  "records": {
+    "A_static.covmat": {
+      "source_path": "/home/repos/six-birds-neutrino/runs/20261003_math_review_cmb_accuracy_chain_configs/A_proposal.covmat",
+      "sha256": "846fe81423cd19b9a0d4b890e58db9179a7485516f1dd12e2004d3b5efde8270"
+    },
+    "A_learned_default.covmat": {
+      "source_path": "/home/repos/six-birds-neutrino/runs/20261003_math_review_cmb_chain_A_seed503/chains/math_restoration_A_seed503.covmat",
+      "sha256": "fd7d6e7cff0b8f996f87f2b5215b90afcc1c245916047011992542abf9859fc3"
+    },
+    "B_static.covmat": {
+      "source_path": "/home/repos/six-birds-neutrino/runs/20261003_math_review_cmb_accuracy_chain_configs/B_proposal.covmat",
+      "sha256": "9744f3d6b00d6d4a3e116977ba13ed76a3505ddac9d4bb5ef1e3f3d3f63317a6"
+    },
+    "B_learned_default.covmat": {
+      "source_path": "/home/repos/six-birds-neutrino/runs/20261003_math_review_cmb_chain_B_seed507/chains/math_restoration_B_seed507.covmat",
+      "sha256": "1644982bf1a966b873a48fd62aaed2095d33467e801292d042ffeee09baf63ff"
+    }
+  },
+  "precision_target_of_reference": "default_not_intermediate",
+  "posterior_covariance_certified": false
+}

@@ -1,0 +1,222 @@
+{
+  "utc": "2026-10-04T08:35:57.817234+00:00",
+  "scope": "exact_Gaussian_density_to_probability_law_no_atom_and_positive_boundary_interval",
+  "new_exported_theorems": [
+    "truncatedGaussianLaw_absolutelyContinuous",
+    "truncatedGaussianLaw_boundary_interval_pos",
+    "truncatedGaussianLaw_isProbability",
+    "truncatedGaussianLaw_negative_halfline",
+    "truncatedGaussianLaw_singleton"
+  ],
+  "total_exported_theorems_axiom_checked": 65,
+  "allowed_transitive_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "python_tests_passed": 119,
+  "formal_review_examples": 10,
+  "managed_phases": [
+    {
+      "session": 87890,
+      "phase": "first_build_membership_conversion_failure",
+      "exit_code": 1
+    },
+    {
+      "session": 45315,
+      "phase": "four_lemma_build",
+      "exit_code": 0
+    },
+    {
+      "session": 50793,
+      "phase": "positive_interval_build",
+      "exit_code": 0
+    },
+    {
+      "session": 58014,
+      "phase": "nine_example_review",
+      "exit_code": 0
+    },
+    {
+      "session": 70788,
+      "phase": "expanded_review_sqrt_rewrite_mismatch",
+      "exit_code": 1
+    },
+    {
+      "session": 84852,
+      "phase": "ten_example_review",
+      "exit_code": 0
+    },
+    {
+      "session": 76253,
+      "phase": "make_math_check",
+      "exit_code": 0
+    }
+  ],
+  "normalization_bridge": "law is Lebesgue measure with the integral-derived nonnegative density; total mass follows from its actual integral one",
+  "sigma_scope": "positive sigma for probability normalization and interval positivity; no-atom and negative-support identities hold for the constructed measure at all real sigma",
+  "zero_sigma_control": "constructed integral-derived measure is zero and not a probability law; actual zero-variance Gaussian is a Dirac atom",
+  "readout_distinction": "constraint-offset probability of a boundary mode differs from posterior singleton mass at zero; one explicit formal example proves positive mode frequency with zero singleton mass",
+  "native_cosmological_Gaussianity_or_convergence_certified": false,
+  "uniform_floating_point_density_accuracy_certified": false,
+  "finite_upper_gate_or_varying_prior_covered": false,
+  "paper_modified": false,
+  "files": [
+    {
+      "path": "lean/trunc_gauss_proof/AuditAxioms.lean",
+      "sha256": "eb233b64abf3b39ecb36dd37571bb916c4c49f7c781ef0dd6325f199fec49f0c"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/TruncGaussProof/Audit.lean",
+      "sha256": "10c8f3ebced74cc26f509948e8c6b6a2f32a7502cbb9eb5c078d4c728db2bd59"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/TruncGaussProof/Basic.lean",
+      "sha256": "a88fef4d3efa63c9f9f5c948dd5ba1de3ea09d828ce8388ee83fa3d039e734a4"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/TruncGaussProof/CovarianceLedger.lean",
+      "sha256": "c4c34185f9900be5d7f6dcdf079bfd0e5fb4a389e510757bf03bcee3f86795d3"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/TruncGaussProof/GaussianMeasure.lean",
+      "sha256": "2c1cfc3298c94411831f4030313485733cdfbd247ce43c1a565f4a6d0049a865"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/TruncGaussProof/GaussianNormalization.lean",
+      "sha256": "479525ccc03b459b51c118a2793874268bc4ab12cb4f3216e9d1ee0c3a646486"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/TruncGaussProof/GaussianSweep.lean",
+      "sha256": "dfeb0920f48c290fd8325885e84edabce5b7f03b56a7e5beedc2b3ca046944e1"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/TruncGaussProof/Mode.lean",
+      "sha256": "f4200937d87b548c7bbbbd58568dc21909fe5ba964c144ea539988981fdd2a21"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/TruncGaussProof/Normalization.lean",
+      "sha256": "797977dfb5e0be7bdcccaebebaa66f4f15040710df4851ac888ef5e8a3eaf623"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/TruncGaussProof/Product.lean",
+      "sha256": "bbcbc989862979f52e7b1bbf97d4acf30b59564d2b7c42a9e7c3ac1e457bc9bb"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/TruncGaussProof/Tightening.lean",
+      "sha256": "638dab7a8721e704ee4a3708411703d7b145a40ffd5669a33abbdf359a6a75d3"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/TruncGaussProof/TruncGauss.lean",
+      "sha256": "895cfb7e6f733728b2b98e36c2468310ca110535cd912d750e389943350f6e0c"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/TruncGaussProof.lean",
+      "sha256": "6ccde4f220cc698675aea675fc5e6a7265969a74ddbdd2b96f524453d14a217d"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/lake-manifest.json",
+      "sha256": "f3bb2b5aca28f20c6b0707fdabc01d1732ac9b7b784af8726ea28e3b8cc55376"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/lakefile.toml",
+      "sha256": "b6b511bb0c8f1497a5d263c1aecf209347b82ab7951c79ad6b0a9503e383fa6a"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/lean-toolchain",
+      "sha256": "d55ca0039a5479db5b38919d005b2c427b89b3be4f0184a20f2f4eae931f5bdb"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_probability_law/AuditAxioms_before.lean",
+      "sha256": "1c3be2def6d1a03cb76846913327fc8099bcb411416caffdad2eb4d0d6376e2c"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_probability_law/GaussianMeasureReview.lean",
+      "sha256": "b07e9cea4b03716f54e4af229896461453b03c1db9ec423f295def6352ce389c"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_probability_law/GaussianMeasureReview_ten_first_attempt.lean",
+      "sha256": "29e1f3a70a2c3dfa5e7b77a41c860536965e385a31a14a7047aeedc8097c4340"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_probability_law/GaussianMeasure_first_attempt.lean",
+      "sha256": "62804ac660f1e9bd88048b6ad10af0bbbd86f98e92c240ccca50566b8969d7f4"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_probability_law/TruncGaussProof_before.lean",
+      "sha256": "7ad69ddba27a52a5d0c19dc096e7cfd60aff6dacb2af5bf9eeeaae7ebf208c8b"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_probability_law/build_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_probability_law/build_stdout.txt",
+      "sha256": "ffaec87742d47497c447abb294fcce87e355c585ad1934ec57f9b68a80bedda0"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_probability_law/first_build_failure.json",
+      "sha256": "ccbe617246a798de0ebd121ad53407b48b0739a807291b7f77cac5545e6dc701"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_probability_law/first_ten_example_formal_review_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_probability_law/first_ten_example_formal_review_stdout.txt",
+      "sha256": "40ba272e73d9359eb381f215661e15a623b8b6d07e2670912332cd9d0b822573"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_probability_law/formal_review_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_probability_law/formal_review_stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_probability_law/four_lemma_build_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_probability_law/four_lemma_build_stdout.txt",
+      "sha256": "ffaec87742d47497c447abb294fcce87e355c585ad1934ec57f9b68a80bedda0"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_probability_law/interval_build_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_probability_law/interval_build_stdout.txt",
+      "sha256": "d4f3ef9aa31ffb0ceb99f56f189cea2cdec0e5c6c27c6919c0491a5a6415191e"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_probability_law/math_check_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_probability_law/math_check_stdout.txt",
+      "sha256": "0cb3a953afa8604ec806294fa1bd61da1b553496b7836ae7219380f51b870e57"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_probability_law/nine_example_formal_review_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_probability_law/nine_example_formal_review_stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_probability_law/ten_example_formal_review_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_probability_law/ten_example_formal_review_stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_probability_law/verify_probability_law.py",
+      "sha256": "d74467d864dc14c25b539ff9348b5e25f6d439fb287b0e7b3548b95769b56d90"
+    }
+  ]
+}

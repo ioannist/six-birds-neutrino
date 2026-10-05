@@ -1,0 +1,33 @@
+{
+  "utc": "2026-10-04T17:51:52.514940+00:00",
+  "source_contract_sha256": "1b6aed77c1a66b9ee84fd1d949c0f3b20d8d18e96112f7ff64260f746f097adb",
+  "prepared_contract_sha256": "01a777985f1340cd01f7dcee99283856034c148fd610f20cbcd35c9ac9bd7102",
+  "scripts": [
+    {
+      "source": "runs/20261004_math_review_fresh_CAMB_diagnostic_preparation/prepare_snapshot.py",
+      "source_sha256": "b9970aa9b959708a3e918163c9bde034177ae487cc1db644d2e7a9d05a141755",
+      "prepared": "runs/20261004_math_review_fresh_CAMB_header_guard_diagnostic_preparation/prepare_snapshot.py",
+      "prepared_sha256": "d9397740c609c3cb9ffcdce3c50a04fcb1fbb860c8dc3deea4773aad76b010b4"
+    },
+    {
+      "source": "runs/20261004_math_review_fresh_CAMB_diagnostic_preparation/verify_native_rows.py",
+      "source_sha256": "9bcf1f1073ed098ef787e65510b859f61f510c0911b0071f6008cea26c79cca9",
+      "prepared": "runs/20261004_math_review_fresh_CAMB_header_guard_diagnostic_preparation/verify_native_rows.py",
+      "prepared_sha256": "9bcf1f1073ed098ef787e65510b859f61f510c0911b0071f6008cea26c79cca9"
+    },
+    {
+      "source": "runs/20261004_math_review_fresh_CAMB_diagnostic_preparation/run_diagnostic.py",
+      "source_sha256": "ab760f7bde8806f0c82ed515e57278a5751a0842c9b9116df866d5421597b327",
+      "prepared": "runs/20261004_math_review_fresh_CAMB_header_guard_diagnostic_preparation/run_diagnostic.py",
+      "prepared_sha256": "ab760f7bde8806f0c82ed515e57278a5751a0842c9b9116df866d5421597b327"
+    },
+    {
+      "source": "runs/20261004_math_review_fresh_CAMB_diagnostic_preparation/verify_snapshot.py",
+      "source_sha256": "a31bc2c725579869a43c08bbb84ddedb35c0faf83294908a3654ed817adc5cdf",
+      "prepared": "runs/20261004_math_review_fresh_CAMB_header_guard_diagnostic_preparation/verify_snapshot.py",
+      "prepared_sha256": "f8d580e0f4222fd07e015266265761b6c7c789f66ef9f1bc7fa6a7e77098e1b9"
+    }
+  ],
+  "scope": "reader-header identity repair; target/gates/holding-time policy unchanged; checked predecessor transition retains old exact prefixes",
+  "paper_modified": false
+}

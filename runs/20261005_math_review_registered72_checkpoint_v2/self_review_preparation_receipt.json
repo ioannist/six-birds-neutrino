@@ -1,0 +1,55 @@
+{
+  "utc": "2026-10-05T04:28:39.446961+00:00",
+  "source": "runs/20261005_math_review_registered66_recovery_checkpoint/self_review.py",
+  "source_sha256": "0b94d5843a662e2fd053b3bb581660196204e7bf4ff39d55b9379a2a4a3a8e91",
+  "changes": [
+    [
+      "'native_candidate_posterior_chains', 'guarded_CLASS_fresh_recovery_trials']",
+      "'native_candidate_posterior_chains', 'guarded_CLASS_fresh_recovery_trials', 'CLASS_recovery_companion_posterior_chains']"
+    ],
+    [
+      "len(records) == 66",
+      "len(records) == 72"
+    ],
+    [
+      "runtime['owned_live_samplers'] == 60",
+      "runtime['owned_live_samplers'] == 57"
+    ],
+    [
+      "runtime['terminal_families'] == 6",
+      "runtime['terminal_families'] == 15"
+    ],
+    [
+      "{1201, 1301}",
+      "{1201, 1301, 1302, 1303, 1307, 1308, 1401, 1402, 1403, 1404, 1405}"
+    ],
+    [
+      "runtime['recovery_trials_are_not_qualified_four_family_cohorts']",
+      "runtime['fresh_recovery_cohorts_declared_but_not_qualified']"
+    ],
+    [
+      "len(runtime['growth_by_cohort']) == 16",
+      "len(runtime['growth_by_cohort']) == 18"
+    ],
+    [
+      "assert len(g['seeds']) == 4 and not ({2201, 2202} & set(g['seeds']))",
+      "assert len(g['seeds']) == 4\n    if group.startswith('fresh_recovery_'):\n        assert g['seeds'] == state['fresh_CLASS_recovery_cohorts'][group]['seeds']\n    else:\n        assert not ({2201, 2202} & set(g['seeds']))"
+    ],
+    [
+      "'registrations_reconstructed': 66, 'live_at_observation': 60",
+      "'registrations_reconstructed': 72, 'live_at_observation': 57"
+    ],
+    [
+      "'known_native_failure_families': 4, 'unknown_exit_families': 2",
+      "'known_native_failure_families': 4, 'unknown_exit_families': 11"
+    ],
+    [
+      "'recovery_trials_not_pooled_or_qualified': True",
+      "'historical_recovery_histories_not_pooled_and_fresh_cohorts_not_qualified': True"
+    ],
+    [
+      "66 registrations verified; parent provenance distinguished from own terminal status.",
+      "72 registrations verified; original exits and separate fresh recovery cohorts retained."
+    ]
+  ]
+}

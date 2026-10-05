@@ -1,0 +1,117 @@
+{
+  "utc": "2026-10-05T06:29:54.304387+00:00",
+  "reviewer": "self_review_no_independent_agent",
+  "group": "current_A4095",
+  "retained_represented_steps": [
+    6546,
+    6312,
+    6591,
+    6649
+  ],
+  "all_seven_parameter_gate_sets_reconstructed": {
+    "omegabh2": {
+      "gates": {
+        "separate_starts": true,
+        "finite": true,
+        "Rhat": true,
+        "bulk_ESS": true,
+        "tail_ESS": true,
+        "quantile_ESS": true,
+        "MCSE": false,
+        "chronological_drift": true,
+        "equalized_selection": true
+      },
+      "pass": false
+    },
+    "omegach2": {
+      "gates": {
+        "separate_starts": true,
+        "finite": true,
+        "Rhat": true,
+        "bulk_ESS": true,
+        "tail_ESS": true,
+        "quantile_ESS": true,
+        "MCSE": false,
+        "chronological_drift": true,
+        "equalized_selection": true
+      },
+      "pass": false
+    },
+    "H0": {
+      "gates": {
+        "separate_starts": true,
+        "finite": true,
+        "Rhat": true,
+        "bulk_ESS": true,
+        "tail_ESS": true,
+        "quantile_ESS": true,
+        "MCSE": false,
+        "chronological_drift": true,
+        "equalized_selection": true
+      },
+      "pass": false
+    },
+    "logA": {
+      "gates": {
+        "separate_starts": true,
+        "finite": true,
+        "Rhat": true,
+        "bulk_ESS": true,
+        "tail_ESS": true,
+        "quantile_ESS": true,
+        "MCSE": true,
+        "chronological_drift": true,
+        "equalized_selection": true
+      },
+      "pass": true
+    },
+    "ns": {
+      "gates": {
+        "separate_starts": true,
+        "finite": true,
+        "Rhat": true,
+        "bulk_ESS": true,
+        "tail_ESS": true,
+        "quantile_ESS": true,
+        "MCSE": false,
+        "chronological_drift": true,
+        "equalized_selection": true
+      },
+      "pass": false
+    },
+    "tau": {
+      "gates": {
+        "separate_starts": true,
+        "finite": true,
+        "Rhat": true,
+        "bulk_ESS": true,
+        "tail_ESS": true,
+        "quantile_ESS": true,
+        "MCSE": true,
+        "chronological_drift": true,
+        "equalized_selection": true
+      },
+      "pass": true
+    },
+    "mnu": {
+      "gates": {
+        "separate_starts": true,
+        "finite": true,
+        "Rhat": true,
+        "bulk_ESS": true,
+        "tail_ESS": true,
+        "quantile_ESS": true,
+        "MCSE": false,
+        "chronological_drift": true,
+        "equalized_selection": true
+      },
+      "pass": false
+    }
+  },
+  "next_minimum_history": 7575,
+  "snapshot_receipt_sha256": "371042cb86b149038e21d7b52223848cbbaf1e2d2ef906a087362310e0aeab57",
+  "native_row_verification_sha256": "5df96a41d84da9961c0f562a29af84d9080230db3ac85285529344efb86d0013",
+  "diagnostics_sha256": "07dfcfd94028c04f577b65b6081c5e1b5f06ff06abda784723255b28ed3f0c0a",
+  "posterior_convergence_or_uniform_accuracy_proved": false,
+  "different_targets_or_cache_policies_pooled": false
+}

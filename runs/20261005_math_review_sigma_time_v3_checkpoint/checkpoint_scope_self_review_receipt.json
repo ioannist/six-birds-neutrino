@@ -1,0 +1,29 @@
+{
+  "utc": "2026-10-05T03:05:51.830466+00:00",
+  "reviewer": "distinct_self_review_not_independent_agent",
+  "closed_verification_roots": [
+    {
+      "root": "runs/20261005_math_review_sigma_time_v3_packaged",
+      "execution_receipt_sha256": "7665e20c3cc0d781298cf9e4801b58d9e18baf24c9d7e65670dbf5adf2f4e707"
+    },
+    {
+      "root": "runs/20261005_math_review_sigma_time_v3_posterior_preparation",
+      "execution_receipt_sha256": "913d665184ee3ad2ea16d11351b913bb0d47dbb3eb6653df733621b6bf2ba055"
+    },
+    {
+      "root": "runs/20261005_math_review_sigma_time_v3_posterior_preparation_v2",
+      "execution_receipt_sha256": "c2ff0d9c18cf1e5736a6e42db877dc88aec09f6343336fd8f605272393b30853"
+    },
+    {
+      "root": "runs/20261005_math_review_sigma_time_v3_checkpoint",
+      "execution_receipt_sha256": "cc431cf94201738436c360eb7bd1de55e37b4e1949c48e7f2713603d64563a77"
+    }
+  ],
+  "candidate_posterior_samplers_launched": 0,
+  "python_tests_passed": 234,
+  "production_native_unchanged": true,
+  "math_modules_and_Lean_unchanged": true,
+  "paper_and_canonical_unchanged": true,
+  "production_adopted": false,
+  "posterior_or_uniform_accuracy_certified": false
+}

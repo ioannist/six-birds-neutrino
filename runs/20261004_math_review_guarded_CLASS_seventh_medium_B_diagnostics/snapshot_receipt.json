@@ -1,0 +1,238 @@
+{
+  "utc": "2026-10-04T20:20:04.220422+00:00",
+  "scope": "seventh_guarded_CLASS_medium_B_cohort_diagnostics",
+  "previous_snapshot_receipt": "runs/20261004_math_review_guarded_CLASS_sixth_medium_B_diagnostics/snapshot_receipt.json",
+  "previous_snapshot_receipt_sha256": "8b6ce40377c65cf83ea7eefce731b6338a070dd189e30038b78abca6a59e9111",
+  "growth_fractions_by_cohort": {
+    "medium_B": 0.20024570024570032
+  },
+  "grid12_trial_included": false,
+  "A_cohorts_reassessed": false,
+  "medium_B_reassessed": true,
+  "files": [
+    {
+      "group": "medium_B",
+      "seed": 1403,
+      "source": "runs/20261004_math_review_guarded_medium_chain_B_seed1403/chains/math_guarded_medium_B_seed1403.1.txt",
+      "snapshot": "runs/20261004_math_review_guarded_CLASS_seventh_medium_B_diagnostics/medium_B/seed1403/chains/math_guarded_medium_B_seed1403.1.txt",
+      "sha256": "319c58134ea2b02bb87a37502f9f980310ba66c34fb7aac19589dcdcf7ac158b",
+      "snapshot_bytes": 346072,
+      "stored_rows": 477,
+      "retained_represented_steps": 1360,
+      "trajectory_scope": "guarded_fresh_uninterrupted_saved_prefix_no_parent_append"
+    },
+    {
+      "group": "medium_B",
+      "seed": 1404,
+      "source": "runs/20261004_math_review_guarded_medium_chain_B_seed1404/chains/math_guarded_medium_B_seed1404.1.txt",
+      "snapshot": "runs/20261004_math_review_guarded_CLASS_seventh_medium_B_diagnostics/medium_B/seed1404/chains/math_guarded_medium_B_seed1404.1.txt",
+      "sha256": "955b0b9bb63215b77cc06a616023b6257f966bf47139c6c6ca0581540547be4d",
+      "snapshot_bytes": 353312,
+      "stored_rows": 487,
+      "retained_represented_steps": 1150,
+      "trajectory_scope": "guarded_fresh_uninterrupted_saved_prefix_no_parent_append"
+    },
+    {
+      "group": "medium_B",
+      "seed": 1405,
+      "source": "runs/20261004_math_review_guarded_medium_chain_B_seed1405/chains/math_guarded_medium_B_seed1405.1.txt",
+      "snapshot": "runs/20261004_math_review_guarded_CLASS_seventh_medium_B_diagnostics/medium_B/seed1405/chains/math_guarded_medium_B_seed1405.1.txt",
+      "sha256": "f160c0f2888ed48e3f39d8e29eb53e2a790234ecd4c8ee9d51975ea0a88ae5e8",
+      "snapshot_bytes": 212132,
+      "stored_rows": 292,
+      "retained_represented_steps": 977,
+      "trajectory_scope": "guarded_fresh_uninterrupted_saved_prefix_no_parent_append"
+    },
+    {
+      "group": "medium_B",
+      "seed": 1407,
+      "source": "runs/20261004_math_review_guarded_medium_chain_B_seed1407/chains/math_guarded_medium_B_seed1407.1.txt",
+      "snapshot": "runs/20261004_math_review_guarded_CLASS_seventh_medium_B_diagnostics/medium_B/seed1407/chains/math_guarded_medium_B_seed1407.1.txt",
+      "sha256": "4489b97c719f4bdc08c23fe9229065cb1264d4fa856333668779b1aefd031ede",
+      "snapshot_bytes": 334488,
+      "stored_rows": 461,
+      "retained_represented_steps": 1291,
+      "trajectory_scope": "guarded_fresh_uninterrupted_saved_prefix_no_parent_append"
+    }
+  ],
+  "configurations": [
+    {
+      "group": "medium_B",
+      "seed": 1403,
+      "source": "runs/20261004_math_review_guarded_medium_chain_B_seed1403/input.yaml",
+      "snapshot": "runs/20261004_math_review_guarded_CLASS_seventh_medium_B_diagnostics/medium_B/seed1403/input.yaml",
+      "source_sha256": "2f716c34c3baa26429c9157be5187f129a1c27ec589e07ea7366f2780d737100",
+      "snapshot_sha256": "2f716c34c3baa26429c9157be5187f129a1c27ec589e07ea7366f2780d737100"
+    },
+    {
+      "group": "medium_B",
+      "seed": 1403,
+      "source": "runs/20261004_math_review_guarded_medium_chain_B_seed1403/resolved.yaml",
+      "snapshot": "runs/20261004_math_review_guarded_CLASS_seventh_medium_B_diagnostics/medium_B/seed1403/resolved.yaml",
+      "source_sha256": "21f130dc9aedd2c65538688d3bf173170d9d48901cef1fcad003b5c12cb9b847",
+      "snapshot_sha256": "a27f25a7d718e57343f32a36fec4584f492e0eb571ee122b8843a89415d76f1c"
+    },
+    {
+      "group": "medium_B",
+      "seed": 1404,
+      "source": "runs/20261004_math_review_guarded_medium_chain_B_seed1404/input.yaml",
+      "snapshot": "runs/20261004_math_review_guarded_CLASS_seventh_medium_B_diagnostics/medium_B/seed1404/input.yaml",
+      "source_sha256": "176f17207caf9da1ae5ff6228a21a36c67d3086b3741e03a0c816fc68ea8bd99",
+      "snapshot_sha256": "176f17207caf9da1ae5ff6228a21a36c67d3086b3741e03a0c816fc68ea8bd99"
+    },
+    {
+      "group": "medium_B",
+      "seed": 1404,
+      "source": "runs/20261004_math_review_guarded_medium_chain_B_seed1404/resolved.yaml",
+      "snapshot": "runs/20261004_math_review_guarded_CLASS_seventh_medium_B_diagnostics/medium_B/seed1404/resolved.yaml",
+      "source_sha256": "2d12c387f4ec1dfbc8856853b4797acf5cbc47bf45795e2f555aaa48b9443aa5",
+      "snapshot_sha256": "6d40cdcfd92671914806bb87367b0d70d31bb9a65e87346d9b451e08975d3cd8"
+    },
+    {
+      "group": "medium_B",
+      "seed": 1405,
+      "source": "runs/20261004_math_review_guarded_medium_chain_B_seed1405/input.yaml",
+      "snapshot": "runs/20261004_math_review_guarded_CLASS_seventh_medium_B_diagnostics/medium_B/seed1405/input.yaml",
+      "source_sha256": "af411e942aa1a3f612458857b6dae52ae2356e2a6a4cb9b819584c336c68b066",
+      "snapshot_sha256": "af411e942aa1a3f612458857b6dae52ae2356e2a6a4cb9b819584c336c68b066"
+    },
+    {
+      "group": "medium_B",
+      "seed": 1405,
+      "source": "runs/20261004_math_review_guarded_medium_chain_B_seed1405/resolved.yaml",
+      "snapshot": "runs/20261004_math_review_guarded_CLASS_seventh_medium_B_diagnostics/medium_B/seed1405/resolved.yaml",
+      "source_sha256": "38a755eefc9e198a6b74ea835ae7853daf5101f33b702276cbe13a31741b14bf",
+      "snapshot_sha256": "3ae7f716a6273e0293317b832422224efe12cf3036acef3bb33ec527553b0677"
+    },
+    {
+      "group": "medium_B",
+      "seed": 1407,
+      "source": "runs/20261004_math_review_guarded_medium_chain_B_seed1407/input.yaml",
+      "snapshot": "runs/20261004_math_review_guarded_CLASS_seventh_medium_B_diagnostics/medium_B/seed1407/input.yaml",
+      "source_sha256": "b985586b4fc38cd777bf2e8f39db391483d1b2c45899943fc5091487005117b7",
+      "snapshot_sha256": "b985586b4fc38cd777bf2e8f39db391483d1b2c45899943fc5091487005117b7"
+    },
+    {
+      "group": "medium_B",
+      "seed": 1407,
+      "source": "runs/20261004_math_review_guarded_medium_chain_B_seed1407/resolved.yaml",
+      "snapshot": "runs/20261004_math_review_guarded_CLASS_seventh_medium_B_diagnostics/medium_B/seed1407/resolved.yaml",
+      "source_sha256": "b3147eea40997d1eb188c214a383f11bc24e5da7450420c793df16c499647c82",
+      "snapshot_sha256": "0c737d8567d825a07556e990e6b0ee78fd0f26b7ff6f854bea5dd7ac8f177a7f"
+    }
+  ],
+  "native_backend_witnesses": [
+    {
+      "group": "medium_B",
+      "seed": 1403,
+      "source": "runs/20261004_math_review_guarded_medium_chain_B_seed1403/runtime_state.json",
+      "snapshot": "runs/20261004_math_review_guarded_CLASS_seventh_medium_B_diagnostics/medium_B/seed1403/runtime_state.json",
+      "source_sha256": "cc58668c7fb1e2ac9524f0f3e28641f8417fdc36e7d4f32461c5db88db7fab44",
+      "snapshot_sha256": "cc58668c7fb1e2ac9524f0f3e28641f8417fdc36e7d4f32461c5db88db7fab44",
+      "native_module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539"
+    },
+    {
+      "group": "medium_B",
+      "seed": 1404,
+      "source": "runs/20261004_math_review_guarded_medium_chain_B_seed1404/runtime_state.json",
+      "snapshot": "runs/20261004_math_review_guarded_CLASS_seventh_medium_B_diagnostics/medium_B/seed1404/runtime_state.json",
+      "source_sha256": "fbe72d8b93a7114e3edc336819b79a35f26b7f3935d384bf9d9b796e2011e197",
+      "snapshot_sha256": "fbe72d8b93a7114e3edc336819b79a35f26b7f3935d384bf9d9b796e2011e197",
+      "native_module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539"
+    },
+    {
+      "group": "medium_B",
+      "seed": 1405,
+      "source": "runs/20261004_math_review_guarded_medium_chain_B_seed1405/runtime_state.json",
+      "snapshot": "runs/20261004_math_review_guarded_CLASS_seventh_medium_B_diagnostics/medium_B/seed1405/runtime_state.json",
+      "source_sha256": "805b0d0ed275f7915c9af477f1d2da25f9eaa3b6074e06be6b87e501597f30ad",
+      "snapshot_sha256": "805b0d0ed275f7915c9af477f1d2da25f9eaa3b6074e06be6b87e501597f30ad",
+      "native_module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539"
+    },
+    {
+      "group": "medium_B",
+      "seed": 1407,
+      "source": "runs/20261004_math_review_guarded_medium_chain_B_seed1407/runtime_state.json",
+      "snapshot": "runs/20261004_math_review_guarded_CLASS_seventh_medium_B_diagnostics/medium_B/seed1407/runtime_state.json",
+      "source_sha256": "2e8bdd4f39141e9889cd56486a212859990fff37a673447260227f43af6cf642",
+      "snapshot_sha256": "2e8bdd4f39141e9889cd56486a212859990fff37a673447260227f43af6cf642",
+      "native_module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539"
+    }
+  ],
+  "runtime_observations": [
+    {
+      "group": "medium_B",
+      "seed": 1403,
+      "pid": 467452,
+      "process_start_ticks": 335552671,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_class_backend_transition/launch_guarded_replica.py 1403 ",
+      "live": true,
+      "source_runtime_status_is_historical_not_a_current_sampler_checkpoint": true
+    },
+    {
+      "group": "medium_B",
+      "seed": 1404,
+      "pid": 468270,
+      "process_start_ticks": 335552790,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_class_backend_transition/launch_guarded_replica.py 1404 ",
+      "live": true,
+      "source_runtime_status_is_historical_not_a_current_sampler_checkpoint": true
+    },
+    {
+      "group": "medium_B",
+      "seed": 1405,
+      "pid": 468765,
+      "process_start_ticks": 335552907,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_class_backend_transition/launch_guarded_replica.py 1405 ",
+      "live": true,
+      "source_runtime_status_is_historical_not_a_current_sampler_checkpoint": true
+    },
+    {
+      "group": "medium_B",
+      "seed": 1407,
+      "pid": 505961,
+      "process_start_ticks": 335556803,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_class_backend_transition/launch_guarded_replica.py 1407 ",
+      "live": true,
+      "source_runtime_status_is_historical_not_a_current_sampler_checkpoint": true
+    }
+  ],
+  "draws_per_chain_by_cohort": {
+    "medium_B": 977
+  },
+  "complete_lines_only": true,
+  "individually_frozen_not_atomic_sampler_checkpoint": true,
+  "precision_cohorts_pooled": false,
+  "unmodified_backend_histories_included": false,
+  "parent_histories_appended": false,
+  "diagnostic_gates_changed": false,
+  "diagnostic_commands": {
+    "medium_B": [
+      "/tmp/neutrino-math-review-venv/bin/python",
+      "/home/repos/six-birds-neutrino/scripts/diagnose_cobaya_chains.py",
+      "--run-dir",
+      "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_CLASS_seventh_medium_B_diagnostics/medium_B/seed1403",
+      "--run-dir",
+      "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_CLASS_seventh_medium_B_diagnostics/medium_B/seed1404",
+      "--run-dir",
+      "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_CLASS_seventh_medium_B_diagnostics/medium_B/seed1405",
+      "--run-dir",
+      "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_CLASS_seventh_medium_B_diagnostics/medium_B/seed1407",
+      "--burnin-frac",
+      ".2",
+      "--quantile-mcse-limit",
+      ".001",
+      "--relative-quantile-mcse-limit",
+      ".05",
+      "--output",
+      "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_CLASS_seventh_medium_B_diagnostics/medium_B_diagnostics.json"
+    ]
+  },
+  "diagnostic_script_sha256": "86c21cff2c6af11e4b071342888e0b39264f17c6ee16b4b1cfaef412fc5d5f80",
+  "diagnostic_dependency_sha256": {
+    "scripts/extract_mnu_limits.py": "53552a6e127e04d89733e743abe35b354173294ec6c5547e167259a852614992",
+    "src/sbt_spt_audit/mcmc.py": "557006c5101152322564810dcba6c4c8a536164486973a0326275464c551862c",
+    "src/sbt_spt_audit/mcmc_diagnostics.py": "babe3e043fdb7fa0062f71d47446e6e0109444fd83050625124a50dc1fc1ac53"
+  },
+  "mathematical_convergence_or_uniform_accuracy_certified": false
+}

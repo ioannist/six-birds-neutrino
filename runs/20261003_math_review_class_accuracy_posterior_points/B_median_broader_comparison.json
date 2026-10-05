@@ -1,0 +1,54 @@
+{
+  "utc": "2026-10-03T18:30:05.049528+00:00",
+  "scope": "completed_selected_B_median_coordinate_B_tail_pending",
+  "source_sha256": {
+    "progress": "ee9af6211f223f5c287d37c280a9e0b1c77c4a80c1c8fc49c3b15766f89e4724",
+    "medium": "941c6b7f3ec5a648312009088ddeca3afea6ffdbfab53c76968e2f7d8364d21c",
+    "default": "77e747593bb5092a1921883ce8239fceaedcbb288b63842572dd1f34aeedf889",
+    "selection": "7671de6f3aadd20e3ea1735a50cca0e4c01c6847194468341a7fc50d6ffbbf2d"
+  },
+  "baseline_native_components_equal_archived_medium": true,
+  "point_label": "chain_B_q50",
+  "native_broader_record": {
+    "point": {
+      "omegabh2": 0.022189395840097402,
+      "omegach2": 0.11685231673329828,
+      "H0": 68.92407504511964,
+      "logA": 3.044131930229908,
+      "ns": 0.9695182649480926,
+      "tau": 0.05471890211340944,
+      "mnu_sample": 0.024812997590224393,
+      "A_planck": 1.005501689846384,
+      "TT_tSZ_Amp": 1.1124758699601185,
+      "TT_kSZ_Amp": 2.2051586143104083
+    },
+    "native_chi2": {
+      "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 11.242415480204986,
+      "planck_2018_lowl.TT": 22.279050888718302,
+      "planck_2018_lowl.EE_sroll2": 390.2244452750565,
+      "planck_2018_highl_plik.TT_lite_native": 68.4486193046457,
+      "planckpr4lensing.PlanckPR4Lensing": 9.847193651666505,
+      "lensA": 2806.4074250325098,
+      "lensB": 1384.1998035175945
+    },
+    "spectrum_ell_max": {
+      "tt": 4095,
+      "ee": 4095
+    },
+    "elapsed_seconds": 3171.365724239964
+  },
+  "native_broader_minus_medium": {
+    "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 5.205274454667119e-05,
+    "planck_2018_lowl.TT": 0.036342827783869325,
+    "planck_2018_lowl.EE_sroll2": 0.0008896421488771011,
+    "planck_2018_highl_plik.TT_lite_native": -0.07303521695737913,
+    "planckpr4lensing.PlanckPR4Lensing": -0.0124143533875678,
+    "lensA": -0.8642769537123058,
+    "lensB": 0.3491532631892369
+  },
+  "own_joint_broader_minus_medium": 0.3009882155215564,
+  "own_joint_broader_minus_default": -0.1252883569379719,
+  "interpretation": "A test coordinate selected from an unconverged archive; no B tail-relative change or posterior bias is determined.",
+  "posterior_accuracy_certified": false,
+  "posterior_convergence_certified": false
+}

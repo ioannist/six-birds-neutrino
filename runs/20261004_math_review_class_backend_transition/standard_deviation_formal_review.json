@@ -1,0 +1,83 @@
+{
+  "utc": "2026-10-04T04:41:32.223885+00:00",
+  "scope": "actual_standard_deviation_kernel_boundary_event_and_fixed_offset_measure_laws",
+  "first_attempt": {
+    "session": 79560,
+    "exit_code": 1,
+    "reason": "positivity tactic required the Ioi-membership hypotheses to be exposed as inequalities; no failed proof was accepted"
+  },
+  "final_build": {
+    "session": 77642,
+    "exit_code": 0
+  },
+  "axioms": {
+    "session": 23631,
+    "exit_code": 0,
+    "exports_checked": 37,
+    "allowed": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "adversarial_examples": {
+    "session": 30161,
+    "exit_code": 0,
+    "examples": 7,
+    "scope": [
+      "positive-mean inclusion after decreasing sigma2",
+      "negative-mean reversal",
+      "zero-mean closed halfline",
+      "unchanged point-mass probability refutes universal strictness"
+    ]
+  },
+  "premises": [
+    "both standard deviations strictly positive",
+    "first standard deviation and first mean fixed",
+    "one offset measure fixed throughout the second-deviation change",
+    "nonnegative first mean for antitone dependence on second standard deviation",
+    "nonpositive first mean for monotone dependence on second standard deviation"
+  ],
+  "semantic_bridges_checked": [
+    "event defined as actual product maximizing at zero over every nonnegative x",
+    "pointwise kernel equality transforms the entire maximization predicate",
+    "inverse-square ordering reverses positive standard-deviation ordering",
+    "exact threshold is -mu*(1+sigma2^2/sigma1^2)",
+    "measure direction follows actual event inclusion for one fixed measure",
+    "closed boundary includes equality"
+  ],
+  "constant_prior_required_for_posterior_interpretation": true,
+  "Gaussian_CDF_identity_formalized": false,
+  "normalizer_formalized": false,
+  "universal_strict_probability_change_asserted": false,
+  "cosmological_Gaussian_applicability_proved": false,
+  "reviewer": "distinct_self_review_no_independent_agent",
+  "source_files": [
+    {
+      "path": "lean/trunc_gauss_proof/TruncGaussProof/Tightening.lean",
+      "sha256": "638dab7a8721e704ee4a3708411703d7b145a40ffd5669a33abbdf359a6a75d3"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/AuditAxioms.lean",
+      "sha256": "35ebfc83288f50cd55badc97166e397ba45b142b624df48a36ab5d1edb684e4a"
+    },
+    {
+      "path": "runs/20261004_math_review_class_backend_transition/standard_deviation_adversarial.lean",
+      "sha256": "2e3c7509ca223a75e2cd55f89bcf98c3799bff669e0cb960d66f8604484338fa"
+    }
+  ],
+  "receipts": [
+    {
+      "path": "runs/20261004_math_review_class_backend_transition/standard_deviation_lean_build_stdout.txt",
+      "sha256": "fe06bbf05d11e0644d0062c2a1030e6e4cec1339104ca0c9d06eb8d018031bff"
+    },
+    {
+      "path": "runs/20261004_math_review_class_backend_transition/standard_deviation_axioms_stdout.txt",
+      "sha256": "0c528c9d0d3848b1da1a24e8b7d5b99afe19d0f5448852a471ced4eee28dd706"
+    },
+    {
+      "path": "runs/20261004_math_review_class_backend_transition/standard_deviation_adversarial_stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

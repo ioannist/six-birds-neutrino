@@ -1,0 +1,39 @@
+{
+  "utc": "2026-10-04T15:36:40.451798+00:00",
+  "seed": 1704,
+  "group": "old_A3200",
+  "initial_point": {
+    "omegabh2": 0.022699735,
+    "omegach2": 0.11515536,
+    "H0": 68.530016,
+    "logA": 3.0211807,
+    "ns": 1.0244569,
+    "tau": 0.060991682,
+    "mnu": 0.14275261
+  },
+  "config_sha256": "c8e16b7bb09d7919329a3e4d5c5f6ea0c745e3a5be2abce5e56360a90a702576",
+  "module_sha256": "6a54f98bcc65601fd1ad5e760a99a0072cdc45fe49197ba5c3a1282889c2ee0d",
+  "native_initial_point_verified": true,
+  "chi2_components": {
+    "sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 2575.9530015461896,
+    "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 10.56721000374787
+  },
+  "logpriors": [
+    -2.1045919762829826
+  ],
+  "logposterior": -1295.3646977512517,
+  "control_component_differences": {
+    "sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": -9.094947017729282e-13,
+    "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 0.0
+  },
+  "selected_replay_tolerance": 1e-09,
+  "upstream_forced_fresh_likes_and_priors_exact": true,
+  "FreshCAMB_class": "sbt_spt_audit.boltzmann.FreshCAMB",
+  "sampler_cache_resize_challenge": 50,
+  "effective_CAMB_extra_args": {
+    "num_massive_neutrinos": 3,
+    "nnu": 3.046,
+    "lmax": 3200
+  },
+  "posterior_certified": false
+}

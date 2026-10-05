@@ -1,0 +1,12 @@
+{
+  "utc": "2026-10-05T05:33:55.230927+00:00",
+  "source": "runs/20261005_math_review_CLASS_fresh_B_diagnostic_preparation/self_review.py",
+  "source_sha256": "3f15b4bd52a8f95612c2b474e2d0d26efc63362d67da734c677dc72c31681200",
+  "changes": [
+    [
+      "out = CONTROL / group",
+      "out = (ROOT / 'runs/20261005_math_review_CLASS_fresh_B_medium_prethreshold_control' if group == 'fresh_recovery_medium_B' else CONTROL) / group"
+    ]
+  ],
+  "scope": "Medium control uses a fresh output root after actual short-row refusal; all physical targets and thresholds unchanged."
+}

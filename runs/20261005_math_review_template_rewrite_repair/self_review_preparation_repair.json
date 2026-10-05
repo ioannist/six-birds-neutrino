@@ -1,0 +1,13 @@
+{
+  "source": "runs/20261005_math_review_template_rewrite_repair/self_review.py",
+  "source_sha256": "ef7a1065c735e3ec2bb13fb1ca9e9d6720259cc01766b0191fd0ef2f99cab738",
+  "first_direct_exit_code": 1,
+  "failure": "Archived script derives its original src path from the archive location; prepend actual repository src before loading it.",
+  "changes": [
+    [
+      "ROOT = HERE.parents[1]\n",
+      "ROOT = HERE.parents[1]\nimport sys\nsys.path.insert(0, str(ROOT / \"src\"))\n"
+    ]
+  ],
+  "review_or_runtime_hypotheses_changed": false
+}

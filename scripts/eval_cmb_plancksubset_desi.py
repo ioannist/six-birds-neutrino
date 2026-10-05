@@ -18,6 +18,7 @@ if str(SRC_DIR) not in sys.path:
     sys.path.insert(0, str(SRC_DIR))
 
 from cobaya.model import get_model  # noqa: E402
+from run_cobaya import _validate_classy_backend  # noqa: E402
 
 
 DEFAULT_CONFIGS = [
@@ -111,6 +112,9 @@ def _is_finite_dict(d: dict[str, Any]) -> bool:
 
 def _evaluate_one(config_path: Path, packages_path: Path) -> dict[str, Any]:
     cfg = _load_yaml(config_path)
+    backend = _validate_classy_backend(cfg)
+    if backend is not None:
+        cfg["theory"]["classy"]["path"] = "global"
     model = get_model(cfg, packages_path=str(packages_path), stop_at_error=True)
     point = _build_point(cfg, model)
     out = model.loglikes(point, as_dict=True, return_derived=False)
@@ -124,6 +128,7 @@ def _evaluate_one(config_path: Path, packages_path: Path) -> dict[str, Any]:
 
     return {
         "config": str(config_path),
+        "solver_backend": backend,
         "run_name": cfg.get("run_name", config_path.stem),
         "sampled_params": list(model.parameterization.sampled_params()),
         "ref_point": point,
@@ -138,6 +143,12 @@ def main() -> int:
     args = parse_args()
     configs = [Path(c).expanduser().resolve() for c in (args.config or DEFAULT_CONFIGS)]
     packages_path = Path(args.packages_path).expanduser().resolve()
+    try:
+        for config_path in configs:
+            _validate_classy_backend(_load_yaml(config_path))
+    except Exception as exc:  # noqa: BLE001
+        print(f"Failed native CLASS backend preflight: {exc}", file=sys.stderr)
+        return 2
 
     outdir = (
         Path(args.outdir).expanduser().resolve()

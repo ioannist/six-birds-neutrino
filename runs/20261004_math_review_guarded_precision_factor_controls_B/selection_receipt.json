@@ -1,0 +1,22 @@
+{
+  "utc": "2026-10-04T07:24:11.150329+00:00",
+  "scope": "fixed_B_coordinates_numerical_factor_controls",
+  "parent_verification": "runs/20261004_math_review_guarded_medium_fine_mass_response/completion_verification.json",
+  "parent_verification_sha256": "7d9347d60bab852ac27a8a7cc7354109410b753859f3495247e4560f85bcd8e9",
+  "native_module_path": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+  "native_module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+  "changed_controls": {
+    "grid_only": [
+      "l_linstep",
+      "l_logstep"
+    ],
+    "dynamics_only": [
+      "perturbations_sampling_stepsize",
+      "tol_ncdm_newtonian",
+      "tol_ncdm_synchronous",
+      "tol_perturbations_integration"
+    ]
+  },
+  "previous_medium_and_fine_native_anchors_reused_not_rerun": true,
+  "posterior_or_uniform_accuracy_certified": false
+}

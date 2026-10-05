@@ -1,0 +1,33 @@
+{
+  "point": {
+    "omegabh2": 0.022594022546890198,
+    "omegach2": 0.11663951269481965,
+    "H0": 68.65656911696787,
+    "logA": 3.0448773282079546,
+    "ns": 0.974575137554725,
+    "tau": 0.05537110848136974,
+    "mnu_sample": 0.044069385410427764,
+    "A_planck": 1.0036569149274879,
+    "TT_tSZ_Amp": 2.015995403869732,
+    "TT_kSZ_Amp": 10.0
+  },
+  "loglike": -1509.1648377439199,
+  "success": true,
+  "flag": 0,
+  "message": "Success: rho has reached rhoend",
+  "free": [
+    "omegabh2",
+    "omegach2",
+    "H0",
+    "logA",
+    "ns",
+    "tau",
+    "mnu_sample",
+    "A_planck",
+    "TT_tSZ_Amp",
+    "TT_kSZ_Amp"
+  ],
+  "n_evals": 98,
+  "elapsed_seconds": 4478.861232042778,
+  "scope": "bounded_numerical_candidate_not_global_certificate"
+}

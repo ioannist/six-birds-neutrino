@@ -1,0 +1,38 @@
+{
+  "variant": "linear_lensing",
+  "NonLinear": "NonLinear_none",
+  "halofit_version": "mead2020",
+  "parameters_sha256": "62aee50d7e0eadc4be9f22a94b6f5523776e0465733f09f90759113b529d1e74",
+  "unlensed_scalar": {
+    "shape": [
+      4096,
+      4
+    ],
+    "all_finite": true,
+    "nan_count": 0,
+    "inf_count": 0,
+    "equal_to_original_with_nan": false
+  },
+  "lensed_scalar": {
+    "shape": [
+      4096,
+      4
+    ],
+    "all_finite": true,
+    "nan_count": 0,
+    "inf_count": 0,
+    "equal_to_original_with_nan": false
+  },
+  "lens_potential": {
+    "shape": [
+      4096,
+      3
+    ],
+    "all_finite": true,
+    "nan_count": 0,
+    "inf_count": 0,
+    "equal_to_original_with_nan": false
+  },
+  "status": "arrays_returned",
+  "arrays_sha256": "f877ca173c20edfa6ddd1adad6330c3f69d96fcf9e6eca3fcd31e851b027546a"
+}

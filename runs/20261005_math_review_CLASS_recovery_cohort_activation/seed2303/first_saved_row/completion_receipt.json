@@ -1,0 +1,52 @@
+{
+  "utc": "2026-10-05T04:33:29.943981+00:00",
+  "seed": 2303,
+  "source_seed": 1406,
+  "point": {
+    "omegabh2": 0.022866687887109393,
+    "omegach2": 0.11725684005469109,
+    "H0": 68.46453549170923,
+    "logA": 3.0308498562455815,
+    "ns": 0.9852100390194146,
+    "tau": 0.05231213438319155,
+    "mnu_sample": 0.08241513115697426,
+    "A_planck": 0.9985947690424893,
+    "TT_tSZ_Amp": 2.845996345207673,
+    "TT_kSZ_Amp": 9.504426737644417
+  },
+  "holding_time": 4,
+  "source": "runs/20261005_math_review_CLASS_recovery_companion_medium_A_seed2303/chains/CLASS_recovery_companion_medium_A_seed2303.1.txt",
+  "frozen": "runs/20261005_math_review_CLASS_recovery_cohort_activation/seed2303/first_saved_row/chains/CLASS_recovery_companion_medium_A_seed2303.1.txt",
+  "snapshot_sha256": "5f1ea05f35c90557b2ba631ca1758134fb8ca5ae89c901c039e1111cb62b35b3",
+  "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+  "config_sha256": "a870c7cb83df0712113d8bca09bbecfc1851409983c6298697df3aa8b7b1095e",
+  "native_row_verified": true,
+  "native_check": {
+    "point": {
+      "omegabh2": 0.022866687887109393,
+      "omegach2": 0.11725684005469109,
+      "H0": 68.46453549170923,
+      "logA": 3.0308498562455815,
+      "ns": 0.9852100390194146,
+      "tau": 0.05231213438319155,
+      "mnu_sample": 0.08241513115697426,
+      "A_planck": 0.9985947690424893,
+      "TT_tSZ_Amp": 2.845996345207673,
+      "TT_kSZ_Amp": 9.504426737644417
+    },
+    "fresh_minuslogpost": 1522.125076713719,
+    "fresh_minus_recorded": {
+      "minuslogpost": 0.0,
+      "minuslogprior": 0.0,
+      "chi2": 0.0,
+      "chi2__sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 0.0,
+      "chi2__sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 0.0,
+      "chi2__planck_2018_lowl.TT": 0.0,
+      "chi2__planck_2018_lowl.EE_sroll2": 0.0,
+      "chi2__planck_2018_highl_plik.TT_lite_native": 0.0,
+      "chi2__planckpr4lensing.PlanckPR4Lensing": 0.0
+    }
+  },
+  "complete_source_prefix_preserved": true,
+  "scope": "Selected first saved native row; not exact resume, independent posterior evidence or convergence certificate."
+}

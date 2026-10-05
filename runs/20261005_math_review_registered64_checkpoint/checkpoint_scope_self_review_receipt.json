@@ -1,0 +1,48 @@
+{
+  "utc": "2026-10-05T03:24:20.976408+00:00",
+  "reviewer": "distinct_self_review_not_independent_agent",
+  "closed_verification_roots": [
+    {
+      "root": "runs/20261005_math_review_sigma_time_v3_posterior_activation",
+      "execution_receipt_sha256": "0a00de1abbae7b7b5014a0f7bf1abed7e76338561294c38cd0d98b0bc5503be7"
+    },
+    {
+      "root": "runs/20261005_math_review_fresh_CAMB_ninth_old_A3200_diagnostics_v2",
+      "execution_receipt_sha256": "7d878908fa5976dd2246ad538a4daecb4e9b634b544851f3197e983321a3c06a"
+    },
+    {
+      "root": "runs/20261005_math_review_fresh_CAMB_ninth_old_B4095_diagnostics_v2",
+      "execution_receipt_sha256": "4989fd273400bc9171f86d12f610317d42653f773149adc001e67850fb8d6186"
+    },
+    {
+      "root": "runs/20261005_math_review_fresh_CAMB_tenth_current_A3200_diagnostics_v2",
+      "execution_receipt_sha256": "be7bdb164e361e62c95cd2fa062f573cd1cb7eae4643fddf1d1bf3ed60e5214c"
+    },
+    {
+      "root": "runs/20261005_math_review_CLASS_unavailable_terminal_preservation",
+      "execution_receipt_sha256": "46fe47411a844b9872ea5549adaa389af6122c242d8d5d10920bee48bb336c09"
+    },
+    {
+      "root": "runs/20261005_math_review_sigma_time_v3_activation_checkpoint",
+      "execution_receipt_sha256": "1b9e6030c9698b106dbfae44b93fef87f50b537b53d96e7f3cf61df36dcd3fc5"
+    },
+    {
+      "root": "runs/20261005_math_review_registered64_checkpoint",
+      "execution_receipt_sha256": "6f3918b22d390fbec79d45b50c48473b150e316221444f76596b07cca228ff59"
+    }
+  ],
+  "prior_checkpoint_artifact_hashes_preserved": true,
+  "candidate_first_saved_rows_verified": 16,
+  "first_saved_row_native_component_error": 0.0,
+  "runtime_registered_families": 64,
+  "runtime_live_at_observation": 58,
+  "known_native_failure_families": 4,
+  "unknown_exit_families": 2,
+  "exit_reasons_not_invented": true,
+  "all_three_new_existing_CAMB_assessments_unqualified": true,
+  "active_inference_captures_excluded": true,
+  "paper_and_canonical_unchanged": true,
+  "math_and_Lean_unchanged": true,
+  "production_native_unchanged": true,
+  "posterior_or_uniform_accuracy_certified": false
+}

@@ -1,0 +1,112 @@
+{
+  "utc": "2026-10-05T06:45:41.917941+00:00",
+  "reviewer": "distinct_self_review_not_independent_agent",
+  "audit_source_sha256": "e99cb4952d64747dc28b9ed93519fbbb05b69d912740122f1a74d504934a71c3",
+  "obstacle_receipt_sha256": "4f050ff9e55ad863112dceb792a7bb89f54ea031535ab943c1e40b030c117845",
+  "records": [
+    {
+      "group": "current_A3200",
+      "failed_gate_union": [
+        "MCSE",
+        "chronological_drift"
+      ],
+      "numeric_gate_sets_reconstructed": 7,
+      "weighted_histories_recounted": 4
+    },
+    {
+      "group": "current_A4095",
+      "failed_gate_union": [
+        "MCSE"
+      ],
+      "numeric_gate_sets_reconstructed": 7,
+      "weighted_histories_recounted": 4
+    },
+    {
+      "group": "current_B4095",
+      "failed_gate_union": [
+        "MCSE",
+        "Rhat"
+      ],
+      "numeric_gate_sets_reconstructed": 7,
+      "weighted_histories_recounted": 4
+    },
+    {
+      "group": "old_A3200",
+      "failed_gate_union": [
+        "MCSE",
+        "Rhat",
+        "chronological_drift"
+      ],
+      "numeric_gate_sets_reconstructed": 7,
+      "weighted_histories_recounted": 4
+    },
+    {
+      "group": "old_B4095",
+      "failed_gate_union": [
+        "MCSE",
+        "Rhat"
+      ],
+      "numeric_gate_sets_reconstructed": 7,
+      "weighted_histories_recounted": 4
+    },
+    {
+      "group": "sigma_time_v3_A4095_cap20",
+      "failed_gate_union": [
+        "MCSE",
+        "Rhat",
+        "bulk_ESS",
+        "chronological_drift",
+        "equalized_selection",
+        "quantile_ESS",
+        "tail_ESS"
+      ],
+      "numeric_gate_sets_reconstructed": 7,
+      "weighted_histories_recounted": 4
+    },
+    {
+      "group": "sigma_time_v3_A4095_cap5",
+      "failed_gate_union": [
+        "MCSE",
+        "Rhat",
+        "bulk_ESS",
+        "chronological_drift",
+        "equalized_selection",
+        "quantile_ESS",
+        "tail_ESS"
+      ],
+      "numeric_gate_sets_reconstructed": 7,
+      "weighted_histories_recounted": 4
+    },
+    {
+      "group": "sigma_time_v3_B4095_cap20",
+      "failed_gate_union": [
+        "MCSE",
+        "Rhat",
+        "bulk_ESS",
+        "chronological_drift",
+        "equalized_selection",
+        "quantile_ESS",
+        "tail_ESS"
+      ],
+      "numeric_gate_sets_reconstructed": 7,
+      "weighted_histories_recounted": 4
+    },
+    {
+      "group": "sigma_time_v3_B4095_cap5",
+      "failed_gate_union": [
+        "MCSE",
+        "Rhat",
+        "bulk_ESS",
+        "quantile_ESS",
+        "tail_ESS"
+      ],
+      "numeric_gate_sets_reconstructed": 7,
+      "weighted_histories_recounted": 4
+    }
+  ],
+  "all_sixty_three_numeric_gate_sets_reconstructed": true,
+  "all_thirty_six_weighted_histories_recounted": true,
+  "only_current_A4095_has_precision_only_failures_at_bound_snapshot": true,
+  "represented_numeric_checks_not_uniform_arithmetic_certificates": true,
+  "no_stationarity_physical_accuracy_or_completion_time_inference": true
+}

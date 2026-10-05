@@ -1,0 +1,26 @@
+{
+  "scope": "two_post_recovery_segments_four_fresh_native_rows",
+  "results": {
+    "503": {
+      "exit_code": 0,
+      "fresh_saved_rows": 26,
+      "native_checked_row_indices": [
+        0,
+        25
+      ],
+      "max_abs_error": 0.0,
+      "native_verification_sha256": "5525e1f1b4681794a7736673ba118f7327babdfbe1a914cd08ee963e76d1b3e4"
+    },
+    "507": {
+      "exit_code": 0,
+      "fresh_saved_rows": 18,
+      "native_checked_row_indices": [
+        0,
+        17
+      ],
+      "max_abs_error": 0.0,
+      "native_verification_sha256": "4ce9e6679c9b8924c00e668a35ad6cccbe8e867a3c7ae20fb7197d5c227ee54e"
+    }
+  },
+  "posterior_convergence_verified": false
+}

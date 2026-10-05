@@ -1,0 +1,88 @@
+{
+  "utc": "2026-10-03T13:39:34.450350+00:00",
+  "scope": "six_matched_coordinates_accuracy_convergence_no_uniform_bound",
+  "managed_exec_exit_code": 0,
+  "metrics_sha256": "ee8c6430a03ebf6d909baa282cf09dee9c00e21b07e698b05d6ea5aec4f0cabc",
+  "boost2_metrics_sha256": "6908fc36809df5ecf02ac9c9bd782c0714a22b0985268e3ee745d7d4accf1f42",
+  "all_points_and_likelihood_spectrum_requirements_match": true,
+  "all_default_native_components_match": true,
+  "results": {
+    "audit_A": {
+      "native_boost3_minus_boost2": {
+        "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 1.1676275301297778e-05,
+        "lensA": 0.19156982656704713,
+        "lensB": -2.7155522782632033
+      },
+      "own_joint_boost3_minus_boost2": 0.19158150284234843,
+      "elapsed_seconds": 108.50451747095212
+    },
+    "audit_A_mass_minus": {
+      "native_boost3_minus_boost2": {
+        "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 1.1757807333978576e-05,
+        "lensA": 0.1911388340136,
+        "lensB": -2.718828530962355
+      },
+      "own_joint_boost3_minus_boost2": 0.19115059182093397,
+      "elapsed_seconds": 105.15055753290653
+    },
+    "audit_A_mass_plus": {
+      "native_boost3_minus_boost2": {
+        "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 1.1591596443594199e-05,
+        "lensA": 0.19202339435878457,
+        "lensB": -2.712013703318007
+      },
+      "own_joint_boost3_minus_boost2": 0.19203498595522817,
+      "elapsed_seconds": 106.57981032365933
+    },
+    "audit_B": {
+      "native_boost3_minus_boost2": {
+        "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 0.0,
+        "lensA": 0.44870364390408213,
+        "lensB": -0.07283541794390658
+      },
+      "own_joint_boost3_minus_boost2": -0.07283541794390658,
+      "elapsed_seconds": 108.09572202386335
+    },
+    "audit_B_mass_minus": {
+      "native_boost3_minus_boost2": {
+        "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 0.0,
+        "lensA": 0.44855387857433016,
+        "lensB": -0.07370835101232842
+      },
+      "own_joint_boost3_minus_boost2": -0.07370835101232842,
+      "elapsed_seconds": 107.86861003888771
+    },
+    "audit_B_mass_plus": {
+      "native_boost3_minus_boost2": {
+        "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 0.0,
+        "lensA": 0.44898171163640654,
+        "lensB": -0.07131031319659087
+      },
+      "own_joint_boost3_minus_boost2": -0.07131031319659087,
+      "elapsed_seconds": 108.9758534966968
+    }
+  },
+  "local_mass_curve": {
+    "A": {
+      "minus": {
+        "two": -0.00811143455537433,
+        "three": -0.00854234557678879
+      },
+      "plus": {
+        "two": 0.011585922015173722,
+        "three": 0.01203940512805346
+      }
+    },
+    "B": {
+      "minus": {
+        "two": -0.002416206110837038,
+        "three": -0.003289139179258882
+      },
+      "plus": {
+        "two": 0.006033750655378256,
+        "three": 0.007558855402693965
+      }
+    }
+  },
+  "posterior_accuracy_certified": false
+}

@@ -1,0 +1,23 @@
+{
+  "utc": "2026-10-05T05:05:02.184908+00:00",
+  "records": [
+    {
+      "name": "preflight.py",
+      "source": "runs/20261005_math_review_CLASS_recovery_cohort_companions_v3/preflight.py",
+      "source_sha256": "81e7c24a41312deaa8c32d635782b044793cf68f50a4d16a3b9fd8d06301fa03",
+      "changes": []
+    },
+    {
+      "name": "run_preflights.py",
+      "source": "runs/20261005_math_review_CLASS_recovery_cohort_companions_v3/run_preflights.py",
+      "source_sha256": "6424a5530e42f45e3e92c90bb3c88e03bbcb8b4a7404616b2eb08a8de98022da",
+      "changes": [
+        [
+          "Run all six native controls with at most two concurrent native workers.",
+          "Run all eight native controls with at most two concurrent native workers."
+        ]
+      ]
+    }
+  ],
+  "scope": "Same guarded finite native-start controls for eight fresh B configurations."
+}

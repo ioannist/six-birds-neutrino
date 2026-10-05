@@ -1,0 +1,23 @@
+{
+  "status": "resuming_verified_native_target_no_posterior_claims",
+  "lens": "B",
+  "seed": 603,
+  "pid": 2696249,
+  "exec_session": 30570,
+  "run_dir": "runs/20261003_math_review_cmb_accuracy_chain_B_seed603",
+  "omp_threads": 8,
+  "implementation_sha256": {
+    "scripts/run_cobaya.py": "744581e1e7493ecf5c1d1c71871d16558eb7ff2229c9c4ff68c9eb8d136fac5b",
+    "src/sbt_spt_audit/samplers.py": "35109ea6ec9af9519b1ab44b737e1d4f56bfe22020bb2b09f2649a0ada6cfa94",
+    "src/sbt_spt_audit/mcmc.py": "dd569198507b1f3e54ff24c64b33d66e97b9c153ba4c7cb06e94b1f5c985ee35",
+    "src/sbt_spt_audit/likelihoods/candl_cobaya.py": "b695b32235d04a2b287786260c5c02fb87c43d787d0949907a7247518aa37a90",
+    "src/sbt_spt_audit/likelihoods/desi_dr2_bao.py": "bf7b9b816f158aaabfc12ba8f6ea75ed8c7fa0bc0bbfe73b7aa8e75d9a999bf4"
+  },
+  "output_precision_digits": 17,
+  "launch_utc": "2026-10-03T15:44:14.686050+00:00",
+  "terminal_exit_code": 143,
+  "termination_observed_utc": "2026-10-03T20:50:23.531917+00:00",
+  "previous_pid": 2286674,
+  "resume_seed": 803,
+  "previous_exec_session": 24069
+}

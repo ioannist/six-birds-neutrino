@@ -1,0 +1,33 @@
+{
+  "utc": "2026-10-04T16:54:30.636447+00:00",
+  "source_contract": "runs/20261004_math_review_fresh_CAMB_diagnostic_preparation/assessment_contract.json",
+  "source_contract_sha256": "1b6aed77c1a66b9ee84fd1d949c0f3b20d8d18e96112f7ff64260f746f097adb",
+  "control_contract_sha256": "f4f04f5f9285d8e1dbb582685e0411437cc00b3ccd65ee06de83fe6ba600abe4",
+  "copied_scripts": [
+    {
+      "source": "runs/20261004_math_review_fresh_CAMB_diagnostic_preparation/prepare_snapshot.py",
+      "control_copy": "runs/20261004_math_review_fresh_CAMB_workflow_control/prepare_snapshot.py",
+      "sha256": "b9970aa9b959708a3e918163c9bde034177ae487cc1db644d2e7a9d05a141755"
+    },
+    {
+      "source": "runs/20261004_math_review_fresh_CAMB_diagnostic_preparation/verify_native_rows.py",
+      "control_copy": "runs/20261004_math_review_fresh_CAMB_workflow_control/verify_native_rows.py",
+      "sha256": "9bcf1f1073ed098ef787e65510b859f61f510c0911b0071f6008cea26c79cca9"
+    },
+    {
+      "source": "runs/20261004_math_review_fresh_CAMB_diagnostic_preparation/run_diagnostic.py",
+      "control_copy": "runs/20261004_math_review_fresh_CAMB_workflow_control/run_diagnostic.py",
+      "sha256": "ab760f7bde8806f0c82ed515e57278a5751a0842c9b9116df866d5421597b327"
+    },
+    {
+      "source": "runs/20261004_math_review_fresh_CAMB_diagnostic_preparation/verify_snapshot.py",
+      "control_copy": "runs/20261004_math_review_fresh_CAMB_workflow_control/verify_snapshot.py",
+      "sha256": "a31bc2c725579869a43c08bbb84ddedb35c0faf83294908a3654ed817adc5cdf"
+    }
+  ],
+  "sole_changed_existing_contract_field": "first_minimum_retained_represented_steps:1000->8",
+  "scientific_gate_settings_changed": false,
+  "production_contract_changed": false,
+  "workflow_control_only": true,
+  "qualifies_posterior": false
+}

@@ -1,0 +1,41 @@
+{
+  "utc": "2026-10-03T17:14:47.336687+00:00",
+  "scope": "four_pointwise_target_checks_after_actual_dragging_activation",
+  "posterior_convergence_certified": false,
+  "efficiency_improvement_verified": false,
+  "files": [
+    {
+      "lens": "A",
+      "seed": 701,
+      "source_file": "runs/20261003_math_review_cmb_accuracy_dragging_chain_A_seed701/chains/math_accuracy_dragging_A_seed701.1.txt",
+      "source_read_sha256": "af0ce260995b4edb1e1cb035385eecfcb422310ee4a988511486a426c98081cb",
+      "snapshot_file": "runs/20261003_math_review_cmb_accuracy_dragging_precision_check/chain_A_seed701/chains/math_accuracy_dragging_A_seed701.1.txt",
+      "snapshot_sha256": "5da1a5f75d7e6d2350a48b7d174caae710069dbefb9c99252051605967025e05",
+      "selected_row_indices_zero_based": [
+        0,
+        1
+      ],
+      "selected_rows": 2,
+      "scope": "initial_state_and_first_accepted_dragged_state",
+      "input_sha256": "20b2f17716eb6e54df65398f6c49adb9a3a3cfe8febd78f7f4c9eec997fef092",
+      "resolved_sha256": "cb62b9e26efa29d7f086db91667ab4fc5bf43210d27f8cb5b80cb63d89fbd032"
+    },
+    {
+      "lens": "B",
+      "seed": 702,
+      "source_file": "runs/20261003_math_review_cmb_accuracy_dragging_chain_B_seed702/chains/math_accuracy_dragging_B_seed702.1.txt",
+      "source_read_sha256": "4c34b2b63b3cebe20ce056d73e950fde795114c1a69f20bfa153a393ffd86d54",
+      "snapshot_file": "runs/20261003_math_review_cmb_accuracy_dragging_precision_check/chain_B_seed702/chains/math_accuracy_dragging_B_seed702.1.txt",
+      "snapshot_sha256": "88e31693920040fdfe898d2adee4d7d87c50cfadc9c6af049c77295856befc69",
+      "selected_row_indices_zero_based": [
+        0,
+        1
+      ],
+      "selected_rows": 2,
+      "scope": "initial_state_and_first_accepted_dragged_state",
+      "input_sha256": "f0c59f2f79a035696e052f7cf08b649417cfb4549e8dc2e47e66d68dbd46d66e",
+      "resolved_sha256": "c27601e0b82958da0a96d68c15685d4b2fe648e8e7085b30fe3bad9b537d3e25"
+    }
+  ],
+  "verifier_sha256": "5ba7e20d1e24fed26bffc5301b5a315e94fa85d1aae33c6a40991b4bda0498a2"
+}

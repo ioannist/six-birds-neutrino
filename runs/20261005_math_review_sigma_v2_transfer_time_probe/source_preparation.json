@@ -1,0 +1,14 @@
+{
+  "utc": "2026-10-05T02:02:59.558057+00:00",
+  "original_source": "/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_sigma_v2_optimized_20261005/camb-2.0.4/fortran/cmbmain.f90",
+  "original_sha256": "4c53df4ac8f26789602d489da0889b495436d70a2051efaedf42c86f911a07eb",
+  "probe_source": "/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_sigma_v2_transfer_time_probe_20261005/fortran/cmbmain.f90",
+  "probe_sha256": "7f61d49de03d44299ee32d09b387f418432cf1510a9697210c9fdf3bc5a8591a",
+  "changes": [
+    [
+      "                            write(*, *) 'WARNING: mismatch in integrated times (CAMB: CalcScalarSources)'",
+      "                            write(*, *) 'AUDIT_TRANSFER_TIME_MISMATCH', EV%q_ix, EV%q, tau, &\n                                State%transfer_times(itf-1), tau-State%transfer_times(itf-1), itf, j, &\n                                State%TimeSteps%points(j)\n                            write(*, *) 'WARNING: mismatch in integrated times (CAMB: CalcScalarSources)'"
+    ]
+  ],
+  "scope": "Observational print before unchanged native time warning; no numerical or requested-time changes."
+}

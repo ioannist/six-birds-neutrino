@@ -1,0 +1,38 @@
+{
+  "variant": "mead2016",
+  "NonLinear": "NonLinear_lens",
+  "halofit_version": "mead2016",
+  "parameters_sha256": "e3017ff4861d0f8e601e3654ddd718e2577e2c8870d223a72cd5d75c18ec9dde",
+  "unlensed_scalar": {
+    "shape": [
+      4096,
+      4
+    ],
+    "all_finite": true,
+    "nan_count": 0,
+    "inf_count": 0,
+    "equal_to_original_with_nan": true
+  },
+  "lensed_scalar": {
+    "shape": [
+      4096,
+      4
+    ],
+    "all_finite": false,
+    "nan_count": 16376,
+    "inf_count": 0,
+    "equal_to_original_with_nan": true
+  },
+  "lens_potential": {
+    "shape": [
+      4096,
+      3
+    ],
+    "all_finite": false,
+    "nan_count": 12282,
+    "inf_count": 0,
+    "equal_to_original_with_nan": true
+  },
+  "status": "arrays_returned",
+  "arrays_sha256": "9dd9b30a1b7d2b1a6815c7a5ebae196da3e0a7173ce9465ba4a7990b8935bad2"
+}

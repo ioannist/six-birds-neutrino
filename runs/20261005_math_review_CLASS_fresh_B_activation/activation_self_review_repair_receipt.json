@@ -1,0 +1,13 @@
+{
+  "utc": "2026-10-05T05:14:57.830355+00:00",
+  "initial_self_review_direct_exit_code": 1,
+  "source": "runs/20261005_math_review_CLASS_fresh_B_activation/self_review_activation.py",
+  "source_sha256": "f2239f0f6849bd8396c714bc3fb061ec3325f163290a6a1cbc2257581db3c14b",
+  "changes": [
+    [
+      "assert text.count(after) == 1\n        text = text.replace(after, before, 1)",
+      "assert after in text\n        text = text.replace(after, before, 1)"
+    ]
+  ],
+  "reason": "Reverse helper check searched the unbounded source-path text, which also occurs in the separately inserted guard string. Exact final byte equality still checks the complete reconstruction. Original failed reviewer preserved."
+}

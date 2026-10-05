@@ -1,0 +1,85 @@
+{
+  "scope": "separate_bounded_numerical_candidate_fits_not_certified_isolation_of_support_effect",
+  "baseline": "runs/20261003_math_review_cosmological_cmb_desi_warm",
+  "staging": "runs/20261003_math_review_cosmological_cmb_desi_staging",
+  "cuts": "only_lensB_TT_750_3000_TE_EE_300_3000",
+  "fixed_packaged_nuisance": true,
+  "directions": {
+    "B_given_A": {
+      "baseline_joint": 62.39013570828752,
+      "staging_joint": 64.62198135935068,
+      "relative_change_percent": 3.577241218865801,
+      "baseline_native_spt": 60.427497239152444,
+      "staging_native_spt": 62.603169880672795,
+      "staging_top_groups": [
+        {
+          "spec": "EE",
+          "ell": [
+            2000.0,
+            2500.0
+          ],
+          "deltaQ": 23.681344249416647,
+          "n_bins": 60
+        },
+        {
+          "spec": "EE",
+          "ell": [
+            2500.0,
+            3000.0
+          ],
+          "deltaQ": 12.568834223614148,
+          "n_bins": 60
+        },
+        {
+          "spec": "TT",
+          "ell": [
+            2000.0,
+            2500.0
+          ],
+          "deltaQ": 10.221844090029933,
+          "n_bins": 60
+        }
+      ]
+    },
+    "A_given_B": {
+      "baseline_joint": 23.190777408661233,
+      "staging_joint": 23.394509904473125,
+      "relative_change_percent": 0.8785065382750146,
+      "baseline_native_spt": 25.171119415544126,
+      "staging_native_spt": 25.48112080361807,
+      "staging_top_groups": [
+        {
+          "spec": "TT",
+          "ell": [
+            2500.0,
+            3000.0
+          ],
+          "deltaQ": 10.570868702028998,
+          "n_bins": 30
+        },
+        {
+          "spec": "EE",
+          "ell": [
+            1600.0,
+            2000.0
+          ],
+          "deltaQ": 5.7850737927517795,
+          "n_bins": 48
+        },
+        {
+          "spec": "TT",
+          "ell": [
+            1600.0,
+            2000.0
+          ],
+          "deltaQ": 2.880639250765415,
+          "n_bins": 48
+        }
+      ]
+    }
+  },
+  "source_A_loglike_refinement": 0.0,
+  "global_optimum_certified": false,
+  "posterior_convergence_verified": false,
+  "same_exported_spt_ell_max": 4095
+}

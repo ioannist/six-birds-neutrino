@@ -1,0 +1,71 @@
+{
+  "utc": "2026-10-04T17:50:05.828836+00:00",
+  "records": [
+    {
+      "group": "quad_A",
+      "original": "runs/20261004_math_review_guarded_CLASS_sixth_quad_A_diagnostics/quad_A_diagnostics.json",
+      "replayed": "runs/20261004_math_review_chain_weight_header_repair/quad_A_replayed_diagnostics.json",
+      "original_sha256": "82cdfba1abfc804fe4916d92246e90ceed8a14241fb93d7a3b7d82ac61126b7b",
+      "replayed_sha256": "82cdfba1abfc804fe4916d92246e90ceed8a14241fb93d7a3b7d82ac61126b7b",
+      "whole_report_equal": true,
+      "exit_code": 0
+    },
+    {
+      "group": "quad_B",
+      "original": "runs/20261004_math_review_guarded_CLASS_sixth_quad_B_diagnostics/quad_B_diagnostics.json",
+      "replayed": "runs/20261004_math_review_chain_weight_header_repair/quad_B_replayed_diagnostics.json",
+      "original_sha256": "f23e31f04b14ec6d1bb4a2f69008595b5568a6c68f53ab1aa3f299425cfc9595",
+      "replayed_sha256": "f23e31f04b14ec6d1bb4a2f69008595b5568a6c68f53ab1aa3f299425cfc9595",
+      "whole_report_equal": true,
+      "exit_code": 0
+    },
+    {
+      "group": "medium_A",
+      "original": "runs/20261004_math_review_guarded_CLASS_fifth_medium_A_diagnostics/medium_A_diagnostics.json",
+      "replayed": "runs/20261004_math_review_chain_weight_header_repair/medium_A_replayed_diagnostics.json",
+      "original_sha256": "407284b2fa6dcfedaa83e067662d75253efae2437c0f00984b62dc856ea999c0",
+      "replayed_sha256": "407284b2fa6dcfedaa83e067662d75253efae2437c0f00984b62dc856ea999c0",
+      "whole_report_equal": true,
+      "exit_code": 0
+    },
+    {
+      "group": "medium_B",
+      "original": "runs/20261004_math_review_guarded_CLASS_sixth_medium_B_diagnostics/medium_B_diagnostics.json",
+      "replayed": "runs/20261004_math_review_chain_weight_header_repair/medium_B_replayed_diagnostics.json",
+      "original_sha256": "ca11dd7b26aa54771ec9f9a6e79a093850be707ca3309ae2f6879fd2dc58326c",
+      "replayed_sha256": "ca11dd7b26aa54771ec9f9a6e79a093850be707ca3309ae2f6879fd2dc58326c",
+      "whole_report_equal": true,
+      "exit_code": 0
+    },
+    {
+      "group": "current_A3200",
+      "original": "runs/20261004_math_review_fresh_CAMB_first_current_A3200_diagnostics/diagnostics.json",
+      "replayed": "runs/20261004_math_review_chain_weight_header_repair/current_A3200_replayed_diagnostics.json",
+      "original_sha256": "601692173d711c1cfd7ef38a416fc74892d46fa081892b2209e4793183d1d058",
+      "replayed_sha256": "601692173d711c1cfd7ef38a416fc74892d46fa081892b2209e4793183d1d058",
+      "whole_report_equal": true,
+      "exit_code": 0
+    },
+    {
+      "group": "old_A3200",
+      "original": "runs/20261004_math_review_fresh_CAMB_first_old_A3200_diagnostics/diagnostics.json",
+      "replayed": "runs/20261004_math_review_chain_weight_header_repair/old_A3200_replayed_diagnostics.json",
+      "original_sha256": "c42ec2be87d0ac69c876cfb0a711275ff17eab792c623311611b0a9379d95a8f",
+      "replayed_sha256": "c42ec2be87d0ac69c876cfb0a711275ff17eab792c623311611b0a9379d95a8f",
+      "whole_report_equal": true,
+      "exit_code": 0
+    },
+    {
+      "group": "old_B4095",
+      "original": "runs/20261004_math_review_fresh_CAMB_first_old_B4095_diagnostics/diagnostics.json",
+      "replayed": "runs/20261004_math_review_chain_weight_header_repair/old_B4095_replayed_diagnostics.json",
+      "original_sha256": "578c6be34709af5b851cc64cc52ce62413d653f332dc751c4b0b13f7708c5b3f",
+      "replayed_sha256": "578c6be34709af5b851cc64cc52ce62413d653f332dc751c4b0b13f7708c5b3f",
+      "whole_report_equal": true,
+      "exit_code": 0
+    }
+  ],
+  "all_seven_latest_reports_identical": true,
+  "reader_source_sha256": "7dc3693b78b36ec4db146920b2c5eda426e43bc487c68bdd35a65053aa453cd0",
+  "scope": "unchanged diagnostics on valid frozen headers; not convergence qualification"
+}

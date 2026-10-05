@@ -1,0 +1,36 @@
+{
+  "utc": "2026-10-05T08:26:41.025104+00:00",
+  "reviewer": "distinct_self_review_not_independent_agent",
+  "records": [
+    {
+      "group": "fresh_recovery_quad_A",
+      "snapshot_sha256": "f0e857771913854ffaf179f08d45b6cfe17faf2eeac5f2c6af5795de18ed0964",
+      "contract_sha256": "7ca9863ad6dd83436f4705f9935f5031e8f428079cc0594214b7e069e6f34d64",
+      "native_sha256": "422c9a9cfa77b4a31525722c34655f5d1b3ca4561eced48d184ac675b246912e",
+      "diagnostic_sha256": "3125af9f8cad18cf02af69f4c4554d385a4c7ab63bbb1345c3ce7f5ffdaa68b1",
+      "sampled_parameter_count": 10,
+      "next_history_trigger": 1222,
+      "fixed_ref_distinctness_witnessed_separately": true,
+      "posterior_qualified": false
+    },
+    {
+      "group": "old_A3200",
+      "snapshot_sha256": "3da4841b2b35aa16f397916fa882d696c938b9115667cd25c3bc05bd6eb6331f",
+      "contract_sha256": "dfc3372b273042de5bb94465bd70fc51c8a102b47bab65d2ef61fdca3ed738ed",
+      "native_sha256": "9f40554867e9b9d941ede92b7884a535fa2894bfff82b65110742dd11582f6a7",
+      "diagnostic_sha256": "8500c830b79253ac57d886de7a42143affae592574113969b4c50f7efd3abdb6",
+      "sampled_parameter_count": 7,
+      "next_history_trigger": 10299,
+      "fixed_ref_distinctness_witnessed_separately": true,
+      "posterior_qualified": false
+    }
+  ],
+  "seventeen_numeric_gate_sets_reconstructed": true,
+  "eight_weighted_histories_recounted": true,
+  "selected_native_rows_exact": 24,
+  "first_CLASS_production_contract_not_control_promotion": true,
+  "CLASS_absent_solver_metadata_not_filled_with_loaded_version": true,
+  "targets_and_historical_failed_cohorts_not_pooled": true,
+  "starts_not_PRNG_independence_or_stationarity": true,
+  "MCSE_not_substituted_for_Readout_absolute_error_inputs": true
+}

@@ -1,0 +1,223 @@
+{
+  "utc": "2026-10-04T12:53:58.921685+00:00",
+  "review_type": "distinct_self_review_not_independent_review",
+  "mixed_CAMB_native_builds_and_recorded_versions_no_longer_accepted": true,
+  "valid_matching_records_and_legacy_assumptions_checked": true,
+  "valid_bundle_guard_checks": 32,
+  "existing_SPT_version_evidence_frozen": [
+    {
+      "source": "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_A_seed301/chains/math_restoration_A_seed301.updated.yaml",
+      "frozen": "runs/20261004_math_review_CAMB_backend_provenance_repair/observed_SPT_version_metadata/A_0.updated.yaml",
+      "sha256": "b978b97219a678ba01d17ed9a8299c9f78140996af39254411a2cfdd609d1874"
+    },
+    {
+      "source": "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_A_seed302/chains/math_restoration_A_seed302.updated.yaml",
+      "frozen": "runs/20261004_math_review_CAMB_backend_provenance_repair/observed_SPT_version_metadata/A_1.updated.yaml",
+      "sha256": "9e32c821baaf4b6f69780c6819fe175b0e07227e2d095cd7af58478049bbad95"
+    },
+    {
+      "source": "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_A_seed303/chains/math_restoration_A_seed303.updated.yaml",
+      "frozen": "runs/20261004_math_review_CAMB_backend_provenance_repair/observed_SPT_version_metadata/A_2.updated.yaml",
+      "sha256": "2f640a55c58ecc23c1a68876edb5c4146c49faee58004e7b0c25bbda37fe52f7"
+    },
+    {
+      "source": "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_A_seed304/chains/math_restoration_A_seed304.updated.yaml",
+      "frozen": "runs/20261004_math_review_CAMB_backend_provenance_repair/observed_SPT_version_metadata/A_3.updated.yaml",
+      "sha256": "0f87acb2e3ea00d5a42dfeb291b9ba619ee4c1d4e96b274b2f268f0992b8a104"
+    },
+    {
+      "source": "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_A_seed402/chains/math_restoration_A_seed402.updated.yaml",
+      "frozen": "runs/20261004_math_review_CAMB_backend_provenance_repair/observed_SPT_version_metadata/A_4.updated.yaml",
+      "sha256": "bf1ef2b491d75ff26f20fec9bf243984db372031dcc4c41e4e4af1da46dd877d"
+    },
+    {
+      "source": "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_A_seed401/chains/math_restoration_A_seed401.updated.yaml",
+      "frozen": "runs/20261004_math_review_CAMB_backend_provenance_repair/observed_SPT_version_metadata/A_5.updated.yaml",
+      "sha256": "0576f9c7a4ceb5eb921b74392d250a1fdc8b377adc08b3eed8cb0c4c46920a59"
+    },
+    {
+      "source": "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_B_seed305/chains/math_restoration_B_seed305.updated.yaml",
+      "frozen": "runs/20261004_math_review_CAMB_backend_provenance_repair/observed_SPT_version_metadata/B_0.updated.yaml",
+      "sha256": "43494cc4532c280495c97f716b2cedfc07328c67004cd681c7f185702ecbb63a"
+    },
+    {
+      "source": "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_B_seed306/chains/math_restoration_B_seed306.updated.yaml",
+      "frozen": "runs/20261004_math_review_CAMB_backend_provenance_repair/observed_SPT_version_metadata/B_1.updated.yaml",
+      "sha256": "3b2cadd885bfc8bd9fb5fe2c112eafb6bc5350d25c2faff4540bac746be04ed8"
+    },
+    {
+      "source": "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_B_seed307/chains/math_restoration_B_seed307.updated.yaml",
+      "frozen": "runs/20261004_math_review_CAMB_backend_provenance_repair/observed_SPT_version_metadata/B_2.updated.yaml",
+      "sha256": "93d41c783cf0d3af52b5133cf0c5ba77511309a102b5b8a83744e116c2548492"
+    },
+    {
+      "source": "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_B_seed308/chains/math_restoration_B_seed308.updated.yaml",
+      "frozen": "runs/20261004_math_review_CAMB_backend_provenance_repair/observed_SPT_version_metadata/B_3.updated.yaml",
+      "sha256": "6e07b2c20a867b070154ff50aabfb4f237ed2c417163a267970b19f2b4bb6902"
+    },
+    {
+      "source": "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_B_seed404/chains/math_restoration_B_seed404.updated.yaml",
+      "frozen": "runs/20261004_math_review_CAMB_backend_provenance_repair/observed_SPT_version_metadata/B_4.updated.yaml",
+      "sha256": "59aad0e509990662117786d2260595cd507dddcd727021062b79926c9839a0b5"
+    },
+    {
+      "source": "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_B_seed403/chains/math_restoration_B_seed403.updated.yaml",
+      "frozen": "runs/20261004_math_review_CAMB_backend_provenance_repair/observed_SPT_version_metadata/B_5.updated.yaml",
+      "sha256": "4fd5d671f6108eb68051c0008fad45b0dab198025f84da31ca23e0c39e394b23"
+    }
+  ],
+  "Python_tests_passed": 145,
+  "Lean_exported_theorems_axiom_checked": 74,
+  "managed_math_check_session": 16448,
+  "exit_code": 0,
+  "rank_algorithms_gates_and_native_targets_unchanged": true,
+  "Lean_sources_unchanged": true,
+  "historical_native_identity_not_inferred_from_installed_module": true,
+  "paper_unchanged": true,
+  "files": [
+    {
+      "path": "runs/20261004_math_review_CAMB_backend_provenance_repair/before_diagnose.py",
+      "sha256": "8f18ac0742e02170e3c37cb7b29ab59ae38842aae6cc4b6996a13135586c17ba"
+    },
+    {
+      "path": "runs/20261004_math_review_CAMB_backend_provenance_repair/fixtures/different_native_builds/0/resolved.yaml",
+      "sha256": "fa52433270fdf1797d750c17b8eff573f710237e6588c7b759e769f2c268ad7d"
+    },
+    {
+      "path": "runs/20261004_math_review_CAMB_backend_provenance_repair/fixtures/different_native_builds/0/sample.updated.yaml",
+      "sha256": "665ef1f447feee6b4f5569e348e8fb74f8ac2bc7f31d08a1642d962e0a4991db"
+    },
+    {
+      "path": "runs/20261004_math_review_CAMB_backend_provenance_repair/fixtures/different_native_builds/0/solver_backend.json",
+      "sha256": "16d4181cadc8425ddcdbff4d2eb9b37966d50d30525d6e46fddf5afc59fc6621"
+    },
+    {
+      "path": "runs/20261004_math_review_CAMB_backend_provenance_repair/fixtures/different_native_builds/1/resolved.yaml",
+      "sha256": "9df38be69bcf1d39f5e93f9d77e026ef7bf8ae9f5c1956b6bcf0f061af77bf40"
+    },
+    {
+      "path": "runs/20261004_math_review_CAMB_backend_provenance_repair/fixtures/different_native_builds/1/sample.updated.yaml",
+      "sha256": "dd38f5875d0c7794fba640aa70b1048ad9dd179925618fa48ef52a03442a2791"
+    },
+    {
+      "path": "runs/20261004_math_review_CAMB_backend_provenance_repair/fixtures/different_native_builds/1/solver_backend.json",
+      "sha256": "8c6b929a75156534965875a298a165e9e372626369a83fa909133792829c2936"
+    },
+    {
+      "path": "runs/20261004_math_review_CAMB_backend_provenance_repair/fixtures/different_recorded_versions/0/resolved.yaml",
+      "sha256": "5d0501ea37ab4018179f7cbdc7ecc95927b291e31d7b15d106ea86343ca9a543"
+    },
+    {
+      "path": "runs/20261004_math_review_CAMB_backend_provenance_repair/fixtures/different_recorded_versions/0/sample.updated.yaml",
+      "sha256": "665ef1f447feee6b4f5569e348e8fb74f8ac2bc7f31d08a1642d962e0a4991db"
+    },
+    {
+      "path": "runs/20261004_math_review_CAMB_backend_provenance_repair/fixtures/different_recorded_versions/1/resolved.yaml",
+      "sha256": "7856fee51f1a5d17cbebfafe835864bf69e6306af947e11589c8883ceb7a3413"
+    },
+    {
+      "path": "runs/20261004_math_review_CAMB_backend_provenance_repair/fixtures/different_recorded_versions/1/sample.updated.yaml",
+      "sha256": "dd38f5875d0c7794fba640aa70b1048ad9dd179925618fa48ef52a03442a2791"
+    },
+    {
+      "path": "runs/20261004_math_review_CAMB_backend_provenance_repair/fixtures/matching_recorded_targets/0/resolved.yaml",
+      "sha256": "ac9e25d92f8c75d63617625dc116e4b90aa7a4408a6caa794388dc3eb03e3215"
+    },
+    {
+      "path": "runs/20261004_math_review_CAMB_backend_provenance_repair/fixtures/matching_recorded_targets/0/sample.updated.yaml",
+      "sha256": "665ef1f447feee6b4f5569e348e8fb74f8ac2bc7f31d08a1642d962e0a4991db"
+    },
+    {
+      "path": "runs/20261004_math_review_CAMB_backend_provenance_repair/fixtures/matching_recorded_targets/0/solver_backend.json",
+      "sha256": "16d4181cadc8425ddcdbff4d2eb9b37966d50d30525d6e46fddf5afc59fc6621"
+    },
+    {
+      "path": "runs/20261004_math_review_CAMB_backend_provenance_repair/fixtures/matching_recorded_targets/1/resolved.yaml",
+      "sha256": "a65e1dc59c820590719ad2e5792c87ceb21e4563a16887fab2df2a36de385f4a"
+    },
+    {
+      "path": "runs/20261004_math_review_CAMB_backend_provenance_repair/fixtures/matching_recorded_targets/1/sample.updated.yaml",
+      "sha256": "665ef1f447feee6b4f5569e348e8fb74f8ac2bc7f31d08a1642d962e0a4991db"
+    },
+    {
+      "path": "runs/20261004_math_review_CAMB_backend_provenance_repair/fixtures/matching_recorded_targets/1/solver_backend.json",
+      "sha256": "16d4181cadc8425ddcdbff4d2eb9b37966d50d30525d6e46fddf5afc59fc6621"
+    },
+    {
+      "path": "runs/20261004_math_review_CAMB_backend_provenance_repair/math_check_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_CAMB_backend_provenance_repair/math_check_stdout.txt",
+      "sha256": "9ff24a223f2f996bbb913a09802cd28d39a28b5bd4621625af01af11e73d733b"
+    },
+    {
+      "path": "runs/20261004_math_review_CAMB_backend_provenance_repair/observed_SPT_version_metadata/A_0.updated.yaml",
+      "sha256": "b978b97219a678ba01d17ed9a8299c9f78140996af39254411a2cfdd609d1874"
+    },
+    {
+      "path": "runs/20261004_math_review_CAMB_backend_provenance_repair/observed_SPT_version_metadata/A_1.updated.yaml",
+      "sha256": "9e32c821baaf4b6f69780c6819fe175b0e07227e2d095cd7af58478049bbad95"
+    },
+    {
+      "path": "runs/20261004_math_review_CAMB_backend_provenance_repair/observed_SPT_version_metadata/A_2.updated.yaml",
+      "sha256": "2f640a55c58ecc23c1a68876edb5c4146c49faee58004e7b0c25bbda37fe52f7"
+    },
+    {
+      "path": "runs/20261004_math_review_CAMB_backend_provenance_repair/observed_SPT_version_metadata/A_3.updated.yaml",
+      "sha256": "0f87acb2e3ea00d5a42dfeb291b9ba619ee4c1d4e96b274b2f268f0992b8a104"
+    },
+    {
+      "path": "runs/20261004_math_review_CAMB_backend_provenance_repair/observed_SPT_version_metadata/A_4.updated.yaml",
+      "sha256": "bf1ef2b491d75ff26f20fec9bf243984db372031dcc4c41e4e4af1da46dd877d"
+    },
+    {
+      "path": "runs/20261004_math_review_CAMB_backend_provenance_repair/observed_SPT_version_metadata/A_5.updated.yaml",
+      "sha256": "0576f9c7a4ceb5eb921b74392d250a1fdc8b377adc08b3eed8cb0c4c46920a59"
+    },
+    {
+      "path": "runs/20261004_math_review_CAMB_backend_provenance_repair/observed_SPT_version_metadata/B_0.updated.yaml",
+      "sha256": "43494cc4532c280495c97f716b2cedfc07328c67004cd681c7f185702ecbb63a"
+    },
+    {
+      "path": "runs/20261004_math_review_CAMB_backend_provenance_repair/observed_SPT_version_metadata/B_1.updated.yaml",
+      "sha256": "3b2cadd885bfc8bd9fb5fe2c112eafb6bc5350d25c2faff4540bac746be04ed8"
+    },
+    {
+      "path": "runs/20261004_math_review_CAMB_backend_provenance_repair/observed_SPT_version_metadata/B_2.updated.yaml",
+      "sha256": "93d41c783cf0d3af52b5133cf0c5ba77511309a102b5b8a83744e116c2548492"
+    },
+    {
+      "path": "runs/20261004_math_review_CAMB_backend_provenance_repair/observed_SPT_version_metadata/B_3.updated.yaml",
+      "sha256": "6e07b2c20a867b070154ff50aabfb4f237ed2c417163a267970b19f2b4bb6902"
+    },
+    {
+      "path": "runs/20261004_math_review_CAMB_backend_provenance_repair/observed_SPT_version_metadata/B_4.updated.yaml",
+      "sha256": "59aad0e509990662117786d2260595cd507dddcd727021062b79926c9839a0b5"
+    },
+    {
+      "path": "runs/20261004_math_review_CAMB_backend_provenance_repair/observed_SPT_version_metadata/B_5.updated.yaml",
+      "sha256": "4fd5d671f6108eb68051c0008fad45b0dab198025f84da31ca23e0c39e394b23"
+    },
+    {
+      "path": "runs/20261004_math_review_CAMB_backend_provenance_repair/probe.py",
+      "sha256": "3f7febcf08f2eec355d9e7f22f70c552602e4f8fe686e2b201e0bcbde69a3735"
+    },
+    {
+      "path": "runs/20261004_math_review_CAMB_backend_provenance_repair/probe_receipt.json",
+      "sha256": "0bbf6a64e4b62d7ef3f7a7532e3d8fc9aeb09398127bf36c55ada05e674083dd"
+    },
+    {
+      "path": "runs/20261004_math_review_CAMB_backend_provenance_repair/self_review.py",
+      "sha256": "d6d01af0ec554b6258a56610305037e66d1bb130c8ee2f6b7fe23d8029407029"
+    },
+    {
+      "path": "scripts/diagnose_cobaya_chains.py",
+      "sha256": "86c21cff2c6af11e4b071342888e0b39264f17c6ee16b4b1cfaef412fc5d5f80"
+    },
+    {
+      "path": "tests/test_math_repairs.py",
+      "sha256": "b55e5483ecc89ee0381b9860d9d21d5a9a395f7b14fadad0f87b1b3dcbbc8a7f"
+    }
+  ]
+}

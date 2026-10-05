@@ -1,0 +1,554 @@
+{
+  "scope": "selected_native_target_consistency_only",
+  "atol": 0.002,
+  "rtol": 1e-06,
+  "tolerance_accounts_for_text_rounding": true,
+  "interval_error_certified": false,
+  "posterior_convergence_certified": false,
+  "chains": [
+    {
+      "run": "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_snapshots_early/chain_A_seed301",
+      "file": "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_snapshots_early/chain_A_seed301/chains/math_restoration_A_seed301.1.txt",
+      "file_sha256": "fc3f12dcca06963d2a39125802789ef7f2737ddd83f7002cf4eec5627cc73136",
+      "total_stored_rows": 79,
+      "checks": [
+        {
+          "row_index": 0,
+          "point": {
+            "omegabh2": 0.022638669,
+            "omegach2": 0.11514923,
+            "H0": 69.664096,
+            "logA": 3.0246268,
+            "ns": 1.0284307,
+            "tau": 0.054887492,
+            "mnu": 0.085323682
+          },
+          "fresh_minuslogpost": 1312.7689005414425,
+          "fresh_minus_recorded": {
+            "minuslogpost": -9.945855754267541e-05,
+            "minuslogprior": -2.3717017239022198e-08,
+            "chi2": -8.286968113679904e-05,
+            "chi2__sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": -8.264707594207721e-05,
+            "chi2__sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": -2.222605466783989e-06
+          }
+        },
+        {
+          "row_index": 39,
+          "point": {
+            "omegabh2": 0.022723378,
+            "omegach2": 0.11573196,
+            "H0": 68.790612,
+            "logA": 3.024969,
+            "ns": 1.0216849,
+            "tau": 0.065419023,
+            "mnu": 0.03620476
+          },
+          "fresh_minuslogpost": 1290.7914284863593,
+          "fresh_minus_recorded": {
+            "minuslogpost": 2.8486359269663808e-05,
+            "minuslogprior": -2.3717017239022198e-08,
+            "chi2": -2.6979847461916506e-05,
+            "chi2__sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 2.297941455253749e-05,
+            "chi2__sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 1.0407376880294805e-06
+          }
+        },
+        {
+          "row_index": 78,
+          "point": {
+            "omegabh2": 0.022584772,
+            "omegach2": 0.11719575,
+            "H0": 68.497924,
+            "logA": 3.0149734,
+            "ns": 1.0188694,
+            "tau": 0.054739333,
+            "mnu": 0.021407561
+          },
+          "fresh_minuslogpost": 1287.8549856724917,
+          "fresh_minus_recorded": {
+            "minuslogpost": -1.4327508324640803e-05,
+            "minuslogprior": -2.3717017239022198e-08,
+            "chi2": -1.2607582448254107e-05,
+            "chi2__sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": -1.4295194887381513e-05,
+            "chi2__sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": -2.3123878509778706e-06
+          }
+        }
+      ]
+    },
+    {
+      "run": "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_snapshots_early/chain_A_seed302",
+      "file": "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_snapshots_early/chain_A_seed302/chains/math_restoration_A_seed302.1.txt",
+      "file_sha256": "7cfe412a0240254b656a88ea1794df6a49aff255d86fcc6838812137b559bc8b",
+      "total_stored_rows": 89,
+      "checks": [
+        {
+          "row_index": 0,
+          "point": {
+            "omegabh2": 0.022552483,
+            "omegach2": 0.11672374,
+            "H0": 69.235342,
+            "logA": 3.0131665,
+            "ns": 1.0330542,
+            "tau": 0.057270115,
+            "mnu": 0.051121897
+          },
+          "fresh_minuslogpost": 1299.6310332283142,
+          "fresh_minus_recorded": {
+            "minuslogpost": 3.322831412333471e-05,
+            "minuslogprior": -2.3717017239022198e-08,
+            "chi2": -1.7495937754574697e-05,
+            "chi2__sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": -2.5079407350858673e-06,
+            "chi2__sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": -3.987997159171641e-06
+          }
+        },
+        {
+          "row_index": 44,
+          "point": {
+            "omegabh2": 0.022519149,
+            "omegach2": 0.11519793,
+            "H0": 68.964504,
+            "logA": 3.0271387,
+            "ns": 1.0319724,
+            "tau": 0.066389943,
+            "mnu": 0.020938053
+          },
+          "fresh_minuslogpost": 1289.8920071166842,
+          "fresh_minus_recorded": {
+            "minuslogpost": 7.116684173524845e-06,
+            "minuslogprior": -2.3717017239022198e-08,
+            "chi2": 3.028080254807719e-05,
+            "chi2__sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 1.3813502846460324e-05,
+            "chi2__sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 2.4672992520180514e-06
+          }
+        },
+        {
+          "row_index": 88,
+          "point": {
+            "omegabh2": 0.022311779,
+            "omegach2": 0.11596436,
+            "H0": 68.758952,
+            "logA": 2.9936346,
+            "ns": 1.0519497,
+            "tau": 0.05632423,
+            "mnu": 0.067147073
+          },
+          "fresh_minuslogpost": 1291.6437069672718,
+          "fresh_minus_recorded": {
+            "minuslogpost": 6.967271701796562e-06,
+            "minuslogprior": -2.3717017239022198e-08,
+            "chi2": -7.0018022597651e-05,
+            "chi2__sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": -8.751202585699502e-06,
+            "chi2__sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": -2.668201481981214e-07
+          }
+        }
+      ]
+    },
+    {
+      "run": "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_snapshots_early/chain_A_seed303",
+      "file": "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_snapshots_early/chain_A_seed303/chains/math_restoration_A_seed303.1.txt",
+      "file_sha256": "0bd96ea6e4900dbb49da37a355f217605b71587b056cd8b592bc6008ae44e26f",
+      "total_stored_rows": 180,
+      "checks": [
+        {
+          "row_index": 0,
+          "point": {
+            "omegabh2": 0.022209571,
+            "omegach2": 0.11065429,
+            "H0": 67.056084,
+            "logA": 3.0307243,
+            "ns": 1.0579635,
+            "tau": 0.036394785,
+            "mnu": 0.47598722
+          },
+          "fresh_minuslogpost": 1596.5766263013456,
+          "fresh_minus_recorded": {
+            "minuslogpost": 0.00012630134574465046,
+            "minuslogprior": -2.3717017239022198e-08,
+            "chi2": 0.00026865012523558107,
+            "chi2__sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 0.0003259344553043775,
+            "chi2__sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": -2.843304258703938e-07
+          }
+        },
+        {
+          "row_index": 89,
+          "point": {
+            "omegabh2": 0.022661205,
+            "omegach2": 0.11539723,
+            "H0": 69.19091,
+            "logA": 3.0071814,
+            "ns": 1.0454449,
+            "tau": 0.06047871,
+            "mnu": 0.028480057
+          },
+          "fresh_minuslogpost": 1289.0858672695365,
+          "fresh_minus_recorded": {
+            "minuslogpost": -0.00013273046351969242,
+            "minuslogprior": -2.3717017239022198e-08,
+            "chi2": -0.00024941349283835734,
+            "chi2__sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": -0.00024889556789275957,
+            "chi2__sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 1.4820745573018712e-06
+          }
+        },
+        {
+          "row_index": 179,
+          "point": {
+            "omegabh2": 0.022867342,
+            "omegach2": 0.11566596,
+            "H0": 68.756374,
+            "logA": 2.9807074,
+            "ns": 1.0285809,
+            "tau": 0.043199498,
+            "mnu": 0.070021797
+          },
+          "fresh_minuslogpost": 1290.401618644725,
+          "fresh_minus_recorded": {
+            "minuslogpost": 1.8644725059857592e-05,
+            "minuslogprior": -2.3717017239022198e-08,
+            "chi2": 5.333688386599533e-05,
+            "chi2__sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": -7.253442618093686e-06,
+            "chi2__sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": -4.096739036896224e-07
+          }
+        }
+      ]
+    },
+    {
+      "run": "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_snapshots_early/chain_A_seed304",
+      "file": "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_snapshots_early/chain_A_seed304/chains/math_restoration_A_seed304.1.txt",
+      "file_sha256": "e08ad1e1834f01fda2898b4b0487f66310ceb1d87a06f658dabc925c403cd6d0",
+      "total_stored_rows": 159,
+      "checks": [
+        {
+          "row_index": 0,
+          "point": {
+            "omegabh2": 0.022787444,
+            "omegach2": 0.11609575,
+            "H0": 68.891694,
+            "logA": 2.9823871,
+            "ns": 1.0357156,
+            "tau": 0.043661088,
+            "mnu": 0.024405632
+          },
+          "fresh_minuslogpost": 1290.4288787022454,
+          "fresh_minus_recorded": {
+            "minuslogpost": -2.129775475623319e-05,
+            "minuslogprior": -2.3717017239022198e-08,
+            "chi2": 7.345192489083274e-05,
+            "chi2__sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 9.357343651572592e-05,
+            "chi2__sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 1.8784881827826894e-06
+          }
+        },
+        {
+          "row_index": 79,
+          "point": {
+            "omegabh2": 0.022417935,
+            "omegach2": 0.11772276,
+            "H0": 68.093092,
+            "logA": 3.0204028,
+            "ns": 1.0326741,
+            "tau": 0.063779206,
+            "mnu": 0.018710069
+          },
+          "fresh_minuslogpost": 1289.7988273956994,
+          "fresh_minus_recorded": {
+            "minuslogpost": 2.739569936238695e-05,
+            "minuslogprior": -2.3717017239022198e-08,
+            "chi2": -2.9161167276470223e-05,
+            "chi2__sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": -6.2025737861404195e-06,
+            "chi2__sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 2.041406212072161e-06
+          }
+        },
+        {
+          "row_index": 158,
+          "point": {
+            "omegabh2": 0.022814946,
+            "omegach2": 0.11523457,
+            "H0": 69.178725,
+            "logA": 3.0123306,
+            "ns": 1.0374637,
+            "tau": 0.062002656,
+            "mnu": 0.060237835
+          },
+          "fresh_minuslogpost": 1289.034882668232,
+          "fresh_minus_recorded": {
+            "minuslogpost": -1.7331768049189122e-05,
+            "minuslogprior": -2.3717017239022198e-08,
+            "chi2": -1.8616101897350745e-05,
+            "chi2__sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": -2.8526304049592e-05,
+            "chi2__sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": -8.97979912650726e-08
+          }
+        }
+      ]
+    },
+    {
+      "run": "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_snapshots_early/chain_B_seed305",
+      "file": "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_snapshots_early/chain_B_seed305/chains/math_restoration_B_seed305.1.txt",
+      "file_sha256": "3862bbaa62d44769b45cfd04aadbeda733bfe74f487c8acaadb354f0f76d4f5a",
+      "total_stored_rows": 46,
+      "checks": [
+        {
+          "row_index": 0,
+          "point": {
+            "omegabh2": 0.02236406,
+            "omegach2": 0.11826746,
+            "H0": 68.388664,
+            "logA": 3.0321677,
+            "ns": 0.96586551,
+            "tau": 0.043246228,
+            "mnu": 0.029341094
+          },
+          "fresh_minuslogpost": 710.3661551276413,
+          "fresh_minus_recorded": {
+            "minuslogpost": 3.512764124025125e-05,
+            "minuslogprior": -2.3717017239022198e-08,
+            "chi2": 0.0001263027165805397,
+            "chi2__sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 6.266216746553255e-05,
+            "chi2__sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": -4.35945078791633e-06
+          }
+        },
+        {
+          "row_index": 22,
+          "point": {
+            "omegabh2": 0.022506103,
+            "omegach2": 0.11799735,
+            "H0": 68.407261,
+            "logA": 3.0462187,
+            "ns": 0.95227281,
+            "tau": 0.049619124,
+            "mnu": 0.052979623
+          },
+          "fresh_minuslogpost": 698.3142339249741,
+          "fresh_minus_recorded": {
+            "minuslogpost": -4.607502592079982e-05,
+            "minuslogprior": -2.3717017239022198e-08,
+            "chi2": -0.00011610261776695552,
+            "chi2__sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": -0.0001194745327666169,
+            "chi2__sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 3.719148917724624e-07
+          }
+        },
+        {
+          "row_index": 45,
+          "point": {
+            "omegabh2": 0.022500312,
+            "omegach2": 0.1175826,
+            "H0": 68.81057,
+            "logA": 3.0478161,
+            "ns": 0.9489273,
+            "tau": 0.050127224,
+            "mnu": 0.017276851
+          },
+          "fresh_minuslogpost": 697.8240454016194,
+          "fresh_minus_recorded": {
+            "minuslogpost": -4.598380655806977e-06,
+            "minuslogprior": -2.3717017239022198e-08,
+            "chi2": 6.8506726620398695e-06,
+            "chi2__sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 1.5563962733722292e-05,
+            "chi2__sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 2.867100246106702e-07
+          }
+        }
+      ]
+    },
+    {
+      "run": "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_snapshots_early/chain_B_seed306",
+      "file": "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_snapshots_early/chain_B_seed306/chains/math_restoration_B_seed306.1.txt",
+      "file_sha256": "974b5503d0ca000f28faf584ffe2a386175a520cf02b7d2415a79e722dbfc0cb",
+      "total_stored_rows": 38,
+      "checks": [
+        {
+          "row_index": 0,
+          "point": {
+            "omegabh2": 0.022718045,
+            "omegach2": 0.11635827,
+            "H0": 69.492698,
+            "logA": 3.083344,
+            "ns": 0.95708297,
+            "tau": 0.058576677,
+            "mnu": 0.17967567
+          },
+          "fresh_minuslogpost": 829.456918095567,
+          "fresh_minus_recorded": {
+            "minuslogpost": -1.1904433108611556e-05,
+            "minuslogprior": -2.3717017239022198e-08,
+            "chi2": -4.7761432142579e-05,
+            "chi2__sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": -5.388219051383203e-05,
+            "chi2__sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 1.212075840584248e-05
+          }
+        },
+        {
+          "row_index": 18,
+          "point": {
+            "omegabh2": 0.022447959,
+            "omegach2": 0.11670666,
+            "H0": 69.235729,
+            "logA": 3.0805701,
+            "ns": 0.95525199,
+            "tau": 0.069447701,
+            "mnu": 0.0070095945
+          },
+          "fresh_minuslogpost": 702.7058365153347,
+          "fresh_minus_recorded": {
+            "minuslogpost": 1.6515334664291004e-05,
+            "minuslogprior": -2.3717017239022198e-08,
+            "chi2": -1.0921896773652406e-05,
+            "chi2__sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 7.911660350146121e-05,
+            "chi2__sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 1.96149973952231e-06
+          }
+        },
+        {
+          "row_index": 37,
+          "point": {
+            "omegabh2": 0.022356909,
+            "omegach2": 0.11806566,
+            "H0": 68.314309,
+            "logA": 3.0827255,
+            "ns": 0.95842491,
+            "tau": 0.069351254,
+            "mnu": 0.042091448
+          },
+          "fresh_minuslogpost": 701.951955055621,
+          "fresh_minus_recorded": {
+            "minuslogpost": -1.4944378904147015e-05,
+            "minuslogprior": -2.3717017239022198e-08,
+            "chi2": 2.61586760643695e-05,
+            "chi2__sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": -5.464944592858956e-05,
+            "chi2__sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": -5.191877965771141e-06
+          }
+        }
+      ]
+    },
+    {
+      "run": "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_snapshots_early/chain_B_seed307",
+      "file": "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_snapshots_early/chain_B_seed307/chains/math_restoration_B_seed307.1.txt",
+      "file_sha256": "5b53bd5768f2bc29f169e3d393d78deaa5439a47fd885ef3d8578893304c07dc",
+      "total_stored_rows": 162,
+      "checks": [
+        {
+          "row_index": 0,
+          "point": {
+            "omegabh2": 0.021800869,
+            "omegach2": 0.1161932,
+            "H0": 68.737324,
+            "logA": 3.0586745,
+            "ns": 0.94605171,
+            "tau": 0.050901841,
+            "mnu": 0.032353796
+          },
+          "fresh_minuslogpost": 725.2707748096607,
+          "fresh_minus_recorded": {
+            "minuslogpost": -5.519033936707274e-05,
+            "minuslogprior": -2.3717017239022198e-08,
+            "chi2": -0.00013433324465950136,
+            "chi2__sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": -0.0001401759150212456,
+            "chi2__sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": -3.1573296066511602e-06
+          }
+        },
+        {
+          "row_index": 80,
+          "point": {
+            "omegabh2": 0.022322569,
+            "omegach2": 0.11699628,
+            "H0": 68.463511,
+            "logA": 3.0263411,
+            "ns": 0.97128831,
+            "tau": 0.049276178,
+            "mnu": 0.064973761
+          },
+          "fresh_minuslogpost": 698.7924889660214,
+          "fresh_minus_recorded": {
+            "minuslogpost": 8.966021482592623e-06,
+            "minuslogprior": -2.3717017239022198e-08,
+            "chi2": -6.020523187544313e-06,
+            "chi2__sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 2.5504295763312257e-05,
+            "chi2__sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 1.4751810972768453e-06
+          }
+        },
+        {
+          "row_index": 161,
+          "point": {
+            "omegabh2": 0.022319021,
+            "omegach2": 0.11728493,
+            "H0": 68.323889,
+            "logA": 3.0463666,
+            "ns": 0.96373919,
+            "tau": 0.056560275,
+            "mnu": 0.042206767
+          },
+          "fresh_minuslogpost": 699.0787879490475,
+          "fresh_minus_recorded": {
+            "minuslogpost": -3.2050952427198354e-05,
+            "minuslogprior": -2.3717017239022198e-08,
+            "chi2": -0.00010805447095663112,
+            "chi2__sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": -9.765452318788448e-05,
+            "chi2__sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": -1.3999477079806866e-06
+          }
+        }
+      ]
+    },
+    {
+      "run": "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_snapshots_early/chain_B_seed308",
+      "file": "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_snapshots_early/chain_B_seed308/chains/math_restoration_B_seed308.1.txt",
+      "file_sha256": "02d027415a719312b854b120effc6304e6065e723a882c1db30a5b7c13f915ff",
+      "total_stored_rows": 167,
+      "checks": [
+        {
+          "row_index": 0,
+          "point": {
+            "omegabh2": 0.022389384,
+            "omegach2": 0.11698077,
+            "H0": 69.237462,
+            "logA": 3.0661987,
+            "ns": 0.93760499,
+            "tau": 0.035349667,
+            "mnu": 0.0054340944
+          },
+          "fresh_minuslogpost": 821.8140306673752,
+          "fresh_minus_recorded": {
+            "minuslogpost": 0.00020066737511115207,
+            "minuslogprior": -2.3717017239022198e-08,
+            "chi2": 0.00037738218429694825,
+            "chi2__sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 0.00044206883671904507,
+            "chi2__sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": -6.866524255855211e-07
+          }
+        },
+        {
+          "row_index": 83,
+          "point": {
+            "omegabh2": 0.022606709,
+            "omegach2": 0.11726332,
+            "H0": 68.325702,
+            "logA": 3.058102,
+            "ns": 0.9534278,
+            "tau": 0.059107338,
+            "mnu": 0.08606287
+          },
+          "fresh_minuslogpost": 701.0142427690815,
+          "fresh_minus_recorded": {
+            "minuslogpost": -1.7230918501809356e-05,
+            "minuslogprior": -2.3717017239022198e-08,
+            "chi2": 1.5855969195399666e-06,
+            "chi2__sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": -2.022449325522757e-05,
+            "chi2__sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": -4.189909621032939e-06
+          }
+        },
+        {
+          "row_index": 166,
+          "point": {
+            "omegabh2": 0.022323754,
+            "omegach2": 0.11795779,
+            "H0": 68.309502,
+            "logA": 3.0513887,
+            "ns": 0.96948439,
+            "tau": 0.061208396,
+            "mnu": 0.044853218
+          },
+          "fresh_minuslogpost": 700.0315916205763,
+          "fresh_minus_recorded": {
+            "minuslogpost": -8.379423775295436e-06,
+            "minuslogprior": -2.3717017239022198e-08,
+            "chi2": -7.114135769370478e-07,
+            "chi2__sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": -6.682018192805117e-05,
+            "chi2__sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": -3.891231742159107e-06
+          }
+        }
+      ]
+    }
+  ]
+}

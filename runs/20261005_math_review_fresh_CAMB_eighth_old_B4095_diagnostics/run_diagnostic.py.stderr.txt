@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/home/repos/six-birds-neutrino/runs/20261004_math_review_fresh_CAMB_weighted_summary_diagnostic_preparation/run_diagnostic.py", line 14, in <module>
+    native=json.loads((out/'native_rows_verification.json').read_text())
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1029, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/repos/six-birds-neutrino/runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics/native_rows_verification.json'

@@ -1,0 +1,16 @@
+{
+  "utc": "2026-10-04T23:00:15.544180+00:00",
+  "managed_session": 29891,
+  "exit_code": 1,
+  "status": "closed_exit1_observed_previous_goal_turn",
+  "observer": "runs/20261004_math_review_retired_PID_identity_repair/observe_all_runtime.py",
+  "observer_sha256": "d3b14ba547bac2fbb2914ab5b6136257b297fc060ab7a06d9e7a96762a9fa7a8",
+  "exception_type": "FileNotFoundError",
+  "absent_proc_stat": "/proc/1875042/stat",
+  "failed_seed": 2003,
+  "cause": "actual_terminal_wider_prior_process_after_primary40_checks_succeeded",
+  "terminal_receipt": "runs/20261004_math_review_upper_prior_seed2003_native_failure_v2/terminal_receipt.json",
+  "terminal_receipt_sha256": "a08c9435e740684e57926a56a4105a4e77f233c5c3a803b2a3886f6c7dd02900",
+  "output_receipt_written": false,
+  "retirement_identity_repair_not_the_cause": true
+}

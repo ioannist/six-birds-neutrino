@@ -1,0 +1,37 @@
+{
+  "utc": "2026-10-05T01:44:58.687055+00:00",
+  "baseline_source": "/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_packaged_sigma_policy_20261005/camb-2.0.4/fortran/halofit.f90",
+  "baseline_sha256": "6f72e651c9faafc3d9ed6e6f68b159b3d186b178d69ad0412296c1797ab7717d",
+  "candidate_source": "/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_sigma_limit22_20261005/fortran/halofit.f90",
+  "candidate_sha256": "271834bd99ea03f4a93a983a52202b28897e75f07664f72192b40b5e70af099d",
+  "changes": [
+    [
+      "acc, minimum_level=14))",
+      "acc, minimum_level=14, maximum_level=22))"
+    ],
+    [
+      "function integrate(a, b, f, y, z, itype, cosm, acc, minimum_level)",
+      "function integrate(a, b, f, y, z, itype, cosm, acc, minimum_level, maximum_level)"
+    ],
+    [
+      "    integer :: active_minimum",
+      "    integer :: active_minimum\n    integer, intent(in), optional :: maximum_level\n    integer :: active_maximum"
+    ],
+    [
+      "    if (present(minimum_level)) active_minimum = minimum_level",
+      "    if (present(minimum_level)) active_minimum = minimum_level\n    active_maximum = jmax\n    if (present(maximum_level)) active_maximum = maximum_level"
+    ],
+    [
+      "do j = 1, jmax",
+      "do j = 1, active_maximum"
+    ],
+    [
+      "if (j == jmax) then",
+      "if (j == active_maximum) then"
+    ]
+  ],
+  "maximum_sigma_refinement_level": 22,
+  "other_integrator_maximum_level": 20,
+  "scope": "Sigma-only maximum-refinement extension; same minimum14 and1e-6 tolerance. Integrand, HMcode, model, priors and native error propagation unchanged. Selected unadopted empirical candidate.",
+  "production_adopted": false
+}

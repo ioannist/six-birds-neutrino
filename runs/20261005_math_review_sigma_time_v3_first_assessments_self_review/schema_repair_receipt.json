@@ -1,0 +1,17 @@
+{
+  "utc": "2026-10-05T06:26:34.077625+00:00",
+  "original_source": "runs/20261005_math_review_sigma_time_v3_first_assessments_self_review/review.py",
+  "original_sha256": "b137c9d58a6130a6831129200838a67050a6a4f01b2d53c719a1579381b3fab5",
+  "source": "runs/20261005_math_review_sigma_time_v3_first_assessments_self_review/review_v2.py",
+  "source_sha256": "c947637a2babdc8a058b305ffee41f7a93ee4982b4f2537fe78dc4e0275edd44",
+  "previous_observed_direct_exit_code": 1,
+  "previous_exception": "KeyError: 'sampled_parameter_count'",
+  "changes": [
+    [
+      "    assert review['sampled_parameter_count'] == len(d['diagnostics']) == 7",
+      "    assert set(review['all_seven_parameter_gate_sets_reconstructed']) == set(d['diagnostics'])\n    assert len(d['diagnostics']) == 7"
+    ]
+  ],
+  "reason": "Reconstruct actual seven-parameter receipt schema; original failed script preserved.",
+  "native_diagnostic_contracts_changed": false
+}

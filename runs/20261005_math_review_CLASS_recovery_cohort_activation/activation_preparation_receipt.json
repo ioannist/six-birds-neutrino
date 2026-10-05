@@ -1,0 +1,28 @@
+{
+  "utc": "2026-10-05T04:18:19.800016+00:00",
+  "source": "runs/20261005_math_review_CLASS_fresh_recovery_activation/verify_activation.py",
+  "source_sha256": "85dc85e3d2d6f81251fca1e3ffb25860578ad5ae98bf73b10e05b6eec1f89f33",
+  "changes": [
+    [
+      "runs/20261005_math_review_CLASS_fresh_recovery_preparation",
+      "runs/20261005_math_review_CLASS_recovery_cohort_companions_v3"
+    ],
+    [
+      "'owned_live_recovery_trials': 2",
+      "'owned_live_recovery_trials': 6"
+    ],
+    [
+      "running_fresh_CLASS_recovery_initial_native_point_verified_first_saved_row_pending",
+      "running_fresh_CLASS_recovery_companion_initial_native_point_verified_first_saved_row_pending"
+    ],
+    [
+      "Two recovery process identities, mapped libraries and effective configurations verified.",
+      "Six companion process identities, mapped libraries and effective configurations verified."
+    ],
+    [
+      "assert os.getpriority(os.PRIO_PROCESS, launch['pid']) == 5",
+      "assert os.getpriority(os.PRIO_PROCESS, launch['pid']) == 5\n    environment = dict(item.split(b'=', 1) for item in (proc / 'environ').read_bytes().split(b'\\0') if b'=' in item)\n    assert environment[b'OMP_NUM_THREADS'].decode() == e['OMP_NUM_THREADS']\n    assert environment[b'OPENBLAS_NUM_THREADS'] == environment[b'MKL_NUM_THREADS'] == b'1'"
+    ]
+  ],
+  "scope": "New six companion identities; actual native scheduling environment checked. No posterior qualification."
+}

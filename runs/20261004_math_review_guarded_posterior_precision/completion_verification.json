@@ -1,0 +1,225 @@
+{
+  "utc": "2026-10-04T07:04:27.827456+00:00",
+  "scope": "six_selected_guarded_chain_coordinates_and_two_local_mass_offsets",
+  "managed_exits": [
+    {
+      "lens": "A",
+      "session": 64201,
+      "exit_code": 0
+    },
+    {
+      "lens": "B",
+      "session": 27270,
+      "exit_code": 0
+    }
+  ],
+  "target_closures": [
+    {
+      "lens": "A",
+      "label": "quad_q50",
+      "variant": "baseline",
+      "native_likelihood_components_checked": 6,
+      "maximum_absolute_discrepancy": 0.0,
+      "prior_or_posterior_recomputed": false
+    },
+    {
+      "lens": "A",
+      "label": "quad_q95",
+      "variant": "baseline",
+      "native_likelihood_components_checked": 6,
+      "maximum_absolute_discrepancy": 0.0,
+      "prior_or_posterior_recomputed": false
+    },
+    {
+      "lens": "A",
+      "label": "medium_q95",
+      "variant": "selected_reference_settings",
+      "native_likelihood_components_checked": 6,
+      "maximum_absolute_discrepancy": 0.0,
+      "prior_or_posterior_recomputed": false
+    },
+    {
+      "lens": "B",
+      "label": "quad_q50",
+      "variant": "baseline",
+      "native_likelihood_components_checked": 6,
+      "maximum_absolute_discrepancy": 0.0,
+      "prior_or_posterior_recomputed": false
+    },
+    {
+      "lens": "B",
+      "label": "quad_q95",
+      "variant": "baseline",
+      "native_likelihood_components_checked": 6,
+      "maximum_absolute_discrepancy": 0.0,
+      "prior_or_posterior_recomputed": false
+    },
+    {
+      "lens": "B",
+      "label": "medium_q95",
+      "variant": "selected_reference_settings",
+      "native_likelihood_components_checked": 6,
+      "maximum_absolute_discrepancy": 0.0,
+      "prior_or_posterior_recomputed": false
+    }
+  ],
+  "comparisons": {
+    "A": {
+      "refined_minus_baseline_total_native_chi2": {
+        "quad_q50": -0.6770778237126187,
+        "quad_q95": -0.5821350224931034,
+        "medium_q95": -0.6294031609907229,
+        "quad_q50_mass_plus": -0.6885173473686894
+      },
+      "selected_point_offset_range": 0.10638232487558597,
+      "local_mass_plus_0_01_total_native_chi2_changes": {
+        "baseline": -0.5639147784350893,
+        "selected_reference_settings": -0.57535430209116
+      },
+      "local_mass_change_precision_discrepancy": -0.011439523656070705,
+      "posterior_accuracy_certified": false
+    },
+    "B": {
+      "refined_minus_baseline_total_native_chi2": {
+        "quad_q50": -0.2358926719392187,
+        "quad_q95": -0.14004757417664848,
+        "medium_q95": -0.711150534194152,
+        "quad_q50_mass_plus": 0.07982789745557639
+      },
+      "selected_point_offset_range": 0.7909784316497284,
+      "local_mass_plus_0_01_total_native_chi2_changes": {
+        "baseline": 2.872990870845113,
+        "selected_reference_settings": 3.188711440239908
+      },
+      "local_mass_change_precision_discrepancy": 0.3157205693947951,
+      "posterior_accuracy_certified": false
+    }
+  },
+  "settings_only_changes_verified": true,
+  "uniform_numerical_accuracy_certified": false,
+  "posterior_convergence_certified": false,
+  "priors_or_posterior_recomputed": false,
+  "paper_modified": false,
+  "files": [
+    {
+      "path": "runs/20261004_math_review_guarded_posterior_precision/A/evaluation/baseline.yaml",
+      "sha256": "7e0f74080e0e49267aa509440c24016f2ce7a1c002a44b70604bf5dbf10870e0"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_posterior_precision/A/evaluation/metrics.json",
+      "sha256": "8b45462d523cf0e8134ef6089ba94321bc4907a945d46b45f4bbe2d3b854e5ed"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_posterior_precision/A/evaluation/progress.json",
+      "sha256": "69f77ccc2f467416bca7f8c30dfb705822072774f3805d78572fecb9c05d62ae"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_posterior_precision/A/evaluation/runtime_state.json",
+      "sha256": "601230f14aa1b95851dbc7b7093133771113b2720c3d682e7a1d4c114a4a171b"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_posterior_precision/A/evaluation/selected_reference_settings.yaml",
+      "sha256": "dd2a233b4de4e6c1e0cccfccd11b72b624bad030ece4aaafa84b0c07242fd2c1"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_posterior_precision/A/input.yaml",
+      "sha256": "7e0f74080e0e49267aa509440c24016f2ce7a1c002a44b70604bf5dbf10870e0"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_posterior_precision/A/points.json",
+      "sha256": "0b4d1a5a61c9488bb6a1165e14293603131ea0cc58cbac8b2f4a090c8d3e5cc4"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_posterior_precision/A/precision_settings.json",
+      "sha256": "fe5f9ccfe876c26eafa9d5ebe0d00bf0a10eb71dcc79d0863b90a62f3f13ba1a"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_posterior_precision/A/seed1301.txt",
+      "sha256": "3c52417b76ec156e946e64f2d4de14412588ceeccf94a663886a945f055440e7"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_posterior_precision/A/seed1401.txt",
+      "sha256": "fb4a793c83fddc9a7205821cdec4ba2860fcaffafba9ced053ad03d9abcb175c"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_posterior_precision/A/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_posterior_precision/A/stdout.txt",
+      "sha256": "d98dc17c245e5d2b0e3d0db285728d9772aafd18a0f260d6b01ee859ce7df3f8"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_posterior_precision/B/evaluation/baseline.yaml",
+      "sha256": "d5997c216333c2b99de026b9a722f836322f7ec9d29886ba522584ff6edbac27"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_posterior_precision/B/evaluation/metrics.json",
+      "sha256": "533cdc18dc5ddf60193b7bde25289cf113559be14d18683d1a2286b7db282149"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_posterior_precision/B/evaluation/progress.json",
+      "sha256": "ae912db131c0fb440cccf42069678cf58c731c7420a6b8ea12ad158b99f2b705"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_posterior_precision/B/evaluation/runtime_state.json",
+      "sha256": "32895b668cd3d4932d2ec788e69e1bb4d007ce014975373200e07fe6e654ecf7"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_posterior_precision/B/evaluation/selected_reference_settings.yaml",
+      "sha256": "b804f7bb1159352c5657cc80e82cfb33c5c6f15e3da172096ed205769d1e3e4d"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_posterior_precision/B/input.yaml",
+      "sha256": "d5997c216333c2b99de026b9a722f836322f7ec9d29886ba522584ff6edbac27"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_posterior_precision/B/points.json",
+      "sha256": "b3196d340c1efe30f3edfe2257173bec8b0cfd93048fa06a012d0335bab84711"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_posterior_precision/B/precision_settings.json",
+      "sha256": "fe5f9ccfe876c26eafa9d5ebe0d00bf0a10eb71dcc79d0863b90a62f3f13ba1a"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_posterior_precision/B/seed1305.txt",
+      "sha256": "6b79668041835eece72b1aeedcdfb0d96952ade4e9d32f692e7ab6965ff26d8a"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_posterior_precision/B/seed1403.txt",
+      "sha256": "60661e12f52379982981825dadaa45bbb72741cf4f16461f6a6f0a791a4b5c06"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_posterior_precision/B/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_posterior_precision/B/stdout.txt",
+      "sha256": "15ca950b0f639abb9cf53e19f3bf907caab45484a57db7c5748d96f5a8b04443"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_posterior_precision/launch_receipt.json",
+      "sha256": "fe4fafa80cd0c69c8a192fccdf9d9784e575d73e1edc29d0825ef31379b2acdb"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_posterior_precision/prepare.py",
+      "sha256": "72ecfd90f3bcad032320e8ab3cc3a07dc2c2ef95268b4d0e541c751a2f195525"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_posterior_precision/runner.py",
+      "sha256": "479456bff3eb36a3b696936e625fcd6d0b51bf96a54bae3077567bc4e12e5f72"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_posterior_precision/runner_snapshot.py",
+      "sha256": "9f08954880417ed8f63accf5a06eeb83bd1d7383aa577fec9a2263357a79ace9"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_posterior_precision/selection_receipt.json",
+      "sha256": "3c93dd64d88b7039246931e983ccc655efffdafb47118f88dd389da375e722bc"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_posterior_precision/verify_completed.py",
+      "sha256": "dbbef016424d1db6e3e75ed1759c5cf82ed137fd7c93542a24664a0f3683f390"
+    }
+  ]
+}

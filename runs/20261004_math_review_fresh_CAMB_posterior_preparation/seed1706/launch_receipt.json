@@ -1,0 +1,32 @@
+{
+  "utc": "2026-10-04T15:37:41.507534+00:00",
+  "seed": 1706,
+  "lens": "B",
+  "group": "old_B4095",
+  "pid": 1428112,
+  "process_start_ticks": 339785871,
+  "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_spt_archived_solver_control_20261004/packages/camb/camblib.so",
+  "module_sha256": "6a54f98bcc65601fd1ad5e760a99a0072cdc45fe49197ba5c3a1282889c2ee0d",
+  "solver_version": "1.6.5",
+  "Cobaya_version": "3.6.1",
+  "wrapper_sha256": "0f39f32f678ce7f237d727b79b86cda85976798a535d096a2ddf2e8598bc147a",
+  "config_sha256": "fc55630960e689c462aa1508ea22773e13dde0a9c1b11dd88f9b05f4f2bdaff8",
+  "proposal_sha256": "212a249af4842c07ac960ac9c0d475a95a9b957dcbfc781dfcb7d5b8b2fea0c6",
+  "implementation_sha256": {
+    "scripts/run_cobaya.py": "883640961f35a782bdec0979fe28c98eb92b96098d1d083a9d62a8b3382d0c11",
+    "src/sbt_spt_audit/boltzmann.py": "a2100f8f48f98988580c21ddaca04ed86a9b956f4b22135a942b05dd8265f355",
+    "src/sbt_spt_audit/samplers.py": "2a7c7e99597b6c5bc48f72bbaa9e8df81dd6987ba36e8ab0a81b8c36b10f33e9",
+    "runs/20261004_math_review_fresh_CAMB_posterior_preparation/launch_chain.py": "e7aedbcda46c5fcfb70b50be451c1ee845f171106a9402e0f95fdc924cea0188"
+  },
+  "initial_point_verification_sha256": "196b7142544e376a1961b369569a10a238a046d14e5807a40d76b8f33bd00be5",
+  "run_dir": "runs/20261004_math_review_fresh_CAMB_old_B4095_seed1706",
+  "fresh_rng_and_output": true,
+  "old_prefix_appended": false,
+  "posterior_certified": false,
+  "environment": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "PYTHONPATH": "/mnt/8tb/six-birds-ml/tmp/neutrino_spt_archived_solver_control_20261004/packages:src"
+  }
+}

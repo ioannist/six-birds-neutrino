@@ -1,0 +1,10 @@
+make[1]: Circular precision.mod <- precision.mod dependency dropped.
+make[1]: Circular rungekuttadp45module.mod <- rungekuttadp45module.mod dependency dropped.
+make[1]: Circular results.mod <- results.mod dependency dropped.
+make[1]: Circular flatbessels.mod <- flatbessels.mod dependency dropped.
+make[1]: Circular hypersphericalbesselutils.mod <- hypersphericalbesselutils.mod dependency dropped.
+ld: /mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_native_debug_20261005/compiler/usr/lib/gcc/x86_64-linux-gnu/13/libgfortran.a(async.o): relocation R_X86_64_TPOFF32 against symbol `thread_unit' can not be used when making a shared object; recompile with -fPIC
+ld: failed to set dynamic section sizes: bad value
+make[2]: *** [Makefile_main:141: Releaselib/camblib.so] Error 1
+make[1]: *** [/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_native_debug_20261005/source/fortran/Makefile_main:134: camblib.so] Error 2
+make: *** [Makefile_main:122: python] Error 2

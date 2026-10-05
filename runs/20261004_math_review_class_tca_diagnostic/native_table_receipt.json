@@ -1,0 +1,700 @@
+{
+  "utc": "2026-10-04T01:30:10.425816+00:00",
+  "scope": "native_background_and_thermodynamics_before_perturbations_at_one_fixed_point",
+  "source_sha256": "b8b005631d134e23de8309368140c2833dbf6248ba3211eb35e04553a4f70982",
+  "native_module": "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+  "native_module_sha256": "38255c7a5eb3f52c960a6fccf657e00874e93a52ec5987807443c33ce0c09c5a",
+  "active_inference_library_changed": false,
+  "posterior_accuracy_certified": false,
+  "cases": {
+    "default": {
+      "arguments": {
+        "omega_b": 0.02225891404331876,
+        "omega_cdm": 0.11776947724676447,
+        "H0": 68.46760971622076,
+        "A_s": 2.1219159399068406e-09,
+        "n_s": 0.9574692565988652,
+        "tau_reio": 0.05665132037440848,
+        "m_ncdm": "0.0088989885790305336,0.0088989885790305336,0.0088989885790305336",
+        "N_ncdm": 3,
+        "N_ur": 0.00641,
+        "l_max_scalars": 4095,
+        "output": "tCl pCl lCl",
+        "non_linear": "hmcode",
+        "lensing": "yes"
+      },
+      "elapsed_seconds": 0.7136659598909318,
+      "tables": {
+        "background": {
+          "file": "default_background.npz",
+          "sha256": "e3950f9e2dc359f2a39394e3ba8f6d485859d03fe85ef59581b77debaf65f358",
+          "columns": {
+            "z": {
+              "rows": 40000,
+              "nonfinite_count": 0,
+              "finite_min": 0.0,
+              "finite_max": 99999999999999.12,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "proper time [Gyr]": {
+              "rows": 40000,
+              "nonfinite_count": 0,
+              "finite_min": 7.558501265827885e-26,
+              "finite_max": 13.772965315150724,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "conf. time [Mpc]": {
+              "rows": 40000,
+              "nonfinite_count": 0,
+              "finite_min": 4.634785000234842e-09,
+              "finite_max": 14216.58547722726,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "H [1/Mpc]": {
+              "rows": 40000,
+              "nonfinite_count": 0,
+              "finite_min": 0.00022838336285371382,
+              "finite_max": 2.1575466221271656e+22,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "comov. dist.": {
+              "rows": 40000,
+              "nonfinite_count": 0,
+              "finite_min": 0.0,
+              "finite_max": 14216.585477222625,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "ang.diam.dist.": {
+              "rows": 40000,
+              "nonfinite_count": 0,
+              "finite_min": 0.0,
+              "finite_max": 1787.4720242354638,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "lum. dist.": {
+              "rows": 40000,
+              "nonfinite_count": 0,
+              "finite_min": 0.0,
+              "finite_max": 1.4216585477222643e+18,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "comov.snd.hrz.": {
+              "rows": 40000,
+              "nonfinite_count": 0,
+              "finite_min": 2.6759573270328997e-09,
+              "finite_max": 1233.1916186533954,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "(.)rho_g": {
+              "rows": 40000,
+              "nonfinite_count": 0,
+              "finite_min": 2.751560535469825e-12,
+              "finite_max": 2.751560535469839e+44,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "(.)rho_b": {
+              "rows": 40000,
+              "nonfinite_count": 0,
+              "finite_min": 2.4766381957991286e-09,
+              "finite_max": 2.476638195799138e+33,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "(.)rho_cdm": {
+              "rows": 40000,
+              "nonfinite_count": 0,
+              "finite_min": 1.310362154600178e-08,
+              "finite_max": 1.310362154600183e+34,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "(.)rho_ncdm[0]": {
+              "rows": 40000,
+              "nonfinite_count": 0,
+              "finite_min": 1.0654850570297856e-11,
+              "finite_max": 6.331470950075991e+43,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "(.)p_ncdm[0]": {
+              "rows": 40000,
+              "nonfinite_count": 0,
+              "finite_min": 1.6289610160254073e-14,
+              "finite_max": 2.1104903166919976e+43,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "(.)rho_ncdm[1]": {
+              "rows": 40000,
+              "nonfinite_count": 0,
+              "finite_min": 1.0654850570297856e-11,
+              "finite_max": 6.331470950075991e+43,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "(.)p_ncdm[1]": {
+              "rows": 40000,
+              "nonfinite_count": 0,
+              "finite_min": 1.6289610160254073e-14,
+              "finite_max": 2.1104903166919976e+43,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "(.)rho_ncdm[2]": {
+              "rows": 40000,
+              "nonfinite_count": 0,
+              "finite_min": 1.0654850570297856e-11,
+              "finite_max": 6.331470950075991e+43,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "(.)p_ncdm[2]": {
+              "rows": 40000,
+              "nonfinite_count": 0,
+              "finite_min": 1.6289610160254073e-14,
+              "finite_max": 2.1104903166919976e+43,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "(.)rho_lambda": {
+              "rows": 40000,
+              "nonfinite_count": 0,
+              "finite_min": 3.654398056871783e-08,
+              "finite_max": 3.654398056871783e-08,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "(.)rho_ur": {
+              "rows": 40000,
+              "nonfinite_count": 0,
+              "finite_min": 4.0056060039039684e-15,
+              "finite_max": 4.005606003903989e+41,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "(.)rho_crit": {
+              "rows": 40000,
+              "nonfinite_count": 0,
+              "finite_min": 5.21589604283711e-08,
+              "finite_max": 4.655007426652343e+44,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "(.)rho_tot": {
+              "rows": 40000,
+              "nonfinite_count": 0,
+              "finite_min": 5.21589604283711e-08,
+              "finite_max": 4.655007426652343e+44,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "(.)p_tot": {
+              "rows": 40000,
+              "nonfinite_count": 0,
+              "finite_min": -3.654301317784019e-08,
+              "finite_max": 1.5516691421655139e+44,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "(.)p_tot_prime": {
+              "rows": 40000,
+              "nonfinite_count": 0,
+              "finite_min": -1.3391194065352627e+53,
+              "finite_max": -8.94785536363075e-16,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "Omega_r(z)": {
+              "rows": 40000,
+              "nonfinite_count": 0,
+              "finite_min": 5.5640921695544786e-05,
+              "finite_max": 0.99999999996653,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "Omega_m(z)": {
+              "rows": 40000,
+              "nonfinite_count": 0,
+              "finite_min": 3.346976469140375e-11,
+              "finite_max": 0.9956341989184527,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "gr.fac. D": {
+              "rows": 40000,
+              "nonfinite_count": 0,
+              "finite_min": 5.574573777250914e-06,
+              "finite_max": 1.0,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "gr.fac. f": {
+              "rows": 40000,
+              "nonfinite_count": 0,
+              "finite_min": 0.05694835413772419,
+              "finite_max": 1.9999999999999973,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            }
+          }
+        },
+        "thermodynamics": {
+          "file": "default_thermodynamics.npz",
+          "sha256": "7a087cb04f33efc2fb6d5dee928f08a67cbba118c12e57da208df1d970396e31",
+          "columns": {
+            "scale factor a": {
+              "rows": 28333,
+              "nonfinite_count": 0,
+              "finite_min": 1.999999600000079e-07,
+              "finite_max": 1.0,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "z": {
+              "rows": 28333,
+              "nonfinite_count": 0,
+              "finite_min": 0.0,
+              "finite_max": 5000000.000000003,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "conf. time [Mpc]": {
+              "rows": 28333,
+              "nonfinite_count": 0,
+              "finite_min": 0.09268235471110532,
+              "finite_max": 14216.58547722726,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "x_e": {
+              "rows": 28333,
+              "nonfinite_count": 22,
+              "finite_min": 0.00020443427560894422,
+              "finite_max": 1.163639824327506,
+              "nonfinite_z_min": 0.0,
+              "nonfinite_z_max": 0.31503150315031503
+            },
+            "kappa' [Mpc^-1]": {
+              "rows": 28333,
+              "nonfinite_count": 22,
+              "finite_min": 1.9136249862813555e-08,
+              "finite_max": 11259720.052131,
+              "nonfinite_z_min": 0.0,
+              "nonfinite_z_max": 0.31503150315031503
+            },
+            "exp(-kappa)": {
+              "rows": 28333,
+              "nonfinite_count": 28332,
+              "finite_min": 1.0,
+              "finite_max": 1.0,
+              "nonfinite_z_min": 0.015001500150015001,
+              "nonfinite_z_max": 5000000.000000003
+            },
+            "g [Mpc^-1]": {
+              "rows": 28333,
+              "nonfinite_count": 28333,
+              "finite_min": null,
+              "finite_max": null,
+              "nonfinite_z_min": 0.0,
+              "nonfinite_z_max": 5000000.000000003
+            },
+            "Tb [K]": {
+              "rows": 28333,
+              "nonfinite_count": 22,
+              "finite_min": 0.7452962810740122,
+              "finite_max": 13627502.725500006,
+              "nonfinite_z_min": 0.0,
+              "nonfinite_z_max": 0.31503150315031503
+            },
+            "dTb [K]": {
+              "rows": 28333,
+              "nonfinite_count": 22,
+              "finite_min": -8.24862864266418,
+              "finite_max": 3.0807813058421543,
+              "nonfinite_z_min": 0.0,
+              "nonfinite_z_max": 0.31503150315031503
+            },
+            "w_b": {
+              "rows": 28333,
+              "nonfinite_count": 22,
+              "finite_min": 1.1593980145155864e-13,
+              "finite_max": 2.1199222102996185e-06,
+              "nonfinite_z_min": 0.0,
+              "nonfinite_z_max": 0.31503150315031503
+            },
+            "c_b^2": {
+              "rows": 28333,
+              "nonfinite_count": 22,
+              "finite_min": -3.164049160835983e-12,
+              "finite_max": 2.8265629470662004e-06,
+              "nonfinite_z_min": 0.0,
+              "nonfinite_z_max": 0.31503150315031503
+            },
+            "kappa_b": {
+              "rows": 28333,
+              "nonfinite_count": 28332,
+              "finite_min": 0.0,
+              "finite_max": 0.0,
+              "nonfinite_z_min": 0.015001500150015001,
+              "nonfinite_z_max": 5000000.000000003
+            }
+          }
+        }
+      }
+    },
+    "background_quadrature": {
+      "arguments": {
+        "omega_b": 0.02225891404331876,
+        "omega_cdm": 0.11776947724676447,
+        "H0": 68.46760971622076,
+        "A_s": 2.1219159399068406e-09,
+        "n_s": 0.9574692565988652,
+        "tau_reio": 0.05665132037440848,
+        "m_ncdm": "0.0088989885790305336,0.0088989885790305336,0.0088989885790305336",
+        "N_ncdm": 3,
+        "N_ur": 0.00641,
+        "l_max_scalars": 4095,
+        "output": "tCl pCl lCl",
+        "non_linear": "hmcode",
+        "lensing": "yes",
+        "tol_ncdm_bg": 1e-08
+      },
+      "elapsed_seconds": 0.7808012529276311,
+      "tables": {
+        "background": {
+          "file": "background_quadrature_background.npz",
+          "sha256": "d2647a6f919dcd820465fe8fa95dbeb885ae2cfbbb536ddc86b59b1105169a65",
+          "columns": {
+            "z": {
+              "rows": 40000,
+              "nonfinite_count": 0,
+              "finite_min": 0.0,
+              "finite_max": 99999999999999.12,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "proper time [Gyr]": {
+              "rows": 40000,
+              "nonfinite_count": 0,
+              "finite_min": 7.55849609132489e-26,
+              "finite_max": 13.772965315102804,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "conf. time [Mpc]": {
+              "rows": 40000,
+              "nonfinite_count": 0,
+              "finite_min": 4.634785000234842e-09,
+              "finite_max": 14216.585275134152,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "H [1/Mpc]": {
+              "rows": 40000,
+              "nonfinite_count": 0,
+              "finite_min": 0.00022838336285371382,
+              "finite_max": 2.1575480991711863e+22,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "comov. dist.": {
+              "rows": 40000,
+              "nonfinite_count": 0,
+              "finite_min": 0.0,
+              "finite_max": 14216.585275129517,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "ang.diam.dist.": {
+              "rows": 40000,
+              "nonfinite_count": 0,
+              "finite_min": 0.0,
+              "finite_max": 1787.472024507766,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "lum. dist.": {
+              "rows": 40000,
+              "nonfinite_count": 0,
+              "finite_min": 0.0,
+              "finite_max": 1.4216585275129536e+18,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "comov.snd.hrz.": {
+              "rows": 40000,
+              "nonfinite_count": 0,
+              "finite_min": 2.675955495089144e-09,
+              "finite_max": 1233.1915357397168,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "(.)rho_g": {
+              "rows": 40000,
+              "nonfinite_count": 0,
+              "finite_min": 2.751560535469825e-12,
+              "finite_max": 2.751560535469839e+44,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "(.)rho_b": {
+              "rows": 40000,
+              "nonfinite_count": 0,
+              "finite_min": 2.4766381957991286e-09,
+              "finite_max": 2.476638195799138e+33,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "(.)rho_cdm": {
+              "rows": 40000,
+              "nonfinite_count": 0,
+              "finite_min": 1.310362154600178e-08,
+              "finite_max": 1.310362154600183e+34,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "(.)rho_ncdm[0]": {
+              "rows": 40000,
+              "nonfinite_count": 0,
+              "finite_min": 1.0654847175632177e-11,
+              "finite_max": 6.331492195358844e+43,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "(.)p_ncdm[0]": {
+              "rows": 40000,
+              "nonfinite_count": 0,
+              "finite_min": 1.6289614147953434e-14,
+              "finite_max": 2.1104973984529483e+43,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "(.)rho_ncdm[1]": {
+              "rows": 40000,
+              "nonfinite_count": 0,
+              "finite_min": 1.0654847175632177e-11,
+              "finite_max": 6.331492195358844e+43,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "(.)p_ncdm[1]": {
+              "rows": 40000,
+              "nonfinite_count": 0,
+              "finite_min": 1.6289614147953434e-14,
+              "finite_max": 2.1104973984529483e+43,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "(.)rho_ncdm[2]": {
+              "rows": 40000,
+              "nonfinite_count": 0,
+              "finite_min": 1.0654847175632177e-11,
+              "finite_max": 6.331492195358844e+43,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "(.)p_ncdm[2]": {
+              "rows": 40000,
+              "nonfinite_count": 0,
+              "finite_min": 1.6289614147953434e-14,
+              "finite_max": 2.1104973984529483e+43,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "(.)rho_lambda": {
+              "rows": 40000,
+              "nonfinite_count": 0,
+              "finite_min": 3.654398057890183e-08,
+              "finite_max": 3.654398057890183e-08,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "(.)rho_ur": {
+              "rows": 40000,
+              "nonfinite_count": 0,
+              "finite_min": 4.0056060039039684e-15,
+              "finite_max": 4.005606003903989e+41,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "(.)rho_crit": {
+              "rows": 40000,
+              "nonfinite_count": 0,
+              "finite_min": 5.21589604283711e-08,
+              "finite_max": 4.655013800237199e+44,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "(.)rho_tot": {
+              "rows": 40000,
+              "nonfinite_count": 0,
+              "finite_min": 5.21589604283711e-08,
+              "finite_max": 4.655013800237199e+44,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "(.)p_tot": {
+              "rows": 40000,
+              "nonfinite_count": 0,
+              "finite_min": -3.654301318801222e-08,
+              "finite_max": 1.5516712666937987e+44,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "(.)p_tot_prime": {
+              "rows": 40000,
+              "nonfinite_count": 0,
+              "finite_min": -1.3391221567974993e+53,
+              "finite_max": -8.947855500332567e-16,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "Omega_r(z)": {
+              "rows": 40000,
+              "nonfinite_count": 0,
+              "finite_min": 5.564092238362012e-05,
+              "finite_max": 0.9999999999665301,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "Omega_m(z)": {
+              "rows": 40000,
+              "nonfinite_count": 0,
+              "finite_min": 3.3469782689894763e-11,
+              "finite_max": 0.9956341982003758,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "gr.fac. D": {
+              "rows": 40000,
+              "nonfinite_count": 0,
+              "finite_min": 5.574581396534941e-06,
+              "finite_max": 1.0,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "gr.fac. f": {
+              "rows": 40000,
+              "nonfinite_count": 0,
+              "finite_min": 0.056948350166321236,
+              "finite_max": 1.9999999999999973,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            }
+          }
+        },
+        "thermodynamics": {
+          "file": "background_quadrature_thermodynamics.npz",
+          "sha256": "e1ca478bbcc4aa2d70c6c74d780fc7c328b749878f1bbdacc80faf8305292692",
+          "columns": {
+            "scale factor a": {
+              "rows": 28333,
+              "nonfinite_count": 0,
+              "finite_min": 1.999999600000079e-07,
+              "finite_max": 1.0,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "z": {
+              "rows": 28333,
+              "nonfinite_count": 0,
+              "finite_min": 0.0,
+              "finite_max": 5000000.000000003,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "conf. time [Mpc]": {
+              "rows": 28333,
+              "nonfinite_count": 0,
+              "finite_min": 0.09268229128257624,
+              "finite_max": 14216.585275134152,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "x_e": {
+              "rows": 28333,
+              "nonfinite_count": 0,
+              "finite_min": 0.00020001624132000455,
+              "finite_max": 1.1636399450194392,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "kappa' [Mpc^-1]": {
+              "rows": 28333,
+              "nonfinite_count": 0,
+              "finite_min": 1.0866301634305746e-08,
+              "finite_max": 11259719.183260197,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "exp(-kappa)": {
+              "rows": 28333,
+              "nonfinite_count": 0,
+              "finite_min": 0.0,
+              "finite_max": 1.0,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "g [Mpc^-1]": {
+              "rows": 28333,
+              "nonfinite_count": 0,
+              "finite_min": 1e-322,
+              "finite_max": 0.02106408166381912,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "Tb [K]": {
+              "rows": 28333,
+              "nonfinite_count": 0,
+              "finite_min": 0.3664013324758262,
+              "finite_max": 13627502.725500006,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "dTb [K]": {
+              "rows": 28333,
+              "nonfinite_count": 0,
+              "finite_min": -3.602021759482762,
+              "finite_max": 3.0807834639736296,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "w_b": {
+              "rows": 28333,
+              "nonfinite_count": 0,
+              "finite_min": 5.699813361169749e-14,
+              "finite_max": 2.1199219977527703e-06,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "c_b^2": {
+              "rows": 28333,
+              "nonfinite_count": 0,
+              "finite_min": -7.970566958607162e-13,
+              "finite_max": 2.826562663670403e-06,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            },
+            "kappa_b": {
+              "rows": 28333,
+              "nonfinite_count": 0,
+              "finite_min": 0.0,
+              "finite_max": 3862803017.6152067,
+              "nonfinite_z_min": null,
+              "nonfinite_z_max": null
+            }
+          }
+        }
+      }
+    }
+  }
+}

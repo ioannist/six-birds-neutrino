@@ -1,0 +1,45 @@
+{
+  "utc": "2026-10-04T16:06:32.122651+00:00",
+  "records": [
+    {
+      "group": "quad_A",
+      "original_report": "runs/20261004_math_review_guarded_CLASS_fifth_quad_A_diagnostics/quad_A_diagnostics.json",
+      "original_sha256": "7e6418ad317b591fcdae054fc2103b224cdbeac903a92b27e01997fd62c8f9ff",
+      "replayed_report": "runs/20261004_math_review_bundle_chain_resolution_repair/replayed_quad_A_diagnostics.json",
+      "replayed_sha256": "7e6418ad317b591fcdae054fc2103b224cdbeac903a92b27e01997fd62c8f9ff",
+      "reports_exactly_equal": true,
+      "exit_code": 0
+    },
+    {
+      "group": "quad_B",
+      "original_report": "runs/20261004_math_review_guarded_CLASS_sixth_quad_B_diagnostics/quad_B_diagnostics.json",
+      "original_sha256": "f23e31f04b14ec6d1bb4a2f69008595b5568a6c68f53ab1aa3f299425cfc9595",
+      "replayed_report": "runs/20261004_math_review_bundle_chain_resolution_repair/replayed_quad_B_diagnostics.json",
+      "replayed_sha256": "f23e31f04b14ec6d1bb4a2f69008595b5568a6c68f53ab1aa3f299425cfc9595",
+      "reports_exactly_equal": true,
+      "exit_code": 0
+    },
+    {
+      "group": "medium_A",
+      "original_report": "runs/20261004_math_review_guarded_CLASS_fifth_medium_A_diagnostics/medium_A_diagnostics.json",
+      "original_sha256": "407284b2fa6dcfedaa83e067662d75253efae2437c0f00984b62dc856ea999c0",
+      "replayed_report": "runs/20261004_math_review_bundle_chain_resolution_repair/replayed_medium_A_diagnostics.json",
+      "replayed_sha256": "407284b2fa6dcfedaa83e067662d75253efae2437c0f00984b62dc856ea999c0",
+      "reports_exactly_equal": true,
+      "exit_code": 0
+    },
+    {
+      "group": "medium_B",
+      "original_report": "runs/20261004_math_review_guarded_CLASS_fifth_medium_B_diagnostics/medium_B_diagnostics.json",
+      "original_sha256": "e7af8ae9d7a6127804976f39611511f232ef6564ca862fe2dd704568042cfa8f",
+      "replayed_report": "runs/20261004_math_review_bundle_chain_resolution_repair/replayed_medium_B_diagnostics.json",
+      "replayed_sha256": "e7af8ae9d7a6127804976f39611511f232ef6564ca862fe2dd704568042cfa8f",
+      "reports_exactly_equal": true,
+      "exit_code": 0
+    }
+  ],
+  "all_four_latest_CLASS_reports_unchanged": true,
+  "old_reports_overwritten": false,
+  "native_models_and_diagnostic_algorithms_unchanged": true,
+  "posterior_convergence_certified": false
+}

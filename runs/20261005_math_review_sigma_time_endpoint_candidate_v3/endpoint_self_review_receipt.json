@@ -1,0 +1,53 @@
+{
+  "utc": "2026-10-05T02:30:12.771560+00:00",
+  "reviewer": "distinct_self_review_not_independent_agent",
+  "source_patch_reversed_exactly": true,
+  "near_zero_grids_monotone_with_exact_endpoint": 15,
+  "explicit_tolerance_and_nonzero_API_records_identical": 60,
+  "empty_array_control_preserved": true,
+  "selected_CMB_comparisons": [
+    {
+      "original_control_index": 8,
+      "endpoint_candidate_minus_sigma_only_logpost": 3.979948814958334e-09,
+      "normalized_array_differences": {
+        "ell": 0.0,
+        "tt": 9.30056826696556e-16,
+        "ee": 3.646622846452036e-16,
+        "bb": 4.509853506618403e-12,
+        "te": 1.2687734466624785e-15,
+        "et": 1.2687734466624785e-15
+      },
+      "priors_and_BAO_identical": true
+    },
+    {
+      "original_control_index": 9,
+      "endpoint_candidate_minus_sigma_only_logpost": -2.0372681319713593e-10,
+      "normalized_array_differences": {
+        "ell": 0.0,
+        "tt": 3.127505667241803e-16,
+        "ee": 4.633024000009065e-16,
+        "bb": 4.356709816291708e-12,
+        "te": 6.36826822661743e-16,
+        "et": 6.36826822661743e-16
+      },
+      "priors_and_BAO_identical": true
+    },
+    {
+      "original_control_index": 0,
+      "endpoint_candidate_minus_sigma_only_logpost": -7.275957614183426e-11,
+      "normalized_array_differences": {
+        "ell": 0.0,
+        "tt": 2.1772954296276434e-16,
+        "ee": 9.904617189184133e-16,
+        "bb": 2.2929400424779028e-12,
+        "te": 5.123939913520837e-16,
+        "et": 5.123939913520837e-16
+      },
+      "priors_and_BAO_identical": true
+    }
+  ],
+  "warnings_remaining": 0,
+  "mathematical_scope": "For finite positive tau0 and finite ordered partialtimes0<=S_i<=S_total, normalization tau0*(S_i/S_total) preserves nonnegative order and has exact zero endpoint; original real integrals would have S_total=tau0. IEEE division and multiplication are monotone on this bounded nonnegative interval and ratio of a finite positive value to itself is1. No global physical or quadrature error certificate inferred.",
+  "full_twenty_point_endpoint_validation_complete": false,
+  "production_adopted": false
+}

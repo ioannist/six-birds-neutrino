@@ -1,0 +1,66 @@
+{
+  "utc": "2026-10-04T13:21:18.328482+00:00",
+  "CAMB_version": "2.0.4",
+  "Cobaya_version": "3.6.2",
+  "native_module": "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/camb/camblib.so",
+  "native_module_sha256": "306640a8948cd5246fc9b21e76525f6adebdff5ba3bc792a57d50bba67225ad5",
+  "records": {
+    "initial": {
+      "point": {
+        "omegabh2": 0.022699735,
+        "omegach2": 0.11515536,
+        "H0": 68.530016,
+        "logA": 3.0211807,
+        "ns": 1.0244569,
+        "tau": 0.060991682,
+        "mnu": 0.14275261
+      },
+      "cached": false,
+      "chi2_components": {
+        "sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 2566.7478451824863,
+        "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 10.563299156860886
+      },
+      "chi2_total": 2577.3111443393473
+    },
+    "fast_move_reused_transfer": {
+      "point": {
+        "omegabh2": 0.022699735,
+        "omegach2": 0.11515536,
+        "H0": 68.530016,
+        "logA": 3.0226339111165847,
+        "ns": 1.0208507570056111,
+        "tau": 0.060991682,
+        "mnu": 0.14275261
+      },
+      "cached": true,
+      "chi2_components": {
+        "sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 2568.0560130306762,
+        "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 10.563299156860886
+      },
+      "chi2_total": 2578.619312187537
+    },
+    "same_point_full_recalculation": {
+      "point": {
+        "omegabh2": 0.022699735,
+        "omegach2": 0.11515536,
+        "H0": 68.530016,
+        "logA": 3.0226339111165847,
+        "ns": 1.0208507570056111,
+        "tau": 0.060991682,
+        "mnu": 0.14275261
+      },
+      "cached": false,
+      "chi2_components": {
+        "sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 2568.0560130306762,
+        "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 10.563299156860886
+      },
+      "chi2_total": 2578.619312187537
+    }
+  },
+  "stored_row_chi2": 2588.2308465246556,
+  "reused_minus_fresh_total_chi2": 0.0,
+  "reused_minus_stored_total_chi2": -9.611534337118428,
+  "same_slow_coordinates_only_logA_and_ns_changed": true,
+  "samplers_modified": false,
+  "accuracy_or_posterior_quantile_certificate": false
+}

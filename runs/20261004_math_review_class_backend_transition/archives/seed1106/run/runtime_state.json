@@ -1,0 +1,22 @@
+{
+  "lens": "B",
+  "seed": 1106,
+  "pid": 3389096,
+  "exec_session": 73843,
+  "run_dir": "runs/20261004_math_review_cmb_quad_chain_B_seed1106",
+  "omp_threads": 4,
+  "status": "running_fresh_quad_target_selected_native_rows_verified",
+  "parent_family_seed": 506,
+  "numerical_target": "tol_ncdm_bg1e-8_other_CLASS_defaults_common_lmax4095",
+  "output_precision_digits": 17,
+  "launch_observed_utc": "2026-10-04T00:52:31.891322+00:00",
+  "source_config_sha256": "0d8d099e714a0d78b5a5b8c4fea9dbcd9ac291b0ba1db3add102ae3d7094c487",
+  "implementation_sha256": {
+    "scripts/run_cobaya.py": "744581e1e7493ecf5c1d1c71871d16558eb7ff2229c9c4ff68c9eb8d136fac5b",
+    "src/sbt_spt_audit/samplers.py": "2a7c7e99597b6c5bc48f72bbaa9e8df81dd6987ba36e8ab0a81b8c36b10f33e9",
+    "src/sbt_spt_audit/mcmc.py": "e00c832f911a9233bce6c3ada930113affb436e52272bb704e47706c8df22898",
+    "src/sbt_spt_audit/likelihoods/candl_cobaya.py": "b695b32235d04a2b287786260c5c02fb87c43d787d0949907a7247518aa37a90",
+    "src/sbt_spt_audit/likelihoods/desi_dr2_bao.py": "bf7b9b816f158aaabfc12ba8f6ea75ed8c7fa0bc0bbfe73b7aa8e75d9a999bf4"
+  },
+  "native_target_checks": "runs/20261004_math_review_cmb_quad_chain_configs/first_saved_row_snapshots/seed1106/native_target_verification.json"
+}

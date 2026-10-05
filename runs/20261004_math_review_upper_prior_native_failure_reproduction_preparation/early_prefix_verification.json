@@ -1,0 +1,43 @@
+{
+  "utc": "2026-10-04T23:16:05.210762+00:00",
+  "records": [
+    {
+      "seed": 2003,
+      "pid": 3108408,
+      "process_start_ticks": 342500644,
+      "complete_stored_rows": 20,
+      "frozen": "runs/20261004_math_review_upper_prior_native_failure_reproduction_preparation/early_prefixes/seed2003.1.txt",
+      "frozen_sha256": "6117a8181a4147925ad88c9db9defd7f494c5cb6f84351c3a9612e6aa97b662c",
+      "original_chain_sha256": "e9a9651f289df70e8dc66cc9f6c0a8569787a277a98aca37d4ba78d3da678f9d",
+      "original_chain": "runs/20261004_math_review_upper_prior_seed2003_native_failure_v2/terminal_bundle/chains/fresh_CAMB_upper20_A4095_seed2003.1.txt",
+      "exact_byte_prefix": true,
+      "every_saved_binary64_value_equal": true,
+      "latest_logged_progress": [
+        "2026-10-04 23:15:16",
+        "36",
+        "20"
+      ],
+      "whole_failed_trajectory_verified": false
+    },
+    {
+      "seed": 2004,
+      "pid": 3108409,
+      "process_start_ticks": 342500645,
+      "complete_stored_rows": 18,
+      "frozen": "runs/20261004_math_review_upper_prior_native_failure_reproduction_preparation/early_prefixes/seed2004.1.txt",
+      "frozen_sha256": "ee7f92a896daf88df8f7abc6d1289777141092a5e13f1e6de1b64e5a7f3fa552",
+      "original_chain_sha256": "b340c5b525a1a9193cad93b8f3f23efec7af35c175b711b8235e633a2cbe8b29",
+      "original_chain": "runs/20261004_math_review_upper_prior_seed2004_native_failure/terminal_bundle/chains/fresh_CAMB_upper20_A4095_seed2004.1.txt",
+      "exact_byte_prefix": true,
+      "every_saved_binary64_value_equal": true,
+      "latest_logged_progress": [
+        "2026-10-04 23:15:17",
+        "37",
+        "18"
+      ],
+      "whole_failed_trajectory_verified": false
+    }
+  ],
+  "scope": "early saved trajectory prefixes only; complete failing transition still pending",
+  "posterior_qualified": false
+}

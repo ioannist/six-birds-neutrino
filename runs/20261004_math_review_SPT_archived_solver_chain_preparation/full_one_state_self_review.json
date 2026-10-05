@@ -1,0 +1,33 @@
+{
+  "utc": "2026-10-04T14:22:57.947979+00:00",
+  "review_type": "distinct_self_review_not_independent_review",
+  "records": [
+    {
+      "CAMB_version": "1.6.5",
+      "session": 60727,
+      "exit_code": 0,
+      "exact_posterior_result_count": 37,
+      "finite_native_likelihood_point_count": 36,
+      "prior_rejected_point_count": 1,
+      "receipt": "full_single_transfer_state_1.6.5_receipt.json",
+      "receipt_sha256": "4f5a5955df0cc63b04ac59f43052351e04a2a2e0b2c374c17e68ecc44d133ff7"
+    },
+    {
+      "CAMB_version": "2.0.4",
+      "session": 96473,
+      "exit_code": 0,
+      "exact_posterior_result_count": 37,
+      "finite_native_likelihood_point_count": 36,
+      "prior_rejected_point_count": 1,
+      "receipt": "full_single_transfer_state_2.0.4_receipt.json",
+      "receipt_sha256": "14418dc0945ae3950069b56a1f4cb4625b5bca019cb71441ee0b7b2566fb3f05"
+    }
+  ],
+  "candidate_preserves_selected_full_fresh_target_both_versions": true,
+  "all37_results_exactly_equal_to_separate_model_fresh_baselines": true,
+  "sampled_likelihoods_priors_and_posterior_totals_compared": true,
+  "specific_native_global_or_universal_cache_safety_proved": false,
+  "production_helper_guard_or_actual_sampler_repair_implemented": false,
+  "interleaved_multiple_native_models_validated": false,
+  "likelihood_tolerance_relaxed_or_posterior_claim_adopted": false
+}

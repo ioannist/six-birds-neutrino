@@ -1,0 +1,42 @@
+{
+  "scope": "native_target_check_handles_not_convergence_claim",
+  "checks": [
+    {
+      "lens": "A",
+      "seed": 601,
+      "pid": 3595789,
+      "exec_session": 20884,
+      "command": "printf 'owned_verifier_pid=%s\\n' \"$$\"\nexec env OMP_NUM_THREADS=8 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 /tmp/neutrino-math-review-venv/bin/python scripts/verify_chain_targets.py --run-dir runs/20261003_math_review_cmb_accuracy_chain_precision_check/chain_A_seed601 --rows-per-chain 2 --atol 1e-7 --rtol 1e-10 --output runs/20261003_math_review_cmb_accuracy_chain_precision_check/A601_native_target_verification.json > runs/20261003_math_review_cmb_accuracy_chain_precision_check/A601_verification_stdout.txt 2>&1",
+      "status": "complete",
+      "managed_exec_exit_code": 0
+    },
+    {
+      "lens": "A",
+      "seed": 602,
+      "pid": 3598420,
+      "exec_session": 67845,
+      "command": "printf 'owned_verifier_pid=%s\\n' \"$$\"\nexec env OMP_NUM_THREADS=8 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 /tmp/neutrino-math-review-venv/bin/python scripts/verify_chain_targets.py --run-dir runs/20261003_math_review_cmb_accuracy_chain_precision_check/chain_A_seed602 --rows-per-chain 2 --atol 1e-7 --rtol 1e-10 --output runs/20261003_math_review_cmb_accuracy_chain_precision_check/A602_native_target_verification.json > runs/20261003_math_review_cmb_accuracy_chain_precision_check/A602_verification_stdout.txt 2>&1",
+      "status": "complete",
+      "managed_exec_exit_code": 0
+    },
+    {
+      "lens": "B",
+      "seed": 603,
+      "pid": 3600303,
+      "exec_session": 81747,
+      "command": "printf 'owned_verifier_pid=%s\\n' \"$$\"\nexec env OMP_NUM_THREADS=8 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 /tmp/neutrino-math-review-venv/bin/python scripts/verify_chain_targets.py --run-dir runs/20261003_math_review_cmb_accuracy_chain_precision_check/chain_B_seed603 --rows-per-chain 2 --atol 1e-7 --rtol 1e-10 --output runs/20261003_math_review_cmb_accuracy_chain_precision_check/B603_native_target_verification.json > runs/20261003_math_review_cmb_accuracy_chain_precision_check/B603_verification_stdout.txt 2>&1",
+      "status": "complete",
+      "managed_exec_exit_code": 0
+    },
+    {
+      "lens": "B",
+      "seed": 604,
+      "pid": 3601915,
+      "exec_session": 82832,
+      "command": "printf 'owned_verifier_pid=%s\\n' \"$$\"\nexec env OMP_NUM_THREADS=8 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 /tmp/neutrino-math-review-venv/bin/python scripts/verify_chain_targets.py --run-dir runs/20261003_math_review_cmb_accuracy_chain_precision_check/chain_B_seed604 --rows-per-chain 2 --atol 1e-7 --rtol 1e-10 --output runs/20261003_math_review_cmb_accuracy_chain_precision_check/B604_native_target_verification.json > runs/20261003_math_review_cmb_accuracy_chain_precision_check/B604_verification_stdout.txt 2>&1",
+      "status": "complete",
+      "managed_exec_exit_code": 0
+    }
+  ],
+  "completed_utc": "2026-10-03T16:04:06.789244+00:00"
+}

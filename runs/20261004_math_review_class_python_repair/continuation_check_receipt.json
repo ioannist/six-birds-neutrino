@@ -1,0 +1,45 @@
+{
+  "native_runner_exit_code": 0,
+  "native_runner_command": [
+    "python3",
+    "tests/native/run_class_numjac_guard.py",
+    "--class-dir",
+    "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy"
+  ],
+  "native_runner_output_matches_verified_seven_cases": true,
+  "native_runner_source_sha256": "b854f8dac8f5773a99ef9110ff7ade3e6a2f5eae11f1cee295147afa7042538a",
+  "new_python_sources_parse": [
+    "runs/20261004_math_review_class_python_repair/snapshot_guarded_rows.py",
+    "runs/20261004_math_review_class_python_repair/verify_parent_rows.py",
+    "runs/20261004_math_review_class_python_repair/verify_native_case.py",
+    "runs/20261004_math_review_class_python_repair/verify_current_runtime.py",
+    "runs/20261004_math_review_class_python_repair/build_extension.py",
+    "runs/20261004_math_review_class_python_repair/prepare_recovery_trial.py",
+    "runs/20261004_math_review_class_python_repair/prepare_backend.py",
+    "runs/20261004_math_review_class_python_repair/launch_guarded_trial.py",
+    "runs/20261004_math_review_spt_chain_snapshots_tenth/verify_snapshot.py",
+    "runs/20261004_math_review_spt_chain_snapshots_tenth/prepare_snapshot.py",
+    "runs/20261004_math_review_spt_chain_snapshots_tenth/run_diagnostic.py",
+    "tests/native/run_class_numjac_guard.py"
+  ],
+  "SPT_diagnostic_managed_sessions": {
+    "chain_A": {
+      "session_id": 69821,
+      "exit_code": 0
+    },
+    "chain_B": {
+      "session_id": 1880,
+      "exit_code": 0
+    }
+  },
+  "parent_native_verifier_managed_session": {
+    "session_id": 22006,
+    "exit_code": 0
+  },
+  "guarded_sampler_managed_session": {
+    "session_id": 56012,
+    "status": "running"
+  },
+  "core_python_and_Lean_unchanged_since_latest_math_check": true,
+  "latest_core_math_check": "runs/20261004_math_review_class_tca_failure_seed505/math_check_stdout.txt"
+}

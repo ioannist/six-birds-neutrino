@@ -1,0 +1,139 @@
+{
+  "utc": "2026-10-04T10:50:56.951096+00:00",
+  "review_type": "distinct_self_review_not_independent_review",
+  "completion_verification_sha256": "58095dd87c1959ec85dfeaec502880e1e8b33850107dc30bbe95b532c2689a83",
+  "runtime_observation_sha256": "a08239e9a1a700a707953b66e718f09c77bdd818c4d8841fed5b3845af7820bb",
+  "self_review_script_sha256": "e46e3371070c9c2a3f2002b3697674a074cb5b273cef5868c3b781e5edf0755b",
+  "all_ten_parameter_gate_sets_reconstructed": {
+    "medium_A": {
+      "omegabh2": {
+        "separate_starts": true,
+        "finite": true,
+        "Rhat": false,
+        "bulk_ESS": false,
+        "tail_ESS": false,
+        "quantile_ESS": false,
+        "MCSE": false,
+        "chronological_drift": true,
+        "equalized_selection": true
+      },
+      "omegach2": {
+        "separate_starts": true,
+        "finite": true,
+        "Rhat": false,
+        "bulk_ESS": false,
+        "tail_ESS": false,
+        "quantile_ESS": false,
+        "MCSE": false,
+        "chronological_drift": true,
+        "equalized_selection": true
+      },
+      "H0": {
+        "separate_starts": true,
+        "finite": true,
+        "Rhat": false,
+        "bulk_ESS": false,
+        "tail_ESS": false,
+        "quantile_ESS": false,
+        "MCSE": false,
+        "chronological_drift": true,
+        "equalized_selection": true
+      },
+      "logA": {
+        "separate_starts": true,
+        "finite": true,
+        "Rhat": false,
+        "bulk_ESS": false,
+        "tail_ESS": false,
+        "quantile_ESS": false,
+        "MCSE": false,
+        "chronological_drift": true,
+        "equalized_selection": true
+      },
+      "ns": {
+        "separate_starts": true,
+        "finite": true,
+        "Rhat": false,
+        "bulk_ESS": false,
+        "tail_ESS": false,
+        "quantile_ESS": false,
+        "MCSE": false,
+        "chronological_drift": true,
+        "equalized_selection": true
+      },
+      "tau": {
+        "separate_starts": true,
+        "finite": true,
+        "Rhat": false,
+        "bulk_ESS": false,
+        "tail_ESS": false,
+        "quantile_ESS": false,
+        "MCSE": false,
+        "chronological_drift": true,
+        "equalized_selection": true
+      },
+      "mnu_sample": {
+        "separate_starts": true,
+        "finite": true,
+        "Rhat": false,
+        "bulk_ESS": false,
+        "tail_ESS": false,
+        "quantile_ESS": false,
+        "MCSE": false,
+        "chronological_drift": true,
+        "equalized_selection": true
+      },
+      "A_planck": {
+        "separate_starts": true,
+        "finite": true,
+        "Rhat": false,
+        "bulk_ESS": false,
+        "tail_ESS": false,
+        "quantile_ESS": false,
+        "MCSE": false,
+        "chronological_drift": true,
+        "equalized_selection": true
+      },
+      "TT_tSZ_Amp": {
+        "separate_starts": true,
+        "finite": true,
+        "Rhat": false,
+        "bulk_ESS": false,
+        "tail_ESS": false,
+        "quantile_ESS": false,
+        "MCSE": false,
+        "chronological_drift": true,
+        "equalized_selection": true
+      },
+      "TT_kSZ_Amp": {
+        "separate_starts": true,
+        "finite": true,
+        "Rhat": false,
+        "bulk_ESS": false,
+        "tail_ESS": false,
+        "quantile_ESS": false,
+        "MCSE": true,
+        "chronological_drift": true,
+        "equalized_selection": true
+      }
+    }
+  },
+  "integer_recount_and_reconstructed_gates": {
+    "medium_A": {
+      "retained_represented_steps": [
+        593,
+        805,
+        762,
+        602
+      ],
+      "passing_parameters": [],
+      "next_minimum_history": 712
+    }
+  },
+  "all_four_medium_A_families_retained": true,
+  "B_cohorts_reassessed": false,
+  "quad_A_reassessed": false,
+  "precision_cohorts_or_grid12_pooled": false,
+  "growth_gate_met_in_medium_A_cohort": true,
+  "convergence_or_uniform_accuracy_certified": false
+}

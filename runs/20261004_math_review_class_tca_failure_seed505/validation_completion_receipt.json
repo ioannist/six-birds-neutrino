@@ -1,0 +1,28 @@
+{
+  "utc": "2026-10-04T00:31:33.685139+00:00",
+  "math_check_command": "make math_check PYTHON=/tmp/neutrino-math-review-venv/bin/python",
+  "math_check_exit_code": 0,
+  "pytest_passed": 66,
+  "exported_lean_theorems": 20,
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "math_check_stdout_sha256": "fcfa270019b5436236dff76925af8e0cf0c76d784f8daba5197da8842a0534de",
+  "initial_system_python_exit_code": 2,
+  "initial_system_python_failure": "missing matplotlib during collection",
+  "initial_configuration_verifier_exit_code": 1,
+  "initial_configuration_verifier_failure": "assumed canonical SPT2018 lmax4095; initialized requirement3200; corrected and replayed both actual resolutions",
+  "configuration_verifier_exit_code": 0,
+  "replay_comparator_exit_code": 0,
+  "default_omp1_replay_exit_code": 1,
+  "default_omp8_replay_exit_code": 1,
+  "earlier_start_replay_exit_code": 1,
+  "intermediate_replay_exit_code": 0,
+  "background_quad_replay_exit_code": 0,
+  "canonical_3200_default_replay_exit_code": 1,
+  "canonical_3200_background_quad_replay_exit_code": 0,
+  "stopped_default_chain_resumed": false,
+  "posterior_accuracy_certified": false
+}

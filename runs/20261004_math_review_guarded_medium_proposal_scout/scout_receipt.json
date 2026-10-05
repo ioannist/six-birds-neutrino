@@ -1,0 +1,520 @@
+{
+  "utc": "2026-10-04T08:51:10.803928+00:00",
+  "scope": "proposal_scout_from_frozen_unconverged_quad_pilot_with_live_medium_proposals",
+  "pilot_verification": "runs/20261004_math_review_guarded_CLASS_first_diagnostics/completion_verification.json",
+  "pilot_verification_sha256": "9e2b94c506f8a2e087a21f62eaf1af8d33889423922e7e451e04d8471fb447a0",
+  "pilot_records": {
+    "A": {
+      "parameters": [
+        "omegabh2",
+        "omegach2",
+        "H0",
+        "logA",
+        "ns",
+        "tau",
+        "mnu_sample",
+        "A_planck",
+        "TT_tSZ_Amp",
+        "TT_kSZ_Amp"
+      ],
+      "stored_rows_after_burn": 1740,
+      "represented_steps_after_burn": 5597,
+      "weighted_mean": {
+        "omegabh2": 0.02268195635393129,
+        "omegach2": 0.116547668987306,
+        "H0": 68.76473249539897,
+        "logA": 3.0419479986519433,
+        "ns": 0.9808751450114597,
+        "tau": 0.057248567299726404,
+        "mnu_sample": 0.04270607123984989,
+        "A_planck": 0.9995380286279972,
+        "TT_tSZ_Amp": 2.191430458011511,
+        "TT_kSZ_Amp": 9.701268383160519
+      },
+      "covariance_file": "runs/20261004_math_review_guarded_medium_proposal_scout/pilot_A.covmat",
+      "finite_SPD": true,
+      "posterior_covariance_certified": false,
+      "prior_diagnostic_pass": false
+    },
+    "B": {
+      "parameters": [
+        "omegabh2",
+        "omegach2",
+        "H0",
+        "logA",
+        "ns",
+        "tau",
+        "mnu_sample",
+        "A_planck",
+        "TT_tSZ_Amp",
+        "TT_kSZ_Amp"
+      ],
+      "stored_rows_after_burn": 1599,
+      "represented_steps_after_burn": 4918,
+      "weighted_mean": {
+        "omegabh2": 0.022184120731872974,
+        "omegach2": 0.11757101932390786,
+        "H0": 68.39552372891119,
+        "logA": 3.046818688257204,
+        "ns": 0.9653555904473027,
+        "tau": 0.0550466901420974,
+        "mnu_sample": 0.03365585724675207,
+        "A_planck": 1.0049929734553933,
+        "TT_tSZ_Amp": 1.3159030740916178,
+        "TT_kSZ_Amp": 2.1101739589595003
+      },
+      "covariance_file": "runs/20261004_math_review_guarded_medium_proposal_scout/pilot_B.covmat",
+      "finite_SPD": true,
+      "posterior_covariance_certified": false,
+      "prior_diagnostic_pass": false
+    }
+  },
+  "medium_proposal_comparisons": [
+    {
+      "seed": 1401,
+      "lens": "A",
+      "live": true,
+      "proposal_updates": 0,
+      "current_equals_initial": true,
+      "last_internal_Rminus1": 23.736474,
+      "pilot_covariance_in_current_proposal_basis_eigenvalues": [
+        0.09813343453728,
+        0.3642705104878207,
+        0.6844945582879831,
+        0.7699633231642321,
+        0.785531216473113,
+        0.8999190042827518,
+        1.026238939118156,
+        1.2099451693106134,
+        1.2849118237548798,
+        1.5649915549142983
+      ],
+      "pilot_to_current_marginal_sigma_ratios": {
+        "omegabh2": 1.0913163329903335,
+        "omegach2": 0.8974010795919772,
+        "H0": 0.8386592543862882,
+        "logA": 0.9036471426149272,
+        "ns": 1.0202459084434794,
+        "tau": 0.9483761863435577,
+        "mnu_sample": 0.6077958565989507,
+        "A_planck": 0.9454493143006737,
+        "TT_tSZ_Amp": 1.0681142114328146,
+        "TT_kSZ_Amp": 0.32350523019758776
+      },
+      "same_posterior_target_claimed_between_precision_levels": false
+    },
+    {
+      "seed": 1402,
+      "lens": "A",
+      "live": true,
+      "proposal_updates": 0,
+      "current_equals_initial": true,
+      "last_internal_Rminus1": 14.303221,
+      "pilot_covariance_in_current_proposal_basis_eigenvalues": [
+        0.09813343453728,
+        0.3642705104878207,
+        0.6844945582879831,
+        0.7699633231642321,
+        0.785531216473113,
+        0.8999190042827518,
+        1.026238939118156,
+        1.2099451693106134,
+        1.2849118237548798,
+        1.5649915549142983
+      ],
+      "pilot_to_current_marginal_sigma_ratios": {
+        "omegabh2": 1.0913163329903335,
+        "omegach2": 0.8974010795919772,
+        "H0": 0.8386592543862882,
+        "logA": 0.9036471426149272,
+        "ns": 1.0202459084434794,
+        "tau": 0.9483761863435577,
+        "mnu_sample": 0.6077958565989507,
+        "A_planck": 0.9454493143006737,
+        "TT_tSZ_Amp": 1.0681142114328146,
+        "TT_kSZ_Amp": 0.32350523019758776
+      },
+      "same_posterior_target_claimed_between_precision_levels": false
+    },
+    {
+      "seed": 1403,
+      "lens": "B",
+      "live": true,
+      "proposal_updates": 0,
+      "current_equals_initial": true,
+      "last_internal_Rminus1": 12.310199,
+      "pilot_covariance_in_current_proposal_basis_eigenvalues": [
+        0.29867183606806375,
+        0.6241687574706186,
+        0.7139123626445707,
+        0.8183109719567664,
+        0.9124654127055929,
+        0.991210185104736,
+        1.0436783754913996,
+        1.0991512950973497,
+        1.2500406720651163,
+        1.6353404784595502
+      ],
+      "pilot_to_current_marginal_sigma_ratios": {
+        "omegabh2": 0.9789061600484108,
+        "omegach2": 0.9287082373172549,
+        "H0": 0.8704720719791678,
+        "logA": 1.059920967917818,
+        "ns": 0.9578119990663403,
+        "tau": 1.144400310864099,
+        "mnu_sample": 0.5667075359254097,
+        "A_planck": 0.9495728787102189,
+        "TT_tSZ_Amp": 1.0097036094357577,
+        "TT_kSZ_Amp": 0.9595600527771092
+      },
+      "same_posterior_target_claimed_between_precision_levels": false
+    },
+    {
+      "seed": 1404,
+      "lens": "B",
+      "live": true,
+      "proposal_updates": 0,
+      "current_equals_initial": true,
+      "last_internal_Rminus1": 14.088439,
+      "pilot_covariance_in_current_proposal_basis_eigenvalues": [
+        0.47250995868379364,
+        0.7752018936919481,
+        0.8529495875690343,
+        0.9982022836731947,
+        1.354260782229381,
+        1.4826704391279402,
+        1.9647934195982206,
+        2.644186591890717,
+        2.8870453061647177,
+        3.346882137835212
+      ],
+      "pilot_to_current_marginal_sigma_ratios": {
+        "omegabh2": 1.0352453474619683,
+        "omegach2": 1.181905853191527,
+        "H0": 1.0904040363830978,
+        "logA": 1.1748245109732207,
+        "ns": 1.235373136541652,
+        "tau": 1.2740085796760778,
+        "mnu_sample": 1.5240623949178076,
+        "A_planck": 1.1892119891726594,
+        "TT_tSZ_Amp": 1.189419639037424,
+        "TT_kSZ_Amp": 0.9893358706325708
+      },
+      "same_posterior_target_claimed_between_precision_levels": false
+    },
+    {
+      "seed": 1405,
+      "lens": "B",
+      "live": true,
+      "proposal_updates": 0,
+      "current_equals_initial": true,
+      "last_internal_Rminus1": 13.42196,
+      "pilot_covariance_in_current_proposal_basis_eigenvalues": [
+        0.29867183606806375,
+        0.6241687574706186,
+        0.7139123626445707,
+        0.8183109719567664,
+        0.9124654127055929,
+        0.991210185104736,
+        1.0436783754913996,
+        1.0991512950973497,
+        1.2500406720651163,
+        1.6353404784595502
+      ],
+      "pilot_to_current_marginal_sigma_ratios": {
+        "omegabh2": 0.9789061600484108,
+        "omegach2": 0.9287082373172549,
+        "H0": 0.8704720719791678,
+        "logA": 1.059920967917818,
+        "ns": 0.9578119990663403,
+        "tau": 1.144400310864099,
+        "mnu_sample": 0.5667075359254097,
+        "A_planck": 0.9495728787102189,
+        "TT_tSZ_Amp": 1.0097036094357577,
+        "TT_kSZ_Amp": 0.9595600527771092
+      },
+      "same_posterior_target_claimed_between_precision_levels": false
+    },
+    {
+      "seed": 1406,
+      "lens": "A",
+      "live": true,
+      "proposal_updates": 0,
+      "current_equals_initial": true,
+      "last_internal_Rminus1": 8.278875,
+      "pilot_covariance_in_current_proposal_basis_eigenvalues": [
+        0.6036525002135871,
+        0.6669759656828026,
+        0.7748110952157152,
+        0.8854105673869583,
+        1.0219273562649158,
+        1.1185230854661719,
+        1.259322044900693,
+        1.3204128095270928,
+        1.4526594453357229,
+        1.8064236241383869
+      ],
+      "pilot_to_current_marginal_sigma_ratios": {
+        "omegabh2": 1.0667682693249383,
+        "omegach2": 0.9855241377589112,
+        "H0": 0.9769332538645827,
+        "logA": 0.8732207242647776,
+        "ns": 1.0877842188521298,
+        "tau": 0.9772622104607761,
+        "mnu_sample": 1.1182761171638733,
+        "A_planck": 0.9815571040878286,
+        "TT_tSZ_Amp": 1.079542435182764,
+        "TT_kSZ_Amp": 0.9992898827309225
+      },
+      "same_posterior_target_claimed_between_precision_levels": false
+    },
+    {
+      "seed": 1407,
+      "lens": "B",
+      "live": true,
+      "proposal_updates": 0,
+      "current_equals_initial": true,
+      "last_internal_Rminus1": 24.541685,
+      "pilot_covariance_in_current_proposal_basis_eigenvalues": [
+        0.5485500794639612,
+        0.6564526448753447,
+        0.7631108547804021,
+        0.8420706998073906,
+        1.0226653821718508,
+        1.094285925891292,
+        1.3122212669999294,
+        1.40053270760412,
+        1.7211590298794428,
+        2.6224136881424807
+      ],
+      "pilot_to_current_marginal_sigma_ratios": {
+        "omegabh2": 0.9202643386922309,
+        "omegach2": 1.1942309929712722,
+        "H0": 0.9921907870210177,
+        "logA": 1.027169734228878,
+        "ns": 0.9380471790685947,
+        "tau": 1.1466898990737504,
+        "mnu_sample": 1.1128518361845858,
+        "A_planck": 0.8922515178196818,
+        "TT_tSZ_Amp": 1.1101246676438157,
+        "TT_kSZ_Amp": 0.9317695951951624
+      },
+      "same_posterior_target_claimed_between_precision_levels": false
+    },
+    {
+      "seed": 1201,
+      "lens": "A",
+      "live": true,
+      "proposal_updates": 0,
+      "current_equals_initial": true,
+      "last_internal_Rminus1": 37.91091,
+      "pilot_covariance_in_current_proposal_basis_eigenvalues": [
+        0.09813343453728,
+        0.3642705104878207,
+        0.6844945582879831,
+        0.7699633231642321,
+        0.785531216473113,
+        0.8999190042827518,
+        1.026238939118156,
+        1.2099451693106134,
+        1.2849118237548798,
+        1.5649915549142983
+      ],
+      "pilot_to_current_marginal_sigma_ratios": {
+        "omegabh2": 1.0913163329903335,
+        "omegach2": 0.8974010795919772,
+        "H0": 0.8386592543862882,
+        "logA": 0.9036471426149272,
+        "ns": 1.0202459084434794,
+        "tau": 0.9483761863435577,
+        "mnu_sample": 0.6077958565989507,
+        "A_planck": 0.9454493143006737,
+        "TT_tSZ_Amp": 1.0681142114328146,
+        "TT_kSZ_Amp": 0.32350523019758776
+      },
+      "same_posterior_target_claimed_between_precision_levels": false
+    }
+  ],
+  "files_individually_frozen_not_atomic_sampler_states": true,
+  "sampler_rules_or_likelihood_targets_changed": false,
+  "pilot_covariance_is_an_initialization_candidate_not_a_posterior_estimate": true,
+  "precision_targets_pooled_for_posterior_inference": false,
+  "efficiency_improvement_or_convergence_certified": false,
+  "files": [
+    {
+      "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_medium_chain_A_seed1401/chains/math_guarded_medium_A_seed1401.covmat",
+      "snapshot": "runs/20261004_math_review_guarded_medium_proposal_scout/seed1401/current.covmat",
+      "sha256": "846fe81423cd19b9a0d4b890e58db9179a7485516f1dd12e2004d3b5efde8270"
+    },
+    {
+      "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_medium_chain_A_seed1401/resolved.yaml",
+      "snapshot": "runs/20261004_math_review_guarded_medium_proposal_scout/seed1401/resolved.yaml",
+      "sha256": "d587336e7cdbdde127b70deea0a71f85176346e8928f51a4f5935d9358307c15"
+    },
+    {
+      "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_medium_chain_A_seed1401/runtime_state.json",
+      "snapshot": "runs/20261004_math_review_guarded_medium_proposal_scout/seed1401/runtime_state.json",
+      "sha256": "d8b040dfe298e67135a52cd94bbb4aebae2290e4a7a0f5d4c25be6e1f98eb04b"
+    },
+    {
+      "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_medium_chain_A_seed1401/stdout.txt",
+      "snapshot": "runs/20261004_math_review_guarded_medium_proposal_scout/seed1401/stdout_prefix.txt",
+      "sha256": "7062eb3980d1348c789921efab6977455431f21fb6aa401f69cb0d7bc57549a7"
+    },
+    {
+      "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_medium_chain_A_seed1402/chains/math_guarded_medium_A_seed1402.covmat",
+      "snapshot": "runs/20261004_math_review_guarded_medium_proposal_scout/seed1402/current.covmat",
+      "sha256": "846fe81423cd19b9a0d4b890e58db9179a7485516f1dd12e2004d3b5efde8270"
+    },
+    {
+      "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_medium_chain_A_seed1402/resolved.yaml",
+      "snapshot": "runs/20261004_math_review_guarded_medium_proposal_scout/seed1402/resolved.yaml",
+      "sha256": "c34b13a1c8db6bdd41894ac06f2c2b7b9b40efb31f29588dc4edbfc785fe16e4"
+    },
+    {
+      "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_medium_chain_A_seed1402/runtime_state.json",
+      "snapshot": "runs/20261004_math_review_guarded_medium_proposal_scout/seed1402/runtime_state.json",
+      "sha256": "ae75150a398dbbf64ff4046453261cffce56bf4b884223b0b5ed53354114a1c1"
+    },
+    {
+      "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_medium_chain_A_seed1402/stdout.txt",
+      "snapshot": "runs/20261004_math_review_guarded_medium_proposal_scout/seed1402/stdout_prefix.txt",
+      "sha256": "4797366fe664b3dee17bd57f3945c659ca085c2828fd926b81c309355792af18"
+    },
+    {
+      "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_medium_chain_B_seed1403/chains/math_guarded_medium_B_seed1403.covmat",
+      "snapshot": "runs/20261004_math_review_guarded_medium_proposal_scout/seed1403/current.covmat",
+      "sha256": "9744f3d6b00d6d4a3e116977ba13ed76a3505ddac9d4bb5ef1e3f3d3f63317a6"
+    },
+    {
+      "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_medium_chain_B_seed1403/resolved.yaml",
+      "snapshot": "runs/20261004_math_review_guarded_medium_proposal_scout/seed1403/resolved.yaml",
+      "sha256": "21f130dc9aedd2c65538688d3bf173170d9d48901cef1fcad003b5c12cb9b847"
+    },
+    {
+      "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_medium_chain_B_seed1403/runtime_state.json",
+      "snapshot": "runs/20261004_math_review_guarded_medium_proposal_scout/seed1403/runtime_state.json",
+      "sha256": "cc58668c7fb1e2ac9524f0f3e28641f8417fdc36e7d4f32461c5db88db7fab44"
+    },
+    {
+      "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_medium_chain_B_seed1403/stdout.txt",
+      "snapshot": "runs/20261004_math_review_guarded_medium_proposal_scout/seed1403/stdout_prefix.txt",
+      "sha256": "d6b05faf3f3e125076730819d3a5c211beeb031b73c0549a108a92fff9181cdf"
+    },
+    {
+      "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_medium_chain_B_seed1404/chains/math_guarded_medium_B_seed1404.covmat",
+      "snapshot": "runs/20261004_math_review_guarded_medium_proposal_scout/seed1404/current.covmat",
+      "sha256": "a8851ced759ee447a8cb3feced301b54a5608035b4a33170e933d38775d22f74"
+    },
+    {
+      "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_medium_chain_B_seed1404/resolved.yaml",
+      "snapshot": "runs/20261004_math_review_guarded_medium_proposal_scout/seed1404/resolved.yaml",
+      "sha256": "2d12c387f4ec1dfbc8856853b4797acf5cbc47bf45795e2f555aaa48b9443aa5"
+    },
+    {
+      "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_medium_chain_B_seed1404/runtime_state.json",
+      "snapshot": "runs/20261004_math_review_guarded_medium_proposal_scout/seed1404/runtime_state.json",
+      "sha256": "fbe72d8b93a7114e3edc336819b79a35f26b7f3935d384bf9d9b796e2011e197"
+    },
+    {
+      "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_medium_chain_B_seed1404/stdout.txt",
+      "snapshot": "runs/20261004_math_review_guarded_medium_proposal_scout/seed1404/stdout_prefix.txt",
+      "sha256": "3344ac97274ce194e3a8eed6066f4c1cbb4376f46bc596c108e6a977a42e9fca"
+    },
+    {
+      "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_medium_chain_B_seed1405/chains/math_guarded_medium_B_seed1405.covmat",
+      "snapshot": "runs/20261004_math_review_guarded_medium_proposal_scout/seed1405/current.covmat",
+      "sha256": "9744f3d6b00d6d4a3e116977ba13ed76a3505ddac9d4bb5ef1e3f3d3f63317a6"
+    },
+    {
+      "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_medium_chain_B_seed1405/resolved.yaml",
+      "snapshot": "runs/20261004_math_review_guarded_medium_proposal_scout/seed1405/resolved.yaml",
+      "sha256": "38a755eefc9e198a6b74ea835ae7853daf5101f33b702276cbe13a31741b14bf"
+    },
+    {
+      "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_medium_chain_B_seed1405/runtime_state.json",
+      "snapshot": "runs/20261004_math_review_guarded_medium_proposal_scout/seed1405/runtime_state.json",
+      "sha256": "805b0d0ed275f7915c9af477f1d2da25f9eaa3b6074e06be6b87e501597f30ad"
+    },
+    {
+      "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_medium_chain_B_seed1405/stdout.txt",
+      "snapshot": "runs/20261004_math_review_guarded_medium_proposal_scout/seed1405/stdout_prefix.txt",
+      "sha256": "6bab8af4e805964469e15ff07d6e4994d3c2ffc00dad627a80d11f53fb4590d4"
+    },
+    {
+      "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_medium_chain_A_seed1406/chains/math_guarded_medium_A_seed1406.covmat",
+      "snapshot": "runs/20261004_math_review_guarded_medium_proposal_scout/seed1406/current.covmat",
+      "sha256": "fd7d6e7cff0b8f996f87f2b5215b90afcc1c245916047011992542abf9859fc3"
+    },
+    {
+      "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_medium_chain_A_seed1406/resolved.yaml",
+      "snapshot": "runs/20261004_math_review_guarded_medium_proposal_scout/seed1406/resolved.yaml",
+      "sha256": "b2ef4d5b6af180f83479ee0d42eca3ca1d51c52a31a90319d40627cc519542ef"
+    },
+    {
+      "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_medium_chain_A_seed1406/runtime_state.json",
+      "snapshot": "runs/20261004_math_review_guarded_medium_proposal_scout/seed1406/runtime_state.json",
+      "sha256": "e1e1a2b55daf99d4be3db7d7b937fb21baa25b06ca9b9257dea636f2ee03b41a"
+    },
+    {
+      "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_medium_chain_A_seed1406/stdout.txt",
+      "snapshot": "runs/20261004_math_review_guarded_medium_proposal_scout/seed1406/stdout_prefix.txt",
+      "sha256": "7d90b7e5b4d69b0d7fef6c614e3b68130025b503d28fcbe6466671d6545957c9"
+    },
+    {
+      "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_medium_chain_B_seed1407/chains/math_guarded_medium_B_seed1407.covmat",
+      "snapshot": "runs/20261004_math_review_guarded_medium_proposal_scout/seed1407/current.covmat",
+      "sha256": "1644982bf1a966b873a48fd62aaed2095d33467e801292d042ffeee09baf63ff"
+    },
+    {
+      "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_medium_chain_B_seed1407/resolved.yaml",
+      "snapshot": "runs/20261004_math_review_guarded_medium_proposal_scout/seed1407/resolved.yaml",
+      "sha256": "b3147eea40997d1eb188c214a383f11bc24e5da7450420c793df16c499647c82"
+    },
+    {
+      "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_medium_chain_B_seed1407/runtime_state.json",
+      "snapshot": "runs/20261004_math_review_guarded_medium_proposal_scout/seed1407/runtime_state.json",
+      "sha256": "2e8bdd4f39141e9889cd56486a212859990fff37a673447260227f43af6cf642"
+    },
+    {
+      "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_medium_chain_B_seed1407/stdout.txt",
+      "snapshot": "runs/20261004_math_review_guarded_medium_proposal_scout/seed1407/stdout_prefix.txt",
+      "sha256": "ad1d6c3fcd9fc53e6879caf100c508bbc57cfcd92e2d85fbdf8437ce2c656bbd"
+    },
+    {
+      "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_dragging_chain_A_seed1201/chains/math_guarded_dragging_A_seed1201.covmat",
+      "snapshot": "runs/20261004_math_review_guarded_medium_proposal_scout/seed1201/current.covmat",
+      "sha256": "846fe81423cd19b9a0d4b890e58db9179a7485516f1dd12e2004d3b5efde8270"
+    },
+    {
+      "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_dragging_chain_A_seed1201/resolved.yaml",
+      "snapshot": "runs/20261004_math_review_guarded_medium_proposal_scout/seed1201/resolved.yaml",
+      "sha256": "1bcab4378c98c703f173cba5ba6bb81ee02e2142a7e61ea04043f9804ef07abf"
+    },
+    {
+      "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_dragging_chain_A_seed1201/runtime_state.json",
+      "snapshot": "runs/20261004_math_review_guarded_medium_proposal_scout/seed1201/runtime_state.json",
+      "sha256": "013c4b2a95d32fe75ae848a34286211dbeae1d8a903927b710b9191678a573b8"
+    },
+    {
+      "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_dragging_chain_A_seed1201/stdout.txt",
+      "snapshot": "runs/20261004_math_review_guarded_medium_proposal_scout/seed1201/stdout_prefix.txt",
+      "sha256": "79584803eb218ee7d5a2cce9873c5e615cd20d7de45b7af3a24389785e5784a2"
+    },
+    {
+      "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_medium_proposal_scout/pilot_A.covmat",
+      "snapshot": "runs/20261004_math_review_guarded_medium_proposal_scout/pilot_A.covmat",
+      "sha256": "0bf7bd1e65883e516914119e8649d3204069f3f87271969ed31eff3d3a07d802"
+    },
+    {
+      "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_medium_proposal_scout/pilot_B.covmat",
+      "snapshot": "runs/20261004_math_review_guarded_medium_proposal_scout/pilot_B.covmat",
+      "sha256": "ef2238b7ea2e5da618d7fddb17b82a8b408597153d11ee5729396b7626d1c3ad"
+    },
+    {
+      "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_medium_proposal_scout/scout.py",
+      "snapshot": "runs/20261004_math_review_guarded_medium_proposal_scout/scout.py",
+      "sha256": "7e78deab1f76714c9a4710ce41418c37e214f9b5a48aa85c66b9fbcef61e8127"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "utc": "2026-10-04T22:45:06.430249+00:00",
+  "managed_session": 1217,
+  "actual_terminal_exit_code": 1,
+  "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_guarded_CLASS_seventh_medium_A_diagnostics/observe_runtime.py",
+  "failed_assertion_line": 39,
+  "reason": "PID-only retirement absence test rejects unrelated Lean process reusing an old sampler PID",
+  "failure_counterexample": "runs/20261004_math_review_retired_PID_identity_repair/observed_counterexample.json",
+  "original_observer_sha256": "9f837ddfd65bffadb8f66c1e0b45d7e4dbd0d969f07f42659b64758dd4f99ddd",
+  "runtime_observation_written": false,
+  "diagnostic_session": 5979,
+  "diagnostic_terminal_exit_code": 0,
+  "frozen_snapshot_and_diagnostic_preserved": true
+}

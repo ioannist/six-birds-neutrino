@@ -1,0 +1,65 @@
+{
+  "utc": "2026-10-04T08:41:40.627558+00:00",
+  "scope": "latest_distinct_SPT_A_twelfth_and_B_thirteenth_six_family_diagnostic_readouts",
+  "A_snapshot_time": "2026-10-04T06:03:50.775522+00:00",
+  "B_snapshot_time": "2026-10-04T08:34:31.106953+00:00",
+  "A_reused_not_reassessed": true,
+  "simultaneous_joint_snapshot": false,
+  "all_seven_fixed_gates_pass_both_targets": true,
+  "A": {
+    "p95_equalized_retained_eV": 0.1421685,
+    "p95_full_postburn_eV": 0.14054709,
+    "p95_MCSE_eV": 0.0029166300000000034,
+    "represented_draws_per_chain": 11156
+  },
+  "B": {
+    "p95_equalized_retained_eV": 0.1124497,
+    "p95_full_postburn_eV": 0.10916158,
+    "p95_MCSE_eV": 0.0030434950000000002,
+    "represented_draws_per_chain": 9703
+  },
+  "A_minus_B_retained_p95_eV": 0.029718800000000004,
+  "A_minus_B_full_postburn_p95_eV": 0.03138551000000002,
+  "quadrature_combined_quantile_MCSE_eV_assuming_independent_MC_errors": 0.004215399432073433,
+  "same_CAMB_configuration_and_sampled_cosmological_prior_ranges": true,
+  "dataset_bundle_and_fixed_nuisance_definitions_are_target_specific": true,
+  "pure_completion_causality_established": false,
+  "statistical_significance_of_a_cosmological_mass_difference_claimed": false,
+  "mathematical_MCMC_convergence_or_uniform_solver_accuracy_certified": false,
+  "full_CMB_cohorts_included": false,
+  "paper_modified": false,
+  "sources": [
+    {
+      "path": "runs/20261004_math_review_spt_chain_snapshots_twelfth_A/completion_verification.json",
+      "sha256": "67123d199839c3256cdcd9d1b1b1df1f8c8b952e079154cbe8ef35d3daa78615"
+    },
+    {
+      "path": "runs/20261004_math_review_spt_chain_snapshots_twelfth_A/chain_A_diagnostics.json",
+      "sha256": "326667be558973e48a79bc5611830d5278f3fd55eda12381df74a1cafcb4f7b6"
+    },
+    {
+      "path": "runs/20261004_math_review_spt_chain_snapshots_twelfth_A/snapshot_receipt.json",
+      "sha256": "fde1943ef9013c7969bca05d20a20d992f79213de4a91e19fc24d4f6608b462a"
+    },
+    {
+      "path": "runs/20261004_math_review_spt_chain_snapshots_thirteenth_B/completion_verification.json",
+      "sha256": "c9784dd3d1523adae07bfd8ca9529c17d2c4d2103603674769d5fa0c63dd5029"
+    },
+    {
+      "path": "runs/20261004_math_review_spt_chain_snapshots_thirteenth_B/chain_B_diagnostics.json",
+      "sha256": "1f5b043d08e894c43cc8e1d89b8e302b52dd7110443eb8e9a4711e8ffb72a4e9"
+    },
+    {
+      "path": "runs/20261004_math_review_spt_chain_snapshots_thirteenth_B/snapshot_receipt.json",
+      "sha256": "dc7f012f6673fa5d7b4b2c2417425dbce1e7ceae93d2b81c7738bdb0fca8d4ce"
+    },
+    {
+      "path": "runs/20261004_math_review_spt_chain_snapshots_twelfth_A/chain_A_seed301/resolved.yaml",
+      "sha256": "428fc99e0e6dcc74b0de05b1fcd56300b9c25f8178422bed43c261c21baac8d0"
+    },
+    {
+      "path": "runs/20261004_math_review_spt_chain_snapshots_thirteenth_B/chain_B_seed305/resolved.yaml",
+      "sha256": "090bfd6007abb3b715f91f3fbc7fda4e9a3c191d395ec35df4ca2a889f0b23fe"
+    }
+  ]
+}

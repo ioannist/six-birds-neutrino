@@ -1,0 +1,139 @@
+{
+  "utc": "2026-10-04T21:12:42.558683+00:00",
+  "review_type": "distinct_self_review_not_independent_review",
+  "completion_verification_sha256": "e05afed1015a06717be125cfcc266bfb04af059381b3b7983af7df0732e8283f",
+  "runtime_observation_sha256": "129d2d3a89a656b654157f45f48b7e6e834abc731bf2c976b5d7d15766c895ae",
+  "self_review_script_sha256": "bac3b448c3a3ef5310d327331b66c14704374f56e8a992997b69bc31997a8e70",
+  "all_ten_parameter_gate_sets_reconstructed": {
+    "quad_B": {
+      "omegabh2": {
+        "separate_starts": true,
+        "finite": true,
+        "Rhat": false,
+        "bulk_ESS": false,
+        "tail_ESS": true,
+        "quantile_ESS": true,
+        "MCSE": false,
+        "chronological_drift": true,
+        "equalized_selection": true
+      },
+      "omegach2": {
+        "separate_starts": true,
+        "finite": true,
+        "Rhat": false,
+        "bulk_ESS": false,
+        "tail_ESS": true,
+        "quantile_ESS": true,
+        "MCSE": false,
+        "chronological_drift": true,
+        "equalized_selection": true
+      },
+      "H0": {
+        "separate_starts": true,
+        "finite": true,
+        "Rhat": false,
+        "bulk_ESS": false,
+        "tail_ESS": true,
+        "quantile_ESS": true,
+        "MCSE": false,
+        "chronological_drift": true,
+        "equalized_selection": true
+      },
+      "logA": {
+        "separate_starts": true,
+        "finite": true,
+        "Rhat": false,
+        "bulk_ESS": false,
+        "tail_ESS": true,
+        "quantile_ESS": true,
+        "MCSE": false,
+        "chronological_drift": true,
+        "equalized_selection": true
+      },
+      "ns": {
+        "separate_starts": true,
+        "finite": true,
+        "Rhat": false,
+        "bulk_ESS": false,
+        "tail_ESS": true,
+        "quantile_ESS": true,
+        "MCSE": false,
+        "chronological_drift": true,
+        "equalized_selection": true
+      },
+      "tau": {
+        "separate_starts": true,
+        "finite": true,
+        "Rhat": false,
+        "bulk_ESS": false,
+        "tail_ESS": true,
+        "quantile_ESS": true,
+        "MCSE": false,
+        "chronological_drift": true,
+        "equalized_selection": true
+      },
+      "mnu_sample": {
+        "separate_starts": true,
+        "finite": true,
+        "Rhat": true,
+        "bulk_ESS": false,
+        "tail_ESS": true,
+        "quantile_ESS": true,
+        "MCSE": false,
+        "chronological_drift": true,
+        "equalized_selection": true
+      },
+      "A_planck": {
+        "separate_starts": true,
+        "finite": true,
+        "Rhat": false,
+        "bulk_ESS": true,
+        "tail_ESS": true,
+        "quantile_ESS": true,
+        "MCSE": false,
+        "chronological_drift": true,
+        "equalized_selection": true
+      },
+      "TT_tSZ_Amp": {
+        "separate_starts": true,
+        "finite": true,
+        "Rhat": false,
+        "bulk_ESS": true,
+        "tail_ESS": true,
+        "quantile_ESS": true,
+        "MCSE": false,
+        "chronological_drift": true,
+        "equalized_selection": true
+      },
+      "TT_kSZ_Amp": {
+        "separate_starts": true,
+        "finite": true,
+        "Rhat": true,
+        "bulk_ESS": true,
+        "tail_ESS": true,
+        "quantile_ESS": true,
+        "MCSE": false,
+        "chronological_drift": true,
+        "equalized_selection": true
+      }
+    }
+  },
+  "integer_recount_and_reconstructed_gates": {
+    "quad_B": {
+      "retained_represented_steps": [
+        5110,
+        4968,
+        5124,
+        4954
+      ],
+      "passing_parameters": [],
+      "next_minimum_history": 5945
+    }
+  },
+  "all_four_quadrature_B_families_retained": true,
+  "A_cohorts_reassessed": false,
+  "medium_B_reassessed": false,
+  "precision_cohorts_or_grid12_pooled": false,
+  "growth_gate_met_in_quadrature_B_cohort": true,
+  "convergence_or_uniform_accuracy_certified": false
+}

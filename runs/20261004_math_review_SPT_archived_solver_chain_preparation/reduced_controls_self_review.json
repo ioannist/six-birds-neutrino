@@ -1,0 +1,94 @@
+{
+  "utc": "2026-10-04T14:15:44.655322+00:00",
+  "review_type": "distinct_self_review_not_independent_review",
+  "completed_sessions": {
+    "reduced_histories": 3073,
+    "archived_cache_control": 20404,
+    "current_cache_control": 24461
+  },
+  "all_exit_codes": 0,
+  "both_versions_selected_cache_return_failures_observed": true,
+  "one_state_selected_controls_match_fresh_exactly": true,
+  "independent_copy_override_invocation_confirmed_on_reduced_history": true,
+  "native_transfer_copy_did_not_fix_selected_failure": true,
+  "summary": {
+    "1.6.5": [
+      {
+        "case": "slow_return",
+        "cache_size": 3,
+        "cached_minus_fresh_chi2": [
+          0.04844393913572276,
+          -0.0
+        ]
+      },
+      {
+        "case": "late_window",
+        "cache_size": 3,
+        "cached_minus_fresh_chi2": [
+          0.19519154827321472,
+          -0.0
+        ]
+      },
+      {
+        "case": "slow_return",
+        "cache_size": 1,
+        "cached_minus_fresh_chi2": [
+          -0.0,
+          -0.0
+        ]
+      },
+      {
+        "case": "late_window",
+        "cache_size": 1,
+        "cached_minus_fresh_chi2": [
+          -0.0,
+          -0.0
+        ]
+      }
+    ],
+    "2.0.4": [
+      {
+        "case": "slow_return",
+        "cache_size": 3,
+        "cached_minus_fresh_chi2": [
+          0.0005074804084870266,
+          -0.0
+        ]
+      },
+      {
+        "case": "late_window",
+        "cache_size": 3,
+        "cached_minus_fresh_chi2": [
+          0.0023675956394981768,
+          -0.0
+        ]
+      },
+      {
+        "case": "slow_return",
+        "cache_size": 1,
+        "cached_minus_fresh_chi2": [
+          -0.0,
+          -0.0
+        ]
+      },
+      {
+        "case": "late_window",
+        "cache_size": 1,
+        "cached_minus_fresh_chi2": [
+          -0.0,
+          -0.0
+        ]
+      }
+    ]
+  },
+  "specific_native_global_or_general_validated_repair_proved": false,
+  "no_inference_history_modified_no_numerical_tolerance_relaxed": true,
+  "input_sha256": {
+    "reduced_histories_receipt.json": "c6086e961d87799c459e0b3c32170e68c6eb90436aecbc5362f49f12914e3c34",
+    "independent_transfer_copy_receipt.json": "e6c7ecbf2fc10291236f4a0d8f0eb8c35292dd0aa9263e2d0c947583c63fdccf",
+    "ordered_replay_self_review.json": "36bd6c1cd446af4800ce2d979ca1268ec93dff7be9e5562c1920bbb034010b67",
+    "traced_points_replay_receipt.json": "5a954dfbab6bcca1f0f69e1763ae7932039516abb695e0e8e50ca6ba12ead069",
+    "single_transfer_state_1.6.5_receipt.json": "2d3e027cc01fb693a5840de4cd5745653de23e083fac6a6de795497d8f99b1bb",
+    "single_transfer_state_2.0.4_receipt.json": "97fc869e1bb3baed81145aefdc503bdd8081ae29fe51cc2c79efa14369b11c82"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "utc": "2026-10-03T17:01:47.549518+00:00",
+  "scope": "first_completed_broader_CLASS_archived_A_median_coordinate_only_other_three_pending",
+  "source_progress_sha256": "6fa9c0b60830e7e34ce6b489c32ad8b3953f0d8cbb310a7284152085fe7dcfab",
+  "point_label": "chain_A_q50",
+  "point": {
+    "omegabh2": 0.022648114624765424,
+    "omegach2": 0.11587145950464044,
+    "H0": 68.8584346146156,
+    "logA": 3.0231479778524024,
+    "ns": 0.986326664319135,
+    "tau": 0.05212601101074413,
+    "mnu_sample": 0.05163980377750983,
+    "A_planck": 0.9942760098725875,
+    "TT_tSZ_Amp": 1.8583602154051229,
+    "TT_kSZ_Amp": 9.351007267292484
+  },
+  "native_broader_record": {
+    "point": {
+      "omegabh2": 0.022648114624765424,
+      "omegach2": 0.11587145950464044,
+      "H0": 68.8584346146156,
+      "logA": 3.0231479778524024,
+      "ns": 0.986326664319135,
+      "tau": 0.05212601101074413,
+      "mnu_sample": 0.05163980377750983,
+      "A_planck": 0.9942760098725875,
+      "TT_tSZ_Amp": 1.8583602154051229,
+      "TT_kSZ_Amp": 9.351007267292484
+    },
+    "native_chi2": {
+      "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 10.49830850604439,
+      "planck_2018_lowl.TT": 20.404652196338304,
+      "planck_2018_lowl.EE_sroll2": 391.6626688806148,
+      "planck_2018_highl_plik.TT_lite_native": 78.63742330335765,
+      "planckpr4lensing.PlanckPR4Lensing": 9.960170835650104,
+      "lensA": 2517.07933033548,
+      "lensB": 3251.226924414962
+    },
+    "spectrum_ell_max": {
+      "tt": 4095,
+      "ee": 4095
+    },
+    "elapsed_seconds": 2900.6474569761194
+  },
+  "native_broader_minus_medium": {
+    "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": -6.871161835064754e-06,
+    "planck_2018_lowl.TT": 0.016952341868545773,
+    "planck_2018_lowl.EE_sroll2": 0.0008702893852614579,
+    "planck_2018_highl_plik.TT_lite_native": 0.4482171236765282,
+    "planckpr4lensing.PlanckPR4Lensing": -0.030690166687001863,
+    "lensA": -0.5575332263597375,
+    "lensB": 3.420657745187782
+  },
+  "own_joint_broader_minus_medium": -0.12219050927823893,
+  "own_joint_broader_minus_default": -0.5460528830817548,
+  "posterior_accuracy_certified": false,
+  "posterior_convergence_certified": false
+}

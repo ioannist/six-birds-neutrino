@@ -289,6 +289,68 @@ def compute_residual_from_base(
     return data_vec - binned_theory
 
 
+def compute_gaussian_residual_and_covariance(
+    like_obj: Any,
+    base_params: dict[str, Any],
+    overrides: Mapping[str, float] | None = None,
+) -> tuple[np.ndarray, np.ndarray]:
+    """Residual and the covariance actually used by candl's Gaussian term.
+
+    Includes parameter-dependent beam covariance and Hartlap correction.
+    Determinant and nuisance-prior contributions are scalar accounting terms
+    handled separately by the native likelihood adjustment.
+    """
+    pars = build_params_with_overrides(base_params, overrides)
+    model = np.asarray(like_obj.bin_model_specs(like_obj.get_model_specs(pars)), dtype=float)
+    residual = np.asarray(like_obj._data_bandpowers, dtype=float) - model
+    form = like_obj.data_set_dict.get("likelihood_form", "gaussian")
+    if form == "gaussian":
+        chol = np.asarray(like_obj.covariance_chol_dec, dtype=float)
+    elif form == "gaussian_beam_detcov":
+        cov = np.asarray(like_obj.covariance, dtype=float) + np.asarray(like_obj.beam_correlation) * np.outer(model, model)
+        chol = np.linalg.cholesky(cov)
+        hartlap = like_obj.data_set_dict.get("hartlap_correction")
+        if hartlap is not None:
+            nsims = float(hartlap["N_sims"])
+            alpha = (nsims - like_obj.N_bins_total - 2) / (nsims - 1)
+            if not 0 < alpha <= 1:
+                raise ValueError("Hartlap correction requires N_sims > N_bins + 2.")
+            chol = chol / np.sqrt(alpha)
+    else:
+        raise ValueError(f"Quadratic localization is not defined for likelihood form {form}.")
+    return residual, chol @ chol.T
+
+
+def gaussian_native_adjustment(
+    like_obj: Any,
+    base_params: dict[str, Any],
+    overrides: Mapping[str, float],
+    residual: np.ndarray,
+    covariance: np.ndarray,
+) -> dict[str, float]:
+    """Independently verify the bridge from residual Q to native -2 log L."""
+    from .metrics import quadratic_contributions
+
+    pars = build_params_with_overrides(base_params, overrides)
+    prior = 2.0 * float(like_obj.prior_logl(pars))
+    form = like_obj.data_set_dict.get("likelihood_form", "gaussian")
+    if form == "gaussian_beam_detcov":
+        sign, logdet = np.linalg.slogdet(covariance)
+        if sign <= 0:
+            raise ValueError("effective beam covariance determinant must be positive.")
+        normalization = float(logdet)
+    elif form == "gaussian":
+        normalization = 2.0 * float(like_obj._norm_const) if like_obj.add_logdet else 0.0
+    else:
+        raise ValueError(f"Unsupported Gaussian accounting bridge for {form}.")
+    q = float(np.sum(quadratic_contributions(residual, covariance)))
+    native = -2.0 * evaluate_loglike_from_base(like_obj, base_params, overrides)
+    if not np.isclose(q + prior + normalization, native, atol=1e-7, rtol=1e-10):
+        raise ValueError("Residual, prior and covariance normalization do not reconstruct the native likelihood.")
+    return {"prior_penalty": prior, "covariance_normalization": normalization,
+            "native_reconstruction_error": q + prior + normalization - native}
+
+
 def _try_cast_defaults(mapping: Mapping[str, Any]) -> dict[str, float]:
     out: dict[str, float] = {}
     for k, v in mapping.items():

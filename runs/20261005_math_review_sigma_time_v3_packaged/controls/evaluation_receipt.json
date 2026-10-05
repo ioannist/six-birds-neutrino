@@ -1,0 +1,556 @@
+{
+  "utc": "2026-10-05T02:57:15.269166+00:00",
+  "maximum_sigma_refinement_level": 22,
+  "records": [
+    {
+      "selection_index": 0,
+      "point": {
+        "omegabh2": 0.029575663512100336,
+        "omegach2": 0.0028630562619511857,
+        "H0": 54.38876723029562,
+        "logA": 2.9440199295646825,
+        "ns": 0.9141040602339817,
+        "tau": 0.07344339439339485,
+        "mnu": 0.05
+      },
+      "kind": "mass_grid",
+      "native_error_is_posterior_rejection": false,
+      "status": "finite_evaluation",
+      "logpost": -75840.58341295387,
+      "logpriors": [
+        -3.4908863374028734
+      ],
+      "loglikes": [
+        -71684.05397652705,
+        -4153.038550089422
+      ],
+      "provider_arrays": "runs/20261005_math_review_sigma_time_v3_packaged/controls/point0_provider_arrays.npz",
+      "provider_arrays_sha256": "f32f8ea18c6eb2822bb1982480ddd54f60fab2d4715173021cd836b0e5e67115",
+      "all_spectra_finite": true,
+      "utc": "2026-10-05T02:52:27.874500+00:00"
+    },
+    {
+      "selection_index": 1,
+      "point": {
+        "omegabh2": 0.029575663512100336,
+        "omegach2": 0.0028630562619511857,
+        "H0": 54.38876723029562,
+        "logA": 2.9440199295646825,
+        "ns": 0.9141040602339817,
+        "tau": 0.07344339439339485,
+        "mnu": 1.0
+      },
+      "kind": "mass_grid",
+      "native_error_is_posterior_rejection": false,
+      "status": "finite_evaluation",
+      "logpost": -54748.74744514183,
+      "logpriors": [
+        -3.4908863374028734
+      ],
+      "loglikes": [
+        -52266.355682606474,
+        -2478.9008761979585
+      ],
+      "provider_arrays": "runs/20261005_math_review_sigma_time_v3_packaged/controls/point1_provider_arrays.npz",
+      "provider_arrays_sha256": "1c5fd380bc7e886ad45c3b724a086568f981d8b84c82eb65319824b72ccea791",
+      "all_spectra_finite": true,
+      "utc": "2026-10-05T02:53:02.168697+00:00"
+    },
+    {
+      "selection_index": 2,
+      "point": {
+        "omegabh2": 0.029575663512100336,
+        "omegach2": 0.0028630562619511857,
+        "H0": 54.38876723029562,
+        "logA": 2.9440199295646825,
+        "ns": 0.9141040602339817,
+        "tau": 0.07344339439339485,
+        "mnu": 4.9
+      },
+      "kind": "mass_grid",
+      "native_error_is_posterior_rejection": false,
+      "status": "finite_evaluation",
+      "logpost": -28592.040075775927,
+      "logpriors": [
+        -3.4908863374028734
+      ],
+      "loglikes": [
+        -27735.012275742305,
+        -853.5369136962169
+      ],
+      "provider_arrays": "runs/20261005_math_review_sigma_time_v3_packaged/controls/point2_provider_arrays.npz",
+      "provider_arrays_sha256": "8d3154fc1ae2d6da51014589288e4cb8cd01d600f1cdaaf59118709b90a789dc",
+      "all_spectra_finite": true,
+      "utc": "2026-10-05T02:53:22.139327+00:00"
+    },
+    {
+      "selection_index": 3,
+      "point": {
+        "omegabh2": 0.029575663512100336,
+        "omegach2": 0.0028630562619511857,
+        "H0": 54.38876723029562,
+        "logA": 2.9440199295646825,
+        "ns": 0.9141040602339817,
+        "tau": 0.07344339439339485,
+        "mnu": 5.1
+      },
+      "kind": "mass_grid",
+      "native_error_is_posterior_rejection": false,
+      "status": "finite_evaluation",
+      "logpost": -26803.74092967949,
+      "logpriors": [
+        -3.4908863374028734
+      ],
+      "loglikes": [
+        -25965.371850135372,
+        -834.878193206715
+      ],
+      "provider_arrays": "runs/20261005_math_review_sigma_time_v3_packaged/controls/point3_provider_arrays.npz",
+      "provider_arrays_sha256": "d67284c28f46c021781361a490fe87f6e7ba450959867a24bcf111f40b8fb5b5",
+      "all_spectra_finite": true,
+      "utc": "2026-10-05T02:53:45.063891+00:00"
+    },
+    {
+      "selection_index": 4,
+      "point": {
+        "omegabh2": 0.029575663512100336,
+        "omegach2": 0.0028630562619511857,
+        "H0": 54.38876723029562,
+        "logA": 2.9440199295646825,
+        "ns": 0.9141040602339817,
+        "tau": 0.07344339439339485,
+        "mnu": 10.0
+      },
+      "kind": "mass_grid",
+      "native_error_is_posterior_rejection": false,
+      "status": "finite_evaluation",
+      "logpost": -2876.5913242690817,
+      "logpriors": [
+        -3.4908863374028734
+      ],
+      "loglikes": [
+        -2075.780975086756,
+        -797.3194628449229
+      ],
+      "provider_arrays": "runs/20261005_math_review_sigma_time_v3_packaged/controls/point4_provider_arrays.npz",
+      "provider_arrays_sha256": "5d6be5c1aa273335bca1d4218130c2e13edc7cd37dcda3ce98f6e9e0dfeefd7d",
+      "all_spectra_finite": true,
+      "utc": "2026-10-05T02:54:02.847859+00:00"
+    },
+    {
+      "selection_index": 5,
+      "point": {
+        "omegabh2": 0.029575663512100336,
+        "omegach2": 0.0028630562619511857,
+        "H0": 54.38876723029562,
+        "logA": 2.9440199295646825,
+        "ns": 0.9141040602339817,
+        "tau": 0.07344339439339485,
+        "mnu": 19.0
+      },
+      "kind": "mass_grid",
+      "native_error_is_posterior_rejection": false,
+      "status": "finite_evaluation",
+      "logpost": -8697.93173232867,
+      "logpriors": [
+        -3.4908863374028734
+      ],
+      "loglikes": [
+        -7428.9995323164,
+        -1265.4413136748678
+      ],
+      "provider_arrays": "runs/20261005_math_review_sigma_time_v3_packaged/controls/point5_provider_arrays.npz",
+      "provider_arrays_sha256": "c35f20f507f7d09ae6c843286257b6a442227e862c7ff64b67eb0a318fcea232",
+      "all_spectra_finite": true,
+      "utc": "2026-10-05T02:54:17.653386+00:00"
+    },
+    {
+      "selection_index": 6,
+      "point": {
+        "omegabh2": 0.039722417435190734,
+        "omegach2": 0.02050757593546919,
+        "H0": 55.63518294861832,
+        "logA": 3.4029050190597663,
+        "ns": 0.8333775835517003,
+        "tau": 0.20267279146734776,
+        "mnu": 0.05
+      },
+      "kind": "mass_grid",
+      "native_error_is_posterior_rejection": false,
+      "status": "finite_evaluation",
+      "logpost": -57239.552522029786,
+      "logpriors": [
+        -3.4908863374028734
+      ],
+      "loglikes": [
+        -53355.545284816515,
+        -3880.5163508758706
+      ],
+      "provider_arrays": "runs/20261005_math_review_sigma_time_v3_packaged/controls/point6_provider_arrays.npz",
+      "provider_arrays_sha256": "3dffc496540d56ac1a9068816383cc9a7980358d1829aa05a29dcbe4d7183342",
+      "all_spectra_finite": true,
+      "utc": "2026-10-05T02:54:32.761360+00:00"
+    },
+    {
+      "selection_index": 7,
+      "point": {
+        "omegabh2": 0.039722417435190734,
+        "omegach2": 0.02050757593546919,
+        "H0": 55.63518294861832,
+        "logA": 3.4029050190597663,
+        "ns": 0.8333775835517003,
+        "tau": 0.20267279146734776,
+        "mnu": 1.0
+      },
+      "kind": "mass_grid",
+      "native_error_is_posterior_rejection": false,
+      "status": "finite_evaluation",
+      "logpost": -51174.55710906756,
+      "logpriors": [
+        -3.4908863374028734
+      ],
+      "loglikes": [
+        -48322.776006540174,
+        -2848.2902161899865
+      ],
+      "provider_arrays": "runs/20261005_math_review_sigma_time_v3_packaged/controls/point7_provider_arrays.npz",
+      "provider_arrays_sha256": "265636b1d120ac38689d38e645f8b2d71c8bee67016463e9a8c9a275950178b9",
+      "all_spectra_finite": true,
+      "utc": "2026-10-05T02:54:45.031055+00:00"
+    },
+    {
+      "selection_index": 8,
+      "point": {
+        "omegabh2": 0.039722417435190734,
+        "omegach2": 0.02050757593546919,
+        "H0": 55.63518294861832,
+        "logA": 3.4029050190597663,
+        "ns": 0.8333775835517003,
+        "tau": 0.20267279146734776,
+        "mnu": 4.9
+      },
+      "kind": "mass_grid",
+      "native_error_is_posterior_rejection": false,
+      "status": "finite_evaluation",
+      "logpost": -27156.54818723787,
+      "logpriors": [
+        -3.4908863374028734
+      ],
+      "loglikes": [
+        -25481.669045366594,
+        -1671.3882555338698
+      ],
+      "provider_arrays": "runs/20261005_math_review_sigma_time_v3_packaged/controls/point8_provider_arrays.npz",
+      "provider_arrays_sha256": "936419ce15d1323fdf2cb07b3c924b7551e719b37a3f89a18749a92867de681d",
+      "all_spectra_finite": true,
+      "utc": "2026-10-05T02:54:58.363747+00:00"
+    },
+    {
+      "selection_index": 9,
+      "point": {
+        "omegabh2": 0.039722417435190734,
+        "omegach2": 0.02050757593546919,
+        "H0": 55.63518294861832,
+        "logA": 3.4029050190597663,
+        "ns": 0.8333775835517003,
+        "tau": 0.20267279146734776,
+        "mnu": 5.1
+      },
+      "kind": "mass_grid",
+      "native_error_is_posterior_rejection": false,
+      "status": "finite_evaluation",
+      "logpost": -25589.531060304136,
+      "logpriors": [
+        -3.4908863374028734
+      ],
+      "loglikes": [
+        -23930.08475909019,
+        -1655.9554148765435
+      ],
+      "provider_arrays": "runs/20261005_math_review_sigma_time_v3_packaged/controls/point9_provider_arrays.npz",
+      "provider_arrays_sha256": "e999c9f68bac4feb4165b1a8b021a0650c9607dbfba5d47d5325122e7a3e080f",
+      "all_spectra_finite": true,
+      "utc": "2026-10-05T02:55:11.373458+00:00"
+    },
+    {
+      "selection_index": 10,
+      "point": {
+        "omegabh2": 0.039722417435190734,
+        "omegach2": 0.02050757593546919,
+        "H0": 55.63518294861832,
+        "logA": 3.4029050190597663,
+        "ns": 0.8333775835517003,
+        "tau": 0.20267279146734776,
+        "mnu": 10.0
+      },
+      "kind": "mass_grid",
+      "native_error_is_posterior_rejection": false,
+      "status": "finite_evaluation",
+      "logpost": -5217.9418655076815,
+      "logpriors": [
+        -3.4908863374028734
+      ],
+      "loglikes": [
+        -3582.793868288691,
+        -1631.6571108815876
+      ],
+      "provider_arrays": "runs/20261005_math_review_sigma_time_v3_packaged/controls/point10_provider_arrays.npz",
+      "provider_arrays_sha256": "b6877d76728867f52e03359c408d5f31bd6514aa2291ee8106a5ac232f6e690a",
+      "all_spectra_finite": true,
+      "utc": "2026-10-05T02:55:24.630324+00:00"
+    },
+    {
+      "selection_index": 11,
+      "point": {
+        "omegabh2": 0.039722417435190734,
+        "omegach2": 0.02050757593546919,
+        "H0": 55.63518294861832,
+        "logA": 3.4029050190597663,
+        "ns": 0.8333775835517003,
+        "tau": 0.20267279146734776,
+        "mnu": 19.0
+      },
+      "kind": "mass_grid",
+      "native_error_is_posterior_rejection": false,
+      "status": "finite_evaluation",
+      "logpost": -7809.409514666891,
+      "logpriors": [
+        -3.4908863374028734
+      ],
+      "loglikes": [
+        -5712.386643337372,
+        -2093.5319849921148
+      ],
+      "provider_arrays": "runs/20261005_math_review_sigma_time_v3_packaged/controls/point11_provider_arrays.npz",
+      "provider_arrays_sha256": "6d871f5e034d73608ac2daa3c5a4d3abbe00111f9de687ef53eb6bfc8ed74d2e",
+      "all_spectra_finite": true,
+      "utc": "2026-10-05T02:55:36.396179+00:00"
+    },
+    {
+      "selection_index": 12,
+      "point": {
+        "omegabh2": 0.029575663512100336,
+        "omegach2": 0.0028630562619511857,
+        "H0": 54.38876723029562,
+        "logA": 2.9440199295646825,
+        "ns": 0.9141040602339817,
+        "tau": 0.07344339439339485,
+        "mnu": 11.436878239360212
+      },
+      "kind": "captured_high_mass_failure",
+      "native_error_is_posterior_rejection": false,
+      "status": "finite_evaluation",
+      "logpost": -2718.2798599480816,
+      "logpriors": [
+        -3.4908863374028734
+      ],
+      "loglikes": [
+        -1860.0454511518826,
+        -854.743522458796
+      ],
+      "provider_arrays": "runs/20261005_math_review_sigma_time_v3_packaged/controls/point12_provider_arrays.npz",
+      "provider_arrays_sha256": "ef7e22e93b53e9df4091109d84ee71f6523b6793db39b6a6f00a0eaa71a8b35d",
+      "all_spectra_finite": true,
+      "utc": "2026-10-05T02:55:50.627100+00:00"
+    },
+    {
+      "selection_index": 13,
+      "point": {
+        "omegabh2": 0.039722417435190734,
+        "omegach2": 0.02050757593546919,
+        "H0": 55.63518294861832,
+        "logA": 3.4029050190597663,
+        "ns": 0.8333775835517003,
+        "tau": 0.20267279146734776,
+        "mnu": 17.67540797501886
+      },
+      "kind": "captured_high_mass_failure",
+      "native_error_is_posterior_rejection": false,
+      "status": "finite_evaluation",
+      "logpost": -7069.643568143322,
+      "logpriors": [
+        -3.4908863374028734
+      ],
+      "loglikes": [
+        -5049.680984108503,
+        -2016.4716976974162
+      ],
+      "provider_arrays": "runs/20261005_math_review_sigma_time_v3_packaged/controls/point13_provider_arrays.npz",
+      "provider_arrays_sha256": "50617bc49b2d35ed49c22d8e21621740186ac81872082471c76af09bcb178ef2",
+      "all_spectra_finite": true,
+      "utc": "2026-10-05T02:56:03.004040+00:00"
+    },
+    {
+      "selection_index": 14,
+      "point": {
+        "omegabh2": 0.023027917,
+        "omegach2": 0.11612066,
+        "H0": 68.927728,
+        "logA": 3.001454952164164,
+        "ns": 1.0140642054328897,
+        "tau": 0.050845913,
+        "mnu": 0.071601591
+      },
+      "kind": "low_mass_control",
+      "native_error_is_posterior_rejection": false,
+      "status": "finite_evaluation",
+      "logpost": -1293.5023395452472,
+      "logpriors": [
+        -3.4908863374028734
+      ],
+      "loglikes": [
+        -1284.6431540870005,
+        -5.36829912084396
+      ],
+      "provider_arrays": "runs/20261005_math_review_sigma_time_v3_packaged/controls/point14_provider_arrays.npz",
+      "provider_arrays_sha256": "d7dffff67048bb3b5869e0f5b5a8778464fc2e10b6cf98eaeef57a26ab4a1a1b",
+      "all_spectra_finite": true,
+      "utc": "2026-10-05T02:56:14.115590+00:00"
+    },
+    {
+      "selection_index": 15,
+      "point": {
+        "omegabh2": 0.022734239369355425,
+        "omegach2": 0.11565855549914986,
+        "H0": 68.60889420134944,
+        "logA": 2.993455056393338,
+        "ns": 1.0368344643361398,
+        "tau": 0.05280893393638526,
+        "mnu": 0.077003390079904
+      },
+      "kind": "low_mass_control",
+      "native_error_is_posterior_rejection": false,
+      "status": "finite_evaluation",
+      "logpost": -1290.2479997549653,
+      "logpriors": [
+        -3.4908863374028734
+      ],
+      "loglikes": [
+        -1281.273531840715,
+        -5.483581576847549
+      ],
+      "provider_arrays": "runs/20261005_math_review_sigma_time_v3_packaged/controls/point15_provider_arrays.npz",
+      "provider_arrays_sha256": "362bac1146e83a36490312c8a6491cb8230d86d2061650c4c07891173482411c",
+      "all_spectra_finite": true,
+      "utc": "2026-10-05T02:56:24.950355+00:00"
+    },
+    {
+      "selection_index": 16,
+      "point": {
+        "omegabh2": 0.02285715756080193,
+        "omegach2": 0.117453181247565,
+        "H0": 68.60662862057427,
+        "logA": 2.995476959089847,
+        "ns": 1.0320751716778127,
+        "tau": 0.0477232798109113,
+        "mnu": 0.008608952959254384
+      },
+      "kind": "low_mass_control",
+      "native_error_is_posterior_rejection": false,
+      "status": "finite_evaluation",
+      "logpost": -1291.6043584321915,
+      "logpriors": [
+        -3.4908863374028734
+      ],
+      "loglikes": [
+        -1281.6671625719866,
+        -6.446309522801967
+      ],
+      "provider_arrays": "runs/20261005_math_review_sigma_time_v3_packaged/controls/point16_provider_arrays.npz",
+      "provider_arrays_sha256": "cfd804c408e9dd2db8661408b71ca700daabc93eed446c9bbdb19c4207fee93e",
+      "all_spectra_finite": true,
+      "utc": "2026-10-05T02:56:38.931814+00:00"
+    },
+    {
+      "selection_index": 17,
+      "point": {
+        "omegabh2": 0.02208835,
+        "omegach2": 0.11613327,
+        "H0": 68.761625,
+        "logA": 3.0431775963340426,
+        "ns": 0.9779809833959313,
+        "tau": 0.05867819,
+        "mnu": 0.043870311
+      },
+      "kind": "low_mass_control",
+      "native_error_is_posterior_rejection": false,
+      "status": "finite_evaluation",
+      "logpost": -1324.9217584569396,
+      "logpriors": [
+        -3.4908863374028734
+      ],
+      "loglikes": [
+        -1315.8871073800924,
+        -5.543764739444497
+      ],
+      "provider_arrays": "runs/20261005_math_review_sigma_time_v3_packaged/controls/point17_provider_arrays.npz",
+      "provider_arrays_sha256": "3efeaf53265ab939e5e6725e7be87518f76e5119b7bc9d567bd1432a7590c4cc",
+      "all_spectra_finite": true,
+      "utc": "2026-10-05T02:56:50.137499+00:00"
+    },
+    {
+      "selection_index": 18,
+      "point": {
+        "omegabh2": 0.02229508659134042,
+        "omegach2": 0.11756634516688139,
+        "H0": 68.43629857611299,
+        "logA": 3.039627142531277,
+        "ns": 0.9610391601448661,
+        "tau": 0.05083002945055451,
+        "mnu": 0.03567493833996502
+      },
+      "kind": "low_mass_control",
+      "native_error_is_posterior_rejection": false,
+      "status": "finite_evaluation",
+      "logpost": -1329.367918955176,
+      "logpriors": [
+        -3.4908863374028734
+      ],
+      "loglikes": [
+        -1320.4385971501044,
+        -5.438435467668857
+      ],
+      "provider_arrays": "runs/20261005_math_review_sigma_time_v3_packaged/controls/point18_provider_arrays.npz",
+      "provider_arrays_sha256": "bda7d42567b8b7cc2cac17f22a7ea8d1f3ed5e22bba87d93cf9eb389bd8e8b19",
+      "all_spectra_finite": true,
+      "utc": "2026-10-05T02:57:01.920679+00:00"
+    },
+    {
+      "selection_index": 19,
+      "point": {
+        "omegabh2": 0.02226667347275189,
+        "omegach2": 0.11854609845872062,
+        "H0": 68.39627970218578,
+        "logA": 3.05103751940621,
+        "ns": 0.9605809252776596,
+        "tau": 0.05355413791222377,
+        "mnu": 0.009021653446876868
+      },
+      "kind": "low_mass_control",
+      "native_error_is_posterior_rejection": false,
+      "status": "finite_evaluation",
+      "logpost": -1327.5401150284301,
+      "logpriors": [
+        -3.4908863374028734
+      ],
+      "loglikes": [
+        -1318.2978379167248,
+        -5.751390774302576
+      ],
+      "provider_arrays": "runs/20261005_math_review_sigma_time_v3_packaged/controls/point19_provider_arrays.npz",
+      "provider_arrays_sha256": "43808fea88f2daa4d6f5d53ef4b954aa0f9acc672841357f5406f1dd4c45adb4",
+      "all_spectra_finite": true,
+      "utc": "2026-10-05T02:57:15.267002+00:00"
+    }
+  ],
+  "native_module": "/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_sigma_time_v3_packaged_20261005/camb-2.0.4/camb/camblib.so",
+  "native_module_sha256": "85a091c53d9c81ee6443a1a4492ee45a35b487f7d360dfd6df190b9e3856cfc6",
+  "evaluation_config_sha256": "06d1fca5f260acbd788ac04ca278f0f8a76589f326f4f800a9788808c653b8fe",
+  "selection_receipt_sha256": "4284ef40b585e98dbed8f18f4080f4da00151a1f0418c06f6e7aa51cf2d055b3",
+  "policy_id": "camb204_sigma_time_v3",
+  "policy_sha256": "d2869a552811ccd510cc7cb15bd945c9e3e5598a0d5ec298b87971576756fa27",
+  "build_receipt_sha256": "ecc8d04d759cf03db4702c7ca50b8cc015bd778657cd1272949c37bbcfbb8b50",
+  "scope": "Twenty explicitly selected prior-interior controls, common wider-prior A4095 target, comparing sigma-only limit22 against24. Selected empirical readouts; no full-prior support, uniform error or posterior certificate.",
+  "production_adopted": false,
+  "posterior_qualified": false
+}

@@ -1,0 +1,139 @@
+{
+  "utc": "2026-10-05T03:16:11.148278+00:00",
+  "seed": 1201,
+  "registered_entry": {
+    "lens": "A",
+    "seed": 1201,
+    "parent_family_seed": 701,
+    "parent_active_segment_seed": 901,
+    "run_dir": "runs/20261004_math_review_guarded_dragging_chain_A_seed1201",
+    "pid": 719894,
+    "exec_session": 56012,
+    "native_module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+    "native_module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+    "status": "running_pinned_native_backend_selected_saved_rows_exactly_verified",
+    "launch_receipt": "runs/20261004_math_review_class_python_repair/guarded_launch_receipt.json",
+    "historical_prefix_appended": false,
+    "pool_with_unmodified_backend": false,
+    "native_saved_row_verification": "runs/20261004_math_review_class_python_repair/guarded_initial_rows/native_target_verification.json"
+  },
+  "last_verified_live_identity": {
+    "seed": 1201,
+    "pid": 719894,
+    "process_start_ticks": 335229443,
+    "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_class_python_repair/launch_guarded_trial.py ",
+    "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+    "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+    "status": "live_same_owned_native_identity",
+    "latest_progress": {
+      "utc": "2026-10-05 03:00:57",
+      "steps": 2148,
+      "accepted": 491
+    },
+    "retained_represented_steps": 1654,
+    "group": null
+  },
+  "last_live_observation_receipt": "runs/20261005_math_review_sigma_time_v3_checkpoint/all_runtime_verification.json",
+  "last_live_observation_sha256": "9c2614064a8d9652f6619e40c9396d9badf8a18ea805fc3b1efe115027ceb376",
+  "identity_observation": {
+    "pid": 719894,
+    "expected_start_ticks": 335229443,
+    "status": "PID_not_present",
+    "original_identity_absent": true
+  },
+  "managed_handle": 56012,
+  "managed_handle_observation": "Unknown process id; handle unavailable",
+  "exit_code": null,
+  "exit_reason": null,
+  "native_failure_established": false,
+  "native_error_is_posterior_rejection": false,
+  "stderr_empty": true,
+  "success_summary_present": false,
+  "terminal_output_files": [
+    {
+      "source": "runs/20261004_math_review_guarded_dragging_chain_A_seed1201/chains/math_guarded_dragging_A_seed1201.1.txt",
+      "frozen": "runs/20261005_math_review_CLASS_unavailable_terminal_preservation/seed1201/outputs/chains/math_guarded_dragging_A_seed1201.1.txt",
+      "bytes": 356932,
+      "sha256": "3281460518d46a928d528a9aa14498e50e2318be47f2d50eb21d79cb6057499d"
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_dragging_chain_A_seed1201/chains/math_guarded_dragging_A_seed1201.checkpoint",
+      "frozen": "runs/20261005_math_review_CLASS_unavailable_terminal_preservation/seed1201/outputs/chains/math_guarded_dragging_A_seed1201.checkpoint",
+      "bytes": 142,
+      "sha256": "4114769f4f3f9049da1bbe30c1fa8e3be690c8d59fb874867c6c82f71bfc0f4c"
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_dragging_chain_A_seed1201/chains/math_guarded_dragging_A_seed1201.covmat",
+      "frozen": "runs/20261005_math_review_CLASS_unavailable_terminal_preservation/seed1201/outputs/chains/math_guarded_dragging_A_seed1201.covmat",
+      "bytes": 2633,
+      "sha256": "48194af9b37fed7fd0f2e59cc692f8f39181bfcb20bd2d0033e2739310b9cf33"
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_dragging_chain_A_seed1201/chains/math_guarded_dragging_A_seed1201.input.yaml",
+      "frozen": "runs/20261005_math_review_CLASS_unavailable_terminal_preservation/seed1201/outputs/chains/math_guarded_dragging_A_seed1201.input.yaml",
+      "bytes": 4586,
+      "sha256": "3427f333333c8f9b40e4e4b10c62b9f1287e5191a906b8279a0d15fddfc7c870"
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_dragging_chain_A_seed1201/chains/math_guarded_dragging_A_seed1201.input.yaml.locked",
+      "frozen": "runs/20261005_math_review_CLASS_unavailable_terminal_preservation/seed1201/outputs/chains/math_guarded_dragging_A_seed1201.input.yaml.locked",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_dragging_chain_A_seed1201/chains/math_guarded_dragging_A_seed1201.progress",
+      "frozen": "runs/20261005_math_review_CLASS_unavailable_terminal_preservation/seed1201/outputs/chains/math_guarded_dragging_A_seed1201.progress",
+      "bytes": 490,
+      "sha256": "d74b7cf881dda6f79c102981a553b13074c2f7c92fea38eea29544420fdf0533"
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_dragging_chain_A_seed1201/chains/math_guarded_dragging_A_seed1201.updated.yaml",
+      "frozen": "runs/20261005_math_review_CLASS_unavailable_terminal_preservation/seed1201/outputs/chains/math_guarded_dragging_A_seed1201.updated.yaml",
+      "bytes": 7448,
+      "sha256": "b5c341f64380bbd3eb946ec7666260eb3d496761ff182fd5c69f7d86b46506e7"
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_dragging_chain_A_seed1201/env.txt",
+      "frozen": "runs/20261005_math_review_CLASS_unavailable_terminal_preservation/seed1201/outputs/env.txt",
+      "bytes": 433,
+      "sha256": "cc7a46f68bd718569a21ec9259a88e216914867ea9386149b078d6f80307251e"
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_dragging_chain_A_seed1201/input.yaml",
+      "frozen": "runs/20261005_math_review_CLASS_unavailable_terminal_preservation/seed1201/outputs/input.yaml",
+      "bytes": 4525,
+      "sha256": "dd9c2d5d99869b952c0f43440c152902d4f4a13f4539caae0b3feebafad3327c"
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_dragging_chain_A_seed1201/resolved.yaml",
+      "frozen": "runs/20261005_math_review_CLASS_unavailable_terminal_preservation/seed1201/outputs/resolved.yaml",
+      "bytes": 4664,
+      "sha256": "1bcab4378c98c703f173cba5ba6bb81ee02e2142a7e61ea04043f9804ef07abf"
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_dragging_chain_A_seed1201/runtime_state.json",
+      "frozen": "runs/20261005_math_review_CLASS_unavailable_terminal_preservation/seed1201/outputs/runtime_state.json",
+      "bytes": 1989,
+      "sha256": "013c4b2a95d32fe75ae848a34286211dbeae1d8a903927b710b9191678a573b8"
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_dragging_chain_A_seed1201/stderr.txt",
+      "frozen": "runs/20261005_math_review_CLASS_unavailable_terminal_preservation/seed1201/outputs/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_dragging_chain_A_seed1201/stdout.txt",
+      "frozen": "runs/20261005_math_review_CLASS_unavailable_terminal_preservation/seed1201/outputs/stdout.txt",
+      "bytes": 132139,
+      "sha256": "35927c0398aab74064122ec730ca50c7866ae803db674ca51ad4fb29847a5f27"
+    }
+  ],
+  "original_launch_receipt_sha256": "0aacd166df62523ce349a0212eb57f77b111b7ea23aae119b26ec3ba66b42a51",
+  "complete_saved_rows": 492,
+  "retained_represented_steps": 1664,
+  "exact_resume_state_verified": false,
+  "sampler_restarted": false,
+  "posterior_qualified": false,
+  "scope": "Original process identity absent and managed handle unavailable. Preserve exact outputs; reason and final unsaved state unknown."
+}

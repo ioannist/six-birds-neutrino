@@ -1,0 +1,51 @@
+{
+  "utc": "2026-10-05T06:58:08.724074+00:00",
+  "reviewer": "distinct_self_review_not_independent_agent",
+  "records": [
+    {
+      "group": "sigma_time_v3_A4095_cap5",
+      "snapshot_sha256": "8e227f536beb92ae04aa3072fd30b6f5e2c47ff91bf634dd62ac9c075e7c33dc",
+      "native_sha256": "00a43b0edf0ade2c258b2913730ca1285513fdb81b1e66e607f01bd605b38fb7",
+      "diagnostic_sha256": "2263eba38f9ae5bbce7d21937cfbd59e6a681976b174afee452c1b8fc9a335de",
+      "self_review_sha256": "4ce27dc05fe28c4e0a53ee0fe66c5485193a24da5bd697553ebbcf0eb758447c",
+      "previous_snapshot_sha256": "ee997b191d75f76ba13446404b9f993e4ccf287386dfcf975907ca60f4cd888b",
+      "passing_parameters": [],
+      "mass_Rhat": 1.5566192775162178,
+      "mass_MCSE_eV": 1.6249554783329656,
+      "next_history_trigger": 1451,
+      "posterior_qualified": false
+    },
+    {
+      "group": "sigma_time_v3_B4095_cap5",
+      "snapshot_sha256": "02a37d81698fca82b20400c313b5564168194efe94e5f1f77516cd41a3dec770",
+      "native_sha256": "0ed33b46e9894d64e94abefe2f1bea51c2e985dddf6435447bafe92031fe7ad4",
+      "diagnostic_sha256": "49a3172bd703a275b467489909f0fb7aa6462a20dda1d9ad378131a4c01070eb",
+      "self_review_sha256": "12468bd8a710e1b1cc8ffd5309e90f3ae00c9bbadebe14a8817841ec07af25af",
+      "previous_snapshot_sha256": "1bf244ccbd15a590e8ca1215fadfa8ef23cca903459fa96b2e349121bfb82012",
+      "passing_parameters": [],
+      "mass_Rhat": 1.862095651364564,
+      "mass_MCSE_eV": 0.4972964550190324,
+      "next_history_trigger": 1499,
+      "posterior_qualified": false
+    },
+    {
+      "group": "sigma_time_v3_B4095_cap20",
+      "snapshot_sha256": "2644ee287680db101b5acc05a8dc98b39ca65572130bd89fffc40a6852cdca98",
+      "native_sha256": "2e423eb37bb7f583e2a047cd5dc6825112b3aa3f4384760d2bd303e5517b64a8",
+      "diagnostic_sha256": "0547fe9f3a1687872d752775656ffc76131f020d4d99a42022b5fef35bc5866c",
+      "self_review_sha256": "1b923af5ac650795ca916929ae501ed7ad818852c524d55781867c7aab897252",
+      "previous_snapshot_sha256": "7b07029e3bfd8e2a3a0b11cd3858d77933d5800c6890424f020b00b9088b96ae",
+      "passing_parameters": [],
+      "mass_Rhat": 2.1850374141916236,
+      "mass_MCSE_eV": 0.01045700285008877,
+      "next_history_trigger": 1486,
+      "posterior_qualified": false
+    }
+  ],
+  "all_four_family_predecessor_prefixes_checked_for_each_target": true,
+  "exact_weighted_history_and_growth_checked": true,
+  "selected_native_rows_exact": 36,
+  "seven_parameter_diagnostics_checked": true,
+  "all_three_posteriors_unqualified": true,
+  "mass_limit_difference_not_promoted": true
+}

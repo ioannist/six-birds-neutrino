@@ -1,0 +1,17 @@
+{
+  "source": "/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_sigma_probe_20261005/source_v2/fortran/halofit.f90",
+  "source_sha256": "a4a5ed891a2a011a3e5c008b226ac666bc96dbaa9eacb6b95e455f1a1728de20",
+  "instrumented_source": "/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_sigma_probe_20261005/source_v3/fortran/halofit.f90",
+  "instrumented_sha256": "3533ce298ddb0b67e9f88f2173b12d5bfbf6705e276e6b2933139084ca1688d9",
+  "changes": [
+    [
+      "                write(*,'(A, I0, 2(1X,G0))') 'AUDIT_SIGMA_TABLE ', audit_i, &\n                    exp(cosm%log_r_sigma(audit_i)), exp(cosm%log_sigma(audit_i))*cached_grow(lut%z,cosm)",
+      "                audit_native = sigma_integral(exp(cosm%log_r_sigma(audit_i)), 0._dl, 1, cosm)\n                audit_12 = sqrt(integrate_audit(0._dl, 1._dl, sigma_integrand, exp(cosm%log_r_sigma(audit_i)), &\n                    0._dl, 1, cosm, acc_sigma_integration, 5, audit_j12))\n                audit_14 = sqrt(integrate_audit(0._dl, 1._dl, sigma_integrand, exp(cosm%log_r_sigma(audit_i)), &\n                    0._dl, 1, cosm, 1e-6_dl, 14, audit_j14))\n                write(*,'(A, I0, 5(1X,G0), 2(1X,I0))') 'AUDIT_SIGMA_TABLE ', audit_i, &\n                    exp(cosm%log_r_sigma(audit_i)), exp(cosm%log_sigma(audit_i))*cached_grow(lut%z,cosm), &\n                    audit_native*cached_grow(lut%z,cosm), audit_12*cached_grow(lut%z,cosm), &\n                    audit_14*cached_grow(lut%z,cosm), audit_j12, audit_j14"
+    ],
+    [
+      "            if (j >= minimum_level .and. sum_old /= 0) then",
+      "            if (abs(y - 0.0007742636656053324_dl) < 1e-14_dl .or. &\n                abs(y - 0.01668100508437997_dl) < 1e-14_dl) then\n                write(*,'(A, 2(1X,G0), 2(1X,I0), 2(1X,G0))') 'AUDIT_INTEGRATION_STEP', &\n                    y, z, minimum_level, j, sum_new, sum_old\n            end if\n            if (j >= minimum_level .and. sum_old /= 0) then"
+    ]
+  ],
+  "scope": "repeat original table-point integral, trace two anomalous radii, compare forced14 refined quadrature"
+}

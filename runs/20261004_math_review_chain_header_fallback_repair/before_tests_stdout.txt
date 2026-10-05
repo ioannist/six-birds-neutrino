@@ -1,0 +1,339 @@
+FFFFFFFF.                                                                [100%]
+=================================== FAILURES ===================================
+________ test_chain_readout_ignores_non_chain_candidates[progress-.txt] ________
+
+tmp_path = PosixPath('/tmp/pytest-of-ioannis/pytest-893/test_chain_readout_ignores_non0')
+suffix = '.txt', sidecar = 'progress'
+
+    @pytest.mark.parametrize("suffix", [".txt", ".1.txt", ".2.txt"])
+    @pytest.mark.parametrize("sidecar", ["progress", "directory"])
+    def test_chain_readout_ignores_non_chain_candidates(tmp_path, suffix, sidecar):
+        prefix = tmp_path / "posterior"
+        Path(str(prefix) + suffix).write_text(
+            "# weight minuslogpost mnu\n1 0 .1\n3 0 .4\n"
+        )
+        if sidecar == "progress":
+            # This sorts before numbered chains and must not supply their header.
+            Path(str(prefix) + ".0.progress.txt").write_text(
+                "# iteration accepted elapsed\n999 8 123\n"
+            )
+        else:
+            Path(str(prefix) + ".0.txt").mkdir()
+>       values, weights = extractor._load_chains_raw(prefix, "mnu", 0)[0]
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_chain_file_selection.py:24: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+scripts/extract_mnu_limits.py:168: in _load_chains_raw
+    names = _read_paramnames(prefix)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+scripts/extract_mnu_limits.py:121: in _read_paramnames
+    _require_chain_columns(tokens, chain_candidates[0])
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+names = ['iteration', 'accepted', 'elapsed']
+source = PosixPath('/tmp/pytest-of-ioannis/pytest-893/test_chain_readout_ignores_non0/posterior.0.progress.txt')
+
+    def _require_chain_columns(names: list[str], source: Path) -> None:
+        """A labeled first column must identify the weights we actually read."""
+        _require_unique_names(names, source)
+        if names[0] != "weight":
+>           raise ValueError(f"The first chain column must be weight: {source}")
+E           ValueError: The first chain column must be weight: /tmp/pytest-of-ioannis/pytest-893/test_chain_readout_ignores_non0/posterior.0.progress.txt
+
+scripts/extract_mnu_limits.py:144: ValueError
+_______ test_chain_readout_ignores_non_chain_candidates[progress-.1.txt] _______
+
+tmp_path = PosixPath('/tmp/pytest-of-ioannis/pytest-893/test_chain_readout_ignores_non1')
+suffix = '.1.txt', sidecar = 'progress'
+
+    @pytest.mark.parametrize("suffix", [".txt", ".1.txt", ".2.txt"])
+    @pytest.mark.parametrize("sidecar", ["progress", "directory"])
+    def test_chain_readout_ignores_non_chain_candidates(tmp_path, suffix, sidecar):
+        prefix = tmp_path / "posterior"
+        Path(str(prefix) + suffix).write_text(
+            "# weight minuslogpost mnu\n1 0 .1\n3 0 .4\n"
+        )
+        if sidecar == "progress":
+            # This sorts before numbered chains and must not supply their header.
+            Path(str(prefix) + ".0.progress.txt").write_text(
+                "# iteration accepted elapsed\n999 8 123\n"
+            )
+        else:
+            Path(str(prefix) + ".0.txt").mkdir()
+>       values, weights = extractor._load_chains_raw(prefix, "mnu", 0)[0]
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_chain_file_selection.py:24: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+scripts/extract_mnu_limits.py:168: in _load_chains_raw
+    names = _read_paramnames(prefix)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+scripts/extract_mnu_limits.py:121: in _read_paramnames
+    _require_chain_columns(tokens, chain_candidates[0])
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+names = ['iteration', 'accepted', 'elapsed']
+source = PosixPath('/tmp/pytest-of-ioannis/pytest-893/test_chain_readout_ignores_non1/posterior.0.progress.txt')
+
+    def _require_chain_columns(names: list[str], source: Path) -> None:
+        """A labeled first column must identify the weights we actually read."""
+        _require_unique_names(names, source)
+        if names[0] != "weight":
+>           raise ValueError(f"The first chain column must be weight: {source}")
+E           ValueError: The first chain column must be weight: /tmp/pytest-of-ioannis/pytest-893/test_chain_readout_ignores_non1/posterior.0.progress.txt
+
+scripts/extract_mnu_limits.py:144: ValueError
+_______ test_chain_readout_ignores_non_chain_candidates[progress-.2.txt] _______
+
+tmp_path = PosixPath('/tmp/pytest-of-ioannis/pytest-893/test_chain_readout_ignores_non2')
+suffix = '.2.txt', sidecar = 'progress'
+
+    @pytest.mark.parametrize("suffix", [".txt", ".1.txt", ".2.txt"])
+    @pytest.mark.parametrize("sidecar", ["progress", "directory"])
+    def test_chain_readout_ignores_non_chain_candidates(tmp_path, suffix, sidecar):
+        prefix = tmp_path / "posterior"
+        Path(str(prefix) + suffix).write_text(
+            "# weight minuslogpost mnu\n1 0 .1\n3 0 .4\n"
+        )
+        if sidecar == "progress":
+            # This sorts before numbered chains and must not supply their header.
+            Path(str(prefix) + ".0.progress.txt").write_text(
+                "# iteration accepted elapsed\n999 8 123\n"
+            )
+        else:
+            Path(str(prefix) + ".0.txt").mkdir()
+>       values, weights = extractor._load_chains_raw(prefix, "mnu", 0)[0]
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_chain_file_selection.py:24: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+scripts/extract_mnu_limits.py:168: in _load_chains_raw
+    names = _read_paramnames(prefix)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+scripts/extract_mnu_limits.py:121: in _read_paramnames
+    _require_chain_columns(tokens, chain_candidates[0])
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+names = ['iteration', 'accepted', 'elapsed']
+source = PosixPath('/tmp/pytest-of-ioannis/pytest-893/test_chain_readout_ignores_non2/posterior.0.progress.txt')
+
+    def _require_chain_columns(names: list[str], source: Path) -> None:
+        """A labeled first column must identify the weights we actually read."""
+        _require_unique_names(names, source)
+        if names[0] != "weight":
+>           raise ValueError(f"The first chain column must be weight: {source}")
+E           ValueError: The first chain column must be weight: /tmp/pytest-of-ioannis/pytest-893/test_chain_readout_ignores_non2/posterior.0.progress.txt
+
+scripts/extract_mnu_limits.py:144: ValueError
+_______ test_chain_readout_ignores_non_chain_candidates[directory-.txt] ________
+
+tmp_path = PosixPath('/tmp/pytest-of-ioannis/pytest-893/test_chain_readout_ignores_non3')
+suffix = '.txt', sidecar = 'directory'
+
+    @pytest.mark.parametrize("suffix", [".txt", ".1.txt", ".2.txt"])
+    @pytest.mark.parametrize("sidecar", ["progress", "directory"])
+    def test_chain_readout_ignores_non_chain_candidates(tmp_path, suffix, sidecar):
+        prefix = tmp_path / "posterior"
+        Path(str(prefix) + suffix).write_text(
+            "# weight minuslogpost mnu\n1 0 .1\n3 0 .4\n"
+        )
+        if sidecar == "progress":
+            # This sorts before numbered chains and must not supply their header.
+            Path(str(prefix) + ".0.progress.txt").write_text(
+                "# iteration accepted elapsed\n999 8 123\n"
+            )
+        else:
+            Path(str(prefix) + ".0.txt").mkdir()
+>       values, weights = extractor._load_chains_raw(prefix, "mnu", 0)[0]
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_chain_file_selection.py:24: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+scripts/extract_mnu_limits.py:168: in _load_chains_raw
+    names = _read_paramnames(prefix)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+scripts/extract_mnu_limits.py:115: in _read_paramnames
+    header = chain_candidates[0].read_text(encoding="utf-8").splitlines()[0].strip()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/tmp/pytest-of-ioannis/pytest-893/test_chain_readout_ignores_non3/posterior.0.txt')
+mode = 'r', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       IsADirectoryError: [Errno 21] Is a directory: '/tmp/pytest-of-ioannis/pytest-893/test_chain_readout_ignores_non3/posterior.0.txt'
+
+/usr/lib/python3.12/pathlib.py:1015: IsADirectoryError
+______ test_chain_readout_ignores_non_chain_candidates[directory-.1.txt] _______
+
+tmp_path = PosixPath('/tmp/pytest-of-ioannis/pytest-893/test_chain_readout_ignores_non4')
+suffix = '.1.txt', sidecar = 'directory'
+
+    @pytest.mark.parametrize("suffix", [".txt", ".1.txt", ".2.txt"])
+    @pytest.mark.parametrize("sidecar", ["progress", "directory"])
+    def test_chain_readout_ignores_non_chain_candidates(tmp_path, suffix, sidecar):
+        prefix = tmp_path / "posterior"
+        Path(str(prefix) + suffix).write_text(
+            "# weight minuslogpost mnu\n1 0 .1\n3 0 .4\n"
+        )
+        if sidecar == "progress":
+            # This sorts before numbered chains and must not supply their header.
+            Path(str(prefix) + ".0.progress.txt").write_text(
+                "# iteration accepted elapsed\n999 8 123\n"
+            )
+        else:
+            Path(str(prefix) + ".0.txt").mkdir()
+>       values, weights = extractor._load_chains_raw(prefix, "mnu", 0)[0]
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_chain_file_selection.py:24: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+scripts/extract_mnu_limits.py:168: in _load_chains_raw
+    names = _read_paramnames(prefix)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+scripts/extract_mnu_limits.py:115: in _read_paramnames
+    header = chain_candidates[0].read_text(encoding="utf-8").splitlines()[0].strip()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/tmp/pytest-of-ioannis/pytest-893/test_chain_readout_ignores_non4/posterior.0.txt')
+mode = 'r', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       IsADirectoryError: [Errno 21] Is a directory: '/tmp/pytest-of-ioannis/pytest-893/test_chain_readout_ignores_non4/posterior.0.txt'
+
+/usr/lib/python3.12/pathlib.py:1015: IsADirectoryError
+______ test_chain_readout_ignores_non_chain_candidates[directory-.2.txt] _______
+
+tmp_path = PosixPath('/tmp/pytest-of-ioannis/pytest-893/test_chain_readout_ignores_non5')
+suffix = '.2.txt', sidecar = 'directory'
+
+    @pytest.mark.parametrize("suffix", [".txt", ".1.txt", ".2.txt"])
+    @pytest.mark.parametrize("sidecar", ["progress", "directory"])
+    def test_chain_readout_ignores_non_chain_candidates(tmp_path, suffix, sidecar):
+        prefix = tmp_path / "posterior"
+        Path(str(prefix) + suffix).write_text(
+            "# weight minuslogpost mnu\n1 0 .1\n3 0 .4\n"
+        )
+        if sidecar == "progress":
+            # This sorts before numbered chains and must not supply their header.
+            Path(str(prefix) + ".0.progress.txt").write_text(
+                "# iteration accepted elapsed\n999 8 123\n"
+            )
+        else:
+            Path(str(prefix) + ".0.txt").mkdir()
+>       values, weights = extractor._load_chains_raw(prefix, "mnu", 0)[0]
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_chain_file_selection.py:24: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+scripts/extract_mnu_limits.py:168: in _load_chains_raw
+    names = _read_paramnames(prefix)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+scripts/extract_mnu_limits.py:115: in _read_paramnames
+    header = chain_candidates[0].read_text(encoding="utf-8").splitlines()[0].strip()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/usr/lib/python3.12/pathlib.py:1029: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/tmp/pytest-of-ioannis/pytest-893/test_chain_readout_ignores_non5/posterior.0.txt')
+mode = 'r', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       IsADirectoryError: [Errno 21] Is a directory: '/tmp/pytest-of-ioannis/pytest-893/test_chain_readout_ignores_non5/posterior.0.txt'
+
+/usr/lib/python3.12/pathlib.py:1015: IsADirectoryError
+____________ test_paramnames_do_not_make_numeric_directory_a_chain _____________
+
+tmp_path = PosixPath('/tmp/pytest-of-ioannis/pytest-893/test_paramnames_do_not_make_nu0')
+
+    def test_paramnames_do_not_make_numeric_directory_a_chain(tmp_path):
+        prefix = tmp_path / "posterior"
+        Path(str(prefix) + ".paramnames").write_text("mnu mass\n")
+        Path(str(prefix) + ".txt").write_text("1 0 .1\n3 0 .4\n")
+        Path(str(prefix) + ".0.txt").mkdir()
+>       values, weights = extractor._load_chains_raw(prefix, "mnu", 0)[0]
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_chain_file_selection.py:35: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+scripts/extract_mnu_limits.py:185: in _load_chains_raw
+    with chain.open(encoding="utf-8") as handle:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/tmp/pytest-of-ioannis/pytest-893/test_paramnames_do_not_make_nu0/posterior.0.txt')
+mode = 'r', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       IsADirectoryError: [Errno 21] Is a directory: '/tmp/pytest-of-ioannis/pytest-893/test_paramnames_do_not_make_nu0/posterior.0.txt'
+
+/usr/lib/python3.12/pathlib.py:1015: IsADirectoryError
+________________ test_progress_file_alone_is_not_posterior_data ________________
+
+tmp_path = PosixPath('/tmp/pytest-of-ioannis/pytest-893/test_progress_file_alone_is_no0')
+
+    def test_progress_file_alone_is_not_posterior_data(tmp_path):
+        prefix = tmp_path / "posterior"
+        Path(str(prefix) + ".progress.txt").write_text(
+            "# weight minuslogpost mnu\n999 8 123\n"
+        )
+>       with pytest.raises(FileNotFoundError, match="chain"):
+E       Failed: DID NOT RAISE <class 'FileNotFoundError'>
+
+tests/test_chain_file_selection.py:44: Failed
+=========================== short test summary info ============================
+FAILED tests/test_chain_file_selection.py::test_chain_readout_ignores_non_chain_candidates[progress-.txt]
+FAILED tests/test_chain_file_selection.py::test_chain_readout_ignores_non_chain_candidates[progress-.1.txt]
+FAILED tests/test_chain_file_selection.py::test_chain_readout_ignores_non_chain_candidates[progress-.2.txt]
+FAILED tests/test_chain_file_selection.py::test_chain_readout_ignores_non_chain_candidates[directory-.txt]
+FAILED tests/test_chain_file_selection.py::test_chain_readout_ignores_non_chain_candidates[directory-.1.txt]
+FAILED tests/test_chain_file_selection.py::test_chain_readout_ignores_non_chain_candidates[directory-.2.txt]
+FAILED tests/test_chain_file_selection.py::test_paramnames_do_not_make_numeric_directory_a_chain
+FAILED tests/test_chain_file_selection.py::test_progress_file_alone_is_not_posterior_data
+8 failed, 1 passed in 2.79s

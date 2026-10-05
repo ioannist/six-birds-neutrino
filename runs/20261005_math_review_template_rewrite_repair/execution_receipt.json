@@ -1,0 +1,30 @@
+{
+  "utc": "2026-10-05T08:50:29.126926+00:00",
+  "before_regressions": {
+    "managed_session": 34472,
+    "actual_terminal_exit_code": 1,
+    "failed": 6,
+    "passed": 2
+  },
+  "targeted_after_repair": {
+    "managed_session": 66831,
+    "actual_terminal_exit_code": 0,
+    "passed": 9,
+    "deselected": 100
+  },
+  "full_Python_suite": {
+    "managed_session": 28052,
+    "actual_terminal_exit_code": 0,
+    "passed": 244,
+    "seconds": 6.05
+  },
+  "distinct_self_review_first_direct_exit_code": 1,
+  "distinct_self_review_v2_direct_exit_code": 0,
+  "all_verification_workers_terminal": true,
+  "current_source_sha256": "8fe663a232f8799ba9849d7682c926d358d6e6473a3e4cd5a6450cb2c166410c",
+  "regression_tests_sha256": "4b8f50797b39403839e8a6385c4f3c48da334317e699d0664bb299dc7b932f50",
+  "full_suite_output_observed_directly": true,
+  "Lean_sources_changed": false,
+  "paper_modified": false,
+  "samplers_restarted": false
+}

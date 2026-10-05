@@ -1,0 +1,1383 @@
+{
+  "utc": "2026-10-05T07:56:06.816931+00:00",
+  "records": [
+    {
+      "seed": 1201,
+      "pid": 719894,
+      "process_start_ticks": 335229443,
+      "status": "terminal_exit_reason_unavailable_preserved",
+      "terminal_receipt": "runs/20261005_math_review_CLASS_unavailable_terminal_preservation/seed1201/terminal_receipt.json",
+      "terminal_receipt_sha256": "7e59519f1038342187fc649e2f2db72c9983612813bf1b77ca1af4f4f3d0b21f",
+      "identity_observation": {
+        "pid": 719894,
+        "expected_start_ticks": 335229443,
+        "status": "PID_not_present",
+        "original_identity_absent": true
+      },
+      "exit_code": null,
+      "retained_represented_steps": 1664,
+      "posterior_qualified": false,
+      "native_error_is_posterior_rejection": false
+    },
+    {
+      "seed": 1301,
+      "pid": 313611,
+      "process_start_ticks": 335535531,
+      "status": "terminal_exit_reason_unavailable_preserved",
+      "terminal_receipt": "runs/20261005_math_review_CLASS_unavailable_terminal_preservation/seed1301/terminal_receipt.json",
+      "terminal_receipt_sha256": "e94b271b7406c6b94fbfbff37646210f01703f717a35d724fa21b9d7a88fd0d6",
+      "identity_observation": {
+        "pid": 313611,
+        "expected_start_ticks": 335535531,
+        "status": "PID_not_present",
+        "original_identity_absent": true
+      },
+      "exit_code": null,
+      "retained_represented_steps": 7236,
+      "posterior_qualified": false,
+      "native_error_is_posterior_rejection": false
+    },
+    {
+      "seed": 1302,
+      "pid": 314539,
+      "process_start_ticks": 335535649,
+      "status": "terminal_exit_reason_unavailable_preserved",
+      "terminal_receipt": "runs/20261005_math_review_CLASS_additional_unavailable_terminal_preservation/seed1302/terminal_receipt.json",
+      "terminal_receipt_sha256": "ce35978d8fa3040b1d3774ad659e217a6f7b6e073216ad8b68481efd2bec3768",
+      "identity_observation": {
+        "pid": 314539,
+        "expected_start_ticks": 335535649,
+        "status": "PID_not_present",
+        "original_identity_absent": true
+      },
+      "exit_code": null,
+      "retained_represented_steps": 8156,
+      "posterior_qualified": false,
+      "native_error_is_posterior_rejection": false
+    },
+    {
+      "seed": 1303,
+      "pid": 315724,
+      "process_start_ticks": 335535765,
+      "status": "terminal_exit_reason_unavailable_preserved",
+      "terminal_receipt": "runs/20261005_math_review_CLASS_additional_unavailable_terminal_preservation/seed1303/terminal_receipt.json",
+      "terminal_receipt_sha256": "492f7875a26467c7cd5dd75c09067887dabd37a3624544f1d684df485d2bc9e9",
+      "identity_observation": {
+        "pid": 315724,
+        "expected_start_ticks": 335535765,
+        "status": "PID_not_present",
+        "original_identity_absent": true
+      },
+      "exit_code": null,
+      "retained_represented_steps": 7683,
+      "posterior_qualified": false,
+      "native_error_is_posterior_rejection": false
+    },
+    {
+      "seed": 1304,
+      "pid": 316758,
+      "process_start_ticks": 335535882,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_class_backend_transition/launch_guarded_replica.py 1304 ",
+      "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+      "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+      "status": "live_same_owned_native_identity",
+      "retained_represented_steps": 8795,
+      "group": null,
+      "posterior_qualified": false
+    },
+    {
+      "seed": 1305,
+      "pid": 317618,
+      "process_start_ticks": 335535999,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_class_backend_transition/launch_guarded_replica.py 1305 ",
+      "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+      "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+      "status": "live_same_owned_native_identity",
+      "retained_represented_steps": 8043,
+      "group": null,
+      "posterior_qualified": false
+    },
+    {
+      "seed": 1306,
+      "pid": 318458,
+      "process_start_ticks": 335536116,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_class_backend_transition/launch_guarded_replica.py 1306 ",
+      "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+      "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+      "status": "live_same_owned_native_identity",
+      "retained_represented_steps": 8008,
+      "group": null,
+      "posterior_qualified": false
+    },
+    {
+      "seed": 1307,
+      "pid": 319462,
+      "process_start_ticks": 335536235,
+      "status": "terminal_exit_reason_unavailable_preserved",
+      "terminal_receipt": "runs/20261005_math_review_CLASS_additional_unavailable_terminal_preservation/seed1307/terminal_receipt.json",
+      "terminal_receipt_sha256": "b53bdfac4b8955cb796a99e15e79a9ed1f705822a8efade24ccb6a3c7dc14139",
+      "identity_observation": {
+        "pid": 319462,
+        "expected_start_ticks": 335536235,
+        "status": "PID_not_present",
+        "original_identity_absent": true
+      },
+      "exit_code": null,
+      "retained_represented_steps": 7145,
+      "posterior_qualified": false,
+      "native_error_is_posterior_rejection": false
+    },
+    {
+      "seed": 1308,
+      "pid": 320418,
+      "process_start_ticks": 335536353,
+      "status": "terminal_exit_reason_unavailable_preserved",
+      "terminal_receipt": "runs/20261005_math_review_CLASS_additional_unavailable_terminal_preservation/seed1308/terminal_receipt.json",
+      "terminal_receipt_sha256": "d4ef553bbc5368c56b08b89ab8d401f3e1188fb75e82fe6d228733fc02e394ac",
+      "identity_observation": {
+        "pid": 320418,
+        "expected_start_ticks": 335536353,
+        "status": "PID_not_present",
+        "original_identity_absent": true
+      },
+      "exit_code": null,
+      "retained_represented_steps": 6992,
+      "posterior_qualified": false,
+      "native_error_is_posterior_rejection": false
+    },
+    {
+      "seed": 1401,
+      "pid": 465459,
+      "process_start_ticks": 335552436,
+      "status": "terminal_exit_reason_unavailable_preserved",
+      "terminal_receipt": "runs/20261005_math_review_CLASS_additional_unavailable_terminal_preservation/seed1401/terminal_receipt.json",
+      "terminal_receipt_sha256": "dafb78d1f53a5245625267ad0afb8cc73540b680944eeb3d69e2de72c3e50264",
+      "identity_observation": {
+        "pid": 465459,
+        "expected_start_ticks": 335552436,
+        "status": "PID_not_present",
+        "original_identity_absent": true
+      },
+      "exit_code": null,
+      "retained_represented_steps": 2386,
+      "posterior_qualified": false,
+      "native_error_is_posterior_rejection": false
+    },
+    {
+      "seed": 1402,
+      "pid": 466588,
+      "process_start_ticks": 335552554,
+      "status": "terminal_exit_reason_unavailable_preserved",
+      "terminal_receipt": "runs/20261005_math_review_CLASS_additional_unavailable_terminal_preservation/seed1402/terminal_receipt.json",
+      "terminal_receipt_sha256": "3a86af90c373a1ba2c1b7e28935532d71bf562ba8d6ab82ca03902da58694520",
+      "identity_observation": {
+        "pid": 466588,
+        "expected_start_ticks": 335552554,
+        "status": "PID_not_present",
+        "original_identity_absent": true
+      },
+      "exit_code": null,
+      "retained_represented_steps": 2423,
+      "posterior_qualified": false,
+      "native_error_is_posterior_rejection": false
+    },
+    {
+      "seed": 1403,
+      "pid": 467452,
+      "process_start_ticks": 335552671,
+      "status": "terminal_exit_reason_unavailable_preserved",
+      "terminal_receipt": "runs/20261005_math_review_CLASS_additional_unavailable_terminal_preservation/seed1403/terminal_receipt.json",
+      "terminal_receipt_sha256": "eb77f595182873a4cb4ffb2c93cb25478690b0adce3be56ba8e4b5e092b4ff55",
+      "identity_observation": {
+        "pid": 467452,
+        "expected_start_ticks": 335552671,
+        "status": "PID_not_present",
+        "original_identity_absent": true
+      },
+      "exit_code": null,
+      "retained_represented_steps": 1894,
+      "posterior_qualified": false,
+      "native_error_is_posterior_rejection": false
+    },
+    {
+      "seed": 1404,
+      "pid": 468270,
+      "process_start_ticks": 335552790,
+      "status": "terminal_exit_reason_unavailable_preserved",
+      "terminal_receipt": "runs/20261005_math_review_CLASS_additional_unavailable_terminal_preservation/seed1404/terminal_receipt.json",
+      "terminal_receipt_sha256": "065056f0fe2b6163dafb6df3a43d6f8fe54d61a287c877d5fc9230c1921a1e89",
+      "identity_observation": {
+        "pid": 468270,
+        "expected_start_ticks": 335552790,
+        "status": "PID_not_present",
+        "original_identity_absent": true
+      },
+      "exit_code": null,
+      "retained_represented_steps": 1658,
+      "posterior_qualified": false,
+      "native_error_is_posterior_rejection": false
+    },
+    {
+      "seed": 1405,
+      "pid": 468765,
+      "process_start_ticks": 335552907,
+      "status": "terminal_exit_reason_unavailable_preserved",
+      "terminal_receipt": "runs/20261005_math_review_CLASS_additional_unavailable_terminal_preservation/seed1405/terminal_receipt.json",
+      "terminal_receipt_sha256": "1bafc59869704df930ce80f160258f4f8c59d0bf67b544154bdf43b4f7d37e38",
+      "identity_observation": {
+        "pid": 468765,
+        "expected_start_ticks": 335552907,
+        "status": "PID_not_present",
+        "original_identity_absent": true
+      },
+      "exit_code": null,
+      "retained_represented_steps": 1280,
+      "posterior_qualified": false,
+      "native_error_is_posterior_rejection": false
+    },
+    {
+      "seed": 1406,
+      "pid": 469224,
+      "process_start_ticks": 335553025,
+      "status": "terminal_exit_reason_unavailable_preserved",
+      "terminal_receipt": "runs/20261005_math_review_CLASS_B_activation_unavailable_preservation/seed1406/terminal_receipt.json",
+      "terminal_receipt_sha256": "ea727c47b2e6baa82a3bede40ff661965fcea5115acb082eee7c9b1f2f59fdc2",
+      "identity_observation": {
+        "pid": 469224,
+        "expected_start_ticks": 335553025,
+        "status": "PID_not_present",
+        "original_identity_absent": true
+      },
+      "exit_code": null,
+      "retained_represented_steps": 1888,
+      "posterior_qualified": false,
+      "native_error_is_posterior_rejection": false
+    },
+    {
+      "seed": 1407,
+      "pid": 505961,
+      "process_start_ticks": 335556803,
+      "status": "terminal_exit_reason_unavailable_preserved",
+      "terminal_receipt": "runs/20261005_math_review_CLASS_B_activation_unavailable_preservation/seed1407/terminal_receipt.json",
+      "terminal_receipt_sha256": "8d7ce214607796b0a020191bf5c1f54a2041ec06bfd4e08e49ce0dd38313a6ee",
+      "identity_observation": {
+        "pid": 505961,
+        "expected_start_ticks": 335556803,
+        "status": "PID_not_present",
+        "original_identity_absent": true
+      },
+      "exit_code": null,
+      "retained_represented_steps": 1843,
+      "posterior_qualified": false,
+      "native_error_is_posterior_rejection": false
+    },
+    {
+      "seed": 1501,
+      "pid": 3629578,
+      "process_start_ticks": 337435709,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_guarded_grid12_trial_B_seed1501/launch_trial.py ",
+      "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+      "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+      "status": "live_same_owned_native_identity",
+      "retained_represented_steps": 1005,
+      "group": null,
+      "posterior_qualified": false
+    },
+    {
+      "seed": 1502,
+      "pid": 2507510,
+      "process_start_ticks": 337604850,
+      "status": "terminal_exit_reason_unavailable_preserved",
+      "terminal_receipt": "runs/20261005_math_review_CLASS_B_activation_unavailable_preservation/seed1502/terminal_receipt.json",
+      "terminal_receipt_sha256": "ebb9da4600c273fe7b9d1e244425c2d5f301a6e261568b1362c8e49860da5dfa",
+      "identity_observation": {
+        "pid": 2507510,
+        "expected_start_ticks": 337604850,
+        "status": "PID_not_present",
+        "original_identity_absent": true
+      },
+      "exit_code": null,
+      "retained_represented_steps": 855,
+      "posterior_qualified": false,
+      "native_error_is_posterior_rejection": false
+    },
+    {
+      "seed": 1503,
+      "pid": 2507547,
+      "process_start_ticks": 337604851,
+      "status": "terminal_exit_reason_unavailable_preserved",
+      "terminal_receipt": "runs/20261005_math_review_CLASS_grid12_1503_unavailable_preservation/seed1503/terminal_receipt.json",
+      "terminal_receipt_sha256": "268cfa0944607b98fe274e5eb032e84e5eb1f3344e4dde2d6986b2db35b746e5",
+      "identity_observation": {
+        "pid": 2507547,
+        "expected_start_ticks": 337604851,
+        "status": "PID_not_present",
+        "original_identity_absent": true
+      },
+      "exit_code": null,
+      "retained_represented_steps": 940,
+      "posterior_qualified": false,
+      "native_error_is_posterior_rejection": false
+    },
+    {
+      "seed": 1504,
+      "pid": 2507556,
+      "process_start_ticks": 337604852,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_guarded_grid12_trial_B_seed1504/launch_trial.py ",
+      "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+      "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+      "status": "live_same_owned_native_identity",
+      "retained_represented_steps": 1010,
+      "group": null,
+      "posterior_qualified": false
+    },
+    {
+      "seed": 1701,
+      "pid": 1417237,
+      "process_start_ticks": 339785278,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_fresh_CAMB_posterior_preparation/launch_chain.py 1701 ",
+      "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_spt_archived_solver_control_20261004/packages/camb/camblib.so",
+      "module_sha256": "6a54f98bcc65601fd1ad5e760a99a0072cdc45fe49197ba5c3a1282889c2ee0d",
+      "status": "live_same_owned_native_identity",
+      "retained_represented_steps": 8547,
+      "group": "old_A3200",
+      "posterior_qualified": false
+    },
+    {
+      "seed": 1702,
+      "pid": 1418924,
+      "process_start_ticks": 339785397,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_fresh_CAMB_posterior_preparation/launch_chain.py 1702 ",
+      "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_spt_archived_solver_control_20261004/packages/camb/camblib.so",
+      "module_sha256": "6a54f98bcc65601fd1ad5e760a99a0072cdc45fe49197ba5c3a1282889c2ee0d",
+      "status": "live_same_owned_native_identity",
+      "retained_represented_steps": 8676,
+      "group": "old_A3200",
+      "posterior_qualified": false
+    },
+    {
+      "seed": 1703,
+      "pid": 1421015,
+      "process_start_ticks": 339785515,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_fresh_CAMB_posterior_preparation/launch_chain.py 1703 ",
+      "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_spt_archived_solver_control_20261004/packages/camb/camblib.so",
+      "module_sha256": "6a54f98bcc65601fd1ad5e760a99a0072cdc45fe49197ba5c3a1282889c2ee0d",
+      "status": "live_same_owned_native_identity",
+      "retained_represented_steps": 8828,
+      "group": "old_A3200",
+      "posterior_qualified": false
+    },
+    {
+      "seed": 1704,
+      "pid": 1423273,
+      "process_start_ticks": 339785635,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_fresh_CAMB_posterior_preparation/launch_chain.py 1704 ",
+      "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_spt_archived_solver_control_20261004/packages/camb/camblib.so",
+      "module_sha256": "6a54f98bcc65601fd1ad5e760a99a0072cdc45fe49197ba5c3a1282889c2ee0d",
+      "status": "live_same_owned_native_identity",
+      "retained_represented_steps": 8540,
+      "group": "old_A3200",
+      "posterior_qualified": false
+    },
+    {
+      "seed": 1705,
+      "pid": 1425798,
+      "process_start_ticks": 339785753,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_fresh_CAMB_posterior_preparation/launch_chain.py 1705 ",
+      "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_spt_archived_solver_control_20261004/packages/camb/camblib.so",
+      "module_sha256": "6a54f98bcc65601fd1ad5e760a99a0072cdc45fe49197ba5c3a1282889c2ee0d",
+      "status": "live_same_owned_native_identity",
+      "retained_represented_steps": 8053,
+      "group": "old_B4095",
+      "posterior_qualified": false
+    },
+    {
+      "seed": 1706,
+      "pid": 1428112,
+      "process_start_ticks": 339785871,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_fresh_CAMB_posterior_preparation/launch_chain.py 1706 ",
+      "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_spt_archived_solver_control_20261004/packages/camb/camblib.so",
+      "module_sha256": "6a54f98bcc65601fd1ad5e760a99a0072cdc45fe49197ba5c3a1282889c2ee0d",
+      "status": "live_same_owned_native_identity",
+      "retained_represented_steps": 8180,
+      "group": "old_B4095",
+      "posterior_qualified": false
+    },
+    {
+      "seed": 1707,
+      "pid": 1430595,
+      "process_start_ticks": 339785989,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_fresh_CAMB_posterior_preparation/launch_chain.py 1707 ",
+      "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_spt_archived_solver_control_20261004/packages/camb/camblib.so",
+      "module_sha256": "6a54f98bcc65601fd1ad5e760a99a0072cdc45fe49197ba5c3a1282889c2ee0d",
+      "status": "live_same_owned_native_identity",
+      "retained_represented_steps": 8265,
+      "group": "old_B4095",
+      "posterior_qualified": false
+    },
+    {
+      "seed": 1708,
+      "pid": 1432802,
+      "process_start_ticks": 339786108,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_fresh_CAMB_posterior_preparation/launch_chain.py 1708 ",
+      "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_spt_archived_solver_control_20261004/packages/camb/camblib.so",
+      "module_sha256": "6a54f98bcc65601fd1ad5e760a99a0072cdc45fe49197ba5c3a1282889c2ee0d",
+      "status": "live_same_owned_native_identity",
+      "retained_represented_steps": 8399,
+      "group": "old_B4095",
+      "posterior_qualified": false
+    },
+    {
+      "seed": 1801,
+      "pid": 1435115,
+      "process_start_ticks": 339786228,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_fresh_CAMB_posterior_preparation/launch_chain.py 1801 ",
+      "module": "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/camb/camblib.so",
+      "module_sha256": "306640a8948cd5246fc9b21e76525f6adebdff5ba3bc792a57d50bba67225ad5",
+      "status": "live_same_owned_native_identity",
+      "retained_represented_steps": 7273,
+      "group": "current_A4095",
+      "posterior_qualified": false
+    },
+    {
+      "seed": 1802,
+      "pid": 1437281,
+      "process_start_ticks": 339786346,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_fresh_CAMB_posterior_preparation/launch_chain.py 1802 ",
+      "module": "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/camb/camblib.so",
+      "module_sha256": "306640a8948cd5246fc9b21e76525f6adebdff5ba3bc792a57d50bba67225ad5",
+      "status": "live_same_owned_native_identity",
+      "retained_represented_steps": 6970,
+      "group": "current_A4095",
+      "posterior_qualified": false
+    },
+    {
+      "seed": 1803,
+      "pid": 1439337,
+      "process_start_ticks": 339786464,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_fresh_CAMB_posterior_preparation/launch_chain.py 1803 ",
+      "module": "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/camb/camblib.so",
+      "module_sha256": "306640a8948cd5246fc9b21e76525f6adebdff5ba3bc792a57d50bba67225ad5",
+      "status": "live_same_owned_native_identity",
+      "retained_represented_steps": 7287,
+      "group": "current_A4095",
+      "posterior_qualified": false
+    },
+    {
+      "seed": 1804,
+      "pid": 1441355,
+      "process_start_ticks": 339786583,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_fresh_CAMB_posterior_preparation/launch_chain.py 1804 ",
+      "module": "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/camb/camblib.so",
+      "module_sha256": "306640a8948cd5246fc9b21e76525f6adebdff5ba3bc792a57d50bba67225ad5",
+      "status": "live_same_owned_native_identity",
+      "retained_represented_steps": 7348,
+      "group": "current_A4095",
+      "posterior_qualified": false
+    },
+    {
+      "seed": 1805,
+      "pid": 1443084,
+      "process_start_ticks": 339786703,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_fresh_CAMB_posterior_preparation/launch_chain.py 1805 ",
+      "module": "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/camb/camblib.so",
+      "module_sha256": "306640a8948cd5246fc9b21e76525f6adebdff5ba3bc792a57d50bba67225ad5",
+      "status": "live_same_owned_native_identity",
+      "retained_represented_steps": 7060,
+      "group": "current_B4095",
+      "posterior_qualified": false
+    },
+    {
+      "seed": 1806,
+      "pid": 1444746,
+      "process_start_ticks": 339786823,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_fresh_CAMB_posterior_preparation/launch_chain.py 1806 ",
+      "module": "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/camb/camblib.so",
+      "module_sha256": "306640a8948cd5246fc9b21e76525f6adebdff5ba3bc792a57d50bba67225ad5",
+      "status": "live_same_owned_native_identity",
+      "retained_represented_steps": 7035,
+      "group": "current_B4095",
+      "posterior_qualified": false
+    },
+    {
+      "seed": 1807,
+      "pid": 1446752,
+      "process_start_ticks": 339786941,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_fresh_CAMB_posterior_preparation/launch_chain.py 1807 ",
+      "module": "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/camb/camblib.so",
+      "module_sha256": "306640a8948cd5246fc9b21e76525f6adebdff5ba3bc792a57d50bba67225ad5",
+      "status": "live_same_owned_native_identity",
+      "retained_represented_steps": 6769,
+      "group": "current_B4095",
+      "posterior_qualified": false
+    },
+    {
+      "seed": 1808,
+      "pid": 1448743,
+      "process_start_ticks": 339787061,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_fresh_CAMB_posterior_preparation/launch_chain.py 1808 ",
+      "module": "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/camb/camblib.so",
+      "module_sha256": "306640a8948cd5246fc9b21e76525f6adebdff5ba3bc792a57d50bba67225ad5",
+      "status": "live_same_owned_native_identity",
+      "retained_represented_steps": 6907,
+      "group": "current_B4095",
+      "posterior_qualified": false
+    },
+    {
+      "seed": 1901,
+      "pid": 1450868,
+      "process_start_ticks": 339787178,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_fresh_CAMB_posterior_preparation/launch_chain.py 1901 ",
+      "module": "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/camb/camblib.so",
+      "module_sha256": "306640a8948cd5246fc9b21e76525f6adebdff5ba3bc792a57d50bba67225ad5",
+      "status": "live_same_owned_native_identity",
+      "retained_represented_steps": 9405,
+      "group": "current_A3200",
+      "posterior_qualified": false
+    },
+    {
+      "seed": 1902,
+      "pid": 1453557,
+      "process_start_ticks": 339787295,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_fresh_CAMB_posterior_preparation/launch_chain.py 1902 ",
+      "module": "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/camb/camblib.so",
+      "module_sha256": "306640a8948cd5246fc9b21e76525f6adebdff5ba3bc792a57d50bba67225ad5",
+      "status": "live_same_owned_native_identity",
+      "retained_represented_steps": 9450,
+      "group": "current_A3200",
+      "posterior_qualified": false
+    },
+    {
+      "seed": 1903,
+      "pid": 1456622,
+      "process_start_ticks": 339787413,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_fresh_CAMB_posterior_preparation/launch_chain.py 1903 ",
+      "module": "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/camb/camblib.so",
+      "module_sha256": "306640a8948cd5246fc9b21e76525f6adebdff5ba3bc792a57d50bba67225ad5",
+      "status": "live_same_owned_native_identity",
+      "retained_represented_steps": 9664,
+      "group": "current_A3200",
+      "posterior_qualified": false
+    },
+    {
+      "seed": 1904,
+      "pid": 1459553,
+      "process_start_ticks": 339787531,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_fresh_CAMB_posterior_preparation/launch_chain.py 1904 ",
+      "module": "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/camb/camblib.so",
+      "module_sha256": "306640a8948cd5246fc9b21e76525f6adebdff5ba3bc792a57d50bba67225ad5",
+      "status": "live_same_owned_native_identity",
+      "retained_represented_steps": 9391,
+      "group": "current_A3200",
+      "posterior_qualified": false
+    },
+    {
+      "seed": 2001,
+      "pid": 1872468,
+      "process_start_ticks": 342080964,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_upper_prior_posterior_preparation/launch_chain.py 2001 ",
+      "module": "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/camb/camblib.so",
+      "module_sha256": "306640a8948cd5246fc9b21e76525f6adebdff5ba3bc792a57d50bba67225ad5",
+      "status": "live_same_owned_native_identity",
+      "retained_represented_steps": 4008,
+      "group": "upper20_A4095",
+      "posterior_qualified": false
+    },
+    {
+      "seed": 2002,
+      "pid": 1873756,
+      "process_start_ticks": 342081084,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_upper_prior_posterior_preparation/launch_chain.py 2002 ",
+      "module": "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/camb/camblib.so",
+      "module_sha256": "306640a8948cd5246fc9b21e76525f6adebdff5ba3bc792a57d50bba67225ad5",
+      "status": "live_same_owned_native_identity",
+      "retained_represented_steps": 4172,
+      "group": "upper20_A4095",
+      "posterior_qualified": false
+    },
+    {
+      "seed": 2003,
+      "pid": 1875042,
+      "process_start_ticks": 342081202,
+      "status": "terminal_native_failure_preserved",
+      "terminal_receipt": "runs/20261004_math_review_upper_prior_seed2003_native_failure_v2/terminal_receipt.json",
+      "terminal_receipt_sha256": "a08c9435e740684e57926a56a4105a4e77f233c5c3a803b2a3886f6c7dd02900",
+      "identity_observation": {
+        "pid": 1875042,
+        "expected_start_ticks": 342081202,
+        "status": "PID_not_present",
+        "original_identity_absent": true
+      },
+      "exit_code": 1,
+      "retained_represented_steps": 349,
+      "posterior_qualified": false,
+      "native_error_is_posterior_rejection": false
+    },
+    {
+      "seed": 2004,
+      "pid": 1876328,
+      "process_start_ticks": 342081320,
+      "status": "terminal_native_failure_preserved",
+      "terminal_receipt": "runs/20261004_math_review_upper_prior_seed2004_native_failure/terminal_receipt.json",
+      "terminal_receipt_sha256": "8a3b35ae7d3ad47469b603c6be6fdcbd9944d10e5f5e64ca331edf1e383f82c1",
+      "identity_observation": {
+        "pid": 1876328,
+        "expected_start_ticks": 342081320,
+        "status": "PID_not_present",
+        "original_identity_absent": true
+      },
+      "exit_code": 1,
+      "retained_represented_steps": 534,
+      "posterior_qualified": false,
+      "native_error_is_posterior_rejection": false
+    },
+    {
+      "seed": 2005,
+      "pid": 1878127,
+      "process_start_ticks": 342081440,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_upper_prior_posterior_preparation/launch_chain.py 2005 ",
+      "module": "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/camb/camblib.so",
+      "module_sha256": "306640a8948cd5246fc9b21e76525f6adebdff5ba3bc792a57d50bba67225ad5",
+      "status": "live_same_owned_native_identity",
+      "retained_represented_steps": 3890,
+      "group": "upper20_B4095",
+      "posterior_qualified": false
+    },
+    {
+      "seed": 2006,
+      "pid": 1879439,
+      "process_start_ticks": 342081560,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_upper_prior_posterior_preparation/launch_chain.py 2006 ",
+      "module": "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/camb/camblib.so",
+      "module_sha256": "306640a8948cd5246fc9b21e76525f6adebdff5ba3bc792a57d50bba67225ad5",
+      "status": "live_same_owned_native_identity",
+      "retained_represented_steps": 4000,
+      "group": "upper20_B4095",
+      "posterior_qualified": false
+    },
+    {
+      "seed": 2007,
+      "pid": 1880745,
+      "process_start_ticks": 342081679,
+      "status": "terminal_native_failure_preserved",
+      "terminal_receipt": "runs/20261004_math_review_upper_prior_B_terminal_failure_preservation/seed2007/terminal_receipt.json",
+      "terminal_receipt_sha256": "3a2edd06ec5b3b9ed7d057d2918c342fba11ce647dcc644079541d82f70de226",
+      "identity_observation": {
+        "pid": 1880745,
+        "expected_start_ticks": 342081679,
+        "status": "PID_not_present",
+        "original_identity_absent": true
+      },
+      "exit_code": 1,
+      "retained_represented_steps": 624,
+      "posterior_qualified": false,
+      "native_error_is_posterior_rejection": false
+    },
+    {
+      "seed": 2008,
+      "pid": 1882035,
+      "process_start_ticks": 342081799,
+      "status": "terminal_native_failure_preserved",
+      "terminal_receipt": "runs/20261004_math_review_upper_prior_B_terminal_failure_preservation/seed2008/terminal_receipt.json",
+      "terminal_receipt_sha256": "51ab16b1a9456c050b46980f4029ef781bab743a1030ccf19e1a34d47f78c3f0",
+      "identity_observation": {
+        "pid": 1882035,
+        "expected_start_ticks": 342081799,
+        "status": "PID_not_present",
+        "original_identity_absent": true
+      },
+      "exit_code": 1,
+      "retained_represented_steps": 612,
+      "posterior_qualified": false,
+      "native_error_is_posterior_rejection": false
+    },
+    {
+      "seed": 2101,
+      "pid": 2733663,
+      "process_start_ticks": 343920653,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261005_math_review_sigma_time_v3_posterior_preparation_v2/launch_chain.py 2101 ",
+      "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_sigma_time_v3_packaged_20261005/camb-2.0.4/camb/camblib.so",
+      "module_sha256": "85a091c53d9c81ee6443a1a4492ee45a35b487f7d360dfd6df190b9e3856cfc6",
+      "status": "live_same_owned_native_identity",
+      "retained_represented_steps": 1626,
+      "group": "sigma_time_v3_A4095_cap5",
+      "posterior_qualified": false
+    },
+    {
+      "seed": 2102,
+      "pid": 2735174,
+      "process_start_ticks": 343920773,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261005_math_review_sigma_time_v3_posterior_preparation_v2/launch_chain.py 2102 ",
+      "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_sigma_time_v3_packaged_20261005/camb-2.0.4/camb/camblib.so",
+      "module_sha256": "85a091c53d9c81ee6443a1a4492ee45a35b487f7d360dfd6df190b9e3856cfc6",
+      "status": "live_same_owned_native_identity",
+      "retained_represented_steps": 1645,
+      "group": "sigma_time_v3_A4095_cap5",
+      "posterior_qualified": false
+    },
+    {
+      "seed": 2103,
+      "pid": 2736613,
+      "process_start_ticks": 343920891,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261005_math_review_sigma_time_v3_posterior_preparation_v2/launch_chain.py 2103 ",
+      "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_sigma_time_v3_packaged_20261005/camb-2.0.4/camb/camblib.so",
+      "module_sha256": "85a091c53d9c81ee6443a1a4492ee45a35b487f7d360dfd6df190b9e3856cfc6",
+      "status": "live_same_owned_native_identity",
+      "retained_represented_steps": 1832,
+      "group": "sigma_time_v3_A4095_cap5",
+      "posterior_qualified": false
+    },
+    {
+      "seed": 2104,
+      "pid": 2737830,
+      "process_start_ticks": 343921011,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261005_math_review_sigma_time_v3_posterior_preparation_v2/launch_chain.py 2104 ",
+      "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_sigma_time_v3_packaged_20261005/camb-2.0.4/camb/camblib.so",
+      "module_sha256": "85a091c53d9c81ee6443a1a4492ee45a35b487f7d360dfd6df190b9e3856cfc6",
+      "status": "live_same_owned_native_identity",
+      "retained_represented_steps": 1825,
+      "group": "sigma_time_v3_A4095_cap5",
+      "posterior_qualified": false
+    },
+    {
+      "seed": 2105,
+      "pid": 2739401,
+      "process_start_ticks": 343921129,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261005_math_review_sigma_time_v3_posterior_preparation_v2/launch_chain.py 2105 ",
+      "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_sigma_time_v3_packaged_20261005/camb-2.0.4/camb/camblib.so",
+      "module_sha256": "85a091c53d9c81ee6443a1a4492ee45a35b487f7d360dfd6df190b9e3856cfc6",
+      "status": "live_same_owned_native_identity",
+      "retained_represented_steps": 1738,
+      "group": "sigma_time_v3_A4095_cap20",
+      "posterior_qualified": false
+    },
+    {
+      "seed": 2106,
+      "pid": 2740620,
+      "process_start_ticks": 343921249,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261005_math_review_sigma_time_v3_posterior_preparation_v2/launch_chain.py 2106 ",
+      "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_sigma_time_v3_packaged_20261005/camb-2.0.4/camb/camblib.so",
+      "module_sha256": "85a091c53d9c81ee6443a1a4492ee45a35b487f7d360dfd6df190b9e3856cfc6",
+      "status": "live_same_owned_native_identity",
+      "retained_represented_steps": 1623,
+      "group": "sigma_time_v3_A4095_cap20",
+      "posterior_qualified": false
+    },
+    {
+      "seed": 2107,
+      "pid": 2741846,
+      "process_start_ticks": 343921368,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261005_math_review_sigma_time_v3_posterior_preparation_v2/launch_chain.py 2107 ",
+      "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_sigma_time_v3_packaged_20261005/camb-2.0.4/camb/camblib.so",
+      "module_sha256": "85a091c53d9c81ee6443a1a4492ee45a35b487f7d360dfd6df190b9e3856cfc6",
+      "status": "live_same_owned_native_identity",
+      "retained_represented_steps": 1401,
+      "group": "sigma_time_v3_A4095_cap20",
+      "posterior_qualified": false
+    },
+    {
+      "seed": 2108,
+      "pid": 2743449,
+      "process_start_ticks": 343921486,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261005_math_review_sigma_time_v3_posterior_preparation_v2/launch_chain.py 2108 ",
+      "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_sigma_time_v3_packaged_20261005/camb-2.0.4/camb/camblib.so",
+      "module_sha256": "85a091c53d9c81ee6443a1a4492ee45a35b487f7d360dfd6df190b9e3856cfc6",
+      "status": "live_same_owned_native_identity",
+      "retained_represented_steps": 3291,
+      "group": "sigma_time_v3_A4095_cap20",
+      "posterior_qualified": false
+    },
+    {
+      "seed": 2109,
+      "pid": 2744840,
+      "process_start_ticks": 343921605,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261005_math_review_sigma_time_v3_posterior_preparation_v2/launch_chain.py 2109 ",
+      "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_sigma_time_v3_packaged_20261005/camb-2.0.4/camb/camblib.so",
+      "module_sha256": "85a091c53d9c81ee6443a1a4492ee45a35b487f7d360dfd6df190b9e3856cfc6",
+      "status": "live_same_owned_native_identity",
+      "retained_represented_steps": 1676,
+      "group": "sigma_time_v3_B4095_cap5",
+      "posterior_qualified": false
+    },
+    {
+      "seed": 2110,
+      "pid": 2746141,
+      "process_start_ticks": 343921724,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261005_math_review_sigma_time_v3_posterior_preparation_v2/launch_chain.py 2110 ",
+      "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_sigma_time_v3_packaged_20261005/camb-2.0.4/camb/camblib.so",
+      "module_sha256": "85a091c53d9c81ee6443a1a4492ee45a35b487f7d360dfd6df190b9e3856cfc6",
+      "status": "live_same_owned_native_identity",
+      "retained_represented_steps": 1620,
+      "group": "sigma_time_v3_B4095_cap5",
+      "posterior_qualified": false
+    },
+    {
+      "seed": 2111,
+      "pid": 2747676,
+      "process_start_ticks": 343921843,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261005_math_review_sigma_time_v3_posterior_preparation_v2/launch_chain.py 2111 ",
+      "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_sigma_time_v3_packaged_20261005/camb-2.0.4/camb/camblib.so",
+      "module_sha256": "85a091c53d9c81ee6443a1a4492ee45a35b487f7d360dfd6df190b9e3856cfc6",
+      "status": "live_same_owned_native_identity",
+      "retained_represented_steps": 1749,
+      "group": "sigma_time_v3_B4095_cap5",
+      "posterior_qualified": false
+    },
+    {
+      "seed": 2112,
+      "pid": 2748956,
+      "process_start_ticks": 343921961,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261005_math_review_sigma_time_v3_posterior_preparation_v2/launch_chain.py 2112 ",
+      "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_sigma_time_v3_packaged_20261005/camb-2.0.4/camb/camblib.so",
+      "module_sha256": "85a091c53d9c81ee6443a1a4492ee45a35b487f7d360dfd6df190b9e3856cfc6",
+      "status": "live_same_owned_native_identity",
+      "retained_represented_steps": 1775,
+      "group": "sigma_time_v3_B4095_cap5",
+      "posterior_qualified": false
+    },
+    {
+      "seed": 2113,
+      "pid": 2750825,
+      "process_start_ticks": 343922080,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261005_math_review_sigma_time_v3_posterior_preparation_v2/launch_chain.py 2113 ",
+      "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_sigma_time_v3_packaged_20261005/camb-2.0.4/camb/camblib.so",
+      "module_sha256": "85a091c53d9c81ee6443a1a4492ee45a35b487f7d360dfd6df190b9e3856cfc6",
+      "status": "live_same_owned_native_identity",
+      "retained_represented_steps": 1565,
+      "group": "sigma_time_v3_B4095_cap20",
+      "posterior_qualified": false
+    },
+    {
+      "seed": 2114,
+      "pid": 2752918,
+      "process_start_ticks": 343922199,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261005_math_review_sigma_time_v3_posterior_preparation_v2/launch_chain.py 2114 ",
+      "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_sigma_time_v3_packaged_20261005/camb-2.0.4/camb/camblib.so",
+      "module_sha256": "85a091c53d9c81ee6443a1a4492ee45a35b487f7d360dfd6df190b9e3856cfc6",
+      "status": "live_same_owned_native_identity",
+      "retained_represented_steps": 1621,
+      "group": "sigma_time_v3_B4095_cap20",
+      "posterior_qualified": false
+    },
+    {
+      "seed": 2115,
+      "pid": 2755061,
+      "process_start_ticks": 343922317,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261005_math_review_sigma_time_v3_posterior_preparation_v2/launch_chain.py 2115 ",
+      "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_sigma_time_v3_packaged_20261005/camb-2.0.4/camb/camblib.so",
+      "module_sha256": "85a091c53d9c81ee6443a1a4492ee45a35b487f7d360dfd6df190b9e3856cfc6",
+      "status": "live_same_owned_native_identity",
+      "retained_represented_steps": 1687,
+      "group": "sigma_time_v3_B4095_cap20",
+      "posterior_qualified": false
+    },
+    {
+      "seed": 2116,
+      "pid": 2757291,
+      "process_start_ticks": 343922435,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261005_math_review_sigma_time_v3_posterior_preparation_v2/launch_chain.py 2116 ",
+      "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_sigma_time_v3_packaged_20261005/camb-2.0.4/camb/camblib.so",
+      "module_sha256": "85a091c53d9c81ee6443a1a4492ee45a35b487f7d360dfd6df190b9e3856cfc6",
+      "status": "live_same_owned_native_identity",
+      "retained_represented_steps": 2911,
+      "group": "sigma_time_v3_B4095_cap20",
+      "posterior_qualified": false
+    },
+    {
+      "seed": 2201,
+      "pid": 838300,
+      "process_start_ticks": 344101244,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261005_math_review_CLASS_fresh_recovery_preparation/launch.py 2201 ",
+      "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+      "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+      "status": "live_same_owned_native_identity",
+      "retained_represented_steps": 239,
+      "group": "medium_A",
+      "posterior_qualified": false
+    },
+    {
+      "seed": 2202,
+      "pid": 839310,
+      "process_start_ticks": 344101364,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261005_math_review_CLASS_fresh_recovery_preparation/launch.py 2202 ",
+      "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+      "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+      "status": "live_same_owned_native_identity",
+      "retained_represented_steps": 1147,
+      "group": "quad_A",
+      "posterior_qualified": false
+    },
+    {
+      "seed": 2301,
+      "pid": 82418,
+      "process_start_ticks": 344346811,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261005_math_review_CLASS_recovery_cohort_companions_v3/launch.py 2301 ",
+      "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+      "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+      "status": "live_same_owned_native_identity",
+      "retained_represented_steps": 195,
+      "group": "fresh_recovery_medium_A",
+      "posterior_qualified": false
+    },
+    {
+      "seed": 2302,
+      "pid": 82441,
+      "process_start_ticks": 344346814,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261005_math_review_CLASS_recovery_cohort_companions_v3/launch.py 2302 ",
+      "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+      "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+      "status": "live_same_owned_native_identity",
+      "retained_represented_steps": 194,
+      "group": "fresh_recovery_medium_A",
+      "posterior_qualified": false
+    },
+    {
+      "seed": 2303,
+      "pid": 82458,
+      "process_start_ticks": 344346815,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261005_math_review_CLASS_recovery_cohort_companions_v3/launch.py 2303 ",
+      "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+      "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+      "status": "live_same_owned_native_identity",
+      "retained_represented_steps": 172,
+      "group": "fresh_recovery_medium_A",
+      "posterior_qualified": false
+    },
+    {
+      "seed": 2304,
+      "pid": 82467,
+      "process_start_ticks": 344346816,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261005_math_review_CLASS_recovery_cohort_companions_v3/launch.py 2304 ",
+      "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+      "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+      "status": "live_same_owned_native_identity",
+      "retained_represented_steps": 1056,
+      "group": "fresh_recovery_quad_A",
+      "posterior_qualified": false
+    },
+    {
+      "seed": 2305,
+      "pid": 82480,
+      "process_start_ticks": 344346817,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261005_math_review_CLASS_recovery_cohort_companions_v3/launch.py 2305 ",
+      "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+      "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+      "status": "live_same_owned_native_identity",
+      "retained_represented_steps": 1017,
+      "group": "fresh_recovery_quad_A",
+      "posterior_qualified": false
+    },
+    {
+      "seed": 2306,
+      "pid": 82497,
+      "process_start_ticks": 344346818,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261005_math_review_CLASS_recovery_cohort_companions_v3/launch.py 2306 ",
+      "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+      "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+      "status": "live_same_owned_native_identity",
+      "retained_represented_steps": 1105,
+      "group": "fresh_recovery_quad_A",
+      "posterior_qualified": false
+    },
+    {
+      "seed": 2401,
+      "pid": 277083,
+      "process_start_ticks": 344677406,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261005_math_review_CLASS_fresh_B_preparation/launch.py 2401 ",
+      "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+      "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+      "status": "live_same_owned_native_identity",
+      "retained_represented_steps": 189,
+      "group": "fresh_recovery_medium_B",
+      "posterior_qualified": false
+    },
+    {
+      "seed": 2402,
+      "pid": 278645,
+      "process_start_ticks": 344677524,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261005_math_review_CLASS_fresh_B_preparation/launch.py 2402 ",
+      "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+      "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+      "status": "live_same_owned_native_identity",
+      "retained_represented_steps": 175,
+      "group": "fresh_recovery_medium_B",
+      "posterior_qualified": false
+    },
+    {
+      "seed": 2403,
+      "pid": 280153,
+      "process_start_ticks": 344677643,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261005_math_review_CLASS_fresh_B_preparation/launch.py 2403 ",
+      "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+      "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+      "status": "live_same_owned_native_identity",
+      "retained_represented_steps": 114,
+      "group": "fresh_recovery_medium_B",
+      "posterior_qualified": false
+    },
+    {
+      "seed": 2404,
+      "pid": 281318,
+      "process_start_ticks": 344677764,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261005_math_review_CLASS_fresh_B_preparation/launch.py 2404 ",
+      "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+      "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+      "status": "live_same_owned_native_identity",
+      "retained_represented_steps": 120,
+      "group": "fresh_recovery_medium_B",
+      "posterior_qualified": false
+    },
+    {
+      "seed": 2405,
+      "pid": 282560,
+      "process_start_ticks": 344677883,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261005_math_review_CLASS_fresh_B_preparation/launch.py 2405 ",
+      "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+      "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+      "status": "live_same_owned_native_identity",
+      "retained_represented_steps": 718,
+      "group": "fresh_recovery_quad_B",
+      "posterior_qualified": false
+    },
+    {
+      "seed": 2406,
+      "pid": 283417,
+      "process_start_ticks": 344678003,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261005_math_review_CLASS_fresh_B_preparation/launch.py 2406 ",
+      "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+      "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+      "status": "live_same_owned_native_identity",
+      "retained_represented_steps": 721,
+      "group": "fresh_recovery_quad_B",
+      "posterior_qualified": false
+    },
+    {
+      "seed": 2407,
+      "pid": 284222,
+      "process_start_ticks": 344678121,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261005_math_review_CLASS_fresh_B_preparation/launch.py 2407 ",
+      "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+      "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+      "status": "live_same_owned_native_identity",
+      "retained_represented_steps": 732,
+      "group": "fresh_recovery_quad_B",
+      "posterior_qualified": false
+    },
+    {
+      "seed": 2408,
+      "pid": 285167,
+      "process_start_ticks": 344678240,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261005_math_review_CLASS_fresh_B_preparation/launch.py 2408 ",
+      "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+      "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+      "status": "live_same_owned_native_identity",
+      "retained_represented_steps": 684,
+      "group": "fresh_recovery_quad_B",
+      "posterior_qualified": false
+    }
+  ],
+  "registered_families": 80,
+  "owned_live_samplers": 61,
+  "terminal_families": 19,
+  "growth_by_cohort": {
+    "quad_A": {
+      "seeds": [
+        1301,
+        1302,
+        1303,
+        1304
+      ],
+      "minimum_saved_postburn_history": 7236,
+      "next_assessment_trigger": 7353,
+      "terminal_family_seeds": [
+        1301,
+        1302,
+        1303
+      ],
+      "assessment_eligible": false,
+      "due": false
+    },
+    "quad_B": {
+      "seeds": [
+        1305,
+        1306,
+        1307,
+        1308
+      ],
+      "minimum_saved_postburn_history": 6992,
+      "next_assessment_trigger": 7212,
+      "terminal_family_seeds": [
+        1307,
+        1308
+      ],
+      "assessment_eligible": false,
+      "due": false
+    },
+    "medium_A": {
+      "seeds": [
+        1201,
+        1401,
+        1402,
+        1406
+      ],
+      "minimum_saved_postburn_history": 1664,
+      "next_assessment_trigger": 1706,
+      "terminal_family_seeds": [
+        1201,
+        1401,
+        1402,
+        1406
+      ],
+      "assessment_eligible": false,
+      "due": false
+    },
+    "medium_B": {
+      "seeds": [
+        1403,
+        1404,
+        1405,
+        1407
+      ],
+      "minimum_saved_postburn_history": 1280,
+      "next_assessment_trigger": 1456,
+      "terminal_family_seeds": [
+        1403,
+        1404,
+        1405,
+        1407
+      ],
+      "assessment_eligible": false,
+      "due": false
+    },
+    "grid12_B": {
+      "seeds": [
+        1501,
+        1502,
+        1503,
+        1504
+      ],
+      "minimum_saved_postburn_history": 855,
+      "next_assessment_trigger": 1000,
+      "terminal_family_seeds": [
+        1502,
+        1503
+      ],
+      "assessment_eligible": false,
+      "due": false
+    },
+    "old_A3200": {
+      "seeds": [
+        1701,
+        1702,
+        1703,
+        1704
+      ],
+      "minimum_saved_postburn_history": 8540,
+      "next_assessment_trigger": 8471,
+      "terminal_family_seeds": [],
+      "assessment_eligible": true,
+      "due": true
+    },
+    "old_B4095": {
+      "seeds": [
+        1705,
+        1706,
+        1707,
+        1708
+      ],
+      "minimum_saved_postburn_history": 8053,
+      "next_assessment_trigger": 8256,
+      "terminal_family_seeds": [],
+      "assessment_eligible": true,
+      "due": false
+    },
+    "current_A4095": {
+      "seeds": [
+        1801,
+        1802,
+        1803,
+        1804
+      ],
+      "minimum_saved_postburn_history": 6970,
+      "next_assessment_trigger": 7575,
+      "terminal_family_seeds": [],
+      "assessment_eligible": true,
+      "due": false
+    },
+    "current_B4095": {
+      "seeds": [
+        1805,
+        1806,
+        1807,
+        1808
+      ],
+      "minimum_saved_postburn_history": 6769,
+      "next_assessment_trigger": 7408,
+      "terminal_family_seeds": [],
+      "assessment_eligible": true,
+      "due": false
+    },
+    "current_A3200": {
+      "seeds": [
+        1901,
+        1902,
+        1903,
+        1904
+      ],
+      "minimum_saved_postburn_history": 9391,
+      "next_assessment_trigger": 9659,
+      "terminal_family_seeds": [],
+      "assessment_eligible": true,
+      "due": false
+    },
+    "upper20_A4095": {
+      "seeds": [
+        2001,
+        2002,
+        2003,
+        2004
+      ],
+      "minimum_saved_postburn_history": 349,
+      "next_assessment_trigger": 1000,
+      "terminal_family_seeds": [
+        2003,
+        2004
+      ],
+      "assessment_eligible": false,
+      "due": false
+    },
+    "upper20_B4095": {
+      "seeds": [
+        2005,
+        2006,
+        2007,
+        2008
+      ],
+      "minimum_saved_postburn_history": 612,
+      "next_assessment_trigger": 1000,
+      "terminal_family_seeds": [
+        2007,
+        2008
+      ],
+      "assessment_eligible": false,
+      "due": false
+    },
+    "sigma_time_v3_A4095_cap5": {
+      "seeds": [
+        2101,
+        2102,
+        2103,
+        2104
+      ],
+      "minimum_saved_postburn_history": 1626,
+      "next_assessment_trigger": 1812,
+      "terminal_family_seeds": [],
+      "assessment_eligible": true,
+      "due": false
+    },
+    "sigma_time_v3_A4095_cap20": {
+      "seeds": [
+        2105,
+        2106,
+        2107,
+        2108
+      ],
+      "minimum_saved_postburn_history": 1401,
+      "next_assessment_trigger": 1461,
+      "terminal_family_seeds": [],
+      "assessment_eligible": true,
+      "due": false
+    },
+    "sigma_time_v3_B4095_cap5": {
+      "seeds": [
+        2109,
+        2110,
+        2111,
+        2112
+      ],
+      "minimum_saved_postburn_history": 1620,
+      "next_assessment_trigger": 1871,
+      "terminal_family_seeds": [],
+      "assessment_eligible": true,
+      "due": false
+    },
+    "sigma_time_v3_B4095_cap20": {
+      "seeds": [
+        2113,
+        2114,
+        2115,
+        2116
+      ],
+      "minimum_saved_postburn_history": 1565,
+      "next_assessment_trigger": 1816,
+      "terminal_family_seeds": [],
+      "assessment_eligible": true,
+      "due": false
+    },
+    "fresh_recovery_medium_A": {
+      "seeds": [
+        2201,
+        2301,
+        2302,
+        2303
+      ],
+      "minimum_saved_postburn_history": 172,
+      "next_assessment_trigger": 1000,
+      "terminal_family_seeds": [],
+      "assessment_eligible": true,
+      "due": false
+    },
+    "fresh_recovery_quad_A": {
+      "seeds": [
+        2202,
+        2304,
+        2305,
+        2306
+      ],
+      "minimum_saved_postburn_history": 1017,
+      "next_assessment_trigger": 1000,
+      "terminal_family_seeds": [],
+      "assessment_eligible": true,
+      "due": true
+    },
+    "fresh_recovery_medium_B": {
+      "seeds": [
+        2401,
+        2402,
+        2403,
+        2404
+      ],
+      "minimum_saved_postburn_history": 114,
+      "next_assessment_trigger": 1000,
+      "terminal_family_seeds": [],
+      "assessment_eligible": true,
+      "due": false
+    },
+    "fresh_recovery_quad_B": {
+      "seeds": [
+        2405,
+        2406,
+        2407,
+        2408
+      ],
+      "minimum_saved_postburn_history": 684,
+      "next_assessment_trigger": 1000,
+      "terminal_family_seeds": [],
+      "assessment_eligible": true,
+      "due": false
+    }
+  },
+  "baseline_runtime_sha256": "9c2614064a8d9652f6619e40c9396d9badf8a18ea805fc3b1efe115027ceb376",
+  "terminal_causes_not_inferred": true,
+  "recovery_trials_by_target": {
+    "medium_A": [
+      2201
+    ],
+    "quad_A": [
+      2202
+    ]
+  },
+  "fresh_recovery_cohorts_declared_but_not_qualified": true,
+  "posterior_or_prior_stability_certified": false,
+  "native_error_is_posterior_rejection": false
+}

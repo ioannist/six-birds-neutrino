@@ -1,0 +1,5 @@
+- run_bundle: /home/repos/six-birds-neutrino/runs/20261003_math_review_cosmology_smoke_repaired
+- n_configs: 2
+- failed: True
+- cmb_spt2018_plancksubset_desi_mnu.yaml: finite_total=False
+- cmb_sptd1_plancksubset_desi_mnu.yaml: finite_total=False

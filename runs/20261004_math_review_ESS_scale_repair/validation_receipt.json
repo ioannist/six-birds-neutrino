@@ -1,0 +1,375 @@
+{
+  "utc": "2026-10-04T08:14:02.764911+00:00",
+  "scope": "classical_ESS_and_Rhat_affine_rescaling_and_constant_variance_repair",
+  "managed_pytest_exits": [
+    {
+      "session": 31494,
+      "passed": 112,
+      "exit_code": 0
+    },
+    {
+      "session": 31910,
+      "passed": 115,
+      "exit_code": 0
+    },
+    {
+      "session": 90297,
+      "passed": 118,
+      "exit_code": 0
+    },
+    {
+      "session": 57885,
+      "passed": 119,
+      "exit_code": 0
+    }
+  ],
+  "controls": {
+    "ordinary": {
+      "new_ess": 15.35932849931617,
+      "new_rhat": 14.141958845930786,
+      "old_rhat": 14.141958845930786
+    },
+    "large": {
+      "new_ess": 15.359328499316167,
+      "new_rhat": 14.14195884593078,
+      "old_rhat": "nonfinite"
+    },
+    "small": {
+      "new_ess": 15.35932849931617,
+      "new_rhat": 14.141958845930791,
+      "old_rhat": "nonfinite"
+    },
+    "identical_decimal_draws": {
+      "old_rhat": 0.983192080250175,
+      "new_rhat": "undefined"
+    }
+  },
+  "ordinary_controls": [
+    {
+      "seed": 0,
+      "ess_relative_change": 0.0,
+      "rhat_relative_change": 0.0
+    },
+    {
+      "seed": 1,
+      "ess_relative_change": 0.0,
+      "rhat_relative_change": 0.0
+    },
+    {
+      "seed": 2,
+      "ess_relative_change": 0.0,
+      "rhat_relative_change": 0.0
+    },
+    {
+      "seed": 3,
+      "ess_relative_change": 0.0,
+      "rhat_relative_change": 0.0
+    },
+    {
+      "seed": 4,
+      "ess_relative_change": 0.0,
+      "rhat_relative_change": 0.0
+    },
+    {
+      "seed": 5,
+      "ess_relative_change": -3.969353129367209e-16,
+      "rhat_relative_change": 3.3325558882889587e-16
+    },
+    {
+      "seed": 6,
+      "ess_relative_change": 0.0,
+      "rhat_relative_change": 0.0
+    },
+    {
+      "seed": 7,
+      "ess_relative_change": 0.0,
+      "rhat_relative_change": 0.0
+    },
+    {
+      "seed": 8,
+      "ess_relative_change": 0.0,
+      "rhat_relative_change": 0.0
+    },
+    {
+      "seed": 9,
+      "ess_relative_change": 0.0,
+      "rhat_relative_change": 0.0
+    },
+    {
+      "seed": 10,
+      "ess_relative_change": 0.0,
+      "rhat_relative_change": 0.0
+    },
+    {
+      "seed": 11,
+      "ess_relative_change": 0.0,
+      "rhat_relative_change": 0.0
+    },
+    {
+      "seed": 12,
+      "ess_relative_change": 0.0,
+      "rhat_relative_change": 0.0
+    },
+    {
+      "seed": 13,
+      "ess_relative_change": 0.0,
+      "rhat_relative_change": 0.0
+    },
+    {
+      "seed": 14,
+      "ess_relative_change": 0.0,
+      "rhat_relative_change": 0.0
+    },
+    {
+      "seed": 15,
+      "ess_relative_change": 4.0752671565906517e-16,
+      "rhat_relative_change": 0.0
+    },
+    {
+      "seed": 16,
+      "ess_relative_change": 0.0,
+      "rhat_relative_change": 0.0
+    },
+    {
+      "seed": 17,
+      "ess_relative_change": 0.0,
+      "rhat_relative_change": 0.0
+    },
+    {
+      "seed": 18,
+      "ess_relative_change": 0.0,
+      "rhat_relative_change": 0.0
+    },
+    {
+      "seed": 19,
+      "ess_relative_change": 0.0,
+      "rhat_relative_change": 0.0
+    }
+  ],
+  "actual_frozen_chain_readouts": {
+    "quad_A": {
+      "family_count": 4,
+      "old_ess_sum": 88.11894921419831,
+      "new_ess_sum": 88.11894921419831,
+      "old_classical_rhat": 1.047322630720262,
+      "new_classical_rhat": 1.047322630720262,
+      "classical_rhat_1_05_gate_unchanged": true
+    },
+    "quad_B": {
+      "family_count": 4,
+      "old_ess_sum": 87.5303734191881,
+      "new_ess_sum": 87.5303734191881,
+      "old_classical_rhat": 1.0367441540192026,
+      "new_classical_rhat": 1.0367441540192026,
+      "classical_rhat_1_05_gate_unchanged": true
+    },
+    "medium_A": {
+      "family_count": 4,
+      "old_ess_sum": 46.18702715537115,
+      "new_ess_sum": 46.187027155371155,
+      "old_classical_rhat": 1.050049003608769,
+      "new_classical_rhat": 1.050049003608769,
+      "classical_rhat_1_05_gate_unchanged": true
+    },
+    "medium_B": {
+      "family_count": 4,
+      "old_ess_sum": 48.82253615166094,
+      "new_ess_sum": 48.82253615166094,
+      "old_classical_rhat": 1.31972431779381,
+      "new_classical_rhat": 1.31972431779381,
+      "classical_rhat_1_05_gate_unchanged": true
+    },
+    "SPT_A": {
+      "family_count": 6,
+      "old_ess_sum": 3741.020405206211,
+      "new_ess_sum": 3741.0204052062113,
+      "old_classical_rhat": 1.002555914259868,
+      "new_classical_rhat": 1.002555914259868,
+      "classical_rhat_1_05_gate_unchanged": true
+    },
+    "SPT_B": {
+      "family_count": 6,
+      "old_ess_sum": 3642.5308571606247,
+      "new_ess_sum": 3642.5308571606247,
+      "old_classical_rhat": 1.0041336996562757,
+      "new_classical_rhat": 1.0041336996562757,
+      "classical_rhat_1_05_gate_unchanged": true
+    }
+  },
+  "actual_readout_scope": "same frozen prefixes through classical helpers; no new native likelihood or rank diagnostic assessment",
+  "frozen_chains": [
+    {
+      "path": "runs/20261004_math_review_guarded_CLASS_first_diagnostics/quad_A/seed1301/chains/math_guarded_quad_A_seed1301.1.txt",
+      "sha256": "5471e35cae5f00b1b258f5248e753d602b74eaa59783e3866252d944b6e66b37"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_CLASS_first_diagnostics/quad_A/seed1302/chains/math_guarded_quad_A_seed1302.1.txt",
+      "sha256": "91ca1c3ba90350804d54f20fdff84a43938fd89dd0d1d3b7c27ccb9c8d72bec1"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_CLASS_first_diagnostics/quad_A/seed1303/chains/math_guarded_quad_A_seed1303.1.txt",
+      "sha256": "7e862fe0417fbfc37d2315319078a804427e6c9976ae2ffb7cc8ca3859474d22"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_CLASS_first_diagnostics/quad_A/seed1304/chains/math_guarded_quad_A_seed1304.1.txt",
+      "sha256": "239b37560757e5898d71312dd6427211631dba20d2be8451c7d3ef601280e821"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_CLASS_first_diagnostics/quad_B/seed1305/chains/math_guarded_quad_B_seed1305.1.txt",
+      "sha256": "0ed45fe67784c87baac2b299a53dd1dfd7ab29251afe43d833ec82a792c5d703"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_CLASS_first_diagnostics/quad_B/seed1306/chains/math_guarded_quad_B_seed1306.1.txt",
+      "sha256": "419aaa007379fe7cf7460ffa4105813dab681e573e321d0a6467479ebe412112"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_CLASS_first_diagnostics/quad_B/seed1307/chains/math_guarded_quad_B_seed1307.1.txt",
+      "sha256": "4690291ead92d37fdeafd964b5e9f8d249189891e419f5b5783cd81491b9f276"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_CLASS_first_diagnostics/quad_B/seed1308/chains/math_guarded_quad_B_seed1308.1.txt",
+      "sha256": "1b9a1dac92bd3a0e0eb019ccd01f3d3e61112eaf4d847425fc0584fea601867a"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_CLASS_first_diagnostics/medium_A/seed1201/chains/math_guarded_dragging_A_seed1201.1.txt",
+      "sha256": "b4d4b5ff930157658a1834364f4a749711a52f651b8d9d526d3e7bc95c9951e0"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_CLASS_first_diagnostics/medium_A/seed1401/chains/math_guarded_medium_A_seed1401.1.txt",
+      "sha256": "acd77ae438fd3d3f1922d11f74790d231515b8834f91b702e7bbba1eb6829f7c"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_CLASS_first_diagnostics/medium_A/seed1402/chains/math_guarded_medium_A_seed1402.1.txt",
+      "sha256": "a6c3d2d6ab788c7b4483dfade7b74aea0854a9d04c819e7a0610d9c1e1fa3337"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_CLASS_first_diagnostics/medium_A/seed1406/chains/math_guarded_medium_A_seed1406.1.txt",
+      "sha256": "6f3ae0a8a4ceb424f7a36c8f79119bd6d82e1a87e23fe1cf80d238ac046c4330"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_CLASS_first_diagnostics/medium_B/seed1403/chains/math_guarded_medium_B_seed1403.1.txt",
+      "sha256": "3ae411cd5536c52f41ceb0e1e97bbf35037cf409af980ae35742ba5608c52931"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_CLASS_first_diagnostics/medium_B/seed1404/chains/math_guarded_medium_B_seed1404.1.txt",
+      "sha256": "f646e929abc52f7a6e1dec481ec14b104af7df9462a128a79763131152c433d0"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_CLASS_first_diagnostics/medium_B/seed1405/chains/math_guarded_medium_B_seed1405.1.txt",
+      "sha256": "31b48fa9799b70a1636ff23127a55ca3dbc20fd79f7aa3d5851abeb8b7672d32"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_CLASS_first_diagnostics/medium_B/seed1407/chains/math_guarded_medium_B_seed1407.1.txt",
+      "sha256": "e2438b8b228846d5f238468c30dafb91be0a1cc7e9bfb92ec2b27c5db20d0c05"
+    },
+    {
+      "path": "runs/20261004_math_review_spt_chain_snapshots_twelfth_A/chain_A_seed301/chains/math_restoration_A_seed301.1.txt",
+      "sha256": "28d17c6f22ce60f6f8ba8baeec41f66ae5326199cd9162c8ecc0cd7a84805296"
+    },
+    {
+      "path": "runs/20261004_math_review_spt_chain_snapshots_twelfth_A/chain_A_seed302/chains/math_restoration_A_seed302.1.txt",
+      "sha256": "7761370a3a1605483268273543219671b1a8746492c49fd4b3ccfcda451b07e2"
+    },
+    {
+      "path": "runs/20261004_math_review_spt_chain_snapshots_twelfth_A/chain_A_seed303/chains/math_restoration_A_seed303.1.txt",
+      "sha256": "136de9cc7e42b78758f0f3e9d578d4493d30cc6514e7f8b812ef46e515acc752"
+    },
+    {
+      "path": "runs/20261004_math_review_spt_chain_snapshots_twelfth_A/chain_A_seed304/chains/math_restoration_A_seed304.1.txt",
+      "sha256": "3761169bff701cb2668431a8112af17f3947d109411466962d9a8afd590b5d4c"
+    },
+    {
+      "path": "runs/20261004_math_review_spt_chain_snapshots_twelfth_A/chain_A_seed401/chains/math_restoration_A_seed401.1.txt",
+      "sha256": "b3303e11fd1dacc428318642812d3a5cae9f67a78bd39db59277f40f004b3b07"
+    },
+    {
+      "path": "runs/20261004_math_review_spt_chain_snapshots_twelfth_A/chain_A_seed402/chains/math_restoration_A_seed402.1.txt",
+      "sha256": "e95bbfdd0f37e67c74d28e9a909a42b4c4e89e5602a9a5622fa846022c1e5b9e"
+    },
+    {
+      "path": "runs/20261004_math_review_spt_chain_snapshots_eleventh_B/chain_B_seed305/chains/math_restoration_B_seed305.1.txt",
+      "sha256": "1f6e67b938b4b3ccf9a641362178919947d13fff13614a88ba91f49bd14a5510"
+    },
+    {
+      "path": "runs/20261004_math_review_spt_chain_snapshots_eleventh_B/chain_B_seed306/chains/math_restoration_B_seed306.1.txt",
+      "sha256": "46a6273b3778046d87e460340b1738fbe58f43e6bfc8ec63b6c09e1ca0fe8546"
+    },
+    {
+      "path": "runs/20261004_math_review_spt_chain_snapshots_eleventh_B/chain_B_seed307/chains/math_restoration_B_seed307.1.txt",
+      "sha256": "1f3d64067a1ee1e95d5e3ddaa6332b58ead7b80af0b1bb5707bed6fb086c0d27"
+    },
+    {
+      "path": "runs/20261004_math_review_spt_chain_snapshots_eleventh_B/chain_B_seed308/chains/math_restoration_B_seed308.1.txt",
+      "sha256": "7c27cc1192869663235c2e1a613f3744f458c2d84665bfac7c6afffdc289dbab"
+    },
+    {
+      "path": "runs/20261004_math_review_spt_chain_snapshots_eleventh_B/chain_B_seed403/chains/math_restoration_B_seed403.1.txt",
+      "sha256": "e0232785da14ccf60879960e959a0310dddbb45651bd48dcb361caf5a96ffe2d"
+    },
+    {
+      "path": "runs/20261004_math_review_spt_chain_snapshots_eleventh_B/chain_B_seed404/chains/math_restoration_B_seed404.1.txt",
+      "sha256": "37cf3e4b9e3eccb85b6cf0ebfa777d054539c74136c03a2f774267d728638d0d"
+    }
+  ],
+  "rank_ArviZ_diagnostic_algorithm_changed": false,
+  "uniform_floating_point_accuracy_or_convergence_certified": false,
+  "paper_modified": false,
+  "files": [
+    {
+      "path": "runs/20261004_math_review_ESS_scale_repair/affine_checked_pytest_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_ESS_scale_repair/affine_checked_pytest_stdout.txt",
+      "sha256": "3b92f92fc2516c9677155a1f26eb8291dee10c889efd254cac3b418b4ea6c746"
+    },
+    {
+      "path": "runs/20261004_math_review_ESS_scale_repair/before_probe.py",
+      "sha256": "593851c48b96645586b6fba8abd8fdb92b205b5cd586cb8b7c44023a6ca4a558"
+    },
+    {
+      "path": "runs/20261004_math_review_ESS_scale_repair/before_probe_stdout.json",
+      "sha256": "9b3dd09a7cd0b98470eb3a7d8ad45dd965d2177da17ba3a228b5908889e3c424"
+    },
+    {
+      "path": "runs/20261004_math_review_ESS_scale_repair/constant_checked_pytest_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_ESS_scale_repair/constant_checked_pytest_stdout.txt",
+      "sha256": "52e589ada9815ae5208a19ff236aa89c3f59aaee965c94d8956253aa45d821fa"
+    },
+    {
+      "path": "runs/20261004_math_review_ESS_scale_repair/final_pytest_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_ESS_scale_repair/final_pytest_stdout.txt",
+      "sha256": "da98cbb0290f3b54446810fdc96822e6fb6c82163c34bebb23b75a8bd2466b2b"
+    },
+    {
+      "path": "runs/20261004_math_review_ESS_scale_repair/mcmc_before.py",
+      "sha256": "e00c832f911a9233bce6c3ada930113affb436e52272bb704e47706c8df22898"
+    },
+    {
+      "path": "runs/20261004_math_review_ESS_scale_repair/pytest_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_ESS_scale_repair/pytest_stdout.txt",
+      "sha256": "173e920c338d4fd716fd19941245ced7b79c7853b43e84bff5bd994c9a68f32a"
+    },
+    {
+      "path": "runs/20261004_math_review_ESS_scale_repair/verify_repair.py",
+      "sha256": "7dd7db7d3df01817a08785a812ee7cc9e151d42b87a6a0aa472c52f3280539d5"
+    },
+    {
+      "path": "src/sbt_spt_audit/mcmc.py",
+      "sha256": "eaf255808062cb4817cf8891f34baf45cf6fe0642f3e0b274c1abd8fe7dfc586"
+    },
+    {
+      "path": "tests/test_math_repairs.py",
+      "sha256": "05470d0a4a108e290fc5fa27f37ffa73620e828718a0d6d9557148c9f8445fbf"
+    }
+  ]
+}

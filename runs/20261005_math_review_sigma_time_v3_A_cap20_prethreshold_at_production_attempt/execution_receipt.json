@@ -1,0 +1,22 @@
+{
+  "utc": "2026-10-05T06:20:53.654104+00:00",
+  "command": [
+    "/tmp/neutrino-math-review-venv/bin/python",
+    "runs/20261005_math_review_sigma_time_v3_diagnostic_preparation/prepare_snapshot.py",
+    "sigma_time_v3_A4095_cap20",
+    "--outdir",
+    "runs/20261005_math_review_sigma_time_v3_first_A4095_cap20_diagnostics"
+  ],
+  "actual_terminal_exit_code": 3,
+  "observed_complete_stdout_fields": {
+    "group": "sigma_time_v3_A4095_cap20",
+    "minimum_retained_represented_steps": 907,
+    "threshold": 1000,
+    "snapshot_written": false,
+    "scope": "live identity and saved-growth check only"
+  },
+  "output_directory_created": false,
+  "contract_sha256": "0e9e50a065b25a8726489765a4b5cabb726ab8b5934e998ace055dd05ce0927d",
+  "preparer_sha256": "d9397740c609c3cb9ffcdce3c50a04fcb1fbb860c8dc3deea4773aad76b010b4",
+  "scope": "Real first production attempt refused; no threshold lowered or short control promoted."
+}

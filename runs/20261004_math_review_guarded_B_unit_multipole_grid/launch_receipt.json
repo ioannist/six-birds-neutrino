@@ -1,0 +1,64 @@
+{
+  "utc": "2026-10-04T07:56:47.296997+00:00",
+  "scope": "B_selected_unit_multipole_grid_launched",
+  "jobs": [
+    {
+      "variant": "unit_grid",
+      "session": 49215,
+      "pid": 41759,
+      "process_start_ticks": 337018462,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_guarded_B_unit_multipole_grid/runner.py unit_grid ",
+      "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+      "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+      "status": "live_owned_process"
+    }
+  ],
+  "previous_grid3_anchor_reused_not_new_evaluation": true,
+  "posterior_or_uniform_accuracy_certified": false,
+  "files": [
+    {
+      "path": "runs/20261004_math_review_guarded_B_unit_multipole_grid/grid_build_calls.json",
+      "sha256": "67c8063243a3a2dc652fc7d2327c6b09d7fd9c835782cdb4fe59ff66cf42c6b0"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_B_unit_multipole_grid/grid_build_failed_C_mode.json",
+      "sha256": "aef67a8bb376b2ab45a319c5f146a1bba59cb8fcf62f11bf80bae9b96889308e"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_B_unit_multipole_grid/grid_build_failed_missing_common.json",
+      "sha256": "920a5a104f3f2b04bce797574bcb6463efd40b1d57b3790032732f161b24c61f"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_B_unit_multipole_grid/grid_probe.c",
+      "sha256": "a0c81e46cbf0bc4c84669f902335e6afb49d9d5827809db428214a3da8218f90"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_B_unit_multipole_grid/grid_source_verification.json",
+      "sha256": "11f6fb4e40605835783330d3d91f2fca73c556a0d6fcb934b875284dc9759cbe"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_B_unit_multipole_grid/prepare.py",
+      "sha256": "4e75a769bb9ad72966eb98a4255e01dcc29e31a59aeabccc3caf18aa7d2cc188"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_B_unit_multipole_grid/runner.py",
+      "sha256": "f846c78f5d347b2943e573e4e093572c1022a291f55957b5b8875fd96ec8266b"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_B_unit_multipole_grid/selection_receipt.json",
+      "sha256": "ce048e8fbea394a5bf143bc3880968a558f3ee033617432bf0fed23b69d746da"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_B_unit_multipole_grid/unit_grid/input.yaml",
+      "sha256": "51859771f22b831e3bbe87c7b1900a9d4cc6d0c69daa3ccf27640e4d1e59a291"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_B_unit_multipole_grid/unit_grid/points.json",
+      "sha256": "5c706baad7bb8a1e0d30a789e2de8c4bbeb74f7f6a45867a3bc99695e0fedacc"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_B_unit_multipole_grid/verify_grid_source.py",
+      "sha256": "c91d30a0be03d9ca4eb2de7ee0ad335d89f29f75ae6e147c40fe428d90ef9a40"
+    }
+  ]
+}

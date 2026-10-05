@@ -1,0 +1,139 @@
+{
+  "utc": "2026-10-04T07:59:19.778662+00:00",
+  "failed_precondition": "seed1201 launcher has no seed argument; runtime seed/pid and actual pinned launcher identify it",
+  "correction": "validate recorded runtime seed/pid for every family; check the known trial launcher for seed1201",
+  "archive_move_correction": "shutil.move handles cross-filesystem archive destination",
+  "premature_diagnostic_wrappers": "four invocations exited1 before reading absent receipt; no diagnostics or scientific results were written",
+  "partial_snapshots_used_in_diagnostics": false,
+  "partial_snapshot_archive": "/mnt/8tb/six-birds-ml/tmp/neutrino_guarded_first_snapshot_failed_attempt_20261004",
+  "partial_files": [
+    {
+      "relative_path": "quad_A/seed1304/runtime_state.json",
+      "sha256": "295c004a9a2670f17d0db643900dce66131ff1c4e44a826f40ee2ccdd06c04cc"
+    },
+    {
+      "relative_path": "quad_A/seed1304/input.yaml",
+      "sha256": "75967e60eae1d8366e1ccef9602d0de36753aabfcec4b21490360fe51c2ad264"
+    },
+    {
+      "relative_path": "quad_A/seed1304/resolved.yaml",
+      "sha256": "7af91631a11c362a4c05e6540d8fda8d6ad104435c7c21d58797d994ea71fafe"
+    },
+    {
+      "relative_path": "quad_A/seed1303/runtime_state.json",
+      "sha256": "bc61d9919878dc2dbdaf9587f3828d1fb1a379bab1a4c6a4a077cebc5aaeab80"
+    },
+    {
+      "relative_path": "quad_A/seed1303/input.yaml",
+      "sha256": "0c57dad235d3f5405d6e314a9df829edfa1dc394f156c6f3743590bfa911d139"
+    },
+    {
+      "relative_path": "quad_A/seed1303/resolved.yaml",
+      "sha256": "0f7ae1bd7225be6ef85d623d8e001437667c1d1c063d078908b2c4d3040111d4"
+    },
+    {
+      "relative_path": "quad_A/seed1301/runtime_state.json",
+      "sha256": "7ffbfb14363a9ea136725a71e2a3dcaac9a29b5bb791ee2f7974b050c8f1dfdb"
+    },
+    {
+      "relative_path": "quad_A/seed1301/input.yaml",
+      "sha256": "0001c468d6a7fc37fd58790a22bbae2e5c09d7f44ffcd6a7af1860fc0cf01947"
+    },
+    {
+      "relative_path": "quad_A/seed1301/resolved.yaml",
+      "sha256": "2c92bf0bb0d2284310884543ba792ec72fdb13ef341a3062d3b5bb8d7b0e893d"
+    },
+    {
+      "relative_path": "quad_A/seed1302/runtime_state.json",
+      "sha256": "a640270c1e7394837d61541b422f82af064ad61b679180be26cf9adb86dc127d"
+    },
+    {
+      "relative_path": "quad_A/seed1302/input.yaml",
+      "sha256": "7831a43c0989514af949868ea26edcafb9dfa92c85d5317b892e0c89cf0ac853"
+    },
+    {
+      "relative_path": "quad_A/seed1302/resolved.yaml",
+      "sha256": "24bbf18a00657a8483d6852b20e95aa724bd129d89dabbff1faa1198564678bd"
+    },
+    {
+      "relative_path": "quad_A/seed1304/chains/math_guarded_quad_A_seed1304.1.txt",
+      "sha256": "21f71fb00d96eacac56ce31c693a60790202c761bf63e75ef56f6c52815bccb9"
+    },
+    {
+      "relative_path": "quad_A/seed1303/chains/math_guarded_quad_A_seed1303.1.txt",
+      "sha256": "f0055334cca88c1157c8a453fcbfbd785c6973847b268283548196c7d8f3aedd"
+    },
+    {
+      "relative_path": "quad_A/seed1301/chains/math_guarded_quad_A_seed1301.1.txt",
+      "sha256": "64620916274a15382c4690a73fc0f68a57392e804a7e4e98b4438d1d4f547e5c"
+    },
+    {
+      "relative_path": "quad_A/seed1302/chains/math_guarded_quad_A_seed1302.1.txt",
+      "sha256": "e0d58d9ee3aff69016666ac250353438ea34d91ba4fa574b6cf0169dd275f935"
+    },
+    {
+      "relative_path": "quad_B/seed1308/runtime_state.json",
+      "sha256": "58cfd4ec761fb4dfffdf852488b226d3362c2d96eda816fdcc6d844cd4008d14"
+    },
+    {
+      "relative_path": "quad_B/seed1308/input.yaml",
+      "sha256": "7ed284eaca0c71be375c63d8141c99e03e749a1fe4a38e9d3bc43c08faa39205"
+    },
+    {
+      "relative_path": "quad_B/seed1308/resolved.yaml",
+      "sha256": "fdf98de9c37e77aade7f5a041754678e0575cfd0ae1b2df6f8a9d3d7c153959b"
+    },
+    {
+      "relative_path": "quad_B/seed1306/runtime_state.json",
+      "sha256": "aad2f5a893278bdca796b9cac5205f6529ad8446ad1b9620ce1169cce641c003"
+    },
+    {
+      "relative_path": "quad_B/seed1306/input.yaml",
+      "sha256": "8c3ea12f595b0487ba69c7f104f10ae9df861bece7434e92cf2a4d51ab5ecf72"
+    },
+    {
+      "relative_path": "quad_B/seed1306/resolved.yaml",
+      "sha256": "f11722f221133939e60e67e1988507f3fabb521e7986154207a01e253d631275"
+    },
+    {
+      "relative_path": "quad_B/seed1307/runtime_state.json",
+      "sha256": "c5e53cae7fe3c247db063df394b15871cb060affccc9a5798de81b175e82855b"
+    },
+    {
+      "relative_path": "quad_B/seed1307/input.yaml",
+      "sha256": "d1c453eb09a01181c41935cbcbff01b8acae962ca9e18d30fc8ad4215b377033"
+    },
+    {
+      "relative_path": "quad_B/seed1307/resolved.yaml",
+      "sha256": "cbcefb6c6a151285816ac68d2ee848fe30e63788ecea4c10a52ce745d3fb6ffc"
+    },
+    {
+      "relative_path": "quad_B/seed1305/runtime_state.json",
+      "sha256": "be8ab1d8e46c415beb431f429e8321cd8a57df4a39319f5a890aeef8798e9887"
+    },
+    {
+      "relative_path": "quad_B/seed1305/input.yaml",
+      "sha256": "6434cca5c324e70d4a8d038a1fd33d0fe191fd02fd8a3785129796231b5e2cf8"
+    },
+    {
+      "relative_path": "quad_B/seed1305/resolved.yaml",
+      "sha256": "bccf7811785d34cec99846f0c4ff6e08b03682721722d4963a15b3fc485fa5bb"
+    },
+    {
+      "relative_path": "quad_B/seed1308/chains/math_guarded_quad_B_seed1308.1.txt",
+      "sha256": "25f4f4217bf49bc6de920bc27a55bf2f1eadb6c932d69f7ff753078c58cbe27d"
+    },
+    {
+      "relative_path": "quad_B/seed1306/chains/math_guarded_quad_B_seed1306.1.txt",
+      "sha256": "419aaa007379fe7cf7460ffa4105813dab681e573e321d0a6467479ebe412112"
+    },
+    {
+      "relative_path": "quad_B/seed1307/chains/math_guarded_quad_B_seed1307.1.txt",
+      "sha256": "f308f79447d9f036ee1845295932acc2548f61977d113b6cb5ff08bb11d157c9"
+    },
+    {
+      "relative_path": "quad_B/seed1305/chains/math_guarded_quad_B_seed1305.1.txt",
+      "sha256": "8cbfcd4699a97d5bdc8722b1414ffa07ed8872e6e8a030d33c1034baf66cfcc1"
+    }
+  ]
+}

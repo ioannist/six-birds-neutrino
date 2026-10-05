@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/home/repos/six-birds-neutrino/runs/20261004_math_review_class_quadrature_hole_seed701/check_exact_point.py", line 43, in <module>
+    model.compute()
+  File "python/classy.pyx", line 602, in classy._classy.Class.compute
+classy._classy.CosmoComputationError: 
+
+Error in Class: operator()(L:1047) :error in perturbations_solve(ppr, pba, pth, ppt, index_md, index_ic, index_k, &pw);
+=>perturbations_solve(L:3210) :error in perturbations_vector_init(ppr, pba, pth, ppt, index_md, index_ic, k, interval_limit[index_interval], ppw, previous_approx);
+=>perturbations_vector_init(L:4602) :condition (ppw->approx[ppw->index_ap_tca] == (int)tca_off) is true; scalar initial conditions assume tight-coupling approximation turned on

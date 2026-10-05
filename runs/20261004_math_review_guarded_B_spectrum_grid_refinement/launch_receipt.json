@@ -1,0 +1,58 @@
+{
+  "utc": "2026-10-04T07:39:09.937036+00:00",
+  "scope": "B_spectrum_grid_refinement_levels6_and3_launched",
+  "jobs": [
+    {
+      "variant": "grid6",
+      "session": 16841,
+      "pid": 2179333,
+      "process_start_ticks": 336904515,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_guarded_B_spectrum_grid_refinement/runner.py grid6 ",
+      "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+      "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+      "status": "live_owned_process"
+    },
+    {
+      "variant": "grid3",
+      "session": 98306,
+      "pid": 2179374,
+      "process_start_ticks": 336904517,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_guarded_B_spectrum_grid_refinement/runner.py grid3 ",
+      "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+      "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+      "status": "live_owned_process"
+    }
+  ],
+  "previous_grid12_anchor_reused_not_new_evaluation": true,
+  "posterior_or_uniform_accuracy_certified": false,
+  "files": [
+    {
+      "path": "runs/20261004_math_review_guarded_B_spectrum_grid_refinement/prepare.py",
+      "sha256": "49567ee82cddfde560e5fbc43c531c2c95698ad8789b17668fa7b1df6fe2afc7"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_B_spectrum_grid_refinement/runner.py",
+      "sha256": "2aad77047a14b74f4d9f65f4e4582c4153bcb78dcd4607d61e0c8b09a7201e6f"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_B_spectrum_grid_refinement/selection_receipt.json",
+      "sha256": "b401c4a65067c6b818bb5c8be8361386f0ef5372b7de3946e8cc661e33845f28"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_B_spectrum_grid_refinement/grid6/input.yaml",
+      "sha256": "ace5996f4948c998d3563141de7a8b3b33d9bc42b1156267bab8e7782b2f483a"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_B_spectrum_grid_refinement/grid6/points.json",
+      "sha256": "5c706baad7bb8a1e0d30a789e2de8c4bbeb74f7f6a45867a3bc99695e0fedacc"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_B_spectrum_grid_refinement/grid3/input.yaml",
+      "sha256": "72f017c10477764e26dc43ff06653cffe30638dc0aee831cd2c3b361ad3eb94b"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_B_spectrum_grid_refinement/grid3/points.json",
+      "sha256": "5c706baad7bb8a1e0d30a789e2de8c4bbeb74f7f6a45867a3bc99695e0fedacc"
+    }
+  ]
+}

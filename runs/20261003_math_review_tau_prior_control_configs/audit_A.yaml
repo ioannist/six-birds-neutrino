@@ -1,0 +1,119 @@
+run_name: cmb_spt2018_plancksubset_desi_mnu
+likelihood:
+  sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood:
+    dataset_expr: candl_data.SPT3G_2018_TTTEEE_multifreq
+    exclude_prior_parameters:
+    - tau
+  sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian:
+    subset: all
+    data_dir: data/desi_dr2_bao/desi_bao_dr2
+  planck_2018_lowl.TT: {}
+  planck_2018_lowl.EE_sroll2: {}
+  planck_2018_highl_plik.TT_lite_native:
+    path: external/cobaya_packages/data/planck_2018_pliklite_native
+    dataset_params:
+      use_cl: tt
+      bins_for_L_range:
+      - 30
+      - 756
+  planckpr4lensing.PlanckPR4Lensing:
+    python_path: external/cobaya_packages/code/planck_PR4_lensing
+theory:
+  classy:
+    input_params:
+    - omegabh2
+    - omegach2
+    - H0
+    - As
+    - ns
+    - tau
+    - m_ncdm
+    extra_args:
+      N_ncdm: 3
+      N_ur: 0.00641
+      l_max_scalars: 4095
+params:
+  omegabh2:
+    prior:
+      min: 0.005
+      max: 0.04
+    ref: 0.02237
+    proposal: 0.0002
+  omegach2:
+    prior:
+      min: 0.001
+      max: 0.99
+    ref: 0.12
+    proposal: 0.002
+  H0:
+    prior:
+      min: 40
+      max: 100
+    ref: 67.36
+    proposal: 0.6
+  logA:
+    prior:
+      min: 1.5
+      max: 4.0
+    ref: 3.044
+    proposal: 0.02
+    drop: true
+  As:
+    value: 'lambda logA: 1e-10*np.exp(logA)'
+  ns:
+    prior:
+      min: 0.8
+      max: 1.2
+    ref: 0.9649
+    proposal: 0.01
+  tau:
+    prior:
+      min: 0.01
+      max: 0.8
+    ref: 0.0544
+    proposal: 0.01
+  mnu_sample:
+    prior:
+      min: 0.0
+      max: 5.0
+    ref: 0.06
+    proposal: 0.03
+    drop: true
+  mnu:
+    derived: 'lambda mnu_sample: mnu_sample'
+  m_ncdm:
+    value: 'lambda mnu_sample: ''{0:.17g},{0:.17g},{0:.17g}''.format(mnu_sample/3.0)'
+    derived: false
+  A_planck:
+    prior:
+      min: 0.8
+      max: 1.2
+    ref: 1.0
+    proposal: 0.01
+  TT_tSZ_Amp:
+    prior:
+      min: 0.0
+      max: 10.0
+    ref: 2.0
+    proposal: 0.2
+  TT_kSZ_Amp:
+    prior:
+      min: 0.0
+      max: 10.0
+    ref: 2.0
+    proposal: 0.2
+sampler:
+  mcmc:
+    seed: 0
+    max_samples: 600
+    learn_proposal: true
+    Rminus1_stop: 0.05
+notes:
+  mnu_prior_choice: N0 found explicit lower bound at 0 eV, but no explicit upper bound
+    in 2601.16277; replication choice uses flat [0, 5] eV.
+  mnu_class_mapping: CLASS requires m_ncdm input. We sample mnu_sample, output derived
+    mnu in chains, and map m_ncdm as 3 degenerate masses mnu_sample/3.
+  planck_subset: PR3 low-l TT/EE + PR3 high-l TT (Plik-lite native) with bins_for_L_range
+    [30,756]; no high-l TE/EE.
+  tau_prior_control: Remove packaged optical-depth prior while retaining Planck low-l
+    EE and every other native component.

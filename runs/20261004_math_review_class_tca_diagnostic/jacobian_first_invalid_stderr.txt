@@ -1,0 +1,15 @@
+NONFINITE_JACOBIAN t=-0.31584360493256991 neq=3 i=2 j=2 y_j=1.222196361968144e-05 increment=1.8212145015000531e-13 f_base=-0 f_perturbed=-inf difference=-inf derivative=-inf
+NONFINITE_LU_INPUT neq=3 i=2 j=2 hinvGak=0.14556402339667163 dfdy=-inf LU=inf
+FIRST_INVALID_OPERATION signal=8 code=7 address=0x5ff4fa619b90
+/mnt/8tb/six-birds-ml/tmp/neutrino_class_tca_diagnostic_20261004/trace_invalid.so(+0x127a)[0x7eb09131527a]
+/lib/x86_64-linux-gnu/libc.so.6(+0x45330)[0x7eb090c45330]
+/mnt/8tb/six-birds-ml/tmp/neutrino_class_tca_diagnostic_20261004/class_lu_diagnostic_jacobian(+0x20b90)[0x5ff4fa619b90]
+/mnt/8tb/six-birds-ml/tmp/neutrino_class_tca_diagnostic_20261004/class_lu_diagnostic_jacobian(+0x20fbb)[0x5ff4fa619fbb]
+/mnt/8tb/six-birds-ml/tmp/neutrino_class_tca_diagnostic_20261004/class_lu_diagnostic_jacobian(+0x2579c)[0x5ff4fa61e79c]
+/mnt/8tb/six-birds-ml/tmp/neutrino_class_tca_diagnostic_20261004/class_lu_diagnostic_jacobian(+0x80736)[0x5ff4fa679736]
+/mnt/8tb/six-birds-ml/tmp/neutrino_class_tca_diagnostic_20261004/class_lu_diagnostic_jacobian(+0x88341)[0x5ff4fa681341]
+/mnt/8tb/six-birds-ml/tmp/neutrino_class_tca_diagnostic_20261004/class_lu_diagnostic_jacobian(+0x88915)[0x5ff4fa681915]
+/mnt/8tb/six-birds-ml/tmp/neutrino_class_tca_diagnostic_20261004/class_lu_diagnostic_jacobian(+0xac0b)[0x5ff4fa603c0b]
+/lib/x86_64-linux-gnu/libc.so.6(+0x2a1ca)[0x7eb090c2a1ca]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x8b)[0x7eb090c2a28b]
+/mnt/8tb/six-birds-ml/tmp/neutrino_class_tca_diagnostic_20261004/class_lu_diagnostic_jacobian(+0xb095)[0x5ff4fa604095]

@@ -1,0 +1,32 @@
+{
+  "utc": "2026-10-04T14:11:51.896755+00:00",
+  "records": [
+    {
+      "case": "archived_native_contract",
+      "accepted": true,
+      "witness": {
+        "solver": "camb",
+        "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_spt_archived_solver_control_20261004/packages/camb/camblib.so",
+        "module_sha256": "6a54f98bcc65601fd1ad5e760a99a0072cdc45fe49197ba5c3a1282889c2ee0d",
+        "solver_version": "1.6.5"
+      }
+    },
+    {
+      "case": "matching_actual_native",
+      "accepted": true,
+      "witness": {
+        "solver": "camb",
+        "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_spt_archived_solver_control_20261004/packages/camb/camblib.so",
+        "module_sha256": "6a54f98bcc65601fd1ad5e760a99a0072cdc45fe49197ba5c3a1282889c2ee0d",
+        "solver_version": "1.6.5"
+      }
+    }
+  ],
+  "native_path": "/mnt/8tb/six-birds-ml/tmp/neutrino_spt_archived_solver_control_20261004/packages/camb/camblib.so",
+  "native_sha256": "6a54f98bcc65601fd1ad5e760a99a0072cdc45fe49197ba5c3a1282889c2ee0d",
+  "solver_version": "1.6.5",
+  "implementation_sha256": "330bbef043ee87b200c448b1291f78a2b144452daa9c7f9b373a87daded3e307",
+  "source_sha256": "54fdb5ddfc77b89d32f742980db2041f7c06d212480635158952ad1132f1ce4b",
+  "scope": "actual-import native identity guard; no numerical accuracy or posterior claim",
+  "inference_launched": false
+}

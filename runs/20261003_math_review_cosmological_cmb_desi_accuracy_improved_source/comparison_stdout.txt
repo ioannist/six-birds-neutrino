@@ -1,0 +1,43 @@
+{
+  "scope": "consistent_strongest_found_parent_pair_and_stated_range_native_allocation",
+  "same_source_reference_pair_in_both_directions": true,
+  "legacy_reverse_source_basis": "retained_parent_B_fit",
+  "unchanged_declared_model_configuration": true,
+  "source_A_mass_eV": 0.017409448536001418,
+  "source_B_mass_eV": 0.05660112775275335,
+  "forward_change_from_original_parent_source_percent": 4.53921986550101,
+  "range_convention": "2000 <= effective_ell < 3000",
+  "results": {
+    "B_given_A": {
+      "joint_candidate_delta_chi2": 64.17407476919902,
+      "range_signed_deltaQ": {
+        "TT": 14.537741237139958,
+        "TE": 4.2818923865690355,
+        "EE": 37.13992184353293
+      },
+      "range_dominant_allocated_spec": "EE",
+      "fresh_native_reconstruction_error": -5.8122395785176195e-12
+    },
+    "A_given_B": {
+      "joint_candidate_delta_chi2": 23.075645935928605,
+      "range_signed_deltaQ": {
+        "TT": 12.370136025383072,
+        "TE": -0.1640244297905024,
+        "EE": 0.9168874718686066
+      },
+      "range_dominant_allocated_spec": "TT",
+      "fresh_native_reconstruction_error": 5.88897819397971e-11
+    }
+  },
+  "source_sha256": {
+    "runs/20261003_math_review_cosmological_cmb_desi_accuracy_improved_source/metrics.json": "0e7affa257cc8383dd56ebdfbe7d6758b9f6a0ace6b5ca23716270ff7d21c55e",
+    "runs/20261003_math_review_cosmological_cmb_desi_accuracy_improved_source/accounting_verification.json": "24290d702d1ce725c3d4a8ae46bdd537ffe985c9c27c922fdffb97c7532bd90f",
+    "runs/20261003_math_review_cosmological_cmb_desi_accuracy_improved_source/resolved.yaml": "a07315ccf8f083cc8fe2b3e47149fd0f9643bc5005cf4cae319a0f642cc9cc63",
+    "runs/20261003_math_review_cosmological_cmb_desi_accuracy/metrics.json": "b68f484345c5d4205ecfaaa5ad009e197d675431dc6e3920bd7a210e58a72fda",
+    "runs/20261003_math_review_cosmological_cmb_desi_accuracy/accounting_verification.json": "841cc280531fc72d30f833e7fb4853c788145fc8636ff7be1da1216b7a6c1101",
+    "runs/20261003_math_review_cosmological_cmb_desi_accuracy/resolved.yaml": "a07315ccf8f083cc8fe2b3e47149fd0f9643bc5005cf4cae319a0f642cc9cc63"
+  },
+  "global_optimum_certified": false,
+  "posterior_convergence_verified": false,
+  "independent_chi_square_blocks_or_causal_attribution": false
+}

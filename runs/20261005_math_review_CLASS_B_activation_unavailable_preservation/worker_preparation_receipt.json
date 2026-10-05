@@ -1,0 +1,72 @@
+{
+  "utc": "2026-10-05T05:17:31.008315+00:00",
+  "records": [
+    {
+      "name": "preserve.py",
+      "source": "runs/20261005_math_review_CLASS_additional_unavailable_terminal_preservation/preserve.py",
+      "source_sha256": "83fba281ac559ca55e5baa294b086ea3d4dfc7c5476b2929b778b56654cc2f02",
+      "changes": [
+        [
+          "nine absent",
+          "three absent"
+        ],
+        [
+          "runs/20261005_math_review_registered66_recovery_checkpoint/combined_runtime_verification.json",
+          "runs/20261005_math_review_registered72_post_CLASS_recovery_workflow/combined_runtime_verification.json"
+        ],
+        [
+          "seeds = [1302, 1303, 1307, 1308, 1401, 1402, 1403, 1404, 1405]",
+          "seeds = [1406, 1407, 1502]"
+        ],
+        [
+          "['guarded_quadrature_posterior_chains', 'guarded_medium_posterior_chains']",
+          "['guarded_quadrature_posterior_chains', 'guarded_medium_posterior_chains', 'guarded_grid12_posterior_trials']"
+        ],
+        [
+          "    e = entries[seed]\n    observed",
+          "    e = entries[seed]\n    handle = next(r for r in read(HERE / 'managed_handle_observations.json') if r['seed'] == seed)\n    assert handle['session'] == e['exec_session'] and handle['error'] == f'write_stdin failed: Unknown process id {e[\"exec_session\"]}'\n    observed"
+        ],
+        [
+          "if group not in ['medium_A', 'medium_B', 'quad_A', 'quad_B']:",
+          "if not set(seeds) & set(value['seeds']):"
+        ],
+        [
+          "'new_unknown_exit_registrations': 9",
+          "'new_unknown_exit_registrations': 3"
+        ],
+        [
+          "Nine additional unknown exits",
+          "Three additional unknown exits"
+        ]
+      ]
+    },
+    {
+      "name": "self_review.py",
+      "source": "runs/20261005_math_review_CLASS_additional_unavailable_terminal_preservation/self_review.py",
+      "source_sha256": "a5d1284daad1949fc298accd997e46f3d665c400e6c80c9b1f9111ef0a51d443",
+      "changes": [
+        [
+          "['guarded_quadrature_posterior_chains', 'guarded_medium_posterior_chains']",
+          "['guarded_quadrature_posterior_chains', 'guarded_medium_posterior_chains', 'guarded_grid12_posterior_trials']"
+        ],
+        [
+          "{1302, 1303, 1307, 1308, 1401, 1402, 1403, 1404, 1405}",
+          "{1406, 1407, 1502}"
+        ],
+        [
+          "for group in ['medium_A', 'medium_B', 'quad_A', 'quad_B']:",
+          "for group in ['medium_A', 'medium_B', 'grid12_B']:"
+        ],
+        [
+          "'all_nine_output_trees_and_complete_histories_reconstructed'",
+          "'all_three_output_trees_and_complete_histories_reconstructed'"
+        ],
+        [
+          "Nine unknown exits reconstructed",
+          "Three unknown exits reconstructed"
+        ]
+      ]
+    }
+  ],
+  "scope": "Three additional absent original identities and actual unavailable managed handles; no cause inferred."
+}

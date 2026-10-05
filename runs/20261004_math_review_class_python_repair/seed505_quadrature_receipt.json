@@ -1,0 +1,252 @@
+{
+  "utc": "2026-10-04T02:35:34.067689+00:00",
+  "case": "seed505_quadrature",
+  "arguments": {
+    "omega_b": 0.02225891404331876,
+    "omega_cdm": 0.11776947724676447,
+    "H0": 68.46760971622076,
+    "A_s": 2.1219159399068406e-09,
+    "n_s": 0.9574692565988652,
+    "tau_reio": 0.05665132037440848,
+    "m_ncdm": "0.0088989885790305336,0.0088989885790305336,0.0088989885790305336",
+    "N_ncdm": 3,
+    "N_ur": 0.00641,
+    "l_max_scalars": 4095,
+    "output": "tCl pCl lCl",
+    "non_linear": "hmcode",
+    "lensing": "yes",
+    "tol_ncdm_bg": 1e-08
+  },
+  "source_sha256": "b8b005631d134e23de8309368140c2833dbf6248ba3211eb35e04553a4f70982",
+  "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+  "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+  "omp_threads": "8",
+  "scope": "fixed_coordinate_native_Python_backend_validation",
+  "posterior_convergence_certified": false,
+  "uniform_numerical_accuracy_certified": false,
+  "spectra_sha256": "3c9e4754657f289386402bfb4e3d456bc913c8024126b3ae5940025c5b9570b4",
+  "spectrum_ell_max": 4095,
+  "tables": {
+    "background": {
+      "z": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "5069715e04e4562dd3053b0eddf23b6170ba4e927c102d1146ccdf33e751f3b3"
+      },
+      "proper time [Gyr]": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "0ad6012c944a837288bef32c24e280a1b26f568bac7ca442d127d0a0ec5c50b3"
+      },
+      "conf. time [Mpc]": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "f22bbd9c2a997c06f2a2545273e43fe218c97ddf9a85b0b6e9e1d16d9f625991"
+      },
+      "H [1/Mpc]": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "a66839a92647e493c15ab9e63d140bc635ea187c9c771e57327f121610c559f1"
+      },
+      "comov. dist.": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "e4988133f281d94e1ade0337be052efc079d987b2ed4e571d1570aa9eaef574f"
+      },
+      "ang.diam.dist.": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "ccc3103ac0d0bdbd450e0d98d1254d1dd512f830b4abe6a06b6bd5075a95b4a1"
+      },
+      "lum. dist.": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "edd59b6f39ab4411b7e5f0cccb79cc747e85e09c897a80f8aac12c71384269be"
+      },
+      "comov.snd.hrz.": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "e1bc9dd5945e6511b41bf469193b2aba5da16efc0fc7d5d69969bc57764c292d"
+      },
+      "(.)rho_g": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "9296c63b7cb09a72013e6ae5e747c3c30ed8af4078e02b3bd4ada43c98e5e7d4"
+      },
+      "(.)rho_b": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "1a77a3e57521b2a1f6cb6b0cf53f8760676d6458360d3a547aee5f9f7e19acb3"
+      },
+      "(.)rho_cdm": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "550cc4ea99ac1d7e1e18ef617bd05439d4993ea6d34f99f8b6a6342c49f57e1c"
+      },
+      "(.)rho_ncdm[0]": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "9216a86fcf79a4ca019c70b87ede7f5262dfc2f438dcd6292699ba66a9f7576e"
+      },
+      "(.)p_ncdm[0]": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "614512759c4f1d649b7cbea92a0a1c7ab18be70085a2f204a9a0fefb29f7193b"
+      },
+      "(.)rho_ncdm[1]": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "9216a86fcf79a4ca019c70b87ede7f5262dfc2f438dcd6292699ba66a9f7576e"
+      },
+      "(.)p_ncdm[1]": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "614512759c4f1d649b7cbea92a0a1c7ab18be70085a2f204a9a0fefb29f7193b"
+      },
+      "(.)rho_ncdm[2]": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "9216a86fcf79a4ca019c70b87ede7f5262dfc2f438dcd6292699ba66a9f7576e"
+      },
+      "(.)p_ncdm[2]": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "614512759c4f1d649b7cbea92a0a1c7ab18be70085a2f204a9a0fefb29f7193b"
+      },
+      "(.)rho_lambda": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "bf0fe75ad010d9926a5506877db57a3b36a0509c1fdf41ee57f1ac29e36af7f7"
+      },
+      "(.)rho_ur": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "98526de758c8af0069ff048f21a1422d6e7829bc81dace9fb02abe0dda09d930"
+      },
+      "(.)rho_crit": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "dbb06008800eca7284854393e6e67805989fbf1f4496b04ca0ab4fe381b8b58a"
+      },
+      "(.)rho_tot": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "dbb06008800eca7284854393e6e67805989fbf1f4496b04ca0ab4fe381b8b58a"
+      },
+      "(.)p_tot": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "05a20bd5d31c21f70c20248aa65a894913a9ef87f896b8cefa898be2e45f91f7"
+      },
+      "(.)p_tot_prime": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "e5140e9ab92a8c995ef31ea30ad69df75f368c5fc8f0612717f3e5fe73f33c2f"
+      },
+      "Omega_r(z)": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "610f157753ffe29ab9184073232bfd2dc72bd6dec3fc6cd7c0166d0283b411dc"
+      },
+      "Omega_m(z)": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "5afb507c821f15a90aad218a0cc71d5d0232739563aa08dab39af8c7cb7c49a5"
+      },
+      "gr.fac. D": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "df661e0f4ffe0e12cf92c0e7b9b7d060912715f230ed4b6352f052f0015ffcca"
+      },
+      "gr.fac. f": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "788b5151091541fd3d98d7d2a6c8f05bc01d00ae024653d65d2d863b89216c88"
+      }
+    },
+    "thermodynamics": {
+      "scale factor a": {
+        "rows": 28333,
+        "nonfinite": 0,
+        "array_sha256": "9c32c67f307b33ea7c9b28c61c2843a231c9ab1f0c086d7486ddacb2a13976e0"
+      },
+      "z": {
+        "rows": 28333,
+        "nonfinite": 0,
+        "array_sha256": "d4a7dfcf01a141bda652d3f162402d0b1a4e7c9b716c7ad45495d23cc2bdfe3c"
+      },
+      "conf. time [Mpc]": {
+        "rows": 28333,
+        "nonfinite": 0,
+        "array_sha256": "5436b289dadb618bc846b0cec5fe6aae3bfc05f84b203782a4f497846d705388"
+      },
+      "x_e": {
+        "rows": 28333,
+        "nonfinite": 0,
+        "array_sha256": "50a56ac019dca4655d65a4a6afdcc6a05e628b981d901167bedde90729470b6b"
+      },
+      "kappa' [Mpc^-1]": {
+        "rows": 28333,
+        "nonfinite": 0,
+        "array_sha256": "9cd2ef971b53a47f25ffc629dc51dbd027309ac53c0cf0b2b8c3b51cd2e4c593"
+      },
+      "exp(-kappa)": {
+        "rows": 28333,
+        "nonfinite": 0,
+        "array_sha256": "dc5547bd14cfbf8cece944313aef5442b672dc78175c3dae5dac50fa06852ffa"
+      },
+      "g [Mpc^-1]": {
+        "rows": 28333,
+        "nonfinite": 0,
+        "array_sha256": "52fe892b5a4aec27643ece2cb0ae5cafbe0b82d845bdc0b1eb51dd1eaf3620ab"
+      },
+      "Tb [K]": {
+        "rows": 28333,
+        "nonfinite": 0,
+        "array_sha256": "cff5845be90500e38a009f7d41c125d076ae8a2f62e3a3b5660f3b10cb973ad8"
+      },
+      "dTb [K]": {
+        "rows": 28333,
+        "nonfinite": 0,
+        "array_sha256": "c9a196a4a76456e1e5f1a0aea1e6d8288f926b299991cf5dd0d29ace0c1c26a7"
+      },
+      "w_b": {
+        "rows": 28333,
+        "nonfinite": 0,
+        "array_sha256": "2f6994d911336972d3e70970bfc26026770040bb703b6f51d9ba7b81f7707ea8"
+      },
+      "c_b^2": {
+        "rows": 28333,
+        "nonfinite": 0,
+        "array_sha256": "0ee110fd3aad8ef508617ce49b3c0c1b8f2ef546f73aa3f2130d12a86256f674"
+      },
+      "kappa_b": {
+        "rows": 28333,
+        "nonfinite": 0,
+        "array_sha256": "93b4665fb0d9d65adf1631e5f1511e95eb6be2a452529a11f3234a7a470588eb"
+      }
+    }
+  },
+  "thermodynamics_sha256": "e1ca478bbcc4aa2d70c6c74d780fc7c328b749878f1bbdacc80faf8305292692",
+  "original_spectra_sha256": "3c9e4754657f289386402bfb4e3d456bc913c8024126b3ae5940025c5b9570b4",
+  "arrays_equal_original_exactly": {
+    "tt": true,
+    "ee": true,
+    "te": true,
+    "bb": true,
+    "pp": true,
+    "tp": true,
+    "ell": true
+  },
+  "max_absolute_array_discrepancy": {
+    "tt": 0.0,
+    "ee": 0.0,
+    "te": 0.0,
+    "bb": 0.0,
+    "pp": 0.0,
+    "tp": 0.0,
+    "ell": 0.0
+  },
+  "elapsed_seconds": 14.28758586384356,
+  "succeeded": true
+}

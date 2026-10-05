@@ -1,0 +1,14 @@
+{
+  "utc": "2026-10-05T05:15:18.589867+00:00",
+  "initial_self_review_direct_exit_code": 1,
+  "v2_self_review_direct_exit_code": 1,
+  "source": "runs/20261005_math_review_CLASS_fresh_B_activation/self_review_activation.py",
+  "source_sha256": "f2239f0f6849bd8396c714bc3fb061ec3325f163290a6a1cbc2257581db3c14b",
+  "changes": [
+    [
+      "    text = (HERE / r['name']).read_text()\n    for before, after in reversed(r['changes']):\n        assert text.count(after) == 1\n        text = text.replace(after, before, 1)\n    assert text.encode() == (ROOT / r['source']).read_bytes()",
+      "    text = (ROOT / r['source']).read_text()\n    for before, after in r['changes']:\n        assert text.count(before) == 1\n        text = text.replace(before, after, 1)\n    assert text.encode() == (HERE / r['name']).read_bytes()"
+    ]
+  ],
+  "reason": "The replacement CLASS_fresh_B_ also occurs in the preparation path. Inverse replacement is ambiguous and v2 replacing its first occurrence corrupts that path. Forward reconstruction applies the exact recorded unique source substitutions and compares full bytes. Both unsuccessful self-review attempts are retained."
+}

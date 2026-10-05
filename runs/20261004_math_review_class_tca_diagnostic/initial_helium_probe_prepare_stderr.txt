@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/home/repos/six-birds-neutrino/runs/20261004_math_review_class_tca_diagnostic/build_lu_probe.py", line 75, in <module>
+    subprocess.run(command, check=True, stdout=output, stderr=subprocess.STDOUT)
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['gcc', '-O3', '-pthread', '-g', '-fPIC', '-D__CLASSDIR__="/mnt/8tb/six-birds-ml/tmp/neutrino_class_tca_diagnostic_20261004/classy"', '-DHYREC', '-I/mnt/8tb/six-birds-ml/tmp/neutrino_class_tca_diagnostic_20261004/classy/include', '-I/mnt/8tb/six-birds-ml/tmp/neutrino_class_tca_diagnostic_20261004/classy/external/HyRec2020', '-c', '/home/repos/six-birds-neutrino/runs/20261004_math_review_class_tca_diagnostic/wrap_hyrec_helium_diagnostic.c', '-o', '/mnt/8tb/six-birds-ml/tmp/neutrino_class_tca_diagnostic_20261004/wrap_hyrec_helium_diagnostic.o']' returned non-zero exit status 1.

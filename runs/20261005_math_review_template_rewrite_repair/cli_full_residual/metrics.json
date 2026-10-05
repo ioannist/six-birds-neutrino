@@ -1,0 +1,30 @@
+{
+  "template_mode": "full_residual",
+  "direction": "both",
+  "B_given_A": {
+    "chi2_before": 2.2908164189989644,
+    "chi2_after": 0.0,
+    "improvement": 2.2908164189989644,
+    "fraction_removed": 1.0,
+    "a_star": 1.0,
+    "dominant_mode_index": null,
+    "alignment_cos": 1.0,
+    "cond_cov": 2.120178286806302,
+    "chi2_test_best_reference": 4.425239490016527e-15
+  },
+  "A_given_B": {
+    "chi2_before": 8.290815943877556,
+    "chi2_after": 0.0,
+    "improvement": 8.290815943877556,
+    "fraction_removed": 1.0,
+    "a_star": 1.0,
+    "dominant_mode_index": null,
+    "alignment_cos": 1.0,
+    "cond_cov": 2.120178286806302,
+    "chi2_test_best_reference": 4.000000000000001
+  },
+  "warnings": [
+    "B_given_A: high overfit risk: residual-driven template has alignment_cos > 0.95",
+    "A_given_B: high overfit risk: residual-driven template has alignment_cos > 0.95"
+  ]
+}

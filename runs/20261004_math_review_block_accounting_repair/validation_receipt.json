@@ -1,0 +1,233 @@
+{
+  "utc": "2026-10-04T06:44:10.242921+00:00",
+  "cases": [
+    {
+      "case": "common_offset",
+      "train": {
+        "large": -1e+16,
+        "small": -1.0
+      },
+      "test": {
+        "large": -1e+16,
+        "small": -2.0
+      },
+      "exact_aggregate_numerator": "-2",
+      "exact_aggregate_denominator": "1",
+      "before": {
+        "status": "rejected",
+        "error": "Blockwise decomposition mismatch: total does not equal sum(by_block). total_from_blocks=-2.0, total_from_aggregate=-4.0."
+      },
+      "after": {
+        "status": "returned",
+        "result": {
+          "total": -2.0,
+          "by_block": {
+            "large": -0.0,
+            "small": -2.0
+          },
+          "accounting_error": 0.0
+        }
+      }
+    },
+    {
+      "case": "insertion_order",
+      "train": {
+        "a": -1e+16,
+        "b": -1.0,
+        "c": -1.0
+      },
+      "test": {
+        "b": -1.0,
+        "c": -1.0,
+        "a": -1e+16
+      },
+      "exact_aggregate_numerator": "0",
+      "exact_aggregate_denominator": "1",
+      "before": {
+        "status": "returned",
+        "result": {
+          "total": 0.0,
+          "by_block": {
+            "a": -0.0,
+            "b": -0.0,
+            "c": -0.0
+          }
+        }
+      },
+      "after": {
+        "status": "returned",
+        "result": {
+          "total": 0.0,
+          "by_block": {
+            "a": -0.0,
+            "b": -0.0,
+            "c": -0.0
+          },
+          "accounting_error": 0.0
+        }
+      }
+    },
+    {
+      "case": "intermediate_overflow",
+      "train": {
+        "a": -5e+307,
+        "b": -5e+307,
+        "c": 0.0,
+        "d": 0.0
+      },
+      "test": {
+        "a": 0.0,
+        "b": 0.0,
+        "c": -5e+307,
+        "d": -5e+307
+      },
+      "exact_aggregate_numerator": "0",
+      "exact_aggregate_denominator": "1",
+      "before": {
+        "status": "rejected",
+        "error": "Blockwise decomposition mismatch: total does not equal sum(by_block). total_from_blocks=inf, total_from_aggregate=-0.0."
+      },
+      "after": {
+        "status": "returned",
+        "result": {
+          "total": 0.0,
+          "by_block": {
+            "a": 1e+308,
+            "b": 1e+308,
+            "c": -1e+308,
+            "d": -1e+308
+          },
+          "accounting_error": 0.0
+        }
+      }
+    },
+    {
+      "case": "unrepresentable_total",
+      "train": {
+        "a": -5e+307,
+        "b": -5e+307
+      },
+      "test": {
+        "a": 0.0,
+        "b": 0.0
+      },
+      "exact_aggregate_numerator": "200000000000000002195812725888091083480984619354623692673621365806315170809822983074326657956989377798122499339442345031223180567486280176656614018396292092062543329005866054371394979399177118086676768932330002356853795252425890355256182391573414916245567940343568830210583605786415746545949771430860446236672",
+      "exact_aggregate_denominator": "1",
+      "before": {
+        "status": "rejected",
+        "error": "likelihood difference overflowed; cannot report a finite Delta chi2."
+      },
+      "after": {
+        "status": "rejected",
+        "error": "block accounting is not representable as a finite binary64 output."
+      }
+    },
+    {
+      "case": "rounded_blocks_hide_signal",
+      "train": {
+        "a": -1e+16,
+        "b": 0.0
+      },
+      "test": {
+        "a": -1.0,
+        "b": -1e+16
+      },
+      "exact_aggregate_numerator": "-2",
+      "exact_aggregate_denominator": "1",
+      "before": {
+        "status": "returned",
+        "result": {
+          "total": 0.0,
+          "by_block": {
+            "a": 2e+16,
+            "b": -2e+16
+          }
+        }
+      },
+      "after": {
+        "status": "rejected",
+        "error": "Rounded block statistics do not reconstruct the aggregate at the declared tolerance. total_from_blocks=0.0, total_from_aggregate=-2.0."
+      }
+    },
+    {
+      "case": "small_signal_within_tolerance",
+      "train": {
+        "a": -1e+16,
+        "b": 0.0
+      },
+      "test": {
+        "a": -1e-14,
+        "b": -1e+16
+      },
+      "exact_aggregate_numerator": "-6338253001141147",
+      "exact_aggregate_denominator": "316912650057057350374175801344",
+      "before": {
+        "status": "returned",
+        "result": {
+          "total": 0.0,
+          "by_block": {
+            "a": 2e+16,
+            "b": -2e+16
+          }
+        }
+      },
+      "after": {
+        "status": "returned",
+        "result": {
+          "total": -2e-14,
+          "by_block": {
+            "a": 2e+16,
+            "b": -2e+16
+          },
+          "accounting_error": 2e-14
+        }
+      }
+    }
+  ],
+  "pytest_passed": 94,
+  "pytest_session": 79238,
+  "pytest_exit_code": 0,
+  "shared_localizer_controls_unchanged": true,
+  "scope": "generic_helper_for_actual_additive_loglike_terms_only",
+  "correlated_covariance_subblocks_declared_additive": false,
+  "native_likelihood_rerun_for_this_refactor": false,
+  "lean_changed": false,
+  "files": [
+    {
+      "path": "runs/20261004_math_review_block_accounting_repair/before_metrics.py",
+      "sha256": "f313230e2efdd2372de3ff815afaff19d3c4fd7221024391cf3f81c995433d54"
+    },
+    {
+      "path": "runs/20261004_math_review_block_accounting_repair/before_localization.py",
+      "sha256": "c8fe5655af631e989ea34a7e17aad0343bf32195567e38f70e745c7c8456219e"
+    },
+    {
+      "path": "src/sbt_spt_audit/metrics.py",
+      "sha256": "0dd1d09cc575947254b12f0a5e70664600038f5ce6269d265272edcfc6280c65"
+    },
+    {
+      "path": "src/sbt_spt_audit/localization.py",
+      "sha256": "b18f5257185987774eaa84d894fc789f6e16e82852962ad936f5b72d95c1d1c6"
+    },
+    {
+      "path": "src/sbt_spt_audit/_numerics.py",
+      "sha256": "1b34997880ba12172943c6198c435023feb26952e64126dc592746f219cd8580"
+    },
+    {
+      "path": "tests/test_metrics.py",
+      "sha256": "229fdfe4047f59901010754f90d378070426dd27720913aa5b4214ccaded8ee8"
+    },
+    {
+      "path": "runs/20261004_math_review_block_accounting_repair/final_pytest_stdout.txt",
+      "sha256": "8fd96dbbe769350047a15ad77c4ce776da8436beae04a22b20c9b1a1ee3f00ac"
+    },
+    {
+      "path": "runs/20261004_math_review_block_accounting_repair/final_pytest_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_block_accounting_repair/verify_repair.py",
+      "sha256": "f481641b91fa24457bed4c5bf5848cf3f6110930ab6f7b6c368d1b625a0c246c"
+    }
+  ]
+}

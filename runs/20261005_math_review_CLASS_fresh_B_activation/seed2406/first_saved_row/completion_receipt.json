@@ -1,0 +1,52 @@
+{
+  "utc": "2026-10-05T05:16:54.991175+00:00",
+  "seed": 2406,
+  "source_seed": 1306,
+  "point": {
+    "omegabh2": 0.02189593497827176,
+    "omegach2": 0.11730158120456323,
+    "H0": 68.28842842263217,
+    "logA": 3.051468228738208,
+    "ns": 0.9632370288046541,
+    "tau": 0.05513455002545674,
+    "mnu_sample": 0.012766845211569644,
+    "A_planck": 1.008990335787769,
+    "TT_tSZ_Amp": 1.328393905041943,
+    "TT_kSZ_Amp": 1.9191528253735464
+  },
+  "holding_time": 2,
+  "source": "runs/20261005_math_review_CLASS_fresh_B_quad_B_seed2406/chains/CLASS_fresh_B_quad_B_seed2406.1.txt",
+  "frozen": "runs/20261005_math_review_CLASS_fresh_B_activation/seed2406/first_saved_row/chains/CLASS_fresh_B_quad_B_seed2406.1.txt",
+  "snapshot_sha256": "f4a4ca6acd63640ce585504a5e5ff361d81f812a967403472974052f0cae62c1",
+  "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+  "config_sha256": "61b476b8becebea4c9a11bf4d7ce1c9d133ddb1c791cb843afa38bc9289fd810",
+  "native_row_verified": true,
+  "native_check": {
+    "point": {
+      "omegabh2": 0.02189593497827176,
+      "omegach2": 0.11730158120456323,
+      "H0": 68.28842842263217,
+      "logA": 3.051468228738208,
+      "ns": 0.9632370288046541,
+      "tau": 0.05513455002545674,
+      "mnu_sample": 0.012766845211569644,
+      "A_planck": 1.008990335787769,
+      "TT_tSZ_Amp": 1.328393905041943,
+      "TT_kSZ_Amp": 1.9191528253735464
+    },
+    "fresh_minuslogpost": 950.0427000878117,
+    "fresh_minus_recorded": {
+      "minuslogpost": 0.0,
+      "minuslogprior": 0.0,
+      "chi2": 0.0,
+      "chi2__sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 0.0,
+      "chi2__sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 0.0,
+      "chi2__planck_2018_lowl.TT": 0.0,
+      "chi2__planck_2018_lowl.EE_sroll2": 0.0,
+      "chi2__planck_2018_highl_plik.TT_lite_native": 0.0,
+      "chi2__planckpr4lensing.PlanckPR4Lensing": 0.0
+    }
+  },
+  "complete_source_prefix_preserved": true,
+  "scope": "Selected first saved native row; not exact resume, independent posterior evidence or convergence certificate."
+}

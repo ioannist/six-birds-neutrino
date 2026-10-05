@@ -1,0 +1,38 @@
+{
+  "utc": "2026-10-04T17:06:20.371464+00:00",
+  "scope": "sixth_quad_A_only_when_1p2_saved_history_trigger_is_met",
+  "scripts": [
+    {
+      "source": "runs/20261004_math_review_guarded_CLASS_fifth_quad_A_diagnostics/prepare_snapshot.py",
+      "source_sha256": "0cf54478ab41757e577ba700e84820d5c1f02187c41e46ce975afd8267556920",
+      "prepared": "runs/20261004_math_review_guarded_CLASS_sixth_quad_A_diagnostics/prepare_snapshot.py",
+      "prepared_sha256": "d98c9717a59edf29348fe5ca889b9a5698355db8df6593e14cd3f44be9b25830"
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_CLASS_fifth_quad_A_diagnostics/verify_snapshot.py",
+      "source_sha256": "4c5b63562ba9bfd7f7da57e6f7023e280c6b97009817ea629c6f48ae1773e163",
+      "prepared": "runs/20261004_math_review_guarded_CLASS_sixth_quad_A_diagnostics/verify_snapshot.py",
+      "prepared_sha256": "4c5b63562ba9bfd7f7da57e6f7023e280c6b97009817ea629c6f48ae1773e163"
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_CLASS_fifth_quad_A_diagnostics/self_review.py",
+      "source_sha256": "a25565e1ecdbdf5582bfd593d824bf4f71c814f2d1562815106d10341c5ec7a6",
+      "prepared": "runs/20261004_math_review_guarded_CLASS_sixth_quad_A_diagnostics/self_review.py",
+      "prepared_sha256": "6c489ee264d85a9a12d57b73ace4bb78b9af099ec9df6a7e8dc849b9cff2c8a4"
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_CLASS_fifth_quad_A_diagnostics/run_diagnostics.py",
+      "source_sha256": "21d3c1584c115d84e6d21ea094e3755d8087d88076f19fa5489f3ad4aac74656",
+      "prepared": "runs/20261004_math_review_guarded_CLASS_sixth_quad_A_diagnostics/run_diagnostics.py",
+      "prepared_sha256": "21d3c1584c115d84e6d21ea094e3755d8087d88076f19fa5489f3ad4aac74656"
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_CLASS_sixth_medium_B_diagnostics/observe_runtime.py",
+      "prepared": "runs/20261004_math_review_guarded_CLASS_sixth_quad_A_diagnostics/observe_runtime.py",
+      "source_sha256": "9f837ddfd65bffadb8f66c1e0b45d7e4dbd0d969f07f42659b64758dd4f99ddd",
+      "prepared_sha256": "9f837ddfd65bffadb8f66c1e0b45d7e4dbd0d969f07f42659b64758dd4f99ddd"
+    }
+  ],
+  "diagnostic_algorithm_or_gates_changed": false,
+  "paper_modified": false
+}

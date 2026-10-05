@@ -1,0 +1,17 @@
+{
+  "full_residual": {
+    "repr": "{'chi2_before': inf, 'chi2_after': nan, 'improvement': nan, 'fraction_removed': nan, 'a_star': nan, 'dominant_mode_index': None, 'alignment_cos': nan, 'cond_cov': 1.0, 'chi2_test_best_reference': 0.0}",
+    "JSON_contains_nonstandard_nonfinite_values": true
+  },
+  "dominant_whitened": {
+    "repr": "{'chi2_before': inf, 'chi2_after': inf, 'improvement': nan, 'fraction_removed': nan, 'a_star': inf, 'dominant_mode_index': 0, 'alignment_cos': nan, 'cond_cov': 1.0, 'chi2_test_best_reference': 0.0}",
+    "JSON_contains_nonstandard_nonfinite_values": true
+  },
+  "warnings": [
+    "invalid value encountered in scalar divide",
+    "invalid value encountered in scalar divide"
+  ],
+  "valid_covariance_parse": {
+    "error": "ValueError: covariance solve produced nonfinite values; cannot report a finite result."
+  }
+}

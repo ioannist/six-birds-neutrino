@@ -1,0 +1,20 @@
+{
+  "utc": "2026-10-04T20:23:25.573905+00:00",
+  "files": [
+    {
+      "source": "runs/20261004_math_review_fresh_CAMB_fifth_old_A3200_diagnostics/run_verification.py",
+      "source_sha256": "2faaf3a14f10bb1c2db8a3bf03adf17cabaa839dd3349df087943b364c4f4da9",
+      "destination": "runs/20261004_math_review_fresh_CAMB_fifth_old_B4095_diagnostics/run_verification.py",
+      "destination_sha256": "2faaf3a14f10bb1c2db8a3bf03adf17cabaa839dd3349df087943b364c4f4da9",
+      "byte_identical": true
+    },
+    {
+      "source": "runs/20261004_math_review_fresh_CAMB_fifth_old_A3200_diagnostics/observe_runtime.py",
+      "source_sha256": "948b97643b0aebd1d410d2f2bd1487460a0737cdaa7012367cc70ce19472aec2",
+      "destination": "runs/20261004_math_review_fresh_CAMB_fifth_old_B4095_diagnostics/observe_runtime.py",
+      "destination_sha256": "948b97643b0aebd1d410d2f2bd1487460a0737cdaa7012367cc70ce19472aec2",
+      "byte_identical": true
+    }
+  ],
+  "physical_configs_or_diagnostic_gates_changed": false
+}

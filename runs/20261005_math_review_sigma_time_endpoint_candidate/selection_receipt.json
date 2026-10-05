@@ -1,0 +1,57 @@
+{
+  "utc": "2026-10-05T01:46:13.371907+00:00",
+  "records": [
+    {
+      "kind": "mass_grid",
+      "source_receipt": "runs/20261004_math_review_upper_prior_native_failure_reproduction_preparation/seed2004/failed_proposal.json",
+      "source_receipt_sha256": "1cddef994d8f0c805590ec4e34b6f2a3fa8469dcf39185e3f7ddadb6f59b3639",
+      "point": {
+        "omegabh2": 0.039722417435190734,
+        "omegach2": 0.02050757593546919,
+        "H0": 55.63518294861832,
+        "logA": 3.4029050190597663,
+        "ns": 0.8333775835517003,
+        "tau": 0.20267279146734776,
+        "mnu": 4.9
+      },
+      "anchor_seed": 2004,
+      "only_coordinate_change": "mnu",
+      "original_control_index": 8
+    },
+    {
+      "kind": "mass_grid",
+      "source_receipt": "runs/20261004_math_review_upper_prior_native_failure_reproduction_preparation/seed2004/failed_proposal.json",
+      "source_receipt_sha256": "1cddef994d8f0c805590ec4e34b6f2a3fa8469dcf39185e3f7ddadb6f59b3639",
+      "point": {
+        "omegabh2": 0.039722417435190734,
+        "omegach2": 0.02050757593546919,
+        "H0": 55.63518294861832,
+        "logA": 3.4029050190597663,
+        "ns": 0.8333775835517003,
+        "tau": 0.20267279146734776,
+        "mnu": 5.1
+      },
+      "anchor_seed": 2004,
+      "only_coordinate_change": "mnu",
+      "original_control_index": 9
+    },
+    {
+      "kind": "mass_grid",
+      "source_receipt": "runs/20261004_math_review_upper_prior_native_failure_reproduction_preparation/seed2003/failed_proposal.json",
+      "source_receipt_sha256": "b9f0e84c0945084e286e2c132d43418c9cd7c06ec1c73a0674ffd8900819aa0b",
+      "point": {
+        "omegabh2": 0.029575663512100336,
+        "omegach2": 0.0028630562619511857,
+        "H0": 54.38876723029562,
+        "logA": 2.9440199295646825,
+        "ns": 0.9141040602339817,
+        "tau": 0.07344339439339485,
+        "mnu": 0.05
+      },
+      "anchor_seed": 2003,
+      "only_coordinate_change": "mnu",
+      "original_control_index": 0
+    }
+  ],
+  "scope": "Three selected endpoint-repair controls under initialized background: warning cases at4.9/5.1eV and preserved0.05eV sigma-timeout witness. Native time-coordinate change is a distinct numerical policy; no posterior pooling or global error certificate."
+}

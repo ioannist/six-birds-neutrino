@@ -1,0 +1,9 @@
+✖ [7893/7895] Building TruncGaussProof.GaussianSweep (9.0s)
+trace: .> LEAN_PATH=/home/repos/six-birds-neutrino/lean/trunc_gauss_proof/.lake/packages/Cli/.lake/build/lib/lean:/home/repos/six-birds-neutrino/lean/trunc_gauss_proof/.lake/packages/batteries/.lake/build/lib/lean:/home/repos/six-birds-neutrino/lean/trunc_gauss_proof/.lake/packages/Qq/.lake/build/lib/lean:/home/repos/six-birds-neutrino/lean/trunc_gauss_proof/.lake/packages/aesop/.lake/build/lib/lean:/home/repos/six-birds-neutrino/lean/trunc_gauss_proof/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/repos/six-birds-neutrino/lean/trunc_gauss_proof/.lake/packages/importGraph/.lake/build/lib/lean:/home/repos/six-birds-neutrino/lean/trunc_gauss_proof/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/repos/six-birds-neutrino/lean/trunc_gauss_proof/.lake/packages/plausible/.lake/build/lib/lean:/home/repos/six-birds-neutrino/lean/trunc_gauss_proof/.lake/packages/mathlib/.lake/build/lib/lean:/home/repos/six-birds-neutrino/lean/trunc_gauss_proof/.lake/build/lib/lean /home/ioannis/.elan/toolchains/leanprover--lean4---v4.27.0/bin/lean /home/repos/six-birds-neutrino/lean/trunc_gauss_proof/TruncGaussProof/GaussianSweep.lean -o /home/repos/six-birds-neutrino/lean/trunc_gauss_proof/.lake/build/lib/lean/TruncGaussProof/GaussianSweep.olean -i /home/repos/six-birds-neutrino/lean/trunc_gauss_proof/.lake/build/lib/lean/TruncGaussProof/GaussianSweep.ilean -c /home/repos/six-birds-neutrino/lean/trunc_gauss_proof/.lake/build/ir/TruncGaussProof/GaussianSweep.c --setup /home/repos/six-birds-neutrino/lean/trunc_gauss_proof/.lake/build/ir/TruncGaussProof/GaussianSweep.setup.json --json
+error: TruncGaussProof/GaussianSweep.lean:31:2: No applicable extensionality theorem found for type
+  ENNReal
+
+Note: Extensionality theorems can be registered by marking them with the `[ext]` attribute
+error: Lean exited with code 1
+Some required targets logged failures:
+- TruncGaussProof.GaussianSweep

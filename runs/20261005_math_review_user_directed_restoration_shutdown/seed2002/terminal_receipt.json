@@ -1,0 +1,188 @@
+{
+  "utc": "2026-10-05T08:31:54.245574+00:00",
+  "registered_entry": {
+    "seed": 2002,
+    "lens": "A",
+    "group": "upper20_A4095",
+    "kind": "spt_desi_fresh_CAMB_upper_prior_control",
+    "module": "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/camb/camblib.so",
+    "module_sha256": "306640a8948cd5246fc9b21e76525f6adebdff5ba3bc792a57d50bba67225ad5",
+    "wrapper": "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/cobaya/theories/camb/camb.py",
+    "wrapper_sha256": "ed8a9ea708caa437e72732adb1cb32182330f55b4c3c9fb1e18e36e604424214",
+    "solver_version": "2.0.4",
+    "Cobaya_version": "3.6.2",
+    "config": "runs/20261004_math_review_upper_prior_posterior_preparation/seed2002/input.yaml",
+    "config_sha256": "131dff51c00165099bf4d6fb703bcc6214a2b8baa618d8078f25969525aa2e77",
+    "run_dir": "runs/20261004_math_review_fresh_CAMB_upper20_A4095_seed2002",
+    "initial_point": {
+      "omegabh2": 0.02282449592863893,
+      "omegach2": 0.11664986847460365,
+      "H0": 68.75301948686611,
+      "logA": 3.0180738025724474,
+      "ns": 1.018826611596793,
+      "tau": 0.057005242595730525,
+      "mnu": 0.05300723110956623
+    },
+    "initial_point_label": "selected_latest_frozen_row",
+    "baseline_group": "current_A4095",
+    "baseline_config": "runs/20261004_math_review_fresh_CAMB_posterior_preparation/seed1801/input.yaml",
+    "baseline_config_sha256": "4dd01290bcba5f5858cad52b8ee9d599b63815ad924b0f69e0e42799bc2773e4",
+    "control": "runs/20261004_math_review_upper_prior_control_preparation/current_A4095/upper_20/native_points.json",
+    "control_sha256": "b134e661d4d687cd467cc7c6ae8596504d6ec7c887b9665f39356d2d47c45433",
+    "proposal": {
+      "source": "runs/20261003_math_review_chain_A_seed401/chains/math_restoration_A_seed401.covmat",
+      "path": "runs/20261004_math_review_upper_prior_posterior_preparation/proposal_A.covmat",
+      "sha256": "27eebf2cb99c8b73aab845ce5d930a407ff4ebe7359ec8515bd8c939ec9cd4c2",
+      "completion_receipt": "runs/20261004_math_review_spt_sample_cap_completion/completion_receipt.json",
+      "completion_receipt_sha256": "63418a24af29123aed7f63f7cb3ce14ae8b36d832986ba7e1c9273d448e1f2e7",
+      "sampled_parameters": [
+        "omegabh2",
+        "omegach2",
+        "H0",
+        "logA",
+        "ns",
+        "tau",
+        "mnu"
+      ],
+      "maximum_asymmetry": 2.710505431213761e-20,
+      "role": "same fixed proposal heuristic; no posterior samples pooled",
+      "copied_from": "runs/20261004_math_review_fresh_CAMB_posterior_preparation/proposal_A.covmat"
+    },
+    "implementation_sha256": {
+      "scripts/run_cobaya.py": "883640961f35a782bdec0979fe28c98eb92b96098d1d083a9d62a8b3382d0c11",
+      "runs/20261004_math_review_upper_prior_posterior_preparation/launch_chain.py": "78931394b4b247f6f2d1b33125ba620f8c36582407507f525963a325f1ffba17",
+      "src/sbt_spt_audit/_numerics.py": "1b34997880ba12172943c6198c435023feb26952e64126dc592746f219cd8580",
+      "src/sbt_spt_audit/candl_support.py": "ddf70460d7662a2f1e4e5130635b6c09cdc2381ef78f0febaa0c88391533f162",
+      "src/sbt_spt_audit/mcmc_diagnostics.py": "babe3e043fdb7fa0062f71d47446e6e0109444fd83050625124a50dc1fc1ac53",
+      "src/sbt_spt_audit/mcmc.py": "557006c5101152322564810dcba6c4c8a536164486973a0326275464c551862c",
+      "src/sbt_spt_audit/localization.py": "b18f5257185987774eaa84d894fc789f6e16e82852962ad936f5b72d95c1d1c6",
+      "src/sbt_spt_audit/hello.py": "052f01caf3cbcc1e78689a02fae093f6d8e3369a01b2bb0974e65ed1a050c607",
+      "src/sbt_spt_audit/likelihood.py": "69fae0146365fb086fc0702ee19d34a4cd381a14324e7d350d04405052fadaa0",
+      "src/sbt_spt_audit/boltzmann.py": "a2100f8f48f98988580c21ddaca04ed86a9b956f4b22135a942b05dd8265f355",
+      "src/sbt_spt_audit/__init__.py": "2fe4cfb76c3908ca1b089ac085f5d5d3c6ba4bbaf3c95b1c797daa6a1d7a9857",
+      "src/sbt_spt_audit/metrics.py": "fd8617103d1ccb3f8a7494e09fff362caf14e0b4e612064860539e041197fbf1",
+      "src/sbt_spt_audit/samplers.py": "2a7c7e99597b6c5bc48f72bbaa9e8df81dd6987ba36e8ab0a81b8c36b10f33e9",
+      "src/sbt_spt_audit/likelihoods/candl_cobaya.py": "b695b32235d04a2b287786260c5c02fb87c43d787d0949907a7247518aa37a90",
+      "src/sbt_spt_audit/likelihoods/desi_dr2_bao.py": "f9e8872fd1c4c737b9e4e9a143cb8ac1d8e31b8a087d687db9ebe14b076939aa",
+      "src/sbt_spt_audit/likelihoods/__init__.py": "34ecc40b8eb6a6b8e87dc120366fa1a7fd93ddc08222d3dc2c53a5c4418a1001"
+    },
+    "launch_receipt": "runs/20261004_math_review_upper_prior_posterior_preparation/seed2002/launch_receipt.json",
+    "scheduling_nice": 5,
+    "only_target_change": "mass prior upper endpoint 5 to 20 eV",
+    "posterior_qualified": false,
+    "pid": 1873756,
+    "session": 51773,
+    "process_start_ticks": 342081084,
+    "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_upper_prior_posterior_preparation/launch_chain.py 2002 ",
+    "status": "running_initial_and_first_saved_native_rows_verified_no_posterior_qualification",
+    "native_module_sha256": "306640a8948cd5246fc9b21e76525f6adebdff5ba3bc792a57d50bba67225ad5",
+    "effective_config_sha256": "14ad502571b39cef1e0292b323a98ccc6507db719c2285b60be84f1eb97baf61",
+    "native_backend_receipt_sha256": "83d363c0bbc79c20d5a38c218709e85cdbf23571cdbb0e58b388b60042bf9053",
+    "launch_receipt_sha256": "b8e83d01dbcd0ecf2c542d96b30a947c8ec53ab6b14325c7c28d58bffeeb9754",
+    "native_first_saved_row_verified": true,
+    "first_saved_row_receipt": "runs/20261004_math_review_upper_prior_posterior_preparation/seed2002/first_saved_rows/completion_receipt.json",
+    "first_saved_row_receipt_sha256": "8fbeb37a48bac8cf236710d853d65e928731715656923661a44fc7acf0618f97"
+  },
+  "last_verified_live_identity": {
+    "seed": 2002,
+    "pid": 1873756,
+    "process_start_ticks": 342081084,
+    "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_upper_prior_posterior_preparation/launch_chain.py 2002 ",
+    "module": "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/camb/camblib.so",
+    "module_sha256": "306640a8948cd5246fc9b21e76525f6adebdff5ba3bc792a57d50bba67225ad5",
+    "status": "live_same_owned_native_identity",
+    "retained_represented_steps": 4383,
+    "group": "upper20_A4095",
+    "posterior_qualified": false
+  },
+  "identity_observation": {
+    "pid": 1873756,
+    "expected_start_ticks": 342081084,
+    "status": "PID_not_present",
+    "original_identity_absent": true
+  },
+  "exit_code": 130,
+  "managed_session": 51773,
+  "exit_reason": "user_directed_claim_restoration_stop",
+  "stop_request": {
+    "utc": "2026-10-05T08:28:43.002933+00:00",
+    "seed": 2002,
+    "pid": 1873756,
+    "process_start_ticks": 342081084,
+    "managed_session": 51773,
+    "run_dir": "runs/20261004_math_review_fresh_CAMB_upper20_A4095_seed2002",
+    "signal": "SIGINT",
+    "reason": "user instructed dropping attempts to justify unsupported or contradicted original claims",
+    "signal_sent": true,
+    "owned_identity_revalidated": true
+  },
+  "native_failure_established": false,
+  "terminal_output_files": [
+    {
+      "source": "runs/20261004_math_review_fresh_CAMB_upper20_A4095_seed2002/chains/fresh_CAMB_upper20_A4095_seed2002.1.txt",
+      "frozen": "runs/20261005_math_review_user_directed_restoration_shutdown/seed2002/outputs/chains/fresh_CAMB_upper20_A4095_seed2002.1.txt",
+      "sha256": "98927b8fe12836f578683e9b90c8d0f4884b27f73252b2424e18cde5aafa6ce1"
+    },
+    {
+      "source": "runs/20261004_math_review_fresh_CAMB_upper20_A4095_seed2002/chains/fresh_CAMB_upper20_A4095_seed2002.checkpoint",
+      "frozen": "runs/20261005_math_review_user_directed_restoration_shutdown/seed2002/outputs/chains/fresh_CAMB_upper20_A4095_seed2002.checkpoint",
+      "sha256": "6fe936432eae49885f9d58cc1dcd2cc1e503d422a6d4a76c5016a353d84dc972"
+    },
+    {
+      "source": "runs/20261004_math_review_fresh_CAMB_upper20_A4095_seed2002/chains/fresh_CAMB_upper20_A4095_seed2002.covmat",
+      "frozen": "runs/20261005_math_review_user_directed_restoration_shutdown/seed2002/outputs/chains/fresh_CAMB_upper20_A4095_seed2002.covmat",
+      "sha256": "5a3c95c0151471bf2aefba6a6e258a87d12eb2e2f137e166c0167b061fb343d4"
+    },
+    {
+      "source": "runs/20261004_math_review_fresh_CAMB_upper20_A4095_seed2002/chains/fresh_CAMB_upper20_A4095_seed2002.input.yaml",
+      "frozen": "runs/20261005_math_review_user_directed_restoration_shutdown/seed2002/outputs/chains/fresh_CAMB_upper20_A4095_seed2002.input.yaml",
+      "sha256": "f1d81645eda676c703d6f03b3da9ef446c3cb4e788466fc71e780fa16bc9eec5"
+    },
+    {
+      "source": "runs/20261004_math_review_fresh_CAMB_upper20_A4095_seed2002/chains/fresh_CAMB_upper20_A4095_seed2002.progress",
+      "frozen": "runs/20261005_math_review_user_directed_restoration_shutdown/seed2002/outputs/chains/fresh_CAMB_upper20_A4095_seed2002.progress",
+      "sha256": "654331d4246ca2c9306296311d83d3a9336a70ef88dd0bc89005b0b35a7063f5"
+    },
+    {
+      "source": "runs/20261004_math_review_fresh_CAMB_upper20_A4095_seed2002/chains/fresh_CAMB_upper20_A4095_seed2002.updated.yaml",
+      "frozen": "runs/20261005_math_review_user_directed_restoration_shutdown/seed2002/outputs/chains/fresh_CAMB_upper20_A4095_seed2002.updated.yaml",
+      "sha256": "59169711df7b38b0f6bfe64adb793ae13ab536eb6f95aa1a8944e66497a004ba"
+    },
+    {
+      "source": "runs/20261004_math_review_fresh_CAMB_upper20_A4095_seed2002/env.txt",
+      "frozen": "runs/20261005_math_review_user_directed_restoration_shutdown/seed2002/outputs/env.txt",
+      "sha256": "d15c4eede15f4650b9b228d873faf766b5c61e2b396f16fd98808af31a7afb9f"
+    },
+    {
+      "source": "runs/20261004_math_review_fresh_CAMB_upper20_A4095_seed2002/input.yaml",
+      "frozen": "runs/20261005_math_review_user_directed_restoration_shutdown/seed2002/outputs/input.yaml",
+      "sha256": "131dff51c00165099bf4d6fb703bcc6214a2b8baa618d8078f25969525aa2e77"
+    },
+    {
+      "source": "runs/20261004_math_review_fresh_CAMB_upper20_A4095_seed2002/resolved.yaml",
+      "frozen": "runs/20261005_math_review_user_directed_restoration_shutdown/seed2002/outputs/resolved.yaml",
+      "sha256": "14ad502571b39cef1e0292b323a98ccc6507db719c2285b60be84f1eb97baf61"
+    },
+    {
+      "source": "runs/20261004_math_review_fresh_CAMB_upper20_A4095_seed2002/solver_backend.json",
+      "frozen": "runs/20261005_math_review_user_directed_restoration_shutdown/seed2002/outputs/solver_backend.json",
+      "sha256": "83d363c0bbc79c20d5a38c218709e85cdbf23571cdbb0e58b388b60042bf9053"
+    },
+    {
+      "source": "runs/20261004_math_review_fresh_CAMB_upper20_A4095_seed2002/stderr.txt",
+      "frozen": "runs/20261005_math_review_user_directed_restoration_shutdown/seed2002/outputs/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "runs/20261004_math_review_fresh_CAMB_upper20_A4095_seed2002/stdout.txt",
+      "frozen": "runs/20261005_math_review_user_directed_restoration_shutdown/seed2002/outputs/stdout.txt",
+      "sha256": "69dea00f2cbf5f8e65476fad508aa20d0063e6b5932e495e32c36107f0df5a03"
+    }
+  ],
+  "stored_chain_rows": 1656,
+  "incomplete_trailing_chain_bytes": 0,
+  "retained_represented_steps": 4403,
+  "posterior_qualified": false,
+  "scientific_claim_disproved_by_interruption": false,
+  "exact_PRNG_resume_asserted": false
+}

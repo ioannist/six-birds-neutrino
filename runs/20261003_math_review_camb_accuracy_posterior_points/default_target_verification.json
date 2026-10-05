@@ -1,0 +1,95 @@
+{
+  "utc": "2026-10-03T13:55:15.715431+00:00",
+  "scope": "four_selected_rounded_chain_rows_pointwise_default_target_bridge",
+  "config_sha256": "63addcc76127e7542ee1e56e1e015ac9f7eaa59ea4bbdfbed5316992fc41fd8b",
+  "points_sha256": "60bc51708208346094a839d52dcb8c7889b4e5b45cc4e329a6cb37431dbf9d24",
+  "runner_sha256": "43e06494dc09b03e13ed905a84f87a29c07bf277da1616684e3c5f9305f0d7a8",
+  "loglike_atol": 0.002,
+  "loglike_rtol": 1e-06,
+  "completion": [
+    "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian"
+  ],
+  "records": {
+    "chain_A_q50": {
+      "point": {
+        "omegabh2": 0.022380831,
+        "omegach2": 0.11613063,
+        "H0": 68.833314,
+        "logA": 3.002559,
+        "ns": 1.0422959,
+        "tau": 0.059028326,
+        "mnu": 0.037940042
+      },
+      "lens": "lensA",
+      "native_chi2": {
+        "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 10.600873517290019,
+        "lensA": 2564.440010426711,
+        "lensB": 1764.7714616190476
+      },
+      "stored_loglike": -1287.520408,
+      "fresh_loglike": -1287.5204419720005,
+      "fresh_minus_stored_loglike": -3.3972000437643146e-05
+    },
+    "chain_A_q95": {
+      "point": {
+        "omegabh2": 0.022914148,
+        "omegach2": 0.11373228,
+        "H0": 69.145672,
+        "logA": 3.013492,
+        "ns": 1.0416751,
+        "tau": 0.066867289,
+        "mnu": 0.150591
+      },
+      "lens": "lensA",
+      "native_chi2": {
+        "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 11.976775197907743,
+        "lensA": 2572.880515234201,
+        "lensB": 1858.7679069712626
+      },
+      "stored_loglike": -1292.4286080000002,
+      "fresh_loglike": -1292.4286452160545,
+      "fresh_minus_stored_loglike": -3.721605435202946e-05
+    },
+    "chain_B_q50": {
+      "point": {
+        "omegabh2": 0.022303374,
+        "omegach2": 0.11846226,
+        "H0": 68.23165,
+        "logA": 3.02083,
+        "ns": 0.95460588,
+        "tau": 0.036473147,
+        "mnu": 0.034125622
+      },
+      "lens": "lensB",
+      "native_chi2": {
+        "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 12.676348316122546,
+        "lensA": 2652.2480068893483,
+        "lensB": 1385.9390412532969
+      },
+      "stored_loglike": -699.307698,
+      "fresh_loglike": -699.3076947847097,
+      "fresh_minus_stored_loglike": 3.2152902349480428e-06
+    },
+    "chain_B_q95": {
+      "point": {
+        "omegabh2": 0.021988451,
+        "omegach2": 0.11690637,
+        "H0": 67.833066,
+        "logA": 3.067757,
+        "ns": 0.97536411,
+        "tau": 0.068081432,
+        "mnu": 0.12229679
+      },
+      "lens": "lensB",
+      "native_chi2": {
+        "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 12.477895381560108,
+        "lensA": 2644.455894291249,
+        "lensB": 1390.6573090091879
+      },
+      "stored_loglike": -701.567608,
+      "fresh_loglike": -701.567602195374,
+      "fresh_minus_stored_loglike": 5.804625970995403e-06
+    }
+  },
+  "posterior_accuracy_certified": false
+}

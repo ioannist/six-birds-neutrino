@@ -1,0 +1,257 @@
+{
+  "utc": "2026-10-04T06:48:41.633342+00:00",
+  "cases": [
+    {
+      "case": "quadratic_overflow",
+      "residual": [
+        1e+200
+      ],
+      "covariance": [
+        [
+          1.0
+        ]
+      ],
+      "analytic_expected": 1e+200,
+      "before": {
+        "status": "rejected",
+        "error": "quadratic form overflowed; cannot report a finite RMSE.",
+        "warnings": [
+          "overflow encountered in matmul"
+        ]
+      },
+      "after": {
+        "status": "returned",
+        "value": 1e+200,
+        "warnings": []
+      }
+    },
+    {
+      "case": "quadratic_underflow",
+      "residual": [
+        1e-200
+      ],
+      "covariance": [
+        [
+          1.0
+        ]
+      ],
+      "analytic_expected": 1e-200,
+      "before": {
+        "status": "returned",
+        "value": 0.0,
+        "warnings": []
+      },
+      "after": {
+        "status": "returned",
+        "value": 1e-200,
+        "warnings": []
+      }
+    },
+    {
+      "case": "smallest_residual",
+      "residual": [
+        5e-324
+      ],
+      "covariance": [
+        [
+          1.0
+        ]
+      ],
+      "analytic_expected": 5e-324,
+      "before": {
+        "status": "returned",
+        "value": 0.0,
+        "warnings": []
+      },
+      "after": {
+        "status": "returned",
+        "value": 5e-324,
+        "warnings": []
+      }
+    },
+    {
+      "case": "inverse_solve_overflow",
+      "residual": [
+        1.0,
+        0.0
+      ],
+      "covariance": [
+        [
+          1e-320,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "analytic_expected": 7.071107172647215e+159,
+      "before": {
+        "status": "rejected",
+        "error": "covariance solve produced nonfinite values; cannot report a finite result.",
+        "warnings": []
+      },
+      "after": {
+        "status": "returned",
+        "value": 7.071107172647215e+159,
+        "warnings": []
+      }
+    },
+    {
+      "case": "norm_overflow_but_RMS_finite",
+      "residual": [
+        1.7976931348623157e+308,
+        1.7976931348623157e+308
+      ],
+      "covariance": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "analytic_expected": 1.7976931348623157e+308,
+      "before": {
+        "status": "rejected",
+        "error": "quadratic form overflowed; cannot report a finite RMSE.",
+        "warnings": [
+          "overflow encountered in matmul"
+        ]
+      },
+      "after": {
+        "status": "returned",
+        "value": 1.7976931348623157e+308,
+        "warnings": []
+      }
+    },
+    {
+      "case": "correlated_signed_allocations",
+      "residual": [
+        1.0,
+        1.0
+      ],
+      "covariance": [
+        [
+          5.0,
+          2.0
+        ],
+        [
+          2.0,
+          1.0
+        ]
+      ],
+      "analytic_expected": 1.0,
+      "before": {
+        "status": "returned",
+        "value": 0.9999999999999999,
+        "warnings": []
+      },
+      "after": {
+        "status": "returned",
+        "value": 0.9999999999999999,
+        "warnings": []
+      }
+    },
+    {
+      "case": "unrepresentable_whitening",
+      "residual": [
+        1e+308
+      ],
+      "covariance": [
+        [
+          1e-308
+        ]
+      ],
+      "analytic_expected": null,
+      "before": {
+        "status": "rejected",
+        "error": "covariance solve produced nonfinite values; cannot report a finite result.",
+        "warnings": []
+      },
+      "after": {
+        "status": "rejected",
+        "error": "covariance whitening produced nonfinite values; cannot report a finite RMSE.",
+        "warnings": []
+      }
+    }
+  ],
+  "pytest": {
+    "session": 20902,
+    "exit_code": 0,
+    "passed": 100
+  },
+  "ordinary_and_roundoff_covariance_solves_bit_identical": 20,
+  "ordinary_RMS_agreement_relative_tolerance": 1e-14,
+  "native_checks": [
+    {
+      "session": 58459,
+      "exit_code": 0,
+      "artifact": "native_multistart_verification.json",
+      "byte_identical_to_previous_native_receipt": true
+    },
+    {
+      "session": 97150,
+      "exit_code": 0,
+      "artifact": "native_staging_verification.json",
+      "byte_identical_to_previous_native_receipt": true
+    }
+  ],
+  "covariance_model_validation_unchanged": true,
+  "finite_whitened_coordinates_required": true,
+  "uniform_floating_point_error_certificate": false,
+  "paper_modified": false,
+  "lean_changed": false,
+  "files": [
+    {
+      "path": "src/sbt_spt_audit/metrics.py",
+      "sha256": "fd8617103d1ccb3f8a7494e09fff362caf14e0b4e612064860539e041197fbf1"
+    },
+    {
+      "path": "tests/test_metrics.py",
+      "sha256": "649d5e6c0a9e2aecd1766110e6b8b7f2275508ec993da54f0be3329e45df580e"
+    },
+    {
+      "path": "runs/20261004_math_review_weighted_rmse_repair/before_metrics.py",
+      "sha256": "0dd1d09cc575947254b12f0a5e70664600038f5ce6269d265272edcfc6280c65"
+    },
+    {
+      "path": "runs/20261004_math_review_weighted_rmse_repair/pytest_stdout.txt",
+      "sha256": "990c648dc7a466b5bf0e24c86779a07d4bae61a2aeb9a7377cf33e6eb04c5e13"
+    },
+    {
+      "path": "runs/20261004_math_review_weighted_rmse_repair/pytest_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_weighted_rmse_repair/verify_repair.py",
+      "sha256": "ac2876bfa2cd6b670ba9db9c0433c08b78f3df8d4e806af408519ca69bea50f3"
+    },
+    {
+      "path": "runs/20261004_math_review_weighted_rmse_repair/native_multistart_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_weighted_rmse_repair/native_multistart_stdout.txt",
+      "sha256": "5c086971acad8de9d8a58f24852d5df8bcae7bfbfc7bba9eb32f9e6faad8f71e"
+    },
+    {
+      "path": "runs/20261004_math_review_weighted_rmse_repair/native_multistart_verification.json",
+      "sha256": "be06e2d6a97809e066d1b3f811c9c0adda50074b9159b0f7c1b60e5287408f48"
+    },
+    {
+      "path": "runs/20261004_math_review_weighted_rmse_repair/native_staging_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_weighted_rmse_repair/native_staging_stdout.txt",
+      "sha256": "dcd2daaabb3ce6b81b2d9f231a33b415de5fda9bce5a7413f94d6b5503aa7994"
+    },
+    {
+      "path": "runs/20261004_math_review_weighted_rmse_repair/native_staging_verification.json",
+      "sha256": "555cfc5a5b53def7b46d0aeee2737cd36469cd8f147296518f60b31da354c52d"
+    }
+  ]
+}

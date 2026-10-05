@@ -1,0 +1,5 @@
+{
+  "direct_exec_exit_code": 2,
+  "cause": "extracted development shared library symlink had no runtime target, forcing non-PIC static libgfortran link",
+  "next_attempt": "extract Ubuntu runtime libgfortran5 into same scratch prefix; fresh build_v3 logs"
+}

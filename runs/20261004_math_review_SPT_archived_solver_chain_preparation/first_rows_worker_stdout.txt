@@ -1,0 +1,55 @@
+Waiting on same owned sampler identities: [1601, 1602, 1603, 1604, 1605, 1606, 1607, 1608]
+Waiting on same owned sampler identities: [1601, 1602, 1603, 1604, 1605, 1606, 1607, 1608]
+Waiting on same owned sampler identities: [1601, 1602, 1603, 1604, 1605, 1606, 1607, 1608]
+1601 first complete row frozen
+1602 first complete row frozen
+1603 first complete row frozen
+Waiting on same owned sampler identities: [1604, 1605, 1606, 1607, 1608]
+Waiting on same owned sampler identities: [1604, 1605, 1606, 1607, 1608]
+Waiting on same owned sampler identities: [1604, 1605, 1606, 1607, 1608]
+Waiting on same owned sampler identities: [1604, 1605, 1606, 1607, 1608]
+Waiting on same owned sampler identities: [1604, 1605, 1606, 1607, 1608]
+1604 first complete row frozen
+Waiting on same owned sampler identities: [1605, 1606, 1607, 1608]
+Waiting on same owned sampler identities: [1605, 1606, 1607, 1608]
+Waiting on same owned sampler identities: [1605, 1606, 1607, 1608]
+Waiting on same owned sampler identities: [1605, 1606, 1607, 1608]
+Waiting on same owned sampler identities: [1605, 1606, 1607, 1608]
+Waiting on same owned sampler identities: [1605, 1606, 1607, 1608]
+Waiting on same owned sampler identities: [1605, 1606, 1607, 1608]
+Waiting on same owned sampler identities: [1605, 1606, 1607, 1608]
+Waiting on same owned sampler identities: [1605, 1606, 1607, 1608]
+Waiting on same owned sampler identities: [1605, 1606, 1607, 1608]
+Waiting on same owned sampler identities: [1605, 1606, 1607, 1608]
+Waiting on same owned sampler identities: [1605, 1606, 1607, 1608]
+Waiting on same owned sampler identities: [1605, 1606, 1607, 1608]
+Waiting on same owned sampler identities: [1605, 1606, 1607, 1608]
+Waiting on same owned sampler identities: [1605, 1606, 1607, 1608]
+Waiting on same owned sampler identities: [1605, 1606, 1607, 1608]
+1605 first complete row frozen
+Waiting on same owned sampler identities: [1606, 1607, 1608]
+1606 first complete row frozen
+Waiting on same owned sampler identities: [1607, 1608]
+Waiting on same owned sampler identities: [1607, 1608]
+Waiting on same owned sampler identities: [1607, 1608]
+Waiting on same owned sampler identities: [1607, 1608]
+1608 first complete row frozen
+Waiting on same owned sampler identities: [1607]
+Waiting on same owned sampler identities: [1607]
+Waiting on same owned sampler identities: [1607]
+Waiting on same owned sampler identities: [1607]
+Waiting on same owned sampler identities: [1607]
+1607 first complete row frozen
+[camb] `camb` module loaded successfully from /mnt/8tb/six-birds-ml/tmp/neutrino_spt_archived_solver_control_20261004/packages/camb
+1601 first saved row native replay verified
+1602 first saved row native replay verified
+1603 first saved row native replay verified
+[exception handler] ---------------------------------------
+
+Traceback (most recent call last):
+  File "/home/repos/six-birds-neutrino/runs/20261004_math_review_SPT_archived_solver_chain_preparation/verify_first_rows.py", line 90, in <module>
+    assert max(abs(v) for v in discrepancy.values())<=1e-9
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+-------------------------------------------------------------
+

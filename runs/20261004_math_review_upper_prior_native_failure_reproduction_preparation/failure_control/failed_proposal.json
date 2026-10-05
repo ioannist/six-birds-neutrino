@@ -1,0 +1,38 @@
+{
+  "utc": "2026-10-04T23:09:26.062941+00:00",
+  "sampled": {
+    "mnu": 6.0
+  },
+  "exception_type": "ValueError",
+  "error": "finite-spectrum control failure",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/repos/six-birds-neutrino/runs/20261004_math_review_upper_prior_native_failure_reproduction_preparation/failure_recording.py\", line 11, in call_and_record\n    return original(model, values, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/repos/six-birds-neutrino/runs/20261004_math_review_upper_prior_native_failure_reproduction_preparation/controls.py\", line 29, in failure\n    raise error\nValueError: finite-spectrum control failure\n",
+  "evaluation_returned_posterior_rejection": false,
+  "spectra": {
+    "tt": {
+      "shape": [
+        3
+      ],
+      "ndim": 1,
+      "all_finite": false,
+      "nan_flat_indices": [
+        1
+      ],
+      "inf_flat_indices": [
+        2
+      ],
+      "finite_min": 0.0,
+      "finite_max": 0.0
+    },
+    "ee": {
+      "shape": [
+        3
+      ],
+      "ndim": 1,
+      "all_finite": true,
+      "nan_flat_indices": [],
+      "inf_flat_indices": [],
+      "finite_min": 1.0,
+      "finite_max": 1.0
+    }
+  }
+}

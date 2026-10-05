@@ -1,0 +1,396 @@
+{
+  "utc": "2026-10-03T20:06:29.953007+00:00",
+  "scope": "signed_sector_aggregation_over_the_papers_stated_high_ell_range_at_verified_candidates",
+  "paper_claim_source_sha256": {
+    "abstract.tex": "fd404a03c618d07fb6513005fd4dbd7e334911f9cfe37eee0583491514ae192d",
+    "results_audits.tex": "d0b7667983ebd0e32ad1a3f24fb94c5800c467bda71cae997d8cda9adee2f27e",
+    "discussion.tex": "0ed1f734464accd8a665b07bb9d4a71f1b9907b62644f1c9bce4e06d71ab0ab5",
+    "conclusion.tex": "fdc4bef01f013809f124f8d7608bd027b0cc92ff5131035ba15b0a2bbdf31ccf"
+  },
+  "native_source_sha256": {
+    "cosmological_spt_desi": {
+      "metrics": "4789ee9e28c6a4e632a04f56fb892afd93afd80a9a387f0158b8ede75f4695c3",
+      "verification": "c7a0baa68729cf6a7b908545049f0ea952d55a635e7790595f9975c8dc7b4d61"
+    },
+    "cosmological_spt_desi_staging": {
+      "metrics": "9727fdce6f78456a8ec915f6bd05c224cb6ae6dc9e35e3d4b6b1eb8953db65cd",
+      "verification": "c1a000d80c80d6a5fec6be38afeaed52a9ec59a79c16834cdb65e4db2e965cd3"
+    },
+    "cosmological_cmb_desi_warm": {
+      "metrics": "82c5c3abfde223ec030c2d837fa133a8604f6f3ee6ba1d2596c8db06fe3650ad",
+      "verification": "0b4302859562a017db45f92e7c60e53492a30e48bdc46e84ebf2455a646760f7"
+    },
+    "cosmological_cmb_desi_tau_control": {
+      "metrics": "4c80dcaca95c15efc7c1e23ec9a832bcd674a641eb75caaf4fa980b08d5f1cc8",
+      "verification": "8d5eeabe1a95e8e7d12624537b444846d4cef22cf8205aadd98233a982fa08cb"
+    },
+    "cosmological_cmb_desi_staging": {
+      "metrics": "e5d35e2787ebe8a84d647dc69305ff2c21c7f8da82e7285cafdfe4bfc5847f18",
+      "verification": "9e1f579c95d03e42a0aa596b516540c3f9ce2bf2c982cc661f536bacc60e137e"
+    },
+    "cosmological_cmb_desi": {
+      "metrics": "6b2547c49eebc3fc13039a2045b33a21bb68d57d771ba3d2625c4ac7a4b5b931",
+      "verification": "890bda11564caf662c14ebaa24ec825023a862f2253c2e41d505d8c99dd9f173"
+    },
+    "cosmological_cmb_desi_accuracy": {
+      "metrics": "b68f484345c5d4205ecfaaa5ad009e197d675431dc6e3920bd7a210e58a72fda",
+      "verification": "841cc280531fc72d30f833e7fb4853c788145fc8636ff7be1da1216b7a6c1101"
+    }
+  },
+  "results": {
+    "cosmological_spt_desi": {
+      "B_given_A": {
+        "signed_totals_effective_ell_2000_inclusive_3000_exclusive": {
+          "TT": 291.3215733663935,
+          "TE": 2.0576764191539754,
+          "EE": 121.51875431149992
+        },
+        "largest_signed_sector_in_stated_range": "TT",
+        "signed_totals_all_reported_bands": {
+          "TT": 332.964775904025,
+          "TE": -4.555937966056022,
+          "EE": 159.57683381643503
+        },
+        "largest_positive_individual_group": {
+          "spec": "TT",
+          "ell": [
+            2500.0,
+            3000.0
+          ],
+          "deltaQ": 159.29076701452502,
+          "n_bins": 60
+        },
+        "unlocalized_deltaQ": 0.0,
+        "full_covariance_quadratic_sum_reconciles": true
+      },
+      "A_given_B": {
+        "signed_totals_effective_ell_2000_inclusive_3000_exclusive": {
+          "TT": 74.53664562734035,
+          "TE": 1.1061206126869987,
+          "EE": 0.6569166673686826
+        },
+        "largest_signed_sector_in_stated_range": "TT",
+        "signed_totals_all_reported_bands": {
+          "TT": 62.51222072712189,
+          "TE": 3.825758615841528,
+          "EE": 11.264794866173085
+        },
+        "largest_positive_individual_group": {
+          "spec": "TT",
+          "ell": [
+            2500.0,
+            3000.0
+          ],
+          "deltaQ": 67.0714756624119,
+          "n_bins": 30
+        },
+        "unlocalized_deltaQ": 1.9987374013331305,
+        "full_covariance_quadratic_sum_reconciles": true
+      }
+    },
+    "cosmological_spt_desi_staging": {
+      "B_given_A": {
+        "signed_totals_effective_ell_2000_inclusive_3000_exclusive": {
+          "TT": 291.6467005941633,
+          "TE": 1.5672819657978252,
+          "EE": 120.99381202855784
+        },
+        "largest_signed_sector_in_stated_range": "TT",
+        "signed_totals_all_reported_bands": {
+          "TT": 333.42056846219293,
+          "TE": -1.4920971625294595,
+          "EE": 153.93589832373317
+        },
+        "largest_positive_individual_group": {
+          "spec": "TT",
+          "ell": [
+            2500.0,
+            3000.0
+          ],
+          "deltaQ": 158.96751907458957,
+          "n_bins": 60
+        },
+        "unlocalized_deltaQ": 0.0,
+        "full_covariance_quadratic_sum_reconciles": true
+      },
+      "A_given_B": {
+        "signed_totals_effective_ell_2000_inclusive_3000_exclusive": {
+          "TT": 75.11014169863266,
+          "TE": 1.1945864407198479,
+          "EE": 0.6800971424231628
+        },
+        "largest_signed_sector_in_stated_range": "TT",
+        "signed_totals_all_reported_bands": {
+          "TT": 62.98555815915606,
+          "TE": 3.963405634413898,
+          "EE": 11.897994287348231
+        },
+        "largest_positive_individual_group": {
+          "spec": "TT",
+          "ell": [
+            2500.0,
+            3000.0
+          ],
+          "deltaQ": 67.57327404327084,
+          "n_bins": 30
+        },
+        "unlocalized_deltaQ": 2.1184200904745154,
+        "full_covariance_quadratic_sum_reconciles": true
+      }
+    },
+    "cosmological_cmb_desi_warm": {
+      "B_given_A": {
+        "signed_totals_effective_ell_2000_inclusive_3000_exclusive": {
+          "TT": 14.331541865731399,
+          "TE": 4.711386825269884,
+          "EE": 36.027732800328295
+        },
+        "largest_signed_sector_in_stated_range": "EE",
+        "signed_totals_all_reported_bands": {
+          "TT": 19.394289337648377,
+          "TE": 2.3352475174902043,
+          "EE": 37.777905619555035
+        },
+        "largest_positive_individual_group": {
+          "spec": "EE",
+          "ell": [
+            2000.0,
+            2500.0
+          ],
+          "deltaQ": 23.483253174192793,
+          "n_bins": 60
+        },
+        "unlocalized_deltaQ": 0.0,
+        "full_covariance_quadratic_sum_reconciles": true
+      },
+      "A_given_B": {
+        "signed_totals_effective_ell_2000_inclusive_3000_exclusive": {
+          "TT": 12.570301094357578,
+          "TE": -0.1196850775583501,
+          "EE": 0.9405780020902396
+        },
+        "largest_signed_sector_in_stated_range": "TT",
+        "signed_totals_all_reported_bands": {
+          "TT": 11.299681913868245,
+          "TE": 2.4841654287568686,
+          "EE": 11.682864815367978
+        },
+        "largest_positive_individual_group": {
+          "spec": "TT",
+          "ell": [
+            2500.0,
+            3000.0
+          ],
+          "deltaQ": 10.357260730919696,
+          "n_bins": 30
+        },
+        "unlocalized_deltaQ": -0.009076708303290104,
+        "full_covariance_quadratic_sum_reconciles": true
+      }
+    },
+    "cosmological_cmb_desi_tau_control": {
+      "B_given_A": {
+        "signed_totals_effective_ell_2000_inclusive_3000_exclusive": {
+          "TT": 14.380435656619808,
+          "TE": 4.669198091149866,
+          "EE": 35.891222380279686
+        },
+        "largest_signed_sector_in_stated_range": "EE",
+        "signed_totals_all_reported_bands": {
+          "TT": 19.12079718667068,
+          "TE": 2.338540156874482,
+          "EE": 37.60173974207489
+        },
+        "largest_positive_individual_group": {
+          "spec": "EE",
+          "ell": [
+            2000.0,
+            2500.0
+          ],
+          "deltaQ": 23.423077965251345,
+          "n_bins": 60
+        },
+        "unlocalized_deltaQ": 0.0,
+        "full_covariance_quadratic_sum_reconciles": true
+      },
+      "A_given_B": {
+        "signed_totals_effective_ell_2000_inclusive_3000_exclusive": {
+          "TT": 12.671241250228412,
+          "TE": -0.14651320439202792,
+          "EE": 0.9625047653309242
+        },
+        "largest_signed_sector_in_stated_range": "TT",
+        "signed_totals_all_reported_bands": {
+          "TT": 11.479034878247415,
+          "TE": 2.260598054244419,
+          "EE": 11.450914763782812
+        },
+        "largest_positive_individual_group": {
+          "spec": "TT",
+          "ell": [
+            2500.0,
+            3000.0
+          ],
+          "deltaQ": 10.369927155773825,
+          "n_bins": 30
+        },
+        "unlocalized_deltaQ": -0.01605307301853287,
+        "full_covariance_quadratic_sum_reconciles": true
+      }
+    },
+    "cosmological_cmb_desi_staging": {
+      "B_given_A": {
+        "signed_totals_effective_ell_2000_inclusive_3000_exclusive": {
+          "TT": 15.26845372646559,
+          "TE": 4.825256486770075,
+          "EE": 36.25017847303079
+        },
+        "largest_signed_sector_in_stated_range": "EE",
+        "signed_totals_all_reported_bands": {
+          "TT": 20.628116829328164,
+          "TE": 3.4297954097439356,
+          "EE": 37.62840199872532
+        },
+        "largest_positive_individual_group": {
+          "spec": "EE",
+          "ell": [
+            2000.0,
+            2500.0
+          ],
+          "deltaQ": 23.681344249416647,
+          "n_bins": 60
+        },
+        "unlocalized_deltaQ": 0.0,
+        "full_covariance_quadratic_sum_reconciles": true
+      },
+      "A_given_B": {
+        "signed_totals_effective_ell_2000_inclusive_3000_exclusive": {
+          "TT": 12.978177883728684,
+          "TE": -0.06700189248291634,
+          "EE": 0.9901066984546433
+        },
+        "largest_signed_sector_in_stated_range": "TT",
+        "signed_totals_all_reported_bands": {
+          "TT": 11.833440529318803,
+          "TE": 2.3222328387770217,
+          "EE": 11.645312370044582
+        },
+        "largest_positive_individual_group": {
+          "spec": "TT",
+          "ell": [
+            2500.0,
+            3000.0
+          ],
+          "deltaQ": 10.570868702028998,
+          "n_bins": 30
+        },
+        "unlocalized_deltaQ": -0.03048009345560132,
+        "full_covariance_quadratic_sum_reconciles": true
+      }
+    },
+    "cosmological_cmb_desi": {
+      "B_given_A": {
+        "signed_totals_effective_ell_2000_inclusive_3000_exclusive": {
+          "TT": 14.061777637348527,
+          "TE": 4.724614018901109,
+          "EE": 36.08536657361785
+        },
+        "largest_signed_sector_in_stated_range": "EE",
+        "signed_totals_all_reported_bands": {
+          "TT": 19.465267856081162,
+          "TE": 2.3620778715588155,
+          "EE": 37.862869089784844
+        },
+        "largest_positive_individual_group": {
+          "spec": "EE",
+          "ell": [
+            2000.0,
+            2500.0
+          ],
+          "deltaQ": 23.524811826059643,
+          "n_bins": 60
+        },
+        "unlocalized_deltaQ": 0.0,
+        "full_covariance_quadratic_sum_reconciles": true
+      },
+      "A_given_B": {
+        "signed_totals_effective_ell_2000_inclusive_3000_exclusive": {
+          "TT": 12.584942361668844,
+          "TE": -0.11692686025131836,
+          "EE": 0.9406012507067757
+        },
+        "largest_signed_sector_in_stated_range": "TT",
+        "signed_totals_all_reported_bands": {
+          "TT": 11.263952482553385,
+          "TE": 2.483593903217686,
+          "EE": 11.695199666369664
+        },
+        "largest_positive_individual_group": {
+          "spec": "TT",
+          "ell": [
+            2500.0,
+            3000.0
+          ],
+          "deltaQ": 10.446527985956418,
+          "n_bins": 30
+        },
+        "unlocalized_deltaQ": -0.011784276714383424,
+        "full_covariance_quadratic_sum_reconciles": true
+      }
+    },
+    "cosmological_cmb_desi_accuracy": {
+      "B_given_A": {
+        "signed_totals_effective_ell_2000_inclusive_3000_exclusive": {
+          "TT": 13.791155838548878,
+          "TE": 4.836863576677195,
+          "EE": 34.93379474198717
+        },
+        "largest_signed_sector_in_stated_range": "EE",
+        "signed_totals_all_reported_bands": {
+          "TT": 18.3047849044463,
+          "TE": 2.9491168359610413,
+          "EE": 36.79864918146185
+        },
+        "largest_positive_individual_group": {
+          "spec": "EE",
+          "ell": [
+            2000.0,
+            2500.0
+          ],
+          "deltaQ": 22.70752441575186,
+          "n_bins": 60
+        },
+        "unlocalized_deltaQ": 0.0,
+        "full_covariance_quadratic_sum_reconciles": true
+      },
+      "A_given_B": {
+        "signed_totals_effective_ell_2000_inclusive_3000_exclusive": {
+          "TT": 12.370136025383072,
+          "TE": -0.1640244297905024,
+          "EE": 0.9168874718686066
+        },
+        "largest_signed_sector_in_stated_range": "TT",
+        "signed_totals_all_reported_bands": {
+          "TT": 12.33778174095838,
+          "TE": 2.570098661495786,
+          "EE": 11.058854751675481
+        },
+        "largest_positive_individual_group": {
+          "spec": "TT",
+          "ell": [
+            2500.0,
+            3000.0
+          ],
+          "deltaQ": 8.026996499659342,
+          "n_bins": 30
+        },
+        "unlocalized_deltaQ": 0.03705091443045205,
+        "full_covariance_quadratic_sum_reconciles": true
+      }
+    }
+  },
+  "interpretation": "The specified high-ell range and the largest individual group are checked separately. Reported-band sums omit the explicitly retained unlocalized rows. None is an independent block likelihood or a causal allocation.",
+  "global_optimum_certified": false,
+  "posterior_convergence_certified": false,
+  "paper_modified": false
+}

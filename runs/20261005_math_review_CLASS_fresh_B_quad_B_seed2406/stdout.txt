@@ -1,0 +1,189 @@
+[output] Output to be read-from/written-into folder '/home/repos/six-birds-neutrino/runs/20261005_math_review_CLASS_fresh_B_quad_B_seed2406/chains', with prefix 'CLASS_fresh_B_quad_B_seed2406'
+[classy] `classy` module loaded successfully from /mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy
+Actual L range: 30 - 756
+[sbt_spt_audit.samplers.fullprecisionmcmc] *WARNING* This run has been SEEDED with seed 2406
+[sbt_spt_audit.samplers.fullprecisionmcmc] Getting initial point... (this may take a few seconds)
+[sbt_spt_audit.samplers.fullprecisionmcmc] Initial point: omegabh2:0.02188929, omegach2:0.1175092, H0:68.25805, logA:3.048304, ns:0.9643263, tau:0.05356675, mnu_sample:0.01112167, A_planck:1.008559, TT_tSZ_Amp:1.336578, TT_kSZ_Amp:1.858854
+[model] Measuring speeds... (this may take a few seconds)
+[model] Setting measured speeds (per sec): {sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood: 5.87, sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian: 376.0, planck_2018_lowl.TT: 876.0, planck_2018_lowl.EE_sroll2: 2970.0, planck_2018_highl_plik.TT_lite_native: 1640.0, planckpr4lensing.PlanckPR4Lensing: 1630.0, classy: 0.0487}
+[sbt_spt_audit.samplers.fullprecisionmcmc] Covariance matrix loaded for params ['omegabh2', 'omegach2', 'H0', 'logA', 'ns', 'tau', 'mnu_sample', 'A_planck', 'TT_tSZ_Amp', 'TT_kSZ_Amp']
+[sbt_spt_audit.samplers.fullprecisionmcmc] All parameters' covariance loaded from given covmat.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Sampling!
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 05:14:56 : 1 steps taken, and 0 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 05:16:15 : 9 steps taken, and 3 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 05:17:18 : 17 steps taken, and 4 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 05:18:24 : 25 steps taken, and 7 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 05:19:29 : 29 steps taken, and 7 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 05:20:30 : 35 steps taken, and 7 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 05:21:35 : 45 steps taken, and 8 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 05:22:36 : 48 steps taken, and 9 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 05:23:52 : 61 steps taken, and 14 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 05:25:02 : 69 steps taken, and 17 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 05:26:13 : 75 steps taken, and 19 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 05:27:26 : 79 steps taken, and 20 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 05:28:39 : 83 steps taken, and 21 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 05:29:54 : 89 steps taken, and 22 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 05:31:04 : 97 steps taken, and 25 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 05:32:13 : 102 steps taken, and 26 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 05:33:24 : 109 steps taken, and 30 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 05:34:42 : 113 steps taken, and 32 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 05:35:56 : 122 steps taken, and 34 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 05:37:01 : 129 steps taken, and 36 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 05:38:08 : 141 steps taken, and 40 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 05:39:27 : 159 steps taken, and 43 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 05:40:43 : 166 steps taken, and 45 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 05:41:56 : 170 steps taken, and 46 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 05:43:14 : 178 steps taken, and 47 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 05:44:28 : 186 steps taken, and 49 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 05:45:49 : 191 steps taken, and 53 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 05:46:49 : 200 steps taken, and 55 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 05:48:04 : 215 steps taken, and 56 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 05:49:06 : 219 steps taken, and 56 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 05:50:22 : 231 steps taken, and 57 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 05:51:38 : 244 steps taken, and 62 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 05:52:50 : 250 steps taken, and 64 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 05:53:52 : 253 steps taken, and 65 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 05:54:53 : 263 steps taken, and 69 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 05:56:08 : 271 steps taken, and 70 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 05:57:21 : 276 steps taken, and 72 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 05:58:34 : 281 steps taken, and 75 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 05:59:46 : 287 steps taken, and 77 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 06:00:55 : 293 steps taken, and 80 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 06:02:10 : 299 steps taken, and 84 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 06:03:20 : 308 steps taken, and 85 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 06:04:32 : 316 steps taken, and 87 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 06:05:40 : 321 steps taken, and 87 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 06:06:52 : 329 steps taken, and 87 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 06:08:03 : 333 steps taken, and 88 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 06:09:16 : 338 steps taken, and 89 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 06:10:32 : 350 steps taken, and 94 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 06:11:46 : 356 steps taken, and 97 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Learn + convergence test @ 100 samples accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc]  - Acceptance rate: 0.282
+[sbt_spt_audit.samplers.fullprecisionmcmc]  - Convergence of means: R-1 = 8.360959 after 80 accepted steps
+[sbt_spt_audit.samplers.fullprecisionmcmc] Convergence less than requested for updates: waiting until the next convergence check.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 06:12:58 : 365 steps taken, and 100 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 06:14:11 : 373 steps taken, and 103 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 06:15:17 : 377 steps taken, and 103 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 06:16:20 : 381 steps taken, and 104 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 06:17:34 : 385 steps taken, and 105 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 06:18:38 : 388 steps taken, and 106 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 06:19:48 : 394 steps taken, and 108 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 06:20:58 : 402 steps taken, and 111 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 06:22:05 : 407 steps taken, and 112 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 06:23:15 : 414 steps taken, and 114 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 06:24:28 : 420 steps taken, and 117 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 06:25:38 : 425 steps taken, and 120 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 06:26:46 : 431 steps taken, and 124 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 06:27:59 : 438 steps taken, and 127 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 06:29:17 : 444 steps taken, and 131 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 06:30:28 : 452 steps taken, and 132 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 06:31:41 : 461 steps taken, and 136 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 06:32:51 : 467 steps taken, and 137 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 06:34:05 : 473 steps taken, and 140 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 06:35:21 : 480 steps taken, and 141 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 06:36:37 : 492 steps taken, and 145 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 06:37:46 : 497 steps taken, and 148 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 06:38:55 : 505 steps taken, and 150 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 06:40:07 : 512 steps taken, and 152 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 06:41:16 : 517 steps taken, and 155 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 06:42:22 : 524 steps taken, and 156 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 06:43:36 : 535 steps taken, and 159 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 06:44:44 : 542 steps taken, and 159 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 06:45:50 : 546 steps taken, and 160 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 06:46:58 : 556 steps taken, and 163 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 06:48:05 : 561 steps taken, and 165 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 06:49:12 : 566 steps taken, and 166 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 06:50:19 : 571 steps taken, and 167 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 06:51:27 : 578 steps taken, and 170 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 06:52:33 : 585 steps taken, and 173 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 06:53:41 : 591 steps taken, and 174 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 06:54:48 : 595 steps taken, and 175 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 06:56:03 : 601 steps taken, and 176 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 06:57:11 : 605 steps taken, and 178 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 06:58:26 : 613 steps taken, and 181 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 06:59:38 : 621 steps taken, and 182 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 07:00:49 : 628 steps taken, and 185 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 07:02:02 : 633 steps taken, and 186 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 07:03:11 : 637 steps taken, and 186 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 07:04:18 : 642 steps taken, and 189 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 07:05:33 : 649 steps taken, and 193 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 07:06:47 : 654 steps taken, and 196 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 07:07:47 : 665 steps taken, and 199 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Learn + convergence test @ 200 samples accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc]  - Acceptance rate: 0.304
+[sbt_spt_audit.samplers.fullprecisionmcmc]  - Convergence of means: R-1 = 4.257089 after 160 accepted steps
+[sbt_spt_audit.samplers.fullprecisionmcmc] Convergence less than requested for updates: waiting until the next convergence check.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 07:09:00 : 670 steps taken, and 202 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 07:10:10 : 683 steps taken, and 204 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 07:11:16 : 688 steps taken, and 205 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 07:12:28 : 694 steps taken, and 206 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 07:13:38 : 699 steps taken, and 206 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 07:14:52 : 705 steps taken, and 209 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 07:15:58 : 709 steps taken, and 211 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 07:17:05 : 716 steps taken, and 212 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 07:18:15 : 725 steps taken, and 214 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 07:19:23 : 730 steps taken, and 215 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 07:20:33 : 735 steps taken, and 217 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 07:21:45 : 741 steps taken, and 219 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 07:22:56 : 748 steps taken, and 223 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 07:24:12 : 757 steps taken, and 226 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 07:25:27 : 762 steps taken, and 227 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 07:26:36 : 768 steps taken, and 229 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 07:27:43 : 772 steps taken, and 229 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 07:28:48 : 778 steps taken, and 232 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 07:29:53 : 783 steps taken, and 235 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 07:31:04 : 787 steps taken, and 237 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 07:32:11 : 793 steps taken, and 239 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 07:33:17 : 799 steps taken, and 240 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 07:34:25 : 804 steps taken, and 242 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 07:35:32 : 816 steps taken, and 245 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 07:36:41 : 821 steps taken, and 245 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 07:37:53 : 827 steps taken, and 248 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 07:39:01 : 835 steps taken, and 251 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 07:40:12 : 839 steps taken, and 252 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 07:41:20 : 846 steps taken, and 253 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 07:42:28 : 855 steps taken, and 253 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 07:43:35 : 861 steps taken, and 254 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 07:44:45 : 865 steps taken, and 256 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 07:45:51 : 871 steps taken, and 259 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 07:46:57 : 877 steps taken, and 260 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 07:48:04 : 883 steps taken, and 261 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 07:49:11 : 887 steps taken, and 262 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 07:50:17 : 892 steps taken, and 264 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 07:51:25 : 899 steps taken, and 266 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 07:52:33 : 903 steps taken, and 267 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 07:53:43 : 909 steps taken, and 270 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 07:54:59 : 914 steps taken, and 274 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 07:56:10 : 921 steps taken, and 275 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 07:57:23 : 928 steps taken, and 277 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 07:58:27 : 934 steps taken, and 277 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 07:59:39 : 940 steps taken, and 278 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 08:00:53 : 945 steps taken, and 279 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 08:02:07 : 954 steps taken, and 280 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 08:03:17 : 958 steps taken, and 280 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 08:04:33 : 966 steps taken, and 284 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 08:05:45 : 971 steps taken, and 286 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 08:06:57 : 977 steps taken, and 289 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 08:08:07 : 983 steps taken, and 292 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 08:09:18 : 989 steps taken, and 294 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 08:10:25 : 994 steps taken, and 295 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 08:11:34 : 1000 steps taken, and 298 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Learn + convergence test @ 300 samples accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc]  - Acceptance rate: 0.313
+[sbt_spt_audit.samplers.fullprecisionmcmc]  - Convergence of means: R-1 = 1.227605 after 240 accepted steps
+[sbt_spt_audit.samplers.fullprecisionmcmc]  - Updated covariance matrix of proposal pdf.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 08:12:45 : 1008 steps taken, and 301 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 08:13:53 : 1013 steps taken, and 302 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 08:15:04 : 1019 steps taken, and 304 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 08:16:19 : 1029 steps taken, and 307 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 08:17:30 : 1038 steps taken, and 312 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 08:18:41 : 1042 steps taken, and 313 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 08:19:53 : 1048 steps taken, and 316 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 08:21:03 : 1054 steps taken, and 318 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 08:22:13 : 1059 steps taken, and 320 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 08:23:23 : 1065 steps taken, and 320 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 08:24:31 : 1071 steps taken, and 322 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 08:25:46 : 1077 steps taken, and 325 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 08:26:59 : 1086 steps taken, and 326 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-05 08:27:59 : 1091 steps taken, and 327 accepted.

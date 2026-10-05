@@ -1,0 +1,48 @@
+{
+  "utc": "2026-10-03T13:18:35.159262+00:00",
+  "scope": "guard_rejection_controls_only",
+  "controls": [
+    {
+      "case": "physical mass rejected",
+      "backend": "camb",
+      "rejected": true,
+      "reason": "Only declared numerical precision parameters may be changed."
+    },
+    {
+      "case": "zero boost rejected",
+      "backend": "camb",
+      "rejected": true,
+      "reason": "CAMB accuracy boosts must be positive."
+    },
+    {
+      "case": "nonfinite boost rejected",
+      "backend": "camb",
+      "rejected": true,
+      "reason": "Finite numeric precision settings required."
+    },
+    {
+      "case": "empty settings rejected",
+      "backend": "camb",
+      "rejected": true,
+      "reason": "Only declared numerical precision parameters may be changed."
+    },
+    {
+      "case": "physical mass rejected",
+      "backend": "classy",
+      "rejected": true,
+      "reason": "Only declared numerical precision parameters may be changed."
+    },
+    {
+      "case": "physical optical depth rejected",
+      "backend": "classy",
+      "rejected": true,
+      "reason": "Only declared numerical precision parameters may be changed."
+    },
+    {
+      "case": "CLASS-only entry point rejects CAMB",
+      "backend": "camb",
+      "rejected": true,
+      "reason": "A single classy backend is required."
+    }
+  ]
+}

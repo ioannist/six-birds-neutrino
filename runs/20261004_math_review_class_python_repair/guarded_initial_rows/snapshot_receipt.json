@@ -1,0 +1,48 @@
+{
+  "utc": "2026-10-04T03:24:33.122021+00:00",
+  "seed": 1201,
+  "source": "runs/20261004_math_review_guarded_dragging_chain_A_seed1201/chains/math_guarded_dragging_A_seed1201.1.txt",
+  "stored_rows": 3,
+  "chain_sha256": "362187fded534fc03e547bbec2607082422d130bb016fb2b85749348b9ab88b2",
+  "resolved_source_sha256": "1bcab4378c98c703f173cba5ba6bb81ee02e2142a7e61ea04043f9804ef07abf",
+  "snapshot_config_sha256": "bc17077e9a644e1062ae935a137de8fa52f8b449f8850e7139fc8e305f683b84",
+  "actual_updated_sha256": "b5c341f64380bbd3eb946ec7666260eb3d496761ff182fd5c69f7d86b46506e7",
+  "startup_stdout_sha256": "72481f6a9c9d1e470dde862c4359ac33d78633eb13d0567a62a67796a13d4d1a",
+  "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+  "actual_saved_blocking_option": [
+    [
+      1,
+      [
+        "omegabh2",
+        "omegach2",
+        "H0",
+        "logA",
+        "ns",
+        "tau",
+        "mnu_sample"
+      ]
+    ],
+    [
+      14,
+      [
+        "TT_tSZ_Amp",
+        "TT_kSZ_Amp"
+      ]
+    ],
+    [
+      14,
+      [
+        "A_planck"
+      ]
+    ]
+  ],
+  "actual_saved_drag_limits_option": null,
+  "actual_dragging_activation_lines": [
+    "[sbt_spt_audit.samplers.fullprecisionmcmc] * 1 : [['omegabh2', 'omegach2', 'H0', 'logA', 'ns', 'tau', 'mnu_sample']]",
+    "[sbt_spt_audit.samplers.fullprecisionmcmc] * 6 : [['TT_tSZ_Amp', 'TT_kSZ_Amp'], ['A_planck']]"
+  ],
+  "sampler_activation_and_stopping_options_verified": true,
+  "native_saved_row_checks_pending": true,
+  "historical_prefix_appended": false,
+  "posterior_convergence_certified": false
+}

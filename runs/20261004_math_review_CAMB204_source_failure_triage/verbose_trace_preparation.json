@@ -1,0 +1,17 @@
+{
+  "source": "runs/20261004_math_review_CAMB204_source_failure_triage/classify_reproduced_point.py",
+  "source_sha256": "7f08bd490a1a0c2994cb3c893e002819c006c2ab3e23f801e5748a1b2539a258",
+  "script": "runs/20261004_math_review_CAMB204_source_failure_triage/trace_hmcode_point.py",
+  "script_sha256": "ded1c3f214bfd82e11475be17ee457b8d9fed0e8418d335318c2766891d7e978",
+  "changes": [
+    [
+      "folder = HERE / f'seed{args.seed}_phase_classification'",
+      "folder = HERE / f'seed{args.seed}_verbose_phase_classification'"
+    ],
+    [
+      "assert sha(entry['wrapper']) == entry['wrapper_sha256']",
+      "assert sha(entry['wrapper']) == entry['wrapper_sha256']\nimport ctypes\nverbose_flag = ctypes.c_int.in_dll(ctypes.CDLL(entry['module']), '__nonlinear_MOD_hm_verbose')\nassert verbose_flag.value == 0\nverbose_flag.value = 1"
+    ]
+  ],
+  "scope": "process-local public Fortran verbosity flag and separate output path only; no numerical settings changed"
+}

@@ -1,0 +1,313 @@
+{
+  "utc": "2026-10-04T10:32:02.404366+00:00",
+  "scope": "relative_quantile_MCSE_population_SD_floating_intermediate_repair",
+  "python_tests_passed": 130,
+  "latest_frozen_parameter_assessments_preserved": 54,
+  "all_individual_fixed_gate_decisions_unchanged": true,
+  "mass_absolute_precision_targets_unchanged": true,
+  "ordinary_report_binary_identical": true,
+  "large_and_tiny_unit_changed_controls_false_failure_repaired": true,
+  "constant_population_SD_is_exact_zero": true,
+  "holding_time_and_full_postburn_measure_preserved": true,
+  "per_chain_expansion_resource_limit_preserved": true,
+  "managed_phases": [
+    {
+      "session": 69796,
+      "phase": "targeted_seven_controls_before_prior_fixture_unit_cleanup",
+      "exit_code": 0
+    },
+    {
+      "session": 5778,
+      "phase": "latest_54_parameter_impact",
+      "exit_code": 0
+    },
+    {
+      "session": 21798,
+      "phase": "full_Python_suite",
+      "exit_code": 0
+    },
+    {
+      "session": 76905,
+      "phase": "before_after_CLI_replay",
+      "exit_code": 0
+    },
+    {
+      "session": 20036,
+      "phase": "exact_rational_moment_self_review",
+      "exit_code": 0
+    }
+  ],
+  "rank_ArviZ_MCSE_algorithm_changed": false,
+  "native_targets_or_sampler_rules_changed": false,
+  "owned_live_sampler_count": 28,
+  "Lean_sources_match_prior_65_theorem_audit": true,
+  "Lean_source_witnesses": [
+    {
+      "path": "lean/trunc_gauss_proof/AuditAxioms.lean",
+      "sha256": "eb233b64abf3b39ecb36dd37571bb916c4c49f7c781ef0dd6325f199fec49f0c"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/TruncGaussProof/Audit.lean",
+      "sha256": "10c8f3ebced74cc26f509948e8c6b6a2f32a7502cbb9eb5c078d4c728db2bd59"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/TruncGaussProof/Basic.lean",
+      "sha256": "a88fef4d3efa63c9f9f5c948dd5ba1de3ea09d828ce8388ee83fa3d039e734a4"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/TruncGaussProof/CovarianceLedger.lean",
+      "sha256": "c4c34185f9900be5d7f6dcdf079bfd0e5fb4a389e510757bf03bcee3f86795d3"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/TruncGaussProof/GaussianMeasure.lean",
+      "sha256": "2c1cfc3298c94411831f4030313485733cdfbd247ce43c1a565f4a6d0049a865"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/TruncGaussProof/GaussianNormalization.lean",
+      "sha256": "479525ccc03b459b51c118a2793874268bc4ab12cb4f3216e9d1ee0c3a646486"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/TruncGaussProof/GaussianSweep.lean",
+      "sha256": "dfeb0920f48c290fd8325885e84edabce5b7f03b56a7e5beedc2b3ca046944e1"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/TruncGaussProof/Mode.lean",
+      "sha256": "f4200937d87b548c7bbbbd58568dc21909fe5ba964c144ea539988981fdd2a21"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/TruncGaussProof/Normalization.lean",
+      "sha256": "797977dfb5e0be7bdcccaebebaa66f4f15040710df4851ac888ef5e8a3eaf623"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/TruncGaussProof/Product.lean",
+      "sha256": "bbcbc989862979f52e7b1bbf97d4acf30b59564d2b7c42a9e7c3ac1e457bc9bb"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/TruncGaussProof/Tightening.lean",
+      "sha256": "638dab7a8721e704ee4a3708411703d7b145a40ffd5669a33abbdf359a6a75d3"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/TruncGaussProof/TruncGauss.lean",
+      "sha256": "895cfb7e6f733728b2b98e36c2468310ca110535cd912d750e389943350f6e0c"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/TruncGaussProof.lean",
+      "sha256": "6ccde4f220cc698675aea675fc5e6a7265969a74ddbdd2b96f524453d14a217d"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/lake-manifest.json",
+      "sha256": "f3bb2b5aca28f20c6b0707fdabc01d1732ac9b7b784af8726ea28e3b8cc55376"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/lakefile.toml",
+      "sha256": "b6b511bb0c8f1497a5d263c1aecf209347b82ab7951c79ad6b0a9503e383fa6a"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/lean-toolchain",
+      "sha256": "d55ca0039a5479db5b38919d005b2c427b89b3be4f0184a20f2f4eae931f5bdb"
+    }
+  ],
+  "fresh_Lean_build_performed": false,
+  "prior_Lean_receipt": "runs/20261004_math_review_gaussian_probability_law/validation_receipt.json",
+  "prior_Lean_receipt_sha256": "56fab87045627f36c6e685bce4917678af2f48e2ae82a941f2e4bb5e69ca4caf",
+  "paper_modified": false,
+  "scope_or_magnitude_revision_adopted": false,
+  "files": [
+    {
+      "path": "runs/20261004_math_review_relative_MCSE_scale_repair/before_after_probe.py",
+      "sha256": "91cf21f935daa25db6544e90c9113680c789ca12bb8777dc037b040756e6bdfa"
+    },
+    {
+      "path": "runs/20261004_math_review_relative_MCSE_scale_repair/diagnose_before.py",
+      "sha256": "19e090040cd64719126729733c02ae9c01bb2fcd9dd8db9e113aadba7a2d51b7"
+    },
+    {
+      "path": "runs/20261004_math_review_relative_MCSE_scale_repair/fixtures/large/101/chains/sample.1.txt",
+      "sha256": "6d07fa81804daf779763d8238caea9a9f8d20d73f06f0deed597eb3c3d54819d"
+    },
+    {
+      "path": "runs/20261004_math_review_relative_MCSE_scale_repair/fixtures/large/101/resolved.yaml",
+      "sha256": "d1c8218abc1e8061517e74dbda87502272d5e43058c8fab610f218fedfa4caec"
+    },
+    {
+      "path": "runs/20261004_math_review_relative_MCSE_scale_repair/fixtures/large/102/chains/sample.1.txt",
+      "sha256": "99c52fa07d04a9c62fd259d33050d1003c9274840488ca308f055d6af63ed580"
+    },
+    {
+      "path": "runs/20261004_math_review_relative_MCSE_scale_repair/fixtures/large/102/resolved.yaml",
+      "sha256": "83e1dff0e25dd5d8a527408536d08272aedd3b17355341f013581d553d42ae3a"
+    },
+    {
+      "path": "runs/20261004_math_review_relative_MCSE_scale_repair/fixtures/large/103/chains/sample.1.txt",
+      "sha256": "a6a3fd3fe1d03b40baeddd306689a5b013d8b6acce5f67c8917e6372b9a8f508"
+    },
+    {
+      "path": "runs/20261004_math_review_relative_MCSE_scale_repair/fixtures/large/103/resolved.yaml",
+      "sha256": "9a55f14b54ddd4d638105683025fec8809aecb83f4b8a0cf3057d837421bd586"
+    },
+    {
+      "path": "runs/20261004_math_review_relative_MCSE_scale_repair/fixtures/large/104/chains/sample.1.txt",
+      "sha256": "f75f81fbb43fba82df6e8a1b64a2d6df59c11d6a976eb5ede69ad7a6b30b3850"
+    },
+    {
+      "path": "runs/20261004_math_review_relative_MCSE_scale_repair/fixtures/large/104/resolved.yaml",
+      "sha256": "c877dcc812761dbecda4f1f2cdd4361d1e61a888caad7f9fc729fc50d2e0b8f6"
+    },
+    {
+      "path": "runs/20261004_math_review_relative_MCSE_scale_repair/fixtures/ordinary/101/chains/sample.1.txt",
+      "sha256": "ce721240ce4f5de37c637ecd98676a53bea4f8ac27b5ad1a5787d2b85f7a75e5"
+    },
+    {
+      "path": "runs/20261004_math_review_relative_MCSE_scale_repair/fixtures/ordinary/101/resolved.yaml",
+      "sha256": "8aecb33b056042e838c48f146033cdcaed97e3b9c514e45276fedf0660e43b3c"
+    },
+    {
+      "path": "runs/20261004_math_review_relative_MCSE_scale_repair/fixtures/ordinary/102/chains/sample.1.txt",
+      "sha256": "c14c50ae541ed0529e169b4122b0023d037b8d091f6e9c497383fef94dbc7017"
+    },
+    {
+      "path": "runs/20261004_math_review_relative_MCSE_scale_repair/fixtures/ordinary/102/resolved.yaml",
+      "sha256": "cdd52a8c11405940ab7601fd29ab6f1f87cf872926da52d699c4d6e167bb043c"
+    },
+    {
+      "path": "runs/20261004_math_review_relative_MCSE_scale_repair/fixtures/ordinary/103/chains/sample.1.txt",
+      "sha256": "085129d545155f419e04f60997c53f1a305fb23219e96c09938cd9f5e9d85fe1"
+    },
+    {
+      "path": "runs/20261004_math_review_relative_MCSE_scale_repair/fixtures/ordinary/103/resolved.yaml",
+      "sha256": "870216b45bf0fdb834c6dfa52fec191610b810043c318ca42990a0b0b0a44da8"
+    },
+    {
+      "path": "runs/20261004_math_review_relative_MCSE_scale_repair/fixtures/ordinary/104/chains/sample.1.txt",
+      "sha256": "f60182032e0fb65067aaa3073404d3dae23420353d4607b0189a3db722e2aa7a"
+    },
+    {
+      "path": "runs/20261004_math_review_relative_MCSE_scale_repair/fixtures/ordinary/104/resolved.yaml",
+      "sha256": "e1f3d8be521d832fbb450142256ae5a8ccf07a8a0f060467f67e864f759374e2"
+    },
+    {
+      "path": "runs/20261004_math_review_relative_MCSE_scale_repair/fixtures/tiny/101/chains/sample.1.txt",
+      "sha256": "d1f3a2c6633e8126b38f40b5da704b4214e9e94c9493d17d98a0168beb7ded1c"
+    },
+    {
+      "path": "runs/20261004_math_review_relative_MCSE_scale_repair/fixtures/tiny/101/resolved.yaml",
+      "sha256": "5bf6350a48779aaaaadcaea724df758693aa70f0d2407197f8285ffffd575edc"
+    },
+    {
+      "path": "runs/20261004_math_review_relative_MCSE_scale_repair/fixtures/tiny/102/chains/sample.1.txt",
+      "sha256": "7cdf4def0da245a9c63aab9c21fbcfbea3d65c0e9c6cd0a230644138af996470"
+    },
+    {
+      "path": "runs/20261004_math_review_relative_MCSE_scale_repair/fixtures/tiny/102/resolved.yaml",
+      "sha256": "3208efbb6ac1e446d4db1063087143e7d3dcd883bb3733dcd9543ecdf42fa1d1"
+    },
+    {
+      "path": "runs/20261004_math_review_relative_MCSE_scale_repair/fixtures/tiny/103/chains/sample.1.txt",
+      "sha256": "4d87958a053cdf9113da8f752cd97c5b230c44f154ba6abd044e48993ddb8149"
+    },
+    {
+      "path": "runs/20261004_math_review_relative_MCSE_scale_repair/fixtures/tiny/103/resolved.yaml",
+      "sha256": "0b72c502c9adbb252da8b92b55c6d1fe2aecdc6c600b8d644526c838749275ad"
+    },
+    {
+      "path": "runs/20261004_math_review_relative_MCSE_scale_repair/fixtures/tiny/104/chains/sample.1.txt",
+      "sha256": "0f10f37f6e5f79e75f8a24ac556507be06e4ac982b196e62bf0c83f8ce3ba2b4"
+    },
+    {
+      "path": "runs/20261004_math_review_relative_MCSE_scale_repair/fixtures/tiny/104/resolved.yaml",
+      "sha256": "b6cf3c3857381a7c76a0835c489fb547c48fc0147a49660ee3d0933f3c0006c2"
+    },
+    {
+      "path": "runs/20261004_math_review_relative_MCSE_scale_repair/impact_receipt.json",
+      "sha256": "fe38605f4f49a264eeaaa1bccc304d7b5f349fa82fa69ba7a499cdba83e76569"
+    },
+    {
+      "path": "runs/20261004_math_review_relative_MCSE_scale_repair/large_after.json",
+      "sha256": "f4a2b6845fc99b02ea7f08be2cf5c7e17b502968bb4e9f8b86247b43a767ecc1"
+    },
+    {
+      "path": "runs/20261004_math_review_relative_MCSE_scale_repair/large_before.json",
+      "sha256": "06aace37b0918355739888a0a5a85d31278a591eece2f728e8bdab7fe41bdc3a"
+    },
+    {
+      "path": "runs/20261004_math_review_relative_MCSE_scale_repair/mcmc_before.py",
+      "sha256": "eaf255808062cb4817cf8891f34baf45cf6fe0642f3e0b274c1abd8fe7dfc586"
+    },
+    {
+      "path": "runs/20261004_math_review_relative_MCSE_scale_repair/observe_runtime.py",
+      "sha256": "939d0d1c5205236985847e43eb4081e5dc9d6f81febb407bbb87589a73525dd0"
+    },
+    {
+      "path": "runs/20261004_math_review_relative_MCSE_scale_repair/ordinary_after.json",
+      "sha256": "b5a074857f7579b125a19c850e6b46bae5be4c7171e2d70945bcda63ea3637bc"
+    },
+    {
+      "path": "runs/20261004_math_review_relative_MCSE_scale_repair/ordinary_before.json",
+      "sha256": "b5a074857f7579b125a19c850e6b46bae5be4c7171e2d70945bcda63ea3637bc"
+    },
+    {
+      "path": "runs/20261004_math_review_relative_MCSE_scale_repair/probe_receipt.json",
+      "sha256": "d88780a63aeb617ee42abd33b0c70e900f0b8caa4fc0f6358fd387e523d52ca8"
+    },
+    {
+      "path": "runs/20261004_math_review_relative_MCSE_scale_repair/probe_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_relative_MCSE_scale_repair/probe_stdout.txt",
+      "sha256": "eb46f5f6e5194002d5a75e0ed511a0201a7a5e219d41b32299b13fbed45ddb41"
+    },
+    {
+      "path": "runs/20261004_math_review_relative_MCSE_scale_repair/pytest_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_relative_MCSE_scale_repair/pytest_stdout.txt",
+      "sha256": "30366da0277b9df7dba7f46605ca3ba0182a09d0f1e09f66bf9adedabbd759ed"
+    },
+    {
+      "path": "runs/20261004_math_review_relative_MCSE_scale_repair/runtime_observation.json",
+      "sha256": "612fdd7d1272899464e8341d9072943e407747a8aa4f226c4134b39c61fa6230"
+    },
+    {
+      "path": "runs/20261004_math_review_relative_MCSE_scale_repair/self_review.py",
+      "sha256": "3fa97df3a87b7588d49740dd593b1796b8147dd42422d764ccce912d8d923920"
+    },
+    {
+      "path": "runs/20261004_math_review_relative_MCSE_scale_repair/self_review_receipt.json",
+      "sha256": "ef3524408e94b504f58c6593a55ea6a99fdb1c6826ae06f9910cb275d2209e6f"
+    },
+    {
+      "path": "runs/20261004_math_review_relative_MCSE_scale_repair/self_review_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_relative_MCSE_scale_repair/self_review_stdout.txt",
+      "sha256": "5f8ff936e1a069e3d93677d30affded9965b200a761230b116ab918b6a11f422"
+    },
+    {
+      "path": "runs/20261004_math_review_relative_MCSE_scale_repair/tiny_after.json",
+      "sha256": "2c79474fa4d65cc4f2e65628e2537e9da513df1d6f55f699bf00305dd302c7b3"
+    },
+    {
+      "path": "runs/20261004_math_review_relative_MCSE_scale_repair/tiny_before.json",
+      "sha256": "2eecebcf9130b32a2d58e5f1b38376d59aae890dd68a795879053e4b754c144b"
+    },
+    {
+      "path": "runs/20261004_math_review_relative_MCSE_scale_repair/verify_impact.py",
+      "sha256": "569cb93ad53eb3a0fa2bde98d074f4784513e880336ab306a0d5b187af6ff70a"
+    },
+    {
+      "path": "scripts/diagnose_cobaya_chains.py",
+      "sha256": "8f18ac0742e02170e3c37cb7b29ab59ae38842aae6cc4b6996a13135586c17ba"
+    },
+    {
+      "path": "src/sbt_spt_audit/mcmc.py",
+      "sha256": "557006c5101152322564810dcba6c4c8a536164486973a0326275464c551862c"
+    },
+    {
+      "path": "tests/test_relative_mcse_scale.py",
+      "sha256": "76bd886f9b30e440937061a5a453e70fe9056193c8bbbd83b08c204e872e677b"
+    }
+  ]
+}

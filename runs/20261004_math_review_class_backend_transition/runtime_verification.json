@@ -1,0 +1,210 @@
+{
+  "utc": "2026-10-04T03:58:56.088664+00:00",
+  "records": [
+    {
+      "seed": 301,
+      "pid": 370438,
+      "command": "/tmp/neutrino-math-review-venv/bin/python scripts/run_cobaya.py --config runs/20261003_math_review_spt_desi_chain_configs/A_seed301.yaml --outdir runs/20261003_math_review_chain_A_seed301 --seed 301 ",
+      "process_start_ticks": 328789193,
+      "mapped_guarded_module": null
+    },
+    {
+      "seed": 302,
+      "pid": 370439,
+      "command": "/tmp/neutrino-math-review-venv/bin/python scripts/run_cobaya.py --config runs/20261003_math_review_spt_desi_chain_configs/A_seed302.yaml --outdir runs/20261003_math_review_chain_A_seed302 --seed 302 ",
+      "process_start_ticks": 328789193,
+      "mapped_guarded_module": null
+    },
+    {
+      "seed": 305,
+      "pid": 370440,
+      "command": "/tmp/neutrino-math-review-venv/bin/python scripts/run_cobaya.py --config runs/20261003_math_review_spt_desi_chain_configs/B_seed305.yaml --outdir runs/20261003_math_review_chain_B_seed305 --seed 305 ",
+      "process_start_ticks": 328789193,
+      "mapped_guarded_module": null
+    },
+    {
+      "seed": 306,
+      "pid": 370441,
+      "command": "/tmp/neutrino-math-review-venv/bin/python scripts/run_cobaya.py --config runs/20261003_math_review_spt_desi_chain_configs/B_seed306.yaml --outdir runs/20261003_math_review_chain_B_seed306 --seed 306 ",
+      "process_start_ticks": 328789193,
+      "mapped_guarded_module": null
+    },
+    {
+      "seed": 303,
+      "pid": 660424,
+      "command": "/tmp/neutrino-math-review-venv/bin/python scripts/run_cobaya.py --config runs/20261003_math_review_spt_desi_chain_configs/A_seed303.yaml --outdir runs/20261003_math_review_chain_A_seed303 --seed 303 ",
+      "process_start_ticks": 328869762,
+      "mapped_guarded_module": null
+    },
+    {
+      "seed": 304,
+      "pid": 660425,
+      "command": "/tmp/neutrino-math-review-venv/bin/python scripts/run_cobaya.py --config runs/20261003_math_review_spt_desi_chain_configs/A_seed304.yaml --outdir runs/20261003_math_review_chain_A_seed304 --seed 304 ",
+      "process_start_ticks": 328869762,
+      "mapped_guarded_module": null
+    },
+    {
+      "seed": 307,
+      "pid": 660426,
+      "command": "/tmp/neutrino-math-review-venv/bin/python scripts/run_cobaya.py --config runs/20261003_math_review_spt_desi_chain_configs/B_seed307.yaml --outdir runs/20261003_math_review_chain_B_seed307 --seed 307 ",
+      "process_start_ticks": 328869763,
+      "mapped_guarded_module": null
+    },
+    {
+      "seed": 308,
+      "pid": 660427,
+      "command": "/tmp/neutrino-math-review-venv/bin/python scripts/run_cobaya.py --config runs/20261003_math_review_spt_desi_chain_configs/B_seed308.yaml --outdir runs/20261003_math_review_chain_B_seed308 --seed 308 ",
+      "process_start_ticks": 328869763,
+      "mapped_guarded_module": null
+    },
+    {
+      "seed": 402,
+      "pid": 2333841,
+      "command": "/tmp/neutrino-math-review-venv/bin/python scripts/run_cobaya.py --config runs/20261003_math_review_spt_parallel_chain_configs/A_seed402.yaml --outdir runs/20261003_math_review_chain_A_seed402 --seed 402 ",
+      "process_start_ticks": 329145100,
+      "mapped_guarded_module": null
+    },
+    {
+      "seed": 401,
+      "pid": 2333842,
+      "command": "/tmp/neutrino-math-review-venv/bin/python scripts/run_cobaya.py --config runs/20261003_math_review_spt_parallel_chain_configs/A_seed401.yaml --outdir runs/20261003_math_review_chain_A_seed401 --seed 401 ",
+      "process_start_ticks": 329145100,
+      "mapped_guarded_module": null
+    },
+    {
+      "seed": 404,
+      "pid": 2333851,
+      "command": "/tmp/neutrino-math-review-venv/bin/python scripts/run_cobaya.py --config runs/20261003_math_review_spt_parallel_chain_configs/B_seed404.yaml --outdir runs/20261003_math_review_chain_B_seed404 --seed 404 ",
+      "process_start_ticks": 329145101,
+      "mapped_guarded_module": null
+    },
+    {
+      "seed": 403,
+      "pid": 2333860,
+      "command": "/tmp/neutrino-math-review-venv/bin/python scripts/run_cobaya.py --config runs/20261003_math_review_spt_parallel_chain_configs/B_seed403.yaml --outdir runs/20261003_math_review_chain_B_seed403 --seed 403 ",
+      "process_start_ticks": 329145101,
+      "mapped_guarded_module": null
+    },
+    {
+      "seed": 1201,
+      "pid": 719894,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_class_python_repair/launch_guarded_trial.py ",
+      "process_start_ticks": 335229443,
+      "mapped_guarded_module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so"
+    },
+    {
+      "seed": 1301,
+      "pid": 313611,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_class_backend_transition/launch_guarded_replica.py 1301 ",
+      "process_start_ticks": 335535531,
+      "mapped_guarded_module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so"
+    },
+    {
+      "seed": 1302,
+      "pid": 314539,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_class_backend_transition/launch_guarded_replica.py 1302 ",
+      "process_start_ticks": 335535649,
+      "mapped_guarded_module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so"
+    },
+    {
+      "seed": 1303,
+      "pid": 315724,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_class_backend_transition/launch_guarded_replica.py 1303 ",
+      "process_start_ticks": 335535765,
+      "mapped_guarded_module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so"
+    },
+    {
+      "seed": 1304,
+      "pid": 316758,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_class_backend_transition/launch_guarded_replica.py 1304 ",
+      "process_start_ticks": 335535882,
+      "mapped_guarded_module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so"
+    },
+    {
+      "seed": 1305,
+      "pid": 317618,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_class_backend_transition/launch_guarded_replica.py 1305 ",
+      "process_start_ticks": 335535999,
+      "mapped_guarded_module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so"
+    },
+    {
+      "seed": 1306,
+      "pid": 318458,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_class_backend_transition/launch_guarded_replica.py 1306 ",
+      "process_start_ticks": 335536116,
+      "mapped_guarded_module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so"
+    },
+    {
+      "seed": 1307,
+      "pid": 319462,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_class_backend_transition/launch_guarded_replica.py 1307 ",
+      "process_start_ticks": 335536235,
+      "mapped_guarded_module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so"
+    },
+    {
+      "seed": 1308,
+      "pid": 320418,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_class_backend_transition/launch_guarded_replica.py 1308 ",
+      "process_start_ticks": 335536353,
+      "mapped_guarded_module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so"
+    },
+    {
+      "seed": 1401,
+      "pid": 465459,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_class_backend_transition/launch_guarded_replica.py 1401 ",
+      "process_start_ticks": 335552436,
+      "mapped_guarded_module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so"
+    },
+    {
+      "seed": 1402,
+      "pid": 466588,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_class_backend_transition/launch_guarded_replica.py 1402 ",
+      "process_start_ticks": 335552554,
+      "mapped_guarded_module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so"
+    },
+    {
+      "seed": 1403,
+      "pid": 467452,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_class_backend_transition/launch_guarded_replica.py 1403 ",
+      "process_start_ticks": 335552671,
+      "mapped_guarded_module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so"
+    },
+    {
+      "seed": 1404,
+      "pid": 468270,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_class_backend_transition/launch_guarded_replica.py 1404 ",
+      "process_start_ticks": 335552790,
+      "mapped_guarded_module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so"
+    },
+    {
+      "seed": 1405,
+      "pid": 468765,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_class_backend_transition/launch_guarded_replica.py 1405 ",
+      "process_start_ticks": 335552907,
+      "mapped_guarded_module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so"
+    },
+    {
+      "seed": 1406,
+      "pid": 469224,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_class_backend_transition/launch_guarded_replica.py 1406 ",
+      "process_start_ticks": 335553025,
+      "mapped_guarded_module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so"
+    },
+    {
+      "seed": 1407,
+      "pid": 505961,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_class_backend_transition/launch_guarded_replica.py 1407 ",
+      "process_start_ticks": 335556803,
+      "mapped_guarded_module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so"
+    }
+  ],
+  "owned_live_samplers": 28,
+  "SPT_original_backend": 12,
+  "guarded_quad_only": 8,
+  "guarded_seven_setting": 8,
+  "original_installed_classy_unchanged": true,
+  "remaining_unmodified_CLASS_inference_active": false,
+  "new_saved_rows_native_checks_pending": true,
+  "posterior_convergence_certified": false,
+  "uniform_numerical_accuracy_certified": false
+}

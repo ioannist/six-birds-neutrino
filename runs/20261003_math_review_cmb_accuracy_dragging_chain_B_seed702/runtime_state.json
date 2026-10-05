@@ -1,0 +1,36 @@
+{
+  "status": "retired_agent_requested_SIGTERM_unmodified_CLASS_archived",
+  "launch_utc": "2026-10-03T16:59:37.235202+00:00",
+  "lens": "B",
+  "seed": 702,
+  "pid": 2696250,
+  "exec_session": 81279,
+  "run_dir": "runs/20261003_math_review_cmb_accuracy_dragging_chain_B_seed702",
+  "omp_threads": 8,
+  "output_precision_digits": 17,
+  "implementation_sha256": {
+    "scripts/run_cobaya.py": "744581e1e7493ecf5c1d1c71871d16558eb7ff2229c9c4ff68c9eb8d136fac5b",
+    "src/sbt_spt_audit/samplers.py": "35109ea6ec9af9519b1ab44b737e1d4f56bfe22020bb2b09f2649a0ada6cfa94",
+    "src/sbt_spt_audit/mcmc.py": "e00c832f911a9233bce6c3ada930113affb436e52272bb704e47706c8df22898",
+    "src/sbt_spt_audit/likelihoods/candl_cobaya.py": "b695b32235d04a2b287786260c5c02fb87c43d787d0949907a7247518aa37a90",
+    "src/sbt_spt_audit/likelihoods/desi_dr2_bao.py": "bf7b9b816f158aaabfc12ba8f6ea75ed8c7fa0bc0bbfe73b7aa8e75d9a999bf4"
+  },
+  "upstream_mcmc_sha256": "455def4cc5462f57d0fbd365793630382a105112d7223c4c90329d3252534594",
+  "actual_drag_activation_verified": true,
+  "temperature": 1,
+  "block_lines": [
+    "[sbt_spt_audit.samplers.fullprecisionmcmc] * 1 : [['omegabh2', 'omegach2', 'H0', 'logA', 'ns', 'tau', 'mnu_sample']]",
+    "[sbt_spt_audit.samplers.fullprecisionmcmc] * 5 : [['TT_tSZ_Amp', 'TT_kSZ_Amp'], ['A_planck']]"
+  ],
+  "terminal_exit_code": 143,
+  "termination_observed_utc": "2026-10-03T20:50:23.535729+00:00",
+  "previous_pid": 755952,
+  "resume_seed": 902,
+  "previous_exec_session": 10916,
+  "active_retired_pid": 2696250,
+  "active_retired_exec_session": 81279,
+  "active_retired_exit_code": 143,
+  "retirement_archive": "runs/20261004_math_review_class_backend_transition/archives/seed702",
+  "replacement_seed": 1405,
+  "replacement_is_same_solver_resume": false
+}

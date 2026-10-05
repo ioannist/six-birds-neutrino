@@ -1,0 +1,37 @@
+{
+  "scope": "actual_Gaussian_product_boundary_event_and_fixed_offset_measure_tightening_law",
+  "build_managed_session": 47424,
+  "build_exit_code": 0,
+  "axioms_managed_session": 71443,
+  "axioms_exit_code": 0,
+  "exported_theorems_checked": 31,
+  "new_tightening_exports": 11,
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "Lean_source_sha256": "59289c185150802337bcad13af1006fabf5eb2f401e36a0f3aea3d586263024d",
+  "premises": [
+    "positive first and second Gaussian precisions",
+    "same first mean and first precision",
+    "one fixed offset measure as second precision varies",
+    "nonnegative first mean for increasing boundary-event inclusion",
+    "nonpositive first mean for decreasing boundary-event inclusion",
+    "positive common precision rescaling"
+  ],
+  "semantic_bridges_checked": [
+    "actual product maximum at zero iff offset is in the boundary event",
+    "closed lower halfline endpoint equals the exact deterministic threshold",
+    "boundary event is measurable",
+    "event inclusion yields measure monotonicity",
+    "zero first mean gives the same halfline at every positive precision"
+  ],
+  "probability_strictness_for_arbitrary_measure_asserted": false,
+  "Gaussian_CDF_identity_formalized": false,
+  "normalizer_formalized": false,
+  "real_CMB_Gaussian_applicability_established": false,
+  "constant_prior_required_for_posterior_mode_interpretation": true,
+  "reviewer": "distinct_self_review_no_independent_agent",
+  "Python_suite_unchanged_since_73_test_pass": true
+}

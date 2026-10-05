@@ -1,0 +1,168 @@
+{
+  "utc": "2026-10-04T21:30:13.353605+00:00",
+  "groups": {
+    "current_A4095": {
+      "baseline_seed": 1801,
+      "source_config": "runs/20261004_math_review_fresh_CAMB_posterior_preparation/seed1801/input.yaml",
+      "source_config_sha256": "4dd01290bcba5f5858cad52b8ee9d599b63815ad924b0f69e0e42799bc2773e4",
+      "native_baseline_verification": "runs/20261004_math_review_fresh_CAMB_fifth_current_A4095_diagnostics/native_rows_verification.json",
+      "native_baseline_verification_sha256": "8c71e5a505e195c0fa35f0716efb4ae350c42e20d0b42b815a28ff9e95607ed3",
+      "points": {
+        "original_reference": {
+          "omegabh2": 0.023027917,
+          "omegach2": 0.11612066,
+          "H0": 68.927728,
+          "logA": 3.0162119,
+          "ns": 1.0113053,
+          "tau": 0.050845913,
+          "mnu": 0.071601591
+        },
+        "selected_latest_frozen_row": {
+          "omegabh2": 0.02282449592863893,
+          "omegach2": 0.11664986847460365,
+          "H0": 68.75301948686611,
+          "logA": 3.0180738025724474,
+          "ns": 1.018826611596793,
+          "tau": 0.057005242595730525,
+          "mnu": 0.05300723110956623
+        },
+        "mass_6_eV": {
+          "omegabh2": 0.023027917,
+          "omegach2": 0.11612066,
+          "H0": 68.927728,
+          "logA": 3.0162119,
+          "ns": 1.0113053,
+          "tau": 0.050845913,
+          "mnu": 6.0
+        },
+        "mass_12_eV": {
+          "omegabh2": 0.023027917,
+          "omegach2": 0.11612066,
+          "H0": 68.927728,
+          "logA": 3.0162119,
+          "ns": 1.0113053,
+          "tau": 0.050845913,
+          "mnu": 12.0
+        }
+      },
+      "controls": {
+        "5": {
+          "path": "runs/20261004_math_review_upper_prior_control_preparation/current_A4095/upper_5/model.yaml",
+          "sha256": "2df6f6dc7aaa2ba58c6735aced0b37fd477e71376d8e463617f6aa3fad59e190"
+        },
+        "10": {
+          "path": "runs/20261004_math_review_upper_prior_control_preparation/current_A4095/upper_10/model.yaml",
+          "sha256": "f3ca2978b566f42862beeeb83b24ea6ea9a68faab3d1aa676056322592be1487"
+        },
+        "20": {
+          "path": "runs/20261004_math_review_upper_prior_control_preparation/current_A4095/upper_20/model.yaml",
+          "sha256": "aa72b28561a4e4065faa44bdf1b6646485592c901278b6aa5db415b6a6037ac5"
+        }
+      },
+      "expected_environment": {
+        "module": "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/camb/camblib.so",
+        "module_sha256": "306640a8948cd5246fc9b21e76525f6adebdff5ba3bc792a57d50bba67225ad5",
+        "wrapper": "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/cobaya/theories/camb/camb.py",
+        "wrapper_sha256": "ed8a9ea708caa437e72732adb1cb32182330f55b4c3c9fb1e18e36e604424214",
+        "solver_version": "2.0.4",
+        "Cobaya_version": "3.6.2"
+      }
+    },
+    "current_B4095": {
+      "baseline_seed": 1805,
+      "source_config": "runs/20261004_math_review_fresh_CAMB_posterior_preparation/seed1805/input.yaml",
+      "source_config_sha256": "8dd52e32def676d669fa3ca2433e73431afb8e36509aa645bb745f3305e10f9a",
+      "native_baseline_verification": "runs/20261004_math_review_fresh_CAMB_fifth_current_B4095_diagnostics/native_rows_verification.json",
+      "native_baseline_verification_sha256": "d7bd0466945a7a1ecc7d6849d962c6cebf2a9fb46cf2416c7744070a7da051f9",
+      "points": {
+        "original_reference": {
+          "omegabh2": 0.02208835,
+          "omegach2": 0.11613327,
+          "H0": 68.761625,
+          "logA": 3.0437372,
+          "ns": 0.97829051,
+          "tau": 0.05867819,
+          "mnu": 0.043870311
+        },
+        "selected_latest_frozen_row": {
+          "omegabh2": 0.02203745797876923,
+          "omegach2": 0.11735623798381303,
+          "H0": 68.22119099383418,
+          "logA": 3.024620732055907,
+          "ns": 0.9790422612585956,
+          "tau": 0.04962586886117272,
+          "mnu": 0.05217658822542334
+        },
+        "mass_6_eV": {
+          "omegabh2": 0.02208835,
+          "omegach2": 0.11613327,
+          "H0": 68.761625,
+          "logA": 3.0437372,
+          "ns": 0.97829051,
+          "tau": 0.05867819,
+          "mnu": 6.0
+        },
+        "mass_12_eV": {
+          "omegabh2": 0.02208835,
+          "omegach2": 0.11613327,
+          "H0": 68.761625,
+          "logA": 3.0437372,
+          "ns": 0.97829051,
+          "tau": 0.05867819,
+          "mnu": 12.0
+        }
+      },
+      "controls": {
+        "5": {
+          "path": "runs/20261004_math_review_upper_prior_control_preparation/current_B4095/upper_5/model.yaml",
+          "sha256": "b38e90a208b616975c75187df94bbd54162f9d52fa57bfc3715e51742b83262e"
+        },
+        "10": {
+          "path": "runs/20261004_math_review_upper_prior_control_preparation/current_B4095/upper_10/model.yaml",
+          "sha256": "0a6bf43af0024e3c86c8614cfe042379944f15d600abec8a19450d073478b556"
+        },
+        "20": {
+          "path": "runs/20261004_math_review_upper_prior_control_preparation/current_B4095/upper_20/model.yaml",
+          "sha256": "47fa970d3da6f65e236b55024a412dba5016339807857e8c2251fc5613bd30ca"
+        }
+      },
+      "expected_environment": {
+        "module": "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/camb/camblib.so",
+        "module_sha256": "306640a8948cd5246fc9b21e76525f6adebdff5ba3bc792a57d50bba67225ad5",
+        "wrapper": "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/cobaya/theories/camb/camb.py",
+        "wrapper_sha256": "ed8a9ea708caa437e72732adb1cb32182330f55b4c3c9fb1e18e36e604424214",
+        "solver_version": "2.0.4",
+        "Cobaya_version": "3.6.2"
+      }
+    }
+  },
+  "implementation_sha256": {
+    "src/sbt_spt_audit/__init__.py": "2fe4cfb76c3908ca1b089ac085f5d5d3c6ba4bbaf3c95b1c797daa6a1d7a9857",
+    "src/sbt_spt_audit/_numerics.py": "1b34997880ba12172943c6198c435023feb26952e64126dc592746f219cd8580",
+    "src/sbt_spt_audit/boltzmann.py": "a2100f8f48f98988580c21ddaca04ed86a9b956f4b22135a942b05dd8265f355",
+    "src/sbt_spt_audit/candl_support.py": "ddf70460d7662a2f1e4e5130635b6c09cdc2381ef78f0febaa0c88391533f162",
+    "src/sbt_spt_audit/hello.py": "052f01caf3cbcc1e78689a02fae093f6d8e3369a01b2bb0974e65ed1a050c607",
+    "src/sbt_spt_audit/likelihood.py": "69fae0146365fb086fc0702ee19d34a4cd381a14324e7d350d04405052fadaa0",
+    "src/sbt_spt_audit/likelihoods/__init__.py": "34ecc40b8eb6a6b8e87dc120366fa1a7fd93ddc08222d3dc2c53a5c4418a1001",
+    "src/sbt_spt_audit/likelihoods/candl_cobaya.py": "b695b32235d04a2b287786260c5c02fb87c43d787d0949907a7247518aa37a90",
+    "src/sbt_spt_audit/likelihoods/desi_dr2_bao.py": "f9e8872fd1c4c737b9e4e9a143cb8ac1d8e31b8a087d687db9ebe14b076939aa",
+    "src/sbt_spt_audit/localization.py": "b18f5257185987774eaa84d894fc789f6e16e82852962ad936f5b72d95c1d1c6",
+    "src/sbt_spt_audit/mcmc.py": "557006c5101152322564810dcba6c4c8a536164486973a0326275464c551862c",
+    "src/sbt_spt_audit/mcmc_diagnostics.py": "babe3e043fdb7fa0062f71d47446e6e0109444fd83050625124a50dc1fc1ac53",
+    "src/sbt_spt_audit/metrics.py": "fd8617103d1ccb3f8a7494e09fff362caf14e0b4e612064860539e041197fbf1",
+    "src/sbt_spt_audit/samplers.py": "2a7c7e99597b6c5bc48f72bbaa9e8df81dd6987ba36e8ab0a81b8c36b10f33e9"
+  },
+  "model_only_no_sampler_or_output": true,
+  "only_model_change": "mnu uniform-prior upper endpoint",
+  "upper_limits_eV": [
+    5,
+    10,
+    20
+  ],
+  "samplers_launched": 0,
+  "conditional_mathematical_relation": "With the same likelihood and other priors and a proper positive-evidence wide posterior, the U=5 posterior is the U>5 posterior conditioned on mnu<=5.",
+  "relation_premises_verified_uniformly": false,
+  "tail_probability_or_quantile_stability_inferred": false,
+  "posterior_qualification": false,
+  "paper_modified": false
+}

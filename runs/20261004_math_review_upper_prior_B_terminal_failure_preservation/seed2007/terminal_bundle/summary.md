@@ -1,0 +1,7 @@
+- run_name: fresh_CAMB_upper20_B4095_seed2007
+- config: /home/repos/six-birds-neutrino/runs/20261004_math_review_upper_prior_posterior_preparation/seed2007/input.yaml
+- output_prefix: /home/repos/six-birds-neutrino/runs/20261004_math_review_fresh_CAMB_upper20_B4095_seed2007/chains/fresh_CAMB_upper20_B4095_seed2007
+- cobaya_success: False
+- extraction_success: False
+- metrics_path: missing
+- error: ValueError: provider spectrum tt must be finite and 1D.

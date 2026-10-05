@@ -1,0 +1,84 @@
+{
+  "utc": "2026-10-04T22:47:11.196824+00:00",
+  "controls": [
+    {
+      "case": "actual_original_live_identity_is_refused",
+      "observation": {
+        "pid": 1417237,
+        "expected_start_ticks": 339785278,
+        "observed_start_ticks": 339785278,
+        "observed_state": "R",
+        "observed_process_name": "python",
+        "status": "original_process_identity_present",
+        "original_identity_absent": false
+      }
+    },
+    {
+      "case": "same_actual_PID_different_start_is_distinguished",
+      "observation": {
+        "pid": 1417237,
+        "expected_start_ticks": 339785277,
+        "observed_start_ticks": 339785278,
+        "observed_state": "R",
+        "observed_process_name": "python",
+        "status": "PID_reused_by_different_identity",
+        "original_identity_absent": true
+      }
+    },
+    {
+      "case": "missing_PID_is_absent",
+      "observation": {
+        "pid": 8001,
+        "expected_start_ticks": 42,
+        "status": "PID_not_present",
+        "original_identity_absent": true
+      }
+    },
+    {
+      "case": "same_identity_zombie_remains_present_with_parentheses_in_name",
+      "observation": {
+        "pid": 8001,
+        "expected_start_ticks": 42,
+        "observed_start_ticks": 42,
+        "observed_state": "Z",
+        "observed_process_name": "name (with) spaces",
+        "status": "original_process_identity_present",
+        "original_identity_absent": false
+      }
+    },
+    {
+      "case": "reused_fixture_PID_with_distinct_start_is_absent",
+      "observation": {
+        "pid": 8001,
+        "expected_start_ticks": 41,
+        "observed_start_ticks": 42,
+        "observed_state": "Z",
+        "observed_process_name": "name (with) spaces",
+        "status": "PID_reused_by_different_identity",
+        "original_identity_absent": true
+      }
+    },
+    {
+      "case": "invalid_identity_refused",
+      "pid": 0,
+      "start": 1
+    },
+    {
+      "case": "invalid_identity_refused",
+      "pid": 8001,
+      "start": 0
+    },
+    {
+      "case": "invalid_identity_refused",
+      "pid": 8001,
+      "start": true
+    },
+    {
+      "case": "unreadable_stat_is_not_treated_as_absence"
+    }
+  ],
+  "real_counterexample_receipt_sha256": "34147ead8b24d0b3d3a55004f60af7271505204acf14f2f73c87cd3880c1e2c1",
+  "helper_sha256": "962ff3e07cddcd5711284bdaecf19ab9b7581674754a57f46fd6ad9e03fac620",
+  "original_live_identity_guard_preserved": true,
+  "processes_signaled_or_modified": false
+}

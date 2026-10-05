@@ -1,0 +1,47 @@
+{
+  "utc": "2026-10-04T16:42:22.472241+00:00",
+  "reviewer": "self_review_no_independent_agent",
+  "groups_checked": [
+    {
+      "group": "old_A3200",
+      "observed_minimum_history": 542,
+      "insufficient_history_exit_code": 3,
+      "assessment_snapshot_created": false
+    },
+    {
+      "group": "old_B4095",
+      "observed_minimum_history": 513,
+      "insufficient_history_exit_code": 3,
+      "assessment_snapshot_created": false
+    },
+    {
+      "group": "current_A4095",
+      "observed_minimum_history": 454,
+      "insufficient_history_exit_code": 3,
+      "assessment_snapshot_created": false
+    },
+    {
+      "group": "current_B4095",
+      "observed_minimum_history": 448,
+      "insufficient_history_exit_code": 3,
+      "assessment_snapshot_created": false
+    },
+    {
+      "group": "current_A3200",
+      "observed_minimum_history": 594,
+      "insufficient_history_exit_code": 3,
+      "assessment_snapshot_created": false
+    }
+  ],
+  "contract_sha256": "1b6aed77c1a66b9ee84fd1d949c0f3b20d8d18e96112f7ff64260f746f097adb",
+  "workflow_source_sha256": {
+    "prepare_snapshot.py": "b9970aa9b959708a3e918163c9bde034177ae487cc1db644d2e7a9d05a141755",
+    "verify_native_rows.py": "9bcf1f1073ed098ef787e65510b859f61f510c0911b0071f6008cea26c79cca9",
+    "run_diagnostic.py": "ab760f7bde8806f0c82ed515e57278a5751a0842c9b9116df866d5421597b327",
+    "verify_snapshot.py": "a31bc2c725579869a43c08bbb84ddedb35c0faf83294908a3654ed817adc5cdf"
+  },
+  "syntax_and_insufficient_history_branches_verified": true,
+  "first_full_snapshot_native_and_diagnostic_workflow_exercised": false,
+  "first_assessments_remain_pending": true,
+  "posterior_convergence_certified": false
+}

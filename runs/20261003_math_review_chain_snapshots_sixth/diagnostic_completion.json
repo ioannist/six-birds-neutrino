@@ -1,0 +1,27 @@
+{
+  "utc": "2026-10-03T16:15:49.797207+00:00",
+  "scope": "completed_all_sampled_variable_progress_diagnostics",
+  "groups": {
+    "chain_A": {
+      "managed_exec_exit_code": 0,
+      "diagnostics_sha256": "608d69364f0f679c3f451c94b9c7b753d8dc222941c19b6bc931cd753729dfe9",
+      "all_diagnostic_thresholds_pass": false
+    },
+    "chain_B": {
+      "managed_exec_exit_code": 0,
+      "diagnostics_sha256": "6dc57d08535c2328d7538a15ea6d99eab299c2b4015515e92224624df0427239",
+      "all_diagnostic_thresholds_pass": false
+    },
+    "cmb_chain_A": {
+      "managed_exec_exit_code": 0,
+      "diagnostics_sha256": "475ab263e028d5f0245fc5e9f2a89e42a56c3d5bb7d335c86727234252588455",
+      "all_diagnostic_thresholds_pass": false
+    },
+    "cmb_chain_B": {
+      "managed_exec_exit_code": 0,
+      "diagnostics_sha256": "5153c05fa041898be3c7507f8c61103f5346fd6d1538836f8efc91a841f793c4",
+      "all_diagnostic_thresholds_pass": false
+    }
+  },
+  "replacement_posterior_bounds_certified": false
+}

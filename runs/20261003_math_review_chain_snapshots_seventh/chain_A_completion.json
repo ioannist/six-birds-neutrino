@@ -1,0 +1,28 @@
+{
+  "utc": "2026-10-03T18:23:00.697034+00:00",
+  "command": [
+    "/tmp/neutrino-math-review-venv/bin/python",
+    "/home/repos/six-birds-neutrino/scripts/diagnose_cobaya_chains.py",
+    "--run-dir",
+    "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_snapshots_seventh/chain_A_seed301",
+    "--run-dir",
+    "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_snapshots_seventh/chain_A_seed302",
+    "--run-dir",
+    "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_snapshots_seventh/chain_A_seed303",
+    "--run-dir",
+    "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_snapshots_seventh/chain_A_seed304",
+    "--run-dir",
+    "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_snapshots_seventh/chain_A_seed401",
+    "--run-dir",
+    "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_snapshots_seventh/chain_A_seed402",
+    "--burnin-frac",
+    "0.2",
+    "--quantile-mcse-limit",
+    "0.005",
+    "--relative-quantile-mcse-limit",
+    "0.05",
+    "--output",
+    "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_snapshots_seventh/chain_A_diagnostics.json"
+  ],
+  "exit_code": 0
+}

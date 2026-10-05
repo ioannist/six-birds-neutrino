@@ -1,0 +1,152 @@
+{
+  "utc": "2026-10-04T22:14:31.782732+00:00",
+  "checks": [
+    {
+      "utc": "2026-10-04T22:14:31.779581+00:00",
+      "owned_live_samplers": 48,
+      "growth_by_cohort": {
+        "quad_A": {
+          "seeds": [
+            1301,
+            1302,
+            1303,
+            1304
+          ],
+          "minimum_saved_postburn_history": 5688,
+          "next_assessment_trigger": 5991,
+          "due": false
+        },
+        "quad_B": {
+          "seeds": [
+            1305,
+            1306,
+            1307,
+            1308
+          ],
+          "minimum_saved_postburn_history": 5251,
+          "next_assessment_trigger": 5945,
+          "due": false
+        },
+        "medium_A": {
+          "seeds": [
+            1201,
+            1401,
+            1402,
+            1406
+          ],
+          "minimum_saved_postburn_history": 1393,
+          "next_assessment_trigger": 1420,
+          "due": false
+        },
+        "medium_B": {
+          "seeds": [
+            1403,
+            1404,
+            1405,
+            1407
+          ],
+          "minimum_saved_postburn_history": 1042,
+          "next_assessment_trigger": 1173,
+          "due": false
+        },
+        "grid12_B": {
+          "seeds": [
+            1501,
+            1502,
+            1503,
+            1504
+          ],
+          "minimum_saved_postburn_history": 531,
+          "next_assessment_trigger": 1000,
+          "due": false
+        },
+        "old_A3200": {
+          "seeds": [
+            1701,
+            1702,
+            1703,
+            1704
+          ],
+          "minimum_saved_postburn_history": 3343,
+          "next_assessment_trigger": 3660,
+          "due": false
+        },
+        "old_B4095": {
+          "seeds": [
+            1705,
+            1706,
+            1707,
+            1708
+          ],
+          "minimum_saved_postburn_history": 3212,
+          "next_assessment_trigger": 3550,
+          "due": false
+        },
+        "current_A4095": {
+          "seeds": [
+            1801,
+            1802,
+            1803,
+            1804
+          ],
+          "minimum_saved_postburn_history": 2764,
+          "next_assessment_trigger": 2736,
+          "due": true
+        },
+        "current_B4095": {
+          "seeds": [
+            1805,
+            1806,
+            1807,
+            1808
+          ],
+          "minimum_saved_postburn_history": 2660,
+          "next_assessment_trigger": 3089,
+          "due": false
+        },
+        "current_A3200": {
+          "seeds": [
+            1901,
+            1902,
+            1903,
+            1904
+          ],
+          "minimum_saved_postburn_history": 3730,
+          "next_assessment_trigger": 4220,
+          "due": false
+        },
+        "upper20_A4095": {
+          "seeds": [
+            2001,
+            2002,
+            2003,
+            2004
+          ],
+          "minimum_saved_postburn_history": 84,
+          "next_assessment_trigger": 1000,
+          "due": false
+        },
+        "upper20_B4095": {
+          "seeds": [
+            2005,
+            2006,
+            2007,
+            2008
+          ],
+          "minimum_saved_postburn_history": 75,
+          "next_assessment_trigger": 1000,
+          "due": false
+        }
+      }
+    }
+  ],
+  "interval_seconds": 45,
+  "maximum_checks": 20,
+  "due_cohorts": [
+    "current_A4095"
+  ],
+  "exit_code": 0,
+  "samplers_restarted_or_stopped": false,
+  "diagnostic_gates_changed": false,
+  "scope": "actual owned identity and saved-growth observations only"
+}

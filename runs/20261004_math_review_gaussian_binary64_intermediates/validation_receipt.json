@@ -1,0 +1,86 @@
+{
+  "utc": "2026-10-04T05:07:04.816494+00:00",
+  "scope": "Gaussian_combination_finite_binary64_output_and_reduced_intermediate_range",
+  "before_emulation": {
+    "session": 63508,
+    "exit_code": 0,
+    "artifact": "before_verification.json",
+    "emulated_positive_and_negative_vector_means_nonfinite": true,
+    "native_wide_controls_finite": true
+  },
+  "first_overflow_repair": {
+    "session": 17607,
+    "exit_code": 0,
+    "artifact": "after_verification.json",
+    "source_snapshot": "overflow_only_toy_truncated_gaussian.py"
+  },
+  "actual_wider_input_output_guard": {
+    "session": 70176,
+    "exit_code": 0,
+    "artifact": "output_range_verification.json"
+  },
+  "subnormal_weight_comparison": {
+    "session": 76664,
+    "exit_code": 0,
+    "artifact": "subnormal_weight_verification.json",
+    "actual_intermediate_policy": "emulated_binary64_not_native_platform_failure",
+    "both_signs_and_swapped_constraints_exact": true
+  },
+  "final_python_tests": {
+    "session": 43899,
+    "exit_code": 0,
+    "passed": 79
+  },
+  "default_toy": {
+    "session": 31202,
+    "exit_code": 0,
+    "seed": 0,
+    "metrics_exactly_equal_to": "runs/20261003_math_review_toy_cancellation/metrics.json",
+    "previous_metrics_sha256": "c6bff055b29d24e920daa483eb7d68e4e1eaddba380d61773f3e157024e98a4f",
+    "new_metrics_sha256": "c6bff055b29d24e920daa483eb7d68e4e1eaddba380d61773f3e157024e98a4f"
+  },
+  "real_gaussian_statement_changed": false,
+  "finite_output_representation_required": true,
+  "uniform_floating_point_error_certificate": false,
+  "self_review": "checked convex mean and precision order, exact rational fallback on overflow and subnormal weights, broadcast selection, constraint swapping, output range guards, and unchanged default toy metrics",
+  "source_files": [
+    {
+      "path": "scripts/toy_truncated_gaussian.py",
+      "sha256": "284a907c44688f4efd0f2bc286626171238e25b04dfaa120f9b4ccb7b3db1214"
+    },
+    {
+      "path": "tests/test_math_repairs.py",
+      "sha256": "a893769eaa6940bbedf343d57276dd395d66e845ba1d7bb32100fbb6447c3d28"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_binary64_intermediates/before_toy_truncated_gaussian.py",
+      "sha256": "0f2242b0f359ee811df818646dcb27b6643b952e99b84f70ef6af53881808060"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_binary64_intermediates/overflow_only_toy_truncated_gaussian.py",
+      "sha256": "e80cd63bbf4f7e75f2d605d70d17c054c4044ea3ce3fe45bf9982e2af7d894f9"
+    }
+  ],
+  "receipts": [
+    {
+      "path": "runs/20261004_math_review_gaussian_binary64_intermediates/before_verification.json",
+      "sha256": "d6d09027c19a464a9986b2012f2ccdf0b395b1989cf57ec0b338710fa00f2102"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_binary64_intermediates/after_verification.json",
+      "sha256": "22838cabe65758a63ac5dd04eb92569bba545f63fb78fad0c963801d4ef5a504"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_binary64_intermediates/output_range_verification.json",
+      "sha256": "02543d973a24e14d5ba8dc7a151c12e4713d77ec0cb32edf1476c00694d64d61"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_binary64_intermediates/subnormal_weight_verification.json",
+      "sha256": "59836a3733530b4f2e80df1d235ad7d3804abf521ee538300a3ae5c64f660d98"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_binary64_intermediates/final_pytest_stdout.txt",
+      "sha256": "4c82319c009a7c8a0cfe1c414556c63383fd40c3543694f853bbf758f0bfa589"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "utc": "2026-10-04T00:26:23.050808+00:00",
+  "pid": 988728,
+  "omp_threads": "8",
+  "input_sha256": "b8b005631d134e23de8309368140c2833dbf6248ba3211eb35e04553a4f70982",
+  "native_class_arguments": {
+    "omega_b": 0.02225891404331876,
+    "omega_cdm": 0.11776947724676447,
+    "H0": 68.46760971622076,
+    "A_s": 2.1219159399068406e-09,
+    "n_s": 0.9574692565988652,
+    "tau_reio": 0.05665132037440848,
+    "m_ncdm": "0.0088989885790305336,0.0088989885790305336,0.0088989885790305336",
+    "N_ncdm": 3,
+    "N_ur": 0.00641,
+    "l_max_scalars": 3200,
+    "output": "tCl pCl lCl",
+    "non_linear": "hmcode",
+    "lensing": "yes"
+  },
+  "precision_mode": "default",
+  "declared_precision_overrides": {},
+  "precision_source_sha256": null,
+  "coverage_override_l_max_scalars": 3200,
+  "scope": "exact_failed_theory_point_replay_no_posterior_claim",
+  "succeeded": false,
+  "posterior_convergence_verified": false,
+  "error_type": "CosmoComputationError",
+  "error": "\n\nError in Class: operator()(L:1047) :error in perturbations_solve(ppr, pba, pth, ppt, index_md, index_ic, index_k, &pw);\n=>perturbations_solve(L:3210) :error in perturbations_vector_init(ppr, pba, pth, ppt, index_md, index_ic, k, interval_limit[index_interval], ppw, previous_approx);\n=>perturbations_vector_init(L:4602) :condition (ppw->approx[ppw->index_ap_tca] == (int)tca_off) is true; scalar initial conditions assume tight-coupling approximation turned on",
+  "native_module_sha256": "38255c7a5eb3f52c960a6fccf657e00874e93a52ec5987807443c33ce0c09c5a",
+  "elapsed_seconds": 0.36041836673393846
+}

@@ -1,0 +1,71 @@
+{
+  "utc": "2026-10-05T04:31:44.280801+00:00",
+  "records": [
+    {
+      "name": "prepare_snapshot.py",
+      "source": "runs/20261005_math_review_sigma_time_v3_diagnostic_preparation/prepare_snapshot.py",
+      "source_sha256": "d9397740c609c3cb9ffcdce3c50a04fcb1fbb860c8dc3deea4773aad76b010b4",
+      "changes": [
+        [
+          "assert len(rows)>=contract['native_rows_per_family']",
+          "if len(rows)<contract['native_rows_per_family']:\n        print(json.dumps({'group':args.group,'seed':seed,'stored_complete_rows':len(rows),\n            'required_native_rows':contract['native_rows_per_family'],'snapshot_written':False}));raise SystemExit(3)"
+        ]
+      ]
+    },
+    {
+      "name": "verify_snapshot.py",
+      "source": "runs/20261005_math_review_sigma_time_v3_diagnostic_preparation/verify_snapshot.py",
+      "source_sha256": "f8d580e0f4222fd07e015266265761b6c7c789f66ef9f1bc7fa6a7e77098e1b9",
+      "changes": [
+        [
+          "assert set(result['diagnostics'])=={'omegabh2','omegach2','H0','logA','ns','tau','mnu'}",
+          "cfg=yaml.safe_load((out/f\"seed{min(entries)}\"/'resolved.yaml').read_text())\nparameters={n for n,b in cfg['params'].items() if isinstance(b,dict) and 'prior' in b}\nassert len(parameters)==10 and set(result['diagnostics'])==parameters"
+        ],
+        [
+          "result['diagnostics']['mnu'].get('quantile_mcse_limit',.001)",
+          "result['diagnostics']['mnu_sample'].get('quantile_mcse_limit',.001)"
+        ],
+        [
+          "'all_seven_parameter_gate_sets_reconstructed':gates",
+          "'all_sampled_parameter_gate_sets_reconstructed':gates,'sampled_parameter_count':10"
+        ]
+      ]
+    },
+    {
+      "name": "run_diagnostic.py",
+      "source": "runs/20261005_math_review_sigma_time_v3_diagnostic_preparation/run_diagnostic.py",
+      "source_sha256": "ab760f7bde8806f0c82ed515e57278a5751a0842c9b9116df866d5421597b327",
+      "changes": []
+    },
+    {
+      "name": "contract_compatibility.py",
+      "source": "runs/20261005_math_review_sigma_time_v3_diagnostic_preparation/contract_compatibility.py",
+      "source_sha256": "0185acd13c2c2b5fd3669a490e68eda69edb0d23e7960dd76c81c7771cc43ace",
+      "changes": []
+    },
+    {
+      "name": "verify_native_rows.py",
+      "source": "runs/20261005_math_review_sigma_time_v3_diagnostic_preparation/verify_native_rows.py",
+      "source_sha256": "beca355ebc4569b44b64d3c986c07d2c3a8723f2c5c7759ce52086ec341b8ba2",
+      "changes": [
+        [
+          "import camb\nimport cobaya.theories.camb.camb as wrapper\n\n",
+          "import importlib\nimport classy\nimport cobaya.theories.classy.classy as wrapper\n\n"
+        ],
+        [
+          "module=Path(camb.baseconfig.camblib._name).resolve()\nassert str(module)==expected['module'] and sha(module)==expected['module_sha256']\nassert camb.__version__==expected['solver_version']\nfrom email.parser import BytesParser\npkg_info_path=Path(camb.__file__).resolve().parent.parent/'PKG-INFO'\npkg_info=BytesParser().parsebytes(pkg_info_path.read_bytes())\nassert pkg_info['Name']=='camb' and pkg_info['Version']==expected['solver_version']\nsource_preparation=json.loads((ROOT/'runs/20261005_math_review_sigma_time_v3_packaged/source_preparation.json').read_text())\nmetadata_entry=next(e for e in source_preparation['files'] if e['path']=='camb-2.0.4/PKG-INFO')\nassert sha(pkg_info_path)==metadata_entry['prepared_sha256']==metadata_entry['original_sha256']\nassert sha(ROOT/expected['policy'])==expected['policy_sha256']\nassert sha(ROOT/expected['build_receipt'])==expected['build_receipt_sha256']\n",
+          "module=Path(importlib.import_module(classy.Class.__module__).__file__).resolve()\nassert str(module)==expected['module'] and sha(module)==expected['module_sha256']\nassert classy.__version__==expected['loaded_CLASS_version']\nassert sha(ROOT/expected['build_receipt'])==expected['build_receipt_sha256']\n"
+        ],
+        [
+          "assert cfg['theory']['camb']['class']=='sbt_spt_audit.boltzmann.FreshCAMB'\ncfg['theory']['camb'].pop('class')",
+          "assert set(cfg['theory'])=={'classy'} and cfg['theory']['classy'].get('class') is None"
+        ],
+        [
+          "'module_sha256':sha(module),'solver_version':expected['solver_version'],",
+          "'module_sha256':sha(module),'solver_version':expected['solver_version'],\n        'loaded_CLASS_version':classy.__version__,"
+        ]
+      ]
+    }
+  ],
+  "scope": "Same holding and gate calculus, all ten CLASS sampled parameters, actual guarded CLASS upstream replay. No predecessor target compatibility inherited."
+}

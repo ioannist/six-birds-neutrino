@@ -1,0 +1,63 @@
+{
+  "utc": "2026-10-03T14:45:44.603472+00:00",
+  "scope": "binary64_counterexamples_and_guard_controls_no_interval_certificate",
+  "old_source_commit": "39a913f",
+  "old_source_sha256": "2ec7fbc5a1b2898403e90053b6acfb6c0b90a17edd106b888ba75c73852876eb",
+  "new_source_sha256": "39988e2d57af999d33396640788d5667a6b07ea2412942327d7086752623f622",
+  "cases": [
+    {
+      "sign": 1.0,
+      "combination_inputs": [
+        1.0,
+        1.0,
+        -1.0000000000000004,
+        1.0000000000000002
+      ],
+      "old_mean": 0.0,
+      "new_mean": 2.4651903288156613e-32,
+      "closed_formula_reference_mean": 2.4651903288156613e-32,
+      "combined_sigma": 0.7071067811865476,
+      "mode": 2.4651903288156613e-32,
+      "sweep_inputs": [
+        1.0,
+        1.0,
+        2.0000000000000004,
+        4.930380657631324e-32,
+        1.0000000000000002
+      ],
+      "old_probability": 0.5,
+      "new_probability": 0.15865525393145707,
+      "reference_probability": 0.15865525393145707
+    },
+    {
+      "sign": -1.0,
+      "combination_inputs": [
+        -1.0,
+        1.0,
+        1.0000000000000004,
+        1.0000000000000002
+      ],
+      "old_mean": 0.0,
+      "new_mean": -2.4651903288156613e-32,
+      "closed_formula_reference_mean": -2.4651903288156613e-32,
+      "combined_sigma": 0.7071067811865476,
+      "mode": 0.0,
+      "sweep_inputs": [
+        -1.0,
+        1.0,
+        -2.0000000000000004,
+        4.930380657631324e-32,
+        1.0000000000000002
+      ],
+      "old_probability": 0.5,
+      "new_probability": 0.8413447460685429,
+      "reference_probability": 0.8413447460685429
+    }
+  ],
+  "mixed_broadcasting_and_true_zero_verified": true,
+  "narrow_intermediate_dtype_controls_pass": true,
+  "unrepresentable_nonzero_mean_rejection": "both_signs_covered_by_regression_tests",
+  "pytest_passed": 55,
+  "lean_axiom_exports_checked": 20,
+  "default_sweep_exec_exit_code": 0
+}

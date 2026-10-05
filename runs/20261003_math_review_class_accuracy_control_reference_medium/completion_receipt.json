@@ -1,0 +1,24 @@
+{
+  "utc": "2026-10-03T22:42:57.989788+00:00",
+  "scope": "completed_four_coordinate_control_and_reconciled_native_comparison",
+  "original_pid": 946634,
+  "managed_session": 13446,
+  "process_exit_code": 0,
+  "original_pid_missing_after_completion": true,
+  "legacy_configuration_probe_exit_code": 0,
+  "comparison_exit_code": 0,
+  "first_comparison_exit_code": 1,
+  "first_comparison_failure": "Earlier records omit spectrum_ell_max; replaced field requirement with hash-bound initialized saved-config coverage evidence.",
+  "file_sha256": {
+    "metrics.json": "db1c93815b7a3b125b9625501787309e1347a39559a67f37643b8bdbfab99ccd",
+    "runtime_state.json": "9517eeb4c977879b1d74b5e316b7401ef264756cb23008a5de7f8de151aa08a2",
+    "baseline.yaml": "1cb9d4d84fa60146be82a7bede3dbdacfa9adb62b6ff42dd5f112b533d418993",
+    "selected_reference_settings.yaml": "968a22d0657f68ad44071b7668ff16d640e084d5288bd1cf8590b954f6f4b714",
+    "completed_comparison_verification.json": "13a042e7ffd9920dc668c4b0cdac31fdb5d97087de81ed1d983de7bb961646e3",
+    "legacy_coverage_verification.json": "3562a32e49c8e9cb0cbaebb2dd6964a6443a783e47042a0f88d3c2d08286156f",
+    "verify_completed_comparison.py": "e212bf5175923ca8f74650360dc805b7069f39da479fa1e52b00f08827e22820",
+    "verify_legacy_coverage.py": "a1c830629f72eae1d46090f0766e24c3c98125ba8eaafa9951775318c9df60e5"
+  },
+  "posterior_accuracy_certified": false,
+  "interval_error_certified": false
+}

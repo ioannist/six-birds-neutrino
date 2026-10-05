@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/home/repos/six-birds-neutrino/runs/20261004_math_review_fresh_CAMB_weighted_summary_diagnostic_preparation/verify_native_rows.py", line 31, in <module>
+    assert str(module)==expected['module'] and sha(module)==expected['module_sha256']
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

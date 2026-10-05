@@ -1,0 +1,242 @@
+{
+  "utc": "2026-10-04T08:14:40.647327+00:00",
+  "scope": "owned_inference_samplers_only",
+  "live_sampler_count": 24,
+  "SPT_count": 8,
+  "guarded_CLASS_count": 16,
+  "records": [
+    {
+      "cohort": "spt",
+      "lens": "A",
+      "seed": 301,
+      "pid": 370438,
+      "process_start_ticks": 328789193,
+      "command": "/tmp/neutrino-math-review-venv/bin/python scripts/run_cobaya.py --config runs/20261003_math_review_spt_desi_chain_configs/A_seed301.yaml --outdir runs/20261003_math_review_chain_A_seed301 --seed 301 ",
+      "live": true
+    },
+    {
+      "cohort": "spt",
+      "lens": "A",
+      "seed": 302,
+      "pid": 370439,
+      "process_start_ticks": 328789193,
+      "command": "/tmp/neutrino-math-review-venv/bin/python scripts/run_cobaya.py --config runs/20261003_math_review_spt_desi_chain_configs/A_seed302.yaml --outdir runs/20261003_math_review_chain_A_seed302 --seed 302 ",
+      "live": true
+    },
+    {
+      "cohort": "spt",
+      "lens": "B",
+      "seed": 305,
+      "pid": 370440,
+      "process_start_ticks": 328789193,
+      "command": "/tmp/neutrino-math-review-venv/bin/python scripts/run_cobaya.py --config runs/20261003_math_review_spt_desi_chain_configs/B_seed305.yaml --outdir runs/20261003_math_review_chain_B_seed305 --seed 305 ",
+      "live": true
+    },
+    {
+      "cohort": "spt",
+      "lens": "B",
+      "seed": 306,
+      "pid": 370441,
+      "process_start_ticks": 328789193,
+      "command": "/tmp/neutrino-math-review-venv/bin/python scripts/run_cobaya.py --config runs/20261003_math_review_spt_desi_chain_configs/B_seed306.yaml --outdir runs/20261003_math_review_chain_B_seed306 --seed 306 ",
+      "live": true
+    },
+    {
+      "cohort": "spt",
+      "lens": "A",
+      "seed": 303,
+      "pid": 660424,
+      "process_start_ticks": 328869762,
+      "command": "/tmp/neutrino-math-review-venv/bin/python scripts/run_cobaya.py --config runs/20261003_math_review_spt_desi_chain_configs/A_seed303.yaml --outdir runs/20261003_math_review_chain_A_seed303 --seed 303 ",
+      "live": true
+    },
+    {
+      "cohort": "spt",
+      "lens": "A",
+      "seed": 304,
+      "pid": 660425,
+      "process_start_ticks": 328869762,
+      "command": "/tmp/neutrino-math-review-venv/bin/python scripts/run_cobaya.py --config runs/20261003_math_review_spt_desi_chain_configs/A_seed304.yaml --outdir runs/20261003_math_review_chain_A_seed304 --seed 304 ",
+      "live": true
+    },
+    {
+      "cohort": "spt",
+      "lens": "B",
+      "seed": 307,
+      "pid": 660426,
+      "process_start_ticks": 328869763,
+      "command": "/tmp/neutrino-math-review-venv/bin/python scripts/run_cobaya.py --config runs/20261003_math_review_spt_desi_chain_configs/B_seed307.yaml --outdir runs/20261003_math_review_chain_B_seed307 --seed 307 ",
+      "live": true
+    },
+    {
+      "cohort": "spt",
+      "lens": "B",
+      "seed": 308,
+      "pid": 660427,
+      "process_start_ticks": 328869763,
+      "command": "/tmp/neutrino-math-review-venv/bin/python scripts/run_cobaya.py --config runs/20261003_math_review_spt_desi_chain_configs/B_seed308.yaml --outdir runs/20261003_math_review_chain_B_seed308 --seed 308 ",
+      "live": true
+    },
+    {
+      "cohort": "quad",
+      "lens": "A",
+      "seed": 1301,
+      "pid": 313611,
+      "process_start_ticks": 335535531,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_class_backend_transition/launch_guarded_replica.py 1301 ",
+      "live": true,
+      "native_module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539"
+    },
+    {
+      "cohort": "quad",
+      "lens": "A",
+      "seed": 1302,
+      "pid": 314539,
+      "process_start_ticks": 335535649,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_class_backend_transition/launch_guarded_replica.py 1302 ",
+      "live": true,
+      "native_module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539"
+    },
+    {
+      "cohort": "quad",
+      "lens": "A",
+      "seed": 1303,
+      "pid": 315724,
+      "process_start_ticks": 335535765,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_class_backend_transition/launch_guarded_replica.py 1303 ",
+      "live": true,
+      "native_module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539"
+    },
+    {
+      "cohort": "quad",
+      "lens": "A",
+      "seed": 1304,
+      "pid": 316758,
+      "process_start_ticks": 335535882,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_class_backend_transition/launch_guarded_replica.py 1304 ",
+      "live": true,
+      "native_module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539"
+    },
+    {
+      "cohort": "quad",
+      "lens": "B",
+      "seed": 1305,
+      "pid": 317618,
+      "process_start_ticks": 335535999,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_class_backend_transition/launch_guarded_replica.py 1305 ",
+      "live": true,
+      "native_module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539"
+    },
+    {
+      "cohort": "quad",
+      "lens": "B",
+      "seed": 1306,
+      "pid": 318458,
+      "process_start_ticks": 335536116,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_class_backend_transition/launch_guarded_replica.py 1306 ",
+      "live": true,
+      "native_module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539"
+    },
+    {
+      "cohort": "quad",
+      "lens": "B",
+      "seed": 1307,
+      "pid": 319462,
+      "process_start_ticks": 335536235,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_class_backend_transition/launch_guarded_replica.py 1307 ",
+      "live": true,
+      "native_module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539"
+    },
+    {
+      "cohort": "quad",
+      "lens": "B",
+      "seed": 1308,
+      "pid": 320418,
+      "process_start_ticks": 335536353,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_class_backend_transition/launch_guarded_replica.py 1308 ",
+      "live": true,
+      "native_module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539"
+    },
+    {
+      "cohort": "medium",
+      "lens": "A",
+      "seed": 1401,
+      "pid": 465459,
+      "process_start_ticks": 335552436,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_class_backend_transition/launch_guarded_replica.py 1401 ",
+      "live": true,
+      "native_module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539"
+    },
+    {
+      "cohort": "medium",
+      "lens": "A",
+      "seed": 1402,
+      "pid": 466588,
+      "process_start_ticks": 335552554,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_class_backend_transition/launch_guarded_replica.py 1402 ",
+      "live": true,
+      "native_module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539"
+    },
+    {
+      "cohort": "medium",
+      "lens": "B",
+      "seed": 1403,
+      "pid": 467452,
+      "process_start_ticks": 335552671,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_class_backend_transition/launch_guarded_replica.py 1403 ",
+      "live": true,
+      "native_module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539"
+    },
+    {
+      "cohort": "medium",
+      "lens": "B",
+      "seed": 1404,
+      "pid": 468270,
+      "process_start_ticks": 335552790,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_class_backend_transition/launch_guarded_replica.py 1404 ",
+      "live": true,
+      "native_module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539"
+    },
+    {
+      "cohort": "medium",
+      "lens": "B",
+      "seed": 1405,
+      "pid": 468765,
+      "process_start_ticks": 335552907,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_class_backend_transition/launch_guarded_replica.py 1405 ",
+      "live": true,
+      "native_module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539"
+    },
+    {
+      "cohort": "medium",
+      "lens": "A",
+      "seed": 1406,
+      "pid": 469224,
+      "process_start_ticks": 335553025,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_class_backend_transition/launch_guarded_replica.py 1406 ",
+      "live": true,
+      "native_module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539"
+    },
+    {
+      "cohort": "medium",
+      "lens": "B",
+      "seed": 1407,
+      "pid": 505961,
+      "process_start_ticks": 335556803,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_class_backend_transition/launch_guarded_replica.py 1407 ",
+      "live": true,
+      "native_module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539"
+    },
+    {
+      "cohort": "medium",
+      "lens": "A",
+      "seed": 1201,
+      "pid": 719894,
+      "process_start_ticks": 335229443,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_class_python_repair/launch_guarded_trial.py ",
+      "live": true,
+      "native_module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539"
+    }
+  ],
+  "unit_grid_control_completed_and_not_counted_as_sampler": true
+}

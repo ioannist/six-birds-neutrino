@@ -1,0 +1,12 @@
+Diagnostic insertion before the unique initial-switch footer:
+  /* Diagnostic-only: quantities just evaluated at the actual initial time. */
+  if ((_scalars_) && (ppw->approx[ppw->index_ap_tca] == (int)tca_off)) {
+    fprintf(stderr,
+            "TCA_INITIAL_DIAGNOSTIC k=%.17g tau=%.17g a=%.17g H=%.17g dkappa=%.17g ratio_h=%.17g ratio_k=%.17g start_h=%.17g start_k=%.17g trigger_h=%.17g trigger_k=%.17g\n",
+            k,tau_ini,ppw->pvecback[pba->index_bg_a],ppw->pvecback[pba->index_bg_H],
+            ppw->pvecthermo[pth->index_th_dkappa],
+            ppw->pvecback[pba->index_bg_a]*ppw->pvecback[pba->index_bg_H]/ppw->pvecthermo[pth->index_th_dkappa],
+            k/ppw->pvecthermo[pth->index_th_dkappa],
+            ppr->start_small_k_at_tau_c_over_tau_h,ppr->start_large_k_at_tau_h_over_tau_k,
+            ppr->tight_coupling_trigger_tau_c_over_tau_h,ppr->tight_coupling_trigger_tau_c_over_tau_k);
+  }

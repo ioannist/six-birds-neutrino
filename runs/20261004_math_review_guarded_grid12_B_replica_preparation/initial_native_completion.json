@@ -1,0 +1,39 @@
+{
+  "utc": "2026-10-04T09:33:48.641293+00:00",
+  "scope": "actual_three_start_native_preflight_before_sampling",
+  "reference_seed1501_native_replay": "runs/20261004_math_review_guarded_grid12_trial_B_seed1501/initial_point_verification.json",
+  "records": [
+    {
+      "seed": 1502,
+      "session": 38162,
+      "exit_code": 0,
+      "native_replay": "runs/20261004_math_review_guarded_grid12_trial_B_seed1502/initial_point_verification.json",
+      "native_replay_sha256": "136bf1c37b1337c8b0559134454641be7bb10a7e5bf3037a57ff4885c47df306",
+      "initial_mass_eV": 0.10517729141318302,
+      "native_logposterior": -950.4891682916804,
+      "initial_prior_and_six_native_likelihoods_finite": true
+    },
+    {
+      "seed": 1503,
+      "session": 98652,
+      "exit_code": 0,
+      "native_replay": "runs/20261004_math_review_guarded_grid12_trial_B_seed1503/initial_point_verification.json",
+      "native_replay_sha256": "abd154fe00102db1c4955f96ea2cb1486d86dea789436e9ff696a253bbf92b12",
+      "initial_mass_eV": 0.06274914263898455,
+      "native_logposterior": -949.6551693521659,
+      "initial_prior_and_six_native_likelihoods_finite": true
+    },
+    {
+      "seed": 1504,
+      "session": 52282,
+      "exit_code": 0,
+      "native_replay": "runs/20261004_math_review_guarded_grid12_trial_B_seed1504/initial_point_verification.json",
+      "native_replay_sha256": "dc9a28374c01153afe339b958c0db7aaeb7a3606aebf9e7ab50a9a0aa7a5df3d",
+      "initial_mass_eV": 0.02985981732602771,
+      "native_logposterior": -947.3924756503146,
+      "initial_prior_and_six_native_likelihoods_finite": true
+    }
+  ],
+  "config_target_equality_self_review": "runs/20261004_math_review_guarded_grid12_B_replica_preparation/self_review_receipt.json",
+  "posterior_convergence_certified": false
+}

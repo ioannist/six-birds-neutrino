@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-05T05:10:23.001087+00:00",
+  "source": "runs/20261005_math_review_CLASS_recovery_cohort_companions_v3/launch.py",
+  "source_sha256": "747ee5effcad32c90d94ef9798bc9bde066d37b1c1ec71c8c71e66b8c2d76990",
+  "changes": [
+    [
+      "Start a fresh companion only after all six preflights and preparation review pass.",
+      "Start a fresh B run only after all eight preflights and preparation review pass."
+    ],
+    [
+      "assert review['six_fresh_companions_reconstructed']",
+      "assert review['eight_fresh_B_starts_reconstructed']"
+    ],
+    [
+      "assert sha(ROOT / entry['anchor_config']) == entry['anchor_config_sha256']",
+      "assert sha(ROOT / entry['source_covariance']) == entry['source_covariance_sha256']\nassert sha(ROOT / entry['proposal_terminal_receipt']) == entry['proposal_terminal_receipt_sha256']"
+    ]
+  ]
+}

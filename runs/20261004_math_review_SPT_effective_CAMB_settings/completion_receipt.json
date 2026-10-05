@@ -1,0 +1,37 @@
+{
+  "utc": "2026-10-04T12:32:48.705509+00:00",
+  "native_evaluation_sessions": {
+    "A": {
+      "session": 96183,
+      "exit_code": 0
+    },
+    "B": {
+      "session": 92883,
+      "exit_code": 0
+    }
+  },
+  "failed_pre_evaluation_sessions": {
+    "A": {
+      "session": 76012,
+      "exit_code": 1
+    },
+    "B": {
+      "session": 55170,
+      "exit_code": 1
+    }
+  },
+  "inspection_session": {
+    "session": 35097,
+    "exit_code": 0
+  },
+  "selected_native_evaluations": 20,
+  "setup_command_correction": "python command absent; used pinned venv Python before copying observer scripts; failed command changed no files.",
+  "production_or_Lean_sources_modified": false,
+  "last_full_math_check": "runs/20261004_math_review_density_column_identity_repair/math_check_stdout.txt",
+  "last_full_math_check_session": 91713,
+  "last_full_math_check_exit_code": 0,
+  "python_tests_passed": 132,
+  "public_Lean_axiom_outputs_checked": 74,
+  "full_math_check_repeated": false,
+  "scope": "Prior combined check remains applicable because production and Lean sources have not changed."
+}

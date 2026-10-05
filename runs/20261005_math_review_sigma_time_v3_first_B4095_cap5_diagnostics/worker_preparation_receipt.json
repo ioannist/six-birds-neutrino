@@ -1,0 +1,17 @@
+{
+  "utc": "2026-10-05T06:05:56.650509+00:00",
+  "source": "runs/20261005_math_review_fresh_CAMB_eleventh_current_A3200_diagnostics/run_verification.py",
+  "source_sha256": "f026bcba9d2e0593d8dd2d18d8da35edea5334be42b96cb67191951382c014d5",
+  "changes": [
+    [
+      "runs/20261004_math_review_fresh_CAMB_weighted_summary_diagnostic_preparation",
+      "runs/20261005_math_review_sigma_time_v3_diagnostic_preparation"
+    ],
+    [
+      "env = dict(os.environ, PYTHONPATH=str(ROOT / 'src'), OMP_NUM_THREADS='1', OPENBLAS_NUM_THREADS='1', MKL_NUM_THREADS='1')",
+      "env = dict(os.environ, PYTHONPATH='/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_sigma_time_v3_packaged_20261005/camb-2.0.4:' + str(ROOT / 'src'), LD_LIBRARY_PATH='/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_native_debug_20261005/compiler/usr/lib/x86_64-linux-gnu', OMP_NUM_THREADS='1', OPENBLAS_NUM_THREADS='1', MKL_NUM_THREADS='1')"
+    ]
+  ],
+  "preparation_direct_exit_code": 0,
+  "scope": "First production sigma_time_v3 B cap5 assessment; unchanged target/gates and exact private runtime environment."
+}

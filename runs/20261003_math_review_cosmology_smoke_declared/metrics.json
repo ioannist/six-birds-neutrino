@@ -1,0 +1,82 @@
+{
+  "results": [
+    {
+      "config": "/home/repos/six-birds-neutrino/configs/neutrino/cmb_spt2018_plancksubset_desi_mnu.yaml",
+      "run_name": "cmb_spt2018_plancksubset_desi_mnu",
+      "sampled_params": [
+        "omegabh2",
+        "omegach2",
+        "H0",
+        "logA",
+        "ns",
+        "tau",
+        "mnu_sample",
+        "A_planck",
+        "TT_tSZ_Amp",
+        "TT_kSZ_Amp"
+      ],
+      "ref_point": {
+        "omegabh2": 0.02237,
+        "omegach2": 0.12,
+        "H0": 67.36,
+        "logA": 3.044,
+        "ns": 0.9649,
+        "tau": 0.0544,
+        "mnu_sample": 0.06,
+        "A_planck": 1.0,
+        "TT_tSZ_Amp": 2.0,
+        "TT_kSZ_Amp": 2.0
+      },
+      "loglike_components": {
+        "sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": -1375.6622470678362,
+        "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": -14.968060256824028,
+        "planck_2018_lowl.TT": -11.745776488093327,
+        "planck_2018_lowl.EE_sroll2": -194.9965502898371,
+        "planck_2018_highl_plik.TT_lite_native": -34.77051749114705,
+        "planckpr4lensing.PlanckPR4Lensing": -4.3662239058617915
+      },
+      "loglike_total": -1636.5093754995996,
+      "finite_total": true,
+      "finite_components": true
+    },
+    {
+      "config": "/home/repos/six-birds-neutrino/configs/neutrino/cmb_sptd1_plancksubset_desi_mnu.yaml",
+      "run_name": "cmb_sptd1_plancksubset_desi_mnu",
+      "sampled_params": [
+        "omegabh2",
+        "omegach2",
+        "H0",
+        "logA",
+        "ns",
+        "tau",
+        "mnu_sample",
+        "A_planck",
+        "TT_tSZ_Amp",
+        "TT_kSZ_Amp"
+      ],
+      "ref_point": {
+        "omegabh2": 0.02237,
+        "omegach2": 0.12,
+        "H0": 67.36,
+        "logA": 3.044,
+        "ns": 0.9649,
+        "tau": 0.0544,
+        "mnu_sample": 0.06,
+        "A_planck": 1.0,
+        "TT_tSZ_Amp": 2.0,
+        "TT_kSZ_Amp": 2.0
+      },
+      "loglike_components": {
+        "sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": -722.6259595446197,
+        "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": -14.968060256824028,
+        "planck_2018_lowl.TT": -11.745671540379249,
+        "planck_2018_lowl.EE_sroll2": -194.9965502898371,
+        "planck_2018_highl_plik.TT_lite_native": -34.76547600605219,
+        "planckpr4lensing.PlanckPR4Lensing": -4.3627662341546
+      },
+      "loglike_total": -983.4644838718668,
+      "finite_total": true,
+      "finite_components": true
+    }
+  ]
+}

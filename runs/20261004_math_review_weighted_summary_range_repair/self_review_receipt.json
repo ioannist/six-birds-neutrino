@@ -1,0 +1,22 @@
+{
+  "utc": "2026-10-04T19:23:59.045246+00:00",
+  "reviewer": "distinct_self_review_not_independent_agent",
+  "only_reader_changes": "exact binary64 weighted histogram-bin comparisons and boundary-event fractions; finite rounded edges/midpoints",
+  "all_other_reader_AST_unchanged": true,
+  "before_failures": 9,
+  "new_regression_controls": 13,
+  "initial_combined_Python_tests": 214,
+  "final_Python_tests": 215,
+  "public_Lean_axiom_outputs": 89,
+  "Lean_sources_unchanged_between_checks": true,
+  "histogram_Fraction_oracle_controls": 96,
+  "boundary_fraction_Fraction_oracle_controls": 672,
+  "nine_latest_full_reports_identical": true,
+  "all_36_production_family_summaries_identical": true,
+  "positive_event_or_complement_mass_lost_at_float_endpoint_refused": true,
+  "reader_source_sha256": "53552a6e127e04d89733e743abe35b354173294ec6c5547e167259a852614992",
+  "self_review_script_sha256": "97c15705a498948f9556bba978f226857e508ae39dc39f23c5f3bc93d19bcfb2",
+  "floating_edge_geometry_uniform_accuracy_certified": false,
+  "posterior_convergence_or_precision_certified": false,
+  "paper_or_canonical_changed": false
+}

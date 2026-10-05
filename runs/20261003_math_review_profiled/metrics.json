@@ -1,0 +1,412 @@
+{
+  "shared_param_keys": [
+    "TT_tSZ_Amp",
+    "TT_kSZ_Amp"
+  ],
+  "shared_param_keys_explicit": [
+    "TT_tSZ_Amp",
+    "TT_kSZ_Amp"
+  ],
+  "audit_scope": "fixed_packaged_test_spectra_scalar_nuisance_transfer",
+  "reference_scope": "numerical_local_optimization_shared_plus_capped_nuisance",
+  "profile_set_requested": "TT_cal_beta",
+  "profile_set_used": {
+    "B_given_A": "TT_cal_beta",
+    "A_given_B": "TT_cal_beta"
+  },
+  "B_given_A": {
+    "shared_keys_test_lens": [
+      "TT_tSZ_Amp",
+      "TT_kSZ_Amp"
+    ],
+    "shared_values_from_A": {
+      "TT_tSZ_Amp": 2.6248863660540183,
+      "TT_kSZ_Amp": 10.0
+    },
+    "shared_values_from_B": {
+      "TT_tSZ_Amp": 1.2826783466224576,
+      "TT_kSZ_Amp": 1.900633917618081
+    },
+    "profile_params": [
+      "Tcal_ext150",
+      "Tcal_rel90",
+      "Tcal_rel220",
+      "Ecal_ext150",
+      "Ecal_rel90",
+      "Ecal_rel220",
+      "TT_CIBClustering_Alpha",
+      "TT_CIB_150x150",
+      "TT_CIB_150x220",
+      "TT_CIB_220x220",
+      "TT_GalCirrus_Alpha",
+      "TT_GalCirrus_Amp"
+    ],
+    "n_profile_params": 12,
+    "logL_at_train_unprofiled": -1800.645931045176,
+    "logL_profiled_at_train_shared": -1118.0676480228763,
+    "logL_profiled_best": -751.4985803865759,
+    "delta_chi2_unprofiled": 2098.2947013172,
+    "delta_chi2_profiled": 733.1381352726007,
+    "reduction_pct": 65.06028753671376,
+    "profiling_train_diag": {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "nit": 80,
+      "nfev": 1209,
+      "chi2": 2236.1352960457525,
+      "loglike": -1118.0676480228763
+    },
+    "profiling_best_diag": {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "nit": 94,
+      "nfev": 1635,
+      "chi2": 1502.9971607731518,
+      "loglike": -751.4985803865759
+    }
+  },
+  "A_given_B": {
+    "shared_keys_test_lens": [
+      "TT_tSZ_Amp",
+      "TT_kSZ_Amp"
+    ],
+    "shared_values_from_B": {
+      "TT_tSZ_Amp": 1.2826783466224576,
+      "TT_kSZ_Amp": 1.900633917618081
+    },
+    "shared_values_from_A": {
+      "TT_tSZ_Amp": 2.6248863660540183,
+      "TT_kSZ_Amp": 10.0
+    },
+    "profile_params": [
+      "TT_tSZ_CIB_Corr_Amp",
+      "TT_tSZ_CIB_corr",
+      "Ecal150",
+      "Ecal220",
+      "Ecal90",
+      "TT_CIBClustering_Alpha",
+      "TT_CIBClustering_Amp",
+      "TT_CIBClustering_Beta",
+      "TT_GalCirrus_Alpha",
+      "TT_GalCirrus_Amp",
+      "TT_GalCirrus_Beta",
+      "TT_Poisson_150x150"
+    ],
+    "n_profile_params": 12,
+    "logL_at_train_unprofiled": -1433.755086443134,
+    "logL_profiled_at_train_shared": -1234.1965267920507,
+    "logL_profiled_best": -1027.0015653053497,
+    "delta_chi2_unprofiled": 813.5070422755684,
+    "delta_chi2_profiled": 414.389922973402,
+    "reduction_pct": 49.06129861958453,
+    "profiling_train_diag": {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "nit": 61,
+      "nfev": 936,
+      "chi2": 2468.3930535841014,
+      "loglike": -1234.1965267920507
+    },
+    "profiling_best_diag": {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "nit": 62,
+      "nfev": 1050,
+      "chi2": 2054.0031306106994,
+      "loglike": -1027.0015653053497
+    }
+  },
+  "localization": {
+    "ell_bin_edges": [
+      400.0,
+      750.0,
+      1000.0,
+      1500.0,
+      2000.0,
+      2500.0,
+      3000.0,
+      3500.0,
+      4000.0
+    ],
+    "spectra_present": [
+      "TT",
+      "TE",
+      "EE"
+    ],
+    "B_given_A": {
+      "deltaQ_by_spec_ell": {
+        "TT": [
+          31.899787207374317,
+          88.63287214356735,
+          50.93489860114547,
+          -12.622279402710639,
+          60.49680058743272,
+          464.53493757860997,
+          0.0,
+          0.0
+        ],
+        "TE": [
+          -2.2086188478167266,
+          -3.082278383180191,
+          -3.724879588585365,
+          -3.3674600837682886,
+          2.0674975721180244,
+          2.948874861861806,
+          -1.0323708830616949,
+          2.7384367799848857
+        ],
+        "EE": [
+          0.08341793502511008,
+          0.08929788948785738,
+          -0.2229228081699004,
+          0.07337721361627156,
+          0.2557055771662476,
+          0.3139366630477006,
+          -0.023754611503316106,
+          -0.0015620678665867358
+        ]
+      },
+      "top_groups": [
+        {
+          "spec": "TT",
+          "ell": [
+            2500.0,
+            3000.0
+          ],
+          "deltaQ": 464.53493757860997,
+          "n_bins": 60
+        },
+        {
+          "spec": "TT",
+          "ell": [
+            750.0,
+            1000.0
+          ],
+          "deltaQ": 88.63287214356735,
+          "n_bins": 30
+        },
+        {
+          "spec": "TT",
+          "ell": [
+            2000.0,
+            2500.0
+          ],
+          "deltaQ": 60.49680058743272,
+          "n_bins": 60
+        },
+        {
+          "spec": "TT",
+          "ell": [
+            1000.0,
+            1500.0
+          ],
+          "deltaQ": 50.93489860114547,
+          "n_bins": 60
+        },
+        {
+          "spec": "TT",
+          "ell": [
+            400.0,
+            750.0
+          ],
+          "deltaQ": 31.899787207374317,
+          "n_bins": 42
+        },
+        {
+          "spec": "TE",
+          "ell": [
+            2500.0,
+            3000.0
+          ],
+          "deltaQ": 2.948874861861806,
+          "n_bins": 90
+        },
+        {
+          "spec": "TE",
+          "ell": [
+            3500.0,
+            4000.0
+          ],
+          "deltaQ": 2.7384367799848857,
+          "n_bins": 90
+        },
+        {
+          "spec": "TE",
+          "ell": [
+            2000.0,
+            2500.0
+          ],
+          "deltaQ": 2.0674975721180244,
+          "n_bins": 90
+        },
+        {
+          "spec": "EE",
+          "ell": [
+            2500.0,
+            3000.0
+          ],
+          "deltaQ": 0.3139366630477006,
+          "n_bins": 60
+        },
+        {
+          "spec": "EE",
+          "ell": [
+            2000.0,
+            2500.0
+          ],
+          "deltaQ": 0.2557055771662476,
+          "n_bins": 60
+        }
+      ],
+      "accounting": {
+        "method": "r_i_times_full_precision_r_i_signed_cross_term_allocation",
+        "deltaQ_full": 678.7837139337762,
+        "deltaQ_heatmap": 678.7837139337751,
+        "unlocalized_deltaQ": 0.0,
+        "n_bins_unlocalized": 0,
+        "accounting_error": -1.1368683772161603e-12,
+        "native_likelihood_adjustment": 54.35442133882452
+      }
+    },
+    "A_given_B": {
+      "deltaQ_by_spec_ell": {
+        "TT": [
+          0.0,
+          8.743653850173066,
+          16.063021908429203,
+          15.368797261774976,
+          26.686023516510232,
+          375.26567706651696,
+          0.0,
+          0.0
+        ],
+        "TE": [
+          -0.13003361833214244,
+          -0.032098248383292075,
+          0.24317123340904356,
+          1.0507773086450511,
+          -3.351189183439738,
+          0.7642324472808943,
+          0.0,
+          0.0
+        ],
+        "EE": [
+          -2.3818476677269302,
+          0.027367790160020278,
+          -0.870236202199856,
+          -3.2778624499824955,
+          -1.336490486581375,
+          0.46660644911936777,
+          0.0,
+          0.0
+        ]
+      },
+      "top_groups": [
+        {
+          "spec": "TT",
+          "ell": [
+            2500.0,
+            3000.0
+          ],
+          "deltaQ": 375.26567706651696,
+          "n_bins": 30
+        },
+        {
+          "spec": "TT",
+          "ell": [
+            2000.0,
+            2500.0
+          ],
+          "deltaQ": 26.686023516510232,
+          "n_bins": 30
+        },
+        {
+          "spec": "TT",
+          "ell": [
+            1000.0,
+            1500.0
+          ],
+          "deltaQ": 16.063021908429203,
+          "n_bins": 60
+        },
+        {
+          "spec": "TT",
+          "ell": [
+            1500.0,
+            2000.0
+          ],
+          "deltaQ": 15.368797261774976,
+          "n_bins": 60
+        },
+        {
+          "spec": "TT",
+          "ell": [
+            750.0,
+            1000.0
+          ],
+          "deltaQ": 8.743653850173066,
+          "n_bins": 20
+        },
+        {
+          "spec": "TE",
+          "ell": [
+            1500.0,
+            2000.0
+          ],
+          "deltaQ": 1.0507773086450511,
+          "n_bins": 60
+        },
+        {
+          "spec": "TE",
+          "ell": [
+            2500.0,
+            3000.0
+          ],
+          "deltaQ": 0.7642324472808943,
+          "n_bins": 30
+        },
+        {
+          "spec": "EE",
+          "ell": [
+            2500.0,
+            3000.0
+          ],
+          "deltaQ": 0.46660644911936777,
+          "n_bins": 30
+        },
+        {
+          "spec": "TE",
+          "ell": [
+            1000.0,
+            1500.0
+          ],
+          "deltaQ": 0.24317123340904356,
+          "n_bins": 60
+        },
+        {
+          "spec": "EE",
+          "ell": [
+            750.0,
+            1000.0
+          ],
+          "deltaQ": 0.027367790160020278,
+          "n_bins": 30
+        }
+      ],
+      "accounting": {
+        "method": "r_i_times_full_precision_r_i_signed_cross_term_allocation",
+        "deltaQ_full": 431.409068795506,
+        "deltaQ_heatmap": 433.299570975373,
+        "unlocalized_deltaQ": -1.8905021798669104,
+        "n_bins_unlocalized": 24,
+        "accounting_error": 5.684341886080802e-14,
+        "native_likelihood_adjustment": -17.019145822104008
+      }
+    }
+  },
+  "warnings": [
+    "profile set `TT_cal_beta` reduced from 28 to 12 params for finite-difference runtime tractability.",
+    "profile set `TT_cal_beta` reduced from 20 to 12 params for finite-difference runtime tractability."
+  ],
+  "errors": {}
+}

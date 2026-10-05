@@ -1,0 +1,29 @@
+{
+  "scope": "two_default_target_restart_boundaries_for_later_segment_diagnostics",
+  "installed_mcmc_source_sha256": "455def4cc5462f57d0fbd365793630382a105112d7223c4c90329d3252534594",
+  "installed_mcmc_source": "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/cobaya/samplers/mcmc/mcmc.py",
+  "resumed_initial_point_discarded_on_first_acceptance": true,
+  "unwritten_holding_time_recovered": false,
+  "whole_file_is_uninterrupted_realized_path": false,
+  "segments": {
+    "503": {
+      "resume_seed": 1003,
+      "historical_saved_rows": 2478,
+      "first_post_recovery_row_index": 2478,
+      "historical_chain_sha256": "67ad7b1e122295b18ae1c2c3e9b4b195e0fe01a8e460caac90c5fbaf8346e211",
+      "historical_prefix_byte_count": 1794796,
+      "source_run_dir": "runs/20261003_math_review_cmb_chain_A_seed503",
+      "diagnostic_scope": "post_recovery_segment_only_with_burn_in_applied_within_segment"
+    },
+    "507": {
+      "resume_seed": 1007,
+      "historical_saved_rows": 2430,
+      "first_post_recovery_row_index": 2430,
+      "historical_chain_sha256": "dab1c370043bfa43cebfd7b93d7cee786cbef7b1e5c1c6b107596ff8d0c39ff9",
+      "historical_prefix_byte_count": 1760044,
+      "source_run_dir": "runs/20261003_math_review_cmb_chain_B_seed507",
+      "diagnostic_scope": "post_recovery_segment_only_with_burn_in_applied_within_segment"
+    }
+  },
+  "posterior_convergence_verified": false
+}

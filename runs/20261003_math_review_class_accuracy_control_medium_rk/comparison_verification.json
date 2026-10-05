@@ -1,0 +1,55 @@
+{
+  "utc": "2026-10-03T16:37:43.041063+00:00",
+  "scope": "six_fixed_coordinate_single_integrator_native_comparison",
+  "managed_exec_exit_code": 0,
+  "only_evolver_changed": true,
+  "all_native_baselines_reproduce_previous_points_and_fits": true,
+  "coverage_equal_tt_ee_4095": true,
+  "source_metrics_sha256": "164a8cdd2fe00f6611ce6d400f26cbe9bc154cb8b7358d258720b7e216666b7c",
+  "results": {
+    "chain_A_q50": {
+      "own_joint_RK_minus_ndf15_chi2": -0.0010877200831256317,
+      "ndf15_seconds": 70.87760877469555,
+      "RK_seconds": 67.64766707411036,
+      "RK_over_ndf15_runtime": 0.9544293076978306
+    },
+    "chain_A_q95": {
+      "own_joint_RK_minus_ndf15_chi2": -0.0013275379808632692,
+      "ndf15_seconds": 68.2838319670409,
+      "RK_seconds": 67.5620182803832,
+      "RK_over_ndf15_runtime": 0.9894292152935105
+    },
+    "chain_B_q50": {
+      "own_joint_RK_minus_ndf15_chi2": -0.0009658060800870061,
+      "ndf15_seconds": 70.3405444691889,
+      "RK_seconds": 66.94269485305995,
+      "RK_over_ndf15_runtime": 0.9516942946380333
+    },
+    "chain_B_q95": {
+      "own_joint_RK_minus_ndf15_chi2": -0.0002872739934716151,
+      "ndf15_seconds": 70.30889006191865,
+      "RK_seconds": 66.13510414818302,
+      "RK_over_ndf15_runtime": 0.9406364414221314
+    },
+    "medium_fit_A": {
+      "own_joint_RK_minus_ndf15_chi2": -0.00019374922741910439,
+      "ndf15_seconds": 70.44617401296273,
+      "RK_seconds": 73.44303298415616,
+      "RK_over_ndf15_runtime": 1.0425411175721477
+    },
+    "medium_fit_B": {
+      "own_joint_RK_minus_ndf15_chi2": 0.00016137226103296598,
+      "ndf15_seconds": 70.57634223205969,
+      "RK_seconds": 71.92473914474249,
+      "RK_over_ndf15_runtime": 1.0191055085888296
+    }
+  },
+  "max_abs_own_joint_chi2_difference": 0.0013275379808632692,
+  "runtime_ratio_min_max": [
+    0.9406364414221314,
+    1.0425411175721477
+  ],
+  "numerical_accuracy_certified": false,
+  "posterior_convergence_certified": false,
+  "decision": "No substantial speed gain at these six points; keep current intermediate ndf15 target for existing and new same-target sampler controls."
+}

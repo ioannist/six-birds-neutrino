@@ -1,0 +1,30 @@
+{
+  "scope": "same_physical_parameterization_priors_and_completion_with_declared_CLASS_precision_changes",
+  "precision_settings": {
+    "tol_ncdm_bg": 1e-08,
+    "tol_perturbations_integration": 1e-06,
+    "perturbations_sampling_stepsize": 0.01,
+    "tol_ncdm_synchronous": 1e-06,
+    "tol_ncdm_newtonian": 1e-06,
+    "l_logstep": 1.026,
+    "l_linstep": 25
+  },
+  "matched_lmax": 4095,
+  "configs": [
+    {
+      "lens": "A",
+      "source": "configs/neutrino/cmb_spt2018_plancksubset_desi_mnu.yaml",
+      "source_sha256": "d11bc6f52b9900a0171ad14e992badc301f731676d289e35584cfabcb683cecf",
+      "config": "runs/20261003_math_review_cmb_accuracy_configs/A.yaml",
+      "config_sha256": "a796a54b712a103206ff99557787c2e9ba206f908717af337bdeab111c3a4da0"
+    },
+    {
+      "lens": "B",
+      "source": "configs/neutrino/cmb_sptd1_plancksubset_desi_mnu.yaml",
+      "source_sha256": "c717cca3ddafd6c74e01566cec38d6a63554fde56b33603308b6dcf513036f4d",
+      "config": "runs/20261003_math_review_cmb_accuracy_configs/B.yaml",
+      "config_sha256": "284ce533bb5286567b7c97f514960ebe686b7009164fa05984c4fa7d9d0e5d28"
+    }
+  ],
+  "posterior_or_global_optimum_certified": false
+}

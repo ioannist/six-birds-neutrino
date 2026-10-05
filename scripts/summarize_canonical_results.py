@@ -121,6 +121,10 @@ def _subset_mnu(data: dict[str, Any]) -> dict[str, Any]:
             "n_samples_used": run2018.get("n_samples_used"),
             "mnu_split_rhat": run2018.get("mnu_split_rhat"),
             "mnu_p95_half_diff": run2018.get("mnu_p95_half_diff"),
+            "mnu_ess": run2018.get("mnu_ess"),
+            "diagnostic_method": run2018.get("diagnostic_method", "legacy_unverified"),
+            "diagnostic_scope": run2018.get("diagnostic_scope", "legacy_unverified"),
+            "warnings": run2018.get("warnings", ["Legacy posterior diagnostics have not been recomputed."]),
         },
         "runD1": {
             "mnu_median": run_d1.get("mnu_median"),
@@ -130,6 +134,10 @@ def _subset_mnu(data: dict[str, Any]) -> dict[str, Any]:
             "n_samples_used": run_d1.get("n_samples_used"),
             "mnu_split_rhat": run_d1.get("mnu_split_rhat"),
             "mnu_p95_half_diff": run_d1.get("mnu_p95_half_diff"),
+            "mnu_ess": run_d1.get("mnu_ess"),
+            "diagnostic_method": run_d1.get("diagnostic_method", "legacy_unverified"),
+            "diagnostic_scope": run_d1.get("diagnostic_scope", "legacy_unverified"),
+            "warnings": run_d1.get("warnings", ["Legacy posterior diagnostics have not been recomputed."]),
         },
         "shift": {
             "delta_p95_upper": shift.get("delta_p95_upper"),

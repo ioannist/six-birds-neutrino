@@ -1,0 +1,11 @@
+{
+  "utc": "2026-10-05T02:51:12.634779+00:00",
+  "direct_exec_exit_code": 1,
+  "error": "Private libgfortran.so.5 missing from runtime loader path.",
+  "model_evaluations_started": 0,
+  "output_directory_created": false,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "b805b737f37ca930d173ec703105e9101a102972c40061c286ad8a428b178f63",
+  "repair": "Use private LD_LIBRARY_PATH identical to the fresh build receipt.",
+  "native_error_is_posterior_rejection": false
+}

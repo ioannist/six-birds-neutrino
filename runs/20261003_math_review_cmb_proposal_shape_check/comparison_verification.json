@@ -1,0 +1,79 @@
+{
+  "utc": "2026-10-03T19:44:52.995659+00:00",
+  "scope": "proposal_shape_comparison_to_covariance_learned_by_unconverged_default_target_chains",
+  "inputs_sha256": "19f89c5131cf83651c1922b9758fa2c21f858099ffe89cffc516378be163e464",
+  "results": {
+    "A": {
+      "input_max_asymmetry_in_correlation_units": {
+        "static": 1.1102230246251565e-16,
+        "learned_default": 5.551115123125783e-17
+      },
+      "static_over_learned_standard_deviation": {
+        "omegabh2": 0.9775060054327871,
+        "omegach2": 1.0981980746078455,
+        "H0": 1.1648750654751676,
+        "logA": 0.9663293149335889,
+        "ns": 1.0661980703374632,
+        "tau": 1.0304584030400297,
+        "mnu_sample": 1.839887694235729,
+        "A_planck": 1.0381911428153745,
+        "TT_tSZ_Amp": 1.0106994398423172,
+        "TT_kSZ_Amp": 3.0889450600863073
+      },
+      "generalized_variance_eigenvalues": [
+        0.710544921298131,
+        0.8139784855931685,
+        0.844939785300651,
+        0.9883771477963852,
+        1.1014115196003327,
+        1.1094722520074292,
+        1.2839270857800766,
+        1.369772492676264,
+        3.8453502596772866,
+        10.378666007770725
+      ],
+      "condition_number_after_learned_diagonal_normalization": {
+        "static": 512.2173367423284,
+        "learned_default": 165.77891570478417
+      }
+    },
+    "B": {
+      "input_max_asymmetry_in_correlation_units": {
+        "static": 1.6653345369377348e-16,
+        "learned_default": 1.1102230246251565e-16
+      },
+      "static_over_learned_standard_deviation": {
+        "omegabh2": 0.9400945425113273,
+        "omegach2": 1.2859054598471409,
+        "H0": 1.1398306952744637,
+        "logA": 0.9691003058904676,
+        "ns": 0.9793646143324453,
+        "tau": 1.0020006882101617,
+        "mnu_sample": 1.9637145540465515,
+        "A_planck": 0.9396345850058446,
+        "TT_tSZ_Amp": 1.0994559762583949,
+        "TT_kSZ_Amp": 0.9710383341808393
+      },
+      "generalized_variance_eigenvalues": [
+        0.7005010257224961,
+        0.7302251911391483,
+        0.8262943341736975,
+        1.0319156444869788,
+        1.0658572585769197,
+        1.1194266461724962,
+        1.2289233089018683,
+        1.574155299008818,
+        1.8618987091373966,
+        4.961087463596864
+      ],
+      "condition_number_after_learned_diagonal_normalization": {
+        "static": 323.52765152341686,
+        "learned_default": 179.32237607812615
+      }
+    }
+  },
+  "interpretation": "Default-target learned covariance is an unconverged proposal-shape reference. This comparison neither measures intermediate-target efficiency nor certifies posterior covariance.",
+  "sampler_changed": false,
+  "posterior_covariance_certified": false,
+  "efficiency_improvement_certified": false
+}

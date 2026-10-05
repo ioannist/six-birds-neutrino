@@ -1,0 +1,451 @@
+{
+  "utc": "2026-10-04T10:21:11.600819+00:00",
+  "records": [
+    {
+      "seed": 301,
+      "pid": 370438,
+      "status": "live_same_owned_identity",
+      "command": "/tmp/neutrino-math-review-venv/bin/python scripts/run_cobaya.py --config runs/20261003_math_review_spt_desi_chain_configs/A_seed301.yaml --outdir runs/20261003_math_review_chain_A_seed301 --seed 301 ",
+      "process_start_ticks": 328789193,
+      "mapped_guarded_module": null,
+      "stderr_empty": true,
+      "latest_progress": {
+        "utc": "2026-10-04 10:20:28",
+        "steps": 19232,
+        "accepted": 4808
+      }
+    },
+    {
+      "seed": 302,
+      "pid": 370439,
+      "status": "live_same_owned_identity",
+      "command": "/tmp/neutrino-math-review-venv/bin/python scripts/run_cobaya.py --config runs/20261003_math_review_spt_desi_chain_configs/A_seed302.yaml --outdir runs/20261003_math_review_chain_A_seed302 --seed 302 ",
+      "process_start_ticks": 328789193,
+      "mapped_guarded_module": null,
+      "stderr_empty": true,
+      "latest_progress": {
+        "utc": "2026-10-04 10:20:07",
+        "steps": 19425,
+        "accepted": 4717
+      }
+    },
+    {
+      "seed": 305,
+      "pid": 370440,
+      "status": "live_same_owned_identity",
+      "command": "/tmp/neutrino-math-review-venv/bin/python scripts/run_cobaya.py --config runs/20261003_math_review_spt_desi_chain_configs/B_seed305.yaml --outdir runs/20261003_math_review_chain_B_seed305 --seed 305 ",
+      "process_start_ticks": 328789193,
+      "mapped_guarded_module": null,
+      "stderr_empty": true,
+      "latest_progress": {
+        "utc": "2026-10-04 10:20:16",
+        "steps": 18472,
+        "accepted": 3896
+      }
+    },
+    {
+      "seed": 306,
+      "pid": 370441,
+      "status": "live_same_owned_identity",
+      "command": "/tmp/neutrino-math-review-venv/bin/python scripts/run_cobaya.py --config runs/20261003_math_review_spt_desi_chain_configs/B_seed306.yaml --outdir runs/20261003_math_review_chain_B_seed306 --seed 306 ",
+      "process_start_ticks": 328789193,
+      "mapped_guarded_module": null,
+      "stderr_empty": true,
+      "latest_progress": {
+        "utc": "2026-10-04 10:20:50",
+        "steps": 18526,
+        "accepted": 3818
+      }
+    },
+    {
+      "seed": 303,
+      "pid": 660424,
+      "status": "live_same_owned_identity",
+      "command": "/tmp/neutrino-math-review-venv/bin/python scripts/run_cobaya.py --config runs/20261003_math_review_spt_desi_chain_configs/A_seed303.yaml --outdir runs/20261003_math_review_chain_A_seed303 --seed 303 ",
+      "process_start_ticks": 328869762,
+      "mapped_guarded_module": null,
+      "stderr_empty": true,
+      "latest_progress": {
+        "utc": "2026-10-04 10:20:18",
+        "steps": 19641,
+        "accepted": 5361
+      }
+    },
+    {
+      "seed": 304,
+      "pid": 660425,
+      "status": "live_same_owned_identity",
+      "command": "/tmp/neutrino-math-review-venv/bin/python scripts/run_cobaya.py --config runs/20261003_math_review_spt_desi_chain_configs/A_seed304.yaml --outdir runs/20261003_math_review_chain_A_seed304 --seed 304 ",
+      "process_start_ticks": 328869762,
+      "mapped_guarded_module": null,
+      "stderr_empty": true,
+      "latest_progress": {
+        "utc": "2026-10-04 10:20:28",
+        "steps": 19298,
+        "accepted": 5310
+      }
+    },
+    {
+      "seed": 307,
+      "pid": 660426,
+      "status": "live_same_owned_identity",
+      "command": "/tmp/neutrino-math-review-venv/bin/python scripts/run_cobaya.py --config runs/20261003_math_review_spt_desi_chain_configs/B_seed307.yaml --outdir runs/20261003_math_review_chain_B_seed307 --seed 307 ",
+      "process_start_ticks": 328869763,
+      "mapped_guarded_module": null,
+      "stderr_empty": true,
+      "latest_progress": {
+        "utc": "2026-10-04 10:21:05",
+        "steps": 18327,
+        "accepted": 5127
+      }
+    },
+    {
+      "seed": 308,
+      "pid": 660427,
+      "status": "live_same_owned_identity",
+      "command": "/tmp/neutrino-math-review-venv/bin/python scripts/run_cobaya.py --config runs/20261003_math_review_spt_desi_chain_configs/B_seed308.yaml --outdir runs/20261003_math_review_chain_B_seed308 --seed 308 ",
+      "process_start_ticks": 328869763,
+      "mapped_guarded_module": null,
+      "stderr_empty": true,
+      "latest_progress": {
+        "utc": "2026-10-04 10:21:02",
+        "steps": 18153,
+        "accepted": 5039
+      }
+    },
+    {
+      "seed": 402,
+      "pid": 2333841,
+      "status": "completed_scientific_process_absent"
+    },
+    {
+      "seed": 401,
+      "pid": 2333842,
+      "status": "completed_scientific_process_absent"
+    },
+    {
+      "seed": 404,
+      "pid": 2333851,
+      "status": "completed_scientific_process_absent"
+    },
+    {
+      "seed": 403,
+      "pid": 2333860,
+      "status": "completed_scientific_process_absent"
+    },
+    {
+      "seed": 1201,
+      "pid": 719894,
+      "status": "live_same_owned_identity",
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_class_python_repair/launch_guarded_trial.py ",
+      "process_start_ticks": 335229443,
+      "mapped_guarded_module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+      "stderr_empty": true,
+      "latest_progress": {
+        "utc": "2026-10-04 10:20:18",
+        "steps": 708,
+        "accepted": 149
+      }
+    },
+    {
+      "seed": 1301,
+      "pid": 313611,
+      "status": "live_same_owned_identity",
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_class_backend_transition/launch_guarded_replica.py 1301 ",
+      "process_start_ticks": 335535531,
+      "mapped_guarded_module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+      "stderr_empty": true,
+      "latest_progress": {
+        "utc": "2026-10-04 10:21:08",
+        "steps": 2634,
+        "accepted": 822
+      }
+    },
+    {
+      "seed": 1302,
+      "pid": 314539,
+      "status": "live_same_owned_identity",
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_class_backend_transition/launch_guarded_replica.py 1302 ",
+      "process_start_ticks": 335535649,
+      "mapped_guarded_module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+      "stderr_empty": true,
+      "latest_progress": {
+        "utc": "2026-10-04 10:20:53",
+        "steps": 2618,
+        "accepted": 793
+      }
+    },
+    {
+      "seed": 1303,
+      "pid": 315724,
+      "status": "live_same_owned_identity",
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_class_backend_transition/launch_guarded_replica.py 1303 ",
+      "process_start_ticks": 335535765,
+      "mapped_guarded_module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+      "stderr_empty": true,
+      "latest_progress": {
+        "utc": "2026-10-04 10:20:00",
+        "steps": 2598,
+        "accepted": 821
+      }
+    },
+    {
+      "seed": 1304,
+      "pid": 316758,
+      "status": "live_same_owned_identity",
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_class_backend_transition/launch_guarded_replica.py 1304 ",
+      "process_start_ticks": 335535882,
+      "mapped_guarded_module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+      "stderr_empty": true,
+      "latest_progress": {
+        "utc": "2026-10-04 10:20:39",
+        "steps": 2578,
+        "accepted": 805
+      }
+    },
+    {
+      "seed": 1305,
+      "pid": 317618,
+      "status": "live_same_owned_identity",
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_class_backend_transition/launch_guarded_replica.py 1305 ",
+      "process_start_ticks": 335535999,
+      "mapped_guarded_module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+      "stderr_empty": true,
+      "latest_progress": {
+        "utc": "2026-10-04 10:20:30",
+        "steps": 2334,
+        "accepted": 736
+      }
+    },
+    {
+      "seed": 1306,
+      "pid": 318458,
+      "status": "live_same_owned_identity",
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_class_backend_transition/launch_guarded_replica.py 1306 ",
+      "process_start_ticks": 335536116,
+      "mapped_guarded_module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+      "stderr_empty": true,
+      "latest_progress": {
+        "utc": "2026-10-04 10:20:30",
+        "steps": 2340,
+        "accepted": 699
+      }
+    },
+    {
+      "seed": 1307,
+      "pid": 319462,
+      "status": "live_same_owned_identity",
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_class_backend_transition/launch_guarded_replica.py 1307 ",
+      "process_start_ticks": 335536235,
+      "mapped_guarded_module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+      "stderr_empty": true,
+      "latest_progress": {
+        "utc": "2026-10-04 10:20:46",
+        "steps": 2400,
+        "accepted": 774
+      }
+    },
+    {
+      "seed": 1308,
+      "pid": 320418,
+      "status": "live_same_owned_identity",
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_class_backend_transition/launch_guarded_replica.py 1308 ",
+      "process_start_ticks": 335536353,
+      "mapped_guarded_module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+      "stderr_empty": true,
+      "latest_progress": {
+        "utc": "2026-10-04 10:20:33",
+        "steps": 2230,
+        "accepted": 749
+      }
+    },
+    {
+      "seed": 1401,
+      "pid": 465459,
+      "status": "live_same_owned_identity",
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_class_backend_transition/launch_guarded_replica.py 1401 ",
+      "process_start_ticks": 335552436,
+      "mapped_guarded_module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+      "stderr_empty": true,
+      "latest_progress": {
+        "utc": "2026-10-04 10:21:05",
+        "steps": 881,
+        "accepted": 173
+      }
+    },
+    {
+      "seed": 1402,
+      "pid": 466588,
+      "status": "live_same_owned_identity",
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_class_backend_transition/launch_guarded_replica.py 1402 ",
+      "process_start_ticks": 335552554,
+      "mapped_guarded_module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+      "stderr_empty": true,
+      "latest_progress": {
+        "utc": "2026-10-04 10:20:15",
+        "steps": 881,
+        "accepted": 193
+      }
+    },
+    {
+      "seed": 1403,
+      "pid": 467452,
+      "status": "live_same_owned_identity",
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_class_backend_transition/launch_guarded_replica.py 1403 ",
+      "process_start_ticks": 335552671,
+      "mapped_guarded_module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+      "stderr_empty": true,
+      "latest_progress": {
+        "utc": "2026-10-04 10:20:59",
+        "steps": 707,
+        "accepted": 191
+      }
+    },
+    {
+      "seed": 1404,
+      "pid": 468270,
+      "status": "live_same_owned_identity",
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_class_backend_transition/launch_guarded_replica.py 1404 ",
+      "process_start_ticks": 335552790,
+      "mapped_guarded_module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+      "stderr_empty": true,
+      "latest_progress": {
+        "utc": "2026-10-04 10:20:39",
+        "steps": 579,
+        "accepted": 178
+      }
+    },
+    {
+      "seed": 1405,
+      "pid": 468765,
+      "status": "live_same_owned_identity",
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_class_backend_transition/launch_guarded_replica.py 1405 ",
+      "process_start_ticks": 335552907,
+      "mapped_guarded_module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+      "stderr_empty": true,
+      "latest_progress": {
+        "utc": "2026-10-04 10:20:51",
+        "steps": 547,
+        "accepted": 97
+      }
+    },
+    {
+      "seed": 1406,
+      "pid": 469224,
+      "status": "live_same_owned_identity",
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_class_backend_transition/launch_guarded_replica.py 1406 ",
+      "process_start_ticks": 335553025,
+      "mapped_guarded_module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+      "stderr_empty": true,
+      "latest_progress": {
+        "utc": "2026-10-04 10:20:51",
+        "steps": 770,
+        "accepted": 162
+      }
+    },
+    {
+      "seed": 1407,
+      "pid": 505961,
+      "status": "live_same_owned_identity",
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_class_backend_transition/launch_guarded_replica.py 1407 ",
+      "process_start_ticks": 335556803,
+      "mapped_guarded_module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+      "stderr_empty": true,
+      "latest_progress": {
+        "utc": "2026-10-04 10:20:03",
+        "steps": 593,
+        "accepted": 167
+      }
+    },
+    {
+      "seed": 1501,
+      "pid": 3629578,
+      "status": "live_same_owned_identity",
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_guarded_grid12_trial_B_seed1501/launch_trial.py ",
+      "process_start_ticks": 337435709,
+      "mapped_guarded_module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+      "stderr_empty": true,
+      "latest_progress": {
+        "utc": "2026-10-04 10:19:51",
+        "steps": 76,
+        "accepted": 23
+      }
+    },
+    {
+      "seed": 1502,
+      "pid": 2507510,
+      "status": "live_same_owned_identity",
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_guarded_grid12_trial_B_seed1502/launch_trial.py ",
+      "process_start_ticks": 337604850,
+      "mapped_guarded_module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+      "stderr_empty": true,
+      "latest_progress": {
+        "utc": "2026-10-04 10:19:41",
+        "steps": 26,
+        "accepted": 6
+      }
+    },
+    {
+      "seed": 1503,
+      "pid": 2507547,
+      "status": "live_same_owned_identity",
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_guarded_grid12_trial_B_seed1503/launch_trial.py ",
+      "process_start_ticks": 337604851,
+      "mapped_guarded_module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+      "stderr_empty": true,
+      "latest_progress": {
+        "utc": "2026-10-04 10:20:05",
+        "steps": 26,
+        "accepted": 7
+      }
+    },
+    {
+      "seed": 1504,
+      "pid": 2507556,
+      "status": "live_same_owned_identity",
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_guarded_grid12_trial_B_seed1504/launch_trial.py ",
+      "process_start_ticks": 337604852,
+      "mapped_guarded_module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+      "stderr_empty": true,
+      "latest_progress": {
+        "utc": "2026-10-04 10:20:52",
+        "steps": 30,
+        "accepted": 6
+      }
+    }
+  ],
+  "earlier_identity_receipt": "runs/20261004_math_review_class_backend_transition/runtime_verification.json",
+  "earlier_identity_receipt_sha256": "8e04df37862e0921f6ece7015e35a7f07ef4c9679d7738677684393fb87eb033",
+  "grid12_launch_receipts": [
+    {
+      "path": "runs/20261004_math_review_guarded_grid12_trial_B_seed1501/launch_receipt.json",
+      "sha256": "f4a79638988d924a7a79eb3bc5261fb1bb2a198788411b3290880063d7bcdac9"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_grid12_trial_B_seed1502/launch_receipt.json",
+      "sha256": "7e130c3965d8847910ab35e933fe1b5e21a24f9f4b1d34a9ee6d16c32517ec53"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_grid12_trial_B_seed1503/launch_receipt.json",
+      "sha256": "500e50c32ff66ca59fb8de67819d47bd5d634915e980ad1fc83700edb432deb1"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_grid12_trial_B_seed1504/launch_receipt.json",
+      "sha256": "a5562fdb3dc76fb0294586eb3bffb3de930739de7464513840441d7df2476a8e"
+    }
+  ],
+  "owned_live_samplers": 28,
+  "SPT_live": 8,
+  "guarded_CLASS_live": 20,
+  "grid12_B_live": 4,
+  "SPT_diagnostic_families": 12,
+  "completed_SPT_families": [
+    401,
+    402,
+    403,
+    404
+  ],
+  "original_CLASS_inference_active": false,
+  "precision_cohorts_pooled": false,
+  "posterior_convergence_certified": false
+}

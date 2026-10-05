@@ -1,0 +1,23 @@
+[
+  {
+    "command": [
+      "gcc",
+      "-O2",
+      "-ffunction-sections",
+      "-fdata-sections",
+      "-I/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/include",
+      "-I/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/external/HyRec2020",
+      "-I/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/external/RecfastCLASS",
+      "-I/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/external/heating",
+      "-I/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/external/Halofit",
+      "-I/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/external/HMcode",
+      "-c",
+      "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/source/transfer.c",
+      "-o",
+      "/mnt/8tb/six-birds-ml/tmp/neutrino_B_unit_grid_probe_20261004/transfer.o"
+    ],
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "In file included from /mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/source/transfer.c:31:\n/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/include/parallel.h:55:10: fatal error: atomic: No such file or directory\n   55 | #include <atomic>\n      |          ^~~~~~~~\ncompilation terminated.\n"
+  }
+]

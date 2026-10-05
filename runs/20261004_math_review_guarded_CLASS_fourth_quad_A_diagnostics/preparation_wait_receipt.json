@@ -1,0 +1,43 @@
+{
+  "utc": "2026-10-04T11:44:32.046065+00:00",
+  "scope": "prepared_fourth_quad_A_assessment_with_verified_live_growth_wait",
+  "worker_pid": 2950431,
+  "session": 46265,
+  "process_start_ticks": 338359948,
+  "latest_complete_wait_observation": {
+    "utc": "2026-10-04T11:43:47.474841+00:00",
+    "owned_sampler_identities_verified_live": true,
+    "exit_code": 3,
+    "stdout": "Growth gate not met for all cohorts; no snapshots written. {'quad_A': 2391}\n",
+    "stderr": ""
+  },
+  "snapshot_frozen": false,
+  "growth_threshold": 2447,
+  "samplers_modified": false,
+  "files": [
+    {
+      "path": "runs/20261004_math_review_guarded_CLASS_fourth_quad_A_diagnostics/observe_runtime.py",
+      "sha256": "9b702bcaeafc6c484b74612dc6923cd6594f93a697bbfa9ee9be249e3c8fb03f"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_CLASS_fourth_quad_A_diagnostics/prepare_snapshot.py",
+      "sha256": "78b6730303975bac9e98b05ad947c154bbfbbd460c813c0e45bddcef7dd59e71"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_CLASS_fourth_quad_A_diagnostics/run_diagnostic.py",
+      "sha256": "d5d4f3c7e9974980180d0f7364a672acab80f569a3f7150920a6c12479a95055"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_CLASS_fourth_quad_A_diagnostics/self_review.py",
+      "sha256": "d96928b23ef8d7742dd13f34f707735f46f46cea194f24b5cd3707ec7991fb8e"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_CLASS_fourth_quad_A_diagnostics/verify_snapshot.py",
+      "sha256": "1a2ed396565606ddbc616d14f6f3049dd1f869ed119764bacf0d98c04b256d52"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_CLASS_fourth_quad_A_diagnostics/wait_for_growth.py",
+      "sha256": "c5c4c80808762b1fb405257fbb2cac0d00b65ff07021925db097c46f7ae9ecb8"
+    }
+  ]
+}

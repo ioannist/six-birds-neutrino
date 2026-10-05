@@ -1,0 +1,46 @@
+{
+  "scope": "regularized_Gauss_Newton_MCMC_proposal_only",
+  "posterior_covariance_certified": false,
+  "parameter_names": [
+    "omegabh2",
+    "omegach2",
+    "H0",
+    "logA",
+    "ns",
+    "tau",
+    "mnu"
+  ],
+  "anchor": {
+    "omegabh2": 0.0222738908495002,
+    "omegach2": 0.11769279350528805,
+    "H0": 68.63692415436259,
+    "logA": 3.0516353081594625,
+    "ns": 0.9597292852673998,
+    "tau": 0.05514271068733354,
+    "mnu": 0.02525
+  },
+  "step_in_proposal_units": 0.5,
+  "source_config": "/home/repos/six-birds-neutrino/runs/20261003_math_review_spt_desi_chain_configs/B_seed305.yaml",
+  "source_config_sha256": "7141c928ae2f8401c8510730f98ee5e7650c073aa1f5ba3995339b95b84c1678",
+  "elapsed_seconds": 85.21352735208347,
+  "fisher_eigenvalues_scaled": [
+    0.16527346638802937,
+    0.8299364735273193,
+    1.607359014783315,
+    2.341773583997228,
+    7.250851867621787,
+    73.82464595952064,
+    232.15053626531864
+  ],
+  "regularized_eigenvalues_scaled": [
+    0.16527346638802937,
+    0.8299364735273193,
+    1.607359014783315,
+    2.341773583997228,
+    7.250851867621787,
+    73.82464595952064,
+    232.15053626531864
+  ],
+  "eigenvalue_floor": 0.00023215053626531861,
+  "n_regularized_directions": 0
+}

@@ -1,0 +1,68 @@
+{
+  "lensA": {
+    "point": {
+      "omegabh2": 0.022693776588245253,
+      "omegach2": 0.11623226159102945,
+      "H0": 68.76649226539791,
+      "logA": 3.0422198957229982,
+      "ns": 0.98070405386811,
+      "tau": 0.057044951687684003,
+      "mnu_sample": 0.06036696203896391,
+      "A_planck": 1.0002399727069142,
+      "TT_tSZ_Amp": 2.128512459891876,
+      "TT_kSZ_Amp": 10.0
+    },
+    "loglike": -1508.3165098588497,
+    "success": true,
+    "flag": 0,
+    "message": "Success: rho has reached rhoend",
+    "free": [
+      "omegabh2",
+      "omegach2",
+      "H0",
+      "logA",
+      "ns",
+      "tau",
+      "mnu_sample",
+      "A_planck",
+      "TT_tSZ_Amp",
+      "TT_kSZ_Amp"
+    ],
+    "n_evals": 44,
+    "elapsed_seconds": 309.28658591769636,
+    "scope": "bounded_numerical_candidate_not_global_certificate"
+  },
+  "lensB": {
+    "point": {
+      "omegabh2": 0.02217483746080945,
+      "omegach2": 0.11724949863506831,
+      "H0": 68.31432951782044,
+      "logA": 3.0467766450565805,
+      "ns": 0.9644517982201075,
+      "tau": 0.054970010532843123,
+      "mnu_sample": 0.05931887826630993,
+      "A_planck": 1.0056939166793473,
+      "TT_tSZ_Amp": 1.2422430545608456,
+      "TT_kSZ_Amp": 2.368091748210486
+    },
+    "loglike": -766.7158996663601,
+    "success": true,
+    "flag": 0,
+    "message": "Success: rho has reached rhoend",
+    "free": [
+      "omegabh2",
+      "omegach2",
+      "H0",
+      "logA",
+      "ns",
+      "tau",
+      "mnu_sample",
+      "A_planck",
+      "TT_tSZ_Amp",
+      "TT_kSZ_Amp"
+    ],
+    "n_evals": 44,
+    "elapsed_seconds": 317.43935758108273,
+    "scope": "bounded_numerical_candidate_not_global_certificate"
+  }
+}

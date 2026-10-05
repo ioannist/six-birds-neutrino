@@ -1,0 +1,10 @@
+/home/repos/six-birds-neutrino/runs/20261004_math_review_class_backend_transition/normalization_adversarial.lean:18:2: error: Type mismatch: After simplification, term
+  mul_pos h (Real.exp_pos (-((0 - -2) ^ 2 / (2 * 1 ^ 2))))
+ has type
+  0 < (truncatedNormalizer (-2) 1)⁻¹ * Real.exp (-(2 ^ 2 / (2 * 1 ^ 2)))
+but is expected to have type
+  0 < (truncatedNormalizer (-2) 1)⁻¹ * unnorm (-2) 1 0
+/home/repos/six-birds-neutrino/runs/20261004_math_review_class_backend_transition/normalization_adversarial.lean:28:41: error: unsolved goals
+⊢ volume.real (Set.Ici 0) = 0
+/home/repos/six-birds-neutrino/runs/20261004_math_review_class_backend_transition/normalization_adversarial.lean:32:42: error: unsolved goals
+⊢ volume.real (Set.Ici 0) = 0

@@ -1,0 +1,27 @@
+{
+  "selection_index": 7,
+  "point": {
+    "omegabh2": 0.039722417435190734,
+    "omegach2": 0.02050757593546919,
+    "H0": 55.63518294861832,
+    "logA": 3.4029050190597663,
+    "ns": 0.8333775835517003,
+    "tau": 0.20267279146734776,
+    "mnu": 1.0
+  },
+  "kind": "mass_grid",
+  "native_error_is_posterior_rejection": false,
+  "status": "finite_evaluation",
+  "logpost": -51174.55710906748,
+  "logpriors": [
+    -3.4908863374028734
+  ],
+  "loglikes": [
+    -48322.776006540094,
+    -2848.2902161899865
+  ],
+  "provider_arrays": "runs/20261005_math_review_sigma_v2_optimized_build/controls/point7_provider_arrays.npz",
+  "provider_arrays_sha256": "f168c27d7cf1b75bac4d5c1ffd403c9d339ec7b8c3006975b190a2fac1951a2a",
+  "all_spectra_finite": true,
+  "utc": "2026-10-05T01:58:36.791477+00:00"
+}

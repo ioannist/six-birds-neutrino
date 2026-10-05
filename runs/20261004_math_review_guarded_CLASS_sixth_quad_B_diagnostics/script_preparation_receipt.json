@@ -1,0 +1,24 @@
+{
+  "source_scripts": [
+    {
+      "source": "runs/20261004_math_review_guarded_CLASS_fifth_quad_B_diagnostics/prepare_snapshot.py",
+      "source_sha256": "030f79d3b01f7ca2757e8ff114fb8acb0cda6118d42d345a3a254ebcba529e36",
+      "destination": "runs/20261004_math_review_guarded_CLASS_sixth_quad_B_diagnostics/prepare_snapshot.py",
+      "destination_sha256": "848c181ac7b4250b5da3bb74c0b60c6c50fe715229d26854b6d60e5cf49999c4"
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_CLASS_fifth_quad_B_diagnostics/verify_snapshot.py",
+      "source_sha256": "274095674ef23765d5d1e315dc52251280a4f2c1da6bdc22fb86b6035fcdb3eb",
+      "destination": "runs/20261004_math_review_guarded_CLASS_sixth_quad_B_diagnostics/verify_snapshot.py",
+      "destination_sha256": "274095674ef23765d5d1e315dc52251280a4f2c1da6bdc22fb86b6035fcdb3eb"
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_CLASS_fifth_quad_B_diagnostics/self_review.py",
+      "source_sha256": "00da489eb0ac264e4dbe1f8930d4fc3daaa93faf95c401c85db2bedd4a38bbdc",
+      "destination": "runs/20261004_math_review_guarded_CLASS_sixth_quad_B_diagnostics/self_review.py",
+      "destination_sha256": "bac3b448c3a3ef5310d327331b66c14704374f56e8a992997b69bc31997a8e70"
+    }
+  ],
+  "diagnostic_algorithms_or_gates_changed": false,
+  "runtime_observer_adapted_to_40_current_identities": true
+}

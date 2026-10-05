@@ -1,0 +1,47 @@
+{
+  "utc": "2026-10-03T14:16:25.203380+00:00",
+  "all_chain_hashes_and_complete_line_counts_match": true,
+  "chain_files": 20,
+  "config_files": 40,
+  "all_snapshot_config_hashes_match": true,
+  "all_source_config_hashes_match": true,
+  "scope": "integrity_only_no_convergence_certificate",
+  "diagnostic_summary": {
+    "chain_A_diagnostics": {
+      "all_thresholds_pass": false,
+      "replicas": 6,
+      "mass_rhat": 1.0598722824118336,
+      "mass_bulk_ess": 88.73785424268868,
+      "mass_tail_ess": 104.69144106021058,
+      "mass_p95_mcse": 0.017101839999999993,
+      "mass_p95_mcse_limit": 0.005
+    },
+    "chain_B_diagnostics": {
+      "all_thresholds_pass": false,
+      "replicas": 6,
+      "mass_rhat": 1.0767467550774583,
+      "mass_bulk_ess": 84.60915461439797,
+      "mass_tail_ess": 117.05601627890569,
+      "mass_p95_mcse": 0.010138565000000002,
+      "mass_p95_mcse_limit": 0.005
+    },
+    "cmb_chain_A_diagnostics": {
+      "all_thresholds_pass": false,
+      "replicas": 4,
+      "mass_rhat": 1.027079054944445,
+      "mass_bulk_ess": 224.73727564877507,
+      "mass_tail_ess": 347.2200222403813,
+      "mass_p95_mcse": 0.003303014668006969,
+      "mass_p95_mcse_limit": 0.001
+    },
+    "cmb_chain_B_diagnostics": {
+      "all_thresholds_pass": false,
+      "replicas": 4,
+      "mass_rhat": 1.0152878776547134,
+      "mass_bulk_ess": 210.8078686626687,
+      "mass_tail_ess": 367.5638127800129,
+      "mass_p95_mcse": 0.004238303057015155,
+      "mass_p95_mcse_limit": 0.001
+    }
+  }
+}

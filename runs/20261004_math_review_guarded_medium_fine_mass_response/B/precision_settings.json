@@ -1,0 +1,14 @@
+{
+  "scope": "declared_finer_neutrino_integration_and_spectrum_grid_control",
+  "derivation": "tighten five tolerance/grid controls from the completed seven-setting target; retain background quadrature and default integrator",
+  "settings": {
+    "tol_ncdm_bg": 1e-08,
+    "tol_perturbations_integration": 1e-07,
+    "perturbations_sampling_stepsize": 0.005,
+    "tol_ncdm_synchronous": 1e-07,
+    "tol_ncdm_newtonian": 1e-07,
+    "l_logstep": 1.013,
+    "l_linstep": 12
+  },
+  "uniform_error_certified": false
+}

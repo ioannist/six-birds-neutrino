@@ -1,0 +1,102 @@
+{
+  "utc": "2026-10-04T03:47:09.352386+00:00",
+  "scope": "selected_original_endpoints_evaluated_on_fresh_guarded_target",
+  "parent_seed": 1108,
+  "replacement_seed": 1308,
+  "config_sha256": "7ed284eaca0c71be375c63d8141c99e03e749a1fe4a38e9d3bc43c08faa39205",
+  "chain_sha256": "1c400a41f77f0abeef69d11d81a72c803a7ccda53ad21bcecd97a2903c81d4c3",
+  "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+  "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+  "actual_initialized_native_extra_args": {
+    "N_ncdm": 3,
+    "N_ur": 0.00641,
+    "l_max_scalars": 4095,
+    "tol_ncdm_bg": 1e-08,
+    "output": "lCl pCl tCl",
+    "non_linear": "hmcode",
+    "lensing": "yes"
+  },
+  "checks": [
+    {
+      "row_index": 0,
+      "point": {
+        "omegabh2": 0.022048597770904163,
+        "omegach2": 0.119541819090354,
+        "H0": 67.91360113437405,
+        "logA": 3.054707296134653,
+        "ns": 0.9581014749773828,
+        "tau": 0.054775104995296,
+        "mnu_sample": 0.02261130713528206,
+        "A_planck": 1.00670687481658,
+        "TT_tSZ_Amp": 1.2869330378959967,
+        "TT_kSZ_Amp": 2.3276010137800527
+      },
+      "fresh_native": {
+        "minuslogpost": 951.1944819542964,
+        "minuslogprior": 5.793471430396919,
+        "chi2": 1890.802021047799,
+        "chi2__sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 1384.3042579303656,
+        "chi2__sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 15.169149490073792,
+        "chi2__planck_2018_lowl.TT": 25.0288217495073,
+        "chi2__planck_2018_lowl.EE_sroll2": 389.86986964396215,
+        "chi2__planck_2018_highl_plik.TT_lite_native": 67.73185727516955,
+        "chi2__planckpr4lensing.PlanckPR4Lensing": 8.6980649587207
+      },
+      "fresh_minus_original": {
+        "minuslogpost": 0.0,
+        "minuslogprior": 0.0,
+        "chi2": 0.0,
+        "chi2__sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 0.0,
+        "chi2__sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 0.0,
+        "chi2__planck_2018_lowl.TT": 0.0,
+        "chi2__planck_2018_lowl.EE_sroll2": 0.0,
+        "chi2__planck_2018_highl_plik.TT_lite_native": 0.0,
+        "chi2__planckpr4lensing.PlanckPR4Lensing": 0.0
+      },
+      "matches_original_at_atol_1e7_rtol_1e10": true
+    },
+    {
+      "row_index": 306,
+      "point": {
+        "omegabh2": 0.022262715959038774,
+        "omegach2": 0.11709952132985002,
+        "H0": 68.33512645608094,
+        "logA": 3.0453438469439926,
+        "ns": 0.9562440327241599,
+        "tau": 0.05383442721021993,
+        "mnu_sample": 0.06458082070348349,
+        "A_planck": 1.0084665966646171,
+        "TT_tSZ_Amp": 1.370018020225109,
+        "TT_kSZ_Amp": 2.5820651910618153
+      },
+      "fresh_native": {
+        "minuslogpost": 951.9483213907354,
+        "minuslogprior": 5.793471430396919,
+        "chi2": 1892.3096999206768,
+        "chi2__sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 1382.2533256898842,
+        "chi2__sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 10.905064212145648,
+        "chi2__planck_2018_lowl.TT": 24.869940287300892,
+        "chi2__planck_2018_lowl.EE_sroll2": 389.9304563565051,
+        "chi2__planck_2018_highl_plik.TT_lite_native": 72.63723686884737,
+        "chi2__planckpr4lensing.PlanckPR4Lensing": 11.713676505993732
+      },
+      "fresh_minus_original": {
+        "minuslogpost": 0.0,
+        "minuslogprior": 0.0,
+        "chi2": 0.0,
+        "chi2__sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 0.0,
+        "chi2__sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 0.0,
+        "chi2__planck_2018_lowl.TT": 0.0,
+        "chi2__planck_2018_lowl.EE_sroll2": 0.0,
+        "chi2__planck_2018_highl_plik.TT_lite_native": 0.0,
+        "chi2__planckpr4lensing.PlanckPR4Lensing": 0.0
+      },
+      "matches_original_at_atol_1e7_rtol_1e10": true
+    }
+  ],
+  "fresh_initial_point_finite_native_target_verified": true,
+  "selected_original_rows_match_at_declared_tolerance": true,
+  "full_domain_original_backend_identity_asserted": false,
+  "posterior_convergence_certified": false,
+  "uniform_numerical_accuracy_certified": false
+}

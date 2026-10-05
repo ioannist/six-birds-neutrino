@@ -1,0 +1,33 @@
+{
+  "seed": 2002,
+  "group": "upper20_A4095",
+  "point": {
+    "omegabh2": 0.022630652105352703,
+    "omegach2": 0.11751048874367458,
+    "H0": 68.70666775564949,
+    "logA": 3.0189779897104647,
+    "ns": 1.0211060179585014,
+    "tau": 0.05781115789368816,
+    "mnu": 0.0009815128443422388
+  },
+  "holding_time": 1,
+  "source": "runs/20261004_math_review_fresh_CAMB_upper20_A4095_seed2002/chains/fresh_CAMB_upper20_A4095_seed2002.1.txt",
+  "frozen": "runs/20261004_math_review_upper_prior_posterior_preparation/seed2002/first_saved_rows/chains/fresh_CAMB_upper20_A4095_seed2002.1.txt",
+  "snapshot_sha256": "7f9527f9b7768e4c542afcced5157afbbce81f9336cb8e39bc5425d2009756b7",
+  "complete_prefix_matches": true,
+  "out": "runs/20261004_math_review_upper_prior_posterior_preparation/seed2002/first_saved_rows",
+  "utc": "2026-10-04T22:02:57.077776+00:00",
+  "native_row_verified": true,
+  "module_sha256": "306640a8948cd5246fc9b21e76525f6adebdff5ba3bc792a57d50bba67225ad5",
+  "native_row_replay_discrepancies": {
+    "sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 0.0,
+    "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 0.0,
+    "total_chi2": 0.0,
+    "logprior": 0.0,
+    "logposterior": 0.0
+  },
+  "native_row_replay_tolerance": 1e-09,
+  "FreshCAMB_exact_to_independent_upstream_fresh": true,
+  "sampler_cache_resize_challenge": 50,
+  "scope": "selected first saved row; no convergence or uniform accuracy certification"
+}

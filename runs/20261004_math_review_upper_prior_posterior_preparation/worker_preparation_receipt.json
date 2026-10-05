@@ -1,0 +1,72 @@
+{
+  "files": [
+    {
+      "source": "runs/20261004_math_review_fresh_CAMB_posterior_preparation/launch_chain.py",
+      "destination": "runs/20261004_math_review_upper_prior_posterior_preparation/launch_chain.py",
+      "source_sha256": "e7aedbcda46c5fcfb70b50be451c1ee845f171106a9402e0f95fdc924cea0188",
+      "destination_sha256": "78931394b4b247f6f2d1b33125ba620f8c36582407507f525963a325f1ffba17",
+      "changes": [
+        [
+          "for key in ['OMP_NUM_THREADS'",
+          "assert os.getpriority(os.PRIO_PROCESS, 0) == 5\nfor key in ['OMP_NUM_THREADS'"
+        ]
+      ],
+      "reverse_byte_identity_verified": true
+    },
+    {
+      "source": "runs/20261004_math_review_fresh_CAMB_posterior_preparation/verify_first_rows.py",
+      "destination": "runs/20261004_math_review_upper_prior_posterior_preparation/verify_first_rows.py",
+      "source_sha256": "7ae0336300ef50c04dfeebce41a91c06b8a65e5ccb152535d2a0860e72d5dae2",
+      "destination_sha256": "7ae0336300ef50c04dfeebce41a91c06b8a65e5ccb152535d2a0860e72d5dae2",
+      "changes": [],
+      "reverse_byte_identity_verified": true
+    },
+    {
+      "source": "runs/20261004_math_review_fresh_CAMB_posterior_preparation/self_review_first_rows.py",
+      "destination": "runs/20261004_math_review_upper_prior_posterior_preparation/self_review_first_rows.py",
+      "source_sha256": "f3462e2597bd3b03c8ebe2ed0da897b1b7a839d8dda841e1f4f251fbb026be34",
+      "destination_sha256": "f36d6e18ba9fa8e1f2030db238a856ab39493b8ba9571606ea2b8f45bde8a023",
+      "changes": [
+        [
+          "len(checked)==20",
+          "len(checked)==8"
+        ],
+        [
+          "'first_native_rows_verified':20,'distinct_targets':5",
+          "'first_native_rows_verified':8,'distinct_targets':2"
+        ],
+        [
+          "All 20 first native rows",
+          "All 8 first native rows"
+        ],
+        [
+          "all five finite workers",
+          "both finite workers"
+        ]
+      ],
+      "reverse_byte_identity_verified": true
+    },
+    {
+      "source": "runs/20261004_math_review_fresh_CAMB_posterior_preparation/verify_activation.py",
+      "destination": "runs/20261004_math_review_upper_prior_posterior_preparation/verify_activation.py",
+      "source_sha256": "2793cdd22f5efe0c6bbaef22fd95655cab10ad8157d30e8e96571c9e17944626",
+      "destination_sha256": "b87112bdce3f42d291393650beca920edf36722231d3f1a84b23d8de3368758a",
+      "changes": [
+        [
+          "'owned_live_fresh_samplers':20",
+          "'owned_live_fresh_samplers':8"
+        ],
+        [
+          "'distinct_targets':5,'initial_native_points_passed':20",
+          "'distinct_targets':2,'initial_native_points_passed':8"
+        ],
+        [
+          "20 actual native sampler processes",
+          "8 actual native sampler processes"
+        ]
+      ],
+      "reverse_byte_identity_verified": true
+    }
+  ],
+  "no_target_or_gate_edits_in_reused_workers": true
+}

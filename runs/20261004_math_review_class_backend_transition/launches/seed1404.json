@@ -1,0 +1,35 @@
+{
+  "utc": "2026-10-04T03:52:09.605874+00:00",
+  "seed": 1404,
+  "pid": 468270,
+  "cohort": "medium",
+  "lens": "B",
+  "outdir": "runs/20261004_math_review_guarded_medium_chain_B_seed1404",
+  "parent_family_seed": 604,
+  "parent_active_segment_seed": 804,
+  "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+  "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+  "config_sha256": "176f17207caf9da1ae5ff6228a21a36c67d3086b3741e03a0c816fc68ea8bd99",
+  "covariance_sha256": "a8851ced759ee447a8cb3feced301b54a5608035b4a33170e933d38775d22f74",
+  "native_parent_verification_sha256": "f08208d7943ce230f0cc2c3ade9165ba2fb8b74c564a8f4de6f2e1608348e129",
+  "implementation_sha256": {
+    "runs/20261004_math_review_class_backend_transition/launch_guarded_replica.py": "ff96e944763cb0a4aacf4f46dc2254ab2f8a43755b0e586084129c954443b91d",
+    "scripts/run_cobaya.py": "744581e1e7493ecf5c1d1c71871d16558eb7ff2229c9c4ff68c9eb8d136fac5b",
+    "src/sbt_spt_audit/samplers.py": "2a7c7e99597b6c5bc48f72bbaa9e8df81dd6987ba36e8ab0a81b8c36b10f33e9",
+    "src/sbt_spt_audit/mcmc.py": "e00c832f911a9233bce6c3ada930113affb436e52272bb704e47706c8df22898",
+    "src/sbt_spt_audit/metrics.py": "af96ec7f08f9acaea313e5416229ca33df1abd927b73311438c4ecd9b7cea406",
+    "src/sbt_spt_audit/likelihoods/desi_dr2_bao.py": "00fdc02856aa608d7b68c242a3cf46bd96200f61fd9b00adf3c0073598bfeaf9"
+  },
+  "environment": {
+    "PYTHONPATH": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend:/home/repos/six-birds-neutrino/src",
+    "OMP_NUM_THREADS": "8",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  },
+  "fresh_rng_and_output": true,
+  "historical_prefix_appended": false,
+  "full_domain_original_backend_identity_asserted": false,
+  "posterior_convergence_certified": false,
+  "uniform_numerical_accuracy_certified": false
+}

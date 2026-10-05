@@ -1,0 +1,22 @@
+{
+  "utc": "2026-10-04T06:49:37.277889+00:00",
+  "reviewer": "distinct_self_review_no_independent_agent",
+  "algebra": "C=L L^T with positive definite C implies r^T C^-1 r=||L^-1 r||^2; lower solve uses the recorded lower factor, ignoring unused upper entries",
+  "numerical_repair": "scaled RMS avoids forming the unscaled squared norm and avoids a second inverse solve",
+  "validation": "same shape, finiteness, roundoff symmetry projection and positive-definiteness checks; no pseudoinverse; finite solve guard retained for covariance_solve and quadratic allocations",
+  "adversarial_controls": [
+    "identity covariance at large, tiny and smallest-subnormal residuals",
+    "correlated SPD with negative coordinate allocation",
+    "subnormal variance with unrepresentable inverse solve but finite RMS",
+    "maximum-float vector with unrepresentable norm but finite RMS",
+    "nonfinite whitening explicitly rejected"
+  ],
+  "limits": [
+    "requires finite representable whitened coordinates; not an exhaustive binary64 recovery method",
+    "Cholesky and triangular solves are floating approximations, not interval certificates",
+    "normalized squares below representable range are discarded; no uniform rounding bound established"
+  ],
+  "evidence": "100 Python tests pass; twenty public solve controls bit identical; both native directional accounting ledgers byte identical to preceding fresh checks",
+  "lean_changed": false,
+  "paper_modified": false
+}

@@ -1,0 +1,42 @@
+{
+  "utc": "2026-10-04T18:22:58.870226+00:00",
+  "scripts": [
+    {
+      "source": "runs/20261004_math_review_guarded_CLASS_sixth_quad_B_diagnostics/prepare_snapshot.py",
+      "source_sha256": "848c181ac7b4250b5da3bb74c0b60c6c50fe715229d26854b6d60e5cf49999c4",
+      "prepared": "runs/20261004_math_review_guarded_CLASS_seventh_quad_B_diagnostics/prepare_snapshot.py",
+      "prepared_sha256": "2e6859a017c0d81a84928705c02dd8f50145627529540bba91d3f4be4040c18b"
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_CLASS_sixth_quad_B_diagnostics/verify_snapshot.py",
+      "source_sha256": "274095674ef23765d5d1e315dc52251280a4f2c1da6bdc22fb86b6035fcdb3eb",
+      "prepared": "runs/20261004_math_review_guarded_CLASS_seventh_quad_B_diagnostics/verify_snapshot.py",
+      "prepared_sha256": "274095674ef23765d5d1e315dc52251280a4f2c1da6bdc22fb86b6035fcdb3eb"
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_CLASS_sixth_quad_B_diagnostics/self_review.py",
+      "source_sha256": "bac3b448c3a3ef5310d327331b66c14704374f56e8a992997b69bc31997a8e70",
+      "prepared": "runs/20261004_math_review_guarded_CLASS_seventh_quad_B_diagnostics/self_review.py",
+      "prepared_sha256": "bac3b448c3a3ef5310d327331b66c14704374f56e8a992997b69bc31997a8e70"
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_CLASS_sixth_quad_A_diagnostics/run_diagnostics.py",
+      "source_sha256": "21d3c1584c115d84e6d21ea094e3755d8087d88076f19fa5489f3ad4aac74656",
+      "prepared": "runs/20261004_math_review_guarded_CLASS_seventh_quad_B_diagnostics/run_diagnostics.py",
+      "prepared_sha256": "21d3c1584c115d84e6d21ea094e3755d8087d88076f19fa5489f3ad4aac74656"
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_CLASS_sixth_quad_A_diagnostics/observe_runtime.py",
+      "source_sha256": "9f837ddfd65bffadb8f66c1e0b45d7e4dbd0d969f07f42659b64758dd4f99ddd",
+      "prepared": "runs/20261004_math_review_guarded_CLASS_seventh_quad_B_diagnostics/observe_runtime.py",
+      "prepared_sha256": "9f837ddfd65bffadb8f66c1e0b45d7e4dbd0d969f07f42659b64758dd4f99ddd"
+    }
+  ],
+  "first_attempt_session": 20975,
+  "first_attempt_exit_code": 2,
+  "reason": "predecessor quad-B directory contains no run_diagnostics.py; shared runner supplied from quad-A",
+  "first_attempt_performed_scientific_diagnostic": false,
+  "frozen_snapshot_preserved": true,
+  "snapshot_receipt_sha256": "d00e0eb04546d3fe60924132526634e94ab099da74b3c136065bdd2d321a16b3",
+  "gates_or_physical_targets_changed": false
+}

@@ -1,0 +1,12 @@
+{
+  "utc": "2026-10-05T03:35:29.106677+00:00",
+  "command": [
+    "/tmp/neutrino-math-review-venv/bin/python",
+    "runs/20261005_math_review_sigma_time_v3_prethreshold_workflow_controls/verify_native_rows.py",
+    "runs/20261005_math_review_sigma_time_v3_prethreshold_workflow_controls/sigma_time_v3_A4095_cap5"
+  ],
+  "actual_exit_code": 1,
+  "existing_positive_native_proof_unchanged": true,
+  "native_proof_sha256": "c553a4441ad126dcf7f6981521c0f3e16abf00c90b2d9358c1243ccc8c2c6712",
+  "scope": "Expected wrong-module refusal before native model evaluation; raw failure retained."
+}

@@ -1,0 +1,474 @@
+{
+  "utc": "2026-10-04T14:32:19.995523+00:00",
+  "CAMB_version": "2.0.4",
+  "Cobaya_version": "3.6.2",
+  "records": [
+    {
+      "lens": "A",
+      "transfer_cache_size": 1,
+      "initial": {
+        "omegabh2": 0.022699735,
+        "omegach2": 0.11515536,
+        "H0": 68.530016,
+        "logA": 3.0211807,
+        "ns": 1.0244569,
+        "tau": 0.060991682,
+        "mnu": 0.14275261
+      },
+      "intervening": {
+        "omegabh2": 0.022644474750838115,
+        "omegach2": 0.11374794171285806,
+        "H0": 68.39628664117006,
+        "logA": 3.0211807,
+        "ns": 1.0244569,
+        "tau": 0.04225403934985642,
+        "mnu": 0.171528381985736
+      },
+      "target": {
+        "omegabh2": 0.022699735,
+        "omegach2": 0.11515536,
+        "H0": 68.530016,
+        "logA": 3.0226339111165847,
+        "ns": 1.0208507570056111,
+        "tau": 0.060991682,
+        "mnu": 0.14275261
+      },
+      "returned_loglikes": [
+        -1284.0282602555424,
+        -5.281649578430443
+      ],
+      "fresh_loglikes": [
+        -1284.0280065153381,
+        -5.281649578430443
+      ],
+      "returned_logpriors": [
+        -2.1045919762829826
+      ],
+      "fresh_logpriors": [
+        -2.1045919762829826
+      ],
+      "cached_minus_fresh_chi2": [
+        0.0005074804084870266,
+        -0.0
+      ],
+      "spectra": {
+        "ell": {
+          "shape": [
+            3251
+          ],
+          "exactly_equal": true,
+          "nonidentical_entries": 0,
+          "max_absolute_difference": 0.0,
+          "before_sha256": "26d5e9a6be6612040b1609c9bed96a8304362bfe3d73cd534cc01a2afdb33e05",
+          "after_sha256": "26d5e9a6be6612040b1609c9bed96a8304362bfe3d73cd534cc01a2afdb33e05"
+        },
+        "tt": {
+          "shape": [
+            3251
+          ],
+          "exactly_equal": false,
+          "nonidentical_entries": 3249,
+          "max_absolute_difference": 0.004717357135518796,
+          "before_sha256": "fc8f20775726c6c61ae2449d606d2b2d47ca00296f294c034f2491230c7c21f6",
+          "after_sha256": "5d36a8f8f72db11f2bbc80c3908ddfeba3bce3e3d0f58ffc187067902dba878e"
+        },
+        "ee": {
+          "shape": [
+            3251
+          ],
+          "exactly_equal": false,
+          "nonidentical_entries": 3249,
+          "max_absolute_difference": 8.781803941815269e-07,
+          "before_sha256": "29b727b347d75a97f282c65b93ded7d302910a3ddd997698060a4cab1fb369d1",
+          "after_sha256": "ec4600bbc19f621aac9d9ce14b85c5500090a8cd9d2850389bc7b6f2279a21b6"
+        },
+        "bb": {
+          "shape": [
+            3251
+          ],
+          "exactly_equal": false,
+          "nonidentical_entries": 3249,
+          "max_absolute_difference": 2.3013159039866893e-07,
+          "before_sha256": "2e74658502bdd1225c0e0e52074c07ada408603a08cd320dc1fa2f9a12923d0b",
+          "after_sha256": "5042acbd183420742378263c2a89656128e45d4c1aed6a00d5f39c349663e9f0"
+        },
+        "te": {
+          "shape": [
+            3251
+          ],
+          "exactly_equal": false,
+          "nonidentical_entries": 3249,
+          "max_absolute_difference": 1.387479098446942e-05,
+          "before_sha256": "55e01cbc7382bbc3438046dbcb8e20d91808a0866470f10270df3bc1e5f880f4",
+          "after_sha256": "446b20c20c5e4367e133702d3f95c90f9b6e46f6cfa05afeeed9b1ec8c17283e"
+        },
+        "et": {
+          "shape": [
+            3251
+          ],
+          "exactly_equal": false,
+          "nonidentical_entries": 3249,
+          "max_absolute_difference": 1.387479098446942e-05,
+          "before_sha256": "55e01cbc7382bbc3438046dbcb8e20d91808a0866470f10270df3bc1e5f880f4",
+          "after_sha256": "446b20c20c5e4367e133702d3f95c90f9b6e46f6cfa05afeeed9b1ec8c17283e"
+        }
+      },
+      "spectrum_units": "CAMB get_Cl ell_factor=True defaults; CMB microkelvin squared",
+      "arrays": "native_spectra_2.0.4_A_cache1.npz",
+      "arrays_sha256": "9ee8b58fe0b01095c9530b4f275b9ddc8c7d14c52ef7a55b50ab8d73440d4c35",
+      "config_source": "runs/20261004_math_review_SPT_archived_solver_chain_preparation/seed1604/input.yaml",
+      "config_source_sha256": "54fdb5ddfc77b89d32f742980db2041f7c06d212480635158952ad1132f1ce4b"
+    },
+    {
+      "lens": "A",
+      "transfer_cache_size": 0,
+      "initial": {
+        "omegabh2": 0.022699735,
+        "omegach2": 0.11515536,
+        "H0": 68.530016,
+        "logA": 3.0211807,
+        "ns": 1.0244569,
+        "tau": 0.060991682,
+        "mnu": 0.14275261
+      },
+      "intervening": {
+        "omegabh2": 0.022644474750838115,
+        "omegach2": 0.11374794171285806,
+        "H0": 68.39628664117006,
+        "logA": 3.0211807,
+        "ns": 1.0244569,
+        "tau": 0.04225403934985642,
+        "mnu": 0.171528381985736
+      },
+      "target": {
+        "omegabh2": 0.022699735,
+        "omegach2": 0.11515536,
+        "H0": 68.530016,
+        "logA": 3.0226339111165847,
+        "ns": 1.0208507570056111,
+        "tau": 0.060991682,
+        "mnu": 0.14275261
+      },
+      "returned_loglikes": [
+        -1284.0280065153381,
+        -5.281649578430443
+      ],
+      "fresh_loglikes": [
+        -1284.0280065153381,
+        -5.281649578430443
+      ],
+      "returned_logpriors": [
+        -2.1045919762829826
+      ],
+      "fresh_logpriors": [
+        -2.1045919762829826
+      ],
+      "cached_minus_fresh_chi2": [
+        -0.0,
+        -0.0
+      ],
+      "spectra": {
+        "ell": {
+          "shape": [
+            3251
+          ],
+          "exactly_equal": true,
+          "nonidentical_entries": 0,
+          "max_absolute_difference": 0.0,
+          "before_sha256": "26d5e9a6be6612040b1609c9bed96a8304362bfe3d73cd534cc01a2afdb33e05",
+          "after_sha256": "26d5e9a6be6612040b1609c9bed96a8304362bfe3d73cd534cc01a2afdb33e05"
+        },
+        "tt": {
+          "shape": [
+            3251
+          ],
+          "exactly_equal": true,
+          "nonidentical_entries": 0,
+          "max_absolute_difference": 0.0,
+          "before_sha256": "5d36a8f8f72db11f2bbc80c3908ddfeba3bce3e3d0f58ffc187067902dba878e",
+          "after_sha256": "5d36a8f8f72db11f2bbc80c3908ddfeba3bce3e3d0f58ffc187067902dba878e"
+        },
+        "ee": {
+          "shape": [
+            3251
+          ],
+          "exactly_equal": true,
+          "nonidentical_entries": 0,
+          "max_absolute_difference": 0.0,
+          "before_sha256": "ec4600bbc19f621aac9d9ce14b85c5500090a8cd9d2850389bc7b6f2279a21b6",
+          "after_sha256": "ec4600bbc19f621aac9d9ce14b85c5500090a8cd9d2850389bc7b6f2279a21b6"
+        },
+        "bb": {
+          "shape": [
+            3251
+          ],
+          "exactly_equal": true,
+          "nonidentical_entries": 0,
+          "max_absolute_difference": 0.0,
+          "before_sha256": "5042acbd183420742378263c2a89656128e45d4c1aed6a00d5f39c349663e9f0",
+          "after_sha256": "5042acbd183420742378263c2a89656128e45d4c1aed6a00d5f39c349663e9f0"
+        },
+        "te": {
+          "shape": [
+            3251
+          ],
+          "exactly_equal": true,
+          "nonidentical_entries": 0,
+          "max_absolute_difference": 0.0,
+          "before_sha256": "446b20c20c5e4367e133702d3f95c90f9b6e46f6cfa05afeeed9b1ec8c17283e",
+          "after_sha256": "446b20c20c5e4367e133702d3f95c90f9b6e46f6cfa05afeeed9b1ec8c17283e"
+        },
+        "et": {
+          "shape": [
+            3251
+          ],
+          "exactly_equal": true,
+          "nonidentical_entries": 0,
+          "max_absolute_difference": 0.0,
+          "before_sha256": "446b20c20c5e4367e133702d3f95c90f9b6e46f6cfa05afeeed9b1ec8c17283e",
+          "after_sha256": "446b20c20c5e4367e133702d3f95c90f9b6e46f6cfa05afeeed9b1ec8c17283e"
+        }
+      },
+      "spectrum_units": "CAMB get_Cl ell_factor=True defaults; CMB microkelvin squared",
+      "arrays": "native_spectra_2.0.4_A_cache0.npz",
+      "arrays_sha256": "9b75ab088a98f361e86989c6da09ab46d0d131a283f4fb1074ebd4045879363e",
+      "config_source": "runs/20261004_math_review_SPT_archived_solver_chain_preparation/seed1604/input.yaml",
+      "config_source_sha256": "54fdb5ddfc77b89d32f742980db2041f7c06d212480635158952ad1132f1ce4b"
+    },
+    {
+      "lens": "B",
+      "transfer_cache_size": 1,
+      "initial": {
+        "omegabh2": 0.022235335,
+        "omegach2": 0.1160284,
+        "H0": 68.350928,
+        "logA": 3.0272667,
+        "ns": 0.96508102,
+        "tau": 0.045088023,
+        "mnu": 0.10874537
+      },
+      "intervening": {
+        "omegabh2": 0.022180074750838115,
+        "omegach2": 0.11462098171285805,
+        "H0": 68.21719864117004,
+        "logA": 3.0272667000000006,
+        "ns": 0.96508102,
+        "tau": 0.02635038034985642,
+        "mnu": 0.137521141985736
+      },
+      "target": {
+        "omegabh2": 0.022235334999999995,
+        "omegach2": 0.11602840000000002,
+        "H0": 68.350928,
+        "logA": 3.028719911116585,
+        "ns": 0.9614748770056112,
+        "tau": 0.045088023,
+        "mnu": 0.10874537000000001
+      },
+      "returned_loglikes": [
+        -693.471591299614,
+        -5.193937958348498
+      ],
+      "fresh_loglikes": [
+        -693.471591299614,
+        -5.193937958348498
+      ],
+      "returned_logpriors": [
+        -2.1045919762829826
+      ],
+      "fresh_logpriors": [
+        -2.1045919762829826
+      ],
+      "cached_minus_fresh_chi2": [
+        -0.0,
+        -0.0
+      ],
+      "spectra": {
+        "ell": {
+          "shape": [
+            4101
+          ],
+          "exactly_equal": true,
+          "nonidentical_entries": 0,
+          "max_absolute_difference": 0.0,
+          "before_sha256": "620ca0e4e3aa7bc2b5220199f28471600fe212b39194e2de7f381af580430c5e",
+          "after_sha256": "620ca0e4e3aa7bc2b5220199f28471600fe212b39194e2de7f381af580430c5e"
+        },
+        "tt": {
+          "shape": [
+            4101
+          ],
+          "exactly_equal": true,
+          "nonidentical_entries": 0,
+          "max_absolute_difference": 0.0,
+          "before_sha256": "45d0f52e20d7966432b323d8711f4d6652f1ecd0698bf576136f8997ff0ddb22",
+          "after_sha256": "45d0f52e20d7966432b323d8711f4d6652f1ecd0698bf576136f8997ff0ddb22"
+        },
+        "ee": {
+          "shape": [
+            4101
+          ],
+          "exactly_equal": true,
+          "nonidentical_entries": 0,
+          "max_absolute_difference": 0.0,
+          "before_sha256": "88b16e3185a46042e7f8cc25f15255c3996ab4eb09710a76098c65d953b9e034",
+          "after_sha256": "88b16e3185a46042e7f8cc25f15255c3996ab4eb09710a76098c65d953b9e034"
+        },
+        "bb": {
+          "shape": [
+            4101
+          ],
+          "exactly_equal": true,
+          "nonidentical_entries": 0,
+          "max_absolute_difference": 0.0,
+          "before_sha256": "15b3513d3b5c19eff2722f28335ca65fdef1fdbdda0f0c74a808cc86a40c69f6",
+          "after_sha256": "15b3513d3b5c19eff2722f28335ca65fdef1fdbdda0f0c74a808cc86a40c69f6"
+        },
+        "te": {
+          "shape": [
+            4101
+          ],
+          "exactly_equal": true,
+          "nonidentical_entries": 0,
+          "max_absolute_difference": 0.0,
+          "before_sha256": "0bb859754c72397002cb7ba4600dc326a9057f964abdacb90f0b7f2fb793fd70",
+          "after_sha256": "0bb859754c72397002cb7ba4600dc326a9057f964abdacb90f0b7f2fb793fd70"
+        },
+        "et": {
+          "shape": [
+            4101
+          ],
+          "exactly_equal": true,
+          "nonidentical_entries": 0,
+          "max_absolute_difference": 0.0,
+          "before_sha256": "0bb859754c72397002cb7ba4600dc326a9057f964abdacb90f0b7f2fb793fd70",
+          "after_sha256": "0bb859754c72397002cb7ba4600dc326a9057f964abdacb90f0b7f2fb793fd70"
+        }
+      },
+      "spectrum_units": "CAMB get_Cl ell_factor=True defaults; CMB microkelvin squared",
+      "arrays": "native_spectra_2.0.4_B_cache1.npz",
+      "arrays_sha256": "1275af79e8ed5de1661e323acccef235b6dbe65ce14d0fa2b099a510618faa56",
+      "config_source": "runs/20261004_math_review_SPT_archived_solver_chain_preparation/seed1608/input.yaml",
+      "config_source_sha256": "e375387ec82e617ed16819bb4affc198f8eae1b51b920f2ff24df8e90a07e574"
+    },
+    {
+      "lens": "B",
+      "transfer_cache_size": 0,
+      "initial": {
+        "omegabh2": 0.022235335,
+        "omegach2": 0.1160284,
+        "H0": 68.350928,
+        "logA": 3.0272667,
+        "ns": 0.96508102,
+        "tau": 0.045088023,
+        "mnu": 0.10874537
+      },
+      "intervening": {
+        "omegabh2": 0.022180074750838115,
+        "omegach2": 0.11462098171285805,
+        "H0": 68.21719864117004,
+        "logA": 3.0272667000000006,
+        "ns": 0.96508102,
+        "tau": 0.02635038034985642,
+        "mnu": 0.137521141985736
+      },
+      "target": {
+        "omegabh2": 0.022235334999999995,
+        "omegach2": 0.11602840000000002,
+        "H0": 68.350928,
+        "logA": 3.028719911116585,
+        "ns": 0.9614748770056112,
+        "tau": 0.045088023,
+        "mnu": 0.10874537000000001
+      },
+      "returned_loglikes": [
+        -693.471591299614,
+        -5.193937958348498
+      ],
+      "fresh_loglikes": [
+        -693.471591299614,
+        -5.193937958348498
+      ],
+      "returned_logpriors": [
+        -2.1045919762829826
+      ],
+      "fresh_logpriors": [
+        -2.1045919762829826
+      ],
+      "cached_minus_fresh_chi2": [
+        -0.0,
+        -0.0
+      ],
+      "spectra": {
+        "ell": {
+          "shape": [
+            4101
+          ],
+          "exactly_equal": true,
+          "nonidentical_entries": 0,
+          "max_absolute_difference": 0.0,
+          "before_sha256": "620ca0e4e3aa7bc2b5220199f28471600fe212b39194e2de7f381af580430c5e",
+          "after_sha256": "620ca0e4e3aa7bc2b5220199f28471600fe212b39194e2de7f381af580430c5e"
+        },
+        "tt": {
+          "shape": [
+            4101
+          ],
+          "exactly_equal": true,
+          "nonidentical_entries": 0,
+          "max_absolute_difference": 0.0,
+          "before_sha256": "45d0f52e20d7966432b323d8711f4d6652f1ecd0698bf576136f8997ff0ddb22",
+          "after_sha256": "45d0f52e20d7966432b323d8711f4d6652f1ecd0698bf576136f8997ff0ddb22"
+        },
+        "ee": {
+          "shape": [
+            4101
+          ],
+          "exactly_equal": true,
+          "nonidentical_entries": 0,
+          "max_absolute_difference": 0.0,
+          "before_sha256": "88b16e3185a46042e7f8cc25f15255c3996ab4eb09710a76098c65d953b9e034",
+          "after_sha256": "88b16e3185a46042e7f8cc25f15255c3996ab4eb09710a76098c65d953b9e034"
+        },
+        "bb": {
+          "shape": [
+            4101
+          ],
+          "exactly_equal": true,
+          "nonidentical_entries": 0,
+          "max_absolute_difference": 0.0,
+          "before_sha256": "15b3513d3b5c19eff2722f28335ca65fdef1fdbdda0f0c74a808cc86a40c69f6",
+          "after_sha256": "15b3513d3b5c19eff2722f28335ca65fdef1fdbdda0f0c74a808cc86a40c69f6"
+        },
+        "te": {
+          "shape": [
+            4101
+          ],
+          "exactly_equal": true,
+          "nonidentical_entries": 0,
+          "max_absolute_difference": 0.0,
+          "before_sha256": "0bb859754c72397002cb7ba4600dc326a9057f964abdacb90f0b7f2fb793fd70",
+          "after_sha256": "0bb859754c72397002cb7ba4600dc326a9057f964abdacb90f0b7f2fb793fd70"
+        },
+        "et": {
+          "shape": [
+            4101
+          ],
+          "exactly_equal": true,
+          "nonidentical_entries": 0,
+          "max_absolute_difference": 0.0,
+          "before_sha256": "0bb859754c72397002cb7ba4600dc326a9057f964abdacb90f0b7f2fb793fd70",
+          "after_sha256": "0bb859754c72397002cb7ba4600dc326a9057f964abdacb90f0b7f2fb793fd70"
+        }
+      },
+      "spectrum_units": "CAMB get_Cl ell_factor=True defaults; CMB microkelvin squared",
+      "arrays": "native_spectra_2.0.4_B_cache0.npz",
+      "arrays_sha256": "1275af79e8ed5de1661e323acccef235b6dbe65ce14d0fa2b099a510618faa56",
+      "config_source": "runs/20261004_math_review_SPT_archived_solver_chain_preparation/seed1608/input.yaml",
+      "config_source_sha256": "e375387ec82e617ed16819bb4affc198f8eae1b51b920f2ff24df8e90a07e574"
+    }
+  ],
+  "native_path": "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/camb/camblib.so",
+  "native_sha256": "306640a8948cd5246fc9b21e76525f6adebdff5ba3bc792a57d50bba67225ad5",
+  "scope": "selected two-model native spectrum isolation for both SPT targets; no production or inference changes"
+}

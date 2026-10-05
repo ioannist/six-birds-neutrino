@@ -1,0 +1,52 @@
+{
+  "utc": "2026-10-05T04:02:34.636004+00:00",
+  "reviewer": "distinct_self_review_not_independent_agent",
+  "closed_verification_roots": [
+    {
+      "root": "runs/20261005_math_review_sigma_time_v3_diagnostic_preparation",
+      "execution_receipt_sha256": "9bb76092adc0243f0a8e3b780cfd667143556d4acc2f32c64728f383f1500699"
+    },
+    {
+      "root": "runs/20261005_math_review_sigma_time_v3_prethreshold_workflow_controls",
+      "execution_receipt_sha256": "231c04b18d6584cc22d18abcf008460b842b9ce02d75653ebeee971f5af2709e"
+    },
+    {
+      "root": "runs/20261005_math_review_CLASS_fresh_recovery_preparation",
+      "execution_receipt_sha256": "e252d298078235d462baf6851065546245275255ab90fe98569dbb558dfa94dd"
+    },
+    {
+      "root": "runs/20261005_math_review_CLASS_fresh_recovery_activation",
+      "execution_receipt_sha256": "7e68d5caadc6ab6dac3c5a4a3be8ce3c67c76a7b410c36e59a88d395f4b1a3f7"
+    },
+    {
+      "root": "runs/20261005_math_review_registered66_checkpoint",
+      "execution_receipt_sha256": "6b7855983147ea8f1e080df070d934810595b3a4ed86018458950fb40c1df687"
+    },
+    {
+      "root": "runs/20261005_math_review_registered66_checkpoint_v2",
+      "execution_receipt_sha256": "3c8e6834958042c11f6dece71e624699444aa56820c953f2e44b12d20428ca05"
+    },
+    {
+      "root": "runs/20261005_math_review_fresh_CAMB_ninth_current_A4095_diagnostics_v2",
+      "execution_receipt_sha256": "c32481ea07e1e3615d1e27448ff5963faf3d33f09794df10e389256b254f8933"
+    },
+    {
+      "root": "runs/20261005_math_review_fresh_CAMB_ninth_current_B4095_diagnostics_v2",
+      "execution_receipt_sha256": "7183083f3489aafd75f1b63cc1a800bac8ceca5a6919a6639ba2aeca4992d689"
+    }
+  ],
+  "prior_checkpoint_artifact_hashes_preserved": true,
+  "candidate_control_native_rows": 48,
+  "recovery_first_saved_native_rows": 2,
+  "new_existing_CAMB_native_rows": 24,
+  "all_selected_native_component_errors": 0.0,
+  "registered_families": 66,
+  "live_at_observation": 60,
+  "terminal_registrations_retained": 6,
+  "all_new_production_CAMB_assessments_unqualified": true,
+  "old_and_new_CLASS_histories_not_pooled": true,
+  "paper_and_canonical_unchanged": true,
+  "math_and_Lean_unchanged": true,
+  "production_native_unchanged": true,
+  "posterior_or_uniform_accuracy_certified": false
+}

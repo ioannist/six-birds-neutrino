@@ -1,0 +1,26 @@
+{
+  "utc": "2026-10-05T09:08:35.508684+00:00",
+  "source": "runs/20261005_math_review_completion_audit/audit_completion.py",
+  "source_sha256": "e123a441577b3c5718f53f6add4b68088036bdfdb31930c27d97ff06de4aa1d7",
+  "changes": [
+    [
+      "244",
+      "245"
+    ],
+    [
+      "execution = read(repair / \"execution_receipt.json\")",
+      "execution = read(repair / \"final_execution_receipt.json\")"
+    ],
+    [
+      "review = read(repair / \"self_review_receipt.json\")",
+      "review = read(repair / \"final_self_review_receipt.json\")"
+    ],
+    [
+      "\"distinct_self_review_v2_direct_exit_code\"",
+      "\"distinct_self_review_final_direct_exit_code\""
+    ]
+  ],
+  "earlier_audit": "runs/20261005_math_review_completion_audit/completion_audit.json",
+  "earlier_audit_is_historical_source_snapshot": true,
+  "no_mathematical_hypothesis_or_review_requirement_removed": true
+}

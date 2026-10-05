@@ -1,0 +1,93 @@
+{
+  "utc": "2026-10-04T06:09:15.660689+00:00",
+  "scope": "closed_CDF_formula_of_actual_integral_derived_Gaussian_halfline_density",
+  "exact_formula": "Z = sigma * sqrt(2*pi) * standardNormalCDF(mu/sigma)",
+  "density_formula": "Ici(0).indicator(gaussianPDFReal(mu,sigma^2,x)/standardNormalCDF(mu/sigma))",
+  "premises": [
+    "real mean",
+    "positive standard deviation",
+    "Lebesgue halfline gate",
+    "constant prior for posterior interpretation"
+  ],
+  "construction": "reflection of actual Gaussian probability measure; actual PDF/kernel scaling; integration; equality to existing integral-derived density",
+  "new_theorems": 4,
+  "total_exported_theorems": 60,
+  "Lean_build": {
+    "session": 79621,
+    "exit_code": 0,
+    "artifact": "first_build_stdout.txt"
+  },
+  "formal_self_review": {
+    "first_session": 22853,
+    "first_exit_code": 1,
+    "first_error": "missing simplification of the totalized zero-width integral in an excluded-case control",
+    "final_session": 94343,
+    "final_exit_code": 0,
+    "examples": 9,
+    "independent_review": false
+  },
+  "math_check": {
+    "session": 58056,
+    "exit_code": 0,
+    "python_tests_passed": 88,
+    "Lean_exports": 60,
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "assumed_CDF_or_normalizer_identity": false,
+  "binary64_density_error_certificate": false,
+  "varying_prior_or_finite_upper_gate_covered": false,
+  "paper_modified": false,
+  "self_review": "checked reflection and mean sign, NNReal variance sigma^2, positive-sigma sqrt simplification, nonnegative real-integral conversion, inverse cancellation from positive scale, equality on and outside the physical gate, and excluded negative/zero widths",
+  "sources": [
+    {
+      "path": "lean/trunc_gauss_proof/TruncGaussProof/GaussianNormalization.lean",
+      "sha256": "479525ccc03b459b51c118a2793874268bc4ab12cb4f3216e9d1ee0c3a646486"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/TruncGaussProof.lean",
+      "sha256": "7ad69ddba27a52a5d0c19dc096e7cfd60aff6dacb2af5bf9eeeaae7ebf208c8b"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/AuditAxioms.lean",
+      "sha256": "1c3be2def6d1a03cb76846913327fc8099bcb411416caffdad2eb4d0d6376e2c"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "runs/20261004_math_review_gaussian_normalizer_cdf/GaussianNormalizationReview.lean",
+      "sha256": "312368368889da38f3e06fc4514fbedec02a82ceda27773e7c2e4e9a2634e4e0"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_normalizer_cdf/first_build_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_normalizer_cdf/first_build_stdout.txt",
+      "sha256": "23f26f126db2137879c759ff60fdb05d80b317477f5f3d4a830acbcf076104d4"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_normalizer_cdf/first_formal_review_stdout.txt",
+      "sha256": "5ec68320f7ff4429e6ae5732d3e92491375afda4097474f00230299846a702e4"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_normalizer_cdf/formal_review_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_normalizer_cdf/formal_review_stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_normalizer_cdf/math_check_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_normalizer_cdf/math_check_stdout.txt",
+      "sha256": "98da5d400b0ff0d251519d98338faf7037b698e64f4d1a87086255208fd19d07"
+    }
+  ]
+}

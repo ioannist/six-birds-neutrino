@@ -1,0 +1,183 @@
+{
+  "utc": "2026-10-04T08:07:12.459504+00:00",
+  "scope": "two_fixed_B_mass_coordinates_unit_transfer_multipole_grid",
+  "managed_exits": [
+    {
+      "variant": "unit_grid",
+      "session": 49215,
+      "exit_code": 0
+    }
+  ],
+  "native_mass_plus_0_01_responses": {
+    "grid3": 3.0801467536654794,
+    "unit_grid": 3.0796487084339272
+  },
+  "native_component_mass_responses": {
+    "grid3": {
+      "sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 2.6931916233877473,
+      "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": -0.020053204932414914,
+      "planck_2018_lowl.TT": 0.005147677606260004,
+      "planck_2018_lowl.EE_sroll2": 0.004858099909029079,
+      "planck_2018_highl_plik.TT_lite_native": 0.05548109229300735,
+      "planckpr4lensing.PlanckPR4Lensing": 0.3415214654018506
+    },
+    "unit_grid": {
+      "sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 2.692943418628147,
+      "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": -0.020053204932414914,
+      "planck_2018_lowl.TT": 0.005147674754311993,
+      "planck_2018_lowl.EE_sroll2": 0.004858099909029079,
+      "planck_2018_highl_plik.TT_lite_native": 0.05522162005338771,
+      "planckpr4lensing.PlanckPR4Lensing": 0.34153110002146647
+    }
+  },
+  "mass_response_changes": {
+    "unit_grid_minus_grid3": -0.0004980452315521688
+  },
+  "native_chi2_offsets_relative_to_grid3": {
+    "grid3": {
+      "quad_q50": 0.0,
+      "quad_q50_mass_plus": 0.0
+    },
+    "unit_grid": {
+      "quad_q50": 0.0012541376980870211,
+      "quad_q50_mass_plus": 0.0007560924665348523
+    }
+  },
+  "maximum_fractional_spectrum_changes_relative_to_grid3": {
+    "unit_grid": {
+      "quad_q50": {
+        "tt": 2.3440803473578024e-05,
+        "pp": 0.0002437432526428191,
+        "ee": 2.0995261169501764e-05
+      },
+      "quad_q50_mass_plus": {
+        "tt": 2.2477044405868934e-05,
+        "pp": 0.000163763203333281,
+        "ee": 2.2210532277871856e-05
+      }
+    }
+  },
+  "physical_likelihood_prior_and_dynamics_settings_unchanged": true,
+  "actual_geometry_transfer_grid_controls": [
+    {
+      "point": "quad_q50",
+      "native_geometry": {
+        "ra_rec": 13934.562029018132,
+        "conformal_age": 14216.476953831017,
+        "tau_rec": 281.91492481288446
+      },
+      "actual_geometry_transfer_list_probe": {
+        "logstep": 1,
+        "rescaling": 1,
+        "lmax": 6142,
+        "count": 6141,
+        "consecutive": true
+      },
+      "probe_lmax_is_representative_not_recorded_native_internal_lmax": true
+    },
+    {
+      "point": "quad_q50_mass_plus",
+      "native_geometry": {
+        "ra_rec": 13931.153879334133,
+        "conformal_age": 14213.067909033949,
+        "tau_rec": 281.9140296998051
+      },
+      "actual_geometry_transfer_list_probe": {
+        "logstep": 1,
+        "rescaling": 0.9999999999999992,
+        "lmax": 6142,
+        "count": 6141,
+        "consecutive": true
+      },
+      "probe_lmax_is_representative_not_recorded_native_internal_lmax": true
+    }
+  ],
+  "source_condition_checked_at_actual_geometries": true,
+  "all_other_numerical_errors_eliminated": false,
+  "grid3_anchor_reused_not_new_evaluation": true,
+  "convergence_rate_or_uniform_error_bound_certified": false,
+  "posterior_convergence_certified": false,
+  "paper_modified": false,
+  "files": [
+    {
+      "path": "runs/20261004_math_review_guarded_B_unit_multipole_grid/grid_build_calls.json",
+      "sha256": "67c8063243a3a2dc652fc7d2327c6b09d7fd9c835782cdb4fe59ff66cf42c6b0"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_B_unit_multipole_grid/grid_build_failed_C_mode.json",
+      "sha256": "aef67a8bb376b2ab45a319c5f146a1bba59cb8fcf62f11bf80bae9b96889308e"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_B_unit_multipole_grid/grid_build_failed_missing_common.json",
+      "sha256": "920a5a104f3f2b04bce797574bcb6463efd40b1d57b3790032732f161b24c61f"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_B_unit_multipole_grid/grid_probe.c",
+      "sha256": "a0c81e46cbf0bc4c84669f902335e6afb49d9d5827809db428214a3da8218f90"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_B_unit_multipole_grid/grid_source_verification.json",
+      "sha256": "11f6fb4e40605835783330d3d91f2fca73c556a0d6fcb934b875284dc9759cbe"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_B_unit_multipole_grid/launch_receipt.json",
+      "sha256": "33fe1d7845cd081a8ac8e9c29010e0ac80a221588651c3ec0896fe6505972ee5"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_B_unit_multipole_grid/prepare.py",
+      "sha256": "4e75a769bb9ad72966eb98a4255e01dcc29e31a59aeabccc3caf18aa7d2cc188"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_B_unit_multipole_grid/runner.py",
+      "sha256": "f846c78f5d347b2943e573e4e093572c1022a291f55957b5b8875fd96ec8266b"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_B_unit_multipole_grid/selection_receipt.json",
+      "sha256": "ce048e8fbea394a5bf143bc3880968a558f3ee033617432bf0fed23b69d746da"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_B_unit_multipole_grid/unit_grid/evaluation/metrics.json",
+      "sha256": "714187c2fd1ba2666cfb9af8e63f3fa317fbb2c18185428535e44d035d504f06"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_B_unit_multipole_grid/unit_grid/evaluation/progress.json",
+      "sha256": "da455cc2646691647b52a820fbe4885ce9acee7dec030b667887f8b02979988f"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_B_unit_multipole_grid/unit_grid/evaluation/quad_q50_mass_plus_spectra.npz",
+      "sha256": "c53686d2829291c000612598d684b7c988a6cefb4c5bd9d7b287adc0de612ae0"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_B_unit_multipole_grid/unit_grid/evaluation/quad_q50_spectra.npz",
+      "sha256": "b8b17bbca9de3504fb19b1be09264d186e52d3bbadd01551f75fd682bf706704"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_B_unit_multipole_grid/unit_grid/evaluation/runtime_state.json",
+      "sha256": "bff5032daad6709928aa3cfc8e8437d69684fcc150edfd364df0b095e92b37e8"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_B_unit_multipole_grid/unit_grid/input.yaml",
+      "sha256": "51859771f22b831e3bbe87c7b1900a9d4cc6d0c69daa3ccf27640e4d1e59a291"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_B_unit_multipole_grid/unit_grid/points.json",
+      "sha256": "5c706baad7bb8a1e0d30a789e2de8c4bbeb74f7f6a45867a3bc99695e0fedacc"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_B_unit_multipole_grid/unit_grid/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_B_unit_multipole_grid/unit_grid/stdout.txt",
+      "sha256": "167085c41fbb6081658209180654318d1e39b0d8cf7b6296255c350e2b12741f"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_B_unit_multipole_grid/verify_completed.py",
+      "sha256": "ed1a94335ef36a8db71fbbef5e4e217526bb8d221dd00ede488d045c97f0c0e2"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_B_unit_multipole_grid/verify_grid_source.py",
+      "sha256": "c91d30a0be03d9ca4eb2de7ee0ad335d89f29f75ae6e147c40fe428d90ef9a40"
+    }
+  ]
+}

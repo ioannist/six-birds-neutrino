@@ -1,0 +1,31 @@
+{
+  "utc": "2026-10-05T03:21:18.838232+00:00",
+  "activation_direct_exit_code": 0,
+  "first_row_workers": [
+    {
+      "group": "sigma_time_v3_A4095_cap5",
+      "managed_session": 63139,
+      "exit_code": 0
+    },
+    {
+      "group": "sigma_time_v3_A4095_cap20",
+      "managed_session": 86297,
+      "exit_code": 0
+    },
+    {
+      "group": "sigma_time_v3_B4095_cap5",
+      "managed_session": 49895,
+      "exit_code": 0
+    },
+    {
+      "group": "sigma_time_v3_B4095_cap20",
+      "managed_session": 77825,
+      "exit_code": 0
+    }
+  ],
+  "first_rows_self_review_receipt_produced": true,
+  "all_verification_workers_terminal": true,
+  "candidate_inference_workers_separately_live": true,
+  "posterior_qualified": false,
+  "production_adopted": false
+}

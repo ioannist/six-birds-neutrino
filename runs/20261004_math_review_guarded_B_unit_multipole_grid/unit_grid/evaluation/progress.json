@@ -1,0 +1,74 @@
+{
+  "quad_q50": {
+    "native_geometry": {
+      "ra_rec": 13934.562029018132,
+      "conformal_age": 14216.476953831017,
+      "tau_rec": 281.91492481288446
+    },
+    "angular_rescaling": 1.0,
+    "point": {
+      "omegabh2": 0.0222020335543916,
+      "omegach2": 0.11772862069101062,
+      "H0": 68.54868775438271,
+      "logA": 3.0341601688936954,
+      "ns": 0.9664391710998197,
+      "tau": 0.04852223927387122,
+      "mnu_sample": 0.02910542422698892,
+      "A_planck": 1.0038968574958045,
+      "TT_tSZ_Amp": 0.9960033361831536,
+      "TT_kSZ_Amp": 2.773372732700484
+    },
+    "native_chi2": {
+      "sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 1383.7300255860446,
+      "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 10.362793400314786,
+      "planck_2018_lowl.TT": 22.889160082444846,
+      "planck_2018_lowl.EE_sroll2": 392.035731363073,
+      "planck_2018_highl_plik.TT_lite_native": 68.15041659670398,
+      "planckpr4lensing.PlanckPR4Lensing": 9.135177133996429
+    },
+    "elapsed_seconds": 239.53536451095715,
+    "requested_spectrum_ell_max": {
+      "tt": 4095,
+      "te": 4095,
+      "bb": 4095,
+      "pp": 2500,
+      "ee": 4095
+    }
+  },
+  "quad_q50_mass_plus": {
+    "native_geometry": {
+      "ra_rec": 13931.153879334133,
+      "conformal_age": 14213.067909033949,
+      "tau_rec": 281.9140296998051
+    },
+    "angular_rescaling": 0.9999999999999992,
+    "point": {
+      "omegabh2": 0.0222020335543916,
+      "omegach2": 0.11772862069101062,
+      "H0": 68.54868775438271,
+      "logA": 3.0341601688936954,
+      "ns": 0.9664391710998197,
+      "tau": 0.04852223927387122,
+      "mnu_sample": 0.03910542422698892,
+      "A_planck": 1.0038968574958045,
+      "TT_tSZ_Amp": 0.9960033361831536,
+      "TT_kSZ_Amp": 2.773372732700484
+    },
+    "native_chi2": {
+      "sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 1386.4229690046727,
+      "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 10.34274019538237,
+      "planck_2018_lowl.TT": 22.894307757199158,
+      "planck_2018_lowl.EE_sroll2": 392.04058946298204,
+      "planck_2018_highl_plik.TT_lite_native": 68.20563821675736,
+      "planckpr4lensing.PlanckPR4Lensing": 9.476708234017895
+    },
+    "elapsed_seconds": 236.5579761452973,
+    "requested_spectrum_ell_max": {
+      "tt": 4095,
+      "te": 4095,
+      "bb": 4095,
+      "pp": 2500,
+      "ee": 4095
+    }
+  }
+}

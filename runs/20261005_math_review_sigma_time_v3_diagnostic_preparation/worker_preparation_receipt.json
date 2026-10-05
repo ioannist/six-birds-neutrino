@@ -1,0 +1,24 @@
+{
+  "utc": "2026-10-05T03:28:11.756557+00:00",
+  "source": "runs/20261004_math_review_fresh_CAMB_weighted_summary_diagnostic_preparation",
+  "source_contract_sha256": "dfc3372b273042de5bb94465bd70fc51c8a102b47bab65d2ef61fdca3ed738ed",
+  "source_helpers": {
+    "prepare_snapshot.py": "d9397740c609c3cb9ffcdce3c50a04fcb1fbb860c8dc3deea4773aad76b010b4",
+    "verify_native_rows.py": "9bcf1f1073ed098ef787e65510b859f61f510c0911b0071f6008cea26c79cca9",
+    "run_diagnostic.py": "ab760f7bde8806f0c82ed515e57278a5751a0842c9b9116df866d5421597b327",
+    "verify_snapshot.py": "f8d580e0f4222fd07e015266265761b6c7c789f66ef9f1bc7fa6a7e77098e1b9",
+    "contract_compatibility.py": "0185acd13c2c2b5fd3669a490e68eda69edb0d23e7960dd76c81c7771cc43ace"
+  },
+  "helper_changes": {
+    "verify_native_rows.py": [
+      [
+        "assert importlib.metadata.version('camb')==expected['solver_version']",
+        "assert camb.__version__==expected['solver_version']\nfrom email.parser import BytesParser\npkg_info_path=Path(camb.__file__).resolve().parent.parent/'PKG-INFO'\npkg_info=BytesParser().parsebytes(pkg_info_path.read_bytes())\nassert pkg_info['Name']=='camb' and pkg_info['Version']==expected['solver_version']\nsource_preparation=json.loads((ROOT/'runs/20261005_math_review_sigma_time_v3_packaged/source_preparation.json').read_text())\nmetadata_entry=next(e for e in source_preparation['files'] if e['path']=='camb-2.0.4/PKG-INFO')\nassert sha(pkg_info_path)==metadata_entry['prepared_sha256']==metadata_entry['original_sha256']\nassert sha(ROOT/expected['policy'])==expected['policy_sha256']\nassert sha(ROOT/expected['build_receipt'])==expected['build_receipt_sha256']"
+      ]
+    ]
+  },
+  "assessment_contract_sha256": "0e9e50a065b25a8726489765a4b5cabb726ab8b5934e998ace055dd05ce0927d",
+  "all_acceptance_gate_and_reader_fields_preserved": true,
+  "predecessor_target_contracts_not_inherited": true,
+  "four_separate_native_targets": true
+}

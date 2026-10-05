@@ -1,0 +1,41 @@
+{
+  "utc": "2026-10-04T19:00:27.675402+00:00",
+  "scripts": [
+    {
+      "source": "runs/20261004_math_review_guarded_CLASS_fifth_medium_A_diagnostics/prepare_snapshot.py",
+      "source_sha256": "fa4e5038d74ea3450914aacb11ecaeef69ca58b3d00bfb8be15effa3f63cc99e",
+      "prepared": "runs/20261004_math_review_guarded_CLASS_sixth_medium_A_diagnostics/prepare_snapshot.py",
+      "prepared_sha256": "90192e29aafd462d67abcf8d0ee0bd8a7897aa1e21ad18b819e79c01847c59f9",
+      "change": "predecessor and assessment ordinal"
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_CLASS_fifth_medium_A_diagnostics/verify_snapshot.py",
+      "source_sha256": "1f3cf49e8b9990683cc4c3060cf048b4fe4c0b050f9ed3020e1f3ab3f2c9e3ad",
+      "prepared": "runs/20261004_math_review_guarded_CLASS_sixth_medium_A_diagnostics/verify_snapshot.py",
+      "prepared_sha256": "1f3cf49e8b9990683cc4c3060cf048b4fe4c0b050f9ed3020e1f3ab3f2c9e3ad",
+      "change": "byte-identical"
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_CLASS_fifth_medium_A_diagnostics/self_review.py",
+      "source_sha256": "8bc93411d1154aeedf725334a9d74399b0051913db6f266b66316dbefaf4a3a3",
+      "prepared": "runs/20261004_math_review_guarded_CLASS_sixth_medium_A_diagnostics/self_review.py",
+      "prepared_sha256": "8bc93411d1154aeedf725334a9d74399b0051913db6f266b66316dbefaf4a3a3",
+      "change": "byte-identical"
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_CLASS_fifth_medium_A_diagnostics/observe_runtime.py",
+      "source_sha256": "9f837ddfd65bffadb8f66c1e0b45d7e4dbd0d969f07f42659b64758dd4f99ddd",
+      "prepared": "runs/20261004_math_review_guarded_CLASS_sixth_medium_A_diagnostics/observe_runtime.py",
+      "prepared_sha256": "9f837ddfd65bffadb8f66c1e0b45d7e4dbd0d969f07f42659b64758dd4f99ddd",
+      "change": "byte-identical"
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_CLASS_sixth_quad_A_diagnostics/run_diagnostics.py",
+      "source_sha256": "21d3c1584c115d84e6d21ea094e3755d8087d88076f19fa5489f3ad4aac74656",
+      "prepared": "runs/20261004_math_review_guarded_CLASS_sixth_medium_A_diagnostics/run_diagnostics.py",
+      "prepared_sha256": "21d3c1584c115d84e6d21ea094e3755d8087d88076f19fa5489f3ad4aac74656",
+      "change": "byte-identical"
+    }
+  ],
+  "all_sources_checked_before_copy": true
+}

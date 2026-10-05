@@ -1,0 +1,52 @@
+{
+  "utc": "2026-10-03T16:53:32.149363+00:00",
+  "scope": "prior_extractor_acceptance_of_declared_tempered_chain_and_repaired_refusal",
+  "source_git_before_repair": "a3df8ac",
+  "prior_extractor_source_sha256": "9eb88a17c94b11784bc347b1d9095c83b8f896a06710775f4baeee64c0b185b2",
+  "prior_extractor_return_code": 0,
+  "prior_extractor_heated_median": 1.1589509949163597,
+  "prior_extractor_heated_p95": 2.941958001073758,
+  "repaired_error": "Original-posterior summaries require sampler temperature=1; raw tempered chains require an explicit cooling workflow.",
+  "repaired_output_not_written": true,
+  "existing_24_chains_unit_temperature_metadata_verified": [
+    "runs/20261003_math_review_chain_A_seed301",
+    "runs/20261003_math_review_chain_A_seed302",
+    "runs/20261003_math_review_chain_B_seed305",
+    "runs/20261003_math_review_chain_B_seed306",
+    "runs/20261003_math_review_chain_A_seed303",
+    "runs/20261003_math_review_chain_A_seed304",
+    "runs/20261003_math_review_chain_B_seed307",
+    "runs/20261003_math_review_chain_B_seed308",
+    "runs/20261003_math_review_cmb_chain_A_seed502",
+    "runs/20261003_math_review_cmb_chain_A_seed501",
+    "runs/20261003_math_review_cmb_chain_B_seed506",
+    "runs/20261003_math_review_cmb_chain_B_seed505",
+    "runs/20261003_math_review_chain_A_seed402",
+    "runs/20261003_math_review_chain_A_seed401",
+    "runs/20261003_math_review_chain_B_seed404",
+    "runs/20261003_math_review_chain_B_seed403",
+    "runs/20261003_math_review_cmb_chain_A_seed503",
+    "runs/20261003_math_review_cmb_chain_A_seed504",
+    "runs/20261003_math_review_cmb_chain_B_seed507",
+    "runs/20261003_math_review_cmb_chain_B_seed508",
+    "runs/20261003_math_review_cmb_accuracy_chain_A_seed601",
+    "runs/20261003_math_review_cmb_accuracy_chain_A_seed602",
+    "runs/20261003_math_review_cmb_accuracy_chain_B_seed603",
+    "runs/20261003_math_review_cmb_accuracy_chain_B_seed604"
+  ],
+  "source_sha256": {
+    "src/sbt_spt_audit/mcmc.py": "e00c832f911a9233bce6c3ada930113affb436e52272bb704e47706c8df22898",
+    "scripts/diagnose_cobaya_chains.py": "c1ebcc96d77d40e6bd0a414cb61d09726d73dda91c5013bdd3d33316a9257872",
+    "scripts/extract_mnu_limits.py": "ca046e0972ee78992da3054ed81dcfb00a839bd34820db5f5375815caf19c395",
+    "scripts/compare_mnu_posteriors.py": "8d0ab6ddbb40997c1d4f8ceed77289f8d7cfdb44b358876609bf540603f7e24a",
+    "tests/test_math_repairs.py": "4513b9a0a1c67de99eb3d7cea3c391ef03dccd7b757a2b3b24fc7521b1b19193"
+  },
+  "analytic_half_normal_example": {
+    "original_p95": 1.959963984540054,
+    "heated_T2_p95": 2.771807648699356,
+    "ratio": 1.4142135623730951,
+    "mode_both": 0
+  },
+  "analytic_normalizer_mechanized": false,
+  "existing_posterior_convergence_certified": false
+}

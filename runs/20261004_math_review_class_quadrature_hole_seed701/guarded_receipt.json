@@ -1,0 +1,53 @@
+{
+  "utc": "2026-10-04T03:33:22.229462+00:00",
+  "backend": "guarded",
+  "arguments": {
+    "omega_b": 0.02291175022269673,
+    "omega_cdm": 0.11675153446806505,
+    "H0": 68.6264574770633,
+    "A_s": 2.0513564352353405e-09,
+    "n_s": 0.9856032089306187,
+    "tau_reio": 0.05245284343330284,
+    "m_ncdm": "0.019305144202575886,0.019305144202575886,0.019305144202575886",
+    "N_ncdm": 3,
+    "N_ur": 0.00641,
+    "tol_ncdm_bg": 1e-08,
+    "l_max_scalars": 4095,
+    "output": "tCl lCl pCl",
+    "non_linear": "hmcode",
+    "lensing": "yes"
+  },
+  "removed_later_precision_settings": {
+    "tol_perturbations_integration": 1e-06,
+    "perturbations_sampling_stepsize": 0.01,
+    "tol_ncdm_synchronous": 1e-06,
+    "tol_ncdm_newtonian": 1e-06,
+    "l_logstep": 1.026,
+    "l_linstep": 25
+  },
+  "source_arguments_sha256": "89b623f6591c1920e872b223fd2b1ee808f90dd2346c9c90ca7d3614bb52e257",
+  "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+  "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+  "omp_threads": "4",
+  "scope": "exact_second_failure_point_under_quadrature_only_precision",
+  "posterior_convergence_certified": false,
+  "uniform_numerical_accuracy_certified": false,
+  "compute_succeeded": true,
+  "spectra_sha256": "c1ee431c9d941978aff5b390dd3505383a148be35ca5112c1a558d2e2aba498f",
+  "thermodynamics_sha256": "a27beb4d3cc7747ad1063da529a761e96a0b77d718ce3667ae4aaa34eaac8a1d",
+  "thermodynamics_equal_guarded_seven_setting_control_exactly": {
+    "scale factor a": true,
+    "z": true,
+    "conf. time [Mpc]": true,
+    "x_e": true,
+    "kappa' [Mpc^-1]": true,
+    "exp(-kappa)": true,
+    "g [Mpc^-1]": true,
+    "Tb [K]": true,
+    "dTb [K]": true,
+    "w_b": true,
+    "c_b^2": true,
+    "kappa_b": true
+  },
+  "elapsed_seconds": 17.36093619512394
+}

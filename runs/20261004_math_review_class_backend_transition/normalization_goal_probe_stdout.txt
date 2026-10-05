@@ -1,0 +1,11 @@
+/home/repos/six-birds-neutrino/runs/20261004_math_review_class_backend_transition/normalization_goal_probe.lean:32:2: error: `simp` made no progress
+μ σ : ℝ
+hσ : 0 < σ
+hs : Function.support (unnorm μ σ) = Set.univ
+⊢ 0 < volume ((Function.support fun x => Real.exp (-((x - μ) ^ 2 / (2 * σ ^ 2)))) ∩ Set.Ici 0)
+/home/repos/six-birds-neutrino/runs/20261004_math_review_class_backend_transition/normalization_goal_probe.lean:43:4: error: `simp` made no progress
+case pos
+μ σ x : ℝ
+hσ : 0 < σ
+hx : 0 ≤ x
+⊢ 0 ≤ (Set.Ici 0).indicator (fun x => (truncatedNormalizer μ σ)⁻¹ * unnorm μ σ x) x

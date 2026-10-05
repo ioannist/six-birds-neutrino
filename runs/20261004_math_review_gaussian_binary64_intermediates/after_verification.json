@@ -1,0 +1,74 @@
+{
+  "utc": "2026-10-04T05:00:12.107567+00:00",
+  "phase": "after",
+  "source_sha256": "e80cd63bbf4f7e75f2d605d70d17c054c4044ea3ce3fe45bf9982e2af7d894f9",
+  "native_intermediate_mantissa_bits": 63,
+  "native_intermediate_max_exponent": 16384,
+  "records": [
+    {
+      "binary64_intermediate_emulation": false,
+      "first_mean_sign": 1.0,
+      "finite": true,
+      "mean_display": [
+        "1.7976931348623157e+308",
+        "1.3482698511467367e+308",
+        "0.0"
+      ],
+      "expected_from_exact_input_fractions": [
+        1.7976931348623157e+308,
+        1.3482698511467367e+308,
+        0.0
+      ],
+      "warnings": []
+    },
+    {
+      "binary64_intermediate_emulation": false,
+      "first_mean_sign": -1.0,
+      "finite": true,
+      "mean_display": [
+        "-1.7976931348623157e+308",
+        "-1.3482698511467367e+308",
+        "0.0"
+      ],
+      "expected_from_exact_input_fractions": [
+        -1.7976931348623157e+308,
+        -1.3482698511467367e+308,
+        0.0
+      ],
+      "warnings": []
+    },
+    {
+      "binary64_intermediate_emulation": true,
+      "first_mean_sign": 1.0,
+      "finite": true,
+      "mean_display": [
+        "1.7976931348623157e+308",
+        "1.3482698511467367e+308",
+        "0.0"
+      ],
+      "expected_from_exact_input_fractions": [
+        1.7976931348623157e+308,
+        1.3482698511467367e+308,
+        0.0
+      ],
+      "warnings": []
+    },
+    {
+      "binary64_intermediate_emulation": true,
+      "first_mean_sign": -1.0,
+      "finite": true,
+      "mean_display": [
+        "-1.7976931348623157e+308",
+        "-1.3482698511467367e+308",
+        "0.0"
+      ],
+      "expected_from_exact_input_fractions": [
+        -1.7976931348623157e+308,
+        -1.3482698511467367e+308,
+        0.0
+      ],
+      "warnings": []
+    }
+  ],
+  "scope": "finite_convex_mean_under_reduced_intermediate_range"
+}

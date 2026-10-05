@@ -1,0 +1,6 @@
+{
+  "failure": "Relative mkdir ran in Lean workdir, while redirected build output used repo runs path; shell redirection failed before lake started",
+  "exit_code": 1,
+  "Lean_command_started": false,
+  "repair": "Create artifact directory from repo cwd and retain absolute output paths"
+}

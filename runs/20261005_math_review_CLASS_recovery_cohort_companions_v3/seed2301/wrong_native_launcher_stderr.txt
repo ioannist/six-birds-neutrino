@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/home/repos/six-birds-neutrino/runs/20261005_math_review_CLASS_recovery_cohort_companions_v3/launch.py", line 36, in <module>
+    backend = launcher._validate_native_backend(cfg)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/repos/six-birds-neutrino/scripts/run_cobaya.py", line 133, in _validate_native_backend
+    backend = _validate_classy_backend(config)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/repos/six-birds-neutrino/scripts/run_cobaya.py", line 109, in _validate_classy_backend
+    raise ValueError(
+ValueError: CLASS native backend does not match the declared verified guarded build. Set PYTHONPATH to /mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend before launching, or declare and validate a new build. Loaded /tmp/neutrino-math-review-venv/lib/python3.12/site-packages/classy/_classy.cpython-312-x86_64-linux-gnu.so with SHA256 38255c7a5eb3f52c960a6fccf657e00874e93a52ec5987807443c33ce0c09c5a.

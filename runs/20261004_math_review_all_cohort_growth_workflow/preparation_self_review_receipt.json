@@ -1,0 +1,18 @@
+{
+  "utc": "2026-10-04T22:11:10.536779+00:00",
+  "review_type": "distinct self-review",
+  "source_runtime_observer": "runs/20261004_math_review_upper_prior_posterior_preparation/observe_all_runtime.py",
+  "source_runtime_observer_sha256": "8b14757f2f52de2c6e40a2fb41a80613f70e1949ac650ef33aa374ab8d47b714",
+  "source_runtime_execution_receipt": "runs/20261004_math_review_upper_prior_posterior_preparation/combined_runtime_self_review_receipt.json",
+  "source_watch_loop": "runs/20261004_math_review_wait_for_next_trigger_215323/watch_growth.py",
+  "source_watch_loop_sha256": "0cc27f926ec8fdece410306cc26388e22ee88af5574fc782a4532bba4f7b2745",
+  "destination_sha256": "bc3916e7c1facf6f7ab12f7797f715b9587773d58323b81bf5eb74737be0f885",
+  "all_48_observation_statements_and_return_payload_AST_identical": true,
+  "bounded_wait_loop_AST_identical": true,
+  "maximum_checks": 20,
+  "interval_seconds": 45,
+  "future_growth_cohorts": 12,
+  "watcher_executed_in_this_preparation": false,
+  "diagnostic_gates_changed": false,
+  "scope": "copy into a new root directly under runs before execution; original ten and wider-prior two cohorts share observation only, never posterior pooling"
+}

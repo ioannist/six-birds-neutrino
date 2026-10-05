@@ -1,0 +1,30 @@
+⚠ [7892/7894] Built TruncGaussProof.CovarianceLedger (11s)
+warning: TruncGaussProof/CovarianceLedger.lean:18:0: automatically included section variable(s) unused in theorem `TruncGaussProof.coordinateAllocation_sum`:
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TruncGaussProof/CovarianceLedger.lean:17:0: `coordinateAllocation_sum` has the hypothesis:
+  • [DecidableEq ι] (#3)
+which is not used in the remainder of the type.
+
+Consider removing this hypothesis and using `classical` in the proof instead. For terms, consider using `open scoped Classical in` at the term level (not the command level).
+
+Note: This linter can be disabled with `set_option linter.unusedDecidableInType false`
+warning: TruncGaussProof/CovarianceLedger.lean:47:0: `groupedQuadraticDifference_sum` has the hypothesis:
+  • [DecidableEq ι] (#4)
+which is not used in the remainder of the type.
+
+Consider removing this hypothesis and using `classical` in the proof instead. For terms, consider using `open scoped Classical in` at the term level (not the command level).
+
+Note: This linter can be disabled with `set_option linter.unusedDecidableInType false`
+warning: TruncGaussProof/CovarianceLedger.lean:57:0: `groupedQuadraticDifference_with_remainder` has the hypothesis:
+  • [DecidableEq ι] (#4)
+which is not used in the remainder of the type.
+
+Consider removing this hypothesis and using `classical` in the proof instead. For terms, consider using `open scoped Classical in` at the term level (not the command level).
+
+Note: This linter can be disabled with `set_option linter.unusedDecidableInType false`
+✔ [7893/7894] Built TruncGaussProof (10s)
+Build completed successfully (7894 jobs).

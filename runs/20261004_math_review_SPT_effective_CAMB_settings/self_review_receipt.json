@@ -1,0 +1,38 @@
+{
+  "utc": "2026-10-04T12:31:57.431052+00:00",
+  "review_type": "distinct_self_review_not_independent_review",
+  "exact_recomputations": {
+    "A": {
+      "exact_binary64_total_chi2_differences": {
+        "original_median": "-150283448739/2199023255552",
+        "original_p95": "-27133444557/549755813888",
+        "restoration_median": "-124785616527/2199023255552",
+        "restoration_p95": "48123227149/2199023255552",
+        "restoration_median_mass_plus_001": "-100702071693/2199023255552"
+      },
+      "exact_binary64_mass_response_change": "12041772417/1099511627776"
+    },
+    "B": {
+      "exact_binary64_total_chi2_differences": {
+        "original_median": "0",
+        "original_p95": "0",
+        "restoration_median": "0",
+        "restoration_p95": "0",
+        "restoration_median_mass_plus_001": "0"
+      },
+      "exact_binary64_mass_response_change": "0"
+    }
+  },
+  "prior_and_likelihood_definitions_match_within_target": true,
+  "sampled_tau_and_fixed_nuisance_defaults_distinguished": true,
+  "B_selected_native_likelihoods_and_supported_spectra_bit_identical": true,
+  "A_selected_native_target_changes_nonzero": true,
+  "original_CAMB_1p6p5_and_Cobaya_3p6p1_not_replayed": true,
+  "historical_lmax_inference_conditional_on_likelihood_support_and_negotiation": true,
+  "pointwise_controls_do_not_bound_posterior_quantile_change": true,
+  "original_chain_coordinates_unqualified_for_quantile_claims": true,
+  "material_revision_decisions_still_pending": true,
+  "no_posterior_gates_relaxed_or_native_sampler_changed": true,
+  "paper_and_canonical_results_unchanged": true,
+  "comparison_receipt_sha256": "cebd849ee18d5ddedb209e7d2e07a589fa1069555be129d39c2dbd14bf7e1607"
+}

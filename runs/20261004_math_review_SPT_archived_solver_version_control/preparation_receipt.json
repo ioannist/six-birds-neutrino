@@ -1,0 +1,45 @@
+{
+  "utc": "2026-10-04T12:34:16.323148+00:00",
+  "scope": "isolated_solver_package_version_control",
+  "sources": [
+    {
+      "path": "runs/20261004_math_review_SPT_effective_CAMB_settings/A/original_style/input.yaml",
+      "sha256": "11044f56d4f6878838b35a6b294d1fac614f3abfdfd36d7dd0e80e6f51b2c9fb",
+      "copy": "runs/20261004_math_review_SPT_archived_solver_version_control/A/original_style/input.yaml"
+    },
+    {
+      "path": "runs/20261004_math_review_SPT_effective_CAMB_settings/A/restoration_style/input.yaml",
+      "sha256": "589ad419d8d089328cb41853e18b67ce93a10101be85ea726b6708bce36ba631",
+      "copy": "runs/20261004_math_review_SPT_archived_solver_version_control/A/restoration_style/input.yaml"
+    },
+    {
+      "path": "runs/20261004_math_review_SPT_effective_CAMB_settings/A/points.json",
+      "sha256": "e4b9b2a6c0e4bee81e504838a814fb707b14781ed5d439e0356357fd0f41cd4f",
+      "copy": "runs/20261004_math_review_SPT_archived_solver_version_control/A/points.json"
+    },
+    {
+      "path": "runs/20261004_math_review_SPT_effective_CAMB_settings/B/original_style/input.yaml",
+      "sha256": "7825e251c97b1b8bb81a2f5e86acf99d27cad3dea9315821ffc4e89298651955",
+      "copy": "runs/20261004_math_review_SPT_archived_solver_version_control/B/original_style/input.yaml"
+    },
+    {
+      "path": "runs/20261004_math_review_SPT_effective_CAMB_settings/B/restoration_style/input.yaml",
+      "sha256": "21d2edd3f7d2be26742ad6100d515d9ba2ea5cfaf7af43c70f079a1f60e439c6",
+      "copy": "runs/20261004_math_review_SPT_archived_solver_version_control/B/restoration_style/input.yaml"
+    },
+    {
+      "path": "runs/20261004_math_review_SPT_effective_CAMB_settings/B/points.json",
+      "sha256": "86dbba62194afe130a599e2b2ad8c3ad420b4d30ba33c8e7960830998dfca17c",
+      "copy": "runs/20261004_math_review_SPT_archived_solver_version_control/B/points.json"
+    }
+  ],
+  "package_prefix": "/mnt/8tb/six-birds-ml/tmp/neutrino_spt_archived_solver_control_20261004/packages",
+  "target_versions": {
+    "camb": "1.6.5",
+    "cobaya": "3.6.1"
+  },
+  "current_adapter_and_likelihood_packages_used": true,
+  "original_Python_3p10_binary_environment_reconstructed": false,
+  "old_like_data_identity_certified": false,
+  "live_environment_or_samplers_modified": false
+}

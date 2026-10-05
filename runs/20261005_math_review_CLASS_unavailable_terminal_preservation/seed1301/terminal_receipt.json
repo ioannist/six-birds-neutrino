@@ -1,0 +1,134 @@
+{
+  "utc": "2026-10-05T03:16:11.200995+00:00",
+  "seed": 1301,
+  "registered_entry": {
+    "lens": "A",
+    "seed": 1301,
+    "parent_seed": 1101,
+    "pid": 313611,
+    "exec_session": 97709,
+    "run_dir": "runs/20261004_math_review_guarded_quad_chain_A_seed1301",
+    "native_module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+    "launch_receipt": "runs/20261004_math_review_class_backend_transition/launches/seed1301.json",
+    "status": "running_guarded_quad_selected_new_native_rows_exactly_verified"
+  },
+  "last_verified_live_identity": {
+    "seed": 1301,
+    "pid": 313611,
+    "process_start_ticks": 335535531,
+    "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_class_backend_transition/launch_guarded_replica.py 1301 ",
+    "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+    "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+    "status": "live_same_owned_native_identity",
+    "latest_progress": {
+      "utc": "2026-10-05 03:01:27",
+      "steps": 9025,
+      "accepted": 2758
+    },
+    "retained_represented_steps": 7205,
+    "group": null
+  },
+  "last_live_observation_receipt": "runs/20261005_math_review_sigma_time_v3_checkpoint/all_runtime_verification.json",
+  "last_live_observation_sha256": "9c2614064a8d9652f6619e40c9396d9badf8a18ea805fc3b1efe115027ceb376",
+  "identity_observation": {
+    "pid": 313611,
+    "expected_start_ticks": 335535531,
+    "status": "PID_not_present",
+    "original_identity_absent": true
+  },
+  "managed_handle": 97709,
+  "managed_handle_observation": "Unknown process id; handle unavailable",
+  "exit_code": null,
+  "exit_reason": null,
+  "native_failure_established": false,
+  "native_error_is_posterior_rejection": false,
+  "stderr_empty": true,
+  "success_summary_present": false,
+  "terminal_output_files": [
+    {
+      "source": "runs/20261004_math_review_guarded_quad_chain_A_seed1301/chains/math_guarded_quad_A_seed1301.1.txt",
+      "frozen": "runs/20261005_math_review_CLASS_unavailable_terminal_preservation/seed1301/outputs/chains/math_guarded_quad_A_seed1301.1.txt",
+      "bytes": 2007652,
+      "sha256": "4cbce9b1b248ec9c9135598ddc7386f80bc749084b9fcb409ef58f133bf1d1cc"
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_quad_chain_A_seed1301/chains/math_guarded_quad_A_seed1301.checkpoint",
+      "frozen": "runs/20261005_math_review_CLASS_unavailable_terminal_preservation/seed1301/outputs/chains/math_guarded_quad_A_seed1301.checkpoint",
+      "bytes": 143,
+      "sha256": "1b6fa44de433d9deb466dc33b16d5ce41a8053182ad554a571757eef1f0c1db9"
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_quad_chain_A_seed1301/chains/math_guarded_quad_A_seed1301.covmat",
+      "frozen": "runs/20261005_math_review_CLASS_unavailable_terminal_preservation/seed1301/outputs/chains/math_guarded_quad_A_seed1301.covmat",
+      "bytes": 2633,
+      "sha256": "4e69a221f62ab71d1bf6a22f1d75672c9d6686b016963450de762cd5dececc25"
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_quad_chain_A_seed1301/chains/math_guarded_quad_A_seed1301.input.yaml",
+      "frozen": "runs/20261005_math_review_CLASS_unavailable_terminal_preservation/seed1301/outputs/chains/math_guarded_quad_A_seed1301.input.yaml",
+      "bytes": 4220,
+      "sha256": "37b949883c08f1f72d41b2b72532fbdb6432060f0895dd2c1fcdcd15b73ba97b"
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_quad_chain_A_seed1301/chains/math_guarded_quad_A_seed1301.input.yaml.locked",
+      "frozen": "runs/20261005_math_review_CLASS_unavailable_terminal_preservation/seed1301/outputs/chains/math_guarded_quad_A_seed1301.input.yaml.locked",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_quad_chain_A_seed1301/chains/math_guarded_quad_A_seed1301.progress",
+      "frozen": "runs/20261005_math_review_CLASS_unavailable_terminal_preservation/seed1301/outputs/chains/math_guarded_quad_A_seed1301.progress",
+      "bytes": 1659,
+      "sha256": "eb9c018e96770c4a1315922a40e4b5f17615597d2e375597e8a5dceaa5bd7dc5"
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_quad_chain_A_seed1301/chains/math_guarded_quad_A_seed1301.updated.yaml",
+      "frozen": "runs/20261005_math_review_CLASS_unavailable_terminal_preservation/seed1301/outputs/chains/math_guarded_quad_A_seed1301.updated.yaml",
+      "bytes": 7096,
+      "sha256": "c39b631c932a910cda5d778994d51b7f5d15e374d2fb5718ecf32e4b8d750878"
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_quad_chain_A_seed1301/env.txt",
+      "frozen": "runs/20261005_math_review_CLASS_unavailable_terminal_preservation/seed1301/outputs/env.txt",
+      "bytes": 433,
+      "sha256": "537c45a0f68d6a729ff182055923bd7bfe6dccde048b43998b1721b12f4a462e"
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_quad_chain_A_seed1301/input.yaml",
+      "frozen": "runs/20261005_math_review_CLASS_unavailable_terminal_preservation/seed1301/outputs/input.yaml",
+      "bytes": 4163,
+      "sha256": "0001c468d6a7fc37fd58790a22bbae2e5c09d7f44ffcd6a7af1860fc0cf01947"
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_quad_chain_A_seed1301/resolved.yaml",
+      "frozen": "runs/20261005_math_review_CLASS_unavailable_terminal_preservation/seed1301/outputs/resolved.yaml",
+      "bytes": 4294,
+      "sha256": "571fe6a856543d3d9260f734058e1f69961a7d5e38c0d4e4d64f968c7a714e87"
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_quad_chain_A_seed1301/runtime_state.json",
+      "frozen": "runs/20261005_math_review_CLASS_unavailable_terminal_preservation/seed1301/outputs/runtime_state.json",
+      "bytes": 2078,
+      "sha256": "7ffbfb14363a9ea136725a71e2a3dcaac9a29b5bb791ee2f7974b050c8f1dfdb"
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_quad_chain_A_seed1301/stderr.txt",
+      "frozen": "runs/20261005_math_review_CLASS_unavailable_terminal_preservation/seed1301/outputs/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_quad_chain_A_seed1301/stdout.txt",
+      "frozen": "runs/20261005_math_review_CLASS_unavailable_terminal_preservation/seed1301/outputs/stdout.txt",
+      "bytes": 149937,
+      "sha256": "c789ce881470836c6df28d241bb128dae4496d600d5f2275f62205f59af1362d"
+    }
+  ],
+  "original_launch_receipt_sha256": "815d8c1c0cbca079af132edb0d3a8a8cb5ab10f30726dcfbe0dc1f8a6b7001b4",
+  "complete_saved_rows": 2772,
+  "retained_represented_steps": 7236,
+  "exact_resume_state_verified": false,
+  "sampler_restarted": false,
+  "posterior_qualified": false,
+  "scope": "Original process identity absent and managed handle unavailable. Preserve exact outputs; reason and final unsaved state unknown."
+}

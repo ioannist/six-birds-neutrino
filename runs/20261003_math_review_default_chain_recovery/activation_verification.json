@@ -1,0 +1,21 @@
+{
+  "utc": "2026-10-03T23:23:34.130350+00:00",
+  "scope": "two_same_target_restarts_owned_processes_and_preserved_prefixes",
+  "results": {
+    "503": {
+      "pid": 2031597,
+      "exec_session": 50401,
+      "resume_seed": 1003,
+      "historical_prefix_preserved": true,
+      "startup_log_sha256": "4527532f69ad37d626af9123d27e8f78b5dfcf9b401b1612ca481083d6db9a36"
+    },
+    "507": {
+      "pid": 2031614,
+      "exec_session": 56407,
+      "resume_seed": 1007,
+      "historical_prefix_preserved": true,
+      "startup_log_sha256": "bdf42e8bc5638ad1f1f85f60f700f98bd881804fecf8737c5c7f4ed710aa89f8"
+    }
+  },
+  "posterior_convergence_verified": false
+}

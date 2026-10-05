@@ -1,0 +1,184 @@
+{
+  "utc": "2026-10-04T05:48:03.347840+00:00",
+  "scope": "exact_Gaussian_offset_CDF_formula_and_strict_second_width_laws",
+  "construction": "Mathlib Gaussian offset measure of mean -d and variance s^2, affine transport derived from standard normal measure",
+  "CDF": "CDF of actual Mathlib standard normal probability measure; no assumed CDF identity",
+  "strictness": "derived from positive PDF on nonempty intervals",
+  "premises": [
+    "first and second Gaussian widths positive",
+    "offset standard deviation positive",
+    "fixed first width, mean, offset mean and offset noise during second-width comparison",
+    "positive first mean for strict antitone; negative first mean for strict monotone; zero mean gives constant probability"
+  ],
+  "new_theorems": 7,
+  "total_exported_theorems": 56,
+  "build_attempts": [
+    {
+      "session": 36737,
+      "exit_code": 1,
+      "artifact": "first_build_stdout.txt"
+    },
+    {
+      "session": 61821,
+      "exit_code": 1,
+      "artifact": "second_build_stdout.txt"
+    },
+    {
+      "session": 95650,
+      "exit_code": 1,
+      "artifact": "third_build_stdout.txt"
+    },
+    {
+      "session": 11012,
+      "exit_code": 1,
+      "artifact": "fourth_build_stdout.txt"
+    },
+    {
+      "session": 37940,
+      "exit_code": 0,
+      "artifact": "final_build_stdout.txt"
+    }
+  ],
+  "premature_checks_excluded": {
+    "review_session": 70757,
+    "review_exit_code": 1,
+    "axiom_session": 19399,
+    "axiom_exit_code": 1,
+    "reason": "new module had not built; old root module lacked the new exports"
+  },
+  "axiom_check": {
+    "session": 83021,
+    "exit_code": 0,
+    "theorems": 56,
+    "only_allowed_axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "formal_self_review": {
+    "first_success_session": 96051,
+    "first_success_exit_code": 0,
+    "linter_style_warnings_repaired": true,
+    "final_session": 44170,
+    "final_exit_code": 0,
+    "examples": 9,
+    "independent_review": false,
+    "exclusions_checked": [
+      "zero scale atom",
+      "negative scale inequality reversal",
+      "arbitrary atomic offset measure does not have strict width effect"
+    ]
+  },
+  "math_check": {
+    "session": 76591,
+    "exit_code": 0,
+    "python_tests_passed": 85,
+    "exported_Lean_theorems": 56
+  },
+  "binary64_CDF_strictness_asserted": false,
+  "cosmological_Gaussianity_asserted": false,
+  "integral_density_normalizer_closed_CDF_identity_proved_by_this_module": false,
+  "paper_modified": false,
+  "self_review": "checked measure is actual normalized Gaussian, affine law variance and offset sign, measurable halfline transport orientation, return to kernel-product boundary event, strict versus non-strict measure scope, positive-scale domain, fixed-law parameter dependence, and zero-mean equality",
+  "sources": [
+    {
+      "path": "lean/trunc_gauss_proof/TruncGaussProof/GaussianSweep.lean",
+      "sha256": "dfeb0920f48c290fd8325885e84edabce5b7f03b56a7e5beedc2b3ca046944e1"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/TruncGaussProof.lean",
+      "sha256": "0298394ebc78bfbc5568b954f7113ed0e443a61a15ebbac6d110e512f7409fbb"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/AuditAxioms.lean",
+      "sha256": "673c8286e17c2f6b5ac3f0f7e520f7e7f1d6123e899f61ac2b7286c3fab5da26"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "runs/20261004_math_review_gaussian_cdf_bridge/GaussianSweepReview.lean",
+      "sha256": "b8cbdcea22ddc81304c694943f2cbda80362d8f0dad2142a3af1777fdc64b521"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_cdf_bridge/axioms_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_cdf_bridge/axioms_stdout.txt",
+      "sha256": "4615a10f52bcde7ca46db37e07cf04a04efa7f22f7ff52fa585eaf0452b39d97"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_cdf_bridge/before_eta_GaussianSweep.lean",
+      "sha256": "c90344e43a800cf9654df9aaa5bf9dea0b6cd9ea50b32d66317d6c796855bb59"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_cdf_bridge/final_build_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_cdf_bridge/final_build_stdout.txt",
+      "sha256": "1b92a8821b3811ecc1c61efcee8d06b41793d1ca467672b2880179ccf4703185"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_cdf_bridge/first_build_stderr.txt",
+      "sha256": "c4a27db198c4d8632369ee6102944ef46e83c20d685f7c17a6aaff9cfcfc710f"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_cdf_bridge/first_build_stdout.txt",
+      "sha256": "4bd84c3505993d99d190d5f1d47a4e7c48aa89a082c3f0cb4bc8be61d767ceb4"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_cdf_bridge/first_formal_review_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_cdf_bridge/first_formal_review_stdout.txt",
+      "sha256": "c241d85dc247598f5756fb199b76d47ed0556913c60be7f811be932716afcbd5"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_cdf_bridge/first_successful_formal_review_stdout.txt",
+      "sha256": "49d16be0ef4fa0077cf84657803fb1dd4fdaefe310bce7b808594af5e55c212e"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_cdf_bridge/formal_review_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_cdf_bridge/formal_review_stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_cdf_bridge/fourth_build_stdout.txt",
+      "sha256": "1a0fc001a4e51af28ea6f9a295bf2d12d237690238c5feb5a5df64523816d1b2"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_cdf_bridge/math_check_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_cdf_bridge/math_check_stdout.txt",
+      "sha256": "40f4b9095972d758489b0058043c19fae4fa7063fc87dc46ae09d391f90c5439"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_cdf_bridge/premature_axioms_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_cdf_bridge/premature_axioms_stdout.txt",
+      "sha256": "d4f80c34af591e60cd2788756382c531e6950787b6232c26d748e85485cfba43"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_cdf_bridge/second_build_stderr.txt",
+      "sha256": "c4a27db198c4d8632369ee6102944ef46e83c20d685f7c17a6aaff9cfcfc710f"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_cdf_bridge/second_build_stdout.txt",
+      "sha256": "da198f8f534dc435a36941ef7f0c900d4becc064b602ebbbca4631743dac48f7"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_cdf_bridge/third_build_stdout.txt",
+      "sha256": "047bae3247eb789cc77b02ec52eddfeeb5f56a19082771fa5f5fdf3e7dc00b27"
+    }
+  ]
+}

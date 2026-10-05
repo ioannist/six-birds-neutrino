@@ -1,0 +1,72 @@
+{
+  "utc": "2026-10-03T17:38:22.473353+00:00",
+  "scope": "two_completed_selected_A_coordinates_B_reference_evaluations_pending",
+  "source_sha256": {
+    "progress": "de393d5d6d1d27e239abee8030f6915c94f60441743788cb93aac65f94cfcabf",
+    "medium": "941c6b7f3ec5a648312009088ddeca3afea6ffdbfab53c76968e2f7d8364d21c",
+    "default": "77e747593bb5092a1921883ce8239fceaedcbb288b63842572dd1f34aeedf889",
+    "selection": "7671de6f3aadd20e3ea1735a50cca0e4c01c6847194468341a7fc50d6ffbbf2d"
+  },
+  "baseline_native_components_equal_archived_medium": true,
+  "results": {
+    "chain_A_q50": {
+      "point": {
+        "omegabh2": 0.022648114624765424,
+        "omegach2": 0.11587145950464044,
+        "H0": 68.8584346146156,
+        "logA": 3.0231479778524024,
+        "ns": 0.986326664319135,
+        "tau": 0.05212601101074413,
+        "mnu_sample": 0.05163980377750983,
+        "A_planck": 0.9942760098725875,
+        "TT_tSZ_Amp": 1.8583602154051229,
+        "TT_kSZ_Amp": 9.351007267292484
+      },
+      "native_broader_minus_medium": {
+        "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": -6.871161835064754e-06,
+        "planck_2018_lowl.TT": 0.016952341868545773,
+        "planck_2018_lowl.EE_sroll2": 0.0008702893852614579,
+        "planck_2018_highl_plik.TT_lite_native": 0.4482171236765282,
+        "planckpr4lensing.PlanckPR4Lensing": -0.030690166687001863,
+        "lensA": -0.5575332263597375,
+        "lensB": 3.420657745187782
+      },
+      "own_joint_broader_minus_medium": -0.12219050927842545,
+      "own_joint_broader_minus_default": -0.5460528830817566,
+      "elapsed_seconds": 2900.6474569761194
+    },
+    "chain_A_q95": {
+      "point": {
+        "omegabh2": 0.022537026102842476,
+        "omegach2": 0.11521699101842202,
+        "H0": 68.44877008559163,
+        "logA": 3.067888290245068,
+        "ns": 0.9744025577145501,
+        "tau": 0.06715794758037337,
+        "mnu_sample": 0.10667516608105865,
+        "A_planck": 1.0052100995651925,
+        "TT_tSZ_Amp": 1.8910057124646937,
+        "TT_kSZ_Amp": 9.266003601465295
+      },
+      "native_broader_minus_medium": {
+        "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": -1.105329536876809e-05,
+        "planck_2018_lowl.TT": 0.02891080453611039,
+        "planck_2018_lowl.EE_sroll2": 0.0047710132093925495,
+        "planck_2018_highl_plik.TT_lite_native": 0.10023446163478411,
+        "planckpr4lensing.PlanckPR4Lensing": -0.05680467300636671,
+        "lensA": -0.27566916028945343,
+        "lensB": 3.717695709443433
+      },
+      "own_joint_broader_minus_medium": -0.1985686072112003,
+      "own_joint_broader_minus_default": -0.5517702317606563,
+      "elapsed_seconds": 2802.9882145631127
+    }
+  },
+  "A_tail_minus_median_numerical_correction_change": {
+    "medium": -0.07637809793277484,
+    "default": -0.005717348678899725
+  },
+  "interpretation": "All sampled coordinates vary between the two points; this does not identify a pure mass effect or a quantile bias.",
+  "posterior_accuracy_certified": false,
+  "posterior_convergence_certified": false
+}

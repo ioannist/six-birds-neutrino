@@ -1,0 +1,24 @@
+{
+  "configA": "/home/repos/six-birds-neutrino/runs/20261003_math_review_tau_prior_control_configs/audit_A.yaml",
+  "configB": "/home/repos/six-birds-neutrino/runs/20261003_math_review_tau_prior_control_configs/audit_B.yaml",
+  "sha256A": "267821be1b0f26d35385191cdafa2db8c9ebf64d765243778dd54cbbb69f0322",
+  "sha256B": "ee3c154f4f1d5511687e7f822c12328efcaa4f0a371ab66c34c21d2c488fa13c",
+  "runner_sha256": "b8d1e0f9174cfca451ebf87cb30479b28f8569878c45fa00760d2648299cf2bf",
+  "source_commit": "370956b272d9cf706aeae99a7ce8a382a7570392",
+  "working_tree_diff": "",
+  "arguments": {
+    "configA": "runs/20261003_math_review_tau_prior_control_configs/audit_A.yaml",
+    "configB": "runs/20261003_math_review_tau_prior_control_configs/audit_B.yaml",
+    "start_runA": null,
+    "start_runB": null,
+    "start_fitA": "runs/20261003_math_review_cosmological_cmb_desi_warm/lensA_fit_0.json",
+    "start_fitB": "runs/20261003_math_review_cosmological_cmb_desi_warm/lensB_fit_0.json",
+    "no_ref_start": true,
+    "outdir": "runs/20261003_math_review_cosmological_cmb_desi_tau_control",
+    "packages_path": "/home/repos/six-birds-neutrino/external/cobaya_packages",
+    "maxfun": 450,
+    "rhoend": 0.02,
+    "common_cuts": false,
+    "d1_support_cut": false
+  }
+}

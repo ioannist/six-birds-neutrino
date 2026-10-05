@@ -1,0 +1,723 @@
+{
+  "utc": "2026-10-04T02:43:25.787523+00:00",
+  "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+  "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+  "static_library_sha256": "507e733e57d89e76c90d5f00425e9d24fb64bfa96997416653b878df2b2a9904",
+  "source_files": [
+    {
+      "path": "CLASS_rename.py",
+      "original_sha256": "36989f3299c06db413c174867f0026a243d73836baf1e741413ff87693e41c7c",
+      "copied_sha256": "36989f3299c06db413c174867f0026a243d73836baf1e741413ff87693e41c7c"
+    },
+    {
+      "path": "__init__.py",
+      "original_sha256": "075a4b3a26e8ec2a4bd3425f29d20fb096040ee1258730976bf2350e4aaea316",
+      "copied_sha256": "075a4b3a26e8ec2a4bd3425f29d20fb096040ee1258730976bf2350e4aaea316"
+    },
+    {
+      "path": "Makefile",
+      "original_sha256": "7e9b743251f95f70732a4969528630fc19f701aef4f38c8baabb802920745c0e",
+      "copied_sha256": "7e9b743251f95f70732a4969528630fc19f701aef4f38c8baabb802920745c0e"
+    },
+    {
+      "path": "CPU.py",
+      "original_sha256": "334757b78a021286fb414be4f1af4650379e7a4268c1c39a99713f01b3460bc0",
+      "copied_sha256": "334757b78a021286fb414be4f1af4650379e7a4268c1c39a99713f01b3460bc0"
+    },
+    {
+      "path": "setup.py",
+      "original_sha256": "ed4a78c15a5de4cbff283b96083ca0aa1ad01e377a4ccab6d7ab44dbf90c2681",
+      "copied_sha256": "ed4a78c15a5de4cbff283b96083ca0aa1ad01e377a4ccab6d7ab44dbf90c2681"
+    },
+    {
+      "path": "include/sparse.h",
+      "original_sha256": "830c38ddea0268270c5c6e8d07631c4667b69e6904d7950816701c2e371c56f7",
+      "copied_sha256": "830c38ddea0268270c5c6e8d07631c4667b69e6904d7950816701c2e371c56f7"
+    },
+    {
+      "path": "include/thermodynamics.h",
+      "original_sha256": "22d1b81da1a6a63c08311f59d011f7c941b86b9900b412fc554ac17932ab772c",
+      "copied_sha256": "22d1b81da1a6a63c08311f59d011f7c941b86b9900b412fc554ac17932ab772c"
+    },
+    {
+      "path": "include/evolver_rkck.h",
+      "original_sha256": "9270f1cfa1d602dc4a19539263223fe86976db5c930b5c13eade824ac840a2ce",
+      "copied_sha256": "9270f1cfa1d602dc4a19539263223fe86976db5c930b5c13eade824ac840a2ce"
+    },
+    {
+      "path": "include/precisions.h",
+      "original_sha256": "cc943c2d08a94629c508c886ffb56d032eaeb01b5fd29b7fae20359e9d49266a",
+      "copied_sha256": "cc943c2d08a94629c508c886ffb56d032eaeb01b5fd29b7fae20359e9d49266a"
+    },
+    {
+      "path": "include/output.h",
+      "original_sha256": "4aad87146c14b808f8dcfca3dfc35549c96ebab0ba5df2aa5040abfe17699cbf",
+      "copied_sha256": "4aad87146c14b808f8dcfca3dfc35549c96ebab0ba5df2aa5040abfe17699cbf"
+    },
+    {
+      "path": "include/harmonic.h",
+      "original_sha256": "623487774620c3c68ee22888cd49524165b1e6df6881fdf035e3ab2286316f95",
+      "copied_sha256": "623487774620c3c68ee22888cd49524165b1e6df6881fdf035e3ab2286316f95"
+    },
+    {
+      "path": "include/background.h",
+      "original_sha256": "41de634f32fed7ce4af3386fe4eb67892bc6c37520b8c9a40155f6895e3bdb3c",
+      "copied_sha256": "41de634f32fed7ce4af3386fe4eb67892bc6c37520b8c9a40155f6895e3bdb3c"
+    },
+    {
+      "path": "include/hermite4_interpolation_csource.h",
+      "original_sha256": "0f7fa7d3f781749f517c048c53d55f0a70ad944bdced86d6e311bfdb6d48079a",
+      "copied_sha256": "0f7fa7d3f781749f517c048c53d55f0a70ad944bdced86d6e311bfdb6d48079a"
+    },
+    {
+      "path": "include/quadrature.h",
+      "original_sha256": "245f9025cc6049ea9c09ccd57faa28d2d970e05fe96093be1c54eccde97fd075",
+      "copied_sha256": "245f9025cc6049ea9c09ccd57faa28d2d970e05fe96093be1c54eccde97fd075"
+    },
+    {
+      "path": "include/macros_precision.h",
+      "original_sha256": "0af20fa61d60f1695cc521d1e34c374b3749c104f2933ebfa13c407a40487dd5",
+      "copied_sha256": "0af20fa61d60f1695cc521d1e34c374b3749c104f2933ebfa13c407a40487dd5"
+    },
+    {
+      "path": "include/growTable.h",
+      "original_sha256": "7f58701538838ff651289c99ec0fa1ea2b72afc72471b65b5878c460b5da47b9",
+      "copied_sha256": "7f58701538838ff651289c99ec0fa1ea2b72afc72471b65b5878c460b5da47b9"
+    },
+    {
+      "path": "include/hyperspherical.h",
+      "original_sha256": "5ae2993b1894ccbcfba83dcfd3ce523c0ed7d59be89ac071b08dfa9047afdcdd",
+      "copied_sha256": "5ae2993b1894ccbcfba83dcfd3ce523c0ed7d59be89ac071b08dfa9047afdcdd"
+    },
+    {
+      "path": "include/trigonometric_integrals.h",
+      "original_sha256": "221fbff5c2140ac3e7b8fda1c3cccc40e612f48d5ce8f66e759ebe96563e09a6",
+      "copied_sha256": "221fbff5c2140ac3e7b8fda1c3cccc40e612f48d5ce8f66e759ebe96563e09a6"
+    },
+    {
+      "path": "include/hermite3_interpolation_csource.h",
+      "original_sha256": "da5920f23387f97f6090d2d6fe2c9b073b90b7f6ff27d12e8ac6450f3e93ec43",
+      "copied_sha256": "da5920f23387f97f6090d2d6fe2c9b073b90b7f6ff27d12e8ac6450f3e93ec43"
+    },
+    {
+      "path": "include/perturbations.h",
+      "original_sha256": "02a723da1effbdb2b034939de66a91b258ed29008a8a713c759c939a48951ad2",
+      "copied_sha256": "02a723da1effbdb2b034939de66a91b258ed29008a8a713c759c939a48951ad2"
+    },
+    {
+      "path": "include/primordial.h",
+      "original_sha256": "a19196ebed71e5b660ef5c2aa731ebb140118f0b15e9b880ee32e5eb4a80a824",
+      "copied_sha256": "a19196ebed71e5b660ef5c2aa731ebb140118f0b15e9b880ee32e5eb4a80a824"
+    },
+    {
+      "path": "include/parser.h",
+      "original_sha256": "516140788aa33506d0b2bdefb0f78f064b4a90b74825f0b82a14ac89aab89ae8",
+      "copied_sha256": "516140788aa33506d0b2bdefb0f78f064b4a90b74825f0b82a14ac89aab89ae8"
+    },
+    {
+      "path": "include/svnversion.h",
+      "original_sha256": "6455940c5fe90b4786147482f2fcf8492b15e10f4b8f4139b9129145f0b728e8",
+      "copied_sha256": "6455940c5fe90b4786147482f2fcf8492b15e10f4b8f4139b9129145f0b728e8"
+    },
+    {
+      "path": "include/transfer.h",
+      "original_sha256": "a49ae996da1b83660b06e80c3758165d911108350e149499092c084de95d38e2",
+      "copied_sha256": "a49ae996da1b83660b06e80c3758165d911108350e149499092c084de95d38e2"
+    },
+    {
+      "path": "include/input.h",
+      "original_sha256": "162e50e7bc0b1450b024707c0c5e11b7591063f47f58234e2b440e9f3ea67ed9",
+      "copied_sha256": "162e50e7bc0b1450b024707c0c5e11b7591063f47f58234e2b440e9f3ea67ed9"
+    },
+    {
+      "path": "include/distortions.h",
+      "original_sha256": "1cb642fa6f58b3c6ea5d025f45bcaa3fae96780b8c75f0e9e6caeac006e4a04a",
+      "copied_sha256": "1cb642fa6f58b3c6ea5d025f45bcaa3fae96780b8c75f0e9e6caeac006e4a04a"
+    },
+    {
+      "path": "include/dei_rkck.h",
+      "original_sha256": "77c56981a3c7e26e57531bb56d6af38bb7468e5457cd195f70b95b8a497973b3",
+      "copied_sha256": "77c56981a3c7e26e57531bb56d6af38bb7468e5457cd195f70b95b8a497973b3"
+    },
+    {
+      "path": "include/parallel.h",
+      "original_sha256": "91635eeb3def08b110bfbbc3e3be92851129c5a2c46c69f16fed4ee8dcd2946e",
+      "copied_sha256": "91635eeb3def08b110bfbbc3e3be92851129c5a2c46c69f16fed4ee8dcd2946e"
+    },
+    {
+      "path": "include/common.h",
+      "original_sha256": "e375a3a7960956c73238e98a3e3ba0f078ab98d621f576e1c2f8e69294ede7bf",
+      "copied_sha256": "e375a3a7960956c73238e98a3e3ba0f078ab98d621f576e1c2f8e69294ede7bf"
+    },
+    {
+      "path": "include/lensing.h",
+      "original_sha256": "53b7baab5935c6bbfeb0cd10e6f0ab8c1c210895269c93777a742ea9c953e455",
+      "copied_sha256": "53b7baab5935c6bbfeb0cd10e6f0ab8c1c210895269c93777a742ea9c953e455"
+    },
+    {
+      "path": "include/hermite6_interpolation_csource.h",
+      "original_sha256": "f3462fe9c622e84c49a0e4a06c743cb2d38f5b9016023f74d4c1a1a9ee6830ff",
+      "copied_sha256": "f3462fe9c622e84c49a0e4a06c743cb2d38f5b9016023f74d4c1a1a9ee6830ff"
+    },
+    {
+      "path": "include/fourier.h",
+      "original_sha256": "ba680f4f51b337abeb8a10a844999dd03674c5cd5b027aad5332765e96c53f6e",
+      "copied_sha256": "ba680f4f51b337abeb8a10a844999dd03674c5cd5b027aad5332765e96c53f6e"
+    },
+    {
+      "path": "include/class.h",
+      "original_sha256": "d2848d216f673e28a14a5e145c0ab561962ffa38ec423e0f4d9b116843bb9edc",
+      "copied_sha256": "d2848d216f673e28a14a5e145c0ab561962ffa38ec423e0f4d9b116843bb9edc"
+    },
+    {
+      "path": "include/evolver_ndf15.h",
+      "original_sha256": "069846924e0593b8bcd98f0430edec3bcda50ad9f4b2355a393d54737d7b45d4",
+      "copied_sha256": "069846924e0593b8bcd98f0430edec3bcda50ad9f4b2355a393d54737d7b45d4"
+    },
+    {
+      "path": "include/arrays.h",
+      "original_sha256": "3d3f4a0a90e9ae6cc230a2428c464f10e0c2218d77f16694b091dbbdad02e56c",
+      "copied_sha256": "3d3f4a0a90e9ae6cc230a2428c464f10e0c2218d77f16694b091dbbdad02e56c"
+    },
+    {
+      "path": "source/background.c",
+      "original_sha256": "b6c4d46883ecfe9eb0a28964a62e9ca6e8cad7a9f035349d497578ffd8438efd",
+      "copied_sha256": "b6c4d46883ecfe9eb0a28964a62e9ca6e8cad7a9f035349d497578ffd8438efd"
+    },
+    {
+      "path": "source/output.c",
+      "original_sha256": "4267b47b92d70e0f8106398fb879cf55893a7231c033b61c02d30464040d620b",
+      "copied_sha256": "4267b47b92d70e0f8106398fb879cf55893a7231c033b61c02d30464040d620b"
+    },
+    {
+      "path": "source/fourier.c",
+      "original_sha256": "73546e7752cdb44a967b56cc064867ce1c0eff9b0e82e9839823f1cee974fda7",
+      "copied_sha256": "73546e7752cdb44a967b56cc064867ce1c0eff9b0e82e9839823f1cee974fda7"
+    },
+    {
+      "path": "source/primordial.c",
+      "original_sha256": "a7bfa8f7925a46058f77f98699f7facbe7557417d8be3962961d2ac7a21b3c6f",
+      "copied_sha256": "a7bfa8f7925a46058f77f98699f7facbe7557417d8be3962961d2ac7a21b3c6f"
+    },
+    {
+      "path": "source/perturbations.c",
+      "original_sha256": "07b9ab4e55ee3c26beed7af1cf57fb4e850c4c4cb041d84c67d3da7aed3f2e9a",
+      "copied_sha256": "07b9ab4e55ee3c26beed7af1cf57fb4e850c4c4cb041d84c67d3da7aed3f2e9a"
+    },
+    {
+      "path": "source/harmonic.c",
+      "original_sha256": "7ea9229f210b71498e23785af9b9a8669ed6147f7294da82da9f678a6dfb8762",
+      "copied_sha256": "7ea9229f210b71498e23785af9b9a8669ed6147f7294da82da9f678a6dfb8762"
+    },
+    {
+      "path": "source/input.c",
+      "original_sha256": "c5bead345df78eefa368de7d7f0585be0c8856ed58dbfbb61c1818f8041faa5e",
+      "copied_sha256": "c5bead345df78eefa368de7d7f0585be0c8856ed58dbfbb61c1818f8041faa5e"
+    },
+    {
+      "path": "source/thermodynamics.c",
+      "original_sha256": "fadf38eaa89aa46b77736a700a82b0a2842bd552533077556e8803d202a06d11",
+      "copied_sha256": "fadf38eaa89aa46b77736a700a82b0a2842bd552533077556e8803d202a06d11"
+    },
+    {
+      "path": "source/distortions.c",
+      "original_sha256": "e12f5c42fb7cc3da95eaa0c3fe9cb13232f4edd13a9c994fb77663341ebad554",
+      "copied_sha256": "e12f5c42fb7cc3da95eaa0c3fe9cb13232f4edd13a9c994fb77663341ebad554"
+    },
+    {
+      "path": "source/transfer.c",
+      "original_sha256": "97e9b9a662892fd827327b039ecde6be7b9c37bfddafc37b79853b8b053ae222",
+      "copied_sha256": "97e9b9a662892fd827327b039ecde6be7b9c37bfddafc37b79853b8b053ae222"
+    },
+    {
+      "path": "source/lensing.c",
+      "original_sha256": "6f11b0357aa47dbd97fc592b0d27c30b891d91a4b310aac828c5f4c885a0ed4c",
+      "copied_sha256": "6f11b0357aa47dbd97fc592b0d27c30b891d91a4b310aac828c5f4c885a0ed4c"
+    },
+    {
+      "path": "python/cclassy.pxd",
+      "original_sha256": "9d67bbbfa68da7f1d3ea8480a184130daac68d099fc6b56bffbd58c2fb71e62b",
+      "copied_sha256": "9d67bbbfa68da7f1d3ea8480a184130daac68d099fc6b56bffbd58c2fb71e62b"
+    },
+    {
+      "path": "python/test_class.py",
+      "original_sha256": "508833ccc619ad87def8ef3f5733ef9d412a46201642b8b89b31bc9506cb136c",
+      "copied_sha256": "508833ccc619ad87def8ef3f5733ef9d412a46201642b8b89b31bc9506cb136c"
+    },
+    {
+      "path": "python/extract_errors.py",
+      "original_sha256": "e7c9ff1f35e5b1a083227617bbea8a031d6100eac422a9246b3b911a93dc28f4",
+      "copied_sha256": "e7c9ff1f35e5b1a083227617bbea8a031d6100eac422a9246b3b911a93dc28f4"
+    },
+    {
+      "path": "python/README",
+      "original_sha256": "32ed6ef2c0e13ea46e98a3289d7407b51741c61ecc63f0362871528ef49acf05",
+      "copied_sha256": "32ed6ef2c0e13ea46e98a3289d7407b51741c61ecc63f0362871528ef49acf05"
+    },
+    {
+      "path": "python/classy.pyx",
+      "original_sha256": "953b425ef3120adc6bb20637b0ec0d8d541b7745c123d690998b2bed50634990",
+      "copied_sha256": "953b425ef3120adc6bb20637b0ec0d8d541b7745c123d690998b2bed50634990"
+    },
+    {
+      "path": "python/interface_generator.py",
+      "original_sha256": "f3645d7636da689d1c2dd9a30143631987fe2aae5274c60d0a52de99ae30ec19",
+      "copied_sha256": "f3645d7636da689d1c2dd9a30143631987fe2aae5274c60d0a52de99ae30ec19"
+    },
+    {
+      "path": "python/setup.py",
+      "original_sha256": "402e35d9cbfbd912b550410c1ea086fa1a2139b2ff4e8b55f11f215aaa03214c",
+      "copied_sha256": "402e35d9cbfbd912b550410c1ea086fa1a2139b2ff4e8b55f11f215aaa03214c"
+    },
+    {
+      "path": "main/class.c",
+      "original_sha256": "db8f17ec1984c574a6a33be963f5252501a5383962b52357b7795829bd0c8a3c",
+      "copied_sha256": "db8f17ec1984c574a6a33be963f5252501a5383962b52357b7795829bd0c8a3c"
+    },
+    {
+      "path": "tools/arrays.c",
+      "original_sha256": "1c5c1cc954a5b4c288f51a055b9aae6576f8ab3a1b083464e59a5c0432126ecd",
+      "copied_sha256": "1c5c1cc954a5b4c288f51a055b9aae6576f8ab3a1b083464e59a5c0432126ecd"
+    },
+    {
+      "path": "tools/growTable.c",
+      "original_sha256": "7b97a0111aad8065c2404d48a857823f2f9f2f257b6fcd234b25e6ecd769ad1c",
+      "copied_sha256": "7b97a0111aad8065c2404d48a857823f2f9f2f257b6fcd234b25e6ecd769ad1c"
+    },
+    {
+      "path": "tools/dei_rkck.c",
+      "original_sha256": "9bb6a199211454bc77ebb36ab722f367aba766a31477c3bd9d44d72da76cb84c",
+      "copied_sha256": "9bb6a199211454bc77ebb36ab722f367aba766a31477c3bd9d44d72da76cb84c"
+    },
+    {
+      "path": "tools/hermite4_interpolation_csource.h",
+      "original_sha256": "0f7fa7d3f781749f517c048c53d55f0a70ad944bdced86d6e311bfdb6d48079a",
+      "copied_sha256": "0f7fa7d3f781749f517c048c53d55f0a70ad944bdced86d6e311bfdb6d48079a"
+    },
+    {
+      "path": "tools/trigonometric_integrals.c",
+      "original_sha256": "3b194a8506a3048d4f9ce1bb67005b7e5e9f9e4120df008104be29592b370563",
+      "copied_sha256": "3b194a8506a3048d4f9ce1bb67005b7e5e9f9e4120df008104be29592b370563"
+    },
+    {
+      "path": "tools/parser.c",
+      "original_sha256": "1b7d6de748693bcaef3ab44bab06aaf5b16e8c352cb349d442a9dc8acec5f41d",
+      "copied_sha256": "1b7d6de748693bcaef3ab44bab06aaf5b16e8c352cb349d442a9dc8acec5f41d"
+    },
+    {
+      "path": "tools/hermite3_interpolation_csource.h",
+      "original_sha256": "da5920f23387f97f6090d2d6fe2c9b073b90b7f6ff27d12e8ac6450f3e93ec43",
+      "copied_sha256": "da5920f23387f97f6090d2d6fe2c9b073b90b7f6ff27d12e8ac6450f3e93ec43"
+    },
+    {
+      "path": "tools/common.c",
+      "original_sha256": "a5bc9a194f0e1add93c30498e9f25ad2a117d6a41852ac562a9e97f5ccb460fd",
+      "copied_sha256": "a5bc9a194f0e1add93c30498e9f25ad2a117d6a41852ac562a9e97f5ccb460fd"
+    },
+    {
+      "path": "tools/hyperspherical.c",
+      "original_sha256": "0ac42b5a8c4c63d5309863b2cf27fc0ffc6be43da7e0ea109d4e40525a3b1a84",
+      "copied_sha256": "0ac42b5a8c4c63d5309863b2cf27fc0ffc6be43da7e0ea109d4e40525a3b1a84"
+    },
+    {
+      "path": "tools/evolver_rkck.c",
+      "original_sha256": "8ce702831a486fc70fdf947b4dbd8343f00e760feb4bce0b45e278adb908d3a7",
+      "copied_sha256": "8ce702831a486fc70fdf947b4dbd8343f00e760feb4bce0b45e278adb908d3a7"
+    },
+    {
+      "path": "tools/sparse.c",
+      "original_sha256": "a5a72d6c2849bdbd5ebbd578c04d5a09ef095bba735c6072dad5558957003eb3",
+      "copied_sha256": "a5a72d6c2849bdbd5ebbd578c04d5a09ef095bba735c6072dad5558957003eb3"
+    },
+    {
+      "path": "tools/hermite6_interpolation_csource.h",
+      "original_sha256": "f3462fe9c622e84c49a0e4a06c743cb2d38f5b9016023f74d4c1a1a9ee6830ff",
+      "copied_sha256": "f3462fe9c622e84c49a0e4a06c743cb2d38f5b9016023f74d4c1a1a9ee6830ff"
+    },
+    {
+      "path": "tools/quadrature.c",
+      "original_sha256": "cc368b17b460f866f1594e366e842de6b63c2976fbd2bb25f8fc45e58b9d1e5c",
+      "copied_sha256": "cc368b17b460f866f1594e366e842de6b63c2976fbd2bb25f8fc45e58b9d1e5c"
+    },
+    {
+      "path": "tools/evolver_ndf15.c",
+      "original_sha256": "eaa907b6a785a2d29f194ba19e1a28f0c5f9938e59770695bd543aaecc4f1604",
+      "copied_sha256": "edd77feed5f2bcbe1784641523d9de3f4023ccefc8270dec79de65da9367e0ca"
+    },
+    {
+      "path": "external/.DS_Store",
+      "original_sha256": "036993dee19421bcc1c3370e8cbe2d0a895dc3a04d47a7ca3bf7c8b27d9a0c51",
+      "copied_sha256": "036993dee19421bcc1c3370e8cbe2d0a895dc3a04d47a7ca3bf7c8b27d9a0c51"
+    },
+    {
+      "path": "external/RecfastCLASS/wrap_recfast.h",
+      "original_sha256": "1e5609a3e5b1ddd8f7ad99df336311a9f769867e52f203e0cb6481b617e2de73",
+      "copied_sha256": "1e5609a3e5b1ddd8f7ad99df336311a9f769867e52f203e0cb6481b617e2de73"
+    },
+    {
+      "path": "external/RecfastCLASS/wrap_recfast.c",
+      "original_sha256": "e5ea80edd4652eb1a752cb4a2b835f4b74db91ca90248e5b5d04a8a3eada7cd5",
+      "copied_sha256": "e5ea80edd4652eb1a752cb4a2b835f4b74db91ca90248e5b5d04a8a3eada7cd5"
+    },
+    {
+      "path": "external/external_Pk/Pk_example_w_tensors.dat",
+      "original_sha256": "f30081c2d9d1e66918201e37ce615b46b9c2b3f47ae10f1b37544c94961608a8",
+      "copied_sha256": "f30081c2d9d1e66918201e37ce615b46b9c2b3f47ae10f1b37544c94961608a8"
+    },
+    {
+      "path": "external/external_Pk/generate_Pk_example_w_tensors.py",
+      "original_sha256": "0f8d3aab2f418b7015265d76a4c3d7686b7659bc049c0aa15320e54178e2efab",
+      "copied_sha256": "0f8d3aab2f418b7015265d76a4c3d7686b7659bc049c0aa15320e54178e2efab"
+    },
+    {
+      "path": "external/external_Pk/generate_Pk_example.py",
+      "original_sha256": "78e67176412a55249693facef853139592eceebaf8e93853efd5104036eb6649",
+      "copied_sha256": "78e67176412a55249693facef853139592eceebaf8e93853efd5104036eb6649"
+    },
+    {
+      "path": "external/external_Pk/README.md",
+      "original_sha256": "7f9a72324812c886e39098f8123d8c99d26aa6facacf3dfe54008fd9c9b8e251",
+      "copied_sha256": "7f9a72324812c886e39098f8123d8c99d26aa6facacf3dfe54008fd9c9b8e251"
+    },
+    {
+      "path": "external/external_Pk/Pk_example.dat",
+      "original_sha256": "938842a4ae7415b6d9b0281a4b8ed1e6adf780ec4c99ab5d01b8a686dc1ffdb7",
+      "copied_sha256": "938842a4ae7415b6d9b0281a4b8ed1e6adf780ec4c99ab5d01b8a686dc1ffdb7"
+    },
+    {
+      "path": "external/bbn/sBBN_2017_marcucci.dat",
+      "original_sha256": "c04cbaf2d87e657ca9a597d9d2eb35c23741971254aa21314f72b74660f761ea",
+      "copied_sha256": "c04cbaf2d87e657ca9a597d9d2eb35c23741971254aa21314f72b74660f761ea"
+    },
+    {
+      "path": "external/bbn/sBBN_2025_primat.dat",
+      "original_sha256": "ad71e863075374fb1f99161053a35db889047d0eb8efc8834b18b50277eaa01e",
+      "copied_sha256": "ad71e863075374fb1f99161053a35db889047d0eb8efc8834b18b50277eaa01e"
+    },
+    {
+      "path": "external/bbn/sBBN_2025.dat",
+      "original_sha256": "321b3adc1ffd711d67be1f5a56948191a1121bf1e4864aa0212c4aa556ee670e",
+      "copied_sha256": "321b3adc1ffd711d67be1f5a56948191a1121bf1e4864aa0212c4aa556ee670e"
+    },
+    {
+      "path": "external/bbn/sBBN_2017.dat",
+      "original_sha256": "b72607a3a2f9134130cb2c09c0140d4f68c5916962e83fc6740a664bd5b69ea5",
+      "copied_sha256": "b72607a3a2f9134130cb2c09c0140d4f68c5916962e83fc6740a664bd5b69ea5"
+    },
+    {
+      "path": "external/bbn/sBBN.dat",
+      "original_sha256": "1b002377d1218b070faf2d515ed1d5df712e7e83a5330291e07f0f42183a4078",
+      "copied_sha256": "1b002377d1218b070faf2d515ed1d5df712e7e83a5330291e07f0f42183a4078"
+    },
+    {
+      "path": "external/distortions/FIRAS_distortions_shapes.dat",
+      "original_sha256": "622da708dafd61a8a9104b2ede5bc6049cc8e7a287b740f3745e9c49af93c9d2",
+      "copied_sha256": "622da708dafd61a8a9104b2ede5bc6049cc8e7a287b740f3745e9c49af93c9d2"
+    },
+    {
+      "path": "external/distortions/Greens_data.dat",
+      "original_sha256": "03972c42a530315a768c973a45c343ee744a8d64da93493c9c68057f92327bed",
+      "copied_sha256": "03972c42a530315a768c973a45c343ee744a8d64da93493c9c68057f92327bed"
+    },
+    {
+      "path": "external/distortions/FIRAS_branching_ratios.dat",
+      "original_sha256": "966daa8fa99d7e15de6961f33e0fac8800ae5d64464c21d3526c52cd8fa42864",
+      "copied_sha256": "966daa8fa99d7e15de6961f33e0fac8800ae5d64464c21d3526c52cd8fa42864"
+    },
+    {
+      "path": "external/distortions/README",
+      "original_sha256": "260ed99eda528a37bc1719ee3e4f0d779399d015e9eb7cc23ac61431d9561396",
+      "copied_sha256": "260ed99eda528a37bc1719ee3e4f0d779399d015e9eb7cc23ac61431d9561396"
+    },
+    {
+      "path": "external/distortions/detectors_list.dat",
+      "original_sha256": "1086967c1799b9c9fe2320d0a9c6720727df0eb227527907ffa14e2aad141ef2",
+      "copied_sha256": "1086967c1799b9c9fe2320d0a9c6720727df0eb227527907ffa14e2aad141ef2"
+    },
+    {
+      "path": "external/distortions/PIXIE_distortions_shapes.dat",
+      "original_sha256": "0b393b4daa83914e0111718c2eb91b274d6a65d3266d8abbdd627439a2698480",
+      "copied_sha256": "0b393b4daa83914e0111718c2eb91b274d6a65d3266d8abbdd627439a2698480"
+    },
+    {
+      "path": "external/distortions/PIXIE_branching_ratios.dat",
+      "original_sha256": "f19f3295e0177a7674e5d5ffc073289246f2ae6c4db513188d062514d669799b",
+      "copied_sha256": "f19f3295e0177a7674e5d5ffc073289246f2ae6c4db513188d062514d669799b"
+    },
+    {
+      "path": "external/distortions/generate_PCA_files.py",
+      "original_sha256": "2e7164e122f4156cb4a62493b3bf828a5ea4ee78a7d27c1263d0609cc88057e9",
+      "copied_sha256": "2e7164e122f4156cb4a62493b3bf828a5ea4ee78a7d27c1263d0609cc88057e9"
+    },
+    {
+      "path": "external/distortions/FIRAS_nu_delta_I.dat",
+      "original_sha256": "92f583021393c543b512c038a9a829b766027ab18938a2b527a1d8fdac889aa7",
+      "copied_sha256": "92f583021393c543b512c038a9a829b766027ab18938a2b527a1d8fdac889aa7"
+    },
+    {
+      "path": "external/Halofit/halofit.h",
+      "original_sha256": "ed25cf8cc4ea6d51b4de06c1d95c6a9c94922e2a3e43a4c3845b25b2417ff52c",
+      "copied_sha256": "ed25cf8cc4ea6d51b4de06c1d95c6a9c94922e2a3e43a4c3845b25b2417ff52c"
+    },
+    {
+      "path": "external/Halofit/halofit.c",
+      "original_sha256": "cb3475220b6cc583516b76364816ca18ee37b355ee6fe0ea7e06d8e839d7d7de",
+      "copied_sha256": "cb3475220b6cc583516b76364816ca18ee37b355ee6fe0ea7e06d8e839d7d7de"
+    },
+    {
+      "path": "external/HMcode/hmcode.h",
+      "original_sha256": "38bd862e2b18ee63c86943cc9066cceeee04c9156cf1020cb4453d3cb433fc21",
+      "copied_sha256": "38bd862e2b18ee63c86943cc9066cceeee04c9156cf1020cb4453d3cb433fc21"
+    },
+    {
+      "path": "external/HMcode/hmcode.c",
+      "original_sha256": "2eb8b59b35db995c093f000dd9cf5c8b6dc06de80570c9b0dee4ad7af8b77162",
+      "copied_sha256": "2eb8b59b35db995c093f000dd9cf5c8b6dc06de80570c9b0dee4ad7af8b77162"
+    },
+    {
+      "path": "external/heating/noninjection.h",
+      "original_sha256": "4c33b9504ecba728f323bf8a1b6bd09e319848c434de55cfcfd638f69a19adee",
+      "copied_sha256": "4c33b9504ecba728f323bf8a1b6bd09e319848c434de55cfcfd638f69a19adee"
+    },
+    {
+      "path": "external/heating/example_chix_file.dat",
+      "original_sha256": "ae08c14800ed313d094e89fd03fa456e2816b2497d2cdb7e46c39368d47878e9",
+      "copied_sha256": "ae08c14800ed313d094e89fd03fa456e2816b2497d2cdb7e46c39368d47878e9"
+    },
+    {
+      "path": "external/heating/example_f_eff_file.dat",
+      "original_sha256": "cd02d16f94975388c0eede1ec379780bec949f041b12b4777f2ed19c2d48b394",
+      "copied_sha256": "cd02d16f94975388c0eede1ec379780bec949f041b12b4777f2ed19c2d48b394"
+    },
+    {
+      "path": "external/heating/example_chiz_file.dat",
+      "original_sha256": "cdf5f32cc329d1f571ffb169b692a6990e7b216a5116e0766b73b4754fdcde00",
+      "copied_sha256": "cdf5f32cc329d1f571ffb169b692a6990e7b216a5116e0766b73b4754fdcde00"
+    },
+    {
+      "path": "external/heating/injection.h",
+      "original_sha256": "5e20554b838f887971ef0f4c5e62a7eb6cdd97c7f5ce77849ca656ea0fe292f9",
+      "copied_sha256": "5e20554b838f887971ef0f4c5e62a7eb6cdd97c7f5ce77849ca656ea0fe292f9"
+    },
+    {
+      "path": "external/heating/README",
+      "original_sha256": "ae43de1c03fa959692bb41954b498b88c10976a4905e9dd4de7ae98bccfd78cb",
+      "copied_sha256": "ae43de1c03fa959692bb41954b498b88c10976a4905e9dd4de7ae98bccfd78cb"
+    },
+    {
+      "path": "external/heating/noninjection.c",
+      "original_sha256": "32175a70c82bc7194703696ae320f60a53e102c71c395b312daa755d88b8933f",
+      "copied_sha256": "32175a70c82bc7194703696ae320f60a53e102c71c395b312daa755d88b8933f"
+    },
+    {
+      "path": "external/heating/injection.c",
+      "original_sha256": "9ae09ce5b3f5f32aae0534c498b63c2b7f0bcfee2640ba5cd3304cc41dd603a5",
+      "copied_sha256": "9ae09ce5b3f5f32aae0534c498b63c2b7f0bcfee2640ba5cd3304cc41dd603a5"
+    },
+    {
+      "path": "external/heating/Galli_et_al_2013.dat",
+      "original_sha256": "8bc1a12eb0d81df187839a14d5b1e92d32c3175e3066e47683cd3ce1fe218577",
+      "copied_sha256": "8bc1a12eb0d81df187839a14d5b1e92d32c3175e3066e47683cd3ce1fe218577"
+    },
+    {
+      "path": "external/HyRec2020/hyrectools.c",
+      "original_sha256": "868a4f5104e90c18b84948843cb2090b22732e54d88b5f658323a38394275ce4",
+      "copied_sha256": "868a4f5104e90c18b84948843cb2090b22732e54d88b5f658323a38394275ce4"
+    },
+    {
+      "path": "external/HyRec2020/Alpha_inf.dat",
+      "original_sha256": "357101049c9382e90e5e1e896961407d3b465b61b78de9750b852c05ea4d1023",
+      "copied_sha256": "357101049c9382e90e5e1e896961407d3b465b61b78de9750b852c05ea4d1023"
+    },
+    {
+      "path": "external/HyRec2020/hydrogen.c",
+      "original_sha256": "734800ccd69b41d60b519f200003ce27c3b7640f76a70353499424842ba19616",
+      "copied_sha256": "734800ccd69b41d60b519f200003ce27c3b7640f76a70353499424842ba19616"
+    },
+    {
+      "path": "external/HyRec2020/two_photon_tables.dat",
+      "original_sha256": "93d23871e21c40f5b72a6ef9acf3eb7be054735c8aee9401e455736c1d9d8cf9",
+      "copied_sha256": "93d23871e21c40f5b72a6ef9acf3eb7be054735c8aee9401e455736c1d9d8cf9"
+    },
+    {
+      "path": "external/HyRec2020/hyrec.c",
+      "original_sha256": "a00281f0fc5828a8a60c7fa53bd28c04f41298c990ee31dcd72c302b5da278c1",
+      "copied_sha256": "a00281f0fc5828a8a60c7fa53bd28c04f41298c990ee31dcd72c302b5da278c1"
+    },
+    {
+      "path": "external/HyRec2020/output_xe.dat",
+      "original_sha256": "1ac2ddad6aa0e3c4080883c71479e2e398669468e4813075ec61bca86b7afc40",
+      "copied_sha256": "1ac2ddad6aa0e3c4080883c71479e2e398669468e4813075ec61bca86b7afc40"
+    },
+    {
+      "path": "external/HyRec2020/readme.pdf",
+      "original_sha256": "401f00e319fe9d6f2901464aa31d71ab03a6e249e33661e9bc8a3450380c75de",
+      "copied_sha256": "401f00e319fe9d6f2901464aa31d71ab03a6e249e33661e9bc8a3450380c75de"
+    },
+    {
+      "path": "external/HyRec2020/history.h",
+      "original_sha256": "b1331aed246610d2b1d598f8bedfa951974da0d2845b5c8f3d672bf33bf316f1",
+      "copied_sha256": "b1331aed246610d2b1d598f8bedfa951974da0d2845b5c8f3d672bf33bf316f1"
+    },
+    {
+      "path": "external/HyRec2020/hydrogen.h",
+      "original_sha256": "1b2c64d108078722dd546f4e8b9bddca2cbe6abdf4b63e44e76fe0e9d58f4e52",
+      "copied_sha256": "1b2c64d108078722dd546f4e8b9bddca2cbe6abdf4b63e44e76fe0e9d58f4e52"
+    },
+    {
+      "path": "external/HyRec2020/history.c",
+      "original_sha256": "14d11b3663fcebd5a4072969237f4041549adb4449ddef875f3ca4caff948fe4",
+      "copied_sha256": "14d11b3663fcebd5a4072969237f4041549adb4449ddef875f3ca4caff948fe4"
+    },
+    {
+      "path": "external/HyRec2020/helium.c",
+      "original_sha256": "cc113cdc4b2d4ffa0762ab82d5485816bbbb3bbf63cd3441be5206c4c3bf6587",
+      "copied_sha256": "cc113cdc4b2d4ffa0762ab82d5485816bbbb3bbf63cd3441be5206c4c3bf6587"
+    },
+    {
+      "path": "external/HyRec2020/input.dat",
+      "original_sha256": "6353f6586d3cbbdff7579f1c7b9771bb68737a6bf66c8621b29a887dabd7c7f7",
+      "copied_sha256": "6353f6586d3cbbdff7579f1c7b9771bb68737a6bf66c8621b29a887dabd7c7f7"
+    },
+    {
+      "path": "external/HyRec2020/R_inf.dat",
+      "original_sha256": "ce914f4b552ba55ba00f7916f36b0986f19adfdb638e5aefae91f7b2d05a8112",
+      "copied_sha256": "ce914f4b552ba55ba00f7916f36b0986f19adfdb638e5aefae91f7b2d05a8112"
+    },
+    {
+      "path": "external/HyRec2020/README.md",
+      "original_sha256": "96449f75558ae6a42a6f739bcc96fece761b591dfd182f5103a6fcf7d273fb21",
+      "copied_sha256": "96449f75558ae6a42a6f739bcc96fece761b591dfd182f5103a6fcf7d273fb21"
+    },
+    {
+      "path": "external/HyRec2020/fit_swift.dat",
+      "original_sha256": "46a644d7d2633b8f13080f9062df9b72a2e5adfa956d70d32ad1d7f4ec0a4641",
+      "copied_sha256": "46a644d7d2633b8f13080f9062df9b72a2e5adfa956d70d32ad1d7f4ec0a4641"
+    },
+    {
+      "path": "external/HyRec2020/energy_injection.c",
+      "original_sha256": "3c72ef3b47e055e62e37ebb9c698bcfbde8f9507e960cd2d6492a321fd6274c4",
+      "copied_sha256": "3c72ef3b47e055e62e37ebb9c698bcfbde8f9507e960cd2d6492a321fd6274c4"
+    },
+    {
+      "path": "external/HyRec2020/hyrectools.h",
+      "original_sha256": "00e71fdbaef4831f41822e00750a24e03c9954175b6a9680c67fb0ffc1be5715",
+      "copied_sha256": "00e71fdbaef4831f41822e00750a24e03c9954175b6a9680c67fb0ffc1be5715"
+    },
+    {
+      "path": "external/HyRec2020/wrap_hyrec.h",
+      "original_sha256": "28545143910923951eda7a4d3ab7e67e5b4f658c6215bb1c167df4ef724c3f93",
+      "copied_sha256": "28545143910923951eda7a4d3ab7e67e5b4f658c6215bb1c167df4ef724c3f93"
+    },
+    {
+      "path": "external/HyRec2020/two_photon_tables_hires.dat",
+      "original_sha256": "db201c729a38c7919172cf080c8ba44cdf8e6b131a6eaa8adcbc9e58fd4d0c93",
+      "copied_sha256": "db201c729a38c7919172cf080c8ba44cdf8e6b131a6eaa8adcbc9e58fd4d0c93"
+    },
+    {
+      "path": "external/HyRec2020/energy_injection.h",
+      "original_sha256": "e2f0603b2bfe730814bdd57d46eff9f53d8bb1e10315524b395aa4dde97de2ea",
+      "copied_sha256": "e2f0603b2bfe730814bdd57d46eff9f53d8bb1e10315524b395aa4dde97de2ea"
+    },
+    {
+      "path": "external/HyRec2020/wrap_hyrec.c",
+      "original_sha256": "e4785eb62b51835839e20da53944a5a170a715966b46b6f4745d9bef047c0ecb",
+      "copied_sha256": "e4785eb62b51835839e20da53944a5a170a715966b46b6f4745d9bef047c0ecb"
+    },
+    {
+      "path": "external/HyRec2020/helium.h",
+      "original_sha256": "ca5cbebf2ad0c256c55ad425bce2c26da7d56463f7e7a5fa9112d7cb6970619c",
+      "copied_sha256": "ca5cbebf2ad0c256c55ad425bce2c26da7d56463f7e7a5fa9112d7cb6970619c"
+    }
+  ],
+  "only_original_package_file_changed": [
+    "tools/evolver_ndf15.c"
+  ],
+  "private_build_dependencies": [
+    {
+      "name": "Cython",
+      "version": "3.0.12"
+    }
+  ],
+  "native_guard_test_source_sha256": "e8c31d2782a5718918fc4d4a9537f1b4c56964d8edb82f2caf832a0c8d069dba",
+  "native_guard_cases": [
+    {
+      "case": "smooth_linear_control",
+      "status": 0,
+      "calls": 1,
+      "nfe": 1,
+      "nonfinite_trials": 0,
+      "ok": true
+    },
+    {
+      "case": "primary_and_refined_cutoff_retries",
+      "status": 0,
+      "calls": 4,
+      "nfe": 4,
+      "nonfinite_trials": 2,
+      "ok": true
+    },
+    {
+      "case": "refined_cutoff_retry_recovers_small_slope",
+      "status": 0,
+      "calls": 3,
+      "nfe": 3,
+      "nonfinite_trials": 1,
+      "ok": true
+    },
+    {
+      "case": "both_directions_nonfinite_error",
+      "status": 1,
+      "calls": 2,
+      "nfe": 2,
+      "nonfinite_trials": 2,
+      "ok": true
+    },
+    {
+      "case": "callback_failure_propagated",
+      "status": 1,
+      "calls": 1,
+      "nfe": 0,
+      "nonfinite_trials": 0,
+      "ok": true
+    },
+    {
+      "case": "nonfinite_base_rejected",
+      "status": 1,
+      "calls": 0,
+      "nfe": 0,
+      "nonfinite_trials": 0,
+      "ok": true
+    },
+    {
+      "case": "nonfinite_grouped_trial_errors",
+      "status": 1,
+      "calls": 1,
+      "nfe": 1,
+      "ok": true
+    }
+  ],
+  "static_library_managed_session": 23778,
+  "static_library_exit_code": 0,
+  "extension_managed_session": 73471,
+  "extension_exit_code": 0,
+  "native_case_processes": {
+    "seed505_default": {
+      "session": 4392,
+      "exit_code": 0
+    },
+    "seed505_quadrature": {
+      "session": 43655,
+      "exit_code": 0
+    },
+    "seed701_intermediate": {
+      "session": 11082,
+      "exit_code": 0
+    }
+  },
+  "active_original_native_module_sha256": "38255c7a5eb3f52c960a6fccf657e00874e93a52ec5987807443c33ce0c09c5a",
+  "active_original_backend_changed": false,
+  "repaired_backend_inference_started": false,
+  "posterior_convergence_certified": false,
+  "uniform_numerical_accuracy_certified": false
+}

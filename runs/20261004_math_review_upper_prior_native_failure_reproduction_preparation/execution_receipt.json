@@ -1,0 +1,30 @@
+{
+  "utc": "2026-10-04T23:13:52.516805+00:00",
+  "controls": "direct_exec_exit0",
+  "terminal_native_row_worker": {
+    "session": 6621,
+    "status": "closed_exit0",
+    "exit_code": 0,
+    "selected_rows": 6,
+    "all_target_component_errors": 0
+  },
+  "activation_self_review": "direct_exec_exit0",
+  "diagnostic_replay_workers": [
+    {
+      "seed": 2003,
+      "session": 39055,
+      "status": "live_identity_verified_at_activation",
+      "launch_receipt_sha256": "3b16a3a62127b7933d5385feac43390abffa07c0d8adf120c28eb1964e96335d"
+    },
+    {
+      "seed": 2004,
+      "session": 62208,
+      "status": "live_identity_verified_at_activation",
+      "launch_receipt_sha256": "a54e7f552e3a189eb329b3e482e523385fc5c0f654e9026972318df47e479923"
+    }
+  ],
+  "live_launcher_logs_and_future_failure_capture_excluded_from_checkpoint": true,
+  "original_target_sampler_seed_preserved": true,
+  "posterior_pooling": false,
+  "failed_trajectory_exact_reproduction_pending": true
+}

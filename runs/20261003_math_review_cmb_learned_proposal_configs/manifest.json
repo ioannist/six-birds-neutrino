@@ -1,0 +1,70 @@
+{
+  "utc": "2026-10-03T23:57:23.668066+00:00",
+  "scope": "matched_controlled_target_learned_proposal_trials",
+  "records": [
+    {
+      "lens": "A",
+      "seed": 811,
+      "source_seed": 601,
+      "source_config": "runs/20261003_math_review_cmb_accuracy_chain_configs/A_seed601.yaml",
+      "source_config_sha256": "0d6a404c948aad966941238077e58725269ed6a2fbc8d21860276c0959d80460",
+      "trial_config": "runs/20261003_math_review_cmb_learned_proposal_configs/A_seed811.yaml",
+      "trial_config_sha256": "292d9619bf458ce92165e94033316b6e4200c949e0d9e2ff48cc48a7c5095dc5",
+      "covariance_source": "runs/20261003_math_review_cmb_proposal_shape_check/A_learned_default.covmat",
+      "covariance_sha256": "fd7d6e7cff0b8f996f87f2b5215b90afcc1c245916047011992542abf9859fc3",
+      "covariance_max_antisymmetry_in_correlation_units": 5.208770542539915e-18,
+      "sampled_parameter_order": [
+        "omegabh2",
+        "omegach2",
+        "H0",
+        "logA",
+        "ns",
+        "tau",
+        "mnu_sample",
+        "A_planck",
+        "TT_tSZ_Amp",
+        "TT_kSZ_Amp"
+      ],
+      "exact_configuration_reconstruction_pass": true,
+      "target_priors_and_initialization_distributions_unchanged": true,
+      "stopping_gates_unchanged": true
+    },
+    {
+      "lens": "B",
+      "seed": 813,
+      "source_seed": 603,
+      "source_config": "runs/20261003_math_review_cmb_accuracy_chain_configs/B_seed603.yaml",
+      "source_config_sha256": "ffee319846474671c1ba3cf3bbef2f8eab071caa1c2ab3af597a94390f5a16ec",
+      "trial_config": "runs/20261003_math_review_cmb_learned_proposal_configs/B_seed813.yaml",
+      "trial_config_sha256": "49fa7328ede2c862d337ba748f49a7bb517763e2bfb989fd5de99e4cb7fbb5af",
+      "covariance_source": "runs/20261003_math_review_cmb_proposal_shape_check/B_learned_default.covmat",
+      "covariance_sha256": "1644982bf1a966b873a48fd62aaed2095d33467e801292d042ffeee09baf63ff",
+      "covariance_max_antisymmetry_in_correlation_units": 3.6281721803258486e-17,
+      "sampled_parameter_order": [
+        "omegabh2",
+        "omegach2",
+        "H0",
+        "logA",
+        "ns",
+        "tau",
+        "mnu_sample",
+        "A_planck",
+        "TT_tSZ_Amp",
+        "TT_kSZ_Amp"
+      ],
+      "exact_configuration_reconstruction_pass": true,
+      "target_priors_and_initialization_distributions_unchanged": true,
+      "stopping_gates_unchanged": true
+    }
+  ],
+  "allowed_changes": [
+    "run_name",
+    "sampler.seed",
+    "sampler.covmat",
+    "notes.proposal_scope"
+  ],
+  "existing_samplers_changed": false,
+  "posterior_covariance_certified": false,
+  "efficiency_improvement_verified": false,
+  "posterior_convergence_verified": false
+}

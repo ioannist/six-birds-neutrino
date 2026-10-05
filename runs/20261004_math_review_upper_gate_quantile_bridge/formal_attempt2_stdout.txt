@@ -1,0 +1,34 @@
+/home/repos/six-birds-neutrino/runs/20261004_math_review_upper_gate_quantile_bridge/FormalSelfReview.lean:138:82: error: unsolved goals
+case measure_univ
+L : ℝ
+⊢ 4⁻¹ + 4⁻¹ + 2⁻¹ = 1
+/home/repos/six-birds-neutrino/runs/20261004_math_review_upper_gate_quantile_bridge/FormalSelfReview.lean:148:2: error: unsolved goals
+case left
+L : ℝ
+hL : 0 < L
+hL0 : ¬L ≤ 0
+h20 : ¬2 * L ≤ 0
+h2L : ¬2 * L ≤ L
+⊢ ↑(cdf (4⁻¹ • Measure.dirac 0 + 4⁻¹ • Measure.dirac L + 2⁻¹ • Measure.dirac (2 * L))) 0 = 1 / 4
+/home/repos/six-birds-neutrino/runs/20261004_math_review_upper_gate_quantile_bridge/FormalSelfReview.lean:150:2: error: unsolved goals
+case right
+L : ℝ
+hL : 0 < L
+hL0 : ¬L ≤ 0
+h20 : ¬2 * L ≤ 0
+h2L : ¬2 * L ≤ L
+⊢ ↑(cdf (4⁻¹ • Measure.dirac 0 + 4⁻¹ • Measure.dirac L + 2⁻¹ • Measure.dirac (2 * L))) L = 1 / 2
+/home/repos/six-birds-neutrino/runs/20261004_math_review_upper_gate_quantile_bridge/FormalSelfReview.lean:181:66: error: unsolved goals
+case measure_univ
+⊢ 2⁻¹ + 2⁻¹ = 1
+/home/repos/six-birds-neutrino/runs/20261004_math_review_upper_gate_quantile_bridge/FormalSelfReview.lean:187:36: error: unsolved goals
+⊢ ↑(cdf (2⁻¹ • Measure.dirac 0 + 2⁻¹ • Measure.dirac 3)) 4 = 1
+/home/repos/six-birds-neutrino/runs/20261004_math_review_upper_gate_quantile_bridge/FormalSelfReview.lean:190:2: error: unsolved goals
+case refine_1
+h4 : ↑(cdf plateauLaw) 4 = 1
+⊢ ↑(cdf (2⁻¹ • Measure.dirac 0 + 2⁻¹ • Measure.dirac 3)) 2 / ↑(cdf (2⁻¹ • Measure.dirac 0 + 2⁻¹ • Measure.dirac 3)) 4 =
+    1 / 2
+/home/repos/six-birds-neutrino/runs/20261004_math_review_upper_gate_quantile_bridge/FormalSelfReview.lean:192:2: error: unsolved goals
+case refine_2
+h4 : ↑(cdf plateauLaw) 4 = 1
+⊢ ↑(cdf (2⁻¹ • Measure.dirac 0 + 2⁻¹ • Measure.dirac 3)) 1 = 1 / 2

@@ -1,0 +1,31 @@
+{
+  "utc": "2026-10-05T04:24:42.743158+00:00",
+  "source": "runs/20261005_math_review_CLASS_fresh_recovery_activation/self_review.py",
+  "source_sha256": "a72e2a3cfb973c83ba2d0b90f7e8ec26788ab527cd0d54d22861e7f990d59b27",
+  "changes": [
+    [
+      "for entry in activation['records']:",
+      "selection = set(map(int, sys.argv[1:]))\nassert selection and selection <= {2301, 2302, 2303, 2304, 2305, 2306}\nfor entry in activation['records']:\n    if entry['seed'] not in selection:\n        continue"
+    ],
+    [
+      "'parent_seed': entry['parent_seed']",
+      "'source_seed': entry['source_seed']"
+    ],
+    [
+      "assert not entry['exact_resume_asserted'] and not entry['old_prefix_appended']",
+      "assert not entry['old_prefix_appended']\n    assert d['source_seed'] == entry['source_seed']"
+    ],
+    [
+      "assert sorted(e['seed'] for e in records) == [2201, 2202]",
+      "assert sorted(e['seed'] for e in records) == sorted(selection)"
+    ],
+    [
+      "HERE / 'self_review_receipt.json'",
+      "HERE / ('selected_rows_' + '_'.join(map(str, sorted(selection))) + '_self_review_receipt.json')"
+    ],
+    [
+      "Both recovery selected-row receipts reconstructed; no posterior qualification.",
+      "Selected companion row receipts reconstructed; no posterior qualification."
+    ]
+  ]
+}

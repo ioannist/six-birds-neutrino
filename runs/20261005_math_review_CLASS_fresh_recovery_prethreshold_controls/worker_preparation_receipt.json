@@ -1,0 +1,16 @@
+{
+  "utc": "2026-10-05T04:37:36.601062+00:00",
+  "source_root": "runs/20261005_math_review_CLASS_fresh_recovery_diagnostic_preparation_v2",
+  "source_helpers": {
+    "prepare_snapshot.py": "511d0254f4d7cd59390fbe2a3451387df9360218fd359182595f992235ee4e7a",
+    "verify_native_rows.py": "335517a2980a98187d4672b248652e29bd5c3dfa67085481e4bb5b3d13477a3e",
+    "run_diagnostic.py": "ab760f7bde8806f0c82ed515e57278a5751a0842c9b9116df866d5421597b327",
+    "verify_snapshot.py": "104ec478d3e62eac83d0a74dc99a9e62e7cfdfd64ea6debaa1964692672da329",
+    "contract_compatibility.py": "0185acd13c2c2b5fd3669a490e68eda69edb0d23e7960dd76c81c7771cc43ace"
+  },
+  "only_contract_changes": [
+    "first_minimum_retained_represented_steps",
+    "scope"
+  ],
+  "production_assessment_threshold_changed": false
+}

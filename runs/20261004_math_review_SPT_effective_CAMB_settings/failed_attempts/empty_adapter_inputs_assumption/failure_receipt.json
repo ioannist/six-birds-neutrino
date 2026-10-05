@@ -1,0 +1,10 @@
+{
+  "sessions": {
+    "A": 76012,
+    "B": 55170
+  },
+  "exit_code_each": 1,
+  "native_points_evaluated": 0,
+  "failed_assumption": "Current Candl adapter receives no sampled inputs; actual A input includes tau.",
+  "correction": "Record assigned sampled scalar parameters separately from fixed nuisance defaults. Archived adapter queried provider scalars, so its empty input_params metadata did not imply fixed tau."
+}

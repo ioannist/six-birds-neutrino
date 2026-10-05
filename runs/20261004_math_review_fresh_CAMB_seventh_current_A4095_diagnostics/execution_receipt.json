@@ -1,0 +1,35 @@
+{
+  "utc": "2026-10-05T00:16:59.575099+00:00",
+  "managed_session": 67445,
+  "actual_terminal_exit_code": 0,
+  "stages": [
+    {
+      "utc": "2026-10-04T23:49:18.423434+00:00",
+      "command": [
+        "/tmp/neutrino-math-review-venv/bin/python",
+        "/home/repos/six-birds-neutrino/runs/20261004_math_review_fresh_CAMB_weighted_summary_diagnostic_preparation/verify_native_rows.py",
+        "/home/repos/six-birds-neutrino/runs/20261004_math_review_fresh_CAMB_seventh_current_A4095_diagnostics"
+      ],
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-04T23:49:23.502928+00:00",
+      "command": [
+        "/tmp/neutrino-math-review-venv/bin/python",
+        "/home/repos/six-birds-neutrino/runs/20261004_math_review_fresh_CAMB_weighted_summary_diagnostic_preparation/run_diagnostic.py",
+        "/home/repos/six-birds-neutrino/runs/20261004_math_review_fresh_CAMB_seventh_current_A4095_diagnostics"
+      ],
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-04T23:49:23.759291+00:00",
+      "command": [
+        "/tmp/neutrino-math-review-venv/bin/python",
+        "/home/repos/six-birds-neutrino/runs/20261004_math_review_fresh_CAMB_weighted_summary_diagnostic_preparation/verify_snapshot.py",
+        "/home/repos/six-birds-neutrino/runs/20261004_math_review_fresh_CAMB_seventh_current_A4095_diagnostics"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "all_diagnostic_workers_complete": true
+}

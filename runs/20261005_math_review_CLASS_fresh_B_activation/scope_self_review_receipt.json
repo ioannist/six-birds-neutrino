@@ -1,0 +1,30 @@
+{
+  "utc": "2026-10-05T05:24:12.181250+00:00",
+  "reviewer": "distinct_self_review_not_independent_agent",
+  "records": [
+    {
+      "name": "verify_activation.py",
+      "source_sha256": "3d768a6e16dca562524d41d579823c5dfa1a91d848ca86a4a1db5fa742835a5c"
+    },
+    {
+      "name": "verify_first_row.py",
+      "source_sha256": "55e46df8015fff7bb347dd36bc9400807186fdca39499bb054f70b3ade137586"
+    },
+    {
+      "name": "self_review_selected_rows.py",
+      "source_sha256": "ab5bf0ba8ef43ee449d8788a5afc37cc6f92a37cb74ae99eb9dea419a239ad68"
+    },
+    {
+      "name": "self_review_activation_v3.py",
+      "source_sha256": "f2239f0f6849bd8396c714bc3fb061ec3325f163290a6a1cbc2257581db3c14b"
+    },
+    {
+      "name": "self_review_activation_v2.py",
+      "source_sha256": "f2239f0f6849bd8396c714bc3fb061ec3325f163290a6a1cbc2257581db3c14b"
+    }
+  ],
+  "forward_reconstruction_avoids_inverse_prefix_ambiguity": true,
+  "unsuccessful_review_attempts_retained": true,
+  "all_eight_activation_identities_recounted": true,
+  "first_rows_separate_and_still_pending": true
+}

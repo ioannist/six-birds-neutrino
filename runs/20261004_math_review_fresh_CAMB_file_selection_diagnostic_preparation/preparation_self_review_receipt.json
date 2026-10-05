@@ -1,0 +1,65 @@
+{
+  "utc": "2026-10-04T18:38:30.323902+00:00",
+  "reviewer": "distinct_self_review_not_independent_agent",
+  "current_contract_sha256": "c8dc9e6174f80e283677a4863f86dac8b3a2662e3c2798ec0b2b9dac26d90fa5",
+  "verified_predecessor_contract_sha256": [
+    "01a777985f1340cd01f7dcee99283856034c148fd610f20cbcd35c9ac9bd7102",
+    "1b6aed77c1a66b9ee84fd1d949c0f3b20d8d18e96112f7ff64260f746f097adb"
+  ],
+  "nine_unsafe_transitions_refused": {
+    "native_identity": "Predecessor target, native identity, sampling policy or gates differ.",
+    "configuration_identity": "Predecessor target, native identity, sampling policy or gates differ.",
+    "first_history_trigger": "Predecessor target, native identity, sampling policy or gates differ.",
+    "later_growth_factor": "Predecessor target, native identity, sampling policy or gates differ.",
+    "native_replay_tolerance": "Predecessor target, native identity, sampling policy or gates differ.",
+    "unreviewed_reader": "Predecessor target, native identity, sampling policy or gates differ.",
+    "extra_source_permission": "Only the reviewed chain-reader source update is permitted.",
+    "validation_receipt_hash": "Reader-update validation receipt hash mismatch.",
+    "unknown_predecessor": "Unknown predecessor assessment contract."
+  },
+  "nine_latest_reports_recounted_equal": true,
+  "five_real_growth_branches": {
+    "current_A3200": {
+      "group": "current_A3200",
+      "minimum_retained_represented_steps": 1725,
+      "threshold": 2003,
+      "snapshot_written": false,
+      "scope": "live identity and saved-growth check only"
+    },
+    "old_A3200": {
+      "group": "old_A3200",
+      "minimum_retained_represented_steps": 1593,
+      "threshold": 1650,
+      "snapshot_written": false,
+      "scope": "live identity and saved-growth check only"
+    },
+    "old_B4095": {
+      "group": "old_B4095",
+      "minimum_retained_represented_steps": 1443,
+      "threshold": 1541,
+      "snapshot_written": false,
+      "scope": "live identity and saved-growth check only"
+    },
+    "current_A4095": {
+      "snapshot_written": true,
+      "minimum_retained_represented_steps": 1278,
+      "threshold": 1248
+    },
+    "current_B4095": {
+      "snapshot_written": true,
+      "minimum_retained_represented_steps": 1216,
+      "threshold": 1210
+    }
+  },
+  "physical_targets_native_identities_and_gates_unchanged": true,
+  "growth_counter_reset": false,
+  "posterior_qualified": false,
+  "workflow_source_sha256": {
+    "verify_native_rows.py": "9bcf1f1073ed098ef787e65510b859f61f510c0911b0071f6008cea26c79cca9",
+    "contract_compatibility.py": "1f01b24824e0f5d6dfbfcb91990cb4304810fc8742927a07466149dd5d638d38",
+    "self_review_preparation.py": "a83100276b3144ef86dfbd2ea717d75011384a4363b3a1ed09e5550354ab49dd",
+    "verify_snapshot.py": "f8d580e0f4222fd07e015266265761b6c7c789f66ef9f1bc7fa6a7e77098e1b9",
+    "prepare_snapshot.py": "d9397740c609c3cb9ffcdce3c50a04fcb1fbb860c8dc3deea4773aad76b010b4",
+    "run_diagnostic.py": "ab760f7bde8806f0c82ed515e57278a5751a0842c9b9116df866d5421597b327"
+  }
+}

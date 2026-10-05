@@ -1,0 +1,211 @@
+{
+  "utc": "2026-10-04T11:24:00.854543+00:00",
+  "reviewer": "distinct_self_review_no_independent_agent",
+  "scope": "quantile_existence_uniqueness_for_actual_integral_constructed_halfline_Gaussian_law",
+  "new_exported_theorems": [
+    "truncatedGaussianLaw_cdf_continuous",
+    "truncatedGaussianLaw_cdf_lt_one",
+    "truncatedGaussianLaw_existsUnique_quantile"
+  ],
+  "exported_theorems_axiom_checked": 74,
+  "allowed_transitive_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "Python_tests_passed": 130,
+  "formal_controls": 9,
+  "managed_phases": [
+    {
+      "session": 48816,
+      "phase": "initial_elaboration_three_errors",
+      "exit_code": 1
+    },
+    {
+      "session": 3105,
+      "phase": "continuity_and_quantile_existence_module",
+      "exit_code": 0
+    },
+    {
+      "session": 21552,
+      "phase": "three_theorem_module",
+      "exit_code": 0
+    },
+    {
+      "session": 40580,
+      "phase": "initial_formal_review_Dirac_rational_comparison_unclosed",
+      "exit_code": 1
+    },
+    {
+      "session": 34238,
+      "phase": "nine_formal_controls",
+      "exit_code": 0
+    },
+    {
+      "session": 18459,
+      "phase": "combined_make_math_check",
+      "exit_code": 0
+    }
+  ],
+  "continuity_bridge": "derived zero singleton mass, measure_cdf and Stieltjes jump formula",
+  "existence_bridge": "derived probability law, CDF limit one, finite interval intermediate value theorem",
+  "uniqueness_bridge": "positive quantile coordinate and previously derived strict increase on physical halfline",
+  "quantile_scope": "every real mean; positive sigma; every 0<q<1; exactly one positive finite coordinate with CDF q",
+  "endpoint_scope": "CDF zero on nonpositive coordinates; strictly below one at all finite coordinates",
+  "substantive_excluded_case": "zero-variance actual Gaussian Dirac law has no coordinate attaining CDF 19/20",
+  "prior_interpretation": "constant prior on physical halfline",
+  "finite_upper_gate_quantile_law_proved": false,
+  "numerical_inversion_or_floating_point_error_certificate": false,
+  "cosmological_Gaussianity_or_MCMC_convergence_certified": false,
+  "production_Python_changed": false,
+  "paper_modified": false,
+  "material_claim_revision_adopted": false,
+  "owned_live_samplers_verified": 28,
+  "new_diagnostic_assessment_due_at_observation": false,
+  "files": [
+    {
+      "path": "lean/trunc_gauss_proof/AuditAxioms.lean",
+      "sha256": "72d9492713702a216669bcc4b0b55492c397838dc8dbb7409643dd1ea28bf97b"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/TruncGaussProof/Audit.lean",
+      "sha256": "10c8f3ebced74cc26f509948e8c6b6a2f32a7502cbb9eb5c078d4c728db2bd59"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/TruncGaussProof/Basic.lean",
+      "sha256": "a88fef4d3efa63c9f9f5c948dd5ba1de3ea09d828ce8388ee83fa3d039e734a4"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/TruncGaussProof/CovarianceLedger.lean",
+      "sha256": "c4c34185f9900be5d7f6dcdf079bfd0e5fb4a389e510757bf03bcee3f86795d3"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/TruncGaussProof/GaussianGatedCDF.lean",
+      "sha256": "a741de95ddedae4467a4185e498a8cc323111fe0420f68d29dc89f6d45da9e53"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/TruncGaussProof/GaussianMeasure.lean",
+      "sha256": "2c1cfc3298c94411831f4030313485733cdfbd247ce43c1a565f4a6d0049a865"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/TruncGaussProof/GaussianNormalization.lean",
+      "sha256": "479525ccc03b459b51c118a2793874268bc4ab12cb4f3216e9d1ee0c3a646486"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/TruncGaussProof/GaussianQuantile.lean",
+      "sha256": "122f11fca12af416557403608f97cb72f4f5809ff9d22f3d52a073b5897c75dd"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/TruncGaussProof/GaussianSweep.lean",
+      "sha256": "dfeb0920f48c290fd8325885e84edabce5b7f03b56a7e5beedc2b3ca046944e1"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/TruncGaussProof/Mode.lean",
+      "sha256": "f4200937d87b548c7bbbbd58568dc21909fe5ba964c144ea539988981fdd2a21"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/TruncGaussProof/Normalization.lean",
+      "sha256": "797977dfb5e0be7bdcccaebebaa66f4f15040710df4851ac888ef5e8a3eaf623"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/TruncGaussProof/Product.lean",
+      "sha256": "bbcbc989862979f52e7b1bbf97d4acf30b59564d2b7c42a9e7c3ac1e457bc9bb"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/TruncGaussProof/Tightening.lean",
+      "sha256": "638dab7a8721e704ee4a3708411703d7b145a40ffd5669a33abbdf359a6a75d3"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/TruncGaussProof/TruncGauss.lean",
+      "sha256": "895cfb7e6f733728b2b98e36c2468310ca110535cd912d750e389943350f6e0c"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/TruncGaussProof.lean",
+      "sha256": "93c45b73660c9d02eb447379c59c11f6c9383083092455939c10c561cb3ec4dc"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_quantile/GaussianQuantileReview.lean",
+      "sha256": "e53347297a4de65b841e75aafa8ffa5c69907b16a95f141eb07e8d1308af074b"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_quantile/build_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_quantile/build_stdout.txt",
+      "sha256": "f98eb60e7bbb6b8c67f47cc2062e6d91c48dd327a4e06392342a13b0c14ad861"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_quantile/check_growth.py",
+      "sha256": "f10ba4b6d65a293bb155d8f44fa3e97cdd52d8b1f827784d7895f26d0bd4f4a4"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_quantile/first_attempt_GaussianQuantile.lean",
+      "sha256": "748bc8f6e77a3d5ef190b76e22f1dab02c40fb63548c685eb85d7dd017f85b3e"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_quantile/first_attempt_GaussianQuantileReview.lean",
+      "sha256": "42efc984af15c19b72035be2d2d4d7ef6e784cfe0fe4810c99a4a4d77e53d8b6"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_quantile/first_build_stderr.txt",
+      "sha256": "c4a27db198c4d8632369ee6102944ef46e83c20d685f7c17a6aaff9cfcfc710f"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_quantile/first_build_stdout.txt",
+      "sha256": "45e50c48ef99d0ca87f512e8a4c3cf078ffb81fd0aeb48a292306af29ad1af27"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_quantile/first_formal_review_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_quantile/first_formal_review_stdout.txt",
+      "sha256": "0bd31c1ac2787539911e2f97334ddb16def1b3e49fa87c56b2b00ad0ec6251c5"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_quantile/formal_review_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_quantile/formal_review_stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_quantile/full_module_build_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_quantile/full_module_build_stdout.txt",
+      "sha256": "f98eb60e7bbb6b8c67f47cc2062e6d91c48dd327a4e06392342a13b0c14ad861"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_quantile/growth_observation.json",
+      "sha256": "bf360abeab2ff2ddcf8db412626177662e52b51e1df4058da36d9d7a00a51f49"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_quantile/math_check_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_quantile/math_check_stdout.txt",
+      "sha256": "3d3bb74de74f4f8fbb29715aa3dede1c77b1ccfada15a3aa44012dad6321be3c"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_quantile/observe_runtime.py",
+      "sha256": "e633d006cc491b6e10709e0e2f8978ea1d4b499339502047c6fbc95a58d89d4e"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_quantile/runtime_observation.json",
+      "sha256": "cdc28a043fc154c0a94e63e9d1bd43aa5d2521cd113e09948a303f8446ccbe7c"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_quantile/setup_path_correction.json",
+      "sha256": "2c5604b76e6c75570f02d05eba588ceac3051d3ca9addcbaaa112dde7a6423b2"
+    },
+    {
+      "path": "runs/20261004_math_review_gaussian_quantile/verify_quantile.py",
+      "sha256": "a28ceaa78ce0ef7f8a53b77b4e9f189b19ad307f0f2cc662fc7df717296f37b6"
+    }
+  ]
+}

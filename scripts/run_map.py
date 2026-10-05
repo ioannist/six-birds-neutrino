@@ -28,6 +28,7 @@ from sbt_spt_audit.candl_support import (  # noqa: E402
     instantiate_like_with_metadata,
     load_test_vector,
 )
+from sbt_spt_audit.metrics import covariance_solve
 
 
 EXIT_OK = 0
@@ -149,8 +150,10 @@ def validate_gaussian_lens(lens: dict[str, Any]) -> tuple[GaussianLens | None, s
     except Exception as exc:  # noqa: BLE001
         return None, f"`lens.mean`/`lens.cov` must be numeric: {exc}"
 
-    if np.linalg.det(cov_arr) == 0:
-        return None, "`lens.cov` is singular; inversion/solve is not possible."
+    try:
+        covariance_solve(cov_arr, mean_arr)
+    except ValueError as exc:
+        return None, str(exc)
 
     return GaussianLens(params=params, mean=mean_arr, cov=cov_arr), None
 
@@ -655,6 +658,8 @@ def main() -> int:
 
     if lens_kind == "candl":
         fit_quality["loglike_best"] = float(-0.5 * chi2_best)
+        fit_quality["fit_scope"] = "scalar_parameters_at_fixed_packaged_test_spectra"
+        fit_quality["global_optimality_certified"] = False
         fit_quality["loglike_init"] = float(-0.5 * chi2_init)
         bestfit["likelihood_id"] = lens.likelihood_id
         bestfit["test_yaml"] = str(lens.test_vector.test_yaml)

@@ -1,0 +1,26 @@
+{
+  "scope": "target_configuration_contract_before_sampling",
+  "same_physical_parameterization_priors_and_components": true,
+  "changed_numerical_settings_only": {
+    "A": {
+      "tol_ncdm_bg": 1e-08,
+      "tol_perturbations_integration": 1e-06,
+      "perturbations_sampling_stepsize": 0.01,
+      "tol_ncdm_synchronous": 1e-06,
+      "tol_ncdm_newtonian": 1e-06,
+      "l_logstep": 1.026,
+      "l_linstep": 25
+    },
+    "B": {
+      "tol_ncdm_bg": 1e-08,
+      "tol_perturbations_integration": 1e-06,
+      "perturbations_sampling_stepsize": 0.01,
+      "tol_ncdm_synchronous": 1e-06,
+      "tol_ncdm_newtonian": 1e-06,
+      "l_logstep": 1.026,
+      "l_linstep": 25
+    }
+  },
+  "posterior_convergence_verified": false,
+  "pool_with_default_chains": false
+}

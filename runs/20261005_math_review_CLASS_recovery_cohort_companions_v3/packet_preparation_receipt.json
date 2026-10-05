@@ -1,0 +1,25 @@
+{
+  "utc": "2026-10-05T04:11:11.140525+00:00",
+  "source_root": "runs/20261005_math_review_CLASS_recovery_cohort_companions",
+  "sources": {
+    "prepare.py": "677d7953e1bc20cb412cc4c0c9295c70d4c3de971023155096c0e2650f4dd0a9",
+    "preflight.py": "81e7c24a41312deaa8c32d635782b044793cf68f50a4d16a3b9fd8d06301fa03",
+    "run_preflights.py": "2379e4672b9a86ec1cd18941e608c719e1a7018243a69f789527e89f68153a30"
+  },
+  "prepare_changes": [
+    [
+      "'samplers_independent_conditional_on_fixed_preparation_inputs': True,",
+      "'distinct_declared_rng_seeds_and_starts': True,\n        'independent_PRNG_streams_proved': False,"
+    ]
+  ],
+  "initial_semantic_refusal": "runs/20261005_math_review_CLASS_recovery_cohort_companions/semantic_review_refusal_receipt.json",
+  "native_controls_or_samplers_started_in_initial_packet": false,
+  "run_preflights_changes": [
+    [
+      "MKL_NUM_THREADS='1')",
+      "MKL_NUM_THREADS='1',\n               PYTHONPATH=str(Path(entry['module']).parent.parent) + ':' + str(HERE.parents[1] / 'src'))"
+    ]
+  ],
+  "previous_wrong_native_packet": "runs/20261005_math_review_CLASS_recovery_cohort_companions_v2/execution_receipt.json",
+  "environment_derived_from_declared_module": true
+}

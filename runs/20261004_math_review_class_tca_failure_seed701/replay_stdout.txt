@@ -1,0 +1,88 @@
+{
+  "utc": "2026-10-04T02:07:51.270032+00:00",
+  "scope": "second_native_failure_exact_physics_and_seven_setting_precision_isolated_solver_checks",
+  "arguments": {
+    "omega_b": 0.02291175022269673,
+    "omega_cdm": 0.11675153446806505,
+    "H0": 68.6264574770633,
+    "A_s": 2.0513564352353405e-09,
+    "n_s": 0.9856032089306187,
+    "tau_reio": 0.05245284343330284,
+    "m_ncdm": "0.019305144202575886,0.019305144202575886,0.019305144202575886",
+    "N_ncdm": 3,
+    "N_ur": 0.00641,
+    "tol_ncdm_bg": 1e-08,
+    "tol_perturbations_integration": 1e-06,
+    "perturbations_sampling_stepsize": 0.01,
+    "tol_ncdm_synchronous": 1e-06,
+    "tol_ncdm_newtonian": 1e-06,
+    "l_logstep": 1.026,
+    "l_linstep": 25,
+    "l_max_scalars": 4095,
+    "output": "tCl lCl pCl",
+    "non_linear": "hmcode",
+    "lensing": "yes"
+  },
+  "input_sha256": "1b4b5e7fbe61441492649ef5bbb0015fe7b0f076ef7e721b743576e3d1be6539",
+  "active_inference_backend_changed": false,
+  "posterior_convergence_certified": false,
+  "uniform_numerical_accuracy_certified": false,
+  "cases": {
+    "original": {
+      "binary_sha256": "4e938d3b598d4d186cfde6b277617de47d562184556bbe156feb2c9d1acbe87f",
+      "exit_code": 1,
+      "elapsed_seconds": 0.26788152614608407,
+      "stdout_sha256": "94800aa0e87d15f443b129077c0f9601f8833e599f3f733ff042f66c26c3a390",
+      "stderr_sha256": "44acef93bc5225825d49e34d0d8c12381351ffc01a869d4142b464a025ceb6df"
+    },
+    "helium_trace": {
+      "binary_sha256": "f930de24c3e093fab6c2c45ebce2e7ccee4bd2ab8b698a0ac6da27e395d4ff5f",
+      "exit_code": 136,
+      "elapsed_seconds": 0.24036368122324347,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "b3f5b315e5fe5759fdee5952b1b535d1e8e4868b3d5a5ac14872a8fb65f07dbf"
+    },
+    "finite_retry": {
+      "binary_sha256": "fd4c915f4837508745a675b4edeb21f7b0be9d1ee89561762523d2fcf6bdc04b",
+      "exit_code": 0,
+      "elapsed_seconds": 63.5952031519264,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "018d87dc936c5b2ad2fcf4fa9373fa3971eb25c465c73b782de03280b0d38ab3"
+    }
+  },
+  "finite_retry_outputs": {
+    "seed701_finite_retry_00_cl.dat": {
+      "source": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_tca_diagnostic_20261004/seed701_finite_retry_00_cl.dat",
+      "source_sha256": "9db52bf886e37c16abd7dd14af54df71d2c67aa7158d5f8446c5610ab78f5021",
+      "artifact": "cl.dat.npz",
+      "artifact_sha256": "2e8926e23538706b44c1682229156153ba107862570206e176ff755079f47c62",
+      "shape": [
+        5445,
+        8
+      ],
+      "nonfinite_values": 0
+    },
+    "seed701_finite_retry_00_cl_lensed.dat": {
+      "source": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_tca_diagnostic_20261004/seed701_finite_retry_00_cl_lensed.dat",
+      "source_sha256": "dc5014e0a8072ee87406262ed192d4d782714239f1f689cbb0935b78716ca776",
+      "artifact": "cl_lensed.dat.npz",
+      "artifact_sha256": "60f0094455fec67f4a7e4ee985f7ccfbd1bf49ec2978fe3447f3ccacd7541d66",
+      "shape": [
+        4094,
+        8
+      ],
+      "nonfinite_values": 0
+    },
+    "seed701_finite_retry_00_thermodynamics.dat": {
+      "source": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_tca_diagnostic_20261004/seed701_finite_retry_00_thermodynamics.dat",
+      "source_sha256": "402d08c3f4aa61334e7d848f3a79df250cad5a9e7139f656a9e061339250b5c7",
+      "artifact": "thermodynamics.dat.npz",
+      "artifact_sha256": "910500d7e222e4e587f4ca00049cd267151cd745b5fb30cc13bc97cf5aca3b21",
+      "shape": [
+        28333,
+        12
+      ],
+      "nonfinite_values": 0
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "utc": "2026-10-05T02:46:51.182479+00:00",
+  "actual_exit_code": 0,
+  "raw_capture_exclusions": [
+    {
+      "path": "runs/20261005_math_review_sigma_v2_transfer_time_probe/probe_stdout.txt",
+      "sha256": "a3fcb77cb41ff8c00c05ca3749d2fa9607d193e45d1779d47d605c60dda8e0f1"
+    },
+    {
+      "path": "runs/20261005_math_review_sigma_limit_extension_checkpoint/initial_full_whitespace_check.txt",
+      "sha256": "f02550cca206e8d7767608224ffd50ae4e3f30091f7d005dea6497e5866560df"
+    }
+  ],
+  "reason": "Preserve exact raw native transcript and verbatim check capture; all other staged text checked."
+}

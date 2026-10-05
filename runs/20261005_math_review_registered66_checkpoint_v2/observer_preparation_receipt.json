@@ -1,0 +1,12 @@
+{
+  "utc": "2026-10-05T03:43:38.568551+00:00",
+  "source": "runs/20261005_math_review_registered66_checkpoint/observe_registered_runtime.py",
+  "source_sha256": "01d46540510cc2b3db2a06ab73a4d5e3623e713a92163578ec1ecaac24bae073",
+  "changes": [
+    [
+      "if 'terminal_receipt' in e:",
+      "if e.get('status', '').startswith('terminal_'):"
+    ]
+  ],
+  "scope": "Own explicit terminal status distinguished from parent terminal provenance. No original family dropped or relabelled."
+}

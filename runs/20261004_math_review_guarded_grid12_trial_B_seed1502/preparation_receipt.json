@@ -1,0 +1,33 @@
+{
+  "utc": "2026-10-04T09:30:07.480985+00:00",
+  "scope": "distinct_start_same_B_grid12_numerical_target",
+  "seed": 1502,
+  "lens": "B",
+  "cohort": "grid12",
+  "outdir": "runs/20261004_math_review_guarded_grid12_trial_B_seed1502/run",
+  "config": "runs/20261004_math_review_guarded_grid12_trial_B_seed1502/input.yaml",
+  "config_sha256": "9d77fb028006faf54ba0f2c2652682d54dcdd9e4277f0cc88ce617a11b8201cf",
+  "covariance": "runs/20261004_math_review_guarded_medium_proposal_scout/pilot_B.covmat",
+  "covariance_sha256": "ef2238b7ea2e5da618d7fddb17b82a8b408597153d11ee5729396b7626d1c3ad",
+  "initial_point": {
+    "omegabh2": 0.022298523180141867,
+    "omegach2": 0.11708536448504973,
+    "H0": 68.20423877656768,
+    "logA": 3.059632187372976,
+    "ns": 0.9671320934198195,
+    "tau": 0.06145330662118371,
+    "mnu_sample": 0.10517729141318302,
+    "A_planck": 1.0052137627157152,
+    "TT_tSZ_Amp": 1.4348717834036084,
+    "TT_kSZ_Amp": 1.5189401892393362
+  },
+  "initialization_source": "runs/20261004_math_review_guarded_posterior_precision/B/seed1305.txt",
+  "initialization_source_sha256": "6b79668041835eece72b1aeedcdfb0d96952ade4e9d32f692e7ab6965ff26d8a",
+  "stored_row_zero_based": 194,
+  "initialization_label": "quad_q95",
+  "native_module_path": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+  "native_module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+  "same_numerical_target_as_seed1501": true,
+  "pilot_covariance_certified": false,
+  "old_history_appended_or_existing_sampler_modified": false
+}

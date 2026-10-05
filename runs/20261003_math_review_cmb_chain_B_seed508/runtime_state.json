@@ -1,0 +1,17 @@
+{
+  "status": "retired_agent_requested_sigterm_default_target_archived",
+  "pid": 3485468,
+  "exec_session": 63122,
+  "omp_threads": 8,
+  "seed": 508,
+  "implementation_sha256": {
+    "scripts/run_cobaya.py": "382dc8f13dffb5eb210f08ae876a0747748e30a47821588eae6e1f4e70db0781",
+    "src/sbt_spt_audit/likelihoods/candl_cobaya.py": "b695b32235d04a2b287786260c5c02fb87c43d787d0949907a7247518aa37a90"
+  },
+  "output_precision_digits": 17,
+  "agent_requested_sigterm": true,
+  "retirement_archive": "runs/20261004_math_review_cmb_legacy_retirement",
+  "retirement_utc": "2026-10-04T00:49:49.155160+00:00",
+  "terminal_exit_code": 143,
+  "managed_terminal_exit_verified": true
+}

@@ -1,0 +1,35 @@
+{
+  "utc": "2026-10-04T21:58:46.005514+00:00",
+  "seed": 2007,
+  "group": "upper20_B4095",
+  "initial_point": {
+    "omegabh2": 0.02208835,
+    "omegach2": 0.11613327,
+    "H0": 68.761625,
+    "logA": 3.0437372,
+    "ns": 0.97829051,
+    "tau": 0.05867819,
+    "mnu": 6.0
+  },
+  "config_sha256": "8f774014979b8d8a326851505aa3758250c5e3911c7494dd656e8e2b03a7478b",
+  "module_sha256": "306640a8948cd5246fc9b21e76525f6adebdff5ba3bc792a57d50bba67225ad5",
+  "native_initial_point_verified": true,
+  "likelihood_components": {
+    "sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": -19380.699981950493,
+    "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": -139.90386226032416
+  },
+  "logpriors": [
+    -3.4908863374028734
+  ],
+  "logposterior": -19524.094730548222,
+  "previous_preflight_components_exact": true,
+  "upstream_forced_fresh_likes_and_priors_exact": true,
+  "FreshCAMB_class": "sbt_spt_audit.boltzmann.FreshCAMB",
+  "sampler_cache_resize_challenge": 50,
+  "effective_CAMB_extra_args": {
+    "num_massive_neutrinos": 3,
+    "nnu": 3.046,
+    "lmax": 4095
+  },
+  "posterior_certified": false
+}

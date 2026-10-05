@@ -1,0 +1,50 @@
+{
+  "utc": "2026-10-04T14:26:36.508611+00:00",
+  "review_type": "distinct_self_review_not_independent_review",
+  "records": [
+    {
+      "CAMB_version": "1.6.5",
+      "session": 62205,
+      "exit_code": 0,
+      "one_state_candidate_fails_with_interleaved_model": true,
+      "zero_state_selected_control_matches_fresh_exactly": true,
+      "receipt": "interleaved_models_1.6.5_receipt.json",
+      "receipt_sha256": "9c2efe6dce94ed37ac5f234e1a254eae1fa011f562020109d669d3fc39e4b26b",
+      "measured_errors": [
+        [
+          0.04844393913572276,
+          -0.0
+        ],
+        [
+          -0.0,
+          -0.0
+        ]
+      ]
+    },
+    {
+      "CAMB_version": "2.0.4",
+      "session": 95688,
+      "exit_code": 0,
+      "one_state_candidate_fails_with_interleaved_model": true,
+      "zero_state_selected_control_matches_fresh_exactly": true,
+      "receipt": "interleaved_models_2.0.4_receipt.json",
+      "receipt_sha256": "a17452e3e5708a6809f9faa6036db6a9c1b983c85ea2f7ea13d6169138673c3a",
+      "measured_errors": [
+        [
+          0.0005074804084870266,
+          -0.0
+        ],
+        [
+          -0.0,
+          -0.0
+        ]
+      ]
+    }
+  ],
+  "one_state_full_single_model_results_remain_valid": true,
+  "one_state_general_cache_repair_candidate_rejected": true,
+  "zero_state_selected_two_model_controls_match_fresh_exactly": true,
+  "specific_shared_state_cause_or_uniform_accuracy_certificate_established": false,
+  "native_spectra_differences_separately_recorded": false,
+  "production_cache_or_live_sampler_modified": false
+}

@@ -1,0 +1,195 @@
+{
+  "utc": "2026-10-04T03:00:03.104857+00:00",
+  "scope": "saved_segment_integrity_and_diagnostic_execution",
+  "boundary_manifest_sha256": "8f1cc8e34551d6a9ebdfb26808f38e13d93762446fd29d47aa3b625526db33b4",
+  "snapshot_receipt_sha256": "a6238eaa154118c3dbeb4f61c567cfe522fed37071819b50d169e3d2989e0a4c",
+  "checks": [
+    {
+      "source": "runs/20261003_math_review_chain_A_seed301/chains/math_restoration_A_seed301.1.txt",
+      "stored_rows": 3239,
+      "trajectory_scope": "uninterrupted_saved_prefix",
+      "historical_saved_rows_excluded": 0,
+      "original_seed": 301,
+      "active_segment_seed": 301
+    },
+    {
+      "source": "runs/20261003_math_review_chain_A_seed302/chains/math_restoration_A_seed302.1.txt",
+      "stored_rows": 3236,
+      "trajectory_scope": "uninterrupted_saved_prefix",
+      "historical_saved_rows_excluded": 0,
+      "original_seed": 302,
+      "active_segment_seed": 302
+    },
+    {
+      "source": "runs/20261003_math_review_chain_B_seed305/chains/math_restoration_B_seed305.1.txt",
+      "stored_rows": 2494,
+      "trajectory_scope": "uninterrupted_saved_prefix",
+      "historical_saved_rows_excluded": 0,
+      "original_seed": 305,
+      "active_segment_seed": 305
+    },
+    {
+      "source": "runs/20261003_math_review_chain_B_seed306/chains/math_restoration_B_seed306.1.txt",
+      "stored_rows": 2392,
+      "trajectory_scope": "uninterrupted_saved_prefix",
+      "historical_saved_rows_excluded": 0,
+      "original_seed": 306,
+      "active_segment_seed": 306
+    },
+    {
+      "source": "runs/20261003_math_review_chain_A_seed303/chains/math_restoration_A_seed303.1.txt",
+      "stored_rows": 3838,
+      "trajectory_scope": "uninterrupted_saved_prefix",
+      "historical_saved_rows_excluded": 0,
+      "original_seed": 303,
+      "active_segment_seed": 303
+    },
+    {
+      "source": "runs/20261003_math_review_chain_A_seed304/chains/math_restoration_A_seed304.1.txt",
+      "stored_rows": 3873,
+      "trajectory_scope": "uninterrupted_saved_prefix",
+      "historical_saved_rows_excluded": 0,
+      "original_seed": 304,
+      "active_segment_seed": 304
+    },
+    {
+      "source": "runs/20261003_math_review_chain_B_seed307/chains/math_restoration_B_seed307.1.txt",
+      "stored_rows": 3708,
+      "trajectory_scope": "uninterrupted_saved_prefix",
+      "historical_saved_rows_excluded": 0,
+      "original_seed": 307,
+      "active_segment_seed": 307
+    },
+    {
+      "source": "runs/20261003_math_review_chain_B_seed308/chains/math_restoration_B_seed308.1.txt",
+      "stored_rows": 3640,
+      "trajectory_scope": "uninterrupted_saved_prefix",
+      "historical_saved_rows_excluded": 0,
+      "original_seed": 308,
+      "active_segment_seed": 308
+    },
+    {
+      "source": "runs/20261003_math_review_chain_A_seed402/chains/math_restoration_A_seed402.1.txt",
+      "stored_rows": 18450,
+      "trajectory_scope": "uninterrupted_saved_prefix",
+      "historical_saved_rows_excluded": 0,
+      "original_seed": 402,
+      "active_segment_seed": 402
+    },
+    {
+      "source": "runs/20261003_math_review_chain_A_seed401/chains/math_restoration_A_seed401.1.txt",
+      "stored_rows": 18595,
+      "trajectory_scope": "uninterrupted_saved_prefix",
+      "historical_saved_rows_excluded": 0,
+      "original_seed": 401,
+      "active_segment_seed": 401
+    },
+    {
+      "source": "runs/20261003_math_review_chain_B_seed404/chains/math_restoration_B_seed404.1.txt",
+      "stored_rows": 16316,
+      "trajectory_scope": "uninterrupted_saved_prefix",
+      "historical_saved_rows_excluded": 0,
+      "original_seed": 404,
+      "active_segment_seed": 404
+    },
+    {
+      "source": "runs/20261003_math_review_chain_B_seed403/chains/math_restoration_B_seed403.1.txt",
+      "stored_rows": 16589,
+      "trajectory_scope": "uninterrupted_saved_prefix",
+      "historical_saved_rows_excluded": 0,
+      "original_seed": 403,
+      "active_segment_seed": 403
+    }
+  ],
+  "source_configurations_unchanged_since_ninth": true,
+  "SPT_target_only": true,
+  "CLASS_cohorts_included": false,
+  "restarted_families_use_fresh_segments_only": true,
+  "groups": {
+    "chain_A": {
+      "diagnostics_sha256": "cf5bce7059b2ac05a21aa08861660d186cf5e8a27415ed857556ec38a12afd3c",
+      "exit_code": 0,
+      "all_diagnostic_thresholds_pass": false,
+      "passed_parameters": [
+        "omegach2",
+        "H0",
+        "logA",
+        "ns",
+        "tau",
+        "mnu"
+      ],
+      "mass_diagnostics": {
+        "method": "ArviZ_rank_folded_split_rhat_bulk_tail_quantile_ESS_and_MCSE",
+        "arviz_version": "1.3.0",
+        "n_chains": 6,
+        "draws_per_chain": 9273,
+        "dropped_prefix_draws_per_chain": [
+          0,
+          84,
+          1915,
+          1670,
+          44118,
+          43711
+        ],
+        "quantile_probability": 0.95,
+        "quantile_full_draws": 0.14082737,
+        "quantile_retained_draws": 0.14386469,
+        "quantile_half_difference": 0.0063843999999999845,
+        "quantile_mcse_limit": 0.005,
+        "quantile_mcse_scope": "population_quantile_estimated_from_equal_length_last_draws",
+        "rank_folded_split_rhat": 1.004373905419587,
+        "bulk_ess": 1368.1562123518834,
+        "tail_ess_05_95": 1943.5476942282248,
+        "quantile_ess": 1943.5476942282248,
+        "quantile_mcse": 0.0032357800000000075,
+        "diagnostic_thresholds_pass": true,
+        "mathematical_convergence_certificate": false,
+        "warnings": [],
+        "precision_target_scope": "absolute_parameter_units"
+      }
+    },
+    "chain_B": {
+      "diagnostics_sha256": "cb25bf6b797649ff635fd4896de82ad08749d0b8e0c608532e4efd6b13255397",
+      "exit_code": 0,
+      "all_diagnostic_thresholds_pass": false,
+      "passed_parameters": [
+        "omegabh2",
+        "omegach2",
+        "logA",
+        "ns",
+        "mnu"
+      ],
+      "mass_diagnostics": {
+        "method": "ArviZ_rank_folded_split_rhat_bulk_tail_quantile_ESS_and_MCSE",
+        "arviz_version": "1.3.0",
+        "n_chains": 6,
+        "draws_per_chain": 6454,
+        "dropped_prefix_draws_per_chain": [
+          484,
+          0,
+          3793,
+          4214,
+          41651,
+          41343
+        ],
+        "quantile_probability": 0.95,
+        "quantile_full_draws": 0.10853264,
+        "quantile_retained_draws": 0.11051908,
+        "quantile_half_difference": 0.002563709999999997,
+        "quantile_mcse_limit": 0.005,
+        "quantile_mcse_scope": "population_quantile_estimated_from_equal_length_last_draws",
+        "rank_folded_split_rhat": 1.004749544216261,
+        "bulk_ess": 895.4663696180855,
+        "tail_ess_05_95": 1214.4633068896476,
+        "quantile_ess": 1214.4633068896476,
+        "quantile_mcse": 0.0037650600000000006,
+        "diagnostic_thresholds_pass": true,
+        "mathematical_convergence_certificate": false,
+        "warnings": [],
+        "precision_target_scope": "absolute_parameter_units"
+      }
+    }
+  },
+  "all_diagnostic_thresholds_pass": false,
+  "posterior_convergence_verified": false
+}

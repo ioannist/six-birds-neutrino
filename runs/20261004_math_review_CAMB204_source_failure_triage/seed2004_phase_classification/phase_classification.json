@@ -1,0 +1,132 @@
+{
+  "utc": "2026-10-05T00:10:36.038335+00:00",
+  "seed": 2004,
+  "sampled": {
+    "omegabh2": 0.039722417435190734,
+    "omegach2": 0.02050757593546919,
+    "H0": 55.63518294861832,
+    "logA": 3.4029050190597663,
+    "ns": 0.8333775835517003,
+    "tau": 0.20267279146734776,
+    "mnu": 17.67540797501886
+  },
+  "capture": "runs/20261004_math_review_upper_prior_native_failure_reproduction_preparation/seed2004/failed_proposal.json",
+  "capture_sha256": "1cddef994d8f0c805590ec4e34b6f2a3fa8469dcf39185e3f7ddadb6f59b3639",
+  "original_native_module_sha256": "306640a8948cd5246fc9b21e76525f6adebdff5ba3bc792a57d50bba67225ad5",
+  "original_resolved_sha256": "92a0c978cadfe890fa13f39899a4578a7c96d07f11e34ec7d150b59f444f2fc2",
+  "theory_class": "sbt_spt_audit.boltzmann.FreshCAMB",
+  "numerical_settings_changed": false,
+  "scope": "captured point replay and native-array phase inspection; no solver repair or posterior qualification",
+  "isolated_point_status": "exception",
+  "exception_type": "ValueError",
+  "error": "provider spectrum tt must be finite and 1D.",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/repos/six-birds-neutrino/runs/20261004_math_review_CAMB204_source_failure_triage/classify_reproduced_point.py\", line 60, in <module>\n    result = model.logposterior(point, cached=False)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/cobaya/model.py\", line 659, in logposterior\n    like = self._loglikes_input_params(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/cobaya/model.py\", line 443, in _loglikes_input_params\n    compute_success = component.check_cache_and_compute(\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/cobaya/theory.py\", line 282, in check_cache_and_compute\n    if self.calculate(state, want_derived, **params_values_dict) is False:\n       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/cobaya/likelihood.py\", line 135, in calculate\n    state[\"logp\"] = self.logp(_derived=derived, **params_values_dict)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/repos/six-birds-neutrino/src/sbt_spt_audit/likelihoods/candl_cobaya.py\", line 167, in logp\n    pars = self.current_candl_params(params_values)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/repos/six-birds-neutrino/src/sbt_spt_audit/likelihoods/candl_cobaya.py\", line 152, in current_candl_params\n    dl = self._build_dl(cls)\n         ^^^^^^^^^^^^^^^^^^^\n  File \"/home/repos/six-birds-neutrino/src/sbt_spt_audit/likelihoods/candl_cobaya.py\", line 132, in _build_dl\n    tt = self._get_cl_array(cls, \"tt\")[self._ells]\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/repos/six-birds-neutrino/src/sbt_spt_audit/likelihoods/candl_cobaya.py\", line 122, in _get_cl_array\n    raise ValueError(f\"provider spectrum {key} must be finite and 1D.\")\nValueError: provider spectrum tt must be finite and 1D.\n",
+  "provider_spectra": {
+    "ell": {
+      "shape": [
+        4101
+      ],
+      "all_finite": true,
+      "nan_count": 0,
+      "inf_count": 0,
+      "finite_min": 0.0,
+      "finite_max": 4100.0
+    },
+    "tt": {
+      "shape": [
+        4101
+      ],
+      "all_finite": false,
+      "nan_count": 4099,
+      "inf_count": 0,
+      "finite_min": 0.0,
+      "finite_max": 0.0
+    },
+    "ee": {
+      "shape": [
+        4101
+      ],
+      "all_finite": false,
+      "nan_count": 4099,
+      "inf_count": 0,
+      "finite_min": 0.0,
+      "finite_max": 0.0
+    },
+    "bb": {
+      "shape": [
+        4101
+      ],
+      "all_finite": false,
+      "nan_count": 4099,
+      "inf_count": 0,
+      "finite_min": 0.0,
+      "finite_max": 0.0
+    },
+    "te": {
+      "shape": [
+        4101
+      ],
+      "all_finite": false,
+      "nan_count": 4099,
+      "inf_count": 0,
+      "finite_min": 0.0,
+      "finite_max": 0.0
+    },
+    "et": {
+      "shape": [
+        4101
+      ],
+      "all_finite": false,
+      "nan_count": 4099,
+      "inf_count": 0,
+      "finite_min": 0.0,
+      "finite_max": 0.0
+    }
+  },
+  "native_parameters": {
+    "H0": 55.63518294861832,
+    "ombh2": 0.039722417435190734,
+    "omch2": 0.02050757593546919,
+    "omnuh2": 0.1899713297564472,
+    "YHe": 0.2509879480884405,
+    "TCMB": 2.7255,
+    "NonLinear": "NonLinear_lens",
+    "halofit_version": "mead2020"
+  },
+  "native_spectra": {
+    "unlensed_scalar": {
+      "shape": [
+        4096,
+        4
+      ],
+      "all_finite": true,
+      "nan_count": 0,
+      "inf_count": 0,
+      "finite_min": -0.020400594529954075,
+      "finite_max": 2304.2883273527004
+    },
+    "lensed_scalar": {
+      "shape": [
+        4096,
+        4
+      ],
+      "all_finite": false,
+      "nan_count": 16376,
+      "inf_count": 0,
+      "finite_min": 0.0,
+      "finite_max": 0.0
+    },
+    "lens_potential": {
+      "shape": [
+        4096,
+        3
+      ],
+      "all_finite": false,
+      "nan_count": 12282,
+      "inf_count": 0,
+      "finite_min": 0.0,
+      "finite_max": 0.0
+    }
+  },
+  "native_arrays_sha256": "2180ca8dff9c295a510eb35f725fcf06ba484195bd5211df6be2b8054e626682"
+}

@@ -1,0 +1,12 @@
+likelihood: {}
+output: runs/20261003_math_review_validation/temperature_guard_demo/heated/chains/sample
+params:
+  mnu:
+    prior:
+      max: 5
+      min: 0
+sampler:
+  mcmc:
+    seed: 11
+    temperature: 2
+theory: {}

@@ -1,0 +1,15 @@
+{
+  "utc": "2026-10-05T01:43:39.732063+00:00",
+  "actual_exit_code": 0,
+  "raw_capture_exclusions": [
+    {
+      "path": "runs/20261005_math_review_sigma_policy_mass_controls/candidate12_stdout.txt",
+      "sha256": "b620e9566d654c2c38e216169102b62c433f82c09f8eec31a73be48e5e910e6b"
+    },
+    {
+      "path": "runs/20261005_math_review_sigma_policy_mass_controls/packaged14_stdout.txt",
+      "sha256": "ee153675726a76272efb49caef28cf0056f570e3c03245e320b5a0b51307af58"
+    }
+  ],
+  "reason": "Preserve exact Cobaya error logs, including blank line at EOF; all other staged text, including raw check transcript, checked."
+}

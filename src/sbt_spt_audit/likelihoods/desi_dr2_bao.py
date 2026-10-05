@@ -1,10 +1,12 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
+from math import frexp, ldexp
 from pathlib import Path
 from typing import Any, Callable
 
 import numpy as np
+from sbt_spt_audit.metrics import covariance_solve
 try:
     from cobaya.likelihood import Likelihood
 except Exception:  # noqa: BLE001
@@ -69,6 +71,9 @@ def _candidate_mean_files(data_dir: Path) -> list[Path]:
 
 def _match_subset(mean_files: list[Path], subset: str) -> list[Path]:
     token = SUBSET_PATTERNS.get(subset.lower())
+    if subset.lower() == "elg":
+        return sorted(p for p in mean_files if "_elg_" in p.name.lower()
+                      and "z1.1-1.6" in p.name.lower())
     if token is not None:
         out = [p for p in mean_files if token.lower() in p.name.lower()]
         if out:
@@ -92,6 +97,8 @@ def discover_subset_files(data_dir: str | Path, subset: str = "all") -> tuple[Pa
     if not candidates:
         raise FileNotFoundError(f"No DR2 BAO mean file matched subset `{subset}` in {data_path}")
 
+    if len(candidates) != 1:
+        raise ValueError(f"Ambiguous BAO subset `{subset}`: {[p.name for p in candidates]}")
     mean_file = candidates[0]
     cov_file = Path(str(mean_file).replace("_mean.txt", "_cov.txt"))
     if not cov_file.exists():
@@ -154,11 +161,16 @@ def load_desi_dr2_dataset_from_files(
     points = [points_raw[i] for i in order]
     mean = mean_raw[np.array(order, dtype=int)]
     cov = cov_raw[np.ix_(order, order)]
+    if not np.all(np.isfinite(mean)):
+        raise ValueError("BAO means must be finite.")
+    covariance_solve(cov, np.zeros_like(mean))  # Validate covariance, without solving for the mean.
 
     try:
         invcov = np.linalg.inv(cov)
     except np.linalg.LinAlgError as exc:
         raise ValueError(f"Covariance matrix is singular for {mean_path.name}") from exc
+    if not np.all(np.isfinite(invcov)):
+        raise ValueError(f"Inverse covariance is nonfinite for {mean_path.name}")
 
     return BAODataset(points=points, mean=mean, cov=cov, invcov=invcov)
 
@@ -175,14 +187,42 @@ def load_desi_dr2_dataset(
 
 
 def compute_observable_value(obs: str, z: float, rd: float, dm_mpc: float, dh_mpc: float) -> float:
+    if not np.all(np.isfinite([z, rd, dm_mpc, dh_mpc])) or z < 0 or rd <= 0 or dm_mpc < 0 or dh_mpc <= 0:
+        raise ValueError("BAO predictions require finite nonnegative z and distance, positive r_d and D_H.")
     if obs == "DM_over_rd":
-        return dm_mpc / rd
-    if obs == "DH_over_rd":
-        return dh_mpc / rd
-    if obs == "DV_over_rd":
-        dv = (z * dh_mpc * dm_mpc * dm_mpc) ** (1.0 / 3.0)
-        return dv / rd
-    raise ValueError(f"Unsupported observable `{obs}`")
+        with np.errstate(over="ignore", under="ignore"):
+            result = dm_mpc / rd
+    elif obs == "DH_over_rd":
+        with np.errstate(over="ignore", under="ignore"):
+            result = dh_mpc / rd
+    elif obs == "DV_over_rd":
+        if z == 0 or dm_mpc == 0:
+            return 0.0
+        with np.errstate(over="ignore", under="ignore", invalid="ignore"):
+            product = z * dh_mpc * dm_mpc * dm_mpc
+        if np.isfinite(product) and product > 0:
+            # Preserve the ordinary calculation used by existing native runs.
+            with np.errstate(over="ignore", under="ignore"):
+                result = product ** (1.0 / 3.0) / rd
+        else:
+            # Compute the ratio directly. The four mantissas have a safe
+            # product; separate binary exponents can cancel before scaling.
+            mz, ez = frexp(z)
+            mh, eh = frexp(dh_mpc)
+            mm, em = frexp(dm_mpc)
+            mr, er = frexp(rd)
+            exponent, remainder = divmod(ez + eh + 2 * em - 3 * er, 3)
+            scaled = float(np.cbrt(ldexp(mz * mh * mm * mm, remainder))) / mr
+            try:
+                result = ldexp(scaled, exponent)
+            except OverflowError as exc:
+                raise ValueError("BAO observable must have a representable finite output.") from exc
+    else:
+        raise ValueError(f"Unsupported observable `{obs}`")
+    result = float(result)
+    if not np.isfinite(result):
+        raise ValueError("BAO observable must have a representable finite output.")
+    return result
 
 
 def compute_theory_vector(
@@ -193,17 +233,35 @@ def compute_theory_vector(
 ) -> np.ndarray:
     vals: list[float] = []
     for p in points:
-        da = float(angular_diameter_distance_fn(p.z))
-        hz = float(hubble_fn(p.z))
+        da = _single_value(angular_diameter_distance_fn(p.z))
+        hz = _single_value(hubble_fn(p.z))
         dm = (1.0 + p.z) * da
         dh = C_KM_S / hz
         vals.append(compute_observable_value(obs=p.obs, z=p.z, rd=rd, dm_mpc=dm, dh_mpc=dh))
     return np.asarray(vals, dtype=float)
 
 
+def _single_value(value: Any) -> float:
+    """Cobaya distance providers return length-one arrays for scalar z."""
+    arr = np.asarray(value, dtype=float)
+    if arr.size != 1 or not np.all(np.isfinite(arr)):
+        raise ValueError("A single finite distance or Hubble value is required per redshift.")
+    return float(arr.reshape(()))
+
+
 def compute_gaussian_chi2(mean: np.ndarray, invcov: np.ndarray, pred: np.ndarray) -> float:
-    residual = pred - mean
-    return float(residual @ invcov @ residual)
+    mean, pred, invcov = (np.asarray(x, dtype=float) for x in (mean, pred, invcov))
+    if mean.ndim != 1 or not mean.size or pred.shape != mean.shape:
+        raise ValueError("mean and prediction must have matching nonempty 1D shapes.")
+    if not np.all(np.isfinite(mean)) or not np.all(np.isfinite(pred)):
+        raise ValueError("mean and prediction must be finite.")
+    covariance_solve(invcov, np.zeros_like(mean))  # Validate precision without inverting a residual.
+    with np.errstate(over="ignore", invalid="ignore"):
+        residual = pred - mean
+        chi2 = float(residual @ invcov @ residual)
+    if not np.all(np.isfinite(residual)) or not np.isfinite(chi2) or chi2 < 0:
+        raise ValueError("Gaussian quadratic form must be finite and nonnegative.")
+    return chi2
 
 
 def _provider_rdrag(provider: Any) -> float:
@@ -246,8 +304,8 @@ class DESIDR2BAOGaussian(Likelihood):
         pred = compute_theory_vector(
             points=self._dataset.points,
             rd=rd,
-            angular_diameter_distance_fn=lambda z: float(self.provider.get_angular_diameter_distance(z)),
-            hubble_fn=lambda z: float(self.provider.get_Hubble(z, units="km/s/Mpc")),
+            angular_diameter_distance_fn=self.provider.get_angular_diameter_distance,
+            hubble_fn=lambda z: self.provider.get_Hubble(z, units="km/s/Mpc"),
         )
         chi2 = compute_gaussian_chi2(self._dataset.mean, self._dataset.invcov, pred)
         return -0.5 * chi2

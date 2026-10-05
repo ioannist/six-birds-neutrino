@@ -1,0 +1,16 @@
+{
+  "status": "completed_both_directions_freshly_verified_numerical_candidates",
+  "pid": 220979,
+  "exec_session": 45625,
+  "process_log": "/tmp/neutrino-cosmological-audit.log",
+  "implementation_sha256": {
+    "src/sbt_spt_audit/likelihoods/candl_cobaya.py": "59d776670e246f4fccebc966e45225f1873411f6f49a38c3f6e4bfa55f20b85e",
+    "src/sbt_spt_audit/likelihoods/desi_dr2_bao.py": "bf7b9b816f158aaabfc12ba8f6ea75ed8c7fa0bc0bbfe73b7aa8e75d9a999bf4",
+    "src/sbt_spt_audit/candl_support.py": "ddf70460d7662a2f1e4e5130635b6c09cdc2381ef78f0febaa0c88391533f162",
+    "src/sbt_spt_audit/localization.py": "286fc0be0e3120b29d32a4eae5597baeaa224f187414186e5191845147b14d3a",
+    "src/sbt_spt_audit/metrics.py": "bb2ced58a93439bb5cfbee4de00b4b4b164da47460f2d09884dd90492dc4c9ea"
+  },
+  "captured_runner_sha256": "846d087b3569a3f6ceb9398f4102eb2516517e9ba5316ac74ba1014fca4a28b0",
+  "next_required_step": "Restore independent posterior chains; full CMB audit remains pending.",
+  "verification": "accounting_verification.json"
+}

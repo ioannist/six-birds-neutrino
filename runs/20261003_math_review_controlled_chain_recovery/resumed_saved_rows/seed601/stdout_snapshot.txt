@@ -1,0 +1,30 @@
+[output] Output to be read-from/written-into folder '/home/repos/six-birds-neutrino/runs/20261003_math_review_cmb_accuracy_chain_A_seed601/chains', with prefix 'math_accuracy_A_seed601'
+[output] Found existing info files with the requested output prefix: '/home/repos/six-birds-neutrino/runs/20261003_math_review_cmb_accuracy_chain_A_seed601/chains/math_accuracy_A_seed601'
+[output] Let's try to resume/load.
+[output] Found an old sample. Resuming.
+[classy] `classy` module loaded successfully from /tmp/neutrino-math-review-venv/lib/python3.12/site-packages/classy
+Actual L range: 30 - 756
+[sbt_spt_audit.samplers.fullprecisionmcmc] Resuming from previous sample!
+[sbt_spt_audit.samplers.fullprecisionmcmc] *WARNING* This run has been SEEDED with seed 801
+[samplecollection] Loaded 99 sample points from '/home/repos/six-birds-neutrino/runs/20261003_math_review_cmb_accuracy_chain_A_seed601/chains/math_accuracy_A_seed601.1.txt'
+[sbt_spt_audit.samplers.fullprecisionmcmc] Initial point: omegabh2:0.02276768, omegach2:0.1166413, H0:68.52033, logA:3.059828, ns:0.9784087, tau:0.06413993, mnu_sample:0.05439797, A_planck:1.001238, TT_tSZ_Amp:2.462022, TT_kSZ_Amp:9.086116
+[sbt_spt_audit.samplers.fullprecisionmcmc] *WARNING* Parameter blocking manually/previously fixed: speeds will not be measured.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Covariance matrix from previous sample.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Sampling!
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-03 20:54:28 : 1 steps taken, and 99 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-03 20:55:32 : 2 steps taken, and 99 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-03 20:56:37 : 3 steps taken, and 99 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Learn + convergence test @ 100 samples accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc]  - Acceptance rate: 0.171
+[sbt_spt_audit.samplers.fullprecisionmcmc]  - Convergence of means: R-1 = 15.629338 after 80 accepted steps
+[sbt_spt_audit.samplers.fullprecisionmcmc] Convergence less than requested for updates: waiting until the next convergence check.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-03 20:57:43 : 6 steps taken, and 101 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-03 20:58:46 : 7 steps taken, and 101 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-03 20:59:53 : 8 steps taken, and 101 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-03 21:00:58 : 10 steps taken, and 102 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-03 21:02:02 : 12 steps taken, and 102 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-03 21:03:10 : 13 steps taken, and 103 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-03 21:04:15 : 23 steps taken, and 104 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-03 21:05:17 : 29 steps taken, and 104 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-03 21:06:21 : 34 steps taken, and 104 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-03 21:07:26 : 35 steps taken, and 104 accepted.

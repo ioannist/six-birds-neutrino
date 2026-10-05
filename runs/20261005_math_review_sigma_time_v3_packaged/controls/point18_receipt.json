@@ -1,0 +1,27 @@
+{
+  "selection_index": 18,
+  "point": {
+    "omegabh2": 0.02229508659134042,
+    "omegach2": 0.11756634516688139,
+    "H0": 68.43629857611299,
+    "logA": 3.039627142531277,
+    "ns": 0.9610391601448661,
+    "tau": 0.05083002945055451,
+    "mnu": 0.03567493833996502
+  },
+  "kind": "low_mass_control",
+  "native_error_is_posterior_rejection": false,
+  "status": "finite_evaluation",
+  "logpost": -1329.367918955176,
+  "logpriors": [
+    -3.4908863374028734
+  ],
+  "loglikes": [
+    -1320.4385971501044,
+    -5.438435467668857
+  ],
+  "provider_arrays": "runs/20261005_math_review_sigma_time_v3_packaged/controls/point18_provider_arrays.npz",
+  "provider_arrays_sha256": "bda7d42567b8b7cc2cac17f22a7ea8d1f3ed5e22bba87d93cf9eb389bd8e8b19",
+  "all_spectra_finite": true,
+  "utc": "2026-10-05T02:57:01.920679+00:00"
+}

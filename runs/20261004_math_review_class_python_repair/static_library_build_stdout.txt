@@ -1,0 +1,92 @@
+if ! [ -e /mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/build ]; then mkdir /mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/build ; mkdir /mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/build/lib; fi;
+touch build/.base
+cd /mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/build;gcc -O3 -pthread  -g -fPIC -D__CLASSDIR__='"/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy"' -DHYREC -I../include -I../external/RecfastCLASS -I../external/heating -I../external/HyRec2020 -I../external/Halofit -I../external/HMcode -c ../tools/growTable.c -o growTable.o
+cd /mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/build;gcc -O3 -pthread  -g -fPIC -D__CLASSDIR__='"/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy"' -DHYREC -I../include -I../external/RecfastCLASS -I../external/heating -I../external/HyRec2020 -I../external/Halofit -I../external/HMcode -c ../tools/dei_rkck.c -o dei_rkck.o
+cd /mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/build;gcc -O3 -pthread  -g -fPIC -D__CLASSDIR__='"/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy"' -DHYREC -I../include -I../external/RecfastCLASS -I../external/heating -I../external/HyRec2020 -I../external/Halofit -I../external/HMcode -c ../tools/sparse.c -o sparse.o
+cd /mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/build;gcc -O3 -pthread  -g -fPIC -D__CLASSDIR__='"/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy"' -DHYREC -I../include -I../external/RecfastCLASS -I../external/heating -I../external/HyRec2020 -I../external/Halofit -I../external/HMcode -c ../tools/evolver_rkck.c -o evolver_rkck.o
+cd /mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/build;gcc -O3 -pthread  -g -fPIC -D__CLASSDIR__='"/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy"' -DHYREC -I../include -I../external/RecfastCLASS -I../external/heating -I../external/HyRec2020 -I../external/Halofit -I../external/HMcode -c ../tools/evolver_ndf15.c -o evolver_ndf15.o
+cd /mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/build;g++ --std=c++11 -fpermissive -Wno-write-strings -O3 -pthread  -g -fPIC -D__CLASSDIR__='"/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy"' -DHYREC -I../include -I../external/RecfastCLASS -I../external/heating -I../external/HyRec2020 -I../external/Halofit -I../external/HMcode -c ../tools/arrays.c -o arrays.opp
+cd /mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/build;gcc -O3 -pthread  -g -fPIC -D__CLASSDIR__='"/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy"' -DHYREC -I../include -I../external/RecfastCLASS -I../external/heating -I../external/HyRec2020 -I../external/Halofit -I../external/HMcode -c ../tools/parser.c -o parser.o
+cd /mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/build;gcc -O3 -pthread  -g -fPIC -D__CLASSDIR__='"/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy"' -DHYREC -I../include -I../external/RecfastCLASS -I../external/heating -I../external/HyRec2020 -I../external/Halofit -I../external/HMcode -c ../tools/quadrature.c -o quadrature.o
+cd /mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/build;g++ --std=c++11 -fpermissive -Wno-write-strings -O3 -pthread  -g -fPIC -D__CLASSDIR__='"/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy"' -DHYREC -I../include -I../external/RecfastCLASS -I../external/heating -I../external/HyRec2020 -I../external/Halofit -I../external/HMcode -c ../tools/hyperspherical.c -o hyperspherical.opp
+cd /mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/build;gcc -O3 -pthread  -g -fPIC -D__CLASSDIR__='"/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy"' -DHYREC -I../include -I../external/RecfastCLASS -I../external/heating -I../external/HyRec2020 -I../external/Halofit -I../external/HMcode -c ../tools/common.c -o common.o
+cd /mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/build;gcc -O3 -pthread  -g -fPIC -D__CLASSDIR__='"/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy"' -DHYREC -I../include -I../external/RecfastCLASS -I../external/heating -I../external/HyRec2020 -I../external/Halofit -I../external/HMcode -c ../tools/trigonometric_integrals.c -o trigonometric_integrals.o
+cd /mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/build;gcc -O3 -pthread  -g -fPIC -D__CLASSDIR__='"/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy"' -DHYREC -I../include -I../external/RecfastCLASS -I../external/heating -I../external/HyRec2020 -I../external/Halofit -I../external/HMcode -c ../source/input.c -o input.o
+cd /mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/build;gcc -O3 -pthread  -g -fPIC -D__CLASSDIR__='"/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy"' -DHYREC -I../include -I../external/RecfastCLASS -I../external/heating -I../external/HyRec2020 -I../external/Halofit -I../external/HMcode -c ../source/background.c -o background.o
+cd /mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/build;gcc -O3 -pthread  -g -fPIC -D__CLASSDIR__='"/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy"' -DHYREC -I../include -I../external/RecfastCLASS -I../external/heating -I../external/HyRec2020 -I../external/Halofit -I../external/HMcode -c ../source/thermodynamics.c -o thermodynamics.o
+cd /mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/build;g++ --std=c++11 -fpermissive -Wno-write-strings -O3 -pthread  -g -fPIC -D__CLASSDIR__='"/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy"' -DHYREC -I../include -I../external/RecfastCLASS -I../external/heating -I../external/HyRec2020 -I../external/Halofit -I../external/HMcode -c ../source/perturbations.c -o perturbations.opp
+cd /mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/build;g++ --std=c++11 -fpermissive -Wno-write-strings -O3 -pthread  -g -fPIC -D__CLASSDIR__='"/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy"' -DHYREC -I../include -I../external/RecfastCLASS -I../external/heating -I../external/HyRec2020 -I../external/Halofit -I../external/HMcode -c ../source/primordial.c -o primordial.opp
+cd /mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/build;gcc -O3 -pthread  -g -fPIC -D__CLASSDIR__='"/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy"' -DHYREC -I../include -I../external/RecfastCLASS -I../external/heating -I../external/HyRec2020 -I../external/Halofit -I../external/HMcode -c ../source/fourier.c -o fourier.o
+cd /mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/build;g++ --std=c++11 -fpermissive -Wno-write-strings -O3 -pthread  -g -fPIC -D__CLASSDIR__='"/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy"' -DHYREC -I../include -I../external/RecfastCLASS -I../external/heating -I../external/HyRec2020 -I../external/Halofit -I../external/HMcode -c ../source/transfer.c -o transfer.opp
+cd /mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/build;g++ --std=c++11 -fpermissive -Wno-write-strings -O3 -pthread  -g -fPIC -D__CLASSDIR__='"/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy"' -DHYREC -I../include -I../external/RecfastCLASS -I../external/heating -I../external/HyRec2020 -I../external/Halofit -I../external/HMcode -c ../source/harmonic.c -o harmonic.opp
+cd /mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/build;g++ --std=c++11 -fpermissive -Wno-write-strings -O3 -pthread  -g -fPIC -D__CLASSDIR__='"/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy"' -DHYREC -I../include -I../external/RecfastCLASS -I../external/heating -I../external/HyRec2020 -I../external/Halofit -I../external/HMcode -c ../source/lensing.c -o lensing.opp
+cd /mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/build;gcc -O3 -pthread  -g -fPIC -D__CLASSDIR__='"/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy"' -DHYREC -I../include -I../external/RecfastCLASS -I../external/heating -I../external/HyRec2020 -I../external/Halofit -I../external/HMcode -c ../source/distortions.c -o distortions.o
+In file included from ../include/arrays.h:8,
+                 from ../include/distortions.h:9,
+                 from ../source/distortions.c:13:
+../source/distortions.c: In function ‘distortions_output_sd_titles’:
+../source/distortions.c:1951:32: warning: ‘__builtin___snprintf_chk’ output may be truncated before the last format character [-Wformat-truncation=]
+ 1951 |       class_sprintf(temp_title,"SD[e_%i]",(index_type-psd->index_type_PCA));
+      |                                ^~~~~~~~~~
+../include/common.h:115:44: note: in definition of macro ‘class_sprintf’
+  115 |   snprintf(string, _buffer_size_sprintf+1, format);                                                                \
+      |                                            ^~~~~~
+../source/distortions.c:1951:41: note: format string is defined here
+ 1951 |       class_sprintf(temp_title,"SD[e_%i]",(index_type-psd->index_type_PCA));
+      |                                         ^
+In file included from /usr/include/stdio.h:980,
+                 from ../include/common.h:3:
+In function ‘snprintf’,
+    inlined from ‘distortions_output_sd_titles’ at ../source/distortions.c:1951:7:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:54:10: note: ‘__builtin___snprintf_chk’ output between 8 and 18 bytes into a destination of size 17
+   54 |   return __builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   55 |                                    __glibc_objsize (__s), __fmt,
+      |                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   56 |                                    __va_arg_pack ());
+      |                                    ~~~~~~~~~~~~~~~~~
+cd /mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/build;gcc -O3 -pthread  -g -fPIC -D__CLASSDIR__='"/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy"' -DHYREC -I../include -I../external/RecfastCLASS -I../external/heating -I../external/HyRec2020 -I../external/Halofit -I../external/HMcode -c ../external/RecfastCLASS/wrap_recfast.c -o wrap_recfast.o
+cd /mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/build;gcc -O3 -pthread  -g -fPIC -D__CLASSDIR__='"/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy"' -DHYREC -I../include -I../external/RecfastCLASS -I../external/heating -I../external/HyRec2020 -I../external/Halofit -I../external/HMcode -c ../external/heating/injection.c -o injection.o
+cd /mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/build;gcc -O3 -pthread  -g -fPIC -D__CLASSDIR__='"/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy"' -DHYREC -I../include -I../external/RecfastCLASS -I../external/heating -I../external/HyRec2020 -I../external/Halofit -I../external/HMcode -c ../external/heating/noninjection.c -o noninjection.o
+cd /mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/build;gcc -O3 -pthread  -g -fPIC -D__CLASSDIR__='"/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy"' -DHYREC -I../include -I../external/RecfastCLASS -I../external/heating -I../external/HyRec2020 -I../external/Halofit -I../external/HMcode -c ../external/HyRec2020/hyrectools.c -o hyrectools.o
+cd /mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/build;gcc -O3 -pthread  -g -fPIC -D__CLASSDIR__='"/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy"' -DHYREC -I../include -I../external/RecfastCLASS -I../external/heating -I../external/HyRec2020 -I../external/Halofit -I../external/HMcode -c ../external/HyRec2020/helium.c -o helium.o
+cd /mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/build;gcc -O3 -pthread  -g -fPIC -D__CLASSDIR__='"/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy"' -DHYREC -I../include -I../external/RecfastCLASS -I../external/heating -I../external/HyRec2020 -I../external/Halofit -I../external/HMcode -c ../external/HyRec2020/hydrogen.c -o hydrogen.o
+cd /mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/build;gcc -O3 -pthread  -g -fPIC -D__CLASSDIR__='"/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy"' -DHYREC -I../include -I../external/RecfastCLASS -I../external/heating -I../external/HyRec2020 -I../external/Halofit -I../external/HMcode -c ../external/HyRec2020/history.c -o history.o
+cd /mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/build;gcc -O3 -pthread  -g -fPIC -D__CLASSDIR__='"/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy"' -DHYREC -I../include -I../external/RecfastCLASS -I../external/heating -I../external/HyRec2020 -I../external/Halofit -I../external/HMcode -c ../external/HyRec2020/wrap_hyrec.c -o wrap_hyrec.o
+cd /mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/build;gcc -O3 -pthread  -g -fPIC -D__CLASSDIR__='"/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy"' -DHYREC -I../include -I../external/RecfastCLASS -I../external/heating -I../external/HyRec2020 -I../external/Halofit -I../external/HMcode -c ../external/HyRec2020/energy_injection.c -o energy_injection.o
+cd /mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/build;gcc -O3 -pthread  -g -fPIC -D__CLASSDIR__='"/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy"' -DHYREC -I../include -I../external/RecfastCLASS -I../external/heating -I../external/HyRec2020 -I../external/Halofit -I../external/HMcode -c ../external/Halofit/halofit.c -o halofit.o
+cd /mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/build;g++ --std=c++11 -fpermissive -Wno-write-strings -O3 -pthread  -g -fPIC -D__CLASSDIR__='"/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy"' -DHYREC -I../include -I../external/RecfastCLASS -I../external/heating -I../external/HyRec2020 -I../external/Halofit -I../external/HMcode -c ../external/HMcode/hmcode.c -o hmcode.opp
+ar rv  libclass.a build/growTable.o build/dei_rkck.o build/sparse.o build/evolver_rkck.o build/evolver_ndf15.o build/arrays.opp build/parser.o build/quadrature.o build/hyperspherical.opp build/common.o build/trigonometric_integrals.o build/input.o build/background.o build/thermodynamics.o build/perturbations.opp build/primordial.opp build/fourier.o build/transfer.opp build/harmonic.opp build/lensing.opp build/distortions.o build/wrap_recfast.o build/injection.o build/noninjection.o build/hyrectools.o build/helium.o build/hydrogen.o build/history.o build/wrap_hyrec.o build/energy_injection.o build/halofit.o build/hmcode.opp
+ar: creating libclass.a
+a - build/growTable.o
+a - build/dei_rkck.o
+a - build/sparse.o
+a - build/evolver_rkck.o
+a - build/evolver_ndf15.o
+a - build/arrays.opp
+a - build/parser.o
+a - build/quadrature.o
+a - build/hyperspherical.opp
+a - build/common.o
+a - build/trigonometric_integrals.o
+a - build/input.o
+a - build/background.o
+a - build/thermodynamics.o
+a - build/perturbations.opp
+a - build/primordial.opp
+a - build/fourier.o
+a - build/transfer.opp
+a - build/harmonic.opp
+a - build/lensing.opp
+a - build/distortions.o
+a - build/wrap_recfast.o
+a - build/injection.o
+a - build/noninjection.o
+a - build/hyrectools.o
+a - build/helium.o
+a - build/hydrogen.o
+a - build/history.o
+a - build/wrap_hyrec.o
+a - build/energy_injection.o
+a - build/halofit.o
+a - build/hmcode.opp

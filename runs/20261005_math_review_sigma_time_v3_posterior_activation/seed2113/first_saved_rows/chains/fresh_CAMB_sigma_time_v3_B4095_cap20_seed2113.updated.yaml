@@ -1,0 +1,167 @@
+theory:
+  camb:
+    version: 2.0.4
+    path: global
+    speed: 0.3
+    stop_at_error: false
+    extra_args:
+      num_massive_neutrinos: 3
+      nnu: 3.046
+      lmax: 4095
+    ignore_obsolete: false
+    external_primordial_pk: false
+    use_non_linear_ratio: false
+    renames:
+      omegabh2: ombh2
+      omegach2: omch2
+      omegal: omega_de
+      omegak: omk
+      yhe: YHe
+      yheused: YHe
+      YpBBN: Y_p
+    class: sbt_spt_audit.boltzmann.FreshCAMB
+    input_params:
+    - As
+    - ns
+    - omegabh2
+    - omegach2
+    - H0
+    - tau
+    - mnu
+    output_params: []
+likelihood:
+  sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood:
+    test_yaml: null
+    lensing: null
+    ell_cuts: null
+    exclude_prior_parameters: null
+    type: []
+    speed: -1
+    stop_at_error: false
+    version: null
+    dataset_expr: spt_candl_data.SPT3G_D1_TnE_multifreq
+    input_params:
+    - tau
+    output_params: []
+  sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian:
+    subset: all
+    data_dir: data/desi_dr2_bao/desi_bao_dr2
+    verbose: false
+    type: []
+    speed: -1
+    stop_at_error: false
+    version: null
+    input_params: []
+    output_params: []
+params:
+  omegabh2:
+    prior:
+      min: 0.005
+      max: 0.04
+    ref: 0.02208835
+    proposal: 0.00025
+    renames:
+    - ombh2
+  omegach2:
+    prior:
+      min: 0.001
+      max: 0.99
+    ref: 0.11613327
+    proposal: 0.002
+    renames:
+    - omch2
+  H0:
+    prior:
+      min: 40
+      max: 100
+    ref: 68.761625
+    proposal: 0.6
+  logA:
+    prior:
+      min: 1.5
+      max: 4.0
+    ref: 3.0437372
+    proposal: 0.02
+    drop: true
+  As:
+    value: 'lambda logA: 1e-10*np.exp(logA)'
+    derived: true
+  ns:
+    prior:
+      min: 0.8
+      max: 1.2
+    ref: 0.97829051
+    proposal: 0.01
+  tau:
+    prior:
+      min: 0.01
+      max: 0.8
+    ref: 0.05867819
+    proposal: 0.01
+  mnu:
+    prior:
+      min: 0.0
+      max: 20.0
+    ref: 0.043870311
+    proposal: 0.05
+sampler:
+  sbt_spt_audit.samplers.FullPrecisionMCMC:
+    sampler_type: mcmc
+    supports_periodic_params: true
+    burn_in: 0
+    max_tries: 40d
+    covmat: /home/repos/six-birds-neutrino/runs/20261005_math_review_sigma_time_v3_posterior_preparation_v2/proposal_B.covmat
+    covmat_params: null
+    proposal_scale: 2.4
+    output_every: 60s
+    learn_every: 40d
+    temperature: 1
+    learn_proposal: true
+    learn_proposal_Rminus1_max: 2.0
+    learn_proposal_Rminus1_max_early: 30.0
+    learn_proposal_Rminus1_min: 0.0
+    max_samples: 20000
+    Rminus1_stop: 0.01
+    Rminus1_cl_stop: 0.05
+    Rminus1_cl_level: 0.95
+    Rminus1_single_split: 4
+    measure_speeds: true
+    oversample_power: 0
+    oversample_thin: false
+    drag: false
+    blocking:
+    - - 1
+      - - omegabh2
+        - omegach2
+        - H0
+        - tau
+        - mnu
+    - - 1
+      - - logA
+        - ns
+    callback_function: null
+    callback_every: null
+    seed: 2113
+    check_every: null
+    oversample: null
+    drag_limits: null
+    fallback_covmat_scale: 4
+    version: 3.6.2
+packages_path: /home/repos/six-birds-neutrino/external/cobaya_packages
+run_name: fresh_CAMB_sigma_time_v3_B4095_cap20_seed2113
+notes:
+  math_review: Experimental native candidate; fresh output and RNG. Qualification
+    and prior sensitivity pending; no historical samples pooled.
+  camb_backend:
+    module_sha256: 85a091c53d9c81ee6443a1a4492ee45a35b487f7d360dfd6df190b9e3856cfc6
+    solver_version: 2.0.4
+  initial_point_label: original_reference
+  numerical_target: sigma_time_v3_B4095_cap20
+  proposal_role: heuristic only; no source samples pooled
+  mass_prior: uniform[0,20] eV
+  native_policy: camb204_sigma_time_v3
+  native_policy_sha256: d2869a552811ccd510cc7cb15bd945c9e3e5598a0d5ec298b87971576756fa27
+  native_build_receipt: runs/20261005_math_review_sigma_time_v3_packaged/build_receipt.json
+output: fresh_CAMB_sigma_time_v3_B4095_cap20_seed2113
+stop_at_error: true
+version: 3.6.2

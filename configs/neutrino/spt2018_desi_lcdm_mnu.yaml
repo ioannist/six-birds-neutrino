@@ -9,6 +9,7 @@ likelihood:
 
 theory:
   camb:
+    class: sbt_spt_audit.boltzmann.FreshCAMB
     extra_args:
       num_massive_neutrinos: 3
       nnu: 3.046

@@ -1,0 +1,58 @@
+{
+  "utc": "2026-10-04T13:41:37.850398+00:00",
+  "review_type": "distinct_self_review_not_independent_review",
+  "trace_session": 90037,
+  "exit_code": 0,
+  "trace_process_absent": true,
+  "original_first_row_reproduced_byte_identically": true,
+  "posterior_calls_recorded": 37,
+  "call35_point_and_stored_chi2_reproduced": true,
+  "native_discrepancy_cause_or_cache_repair_established": false,
+  "probe_counted_as_inference_chain": false,
+  "files": [
+    {
+      "path": "runs/20261004_math_review_SPT_archived_solver_chain_preparation/sampler_trajectory_trace/chains/trace_seed1604.1.txt",
+      "sha256": "118dc303260a586e90e03696860ca4d6fda16b921d8cc90f770a7546b336df3f"
+    },
+    {
+      "path": "runs/20261004_math_review_SPT_archived_solver_chain_preparation/sampler_trajectory_trace/chains/trace_seed1604.checkpoint",
+      "sha256": "df769a2482a3212c4abd099bb9bc3bf8fe5738dff2a6b9ff168498628ef80799"
+    },
+    {
+      "path": "runs/20261004_math_review_SPT_archived_solver_chain_preparation/sampler_trajectory_trace/chains/trace_seed1604.covmat",
+      "sha256": "19997af3a225c394449c8f61fff140a05c8d3bb80b5cb4701fd425e4e131898e"
+    },
+    {
+      "path": "runs/20261004_math_review_SPT_archived_solver_chain_preparation/sampler_trajectory_trace/chains/trace_seed1604.input.yaml",
+      "sha256": "71237fe1118b7fdc7d1e5c0d7924ac2d47f4accd28d65d3d2a5f8fbb205b752e"
+    },
+    {
+      "path": "runs/20261004_math_review_SPT_archived_solver_chain_preparation/sampler_trajectory_trace/chains/trace_seed1604.progress",
+      "sha256": "262b11d51972ad0508cb8537d164d8864d1b656c52edc3b6a9c6963763510716"
+    },
+    {
+      "path": "runs/20261004_math_review_SPT_archived_solver_chain_preparation/sampler_trajectory_trace/chains/trace_seed1604.updated.yaml",
+      "sha256": "bb28f07d032fbfe2f7b8b3d900cbf20b1e21122b2273e0cd0eb1f4ab31bc6392"
+    },
+    {
+      "path": "runs/20261004_math_review_SPT_archived_solver_chain_preparation/sampler_trajectory_trace/input.yaml",
+      "sha256": "5bfde7433098671bf5c446d80aca2ef2220ee5f5dd420dd6250f1af32dc21a8b"
+    },
+    {
+      "path": "runs/20261004_math_review_SPT_archived_solver_chain_preparation/sampler_trajectory_trace/posterior_calls.jsonl",
+      "sha256": "41af91dc3e93b08392e0821793ad6d1ae311ec916e4e4d5f281051d360927d93"
+    },
+    {
+      "path": "runs/20261004_math_review_SPT_archived_solver_chain_preparation/sampler_trace_completion.json",
+      "sha256": "821bb0d0f95f9fbc8382f63262049a15b02891ab7fd1ecbea0805b1831ceb073"
+    },
+    {
+      "path": "runs/20261004_math_review_SPT_archived_solver_chain_preparation/sampler_trace_stdout.txt",
+      "sha256": "9760217611f7a4c2e5c3ded55fa949767f3caec5a3b01709bd2ee40c698de928"
+    },
+    {
+      "path": "runs/20261004_math_review_SPT_archived_solver_chain_preparation/sampler_trace_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

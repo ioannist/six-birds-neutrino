@@ -1,0 +1,49 @@
+{
+  "native_input_params": {
+    "omegabh2": 0.02291175022269673,
+    "omegach2": 0.11675153446806505,
+    "H0": 68.6264574770633,
+    "As": 2.0513564352353405e-09,
+    "ns": 0.9856032089306187,
+    "tau": 0.05245284343330284,
+    "m_ncdm": "0.019305144202575886,0.019305144202575886,0.019305144202575886"
+  },
+  "native_extra_args": {
+    "N_ncdm": 3,
+    "N_ur": 0.00641,
+    "tol_ncdm_bg": 1e-08,
+    "tol_perturbations_integration": 1e-06,
+    "perturbations_sampling_stepsize": 0.01,
+    "tol_ncdm_synchronous": 1e-06,
+    "tol_ncdm_newtonian": 1e-06,
+    "l_logstep": 1.026,
+    "l_linstep": 25,
+    "l_max_scalars": 4095,
+    "output": "tCl lCl pCl",
+    "non_linear": "hmcode",
+    "lensing": "yes"
+  },
+  "translated_class_arguments": {
+    "omega_b": 0.02291175022269673,
+    "omega_cdm": 0.11675153446806505,
+    "H0": 68.6264574770633,
+    "A_s": 2.0513564352353405e-09,
+    "n_s": 0.9856032089306187,
+    "tau_reio": 0.05245284343330284,
+    "m_ncdm": "0.019305144202575886,0.019305144202575886,0.019305144202575886",
+    "N_ncdm": 3,
+    "N_ur": 0.00641,
+    "tol_ncdm_bg": 1e-08,
+    "tol_perturbations_integration": 1e-06,
+    "perturbations_sampling_stepsize": 0.01,
+    "tol_ncdm_synchronous": 1e-06,
+    "tol_ncdm_newtonian": 1e-06,
+    "l_logstep": 1.026,
+    "l_linstep": 25,
+    "l_max_scalars": 4095,
+    "output": "tCl lCl pCl",
+    "non_linear": "hmcode",
+    "lensing": "yes"
+  },
+  "failure_log_line": "[classy] *ERROR* Computation error (see traceback below)! Parameters sent to CLASS: {'omegabh2': np.float64(0.02291175022269673), 'omegach2': np.float64(0.11675153446806505), 'H0': np.float64(68.6264574770633), 'As': np.float64(2.0513564352353405e-09), 'ns': np.float64(0.9856032089306187), 'tau': np.float64(0.05245284343330284), 'm_ncdm': '0.019305144202575886,0.019305144202575886,0.019305144202575886'} and {'N_ncdm': 3, 'N_ur': 0.00641, 'tol_ncdm_bg': 1e-08, 'tol_perturbations_integration': 1e-06, 'perturbations_sampling_stepsize': 0.01, 'tol_ncdm_synchronous': 1e-06, 'tol_ncdm_newtonian': 1e-06, 'l_logstep': 1.026, 'l_linstep': 25, 'l_max_scalars': 4095, 'output': 'tCl lCl pCl', 'non_linear': 'hmcode', 'lensing': 'yes'}."
+}

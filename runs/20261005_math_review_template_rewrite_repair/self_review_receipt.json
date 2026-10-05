@@ -1,0 +1,1730 @@
+{
+  "utc": "2026-10-05T08:48:25.418459+00:00",
+  "reviewer": "distinct_self_review_not_independent_agent",
+  "before_source_sha256": "51f97db27a2924dce1f198eefd377b1090d6cda5f73dd55c1647b843c8663c8f",
+  "current_source_sha256": "8fe663a232f8799ba9849d7682c926d358d6e6473a3e4cd5a6450cb2c166410c",
+  "independent_algorithm": "exact rational 1D/2D covariance inverse and weighted projection formula",
+  "ordinary_controls": [
+    {
+      "covariance": [
+        [
+          17.0,
+          -4.0
+        ],
+        [
+          -4.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        1.0,
+        1.0
+      ],
+      "mode": "full_residual",
+      "rational_projection_gain": "26",
+      "coefficient": 1.0,
+      "chi2_before": 25.999999999999996,
+      "chi2_after": 0.0
+    },
+    {
+      "covariance": [
+        [
+          17.0,
+          -4.0
+        ],
+        [
+          -4.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        1.0,
+        1.0
+      ],
+      "mode": "dominant_whitened",
+      "rational_projection_gain": "441/17",
+      "coefficient": 5.093248125762992,
+      "chi2_before": 25.999999999999996,
+      "chi2_after": 0.058823529411764705
+    },
+    {
+      "covariance": [
+        [
+          17.0,
+          -4.0
+        ],
+        [
+          -4.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        1.0,
+        1.0
+      ],
+      "mode": "mode0",
+      "rational_projection_gain": "298270729465467096003130860201/5070602400912917694102863331701",
+      "coefficient": 0.24253562503633297,
+      "chi2_before": 25.999999999999996,
+      "chi2_after": 25.941176470588232
+    },
+    {
+      "covariance": [
+        [
+          17.0,
+          -4.0
+        ],
+        [
+          -4.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        1.0,
+        1.0
+      ],
+      "mode": "mode1",
+      "rational_projection_gain": "441/17",
+      "coefficient": 5.093248125762992,
+      "chi2_before": 25.999999999999996,
+      "chi2_after": 0.058823529411764705
+    },
+    {
+      "covariance": [
+        [
+          11.0,
+          -3.0
+        ],
+        [
+          -3.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        2.0,
+        2.0
+      ],
+      "mode": "full_residual",
+      "rational_projection_gain": "36",
+      "coefficient": 1.0,
+      "chi2_before": 36.0,
+      "chi2_after": 0.0
+    },
+    {
+      "covariance": [
+        [
+          11.0,
+          -3.0
+        ],
+        [
+          -3.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        2.0,
+        2.0
+      ],
+      "mode": "dominant_whitened",
+      "rational_projection_gain": "392/11",
+      "coefficient": 5.969620057957092,
+      "chi2_before": 36.0,
+      "chi2_after": 0.36363636363636365
+    },
+    {
+      "covariance": [
+        [
+          11.0,
+          -3.0
+        ],
+        [
+          -3.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        2.0,
+        2.0
+      ],
+      "mode": "mode0",
+      "rational_projection_gain": "59003373392441138704618503489800/162259276829213359562612571446971",
+      "coefficient": 0.6030226891555273,
+      "chi2_before": 36.0,
+      "chi2_after": 35.63636363636364
+    },
+    {
+      "covariance": [
+        [
+          11.0,
+          -3.0
+        ],
+        [
+          -3.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        2.0,
+        2.0
+      ],
+      "mode": "mode1",
+      "rational_projection_gain": "392/11",
+      "coefficient": 5.969620057957092,
+      "chi2_before": 36.0,
+      "chi2_after": 0.36363636363636365
+    },
+    {
+      "covariance": [
+        [
+          7.0,
+          -2.0
+        ],
+        [
+          -2.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        3.0,
+        3.0
+      ],
+      "mode": "full_residual",
+      "rational_projection_gain": "36",
+      "coefficient": 1.0,
+      "chi2_before": 35.99999999999999,
+      "chi2_after": 0.0
+    },
+    {
+      "covariance": [
+        [
+          7.0,
+          -2.0
+        ],
+        [
+          -2.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        3.0,
+        3.0
+      ],
+      "mode": "dominant_whitened",
+      "rational_projection_gain": "243/7",
+      "coefficient": 5.891883036371794,
+      "chi2_before": 35.99999999999999,
+      "chi2_after": 1.2857142857142858
+    },
+    {
+      "covariance": [
+        [
+          7.0,
+          -2.0
+        ],
+        [
+          -2.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        3.0,
+        3.0
+      ],
+      "mode": "mode0",
+      "rational_projection_gain": "26077383776123618130425844643041/20282409603651672350719336034581",
+      "coefficient": 1.1338934190276817,
+      "chi2_before": 35.99999999999999,
+      "chi2_after": 34.71428571428571
+    },
+    {
+      "covariance": [
+        [
+          7.0,
+          -2.0
+        ],
+        [
+          -2.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        3.0,
+        3.0
+      ],
+      "mode": "mode1",
+      "rational_projection_gain": "243/7",
+      "coefficient": 5.891883036371794,
+      "chi2_before": 35.99999999999999,
+      "chi2_after": 1.2857142857142858
+    },
+    {
+      "covariance": [
+        [
+          5.0,
+          -1.0
+        ],
+        [
+          -1.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        4.0,
+        1.0
+      ],
+      "mode": "full_residual",
+      "rational_projection_gain": "29/4",
+      "coefficient": 1.0,
+      "chi2_before": 7.249999999999999,
+      "chi2_after": 0.0
+    },
+    {
+      "covariance": [
+        [
+          5.0,
+          -1.0
+        ],
+        [
+          -1.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        4.0,
+        1.0
+      ],
+      "mode": "dominant_whitened",
+      "rational_projection_gain": "81/20",
+      "coefficient": 2.0124611797498106,
+      "chi2_before": 7.249999999999999,
+      "chi2_after": 3.1999999999999997
+    },
+    {
+      "covariance": [
+        [
+          5.0,
+          -1.0
+        ],
+        [
+          -1.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        4.0,
+        1.0
+      ],
+      "mode": "mode0",
+      "rational_projection_gain": "16615349947311451417980718024747201/5192296858534828133079642260229332",
+      "coefficient": 1.7888543819998317,
+      "chi2_before": 7.249999999999999,
+      "chi2_after": 4.05
+    },
+    {
+      "covariance": [
+        [
+          5.0,
+          -1.0
+        ],
+        [
+          -1.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        4.0,
+        1.0
+      ],
+      "mode": "mode1",
+      "rational_projection_gain": "81/20",
+      "coefficient": 2.0124611797498106,
+      "chi2_before": 7.249999999999999,
+      "chi2_after": 3.1999999999999997
+    },
+    {
+      "covariance": [
+        [
+          5.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        5.0,
+        2.0
+      ],
+      "mode": "full_residual",
+      "rational_projection_gain": "9",
+      "coefficient": 1.0,
+      "chi2_before": 9.0,
+      "chi2_after": 0.0
+    },
+    {
+      "covariance": [
+        [
+          5.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        5.0,
+        2.0
+      ],
+      "mode": "dominant_whitened",
+      "rational_projection_gain": "5",
+      "coefficient": 2.23606797749979,
+      "chi2_before": 9.0,
+      "chi2_after": 4.0
+    },
+    {
+      "covariance": [
+        [
+          5.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        5.0,
+        2.0
+      ],
+      "mode": "mode0",
+      "rational_projection_gain": "5",
+      "coefficient": 2.23606797749979,
+      "chi2_before": 9.0,
+      "chi2_after": 4.0
+    },
+    {
+      "covariance": [
+        [
+          5.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        5.0,
+        2.0
+      ],
+      "mode": "mode1",
+      "rational_projection_gain": "4",
+      "coefficient": 2.0,
+      "chi2_before": 9.0,
+      "chi2_after": 5.000000000000001
+    },
+    {
+      "covariance": [
+        [
+          7.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        1.0,
+        3.0
+      ],
+      "mode": "full_residual",
+      "rational_projection_gain": "29/3",
+      "coefficient": 1.0,
+      "chi2_before": 9.666666666666664,
+      "chi2_after": 0.0
+    },
+    {
+      "covariance": [
+        [
+          7.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        1.0,
+        3.0
+      ],
+      "mode": "dominant_whitened",
+      "rational_projection_gain": "200/21",
+      "coefficient": 3.086066999241838,
+      "chi2_before": 9.666666666666664,
+      "chi2_after": 0.14285714285714282
+    },
+    {
+      "covariance": [
+        [
+          7.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        1.0,
+        3.0
+      ],
+      "mode": "mode0",
+      "rational_projection_gain": "23179896689887606089957414855048/162259276829213378805754688276645",
+      "coefficient": 0.3779644730092272,
+      "chi2_before": 9.666666666666664,
+      "chi2_after": 9.523809523809522
+    },
+    {
+      "covariance": [
+        [
+          7.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        1.0,
+        3.0
+      ],
+      "mode": "mode1",
+      "rational_projection_gain": "200/21",
+      "coefficient": 3.086066999241838,
+      "chi2_before": 9.666666666666664,
+      "chi2_after": 0.14285714285714282
+    },
+    {
+      "covariance": [
+        [
+          11.0,
+          2.0
+        ],
+        [
+          2.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        2.0,
+        1.0
+      ],
+      "mode": "full_residual",
+      "rational_projection_gain": "1",
+      "coefficient": 1.0,
+      "chi2_before": 1.0000000000000002,
+      "chi2_after": 0.0
+    },
+    {
+      "covariance": [
+        [
+          11.0,
+          2.0
+        ],
+        [
+          2.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        2.0,
+        1.0
+      ],
+      "mode": "dominant_whitened",
+      "rational_projection_gain": "7/11",
+      "coefficient": 0.7977240352174657,
+      "chi2_before": 1.0000000000000002,
+      "chi2_after": 0.36363636363636365
+    },
+    {
+      "covariance": [
+        [
+          11.0,
+          2.0
+        ],
+        [
+          2.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        2.0,
+        1.0
+      ],
+      "mode": "mode0",
+      "rational_projection_gain": "51627951718386072408178419503583/141976867225561689617286000016099",
+      "coefficient": 0.6030226891555273,
+      "chi2_before": 1.0000000000000002,
+      "chi2_after": 0.6363636363636365
+    },
+    {
+      "covariance": [
+        [
+          11.0,
+          2.0
+        ],
+        [
+          2.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        2.0,
+        1.0
+      ],
+      "mode": "mode1",
+      "rational_projection_gain": "7/11",
+      "coefficient": 0.7977240352174657,
+      "chi2_before": 1.0000000000000002,
+      "chi2_after": 0.36363636363636365
+    },
+    {
+      "covariance": [
+        [
+          10.0,
+          3.0
+        ],
+        [
+          3.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        3.0,
+        2.0
+      ],
+      "mode": "full_residual",
+      "rational_projection_gain": "13",
+      "coefficient": 1.0,
+      "chi2_before": 12.999999999999993,
+      "chi2_after": 0.0
+    },
+    {
+      "covariance": [
+        [
+          10.0,
+          3.0
+        ],
+        [
+          3.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        3.0,
+        2.0
+      ],
+      "mode": "dominant_whitened",
+      "rational_projection_gain": "121/10",
+      "coefficient": 3.478505426185216,
+      "chi2_before": 12.999999999999993,
+      "chi2_after": 0.8999999999999999
+    },
+    {
+      "covariance": [
+        [
+          10.0,
+          3.0
+        ],
+        [
+          3.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        3.0,
+        2.0
+      ],
+      "mode": "mode0",
+      "rational_projection_gain": "18254168643286467986282615967409/20282409603651672871324883094418",
+      "coefficient": 0.9486832980505138,
+      "chi2_before": 12.999999999999993,
+      "chi2_after": 12.099999999999993
+    },
+    {
+      "covariance": [
+        [
+          10.0,
+          3.0
+        ],
+        [
+          3.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        3.0,
+        2.0
+      ],
+      "mode": "mode1",
+      "rational_projection_gain": "121/10",
+      "coefficient": 3.478505426185216,
+      "chi2_before": 12.999999999999993,
+      "chi2_after": 0.8999999999999999
+    },
+    {
+      "covariance": [
+        [
+          18.0,
+          4.0
+        ],
+        [
+          4.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        4.0,
+        3.0
+      ],
+      "mode": "full_residual",
+      "rational_projection_gain": "41",
+      "coefficient": 1.0,
+      "chi2_before": 41.00000000000004,
+      "chi2_after": 0.0
+    },
+    {
+      "covariance": [
+        [
+          18.0,
+          4.0
+        ],
+        [
+          4.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        4.0,
+        3.0
+      ],
+      "mode": "dominant_whitened",
+      "rational_projection_gain": "361/9",
+      "coefficient": 6.333333333333337,
+      "chi2_before": 41.00000000000004,
+      "chi2_after": 0.8888888888888891
+    },
+    {
+      "covariance": [
+        [
+          18.0,
+          4.0
+        ],
+        [
+          4.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        4.0,
+        3.0
+      ],
+      "mode": "mode0",
+      "rational_projection_gain": "8012803794035286160120977613969/9014404268289629701257334265777",
+      "coefficient": 0.9428090415820635,
+      "chi2_before": 41.00000000000004,
+      "chi2_after": 40.11111111111115
+    },
+    {
+      "covariance": [
+        [
+          18.0,
+          4.0
+        ],
+        [
+          4.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        4.0,
+        3.0
+      ],
+      "mode": "mode1",
+      "rational_projection_gain": "361/9",
+      "coefficient": 6.333333333333337,
+      "chi2_before": 41.00000000000004,
+      "chi2_after": 0.8888888888888891
+    },
+    {
+      "covariance": [
+        [
+          19.0,
+          -4.0
+        ],
+        [
+          -4.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        5.0,
+        1.0
+      ],
+      "mode": "full_residual",
+      "rational_projection_gain": "28",
+      "coefficient": 1.0,
+      "chi2_before": 27.999999999999968,
+      "chi2_after": 0.0
+    },
+    {
+      "covariance": [
+        [
+          19.0,
+          -4.0
+        ],
+        [
+          -4.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        5.0,
+        1.0
+      ],
+      "mode": "dominant_whitened",
+      "rational_projection_gain": "507/19",
+      "coefficient": 5.165676192553668,
+      "chi2_before": 27.999999999999968,
+      "chi2_after": 1.3157894736842104
+    },
+    {
+      "covariance": [
+        [
+          19.0,
+          -4.0
+        ],
+        [
+          -4.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        5.0,
+        1.0
+      ],
+      "mode": "mode0",
+      "rational_projection_gain": "26687381057436519678436293661225/20282409603651674366275724535961",
+      "coefficient": 1.1470786693528088,
+      "chi2_before": 27.999999999999968,
+      "chi2_after": 26.684210526315756
+    },
+    {
+      "covariance": [
+        [
+          19.0,
+          -4.0
+        ],
+        [
+          -4.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        5.0,
+        1.0
+      ],
+      "mode": "mode1",
+      "rational_projection_gain": "507/19",
+      "coefficient": 5.165676192553668,
+      "chi2_before": 27.999999999999968,
+      "chi2_after": 1.3157894736842104
+    },
+    {
+      "covariance": [
+        [
+          13.0,
+          -3.0
+        ],
+        [
+          -3.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        1.0,
+        2.0
+      ],
+      "mode": "full_residual",
+      "rational_projection_gain": "65/4",
+      "coefficient": 1.0,
+      "chi2_before": 16.25000000000001,
+      "chi2_after": 0.0
+    },
+    {
+      "covariance": [
+        [
+          13.0,
+          -3.0
+        ],
+        [
+          -3.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        1.0,
+        2.0
+      ],
+      "mode": "dominant_whitened",
+      "rational_projection_gain": "841/52",
+      "coefficient": 4.021576422632912,
+      "chi2_before": 16.25000000000001,
+      "chi2_after": 0.07692307692307693
+    },
+    {
+      "covariance": [
+        [
+          13.0,
+          -3.0
+        ],
+        [
+          -3.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        1.0,
+        2.0
+      ],
+      "mode": "mode0",
+      "rational_projection_gain": "99851862664130889988138076770321/1298074214633706785977977580535380",
+      "coefficient": 0.2773500981126146,
+      "chi2_before": 16.25000000000001,
+      "chi2_after": 16.17307692307693
+    },
+    {
+      "covariance": [
+        [
+          13.0,
+          -3.0
+        ],
+        [
+          -3.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        1.0,
+        2.0
+      ],
+      "mode": "mode1",
+      "rational_projection_gain": "841/52",
+      "coefficient": 4.021576422632912,
+      "chi2_before": 16.25000000000001,
+      "chi2_after": 0.07692307692307693
+    },
+    {
+      "covariance": [
+        [
+          9.0,
+          -2.0
+        ],
+        [
+          -2.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        2.0,
+        3.0
+      ],
+      "mode": "full_residual",
+      "rational_projection_gain": "109/5",
+      "coefficient": 1.0,
+      "chi2_before": 21.800000000000004,
+      "chi2_after": 0.0
+    },
+    {
+      "covariance": [
+        [
+          9.0,
+          -2.0
+        ],
+        [
+          -2.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        2.0,
+        3.0
+      ],
+      "mode": "dominant_whitened",
+      "rational_projection_gain": "961/45",
+      "coefficient": 4.621207153499566,
+      "chi2_before": 21.800000000000004,
+      "chi2_after": 0.4444444444444444
+    },
+    {
+      "covariance": [
+        [
+          9.0,
+          -2.0
+        ],
+        [
+          -2.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        2.0,
+        3.0
+      ],
+      "mode": "mode0",
+      "rational_projection_gain": "100160047425440416716573314244721/225360106707240782488302792066845",
+      "coefficient": 0.6666666666666666,
+      "chi2_before": 21.800000000000004,
+      "chi2_after": 21.35555555555556
+    },
+    {
+      "covariance": [
+        [
+          9.0,
+          -2.0
+        ],
+        [
+          -2.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        2.0,
+        3.0
+      ],
+      "mode": "mode1",
+      "rational_projection_gain": "961/45",
+      "coefficient": 4.621207153499566,
+      "chi2_before": 21.800000000000004,
+      "chi2_after": 0.4444444444444444
+    },
+    {
+      "covariance": [
+        [
+          7.0,
+          -1.0
+        ],
+        [
+          -1.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        3.0,
+        1.0
+      ],
+      "mode": "full_residual",
+      "rational_projection_gain": "11/3",
+      "coefficient": 1.0,
+      "chi2_before": 3.666666666666666,
+      "chi2_after": 0.0
+    },
+    {
+      "covariance": [
+        [
+          7.0,
+          -1.0
+        ],
+        [
+          -1.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        3.0,
+        1.0
+      ],
+      "mode": "dominant_whitened",
+      "rational_projection_gain": "50/21",
+      "coefficient": 1.543033499620919,
+      "chi2_before": 3.666666666666666,
+      "chi2_after": 1.2857142857142858
+    },
+    {
+      "covariance": [
+        [
+          7.0,
+          -1.0
+        ],
+        [
+          -1.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        3.0,
+        1.0
+      ],
+      "mode": "mode0",
+      "rational_projection_gain": "208619070208988659073695910132402/162259276829213378805754688276645",
+      "coefficient": 1.1338934190276817,
+      "chi2_before": 3.666666666666666,
+      "chi2_after": 2.3809523809523805
+    },
+    {
+      "covariance": [
+        [
+          7.0,
+          -1.0
+        ],
+        [
+          -1.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        3.0,
+        1.0
+      ],
+      "mode": "mode1",
+      "rational_projection_gain": "50/21",
+      "coefficient": 1.543033499620919,
+      "chi2_before": 3.666666666666666,
+      "chi2_after": 1.2857142857142858
+    },
+    {
+      "covariance": [
+        [
+          7.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        4.0,
+        2.0
+      ],
+      "mode": "full_residual",
+      "rational_projection_gain": "44/7",
+      "coefficient": 1.0,
+      "chi2_before": 6.285714285714286,
+      "chi2_after": 0.0
+    },
+    {
+      "covariance": [
+        [
+          7.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        4.0,
+        2.0
+      ],
+      "mode": "dominant_whitened",
+      "rational_projection_gain": "4",
+      "coefficient": 2.0,
+      "chi2_before": 6.285714285714286,
+      "chi2_after": 2.285714285714285
+    },
+    {
+      "covariance": [
+        [
+          7.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        4.0,
+        2.0
+      ],
+      "mode": "mode0",
+      "rational_projection_gain": "16/7",
+      "coefficient": 1.5118578920369088,
+      "chi2_before": 6.285714285714286,
+      "chi2_after": 4.0
+    },
+    {
+      "covariance": [
+        [
+          7.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        4.0,
+        2.0
+      ],
+      "mode": "mode1",
+      "rational_projection_gain": "4",
+      "coefficient": 2.0,
+      "chi2_before": 6.285714285714286,
+      "chi2_after": 2.285714285714285
+    },
+    {
+      "covariance": [
+        [
+          2.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        5.0,
+        3.0
+      ],
+      "mode": "full_residual",
+      "rational_projection_gain": "13",
+      "coefficient": 1.0,
+      "chi2_before": 12.999999999999998,
+      "chi2_after": 0.0
+    },
+    {
+      "covariance": [
+        [
+          2.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        5.0,
+        3.0
+      ],
+      "mode": "dominant_whitened",
+      "rational_projection_gain": "253530120045645899038379251482624/20282409603651673196880674623765",
+      "coefficient": 3.5355339059327373,
+      "chi2_before": 12.999999999999998,
+      "chi2_after": 0.5000000000000009
+    },
+    {
+      "covariance": [
+        [
+          2.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        5.0,
+        3.0
+      ],
+      "mode": "mode0",
+      "rational_projection_gain": "253530120045645899038379251482624/20282409603651673196880674623765",
+      "coefficient": 3.5355339059327373,
+      "chi2_before": 12.999999999999998,
+      "chi2_after": 0.5000000000000009
+    },
+    {
+      "covariance": [
+        [
+          2.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        5.0,
+        3.0
+      ],
+      "mode": "mode1",
+      "rational_projection_gain": "1/2",
+      "coefficient": 0.7071067811865481,
+      "chi2_before": 12.999999999999998,
+      "chi2_after": 12.499999999999998
+    },
+    {
+      "covariance": [
+        [
+          6.0,
+          2.0
+        ],
+        [
+          2.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        1.0,
+        1.0
+      ],
+      "mode": "full_residual",
+      "rational_projection_gain": "3/2",
+      "coefficient": 1.0,
+      "chi2_before": 1.5,
+      "chi2_after": 0.0
+    },
+    {
+      "covariance": [
+        [
+          6.0,
+          2.0
+        ],
+        [
+          2.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        1.0,
+        1.0
+      ],
+      "mode": "dominant_whitened",
+      "rational_projection_gain": "4/3",
+      "coefficient": 1.1547005383792515,
+      "chi2_before": 1.5,
+      "chi2_after": 0.1666666666666667
+    },
+    {
+      "covariance": [
+        [
+          6.0,
+          2.0
+        ],
+        [
+          2.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        1.0,
+        1.0
+      ],
+      "mode": "mode0",
+      "rational_projection_gain": "1502400711381607674395771752804/9014404268289629703380418892859",
+      "coefficient": 0.4082482904638631,
+      "chi2_before": 1.5,
+      "chi2_after": 1.3333333333333333
+    },
+    {
+      "covariance": [
+        [
+          6.0,
+          2.0
+        ],
+        [
+          2.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        1.0,
+        1.0
+      ],
+      "mode": "mode1",
+      "rational_projection_gain": "4/3",
+      "coefficient": 1.1547005383792515,
+      "chi2_before": 1.5,
+      "chi2_after": 0.1666666666666667
+    },
+    {
+      "covariance": [
+        [
+          12.0,
+          3.0
+        ],
+        [
+          3.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        2.0,
+        2.0
+      ],
+      "mode": "full_residual",
+      "rational_projection_gain": "28/3",
+      "coefficient": 1.0,
+      "chi2_before": 9.333333333333346,
+      "chi2_after": 0.0
+    },
+    {
+      "covariance": [
+        [
+          12.0,
+          3.0
+        ],
+        [
+          3.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        2.0,
+        2.0
+      ],
+      "mode": "dominant_whitened",
+      "rational_projection_gain": "9",
+      "coefficient": 3.000000000000002,
+      "chi2_before": 9.333333333333346,
+      "chi2_after": 0.3333333333333334
+    },
+    {
+      "covariance": [
+        [
+          12.0,
+          3.0
+        ],
+        [
+          3.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        2.0,
+        2.0
+      ],
+      "mode": "mode0",
+      "rational_projection_gain": "422550200076078368318333707225/1267650600228229254607472456197",
+      "coefficient": 0.5773502691896258,
+      "chi2_before": 9.333333333333346,
+      "chi2_after": 9.000000000000014
+    },
+    {
+      "covariance": [
+        [
+          12.0,
+          3.0
+        ],
+        [
+          3.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        2.0,
+        2.0
+      ],
+      "mode": "mode1",
+      "rational_projection_gain": "9",
+      "coefficient": 3.000000000000002,
+      "chi2_before": 9.333333333333346,
+      "chi2_after": 0.3333333333333334
+    },
+    {
+      "covariance": [
+        [
+          20.0,
+          4.0
+        ],
+        [
+          4.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        3.0,
+        3.0
+      ],
+      "mode": "full_residual",
+      "rational_projection_gain": "117/4",
+      "coefficient": 1.0,
+      "chi2_before": 29.249999999999982,
+      "chi2_after": 0.0
+    },
+    {
+      "covariance": [
+        [
+          20.0,
+          4.0
+        ],
+        [
+          4.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        3.0,
+        3.0
+      ],
+      "mode": "dominant_whitened",
+      "rational_projection_gain": "144/5",
+      "coefficient": 5.366563145999494,
+      "chi2_before": 29.249999999999982,
+      "chi2_after": 0.45
+    },
+    {
+      "covariance": [
+        [
+          20.0,
+          4.0
+        ],
+        [
+          4.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        3.0,
+        3.0
+      ],
+      "mode": "mode0",
+      "rational_projection_gain": "36508337286572923302849810141456/81129638414606689579369410316085",
+      "coefficient": 0.6708203932499369,
+      "chi2_before": 29.249999999999982,
+      "chi2_after": 28.799999999999983
+    },
+    {
+      "covariance": [
+        [
+          20.0,
+          4.0
+        ],
+        [
+          4.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        3.0,
+        3.0
+      ],
+      "mode": "mode1",
+      "rational_projection_gain": "144/5",
+      "coefficient": 5.366563145999494,
+      "chi2_before": 29.249999999999982,
+      "chi2_after": 0.45
+    },
+    {
+      "covariance": [
+        [
+          21.0,
+          -4.0
+        ],
+        [
+          -4.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        4.0,
+        1.0
+      ],
+      "mode": "full_residual",
+      "rational_projection_gain": "69/5",
+      "coefficient": 1.0,
+      "chi2_before": 13.8,
+      "chi2_after": 0.0
+    },
+    {
+      "covariance": [
+        [
+          21.0,
+          -4.0
+        ],
+        [
+          -4.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        4.0,
+        1.0
+      ],
+      "mode": "dominant_whitened",
+      "rational_projection_gain": "1369/105",
+      "coefficient": 3.610830269909573,
+      "chi2_before": 13.8,
+      "chi2_after": 0.761904761904762
+    },
+    {
+      "covariance": [
+        [
+          21.0,
+          -4.0
+        ],
+        [
+          -4.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        4.0,
+        1.0
+      ],
+      "mode": "mode0",
+      "rational_projection_gain": "1545326445992506302198322250993161/2028240960365166885187549965928345",
+      "coefficient": 0.8728715609439696,
+      "chi2_before": 13.8,
+      "chi2_after": 13.03809523809524
+    },
+    {
+      "covariance": [
+        [
+          21.0,
+          -4.0
+        ],
+        [
+          -4.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        4.0,
+        1.0
+      ],
+      "mode": "mode1",
+      "rational_projection_gain": "1369/105",
+      "coefficient": 3.610830269909573,
+      "chi2_before": 13.8,
+      "chi2_after": 0.761904761904762
+    },
+    {
+      "covariance": [
+        [
+          15.0,
+          -3.0
+        ],
+        [
+          -3.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        5.0,
+        2.0
+      ],
+      "mode": "full_residual",
+      "rational_projection_gain": "145/6",
+      "coefficient": 1.0,
+      "chi2_before": 24.166666666666657,
+      "chi2_after": 0.0
+    },
+    {
+      "covariance": [
+        [
+          15.0,
+          -3.0
+        ],
+        [
+          -3.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        5.0,
+        2.0
+      ],
+      "mode": "dominant_whitened",
+      "rational_projection_gain": "45/2",
+      "coefficient": 4.743416490252568,
+      "chi2_before": 24.166666666666657,
+      "chi2_after": 1.6666666666666665
+    },
+    {
+      "covariance": [
+        [
+          15.0,
+          -3.0
+        ],
+        [
+          -3.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        5.0,
+        2.0
+      ],
+      "mode": "mode0",
+      "rational_projection_gain": "194711132195056300935697219249009/116826679317033629859373026147690",
+      "coefficient": 1.2909944487358056,
+      "chi2_before": 24.166666666666657,
+      "chi2_after": 22.499999999999993
+    },
+    {
+      "covariance": [
+        [
+          15.0,
+          -3.0
+        ],
+        [
+          -3.0,
+          1.0
+        ]
+      ],
+      "residual": [
+        5.0,
+        2.0
+      ],
+      "mode": "mode1",
+      "rational_projection_gain": "45/2",
+      "coefficient": 4.743416490252568,
+      "chi2_before": 24.166666666666657,
+      "chi2_after": 1.6666666666666665
+    }
+  ],
+  "ordinary_controls_count": 80,
+  "maximum_ordinary_metric_absolute_change": 7.105427357601002e-14,
+  "extreme_representable_quadratic_controls": [
+    {
+      "mode": "full_residual",
+      "exact_input_quadratic_rounded": 1.000011132941258e+300,
+      "repaired": {
+        "chi2_before": 1.000011132941258e+300,
+        "chi2_after": 0.0,
+        "improvement": 1.000011132941258e+300,
+        "fraction_removed": 1.0,
+        "a_star": 1.0,
+        "dominant_mode_index": null,
+        "alignment_cos": 1.0,
+        "cond_cov": 1.0,
+        "chi2_test_best_reference": 0.0
+      },
+      "old_nonfinite_failure_reproduced": true
+    },
+    {
+      "mode": "dominant_whitened",
+      "exact_input_quadratic_rounded": 1.000011132941258e+300,
+      "repaired": {
+        "chi2_before": 1.000011132941258e+300,
+        "chi2_after": 0.0,
+        "improvement": 1.000011132941258e+300,
+        "fraction_removed": 1.0,
+        "a_star": 1.0000055664551363e+150,
+        "dominant_mode_index": 0,
+        "alignment_cos": 1.0,
+        "cond_cov": 1.0,
+        "chi2_test_best_reference": 0.0
+      },
+      "old_nonfinite_failure_reproduced": true
+    }
+  ],
+  "nonfinite_condition_number_reported_unknown": true,
+  "unrepresentable_or_nonfinite_quadratics_refused": 3,
+  "floating_Cholesky_accuracy_certificate": false,
+  "residual_selected_full_template_removal_is_fitted_not_held_out_validation": true,
+  "cosmological_posterior_or_claim_restoration_promoted": false
+}

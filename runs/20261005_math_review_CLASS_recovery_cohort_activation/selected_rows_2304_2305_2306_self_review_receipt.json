@@ -1,0 +1,68 @@
+{
+  "utc": "2026-10-05T04:24:45.048696+00:00",
+  "reviewer": "distinct_self_review_not_independent_agent",
+  "activation_sha256": "fc0d7fe9a27a7872b74e99a37674646be2240a43d869c78542d645afed0d6a4e",
+  "records": [
+    {
+      "seed": 2304,
+      "source_seed": 1302,
+      "receipt_sha256": "ce544cab90f5e9f881d677dae2a1009e74797dc0b4db2f491cda83a9107a38e8",
+      "snapshot_sha256": "fcb714ec3752535fe891dca813f106410c52cdd7aff6ce8ca6bdc59aec063712",
+      "holding_time": 2,
+      "checked_components": [
+        "chi2",
+        "chi2__planck_2018_highl_plik.TT_lite_native",
+        "chi2__planck_2018_lowl.EE_sroll2",
+        "chi2__planck_2018_lowl.TT",
+        "chi2__planckpr4lensing.PlanckPR4Lensing",
+        "chi2__sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood",
+        "chi2__sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian",
+        "minuslogpost",
+        "minuslogprior"
+      ],
+      "maximum_native_component_error": 0.0
+    },
+    {
+      "seed": 2305,
+      "source_seed": 1303,
+      "receipt_sha256": "fee79031f92d0f2a14645a0a73eeee1859038c67ee2276049972acf821d7a39d",
+      "snapshot_sha256": "d9e92d7da2fd96a02205b5301b183007dd6ef25e19530e7a58f407d22ea28a12",
+      "holding_time": 5,
+      "checked_components": [
+        "chi2",
+        "chi2__planck_2018_highl_plik.TT_lite_native",
+        "chi2__planck_2018_lowl.EE_sroll2",
+        "chi2__planck_2018_lowl.TT",
+        "chi2__planckpr4lensing.PlanckPR4Lensing",
+        "chi2__sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood",
+        "chi2__sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian",
+        "minuslogpost",
+        "minuslogprior"
+      ],
+      "maximum_native_component_error": 0.0
+    },
+    {
+      "seed": 2306,
+      "source_seed": 1304,
+      "receipt_sha256": "369e22f1297024f6f2f7f0d3ab6f882089ae5a73972874228b9914707a7eb32e",
+      "snapshot_sha256": "bfb9bb861014c5e2ac07daf52eac1935f0d3af57f21bcc96be99d046cfa3ed9d",
+      "holding_time": 1,
+      "checked_components": [
+        "chi2",
+        "chi2__planck_2018_highl_plik.TT_lite_native",
+        "chi2__planck_2018_lowl.EE_sroll2",
+        "chi2__planck_2018_lowl.TT",
+        "chi2__planckpr4lensing.PlanckPR4Lensing",
+        "chi2__sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood",
+        "chi2__sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian",
+        "minuslogpost",
+        "minuslogprior"
+      ],
+      "maximum_native_component_error": 0.0
+    }
+  ],
+  "complete_source_prefixes_reconstructed": true,
+  "old_histories_pooled": false,
+  "exact_resume_asserted": false,
+  "posterior_or_uniform_accuracy_certified": false
+}

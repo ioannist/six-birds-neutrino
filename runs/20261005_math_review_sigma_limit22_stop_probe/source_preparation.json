@@ -1,0 +1,14 @@
+{
+  "utc": "2026-10-05T01:53:58.617279+00:00",
+  "original_source": "/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_sigma_limit22_20261005/fortran/halofit.f90",
+  "original_sha256": "271834bd99ea03f4a93a983a52202b28897e75f07664f72192b40b5e70af099d",
+  "probe_source": "/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_sigma_limit22_stop_probe_20261005/fortran/halofit.f90",
+  "probe_sha256": "d4ca79526f3df8c20766e22a6917189e62b10d8ee0fb518a439c467cec8eccb8",
+  "changes": [
+    [
+      "                    ! jmin avoids spurious early convergence\n                    integrate = sum_new",
+      "                    ! jmin avoids spurious early convergence\n                    if (present(minimum_level)) then\n                        if (z == 0._dl .and. (abs(y-9.9999997473787462e-5_dl)<1.e-16_dl .or. &\n                            abs(y-1.2915496329054870e-4_dl)<1.e-16_dl .or. &\n                            abs(y-4.6415887275236549e-4_dl)<1.e-16_dl)) then\n                            write(*,*) 'AUDIT_SIGMA_ACCEPTED', y, z, itype, acc, j, n, sum_new, sum_old\n                        end if\n                    end if\n                    integrate = sum_new"
+    ]
+  ],
+  "scope": "Observational record on existing success branch at the three preserved timeout radii; numerical statements and error propagation unchanged."
+}

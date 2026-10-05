@@ -1,0 +1,25 @@
+{
+  "utc": "2026-10-05T02:40:49.113226+00:00",
+  "stages": [
+    {
+      "script": "run_diagnostics.py",
+      "managed_session": 6137,
+      "exit_code": 0
+    },
+    {
+      "script": "observe_runtime.py",
+      "managed_session": 54291,
+      "exit_code": 0
+    },
+    {
+      "script": "verify_snapshot.py",
+      "direct_exec_exit_code": 0
+    },
+    {
+      "script": "self_review.py",
+      "direct_exec_exit_code": 0
+    }
+  ],
+  "all_workers_terminal": true,
+  "posterior_convergence_certified": false
+}

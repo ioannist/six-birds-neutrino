@@ -1,0 +1,23 @@
+{
+  "utc": "2026-10-05T08:28:42.364306+00:00",
+  "self_review_first_exit_code": 1,
+  "self_review_failure": "Missing canonical preparation receipt filename; no review output written.",
+  "request_stop_first_exit_code": 1,
+  "stop_request_failure": "Historical entries use exec_session, not session; failed before any signal.",
+  "first_stop_request_log_size": 0,
+  "request_stop_source_sha256": "db228c4bf33a2cd80391c68f16e6c3f9a3d36fd638d0bde6989d610085191461",
+  "request_stop_v2_changes": [
+    [
+      "entries[seed][\"session\"]",
+      "entries[seed].get(\"session\", entries[seed].get(\"exec_session\"))"
+    ],
+    [
+      "\"stop_requests.jsonl\"",
+      "\"stop_requests_v2.jsonl\""
+    ],
+    [
+      "\"posterior_qualification_unchanged\": False",
+      "\"posterior_qualified\": False"
+    ]
+  ]
+}

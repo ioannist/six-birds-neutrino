@@ -1,0 +1,25 @@
+{
+  "utc": "2026-10-04T23:01:28.549176+00:00",
+  "review_type": "distinct_self_review_not_independent_agent",
+  "reversed_observers": [
+    {
+      "source": "runs/20261004_math_review_guarded_CLASS_seventh_medium_A_diagnostics/observe_runtime.py",
+      "destination": "runs/20261004_math_review_retired_PID_identity_repair/observe_primary_runtime.py",
+      "reverse_bytes_equal": true
+    },
+    {
+      "source": "runs/20261004_math_review_upper_prior_posterior_preparation/observe_all_runtime.py",
+      "destination": "runs/20261004_math_review_retired_PID_identity_repair/observe_all_runtime.py",
+      "reverse_bytes_equal": true
+    }
+  ],
+  "primary40_success_receipt": "runs/20261004_math_review_guarded_CLASS_seventh_medium_A_diagnostics/runtime_observation.json",
+  "primary40_success_receipt_sha256": "7c99ab975146dc1df99652e55cf9b125ad4fb547c53a4d1384764e23fef7c8f7",
+  "original_identity_baseline_manifest_pin_verified": true,
+  "retired_identity_witnesses_checked": 16,
+  "negative_and_boundary_controls_checked": 9,
+  "live_checks_or_science_gates_weakened": false,
+  "helper_signals_or_mutates_processes": false,
+  "combined48_attempt_terminal_seed2003_separately_classified": true,
+  "uniform_native_accuracy_or_posterior_convergence_certified": false
+}

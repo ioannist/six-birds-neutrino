@@ -1,0 +1,32 @@
+{
+  "utc": "2026-10-04T23:05:20.790168+00:00",
+  "preservation_source": "runs/20261004_math_review_upper_prior_seed2003_native_failure_v2/preserve_terminal.py",
+  "preservation_source_sha256": "b9f65186ccffcc06378af50d559e844d77e5487f292b0f9822402a5b23d34cc5",
+  "review_source": "runs/20261004_math_review_upper_prior_seed2003_native_failure_v2/self_review.py",
+  "review_source_sha256": "ef80e4e9b0bafc6a1250d72d19449a1e46872e111598aa6ec362c91bb50f095f",
+  "changes": [
+    [
+      "2003",
+      "2004"
+    ],
+    [
+      "4995",
+      "26593"
+    ],
+    [
+      "2026-10-04 22:48:36",
+      "2026-10-04 22:57:56"
+    ],
+    [
+      "'steps': 431, 'accepted': 217",
+      "'steps': 622, 'accepted': 225"
+    ],
+    [
+      "closed_exit1_observed_previous_goal_turn",
+      "closed_exit1_polled_current_goal_turn"
+    ]
+  ],
+  "prior_combined_failure_writer_removed": true,
+  "unrelated_prior_failed_archive_pointer_removed": true,
+  "new_self_review_only_seed_number_changed": true
+}

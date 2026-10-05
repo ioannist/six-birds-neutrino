@@ -1,0 +1,61 @@
+{
+  "utc": "2026-10-05T05:20:36.743501+00:00",
+  "records": [
+    {
+      "name": "prepare_snapshot.py",
+      "source": "runs/20261005_math_review_CLASS_fresh_recovery_diagnostic_preparation_v2/prepare_snapshot.py",
+      "source_sha256": "511d0254f4d7cd59390fbe2a3451387df9360218fd359182595f992235ee4e7a",
+      "changes": []
+    },
+    {
+      "name": "verify_native_rows.py",
+      "source": "runs/20261005_math_review_CLASS_fresh_recovery_diagnostic_preparation_v2/verify_native_rows.py",
+      "source_sha256": "335517a2980a98187d4672b248652e29bd5c3dfa67085481e4bb5b3d13477a3e",
+      "changes": []
+    },
+    {
+      "name": "run_diagnostic.py",
+      "source": "runs/20261005_math_review_CLASS_fresh_recovery_diagnostic_preparation_v2/run_diagnostic.py",
+      "source_sha256": "ab760f7bde8806f0c82ed515e57278a5751a0842c9b9116df866d5421597b327",
+      "changes": []
+    },
+    {
+      "name": "verify_snapshot.py",
+      "source": "runs/20261005_math_review_CLASS_fresh_recovery_diagnostic_preparation_v2/verify_snapshot.py",
+      "source_sha256": "104ec478d3e62eac83d0a74dc99a9e62e7cfdfd64ea6debaa1964692672da329",
+      "changes": []
+    },
+    {
+      "name": "contract_compatibility.py",
+      "source": "runs/20261005_math_review_CLASS_fresh_recovery_diagnostic_preparation_v2/contract_compatibility.py",
+      "source_sha256": "0185acd13c2c2b5fd3669a490e68eda69edb0d23e7960dd76c81c7771cc43ace",
+      "changes": []
+    },
+    {
+      "name": "prepare_contract.py",
+      "source": "runs/20261005_math_review_CLASS_fresh_recovery_diagnostic_preparation_v2/prepare_contract.py",
+      "source_sha256": "aab996c12e2a1496fc915ddbffb50884e44a0785c7b85f88b0c30f9156ef3e3d",
+      "changes": [
+        [
+          "['guarded_CLASS_fresh_recovery_trials', 'CLASS_recovery_companion_posterior_chains']",
+          "['CLASS_fresh_B_posterior_chains']"
+        ],
+        [
+          "for group, cohort in state['fresh_CLASS_recovery_cohorts'].items():",
+          "for group, cohort in state['CLASS_fresh_B_preparation']['cohorts'].items():"
+        ],
+        [
+          "Two separate fresh CLASS four-start recovery targets.",
+          "Two separate fresh CLASS B four-start recovery targets."
+        ],
+        [
+          "Bind two fresh four-start CLASS targets",
+          "Bind two fresh four-start CLASS B targets"
+        ]
+      ]
+    }
+  ],
+  "original_adaptation_receipt": "runs/20261005_math_review_CLASS_fresh_recovery_diagnostic_preparation/worker_preparation_receipt.json",
+  "original_adaptation_receipt_sha256": "932afe5f09c6334f25e4fe2600236ce99c762fa0b539403f1d6d95c87b18ce56",
+  "scope": "New B target contracts; unchanged established CLASS diagnostic helpers and thresholds."
+}

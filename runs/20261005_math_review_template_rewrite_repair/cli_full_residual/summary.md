@@ -1,0 +1,26 @@
+# Template Rewrite Summary
+
+- runA: `toy_lensA` (/home/repos/six-birds-neutrino/runs/20261003_math_review_toy_audit/lensA)
+- runB: `toy_lensB` (/home/repos/six-birds-neutrino/runs/20261003_math_review_toy_audit/lensB)
+- direction: `both`
+- template_mode: `full_residual`
+- B_given_A.chi2_before: `2.290816419`
+- B_given_A.chi2_after: `0`
+- B_given_A.improvement: `2.290816419`
+- B_given_A.fraction_removed: `1`
+- B_given_A.a_star: `1`
+- B_given_A.dominant_mode_index: `None`
+- B_given_A.alignment_cos: `1`
+- B_given_A.cond_cov: `2.12017828681`
+- A_given_B.chi2_before: `8.29081594388`
+- A_given_B.chi2_after: `0`
+- A_given_B.improvement: `8.29081594388`
+- A_given_B.fraction_removed: `1`
+- A_given_B.a_star: `1`
+- A_given_B.dominant_mode_index: `None`
+- A_given_B.alignment_cos: `1`
+- A_given_B.cond_cov: `2.12017828681`
+- figure: `/home/repos/six-birds-neutrino/runs/20261005_math_review_template_rewrite_repair/cli_full_residual/figures/template_rewrite_before_after.png`
+- warnings:
+- `B_given_A: high overfit risk: residual-driven template has alignment_cos > 0.95`
+- `A_given_B: high overfit risk: residual-driven template has alignment_cos > 0.95`

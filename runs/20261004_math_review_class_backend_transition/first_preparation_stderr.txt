@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/home/repos/six-birds-neutrino/runs/20261004_math_review_class_backend_transition/retire_and_prepare.py", line 146, in <module>
+    assert options['temperature'] == 1 and options['oversample_thin'] is False
+           ~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'temperature'

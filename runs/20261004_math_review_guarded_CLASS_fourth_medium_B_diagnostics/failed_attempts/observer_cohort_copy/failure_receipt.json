@@ -1,0 +1,6 @@
+{
+  "failure": "Observer copied with quadrature-to-medium replacement duplicated the medium entries and omitted quadrature entries; unique owned PID assertion failed before runtime receipt creation",
+  "location": "observe_runtime.py:17",
+  "repair": "Copy the unchanged full owned-cohort list and change only the docstring",
+  "scientific_snapshots_or_sampler_processes_changed": false
+}

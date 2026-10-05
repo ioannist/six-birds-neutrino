@@ -1,0 +1,42 @@
+{
+  "utc": "2026-10-04T05:04:29.624275+00:00",
+  "scope": "subnormal_nonzero_precision_weight_binary64_intermediate_emulation",
+  "records": [
+    {
+      "phase": "before",
+      "sign": 1.0,
+      "source_sha256": "e80cd63bbf4f7e75f2d605d70d17c054c4044ea3ce3fe45bf9982e2af7d894f9",
+      "actual": 9.99988867182683e-21,
+      "swapped": 9.99988867182683e-21,
+      "exact_input_fraction_rounded": 1e-20,
+      "relative_error": -1.113281731690563e-05
+    },
+    {
+      "phase": "before",
+      "sign": -1.0,
+      "source_sha256": "e80cd63bbf4f7e75f2d605d70d17c054c4044ea3ce3fe45bf9982e2af7d894f9",
+      "actual": -9.99988867182683e-21,
+      "swapped": -9.99988867182683e-21,
+      "exact_input_fraction_rounded": -1e-20,
+      "relative_error": -1.113281731690563e-05
+    },
+    {
+      "phase": "after",
+      "sign": 1.0,
+      "source_sha256": "284a907c44688f4efd0f2bc286626171238e25b04dfaa120f9b4ccb7b3db1214",
+      "actual": 1e-20,
+      "swapped": 1e-20,
+      "exact_input_fraction_rounded": 1e-20,
+      "relative_error": 0.0
+    },
+    {
+      "phase": "after",
+      "sign": -1.0,
+      "source_sha256": "284a907c44688f4efd0f2bc286626171238e25b04dfaa120f9b4ccb7b3db1214",
+      "actual": -1e-20,
+      "swapped": -1e-20,
+      "exact_input_fraction_rounded": -1e-20,
+      "relative_error": 0.0
+    }
+  ]
+}

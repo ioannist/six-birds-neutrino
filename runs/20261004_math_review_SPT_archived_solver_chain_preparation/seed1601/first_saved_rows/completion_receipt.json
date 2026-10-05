@@ -1,0 +1,32 @@
+{
+  "seed": 1601,
+  "lens": "A",
+  "source": "runs/20261004_math_review_archived_CAMB_chain_A_seed1601/chains/archived_CAMB_A_seed1601.1.txt",
+  "frozen": "runs/20261004_math_review_SPT_archived_solver_chain_preparation/seed1601/first_saved_rows/chains/archived_CAMB_A_seed1601.1.txt",
+  "snapshot_sha256": "14e409d75e1aeb3d979d8a9cd2a2a4f6a0dc745f756b1360f08fd52257e6136b",
+  "source_complete_prefix_matches": true,
+  "point": {
+    "omegabh2": 0.023052089119237555,
+    "omegach2": 0.11571927532063535,
+    "H0": 68.79142774093097,
+    "logA": 3.0162119,
+    "ns": 1.0113053,
+    "tau": 0.05286627099452344,
+    "mnu": 0.09615728768722173
+  },
+  "holding_time": 20,
+  "out": "runs/20261004_math_review_SPT_archived_solver_chain_preparation/seed1601/first_saved_rows",
+  "utc": "2026-10-04T13:06:50.316992+00:00",
+  "native_row_replay_discrepancies": {
+    "sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 0.0,
+    "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 0.0,
+    "total_chi2": 0.0,
+    "logprior": 0.0,
+    "logposterior": 0.0
+  },
+  "native_row_replay_tolerance": 1e-09,
+  "module_sha256": "6a54f98bcc65601fd1ad5e760a99a0072cdc45fe49197ba5c3a1282889c2ee0d",
+  "native_row_verified": true,
+  "requested_effective_lmax": 3200,
+  "original_environment_or_convergence_certified": false
+}

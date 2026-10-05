@@ -1,0 +1,17 @@
+{
+  "utc": "2026-10-04T17:15:07.820527+00:00",
+  "sources": [
+    {
+      "source": "src/sbt_spt_audit/likelihoods/desi_dr2_bao.py",
+      "before": "runs/20261004_math_review_BAO_distance_range_repair/before_desi_dr2_bao.py",
+      "sha256": "00fdc02856aa608d7b68c242a3cf46bd96200f61fd9b00adf3c0073598bfeaf9"
+    },
+    {
+      "source": "tests/test_desi_dr2_bao.py",
+      "before": "runs/20261004_math_review_BAO_distance_range_repair/before_test_desi_dr2_bao.py",
+      "sha256": "a7d8a7e109acb05d7788aeb19bab8d89efa32c2f5f097e90f70fc4f2ad12c0af"
+    }
+  ],
+  "scope": "finite BAO observable intermediates; preserve ordinary arithmetic branch",
+  "paper_modified": false
+}

@@ -1,0 +1,100 @@
+{
+  "utc": "2026-10-04T04:55:05.437761+00:00",
+  "scope": "integral_derived_truncated_Gaussian_density_and_its_unique_gated_mode",
+  "first_build": {
+    "session": 4914,
+    "exit_code": 1,
+    "reason": "two simplification failures; no failed proof accepted"
+  },
+  "goal_probe": {
+    "session": 25337,
+    "exit_code": 1,
+    "scope": "diagnostic proof state only"
+  },
+  "final_build": {
+    "session": 81886,
+    "exit_code": 0
+  },
+  "axiom_check": {
+    "session": 61570,
+    "exit_code": 0,
+    "exported_theorems": 43,
+    "allowed": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "adversarial_checks": {
+    "initial_session": 85007,
+    "initial_exit_code": 1,
+    "second_session": 40778,
+    "second_exit_code": 1,
+    "final_session": 88961,
+    "final_exit_code": 0,
+    "examples": 7,
+    "first_failures": "test-proof simplification of kernel constants and infinite Lebesgue measure"
+  },
+  "full_math_check": {
+    "session": 51596,
+    "exit_code": 0,
+    "python_tests": 73,
+    "Lean_exports": 43
+  },
+  "premises": [
+    "standard deviation strictly positive",
+    "mean any finite real in the real-valued theorem",
+    "Lebesgue measure on the closed nonnegative halfline",
+    "constant prior on the gate for posterior interpretation"
+  ],
+  "substantive_dependency": "Mathlib integrable_exp_neg_mul_sq at the derived positive inverse quadratic scale, followed by translation invariance of integrability",
+  "semantic_bridges_checked": [
+    "integrability of the actual unnorm kernel on all reals",
+    "restriction to the actual physical halfline remains integrable",
+    "strictly positive kernel has positive-measure support on that halfline",
+    "normalizer is the actual integral and its positivity is derived",
+    "density is nonnegative and zero outside the gate",
+    "actual density is integrable and has integral one",
+    "the derived reciprocal is positive and preserves the unique gated mode",
+    "zero deviation cannot be admitted through the totalized Bochner integral"
+  ],
+  "normalized_density_formalized": true,
+  "normalizer_is_supplied_hypothesis": false,
+  "Gaussian_CDF_closed_form_formalized": false,
+  "binary64_density_implementation_certified": false,
+  "varying_prior_or_finite_upper_gate_covered": false,
+  "cosmological_Gaussian_applicability_proved": false,
+  "reviewer": "distinct_self_review_no_independent_agent",
+  "source_files": [
+    {
+      "path": "lean/trunc_gauss_proof/TruncGaussProof/Normalization.lean",
+      "sha256": "797977dfb5e0be7bdcccaebebaa66f4f15040710df4851ac888ef5e8a3eaf623"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/TruncGaussProof.lean",
+      "sha256": "8347998edac79b6489ba1a154255edee89c0dffae2db52ee2dae6b4e1c4d299f"
+    },
+    {
+      "path": "lean/trunc_gauss_proof/AuditAxioms.lean",
+      "sha256": "e2cfb59dbc31e9edd8d46c214378809125588868140ce059409641328f0b1778"
+    },
+    {
+      "path": "runs/20261004_math_review_class_backend_transition/normalization_adversarial.lean",
+      "sha256": "97c71bd99cfd1ac5dfb44e454249f0a50038e3cec8f938073506d44e5617b7b0"
+    }
+  ],
+  "receipts": [
+    {
+      "path": "runs/20261004_math_review_class_backend_transition/normalization_axioms_stdout.txt",
+      "sha256": "fd9d891a775a4565d123449d74821c44e21aca2ae8607e462b45ea7419fa9946"
+    },
+    {
+      "path": "runs/20261004_math_review_class_backend_transition/normalization_math_check_stdout.txt",
+      "sha256": "55a4713b15500e88d176201d23792833a12efcc1982520e52faef681dff8f64a"
+    },
+    {
+      "path": "runs/20261004_math_review_class_backend_transition/normalization_adversarial_stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

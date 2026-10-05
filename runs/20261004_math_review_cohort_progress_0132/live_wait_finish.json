@@ -1,0 +1,492 @@
+{
+  "utc": "2026-10-04T01:38:35.158402+00:00",
+  "scope": "verified_wait_and_learning_progress_no_convergence_claim",
+  "all_28_owned_processes_live": true,
+  "records": [
+    {
+      "seed": 301,
+      "pid": 370438,
+      "owned_identity_live": true,
+      "source_saved_rows": 2936,
+      "additional_saved_rows_during_verified_wait": 20,
+      "source_complete_byte_count": 998580,
+      "source_complete_sha256": "f6d9578102c466df3cebec913108530f36146c5fca6354c73d1d19e49111156e",
+      "source_chain": "runs/20261003_math_review_chain_A_seed301/chains/math_restoration_A_seed301.1.txt",
+      "log": "runs/20261003_math_review_chain_A_seed301/stdout.txt",
+      "log_prefix_byte_count": 75256,
+      "log_prefix_sha256": "d347185a54950d4b70a2960e96aff6998f990800f3aa47137a6958f154fe950a",
+      "latest_learning_messages": [
+        "[mcmc]  - Updated covariance matrix of proposal pdf.",
+        "[mcmc]  - Convergence of means: R-1 = 0.139026 after 2240 accepted steps",
+        "[mcmc]  - Updated covariance matrix of proposal pdf."
+      ],
+      "historical_and_fresh_source_rows_must_not_be_pooled_for_resumed_chains": false
+    },
+    {
+      "seed": 302,
+      "pid": 370439,
+      "owned_identity_live": true,
+      "source_saved_rows": 2954,
+      "additional_saved_rows_during_verified_wait": 18,
+      "source_complete_byte_count": 1004700,
+      "source_complete_sha256": "a44d0e7c3f1c67e4b640cb91d7d6357721e9cf9c3fbd157c1941dfd380326ce5",
+      "source_chain": "runs/20261003_math_review_chain_A_seed302/chains/math_restoration_A_seed302.1.txt",
+      "log": "runs/20261003_math_review_chain_A_seed302/stdout.txt",
+      "log_prefix_byte_count": 75632,
+      "log_prefix_sha256": "4f1a5beb6d502cb140fb45b0eb65e92989ddb31a5075d754eff348c7f451dbf3",
+      "latest_learning_messages": [
+        "[mcmc]  - Updated covariance matrix of proposal pdf.",
+        "[mcmc]  - Convergence of means: R-1 = 0.076381 after 2240 accepted steps",
+        "[mcmc]  - Updated covariance matrix of proposal pdf."
+      ],
+      "historical_and_fresh_source_rows_must_not_be_pooled_for_resumed_chains": false
+    },
+    {
+      "seed": 305,
+      "pid": 370440,
+      "owned_identity_live": true,
+      "source_saved_rows": 2212,
+      "additional_saved_rows_during_verified_wait": 17,
+      "source_complete_byte_count": 752420,
+      "source_complete_sha256": "484abaacf85f89e92e4ec27598cec3d6cd7d9d09fa85f69273e73b6ae372010c",
+      "source_chain": "runs/20261003_math_review_chain_B_seed305/chains/math_restoration_B_seed305.1.txt",
+      "log": "runs/20261003_math_review_chain_B_seed305/stdout.txt",
+      "log_prefix_byte_count": 74480,
+      "log_prefix_sha256": "ac2e44b133e529c3e21d7efc88ace3dc562651fba44b608e7586447e469255b8",
+      "latest_learning_messages": [
+        "[mcmc]  - Updated covariance matrix of proposal pdf.",
+        "[mcmc]  - Convergence of means: R-1 = 0.089162 after 1568 accepted steps",
+        "[mcmc]  - Updated covariance matrix of proposal pdf."
+      ],
+      "historical_and_fresh_source_rows_must_not_be_pooled_for_resumed_chains": false
+    },
+    {
+      "seed": 306,
+      "pid": 370441,
+      "owned_identity_live": true,
+      "source_saved_rows": 2112,
+      "additional_saved_rows_during_verified_wait": 12,
+      "source_complete_byte_count": 718420,
+      "source_complete_sha256": "6e5bef9e74ecaf6427b51f18b8d9f4d05e0c403d3791c688806e6ebb61407302",
+      "source_chain": "runs/20261003_math_review_chain_B_seed306/chains/math_restoration_B_seed306.1.txt",
+      "log": "runs/20261003_math_review_chain_B_seed306/stdout.txt",
+      "log_prefix_byte_count": 74183,
+      "log_prefix_sha256": "67a81fb62c6bb1d661e3866a022644abdac1eb3a9b70fdd714b801694745b21e",
+      "latest_learning_messages": [
+        "[mcmc]  - Updated covariance matrix of proposal pdf.",
+        "[mcmc]  - Convergence of means: R-1 = 0.191342 after 1568 accepted steps",
+        "[mcmc]  - Updated covariance matrix of proposal pdf."
+      ],
+      "historical_and_fresh_source_rows_must_not_be_pooled_for_resumed_chains": false
+    },
+    {
+      "seed": 303,
+      "pid": 660424,
+      "owned_identity_live": true,
+      "source_saved_rows": 3558,
+      "additional_saved_rows_during_verified_wait": 20,
+      "source_complete_byte_count": 1210060,
+      "source_complete_sha256": "ed1cca8b28c5409020b8b030ef41d5b2326cb8c62c66e456a3abe9185f6fbd24",
+      "source_chain": "runs/20261003_math_review_chain_A_seed303/chains/math_restoration_A_seed303.1.txt",
+      "log": "runs/20261003_math_review_chain_A_seed303/stdout.txt",
+      "log_prefix_byte_count": 83459,
+      "log_prefix_sha256": "3578b7232165f5136839a89dc5a945b1e326594f1217bbd733356df642a85b0f",
+      "latest_learning_messages": [
+        "[mcmc]  - Updated covariance matrix of proposal pdf.",
+        "[mcmc]  - Convergence of means: R-1 = 0.081368 after 2800 accepted steps",
+        "[mcmc]  - Updated covariance matrix of proposal pdf."
+      ],
+      "historical_and_fresh_source_rows_must_not_be_pooled_for_resumed_chains": false
+    },
+    {
+      "seed": 304,
+      "pid": 660425,
+      "owned_identity_live": true,
+      "source_saved_rows": 3596,
+      "additional_saved_rows_during_verified_wait": 17,
+      "source_complete_byte_count": 1222980,
+      "source_complete_sha256": "1aef1671eea7d94c1590a57dabad2176f46a277c4ca06eff680a4d9d1f35f3d2",
+      "source_chain": "runs/20261003_math_review_chain_A_seed304/chains/math_restoration_A_seed304.1.txt",
+      "log": "runs/20261003_math_review_chain_A_seed304/stdout.txt",
+      "log_prefix_byte_count": 83603,
+      "log_prefix_sha256": "9fa277ba1e6376619dd99b535a49ef3e43afcb19c1da4f43e2b9e671f603673e",
+      "latest_learning_messages": [
+        "[mcmc]  - Updated covariance matrix of proposal pdf.",
+        "[mcmc]  - Convergence of means: R-1 = 0.071630 after 2856 accepted steps",
+        "[mcmc]  - Updated covariance matrix of proposal pdf."
+      ],
+      "historical_and_fresh_source_rows_must_not_be_pooled_for_resumed_chains": false
+    },
+    {
+      "seed": 307,
+      "pid": 660426,
+      "owned_identity_live": true,
+      "source_saved_rows": 3457,
+      "additional_saved_rows_during_verified_wait": 9,
+      "source_complete_byte_count": 1175720,
+      "source_complete_sha256": "9a6e31f3069759e7fb2e3efea9e51be5094b8ac9d39f95dd73d5df564ab9447d",
+      "source_chain": "runs/20261003_math_review_chain_B_seed307/chains/math_restoration_B_seed307.1.txt",
+      "log": "runs/20261003_math_review_chain_B_seed307/stdout.txt",
+      "log_prefix_byte_count": 82954,
+      "log_prefix_sha256": "75807fe3f29e0e97994f91d09e640b40619380975fa9433ac5b1519c01b39ce8",
+      "latest_learning_messages": [
+        "[mcmc]  - Updated covariance matrix of proposal pdf.",
+        "[mcmc]  - Convergence of means: R-1 = 0.088484 after 2744 accepted steps",
+        "[mcmc]  - Updated covariance matrix of proposal pdf."
+      ],
+      "historical_and_fresh_source_rows_must_not_be_pooled_for_resumed_chains": false
+    },
+    {
+      "seed": 308,
+      "pid": 660427,
+      "owned_identity_live": true,
+      "source_saved_rows": 3363,
+      "additional_saved_rows_during_verified_wait": 14,
+      "source_complete_byte_count": 1143760,
+      "source_complete_sha256": "a1eee65c367ff9f610a16a2798817480382f8376bda98d20c9e18185960afac2",
+      "source_chain": "runs/20261003_math_review_chain_B_seed308/chains/math_restoration_B_seed308.1.txt",
+      "log": "runs/20261003_math_review_chain_B_seed308/stdout.txt",
+      "log_prefix_byte_count": 82586,
+      "log_prefix_sha256": "f560ecfa14150eefbacd3878b5ff511aaff857e8054248507ba3a342cbc0ffa6",
+      "latest_learning_messages": [
+        "[mcmc]  - Updated covariance matrix of proposal pdf.",
+        "[mcmc]  - Convergence of means: R-1 = 0.054726 after 2688 accepted steps",
+        "[mcmc]  - Updated covariance matrix of proposal pdf."
+      ],
+      "historical_and_fresh_source_rows_must_not_be_pooled_for_resumed_chains": false
+    },
+    {
+      "seed": 402,
+      "pid": 2333841,
+      "owned_identity_live": true,
+      "source_saved_rows": 17027,
+      "additional_saved_rows_during_verified_wait": 76,
+      "source_complete_byte_count": 5789520,
+      "source_complete_sha256": "73336bb0d74ec7557f40dbb5dfdae855c1135f7d58e8157a3a49178a42837888",
+      "source_chain": "runs/20261003_math_review_chain_A_seed402/chains/math_restoration_A_seed402.1.txt",
+      "log": "runs/20261003_math_review_chain_A_seed402/stdout.txt",
+      "log_prefix_byte_count": 127938,
+      "log_prefix_sha256": "85a032492e3eda4ace8718e2668ff0d7eda58e195826a30378c67bcaca37ce9f",
+      "latest_learning_messages": [
+        "[mcmc]  - Updated covariance matrix of proposal pdf.",
+        "[mcmc]  - Convergence of means: R-1 = 0.015251 after 13608 accepted steps",
+        "[mcmc]  - Updated covariance matrix of proposal pdf."
+      ],
+      "historical_and_fresh_source_rows_must_not_be_pooled_for_resumed_chains": false
+    },
+    {
+      "seed": 401,
+      "pid": 2333842,
+      "owned_identity_live": true,
+      "source_saved_rows": 17159,
+      "additional_saved_rows_during_verified_wait": 75,
+      "source_complete_byte_count": 5834400,
+      "source_complete_sha256": "0865dd167783c689b14a4e9a9dd17acbffc305aec4792fbe09773fd6dddbdf9c",
+      "source_chain": "runs/20261003_math_review_chain_A_seed401/chains/math_restoration_A_seed401.1.txt",
+      "log": "runs/20261003_math_review_chain_A_seed401/stdout.txt",
+      "log_prefix_byte_count": 126704,
+      "log_prefix_sha256": "9e083ad3e845ba9da9e2db66e871daccee82353163b629a03031f6d4e8f00216",
+      "latest_learning_messages": [
+        "[mcmc]  - Updated covariance matrix of proposal pdf.",
+        "[mcmc]  - Convergence of means: R-1 = 0.009726 after 13720 accepted steps",
+        "[mcmc]  - Updated covariance matrix of proposal pdf."
+      ],
+      "historical_and_fresh_source_rows_must_not_be_pooled_for_resumed_chains": false
+    },
+    {
+      "seed": 404,
+      "pid": 2333851,
+      "owned_identity_live": true,
+      "source_saved_rows": 15004,
+      "additional_saved_rows_during_verified_wait": 74,
+      "source_complete_byte_count": 5101700,
+      "source_complete_sha256": "0db72e5578810ddbaa912a49a6700bc76abe27d9a23d3afd5bd5a77b1f280805",
+      "source_chain": "runs/20261003_math_review_chain_B_seed404/chains/math_restoration_B_seed404.1.txt",
+      "log": "runs/20261003_math_review_chain_B_seed404/stdout.txt",
+      "log_prefix_byte_count": 121877,
+      "log_prefix_sha256": "350f74f9f9a46e2e5507f0c72b2b9bc6045325d9bb7b4c07522b7d2093b7de26",
+      "latest_learning_messages": [
+        "[mcmc]  - Updated covariance matrix of proposal pdf.",
+        "[mcmc]  - Convergence of means: R-1 = 0.015360 after 11984 accepted steps",
+        "[mcmc]  - Updated covariance matrix of proposal pdf."
+      ],
+      "historical_and_fresh_source_rows_must_not_be_pooled_for_resumed_chains": false
+    },
+    {
+      "seed": 403,
+      "pid": 2333860,
+      "owned_identity_live": true,
+      "source_saved_rows": 15316,
+      "additional_saved_rows_during_verified_wait": 69,
+      "source_complete_byte_count": 5207780,
+      "source_complete_sha256": "baab5be9da9ea971f7d04f9e57b2f79cd1bc51f6c5f4e336ebbd1a53c4fdfdac",
+      "source_chain": "runs/20261003_math_review_chain_B_seed403/chains/math_restoration_B_seed403.1.txt",
+      "log": "runs/20261003_math_review_chain_B_seed403/stdout.txt",
+      "log_prefix_byte_count": 120765,
+      "log_prefix_sha256": "69d32d07536e4d2c668a59e1aaaa8a025a217329529a2aad5f5fa5c6b320f0af",
+      "latest_learning_messages": [
+        "[mcmc]  - Updated covariance matrix of proposal pdf.",
+        "[mcmc]  - Convergence of means: R-1 = 0.011137 after 12208 accepted steps",
+        "[mcmc]  - Updated covariance matrix of proposal pdf."
+      ],
+      "historical_and_fresh_source_rows_must_not_be_pooled_for_resumed_chains": false
+    },
+    {
+      "seed": 1101,
+      "pid": 3377945,
+      "owned_identity_live": true,
+      "source_saved_rows": 82,
+      "additional_saved_rows_during_verified_wait": 8,
+      "source_complete_byte_count": 60092,
+      "source_complete_sha256": "f9b52ce159dd8149642ab609ccae3368c19346271f59a8b3e992689741c88739",
+      "source_chain": "runs/20261004_math_review_cmb_quad_chain_A_seed1101/chains/math_quad_A_seed1101.1.txt",
+      "log": "runs/20261004_math_review_cmb_quad_chain_A_seed1101/stdout.txt",
+      "log_prefix_byte_count": 6201,
+      "log_prefix_sha256": "e91647edcd964f0ce97e9e1ab1b0429f34bee3e692b075ecd003b1341ba4a138",
+      "latest_learning_messages": [],
+      "historical_and_fresh_source_rows_must_not_be_pooled_for_resumed_chains": false
+    },
+    {
+      "seed": 1102,
+      "pid": 3380410,
+      "owned_identity_live": true,
+      "source_saved_rows": 70,
+      "additional_saved_rows_during_verified_wait": 5,
+      "source_complete_byte_count": 51404,
+      "source_complete_sha256": "097edbdd489006d6ce5340719452f4b0ab5f8a44d22bf282da137c250e75f8fb",
+      "source_chain": "runs/20261004_math_review_cmb_quad_chain_A_seed1102/chains/math_quad_A_seed1102.1.txt",
+      "log": "runs/20261004_math_review_cmb_quad_chain_A_seed1102/stdout.txt",
+      "log_prefix_byte_count": 6197,
+      "log_prefix_sha256": "e1af6a0c61e0a27a39d9a7848c7fd1531718af5d2fabb7be204ad2723a3cb285",
+      "latest_learning_messages": [],
+      "historical_and_fresh_source_rows_must_not_be_pooled_for_resumed_chains": false
+    },
+    {
+      "seed": 1103,
+      "pid": 3382839,
+      "owned_identity_live": true,
+      "source_saved_rows": 81,
+      "additional_saved_rows_during_verified_wait": 10,
+      "source_complete_byte_count": 59368,
+      "source_complete_sha256": "a1e2188f0ae84bcf12355f040077f5313d49b89f6aecbdea65c1e7c970640325",
+      "source_chain": "runs/20261004_math_review_cmb_quad_chain_A_seed1103/chains/math_quad_A_seed1103.1.txt",
+      "log": "runs/20261004_math_review_cmb_quad_chain_A_seed1103/stdout.txt",
+      "log_prefix_byte_count": 6089,
+      "log_prefix_sha256": "c5bccbd96b17b6f3a59c5f0ccd1117e8a5b5a59b688d5a6591da497b86a9fd99",
+      "latest_learning_messages": [],
+      "historical_and_fresh_source_rows_must_not_be_pooled_for_resumed_chains": false
+    },
+    {
+      "seed": 1104,
+      "pid": 3385182,
+      "owned_identity_live": true,
+      "source_saved_rows": 74,
+      "additional_saved_rows_during_verified_wait": 14,
+      "source_complete_byte_count": 54300,
+      "source_complete_sha256": "632336ed541c566ce59bcde44ec198730817a90297eb4066b623a25cc031cf52",
+      "source_chain": "runs/20261004_math_review_cmb_quad_chain_A_seed1104/chains/math_quad_A_seed1104.1.txt",
+      "log": "runs/20261004_math_review_cmb_quad_chain_A_seed1104/stdout.txt",
+      "log_prefix_byte_count": 6087,
+      "log_prefix_sha256": "5a0cef25ce771040f75c1f6dee4a118104ffc9d2719d32e93e7d7220daa8eded",
+      "latest_learning_messages": [],
+      "historical_and_fresh_source_rows_must_not_be_pooled_for_resumed_chains": false
+    },
+    {
+      "seed": 1105,
+      "pid": 3387166,
+      "owned_identity_live": true,
+      "source_saved_rows": 85,
+      "additional_saved_rows_during_verified_wait": 10,
+      "source_complete_byte_count": 62264,
+      "source_complete_sha256": "c45a9d4e2ae2d28621174f4eab7d6cae9d47165f84644d3868b0af73136c12f7",
+      "source_chain": "runs/20261004_math_review_cmb_quad_chain_B_seed1105/chains/math_quad_B_seed1105.1.txt",
+      "log": "runs/20261004_math_review_cmb_quad_chain_B_seed1105/stdout.txt",
+      "log_prefix_byte_count": 6088,
+      "log_prefix_sha256": "faa307d63f08811d837ee1d141151cfca729019e864ec1191ac7c6fff9c80c27",
+      "latest_learning_messages": [],
+      "historical_and_fresh_source_rows_must_not_be_pooled_for_resumed_chains": false
+    },
+    {
+      "seed": 1106,
+      "pid": 3389096,
+      "owned_identity_live": true,
+      "source_saved_rows": 81,
+      "additional_saved_rows_during_verified_wait": 13,
+      "source_complete_byte_count": 59368,
+      "source_complete_sha256": "03ea31d9dd42599244b5d7b2ff3e972d88ce952490ee616c4a3f0fc7bdc2ed1e",
+      "source_chain": "runs/20261004_math_review_cmb_quad_chain_B_seed1106/chains/math_quad_B_seed1106.1.txt",
+      "log": "runs/20261004_math_review_cmb_quad_chain_B_seed1106/stdout.txt",
+      "log_prefix_byte_count": 5979,
+      "log_prefix_sha256": "267f24d9022dfca2c763e2a92b24aa6b7a6bb62d46fc7aa64de6f3e228055e23",
+      "latest_learning_messages": [],
+      "historical_and_fresh_source_rows_must_not_be_pooled_for_resumed_chains": false
+    },
+    {
+      "seed": 1107,
+      "pid": 3391042,
+      "owned_identity_live": true,
+      "source_saved_rows": 93,
+      "additional_saved_rows_during_verified_wait": 14,
+      "source_complete_byte_count": 68056,
+      "source_complete_sha256": "53e1a96f045ab6a19f412dcb37b00427f8e118565727aec279774db4746f742c",
+      "source_chain": "runs/20261004_math_review_cmb_quad_chain_B_seed1107/chains/math_quad_B_seed1107.1.txt",
+      "log": "runs/20261004_math_review_cmb_quad_chain_B_seed1107/stdout.txt",
+      "log_prefix_byte_count": 6090,
+      "log_prefix_sha256": "70bcd2dd988eb1bfff7c72b7d42fc2a0c50d609458ef7894652ebfe7b07836ef",
+      "latest_learning_messages": [],
+      "historical_and_fresh_source_rows_must_not_be_pooled_for_resumed_chains": false
+    },
+    {
+      "seed": 1108,
+      "pid": 3392669,
+      "owned_identity_live": true,
+      "source_saved_rows": 73,
+      "additional_saved_rows_during_verified_wait": 11,
+      "source_complete_byte_count": 53576,
+      "source_complete_sha256": "5dea75d5e3b72b084aa1bf94cb0931ddbecc48f109b271073ae2c400cad1afcd",
+      "source_chain": "runs/20261004_math_review_cmb_quad_chain_B_seed1108/chains/math_quad_B_seed1108.1.txt",
+      "log": "runs/20261004_math_review_cmb_quad_chain_B_seed1108/stdout.txt",
+      "log_prefix_byte_count": 6091,
+      "log_prefix_sha256": "32f9b1d6e60e5d88dd36a218dacfc88f00b049b34ba931a2a113c7dc7e145605",
+      "latest_learning_messages": [],
+      "historical_and_fresh_source_rows_must_not_be_pooled_for_resumed_chains": false
+    },
+    {
+      "seed": 601,
+      "pid": 2696145,
+      "owned_identity_live": true,
+      "source_saved_rows": 232,
+      "additional_saved_rows_during_verified_wait": 3,
+      "source_complete_byte_count": 168692,
+      "source_complete_sha256": "f5e19d69ad1515318c7e1b3e20852c69e0b9c433279160a2932cdb0fe54d5347",
+      "source_chain": "runs/20261003_math_review_cmb_accuracy_chain_A_seed601/chains/math_accuracy_A_seed601.1.txt",
+      "log": "runs/20261003_math_review_controlled_chain_recovery/seed601/resume_stdout.txt",
+      "log_prefix_byte_count": 28061,
+      "log_prefix_sha256": "b016142b61bc428628f01a805259ab152add4f4656cf5ad2dce33222d0f50426",
+      "latest_learning_messages": [
+        "[sbt_spt_audit.samplers.fullprecisionmcmc]  - Convergence of means: R-1 = 15.629338 after 80 accepted steps",
+        "[sbt_spt_audit.samplers.fullprecisionmcmc]  - Convergence of means: R-1 = 9.439673 after 160 accepted steps"
+      ],
+      "historical_and_fresh_source_rows_must_not_be_pooled_for_resumed_chains": true
+    },
+    {
+      "seed": 602,
+      "pid": 2696152,
+      "owned_identity_live": true,
+      "source_saved_rows": 268,
+      "additional_saved_rows_during_verified_wait": 1,
+      "source_complete_byte_count": 194756,
+      "source_complete_sha256": "11bbadd646e3d15fd85a17954f591a46c2c38a8e9d62739146a6691fac287d70",
+      "source_chain": "runs/20261003_math_review_cmb_accuracy_chain_A_seed602/chains/math_accuracy_A_seed602.1.txt",
+      "log": "runs/20261003_math_review_controlled_chain_recovery/seed602/resume_stdout.txt",
+      "log_prefix_byte_count": 27856,
+      "log_prefix_sha256": "d8609e8b395a9d30687753050525d96e64e3ed85c38564492c5d4a88ff664128",
+      "latest_learning_messages": [
+        "[sbt_spt_audit.samplers.fullprecisionmcmc]  - Convergence of means: R-1 = 9.603572 after 160 accepted steps"
+      ],
+      "historical_and_fresh_source_rows_must_not_be_pooled_for_resumed_chains": true
+    },
+    {
+      "seed": 603,
+      "pid": 2696249,
+      "owned_identity_live": true,
+      "source_saved_rows": 288,
+      "additional_saved_rows_during_verified_wait": 3,
+      "source_complete_byte_count": 209236,
+      "source_complete_sha256": "1adcee87d0bd50031ad0b89fb07c1df0b598a0c6a737b4b87e7cfc614ef4c69d",
+      "source_chain": "runs/20261003_math_review_cmb_accuracy_chain_B_seed603/chains/math_accuracy_B_seed603.1.txt",
+      "log": "runs/20261003_math_review_controlled_chain_recovery/seed603/resume_stdout.txt",
+      "log_prefix_byte_count": 27308,
+      "log_prefix_sha256": "ef2040b0812247f770a5f5d502c5b6539146fa4595103cedae53162f0f28e1a9",
+      "latest_learning_messages": [
+        "[sbt_spt_audit.samplers.fullprecisionmcmc]  - Convergence of means: R-1 = 5.316537 after 160 accepted steps"
+      ],
+      "historical_and_fresh_source_rows_must_not_be_pooled_for_resumed_chains": true
+    },
+    {
+      "seed": 604,
+      "pid": 2696205,
+      "owned_identity_live": true,
+      "source_saved_rows": 257,
+      "additional_saved_rows_during_verified_wait": 4,
+      "source_complete_byte_count": 186792,
+      "source_complete_sha256": "3484094532f8cbc7ef1448ca1d8f2a92534402961f7a632eebdf0650cd34adea",
+      "source_chain": "runs/20261003_math_review_cmb_accuracy_chain_B_seed604/chains/math_accuracy_B_seed604.1.txt",
+      "log": "runs/20261003_math_review_controlled_chain_recovery/seed604/resume_stdout.txt",
+      "log_prefix_byte_count": 27527,
+      "log_prefix_sha256": "8c533c2fb8fd1faf680bad17082064638b839a04f2adf3641281c9db57b5566e",
+      "latest_learning_messages": [
+        "[sbt_spt_audit.samplers.fullprecisionmcmc]  - Convergence of means: R-1 = 3.656769 after 160 accepted steps"
+      ],
+      "historical_and_fresh_source_rows_must_not_be_pooled_for_resumed_chains": true
+    },
+    {
+      "seed": 701,
+      "pid": 2696207,
+      "owned_identity_live": true,
+      "source_saved_rows": 150,
+      "additional_saved_rows_during_verified_wait": 1,
+      "source_complete_byte_count": 109324,
+      "source_complete_sha256": "174b742078476a2d522da8c5ff5d9f0f08496b344262587924bf942138967c0a",
+      "source_chain": "runs/20261003_math_review_cmb_accuracy_dragging_chain_A_seed701/chains/math_accuracy_dragging_A_seed701.1.txt",
+      "log": "runs/20261003_math_review_controlled_chain_recovery/seed701/resume_stdout.txt",
+      "log_prefix_byte_count": 28742,
+      "log_prefix_sha256": "85ec89259988d59c1e81da5f5887ace5af7920248342cd171db2320b2667fa2a",
+      "latest_learning_messages": [
+        "[sbt_spt_audit.samplers.fullprecisionmcmc]  - Convergence of means: R-1 = 24.172286 after 56 accepted steps",
+        "[sbt_spt_audit.samplers.fullprecisionmcmc]  - Convergence of means: R-1 = 16.978223 after 112 accepted steps"
+      ],
+      "historical_and_fresh_source_rows_must_not_be_pooled_for_resumed_chains": true
+    },
+    {
+      "seed": 702,
+      "pid": 2696250,
+      "owned_identity_live": true,
+      "source_saved_rows": 161,
+      "additional_saved_rows_during_verified_wait": 0,
+      "source_complete_byte_count": 117288,
+      "source_complete_sha256": "7c2c95aad44a5d9a4efb0401023cdf13cef140d7ce05f47545f50dea4c166359",
+      "source_chain": "runs/20261003_math_review_cmb_accuracy_dragging_chain_B_seed702/chains/math_accuracy_dragging_B_seed702.1.txt",
+      "log": "runs/20261003_math_review_controlled_chain_recovery/seed702/resume_stdout.txt",
+      "log_prefix_byte_count": 28617,
+      "log_prefix_sha256": "59a2686afbf39cdd17d9f5da9505299ca420a98921ea3e002355cd2b2e9ed57f",
+      "latest_learning_messages": [
+        "[sbt_spt_audit.samplers.fullprecisionmcmc]  - Convergence of means: R-1 = 14.297585 after 56 accepted steps",
+        "[sbt_spt_audit.samplers.fullprecisionmcmc]  - Convergence of means: R-1 = 4.929192 after 112 accepted steps"
+      ],
+      "historical_and_fresh_source_rows_must_not_be_pooled_for_resumed_chains": true
+    },
+    {
+      "seed": 811,
+      "pid": 1989199,
+      "owned_identity_live": true,
+      "source_saved_rows": 50,
+      "additional_saved_rows_during_verified_wait": 1,
+      "source_complete_byte_count": 36924,
+      "source_complete_sha256": "a90ab5c7c8fa6c58be1604ff2515200541111052c4a7c9d952ad87fecd719c70",
+      "source_chain": "runs/20261003_math_review_cmb_accuracy_learned_proposal_A_seed811/chains/math_accuracy_learned_proposal_A_seed811.1.txt",
+      "log": "runs/20261003_math_review_cmb_accuracy_learned_proposal_A_seed811/stdout.txt",
+      "log_prefix_byte_count": 10589,
+      "log_prefix_sha256": "5949239a92020af5ab73049c07e28b718f3dac7ac40ea37dfa2fa5507d58c436",
+      "latest_learning_messages": [],
+      "historical_and_fresh_source_rows_must_not_be_pooled_for_resumed_chains": false
+    },
+    {
+      "seed": 813,
+      "pid": 1991822,
+      "owned_identity_live": true,
+      "source_saved_rows": 48,
+      "additional_saved_rows_during_verified_wait": 2,
+      "source_complete_byte_count": 35476,
+      "source_complete_sha256": "226368a37ca4a34ac08a268cb6a129df8ddcfecdc26158ea1d983c8f4f34b09d",
+      "source_chain": "runs/20261003_math_review_cmb_accuracy_learned_proposal_B_seed813/chains/math_accuracy_learned_proposal_B_seed813.1.txt",
+      "log": "runs/20261003_math_review_cmb_accuracy_learned_proposal_B_seed813/stdout.txt",
+      "log_prefix_byte_count": 10690,
+      "log_prefix_sha256": "5f495fbe586e015d3948a43b3f11554f8f43be17b9fa24684b9bd2c5e4f84031",
+      "latest_learning_messages": [],
+      "historical_and_fresh_source_rows_must_not_be_pooled_for_resumed_chains": false
+    }
+  ],
+  "sampler_settings_changed": false,
+  "posterior_convergence_certified": false
+}

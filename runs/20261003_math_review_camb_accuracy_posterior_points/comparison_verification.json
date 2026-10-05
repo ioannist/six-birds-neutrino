@@ -1,0 +1,62 @@
+{
+  "utc": "2026-10-03T13:57:10.932811+00:00",
+  "scope": "four_selected_unconverged_chain_coordinates_only",
+  "sensitivity_exec_exit_code": 0,
+  "default_bridge_exec_exit_code": 0,
+  "source_sha256": {
+    "metrics.json": "29dc8aad3e6d1a13d1aa9f3b27428fd57e8f9bf2e6fc036596f363eba3e15243",
+    "selection_receipt.json": "b261630365166ac70f5a602dcc0d1a1594bcd6b5c238d5ce8351fb189a9063ea",
+    "default_target_verification.json": "2058e1e13d7a7dc73ba31ee5789496244497e489f9a1142a8032551085a7ae52"
+  },
+  "all_selected_rows_and_points_verified": true,
+  "posterior_accuracy_certified": false,
+  "uniform_likelihood_error_bound": false,
+  "results": {
+    "chain_A_q50": {
+      "lens": "lensA",
+      "mass": 0.037940042,
+      "own_joint_boost3_minus_boost2": 0.21331651270247676,
+      "own_joint_boost3_minus_default": -0.10683084140848464,
+      "default_stored_loglike_error": -3.3972000437643146e-05,
+      "boost2_elapsed_seconds": 25.597468092106283,
+      "boost3_elapsed_seconds": 102.60698174312711
+    },
+    "chain_A_q95": {
+      "lens": "lensA",
+      "mass": 0.150591,
+      "own_joint_boost3_minus_boost2": 0.2181801241681569,
+      "own_joint_boost3_minus_default": -0.1815299018824259,
+      "default_stored_loglike_error": -3.721605435202946e-05,
+      "boost2_elapsed_seconds": 21.869806500151753,
+      "boost3_elapsed_seconds": 95.66276065027341
+    },
+    "chain_B_q50": {
+      "lens": "lensB",
+      "mass": 0.034125622,
+      "own_joint_boost3_minus_boost2": 0.028448820144603815,
+      "own_joint_boost3_minus_default": 0.21724976607842983,
+      "default_stored_loglike_error": 3.2152902349480428e-06,
+      "boost2_elapsed_seconds": 23.965234817937016,
+      "boost3_elapsed_seconds": 99.74516094196588
+    },
+    "chain_B_q95": {
+      "lens": "lensB",
+      "mass": 0.12229679,
+      "own_joint_boost3_minus_boost2": -0.1038976684503723,
+      "own_joint_boost3_minus_default": 0.16085747284295593,
+      "default_stored_loglike_error": 5.804625970995403e-06,
+      "boost2_elapsed_seconds": 22.31599896494299,
+      "boost3_elapsed_seconds": 94.99491340527311
+    }
+  },
+  "tail_minus_median_point_comparison": {
+    "A": {
+      "boost3_vs_boost2_tail_minus_median_chi2_change": 0.004863611465680151,
+      "boost3_vs_default_tail_minus_median_chi2_change": -0.07469906047394126
+    },
+    "B": {
+      "boost3_vs_boost2_tail_minus_median_chi2_change": -0.1323464885949761,
+      "boost3_vs_default_tail_minus_median_chi2_change": -0.0563922932354739
+    }
+  }
+}

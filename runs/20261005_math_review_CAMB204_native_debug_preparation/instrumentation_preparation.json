@@ -1,0 +1,17 @@
+{
+  "original_source": "/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_source_failure_triage_20261004/source/camb-2.0.4/fortran/halofit.f90",
+  "original_sha256": "78dab0862709a94346c5cb300ad790836b5144f1b2f803ae9c6599ee7f1a9257",
+  "instrumented_source": "/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_native_debug_20261005/instrumented_source/fortran/halofit.f90",
+  "instrumented_sha256": "fd00b9b012c191241f78a5d8115e77f0e3e9fcd860971546bd72b53539c07b4b",
+  "changes": [
+    [
+      "        a = lut%alpha_hm\n        pfull = (p2h**a + p1h**a)**(1./a)",
+      "        a = lut%alpha_hm\n        if (p1h < 0._dl .or. p2h < 0._dl) then\n            write(*,*) 'AUDIT_NEGATIVE_HALO_BASE', lut%z, k, p1h, p2h, a\n            write(*,*) 'AUDIT_WEIGHT_MINMAX', minval(lut%p1h_quad_weight), maxval(lut%p1h_quad_weight)\n            write(*,*) 'AUDIT_NU_DIFF_MIN', minval(lut%nu(2:) - lut%nu(:lut%n-1))\n            do audit_i = 1, lut%n\n                write(*,'(A, I0, 4(1X,G0))') 'AUDIT_HALO_NODE ', audit_i, &\n                    lut%m(audit_i), lut%sig(audit_i), lut%nu(audit_i), lut%p1h_quad_weight(audit_i)\n            end do\n            flush(6)\n            error stop 'AUDIT before fractional power of negative halo component'\n        end if\n        pfull = (p2h**a + p1h**a)**(1./a)"
+    ],
+    [
+      "    real(dl) :: a\n    type(HM_cosmology), intent(in) :: cosm\n    type(HM_tables), intent(in) :: lut",
+      "    real(dl) :: a\n    integer :: audit_i\n    type(HM_cosmology), intent(in) :: cosm\n    type(HM_tables), intent(in) :: lut"
+    ]
+  ],
+  "scope": "first negative halo-component witness before fractional power; stop and dump nodes, no repaired outputs"
+}

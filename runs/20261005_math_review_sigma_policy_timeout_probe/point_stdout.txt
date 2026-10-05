@@ -1,0 +1,31 @@
+[camb] `camb` module loaded successfully from /mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_sigma_timeout_probe_20261005/camb
+[camb] *ERROR* Computation error (see traceback below)! Parameters sent to CAMB: {'As': np.float64(1.8992039725558007e-09), 'ns': np.float64(0.9141040602339817)} and {'num_massive_neutrinos': 3, 'nnu': 3.046, 'lmax': 4095}.
+To ignore this kind of error, make 'stop_at_error: False'.
+[camb] *ERROR* Error at evaluation. See error information below.
+[exception handler] ---------------------------------------
+
+Traceback (most recent call last):
+  File "/home/repos/six-birds-neutrino/runs/20261005_math_review_sigma_policy_timeout_probe/evaluate_timeout.py", line 45, in <module>
+    result = model.logposterior(point, cached=False)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/cobaya/model.py", line 659, in logposterior
+    like = self._loglikes_input_params(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/cobaya/model.py", line 443, in _loglikes_input_params
+    compute_success = component.check_cache_and_compute(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/cobaya/theory.py", line 282, in check_cache_and_compute
+    if self.calculate(state, want_derived, **params_values_dict) is False:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/cobaya/theories/camb/camb.py", line 731, in calculate
+    results.power_spectra_from_transfer()
+  File "/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_sigma_timeout_probe_20261005/camb/results.py", line 415, in power_spectra_from_transfer
+    config.check_global_error()
+  File "/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_sigma_timeout_probe_20261005/camb/_config.py", line 66, in check_global_error
+    raise CAMBError(reference + f"{err}")
+camb.baseconfig.CAMBError: HMCode INTEGRATE, Integration timed out
+-------------------------------------------------------------
+
+ AUDIT_INTEGRATION_TIMEOUT   9.9999997473787462E-005   0.0000000000000000                1   9.9999999747524271E-007          20      524289          14   3.7999714326962579E-002   3.7999829854037291E-002
+ AUDIT_INTEGRATION_TIMEOUT   1.2915496329054870E-004   0.0000000000000000                1   9.9999999747524271E-007          20      524289          14   3.6454334942382705E-002   3.6454380540578951E-002
+ AUDIT_INTEGRATION_TIMEOUT   4.6415887275236549E-004   0.0000000000000000                1   9.9999999747524271E-007          20      524289          14   2.9782231376539434E-002   2.9782281057658486E-002

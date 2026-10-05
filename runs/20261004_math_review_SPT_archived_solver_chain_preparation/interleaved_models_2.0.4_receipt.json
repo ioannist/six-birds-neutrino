@@ -1,0 +1,56 @@
+{
+  "utc": "2026-10-04T14:24:50.972517+00:00",
+  "CAMB_version": "2.0.4",
+  "Cobaya_version": "3.6.2",
+  "records": [
+    {
+      "cache_size": 1,
+      "initial_main_loglikes": [
+        -1283.3739225912432,
+        -5.281649578430443
+      ],
+      "intervening_other_loglikes": [
+        -1344.9399010388406,
+        -5.3032349907536265
+      ],
+      "return_main_loglikes": [
+        -1284.0282602555424,
+        -5.281649578430443
+      ],
+      "fresh_main_loglikes": [
+        -1284.0280065153381,
+        -5.281649578430443
+      ],
+      "cached_minus_fresh_chi2": [
+        0.0005074804084870266,
+        -0.0
+      ]
+    },
+    {
+      "cache_size": 0,
+      "initial_main_loglikes": [
+        -1283.3739225912432,
+        -5.281649578430443
+      ],
+      "intervening_other_loglikes": [
+        -1344.9399010388406,
+        -5.3032349907536265
+      ],
+      "return_main_loglikes": [
+        -1284.0280065153381,
+        -5.281649578430443
+      ],
+      "fresh_main_loglikes": [
+        -1284.0280065153381,
+        -5.281649578430443
+      ],
+      "cached_minus_fresh_chi2": [
+        -0.0,
+        -0.0
+      ]
+    }
+  ],
+  "native_path": "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/camb/camblib.so",
+  "native_sha256": "306640a8948cd5246fc9b21e76525f6adebdff5ba3bc792a57d50bba67225ad5",
+  "scope": "private two-model history control; no production or inference sampler changes"
+}

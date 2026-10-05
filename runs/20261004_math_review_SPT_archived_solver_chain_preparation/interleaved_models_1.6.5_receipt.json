@@ -1,0 +1,56 @@
+{
+  "utc": "2026-10-04T14:24:55.329841+00:00",
+  "CAMB_version": "1.6.5",
+  "Cobaya_version": "3.6.1",
+  "records": [
+    {
+      "cache_size": 1,
+      "initial_main_loglikes": [
+        -1287.9765007730948,
+        -5.283605001873935
+      ],
+      "intervening_other_loglikes": [
+        -1349.0322169410044,
+        -5.305177282013071
+      ],
+      "return_main_loglikes": [
+        -1288.7584444558852,
+        -5.283605001873935
+      ],
+      "fresh_main_loglikes": [
+        -1288.7342224863173,
+        -5.283605001873935
+      ],
+      "cached_minus_fresh_chi2": [
+        0.04844393913572276,
+        -0.0
+      ]
+    },
+    {
+      "cache_size": 0,
+      "initial_main_loglikes": [
+        -1287.9765007730948,
+        -5.283605001873935
+      ],
+      "intervening_other_loglikes": [
+        -1349.0322169410044,
+        -5.305177282013071
+      ],
+      "return_main_loglikes": [
+        -1288.7342224863173,
+        -5.283605001873935
+      ],
+      "fresh_main_loglikes": [
+        -1288.7342224863173,
+        -5.283605001873935
+      ],
+      "cached_minus_fresh_chi2": [
+        -0.0,
+        -0.0
+      ]
+    }
+  ],
+  "native_path": "/mnt/8tb/six-birds-ml/tmp/neutrino_spt_archived_solver_control_20261004/packages/camb/camblib.so",
+  "native_sha256": "6a54f98bcc65601fd1ad5e760a99a0072cdc45fe49197ba5c3a1282889c2ee0d",
+  "scope": "private two-model history control; no production or inference sampler changes"
+}

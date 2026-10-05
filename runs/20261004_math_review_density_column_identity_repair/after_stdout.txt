@@ -1,0 +1,17 @@
+/home/repos/six-birds-neutrino/runs/20261004_math_review_density_column_identity_repair/fixtures/valid.1.txt
+Removed no burn in
+{
+  "valid": {
+    "accepted": true,
+    "mode": 0.020018850957595796,
+    "density_grid_sha256": "db266327526f0077e20f0eb72500c353d5fc8b81da4ba10368772f9081724f03"
+  },
+  "duplicate": {
+    "accepted": false,
+    "error": "Parameter and chain column names must be nonempty and unique: /home/repos/six-birds-neutrino/runs/20261004_math_review_density_column_identity_repair/fixtures/duplicate.paramnames"
+  },
+  "conflicting": {
+    "accepted": false,
+    "error": "Chain column names disagree with parameter names: /home/repos/six-birds-neutrino/runs/20261004_math_review_density_column_identity_repair/fixtures/conflicting.1.txt"
+  }
+}

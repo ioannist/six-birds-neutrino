@@ -1,0 +1,201 @@
+{
+  "utc": "2026-10-05T08:31:54.428774+00:00",
+  "registered_entry": {
+    "seed": 2202,
+    "parent_seed": 1301,
+    "lens": "A",
+    "group": "quad_A",
+    "config": "runs/20261005_math_review_CLASS_fresh_recovery_preparation/seed2202/input.yaml",
+    "config_sha256": "a7c2e040a3c51a0807f3c4002e13eec00b968f6fce00b9cbbd9c80c1f7185d37",
+    "run_dir": "runs/20261005_math_review_CLASS_fresh_recovery_quad_A_seed2202",
+    "initial_point": {
+      "omegabh2": 0.02272973359263128,
+      "omegach2": 0.11712368121541618,
+      "H0": 68.49588387973901,
+      "logA": 3.0332216243635557,
+      "ns": 0.9829985747862314,
+      "tau": 0.05376967065582391,
+      "mnu_sample": 0.04662385639938124,
+      "A_planck": 0.9977004462816964,
+      "TT_tSZ_Amp": 1.6642518781937237,
+      "TT_kSZ_Amp": 9.769169140109438
+    },
+    "terminal_receipt": "runs/20261005_math_review_CLASS_unavailable_terminal_preservation/seed1301/terminal_receipt.json",
+    "terminal_receipt_sha256": "e94b271b7406c6b94fbfbff37646210f01703f717a35d724fa21b9d7a88fd0d6",
+    "source_config": "runs/20261005_math_review_CLASS_unavailable_terminal_preservation/seed1301/outputs/input.yaml",
+    "source_config_sha256": "0001c468d6a7fc37fd58790a22bbae2e5c09d7f44ffcd6a7af1860fc0cf01947",
+    "source_chain": "runs/20261005_math_review_CLASS_unavailable_terminal_preservation/seed1301/outputs/chains/math_guarded_quad_A_seed1301.1.txt",
+    "source_chain_sha256": "4cbce9b1b248ec9c9135598ddc7386f80bc749084b9fcb409ef58f133bf1d1cc",
+    "source_row": {
+      "weight": "1",
+      "minuslogpost": "1516.6253941518958",
+      "omegabh2": "0.022729733592631279",
+      "omegach2": "0.11712368121541618",
+      "H0": "68.495883879739011",
+      "logA": "3.0332216243635557",
+      "ns": "0.98299857478623143",
+      "tau": "0.053769670655823908",
+      "mnu_sample": "0.046623856399381242",
+      "A_planck": "0.99770044628169641",
+      "TT_tSZ_Amp": "1.6642518781937237",
+      "TT_kSZ_Amp": "9.7691691401094385",
+      "As": "2.0764018820468502e-09",
+      "mnu": "0.046623856399381242",
+      "chi2__CMB": "495.67725081723927",
+      "minuslogprior": "5.7934714303969193",
+      "minuslogprior__0": "5.7934714303969193",
+      "chi2": "3021.6638454429976",
+      "chi2__sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": "2513.7490892999758",
+      "chi2__sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": "12.237505325782369",
+      "chi2__planck_2018_lowl.TT": "20.654334350347369",
+      "chi2__planck_2018_lowl.EE_sroll2": "390.88206979246223",
+      "chi2__planck_2018_highl_plik.TT_lite_native": "75.357384789193262",
+      "chi2__planckpr4lensing.PlanckPR4Lensing": "8.7834618852364201"
+    },
+    "source_covariance": "runs/20261005_math_review_CLASS_unavailable_terminal_preservation/seed1301/outputs/chains/math_guarded_quad_A_seed1301.covmat",
+    "source_covariance_sha256": "4e69a221f62ab71d1bf6a22f1d75672c9d6686b016963450de762cd5dececc25",
+    "proposal": "runs/20261005_math_review_CLASS_fresh_recovery_preparation/seed2202/initial.covmat",
+    "proposal_sha256": "4e69a221f62ab71d1bf6a22f1d75672c9d6686b016963450de762cd5dececc25",
+    "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+    "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+    "build_receipt": "runs/20261004_math_review_class_python_repair/build_verification_receipt.json",
+    "build_receipt_sha256": "652ebf70eb7d7402d2b38dd1286847362b9687c7c477579db46b1bba75453fd9",
+    "implementation_sha256": {
+      "runs/20261005_math_review_CLASS_fresh_recovery_preparation/launch.py": "3d15a8c1886d641fe58ea9addd8bfb4e1cd8d2b1236596b0174b782b5aae3844",
+      "scripts/run_cobaya.py": "883640961f35a782bdec0979fe28c98eb92b96098d1d083a9d62a8b3382d0c11",
+      "src/sbt_spt_audit/_numerics.py": "1b34997880ba12172943c6198c435023feb26952e64126dc592746f219cd8580",
+      "src/sbt_spt_audit/candl_support.py": "ddf70460d7662a2f1e4e5130635b6c09cdc2381ef78f0febaa0c88391533f162",
+      "src/sbt_spt_audit/mcmc_diagnostics.py": "babe3e043fdb7fa0062f71d47446e6e0109444fd83050625124a50dc1fc1ac53",
+      "src/sbt_spt_audit/mcmc.py": "557006c5101152322564810dcba6c4c8a536164486973a0326275464c551862c",
+      "src/sbt_spt_audit/localization.py": "b18f5257185987774eaa84d894fc789f6e16e82852962ad936f5b72d95c1d1c6",
+      "src/sbt_spt_audit/hello.py": "052f01caf3cbcc1e78689a02fae093f6d8e3369a01b2bb0974e65ed1a050c607",
+      "src/sbt_spt_audit/likelihood.py": "69fae0146365fb086fc0702ee19d34a4cd381a14324e7d350d04405052fadaa0",
+      "src/sbt_spt_audit/boltzmann.py": "a2100f8f48f98988580c21ddaca04ed86a9b956f4b22135a942b05dd8265f355",
+      "src/sbt_spt_audit/__init__.py": "2fe4cfb76c3908ca1b089ac085f5d5d3c6ba4bbaf3c95b1c797daa6a1d7a9857",
+      "src/sbt_spt_audit/metrics.py": "fd8617103d1ccb3f8a7494e09fff362caf14e0b4e612064860539e041197fbf1",
+      "src/sbt_spt_audit/samplers.py": "2a7c7e99597b6c5bc48f72bbaa9e8df81dd6987ba36e8ab0a81b8c36b10f33e9",
+      "src/sbt_spt_audit/likelihoods/candl_cobaya.py": "b695b32235d04a2b287786260c5c02fb87c43d787d0949907a7247518aa37a90",
+      "src/sbt_spt_audit/likelihoods/desi_dr2_bao.py": "f9e8872fd1c4c737b9e4e9a143cb8ac1d8e31b8a087d687db9ebe14b076939aa",
+      "src/sbt_spt_audit/likelihoods/__init__.py": "34ecc40b8eb6a6b8e87dc120366fa1a7fd93ddc08222d3dc2c53a5c4418a1001"
+    },
+    "launch_receipt": "runs/20261005_math_review_CLASS_fresh_recovery_preparation/seed2202/launch_receipt.json",
+    "OMP_NUM_THREADS": "4",
+    "scheduling_nice": 5,
+    "old_prefix_appended": false,
+    "exact_resume_asserted": false,
+    "posterior_qualified": false,
+    "pid": 839310,
+    "process_start_ticks": 344101364,
+    "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261005_math_review_CLASS_fresh_recovery_preparation/launch.py 2202 ",
+    "session": 72054,
+    "native_module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+    "effective_config_sha256": "9b71f92f71148b4e255489e38a601894c129e71dff88b4d1345e728e7f454aa8",
+    "native_backend_receipt_sha256": "35eb12e49813ee899fd68843dac0225cc42c388f8578da3f4ea602e881293f22",
+    "launch_receipt_sha256": "be54014c5c235f8a3dc9a799c8d57902a2e7d01f0fc680421f0bfec253c4d251",
+    "status": "running_fresh_CLASS_recovery_first_saved_native_row_verified",
+    "first_saved_row_receipt": "runs/20261005_math_review_CLASS_fresh_recovery_activation/seed2202/first_saved_row/completion_receipt.json",
+    "first_saved_row_receipt_sha256": "7ad68b52103734a5f89b5244b2f527fd7eb5a1460b7b64b37cded46f628ba5c2"
+  },
+  "last_verified_live_identity": {
+    "seed": 2202,
+    "pid": 839310,
+    "process_start_ticks": 344101364,
+    "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261005_math_review_CLASS_fresh_recovery_preparation/launch.py 2202 ",
+    "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+    "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+    "status": "live_same_owned_native_identity",
+    "retained_represented_steps": 1278,
+    "group": "quad_A",
+    "posterior_qualified": false
+  },
+  "identity_observation": {
+    "pid": 839310,
+    "expected_start_ticks": 344101364,
+    "status": "PID_not_present",
+    "original_identity_absent": true
+  },
+  "exit_code": 130,
+  "managed_session": 72054,
+  "exit_reason": "user_directed_claim_restoration_stop",
+  "stop_request": {
+    "utc": "2026-10-05T08:28:43.130351+00:00",
+    "seed": 2202,
+    "pid": 839310,
+    "process_start_ticks": 344101364,
+    "managed_session": 72054,
+    "run_dir": "runs/20261005_math_review_CLASS_fresh_recovery_quad_A_seed2202",
+    "signal": "SIGINT",
+    "reason": "user instructed dropping attempts to justify unsupported or contradicted original claims",
+    "signal_sent": true,
+    "owned_identity_revalidated": true
+  },
+  "native_failure_established": false,
+  "terminal_output_files": [
+    {
+      "source": "runs/20261005_math_review_CLASS_fresh_recovery_quad_A_seed2202/chains/CLASS_fresh_recovery_quad_A_seed2202.1.txt",
+      "frozen": "runs/20261005_math_review_user_directed_restoration_shutdown/seed2202/outputs/chains/CLASS_fresh_recovery_quad_A_seed2202.1.txt",
+      "sha256": "a75248097ad5cfebb8638fb8344685491d417bc78a47cc51d6ab0c4279ca6a7c"
+    },
+    {
+      "source": "runs/20261005_math_review_CLASS_fresh_recovery_quad_A_seed2202/chains/CLASS_fresh_recovery_quad_A_seed2202.checkpoint",
+      "frozen": "runs/20261005_math_review_user_directed_restoration_shutdown/seed2202/outputs/chains/CLASS_fresh_recovery_quad_A_seed2202.checkpoint",
+      "sha256": "4a9f8e79bf8968824d398de7ef6f80db39b57d7e5e0c1422c9d4a3606aa1005e"
+    },
+    {
+      "source": "runs/20261005_math_review_CLASS_fresh_recovery_quad_A_seed2202/chains/CLASS_fresh_recovery_quad_A_seed2202.covmat",
+      "frozen": "runs/20261005_math_review_user_directed_restoration_shutdown/seed2202/outputs/chains/CLASS_fresh_recovery_quad_A_seed2202.covmat",
+      "sha256": "b00c07917ae302888333a52d70f51a80cedce47645d10a1d1625da6742c31289"
+    },
+    {
+      "source": "runs/20261005_math_review_CLASS_fresh_recovery_quad_A_seed2202/chains/CLASS_fresh_recovery_quad_A_seed2202.input.yaml",
+      "frozen": "runs/20261005_math_review_user_directed_restoration_shutdown/seed2202/outputs/chains/CLASS_fresh_recovery_quad_A_seed2202.input.yaml",
+      "sha256": "ed0bc2ff88807e79df9c8ad6d121f6919aad16a1ba3d53fde5197595c08e06ed"
+    },
+    {
+      "source": "runs/20261005_math_review_CLASS_fresh_recovery_quad_A_seed2202/chains/CLASS_fresh_recovery_quad_A_seed2202.progress",
+      "frozen": "runs/20261005_math_review_user_directed_restoration_shutdown/seed2202/outputs/chains/CLASS_fresh_recovery_quad_A_seed2202.progress",
+      "sha256": "bcadebdbfa4486e0563d6ce187c89b35b2801de5988e0fe8aa332c8b4bc92cd7"
+    },
+    {
+      "source": "runs/20261005_math_review_CLASS_fresh_recovery_quad_A_seed2202/chains/CLASS_fresh_recovery_quad_A_seed2202.updated.yaml",
+      "frozen": "runs/20261005_math_review_user_directed_restoration_shutdown/seed2202/outputs/chains/CLASS_fresh_recovery_quad_A_seed2202.updated.yaml",
+      "sha256": "59262034506821ba6b536aecda8595c321ae07acb53d1c4dd21db730168c39f7"
+    },
+    {
+      "source": "runs/20261005_math_review_CLASS_fresh_recovery_quad_A_seed2202/env.txt",
+      "frozen": "runs/20261005_math_review_user_directed_restoration_shutdown/seed2202/outputs/env.txt",
+      "sha256": "cd4e8786500a5ab0f1fa09f994f11833a8235e4585e026d3eced25ea82fb5cc0"
+    },
+    {
+      "source": "runs/20261005_math_review_CLASS_fresh_recovery_quad_A_seed2202/input.yaml",
+      "frozen": "runs/20261005_math_review_user_directed_restoration_shutdown/seed2202/outputs/input.yaml",
+      "sha256": "a7c2e040a3c51a0807f3c4002e13eec00b968f6fce00b9cbbd9c80c1f7185d37"
+    },
+    {
+      "source": "runs/20261005_math_review_CLASS_fresh_recovery_quad_A_seed2202/resolved.yaml",
+      "frozen": "runs/20261005_math_review_user_directed_restoration_shutdown/seed2202/outputs/resolved.yaml",
+      "sha256": "9b71f92f71148b4e255489e38a601894c129e71dff88b4d1345e728e7f454aa8"
+    },
+    {
+      "source": "runs/20261005_math_review_CLASS_fresh_recovery_quad_A_seed2202/solver_backend.json",
+      "frozen": "runs/20261005_math_review_user_directed_restoration_shutdown/seed2202/outputs/solver_backend.json",
+      "sha256": "35eb12e49813ee899fd68843dac0225cc42c388f8578da3f4ea602e881293f22"
+    },
+    {
+      "source": "runs/20261005_math_review_CLASS_fresh_recovery_quad_A_seed2202/stderr.txt",
+      "frozen": "runs/20261005_math_review_user_directed_restoration_shutdown/seed2202/outputs/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "runs/20261005_math_review_CLASS_fresh_recovery_quad_A_seed2202/stdout.txt",
+      "frozen": "runs/20261005_math_review_user_directed_restoration_shutdown/seed2202/outputs/stdout.txt",
+      "sha256": "910ccf54305e6c95f663e48e74ab45ce4d1acf91e06a1f6defa02a60607a8cdc"
+    }
+  ],
+  "stored_chain_rows": 505,
+  "incomplete_trailing_chain_bytes": 0,
+  "retained_represented_steps": 1286,
+  "posterior_qualified": false,
+  "scientific_claim_disproved_by_interruption": false,
+  "exact_PRNG_resume_asserted": false
+}

@@ -1,0 +1,11 @@
+{
+  "scope": "three_CAMB_accuracy_boosts_at_three_pointwise_control",
+  "source": "installed camb/model.py CAMBparams.set_accuracy and AccuracyParams",
+  "source_sha256": "a92bed930e341eadadf7700e2670882172b8806bbc379cc7cdb18ca76fc97624",
+  "camb_version": "2.0.4",
+  "settings": {
+    "AccuracyBoost": 3.0,
+    "lAccuracyBoost": 3.0,
+    "lSampleBoost": 3.0
+  }
+}

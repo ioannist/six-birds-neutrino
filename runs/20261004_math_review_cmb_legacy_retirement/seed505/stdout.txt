@@ -1,0 +1,912 @@
+[output] Output to be read-from/written-into folder '/home/repos/six-birds-neutrino/runs/20261003_math_review_cmb_chain_B_seed505/chains', with prefix 'math_restoration_B_seed505'
+[classy] `classy` module loaded successfully from /tmp/neutrino-math-review-venv/lib/python3.12/site-packages/classy
+Actual L range: 30 - 756
+[mcmc] *WARNING* This run has been SEEDED with seed 505
+[mcmc] Getting initial point... (this may take a few seconds)
+[mcmc] Initial point: omegabh2:0.02212401, omegach2:0.1205542, H0:69.61414, logA:3.07693, ns:0.9627212, tau:0.0558057, mnu_sample:0.07387248, A_planck:1.009818, TT_tSZ_Amp:1.163542, TT_kSZ_Amp:2.248478
+[model] Measuring speeds... (this may take a few seconds)
+[model] Setting measured speeds (per sec): {sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood: 10.7, sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian: 560.0, planck_2018_lowl.TT: 1220.0, planck_2018_lowl.EE_sroll2: 4560.0, planck_2018_highl_plik.TT_lite_native: 2420.0, planckpr4lensing.PlanckPR4Lensing: 2480.0, classy: 0.157}
+[mcmc] Covariance matrix loaded for params ['omegabh2', 'omegach2', 'H0', 'logA', 'ns', 'tau', 'mnu_sample', 'A_planck', 'TT_tSZ_Amp', 'TT_kSZ_Amp']
+[mcmc] All parameters' covariance loaded from given covmat.
+[mcmc] Sampling!
+[mcmc] Progress @ 2026-10-03 09:45:23 : 1 steps taken, and 0 accepted.
+[mcmc] Progress @ 2026-10-03 09:46:28 : 18 steps taken, and 12 accepted.
+[mcmc] Progress @ 2026-10-03 09:47:33 : 32 steps taken, and 18 accepted.
+[mcmc] Progress @ 2026-10-03 09:48:34 : 49 steps taken, and 23 accepted.
+[mcmc] Progress @ 2026-10-03 09:49:35 : 62 steps taken, and 30 accepted.
+[mcmc] Progress @ 2026-10-03 09:50:39 : 80 steps taken, and 37 accepted.
+[mcmc] Progress @ 2026-10-03 09:51:44 : 94 steps taken, and 43 accepted.
+[mcmc] Progress @ 2026-10-03 09:52:46 : 110 steps taken, and 52 accepted.
+[mcmc] Progress @ 2026-10-03 09:53:51 : 128 steps taken, and 59 accepted.
+[mcmc] Progress @ 2026-10-03 09:54:52 : 144 steps taken, and 68 accepted.
+[mcmc] Progress @ 2026-10-03 09:55:56 : 162 steps taken, and 77 accepted.
+[mcmc] Progress @ 2026-10-03 09:56:58 : 177 steps taken, and 81 accepted.
+[mcmc] Progress @ 2026-10-03 09:58:03 : 194 steps taken, and 83 accepted.
+[mcmc] Progress @ 2026-10-03 09:59:05 : 218 steps taken, and 89 accepted.
+[mcmc] Progress @ 2026-10-03 10:00:08 : 240 steps taken, and 97 accepted.
+[mcmc] Learn + convergence test @ 100 samples accepted.
+[mcmc]  - Acceptance rate: 0.354
+[mcmc]  - Convergence of means: R-1 = 27.292172 after 80 accepted steps
+[mcmc] Convergence less than requested for updates: waiting until the next convergence check.
+[mcmc] Progress @ 2026-10-03 10:01:13 : 265 steps taken, and 100 accepted.
+[mcmc] Progress @ 2026-10-03 10:02:19 : 287 steps taken, and 103 accepted.
+[mcmc] Progress @ 2026-10-03 10:03:23 : 308 steps taken, and 109 accepted.
+[mcmc] Progress @ 2026-10-03 10:04:29 : 323 steps taken, and 114 accepted.
+[mcmc] Progress @ 2026-10-03 10:05:31 : 345 steps taken, and 120 accepted.
+[mcmc] Progress @ 2026-10-03 10:06:33 : 355 steps taken, and 121 accepted.
+[mcmc] Progress @ 2026-10-03 10:07:35 : 369 steps taken, and 122 accepted.
+[mcmc] Progress @ 2026-10-03 10:08:41 : 384 steps taken, and 127 accepted.
+[mcmc] Progress @ 2026-10-03 10:09:42 : 396 steps taken, and 129 accepted.
+[mcmc] Progress @ 2026-10-03 10:10:44 : 415 steps taken, and 137 accepted.
+[mcmc] Progress @ 2026-10-03 10:11:47 : 427 steps taken, and 140 accepted.
+[mcmc] Progress @ 2026-10-03 10:12:51 : 441 steps taken, and 144 accepted.
+[mcmc] Progress @ 2026-10-03 10:13:52 : 460 steps taken, and 150 accepted.
+[mcmc] Progress @ 2026-10-03 10:14:53 : 474 steps taken, and 153 accepted.
+[mcmc] Progress @ 2026-10-03 10:15:58 : 491 steps taken, and 159 accepted.
+[mcmc] Progress @ 2026-10-03 10:17:03 : 508 steps taken, and 163 accepted.
+[mcmc] Progress @ 2026-10-03 10:18:06 : 520 steps taken, and 165 accepted.
+[mcmc] Progress @ 2026-10-03 10:19:10 : 537 steps taken, and 169 accepted.
+[mcmc] Progress @ 2026-10-03 10:20:11 : 550 steps taken, and 174 accepted.
+[mcmc] Progress @ 2026-10-03 10:21:18 : 570 steps taken, and 181 accepted.
+[mcmc] Progress @ 2026-10-03 10:22:24 : 581 steps taken, and 182 accepted.
+[mcmc] Progress @ 2026-10-03 10:23:24 : 591 steps taken, and 183 accepted.
+[mcmc] Progress @ 2026-10-03 10:24:29 : 603 steps taken, and 185 accepted.
+[mcmc] Progress @ 2026-10-03 10:25:36 : 616 steps taken, and 186 accepted.
+[mcmc] Progress @ 2026-10-03 10:26:40 : 626 steps taken, and 189 accepted.
+[mcmc] Progress @ 2026-10-03 10:27:49 : 646 steps taken, and 196 accepted.
+[mcmc] Learn + convergence test @ 200 samples accepted.
+[mcmc]  - Acceptance rate: 0.283
+[mcmc]  - Convergence of means: R-1 = 10.424671 after 160 accepted steps
+[mcmc] Convergence less than requested for updates: waiting until the next convergence check.
+[mcmc] Progress @ 2026-10-03 10:28:49 : 656 steps taken, and 202 accepted.
+[mcmc] Progress @ 2026-10-03 10:29:56 : 671 steps taken, and 208 accepted.
+[mcmc] Progress @ 2026-10-03 10:31:04 : 681 steps taken, and 212 accepted.
+[mcmc] Progress @ 2026-10-03 10:32:04 : 697 steps taken, and 216 accepted.
+[mcmc] Progress @ 2026-10-03 10:33:14 : 724 steps taken, and 220 accepted.
+[mcmc] Progress @ 2026-10-03 10:34:21 : 744 steps taken, and 223 accepted.
+[mcmc] Progress @ 2026-10-03 10:35:21 : 758 steps taken, and 227 accepted.
+[mcmc] Progress @ 2026-10-03 10:36:30 : 768 steps taken, and 227 accepted.
+[mcmc] Progress @ 2026-10-03 10:37:32 : 780 steps taken, and 231 accepted.
+[mcmc] Progress @ 2026-10-03 10:38:42 : 794 steps taken, and 238 accepted.
+[mcmc] Progress @ 2026-10-03 10:39:47 : 803 steps taken, and 241 accepted.
+[mcmc] Progress @ 2026-10-03 10:40:52 : 812 steps taken, and 246 accepted.
+[mcmc] Progress @ 2026-10-03 10:41:58 : 825 steps taken, and 250 accepted.
+[mcmc] Progress @ 2026-10-03 10:43:03 : 839 steps taken, and 253 accepted.
+[mcmc] Progress @ 2026-10-03 10:44:04 : 848 steps taken, and 256 accepted.
+[mcmc] Progress @ 2026-10-03 10:45:08 : 863 steps taken, and 260 accepted.
+[mcmc] Progress @ 2026-10-03 10:46:14 : 878 steps taken, and 267 accepted.
+[mcmc] Progress @ 2026-10-03 10:47:17 : 893 steps taken, and 273 accepted.
+[mcmc] Progress @ 2026-10-03 10:48:17 : 907 steps taken, and 277 accepted.
+[mcmc] Progress @ 2026-10-03 10:49:25 : 927 steps taken, and 284 accepted.
+[mcmc] Progress @ 2026-10-03 10:50:33 : 951 steps taken, and 291 accepted.
+[mcmc] Progress @ 2026-10-03 10:51:35 : 963 steps taken, and 295 accepted.
+[mcmc] Progress @ 2026-10-03 10:52:40 : 981 steps taken, and 299 accepted.
+[mcmc] Learn + convergence test @ 300 samples accepted.
+[mcmc]  - Acceptance rate: 0.280
+[mcmc]  - Convergence of means: R-1 = 2.176435 after 240 accepted steps
+[mcmc] Convergence less than requested for updates: waiting until the next convergence check.
+[mcmc] Progress @ 2026-10-03 10:53:46 : 995 steps taken, and 303 accepted.
+[mcmc] Progress @ 2026-10-03 10:54:49 : 1008 steps taken, and 305 accepted.
+[mcmc] Progress @ 2026-10-03 10:55:51 : 1022 steps taken, and 307 accepted.
+[mcmc] Progress @ 2026-10-03 10:56:54 : 1033 steps taken, and 309 accepted.
+[mcmc] Progress @ 2026-10-03 10:58:02 : 1050 steps taken, and 314 accepted.
+[mcmc] Progress @ 2026-10-03 10:59:07 : 1062 steps taken, and 318 accepted.
+[mcmc] Progress @ 2026-10-03 11:00:14 : 1076 steps taken, and 323 accepted.
+[mcmc] Progress @ 2026-10-03 11:01:19 : 1089 steps taken, and 328 accepted.
+[mcmc] Progress @ 2026-10-03 11:02:26 : 1100 steps taken, and 334 accepted.
+[mcmc] Progress @ 2026-10-03 11:03:31 : 1122 steps taken, and 339 accepted.
+[mcmc] Progress @ 2026-10-03 11:04:33 : 1144 steps taken, and 344 accepted.
+[mcmc] Progress @ 2026-10-03 11:05:34 : 1157 steps taken, and 346 accepted.
+[mcmc] Progress @ 2026-10-03 11:06:34 : 1169 steps taken, and 353 accepted.
+[mcmc] Progress @ 2026-10-03 11:07:37 : 1180 steps taken, and 357 accepted.
+[mcmc] Progress @ 2026-10-03 11:08:41 : 1192 steps taken, and 360 accepted.
+[mcmc] Progress @ 2026-10-03 11:09:48 : 1213 steps taken, and 366 accepted.
+[mcmc] Progress @ 2026-10-03 11:10:54 : 1224 steps taken, and 369 accepted.
+[mcmc] Progress @ 2026-10-03 11:11:54 : 1243 steps taken, and 371 accepted.
+[mcmc] Progress @ 2026-10-03 11:13:01 : 1255 steps taken, and 373 accepted.
+[mcmc] Progress @ 2026-10-03 11:14:08 : 1274 steps taken, and 379 accepted.
+[mcmc] Progress @ 2026-10-03 11:15:15 : 1310 steps taken, and 384 accepted.
+[mcmc] Progress @ 2026-10-03 11:16:20 : 1324 steps taken, and 388 accepted.
+[mcmc] Progress @ 2026-10-03 11:17:24 : 1335 steps taken, and 392 accepted.
+[mcmc] Progress @ 2026-10-03 11:18:26 : 1349 steps taken, and 396 accepted.
+[mcmc] Progress @ 2026-10-03 11:19:27 : 1361 steps taken, and 399 accepted.
+[mcmc] Learn + convergence test @ 400 samples accepted.
+[mcmc]  - Acceptance rate: 0.269
+[mcmc]  - Convergence of means: R-1 = 1.153932 after 320 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Progress @ 2026-10-03 11:20:32 : 1373 steps taken, and 407 accepted.
+[mcmc] Progress @ 2026-10-03 11:21:39 : 1387 steps taken, and 412 accepted.
+[mcmc] Progress @ 2026-10-03 11:22:40 : 1399 steps taken, and 417 accepted.
+[mcmc] Progress @ 2026-10-03 11:23:40 : 1410 steps taken, and 420 accepted.
+[mcmc] Progress @ 2026-10-03 11:24:40 : 1421 steps taken, and 423 accepted.
+[mcmc] Progress @ 2026-10-03 11:25:48 : 1436 steps taken, and 430 accepted.
+[mcmc] Progress @ 2026-10-03 11:26:55 : 1447 steps taken, and 435 accepted.
+[mcmc] Progress @ 2026-10-03 11:28:01 : 1459 steps taken, and 438 accepted.
+[mcmc] Progress @ 2026-10-03 11:29:03 : 1471 steps taken, and 440 accepted.
+[mcmc] Progress @ 2026-10-03 11:30:08 : 1486 steps taken, and 445 accepted.
+[mcmc] Progress @ 2026-10-03 11:31:08 : 1500 steps taken, and 449 accepted.
+[mcmc] Progress @ 2026-10-03 11:32:10 : 1512 steps taken, and 452 accepted.
+[mcmc] Progress @ 2026-10-03 11:33:17 : 1528 steps taken, and 457 accepted.
+[mcmc] Progress @ 2026-10-03 11:34:25 : 1544 steps taken, and 461 accepted.
+[mcmc] Progress @ 2026-10-03 11:35:32 : 1558 steps taken, and 466 accepted.
+[mcmc] Progress @ 2026-10-03 11:36:39 : 1568 steps taken, and 469 accepted.
+[mcmc] Progress @ 2026-10-03 11:37:43 : 1581 steps taken, and 475 accepted.
+[mcmc] Progress @ 2026-10-03 11:38:49 : 1595 steps taken, and 481 accepted.
+[mcmc] Progress @ 2026-10-03 11:39:54 : 1605 steps taken, and 485 accepted.
+[mcmc] Progress @ 2026-10-03 11:40:56 : 1616 steps taken, and 489 accepted.
+[mcmc] Progress @ 2026-10-03 11:42:02 : 1627 steps taken, and 491 accepted.
+[mcmc] Progress @ 2026-10-03 11:43:06 : 1640 steps taken, and 494 accepted.
+[mcmc] Progress @ 2026-10-03 11:44:10 : 1648 steps taken, and 497 accepted.
+[mcmc] Learn + convergence test @ 500 samples accepted.
+[mcmc]  - Acceptance rate: 0.287
+[mcmc]  - Convergence of means: R-1 = 2.307349 after 400 accepted steps
+[mcmc] Convergence less than requested for updates: waiting until the next convergence check.
+[mcmc] Progress @ 2026-10-03 11:45:10 : 1660 steps taken, and 503 accepted.
+[mcmc] Progress @ 2026-10-03 11:46:18 : 1672 steps taken, and 507 accepted.
+[mcmc] Progress @ 2026-10-03 11:47:25 : 1686 steps taken, and 512 accepted.
+[mcmc] Progress @ 2026-10-03 11:48:31 : 1699 steps taken, and 518 accepted.
+[mcmc] Progress @ 2026-10-03 11:49:35 : 1714 steps taken, and 524 accepted.
+[mcmc] Progress @ 2026-10-03 11:50:41 : 1727 steps taken, and 527 accepted.
+[mcmc] Progress @ 2026-10-03 11:51:45 : 1739 steps taken, and 532 accepted.
+[mcmc] Progress @ 2026-10-03 11:52:50 : 1749 steps taken, and 534 accepted.
+[mcmc] Progress @ 2026-10-03 11:53:55 : 1759 steps taken, and 539 accepted.
+[mcmc] Progress @ 2026-10-03 11:55:00 : 1772 steps taken, and 544 accepted.
+[mcmc] Progress @ 2026-10-03 11:56:04 : 1782 steps taken, and 547 accepted.
+[mcmc] Progress @ 2026-10-03 11:57:05 : 1792 steps taken, and 551 accepted.
+[mcmc] Progress @ 2026-10-03 11:58:09 : 1806 steps taken, and 553 accepted.
+[mcmc] Progress @ 2026-10-03 11:59:09 : 1822 steps taken, and 562 accepted.
+[mcmc] Progress @ 2026-10-03 12:00:12 : 1834 steps taken, and 566 accepted.
+[mcmc] Progress @ 2026-10-03 12:01:14 : 1843 steps taken, and 570 accepted.
+[mcmc] Progress @ 2026-10-03 12:02:14 : 1854 steps taken, and 572 accepted.
+[mcmc] Progress @ 2026-10-03 12:03:16 : 1864 steps taken, and 575 accepted.
+[mcmc] Progress @ 2026-10-03 12:04:22 : 1876 steps taken, and 583 accepted.
+[mcmc] Progress @ 2026-10-03 12:05:23 : 1893 steps taken, and 588 accepted.
+[mcmc] Progress @ 2026-10-03 12:06:26 : 1908 steps taken, and 591 accepted.
+[mcmc] Progress @ 2026-10-03 12:07:29 : 1919 steps taken, and 594 accepted.
+[mcmc] Progress @ 2026-10-03 12:08:31 : 1933 steps taken, and 600 accepted.
+[mcmc] Learn + convergence test @ 600 samples accepted.
+[mcmc]  - Acceptance rate: 0.301
+[mcmc]  - Convergence of means: R-1 = 0.898993 after 480 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Progress @ 2026-10-03 12:09:34 : 1944 steps taken, and 603 accepted.
+[mcmc] Progress @ 2026-10-03 12:10:37 : 1960 steps taken, and 608 accepted.
+[mcmc] Progress @ 2026-10-03 12:11:43 : 1974 steps taken, and 611 accepted.
+[mcmc] Progress @ 2026-10-03 12:12:49 : 1989 steps taken, and 614 accepted.
+[mcmc] Progress @ 2026-10-03 12:13:49 : 1998 steps taken, and 616 accepted.
+[mcmc] Progress @ 2026-10-03 12:14:55 : 2010 steps taken, and 620 accepted.
+[mcmc] Progress @ 2026-10-03 12:15:56 : 2023 steps taken, and 622 accepted.
+[mcmc] Progress @ 2026-10-03 12:16:58 : 2040 steps taken, and 625 accepted.
+[mcmc] Progress @ 2026-10-03 12:18:01 : 2059 steps taken, and 627 accepted.
+[mcmc] Progress @ 2026-10-03 12:19:09 : 2076 steps taken, and 630 accepted.
+[mcmc] Progress @ 2026-10-03 12:20:12 : 2086 steps taken, and 633 accepted.
+[mcmc] Progress @ 2026-10-03 12:21:12 : 2102 steps taken, and 639 accepted.
+[mcmc] Progress @ 2026-10-03 12:22:19 : 2117 steps taken, and 644 accepted.
+[mcmc] Progress @ 2026-10-03 12:23:24 : 2127 steps taken, and 646 accepted.
+[mcmc] Progress @ 2026-10-03 12:24:24 : 2141 steps taken, and 649 accepted.
+[mcmc] Progress @ 2026-10-03 12:25:24 : 2155 steps taken, and 655 accepted.
+[mcmc] Progress @ 2026-10-03 12:26:29 : 2168 steps taken, and 658 accepted.
+[mcmc] Progress @ 2026-10-03 12:27:33 : 2181 steps taken, and 663 accepted.
+[mcmc] Progress @ 2026-10-03 12:28:41 : 2192 steps taken, and 670 accepted.
+[mcmc] Progress @ 2026-10-03 12:29:49 : 2208 steps taken, and 674 accepted.
+[mcmc] Progress @ 2026-10-03 12:30:56 : 2220 steps taken, and 677 accepted.
+[mcmc] Progress @ 2026-10-03 12:31:58 : 2229 steps taken, and 677 accepted.
+[mcmc] Progress @ 2026-10-03 12:33:00 : 2242 steps taken, and 680 accepted.
+[mcmc] Progress @ 2026-10-03 12:34:01 : 2258 steps taken, and 685 accepted.
+[mcmc] Progress @ 2026-10-03 12:35:07 : 2271 steps taken, and 688 accepted.
+[mcmc] Progress @ 2026-10-03 12:36:13 : 2282 steps taken, and 690 accepted.
+[mcmc] Progress @ 2026-10-03 12:37:20 : 2293 steps taken, and 697 accepted.
+[mcmc] Learn + convergence test @ 700 samples accepted.
+[mcmc]  - Acceptance rate: 0.299
+[mcmc]  - Convergence of means: R-1 = 1.197313 after 560 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Progress @ 2026-10-03 12:38:26 : 2303 steps taken, and 701 accepted.
+[mcmc] Progress @ 2026-10-03 12:39:33 : 2316 steps taken, and 708 accepted.
+[mcmc] Progress @ 2026-10-03 12:40:37 : 2328 steps taken, and 711 accepted.
+[mcmc] Progress @ 2026-10-03 12:41:38 : 2339 steps taken, and 712 accepted.
+[mcmc] Progress @ 2026-10-03 12:42:40 : 2350 steps taken, and 717 accepted.
+[mcmc] Progress @ 2026-10-03 12:43:40 : 2360 steps taken, and 722 accepted.
+[mcmc] Progress @ 2026-10-03 12:44:43 : 2369 steps taken, and 722 accepted.
+[mcmc] Progress @ 2026-10-03 12:45:50 : 2380 steps taken, and 727 accepted.
+[mcmc] Progress @ 2026-10-03 12:46:57 : 2390 steps taken, and 731 accepted.
+[mcmc] Progress @ 2026-10-03 12:48:05 : 2401 steps taken, and 734 accepted.
+[mcmc] Progress @ 2026-10-03 12:49:13 : 2412 steps taken, and 743 accepted.
+[mcmc] Progress @ 2026-10-03 12:50:14 : 2427 steps taken, and 746 accepted.
+[mcmc] Progress @ 2026-10-03 12:51:22 : 2438 steps taken, and 750 accepted.
+[mcmc] Progress @ 2026-10-03 12:52:25 : 2454 steps taken, and 751 accepted.
+[mcmc] Progress @ 2026-10-03 12:53:27 : 2466 steps taken, and 754 accepted.
+[mcmc] Progress @ 2026-10-03 12:54:35 : 2480 steps taken, and 760 accepted.
+[mcmc] Progress @ 2026-10-03 12:55:38 : 2492 steps taken, and 764 accepted.
+[mcmc] Progress @ 2026-10-03 12:56:44 : 2504 steps taken, and 769 accepted.
+[mcmc] Progress @ 2026-10-03 12:57:50 : 2514 steps taken, and 772 accepted.
+[mcmc] Progress @ 2026-10-03 12:58:56 : 2524 steps taken, and 773 accepted.
+[mcmc] Progress @ 2026-10-03 13:00:02 : 2534 steps taken, and 777 accepted.
+[mcmc] Progress @ 2026-10-03 13:01:08 : 2547 steps taken, and 784 accepted.
+[mcmc] Progress @ 2026-10-03 13:02:15 : 2558 steps taken, and 787 accepted.
+[mcmc] Progress @ 2026-10-03 13:03:23 : 2569 steps taken, and 793 accepted.
+[mcmc] Progress @ 2026-10-03 13:04:24 : 2580 steps taken, and 797 accepted.
+[mcmc] Learn + convergence test @ 800 samples accepted.
+[mcmc]  - Acceptance rate: 0.306
+[mcmc]  - Convergence of means: R-1 = 0.721173 after 640 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Progress @ 2026-10-03 13:05:30 : 2593 steps taken, and 802 accepted.
+[mcmc] Progress @ 2026-10-03 13:06:34 : 2606 steps taken, and 808 accepted.
+[mcmc] Progress @ 2026-10-03 13:07:37 : 2617 steps taken, and 812 accepted.
+[mcmc] Progress @ 2026-10-03 13:08:41 : 2625 steps taken, and 817 accepted.
+[mcmc] Progress @ 2026-10-03 13:09:43 : 2634 steps taken, and 822 accepted.
+[mcmc] Progress @ 2026-10-03 13:10:47 : 2646 steps taken, and 824 accepted.
+[mcmc] Progress @ 2026-10-03 13:11:57 : 2665 steps taken, and 826 accepted.
+[mcmc] Progress @ 2026-10-03 13:13:03 : 2679 steps taken, and 826 accepted.
+[mcmc] Progress @ 2026-10-03 13:14:04 : 2703 steps taken, and 830 accepted.
+[mcmc] Progress @ 2026-10-03 13:15:04 : 2714 steps taken, and 833 accepted.
+[mcmc] Progress @ 2026-10-03 13:16:05 : 2723 steps taken, and 838 accepted.
+[mcmc] Progress @ 2026-10-03 13:17:14 : 2735 steps taken, and 842 accepted.
+[mcmc] Progress @ 2026-10-03 13:18:19 : 2747 steps taken, and 846 accepted.
+[mcmc] Progress @ 2026-10-03 13:19:24 : 2756 steps taken, and 847 accepted.
+[mcmc] Progress @ 2026-10-03 13:20:30 : 2764 steps taken, and 849 accepted.
+[mcmc] Progress @ 2026-10-03 13:21:38 : 2777 steps taken, and 852 accepted.
+[mcmc] Progress @ 2026-10-03 13:22:40 : 2795 steps taken, and 857 accepted.
+[mcmc] Progress @ 2026-10-03 13:23:41 : 2807 steps taken, and 859 accepted.
+[mcmc] Progress @ 2026-10-03 13:24:45 : 2817 steps taken, and 863 accepted.
+[mcmc] Progress @ 2026-10-03 13:25:48 : 2827 steps taken, and 865 accepted.
+[mcmc] Progress @ 2026-10-03 13:26:50 : 2836 steps taken, and 870 accepted.
+[mcmc] Progress @ 2026-10-03 13:27:52 : 2845 steps taken, and 870 accepted.
+[mcmc] Progress @ 2026-10-03 13:28:56 : 2857 steps taken, and 874 accepted.
+[mcmc] Progress @ 2026-10-03 13:30:02 : 2867 steps taken, and 879 accepted.
+[mcmc] Progress @ 2026-10-03 13:31:07 : 2878 steps taken, and 883 accepted.
+[mcmc] Progress @ 2026-10-03 13:32:15 : 2886 steps taken, and 887 accepted.
+[mcmc] Progress @ 2026-10-03 13:33:23 : 2894 steps taken, and 890 accepted.
+[mcmc] Progress @ 2026-10-03 13:34:23 : 2903 steps taken, and 892 accepted.
+[mcmc] Progress @ 2026-10-03 13:35:23 : 2912 steps taken, and 896 accepted.
+[mcmc] Progress @ 2026-10-03 13:36:27 : 2922 steps taken, and 898 accepted.
+[mcmc] Learn + convergence test @ 900 samples accepted.
+[mcmc]  - Acceptance rate: 0.305
+[mcmc]  - Convergence of means: R-1 = 0.449036 after 720 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Progress @ 2026-10-03 13:37:36 : 2931 steps taken, and 903 accepted.
+[mcmc] Progress @ 2026-10-03 13:38:40 : 2943 steps taken, and 907 accepted.
+[mcmc] Progress @ 2026-10-03 13:39:45 : 2952 steps taken, and 910 accepted.
+[mcmc] Progress @ 2026-10-03 13:40:48 : 2961 steps taken, and 915 accepted.
+[mcmc] Progress @ 2026-10-03 13:41:53 : 2977 steps taken, and 920 accepted.
+[mcmc] Progress @ 2026-10-03 13:43:00 : 2992 steps taken, and 924 accepted.
+[mcmc] Progress @ 2026-10-03 13:44:06 : 2999 steps taken, and 926 accepted.
+[mcmc] Progress @ 2026-10-03 13:45:15 : 3011 steps taken, and 927 accepted.
+[mcmc] Progress @ 2026-10-03 13:46:22 : 3023 steps taken, and 932 accepted.
+[mcmc] Progress @ 2026-10-03 13:47:29 : 3036 steps taken, and 937 accepted.
+[mcmc] Progress @ 2026-10-03 13:48:35 : 3046 steps taken, and 939 accepted.
+[mcmc] Progress @ 2026-10-03 13:49:44 : 3057 steps taken, and 942 accepted.
+[mcmc] Progress @ 2026-10-03 13:50:55 : 3070 steps taken, and 944 accepted.
+[mcmc] Progress @ 2026-10-03 13:51:56 : 3086 steps taken, and 952 accepted.
+[mcmc] Progress @ 2026-10-03 13:53:01 : 3094 steps taken, and 953 accepted.
+[mcmc] Progress @ 2026-10-03 13:54:10 : 3107 steps taken, and 957 accepted.
+[mcmc] Progress @ 2026-10-03 13:55:16 : 3117 steps taken, and 961 accepted.
+[mcmc] Progress @ 2026-10-03 13:56:21 : 3128 steps taken, and 966 accepted.
+[mcmc] Progress @ 2026-10-03 13:57:24 : 3140 steps taken, and 970 accepted.
+[mcmc] Progress @ 2026-10-03 13:58:29 : 3148 steps taken, and 972 accepted.
+[mcmc] Progress @ 2026-10-03 13:59:39 : 3163 steps taken, and 978 accepted.
+[mcmc] Progress @ 2026-10-03 14:00:44 : 3172 steps taken, and 980 accepted.
+[mcmc] Progress @ 2026-10-03 14:01:48 : 3182 steps taken, and 982 accepted.
+[mcmc] Progress @ 2026-10-03 14:02:54 : 3191 steps taken, and 984 accepted.
+[mcmc] Progress @ 2026-10-03 14:04:00 : 3202 steps taken, and 990 accepted.
+[mcmc] Progress @ 2026-10-03 14:05:03 : 3214 steps taken, and 996 accepted.
+[mcmc] Learn + convergence test @ 1000 samples accepted.
+[mcmc]  - Acceptance rate: 0.311
+[mcmc]  - Convergence of means: R-1 = 0.848605 after 800 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Progress @ 2026-10-03 14:06:11 : 3226 steps taken, and 1002 accepted.
+[mcmc] Progress @ 2026-10-03 14:07:11 : 3241 steps taken, and 1005 accepted.
+[mcmc] Progress @ 2026-10-03 14:08:20 : 3252 steps taken, and 1007 accepted.
+[mcmc] Progress @ 2026-10-03 14:09:27 : 3259 steps taken, and 1009 accepted.
+[mcmc] Progress @ 2026-10-03 14:10:36 : 3277 steps taken, and 1016 accepted.
+[mcmc] Progress @ 2026-10-03 14:11:39 : 3287 steps taken, and 1020 accepted.
+[mcmc] Progress @ 2026-10-03 14:12:45 : 3296 steps taken, and 1024 accepted.
+[mcmc] Progress @ 2026-10-03 14:13:50 : 3306 steps taken, and 1029 accepted.
+[mcmc] Progress @ 2026-10-03 14:14:53 : 3316 steps taken, and 1033 accepted.
+[mcmc] Progress @ 2026-10-03 14:15:57 : 3325 steps taken, and 1037 accepted.
+[mcmc] Progress @ 2026-10-03 14:17:00 : 3334 steps taken, and 1041 accepted.
+[mcmc] Progress @ 2026-10-03 14:18:03 : 3345 steps taken, and 1046 accepted.
+[mcmc] Progress @ 2026-10-03 14:19:11 : 3357 steps taken, and 1051 accepted.
+[mcmc] Progress @ 2026-10-03 14:20:17 : 3370 steps taken, and 1056 accepted.
+[mcmc] Progress @ 2026-10-03 14:21:22 : 3380 steps taken, and 1060 accepted.
+[mcmc] Progress @ 2026-10-03 14:22:26 : 3390 steps taken, and 1063 accepted.
+[mcmc] Progress @ 2026-10-03 14:23:30 : 3397 steps taken, and 1065 accepted.
+[mcmc] Progress @ 2026-10-03 14:24:33 : 3408 steps taken, and 1072 accepted.
+[mcmc] Progress @ 2026-10-03 14:25:35 : 3422 steps taken, and 1075 accepted.
+[mcmc] Progress @ 2026-10-03 14:26:45 : 3434 steps taken, and 1078 accepted.
+[mcmc] Progress @ 2026-10-03 14:27:50 : 3445 steps taken, and 1081 accepted.
+[mcmc] Progress @ 2026-10-03 14:28:56 : 3455 steps taken, and 1084 accepted.
+[mcmc] Progress @ 2026-10-03 14:29:56 : 3469 steps taken, and 1087 accepted.
+[mcmc] Progress @ 2026-10-03 14:31:05 : 3479 steps taken, and 1091 accepted.
+[mcmc] Progress @ 2026-10-03 14:32:12 : 3489 steps taken, and 1094 accepted.
+[mcmc] Progress @ 2026-10-03 14:33:18 : 3499 steps taken, and 1098 accepted.
+[mcmc] Learn + convergence test @ 1100 samples accepted.
+[mcmc]  - Acceptance rate: 0.317
+[mcmc]  - Convergence of means: R-1 = 0.540459 after 880 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Progress @ 2026-10-03 14:34:24 : 3510 steps taken, and 1103 accepted.
+[mcmc] Progress @ 2026-10-03 14:35:29 : 3520 steps taken, and 1107 accepted.
+[mcmc] Progress @ 2026-10-03 14:36:36 : 3531 steps taken, and 1111 accepted.
+[mcmc] Progress @ 2026-10-03 14:37:43 : 3543 steps taken, and 1114 accepted.
+[mcmc] Progress @ 2026-10-03 14:38:50 : 3559 steps taken, and 1117 accepted.
+[mcmc] Progress @ 2026-10-03 14:39:55 : 3566 steps taken, and 1119 accepted.
+[mcmc] Progress @ 2026-10-03 14:41:03 : 3578 steps taken, and 1122 accepted.
+[mcmc] Progress @ 2026-10-03 14:42:10 : 3588 steps taken, and 1124 accepted.
+[mcmc] Progress @ 2026-10-03 14:43:11 : 3599 steps taken, and 1125 accepted.
+[mcmc] Progress @ 2026-10-03 14:44:11 : 3607 steps taken, and 1127 accepted.
+[mcmc] Progress @ 2026-10-03 14:45:20 : 3617 steps taken, and 1128 accepted.
+[mcmc] Progress @ 2026-10-03 14:46:27 : 3626 steps taken, and 1132 accepted.
+[mcmc] Progress @ 2026-10-03 14:47:30 : 3634 steps taken, and 1133 accepted.
+[mcmc] Progress @ 2026-10-03 14:48:34 : 3644 steps taken, and 1137 accepted.
+[mcmc] Progress @ 2026-10-03 14:49:38 : 3654 steps taken, and 1139 accepted.
+[mcmc] Progress @ 2026-10-03 14:50:40 : 3665 steps taken, and 1142 accepted.
+[mcmc] Progress @ 2026-10-03 14:51:43 : 3674 steps taken, and 1147 accepted.
+[mcmc] Progress @ 2026-10-03 14:52:48 : 3683 steps taken, and 1150 accepted.
+[mcmc] Progress @ 2026-10-03 14:53:53 : 3693 steps taken, and 1150 accepted.
+[mcmc] Progress @ 2026-10-03 14:55:00 : 3703 steps taken, and 1154 accepted.
+[mcmc] Progress @ 2026-10-03 14:56:03 : 3711 steps taken, and 1155 accepted.
+[mcmc] Progress @ 2026-10-03 14:57:08 : 3721 steps taken, and 1158 accepted.
+[mcmc] Progress @ 2026-10-03 14:58:14 : 3731 steps taken, and 1160 accepted.
+[mcmc] Progress @ 2026-10-03 14:59:17 : 3739 steps taken, and 1162 accepted.
+[mcmc] Progress @ 2026-10-03 15:00:21 : 3750 steps taken, and 1164 accepted.
+[mcmc] Progress @ 2026-10-03 15:01:23 : 3760 steps taken, and 1168 accepted.
+[mcmc] Progress @ 2026-10-03 15:02:28 : 3771 steps taken, and 1170 accepted.
+[mcmc] Progress @ 2026-10-03 15:03:34 : 3782 steps taken, and 1173 accepted.
+[mcmc] Progress @ 2026-10-03 15:04:39 : 3793 steps taken, and 1177 accepted.
+[mcmc] Progress @ 2026-10-03 15:05:43 : 3801 steps taken, and 1180 accepted.
+[mcmc] Progress @ 2026-10-03 15:06:49 : 3812 steps taken, and 1182 accepted.
+[mcmc] Progress @ 2026-10-03 15:07:53 : 3821 steps taken, and 1187 accepted.
+[mcmc] Progress @ 2026-10-03 15:08:56 : 3831 steps taken, and 1188 accepted.
+[mcmc] Progress @ 2026-10-03 15:10:01 : 3841 steps taken, and 1191 accepted.
+[mcmc] Progress @ 2026-10-03 15:11:06 : 3851 steps taken, and 1193 accepted.
+[mcmc] Progress @ 2026-10-03 15:12:09 : 3862 steps taken, and 1194 accepted.
+[mcmc] Progress @ 2026-10-03 15:13:13 : 3871 steps taken, and 1198 accepted.
+[mcmc] Learn + convergence test @ 1200 samples accepted.
+[mcmc]  - Acceptance rate: 0.312
+[mcmc]  - Convergence of means: R-1 = 0.303110 after 960 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Progress @ 2026-10-03 15:14:19 : 3880 steps taken, and 1202 accepted.
+[mcmc] Progress @ 2026-10-03 15:15:28 : 3890 steps taken, and 1204 accepted.
+[mcmc] Progress @ 2026-10-03 15:16:34 : 3899 steps taken, and 1206 accepted.
+[mcmc] Progress @ 2026-10-03 15:17:41 : 3906 steps taken, and 1208 accepted.
+[mcmc] Progress @ 2026-10-03 15:18:46 : 3920 steps taken, and 1212 accepted.
+[mcmc] Progress @ 2026-10-03 15:19:49 : 3928 steps taken, and 1216 accepted.
+[mcmc] Progress @ 2026-10-03 15:20:51 : 3937 steps taken, and 1218 accepted.
+[mcmc] Progress @ 2026-10-03 15:21:55 : 3948 steps taken, and 1223 accepted.
+[mcmc] Progress @ 2026-10-03 15:22:56 : 3955 steps taken, and 1224 accepted.
+[mcmc] Progress @ 2026-10-03 15:23:58 : 3965 steps taken, and 1227 accepted.
+[mcmc] Progress @ 2026-10-03 15:25:01 : 3976 steps taken, and 1233 accepted.
+[mcmc] Progress @ 2026-10-03 15:26:04 : 3984 steps taken, and 1235 accepted.
+[mcmc] Progress @ 2026-10-03 15:27:08 : 3996 steps taken, and 1239 accepted.
+[mcmc] Progress @ 2026-10-03 15:28:16 : 4007 steps taken, and 1242 accepted.
+[mcmc] Progress @ 2026-10-03 15:29:21 : 4019 steps taken, and 1244 accepted.
+[mcmc] Progress @ 2026-10-03 15:30:27 : 4029 steps taken, and 1246 accepted.
+[mcmc] Progress @ 2026-10-03 15:31:34 : 4040 steps taken, and 1249 accepted.
+[mcmc] Progress @ 2026-10-03 15:32:42 : 4050 steps taken, and 1252 accepted.
+[mcmc] Progress @ 2026-10-03 15:33:46 : 4060 steps taken, and 1257 accepted.
+[mcmc] Progress @ 2026-10-03 15:34:53 : 4075 steps taken, and 1261 accepted.
+[mcmc] Progress @ 2026-10-03 15:36:00 : 4085 steps taken, and 1269 accepted.
+[mcmc] Progress @ 2026-10-03 15:37:08 : 4097 steps taken, and 1275 accepted.
+[mcmc] Progress @ 2026-10-03 15:38:15 : 4106 steps taken, and 1280 accepted.
+[mcmc] Progress @ 2026-10-03 15:39:22 : 4119 steps taken, and 1286 accepted.
+[mcmc] Progress @ 2026-10-03 15:40:29 : 4130 steps taken, and 1290 accepted.
+[mcmc] Progress @ 2026-10-03 15:41:37 : 4140 steps taken, and 1295 accepted.
+[mcmc] Learn + convergence test @ 1300 samples accepted.
+[mcmc]  - Acceptance rate: 0.316
+[mcmc]  - Convergence of means: R-1 = 0.559092 after 1040 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Progress @ 2026-10-03 15:42:44 : 4152 steps taken, and 1301 accepted.
+[mcmc] Progress @ 2026-10-03 15:43:46 : 4161 steps taken, and 1302 accepted.
+[mcmc] Progress @ 2026-10-03 15:44:55 : 4172 steps taken, and 1305 accepted.
+[mcmc] Progress @ 2026-10-03 15:46:04 : 4181 steps taken, and 1307 accepted.
+[mcmc] Progress @ 2026-10-03 15:47:10 : 4189 steps taken, and 1311 accepted.
+[mcmc] Progress @ 2026-10-03 15:48:19 : 4200 steps taken, and 1317 accepted.
+[mcmc] Progress @ 2026-10-03 15:49:25 : 4209 steps taken, and 1322 accepted.
+[mcmc] Progress @ 2026-10-03 15:50:32 : 4218 steps taken, and 1326 accepted.
+[mcmc] Progress @ 2026-10-03 15:51:40 : 4227 steps taken, and 1328 accepted.
+[mcmc] Progress @ 2026-10-03 15:52:40 : 4234 steps taken, and 1330 accepted.
+[mcmc] Progress @ 2026-10-03 15:53:41 : 4241 steps taken, and 1333 accepted.
+[mcmc] Progress @ 2026-10-03 15:54:45 : 4252 steps taken, and 1336 accepted.
+[mcmc] Progress @ 2026-10-03 15:55:49 : 4260 steps taken, and 1337 accepted.
+[mcmc] Progress @ 2026-10-03 15:56:52 : 4269 steps taken, and 1341 accepted.
+[mcmc] Progress @ 2026-10-03 15:58:01 : 4277 steps taken, and 1345 accepted.
+[mcmc] Progress @ 2026-10-03 15:59:12 : 4285 steps taken, and 1347 accepted.
+[mcmc] Progress @ 2026-10-03 16:00:22 : 4298 steps taken, and 1349 accepted.
+[mcmc] Progress @ 2026-10-03 16:01:24 : 4307 steps taken, and 1354 accepted.
+[mcmc] Progress @ 2026-10-03 16:02:28 : 4315 steps taken, and 1357 accepted.
+[mcmc] Progress @ 2026-10-03 16:03:31 : 4323 steps taken, and 1359 accepted.
+[mcmc] Progress @ 2026-10-03 16:04:32 : 4331 steps taken, and 1362 accepted.
+[mcmc] Progress @ 2026-10-03 16:05:34 : 4338 steps taken, and 1364 accepted.
+[mcmc] Progress @ 2026-10-03 16:06:40 : 4347 steps taken, and 1368 accepted.
+[mcmc] Progress @ 2026-10-03 16:07:43 : 4355 steps taken, and 1371 accepted.
+[mcmc] Progress @ 2026-10-03 16:08:46 : 4367 steps taken, and 1376 accepted.
+[mcmc] Progress @ 2026-10-03 16:09:47 : 4376 steps taken, and 1377 accepted.
+[mcmc] Progress @ 2026-10-03 16:10:49 : 4383 steps taken, and 1380 accepted.
+[mcmc] Progress @ 2026-10-03 16:11:51 : 4391 steps taken, and 1382 accepted.
+[mcmc] Progress @ 2026-10-03 16:12:56 : 4400 steps taken, and 1387 accepted.
+[mcmc] Progress @ 2026-10-03 16:13:57 : 4416 steps taken, and 1391 accepted.
+[mcmc] Progress @ 2026-10-03 16:15:02 : 4432 steps taken, and 1391 accepted.
+[mcmc] Progress @ 2026-10-03 16:16:09 : 4449 steps taken, and 1394 accepted.
+[mcmc] Progress @ 2026-10-03 16:17:14 : 4459 steps taken, and 1398 accepted.
+[mcmc] Learn + convergence test @ 1400 samples accepted.
+[mcmc]  - Acceptance rate: 0.315
+[mcmc]  - Convergence of means: R-1 = 0.887386 after 1120 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Progress @ 2026-10-03 16:18:23 : 4470 steps taken, and 1402 accepted.
+[mcmc] Progress @ 2026-10-03 16:19:31 : 4476 steps taken, and 1406 accepted.
+[mcmc] Progress @ 2026-10-03 16:20:40 : 4487 steps taken, and 1409 accepted.
+[mcmc] Progress @ 2026-10-03 16:21:50 : 4495 steps taken, and 1411 accepted.
+[mcmc] Progress @ 2026-10-03 16:22:57 : 4509 steps taken, and 1416 accepted.
+[mcmc] Progress @ 2026-10-03 16:24:07 : 4520 steps taken, and 1419 accepted.
+[mcmc] Progress @ 2026-10-03 16:25:15 : 4528 steps taken, and 1421 accepted.
+[mcmc] Progress @ 2026-10-03 16:26:20 : 4535 steps taken, and 1425 accepted.
+[mcmc] Progress @ 2026-10-03 16:27:26 : 4543 steps taken, and 1426 accepted.
+[mcmc] Progress @ 2026-10-03 16:28:34 : 4551 steps taken, and 1428 accepted.
+[mcmc] Progress @ 2026-10-03 16:29:44 : 4560 steps taken, and 1428 accepted.
+[mcmc] Progress @ 2026-10-03 16:30:46 : 4568 steps taken, and 1431 accepted.
+[mcmc] Progress @ 2026-10-03 16:31:52 : 4577 steps taken, and 1433 accepted.
+[mcmc] Progress @ 2026-10-03 16:32:56 : 4585 steps taken, and 1437 accepted.
+[mcmc] Progress @ 2026-10-03 16:34:02 : 4594 steps taken, and 1438 accepted.
+[mcmc] Progress @ 2026-10-03 16:35:07 : 4602 steps taken, and 1439 accepted.
+[mcmc] Progress @ 2026-10-03 16:36:17 : 4610 steps taken, and 1445 accepted.
+[mcmc] Progress @ 2026-10-03 16:37:23 : 4621 steps taken, and 1450 accepted.
+[mcmc] Progress @ 2026-10-03 16:38:30 : 4628 steps taken, and 1451 accepted.
+[mcmc] Progress @ 2026-10-03 16:39:37 : 4639 steps taken, and 1454 accepted.
+[mcmc] Progress @ 2026-10-03 16:40:41 : 4647 steps taken, and 1458 accepted.
+[mcmc] Progress @ 2026-10-03 16:41:51 : 4657 steps taken, and 1461 accepted.
+[mcmc] Progress @ 2026-10-03 16:42:56 : 4671 steps taken, and 1465 accepted.
+[mcmc] Progress @ 2026-10-03 16:44:00 : 4684 steps taken, and 1472 accepted.
+[mcmc] Progress @ 2026-10-03 16:45:01 : 4690 steps taken, and 1473 accepted.
+[mcmc] Progress @ 2026-10-03 16:46:06 : 4699 steps taken, and 1475 accepted.
+[mcmc] Progress @ 2026-10-03 16:47:14 : 4710 steps taken, and 1478 accepted.
+[mcmc] Progress @ 2026-10-03 16:48:19 : 4718 steps taken, and 1479 accepted.
+[mcmc] Progress @ 2026-10-03 16:49:24 : 4730 steps taken, and 1480 accepted.
+[mcmc] Progress @ 2026-10-03 16:50:30 : 4740 steps taken, and 1484 accepted.
+[mcmc] Progress @ 2026-10-03 16:51:37 : 4749 steps taken, and 1489 accepted.
+[mcmc] Progress @ 2026-10-03 16:52:45 : 4758 steps taken, and 1493 accepted.
+[mcmc] Progress @ 2026-10-03 16:53:52 : 4768 steps taken, and 1497 accepted.
+[mcmc] Progress @ 2026-10-03 16:55:02 : 4776 steps taken, and 1497 accepted.
+[mcmc] Progress @ 2026-10-03 16:56:07 : 4783 steps taken, and 1499 accepted.
+[mcmc] Learn + convergence test @ 1500 samples accepted.
+[mcmc]  - Acceptance rate: 0.316
+[mcmc]  - Convergence of means: R-1 = 0.357461 after 1200 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Progress @ 2026-10-03 16:57:11 : 4797 steps taken, and 1502 accepted.
+[mcmc] Progress @ 2026-10-03 16:58:17 : 4805 steps taken, and 1506 accepted.
+[mcmc] Progress @ 2026-10-03 16:59:18 : 4813 steps taken, and 1511 accepted.
+[mcmc] Progress @ 2026-10-03 17:00:21 : 4826 steps taken, and 1515 accepted.
+[mcmc] Progress @ 2026-10-03 17:01:25 : 4841 steps taken, and 1516 accepted.
+[mcmc] Progress @ 2026-10-03 17:02:26 : 4851 steps taken, and 1523 accepted.
+[mcmc] Progress @ 2026-10-03 17:03:34 : 4860 steps taken, and 1525 accepted.
+[mcmc] Progress @ 2026-10-03 17:04:37 : 4870 steps taken, and 1528 accepted.
+[mcmc] Progress @ 2026-10-03 17:05:37 : 4885 steps taken, and 1532 accepted.
+[mcmc] Progress @ 2026-10-03 17:06:47 : 4897 steps taken, and 1536 accepted.
+[mcmc] Progress @ 2026-10-03 17:07:58 : 4906 steps taken, and 1540 accepted.
+[mcmc] Progress @ 2026-10-03 17:09:00 : 4915 steps taken, and 1543 accepted.
+[mcmc] Progress @ 2026-10-03 17:10:02 : 4926 steps taken, and 1546 accepted.
+[mcmc] Progress @ 2026-10-03 17:11:10 : 4933 steps taken, and 1547 accepted.
+[mcmc] Progress @ 2026-10-03 17:12:10 : 4948 steps taken, and 1548 accepted.
+[mcmc] Progress @ 2026-10-03 17:13:19 : 4963 steps taken, and 1553 accepted.
+[mcmc] Progress @ 2026-10-03 17:14:30 : 4975 steps taken, and 1557 accepted.
+[mcmc] Progress @ 2026-10-03 17:15:33 : 4981 steps taken, and 1559 accepted.
+[mcmc] Progress @ 2026-10-03 17:16:40 : 4993 steps taken, and 1564 accepted.
+[mcmc] Progress @ 2026-10-03 17:17:41 : 5000 steps taken, and 1568 accepted.
+[mcmc] Progress @ 2026-10-03 17:18:43 : 5009 steps taken, and 1570 accepted.
+[mcmc] Progress @ 2026-10-03 17:19:52 : 5017 steps taken, and 1572 accepted.
+[mcmc] Progress @ 2026-10-03 17:20:58 : 5024 steps taken, and 1575 accepted.
+[mcmc] Progress @ 2026-10-03 17:21:59 : 5031 steps taken, and 1579 accepted.
+[mcmc] Progress @ 2026-10-03 17:23:13 : 5042 steps taken, and 1581 accepted.
+[mcmc] Progress @ 2026-10-03 17:24:21 : 5057 steps taken, and 1584 accepted.
+[mcmc] Progress @ 2026-10-03 17:25:31 : 5069 steps taken, and 1586 accepted.
+[mcmc] Progress @ 2026-10-03 17:26:43 : 5080 steps taken, and 1590 accepted.
+[mcmc] Progress @ 2026-10-03 17:27:54 : 5090 steps taken, and 1594 accepted.
+[mcmc] Progress @ 2026-10-03 17:29:03 : 5100 steps taken, and 1596 accepted.
+[mcmc] Learn + convergence test @ 1600 samples accepted.
+[mcmc]  - Acceptance rate: 0.317
+[mcmc]  - Convergence of means: R-1 = 0.266319 after 1280 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Progress @ 2026-10-03 17:30:13 : 5109 steps taken, and 1601 accepted.
+[mcmc] Progress @ 2026-10-03 17:31:26 : 5118 steps taken, and 1604 accepted.
+[mcmc] Progress @ 2026-10-03 17:32:36 : 5124 steps taken, and 1605 accepted.
+[mcmc] Progress @ 2026-10-03 17:33:36 : 5131 steps taken, and 1606 accepted.
+[mcmc] Progress @ 2026-10-03 17:34:47 : 5140 steps taken, and 1609 accepted.
+[mcmc] Progress @ 2026-10-03 17:35:54 : 5147 steps taken, and 1611 accepted.
+[mcmc] Progress @ 2026-10-03 17:37:03 : 5157 steps taken, and 1615 accepted.
+[mcmc] Progress @ 2026-10-03 17:38:13 : 5167 steps taken, and 1620 accepted.
+[mcmc] Progress @ 2026-10-03 17:39:22 : 5173 steps taken, and 1621 accepted.
+[mcmc] Progress @ 2026-10-03 17:40:31 : 5181 steps taken, and 1623 accepted.
+[mcmc] Progress @ 2026-10-03 17:41:39 : 5190 steps taken, and 1624 accepted.
+[mcmc] Progress @ 2026-10-03 17:42:50 : 5198 steps taken, and 1627 accepted.
+[mcmc] Progress @ 2026-10-03 17:44:00 : 5207 steps taken, and 1630 accepted.
+[mcmc] Progress @ 2026-10-03 17:45:01 : 5214 steps taken, and 1634 accepted.
+[mcmc] Progress @ 2026-10-03 17:46:11 : 5222 steps taken, and 1639 accepted.
+[mcmc] Progress @ 2026-10-03 17:47:12 : 5235 steps taken, and 1641 accepted.
+[mcmc] Progress @ 2026-10-03 17:48:24 : 5246 steps taken, and 1642 accepted.
+[mcmc] Progress @ 2026-10-03 17:49:26 : 5255 steps taken, and 1647 accepted.
+[mcmc] Progress @ 2026-10-03 17:50:38 : 5266 steps taken, and 1648 accepted.
+[mcmc] Progress @ 2026-10-03 17:51:51 : 5277 steps taken, and 1650 accepted.
+[mcmc] Progress @ 2026-10-03 17:52:55 : 5286 steps taken, and 1652 accepted.
+[mcmc] Progress @ 2026-10-03 17:54:05 : 5298 steps taken, and 1655 accepted.
+[mcmc] Progress @ 2026-10-03 17:55:06 : 5303 steps taken, and 1657 accepted.
+[mcmc] Progress @ 2026-10-03 17:56:16 : 5316 steps taken, and 1657 accepted.
+[mcmc] Progress @ 2026-10-03 17:57:25 : 5323 steps taken, and 1657 accepted.
+[mcmc] Progress @ 2026-10-03 17:58:28 : 5332 steps taken, and 1659 accepted.
+[mcmc] Progress @ 2026-10-03 17:59:31 : 5346 steps taken, and 1662 accepted.
+[mcmc] Progress @ 2026-10-03 18:00:31 : 5352 steps taken, and 1664 accepted.
+[mcmc] Progress @ 2026-10-03 18:01:32 : 5361 steps taken, and 1667 accepted.
+[mcmc] Progress @ 2026-10-03 18:02:34 : 5368 steps taken, and 1670 accepted.
+[mcmc] Progress @ 2026-10-03 18:03:45 : 5375 steps taken, and 1673 accepted.
+[mcmc] Progress @ 2026-10-03 18:04:56 : 5386 steps taken, and 1678 accepted.
+[mcmc] Progress @ 2026-10-03 18:05:57 : 5400 steps taken, and 1679 accepted.
+[mcmc] Progress @ 2026-10-03 18:07:00 : 5406 steps taken, and 1680 accepted.
+[mcmc] Progress @ 2026-10-03 18:08:10 : 5419 steps taken, and 1683 accepted.
+[mcmc] Progress @ 2026-10-03 18:09:11 : 5426 steps taken, and 1683 accepted.
+[mcmc] Progress @ 2026-10-03 18:10:24 : 5433 steps taken, and 1684 accepted.
+[mcmc] Progress @ 2026-10-03 18:11:25 : 5441 steps taken, and 1685 accepted.
+[mcmc] Progress @ 2026-10-03 18:12:32 : 5453 steps taken, and 1690 accepted.
+[mcmc] Progress @ 2026-10-03 18:13:43 : 5466 steps taken, and 1695 accepted.
+[mcmc] Progress @ 2026-10-03 18:14:54 : 5472 steps taken, and 1697 accepted.
+[mcmc] Learn + convergence test @ 1700 samples accepted.
+[mcmc]  - Acceptance rate: 0.313
+[mcmc]  - Convergence of means: R-1 = 0.551328 after 1360 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Progress @ 2026-10-03 18:15:57 : 5482 steps taken, and 1703 accepted.
+[mcmc] Progress @ 2026-10-03 18:17:04 : 5495 steps taken, and 1708 accepted.
+[mcmc] Progress @ 2026-10-03 18:18:12 : 5508 steps taken, and 1710 accepted.
+[mcmc] Progress @ 2026-10-03 18:19:16 : 5515 steps taken, and 1713 accepted.
+[mcmc] Progress @ 2026-10-03 18:20:28 : 5524 steps taken, and 1717 accepted.
+[mcmc] Progress @ 2026-10-03 18:21:39 : 5532 steps taken, and 1719 accepted.
+[mcmc] Progress @ 2026-10-03 18:22:46 : 5540 steps taken, and 1721 accepted.
+[mcmc] Progress @ 2026-10-03 18:23:49 : 5547 steps taken, and 1724 accepted.
+[mcmc] Progress @ 2026-10-03 18:24:56 : 5563 steps taken, and 1727 accepted.
+[mcmc] Progress @ 2026-10-03 18:26:05 : 5570 steps taken, and 1731 accepted.
+[mcmc] Progress @ 2026-10-03 18:27:09 : 5577 steps taken, and 1736 accepted.
+[mcmc] Progress @ 2026-10-03 18:28:10 : 5583 steps taken, and 1736 accepted.
+[mcmc] Progress @ 2026-10-03 18:29:20 : 5591 steps taken, and 1738 accepted.
+[mcmc] Progress @ 2026-10-03 18:30:29 : 5601 steps taken, and 1740 accepted.
+[mcmc] Progress @ 2026-10-03 18:31:34 : 5609 steps taken, and 1745 accepted.
+[mcmc] Progress @ 2026-10-03 18:32:44 : 5617 steps taken, and 1748 accepted.
+[mcmc] Progress @ 2026-10-03 18:33:44 : 5624 steps taken, and 1750 accepted.
+[mcmc] Progress @ 2026-10-03 18:34:53 : 5635 steps taken, and 1755 accepted.
+[mcmc] Progress @ 2026-10-03 18:36:01 : 5641 steps taken, and 1757 accepted.
+[mcmc] Progress @ 2026-10-03 18:37:03 : 5649 steps taken, and 1761 accepted.
+[mcmc] Progress @ 2026-10-03 18:38:06 : 5654 steps taken, and 1761 accepted.
+[mcmc] Progress @ 2026-10-03 18:39:06 : 5663 steps taken, and 1762 accepted.
+[mcmc] Progress @ 2026-10-03 18:40:18 : 5673 steps taken, and 1765 accepted.
+[mcmc] Progress @ 2026-10-03 18:41:31 : 5684 steps taken, and 1767 accepted.
+[mcmc] Progress @ 2026-10-03 18:42:33 : 5692 steps taken, and 1768 accepted.
+[mcmc] Progress @ 2026-10-03 18:43:34 : 5700 steps taken, and 1770 accepted.
+[mcmc] Progress @ 2026-10-03 18:44:36 : 5708 steps taken, and 1772 accepted.
+[mcmc] Progress @ 2026-10-03 18:45:38 : 5714 steps taken, and 1774 accepted.
+[mcmc] Progress @ 2026-10-03 18:46:40 : 5722 steps taken, and 1775 accepted.
+[mcmc] Progress @ 2026-10-03 18:47:50 : 5731 steps taken, and 1776 accepted.
+[mcmc] Progress @ 2026-10-03 18:49:00 : 5740 steps taken, and 1781 accepted.
+[mcmc] Progress @ 2026-10-03 18:50:08 : 5754 steps taken, and 1787 accepted.
+[mcmc] Progress @ 2026-10-03 18:51:11 : 5760 steps taken, and 1790 accepted.
+[mcmc] Progress @ 2026-10-03 18:52:12 : 5776 steps taken, and 1796 accepted.
+[mcmc] Progress @ 2026-10-03 18:53:16 : 5781 steps taken, and 1799 accepted.
+[mcmc] Learn + convergence test @ 1800 samples accepted.
+[mcmc]  - Acceptance rate: 0.314
+[mcmc]  - Convergence of means: R-1 = 0.585653 after 1440 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Progress @ 2026-10-03 18:54:18 : 5791 steps taken, and 1802 accepted.
+[mcmc] Progress @ 2026-10-03 18:55:18 : 5797 steps taken, and 1803 accepted.
+[mcmc] Progress @ 2026-10-03 18:56:29 : 5807 steps taken, and 1803 accepted.
+[mcmc] Progress @ 2026-10-03 18:57:41 : 5815 steps taken, and 1803 accepted.
+[mcmc] Progress @ 2026-10-03 18:58:44 : 5823 steps taken, and 1808 accepted.
+[mcmc] Progress @ 2026-10-03 18:59:45 : 5836 steps taken, and 1809 accepted.
+[mcmc] Progress @ 2026-10-03 19:00:47 : 5845 steps taken, and 1811 accepted.
+[mcmc] Progress @ 2026-10-03 19:01:52 : 5850 steps taken, and 1811 accepted.
+[mcmc] Progress @ 2026-10-03 19:03:03 : 5858 steps taken, and 1814 accepted.
+[mcmc] Progress @ 2026-10-03 19:04:06 : 5864 steps taken, and 1817 accepted.
+[mcmc] Progress @ 2026-10-03 19:05:13 : 5880 steps taken, and 1821 accepted.
+[mcmc] Progress @ 2026-10-03 19:06:16 : 5891 steps taken, and 1824 accepted.
+[mcmc] Progress @ 2026-10-03 19:07:19 : 5899 steps taken, and 1829 accepted.
+[mcmc] Progress @ 2026-10-03 19:08:21 : 5905 steps taken, and 1832 accepted.
+[mcmc] Progress @ 2026-10-03 19:09:25 : 5913 steps taken, and 1833 accepted.
+[mcmc] Progress @ 2026-10-03 19:10:29 : 5921 steps taken, and 1837 accepted.
+[mcmc] Progress @ 2026-10-03 19:11:40 : 5928 steps taken, and 1838 accepted.
+[mcmc] Progress @ 2026-10-03 19:12:49 : 5945 steps taken, and 1841 accepted.
+[mcmc] Progress @ 2026-10-03 19:13:49 : 5952 steps taken, and 1843 accepted.
+[mcmc] Progress @ 2026-10-03 19:14:52 : 5967 steps taken, and 1845 accepted.
+[mcmc] Progress @ 2026-10-03 19:15:52 : 5980 steps taken, and 1849 accepted.
+[mcmc] Progress @ 2026-10-03 19:16:56 : 5990 steps taken, and 1851 accepted.
+[mcmc] Progress @ 2026-10-03 19:17:58 : 6004 steps taken, and 1855 accepted.
+[mcmc] Progress @ 2026-10-03 19:19:01 : 6013 steps taken, and 1858 accepted.
+[mcmc] Progress @ 2026-10-03 19:20:04 : 6021 steps taken, and 1860 accepted.
+[mcmc] Progress @ 2026-10-03 19:21:07 : 6030 steps taken, and 1863 accepted.
+[mcmc] Progress @ 2026-10-03 19:22:13 : 6038 steps taken, and 1866 accepted.
+[mcmc] Progress @ 2026-10-03 19:23:20 : 6045 steps taken, and 1867 accepted.
+[mcmc] Progress @ 2026-10-03 19:24:28 : 6053 steps taken, and 1867 accepted.
+[mcmc] Progress @ 2026-10-03 19:25:32 : 6061 steps taken, and 1870 accepted.
+[mcmc] Progress @ 2026-10-03 19:26:38 : 6070 steps taken, and 1874 accepted.
+[mcmc] Progress @ 2026-10-03 19:27:42 : 6077 steps taken, and 1876 accepted.
+[mcmc] Progress @ 2026-10-03 19:28:47 : 6090 steps taken, and 1882 accepted.
+[mcmc] Progress @ 2026-10-03 19:29:54 : 6099 steps taken, and 1887 accepted.
+[mcmc] Progress @ 2026-10-03 19:31:01 : 6107 steps taken, and 1890 accepted.
+[mcmc] Progress @ 2026-10-03 19:32:05 : 6119 steps taken, and 1894 accepted.
+[mcmc] Progress @ 2026-10-03 19:33:12 : 6128 steps taken, and 1897 accepted.
+[mcmc] Learn + convergence test @ 1900 samples accepted.
+[mcmc]  - Acceptance rate: 0.313
+[mcmc]  - Convergence of means: R-1 = 0.332766 after 1520 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Progress @ 2026-10-03 19:34:14 : 6138 steps taken, and 1902 accepted.
+[mcmc] Progress @ 2026-10-03 19:35:16 : 6146 steps taken, and 1907 accepted.
+[mcmc] Progress @ 2026-10-03 19:36:17 : 6155 steps taken, and 1909 accepted.
+[mcmc] Progress @ 2026-10-03 19:37:19 : 6164 steps taken, and 1912 accepted.
+[mcmc] Progress @ 2026-10-03 19:38:24 : 6173 steps taken, and 1915 accepted.
+[mcmc] Progress @ 2026-10-03 19:39:27 : 6181 steps taken, and 1917 accepted.
+[mcmc] Progress @ 2026-10-03 19:40:32 : 6189 steps taken, and 1921 accepted.
+[mcmc] Progress @ 2026-10-03 19:41:34 : 6196 steps taken, and 1923 accepted.
+[mcmc] Progress @ 2026-10-03 19:42:35 : 6205 steps taken, and 1926 accepted.
+[mcmc] Progress @ 2026-10-03 19:43:37 : 6211 steps taken, and 1929 accepted.
+[mcmc] Progress @ 2026-10-03 19:44:39 : 6219 steps taken, and 1931 accepted.
+[mcmc] Progress @ 2026-10-03 19:45:42 : 6228 steps taken, and 1934 accepted.
+[mcmc] Progress @ 2026-10-03 19:46:45 : 6239 steps taken, and 1937 accepted.
+[mcmc] Progress @ 2026-10-03 19:47:47 : 6245 steps taken, and 1938 accepted.
+[mcmc] Progress @ 2026-10-03 19:48:49 : 6254 steps taken, and 1941 accepted.
+[mcmc] Progress @ 2026-10-03 19:49:53 : 6263 steps taken, and 1945 accepted.
+[mcmc] Progress @ 2026-10-03 19:50:55 : 6271 steps taken, and 1947 accepted.
+[mcmc] Progress @ 2026-10-03 19:51:55 : 6280 steps taken, and 1948 accepted.
+[mcmc] Progress @ 2026-10-03 19:52:59 : 6288 steps taken, and 1950 accepted.
+[mcmc] Progress @ 2026-10-03 19:54:04 : 6295 steps taken, and 1952 accepted.
+[mcmc] Progress @ 2026-10-03 19:55:08 : 6306 steps taken, and 1956 accepted.
+[mcmc] Progress @ 2026-10-03 19:56:09 : 6315 steps taken, and 1958 accepted.
+[mcmc] Progress @ 2026-10-03 19:57:10 : 6323 steps taken, and 1962 accepted.
+[mcmc] Progress @ 2026-10-03 19:58:20 : 6334 steps taken, and 1963 accepted.
+[mcmc] Progress @ 2026-10-03 19:59:24 : 6341 steps taken, and 1964 accepted.
+[mcmc] Progress @ 2026-10-03 20:00:26 : 6349 steps taken, and 1969 accepted.
+[mcmc] Progress @ 2026-10-03 20:01:30 : 6361 steps taken, and 1973 accepted.
+[mcmc] Progress @ 2026-10-03 20:02:30 : 6369 steps taken, and 1976 accepted.
+[mcmc] Progress @ 2026-10-03 20:03:31 : 6376 steps taken, and 1978 accepted.
+[mcmc] Progress @ 2026-10-03 20:04:31 : 6386 steps taken, and 1982 accepted.
+[mcmc] Progress @ 2026-10-03 20:05:31 : 6397 steps taken, and 1986 accepted.
+[mcmc] Progress @ 2026-10-03 20:06:36 : 6407 steps taken, and 1989 accepted.
+[mcmc] Progress @ 2026-10-03 20:07:40 : 6415 steps taken, and 1990 accepted.
+[mcmc] Progress @ 2026-10-03 20:08:44 : 6427 steps taken, and 1996 accepted.
+[mcmc] Progress @ 2026-10-03 20:09:46 : 6436 steps taken, and 2000 accepted.
+[mcmc] Learn + convergence test @ 2000 samples accepted.
+[mcmc]  - Acceptance rate: 0.315
+[mcmc]  - Convergence of means: R-1 = 0.283157 after 1600 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Progress @ 2026-10-03 20:10:53 : 6444 steps taken, and 2003 accepted.
+[mcmc] Progress @ 2026-10-03 20:12:03 : 6454 steps taken, and 2006 accepted.
+[mcmc] Progress @ 2026-10-03 20:13:06 : 6469 steps taken, and 2007 accepted.
+[mcmc] Progress @ 2026-10-03 20:14:10 : 6478 steps taken, and 2011 accepted.
+[mcmc] Progress @ 2026-10-03 20:15:18 : 6487 steps taken, and 2012 accepted.
+[mcmc] Progress @ 2026-10-03 20:16:25 : 6501 steps taken, and 2014 accepted.
+[mcmc] Progress @ 2026-10-03 20:17:30 : 6512 steps taken, and 2015 accepted.
+[mcmc] Progress @ 2026-10-03 20:18:36 : 6521 steps taken, and 2017 accepted.
+[mcmc] Progress @ 2026-10-03 20:19:41 : 6532 steps taken, and 2021 accepted.
+[mcmc] Progress @ 2026-10-03 20:20:45 : 6544 steps taken, and 2025 accepted.
+[mcmc] Progress @ 2026-10-03 20:21:46 : 6553 steps taken, and 2028 accepted.
+[mcmc] Progress @ 2026-10-03 20:22:49 : 6563 steps taken, and 2030 accepted.
+[mcmc] Progress @ 2026-10-03 20:23:50 : 6571 steps taken, and 2033 accepted.
+[mcmc] Progress @ 2026-10-03 20:24:53 : 6581 steps taken, and 2035 accepted.
+[mcmc] Progress @ 2026-10-03 20:25:55 : 6590 steps taken, and 2039 accepted.
+[mcmc] Progress @ 2026-10-03 20:27:00 : 6596 steps taken, and 2042 accepted.
+[mcmc] Progress @ 2026-10-03 20:28:02 : 6608 steps taken, and 2045 accepted.
+[mcmc] Progress @ 2026-10-03 20:29:02 : 6614 steps taken, and 2047 accepted.
+[mcmc] Progress @ 2026-10-03 20:30:08 : 6627 steps taken, and 2052 accepted.
+[mcmc] Progress @ 2026-10-03 20:31:16 : 6640 steps taken, and 2054 accepted.
+[mcmc] Progress @ 2026-10-03 20:32:24 : 6648 steps taken, and 2054 accepted.
+[mcmc] Progress @ 2026-10-03 20:33:29 : 6659 steps taken, and 2058 accepted.
+[mcmc] Progress @ 2026-10-03 20:34:32 : 6672 steps taken, and 2065 accepted.
+[mcmc] Progress @ 2026-10-03 20:35:33 : 6680 steps taken, and 2066 accepted.
+[mcmc] Progress @ 2026-10-03 20:36:38 : 6687 steps taken, and 2067 accepted.
+[mcmc] Progress @ 2026-10-03 20:37:43 : 6696 steps taken, and 2072 accepted.
+[mcmc] Progress @ 2026-10-03 20:38:49 : 6709 steps taken, and 2076 accepted.
+[mcmc] Progress @ 2026-10-03 20:39:55 : 6719 steps taken, and 2079 accepted.
+[mcmc] Progress @ 2026-10-03 20:40:56 : 6731 steps taken, and 2083 accepted.
+[mcmc] Progress @ 2026-10-03 20:42:04 : 6744 steps taken, and 2088 accepted.
+[mcmc] Progress @ 2026-10-03 20:43:05 : 6761 steps taken, and 2091 accepted.
+[mcmc] Progress @ 2026-10-03 20:44:07 : 6768 steps taken, and 2094 accepted.
+[mcmc] Progress @ 2026-10-03 20:45:12 : 6782 steps taken, and 2097 accepted.
+[mcmc] Learn + convergence test @ 2100 samples accepted.
+[mcmc]  - Acceptance rate: 0.312
+[mcmc]  - Convergence of means: R-1 = 0.249733 after 1680 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Progress @ 2026-10-03 20:46:13 : 6793 steps taken, and 2102 accepted.
+[mcmc] Progress @ 2026-10-03 20:47:20 : 6806 steps taken, and 2103 accepted.
+[mcmc] Progress @ 2026-10-03 20:48:28 : 6817 steps taken, and 2107 accepted.
+[mcmc] Progress @ 2026-10-03 20:49:30 : 6831 steps taken, and 2111 accepted.
+[mcmc] Progress @ 2026-10-03 20:50:32 : 6844 steps taken, and 2114 accepted.
+[mcmc] Progress @ 2026-10-03 20:51:34 : 6857 steps taken, and 2116 accepted.
+[mcmc] Progress @ 2026-10-03 20:52:38 : 6865 steps taken, and 2118 accepted.
+[mcmc] Progress @ 2026-10-03 20:53:38 : 6873 steps taken, and 2124 accepted.
+[mcmc] Progress @ 2026-10-03 20:54:40 : 6882 steps taken, and 2127 accepted.
+[mcmc] Progress @ 2026-10-03 20:55:41 : 6891 steps taken, and 2130 accepted.
+[mcmc] Progress @ 2026-10-03 20:56:44 : 6903 steps taken, and 2133 accepted.
+[mcmc] Progress @ 2026-10-03 20:57:52 : 6911 steps taken, and 2136 accepted.
+[mcmc] Progress @ 2026-10-03 20:58:56 : 6922 steps taken, and 2139 accepted.
+[mcmc] Progress @ 2026-10-03 21:00:00 : 6933 steps taken, and 2142 accepted.
+[mcmc] Progress @ 2026-10-03 21:01:05 : 6946 steps taken, and 2146 accepted.
+[mcmc] Progress @ 2026-10-03 21:02:17 : 6954 steps taken, and 2152 accepted.
+[mcmc] Progress @ 2026-10-03 21:03:26 : 6965 steps taken, and 2156 accepted.
+[mcmc] Progress @ 2026-10-03 21:04:37 : 6976 steps taken, and 2163 accepted.
+[mcmc] Progress @ 2026-10-03 21:05:37 : 6983 steps taken, and 2165 accepted.
+[mcmc] Progress @ 2026-10-03 21:06:47 : 6994 steps taken, and 2170 accepted.
+[mcmc] Progress @ 2026-10-03 21:07:47 : 7002 steps taken, and 2173 accepted.
+[mcmc] Progress @ 2026-10-03 21:08:56 : 7011 steps taken, and 2173 accepted.
+[mcmc] Progress @ 2026-10-03 21:09:59 : 7019 steps taken, and 2176 accepted.
+[mcmc] Progress @ 2026-10-03 21:11:08 : 7029 steps taken, and 2178 accepted.
+[mcmc] Progress @ 2026-10-03 21:12:16 : 7038 steps taken, and 2180 accepted.
+[mcmc] Progress @ 2026-10-03 21:13:26 : 7049 steps taken, and 2183 accepted.
+[mcmc] Progress @ 2026-10-03 21:14:35 : 7056 steps taken, and 2183 accepted.
+[mcmc] Progress @ 2026-10-03 21:15:35 : 7066 steps taken, and 2186 accepted.
+[mcmc] Progress @ 2026-10-03 21:16:38 : 7076 steps taken, and 2192 accepted.
+[mcmc] Progress @ 2026-10-03 21:17:43 : 7091 steps taken, and 2196 accepted.
+[mcmc] Learn + convergence test @ 2200 samples accepted.
+[mcmc]  - Acceptance rate: 0.313
+[mcmc]  - Convergence of means: R-1 = 0.240113 after 1760 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Progress @ 2026-10-03 21:18:45 : 7102 steps taken, and 2202 accepted.
+[mcmc] Progress @ 2026-10-03 21:19:49 : 7116 steps taken, and 2205 accepted.
+[mcmc] Progress @ 2026-10-03 21:20:51 : 7123 steps taken, and 2207 accepted.
+[mcmc] Progress @ 2026-10-03 21:21:51 : 7132 steps taken, and 2210 accepted.
+[mcmc] Progress @ 2026-10-03 21:22:53 : 7139 steps taken, and 2210 accepted.
+[mcmc] Progress @ 2026-10-03 21:23:57 : 7150 steps taken, and 2216 accepted.
+[mcmc] Progress @ 2026-10-03 21:25:00 : 7164 steps taken, and 2221 accepted.
+[mcmc] Progress @ 2026-10-03 21:26:04 : 7187 steps taken, and 2227 accepted.
+[mcmc] Progress @ 2026-10-03 21:27:09 : 7198 steps taken, and 2231 accepted.
+[mcmc] Progress @ 2026-10-03 21:28:13 : 7207 steps taken, and 2235 accepted.
+[mcmc] Progress @ 2026-10-03 21:29:16 : 7219 steps taken, and 2238 accepted.
+[mcmc] Progress @ 2026-10-03 21:30:26 : 7227 steps taken, and 2240 accepted.
+[mcmc] Progress @ 2026-10-03 21:31:28 : 7238 steps taken, and 2242 accepted.
+[mcmc] Progress @ 2026-10-03 21:32:34 : 7247 steps taken, and 2245 accepted.
+[mcmc] Progress @ 2026-10-03 21:33:36 : 7254 steps taken, and 2250 accepted.
+[mcmc] Progress @ 2026-10-03 21:34:47 : 7269 steps taken, and 2254 accepted.
+[mcmc] Progress @ 2026-10-03 21:35:52 : 7277 steps taken, and 2258 accepted.
+[mcmc] Progress @ 2026-10-03 21:36:56 : 7284 steps taken, and 2259 accepted.
+[mcmc] Progress @ 2026-10-03 21:37:59 : 7294 steps taken, and 2261 accepted.
+[mcmc] Progress @ 2026-10-03 21:39:01 : 7303 steps taken, and 2262 accepted.
+[mcmc] Progress @ 2026-10-03 21:40:01 : 7313 steps taken, and 2266 accepted.
+[mcmc] Progress @ 2026-10-03 21:41:05 : 7324 steps taken, and 2271 accepted.
+[mcmc] Progress @ 2026-10-03 21:42:12 : 7336 steps taken, and 2276 accepted.
+[mcmc] Progress @ 2026-10-03 21:43:20 : 7346 steps taken, and 2278 accepted.
+[mcmc] Progress @ 2026-10-03 21:44:27 : 7357 steps taken, and 2283 accepted.
+[mcmc] Progress @ 2026-10-03 21:45:31 : 7376 steps taken, and 2287 accepted.
+[mcmc] Progress @ 2026-10-03 21:46:36 : 7392 steps taken, and 2292 accepted.
+[mcmc] Progress @ 2026-10-03 21:47:39 : 7402 steps taken, and 2295 accepted.
+[mcmc] Learn + convergence test @ 2300 samples accepted.
+[mcmc]  - Acceptance rate: 0.313
+[mcmc]  - Convergence of means: R-1 = 0.321584 after 1840 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Progress @ 2026-10-03 21:48:43 : 7423 steps taken, and 2302 accepted.
+[mcmc] Progress @ 2026-10-03 21:49:50 : 7432 steps taken, and 2305 accepted.
+[mcmc] Progress @ 2026-10-03 21:50:55 : 7446 steps taken, and 2308 accepted.
+[mcmc] Progress @ 2026-10-03 21:51:59 : 7453 steps taken, and 2309 accepted.
+[mcmc] Progress @ 2026-10-03 21:53:01 : 7461 steps taken, and 2310 accepted.
+[mcmc] Progress @ 2026-10-03 21:54:08 : 7472 steps taken, and 2313 accepted.
+[mcmc] Progress @ 2026-10-03 21:55:12 : 7482 steps taken, and 2315 accepted.
+[mcmc] Progress @ 2026-10-03 21:56:14 : 7492 steps taken, and 2318 accepted.
+[mcmc] Progress @ 2026-10-03 21:57:15 : 7502 steps taken, and 2320 accepted.
+[mcmc] Progress @ 2026-10-03 21:58:18 : 7509 steps taken, and 2323 accepted.
+[mcmc] Progress @ 2026-10-03 21:59:20 : 7517 steps taken, and 2326 accepted.
+[mcmc] Progress @ 2026-10-03 22:00:24 : 7528 steps taken, and 2329 accepted.
+[mcmc] Progress @ 2026-10-03 22:01:28 : 7540 steps taken, and 2330 accepted.
+[mcmc] Progress @ 2026-10-03 22:02:39 : 7551 steps taken, and 2332 accepted.
+[mcmc] Progress @ 2026-10-03 22:03:40 : 7562 steps taken, and 2336 accepted.
+[mcmc] Progress @ 2026-10-03 22:04:42 : 7572 steps taken, and 2341 accepted.
+[mcmc] Progress @ 2026-10-03 22:05:49 : 7581 steps taken, and 2343 accepted.
+[mcmc] Progress @ 2026-10-03 22:06:58 : 7591 steps taken, and 2346 accepted.
+[mcmc] Progress @ 2026-10-03 22:08:06 : 7601 steps taken, and 2350 accepted.
+[mcmc] Progress @ 2026-10-03 22:09:08 : 7608 steps taken, and 2352 accepted.
+[mcmc] Progress @ 2026-10-03 22:10:08 : 7620 steps taken, and 2355 accepted.
+[mcmc] Progress @ 2026-10-03 22:11:09 : 7630 steps taken, and 2358 accepted.
+[mcmc] Progress @ 2026-10-03 22:12:17 : 7640 steps taken, and 2360 accepted.
+[mcmc] Progress @ 2026-10-03 22:13:25 : 7649 steps taken, and 2362 accepted.
+[mcmc] Progress @ 2026-10-03 22:14:33 : 7661 steps taken, and 2365 accepted.
+[mcmc] Progress @ 2026-10-03 22:15:42 : 7670 steps taken, and 2368 accepted.
+[mcmc] Progress @ 2026-10-03 22:16:51 : 7680 steps taken, and 2373 accepted.
+[mcmc] Progress @ 2026-10-03 22:17:58 : 7690 steps taken, and 2375 accepted.
+[mcmc] Progress @ 2026-10-03 22:19:00 : 7701 steps taken, and 2377 accepted.
+[mcmc] Progress @ 2026-10-03 22:20:03 : 7710 steps taken, and 2380 accepted.
+[mcmc] Progress @ 2026-10-03 22:21:13 : 7717 steps taken, and 2381 accepted.
+[mcmc] Progress @ 2026-10-03 22:22:20 : 7729 steps taken, and 2385 accepted.
+[mcmc] Progress @ 2026-10-03 22:23:27 : 7736 steps taken, and 2386 accepted.
+[mcmc] Progress @ 2026-10-03 22:24:36 : 7745 steps taken, and 2390 accepted.
+[mcmc] Progress @ 2026-10-03 22:25:45 : 7754 steps taken, and 2394 accepted.
+[mcmc] Progress @ 2026-10-03 22:26:47 : 7763 steps taken, and 2397 accepted.
+[mcmc] Learn + convergence test @ 2400 samples accepted.
+[mcmc]  - Acceptance rate: 0.311
+[mcmc]  - Convergence of means: R-1 = 0.342949 after 1920 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Progress @ 2026-10-03 22:27:56 : 7775 steps taken, and 2402 accepted.
+[mcmc] Progress @ 2026-10-03 22:29:05 : 7784 steps taken, and 2404 accepted.
+[mcmc] Progress @ 2026-10-03 22:30:06 : 7792 steps taken, and 2407 accepted.
+[mcmc] Progress @ 2026-10-03 22:31:07 : 7801 steps taken, and 2409 accepted.
+[mcmc] Progress @ 2026-10-03 22:32:13 : 7812 steps taken, and 2409 accepted.
+[mcmc] Progress @ 2026-10-03 22:33:18 : 7823 steps taken, and 2411 accepted.
+[mcmc] Progress @ 2026-10-03 22:34:26 : 7836 steps taken, and 2413 accepted.
+[mcmc] Progress @ 2026-10-03 22:35:36 : 7848 steps taken, and 2418 accepted.
+[mcmc] Progress @ 2026-10-03 22:36:41 : 7858 steps taken, and 2420 accepted.
+[mcmc] Progress @ 2026-10-03 22:37:47 : 7865 steps taken, and 2422 accepted.
+[mcmc] Progress @ 2026-10-03 22:38:55 : 7875 steps taken, and 2424 accepted.
+[mcmc] Progress @ 2026-10-03 22:40:02 : 7885 steps taken, and 2428 accepted.
+[mcmc] Progress @ 2026-10-03 22:41:06 : 7896 steps taken, and 2431 accepted.
+[mcmc] Progress @ 2026-10-03 22:42:10 : 7904 steps taken, and 2431 accepted.
+[mcmc] Progress @ 2026-10-03 22:43:16 : 7916 steps taken, and 2433 accepted.
+[mcmc] Progress @ 2026-10-03 22:44:20 : 7924 steps taken, and 2434 accepted.
+[mcmc] Progress @ 2026-10-03 22:45:31 : 7934 steps taken, and 2439 accepted.
+[mcmc] Progress @ 2026-10-03 22:46:40 : 7948 steps taken, and 2444 accepted.
+[mcmc] Progress @ 2026-10-03 22:47:42 : 7955 steps taken, and 2445 accepted.
+[mcmc] Progress @ 2026-10-03 22:48:45 : 7966 steps taken, and 2449 accepted.
+[mcmc] Progress @ 2026-10-03 22:49:46 : 7976 steps taken, and 2451 accepted.
+[mcmc] Progress @ 2026-10-03 22:50:50 : 7987 steps taken, and 2455 accepted.
+[mcmc] Progress @ 2026-10-03 22:51:52 : 7994 steps taken, and 2456 accepted.
+[mcmc] Progress @ 2026-10-03 22:52:53 : 8005 steps taken, and 2459 accepted.
+[mcmc] Progress @ 2026-10-03 22:54:00 : 8012 steps taken, and 2460 accepted.
+[mcmc] Progress @ 2026-10-03 22:55:05 : 8024 steps taken, and 2464 accepted.
+[mcmc] Progress @ 2026-10-03 22:56:09 : 8035 steps taken, and 2467 accepted.
+[mcmc] Progress @ 2026-10-03 22:57:14 : 8043 steps taken, and 2470 accepted.
+[mcmc] Progress @ 2026-10-03 22:58:20 : 8054 steps taken, and 2474 accepted.
+[mcmc] Progress @ 2026-10-03 22:59:22 : 8065 steps taken, and 2479 accepted.
+[mcmc] Progress @ 2026-10-03 23:00:29 : 8074 steps taken, and 2482 accepted.
+[mcmc] Progress @ 2026-10-03 23:01:34 : 8085 steps taken, and 2487 accepted.
+[mcmc] Progress @ 2026-10-03 23:02:39 : 8096 steps taken, and 2490 accepted.
+[mcmc] Progress @ 2026-10-03 23:03:45 : 8106 steps taken, and 2495 accepted.
+[mcmc] Progress @ 2026-10-03 23:04:49 : 8114 steps taken, and 2498 accepted.
+[mcmc] Progress @ 2026-10-03 23:05:54 : 8122 steps taken, and 2499 accepted.
+[mcmc] Learn + convergence test @ 2500 samples accepted.
+[mcmc]  - Acceptance rate: 0.309
+[mcmc]  - Convergence of means: R-1 = 0.234842 after 2000 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Progress @ 2026-10-03 23:07:03 : 8134 steps taken, and 2502 accepted.
+[mcmc] Progress @ 2026-10-03 23:08:12 : 8146 steps taken, and 2507 accepted.
+[mcmc] Progress @ 2026-10-03 23:09:17 : 8158 steps taken, and 2511 accepted.
+[mcmc] Progress @ 2026-10-03 23:10:22 : 8168 steps taken, and 2515 accepted.
+[mcmc] Progress @ 2026-10-03 23:11:30 : 8183 steps taken, and 2520 accepted.
+[mcmc] Progress @ 2026-10-03 23:12:33 : 8199 steps taken, and 2527 accepted.
+[mcmc] Progress @ 2026-10-03 23:13:37 : 8209 steps taken, and 2529 accepted.
+[mcmc] Progress @ 2026-10-03 23:14:46 : 8226 steps taken, and 2534 accepted.
+[mcmc] Progress @ 2026-10-03 23:15:48 : 8236 steps taken, and 2538 accepted.
+[mcmc] Progress @ 2026-10-03 23:16:49 : 8251 steps taken, and 2543 accepted.
+[mcmc] Progress @ 2026-10-03 23:17:56 : 8261 steps taken, and 2548 accepted.
+[mcmc] Progress @ 2026-10-03 23:18:56 : 8268 steps taken, and 2550 accepted.
+[mcmc] Progress @ 2026-10-03 23:20:04 : 8281 steps taken, and 2556 accepted.
+[mcmc] Progress @ 2026-10-03 23:21:13 : 8288 steps taken, and 2561 accepted.
+[mcmc] Progress @ 2026-10-03 23:22:18 : 8300 steps taken, and 2566 accepted.
+[mcmc] Progress @ 2026-10-03 23:23:28 : 8313 steps taken, and 2572 accepted.
+[mcmc] Progress @ 2026-10-03 23:24:34 : 8324 steps taken, and 2577 accepted.
+[mcmc] Progress @ 2026-10-03 23:25:40 : 8334 steps taken, and 2582 accepted.
+[mcmc] Progress @ 2026-10-03 23:26:48 : 8343 steps taken, and 2583 accepted.
+[mcmc] Progress @ 2026-10-03 23:27:55 : 8353 steps taken, and 2586 accepted.
+[mcmc] Progress @ 2026-10-03 23:29:00 : 8363 steps taken, and 2587 accepted.
+[mcmc] Progress @ 2026-10-03 23:30:04 : 8372 steps taken, and 2590 accepted.
+[mcmc] Progress @ 2026-10-03 23:31:09 : 8385 steps taken, and 2595 accepted.
+[mcmc] Progress @ 2026-10-03 23:32:13 : 8393 steps taken, and 2598 accepted.
+[mcmc] Progress @ 2026-10-03 23:33:21 : 8403 steps taken, and 2599 accepted.
+[mcmc] Learn + convergence test @ 2600 samples accepted.
+[mcmc]  - Acceptance rate: 0.310
+[mcmc]  - Convergence of means: R-1 = 0.175461 after 2080 accepted steps
+[mcmc]  - Updated covariance matrix of proposal pdf.
+[mcmc] Progress @ 2026-10-03 23:34:22 : 8412 steps taken, and 2603 accepted.
+[mcmc] Progress @ 2026-10-03 23:35:22 : 8423 steps taken, and 2607 accepted.
+[mcmc] Progress @ 2026-10-03 23:36:30 : 8436 steps taken, and 2611 accepted.
+[mcmc] Progress @ 2026-10-03 23:37:36 : 8445 steps taken, and 2616 accepted.
+[mcmc] Progress @ 2026-10-03 23:38:41 : 8454 steps taken, and 2619 accepted.
+[mcmc] Progress @ 2026-10-03 23:39:47 : 8464 steps taken, and 2624 accepted.
+[mcmc] Progress @ 2026-10-03 23:40:54 : 8481 steps taken, and 2628 accepted.
+[mcmc] Progress @ 2026-10-03 23:41:55 : 8504 steps taken, and 2634 accepted.
+[mcmc] Progress @ 2026-10-03 23:42:56 : 8516 steps taken, and 2637 accepted.
+[mcmc] Progress @ 2026-10-03 23:43:59 : 8524 steps taken, and 2639 accepted.
+[mcmc] Progress @ 2026-10-03 23:45:01 : 8535 steps taken, and 2643 accepted.
+[mcmc] Progress @ 2026-10-03 23:46:01 : 8549 steps taken, and 2645 accepted.
+[mcmc] Progress @ 2026-10-03 23:47:03 : 8561 steps taken, and 2647 accepted.
+[mcmc] Progress @ 2026-10-03 23:48:13 : 8574 steps taken, and 2650 accepted.
+[mcmc] Progress @ 2026-10-03 23:49:20 : 8586 steps taken, and 2652 accepted.
+[mcmc] Progress @ 2026-10-03 23:50:25 : 8596 steps taken, and 2656 accepted.
+[mcmc] Progress @ 2026-10-03 23:51:29 : 8605 steps taken, and 2659 accepted.
+[mcmc] Progress @ 2026-10-03 23:52:32 : 8615 steps taken, and 2663 accepted.
+[mcmc] Progress @ 2026-10-03 23:53:36 : 8625 steps taken, and 2668 accepted.
+[mcmc] Progress @ 2026-10-03 23:54:39 : 8634 steps taken, and 2671 accepted.
+[mcmc] Progress @ 2026-10-03 23:55:44 : 8642 steps taken, and 2673 accepted.
+[mcmc] Progress @ 2026-10-03 23:56:49 : 8653 steps taken, and 2676 accepted.
+[mcmc] Progress @ 2026-10-03 23:57:56 : 8664 steps taken, and 2678 accepted.
+[mcmc] Progress @ 2026-10-03 23:59:02 : 8681 steps taken, and 2681 accepted.
+[mcmc] Progress @ 2026-10-04 00:00:12 : 8692 steps taken, and 2683 accepted.
+[mcmc] Progress @ 2026-10-04 00:01:16 : 8708 steps taken, and 2688 accepted.
+[mcmc] Progress @ 2026-10-04 00:02:20 : 8719 steps taken, and 2692 accepted.
+[mcmc] Progress @ 2026-10-04 00:03:22 : 8726 steps taken, and 2695 accepted.
+[classy] *ERROR* Computation error (see traceback below)! Parameters sent to CLASS: {'omegabh2': np.float64(0.02225891404331876), 'omegach2': np.float64(0.11776947724676447), 'H0': np.float64(68.46760971622076), 'As': np.float64(2.1219159399068406e-09), 'ns': np.float64(0.9574692565988652), 'tau': np.float64(0.05665132037440848), 'm_ncdm': '0.0088989885790305336,0.0088989885790305336,0.0088989885790305336'} and {'N_ncdm': 3, 'N_ur': 0.00641, 'l_max_scalars': 4095, 'output': 'tCl pCl lCl', 'non_linear': 'hmcode', 'lensing': 'yes'}.
+To ignore this kind of error, make 'stop_at_error: False'.
+[classy] *ERROR* Error at evaluation. See error information below.

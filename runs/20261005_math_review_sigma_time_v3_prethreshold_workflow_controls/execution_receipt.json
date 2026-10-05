@@ -1,0 +1,30 @@
+{
+  "utc": "2026-10-05T03:40:12.543199+00:00",
+  "snapshot_preparation_workers_direct_exit_code": 0,
+  "control_workers": [
+    {
+      "group": "sigma_time_v3_A4095_cap5",
+      "managed_session": 13928,
+      "actual_exit_code": 0
+    },
+    {
+      "group": "sigma_time_v3_A4095_cap20",
+      "managed_session": 81276,
+      "actual_exit_code": 0
+    },
+    {
+      "group": "sigma_time_v3_B4095_cap5",
+      "managed_session": 53209,
+      "actual_exit_code": 0
+    },
+    {
+      "group": "sigma_time_v3_B4095_cap20",
+      "managed_session": 60017,
+      "actual_exit_code": 0
+    }
+  ],
+  "all_verification_workers_terminal": true,
+  "selected_native_rows": 48,
+  "production_assessments_completed": 0,
+  "posterior_qualified": false
+}

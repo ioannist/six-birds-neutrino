@@ -1,0 +1,94 @@
+{
+  "utc": "2026-10-05T02:27:07.363608+00:00",
+  "maximum_sigma_refinement_level": 22,
+  "records": [
+    {
+      "selection_index": 0,
+      "point": {
+        "omegabh2": 0.039722417435190734,
+        "omegach2": 0.02050757593546919,
+        "H0": 55.63518294861832,
+        "logA": 3.4029050190597663,
+        "ns": 0.8333775835517003,
+        "tau": 0.20267279146734776,
+        "mnu": 4.9
+      },
+      "kind": "mass_grid",
+      "native_error_is_posterior_rejection": false,
+      "status": "finite_evaluation",
+      "logpost": -27156.54818723787,
+      "logpriors": [
+        -3.4908863374028734
+      ],
+      "loglikes": [
+        -25481.669045366594,
+        -1671.3882555338698
+      ],
+      "provider_arrays": "runs/20261005_math_review_sigma_time_endpoint_candidate_v3/controls/point0_provider_arrays.npz",
+      "provider_arrays_sha256": "936419ce15d1323fdf2cb07b3c924b7551e719b37a3f89a18749a92867de681d",
+      "all_spectra_finite": true,
+      "utc": "2026-10-05T02:25:44.757206+00:00"
+    },
+    {
+      "selection_index": 1,
+      "point": {
+        "omegabh2": 0.039722417435190734,
+        "omegach2": 0.02050757593546919,
+        "H0": 55.63518294861832,
+        "logA": 3.4029050190597663,
+        "ns": 0.8333775835517003,
+        "tau": 0.20267279146734776,
+        "mnu": 5.1
+      },
+      "kind": "mass_grid",
+      "native_error_is_posterior_rejection": false,
+      "status": "finite_evaluation",
+      "logpost": -25589.531060304136,
+      "logpriors": [
+        -3.4908863374028734
+      ],
+      "loglikes": [
+        -23930.08475909019,
+        -1655.9554148765435
+      ],
+      "provider_arrays": "runs/20261005_math_review_sigma_time_endpoint_candidate_v3/controls/point1_provider_arrays.npz",
+      "provider_arrays_sha256": "e999c9f68bac4feb4165b1a8b021a0650c9607dbfba5d47d5325122e7a3e080f",
+      "all_spectra_finite": true,
+      "utc": "2026-10-05T02:25:57.172108+00:00"
+    },
+    {
+      "selection_index": 2,
+      "point": {
+        "omegabh2": 0.029575663512100336,
+        "omegach2": 0.0028630562619511857,
+        "H0": 54.38876723029562,
+        "logA": 2.9440199295646825,
+        "ns": 0.9141040602339817,
+        "tau": 0.07344339439339485,
+        "mnu": 0.05
+      },
+      "kind": "mass_grid",
+      "native_error_is_posterior_rejection": false,
+      "status": "finite_evaluation",
+      "logpost": -75840.58341295387,
+      "logpriors": [
+        -3.4908863374028734
+      ],
+      "loglikes": [
+        -71684.05397652705,
+        -4153.038550089422
+      ],
+      "provider_arrays": "runs/20261005_math_review_sigma_time_endpoint_candidate_v3/controls/point2_provider_arrays.npz",
+      "provider_arrays_sha256": "f32f8ea18c6eb2822bb1982480ddd54f60fab2d4715173021cd836b0e5e67115",
+      "all_spectra_finite": true,
+      "utc": "2026-10-05T02:27:07.361334+00:00"
+    }
+  ],
+  "native_module": "/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_sigma_time_endpoint_v3_20261005/camb/camblib.so",
+  "native_module_sha256": "1ca1d26063d30bb959b1d52a29b62f68712d262cc981170500447b4c35e10d84",
+  "evaluation_config_sha256": "06d1fca5f260acbd788ac04ca278f0f8a76589f326f4f800a9788808c653b8fe",
+  "selection_receipt_sha256": "c723322abf2af82e7779e9bf3c5411c8c429b1bba94207db3370a68252ad90c9",
+  "scope": "Three selected endpoint-repair controls under initialized background: warning cases at4.9/5.1eV and preserved0.05eV sigma-timeout witness. Native time-coordinate change is a distinct numerical policy; no posterior pooling or global error certificate.",
+  "production_adopted": false,
+  "posterior_qualified": false
+}

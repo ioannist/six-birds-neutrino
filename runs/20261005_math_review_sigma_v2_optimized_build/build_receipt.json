@@ -1,0 +1,24 @@
+{
+  "utc": "2026-10-05T01:53:16.603074+00:00",
+  "policy_id": "camb204_sigma_refinement_v2",
+  "policy_sha256": "31f26a3cb1fb64944f78e91efdb91aafb231110e098f5521e6c2408716223b74",
+  "build_profile": "optimized",
+  "source_preparation_sha256": "5824ea71ce685ed795e848253b3c6a465fa8b0da9c359ed1388073c05722d953",
+  "command": [
+    "make",
+    "-j2",
+    "python",
+    "COMPILER=gfortran",
+    "CLUSTER_SAFE=1",
+    "FFLAGS=-O3 -fno-unsafe-math-optimizations -ffp-contract=off -MMD -cpp -ffree-line-length-none -fmax-errors=4 -fopenmp"
+  ],
+  "compiler": "/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_native_debug_20261005/bin/gfortran",
+  "compiler_sha256": "3821484c18113de2c8958df94fab9077ca11fc2a296a082fc670afb2700a83a8",
+  "compiler_version": "GNU Fortran (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+  "LD_LIBRARY_PATH": "/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_native_debug_20261005/compiler/usr/lib/x86_64-linux-gnu",
+  "exit_code": 0,
+  "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_sigma_v2_optimized_20261005/camb-2.0.4/camb/camblib.so",
+  "module_sha256": "6da2374dd588ba0babda270f1224ce4c3cd81ec09dfb5314fb9520f73046e58e",
+  "production_adopted": false,
+  "posterior_or_uniform_accuracy_certified": false
+}

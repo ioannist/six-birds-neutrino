@@ -1,0 +1,89 @@
+{
+  "scope": "isolated_fixture_sensitivity_to_original_numjac",
+  "original_numjac_compiled_from_installed_unmodified_source": true,
+  "other_native_dependencies_linked_from_private_library": true,
+  "commands": [
+    [
+      "gcc",
+      "-std=c11",
+      "-O2",
+      "-I/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/classy/include",
+      "-c",
+      "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/classy/tools/evolver_ndf15.c",
+      "-o",
+      "/tmp/sbt-original-numjac-v6kg_wu2/original.o"
+    ],
+    [
+      "gcc",
+      "-std=c11",
+      "-O2",
+      "-I/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/classy/include",
+      "-c",
+      "/home/repos/six-birds-neutrino/tests/native/class_numjac_guard.c",
+      "-o",
+      "/tmp/sbt-original-numjac-v6kg_wu2/test.o"
+    ],
+    [
+      "g++",
+      "-pthread",
+      "/tmp/sbt-original-numjac-v6kg_wu2/test.o",
+      "/tmp/sbt-original-numjac-v6kg_wu2/original.o",
+      "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/libclass.a",
+      "-lm",
+      "-o",
+      "/tmp/sbt-original-numjac-v6kg_wu2/test"
+    ]
+  ],
+  "execution_command": [
+    "stdbuf",
+    "-oL",
+    "/tmp/sbt-original-numjac-v6kg_wu2/test"
+  ],
+  "exit_code": -11,
+  "signal": 11,
+  "completed_cases": [
+    {
+      "case": "smooth_linear_control",
+      "status": 0,
+      "calls": 1,
+      "nfe": 1,
+      "nonfinite_trials": 0,
+      "ok": true
+    },
+    {
+      "case": "primary_and_refined_cutoff_retries",
+      "status": 0,
+      "calls": 1,
+      "nfe": 1,
+      "nonfinite_trials": 1,
+      "ok": false
+    },
+    {
+      "case": "refined_cutoff_retry_recovers_small_slope",
+      "status": 0,
+      "calls": 2,
+      "nfe": 2,
+      "nonfinite_trials": 1,
+      "ok": false
+    },
+    {
+      "case": "both_directions_nonfinite_error",
+      "status": 0,
+      "calls": 1,
+      "nfe": 1,
+      "nonfinite_trials": 1,
+      "ok": false
+    },
+    {
+      "case": "callback_failure_propagated",
+      "status": 1,
+      "calls": 1,
+      "nfe": 0,
+      "nonfinite_trials": 0,
+      "ok": true
+    }
+  ],
+  "all_seven_cases_completed": false,
+  "patched_fixture_all_seven_cases_pass": true,
+  "initial_attempt_exit_receipt_unavailable": true
+}

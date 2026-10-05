@@ -1,0 +1,27 @@
+✖ [7894/7894] Building TruncGaussProof.GaussianQuantile (10s)
+trace: .> LEAN_PATH=/home/repos/six-birds-neutrino/lean/trunc_gauss_proof/.lake/packages/Cli/.lake/build/lib/lean:/home/repos/six-birds-neutrino/lean/trunc_gauss_proof/.lake/packages/batteries/.lake/build/lib/lean:/home/repos/six-birds-neutrino/lean/trunc_gauss_proof/.lake/packages/Qq/.lake/build/lib/lean:/home/repos/six-birds-neutrino/lean/trunc_gauss_proof/.lake/packages/aesop/.lake/build/lib/lean:/home/repos/six-birds-neutrino/lean/trunc_gauss_proof/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/repos/six-birds-neutrino/lean/trunc_gauss_proof/.lake/packages/importGraph/.lake/build/lib/lean:/home/repos/six-birds-neutrino/lean/trunc_gauss_proof/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/repos/six-birds-neutrino/lean/trunc_gauss_proof/.lake/packages/plausible/.lake/build/lib/lean:/home/repos/six-birds-neutrino/lean/trunc_gauss_proof/.lake/packages/mathlib/.lake/build/lib/lean:/home/repos/six-birds-neutrino/lean/trunc_gauss_proof/.lake/build/lib/lean /home/ioannis/.elan/toolchains/leanprover--lean4---v4.27.0/bin/lean /home/repos/six-birds-neutrino/lean/trunc_gauss_proof/TruncGaussProof/GaussianQuantile.lean -o /home/repos/six-birds-neutrino/lean/trunc_gauss_proof/.lake/build/lib/lean/TruncGaussProof/GaussianQuantile.olean -i /home/repos/six-birds-neutrino/lean/trunc_gauss_proof/.lake/build/lib/lean/TruncGaussProof/GaussianQuantile.ilean -c /home/repos/six-birds-neutrino/lean/trunc_gauss_proof/.lake/build/ir/TruncGaussProof/GaussianQuantile.c --setup /home/repos/six-birds-neutrino/lean/trunc_gauss_proof/.lake/build/ir/TruncGaussProof/GaussianQuantile.setup.json --json
+error: TruncGaussProof/GaussianQuantile.lean:22:4: Unknown identifier `Function.leftLim_le`
+error: TruncGaussProof/GaussianQuantile.lean:38:37: Application type mismatch: The argument
+  gt_mem_nhds hq1
+has type
+  ∀ᶠ (x : ℝ) in 𝓝 q, x < 1
+but is expected to have type
+  ∀ᶠ (y : ℝ) in 𝓝 1, q < y
+in the application
+  Tendsto.eventually (tendsto_cdf_atTop (truncatedGaussianLaw μ σ)) (gt_mem_nhds hq1)
+error: TruncGaussProof/GaussianQuantile.lean:44:50: Tactic `assumption` failed
+
+μ σ q : ℝ
+hσ : 0 < σ
+hq0 : 0 < q
+hq1 : q < 1
+this : IsProbabilityMeasure (truncatedGaussianLaw μ σ) := truncatedGaussianLaw_isProbability μ σ hσ
+hevent : ∀ᶠ (x : ℝ) in atTop, q < ↑(cdf (truncatedGaussianLaw μ σ)) x
+b : ℝ
+hb0 : 0 ≤ b
+hbq : q < ↑(cdf (truncatedGaussianLaw μ σ)) b
+hz : ↑(cdf (truncatedGaussianLaw μ σ)) 0 = 0
+⊢ 0 ≤ q
+error: Lean exited with code 1
+Some required targets logged failures:
+- TruncGaussProof.GaussianQuantile

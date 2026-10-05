@@ -1,0 +1,40 @@
+/home/repos/six-birds-neutrino/runs/20261004_math_review_upper_gate_quantile_bridge/FormalSelfReview.lean:135:14: error: expected token
+/home/repos/six-birds-neutrino/runs/20261004_math_review_upper_gate_quantile_bridge/FormalSelfReview.lean:138:82: error: unsolved goals
+case measure_univ
+L : ℝ
+⊢ (sorry ()) Set.univ = 1
+/home/repos/six-birds-neutrino/runs/20261004_math_review_upper_gate_quantile_bridge/FormalSelfReview.lean:140:12: warning: declaration uses 'sorry'
+/home/repos/six-birds-neutrino/runs/20261004_math_review_upper_gate_quantile_bridge/FormalSelfReview.lean:148:2: error: unsolved goals
+case left
+L : ℝ
+hL : 0 < L
+hL0 : ¬L ≤ 0
+h20 : ¬2 * L ≤ 0
+h2L : ¬2 * L ≤ L
+⊢ ↑(cdf (sorry ())) 0 = 1 / 4
+/home/repos/six-birds-neutrino/runs/20261004_math_review_upper_gate_quantile_bridge/FormalSelfReview.lean:150:2: error: unsolved goals
+case right
+L : ℝ
+hL : 0 < L
+hL0 : ¬L ≤ 0
+h20 : ¬2 * L ≤ 0
+h2L : ¬2 * L ≤ L
+⊢ ↑(cdf (sorry ())) L = 1 / 2
+/home/repos/six-birds-neutrino/runs/20261004_math_review_upper_gate_quantile_bridge/FormalSelfReview.lean:176:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/home/repos/six-birds-neutrino/runs/20261004_math_review_upper_gate_quantile_bridge/FormalSelfReview.lean:180:14: error: expected token
+/home/repos/six-birds-neutrino/runs/20261004_math_review_upper_gate_quantile_bridge/FormalSelfReview.lean:182:66: error: unsolved goals
+case measure_univ
+⊢ (sorry ()) Set.univ = 1
+/home/repos/six-birds-neutrino/runs/20261004_math_review_upper_gate_quantile_bridge/FormalSelfReview.lean:184:12: warning: declaration uses 'sorry'
+/home/repos/six-birds-neutrino/runs/20261004_math_review_upper_gate_quantile_bridge/FormalSelfReview.lean:188:36: error: unsolved goals
+⊢ ↑(cdf (sorry ())) 4 = 1
+/home/repos/six-birds-neutrino/runs/20261004_math_review_upper_gate_quantile_bridge/FormalSelfReview.lean:191:2: error: unsolved goals
+case refine_1
+h4 : ↑(cdf plateauLaw) 4 = 1
+⊢ ↑(cdf (sorry ())) 2 / ↑(cdf (sorry ())) 4 = 1 / 2
+/home/repos/six-birds-neutrino/runs/20261004_math_review_upper_gate_quantile_bridge/FormalSelfReview.lean:193:2: error: unsolved goals
+case refine_2
+h4 : ↑(cdf plateauLaw) 4 = 1
+⊢ ↑(cdf (sorry ())) 1 = 1 / 2

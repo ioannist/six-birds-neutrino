@@ -1,0 +1,17 @@
+{
+  "case": {
+    "mu1": 0.0,
+    "sigma1": 1e-100,
+    "mu2": 1e+300,
+    "sigma2": 1e+100
+  },
+  "previous_binary64_mean": 0.0,
+  "repaired_mean": 1e-100,
+  "repaired_sigma": 1e-100,
+  "repaired_mode_in_combined_sigma_units": 1.0,
+  "wide_type": {
+    "mantissa_bits": 63,
+    "max_exponent": 16384
+  },
+  "scope": "numeric_counterexample_and_repair_not_interval_certificate"
+}

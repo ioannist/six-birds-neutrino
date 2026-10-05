@@ -1,0 +1,13 @@
+{
+  "original_source": "/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_packaged_sigma_policy_20261005/camb-2.0.4/fortran/halofit.f90",
+  "original_sha256": "6f72e651c9faafc3d9ed6e6f68b159b3d186b178d69ad0412296c1797ab7717d",
+  "probe_source": "/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_sigma_timeout_probe_20261005/fortran/halofit.f90",
+  "probe_sha256": "530eb46be27f25c6eb75fba6701829b8b269d122385d6add9624656fc104fce1",
+  "changes": [
+    {
+      "before": "                call GlobalError('HMCode INTEGRATE, Integration timed out', error_nonlinear)",
+      "after": "                write(*,*) 'AUDIT_INTEGRATION_TIMEOUT', y, z, itype, acc, j, n, active_minimum, sum_new, sum_old\n                call GlobalError('HMCode INTEGRATE, Integration timed out', error_nonlinear)"
+    }
+  ],
+  "scope": "Observational timeout record only, unchanged integration and original GlobalError propagated. Isolated private build."
+}

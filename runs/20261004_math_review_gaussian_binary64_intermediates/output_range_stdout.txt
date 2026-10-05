@@ -1,0 +1,42 @@
+{
+  "utc": "2026-10-04T05:02:05.735187+00:00",
+  "scope": "wider_scalar_inputs_must_not_emit_invalid_binary64_outputs",
+  "records": [
+    {
+      "phase": "before",
+      "case": "wide_finite_mean",
+      "source_sha256": "0f2242b0f359ee811df818646dcb27b6643b952e99b84f70ef6af53881808060",
+      "raised_error": false,
+      "mean_display": "inf",
+      "width_display": "0.7071067811865476",
+      "warnings": [
+        "overflow encountered in cast"
+      ]
+    },
+    {
+      "phase": "before",
+      "case": "wide_positive_width",
+      "source_sha256": "0f2242b0f359ee811df818646dcb27b6643b952e99b84f70ef6af53881808060",
+      "raised_error": false,
+      "mean_display": "0.0",
+      "width_display": "0.0",
+      "warnings": []
+    },
+    {
+      "phase": "after",
+      "case": "wide_finite_mean",
+      "source_sha256": "e80cd63bbf4f7e75f2d605d70d17c054c4044ea3ce3fe45bf9982e2af7d894f9",
+      "raised_error": true,
+      "error": "Combined mean is not representable as a finite binary64 output.",
+      "warnings": []
+    },
+    {
+      "phase": "after",
+      "case": "wide_positive_width",
+      "source_sha256": "e80cd63bbf4f7e75f2d605d70d17c054c4044ea3ce3fe45bf9982e2af7d894f9",
+      "raised_error": true,
+      "error": "Combined standard deviation is not representable as a positive finite binary64 output.",
+      "warnings": []
+    }
+  ]
+}

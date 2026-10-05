@@ -1,0 +1,10 @@
+TruncGaussProof/GaussianGatedCDF.lean:12:59: error: unsolved goals
+μ σ : ℝ
+hσ : 0 < σ
+hv : ⟨σ ^ 2, ⋯⟩ ≠ 0
+hp : 0 < standardNormalCDF (μ / σ)
+hf :
+  (fun x => ENNReal.ofReal (truncatedDensity μ σ x)) =
+    ENNReal.ofReal (standardNormalCDF (μ / σ))⁻¹ • (Set.Ici 0).indicator (gaussianPDF μ ⟨σ ^ 2, ⋯⟩)
+⊢ ENNReal.ofReal (standardNormalCDF (μ / σ))⁻¹ • (ℙ.restrict (Set.Ici 0)).withDensity (gaussianPDF μ ⟨σ ^ 2, ⋯⟩) =
+    ENNReal.ofReal (standardNormalCDF (μ / σ))⁻¹ • (ℙ.withDensity (gaussianPDF μ ⟨σ ^ 2, ⋯⟩)).restrict (Set.Ici 0)

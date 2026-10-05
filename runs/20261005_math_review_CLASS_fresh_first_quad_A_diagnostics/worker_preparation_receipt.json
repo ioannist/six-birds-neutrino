@@ -1,0 +1,17 @@
+{
+  "utc": "2026-10-05T07:58:03.279145+00:00",
+  "source": "runs/20261005_math_review_fresh_CAMB_eleventh_current_A3200_diagnostics/run_verification.py",
+  "source_sha256": "f026bcba9d2e0593d8dd2d18d8da35edea5334be42b96cb67191951382c014d5",
+  "changes": [
+    [
+      "WORKFLOW = ROOT / 'runs/20261004_math_review_fresh_CAMB_weighted_summary_diagnostic_preparation'",
+      "WORKFLOW = ROOT / 'runs/20261005_math_review_CLASS_fresh_recovery_diagnostic_preparation_v2'"
+    ],
+    [
+      "env = dict(os.environ, PYTHONPATH=str(ROOT / 'src'), OMP_NUM_THREADS='1', OPENBLAS_NUM_THREADS='1', MKL_NUM_THREADS='1')",
+      "contract = json.loads((WORKFLOW / 'assessment_contract.json').read_text())\nsnapshot = json.loads((HERE / 'snapshot_receipt.json').read_text())\nentry = contract['groups'][snapshot['group']][0]\nenv = dict(os.environ, PYTHONPATH=str(Path(entry['module']).parent.parent) + ':' + str(ROOT / 'src'),\n           OMP_NUM_THREADS=entry['OMP_NUM_THREADS'], OPENBLAS_NUM_THREADS='1', MKL_NUM_THREADS='1')"
+    ]
+  ],
+  "preparation_direct_exit_code": 0,
+  "scope": "First fresh CLASS quad A production assessment after unchanged1000 gate; production contract and native environment used, no control contract promotion."
+}

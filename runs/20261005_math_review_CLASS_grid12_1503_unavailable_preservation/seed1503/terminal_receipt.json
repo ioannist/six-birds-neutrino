@@ -1,0 +1,156 @@
+{
+  "utc": "2026-10-05T05:37:39.319800+00:00",
+  "registered_entry": {
+    "seed": 1503,
+    "lens": "B",
+    "cohort": "grid12",
+    "pid": 2507547,
+    "exec_session": 21176,
+    "run_dir": "runs/20261004_math_review_guarded_grid12_trial_B_seed1503/run",
+    "native_module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+    "launch_receipt": "runs/20261004_math_review_guarded_grid12_trial_B_seed1503/launch_receipt.json",
+    "status": "running_sampling_initial_saved_row_native_verified"
+  },
+  "last_verified_live_identity": {
+    "seed": 1503,
+    "pid": 2507547,
+    "process_start_ticks": 337604851,
+    "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_guarded_grid12_trial_B_seed1503/launch_trial.py ",
+    "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+    "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+    "status": "live_same_owned_native_identity",
+    "retained_represented_steps": 940,
+    "group": null,
+    "posterior_qualified": false
+  },
+  "last_runtime_snapshot": "runs/20261005_math_review_registered80_B_activation_v2/combined_runtime_verification.json",
+  "last_runtime_snapshot_sha256": "88245e439b5358892a00baa73854db3b34272f655617ba0a1f9b4df7775911d5",
+  "identity_observation": {
+    "pid": 2507547,
+    "expected_start_ticks": 337604851,
+    "status": "PID_not_present",
+    "original_identity_absent": true
+  },
+  "managed_handle_observation": "write_stdin failed: Unknown process id 21176",
+  "exit_code": null,
+  "exit_reason": null,
+  "native_failure_established": false,
+  "terminal_output_files": [
+    {
+      "source": "runs/20261004_math_review_guarded_grid12_trial_B_seed1503/run/chains/math_guarded_grid12_trial_B_seed1503.1.txt",
+      "frozen": "runs/20261005_math_review_CLASS_grid12_1503_unavailable_preservation/seed1503/outputs/chains/math_guarded_grid12_trial_B_seed1503.1.txt",
+      "bytes": 231680,
+      "sha256": "86e917a17311d7252eeab50daeb9abf9083ba36c80604861cfa3d315bc45ffb2"
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_grid12_trial_B_seed1503/run/chains/math_guarded_grid12_trial_B_seed1503.checkpoint",
+      "frozen": "runs/20261005_math_review_CLASS_grid12_1503_unavailable_preservation/seed1503/outputs/chains/math_guarded_grid12_trial_B_seed1503.checkpoint",
+      "bytes": 142,
+      "sha256": "c8b45de7596b3286eda1a81924b8bbe90b15b8c165943a53d357994cb9525cdb"
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_grid12_trial_B_seed1503/run/chains/math_guarded_grid12_trial_B_seed1503.covmat",
+      "frozen": "runs/20261005_math_review_CLASS_grid12_1503_unavailable_preservation/seed1503/outputs/chains/math_guarded_grid12_trial_B_seed1503.covmat",
+      "bytes": 2623,
+      "sha256": "33757fb147adc46c7ca2e2b6783b1a94ba99cc3f601ca9f9f8d8cf1435041867"
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_grid12_trial_B_seed1503/run/chains/math_guarded_grid12_trial_B_seed1503.input.yaml",
+      "frozen": "runs/20261005_math_review_CLASS_grid12_1503_unavailable_preservation/seed1503/outputs/chains/math_guarded_grid12_trial_B_seed1503.input.yaml",
+      "bytes": 4436,
+      "sha256": "947d3ad15bb5cd82d1d390097f8a3e0b822bd2a9bd7619ff4b4eb7f87b2c4be7"
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_grid12_trial_B_seed1503/run/chains/math_guarded_grid12_trial_B_seed1503.input.yaml.locked",
+      "frozen": "runs/20261005_math_review_CLASS_grid12_1503_unavailable_preservation/seed1503/outputs/chains/math_guarded_grid12_trial_B_seed1503.input.yaml.locked",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_grid12_trial_B_seed1503/run/chains/math_guarded_grid12_trial_B_seed1503.progress",
+      "frozen": "runs/20261005_math_review_CLASS_grid12_1503_unavailable_preservation/seed1503/outputs/chains/math_guarded_grid12_trial_B_seed1503.progress",
+      "bytes": 258,
+      "sha256": "83b064a54a98943412a2351feec8464e6eae3d96320bd09440fd69725bf7bbbe"
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_grid12_trial_B_seed1503/run/chains/math_guarded_grid12_trial_B_seed1503.updated.yaml",
+      "frozen": "runs/20261005_math_review_CLASS_grid12_1503_unavailable_preservation/seed1503/outputs/chains/math_guarded_grid12_trial_B_seed1503.updated.yaml",
+      "bytes": 7297,
+      "sha256": "9254de6b8d50154fc8322ea39e9a5605192a9f299b2e4cb73ac930df99ce7481"
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_grid12_trial_B_seed1503/run/env.txt",
+      "frozen": "runs/20261005_math_review_CLASS_grid12_1503_unavailable_preservation/seed1503/outputs/env.txt",
+      "bytes": 433,
+      "sha256": "537c45a0f68d6a729ff182055923bd7bfe6dccde048b43998b1721b12f4a462e"
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_grid12_trial_B_seed1503/run/input.yaml",
+      "frozen": "runs/20261005_math_review_CLASS_grid12_1503_unavailable_preservation/seed1503/outputs/input.yaml",
+      "bytes": 4371,
+      "sha256": "3b141581123a51f11f56eac272c44509d78d1310666d64d12abb843fa15dc724"
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_grid12_trial_B_seed1503/run/resolved.yaml",
+      "frozen": "runs/20261005_math_review_CLASS_grid12_1503_unavailable_preservation/seed1503/outputs/resolved.yaml",
+      "bytes": 4516,
+      "sha256": "4e4e3b978119ae1177d8a83df27c1849a77261ebddb0ec5900017ef94fca8366"
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_grid12_trial_B_seed1503/run/runtime_state.json",
+      "frozen": "runs/20261005_math_review_CLASS_grid12_1503_unavailable_preservation/seed1503/outputs/runtime_state.json",
+      "bytes": 1978,
+      "sha256": "08f43c532594255c8e508f1dde5bcd591f29ffb42b74b98c41cc97404a7b5317"
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_grid12_trial_B_seed1503/run/solver_backend.json",
+      "frozen": "runs/20261005_math_review_CLASS_grid12_1503_unavailable_preservation/seed1503/outputs/solver_backend.json",
+      "bytes": 458,
+      "sha256": "d06b850a890ec397c3c8b81510d6331e447e5d094236b3363385327f8581e502"
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_grid12_trial_B_seed1503/run/stderr.txt",
+      "frozen": "runs/20261005_math_review_CLASS_grid12_1503_unavailable_preservation/seed1503/outputs/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_grid12_trial_B_seed1503/run/stdout.txt",
+      "frozen": "runs/20261005_math_review_CLASS_grid12_1503_unavailable_preservation/seed1503/outputs/stdout.txt",
+      "bytes": 76992,
+      "sha256": "069a464dc5fdcd44ba71d1c2cbf21ee91f7c4b8efa97ac35c421a267f3a4646d"
+    }
+  ],
+  "original_launch_receipt_sha256": "500e50c32ff66ca59fb8de67819d47bd5d634915e980ad1fc83700edb432deb1",
+  "complete_chain_prefix_sha256": "86e917a17311d7252eeab50daeb9abf9083ba36c80604861cfa3d315bc45ffb2",
+  "stored_complete_rows": 319,
+  "retained_represented_steps": 940,
+  "last_complete_row": {
+    "weight": "1",
+    "minuslogpost": "958.93459799367497",
+    "omegabh2": "0.022479642819038234",
+    "omegach2": "0.11769774534728149",
+    "H0": "68.186534843132293",
+    "logA": "3.0231490742444369",
+    "ns": "0.9677506383989275",
+    "tau": "0.04441865741481088",
+    "mnu_sample": "0.1067235636429251",
+    "A_planck": "1.0015017217967368",
+    "TT_tSZ_Amp": "1.1066209890917555",
+    "TT_kSZ_Amp": "2.3801971923230147",
+    "As": "2.0555921992480728e-09",
+    "mnu": "0.1067235636429251",
+    "chi2__CMB": "499.03907409943696",
+    "minuslogprior": "5.7934714303969193",
+    "minuslogprior__0": "5.7934714303969193",
+    "chi2": "1906.282253126556",
+    "chi2__sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": "1394.4250855848584",
+    "chi2__sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": "12.818093442260485",
+    "chi2__planck_2018_lowl.TT": "22.621464772553281",
+    "chi2__planck_2018_lowl.EE_sroll2": "395.12709758964979",
+    "chi2__planck_2018_highl_plik.TT_lite_native": "68.758077922412156",
+    "chi2__planckpr4lensing.PlanckPR4Lensing": "12.532433814821735"
+  },
+  "exact_resume_state_available": false,
+  "scope": "Original identity absent and managed handle unavailable. Output preserved; no exit cause or successful completion inferred."
+}

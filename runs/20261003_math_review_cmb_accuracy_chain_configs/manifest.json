@@ -1,0 +1,46 @@
+{
+  "utc": "2026-10-03T15:42:33.050585+00:00",
+  "scope": "independent_intermediate_CLASS_precision_posterior_controls",
+  "posterior_convergence_verified": false,
+  "numerical_accuracy_certified": false,
+  "pool_with_default_precision_chains": false,
+  "replicas_per_lens": 2,
+  "source_sha256": {
+    "runs/20261003_math_review_cmb_accuracy_configs/A.yaml": "a796a54b712a103206ff99557787c2e9ba206f908717af337bdeab111c3a4da0",
+    "runs/20261003_math_review_cmb_accuracy_configs/B.yaml": "284ce533bb5286567b7c97f514960ebe686b7009164fa05984c4fa7d9d0e5d28",
+    "runs/20261003_math_review_cosmological_cmb_desi_accuracy/lensA_fit_0.json": "5d3ada7c864a36d1d6863c290ecf4f37004656b26dc933b0298e90f6b5b03db6",
+    "runs/20261003_math_review_cmb_proposal_A/proposal.covmat": "846fe81423cd19b9a0d4b890e58db9179a7485516f1dd12e2004d3b5efde8270",
+    "runs/20261003_math_review_cosmological_cmb_desi_accuracy/lensB_fit_0.json": "14a696d0bb36a52b7cb7e16dd9defb82b9c4c50848b31c3836d17429a9b70c21",
+    "runs/20261003_math_review_cmb_proposal_B/proposal.covmat": "9744f3d6b00d6d4a3e116977ba13ed76a3505ddac9d4bb5ef1e3f3d3f63317a6"
+  },
+  "runs": [
+    {
+      "lens": "A",
+      "seed": 601,
+      "config": "/home/repos/six-birds-neutrino/runs/20261003_math_review_cmb_accuracy_chain_configs/A_seed601.yaml",
+      "config_sha256": "0d6a404c948aad966941238077e58725269ed6a2fbc8d21860276c0959d80460",
+      "outdir": "/home/repos/six-birds-neutrino/runs/20261003_math_review_cmb_accuracy_chain_A_seed601"
+    },
+    {
+      "lens": "A",
+      "seed": 602,
+      "config": "/home/repos/six-birds-neutrino/runs/20261003_math_review_cmb_accuracy_chain_configs/A_seed602.yaml",
+      "config_sha256": "a867beb1a2ea6acb7b72d8fc0cec69036cc4caa77bfd282fa0823af00e9e473c",
+      "outdir": "/home/repos/six-birds-neutrino/runs/20261003_math_review_cmb_accuracy_chain_A_seed602"
+    },
+    {
+      "lens": "B",
+      "seed": 603,
+      "config": "/home/repos/six-birds-neutrino/runs/20261003_math_review_cmb_accuracy_chain_configs/B_seed603.yaml",
+      "config_sha256": "ffee319846474671c1ba3cf3bbef2f8eab071caa1c2ab3af597a94390f5a16ec",
+      "outdir": "/home/repos/six-birds-neutrino/runs/20261003_math_review_cmb_accuracy_chain_B_seed603"
+    },
+    {
+      "lens": "B",
+      "seed": 604,
+      "config": "/home/repos/six-birds-neutrino/runs/20261003_math_review_cmb_accuracy_chain_configs/B_seed604.yaml",
+      "config_sha256": "4c5308829cdb710589fc58a5f89521a7e4fd5420a23c4427c590a11d65723d52",
+      "outdir": "/home/repos/six-birds-neutrino/runs/20261003_math_review_cmb_accuracy_chain_B_seed604"
+    }
+  ]
+}

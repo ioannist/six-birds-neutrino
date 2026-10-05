@@ -1,0 +1,48 @@
+{
+  "baseline_boosts": 2,
+  "selected_boosts": 3,
+  "posterior_convergence_verified": false,
+  "selection_scope": "two_declared_chain_files_four_representative_coordinates_only",
+  "selection": [
+    {
+      "label": "chain_A_q50",
+      "source_chain": "runs/20261003_math_review_chain_snapshots_fourth/chain_A_seed401/chains/math_restoration_A_seed401.1.txt",
+      "source_sha256": "54de20ff79bcaa7dc199b9aae26e56c8ce7db017a6ca170506252e8f8fb9e263",
+      "stored_row_zero_based": 3367,
+      "discarded_stored_prefix_rows": 680,
+      "selection_probability": 0.5,
+      "selected_mass": 0.037940042,
+      "scope": "numerical_test_coordinate_from_unconverged_snapshot_no_bound_claim"
+    },
+    {
+      "label": "chain_A_q95",
+      "source_chain": "runs/20261003_math_review_chain_snapshots_fourth/chain_A_seed401/chains/math_restoration_A_seed401.1.txt",
+      "source_sha256": "54de20ff79bcaa7dc199b9aae26e56c8ce7db017a6ca170506252e8f8fb9e263",
+      "stored_row_zero_based": 2660,
+      "discarded_stored_prefix_rows": 680,
+      "selection_probability": 0.95,
+      "selected_mass": 0.150591,
+      "scope": "numerical_test_coordinate_from_unconverged_snapshot_no_bound_claim"
+    },
+    {
+      "label": "chain_B_q50",
+      "source_chain": "runs/20261003_math_review_chain_snapshots_fourth/chain_B_seed403/chains/math_restoration_B_seed403.1.txt",
+      "source_sha256": "d9b2c95646147c9f99446a036dc09d2aea020aa4308bde2d5e868f3add050b2e",
+      "stored_row_zero_based": 2205,
+      "discarded_stored_prefix_rows": 634,
+      "selection_probability": 0.5,
+      "selected_mass": 0.034125622,
+      "scope": "numerical_test_coordinate_from_unconverged_snapshot_no_bound_claim"
+    },
+    {
+      "label": "chain_B_q95",
+      "source_chain": "runs/20261003_math_review_chain_snapshots_fourth/chain_B_seed403/chains/math_restoration_B_seed403.1.txt",
+      "source_sha256": "d9b2c95646147c9f99446a036dc09d2aea020aa4308bde2d5e868f3add050b2e",
+      "stored_row_zero_based": 1124,
+      "discarded_stored_prefix_rows": 634,
+      "selection_probability": 0.95,
+      "selected_mass": 0.12229679,
+      "scope": "numerical_test_coordinate_from_unconverged_snapshot_no_bound_claim"
+    }
+  ]
+}

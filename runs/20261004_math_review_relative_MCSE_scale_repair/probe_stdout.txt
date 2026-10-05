@@ -1,0 +1,38 @@
+Diagnostic thresholds pass: True; report: /home/repos/six-birds-neutrino/runs/20261004_math_review_relative_MCSE_scale_repair/ordinary_before.json
+Diagnostic thresholds pass: True; report: /home/repos/six-birds-neutrino/runs/20261004_math_review_relative_MCSE_scale_repair/ordinary_after.json
+Diagnostic thresholds pass: False; report: /home/repos/six-birds-neutrino/runs/20261004_math_review_relative_MCSE_scale_repair/large_before.json
+Diagnostic thresholds pass: True; report: /home/repos/six-birds-neutrino/runs/20261004_math_review_relative_MCSE_scale_repair/large_after.json
+Diagnostic thresholds pass: False; report: /home/repos/six-birds-neutrino/runs/20261004_math_review_relative_MCSE_scale_repair/tiny_before.json
+Diagnostic thresholds pass: True; report: /home/repos/six-birds-neutrino/runs/20261004_math_review_relative_MCSE_scale_repair/tiny_after.json
+[
+  {
+    "fixture": "ordinary",
+    "binary_exponent": 0,
+    "before_pass": true,
+    "before_error": null,
+    "after_pass": true,
+    "after_limit": 0.04946225576272245,
+    "before_report_sha256": "b5a074857f7579b125a19c850e6b46bae5be4c7171e2d70945bcda63ea3637bc",
+    "after_report_sha256": "b5a074857f7579b125a19c850e6b46bae5be4c7171e2d70945bcda63ea3637bc"
+  },
+  {
+    "fixture": "large",
+    "binary_exponent": 700,
+    "before_pass": false,
+    "before_error": "A quantile in (0,1) and positive finite MCSE limit are required.",
+    "after_pass": true,
+    "after_limit": 2.601781873090643e+209,
+    "before_report_sha256": "06aace37b0918355739888a0a5a85d31278a591eece2f728e8bdab7fe41bdc3a",
+    "after_report_sha256": "f4a2b6845fc99b02ea7f08be2cf5c7e17b502968bb4e9f8b86247b43a767ecc1"
+  },
+  {
+    "fixture": "tiny",
+    "binary_exponent": -700,
+    "before_pass": false,
+    "before_error": "A quantile in (0,1) and positive finite MCSE limit are required.",
+    "after_pass": true,
+    "after_limit": 9.403227728044582e-213,
+    "before_report_sha256": "2eecebcf9130b32a2d58e5f1b38376d59aae890dd68a795879053e4b754c144b",
+    "after_report_sha256": "2c79474fa4d65cc4f2e65628e2537e9da513df1d6f55f699bf00305dd302c7b3"
+  }
+]

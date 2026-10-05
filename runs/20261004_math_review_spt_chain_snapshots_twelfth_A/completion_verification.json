@@ -1,0 +1,52 @@
+{
+  "utc": "2026-10-04T06:06:03.137445+00:00",
+  "scope": "SPT_A_snapshot_integrity_and_diagnostic_execution",
+  "completed_families_401_402_retained": true,
+  "source_configurations_unchanged_since_tenth": true,
+  "diagnostic_gates_changed": false,
+  "SPT_B_reassessed": false,
+  "CLASS_cohorts_included": false,
+  "exit_code": 0,
+  "all_diagnostic_thresholds_pass": true,
+  "passed_parameters": [
+    "omegabh2",
+    "omegach2",
+    "H0",
+    "logA",
+    "ns",
+    "tau",
+    "mnu"
+  ],
+  "mass_diagnostics": {
+    "method": "ArviZ_rank_folded_split_rhat_bulk_tail_quantile_ESS_and_MCSE",
+    "arviz_version": "1.3.0",
+    "n_chains": 6,
+    "draws_per_chain": 11156,
+    "dropped_prefix_draws_per_chain": [
+      0,
+      173,
+      1888,
+      1660,
+      46512,
+      46575
+    ],
+    "quantile_probability": 0.95,
+    "quantile_full_draws": 0.14054709,
+    "quantile_retained_draws": 0.1421685,
+    "quantile_half_difference": 0.00394878999999998,
+    "quantile_mcse_limit": 0.005,
+    "quantile_mcse_scope": "population_quantile_estimated_from_equal_length_last_draws",
+    "rank_folded_split_rhat": 1.0039107113314425,
+    "bulk_ess": 1573.9740230820873,
+    "tail_ess_05_95": 2361.5903164749934,
+    "quantile_ess": 2361.5903164749934,
+    "quantile_mcse": 0.0029166300000000034,
+    "diagnostic_thresholds_pass": true,
+    "mathematical_convergence_certificate": false,
+    "warnings": [],
+    "precision_target_scope": "absolute_parameter_units"
+  },
+  "snapshot_receipt_sha256": "fde1943ef9013c7969bca05d20a20d992f79213de4a91e19fc24d4f6608b462a",
+  "diagnostics_sha256": "326667be558973e48a79bc5611830d5278f3fd55eda12381df74a1cafcb4f7b6",
+  "posterior_convergence_proved": false
+}

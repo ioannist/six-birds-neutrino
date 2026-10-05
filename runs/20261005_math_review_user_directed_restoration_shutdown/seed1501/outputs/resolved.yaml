@@ -1,0 +1,148 @@
+run_name: math_guarded_grid12_trial_B_seed1501
+likelihood:
+  sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood:
+    dataset_expr: spt_candl_data.SPT3G_D1_TnE_multifreq
+  sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian:
+    subset: all
+    data_dir: data/desi_dr2_bao/desi_bao_dr2
+  planck_2018_lowl.TT: {}
+  planck_2018_lowl.EE_sroll2: {}
+  planck_2018_highl_plik.TT_lite_native:
+    path: external/cobaya_packages/data/planck_2018_pliklite_native
+    dataset_params:
+      use_cl: tt
+      bins_for_L_range:
+      - 30
+      - 756
+  planckpr4lensing.PlanckPR4Lensing:
+    python_path: external/cobaya_packages/code/planck_PR4_lensing
+theory:
+  classy:
+    input_params:
+    - omegabh2
+    - omegach2
+    - H0
+    - As
+    - ns
+    - tau
+    - m_ncdm
+    extra_args:
+      N_ncdm: 3
+      N_ur: 0.00641
+      l_max_scalars: 4095
+      tol_ncdm_bg: 1.0e-08
+      tol_perturbations_integration: 1.0e-06
+      perturbations_sampling_stepsize: 0.01
+      tol_ncdm_synchronous: 1.0e-06
+      tol_ncdm_newtonian: 1.0e-06
+      l_logstep: 1.013
+      l_linstep: 12
+    path: global
+params:
+  omegabh2:
+    prior:
+      min: 0.005
+      max: 0.04
+    ref: 0.0222020335543916
+    proposal: 0.0002
+  omegach2:
+    prior:
+      min: 0.001
+      max: 0.99
+    ref: 0.11772862069101062
+    proposal: 0.002
+  H0:
+    prior:
+      min: 40
+      max: 100
+    ref: 68.54868775438271
+    proposal: 0.6
+  logA:
+    prior:
+      min: 1.5
+      max: 4.0
+    ref: 3.0341601688936954
+    proposal: 0.02
+    drop: true
+  As:
+    value: 'lambda logA: 1e-10*np.exp(logA)'
+  ns:
+    prior:
+      min: 0.8
+      max: 1.2
+    ref: 0.9664391710998197
+    proposal: 0.01
+  tau:
+    prior:
+      min: 0.01
+      max: 0.8
+    ref: 0.04852223927387122
+    proposal: 0.01
+  mnu_sample:
+    prior:
+      min: 0.0
+      max: 5.0
+    ref: 0.02910542422698892
+    proposal: 0.03
+    drop: true
+  mnu:
+    derived: 'lambda mnu_sample: mnu_sample'
+  m_ncdm:
+    value: 'lambda mnu_sample: ''{0:.17g},{0:.17g},{0:.17g}''.format(mnu_sample/3.0)'
+    derived: false
+  A_planck:
+    prior:
+      min: 0.8
+      max: 1.2
+    ref: 1.0038968574958045
+    proposal: 0.01
+  TT_tSZ_Amp:
+    prior:
+      min: 0.0
+      max: 10.0
+    ref: 0.9960033361831536
+    proposal: 0.2
+  TT_kSZ_Amp:
+    prior:
+      min: 0.0
+      max: 10.0
+    ref: 2.773372732700484
+    proposal: 0.2
+sampler:
+  sbt_spt_audit.samplers.FullPrecisionMCMC:
+    seed: 1501
+    max_samples: 20000
+    learn_proposal: true
+    Rminus1_stop: 0.01
+    Rminus1_cl_stop: 0.05
+    Rminus1_cl_level: 0.95
+    oversample_power: 0
+    oversample_thin: false
+    covmat: /home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_medium_proposal_scout/pilot_B.covmat
+    learn_every: 10d
+    temperature: 1
+notes:
+  mnu_prior_choice: N0 found explicit lower bound at 0 eV, but no explicit upper bound
+    in 2601.16277; replication choice uses flat [0, 5] eV.
+  mnu_class_mapping: CLASS requires m_ncdm input. We sample mnu_sample, output derived
+    mnu in chains, and map m_ncdm as 3 degenerate masses mnu_sample/3.
+  planck_subset: PR3 low-l TT/EE + PR3 high-l TT (Plik-lite native) with bins_for_L_range
+    [30,756]; no high-l TE/EE.
+  numerical_control: Medium dynamics and grid12 angular sampling; new numerical target.
+    Do not pool with quadrature or medium-grid25 histories.
+  warm_start_fit: Exact verified grid12 quad_q50 coordinate; initialization only,
+    not a posterior draw from this target.
+  proposal_scope: Frozen first-diagnostic quad_B covariance, unconverged pilot, initialization
+    only; not a posterior covariance certificate.
+  output_precision: 17 significant figures preserve binary64 sampled coordinates.
+  sampler_scope: Independent fresh RNG and integer outer holding times; unchanged
+    learn/stop rules. Existing numerical cohorts remain controls.
+  initialization_scope: Fresh seed1501 and output; one precision/proposal trial, not
+    independent-replica posterior evidence.
+  solver_backend: Pinned guarded CLASS module and checked backend contract; same physical
+    model and priors, distinct spectrum-grid numerical target.
+  classy_backend:
+    build_receipt: runs/20261004_math_review_class_python_repair/build_verification_receipt.json
+    module_sha256: 7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539
+packages_path: /home/repos/six-birds-neutrino/external/cobaya_packages
+output: /home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_grid12_trial_B_seed1501/run/chains/math_guarded_grid12_trial_B_seed1501

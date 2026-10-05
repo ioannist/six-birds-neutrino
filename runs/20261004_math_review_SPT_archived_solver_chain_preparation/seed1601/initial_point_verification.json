@@ -1,0 +1,34 @@
+{
+  "utc": "2026-10-04T12:53:00.230162+00:00",
+  "seed": 1601,
+  "initial_point": {
+    "omegabh2": 0.023027917,
+    "omegach2": 0.11612066,
+    "H0": 68.927728,
+    "logA": 3.0162119,
+    "ns": 1.0113053,
+    "tau": 0.050845913,
+    "mnu": 0.071601591
+  },
+  "config_sha256": "9bbc15b2df675118d95b66b9c84195d407e71f99453af893b852328f4a48c6c6",
+  "module_sha256": "6a54f98bcc65601fd1ad5e760a99a0072cdc45fe49197ba5c3a1282889c2ee0d",
+  "native_initial_point_verified": true,
+  "chi2_components": {
+    "sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 2573.7262876653804,
+    "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 10.74138391534566
+  },
+  "logpriors": [
+    -2.1045919762829826
+  ],
+  "logposterior": -1294.338427766646,
+  "archived_control_component_discrepancies": {
+    "sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": -9.094947017729282e-13,
+    "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 0.0
+  },
+  "archived_control_all_components_reproduced_exactly": false,
+  "selected_component_replay_tolerance": 1e-09,
+  "OMP_NUM_THREADS": "1",
+  "requested_effective_lmax": 3200,
+  "scientific_target_or_priors_changed_from_preparation": false,
+  "historical_identity_or_convergence_certified": false
+}

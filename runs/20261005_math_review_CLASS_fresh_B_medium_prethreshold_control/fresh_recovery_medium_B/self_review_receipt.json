@@ -1,0 +1,60 @@
+{
+  "utc": "2026-10-05T05:48:53.650929+00:00",
+  "reviewer": "self_review_no_independent_agent",
+  "group": "fresh_recovery_medium_B",
+  "retained_represented_steps": [
+    11,
+    7,
+    11,
+    11
+  ],
+  "all_sampled_parameter_gate_sets_reconstructed": {
+    "omegabh2": {
+      "error": "Each chain needs at least eight represented steps.",
+      "pass": false
+    },
+    "omegach2": {
+      "error": "Each chain needs at least eight represented steps.",
+      "pass": false
+    },
+    "H0": {
+      "error": "Each chain needs at least eight represented steps.",
+      "pass": false
+    },
+    "logA": {
+      "error": "Each chain needs at least eight represented steps.",
+      "pass": false
+    },
+    "ns": {
+      "error": "Each chain needs at least eight represented steps.",
+      "pass": false
+    },
+    "tau": {
+      "error": "Each chain needs at least eight represented steps.",
+      "pass": false
+    },
+    "mnu_sample": {
+      "error": "Each chain needs at least eight represented steps.",
+      "pass": false
+    },
+    "A_planck": {
+      "error": "Each chain needs at least eight represented steps.",
+      "pass": false
+    },
+    "TT_tSZ_Amp": {
+      "error": "Each chain needs at least eight represented steps.",
+      "pass": false
+    },
+    "TT_kSZ_Amp": {
+      "error": "Each chain needs at least eight represented steps.",
+      "pass": false
+    }
+  },
+  "sampled_parameter_count": 10,
+  "next_minimum_history": 9,
+  "snapshot_receipt_sha256": "ceb8b75bfa0e6564e09bc4355f9d7da9b4e243b90f35cc8abd3df580f1f23132",
+  "native_row_verification_sha256": "b472513d59e0879b8f49b7cf1edd59687768f5484db5132d69aae8a7363d8d92",
+  "diagnostics_sha256": "e11e33f24cb450617d5badb80a53e6f66eb7c19c26b3aa3813a813be4e169d69",
+  "posterior_convergence_or_uniform_accuracy_proved": false,
+  "different_targets_or_cache_policies_pooled": false
+}

@@ -1,0 +1,80 @@
+{
+  "utc": "2026-10-04T04:58:00.753929+00:00",
+  "phase": "before",
+  "source_sha256": "0f2242b0f359ee811df818646dcb27b6643b952e99b84f70ef6af53881808060",
+  "native_intermediate_mantissa_bits": 63,
+  "native_intermediate_max_exponent": 16384,
+  "records": [
+    {
+      "binary64_intermediate_emulation": false,
+      "first_mean_sign": 1.0,
+      "finite": true,
+      "mean_display": [
+        "1.7976931348623157e+308",
+        "1.3482698511467367e+308",
+        "0.0"
+      ],
+      "expected_from_exact_input_fractions": [
+        1.7976931348623157e+308,
+        1.3482698511467367e+308,
+        0.0
+      ],
+      "warnings": []
+    },
+    {
+      "binary64_intermediate_emulation": false,
+      "first_mean_sign": -1.0,
+      "finite": true,
+      "mean_display": [
+        "-1.7976931348623157e+308",
+        "-1.3482698511467367e+308",
+        "0.0"
+      ],
+      "expected_from_exact_input_fractions": [
+        -1.7976931348623157e+308,
+        -1.3482698511467367e+308,
+        0.0
+      ],
+      "warnings": []
+    },
+    {
+      "binary64_intermediate_emulation": true,
+      "first_mean_sign": 1.0,
+      "finite": false,
+      "mean_display": [
+        "inf",
+        "inf",
+        "0.0"
+      ],
+      "expected_from_exact_input_fractions": [
+        1.7976931348623157e+308,
+        1.3482698511467367e+308,
+        0.0
+      ],
+      "warnings": [
+        "overflow encountered in add",
+        "overflow encountered in add"
+      ]
+    },
+    {
+      "binary64_intermediate_emulation": true,
+      "first_mean_sign": -1.0,
+      "finite": false,
+      "mean_display": [
+        "-inf",
+        "-inf",
+        "0.0"
+      ],
+      "expected_from_exact_input_fractions": [
+        -1.7976931348623157e+308,
+        -1.3482698511467367e+308,
+        0.0
+      ],
+      "warnings": [
+        "overflow encountered in add",
+        "overflow encountered in add"
+      ]
+    }
+  ],
+  "scope": "finite_convex_mean_under_reduced_intermediate_range"
+}

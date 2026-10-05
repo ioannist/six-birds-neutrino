@@ -1,0 +1,12 @@
+{
+  "utc": "2026-10-05T00:04:58.452453+00:00",
+  "verification_exit_code": 1,
+  "cause": "full_file_equality_assumption_too_strong; original217_saved_rows_are_exact_prefix_of_replay220_rows",
+  "frozen_original_bytes": 99408,
+  "frozen_replay_bytes": 100776,
+  "all_original_saved_rows_and_bytes_reproduced": true,
+  "original_unflushed_tail_available": false,
+  "whole_original_internal_failed_trajectory_certified": false,
+  "terminal_replay_and_capture_files_preserved": true,
+  "next_verification_name": "verify_preserved_prefix.py"
+}

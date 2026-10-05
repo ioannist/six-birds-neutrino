@@ -1,0 +1,23 @@
+{
+  "utc": "2026-10-05T06:58:08.467387+00:00",
+  "managed_session": 82102,
+  "exit_code": 0,
+  "all_verification_workers_terminal": true,
+  "stages": [
+    {
+      "stage": "verify_native_rows.py",
+      "actual_exit_code": 0,
+      "completion": "runs/20261005_math_review_sigma_time_v3_second_B4095_cap20_diagnostics/verify_native_rows.py.completion.json"
+    },
+    {
+      "stage": "run_diagnostic.py",
+      "actual_exit_code": 0,
+      "completion": "runs/20261005_math_review_sigma_time_v3_second_B4095_cap20_diagnostics/run_diagnostic.py.completion.json"
+    },
+    {
+      "stage": "verify_snapshot.py",
+      "actual_exit_code": 0,
+      "completion": "runs/20261005_math_review_sigma_time_v3_second_B4095_cap20_diagnostics/verify_snapshot.py.completion.json"
+    }
+  ]
+}

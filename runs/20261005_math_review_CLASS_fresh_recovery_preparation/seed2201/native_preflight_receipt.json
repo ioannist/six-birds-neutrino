@@ -1,0 +1,51 @@
+{
+  "utc": "2026-10-05T03:32:57.273576+00:00",
+  "seed": 2201,
+  "parent_seed": 1201,
+  "config_sha256": "b8d8f09cd93381ab258dd62c8ed92e7f74da200e211a646bdd6128f3f6740b24",
+  "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+  "loaded_CLASS_version": "v3.4.0",
+  "initial_point": {
+    "omegabh2": 0.022943469273320936,
+    "omegach2": 0.11613139494234757,
+    "H0": 69.01872707215769,
+    "logA": 3.044040799894898,
+    "ns": 0.982007757183951,
+    "tau": 0.058343888084339615,
+    "mnu_sample": 0.07473069321138905,
+    "A_planck": 0.9996657412781687,
+    "TT_tSZ_Amp": 2.517788214885835,
+    "TT_kSZ_Amp": 9.916328457022773
+  },
+  "selected_terminal_row_native_match": true,
+  "native_check": {
+    "point": {
+      "omegabh2": 0.022943469273320936,
+      "omegach2": 0.11613139494234757,
+      "H0": 69.01872707215769,
+      "logA": 3.044040799894898,
+      "ns": 0.982007757183951,
+      "tau": 0.058343888084339615,
+      "mnu_sample": 0.07473069321138905,
+      "A_planck": 0.9996657412781687,
+      "TT_tSZ_Amp": 2.517788214885835,
+      "TT_kSZ_Amp": 9.916328457022773
+    },
+    "fresh_minuslogpost": 1516.933411137345,
+    "fresh_minus_recorded": {
+      "minuslogpost": 0.0,
+      "minuslogprior": 0.0,
+      "chi2": 0.0,
+      "chi2__sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 0.0,
+      "chi2__sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 0.0,
+      "chi2__planck_2018_lowl.TT": 0.0,
+      "chi2__planck_2018_lowl.EE_sroll2": 0.0,
+      "chi2__planck_2018_highl_plik.TT_lite_native": 0.0,
+      "chi2__planckpr4lensing.PlanckPR4Lensing": 0.0
+    }
+  },
+  "provider_arrays_sha256": "9a4515f81f25743b1eab944119b14fa5e52f595216b74bd0fcf9d06e55376a27",
+  "actual_launcher_guard_checked": true,
+  "wrong_guarded_contract_refused": true,
+  "scope": "Selected preserved terminal row; no exact resume, global target equivalence or convergence theorem."
+}

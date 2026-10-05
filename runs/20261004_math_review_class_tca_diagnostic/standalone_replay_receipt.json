@@ -1,0 +1,26 @@
+{
+  "utc": "2026-10-04T01:28:09.464335+00:00",
+  "scope": "distinct_standalone_driver_and_build_at_exact_archived_physics",
+  "binary_sha256": "4e938d3b598d4d186cfde6b277617de47d562184556bbe156feb2c9d1acbe87f",
+  "build_completed_exit_code": 0,
+  "build_managed_session": 19050,
+  "omp_num_threads": 4,
+  "active_inference_library_changed": false,
+  "posterior_accuracy_certified": false,
+  "cases": {
+    "exact_failure": {
+      "exit_code": 1,
+      "elapsed_seconds": 0.25555599434301257,
+      "input_sha256": "18c3b45cd40e0b8d9ffedce6da15105a4b17e8c9d1aa932c7d892b31971d1636",
+      "stdout_sha256": "94800aa0e87d15f443b129077c0f9601f8833e599f3f733ff042f66c26c3a390",
+      "stderr_sha256": "af88aeceaf27c8b30d1f369669063caec4a32f93b5f416f0256a0704e317c9fd"
+    },
+    "background_quadrature": {
+      "exit_code": 0,
+      "elapsed_seconds": 16.018625190015882,
+      "input_sha256": "ef6609bef9c099e725342e28cc9b67262b998d963f53459b2919ad48a951aa37",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

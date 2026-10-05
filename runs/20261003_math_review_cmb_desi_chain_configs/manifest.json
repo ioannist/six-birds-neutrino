@@ -1,0 +1,103 @@
+{
+  "scope": "new_posterior_chains_not_certified_converged",
+  "shared_backend_lmax": 4095,
+  "runs": [
+    {
+      "lens": "A",
+      "seed": 501,
+      "config": "/home/repos/six-birds-neutrino/runs/20261003_math_review_cmb_desi_chain_configs/A_seed501.yaml"
+    },
+    {
+      "lens": "A",
+      "seed": 502,
+      "config": "/home/repos/six-birds-neutrino/runs/20261003_math_review_cmb_desi_chain_configs/A_seed502.yaml"
+    },
+    {
+      "lens": "A",
+      "seed": 503,
+      "config": "/home/repos/six-birds-neutrino/runs/20261003_math_review_cmb_desi_chain_configs/A_seed503.yaml"
+    },
+    {
+      "lens": "A",
+      "seed": 504,
+      "config": "/home/repos/six-birds-neutrino/runs/20261003_math_review_cmb_desi_chain_configs/A_seed504.yaml"
+    },
+    {
+      "lens": "B",
+      "seed": 505,
+      "config": "/home/repos/six-birds-neutrino/runs/20261003_math_review_cmb_desi_chain_configs/B_seed505.yaml"
+    },
+    {
+      "lens": "B",
+      "seed": 506,
+      "config": "/home/repos/six-birds-neutrino/runs/20261003_math_review_cmb_desi_chain_configs/B_seed506.yaml"
+    },
+    {
+      "lens": "B",
+      "seed": 507,
+      "config": "/home/repos/six-birds-neutrino/runs/20261003_math_review_cmb_desi_chain_configs/B_seed507.yaml"
+    },
+    {
+      "lens": "B",
+      "seed": 508,
+      "config": "/home/repos/six-birds-neutrino/runs/20261003_math_review_cmb_desi_chain_configs/B_seed508.yaml"
+    }
+  ],
+  "starting_fits": [
+    "/home/repos/six-birds-neutrino/runs/20261003_math_review_cosmological_cmb_desi/lensA_fit_0.json",
+    "/home/repos/six-birds-neutrino/runs/20261003_math_review_cosmological_cmb_desi/lensB_warm_start_only.json"
+  ],
+  "starting_fit_snapshots": [
+    {
+      "point": {
+        "omegabh2": 0.022693650877739228,
+        "omegach2": 0.11622279713796975,
+        "H0": 68.76533806180566,
+        "logA": 3.0422362404163663,
+        "ns": 0.9807168340413199,
+        "tau": 0.05705188223237627,
+        "mnu_sample": 0.06074824368611051,
+        "A_planck": 1.0001591497379776,
+        "TT_tSZ_Amp": 2.130911433335396,
+        "TT_kSZ_Amp": 9.996568127831155
+      },
+      "loglike": -1508.328830425283,
+      "success": true,
+      "flag": 0,
+      "message": "Success: rho has reached rhoend",
+      "free": [
+        "omegabh2",
+        "omegach2",
+        "H0",
+        "logA",
+        "ns",
+        "tau",
+        "mnu_sample",
+        "A_planck",
+        "TT_tSZ_Amp",
+        "TT_kSZ_Amp"
+      ],
+      "n_evals": 46,
+      "elapsed_seconds": 971.4736810508184,
+      "scope": "bounded_numerical_candidate_not_global_certificate"
+    },
+    {
+      "point": {
+        "omegabh2": 0.022172856,
+        "omegach2": 0.11718673,
+        "H0": 68.282233,
+        "logA": 3.048048,
+        "ns": 0.96525897,
+        "tau": 0.054851336,
+        "mnu_sample": 0.063859201,
+        "A_planck": 1.0056219,
+        "TT_tSZ_Amp": 1.1919766,
+        "TT_kSZ_Amp": 2.3661487
+      },
+      "origin": "runs/20260212_100807_462875_cobaya_cmb_sptd1_plancksubset_desi_mnu/chains/cmb_sptd1_plancksubset_desi_mnu.1.txt",
+      "scope": "stored_point_for_sampler_initialization_only"
+    }
+  ],
+  "fit_scope": "numerical_candidate_used_only_to_initialize_sampler",
+  "sampler_weights": "integer_holding_times_no_oversampling_thinning"
+}

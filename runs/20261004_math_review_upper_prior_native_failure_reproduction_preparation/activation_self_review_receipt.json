@@ -1,0 +1,36 @@
+{
+  "utc": "2026-10-04T23:13:28.609201+00:00",
+  "review_type": "distinct_self_review_not_independent_agent",
+  "records": [
+    {
+      "seed": 2003,
+      "pid": 3108408,
+      "process_start_ticks": 342500644,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_upper_prior_native_failure_reproduction_preparation/launch_reproduction.py 2003 ",
+      "launch_receipt_sha256": "3b16a3a62127b7933d5385feac43390abffa07c0d8adf120c28eb1964e96335d",
+      "original_resolved_sha256": "06d1fca5f260acbd788ac04ca278f0f8a76589f326f4f800a9788808c653b8fe",
+      "reproduction_resolved_sha256": "e8d94164f98ec5ec9ea7d7c414cddb3ea417b8ad15e9e507f5d0e0bb0454d338",
+      "configuration_changes_other_than_output_path": false,
+      "scheduling_nice": 10
+    },
+    {
+      "seed": 2004,
+      "pid": 3108409,
+      "process_start_ticks": 342500645,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_upper_prior_native_failure_reproduction_preparation/launch_reproduction.py 2004 ",
+      "launch_receipt_sha256": "a54e7f552e3a189eb329b3e482e523385fc5c0f654e9026972318df47e479923",
+      "original_resolved_sha256": "92a0c978cadfe890fa13f39899a4578a7c96d07f11e34ec7d150b59f444f2fc2",
+      "reproduction_resolved_sha256": "def4e091572d0537134c56f7389b19cf76a39af03c44ba24cb137129dba518be",
+      "configuration_changes_other_than_output_path": false,
+      "scheduling_nice": 10
+    }
+  ],
+  "original_model_sampler_and_seed_unchanged": true,
+  "only_run_output_path_changed": true,
+  "successful_evaluation_path_AST_verified": true,
+  "original_exception_reraised_AST_verified": true,
+  "six_selected_original_stored_rows_upstream_fresh_exact": true,
+  "original_failed_trajectory_or_proposal_exactly_reproduced": false,
+  "trajectory_prefix_verification_pending": true,
+  "posterior_qualified": false
+}

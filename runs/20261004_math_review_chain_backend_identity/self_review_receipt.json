@@ -1,0 +1,15 @@
+{
+  "utc": "2026-10-04T06:59:45.511889+00:00",
+  "reviewer": "distinct_self_review_no_independent_agent",
+  "judgment": "matching YAML no longer hides conflicting or partially missing recorded CLASS native builds",
+  "controls": "five rejection workflows, one matching-build workflow, one explicitly unrecorded legacy workflow; full 107-test suite passes",
+  "bridge_limits": [
+    "checks recorded launch metadata; does not reconstruct an unrecorded historical solver",
+    "same module hash does not establish uniform solver accuracy or identical arbitrary environments",
+    "all-unrecorded legacy diagnostics remain conditional on native target identity",
+    "CLASS-only guard; other theories explicitly report configuration-only scope"
+  ],
+  "proof_identity": "module content hashes compared, paths can differ; witness file hashes retained",
+  "numeric_gates_changed": false,
+  "paper_modified": false
+}

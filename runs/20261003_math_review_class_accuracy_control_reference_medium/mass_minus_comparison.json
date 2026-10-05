@@ -1,0 +1,61 @@
+{
+  "utc": "2026-10-03T20:20:50.019132+00:00",
+  "scope": "completed_conditional_A_minus_0.001_eV_point_A_plus_still_pending",
+  "source_sha256": {
+    "reference_medium": "a6d5b74676e011d3b2a61e724cef73915e999e578d5e30c7f26776e7adfd634f",
+    "reference": "1199e5daca6ffbbec3b4222f222ce1ae0e5893bddef3eef967e55c7346aed64e",
+    "medium": "ba87edfa5dadbbf2975ef7310f071640a431c428002dbe3ed2b77ab9796ec898"
+  },
+  "baseline_native_components_equal_prior_controls": true,
+  "only_sampled_mass_differs_between_local_pair": true,
+  "own_joint_reference_medium_minus_controls": {
+    "audit_A": {
+      "reference": -0.0004456532201402297,
+      "medium": -0.3191916481955559
+    },
+    "audit_A_mass_minus": {
+      "reference": -0.0016383067854803812,
+      "medium": -0.3180759614042472
+    }
+  },
+  "A_mass_minus_own_joint_chi2_change": {
+    "reference_medium": -0.044286026232384756,
+    "reference": -0.043093372667044605,
+    "medium": -0.045401713023693446
+  },
+  "local_change_reference_medium_minus_controls": {
+    "reference": -0.0011926535653401515,
+    "medium": 0.0011156867913086899
+  },
+  "native_mass_minus_record": {
+    "point": {
+      "omegabh2": 0.022693776588245253,
+      "omegach2": 0.11623226159102945,
+      "H0": 68.76649226539791,
+      "logA": 3.0422198957229982,
+      "ns": 0.98070405386811,
+      "tau": 0.057044951687684003,
+      "mnu_sample": 0.05936696203896391,
+      "A_planck": 1.0002399727069142,
+      "TT_tSZ_Amp": 2.128512459891876,
+      "TT_kSZ_Amp": 10.0
+    },
+    "native_chi2": {
+      "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 10.50424731770984,
+      "planck_2018_lowl.TT": 20.915982995318757,
+      "planck_2018_lowl.EE_sroll2": 390.30756771007725,
+      "planck_2018_highl_plik.TT_lite_native": 72.06670117771621,
+      "planckpr4lensing.PlanckPR4Lensing": 9.181234154227875,
+      "lensA": 2513.0551130497697,
+      "lensB": 3795.58881961391
+    },
+    "spectrum_ell_max": {
+      "tt": 4095,
+      "ee": 4095
+    },
+    "elapsed_seconds": 8526.353270148858
+  },
+  "interpretation": "Quadrature and integrator settings change together. Agreement is local to this fixed-coordinate mass pair; no posterior or interval error certificate follows.",
+  "posterior_accuracy_certified": false,
+  "interval_error_certified": false
+}

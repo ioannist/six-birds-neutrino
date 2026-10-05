@@ -1,0 +1,39 @@
+{
+  "utc": "2026-10-04T03:33:22.248681+00:00",
+  "backend": "original",
+  "arguments": {
+    "omega_b": 0.02291175022269673,
+    "omega_cdm": 0.11675153446806505,
+    "H0": 68.6264574770633,
+    "A_s": 2.0513564352353405e-09,
+    "n_s": 0.9856032089306187,
+    "tau_reio": 0.05245284343330284,
+    "m_ncdm": "0.019305144202575886,0.019305144202575886,0.019305144202575886",
+    "N_ncdm": 3,
+    "N_ur": 0.00641,
+    "tol_ncdm_bg": 1e-08,
+    "l_max_scalars": 4095,
+    "output": "tCl lCl pCl",
+    "non_linear": "hmcode",
+    "lensing": "yes"
+  },
+  "removed_later_precision_settings": {
+    "tol_perturbations_integration": 1e-06,
+    "perturbations_sampling_stepsize": 0.01,
+    "tol_ncdm_synchronous": 1e-06,
+    "tol_ncdm_newtonian": 1e-06,
+    "l_logstep": 1.026,
+    "l_linstep": 25
+  },
+  "source_arguments_sha256": "89b623f6591c1920e872b223fd2b1ee808f90dd2346c9c90ca7d3614bb52e257",
+  "module": "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+  "module_sha256": "38255c7a5eb3f52c960a6fccf657e00874e93a52ec5987807443c33ce0c09c5a",
+  "omp_threads": "4",
+  "scope": "exact_second_failure_point_under_quadrature_only_precision",
+  "posterior_convergence_certified": false,
+  "uniform_numerical_accuracy_certified": false,
+  "compute_succeeded": false,
+  "error_type": "CosmoComputationError",
+  "error": "\n\nError in Class: operator()(L:1047) :error in perturbations_solve(ppr, pba, pth, ppt, index_md, index_ic, index_k, &pw);\n=>perturbations_solve(L:3210) :error in perturbations_vector_init(ppr, pba, pth, ppt, index_md, index_ic, k, interval_limit[index_interval], ppw, previous_approx);\n=>perturbations_vector_init(L:4602) :condition (ppw->approx[ppw->index_ap_tca] == (int)tca_off) is true; scalar initial conditions assume tight-coupling approximation turned on",
+  "elapsed_seconds": 0.3228349229320884
+}

@@ -1,0 +1,14 @@
+NONFINITE_LU_INPUT neq=3 i=2 j=2 hinvGak=0.14556402339667163 dfdy=-inf LU=inf
+FIRST_INVALID_OPERATION signal=8 code=7 address=0x567ca88e4b90
+/mnt/8tb/six-birds-ml/tmp/neutrino_class_tca_diagnostic_20261004/trace_invalid.so(+0x127a)[0x7972d89c227a]
+/lib/x86_64-linux-gnu/libc.so.6(+0x45330)[0x7972d8245330]
+/mnt/8tb/six-birds-ml/tmp/neutrino_class_tca_diagnostic_20261004/class_lu_diagnostic(+0x20b90)[0x567ca88e4b90]
+/mnt/8tb/six-birds-ml/tmp/neutrino_class_tca_diagnostic_20261004/class_lu_diagnostic(+0x20fbb)[0x567ca88e4fbb]
+/mnt/8tb/six-birds-ml/tmp/neutrino_class_tca_diagnostic_20261004/class_lu_diagnostic(+0x256ec)[0x567ca88e96ec]
+/mnt/8tb/six-birds-ml/tmp/neutrino_class_tca_diagnostic_20261004/class_lu_diagnostic(+0x80686)[0x567ca8944686]
+/mnt/8tb/six-birds-ml/tmp/neutrino_class_tca_diagnostic_20261004/class_lu_diagnostic(+0x88291)[0x567ca894c291]
+/mnt/8tb/six-birds-ml/tmp/neutrino_class_tca_diagnostic_20261004/class_lu_diagnostic(+0x88865)[0x567ca894c865]
+/mnt/8tb/six-birds-ml/tmp/neutrino_class_tca_diagnostic_20261004/class_lu_diagnostic(+0xac0b)[0x567ca88cec0b]
+/lib/x86_64-linux-gnu/libc.so.6(+0x2a1ca)[0x7972d822a1ca]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x8b)[0x7972d822a28b]
+/mnt/8tb/six-birds-ml/tmp/neutrino_class_tca_diagnostic_20261004/class_lu_diagnostic(+0xb095)[0x567ca88cf095]

@@ -1,0 +1,28 @@
+{
+  "utc": "2026-10-05T04:53:58.193467+00:00",
+  "reviewer": "distinct_self_review_not_independent_agent",
+  "records": [
+    {
+      "group": "fresh_recovery_medium_A",
+      "selected_native_rows": 12,
+      "maximum_native_component_error": 0.0,
+      "native_receipt_sha256": "d4bc7e39b78daf4e73186445e7de52313865d0c9e228831b2e6c7a490e1d42ac",
+      "self_review_receipt_sha256": "f1428807f4681c97a4d52df1e6dee782ba6df840056c323bcc54a3ab3d11e684"
+    },
+    {
+      "group": "fresh_recovery_quad_A",
+      "selected_native_rows": 12,
+      "maximum_native_component_error": 0.0,
+      "native_receipt_sha256": "0eb2152100abe3a7b32822d5014f7dc04b972fb0a952a844fff185c7b8f7b92d",
+      "self_review_receipt_sha256": "95cf05dfbd5d85199cba24873c1b7b4d5dc55c44799a8f7db7f266712dd0597a"
+    }
+  ],
+  "all_thresholds_and_ten_parameter_coverage_reconstructed": true,
+  "all_eight_native_first_row_bindings_checked": true,
+  "recorded_unknown_version_not_replaced_by_installed_metadata": true,
+  "two_production_prethreshold_refusals": true,
+  "two_unsafe_predecessors_refused": true,
+  "wrong_loaded_native_environment_refused": true,
+  "production_assessments_completed": 0,
+  "posterior_or_uniform_accuracy_certified": false
+}

@@ -1,0 +1,14 @@
+{
+  "utc": "2026-10-05T01:07:17.826040+00:00",
+  "direct_exec_exit_code": 1,
+  "actual_stages_in_copied_wrapper": [
+    "run_diagnostic.py",
+    "verify_snapshot.py"
+  ],
+  "native_stage_performed": false,
+  "diagnostics_written": false,
+  "cause": "copied previous recovery wrapper omitted native validation; run_diagnostic refused missing native proof",
+  "next_attempt": "fresh _v2 snapshot from same validated predecessor, full three-stage wrapper from sixth completed cohort",
+  "original_snapshot_and_failed_attempt_preserved": true,
+  "posterior_qualified": false
+}

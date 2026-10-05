@@ -1,0 +1,33 @@
+{
+  "scope": "diagnostic_execution_and_integrity",
+  "groups": {
+    "chain_A": {
+      "diagnostics_sha256": "93800b08fdf08fc75f4e294349070940e1380f68420a8640e0719b4474f50083",
+      "exit_code": 0,
+      "all_diagnostic_thresholds_pass": false,
+      "passed_parameters": [
+        "omegach2",
+        "tau"
+      ]
+    },
+    "chain_B": {
+      "diagnostics_sha256": "cef98cc8f763216f43552a62fdf9e576f3dd911b1e30dbea69e6a7e57d4ea4ec",
+      "exit_code": 0,
+      "all_diagnostic_thresholds_pass": false,
+      "passed_parameters": []
+    },
+    "cmb_chain_A": {
+      "diagnostics_sha256": "c1f5c72c334c8a92431befe2a6b2768fe5d4471303f6ceb3db7e152fe010747b",
+      "exit_code": 0,
+      "all_diagnostic_thresholds_pass": false,
+      "passed_parameters": []
+    },
+    "cmb_chain_B": {
+      "diagnostics_sha256": "a03e6bab62346ab47068b4c7958b2532d0bef1e5b7533e1f3f7b64148cad7306",
+      "exit_code": 0,
+      "all_diagnostic_thresholds_pass": false,
+      "passed_parameters": []
+    }
+  },
+  "posterior_convergence_verified": false
+}

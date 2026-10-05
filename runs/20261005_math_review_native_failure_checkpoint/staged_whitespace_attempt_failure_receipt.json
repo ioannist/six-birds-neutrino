@@ -1,0 +1,59 @@
+{
+  "utc": "2026-10-05T00:33:01.209520+00:00",
+  "command": [
+    "git",
+    "diff",
+    "--cached",
+    "--check"
+  ],
+  "exit_code": 2,
+  "stdout": "runs/20261004_math_review_CAMB204_source_failure_triage/seed2003_feedback_stdout.txt:41: trailing whitespace.\n+ kmax changed to    6.5490689247229614     \nruns/20261004_math_review_CAMB204_source_failure_triage/seed2003_feedback_stdout.txt:69: trailing whitespace.\n+ HM_cosmology: Om_m:  0.52519432413432865     \nruns/20261004_math_review_CAMB204_source_failure_triage/seed2003_feedback_stdout.txt:72: trailing whitespace.\n+ HM_cosmology: Om_nu:  0.41553507306174253     \nruns/20261004_math_review_CAMB204_source_failure_triage/seed2003_feedback_stdout.txt:73: trailing whitespace.\n+ HM_cosmology: Om_v:  0.47472203884168068     \nruns/20261004_math_review_CAMB204_source_failure_triage/seed2003_feedback_stdout.txt:74: trailing whitespace.\n+ HM_cosmology: w_0:  -1.0000000000000000     \nruns/20261004_math_review_CAMB204_source_failure_triage/seed2003_feedback_stdout.txt:75: trailing whitespace.\n+ HM_cosmology: w_a:   0.0000000000000000     \nruns/20261004_math_review_CAMB204_source_failure_triage/seed2003_feedback_stdout.txt:76: trailing whitespace.\n+ HM_cosmology: f_nu:  0.79120252060351925     \nruns/20261004_math_review_CAMB204_source_failure_triage/seed2003_feedback_stdout.txt:77: trailing whitespace.\n+ HM_cosmology: n_s:  0.91410406023398172     \nruns/20261004_math_review_CAMB204_source_failure_triage/seed2003_feedback_stdout.txt:78: trailing whitespace.\n+ HM_cosmology: h:  0.54388767230295620     \nruns/20261004_math_review_CAMB204_source_failure_triage/seed2003_feedback_stdout.txt:79: trailing whitespace.\n+ HM_cosmology: T_CMB [K]:   2.7254999999999998     \nruns/20261004_math_review_CAMB204_source_failure_triage/seed2003_feedback_stdout.txt:80: trailing whitespace.\n+ HM_cosmology: N_nu (massive):   3.0000000000000000     \nruns/20261004_math_review_CAMB204_source_failure_triage/seed2003_feedback_stdout.txt:84: trailing whitespace.\n+ GROWTH: Unnormalised g(a=1):  0.88150897615024892     \nruns/20261004_math_review_CAMB204_source_failure_triage/seed2003_feedback_stdout.txt:85: trailing whitespace.\n+ GROWTH: Accumulated G(a=1):  0.96622257359359132     \nruns/20261004_math_review_CAMB204_source_failure_triage/seed2003_feedback_stdout.txt:90: trailing whitespace.\n+ LINEAR POWER: k_max:   100.00000000000004     \nruns/20261004_math_review_CAMB204_source_failure_triage/seed2003_feedback_stdout.txt:92: trailing whitespace.\n+ LINEAR POWER: z of input:   10.000000000000000     \nruns/20261004_math_review_CAMB204_source_failure_triage/seed2003_feedback_stdout.txt:95: trailing whitespace.\n+ LINEAR POWER: sigma_8:  0.13498128280345451     \nruns/20261004_math_review_CAMB204_source_failure_triage/seed2003_feedback_stdout.txt:100: trailing whitespace.\n+ SIGTAB: R_max:   1000.0000000000000     \nruns/20261004_math_review_CAMB204_source_failure_triage/seed2003_feedback_stdout.txt:103: trailing whitespace.\n+ SIGTAB: sigma_max:  0.14641014821371831     \nruns/20261004_math_review_CAMB204_source_failure_triage/seed2003_feedback_stdout.txt:108: trailing whitespace.\n+ INIT_WIGGLE: kmax [h/Mpc]:   5.0000000000000018     \nruns/20261004_math_review_CAMB204_source_failure_triage/seed2003_feedback_stdout.txt:115: trailing whitespace.\n+ HALOMOD: HM_tables being filled at redshift:   10.000000000000000     \nruns/20261004_math_review_CAMB204_source_failure_triage/seed2003_feedback_stdout.txt:116: trailing whitespace.\n+ HALOMOD: sigv [Mpc/h]:  0.29251269601363833     \nruns/20261004_math_review_CAMB204_source_failure_triage/seed2003_feedback_stdout.txt:117: trailing whitespace.\n+ HALOMOD: sigv100 [Mpc/h]:  0.18618178703001348     \nruns/20261004_math_review_CAMB204_source_failure_triage/seed2003_feedback_stdout.txt:120: trailing whitespace.\n+ HALOMOD: M_min [log10(Msun/h)]:   0.0000000000000000     \nruns/20261004_math_review_CAMB204_source_failure_triage/seed2003_feedback_stdout.txt:121: trailing whitespace.\n+ HALOMOD: M_max [log10(Msun/h)]:   17.999999993184506     \nruns/20261004_math_review_CAMB204_source_failure_triage/seed2003_feedback_stdout.txt:124: trailing whitespace.\n+ HALOMOD: nu min:   108.14174973682381     \nruns/20261004_math_review_CAMB204_source_failure_triage/seed2003_feedback_stdout.txt:125: trailing whitespace.\n+ HALOMOD: nu max:   394.61240960700167     \nruns/20261004_math_review_CAMB204_source_failure_triage/seed2003_feedback_stdout.txt:129: trailing whitespace.\n+ HALOMOD: R_v max [Mpc/h]:   17.913387813947754     \nruns/20261004_math_review_CAMB204_source_failure_triage/seed2003_feedback_stdout.txt:131: trailing whitespace.\n+ HALOMOD: k_nl [h/Mpc]:   8483.1534704633414     \nruns/20261004_math_review_CAMB204_source_failure_triage/seed2003_feedback_stdout.txt:132: trailing whitespace.\n+ HALOMOD: n_eff:  -2.9952037930597024     \nruns/20261004_math_review_CAMB204_source_failure_triage/seed2003_feedback_stdout.txt:134: trailing whitespace.\n+ HALOMOD: c min [Msun/h]:   5.1960000991821289     \nruns/20261004_math_review_CAMB204_source_failure_triage/seed2003_feedback_stdout.txt:135: trailing whitespace.\n+ HALOMOD: c max [Msun/h]:   5.1960000991821289     \nruns/20261004_math_review_CAMB204_source_failure_triage/seed2003_feedback_stdout.txt:149: new blank line at EOF.\nruns/20261004_math_review_CAMB204_source_failure_triage/seed2003_nonlinear_ablation/linear_lensing_params.txt:160: trailing whitespace.\n+ \nruns/20261004_math_review_CAMB204_source_failure_triage/seed2003_nonlinear_ablation/linear_lensing_params.txt:160: new blank line at EOF.\nruns/20261004_math_review_CAMB204_source_failure_triage/seed2003_nonlinear_ablation/mead2016_params.txt:160: trailing whitespace.\n+ \nruns/20261004_math_review_CAMB204_source_failure_triage/seed2003_nonlinear_ablation/mead2016_params.txt:160: new blank line at EOF.\nruns/20261004_math_review_CAMB204_source_failure_triage/seed2003_nonlinear_ablation/original_mead2020_params.txt:160: trailing whitespace.\n+ \nruns/20261004_math_review_CAMB204_source_failure_triage/seed2003_nonlinear_ablation/original_mead2020_params.txt:160: new blank line at EOF.\nruns/20261004_math_review_CAMB204_source_failure_triage/seed2003_nonlinear_ablation/takahashi_params.txt:160: trailing whitespace.\n+ \nruns/20261004_math_review_CAMB204_source_failure_triage/seed2003_nonlinear_ablation/takahashi_params.txt:160: new blank line at EOF.\nruns/20261004_math_review_CAMB204_source_failure_triage/seed2004_nonlinear_ablation/linear_lensing_params.txt:160: trailing whitespace.\n+ \nruns/20261004_math_review_CAMB204_source_failure_triage/seed2004_nonlinear_ablation/linear_lensing_params.txt:160: new blank line at EOF.\nruns/20261004_math_review_CAMB204_source_failure_triage/seed2004_nonlinear_ablation/mead2016_params.txt:160: trailing whitespace.\n+ \nruns/20261004_math_review_CAMB204_source_failure_triage/seed2004_nonlinear_ablation/mead2016_params.txt:160: new blank line at EOF.\nruns/20261004_math_review_CAMB204_source_failure_triage/seed2004_nonlinear_ablation/original_mead2020_params.txt:160: trailing whitespace.\n+ \nruns/20261004_math_review_CAMB204_source_failure_triage/seed2004_nonlinear_ablation/original_mead2020_params.txt:160: new blank line at EOF.\nruns/20261004_math_review_CAMB204_source_failure_triage/seed2004_nonlinear_ablation/takahashi_params.txt:160: trailing whitespace.\n+ \nruns/20261004_math_review_CAMB204_source_failure_triage/seed2004_nonlinear_ablation/takahashi_params.txt:160: new blank line at EOF.\nruns/20261005_math_review_CAMB204_native_debug_preparation/seed2003_instrumented_stdout.txt:2: trailing whitespace.\n+ AUDIT_NEGATIVE_HALO_BASE  0.71590930908396533        1.2889334357168983E-005  -7.6451290422500535E-081   1.7728578091704033E-015  0.50000000000000000     \nruns/20261005_math_review_CAMB204_native_debug_preparation/seed2003_instrumented_stdout.txt:4: trailing whitespace.\n+ AUDIT_NU_DIFF_MIN  -192.65855987737359     \nruns/20261005_math_review_CAMB204_native_debug_preparation/seed2004_instrumented_stdout.txt:2: trailing whitespace.\n+ AUDIT_NEGATIVE_HALO_BASE   6.6074977571208553        1.5398929463117370E-005  -6.4249294190361037E-237   2.4890755540887103E-016  0.50000000000000000     \nruns/20261005_math_review_CAMB204_native_debug_preparation/seed2004_instrumented_stdout.txt:4: trailing whitespace.\n+ AUDIT_NU_DIFF_MIN  -6.7064081639203366     \n",
+  "stderr": "",
+  "cause": "unmodified raw Fortran stdout and CAMB parameter serialization retain publisher/native trailing whitespace and final blank lines; immutable captures must not be trimmed",
+  "excluded_raw_files": [
+    {
+      "path": "runs/20261004_math_review_CAMB204_source_failure_triage/seed2003_feedback_stdout.txt",
+      "sha256": "26ff3967cb1bb219a8402db634a8dcb03f16280911cb2df1d6d22d023a1c626f"
+    },
+    {
+      "path": "runs/20261004_math_review_CAMB204_source_failure_triage/seed2003_nonlinear_ablation/linear_lensing_params.txt",
+      "sha256": "802405e93cd48f56622a7044550b28762919159272ae215fe37e4670fc9ab407"
+    },
+    {
+      "path": "runs/20261004_math_review_CAMB204_source_failure_triage/seed2003_nonlinear_ablation/mead2016_params.txt",
+      "sha256": "e3017ff4861d0f8e601e3654ddd718e2577e2c8870d223a72cd5d75c18ec9dde"
+    },
+    {
+      "path": "runs/20261004_math_review_CAMB204_source_failure_triage/seed2003_nonlinear_ablation/original_mead2020_params.txt",
+      "sha256": "5aae98f1f6e47c4481002d06f1de507e9994ff226d129eb993c344be748b4504"
+    },
+    {
+      "path": "runs/20261004_math_review_CAMB204_source_failure_triage/seed2003_nonlinear_ablation/takahashi_params.txt",
+      "sha256": "3e9eecd57b47d94769ebfb63ddd70643c635af8f652575fff955c3a1d258e92e"
+    },
+    {
+      "path": "runs/20261004_math_review_CAMB204_source_failure_triage/seed2004_nonlinear_ablation/linear_lensing_params.txt",
+      "sha256": "62aee50d7e0eadc4be9f22a94b6f5523776e0465733f09f90759113b529d1e74"
+    },
+    {
+      "path": "runs/20261004_math_review_CAMB204_source_failure_triage/seed2004_nonlinear_ablation/mead2016_params.txt",
+      "sha256": "a185fbcca4fedb475e700f243233c3720ddeda4ba06aef199f46ac74871dde0c"
+    },
+    {
+      "path": "runs/20261004_math_review_CAMB204_source_failure_triage/seed2004_nonlinear_ablation/original_mead2020_params.txt",
+      "sha256": "8b10c16ef6f3a13f76f0bdb3879e531753124f71693bf0268f924b024524c990"
+    },
+    {
+      "path": "runs/20261004_math_review_CAMB204_source_failure_triage/seed2004_nonlinear_ablation/takahashi_params.txt",
+      "sha256": "3cf14c25e616b7886b643a5eac3a9420a4d5219e0cda79a4d598d2bc2c23e09f"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_native_debug_preparation/seed2003_instrumented_stdout.txt",
+      "sha256": "01d4871f37c95dd79d42521656eb308a318202b3d596d92870e9e9eaed2832d6"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_native_debug_preparation/seed2004_instrumented_stdout.txt",
+      "sha256": "6c666774a2c6b5ff39ec876f76bbe2501ed9213bebc494a556f80f1f767aa774"
+    }
+  ]
+}

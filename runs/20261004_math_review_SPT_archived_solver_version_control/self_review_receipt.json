@@ -1,0 +1,52 @@
+{
+  "utc": "2026-10-04T12:38:58.724548+00:00",
+  "review_type": "distinct_self_review_not_independent_review",
+  "checks": {
+    "A": {
+      "solver_version_shape_controls": {
+        "original_style": {
+          "exact_binary64_mass_response_change": "-8989016955/1099511627776",
+          "selected_chi2_offset_range": 1.2421669847240082,
+          "selected_log_likelihood_ratio_range": 0.6210834923620041,
+          "likelihood_change_is_not_only_an_additive_constant": true
+        },
+        "restoration_style": {
+          "exact_binary64_mass_response_change": "28921650867/1099511627776",
+          "selected_chi2_offset_range": 0.6969220647101793,
+          "selected_log_likelihood_ratio_range": 0.34846103235508963,
+          "likelihood_change_is_not_only_an_additive_constant": true
+        }
+      },
+      "max_observed_archived_row_total_chi2_replay_error": 2.841927334884531e-05,
+      "max_observed_archived_row_component_chi2_replay_error": 2.1148353880562354e-05
+    },
+    "B": {
+      "solver_version_shape_controls": {
+        "original_style": {
+          "exact_binary64_mass_response_change": "-3021531690695/4398046511104",
+          "selected_chi2_offset_range": 3.6655055711605655,
+          "selected_log_likelihood_ratio_range": 1.8327527855802828,
+          "likelihood_change_is_not_only_an_additive_constant": true
+        },
+        "restoration_style": {
+          "exact_binary64_mass_response_change": "-3021531690695/4398046511104",
+          "selected_chi2_offset_range": 3.6655055711605655,
+          "selected_log_likelihood_ratio_range": 1.8327527855802828,
+          "likelihood_change_is_not_only_an_additive_constant": true
+        }
+      },
+      "max_observed_archived_row_total_chi2_replay_error": 2.115941242664121e-05,
+      "max_observed_archived_row_component_chi2_replay_error": 6.444933592320012e-05
+    }
+  },
+  "version_changes_alter_likelihood_ratios_at_selected_points": true,
+  "current_qualified_posteriors_are_not_a_sampling_only_original_target_restoration": true,
+  "no_amount_or_direction_of_old_target_quantile_change_certified": true,
+  "rounded_archive_reproduction_is_pointwise_not_complete_historical_identity": true,
+  "requires_converged_archived_solver_target_comparison_before_main_numerical_decision": true,
+  "original_point109_magnitude_restored": false,
+  "main_numerical_downgrade_adopted": false,
+  "live_stack_native_and_wrapper_hashes_unchanged": true,
+  "paper_and_canonical_unchanged": true,
+  "comparison_receipt_sha256": "a5526fa2a304a0928a63204939a75c1e0cc4189a3a3bbd3accf63fd006b111c4"
+}

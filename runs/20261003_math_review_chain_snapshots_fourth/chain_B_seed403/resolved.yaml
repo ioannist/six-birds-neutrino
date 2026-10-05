@@ -1,0 +1,103 @@
+run_name: math_restoration_B_seed403
+likelihood:
+  sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood:
+    dataset_expr: spt_candl_data.SPT3G_D1_TnE_multifreq
+  sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian:
+    subset: all
+    data_dir: data/desi_dr2_bao/desi_bao_dr2
+theory:
+  camb:
+    extra_args:
+      num_massive_neutrinos: 3
+      nnu: 3.046
+      lmax: 4095
+params:
+  omegabh2:
+    prior:
+      min: 0.005
+      max: 0.04
+    ref:
+      dist: norm
+      loc: 0.022271938072361185
+      scale: 0.00025
+    proposal: 0.00025
+  omegach2:
+    prior:
+      min: 0.001
+      max: 0.99
+    ref:
+      dist: norm
+      loc: 0.11774253917474942
+      scale: 0.002
+    proposal: 0.002
+  H0:
+    prior:
+      min: 40
+      max: 100
+    ref:
+      dist: norm
+      loc: 68.62288658860297
+      scale: 0.6
+    proposal: 0.6
+  logA:
+    prior:
+      min: 1.5
+      max: 4.0
+    ref:
+      dist: norm
+      loc: 3.051305859081379
+      scale: 0.02
+    proposal: 0.02
+    drop: true
+  As:
+    value: 'lambda logA: 1e-10*np.exp(logA)'
+  ns:
+    prior:
+      min: 0.8
+      max: 1.2
+    ref:
+      dist: norm
+      loc: 0.9600288115853028
+      scale: 0.01
+    proposal: 0.01
+  tau:
+    prior:
+      min: 0.01
+      max: 0.8
+    ref:
+      dist: norm
+      loc: 0.05516072150495439
+      scale: 0.01
+    proposal: 0.01
+  mnu:
+    prior:
+      min: 0.0
+      max: 5.0
+    ref:
+      dist: norm
+      loc: 0.001474025138696284
+      scale: 0.05
+    proposal: 0.05
+sampler:
+  mcmc:
+    seed: 403
+    max_samples: 20000
+    learn_proposal: true
+    Rminus1_stop: 0.01
+    Rminus1_cl_stop: 0.05
+    Rminus1_cl_level: 0.95
+    oversample_power: 0
+    oversample_thin: false
+    covmat: /home/repos/six-birds-neutrino/runs/20261003_math_review_proposal_B/proposal.covmat
+    learn_every: 10d
+notes:
+  mnu_prior_choice: N0 found no explicit sum_mnu upper prior bound in 2601.16277;
+    replication choice uses flat [0, 5] eV.
+  math_review: Fresh independently seeded chain; native termination and sample cap
+    do not certify posterior precision.
+  matched_theory_lmax: 4095
+  warm_start_fit: /home/repos/six-birds-neutrino/runs/20261003_math_review_cosmological_spt_desi/lensB_fit_0.json
+  thread_control: OMP_NUM_THREADS=8; three-point component benchmark agrees to within
+    1.2e-12.
+output: /home/repos/six-birds-neutrino/runs/20261003_math_review_chain_snapshots_fourth/chain_B_seed403/chains/math_restoration_B_seed403
+packages_path: /home/repos/six-birds-neutrino/external/cobaya_packages

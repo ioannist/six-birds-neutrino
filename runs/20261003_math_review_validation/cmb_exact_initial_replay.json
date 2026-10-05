@@ -1,0 +1,23 @@
+{
+  "point_with_exact_initial_slow_parameters": {
+    "omegabh2": 0.02269505170758696,
+    "omegach2": 0.1171738649927539,
+    "H0": 68.47879813772451,
+    "logA": 3.066478243719483,
+    "ns": 1.0038499737754178,
+    "tau": 0.055117866350832025,
+    "mnu_sample": 0.0759953622266971,
+    "A_planck": 1.0120451,
+    "TT_tSZ_Amp": 2.9226144,
+    "TT_kSZ_Amp": 7.8607516
+  },
+  "posterior_error": 1.0400583960290533e-05,
+  "component_errors": {
+    "sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": -3.802276887654443e-05,
+    "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 4.8084415382732e-07,
+    "planck_2018_lowl.TT": 2.365862421527254e-07,
+    "planck_2018_lowl.EE_sroll2": -3.0752318025406566e-07,
+    "planck_2018_highl_plik.TT_lite_native": -2.2504425629676916e-06,
+    "planckpr4lensing.PlanckPR4Lensing": -1.9632181214035427e-07
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "scope": "selected_native_target_consistency_only",
+  "atol": 0.002,
+  "rtol": 1e-06,
+  "tolerance_accounts_for_text_rounding": true,
+  "interval_error_certified": false,
+  "posterior_convergence_certified": false,
+  "chains": [
+    {
+      "run": "/home/repos/six-birds-neutrino/runs/20261004_math_review_spt_sample_cap_completion_B403/seed403",
+      "file": "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_B_seed403/chains/math_restoration_B_seed403.1.txt",
+      "file_sha256": "9ca2db996f97428052de80c77c7234fa1ae9d8a9d31788267781ca67ba1e5a53",
+      "total_stored_rows": 20000,
+      "checks": [
+        {
+          "row_index": 0,
+          "point": {
+            "omegabh2": 0.021944179,
+            "omegach2": 0.11919058,
+            "H0": 67.63531,
+            "logA": 3.0742789,
+            "ns": 0.97269311,
+            "tau": 0.061853775,
+            "mnu": 0.0012755359
+          },
+          "fresh_minuslogpost": 746.2788341077248,
+          "fresh_minus_recorded": {
+            "minuslogpost": 9.410772486262431e-05,
+            "minuslogprior": -2.3717017239022198e-08,
+            "chi2": 0.0001842628835220239,
+            "chi2__sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 0.00016370006642318913,
+            "chi2__sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 5.628173056493324e-07
+          }
+        },
+        {
+          "row_index": 19999,
+          "point": {
+            "omegabh2": 0.022214186,
+            "omegach2": 0.11541241,
+            "H0": 68.59581,
+            "logA": 3.045578,
+            "ns": 0.9652937,
+            "tau": 0.053282553,
+            "mnu": 0.1051973
+          },
+          "fresh_minuslogpost": 700.0322587164138,
+          "fresh_minus_recorded": {
+            "minuslogpost": 1.8716413819674926e-05,
+            "minuslogprior": -2.3717017239022198e-08,
+            "chi2": 3.348026166349882e-05,
+            "chi2__sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": -6.034074431227054e-07,
+            "chi2__sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": -9.163308263282488e-07
+          }
+        }
+      ]
+    }
+  ]
+}

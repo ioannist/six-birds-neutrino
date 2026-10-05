@@ -1,0 +1,72 @@
+{
+  "scope": "selected_native_target_consistency_only",
+  "atol": 1e-07,
+  "rtol": 1e-10,
+  "tolerance_accounts_for_text_rounding": true,
+  "interval_error_certified": false,
+  "posterior_convergence_certified": false,
+  "chains": [
+    {
+      "run": "/home/repos/six-birds-neutrino/runs/20261003_math_review_cmb_accuracy_chain_precision_check/chain_A_seed602",
+      "file": "/home/repos/six-birds-neutrino/runs/20261003_math_review_cmb_accuracy_chain_precision_check/chain_A_seed602/chains/math_accuracy_A_seed602.1.txt",
+      "file_sha256": "4974e7b653ec8d597a0317e8eaa5ca3e43195f4fe43cb75a158b0e05e91be8b0",
+      "total_stored_rows": 2,
+      "checks": [
+        {
+          "row_index": 0,
+          "point": {
+            "omegabh2": 0.02236231684046015,
+            "omegach2": 0.1156115747285408,
+            "H0": 68.31439931232592,
+            "logA": 3.0224377911056544,
+            "ns": 0.9907986542093992,
+            "tau": 0.0636338859026839,
+            "mnu_sample": 0.026146753958693446,
+            "A_planck": 0.9983799770048928,
+            "TT_tSZ_Amp": 2.0155889109220726,
+            "TT_kSZ_Amp": 9.912860181381976
+          },
+          "fresh_minuslogpost": 1605.1637727923026,
+          "fresh_minus_recorded": {
+            "minuslogpost": 0.0,
+            "minuslogprior": 0.0,
+            "chi2": 0.0,
+            "chi2__sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 0.0,
+            "chi2__sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 0.0,
+            "chi2__planck_2018_lowl.TT": 0.0,
+            "chi2__planck_2018_lowl.EE_sroll2": 0.0,
+            "chi2__planck_2018_highl_plik.TT_lite_native": 0.0,
+            "chi2__planckpr4lensing.PlanckPR4Lensing": 0.0
+          }
+        },
+        {
+          "row_index": 1,
+          "point": {
+            "omegabh2": 0.02234896464546108,
+            "omegach2": 0.11546793338325803,
+            "H0": 68.43169963886882,
+            "logA": 3.0231994765736063,
+            "ns": 0.9902296591280338,
+            "tau": 0.06356564045005918,
+            "mnu_sample": 0.017724050599641127,
+            "A_planck": 0.9991248460594726,
+            "TT_tSZ_Amp": 2.0137130114264044,
+            "TT_kSZ_Amp": 9.9123621680996
+          },
+          "fresh_minuslogpost": 1603.934551850362,
+          "fresh_minus_recorded": {
+            "minuslogpost": 0.0,
+            "minuslogprior": 0.0,
+            "chi2": 0.0,
+            "chi2__sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 0.0,
+            "chi2__sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 0.0,
+            "chi2__planck_2018_lowl.TT": 0.0,
+            "chi2__planck_2018_lowl.EE_sroll2": 0.0,
+            "chi2__planck_2018_highl_plik.TT_lite_native": 0.0,
+            "chi2__planckpr4lensing.PlanckPR4Lensing": 0.0
+          }
+        }
+      ]
+    }
+  ]
+}

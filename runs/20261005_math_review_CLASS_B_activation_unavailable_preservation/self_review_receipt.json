@@ -1,0 +1,44 @@
+{
+  "utc": "2026-10-05T05:17:31.857144+00:00",
+  "reviewer": "distinct_self_review_not_independent_agent",
+  "records": [
+    {
+      "seed": 1406,
+      "terminal_receipt_sha256": "ea727c47b2e6baa82a3bede40ff661965fcea5115acb082eee7c9b1f2f59fdc2",
+      "retained_represented_steps": 1888,
+      "preserved_checkpoint_fields": [
+        "Rminus1_last",
+        "burn_in",
+        "converged",
+        "mpi_size"
+      ]
+    },
+    {
+      "seed": 1407,
+      "terminal_receipt_sha256": "8d7ce214607796b0a020191bf5c1f54a2041ec06bfd4e08e49ce0dd38313a6ee",
+      "retained_represented_steps": 1843,
+      "preserved_checkpoint_fields": [
+        "Rminus1_last",
+        "burn_in",
+        "converged",
+        "mpi_size"
+      ]
+    },
+    {
+      "seed": 1502,
+      "terminal_receipt_sha256": "ebb9da4600c273fe7b9d1e244425c2d5f301a6e261568b1362c8e49860da5dfa",
+      "retained_represented_steps": 855,
+      "preserved_checkpoint_fields": [
+        "Rminus1_last",
+        "burn_in",
+        "converged",
+        "mpi_size"
+      ]
+    }
+  ],
+  "all_three_output_trees_and_complete_histories_reconstructed": true,
+  "exit_codes_and_causes_unavailable": true,
+  "exact_resume_state_not_supplied": true,
+  "original_cohort_membership_preserved": true,
+  "posterior_qualification_asserted": false
+}

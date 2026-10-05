@@ -1,0 +1,130 @@
+{
+  "utc": "2026-10-04T11:50:15.138216+00:00",
+  "reviewer": "distinct_self_review_no_independent_agent",
+  "scope": "comparison_KDE_coordinate_identity_refusal_and_valid_input_compatibility",
+  "reproduced_wrong_coordinate_readouts": 2,
+  "unchanged_valid_density_grid": true,
+  "valid_bundle_validation_and_downstream_argument_checks": 37,
+  "all_37_smoothed_density_grids_recomputed": false,
+  "Python_tests_passed": 132,
+  "Lean_exported_theorems_axiom_checked": 74,
+  "managed_phases": [
+    {
+      "session": 51183,
+      "phase": "before_actual_GetDist_reproduction",
+      "exit_code": 0
+    },
+    {
+      "session": 85806,
+      "phase": "after_actual_GetDist_control",
+      "exit_code": 0
+    },
+    {
+      "session": 91713,
+      "phase": "combined_make_math_check",
+      "exit_code": 0
+    }
+  ],
+  "posterior_or_native_accuracy_claim_strength_changed": false,
+  "Lean_sources_changed": false,
+  "paper_modified": false,
+  "owned_live_samplers_verified": 28,
+  "files": [
+    {
+      "path": "runs/20261004_math_review_density_column_identity_repair/after.json",
+      "sha256": "fbdbe20d145c04b6b441067c1fa897aa969e1c5442f980296ba56ce65600f1db"
+    },
+    {
+      "path": "runs/20261004_math_review_density_column_identity_repair/after_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_density_column_identity_repair/after_stdout.txt",
+      "sha256": "8223469b90b1083a89fee3884ab4173033ec7bd3b8f9d81fb9576bd742e90a98"
+    },
+    {
+      "path": "runs/20261004_math_review_density_column_identity_repair/before.json",
+      "sha256": "5ca5c603e4cef590f672e3921a03e5bb490ddfead152fd8bac981eac7ec8e787"
+    },
+    {
+      "path": "runs/20261004_math_review_density_column_identity_repair/before_compare_mnu_posteriors.py",
+      "sha256": "8d0ab6ddbb40997c1d4f8ceed77289f8d7cfdb44b358876609bf540603f7e24a"
+    },
+    {
+      "path": "runs/20261004_math_review_density_column_identity_repair/before_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_density_column_identity_repair/before_stdout.txt",
+      "sha256": "31e4541441d492dd21a3f971589f4869d3eb6b664f0a4d162fbb95a6789b63e0"
+    },
+    {
+      "path": "runs/20261004_math_review_density_column_identity_repair/check_impact.py",
+      "sha256": "1d16b6a2c51229a0f938597494b9da2ec86336269192d939dc55ea2fc6b9ffe7"
+    },
+    {
+      "path": "runs/20261004_math_review_density_column_identity_repair/fixtures/conflicting.1.txt",
+      "sha256": "eb69a6e152058ec359caa5bee355b727ee7da08241984ed66e351883b0c28b54"
+    },
+    {
+      "path": "runs/20261004_math_review_density_column_identity_repair/fixtures/conflicting.paramnames",
+      "sha256": "7e97af5d6e007b4b3f6d73eaf05528c3c1979a26c0b90fe8a6a6b7b999d0343f"
+    },
+    {
+      "path": "runs/20261004_math_review_density_column_identity_repair/fixtures/duplicate.1.txt",
+      "sha256": "14a3ea30c990c04848bb2a885f61d42cacfd1b76a9989bcd47f990200c24616d"
+    },
+    {
+      "path": "runs/20261004_math_review_density_column_identity_repair/fixtures/duplicate.paramnames",
+      "sha256": "fb19c233fedae5eba70e03f7584656ecfe4e4b824ddb015ea3e4cc908f8a866b"
+    },
+    {
+      "path": "runs/20261004_math_review_density_column_identity_repair/fixtures/valid.1.txt",
+      "sha256": "eb69a6e152058ec359caa5bee355b727ee7da08241984ed66e351883b0c28b54"
+    },
+    {
+      "path": "runs/20261004_math_review_density_column_identity_repair/fixtures/valid.paramnames",
+      "sha256": "761e5cf68e100b347ceffb809faae88a65141c8126dd176f4ed122fbd83acf3d"
+    },
+    {
+      "path": "runs/20261004_math_review_density_column_identity_repair/impact_receipt.json",
+      "sha256": "d640bca9d09003f473b9a653f4ebca1438d7736dc7085eb94fb1c59cede2cbb0"
+    },
+    {
+      "path": "runs/20261004_math_review_density_column_identity_repair/math_check_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_density_column_identity_repair/math_check_stdout.txt",
+      "sha256": "2508b27002ea7861b42849f0a7ce36716a79fe8f34c9085e66e9d7d3afdf086f"
+    },
+    {
+      "path": "runs/20261004_math_review_density_column_identity_repair/observe_runtime.py",
+      "sha256": "fbd1c3fe3dc7deb2c4635d03a854a39a078bda9f7a1f2e37262ff923da201972"
+    },
+    {
+      "path": "runs/20261004_math_review_density_column_identity_repair/probe_density.py",
+      "sha256": "0754f4ec4f3ea4dc2c63d0349a3a37626c13cfeccef3e00b3090627d6d5f757b"
+    },
+    {
+      "path": "runs/20261004_math_review_density_column_identity_repair/runtime_observation.json",
+      "sha256": "6a2f084549c0ebc1e1f3313ac78a81405ca88c65ad3f601bf444a977a1924bee"
+    },
+    {
+      "path": "runs/20261004_math_review_density_column_identity_repair/self_review.py",
+      "sha256": "e1df1746ed8ddc4e47202be29f40c263cb1913a6fb64e6fb74880781baa1b198"
+    },
+    {
+      "path": "scripts/compare_mnu_posteriors.py",
+      "sha256": "5c239e2ed51ed5695703be0091b09653ee31ec502180c2f5aae6ca72f8803756"
+    },
+    {
+      "path": "tests/test_math_repairs.py",
+      "sha256": "dd5f77425e804da1b298e1c973c6d0448e2f3fddca1a3026b1afcd582bcf00e0"
+    },
+    {
+      "path": "scripts/extract_mnu_limits.py",
+      "sha256": "c25681709477d455b8a123363b54e21e689c3af665c1764ab2760ae86b2122b5"
+    }
+  ]
+}

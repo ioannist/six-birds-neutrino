@@ -1,0 +1,123 @@
+/tmp/neutrino-math-review-venv/bin/python -m pytest -q
+...................................FFF.................................. [ 81%]
+................                                                         [100%]
+=================================== FAILURES ===================================
+____ test_exact_symmetric_subnormal_variance_is_not_erased_by_projection[1] ____
+
+subnormal_units = 1
+
+    @pytest.mark.parametrize('subnormal_units', [1, 3, 17])
+    def test_exact_symmetric_subnormal_variance_is_not_erased_by_projection(subnormal_units):
+        variance = subnormal_units * np.nextafter(0., 1.)
+        covariance = np.array([[variance]])
+        residual = np.array([variance])
+        # The native Cholesky factor and solve are representable; no inverse is
+        # needed. Rejecting this positive covariance is a projection failure.
+        with np.errstate(under='raise', over='raise', invalid='raise'):
+>           solution = covariance_solve(covariance, residual)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_math_repairs.py:169: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+cov = array([[5.e-324]]), residual = array([5.e-324])
+
+    def covariance_solve(cov: np.ndarray, residual: np.ndarray) -> np.ndarray:
+        """Solve with a finite, symmetric positive definite covariance.
+    
+        A pseudoinverse would silently change the statistical model and is not used.
+        """
+        c = np.asarray(cov, dtype=float)
+        r = np.asarray(residual, dtype=float)
+        if r.ndim != 1 or not r.size or c.shape != (r.size, r.size):
+            raise ValueError("residual must be non-empty and 1D; cov must have matching square shape.")
+        if not np.all(np.isfinite(c)) or not np.all(np.isfinite(r)):
+            raise ValueError("covariance and residual must be finite.")
+        # Released covariance matrices can differ at floating roundoff near zero.
+        # Reject substantive asymmetry; project only roundoff onto the symmetric part.
+>       symmetry_atol = 64 * np.finfo(float).eps * float(np.max(np.abs(c)))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FloatingPointError: underflow encountered in scalar multiply
+
+src/sbt_spt_audit/metrics.py:23: FloatingPointError
+____ test_exact_symmetric_subnormal_variance_is_not_erased_by_projection[3] ____
+
+subnormal_units = 3
+
+    @pytest.mark.parametrize('subnormal_units', [1, 3, 17])
+    def test_exact_symmetric_subnormal_variance_is_not_erased_by_projection(subnormal_units):
+        variance = subnormal_units * np.nextafter(0., 1.)
+        covariance = np.array([[variance]])
+        residual = np.array([variance])
+        # The native Cholesky factor and solve are representable; no inverse is
+        # needed. Rejecting this positive covariance is a projection failure.
+        with np.errstate(under='raise', over='raise', invalid='raise'):
+>           solution = covariance_solve(covariance, residual)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_math_repairs.py:169: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+cov = array([[1.5e-323]]), residual = array([1.5e-323])
+
+    def covariance_solve(cov: np.ndarray, residual: np.ndarray) -> np.ndarray:
+        """Solve with a finite, symmetric positive definite covariance.
+    
+        A pseudoinverse would silently change the statistical model and is not used.
+        """
+        c = np.asarray(cov, dtype=float)
+        r = np.asarray(residual, dtype=float)
+        if r.ndim != 1 or not r.size or c.shape != (r.size, r.size):
+            raise ValueError("residual must be non-empty and 1D; cov must have matching square shape.")
+        if not np.all(np.isfinite(c)) or not np.all(np.isfinite(r)):
+            raise ValueError("covariance and residual must be finite.")
+        # Released covariance matrices can differ at floating roundoff near zero.
+        # Reject substantive asymmetry; project only roundoff onto the symmetric part.
+>       symmetry_atol = 64 * np.finfo(float).eps * float(np.max(np.abs(c)))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FloatingPointError: underflow encountered in scalar multiply
+
+src/sbt_spt_audit/metrics.py:23: FloatingPointError
+___ test_exact_symmetric_subnormal_variance_is_not_erased_by_projection[17] ____
+
+subnormal_units = 17
+
+    @pytest.mark.parametrize('subnormal_units', [1, 3, 17])
+    def test_exact_symmetric_subnormal_variance_is_not_erased_by_projection(subnormal_units):
+        variance = subnormal_units * np.nextafter(0., 1.)
+        covariance = np.array([[variance]])
+        residual = np.array([variance])
+        # The native Cholesky factor and solve are representable; no inverse is
+        # needed. Rejecting this positive covariance is a projection failure.
+        with np.errstate(under='raise', over='raise', invalid='raise'):
+>           solution = covariance_solve(covariance, residual)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_math_repairs.py:169: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+cov = array([[8.4e-323]]), residual = array([8.4e-323])
+
+    def covariance_solve(cov: np.ndarray, residual: np.ndarray) -> np.ndarray:
+        """Solve with a finite, symmetric positive definite covariance.
+    
+        A pseudoinverse would silently change the statistical model and is not used.
+        """
+        c = np.asarray(cov, dtype=float)
+        r = np.asarray(residual, dtype=float)
+        if r.ndim != 1 or not r.size or c.shape != (r.size, r.size):
+            raise ValueError("residual must be non-empty and 1D; cov must have matching square shape.")
+        if not np.all(np.isfinite(c)) or not np.all(np.isfinite(r)):
+            raise ValueError("covariance and residual must be finite.")
+        # Released covariance matrices can differ at floating roundoff near zero.
+        # Reject substantive asymmetry; project only roundoff onto the symmetric part.
+>       symmetry_atol = 64 * np.finfo(float).eps * float(np.max(np.abs(c)))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FloatingPointError: underflow encountered in scalar multiply
+
+src/sbt_spt_audit/metrics.py:23: FloatingPointError
+=========================== short test summary info ============================
+FAILED tests/test_math_repairs.py::test_exact_symmetric_subnormal_variance_is_not_erased_by_projection[1]
+FAILED tests/test_math_repairs.py::test_exact_symmetric_subnormal_variance_is_not_erased_by_projection[3]
+FAILED tests/test_math_repairs.py::test_exact_symmetric_subnormal_variance_is_not_erased_by_projection[17]
+3 failed, 85 passed in 3.95s

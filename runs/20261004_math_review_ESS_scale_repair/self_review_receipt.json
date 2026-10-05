@@ -1,0 +1,15 @@
+{
+  "utc": "2026-10-04T08:16:09.354053+00:00",
+  "reviewer": "distinct_self_review_no_independent_agent",
+  "judgment": "classical diagnostic ratios preserve positive affine changes at tested binary64 scales and treat exact constant histories correctly",
+  "mathematical_basis": "autocorrelation and between/within variance ratios are invariant under common positive scaling and translation; exact constant rows have zero variance",
+  "implementation": "bounded power-of-two normalization and common-offset removal precede moment calculations; exact constants handled explicitly; nonfinite moments rejected",
+  "false_targets": "large and tiny unit changes no longer yield ESS0 or false zero variance; equal decimal constants no longer report finite Rhat below1; distinct constant histories give infinity; adjacent-float variation remains detectable",
+  "evidence": "12 new tests, final119passed;20 ordinary controls; classical helper readouts on four guarded and two SPT frozen cohorts agree with pre-repair values within1e-12 relative tolerance and preserve Rhat1.05 decisions",
+  "scope": "classical helpers only; rank ArviZ algorithm and current four-cohort reports are not replaced by classical readouts; uniform floating error and posterior convergence remain uncertified",
+  "native_likelihood_targets_changed": false,
+  "samplers_restarted": false,
+  "lean_sources_changed": false,
+  "paper_modified": false,
+  "runtime_observation_sha256": "a73cbbbf270b2feda9da4ecb0ac9caf6b04dd98210dc4b269fd356f222d44f11"
+}

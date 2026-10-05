@@ -1,0 +1,58 @@
+{
+  "utc": "2026-10-04T15:10:02.528969+00:00",
+  "review_type": "distinct_self_review_not_independent_review",
+  "native_spectrum_isolation_sessions": {
+    "1.6.5": 5968,
+    "2.0.4": 84456
+  },
+  "native_adapter_validation_sessions": {
+    "1.6.5": 5304,
+    "2.0.4": 8777
+  },
+  "native_sampler_validation_sessions": {
+    "1.6.5": 73403,
+    "2.0.4": 93722
+  },
+  "all_native_session_exit_codes": 0,
+  "make_math_check_session": 24592,
+  "make_math_check_exit_code": 0,
+  "python_tests": 168,
+  "Lean_build_passed": true,
+  "public_Lean_axiom_exports_checked": 74,
+  "summary": [
+    {
+      "CAMB_version": "1.6.5",
+      "finite_target_comparisons": 72,
+      "prior_rejected_comparisons": 2,
+      "interleaved_model_recipes": 2,
+      "actual_finite_MCMC_rows_exact_to_upstream_fresh": 4,
+      "native_module_sha256": "6a54f98bcc65601fd1ad5e760a99a0072cdc45fe49197ba5c3a1282889c2ee0d",
+      "finite_probe_process_absent": true
+    },
+    {
+      "CAMB_version": "2.0.4",
+      "finite_target_comparisons": 72,
+      "prior_rejected_comparisons": 2,
+      "interleaved_model_recipes": 2,
+      "actual_finite_MCMC_rows_exact_to_upstream_fresh": 4,
+      "native_module_sha256": "306640a8948cd5246fc9b21e76525f6adebdff5ba3bc792a57d50bba67225ad5",
+      "finite_probe_process_absent": true
+    }
+  ],
+  "native_cached_A_spectrum_defect_reproduced_both_versions": true,
+  "production_adapter_preserves_selected_upstream_fresh_target_both_recipes_versions": true,
+  "sampler_cache_resizing_cannot_reenable_transfer_reuse_in_adapter": true,
+  "selected_controls_are_uniform_native_accuracy_or_convergence_certificate": false,
+  "historical_inference_chains_repaired_by_changing_future_code": false,
+  "new_inference_cohorts_launched": false,
+  "main_claim_or_paper_revision_adopted": false,
+  "source_sha256": {
+    "src/sbt_spt_audit/boltzmann.py": "a2100f8f48f98988580c21ddaca04ed86a9b956f4b22135a942b05dd8265f355",
+    "scripts/run_cobaya.py": "883640961f35a782bdec0979fe28c98eb92b96098d1d083a9d62a8b3382d0c11",
+    "scripts/run_cosmological_audit.py": "6f73895be196a13e6604f4fb7e31ffd7ea3111a5423a82e1756fe3911da7acb0",
+    "scripts/build_cmb_bao_proposal.py": "f1c824f45caa9dd7043fbae59e2a571823bf69b958dbf7fa78df0ee2de4edc2f",
+    "tests/test_fresh_camb_transfers.py": "600fd8a6e3067698eeeeae41cb164389a301b49e65efa0f426e87313324bd55c",
+    "tests/test_native_backend_launch.py": "912ddd94239b08959e252b0d3bb3423bff6949860d3bededd657ef6343a5cb79",
+    "runs/20261004_math_review_CAMB_fresh_transfer_repair/math_check_stdout.txt": "f47ed962d573bad7d9da91cc6784e7dd168b5e791491cd3b3cf76fd5bb0105c6"
+  }
+}

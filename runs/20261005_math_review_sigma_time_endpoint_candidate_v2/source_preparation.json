@@ -1,0 +1,18 @@
+{
+  "utc": "2026-10-05T02:14:31.173163+00:00",
+  "original_source": "/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_sigma_v2_optimized_20261005/camb-2.0.4/fortran/results.f90",
+  "original_sha256": "884a2942ee946b03982cc0be7e809f4acde62e7a69ce4906a94934ffc29abb33",
+  "candidate_source": "/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_sigma_time_endpoint_v2_20261005/fortran/results.f90",
+  "candidate_sha256": "718465cfd87838ab33dc21819cc0a488f2e7289086a41136ecf8532cdfe93eed",
+  "changes": [
+    [
+      "    do i = 2, n\n        arr(i) = arr(i) + arr(i - 1)\n    end do\n\n    end subroutine CAMBdata_TimeOfzArr",
+      "    do i = 2, n\n        arr(i) = arr(i) + arr(i - 1)\n    end do\n    ! An initialized background defines the present-day coordinate once.\n    ! Reuse it at z=0 rather than a separately accumulated quadrature.\n    do i = 1, n\n        if (z(i) == 0._dl) arr(i) = this%tau0\n    end do\n\n    end subroutine CAMBdata_TimeOfzArr"
+    ],
+    [
+      "    do i = 1, n\n        if (z(i) == 0._dl) arr(i) = this%tau0\n    end do",
+      "    if (.not. present(tol)) then\n        do i = 1, n\n            if (z(i) == 0._dl) arr(i) = this%tau0\n        end do\n    end if"
+    ]
+  ],
+  "scope": "Initialized background and default precision only: z0 time-array value reuses existing tau0. All nonzero-redshift outputs and explicit-tol calculations unchanged. Sigma policyv2 unchanged; distinct numerical candidate, no production adoption."
+}

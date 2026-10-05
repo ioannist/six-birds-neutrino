@@ -1,0 +1,27 @@
+{
+  "utc": "2026-10-03T17:23:45.812565+00:00",
+  "scope": "initial_and_first_accepted_dragged_states_pointwise_native_target_consistency",
+  "verified_rows": 4,
+  "all_managed_verifiers_exit_zero": true,
+  "snapshot_hashes_and_live_source_prefixes_verified": true,
+  "max_abs_native_prior_posterior_error": 0.0,
+  "cases": [
+    {
+      "lens": "A",
+      "seed": 701,
+      "verified_rows": 2,
+      "max_abs_native_prior_posterior_error": 0.0,
+      "source_output_sha256": "0538471337d57b5dc90d419135bc2ce31c2f942df4983b4524ec810aaa0aa090"
+    },
+    {
+      "lens": "B",
+      "seed": 702,
+      "verified_rows": 2,
+      "max_abs_native_prior_posterior_error": 0.0,
+      "source_output_sha256": "a0225e7f85340c1f04f32a527857558438ff191af6337fe95a671533feb68300"
+    }
+  ],
+  "posterior_convergence_certified": false,
+  "efficiency_improvement_verified": false,
+  "every_sampler_transition_certified": false
+}

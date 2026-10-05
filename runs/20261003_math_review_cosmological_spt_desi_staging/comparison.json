@@ -1,0 +1,27 @@
+{
+  "scope": "separate_bounded_numerical_candidate_fits_not_certified_isolation_of_support_effect",
+  "baseline": "runs/20261003_math_review_cosmological_spt_desi",
+  "staging": "runs/20261003_math_review_cosmological_spt_desi_staging",
+  "same_camb_lmax": 4095,
+  "cuts": "only_lensB_TT_750_3000_TE_EE_300_3000",
+  "fixed_packaged_nuisance": true,
+  "directions": {
+    "B_given_A": {
+      "baseline_joint": 488.29677851801944,
+      "staging_joint": 486.60985869534056,
+      "relative_change_percent": -0.3454701929016757,
+      "baseline_native_spt": 487.82048708973525,
+      "staging_native_spt": 486.1509333923784
+    },
+    "A_given_B": {
+      "baseline_joint": 79.13301836406436,
+      "staging_joint": 80.52264217012316,
+      "relative_change_percent": 1.756060661891623,
+      "baseline_native_spt": 79.60930979234854,
+      "staging_native_spt": 80.96427741394018
+    }
+  },
+  "source_A_loglike_refinement": 0.10557362058075248,
+  "global_optimum_certified": false,
+  "posterior_convergence_verified": false
+}

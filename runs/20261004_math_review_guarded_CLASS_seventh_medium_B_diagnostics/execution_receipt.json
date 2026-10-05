@@ -1,0 +1,24 @@
+{
+  "utc": "2026-10-04T20:21:06.673999+00:00",
+  "stages": [
+    {
+      "command": "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 /tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_guarded_CLASS_seventh_medium_B_diagnostics/run_diagnostics.py",
+      "managed_session": 38995,
+      "exit_code": 0
+    },
+    {
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_guarded_CLASS_seventh_medium_B_diagnostics/observe_runtime.py",
+      "exit_code": 0
+    },
+    {
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_guarded_CLASS_seventh_medium_B_diagnostics/verify_snapshot.py",
+      "exit_code": 0
+    },
+    {
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_guarded_CLASS_seventh_medium_B_diagnostics/self_review.py",
+      "exit_code": 0
+    }
+  ],
+  "all_four_workers_terminal": true,
+  "posterior_convergence_certified": false
+}

@@ -1,0 +1,36 @@
+{
+  "utc": "2026-10-04T23:29:33.004305+00:00",
+  "group": "old_B4095",
+  "recovered_session": 49844,
+  "recovered_worker_exit_code": 0,
+  "recovered_worker_science_stages": [
+    "run_diagnostic.py",
+    "verify_snapshot.py"
+  ],
+  "native_stage_source_root": "runs/20261004_math_review_fresh_CAMB_seventh_old_B4095_diagnostics",
+  "native_stage_source_session": 72075,
+  "native_stage_source_exit_code": 0,
+  "source_outer_wrapper_exit_code": 1,
+  "native_stage_reused_on_identical_frozen_bytes": true,
+  "all_three_science_stages_exit_code": 0,
+  "self_review": "runs/20261004_math_review_fresh_CAMB_seventh_old_B4095_diagnostics_v2/self_review_receipt.json",
+  "recovery_self_review": "runs/20261004_math_review_fresh_CAMB_seventh_old_B4095_diagnostics_v2/recovery_self_review_receipt.json",
+  "selected_native_rows": 12,
+  "maximum_native_component_error": 0.0,
+  "all_parameter_gate_sets_pass": false,
+  "passing_parameters": [],
+  "minimum_saved_postburn_history": 3720,
+  "next_minimum_history": 4464,
+  "mass_diagnostics": {
+    "rank_folded_split_rhat": 1.0173059728348621,
+    "bulk_ess": 372.84698429346855,
+    "tail_ess_05_95": 649.9549284398543,
+    "quantile_ess": 649.9549284398543,
+    "quantile_mcse": 0.004948143887611896,
+    "quantile_retained_draws": 0.10112755884859077,
+    "quantile_full_draws": 0.10112755884859077,
+    "quantile_half_difference": 0.00529306048986751
+  },
+  "posterior_qualified": false,
+  "targets_or_precision_tiers_pooled": false
+}

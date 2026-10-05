@@ -1,0 +1,41 @@
+{
+  "utc": "2026-10-05T05:44:06.342427+00:00",
+  "reviewer": "distinct_self_review_not_independent_agent",
+  "records": [
+    {
+      "group": "medium_A",
+      "proposal_sha256": "48194af9b37fed7fd0f2e59cc692f8f39181bfcb20bd2d0033e2739310b9cf33",
+      "twenty_principal_determinants_positive_exactly": true,
+      "raw_exact_symmetry": false
+    },
+    {
+      "group": "quad_A",
+      "proposal_sha256": "4e69a221f62ab71d1bf6a22f1d75672c9d6686b016963450de762cd5dececc25",
+      "twenty_principal_determinants_positive_exactly": true,
+      "raw_exact_symmetry": false
+    },
+    {
+      "group": "medium_B",
+      "proposal_sha256": "201054f41e717fb5461a73707c774c81027a2a57da11203daebec58bd698b597",
+      "twenty_principal_determinants_positive_exactly": true,
+      "raw_exact_symmetry": false
+    },
+    {
+      "group": "quad_B",
+      "proposal_sha256": "f22db438737e09536b05a2423df9f4580e50bdcbb1b2c64dff061135a32d3a57",
+      "twenty_principal_determinants_positive_exactly": true,
+      "raw_exact_symmetry": false
+    }
+  ],
+  "certificate_sha256": "09fa80447859b65f082e2e2489f01f15c5d7ef126df2b79db841810868510988",
+  "certifier_sha256": "b70a9efe823db26d805058fe5e44897b03893992a852d3cbc0cf77c76d5658bf",
+  "independent_arithmetic_algorithm": "integer Bareiss principal determinants",
+  "independent_human_or_agent_review": false,
+  "actual_ldlt_non_positive_definite_controls_refused": [
+    "singular",
+    "indefinite"
+  ],
+  "perturbation_argument": "For symmetric E with entries bounded by delta, abs(x^T E x)<=delta*(sum abs(x_i))^2<=n*delta*||x||^2. Exact positive definiteness of S-n*delta*I implies S+E is positive definite. Triangle copies of represented M, including after simultaneous permutation, obey that bound.",
+  "raw_covariance_files_or_sampler_configs_modified": false,
+  "floating_normalization_or_sampling_invariance_or_posterior_qualification_proved": false
+}

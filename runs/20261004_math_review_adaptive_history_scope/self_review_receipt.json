@@ -1,0 +1,21 @@
+{
+  "utc": "2026-10-04T11:11:10.557923+00:00",
+  "reviewer": "distinct_self_review_no_independent_agent",
+  "receipt_sha256": "9c3a38dfbfba41ce9ece1026a3f3e289f5d5bf45d5b3e3239d0ff62f1e5c86ca",
+  "integer_holding_times_recounted": 28,
+  "log_update_coordinates_recounted": 28,
+  "families_with_internal_updates_by_cohort": {
+    "SPT_A": 6,
+    "SPT_B": 6,
+    "quad_A": 4,
+    "quad_B": 4,
+    "medium_A": 0,
+    "medium_B": 0
+  },
+  "source_coordinate_review": "check_ready uses len(collection); collection adds a stored old point on acceptance; output thinning disabled",
+  "fractional_adaptation_counterexample_verified": true,
+  "SPT_previous_empirical_gate_results_preserved": true,
+  "no_adaptive_MCMC_convergence_or_floating_precision_certificate": true,
+  "CLASS_cohorts_remain_provisional": true,
+  "paper_unchanged_against_pre_review": true
+}

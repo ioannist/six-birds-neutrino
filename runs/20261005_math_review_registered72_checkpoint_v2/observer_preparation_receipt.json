@@ -1,0 +1,12 @@
+{
+  "utc": "2026-10-05T04:24:42.742705+00:00",
+  "source": "runs/20261005_math_review_registered72_checkpoint/observe_registered_runtime.py",
+  "source_sha256": "ef3eacf2acaa5fecb56159d371b6044418c7c297c86e995ea62b77e7d571f3db",
+  "changes": [
+    [
+      "if e['seed'] >= 2100 and e.get('first_saved_row_receipt'):",
+      "if e['seed'] >= 2100:\n        assert e.get('first_saved_row_receipt') or (e['seed'] >= 2300 and e['status'].endswith('first_saved_row_pending'))\n    if e['seed'] >= 2100 and e.get('first_saved_row_receipt'):"
+    ]
+  ],
+  "scope": "Original exits explicitly preserved; pending proof permitted only for new companions. Existing first-row proof obligations retained."
+}

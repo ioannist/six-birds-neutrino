@@ -1,0 +1,35 @@
+{
+  "scope": "two_independent_same_target_dragging_trials_no_convergence_claim",
+  "launches": [
+    {
+      "lens": "A",
+      "seed": 701,
+      "pid": 752894,
+      "exec_session": 13056,
+      "command": "printf 'owned_dragging_chain_pid=%s\\n' \"$$\"\nexec env OMP_NUM_THREADS=8 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 /tmp/neutrino-math-review-venv/bin/python scripts/run_cobaya.py --config runs/20261003_math_review_cmb_accuracy_dragging_configs/A_seed701.yaml --seed 701 --outdir runs/20261003_math_review_cmb_accuracy_dragging_chain_A_seed701",
+      "run_dir": "runs/20261003_math_review_cmb_accuracy_dragging_chain_A_seed701",
+      "omp_threads": 8,
+      "output_precision_digits": 17
+    },
+    {
+      "lens": "B",
+      "seed": 702,
+      "pid": 755952,
+      "exec_session": 10916,
+      "command": "printf 'owned_dragging_chain_pid=%s\\n' \"$$\"\nexec env OMP_NUM_THREADS=8 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 /tmp/neutrino-math-review-venv/bin/python scripts/run_cobaya.py --config runs/20261003_math_review_cmb_accuracy_dragging_configs/B_seed702.yaml --seed 702 --outdir runs/20261003_math_review_cmb_accuracy_dragging_chain_B_seed702",
+      "run_dir": "runs/20261003_math_review_cmb_accuracy_dragging_chain_B_seed702",
+      "omp_threads": 8,
+      "output_precision_digits": 17
+    }
+  ],
+  "utc": "2026-10-03T16:59:37.235202+00:00",
+  "source_git": "49864f7",
+  "implementation_sha256": {
+    "scripts/run_cobaya.py": "744581e1e7493ecf5c1d1c71871d16558eb7ff2229c9c4ff68c9eb8d136fac5b",
+    "src/sbt_spt_audit/samplers.py": "35109ea6ec9af9519b1ab44b737e1d4f56bfe22020bb2b09f2649a0ada6cfa94",
+    "src/sbt_spt_audit/mcmc.py": "e00c832f911a9233bce6c3ada930113affb436e52272bb704e47706c8df22898",
+    "src/sbt_spt_audit/likelihoods/candl_cobaya.py": "b695b32235d04a2b287786260c5c02fb87c43d787d0949907a7247518aa37a90",
+    "src/sbt_spt_audit/likelihoods/desi_dr2_bao.py": "bf7b9b816f158aaabfc12ba8f6ea75ed8c7fa0bc0bbfe73b7aa8e75d9a999bf4"
+  },
+  "upstream_mcmc_sha256": "455def4cc5462f57d0fbd365793630382a105112d7223c4c90329d3252534594"
+}

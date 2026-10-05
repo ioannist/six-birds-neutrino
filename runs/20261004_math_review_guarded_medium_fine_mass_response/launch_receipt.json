@@ -1,0 +1,81 @@
+{
+  "utc": "2026-10-04T07:08:53.432276+00:00",
+  "status": "launched_and_live_no_accuracy_certificate",
+  "jobs": [
+    {
+      "lens": "A",
+      "exec_session": 95406,
+      "pid": 2776318,
+      "process_start_ticks": 336723226,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_guarded_medium_fine_mass_response/runner.py --config runs/20261004_math_review_guarded_medium_fine_mass_response/A/input.yaml --points runs/20261004_math_review_guarded_medium_fine_mass_response/A/points.json --settings runs/20261004_math_review_guarded_medium_fine_mass_response/A/precision_settings.json --outdir runs/20261004_math_review_guarded_medium_fine_mass_response/A/evaluation ",
+      "mapped_native_module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+      "omp_threads": 4,
+      "status": "live_same_launched_identity"
+    },
+    {
+      "lens": "B",
+      "exec_session": 6725,
+      "pid": 2776278,
+      "process_start_ticks": 336723225,
+      "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_guarded_medium_fine_mass_response/runner.py --config runs/20261004_math_review_guarded_medium_fine_mass_response/B/input.yaml --points runs/20261004_math_review_guarded_medium_fine_mass_response/B/points.json --settings runs/20261004_math_review_guarded_medium_fine_mass_response/B/precision_settings.json --outdir runs/20261004_math_review_guarded_medium_fine_mass_response/B/evaluation ",
+      "mapped_native_module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+      "omp_threads": 4,
+      "status": "live_same_launched_identity"
+    }
+  ],
+  "annotation_correction": "launch_prepare and generated settings say five controls; six numerical controls changed. Corrected future prepare annotation; launched numerical dictionaries and inputs unchanged.",
+  "files": [
+    {
+      "path": "runs/20261004_math_review_guarded_medium_fine_mass_response/launch_prepare.py",
+      "sha256": "2219bee777b7936f3af10547be87f7fc5007ccedcce63c58fb18d84368ca2a21"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_medium_fine_mass_response/prepare.py",
+      "sha256": "568e9e8a7ae29af9d84068364665cbca2b834dd3edc0b8a55c63e20e00a55724"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_medium_fine_mass_response/runner.py",
+      "sha256": "479456bff3eb36a3b696936e625fcd6d0b51bf96a54bae3077567bc4e12e5f72"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_medium_fine_mass_response/runner_snapshot.py",
+      "sha256": "9f08954880417ed8f63accf5a06eeb83bd1d7383aa577fec9a2263357a79ace9"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_medium_fine_mass_response/selection_receipt.json",
+      "sha256": "b9edc81782fc628efd12d5cb9a3e71ede1ca114c39c2805668bd4818a8279274"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_medium_fine_mass_response/observe_runtime.py",
+      "sha256": "be203d1eb94968e95bd435d7250f53cef69f0122697f3a7b42cc29e2282f6795"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_medium_fine_mass_response/runtime_observation.json",
+      "sha256": "701df6fc3f6757f071fa18989f976a53d3ff4423985861bb4e2da999e3244589"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_medium_fine_mass_response/A/input.yaml",
+      "sha256": "dd2a233b4de4e6c1e0cccfccd11b72b624bad030ece4aaafa84b0c07242fd2c1"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_medium_fine_mass_response/A/points.json",
+      "sha256": "84b6e1720a66ef0a8d8a7477e3e648363fcf4dfe97c5377ea9b86f75630d133e"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_medium_fine_mass_response/A/precision_settings.json",
+      "sha256": "d7717dae43494387f2fcd8b2bbea0c8f407bdf467676e9769944d14be6412acd"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_medium_fine_mass_response/B/input.yaml",
+      "sha256": "b804f7bb1159352c5657cc80e82cfb33c5c6f15e3da172096ed205769d1e3e4d"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_medium_fine_mass_response/B/points.json",
+      "sha256": "5c706baad7bb8a1e0d30a789e2de8c4bbeb74f7f6a45867a3bc99695e0fedacc"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_medium_fine_mass_response/B/precision_settings.json",
+      "sha256": "d7717dae43494387f2fcd8b2bbea0c8f407bdf467676e9769944d14be6412acd"
+    }
+  ]
+}

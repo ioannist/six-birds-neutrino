@@ -1,0 +1,58 @@
+{
+  "utc": "2026-10-04T23:47:11.510241+00:00",
+  "records": [
+    {
+      "source": "runs/20261004_math_review_guarded_CLASS_seventh_quad_A_diagnostics/prepare_snapshot.py",
+      "source_sha256": "9b5f51ef7f3c439772bd934a86e933df0db4547449a7357c58720926cae10a26",
+      "destination": "runs/20261004_math_review_guarded_CLASS_eighth_quad_A_diagnostics/prepare_snapshot.py",
+      "destination_sha256": "b1ba92819ca54bffd469fab0ed54dad21a78d633070520d74d13aa9fbd78f12e",
+      "changes": [
+        [
+          "20261004_math_review_guarded_CLASS_sixth_quad_A_diagnostics/snapshot_receipt.json",
+          "20261004_math_review_guarded_CLASS_seventh_quad_A_diagnostics/snapshot_receipt.json"
+        ],
+        [
+          "seventh_guarded_CLASS_quad_A_cohort_diagnostics",
+          "eighth_guarded_CLASS_quad_A_cohort_diagnostics"
+        ]
+      ],
+      "reverse_byte_identity_verified": true
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_CLASS_seventh_quad_A_diagnostics/run_diagnostics.py",
+      "source_sha256": "21d3c1584c115d84e6d21ea094e3755d8087d88076f19fa5489f3ad4aac74656",
+      "destination": "runs/20261004_math_review_guarded_CLASS_eighth_quad_A_diagnostics/run_diagnostics.py",
+      "destination_sha256": "21d3c1584c115d84e6d21ea094e3755d8087d88076f19fa5489f3ad4aac74656",
+      "changes": [],
+      "reverse_byte_identity_verified": true
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_CLASS_seventh_quad_A_diagnostics/verify_snapshot.py",
+      "source_sha256": "4c5b63562ba9bfd7f7da57e6f7023e280c6b97009817ea629c6f48ae1773e163",
+      "destination": "runs/20261004_math_review_guarded_CLASS_eighth_quad_A_diagnostics/verify_snapshot.py",
+      "destination_sha256": "4c5b63562ba9bfd7f7da57e6f7023e280c6b97009817ea629c6f48ae1773e163",
+      "changes": [],
+      "reverse_byte_identity_verified": true
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_CLASS_seventh_quad_A_diagnostics/self_review.py",
+      "source_sha256": "6c489ee264d85a9a12d57b73ace4bb78b9af099ec9df6a7e8dc849b9cff2c8a4",
+      "destination": "runs/20261004_math_review_guarded_CLASS_eighth_quad_A_diagnostics/self_review.py",
+      "destination_sha256": "6c489ee264d85a9a12d57b73ace4bb78b9af099ec9df6a7e8dc849b9cff2c8a4",
+      "changes": [],
+      "reverse_byte_identity_verified": true
+    },
+    {
+      "source": "runs/20261004_math_review_retired_PID_identity_repair/observe_primary_runtime.py",
+      "source_sha256": "64d27708c0c1ce5749b7e336746644926ae8a6b7f826be8ab2caa3f9f36afa6c",
+      "destination": "runs/20261004_math_review_guarded_CLASS_eighth_quad_A_diagnostics/observe_runtime.py",
+      "destination_sha256": "64d27708c0c1ce5749b7e336746644926ae8a6b7f826be8ab2caa3f9f36afa6c",
+      "changes": [],
+      "reverse_byte_identity_verified": true,
+      "corrected_retirement_identity_check": true
+    }
+  ],
+  "all_source_helpers_checked_before_preparation": true,
+  "model_precision_or_gates_changed": false,
+  "original_primary40_runtime_checks_preserved": true
+}

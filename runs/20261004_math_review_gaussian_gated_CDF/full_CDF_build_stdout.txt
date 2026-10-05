@@ -1,0 +1,16 @@
+TruncGaussProof/GaussianGatedCDF.lean:67:6: error: could not synthesize default value for parameter 'h₁' using tactics
+TruncGaussProof/GaussianGatedCDF.lean:67:6: error: tactic 'aesop' failed, failed to prove the goal. Some goals were not explored because the maximum rule application depth (30) was reached. Set option 'maxRuleApplicationDepth' to increase the limit.
+Initial goal:
+  μ σ a b : ℝ
+  hσ : 0 < σ
+  ha : 0 ≤ a
+  hab : a ≤ b
+  hset : Set.Ioc a b ∩ Set.Ici 0 = Set.Ioc a b
+  ⊢ (gaussianOffsetLaw (-μ) σ) (Set.Iic b) ≠ ⊤
+Remaining goals after safe rules:
+  μ σ a b : ℝ
+  hσ : 0 < σ
+  ha : 0 ≤ a
+  hab : a ≤ b
+  hset : Set.Ioc a b ∩ Set.Ici 0 = Set.Ioc a b
+  ⊢ (gaussianOffsetLaw (-μ) σ) (Set.Iic b) ≠ ⊤

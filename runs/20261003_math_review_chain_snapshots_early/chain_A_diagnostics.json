@@ -1,0 +1,248 @@
+{
+  "runs": [
+    "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_snapshots_early/chain_A_seed301",
+    "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_snapshots_early/chain_A_seed302",
+    "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_snapshots_early/chain_A_seed303",
+    "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_snapshots_early/chain_A_seed304"
+  ],
+  "prefixes": [
+    "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_snapshots_early/chain_A_seed301/chains/math_restoration_A_seed301",
+    "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_snapshots_early/chain_A_seed302/chains/math_restoration_A_seed302",
+    "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_snapshots_early/chain_A_seed303/chains/math_restoration_A_seed303",
+    "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_snapshots_early/chain_A_seed304/chains/math_restoration_A_seed304"
+  ],
+  "seeds": [
+    301,
+    302,
+    303,
+    304
+  ],
+  "burnin_fraction_of_stored_rows": 0.2,
+  "diagnostics": {
+    "omegabh2": {
+      "method": "ArviZ_rank_folded_split_rhat_bulk_tail_quantile_ESS_and_MCSE",
+      "arviz_version": "1.3.0",
+      "n_chains": 4,
+      "draws_per_chain": 719,
+      "dropped_prefix_draws_per_chain": [
+        66,
+        154,
+        0,
+        30
+      ],
+      "quantile_probability": 0.95,
+      "quantile_full_draws": 0.023011388,
+      "quantile_retained_draws": 0.023020396,
+      "quantile_half_difference": 0.00031931800000000246,
+      "quantile_mcse_limit": 1.2231563265716127e-05,
+      "quantile_mcse_scope": "population_quantile_estimated_from_equal_length_last_draws",
+      "rank_folded_split_rhat": 1.5488429141396625,
+      "bulk_ess": 7.2876530855988575,
+      "tail_ess_05_95": 45.871782767890274,
+      "quantile_ess": 45.871782767890274,
+      "quantile_mcse": 0.0001221525000000001,
+      "diagnostic_thresholds_pass": false,
+      "mathematical_convergence_certificate": false,
+      "warnings": [
+        "Rank/folded split Rhat exceeds 1.01.",
+        "Bulk, tail, or quantile ESS is below 400.",
+        "Quantile MCSE exceeds the declared precision target."
+      ],
+      "precision_target_scope": "fraction_of_empirical_posterior_standard_deviation"
+    },
+    "omegach2": {
+      "method": "ArviZ_rank_folded_split_rhat_bulk_tail_quantile_ESS_and_MCSE",
+      "arviz_version": "1.3.0",
+      "n_chains": 4,
+      "draws_per_chain": 719,
+      "dropped_prefix_draws_per_chain": [
+        66,
+        154,
+        0,
+        30
+      ],
+      "quantile_probability": 0.95,
+      "quantile_full_draws": 0.11828534,
+      "quantile_retained_draws": 0.1182929,
+      "quantile_half_difference": 0.00026149999999999785,
+      "quantile_mcse_limit": 5.414741985079115e-05,
+      "quantile_mcse_scope": "population_quantile_estimated_from_equal_length_last_draws",
+      "rank_folded_split_rhat": 1.2398939855807711,
+      "bulk_ess": 14.019631708419507,
+      "tail_ess_05_95": 23.95941208279296,
+      "quantile_ess": 23.95941208279296,
+      "quantile_mcse": 0.0004062800000000019,
+      "diagnostic_thresholds_pass": false,
+      "mathematical_convergence_certificate": false,
+      "warnings": [
+        "Rank/folded split Rhat exceeds 1.01.",
+        "Bulk, tail, or quantile ESS is below 400.",
+        "Quantile MCSE exceeds the declared precision target."
+      ],
+      "precision_target_scope": "fraction_of_empirical_posterior_standard_deviation"
+    },
+    "H0": {
+      "method": "ArviZ_rank_folded_split_rhat_bulk_tail_quantile_ESS_and_MCSE",
+      "arviz_version": "1.3.0",
+      "n_chains": 4,
+      "draws_per_chain": 719,
+      "dropped_prefix_draws_per_chain": [
+        66,
+        154,
+        0,
+        30
+      ],
+      "quantile_probability": 0.95,
+      "quantile_full_draws": 69.25492,
+      "quantile_retained_draws": 69.25492,
+      "quantile_half_difference": 0.038550999999998226,
+      "quantile_mcse_limit": 0.019800664792961734,
+      "quantile_mcse_scope": "population_quantile_estimated_from_equal_length_last_draws",
+      "rank_folded_split_rhat": 1.283428424363477,
+      "bulk_ess": 11.764740128570576,
+      "tail_ess_05_95": 44.70316871379954,
+      "quantile_ess": 57.18269938227662,
+      "quantile_mcse": 0.048658500000001936,
+      "diagnostic_thresholds_pass": false,
+      "mathematical_convergence_certificate": false,
+      "warnings": [
+        "Rank/folded split Rhat exceeds 1.01.",
+        "Bulk, tail, or quantile ESS is below 400.",
+        "Quantile MCSE exceeds the declared precision target."
+      ],
+      "precision_target_scope": "fraction_of_empirical_posterior_standard_deviation"
+    },
+    "logA": {
+      "method": "ArviZ_rank_folded_split_rhat_bulk_tail_quantile_ESS_and_MCSE",
+      "arviz_version": "1.3.0",
+      "n_chains": 4,
+      "draws_per_chain": 719,
+      "dropped_prefix_draws_per_chain": [
+        66,
+        154,
+        0,
+        30
+      ],
+      "quantile_probability": 0.95,
+      "quantile_full_draws": 3.0346573,
+      "quantile_retained_draws": 3.036221,
+      "quantile_half_difference": 0.004768900000000187,
+      "quantile_mcse_limit": 0.0007728450965243422,
+      "quantile_mcse_scope": "population_quantile_estimated_from_equal_length_last_draws",
+      "rank_folded_split_rhat": 1.228570907294537,
+      "bulk_ess": 14.306322633256599,
+      "tail_ess_05_95": 18.841242807680832,
+      "quantile_ess": 86.29321733847674,
+      "quantile_mcse": 0.0026964499999999614,
+      "diagnostic_thresholds_pass": false,
+      "mathematical_convergence_certificate": false,
+      "warnings": [
+        "Rank/folded split Rhat exceeds 1.01.",
+        "Bulk, tail, or quantile ESS is below 400.",
+        "Quantile MCSE exceeds the declared precision target."
+      ],
+      "precision_target_scope": "fraction_of_empirical_posterior_standard_deviation"
+    },
+    "ns": {
+      "method": "ArviZ_rank_folded_split_rhat_bulk_tail_quantile_ESS_and_MCSE",
+      "arviz_version": "1.3.0",
+      "n_chains": 4,
+      "draws_per_chain": 719,
+      "dropped_prefix_draws_per_chain": [
+        66,
+        154,
+        0,
+        30
+      ],
+      "quantile_probability": 0.95,
+      "quantile_full_draws": 1.0493974,
+      "quantile_retained_draws": 1.0503663,
+      "quantile_half_difference": 0.00415270000000012,
+      "quantile_mcse_limit": 0.0005994712413065227,
+      "quantile_mcse_scope": "population_quantile_estimated_from_equal_length_last_draws",
+      "rank_folded_split_rhat": 1.1588093263596226,
+      "bulk_ess": 18.307564286383815,
+      "tail_ess_05_95": 68.79732400338582,
+      "quantile_ess": 165.05564973541206,
+      "quantile_mcse": 0.002846200000000021,
+      "diagnostic_thresholds_pass": false,
+      "mathematical_convergence_certificate": false,
+      "warnings": [
+        "Rank/folded split Rhat exceeds 1.01.",
+        "Bulk, tail, or quantile ESS is below 400.",
+        "Quantile MCSE exceeds the declared precision target."
+      ],
+      "precision_target_scope": "fraction_of_empirical_posterior_standard_deviation"
+    },
+    "tau": {
+      "method": "ArviZ_rank_folded_split_rhat_bulk_tail_quantile_ESS_and_MCSE",
+      "arviz_version": "1.3.0",
+      "n_chains": 4,
+      "draws_per_chain": 719,
+      "dropped_prefix_draws_per_chain": [
+        66,
+        154,
+        0,
+        30
+      ],
+      "quantile_probability": 0.95,
+      "quantile_full_draws": 0.067739023,
+      "quantile_retained_draws": 0.067739023,
+      "quantile_half_difference": 0.0008263219999999905,
+      "quantile_mcse_limit": 0.00029071001866614086,
+      "quantile_mcse_scope": "population_quantile_estimated_from_equal_length_last_draws",
+      "rank_folded_split_rhat": 1.3632789684080726,
+      "bulk_ess": 9.74973463073648,
+      "tail_ess_05_95": 17.87574163604563,
+      "quantile_ess": 103.1434812712438,
+      "quantile_mcse": 0.000478250999999999,
+      "diagnostic_thresholds_pass": false,
+      "mathematical_convergence_certificate": false,
+      "warnings": [
+        "Rank/folded split Rhat exceeds 1.01.",
+        "Bulk, tail, or quantile ESS is below 400.",
+        "Quantile MCSE exceeds the declared precision target."
+      ],
+      "precision_target_scope": "fraction_of_empirical_posterior_standard_deviation"
+    },
+    "mnu": {
+      "method": "ArviZ_rank_folded_split_rhat_bulk_tail_quantile_ESS_and_MCSE",
+      "arviz_version": "1.3.0",
+      "n_chains": 4,
+      "draws_per_chain": 719,
+      "dropped_prefix_draws_per_chain": [
+        66,
+        154,
+        0,
+        30
+      ],
+      "quantile_probability": 0.95,
+      "quantile_full_draws": 0.12930665,
+      "quantile_retained_draws": 0.12930665,
+      "quantile_half_difference": 0.05060173500000001,
+      "quantile_mcse_limit": 0.005,
+      "quantile_mcse_scope": "population_quantile_estimated_from_equal_length_last_draws",
+      "rank_folded_split_rhat": 1.0500612688797892,
+      "bulk_ess": 78.52618043700203,
+      "tail_ess_05_95": 80.32761513270258,
+      "quantile_ess": 139.8154222997224,
+      "quantile_mcse": 0.013610744999999994,
+      "diagnostic_thresholds_pass": false,
+      "mathematical_convergence_certificate": false,
+      "warnings": [
+        "Rank/folded split Rhat exceeds 1.01.",
+        "Bulk, tail, or quantile ESS is below 400.",
+        "Quantile MCSE exceeds the declared precision target."
+      ],
+      "precision_target_scope": "absolute_parameter_units"
+    }
+  },
+  "all_diagnostic_thresholds_pass": false,
+  "independence_scope": "separate recorded seeds and chain files; initialization independence assumed",
+  "packages": {
+    "arviz": "1.3.0",
+    "arviz_stats": "1.3.3",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "utc": "2026-10-05T00:21:14.986519+00:00",
+  "review_type": "distinct_self_review_not_independent_agent",
+  "records": [
+    {
+      "seed": 2003,
+      "captured_mass_eV": 11.436878239360212,
+      "phase_receipt_sha256": "5a82b0487c7cdd803ce2e7301b3da3aa85fd749efec8f52ad9c71269cd5f6910",
+      "ablation_receipt_sha256": "c0c0bd89f540d0a84843af3d2ad8a372bad9a4b527ec5aa62f6db995447d456a",
+      "isolated_fresh_model_failure_verified": true,
+      "native_original_direct_replay_arrays_equal": true,
+      "finite_unlensed_nonfinite_lens_potential_and_lensed": true,
+      "finite_linear_lensing_and_takahashi_controls": true,
+      "NaN_mead2020_and_mead2016_controls": true
+    },
+    {
+      "seed": 2004,
+      "captured_mass_eV": 17.67540797501886,
+      "phase_receipt_sha256": "708034bccbbaa5ec0ac87dbb27549a6af44fbb2f182f83d3c1e858ef11240900",
+      "ablation_receipt_sha256": "971094c7f110db61b5febcc2fa28c79f49126fec96dcf10adb1bffdc03f2007b",
+      "isolated_fresh_model_failure_verified": true,
+      "native_original_direct_replay_arrays_equal": true,
+      "finite_unlensed_nonfinite_lens_potential_and_lensed": true,
+      "finite_linear_lensing_and_takahashi_controls": true,
+      "NaN_mead2020_and_mead2016_controls": true
+    }
+  ],
+  "all_ablation_parameter_changes_exactly_scoped": true,
+  "stock_feedback_serial_branch_arrays_match_selected_original": true,
+  "direct_HM_verbose_flag_reset_by_native_FeedbackLevel": true,
+  "failure_localization": "HMcode nonlinear lensing path at two selected prior-interior captured points",
+  "first_invalid_native_operation_identified": false,
+  "solver_repair_or_uniform_support_proved": false,
+  "posterior_qualified": false,
+  "ablation_model_used_as_production_fallback": false
+}

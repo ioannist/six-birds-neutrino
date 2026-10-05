@@ -1,0 +1,18 @@
+{
+  "utc": "2026-10-04T09:53:56.662183+00:00",
+  "command": [
+    "/tmp/neutrino-math-review-venv/bin/python",
+    "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_grid12_trial_B_seed1502/verify_first_rows.py"
+  ],
+  "environment": {
+    "PYTHONPATH": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend:/home/repos/six-birds-neutrino/src",
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  },
+  "exit_code": 0,
+  "snapshot_command_exit_code": 0,
+  "native_check_script_sha256": "b984b81d966306df1f62185abadcc52f23b00a0d79ceac4d9d9dc7fef0e371df",
+  "snapshot_script_sha256": "5e0e2464af3103305324306c0eb2f2bb03343df99b327c14d1a44bbd642090bf"
+}

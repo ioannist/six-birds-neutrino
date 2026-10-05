@@ -1,0 +1,24 @@
+{
+  "utc": "2026-10-05T04:00:26.242092+00:00",
+  "source": "runs/20261005_math_review_registered66_checkpoint_v2/observe_registered_runtime.py",
+  "source_sha256": "85d5bbf8fabdd96e0a31e38583b58b1e5775b84f5adb586b2100cd6ae9a92b7a",
+  "changes": [
+    [
+      "if 2100 <= e['seed'] < 2200:",
+      "if e['seed'] >= 2100:"
+    ],
+    [
+      "assert not (ROOT / 'runs/20261005_math_review_sigma_time_v3_posterior_activation' / f'seed{e[\"seed\"]}' / 'launcher_stderr.txt').read_bytes()",
+      "activation_name = 'sigma_time_v3_posterior_activation' if e['seed'] < 2200 else 'CLASS_fresh_recovery_activation'\n        assert not (ROOT / f'runs/20261005_math_review_{activation_name}' / f'seed{e[\"seed\"]}' / 'launcher_stderr.txt').read_bytes()"
+    ],
+    [
+      "assert chain is not None or e['seed'] >= 2200",
+      "assert chain is not None"
+    ],
+    [
+      "assert (weights or e['seed'] >= 2200) and all(w > 0 and w.denominator == 1 for w in weights)",
+      "assert weights and all(w > 0 and w.denominator == 1 for w in weights)"
+    ]
+  ],
+  "scope": "Require complete saved-row proofs for both separate CLASS recovery trials; preserve every original cohort."
+}

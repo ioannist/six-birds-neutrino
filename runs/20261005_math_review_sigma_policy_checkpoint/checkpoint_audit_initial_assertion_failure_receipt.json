@@ -1,0 +1,99 @@
+{
+  "utc": "2026-10-05T01:24:07.106649+00:00",
+  "attempt": "previous inline audit; AssertionError before scope receipt was written",
+  "cause": "Audit used n//2 instead of floor((n-1)/2) for middle of three linspace indices when n is even.",
+  "witnesses": [
+    {
+      "group": "old_A3200",
+      "seed": 1702,
+      "stored_rows": 1836,
+      "actual_indices": [
+        0,
+        917,
+        1835
+      ],
+      "incorrect_previous_audit_indices": [
+        0,
+        918,
+        1835
+      ]
+    },
+    {
+      "group": "old_A3200",
+      "seed": 1704,
+      "stored_rows": 1792,
+      "actual_indices": [
+        0,
+        895,
+        1791
+      ],
+      "incorrect_previous_audit_indices": [
+        0,
+        896,
+        1791
+      ]
+    },
+    {
+      "group": "old_B4095",
+      "seed": 1706,
+      "stored_rows": 1688,
+      "actual_indices": [
+        0,
+        843,
+        1687
+      ],
+      "incorrect_previous_audit_indices": [
+        0,
+        844,
+        1687
+      ]
+    },
+    {
+      "group": "old_B4095",
+      "seed": 1707,
+      "stored_rows": 1736,
+      "actual_indices": [
+        0,
+        867,
+        1735
+      ],
+      "incorrect_previous_audit_indices": [
+        0,
+        868,
+        1735
+      ]
+    },
+    {
+      "group": "old_B4095",
+      "seed": 1708,
+      "stored_rows": 1672,
+      "actual_indices": [
+        0,
+        835,
+        1671
+      ],
+      "incorrect_previous_audit_indices": [
+        0,
+        836,
+        1671
+      ]
+    },
+    {
+      "group": "current_A3200",
+      "seed": 1901,
+      "stored_rows": 1918,
+      "actual_indices": [
+        0,
+        958,
+        1917
+      ],
+      "incorrect_previous_audit_indices": [
+        0,
+        959,
+        1917
+      ]
+    }
+  ],
+  "original_native_receipts_modified": false,
+  "correction": "Bind by seed and use the contract and exact native verifier selection."
+}

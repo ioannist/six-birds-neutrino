@@ -1,0 +1,46 @@
+{
+  "utc": "2026-10-03T15:37:57.164396+00:00",
+  "scope": "first_completed_A_point_only_other_points_pending",
+  "posterior_accuracy_certified": false,
+  "progress_sha256": "8d2d66280e181c42eca58ea26954681027e2777eacb2a4df091d38a0b40689d5",
+  "broader_metrics_sha256": "1199e5daca6ffbbec3b4222f222ce1ae0e5893bddef3eef967e55c7346aed64e",
+  "native_record": {
+    "point": {
+      "omegabh2": 0.022693776588245253,
+      "omegach2": 0.11623226159102945,
+      "H0": 68.76649226539791,
+      "logA": 3.0422198957229982,
+      "ns": 0.98070405386811,
+      "tau": 0.057044951687684003,
+      "mnu_sample": 0.06036696203896391,
+      "A_planck": 1.0002399727069142,
+      "TT_tSZ_Amp": 2.128512459891876,
+      "TT_kSZ_Amp": 10.0
+    },
+    "native_chi2": {
+      "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 10.497906325826502,
+      "planck_2018_lowl.TT": 20.916146934110657,
+      "planck_2018_lowl.EE_sroll2": 390.30756771007725,
+      "planck_2018_highl_plik.TT_lite_native": 72.00341537004167,
+      "planckpr4lensing.PlanckPR4Lensing": 9.214456026624003,
+      "lensA": 2513.135640064372,
+      "lensB": 3791.423546079991
+    },
+    "spectrum_ell_max": {
+      "tt": 4095,
+      "ee": 4095
+    },
+    "elapsed_seconds": 7529.303863542154
+  },
+  "native_reference_medium_minus_reference": {
+    "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": -4.801593131986692e-07,
+    "planck_2018_lowl.TT": 1.2080074611731106e-06,
+    "planck_2018_lowl.EE_sroll2": 0.0,
+    "planck_2018_highl_plik.TT_lite_native": -0.0007087216331882473,
+    "planckpr4lensing.PlanckPR4Lensing": 0.00020616528147954227,
+    "lensA": 5.617528358925483e-05,
+    "lensB": -0.04500134440513648
+  },
+  "own_joint_reference_medium_minus_reference": -0.0004456532199714758,
+  "default_native_components_equal": true
+}

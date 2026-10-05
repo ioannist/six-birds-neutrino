@@ -1,0 +1,51 @@
+{
+  "policy_id": "camb204_sigma_refinement_v2",
+  "solver_version": "2.0.4",
+  "archive_url": "https://files.pythonhosted.org/packages/51/0b/856e8e329c088155509e3c1a999b02cd3f0333a31fc1fa37653455a4ec80/camb-2.0.4.tar.gz",
+  "archive_sha256": "2f1f5f3b3964a3746693dc88a54218dca4ea049a04726f8177664c11d2d2616e",
+  "source_root": "camb-2.0.4",
+  "source_file": "fortran/halofit.f90",
+  "original_source_sha256": "78dab0862709a94346c5cb300ad790836b5144f1b2f803ae9c6599ee7f1a9257",
+  "patched_source_sha256": "271834bd99ea03f4a93a983a52202b28897e75f07664f72192b40b5e70af099d",
+  "relative_stopping_tolerance": 1e-06,
+  "minimum_sigma_refinement_level": 14,
+  "other_integrator_minimum_level": 5,
+  "changes": [
+    {
+      "before": "real(dl), parameter :: acc_sigma_integration = 1e-4",
+      "after": "real(dl), parameter :: acc_sigma_integration = 1e-6"
+    },
+    {
+      "before": "sigma_integral = sqrt(integrate(tmin, tmax, sigma_integrand, r, z, itype, cosm, acc))",
+      "after": "sigma_integral = sqrt(integrate(tmin, tmax, sigma_integrand, r, z, itype, cosm, acc, minimum_level=14, maximum_level=22))"
+    },
+    {
+      "before": "function integrate(a, b, f, y, z, itype, cosm, acc)",
+      "after": "function integrate(a, b, f, y, z, itype, cosm, acc, minimum_level, maximum_level)"
+    },
+    {
+      "before": "    integer, parameter :: jmin = 5",
+      "after": "    integer, parameter :: jmin = 5\n    integer, intent(in), optional :: minimum_level\n    integer :: active_minimum\n    integer, intent(in), optional :: maximum_level\n    integer :: active_maximum"
+    },
+    {
+      "before": "    if (a == b) then\n\n        ! Fix the answer to zero",
+      "after": "    active_minimum = jmin\n    if (present(minimum_level)) active_minimum = minimum_level\n    active_maximum = jmax\n    if (present(maximum_level)) active_maximum = maximum_level\n\n    if (a == b) then\n\n        ! Fix the answer to zero"
+    },
+    {
+      "before": "if (j >= jmin .and. sum_old /= 0) then",
+      "after": "if (j >= active_minimum .and. sum_old /= 0) then"
+    },
+    {
+      "before": "do j = 1, jmax",
+      "after": "do j = 1, active_maximum"
+    },
+    {
+      "before": "if (j == jmax) then",
+      "after": "if (j == active_maximum) then"
+    }
+  ],
+  "scope": "Sigma-integral stopping policy only. Physical integrand, HMcode, prior and likelihood unchanged. Empirical candidate; no uniform integral-error, full-prior support or posterior certificate. Changes numerical target: use fresh separate histories.",
+  "production_adopted": false,
+  "maximum_sigma_refinement_level": 22,
+  "other_integrator_maximum_level": 20
+}

@@ -1,0 +1,35 @@
+{
+  "utc": "2026-10-05T05:08:02.216003+00:00",
+  "seed": 2406,
+  "config_sha256": "61b476b8becebea4c9a11bf4d7ce1c9d133ddb1c791cb843afa38bc9289fd810",
+  "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+  "initial_point": {
+    "omegabh2": 0.021889286526490442,
+    "omegach2": 0.11750917125639006,
+    "H0": 68.25805427705994,
+    "logA": 3.0483038258119355,
+    "ns": 0.9643263097150561,
+    "tau": 0.05356675080449915,
+    "mnu_sample": 0.011121665498333986,
+    "A_planck": 1.0085587833816112,
+    "TT_tSZ_Amp": 1.3365778403359632,
+    "TT_kSZ_Amp": 1.8588543075439934
+  },
+  "logpost": -949.8427558810176,
+  "logpriors": [
+    -5.793471430396919
+  ],
+  "loglikes": {
+    "sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": -692.8550816784568,
+    "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": -5.299684181620342,
+    "planck_2018_lowl.TT": -11.550723175175165,
+    "planck_2018_lowl.EE_sroll2": -195.11321208831842,
+    "planck_2018_highl_plik.TT_lite_native": -34.94778386555574,
+    "planckpr4lensing.PlanckPR4Lensing": -4.282799461494162
+  },
+  "provider_arrays_sha256": "65ba9c45e39dd91f43a72277225060b626e5bad7194766de034b51a7a5a8daa2",
+  "actual_launcher_guard_checked": true,
+  "wrong_native_contract_refused": true,
+  "fresh_initial_point_finite": true,
+  "scope": "Selected finite native start; no historical target equivalence, every-transition or convergence certificate."
+}

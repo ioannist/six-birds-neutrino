@@ -1,0 +1,20 @@
+{
+  "utc": "2026-10-05T06:45:41.267870+00:00",
+  "original": "runs/20261005_math_review_precision_obstacle_audit/self_review.py",
+  "original_sha256": "cd2c37a202893650d6b4130b6a6b769832d0f995f8c6f59afcb1e6d918e7caf3",
+  "source": "runs/20261005_math_review_precision_obstacle_audit/self_review_v2.py",
+  "source_sha256": "3aacf7697c312743a107a2abf72382e4cdc137e90d3ca374ef4cba1792d862db",
+  "changes": [
+    [
+      "assert [r[\"group\"] for r in receipt[\"records\"] if r[\"only_precision_gates_fail_at_this_snapshot\"] == [\"current_A4095\"]",
+      "assert [r[\"group\"] for r in receipt[\"records\"] if r[\"only_precision_gates_fail_at_this_snapshot\"]] == [\"current_A4095\"]"
+    ]
+  ],
+  "actual_original_direct_exit_code": 1,
+  "error": "SyntaxError: list comprehension closing bracket missing",
+  "first_repair_preparation_exit_code": 1,
+  "first_repair_reason": "Expected indentation absent in top-level assertion; no v2 output written.",
+  "premature_v2_invocation_exit_code": 2,
+  "original_failed_script_preserved": true,
+  "diagnostic_inputs_and_acceptance_gates_changed": false
+}

@@ -1,0 +1,25 @@
+[camb] `camb` module loaded successfully from /tmp/neutrino-math-review-venv/lib/python3.12/site-packages/camb
+baseline: audit_A completed
+baseline: audit_A_mass_minus completed
+baseline: audit_A_mass_plus completed
+baseline: audit_B completed
+baseline: audit_B_mass_minus completed
+baseline: audit_B_mass_plus completed
+[camb] `camb` module loaded successfully from /tmp/neutrino-math-review-venv/lib/python3.12/site-packages/camb
+selected_reference_settings: audit_A completed
+selected_reference_settings: audit_A_mass_minus completed
+selected_reference_settings: audit_A_mass_plus completed
+selected_reference_settings: audit_B completed
+selected_reference_settings: audit_B_mass_minus completed
+selected_reference_settings: audit_B_mass_plus completed
+[exception handler] ---------------------------------------
+
+Traceback (most recent call last):
+  File "/home/repos/six-birds-neutrino/scripts/check_boltzmann_numerical_accuracy.py", line 113, in <module>
+    write_json(args.outdir / 'runtime_state.json', runtime)
+    ^^^^^^
+  File "/home/repos/six-birds-neutrino/scripts/check_boltzmann_numerical_accuracy.py", line 85, in main
+    a, b = [spectra[v][label][spec] for v in records]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Finite spectra with matched coverage required.
+-------------------------------------------------------------

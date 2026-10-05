@@ -1,0 +1,178 @@
+{
+  "utc": "2026-10-05T07:44:28.767984+00:00",
+  "reviewer": "distinct_self_review_not_independent_agent",
+  "runtime_sha256": "a3651a5a2899a0617e8ac1d4fdb2e96d6b3f142c1cbc793ed6492f9009e3e206",
+  "records": [
+    {
+      "group": "quad_A",
+      "assessment_binding": null,
+      "trigger": 7353,
+      "eligible": false,
+      "due": false
+    },
+    {
+      "group": "quad_B",
+      "assessment_binding": null,
+      "trigger": 7212,
+      "eligible": false,
+      "due": false
+    },
+    {
+      "group": "medium_A",
+      "assessment_binding": null,
+      "trigger": 1706,
+      "eligible": false,
+      "due": false
+    },
+    {
+      "group": "medium_B",
+      "assessment_binding": null,
+      "trigger": 1456,
+      "eligible": false,
+      "due": false
+    },
+    {
+      "group": "grid12_B",
+      "assessment_binding": null,
+      "trigger": 1000,
+      "eligible": false,
+      "due": false
+    },
+    {
+      "group": "old_A3200",
+      "assessment_binding": {
+        "path": "runs/20261005_math_review_fresh_CAMB_tenth_old_A3200_diagnostics/snapshot_receipt.json",
+        "sha256": "6fb4d9d9c1c00547d050c995830009a4e6bd27d375726222035ff94a0fde89b3"
+      },
+      "trigger": 8471,
+      "eligible": true,
+      "due": false
+    },
+    {
+      "group": "old_B4095",
+      "assessment_binding": {
+        "path": "runs/20261005_math_review_fresh_CAMB_tenth_old_B4095_diagnostics/snapshot_receipt.json",
+        "sha256": "43d2cc86953685d019ef0d5d36ed5154a5c8264a9d75dd1b63a207e0e94e24a7"
+      },
+      "trigger": 8256,
+      "eligible": true,
+      "due": false
+    },
+    {
+      "group": "current_A4095",
+      "assessment_binding": {
+        "path": "runs/20261005_math_review_fresh_CAMB_tenth_current_A4095_diagnostics/snapshot_receipt.json",
+        "sha256": "371042cb86b149038e21d7b52223848cbbaf1e2d2ef906a087362310e0aeab57"
+      },
+      "trigger": 7575,
+      "eligible": true,
+      "due": false
+    },
+    {
+      "group": "current_B4095",
+      "assessment_binding": {
+        "path": "runs/20261005_math_review_fresh_CAMB_tenth_current_B4095_diagnostics/snapshot_receipt.json",
+        "sha256": "556a6c5b0d1e19c1db28ec1f38a5b46d1dd7568eac959c87473900545deb2a36"
+      },
+      "trigger": 7408,
+      "eligible": true,
+      "due": false
+    },
+    {
+      "group": "current_A3200",
+      "assessment_binding": {
+        "path": "runs/20261005_math_review_fresh_CAMB_eleventh_current_A3200_diagnostics/snapshot_receipt.json",
+        "sha256": "9f426e960b8583e738f96664f0503e3e2155ab6d9c66bfc65340e02d5717bd46"
+      },
+      "trigger": 9659,
+      "eligible": true,
+      "due": false
+    },
+    {
+      "group": "upper20_A4095",
+      "assessment_binding": null,
+      "trigger": 1000,
+      "eligible": false,
+      "due": false
+    },
+    {
+      "group": "upper20_B4095",
+      "assessment_binding": null,
+      "trigger": 1000,
+      "eligible": false,
+      "due": false
+    },
+    {
+      "group": "sigma_time_v3_A4095_cap5",
+      "assessment_binding": {
+        "path": "runs/20261005_math_review_sigma_time_v3_third_A4095_cap5_diagnostics/snapshot_receipt.json",
+        "sha256": "eebe1f99f954aa216521625318c6d787af1fc52caccf296a34319f4a2ed5febc"
+      },
+      "trigger": 1812,
+      "eligible": true,
+      "due": false
+    },
+    {
+      "group": "sigma_time_v3_B4095_cap20",
+      "assessment_binding": {
+        "path": "runs/20261005_math_review_sigma_time_v3_second_B4095_cap20_diagnostics/snapshot_receipt.json",
+        "sha256": "2644ee287680db101b5acc05a8dc98b39ca65572130bd89fffc40a6852cdca98"
+      },
+      "trigger": 1486,
+      "eligible": true,
+      "due": true
+    },
+    {
+      "group": "sigma_time_v3_B4095_cap5",
+      "assessment_binding": {
+        "path": "runs/20261005_math_review_sigma_time_v3_second_B4095_cap5_diagnostics/snapshot_receipt.json",
+        "sha256": "02a37d81698fca82b20400c313b5564168194efe94e5f1f77516cd41a3dec770"
+      },
+      "trigger": 1499,
+      "eligible": true,
+      "due": true
+    },
+    {
+      "group": "sigma_time_v3_A4095_cap20",
+      "assessment_binding": {
+        "path": "runs/20261005_math_review_sigma_time_v3_second_A4095_cap20_diagnostics/snapshot_receipt.json",
+        "sha256": "e5d6bcb63f2b580248f4d98044c143f739b61c72155ffb11acebe2bcfb950bfe"
+      },
+      "trigger": 1461,
+      "eligible": true,
+      "due": false
+    },
+    {
+      "group": "fresh_recovery_medium_A",
+      "assessment_binding": null,
+      "trigger": 1000,
+      "eligible": true,
+      "due": false
+    },
+    {
+      "group": "fresh_recovery_quad_A",
+      "assessment_binding": null,
+      "trigger": 1000,
+      "eligible": true,
+      "due": false
+    },
+    {
+      "group": "fresh_recovery_medium_B",
+      "assessment_binding": null,
+      "trigger": 1000,
+      "eligible": true,
+      "due": false
+    },
+    {
+      "group": "fresh_recovery_quad_B",
+      "assessment_binding": null,
+      "trigger": 1000,
+      "eligible": true,
+      "due": false
+    }
+  ],
+  "exact_ceiling_growth_reconstructed": true,
+  "unassessed_candidate_and_CLASS_targets_keep_first_gate": true,
+  "terminal_cohorts_ineligible_and_memberships_preserved": true,
+  "posterior_qualified": false
+}

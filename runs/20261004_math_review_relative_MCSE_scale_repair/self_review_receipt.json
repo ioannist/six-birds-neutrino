@@ -1,0 +1,366 @@
+{
+  "utc": "2026-10-04T10:31:03.899066+00:00",
+  "review_type": "distinct_self_review_not_independent_review",
+  "method": "exact_binary64_Fraction_weighted_first_and_second_moments_then_scaled_square_root",
+  "latest_frozen_parameter_checks": [
+    {
+      "source_report": "runs/20261004_math_review_spt_chain_snapshots_fourteenth_A/chain_A_diagnostics.json",
+      "parameter": "omegabh2",
+      "rational_moment_SD": 0.00029708179108446745,
+      "scaled_expanded_SD": 0.00029708179108446745
+    },
+    {
+      "source_report": "runs/20261004_math_review_spt_chain_snapshots_fourteenth_A/chain_A_diagnostics.json",
+      "parameter": "omegach2",
+      "rational_moment_SD": 0.001092783694514805,
+      "scaled_expanded_SD": 0.001092783694514805
+    },
+    {
+      "source_report": "runs/20261004_math_review_spt_chain_snapshots_fourteenth_A/chain_A_diagnostics.json",
+      "parameter": "H0",
+      "rational_moment_SD": 0.3728495743026096,
+      "scaled_expanded_SD": 0.3728495743026096
+    },
+    {
+      "source_report": "runs/20261004_math_review_spt_chain_snapshots_fourteenth_A/chain_A_diagnostics.json",
+      "parameter": "logA",
+      "rational_moment_SD": 0.017866858887556854,
+      "scaled_expanded_SD": 0.017866858887556854
+    },
+    {
+      "source_report": "runs/20261004_math_review_spt_chain_snapshots_fourteenth_A/chain_A_diagnostics.json",
+      "parameter": "ns",
+      "rational_moment_SD": 0.013732825942388055,
+      "scaled_expanded_SD": 0.013732825942388054
+    },
+    {
+      "source_report": "runs/20261004_math_review_spt_chain_snapshots_fourteenth_A/chain_A_diagnostics.json",
+      "parameter": "tau",
+      "rational_moment_SD": 0.007232876932726822,
+      "scaled_expanded_SD": 0.007232876932726822
+    },
+    {
+      "source_report": "runs/20261004_math_review_spt_chain_snapshots_fourteenth_A/chain_A_diagnostics.json",
+      "parameter": "mnu",
+      "rational_moment_SD": 0.04418622218115466,
+      "scaled_expanded_SD": 0.044186222181154665
+    },
+    {
+      "source_report": "runs/20261004_math_review_spt_chain_snapshots_thirteenth_B/chain_B_diagnostics.json",
+      "parameter": "omegabh2",
+      "rational_moment_SD": 0.0001718712195003061,
+      "scaled_expanded_SD": 0.0001718712195003061
+    },
+    {
+      "source_report": "runs/20261004_math_review_spt_chain_snapshots_thirteenth_B/chain_B_diagnostics.json",
+      "parameter": "omegach2",
+      "rational_moment_SD": 0.0009017308878207372,
+      "scaled_expanded_SD": 0.0009017308878207373
+    },
+    {
+      "source_report": "runs/20261004_math_review_spt_chain_snapshots_thirteenth_B/chain_B_diagnostics.json",
+      "parameter": "H0",
+      "rational_moment_SD": 0.3254192448748094,
+      "scaled_expanded_SD": 0.3254192448748094
+    },
+    {
+      "source_report": "runs/20261004_math_review_spt_chain_snapshots_thirteenth_B/chain_B_diagnostics.json",
+      "parameter": "logA",
+      "rational_moment_SD": 0.01375915679071114,
+      "scaled_expanded_SD": 0.01375915679071114
+    },
+    {
+      "source_report": "runs/20261004_math_review_spt_chain_snapshots_thirteenth_B/chain_B_diagnostics.json",
+      "parameter": "ns",
+      "rational_moment_SD": 0.008921646779226399,
+      "scaled_expanded_SD": 0.008921646779226399
+    },
+    {
+      "source_report": "runs/20261004_math_review_spt_chain_snapshots_thirteenth_B/chain_B_diagnostics.json",
+      "parameter": "tau",
+      "rational_moment_SD": 0.005845473153244627,
+      "scaled_expanded_SD": 0.005845473153244627
+    },
+    {
+      "source_report": "runs/20261004_math_review_spt_chain_snapshots_thirteenth_B/chain_B_diagnostics.json",
+      "parameter": "mnu",
+      "rational_moment_SD": 0.03436059122772977,
+      "scaled_expanded_SD": 0.03436059122772977
+    },
+    {
+      "source_report": "runs/20261004_math_review_guarded_CLASS_second_diagnostics/quad_A_diagnostics.json",
+      "parameter": "omegabh2",
+      "rational_moment_SD": 0.0001905600262570677,
+      "scaled_expanded_SD": 0.0001905600262570677
+    },
+    {
+      "source_report": "runs/20261004_math_review_guarded_CLASS_second_diagnostics/quad_A_diagnostics.json",
+      "parameter": "omegach2",
+      "rational_moment_SD": 0.0007866044469476244,
+      "scaled_expanded_SD": 0.0007866044469476244
+    },
+    {
+      "source_report": "runs/20261004_math_review_guarded_CLASS_second_diagnostics/quad_A_diagnostics.json",
+      "parameter": "H0",
+      "rational_moment_SD": 0.3215527275725194,
+      "scaled_expanded_SD": 0.3215527275725194
+    },
+    {
+      "source_report": "runs/20261004_math_review_guarded_CLASS_second_diagnostics/quad_A_diagnostics.json",
+      "parameter": "logA",
+      "rational_moment_SD": 0.00948664561149486,
+      "scaled_expanded_SD": 0.00948664561149486
+    },
+    {
+      "source_report": "runs/20261004_math_review_guarded_CLASS_second_diagnostics/quad_A_diagnostics.json",
+      "parameter": "ns",
+      "rational_moment_SD": 0.005452458806797841,
+      "scaled_expanded_SD": 0.005452458806797841
+    },
+    {
+      "source_report": "runs/20261004_math_review_guarded_CLASS_second_diagnostics/quad_A_diagnostics.json",
+      "parameter": "tau",
+      "rational_moment_SD": 0.004538948208015861,
+      "scaled_expanded_SD": 0.004538948208015862
+    },
+    {
+      "source_report": "runs/20261004_math_review_guarded_CLASS_second_diagnostics/quad_A_diagnostics.json",
+      "parameter": "mnu_sample",
+      "rational_moment_SD": 0.03018756119476066,
+      "scaled_expanded_SD": 0.030187561194760664
+    },
+    {
+      "source_report": "runs/20261004_math_review_guarded_CLASS_second_diagnostics/quad_A_diagnostics.json",
+      "parameter": "A_planck",
+      "rational_moment_SD": 0.0031786376751201883,
+      "scaled_expanded_SD": 0.0031786376751201887
+    },
+    {
+      "source_report": "runs/20261004_math_review_guarded_CLASS_second_diagnostics/quad_A_diagnostics.json",
+      "parameter": "TT_tSZ_Amp",
+      "rational_moment_SD": 0.3651227772025056,
+      "scaled_expanded_SD": 0.3651227772025056
+    },
+    {
+      "source_report": "runs/20261004_math_review_guarded_CLASS_second_diagnostics/quad_A_diagnostics.json",
+      "parameter": "TT_kSZ_Amp",
+      "rational_moment_SD": 0.2905384346656142,
+      "scaled_expanded_SD": 0.29053843466561424
+    },
+    {
+      "source_report": "runs/20261004_math_review_guarded_CLASS_second_diagnostics/medium_A_diagnostics.json",
+      "parameter": "omegabh2",
+      "rational_moment_SD": 0.00015706381274659524,
+      "scaled_expanded_SD": 0.00015706381274659524
+    },
+    {
+      "source_report": "runs/20261004_math_review_guarded_CLASS_second_diagnostics/medium_A_diagnostics.json",
+      "parameter": "omegach2",
+      "rational_moment_SD": 0.000757092659233113,
+      "scaled_expanded_SD": 0.000757092659233113
+    },
+    {
+      "source_report": "runs/20261004_math_review_guarded_CLASS_second_diagnostics/medium_A_diagnostics.json",
+      "parameter": "H0",
+      "rational_moment_SD": 0.33491383048777507,
+      "scaled_expanded_SD": 0.3349138304877751
+    },
+    {
+      "source_report": "runs/20261004_math_review_guarded_CLASS_second_diagnostics/medium_A_diagnostics.json",
+      "parameter": "logA",
+      "rational_moment_SD": 0.009246960193267437,
+      "scaled_expanded_SD": 0.009246960193267439
+    },
+    {
+      "source_report": "runs/20261004_math_review_guarded_CLASS_second_diagnostics/medium_A_diagnostics.json",
+      "parameter": "ns",
+      "rational_moment_SD": 0.004480890021436231,
+      "scaled_expanded_SD": 0.00448089002143623
+    },
+    {
+      "source_report": "runs/20261004_math_review_guarded_CLASS_second_diagnostics/medium_A_diagnostics.json",
+      "parameter": "tau",
+      "rational_moment_SD": 0.004072545365257747,
+      "scaled_expanded_SD": 0.004072545365257747
+    },
+    {
+      "source_report": "runs/20261004_math_review_guarded_CLASS_second_diagnostics/medium_A_diagnostics.json",
+      "parameter": "mnu_sample",
+      "rational_moment_SD": 0.032426176391235476,
+      "scaled_expanded_SD": 0.032426176391235476
+    },
+    {
+      "source_report": "runs/20261004_math_review_guarded_CLASS_second_diagnostics/medium_A_diagnostics.json",
+      "parameter": "A_planck",
+      "rational_moment_SD": 0.0030040779620888517,
+      "scaled_expanded_SD": 0.0030040779620888517
+    },
+    {
+      "source_report": "runs/20261004_math_review_guarded_CLASS_second_diagnostics/medium_A_diagnostics.json",
+      "parameter": "TT_tSZ_Amp",
+      "rational_moment_SD": 0.2646687719672442,
+      "scaled_expanded_SD": 0.2646687719672442
+    },
+    {
+      "source_report": "runs/20261004_math_review_guarded_CLASS_second_diagnostics/medium_A_diagnostics.json",
+      "parameter": "TT_kSZ_Amp",
+      "rational_moment_SD": 0.22335760258757786,
+      "scaled_expanded_SD": 0.22335760258757784
+    },
+    {
+      "source_report": "runs/20261004_math_review_guarded_CLASS_third_B_diagnostics/quad_B_diagnostics.json",
+      "parameter": "omegabh2",
+      "rational_moment_SD": 0.00011143188209051729,
+      "scaled_expanded_SD": 0.00011143188209051729
+    },
+    {
+      "source_report": "runs/20261004_math_review_guarded_CLASS_third_B_diagnostics/quad_B_diagnostics.json",
+      "parameter": "omegach2",
+      "rational_moment_SD": 0.0006985310251372537,
+      "scaled_expanded_SD": 0.0006985310251372537
+    },
+    {
+      "source_report": "runs/20261004_math_review_guarded_CLASS_third_B_diagnostics/quad_B_diagnostics.json",
+      "parameter": "H0",
+      "rational_moment_SD": 0.2944153604712203,
+      "scaled_expanded_SD": 0.2944153604712203
+    },
+    {
+      "source_report": "runs/20261004_math_review_guarded_CLASS_third_B_diagnostics/quad_B_diagnostics.json",
+      "parameter": "logA",
+      "rational_moment_SD": 0.008522593897782453,
+      "scaled_expanded_SD": 0.008522593897782453
+    },
+    {
+      "source_report": "runs/20261004_math_review_guarded_CLASS_third_B_diagnostics/quad_B_diagnostics.json",
+      "parameter": "ns",
+      "rational_moment_SD": 0.0040704252260244786,
+      "scaled_expanded_SD": 0.004070425226024478
+    },
+    {
+      "source_report": "runs/20261004_math_review_guarded_CLASS_third_B_diagnostics/quad_B_diagnostics.json",
+      "parameter": "tau",
+      "rational_moment_SD": 0.00401050663777822,
+      "scaled_expanded_SD": 0.00401050663777822
+    },
+    {
+      "source_report": "runs/20261004_math_review_guarded_CLASS_third_B_diagnostics/quad_B_diagnostics.json",
+      "parameter": "mnu_sample",
+      "rational_moment_SD": 0.026104600081429955,
+      "scaled_expanded_SD": 0.026104600081429955
+    },
+    {
+      "source_report": "runs/20261004_math_review_guarded_CLASS_third_B_diagnostics/quad_B_diagnostics.json",
+      "parameter": "A_planck",
+      "rational_moment_SD": 0.0027373500005305066,
+      "scaled_expanded_SD": 0.0027373500005305066
+    },
+    {
+      "source_report": "runs/20261004_math_review_guarded_CLASS_third_B_diagnostics/quad_B_diagnostics.json",
+      "parameter": "TT_tSZ_Amp",
+      "rational_moment_SD": 0.15831877546225603,
+      "scaled_expanded_SD": 0.15831877546225603
+    },
+    {
+      "source_report": "runs/20261004_math_review_guarded_CLASS_third_B_diagnostics/quad_B_diagnostics.json",
+      "parameter": "TT_kSZ_Amp",
+      "rational_moment_SD": 0.42348610883064775,
+      "scaled_expanded_SD": 0.42348610883064775
+    },
+    {
+      "source_report": "runs/20261004_math_review_guarded_CLASS_third_B_diagnostics/medium_B_diagnostics.json",
+      "parameter": "omegabh2",
+      "rational_moment_SD": 0.0001230501274990007,
+      "scaled_expanded_SD": 0.0001230501274990007
+    },
+    {
+      "source_report": "runs/20261004_math_review_guarded_CLASS_third_B_diagnostics/medium_B_diagnostics.json",
+      "parameter": "omegach2",
+      "rational_moment_SD": 0.0006879469493233002,
+      "scaled_expanded_SD": 0.0006879469493233002
+    },
+    {
+      "source_report": "runs/20261004_math_review_guarded_CLASS_third_B_diagnostics/medium_B_diagnostics.json",
+      "parameter": "H0",
+      "rational_moment_SD": 0.3015125973619317,
+      "scaled_expanded_SD": 0.3015125973619317
+    },
+    {
+      "source_report": "runs/20261004_math_review_guarded_CLASS_third_B_diagnostics/medium_B_diagnostics.json",
+      "parameter": "logA",
+      "rational_moment_SD": 0.008986619029677607,
+      "scaled_expanded_SD": 0.008986619029677607
+    },
+    {
+      "source_report": "runs/20261004_math_review_guarded_CLASS_third_B_diagnostics/medium_B_diagnostics.json",
+      "parameter": "ns",
+      "rational_moment_SD": 0.004226265694116194,
+      "scaled_expanded_SD": 0.004226265694116194
+    },
+    {
+      "source_report": "runs/20261004_math_review_guarded_CLASS_third_B_diagnostics/medium_B_diagnostics.json",
+      "parameter": "tau",
+      "rational_moment_SD": 0.004161849596442981,
+      "scaled_expanded_SD": 0.004161849596442981
+    },
+    {
+      "source_report": "runs/20261004_math_review_guarded_CLASS_third_B_diagnostics/medium_B_diagnostics.json",
+      "parameter": "mnu_sample",
+      "rational_moment_SD": 0.02438166295875344,
+      "scaled_expanded_SD": 0.024381662958753443
+    },
+    {
+      "source_report": "runs/20261004_math_review_guarded_CLASS_third_B_diagnostics/medium_B_diagnostics.json",
+      "parameter": "A_planck",
+      "rational_moment_SD": 0.0030775763204920485,
+      "scaled_expanded_SD": 0.0030775763204920485
+    },
+    {
+      "source_report": "runs/20261004_math_review_guarded_CLASS_third_B_diagnostics/medium_B_diagnostics.json",
+      "parameter": "TT_tSZ_Amp",
+      "rational_moment_SD": 0.16011488434156002,
+      "scaled_expanded_SD": 0.16011488434156002
+    },
+    {
+      "source_report": "runs/20261004_math_review_guarded_CLASS_third_B_diagnostics/medium_B_diagnostics.json",
+      "parameter": "TT_kSZ_Amp",
+      "rational_moment_SD": 0.4247438313124232,
+      "scaled_expanded_SD": 0.4247438313124232
+    }
+  ],
+  "analytic_extreme_controls": [
+    {
+      "values": [
+        -1e+200,
+        1e+200
+      ],
+      "before_SD": "nonfinite",
+      "rational_moment_SD": 1e+200,
+      "after_SD": 1e+200
+    },
+    {
+      "values": [
+        -1e-200,
+        1e-200
+      ],
+      "before_SD": 0.0,
+      "rational_moment_SD": 1e-200,
+      "after_SD": 1e-200
+    },
+    {
+      "values": [
+        -1.7976931348623157e+308,
+        1.7976931348623157e+308
+      ],
+      "before_SD": "nonfinite",
+      "rational_moment_SD": 1.7976931348623157e+308,
+      "after_SD": 1.7976931348623157e+308
+    }
+  ],
+  "coordinate_scale_replay_preserves_diagnostics_and_precision_decisions": true,
+  "rank_and_MCSE_algorithm_changed": false,
+  "universal_floating_point_certificate_claimed": false,
+  "script_sha256": "3fa97df3a87b7588d49740dd593b1796b8147dd42422d764ccce912d8d923920",
+  "impact_receipt_sha256": "fe38605f4f49a264eeaaa1bccc304d7b5f349fa82fa69ba7a499cdba83e76569",
+  "probe_receipt_sha256": "d88780a63aeb617ee42abd33b0c70e900f0b8caa4fc0f6358fd387e523d52ca8"
+}

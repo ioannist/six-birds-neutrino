@@ -1,0 +1,66 @@
+{
+  "scope": "six_recorded_restart_boundaries_for_later_segment_diagnostics",
+  "installed_mcmc_source_sha256": "455def4cc5462f57d0fbd365793630382a105112d7223c4c90329d3252534594",
+  "installed_mcmc_source": "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/cobaya/samplers/mcmc/mcmc.py",
+  "resumed_initial_point_discarded_on_first_acceptance": true,
+  "unwritten_holding_time_recovered": false,
+  "whole_file_is_uninterrupted_realized_path": false,
+  "historical_prefix_retained_for_native_accounting_and_provenance": true,
+  "segments": {
+    "601": {
+      "resume_seed": 801,
+      "historical_saved_rows": 99,
+      "first_post_recovery_row_index": 99,
+      "historical_chain_sha256": "1fa8c260adb44dddd70549b77992961bfc339b227a96a524ce9ccd0d3abce36d",
+      "historical_prefix_byte_count": 72400,
+      "source_run_dir": "runs/20261003_math_review_cmb_accuracy_chain_A_seed601",
+      "diagnostic_scope": "post_recovery_segment_only_with_burn_in_applied_within_segment"
+    },
+    "602": {
+      "resume_seed": 802,
+      "historical_saved_rows": 132,
+      "first_post_recovery_row_index": 132,
+      "historical_chain_sha256": "a1e2b7649a0353893fe72895c58c15cb983b4f91cb2a8735bb54540022c858df",
+      "historical_prefix_byte_count": 96292,
+      "source_run_dir": "runs/20261003_math_review_cmb_accuracy_chain_A_seed602",
+      "diagnostic_scope": "post_recovery_segment_only_with_burn_in_applied_within_segment"
+    },
+    "603": {
+      "resume_seed": 803,
+      "historical_saved_rows": 142,
+      "first_post_recovery_row_index": 142,
+      "historical_chain_sha256": "004d5521a33201b18f9b6e8d33ddcb224bf9709902e2cb44b778f5fa5a17bfa6",
+      "historical_prefix_byte_count": 103532,
+      "source_run_dir": "runs/20261003_math_review_cmb_accuracy_chain_B_seed603",
+      "diagnostic_scope": "post_recovery_segment_only_with_burn_in_applied_within_segment"
+    },
+    "604": {
+      "resume_seed": 804,
+      "historical_saved_rows": 125,
+      "first_post_recovery_row_index": 125,
+      "historical_chain_sha256": "fe12fe6431926e53472b4f695badc56c4dcf1e30e3d863ee03037143b7d7af35",
+      "historical_prefix_byte_count": 91224,
+      "source_run_dir": "runs/20261003_math_review_cmb_accuracy_chain_B_seed604",
+      "diagnostic_scope": "post_recovery_segment_only_with_burn_in_applied_within_segment"
+    },
+    "701": {
+      "resume_seed": 901,
+      "historical_saved_rows": 69,
+      "first_post_recovery_row_index": 69,
+      "historical_chain_sha256": "2ee7b048d4f97a9575102a37d45fcb6a5359eae57561808d02220c822f11f71d",
+      "historical_prefix_byte_count": 50680,
+      "source_run_dir": "runs/20261003_math_review_cmb_accuracy_dragging_chain_A_seed701",
+      "diagnostic_scope": "post_recovery_segment_only_with_burn_in_applied_within_segment"
+    },
+    "702": {
+      "resume_seed": 902,
+      "historical_saved_rows": 64,
+      "first_post_recovery_row_index": 64,
+      "historical_chain_sha256": "c66ccc8b9d4d6d48ba6e3375d4708e3c17010ff8d45a04a0fc84e45f0b86ad83",
+      "historical_prefix_byte_count": 47060,
+      "source_run_dir": "runs/20261003_math_review_cmb_accuracy_dragging_chain_B_seed702",
+      "diagnostic_scope": "post_recovery_segment_only_with_burn_in_applied_within_segment"
+    }
+  },
+  "posterior_convergence_verified": false
+}

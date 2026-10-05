@@ -1,0 +1,57 @@
+{
+  "utc": "2026-10-04T16:25:40.362324+00:00",
+  "reviewer": "self_review_no_independent_agent",
+  "public_declarations": [
+    "upperGate_tail_probability",
+    "upperConditionedLaw_isProbability",
+    "upperConditionedLaw_cdf",
+    "upperConditionedLaw_cdf_error",
+    "upperConditionedLaw_cdf_error_at_gate",
+    "upperConditionedLaw_quantile_level",
+    "truncatedGaussianLaw_cdf_pos_at_upperGate",
+    "upperConditionedGaussian_isProbability",
+    "upperConditionedGaussian_existsUnique_quantile"
+  ],
+  "exact_statement_scope": {
+    "generic_law": "any actual probability measure on real coordinates, including atoms",
+    "generic_retention": "cdf(U)>0 is explicit; the tail is probability strictly above U",
+    "construction": "actual conditional measure; normalization and CDF are derived",
+    "CDF_error": "nonnegative increase at most 1-F(U), attained at U",
+    "Gaussian_specialization": "actual integral-normalized lower-gated Gaussian, arbitrary real mean, sigma>0, U>0",
+    "quantile": "every 0<q<1 has exactly one x in (0,U), with original level q*F(U)",
+    "not_inferred": [
+      "cosmological Gaussianity",
+      "small omitted tail",
+      "coordinate quantile-error bound",
+      "floating-point accuracy",
+      "MCMC convergence"
+    ]
+  },
+  "formal_edge_controls": 10,
+  "attempt1": {
+    "session": 84199,
+    "exit_code": 1,
+    "scope": "numeral type mismatch, failed source retained"
+  },
+  "attempt2": {
+    "session": 11362,
+    "exit_code": 0
+  },
+  "formal_self_review": {
+    "session": 30670,
+    "exit_code": 0
+  },
+  "make_math_check": {
+    "session": 33426,
+    "exit_code": 0,
+    "Python_tests": 175,
+    "Lean_public_axiom_outputs": 83
+  },
+  "source_sha256": {
+    "lean/trunc_gauss_proof/TruncGaussProof/UpperGate.lean": "c96fb3eaddc23ff7820506d4081be887977a9f4df2e5e512f7507dad07518ef6",
+    "lean/trunc_gauss_proof/TruncGaussProof.lean": "ee3d8ff9dccbd0bf991986b85d5d8d60f5f1616b7980c0c31b9483b8f2d62764",
+    "lean/trunc_gauss_proof/AuditAxioms.lean": "7651c6efffe9081e20f51dd9600eb2df4987c6f8810bb4a263aee01f5d6af42c",
+    "runs/20261004_math_review_finite_upper_gate_formalization/FormalSelfReview.lean": "e5803c3da41cf4948100c3a90ae72b53429eec20a200ad83fe92521edbd21bff"
+  },
+  "paper_or_main_claim_revision_adopted": false
+}

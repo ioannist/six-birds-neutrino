@@ -1,0 +1,28 @@
+[camb] `camb` module loaded successfully from /mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_packaged_sigma_policy_20261005/camb-2.0.4/camb
+[camb] *ERROR* Computation error (see traceback below)! Parameters sent to CAMB: {'As': np.float64(1.8992039725558007e-09), 'ns': np.float64(0.9141040602339817)} and {'num_massive_neutrinos': 3, 'nnu': 3.046, 'lmax': 4095}.
+To ignore this kind of error, make 'stop_at_error: False'.
+[camb] *ERROR* Error at evaluation. See error information below.
+[exception handler] ---------------------------------------
+
+Traceback (most recent call last):
+  File "/home/repos/six-birds-neutrino/runs/20261005_math_review_sigma_policy_mass_controls/evaluate_controls.py", line 45, in <module>
+    result = model.logposterior(point, cached=False)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/cobaya/model.py", line 659, in logposterior
+    like = self._loglikes_input_params(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/cobaya/model.py", line 443, in _loglikes_input_params
+    compute_success = component.check_cache_and_compute(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/cobaya/theory.py", line 282, in check_cache_and_compute
+    if self.calculate(state, want_derived, **params_values_dict) is False:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/cobaya/theories/camb/camb.py", line 731, in calculate
+    results.power_spectra_from_transfer()
+  File "/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_packaged_sigma_policy_20261005/camb-2.0.4/camb/results.py", line 415, in power_spectra_from_transfer
+    config.check_global_error()
+  File "/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_packaged_sigma_policy_20261005/camb-2.0.4/camb/_config.py", line 66, in check_global_error
+    raise CAMBError(reference + f"{err}")
+camb.baseconfig.CAMBError: HMCode INTEGRATE, Integration timed out
+-------------------------------------------------------------
+

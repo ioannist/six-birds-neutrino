@@ -1,0 +1,396 @@
+{
+  "utc": "2026-10-04T14:16:37.872702+00:00",
+  "review_type": "distinct_self_review_not_independent_review",
+  "make_math_check_session": 35519,
+  "make_math_check_exit_code": 0,
+  "python_tests": 158,
+  "public_Lean_exports": 74,
+  "Lean_build_passed": true,
+  "axioms": {
+    "TruncGaussProof.unnorm_antitoneOn_Ici": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.unnorm_le_at_zero": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.mode_nonneg": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.squared_distance_min": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.squared_distance_eq_iff": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.unnorm_le_at_mode": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.unnorm_eq_at_mode_iff": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.scaled_unnorm_unique_mode": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.combine_completed_square": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.combinedMean_nonneg": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.combinedMean_nonpos_iff": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.combinedMean_common_scale": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.gaussianProduct_inverse_variance": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.gaussianProduct_completed_square": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.gaussianProduct_unique_mode": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.unnorm_product_unique_mode": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.gaussianProduct_boundary_max_iff": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.combinedMean_offset_gate": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.directionalDelta_nonneg": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.directionalDelta_sum": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.product_boundary_iff_offset_event": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.offsetBoundaryEvent_eq_Iic": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.offsetBoundaryEvent_measurable": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.offsetThreshold_mono": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.offsetThreshold_antitone": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.offsetBoundaryEvent_subset_of_nonneg": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.offsetBoundaryEvent_subset_of_nonpos": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.offsetBoundaryEvent_zero": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.offsetBoundaryMeasure_mono": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.offsetBoundaryMeasure_antitone": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.offsetBoundaryEvent_common_scale": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.inverseVariance_antitone": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.standardDeviationBoundaryEvent_eq_precision_event": [
+      "propext",
+      "\n Classical.choice",
+      "\n Quot.sound"
+    ],
+    "TruncGaussProof.standardDeviationBoundaryEvent_eq_Iic": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.standardDeviationBoundaryEvent_measurable": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.standardDeviationBoundaryMeasure_antitone": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.standardDeviationBoundaryMeasure_mono": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.unnorm_integrable": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.truncatedNormalizer_pos": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.truncatedDensity_nonneg": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.truncatedDensity_integrable": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.truncatedDensity_integral_eq_one": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.truncatedDensity_unique_mode": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.coordinateAllocation_sum": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.covariance_solve_eq_inverse": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.residualQuadratic_inverse_nonneg": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.covariance_solve_allocation_sum": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.groupedQuadraticDifference_sum": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.groupedQuadraticDifference_with_remainder": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.standardNormalCDF_strictMono": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.gaussianOffsetLaw_eq_map": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.gaussianOffsetLaw_Iic_cdf": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.standardDeviationBoundaryGaussianProbability_cdf": [
+      "propext",
+      "\n Classical.choice",
+      "\n Quot.sound"
+    ],
+    "TruncGaussProof.standardDeviationBoundaryGaussianProbability_strictAnti": [
+      "propext",
+      "\n Classical.choice",
+      "\n Quot.sound"
+    ],
+    "TruncGaussProof.standardDeviationBoundaryGaussianProbability_strictMono": [
+      "propext",
+      "\n Classical.choice",
+      "\n Quot.sound"
+    ],
+    "TruncGaussProof.standardDeviationBoundaryGaussianProbability_zero": [
+      "propext",
+      "\n Classical.choice",
+      "\n Quot.sound"
+    ],
+    "TruncGaussProof.gaussian_physicalGate_probability": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.gaussianPDFReal_eq_scaled_unnorm": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.truncatedNormalizer_eq_cdf": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.truncatedDensity_eq_gaussianPDF_div_cdf": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.truncatedGaussianLaw_isProbability": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.truncatedGaussianLaw_absolutelyContinuous": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.truncatedGaussianLaw_negative_halfline": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.truncatedGaussianLaw_singleton": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.truncatedGaussianLaw_boundary_interval_pos": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.truncatedGaussianLaw_eq_smul_restrict": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.truncatedGaussianLaw_real_apply": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.truncatedGaussianLaw_Ioc_cdf": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.truncatedGaussianLaw_cdf_of_nonneg": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.truncatedGaussianLaw_cdf_of_nonpos": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.truncatedGaussianLaw_cdf_strictMonoOn": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.truncatedGaussianLaw_cdf_continuous": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.truncatedGaussianLaw_cdf_lt_one": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ],
+    "TruncGaussProof.truncatedGaussianLaw_existsUnique_quantile": [
+      "propext",
+      " Classical.choice",
+      " Quot.sound"
+    ]
+  },
+  "actual_archived_native_accepted_current_native_rejected_for_archived_contract": true,
+  "both_actual_matching_native_contracts_accepted": true,
+  "preexisting_CLASS_guard_function_unchanged": true,
+  "new_tests_cover_rejection_before_output_creation": 10,
+  "paper_and_canonical_unchanged_since_pre_review": true,
+  "native_accuracy_and_cache_correctness_proved_by_this_guard": false,
+  "source_sha256": {
+    "scripts/run_cobaya.py": "330bbef043ee87b200c448b1291f78a2b144452daa9c7f9b373a87daded3e307",
+    "tests/test_native_backend_launch.py": "0f9c91ded99432767b1ab82b235307f136e90b5f033d2af32f217f2bc8abe85d",
+    "runs/20261004_math_review_CAMB_launch_guard_repair/native_probe.py": "8414871e718607a45272225444fa5ccb8ac1d697bf9847cbbf72583059292653",
+    "runs/20261004_math_review_CAMB_launch_guard_repair/math_check_stdout.txt": "62a782299daeaf6a3c93a7bcc17083bdb408d10df064d9592075a878b1a5276b",
+    "runs/20261004_math_review_CAMB_launch_guard_repair/math_check_stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runs/20261004_math_review_CAMB_launch_guard_repair/native_1.6.5_receipt.json": "221e81bd342aa65f6f90b9793dd088b2c777551be936fc0b63f7e91fbd19b44d",
+    "runs/20261004_math_review_CAMB_launch_guard_repair/native_2.0.4_receipt.json": "6a02da6ffad4707b7090d6922a5c744481fdbfbc9362a0ffe884cdbd9658d97b"
+  }
+}

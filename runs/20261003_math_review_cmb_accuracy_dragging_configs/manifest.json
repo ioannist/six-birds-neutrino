@@ -1,0 +1,42 @@
+{
+  "utc": "2026-10-03T16:57:50.404438+00:00",
+  "source_git": "49864f7",
+  "scope": "two_independent_same_target_sampler_efficiency_trials",
+  "same_physical_and_numerical_target_as_existing_intermediate_chains": true,
+  "changed_sampler_options": [
+    "seed",
+    "drag",
+    "oversample_power",
+    "explicit_unit_temperature"
+  ],
+  "temperature": 1,
+  "holdings_scope": "Integer holding times of outer dragging transitions; internal interpolation states are not target draws.",
+  "source_sha256": {
+    "runs/20261003_math_review_cmb_accuracy_chain_configs/A_seed601.yaml": "0d6a404c948aad966941238077e58725269ed6a2fbc8d21860276c0959d80460",
+    "/home/repos/six-birds-neutrino/runs/20261003_math_review_cmb_accuracy_chain_configs/A_proposal.covmat": "846fe81423cd19b9a0d4b890e58db9179a7485516f1dd12e2004d3b5efde8270",
+    "runs/20261003_math_review_cmb_accuracy_chain_configs/B_seed603.yaml": "ffee319846474671c1ba3cf3bbef2f8eab071caa1c2ab3af597a94390f5a16ec",
+    "/home/repos/six-birds-neutrino/runs/20261003_math_review_cmb_accuracy_chain_configs/B_proposal.covmat": "9744f3d6b00d6d4a3e116977ba13ed76a3505ddac9d4bb5ef1e3f3d3f63317a6"
+  },
+  "runs": [
+    {
+      "lens": "A",
+      "seed": 701,
+      "config": "runs/20261003_math_review_cmb_accuracy_dragging_configs/A_seed701.yaml",
+      "source_config": "runs/20261003_math_review_cmb_accuracy_chain_configs/A_seed601.yaml",
+      "config_sha256": "20b2f17716eb6e54df65398f6c49adb9a3a3cfe8febd78f7f4c9eec997fef092",
+      "run_dir": "runs/20261003_math_review_cmb_accuracy_dragging_chain_A_seed701"
+    },
+    {
+      "lens": "B",
+      "seed": 702,
+      "config": "runs/20261003_math_review_cmb_accuracy_dragging_configs/B_seed702.yaml",
+      "source_config": "runs/20261003_math_review_cmb_accuracy_chain_configs/B_seed603.yaml",
+      "config_sha256": "f0c59f2f79a035696e052f7cf08b649417cfb4549e8dc2e47e66d68dbd46d66e",
+      "run_dir": "runs/20261003_math_review_cmb_accuracy_dragging_chain_B_seed702"
+    }
+  ],
+  "posterior_convergence_verified": false,
+  "efficiency_improvement_verified": false,
+  "algorithm_dependency": "https://cobaya.readthedocs.io/en/latest/sampler_mcmc.html#taking-advantage-of-a-speed-hierarchy",
+  "implementation_dependency": "installed Cobaya 3.6.2 MCMC.get_new_sample_dragging, with existing FullPrecisionMCMC serialization wrapper"
+}

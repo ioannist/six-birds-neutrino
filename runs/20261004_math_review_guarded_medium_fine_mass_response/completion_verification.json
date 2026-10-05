@@ -1,0 +1,216 @@
+{
+  "utc": "2026-10-04T07:20:09.159305+00:00",
+  "scope": "four_same-coordinate_mass_response_evaluations_under_medium_and_fine_targets",
+  "managed_exits": [
+    {
+      "lens": "A",
+      "session": 95406,
+      "exit_code": 0
+    },
+    {
+      "lens": "B",
+      "session": 6725,
+      "exit_code": 0
+    }
+  ],
+  "medium_target_closures": [
+    {
+      "lens": "A",
+      "label": "quad_q50",
+      "native_components": 6,
+      "maximum_replay_absolute_discrepancy": 0.0,
+      "prior_or_posterior_recomputed": false
+    },
+    {
+      "lens": "A",
+      "label": "quad_q50_mass_plus",
+      "native_components": 6,
+      "maximum_replay_absolute_discrepancy": 0.0,
+      "prior_or_posterior_recomputed": false
+    },
+    {
+      "lens": "B",
+      "label": "quad_q50",
+      "native_components": 6,
+      "maximum_replay_absolute_discrepancy": 0.0,
+      "prior_or_posterior_recomputed": false
+    },
+    {
+      "lens": "B",
+      "label": "quad_q50_mass_plus",
+      "native_components": 6,
+      "maximum_replay_absolute_discrepancy": 0.0,
+      "prior_or_posterior_recomputed": false
+    }
+  ],
+  "comparisons": {
+    "A": {
+      "fine_minus_medium_native_chi2": {
+        "quad_q50": -0.0228241914048688,
+        "quad_q50_mass_plus": -0.022972303903786795
+      },
+      "local_mass_plus_0_01_native_chi2_changes": {
+        "baseline": -0.57535430209116,
+        "selected_reference_settings": -0.575502414590078
+      },
+      "mass_response_discrepancy": -0.00014811249891799605,
+      "changed_numerical_controls": [
+        "l_linstep",
+        "l_logstep",
+        "perturbations_sampling_stepsize",
+        "tol_ncdm_newtonian",
+        "tol_ncdm_synchronous",
+        "tol_perturbations_integration"
+      ],
+      "likelihood_requested_spectrum_coverage": {
+        "tt": 3200,
+        "ee": 3200
+      }
+    },
+    "B": {
+      "fine_minus_medium_native_chi2": {
+        "quad_q50": 0.12671147469975175,
+        "quad_q50_mass_plus": 0.018373312566536626
+      },
+      "local_mass_plus_0_01_native_chi2_changes": {
+        "baseline": 3.188711440239908,
+        "selected_reference_settings": 3.080373278106693
+      },
+      "mass_response_discrepancy": -0.10833816213321512,
+      "changed_numerical_controls": [
+        "l_linstep",
+        "l_logstep",
+        "perturbations_sampling_stepsize",
+        "tol_ncdm_newtonian",
+        "tol_ncdm_synchronous",
+        "tol_perturbations_integration"
+      ],
+      "likelihood_requested_spectrum_coverage": {
+        "tt": 4095,
+        "ee": 4095
+      }
+    }
+  },
+  "uniform_numerical_accuracy_certified": false,
+  "posterior_convergence_certified": false,
+  "prior_or_posterior_recomputed": false,
+  "paper_modified": false,
+  "files": [
+    {
+      "path": "runs/20261004_math_review_guarded_medium_fine_mass_response/A/evaluation/baseline.yaml",
+      "sha256": "dd2a233b4de4e6c1e0cccfccd11b72b624bad030ece4aaafa84b0c07242fd2c1"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_medium_fine_mass_response/A/evaluation/metrics.json",
+      "sha256": "3126751c7c75a2e5ba0b1c72ffc561f3d8be434aa2beb94a8a0ba7fb069e8137"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_medium_fine_mass_response/A/evaluation/progress.json",
+      "sha256": "de354679fc5ab30c2853e3f02b3cbc86718a44727f0df9c92db19a55f070491c"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_medium_fine_mass_response/A/evaluation/runtime_state.json",
+      "sha256": "fbde2d692707e9999413379a32190eda09094e5a8230c7568aa6e3497f3f6e85"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_medium_fine_mass_response/A/evaluation/selected_reference_settings.yaml",
+      "sha256": "3cd45cb4b401b94ed0011622fedec0edd83948b918fa6fe9a4e2ea769f2f23da"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_medium_fine_mass_response/A/input.yaml",
+      "sha256": "dd2a233b4de4e6c1e0cccfccd11b72b624bad030ece4aaafa84b0c07242fd2c1"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_medium_fine_mass_response/A/points.json",
+      "sha256": "84b6e1720a66ef0a8d8a7477e3e648363fcf4dfe97c5377ea9b86f75630d133e"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_medium_fine_mass_response/A/precision_settings.json",
+      "sha256": "d7717dae43494387f2fcd8b2bbea0c8f407bdf467676e9769944d14be6412acd"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_medium_fine_mass_response/A/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_medium_fine_mass_response/A/stdout.txt",
+      "sha256": "4f3735453c7f300f8184f0e992763d606b472befe71f9c992c95b7d65739ccbd"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_medium_fine_mass_response/B/evaluation/baseline.yaml",
+      "sha256": "b804f7bb1159352c5657cc80e82cfb33c5c6f15e3da172096ed205769d1e3e4d"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_medium_fine_mass_response/B/evaluation/metrics.json",
+      "sha256": "2940d813959e9dc68a2496fca4277c35dbc0cbfa438b702d3fdd3b1e67f0a73b"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_medium_fine_mass_response/B/evaluation/progress.json",
+      "sha256": "3993b2bfc80fd8d2249ded9adfdc25702d27aa56b0862297f6bd13ba1daab1f2"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_medium_fine_mass_response/B/evaluation/runtime_state.json",
+      "sha256": "d580d8e9f0880defff96db22089437db6c424a69d17ca253212c19d2b77b51df"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_medium_fine_mass_response/B/evaluation/selected_reference_settings.yaml",
+      "sha256": "060092f31e80e07cbb25ccbe0df778fa8a05fa0d72f2ee7a99bd4d365a0491e4"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_medium_fine_mass_response/B/input.yaml",
+      "sha256": "b804f7bb1159352c5657cc80e82cfb33c5c6f15e3da172096ed205769d1e3e4d"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_medium_fine_mass_response/B/points.json",
+      "sha256": "5c706baad7bb8a1e0d30a789e2de8c4bbeb74f7f6a45867a3bc99695e0fedacc"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_medium_fine_mass_response/B/precision_settings.json",
+      "sha256": "d7717dae43494387f2fcd8b2bbea0c8f407bdf467676e9769944d14be6412acd"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_medium_fine_mass_response/B/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_medium_fine_mass_response/B/stdout.txt",
+      "sha256": "859102317db2ad08e528b62742f396df8210a60af9efe7148d455364416bbb9b"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_medium_fine_mass_response/launch_prepare.py",
+      "sha256": "2219bee777b7936f3af10547be87f7fc5007ccedcce63c58fb18d84368ca2a21"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_medium_fine_mass_response/launch_receipt.json",
+      "sha256": "e79f9bd2d1fbba7aab70f7c8f5521b9470abe91558ad59c153a9553d0797db7d"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_medium_fine_mass_response/observe_runtime.py",
+      "sha256": "be203d1eb94968e95bd435d7250f53cef69f0122697f3a7b42cc29e2282f6795"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_medium_fine_mass_response/prepare.py",
+      "sha256": "568e9e8a7ae29af9d84068364665cbca2b834dd3edc0b8a55c63e20e00a55724"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_medium_fine_mass_response/runner.py",
+      "sha256": "479456bff3eb36a3b696936e625fcd6d0b51bf96a54bae3077567bc4e12e5f72"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_medium_fine_mass_response/runner_snapshot.py",
+      "sha256": "9f08954880417ed8f63accf5a06eeb83bd1d7383aa577fec9a2263357a79ace9"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_medium_fine_mass_response/runtime_observation.json",
+      "sha256": "701df6fc3f6757f071fa18989f976a53d3ff4423985861bb4e2da999e3244589"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_medium_fine_mass_response/selection_receipt.json",
+      "sha256": "b9edc81782fc628efd12d5cb9a3e71ede1ca114c39c2805668bd4818a8279274"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_medium_fine_mass_response/verify_completed.py",
+      "sha256": "a345a86bb98e4b40d12e7db46adaac61d707dceb6b3b610001c4079753dbbb13"
+    }
+  ]
+}

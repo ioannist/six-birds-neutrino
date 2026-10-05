@@ -1,0 +1,13 @@
+{
+  "utc": "2026-10-04T21:05:56.516935+00:00",
+  "command": [
+    "/tmp/neutrino-math-review-venv/bin/python",
+    "runs/20261004_math_review_fresh_CAMB_weighted_summary_diagnostic_preparation/prepare_snapshot.py",
+    "current_A4095",
+    "--outdir",
+    "runs/20261004_math_review_fresh_CAMB_fifth_current_A4095_diagnostics",
+    "--previous",
+    "runs/20261004_math_review_fresh_CAMB_fourth_current_A4095_diagnostics/snapshot_receipt.json"
+  ],
+  "exit_code": 0
+}

@@ -1,0 +1,60 @@
+{
+  "utc": "2026-10-04T10:58:07.702337+00:00",
+  "review_type": "distinct_self_review_not_independent_review",
+  "source_hashes_and_integer_recounts": [
+    {
+      "cohort": "SPT_A",
+      "minimum": 7.9859371e-06,
+      "maximum": 0.36260186,
+      "represented_steps": 172878,
+      "integer_holding_time_recount_matches": true
+    },
+    {
+      "cohort": "SPT_B",
+      "minimum": 8.4452249e-07,
+      "maximum": 0.24661137,
+      "represented_steps": 159908,
+      "integer_holding_time_recount_matches": true
+    },
+    {
+      "cohort": "quad_A",
+      "minimum": 0.00010603288434169779,
+      "maximum": 0.1451102604607855,
+      "represented_steps": 8455,
+      "integer_holding_time_recount_matches": true
+    },
+    {
+      "cohort": "quad_B",
+      "minimum": 0.00011275440510359093,
+      "maximum": 0.14217906823827509,
+      "represented_steps": 7355,
+      "integer_holding_time_recount_matches": true
+    },
+    {
+      "cohort": "medium_A",
+      "minimum": 1.572739788605537e-05,
+      "maximum": 0.179268347886112,
+      "represented_steps": 2762,
+      "integer_holding_time_recount_matches": true
+    },
+    {
+      "cohort": "medium_B",
+      "minimum": 1.0328578884607337e-05,
+      "maximum": 0.11545210154159873,
+      "represented_steps": 1917,
+      "integer_holding_time_recount_matches": true
+    }
+  ],
+  "continuous_quantile_integrated_by_rectangle_accumulation": {
+    "q95_upper_5_fraction": "19/100",
+    "q95_upper_6_fraction": "31/6",
+    "normalizer_upper_5_fraction": "47/50",
+    "normalizer_upper_6_fraction": "1"
+  },
+  "tail_CDF_bound_rational_controls_include_atoms": true,
+  "counterexample_is_actual_cosmological_posterior_claimed": false,
+  "historical_and_current_prior_targets_changed": false,
+  "all_non_SPT_cohorts_retained_as_provisional": true,
+  "script_sha256": "466de1d7c3dbe49d892ce2983a741d9b1c1927f2e23f67521757789358a572cf",
+  "upper_prior_receipt_sha256": "351f676f8b92eb9ca7915f611fd2c44f42fb18752f3be4aa774f7a8f93c2e8ad"
+}

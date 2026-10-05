@@ -1,0 +1,8 @@
+{
+  "utc": "2026-10-04T09:26:39.683965+00:00",
+  "exit_code": 1,
+  "location": "theory_dictionary_equality",
+  "reason": "grid12 declares path global explicitly while medium omits the default path; precision values differ only in the two declared angular controls",
+  "repair": "canonicalize absent path and explicit global path before semantic equality; both actual mapped backend witnesses already agree",
+  "native_target_verification_affected": false
+}

@@ -1,0 +1,16 @@
+../../runs/20261004_math_review_signed_localization_repair/CovarianceLedgerReview.lean:24:6: error: Type mismatch: After simplification, term
+  sq_pos_of_ne_zero h0
+ has type
+  0 < x 0 ^ 2
+but is expected to have type
+  ¬x 0 = 0
+../../runs/20261004_math_review_signed_localization_repair/CovarianceLedgerReview.lean:42:69: error: unsolved goals
+⊢ ∑ x with ![some (), none] x = some (),
+      ![1, 1] x * (Matrix.vecCons 1 (fun i => -2) x + Matrix.vecCons (-2) (fun i => 5) x) =
+    -1
+../../runs/20261004_math_review_signed_localization_repair/CovarianceLedgerReview.lean:46:63: error: unsolved goals
+⊢ ∑ x with ![some (), none] x = none,
+      ![1, 1] x * (Matrix.vecCons 1 (fun i => -2) x + Matrix.vecCons (-2) (fun i => 5) x) =
+    3
+../../runs/20261004_math_review_signed_localization_repair/CovarianceLedgerReview.lean:57:38: error: unsolved goals
+⊢ 1 - 2 0 0 = -1

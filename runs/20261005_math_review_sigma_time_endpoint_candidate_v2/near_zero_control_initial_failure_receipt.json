@@ -1,0 +1,8 @@
+{
+  "utc": "2026-10-05T02:20:14.644696+00:00",
+  "direct_exit_code": 1,
+  "native_message": "ERROR STOP CAMBdata_TimeOfzArr redshifts must be decreasing",
+  "cause": "Probe passed descending redshift vector with presorted=True; CAMB Python API usesTrue for ascending andFalse for descending.",
+  "native_control_outputs_written": false,
+  "next_attempt": "Corrected new script usespresorted=False; original numerical candidate unchanged."
+}

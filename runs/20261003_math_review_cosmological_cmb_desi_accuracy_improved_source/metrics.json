@@ -1,0 +1,1232 @@
+{
+  "completion_likelihoods": [
+    "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian",
+    "planck_2018_lowl.TT",
+    "planck_2018_lowl.EE_sroll2",
+    "planck_2018_highl_plik.TT_lite_native",
+    "planckpr4lensing.PlanckPR4Lensing"
+  ],
+  "directions": {
+    "B_given_A": {
+      "scope": "SPT_plus_configured_completion_candidate_transfer",
+      "source_candidate": {
+        "point": {
+          "omegabh2": 0.02271722440929748,
+          "omegach2": 0.11686802372652798,
+          "H0": 68.86063063631902,
+          "logA": 3.0380046135671583,
+          "ns": 0.9805315790250866,
+          "tau": 0.05561728356893961,
+          "mnu_sample": 0.017409448536001418,
+          "A_planck": 0.9986698364524557,
+          "TT_tSZ_Amp": 2.00233328638413,
+          "TT_kSZ_Amp": 9.998266547353719
+        },
+        "loglike": -1507.630065804005,
+        "success": true,
+        "flag": 0,
+        "message": "Success: rho has reached rhoend",
+        "free": [
+          "omegabh2",
+          "omegach2",
+          "H0",
+          "logA",
+          "ns",
+          "tau",
+          "mnu_sample",
+          "A_planck",
+          "TT_tSZ_Amp",
+          "TT_kSZ_Amp"
+        ],
+        "n_evals": 140,
+        "elapsed_seconds": 10004.205412859563,
+        "scope": "bounded_numerical_candidate_not_global_certificate"
+      },
+      "shared_parameters": [
+        "omegabh2",
+        "omegach2",
+        "H0",
+        "logA",
+        "ns",
+        "tau",
+        "mnu_sample"
+      ],
+      "profiled_parameters": [
+        "A_planck",
+        "TT_tSZ_Amp",
+        "TT_kSZ_Amp"
+      ],
+      "cross_candidate": {
+        "point": {
+          "omegabh2": 0.02271722440929748,
+          "omegach2": 0.11686802372652798,
+          "H0": 68.86063063631902,
+          "logA": 3.0380046135671583,
+          "ns": 0.9805315790250866,
+          "tau": 0.05561728356893961,
+          "mnu_sample": 0.017409448536001418,
+          "A_planck": 0.9986964579161325,
+          "TT_tSZ_Amp": 1.2991789302626968,
+          "TT_kSZ_Amp": 0.5037706743282244
+        },
+        "loglike": -971.4505616261888,
+        "success": true,
+        "flag": 0,
+        "message": "Success: rho has reached rhoend",
+        "free": [
+          "A_planck",
+          "TT_tSZ_Amp",
+          "TT_kSZ_Amp"
+        ],
+        "n_evals": 42,
+        "elapsed_seconds": 6.3558711488731205,
+        "scope": "bounded_numerical_candidate_not_global_certificate"
+      },
+      "reference_candidate": {
+        "point": {
+          "omegabh2": 0.02217600475786302,
+          "omegach2": 0.1172097524316298,
+          "H0": 68.319997782864,
+          "logA": 3.046411904636468,
+          "ns": 0.9642426079511953,
+          "tau": 0.05482221938417101,
+          "mnu_sample": 0.05660112775275335,
+          "A_planck": 1.0056884443161946,
+          "TT_tSZ_Amp": 1.2100042092526437,
+          "TT_kSZ_Amp": 2.377046010833657
+        },
+        "loglike": -939.3635242415893,
+        "success": true,
+        "flag": 0,
+        "message": "Success: rho has reached rhoend",
+        "free": [
+          "omegabh2",
+          "omegach2",
+          "H0",
+          "logA",
+          "ns",
+          "tau",
+          "mnu_sample",
+          "A_planck",
+          "TT_tSZ_Amp",
+          "TT_kSZ_Amp"
+        ],
+        "n_evals": 46,
+        "elapsed_seconds": 2264.597406147979,
+        "scope": "bounded_numerical_candidate_not_global_certificate"
+      },
+      "joint_candidate_delta_chi2": 64.17407476919902,
+      "signed_component_delta_chi2": {
+        "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": -0.18368167512345934,
+        "planck_2018_lowl.TT": -2.355879007258409,
+        "planck_2018_lowl.EE_sroll2": 0.4015567190488696,
+        "planck_2018_highl_plik.TT_lite_native": 5.793020011702652,
+        "planckpr4lensing.PlanckPR4Lensing": -0.9328136575808834,
+        "lensB": 61.45187237841037
+      },
+      "spt_ledger": {
+        "method": "r_i_times_full_precision_r_i_signed_cross_term_allocation",
+        "deltaQ_full": 60.93028538483304,
+        "deltaQ_heatmap": 60.93028538483317,
+        "unlocalized_deltaQ": 0.0,
+        "n_bins_unlocalized": 0,
+        "accounting_error": 1.2789769243681803e-13,
+        "delta_prior_penalty": 0.5215869935715212,
+        "delta_covariance_normalization": 0.0
+      },
+      "spt_accounting_error": -5.8122395785176195e-12,
+      "spt_deltaQ_by_spec_ell": {
+        "TT": [
+          -0.675324398621834,
+          1.20697118292144,
+          1.461736889709997,
+          2.7843630588780197,
+          10.092260345850455,
+          4.4454808912895025,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "TE": [
+          0.4178801637631144,
+          -0.855003078802463,
+          1.1174813005824935,
+          -1.7101795183023525,
+          2.036981067244198,
+          2.244911319324837,
+          -1.1900564529552105,
+          0.0,
+          0.0
+        ],
+        "EE": [
+          2.2745282137912692,
+          -0.06876121246533518,
+          -1.7134222055793544,
+          1.4811895465112648,
+          23.960302142474085,
+          13.179619701058847,
+          0.43932642816019674,
+          0.0,
+          0.0
+        ]
+      },
+      "top_groups": [
+        {
+          "spec": "EE",
+          "ell": [
+            2000.0,
+            2500.0
+          ],
+          "deltaQ": 23.960302142474085,
+          "n_bins": 60
+        },
+        {
+          "spec": "EE",
+          "ell": [
+            2500.0,
+            3000.0
+          ],
+          "deltaQ": 13.179619701058847,
+          "n_bins": 60
+        },
+        {
+          "spec": "TT",
+          "ell": [
+            2000.0,
+            2500.0
+          ],
+          "deltaQ": 10.092260345850455,
+          "n_bins": 60
+        },
+        {
+          "spec": "TT",
+          "ell": [
+            2500.0,
+            3000.0
+          ],
+          "deltaQ": 4.4454808912895025,
+          "n_bins": 60
+        },
+        {
+          "spec": "TT",
+          "ell": [
+            1600.0,
+            2000.0
+          ],
+          "deltaQ": 2.7843630588780197,
+          "n_bins": 48
+        },
+        {
+          "spec": "EE",
+          "ell": [
+            400.0,
+            800.0
+          ],
+          "deltaQ": 2.2745282137912692,
+          "n_bins": 48
+        },
+        {
+          "spec": "TE",
+          "ell": [
+            2500.0,
+            3000.0
+          ],
+          "deltaQ": 2.244911319324837,
+          "n_bins": 90
+        },
+        {
+          "spec": "TE",
+          "ell": [
+            2000.0,
+            2500.0
+          ],
+          "deltaQ": 2.036981067244198,
+          "n_bins": 90
+        },
+        {
+          "spec": "EE",
+          "ell": [
+            1600.0,
+            2000.0
+          ],
+          "deltaQ": 1.4811895465112648,
+          "n_bins": 48
+        },
+        {
+          "spec": "TT",
+          "ell": [
+            1200.0,
+            1600.0
+          ],
+          "deltaQ": 1.461736889709997,
+          "n_bins": 48
+        }
+      ],
+      "spectra": [
+        "TT",
+        "TE",
+        "EE"
+      ],
+      "ell_edges": [
+        400.0,
+        800.0,
+        1200.0,
+        1600.0,
+        2000.0,
+        2500.0,
+        3000.0,
+        4000.0,
+        5000.0,
+        6000.0
+      ],
+      "optimization_success": true,
+      "global_optimum_certified": false
+    }
+  },
+  "fit_objective": "sum_native_loglikes_excluding_Cobaya_prior_with_hard_prior_bounds",
+  "same_theory_spectra_for_both_lenses": true,
+  "posterior_convergence_verified": false,
+  "fits": {
+    "lensA": {
+      "point": {
+        "omegabh2": 0.02271722440929748,
+        "omegach2": 0.11686802372652798,
+        "H0": 68.86063063631902,
+        "logA": 3.0380046135671583,
+        "ns": 0.9805315790250866,
+        "tau": 0.05561728356893961,
+        "mnu_sample": 0.017409448536001418,
+        "A_planck": 0.9986698364524557,
+        "TT_tSZ_Amp": 2.00233328638413,
+        "TT_kSZ_Amp": 9.998266547353719
+      },
+      "loglike": -1507.630065804005,
+      "success": true,
+      "flag": 0,
+      "message": "Success: rho has reached rhoend",
+      "free": [
+        "omegabh2",
+        "omegach2",
+        "H0",
+        "logA",
+        "ns",
+        "tau",
+        "mnu_sample",
+        "A_planck",
+        "TT_tSZ_Amp",
+        "TT_kSZ_Amp"
+      ],
+      "n_evals": 140,
+      "elapsed_seconds": 10004.205412859563,
+      "scope": "bounded_numerical_candidate_not_global_certificate"
+    },
+    "lensB": {
+      "point": {
+        "omegabh2": 0.02217600475786302,
+        "omegach2": 0.1172097524316298,
+        "H0": 68.319997782864,
+        "logA": 3.046411904636468,
+        "ns": 0.9642426079511953,
+        "tau": 0.05482221938417101,
+        "mnu_sample": 0.05660112775275335,
+        "A_planck": 1.0056884443161946,
+        "TT_tSZ_Amp": 1.2100042092526437,
+        "TT_kSZ_Amp": 2.377046010833657
+      },
+      "loglike": -939.3635242415893,
+      "success": true,
+      "flag": 0,
+      "message": "Success: rho has reached rhoend",
+      "free": [
+        "omegabh2",
+        "omegach2",
+        "H0",
+        "logA",
+        "ns",
+        "tau",
+        "mnu_sample",
+        "A_planck",
+        "TT_tSZ_Amp",
+        "TT_kSZ_Amp"
+      ],
+      "n_evals": 46,
+      "elapsed_seconds": 2264.597406147979,
+      "scope": "bounded_numerical_candidate_not_global_certificate"
+    }
+  },
+  "internal_prior_policy": {
+    "lensA": {
+      "excluded_parameters": [],
+      "retained_factors": [
+        {
+          "parameters": [
+            "tau"
+          ],
+          "multiplicative_log_coordinates": false,
+          "central_value": [
+            0.054
+          ],
+          "covariance": [
+            [
+              5.4760000000000004e-05
+            ]
+          ]
+        },
+        {
+          "parameters": [
+            "EE_Poisson_90x90"
+          ],
+          "multiplicative_log_coordinates": false,
+          "central_value": [
+            0.040469
+          ],
+          "covariance": [
+            [
+              0.00014740388100000003
+            ]
+          ]
+        },
+        {
+          "parameters": [
+            "EE_Poisson_90x150"
+          ],
+          "multiplicative_log_coordinates": false,
+          "central_value": [
+            0.018048
+          ],
+          "covariance": [
+            [
+              2.9311396000000004e-05
+            ]
+          ]
+        },
+        {
+          "parameters": [
+            "EE_Poisson_90x220"
+          ],
+          "multiplicative_log_coordinates": false,
+          "central_value": [
+            0.015719
+          ],
+          "covariance": [
+            [
+              2.2240655999999998e-05
+            ]
+          ]
+        },
+        {
+          "parameters": [
+            "EE_Poisson_150x150"
+          ],
+          "multiplicative_log_coordinates": false,
+          "central_value": [
+            0.011495
+          ],
+          "covariance": [
+            [
+              1.1888704000000001e-05
+            ]
+          ]
+        },
+        {
+          "parameters": [
+            "EE_Poisson_150x220"
+          ],
+          "multiplicative_log_coordinates": false,
+          "central_value": [
+            0.018962
+          ],
+          "covariance": [
+            [
+              3.2364720999999996e-05
+            ]
+          ]
+        },
+        {
+          "parameters": [
+            "EE_Poisson_220x220"
+          ],
+          "multiplicative_log_coordinates": false,
+          "central_value": [
+            0.047557
+          ],
+          "covariance": [
+            [
+              0.000203547289
+            ]
+          ]
+        },
+        {
+          "parameters": [
+            "TT_Poisson_90x90"
+          ],
+          "multiplicative_log_coordinates": false,
+          "central_value": [
+            51.3204
+          ],
+          "covariance": [
+            [
+              89.151364
+            ]
+          ]
+        },
+        {
+          "parameters": [
+            "TT_Poisson_90x150"
+          ],
+          "multiplicative_log_coordinates": false,
+          "central_value": [
+            22.4417
+          ],
+          "covariance": [
+            [
+              50.24116161
+            ]
+          ]
+        },
+        {
+          "parameters": [
+            "TT_Poisson_90x220"
+          ],
+          "multiplicative_log_coordinates": false,
+          "central_value": [
+            20.7004
+          ],
+          "covariance": [
+            [
+              35.08785225
+            ]
+          ]
+        },
+        {
+          "parameters": [
+            "TT_Poisson_150x150"
+          ],
+          "multiplicative_log_coordinates": false,
+          "central_value": [
+            15.3455
+          ],
+          "covariance": [
+            [
+              17.073423999999996
+            ]
+          ]
+        },
+        {
+          "parameters": [
+            "TT_Poisson_150x220"
+          ],
+          "multiplicative_log_coordinates": false,
+          "central_value": [
+            28.3573
+          ],
+          "covariance": [
+            [
+              17.57705625
+            ]
+          ]
+        },
+        {
+          "parameters": [
+            "TT_Poisson_220x220"
+          ],
+          "multiplicative_log_coordinates": false,
+          "central_value": [
+            75.9719
+          ],
+          "covariance": [
+            [
+              220.89093375999997
+            ]
+          ]
+        },
+        {
+          "parameters": [
+            "TT_CIBClustering_Amp"
+          ],
+          "multiplicative_log_coordinates": false,
+          "central_value": [
+            3.2263
+          ],
+          "covariance": [
+            [
+              3.36869316
+            ]
+          ]
+        },
+        {
+          "parameters": [
+            "TT_CIBClustering_Beta"
+          ],
+          "multiplicative_log_coordinates": false,
+          "central_value": [
+            2.2642
+          ],
+          "covariance": [
+            [
+              0.14546596
+            ]
+          ]
+        },
+        {
+          "parameters": [
+            "EE_PolGalDust_Amp"
+          ],
+          "multiplicative_log_coordinates": false,
+          "central_value": [
+            0.05
+          ],
+          "covariance": [
+            [
+              0.00048399999999999995
+            ]
+          ]
+        },
+        {
+          "parameters": [
+            "EE_PolGalDust_Alpha"
+          ],
+          "multiplicative_log_coordinates": false,
+          "central_value": [
+            -2.42
+          ],
+          "covariance": [
+            [
+              0.0016
+            ]
+          ]
+        },
+        {
+          "parameters": [
+            "EE_PolGalDust_Beta"
+          ],
+          "multiplicative_log_coordinates": false,
+          "central_value": [
+            1.51
+          ],
+          "covariance": [
+            [
+              0.0016
+            ]
+          ]
+        },
+        {
+          "parameters": [
+            "TE_PolGalDust_Amp"
+          ],
+          "multiplicative_log_coordinates": false,
+          "central_value": [
+            0.12
+          ],
+          "covariance": [
+            [
+              0.0026009999999999996
+            ]
+          ]
+        },
+        {
+          "parameters": [
+            "TE_PolGalDust_Alpha"
+          ],
+          "multiplicative_log_coordinates": false,
+          "central_value": [
+            -2.42
+          ],
+          "covariance": [
+            [
+              0.0016
+            ]
+          ]
+        },
+        {
+          "parameters": [
+            "TE_PolGalDust_Beta"
+          ],
+          "multiplicative_log_coordinates": false,
+          "central_value": [
+            1.51
+          ],
+          "covariance": [
+            [
+              0.0016
+            ]
+          ]
+        },
+        {
+          "parameters": [
+            "TT_GalCirrus_Amp"
+          ],
+          "multiplicative_log_coordinates": false,
+          "central_value": [
+            1.88
+          ],
+          "covariance": [
+            [
+              0.2304
+            ]
+          ]
+        },
+        {
+          "parameters": [
+            "TT_GalCirrus_Alpha"
+          ],
+          "multiplicative_log_coordinates": false,
+          "central_value": [
+            -2.53
+          ],
+          "covariance": [
+            [
+              0.0025000000000000005
+            ]
+          ]
+        },
+        {
+          "parameters": [
+            "TT_GalCirrus_Beta"
+          ],
+          "multiplicative_log_coordinates": false,
+          "central_value": [
+            1.48
+          ],
+          "covariance": [
+            [
+              0.0004
+            ]
+          ]
+        },
+        {
+          "parameters": [
+            "TT_tSZ_Amp"
+          ],
+          "multiplicative_log_coordinates": false,
+          "central_value": [
+            3.2279
+          ],
+          "covariance": [
+            [
+              5.647276959999999
+            ]
+          ]
+        },
+        {
+          "parameters": [
+            "TT_kSZ_Amp"
+          ],
+          "multiplicative_log_coordinates": false,
+          "central_value": [
+            3.7287
+          ],
+          "covariance": [
+            [
+              21.566736000000002
+            ]
+          ]
+        },
+        {
+          "parameters": [
+            "Kappa"
+          ],
+          "multiplicative_log_coordinates": false,
+          "central_value": [
+            0.0
+          ],
+          "covariance": [
+            [
+              2.025e-07
+            ]
+          ]
+        },
+        {
+          "parameters": [
+            "TT_tSZ_CIB_Corr_Amp"
+          ],
+          "multiplicative_log_coordinates": false,
+          "central_value": [
+            0.1801
+          ],
+          "covariance": [
+            [
+              0.11168963999999999
+            ]
+          ]
+        },
+        {
+          "parameters": [
+            "Tcal90",
+            "Tcal150",
+            "Tcal220",
+            "Ecal90",
+            "Ecal150",
+            "Ecal220"
+          ],
+          "multiplicative_log_coordinates": false,
+          "central_value": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "covariance": [
+            [
+              3.102899e-05,
+              1.247063e-05,
+              1.247063e-05,
+              6.25e-06,
+              6.25e-06,
+              6.25e-06
+            ],
+            [
+              1.247063e-05,
+              3.147625e-05,
+              1.247063e-05,
+              6.25e-06,
+              6.25e-06,
+              6.25e-06
+            ],
+            [
+              1.247063e-05,
+              1.247063e-05,
+              5.577352e-05,
+              6.25e-06,
+              6.25e-06,
+              6.25e-06
+            ],
+            [
+              6.25e-06,
+              6.25e-06,
+              6.25e-06,
+              7.604345e-05,
+              3.739474e-05,
+              3.739474e-05
+            ],
+            [
+              6.25e-06,
+              6.25e-06,
+              6.25e-06,
+              3.739474e-05,
+              6.680581e-05,
+              3.739474e-05
+            ],
+            [
+              6.25e-06,
+              6.25e-06,
+              6.25e-06,
+              3.739474e-05,
+              3.739474e-05,
+              0.0002566854
+            ]
+          ]
+        }
+      ]
+    },
+    "lensB": {
+      "excluded_parameters": [],
+      "retained_factors": [
+        {
+          "parameters": [
+            "tau"
+          ],
+          "multiplicative_log_coordinates": false,
+          "central_value": [
+            0.051
+          ],
+          "covariance": [
+            [
+              3.6e-05
+            ]
+          ]
+        },
+        {
+          "parameters": [
+            "TT_CIBClustering_Alpha"
+          ],
+          "multiplicative_log_coordinates": false,
+          "central_value": [
+            0.53
+          ],
+          "covariance": [
+            [
+              0.010000000000000002
+            ]
+          ]
+        },
+        {
+          "parameters": [
+            "EE_PolGalDust_Amp"
+          ],
+          "multiplicative_log_coordinates": false,
+          "central_value": [
+            0.05
+          ],
+          "covariance": [
+            [
+              0.00048399999999999995
+            ]
+          ]
+        },
+        {
+          "parameters": [
+            "EE_PolGalDust_Alpha"
+          ],
+          "multiplicative_log_coordinates": false,
+          "central_value": [
+            -2.42
+          ],
+          "covariance": [
+            [
+              0.0016
+            ]
+          ]
+        },
+        {
+          "parameters": [
+            "EE_PolGalDust_Beta"
+          ],
+          "multiplicative_log_coordinates": false,
+          "central_value": [
+            1.51
+          ],
+          "covariance": [
+            [
+              0.0016
+            ]
+          ]
+        },
+        {
+          "parameters": [
+            "TE_PolGalDust_Amp"
+          ],
+          "multiplicative_log_coordinates": false,
+          "central_value": [
+            0.12
+          ],
+          "covariance": [
+            [
+              0.0026009999999999996
+            ]
+          ]
+        },
+        {
+          "parameters": [
+            "TE_PolGalDust_Alpha"
+          ],
+          "multiplicative_log_coordinates": false,
+          "central_value": [
+            -2.42
+          ],
+          "covariance": [
+            [
+              0.0016
+            ]
+          ]
+        },
+        {
+          "parameters": [
+            "TE_PolGalDust_Beta"
+          ],
+          "multiplicative_log_coordinates": false,
+          "central_value": [
+            1.51
+          ],
+          "covariance": [
+            [
+              0.0016
+            ]
+          ]
+        },
+        {
+          "parameters": [
+            "TT_GalCirrus_Amp"
+          ],
+          "multiplicative_log_coordinates": false,
+          "central_value": [
+            1.88
+          ],
+          "covariance": [
+            [
+              0.9216
+            ]
+          ]
+        },
+        {
+          "parameters": [
+            "TT_GalCirrus_Alpha"
+          ],
+          "multiplicative_log_coordinates": false,
+          "central_value": [
+            -2.53
+          ],
+          "covariance": [
+            [
+              0.0025000000000000005
+            ]
+          ]
+        },
+        {
+          "parameters": [
+            "TT_GalCirrus_Beta"
+          ],
+          "multiplicative_log_coordinates": false,
+          "central_value": [
+            1.48
+          ],
+          "covariance": [
+            [
+              0.0004
+            ]
+          ]
+        },
+        {
+          "parameters": [
+            "TT_tSZ_Amp"
+          ],
+          "multiplicative_log_coordinates": false,
+          "central_value": [
+            3.2279
+          ],
+          "covariance": [
+            [
+              5.647276959999999
+            ]
+          ]
+        },
+        {
+          "parameters": [
+            "TT_kSZ_Amp"
+          ],
+          "multiplicative_log_coordinates": false,
+          "central_value": [
+            3.7287
+          ],
+          "covariance": [
+            [
+              21.566736000000002
+            ]
+          ]
+        },
+        {
+          "parameters": [
+            "Kappa"
+          ],
+          "multiplicative_log_coordinates": false,
+          "central_value": [
+            0.0
+          ],
+          "covariance": [
+            [
+              2.025e-07
+            ]
+          ]
+        },
+        {
+          "parameters": [
+            "Tcal_ext150"
+          ],
+          "multiplicative_log_coordinates": false,
+          "central_value": [
+            1.0
+          ],
+          "covariance": [
+            [
+              1.296e-05
+            ]
+          ]
+        },
+        {
+          "parameters": [
+            "beta_1",
+            "beta_2",
+            "beta_3",
+            "beta_4",
+            "beta_5",
+            "beta_6",
+            "beta_7",
+            "beta_8",
+            "beta_9"
+          ],
+          "multiplicative_log_coordinates": false,
+          "central_value": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "covariance": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        {
+          "parameters": [
+            "T2P2_90"
+          ],
+          "multiplicative_log_coordinates": false,
+          "central_value": [
+            -0.00649
+          ],
+          "covariance": [
+            [
+              1.110916e-06
+            ]
+          ]
+        },
+        {
+          "parameters": [
+            "T2P2_150"
+          ],
+          "multiplicative_log_coordinates": false,
+          "central_value": [
+            -0.011941
+          ],
+          "covariance": [
+            [
+              4.422608999999999e-06
+            ]
+          ]
+        },
+        {
+          "parameters": [
+            "T2P2_220"
+          ],
+          "multiplicative_log_coordinates": false,
+          "central_value": [
+            -0.022684
+          ],
+          "covariance": [
+            [
+              4.4102881e-05
+            ]
+          ]
+        }
+      ]
+    }
+  },
+  "lens_metadata": {
+    "lensA": {
+      "dataset_yaml_used": "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/candl_data/SPT3G_2018_TTTEEE_v0/SPT3G_2018_TTTEEE.yaml",
+      "ell_cuts": null,
+      "spectra_present": [
+        "EE",
+        "TE",
+        "TT"
+      ],
+      "n_bins_total": 728,
+      "n_bins_used": 728
+    },
+    "lensB": {
+      "dataset_yaml_used": "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/spt_candl_data/SPT3G_D1_TnE_v0/SPT3G_D1_TnE.yaml",
+      "ell_cuts": null,
+      "spectra_present": [
+        "EE",
+        "TE",
+        "TT"
+      ],
+      "n_bins_total": 1392,
+      "n_bins_used": 1392
+    }
+  }
+}

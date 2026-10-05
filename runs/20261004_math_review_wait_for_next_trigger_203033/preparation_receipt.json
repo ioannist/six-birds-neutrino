@@ -1,0 +1,11 @@
+{
+  "utc": "2026-10-04T20:30:33.028233+00:00",
+  "source": "runs/20261004_math_review_fresh_CAMB_fifth_old_B4095_diagnostics/observe_runtime.py",
+  "source_sha256": "948b97643b0aebd1d410d2f2bd1487460a0737cdaa7012367cc70ce19472aec2",
+  "destination": "runs/20261004_math_review_wait_for_next_trigger_203033/watch_growth.py",
+  "destination_sha256": "0cc27f926ec8fdece410306cc26388e22ee88af5574fc782a4532bba4f7b2745",
+  "all_original_observation_and_growth_statements_AST_identical": true,
+  "returned_observation_payload_AST_identical": true,
+  "change": "return observations; wait at most 20 verified observations for a due cohort; write final immutable observation once",
+  "physical_configs_or_gates_changed": false
+}

@@ -1,0 +1,18 @@
+ar: creating libforutils.a
+/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_sigma_probe_20261005/source/fortran/halofit.f90:3041:4:
+
+ 3041 |     function integrate_audit(a, b, f, y, z, itype, cosm, acc, minimum_level, stopping_level)
+      |    1
+Error: Function result ‘integrate_audit’ at (1) has no IMPLICIT type
+/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_sigma_probe_20261005/source/fortran/halofit.f90:953:32:
+
+  953 |                 audit_12 = sqrt(integrate_audit(0._dl, 1._dl, sigma_integrand, lut%rr(audit_i), &
+      |                                1
+Error: ‘x’ argument of ‘sqrt’ intrinsic at (1) must be REAL or COMPLEX
+/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_sigma_probe_20261005/source/fortran/halofit.f90:955:32:
+
+  955 |                 audit_14 = sqrt(integrate_audit(0._dl, 1._dl, sigma_integrand, lut%rr(audit_i), &
+      |                                1
+Error: ‘x’ argument of ‘sqrt’ intrinsic at (1) must be REAL or COMPLEX
+make[1]: *** [/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_sigma_probe_20261005/source/fortran/Makefile_main:150: halofit.o] Error 1
+make: *** [Makefile_main:122: python] Error 2

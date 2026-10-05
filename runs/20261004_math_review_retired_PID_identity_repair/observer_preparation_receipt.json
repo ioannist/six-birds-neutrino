@@ -1,0 +1,49 @@
+{
+  "utc": "2026-10-04T22:48:18.431524+00:00",
+  "records": [
+    {
+      "source": "runs/20261004_math_review_guarded_CLASS_seventh_medium_A_diagnostics/observe_runtime.py",
+      "source_sha256": "9f837ddfd65bffadb8f66c1e0b45d7e4dbd0d969f07f42659b64758dd4f99ddd",
+      "destination": "runs/20261004_math_review_retired_PID_identity_repair/observe_primary_runtime.py",
+      "destination_sha256": "64d27708c0c1ce5749b7e336746644926ae8a6b7f826be8ab2caa3f9f36afa6c",
+      "retirement_block_changes": [
+        [
+          "for r in retired['records']:assert not Path('/proc',str(r['pid'])).exists()",
+          "identity_path = ROOT / 'runs/20261004_math_review_fresh_CAMB_posterior_preparation/runtime_before_preparation.json'\nassert sha(identity_path) == 'd066a446fc5d25fb6cb6418071cb62a174649f3ab0cd6e9ca2cd9e2183f6d5ce'\nidentity_baseline = {r['seed']: r for r in json.loads(identity_path.read_text())['records']}\nhelper_path = ROOT / 'runs/20261004_math_review_retired_PID_identity_repair/retirement_identity.py'\nassert sha(helper_path) == '962ff3e07cddcd5711284bdaecf19ab9b7581674754a57f46fd6ad9e03fac620'\nimport importlib.util\nidentity_spec = importlib.util.spec_from_file_location('review_retirement_identity', helper_path)\nidentity_module = importlib.util.module_from_spec(identity_spec)\nidentity_spec.loader.exec_module(identity_module)\nretired_identity_observations = []\nfor retired_record in retired['records']:\n    baseline = identity_baseline[retired_record['seed']]\n    assert baseline['pid'] == retired_record['pid']\n    if 'process_start_ticks' in retired_record:\n        assert baseline['process_start_ticks'] == retired_record['process_start_ticks']\n    retired_observation = identity_module.observe_retired_identity(retired_record['pid'], baseline['process_start_ticks'])\n    assert retired_observation['original_identity_absent'], 'Original retired process identity remains present.'\n    retired_identity_observations.append({'seed': retired_record['seed'], **retired_observation})\nassert len(retired_identity_observations) == len({r['seed'] for r in retired_identity_observations}) == 16"
+        ],
+        [
+          "'all_16_old_policy_processes_absent':True",
+          "'all_16_old_policy_process_identities_absent':True, 'retired_identity_observations':retired_identity_observations"
+        ]
+      ],
+      "payload_changes": [
+        "all_16_old_policy_processes_absent to precise original-process-identity absence plus observation witnesses"
+      ],
+      "reverse_byte_identity_verified": true,
+      "live_sampler_checks_and_diagnostic_gates_changed": false
+    },
+    {
+      "source": "runs/20261004_math_review_upper_prior_posterior_preparation/observe_all_runtime.py",
+      "source_sha256": "8b14757f2f52de2c6e40a2fb41a80613f70e1949ac650ef33aa374ab8d47b714",
+      "destination": "runs/20261004_math_review_retired_PID_identity_repair/observe_all_runtime.py",
+      "destination_sha256": "d3b14ba547bac2fbb2914ab5b6136257b297fc060ab7a06d9e7a96762a9fa7a8",
+      "retirement_block_changes": [
+        [
+          "    for r in retired['records']:\n        assert not Path('/proc', str(r['pid'])).exists()",
+          "    identity_path = ROOT / 'runs/20261004_math_review_fresh_CAMB_posterior_preparation/runtime_before_preparation.json'\n    assert sha(identity_path) == 'd066a446fc5d25fb6cb6418071cb62a174649f3ab0cd6e9ca2cd9e2183f6d5ce'\n    identity_baseline = {r['seed']: r for r in json.loads(identity_path.read_text())['records']}\n    helper_path = ROOT / 'runs/20261004_math_review_retired_PID_identity_repair/retirement_identity.py'\n    assert sha(helper_path) == '962ff3e07cddcd5711284bdaecf19ab9b7581674754a57f46fd6ad9e03fac620'\n    import importlib.util\n    identity_spec = importlib.util.spec_from_file_location('review_retirement_identity', helper_path)\n    identity_module = importlib.util.module_from_spec(identity_spec)\n    identity_spec.loader.exec_module(identity_module)\n    retired_identity_observations = []\n    for retired_record in retired['records']:\n        baseline = identity_baseline[retired_record['seed']]\n        assert baseline['pid'] == retired_record['pid']\n        if 'process_start_ticks' in retired_record:\n            assert baseline['process_start_ticks'] == retired_record['process_start_ticks']\n        retired_observation = identity_module.observe_retired_identity(retired_record['pid'], baseline['process_start_ticks'])\n        assert retired_observation['original_identity_absent'], 'Original retired process identity remains present.'\n        retired_identity_observations.append({'seed': retired_record['seed'], **retired_observation})\n    assert len(retired_identity_observations) == len({r['seed'] for r in retired_identity_observations}) == 16"
+        ]
+      ],
+      "payload_changes": [
+        "all_16_old_policy_processes_absent to precise original-process-identity absence plus observation witnesses"
+      ],
+      "reverse_byte_identity_verified": true,
+      "live_sampler_checks_and_diagnostic_gates_changed": false
+    }
+  ],
+  "helper_sha256": "962ff3e07cddcd5711284bdaecf19ab9b7581674754a57f46fd6ad9e03fac620",
+  "identity_baseline_sha256": "d066a446fc5d25fb6cb6418071cb62a174649f3ab0cd6e9ca2cd9e2183f6d5ce",
+  "baseline_manifest": "runs/20261004_math_review_fresh_CAMB_posterior_preparation/manifest.json",
+  "class_observer_retry": "runs/20261004_math_review_guarded_CLASS_seventh_medium_A_diagnostics/observe_runtime_v2.py",
+  "class_observer_retry_sha256": "64d27708c0c1ce5749b7e336746644926ae8a6b7f826be8ab2caa3f9f36afa6c",
+  "old_observer_files_preserved": true
+}

@@ -1,0 +1,10 @@
+{
+  "utc": "2026-10-05T04:08:44.008978+00:00",
+  "reviewer": "distinct_self_review_not_independent_agent",
+  "preparation_sha256": "9c867ba1558eaead2efd3275997d23644e78cc5a2f7fba307715f000cd6ad898",
+  "rejected_field": "samplers_independent_conditional_on_fixed_preparation_inputs",
+  "reason": "Distinct fixed RNG seeds and starting coordinates alone do not prove independence of random streams. No sampling law or joint RNG construction supplies that theorem.",
+  "all_native_workers_terminal": true,
+  "samplers_launched": 0,
+  "scope": "Unused initial preparation preserved; corrected fresh packet required."
+}

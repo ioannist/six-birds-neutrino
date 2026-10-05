@@ -1,0 +1,33 @@
+{
+  "utc": "2026-10-04T07:56:25.401619+00:00",
+  "scope": "B_two_selected_mass_coordinates_unit_logarithmic_grid",
+  "grid_source_verification": "runs/20261004_math_review_guarded_B_unit_multipole_grid/grid_source_verification.json",
+  "grid_source_verification_sha256": "11f6fb4e40605835783330d3d91f2fca73c556a0d6fcb934b875284dc9759cbe",
+  "parent_verification": "runs/20261004_math_review_guarded_B_spectrum_grid_refinement/completion_verification.json",
+  "parent_verification_sha256": "c308350f8db1d735fb21f5199eee47437a937f96f96919ecd661a16792403c7d",
+  "native_module_path": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+  "native_module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+  "changed_controls": {
+    "unit_grid": [
+      "l_logstep"
+    ]
+  },
+  "grid_targets": {
+    "unit_grid": {
+      "l_logstep": 1.0
+    }
+  },
+  "dynamics_and_physical_targets_unchanged": true,
+  "previous_grid3_native_anchor_reused_not_new_evaluation": true,
+  "uniform_accuracy_or_convergence_certified": false,
+  "sources": [
+    {
+      "path": "runs/20261004_math_review_guarded_B_spectrum_grid_refinement/grid3/input.yaml",
+      "sha256": "72f017c10477764e26dc43ff06653cffe30638dc0aee831cd2c3b361ad3eb94b"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_B_spectrum_grid_refinement/grid3/points.json",
+      "sha256": "5c706baad7bb8a1e0d30a789e2de8c4bbeb74f7f6a45867a3bc99695e0fedacc"
+    }
+  ]
+}

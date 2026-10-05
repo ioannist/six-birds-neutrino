@@ -1,0 +1,38 @@
+{
+  "utc": "2026-10-05T07:41:07.383374+00:00",
+  "reviewer": "distinct_self_review_not_independent_agent",
+  "records": [
+    {
+      "group": "sigma_time_v3_A4095_cap5",
+      "snapshot_sha256": "eebe1f99f954aa216521625318c6d787af1fc52caccf296a34319f4a2ed5febc",
+      "native_sha256": "0110e0e9d61960f6b8e2c2fff34bce81ab7d205a46425f01f934bac68aeda6cf",
+      "diagnostic_sha256": "8f1f59dac69a649da5b084b1b1e0c71f502d9d8df34102cb90cbe1db60522388",
+      "self_review_sha256": "6b8359b914f3d823fc4c9f967f08c30b4dbc9155759481018680031231aad45f",
+      "previous_snapshot_sha256": "8e227f536beb92ae04aa3072fd30b6f5e2c47ff91bf634dd62ac9c075e7c33dc",
+      "passing_parameters": [],
+      "mass_Rhat": 1.3825215019008839,
+      "mass_MCSE_eV": 2.159703580673367,
+      "next_history_trigger": 1812,
+      "posterior_qualified": false
+    },
+    {
+      "group": "sigma_time_v3_A4095_cap20",
+      "snapshot_sha256": "e5d6bcb63f2b580248f4d98044c143f739b61c72155ffb11acebe2bcfb950bfe",
+      "native_sha256": "fe3fcbee308e1352c7f10a8fb4b7b80eeb1728f156e44c733e25fbd0e4cc51cd",
+      "diagnostic_sha256": "f11ed1e62adc6e41f7e9f754530bf6632991edb34d2e01c23cf7434c45f7ed3c",
+      "self_review_sha256": "f411719165778a8d682bd03384d1dbcd14ca9cd83af418ed496f2ec94c4f91e4",
+      "previous_snapshot_sha256": "28487f79f63a90f968660c894dc98205ee8410c132d217ec68a94199f88f9444",
+      "passing_parameters": [],
+      "mass_Rhat": 2.2758199122185347,
+      "mass_MCSE_eV": 0.18888196800281776,
+      "next_history_trigger": 1461,
+      "posterior_qualified": false
+    }
+  ],
+  "all_four_family_predecessor_prefixes_checked_for_each_target": true,
+  "exact_weighted_history_and_growth_checked": true,
+  "selected_native_rows_exact": 24,
+  "seven_parameter_diagnostics_checked": true,
+  "both_A_posteriors_unqualified": true,
+  "mass_limit_difference_not_promoted": true
+}

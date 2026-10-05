@@ -1,0 +1,35 @@
+{
+  "utc": "2026-10-04T22:45:06.429807+00:00",
+  "retirement_receipt": "runs/20261004_math_review_fresh_CAMB_posterior_preparation/old_policy_retirement_receipt.json",
+  "retirement_receipt_sha256": "c9d3eb43ac01e0302462d3e6961d4338a4970d3987670bbfeaebce7596740e04",
+  "original_identity_receipt": "runs/20261004_math_review_fresh_CAMB_posterior_preparation/runtime_before_preparation.json",
+  "original_identity_receipt_sha256": "d066a446fc5d25fb6cb6418071cb62a174649f3ab0cd6e9ca2cd9e2183f6d5ce",
+  "observations": [
+    {
+      "seed": 303,
+      "pid": 660424,
+      "original_start_ticks": 328869762,
+      "current_start_ticks": 342315083,
+      "current_process_name": "lean",
+      "same_original_process_identity": false
+    },
+    {
+      "seed": 304,
+      "pid": 660425,
+      "original_start_ticks": 328869762,
+      "current_start_ticks": 342315083,
+      "current_process_name": "lean",
+      "same_original_process_identity": false
+    },
+    {
+      "seed": 307,
+      "pid": 660426,
+      "original_start_ticks": 328869763,
+      "current_start_ticks": 342315083,
+      "current_process_name": "lean",
+      "same_original_process_identity": false
+    }
+  ],
+  "PID_only_absence_predicate_falsely_rejects_reused_numbers": true,
+  "no_process_signaled_or_modified": true
+}

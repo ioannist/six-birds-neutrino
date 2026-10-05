@@ -1,0 +1,590 @@
+{
+  "utc": "2026-10-05T06:43:52.373131+00:00",
+  "records": [
+    {
+      "group": "current_A3200",
+      "snapshot_path": "runs/20261005_math_review_fresh_CAMB_eleventh_current_A3200_diagnostics/snapshot_receipt.json",
+      "snapshot_sha256": "9f426e960b8583e738f96664f0503e3e2155ab6d9c66bfc65340e02d5717bd46",
+      "native_sha256": "b0e8a147136e644d07a3491012bd6affa40de0bb718e39e6c5fef832cdc6da69",
+      "diagnostic_sha256": "8cee1eb931dfb2b6eb3017d97dbcb664c5e9a79922c2cae1914fb9775af22d41",
+      "self_review_sha256": "b6068614729357e2fce5e94837f5d71b300cf553a7b106dd8777e1d1002c49e0",
+      "execution_sha256": "ee043dbf5b4ae08cb2ea4d115b1332c7363a5ff8276c7ba4ac7d2eb501481a59",
+      "parameter_failed_gates": {
+        "omegabh2": [
+          "MCSE"
+        ],
+        "omegach2": [
+          "MCSE"
+        ],
+        "H0": [
+          "MCSE"
+        ],
+        "logA": [],
+        "ns": [
+          "MCSE"
+        ],
+        "tau": [],
+        "mnu": [
+          "MCSE",
+          "chronological_drift"
+        ]
+      },
+      "union_failed_gates": [
+        "MCSE",
+        "chronological_drift"
+      ],
+      "only_precision_gates_fail_at_this_snapshot": false,
+      "mass_failed_gates": [
+        "MCSE",
+        "chronological_drift"
+      ],
+      "mass_Rhat": 1.0045333224873627,
+      "mass_bulk_ESS": 739.4435953731168,
+      "mass_tail_ESS": 1078.61468113622,
+      "mass_MCSE_eV": 0.0043646588086091315,
+      "required_mass_MCSE_eV": 0.001,
+      "minimum_saved_postburn_history": 8049,
+      "next_history_trigger": 9659,
+      "posterior_qualified": false
+    },
+    {
+      "group": "current_A4095",
+      "snapshot_path": "runs/20261005_math_review_fresh_CAMB_tenth_current_A4095_diagnostics/snapshot_receipt.json",
+      "snapshot_sha256": "371042cb86b149038e21d7b52223848cbbaf1e2d2ef906a087362310e0aeab57",
+      "native_sha256": "5df96a41d84da9961c0f562a29af84d9080230db3ac85285529344efb86d0013",
+      "diagnostic_sha256": "07dfcfd94028c04f577b65b6081c5e1b5f06ff06abda784723255b28ed3f0c0a",
+      "self_review_sha256": "ca328d3784b0e8b06c3a4cf46d1dd24b04292e81db6798e17e5187fed1e434da",
+      "execution_sha256": "79459579c4fc0623dbc548605fa41c4e2cf51d7d12fccf0d2d0d3eada7280cbe",
+      "parameter_failed_gates": {
+        "omegabh2": [
+          "MCSE"
+        ],
+        "omegach2": [
+          "MCSE"
+        ],
+        "H0": [
+          "MCSE"
+        ],
+        "logA": [],
+        "ns": [
+          "MCSE"
+        ],
+        "tau": [],
+        "mnu": [
+          "MCSE"
+        ]
+      },
+      "union_failed_gates": [
+        "MCSE"
+      ],
+      "only_precision_gates_fail_at_this_snapshot": true,
+      "mass_failed_gates": [
+        "MCSE"
+      ],
+      "mass_Rhat": 1.0047090351146764,
+      "mass_bulk_ESS": 617.9020151801177,
+      "mass_tail_ESS": 840.4556122408748,
+      "mass_MCSE_eV": 0.006033161115638813,
+      "required_mass_MCSE_eV": 0.001,
+      "minimum_saved_postburn_history": 6312,
+      "next_history_trigger": 7575,
+      "posterior_qualified": false
+    },
+    {
+      "group": "current_B4095",
+      "snapshot_path": "runs/20261005_math_review_fresh_CAMB_tenth_current_B4095_diagnostics/snapshot_receipt.json",
+      "snapshot_sha256": "556a6c5b0d1e19c1db28ec1f38a5b46d1dd7568eac959c87473900545deb2a36",
+      "native_sha256": "175b2717bc7aa6681322d688b77894999801e4e3fafd077292b94c130a0375ff",
+      "diagnostic_sha256": "3d06daf1d19986fff6ea9aff7b8279fc2a2b791d07007f16456c6355b20b09c8",
+      "self_review_sha256": "4209fe7fe1d1568b333396774eb2f624bac19fa474bc03eb0a09b85dc1aa6413",
+      "execution_sha256": "92b3e2a77fee85c499d67417bf321022e7506e3a54230bd0e0ad22e7f9d7b014",
+      "parameter_failed_gates": {
+        "omegabh2": [
+          "MCSE"
+        ],
+        "omegach2": [],
+        "H0": [
+          "MCSE"
+        ],
+        "logA": [
+          "MCSE"
+        ],
+        "ns": [
+          "MCSE"
+        ],
+        "tau": [
+          "MCSE"
+        ],
+        "mnu": [
+          "Rhat",
+          "MCSE"
+        ]
+      },
+      "union_failed_gates": [
+        "MCSE",
+        "Rhat"
+      ],
+      "only_precision_gates_fail_at_this_snapshot": false,
+      "mass_failed_gates": [
+        "Rhat",
+        "MCSE"
+      ],
+      "mass_Rhat": 1.0121525056345462,
+      "mass_bulk_ESS": 671.4597133174652,
+      "mass_tail_ESS": 838.3846902594065,
+      "mass_MCSE_eV": 0.002698801619463509,
+      "required_mass_MCSE_eV": 0.001,
+      "minimum_saved_postburn_history": 6173,
+      "next_history_trigger": 7408,
+      "posterior_qualified": false
+    },
+    {
+      "group": "old_A3200",
+      "snapshot_path": "runs/20261005_math_review_fresh_CAMB_tenth_old_A3200_diagnostics/snapshot_receipt.json",
+      "snapshot_sha256": "6fb4d9d9c1c00547d050c995830009a4e6bd27d375726222035ff94a0fde89b3",
+      "native_sha256": "40ae85bd4d0bf6a14cf7e19681404f32484edec6875067d099240daaa1c48df4",
+      "diagnostic_sha256": "9f302df8026a2ecd577305241d5ac4a210b78f246efb839ff24db6c6fa105c31",
+      "self_review_sha256": "49c356ab4620bf22582e78f627538ffca0502c9a6fd76330a397abf4457c5703",
+      "execution_sha256": "54bdffc34345e77c6c99accf7caa2872f9a26a457a556496c6e7d9e5e48577d1",
+      "parameter_failed_gates": {
+        "omegabh2": [
+          "MCSE"
+        ],
+        "omegach2": [
+          "MCSE"
+        ],
+        "H0": [
+          "Rhat",
+          "MCSE",
+          "chronological_drift"
+        ],
+        "logA": [
+          "MCSE"
+        ],
+        "ns": [
+          "MCSE"
+        ],
+        "tau": [],
+        "mnu": [
+          "MCSE"
+        ]
+      },
+      "union_failed_gates": [
+        "MCSE",
+        "Rhat",
+        "chronological_drift"
+      ],
+      "only_precision_gates_fail_at_this_snapshot": false,
+      "mass_failed_gates": [
+        "MCSE"
+      ],
+      "mass_Rhat": 1.008894842561612,
+      "mass_bulk_ESS": 524.7039160207945,
+      "mass_tail_ESS": 693.6653057092606,
+      "mass_MCSE_eV": 0.005697468991772689,
+      "required_mass_MCSE_eV": 0.001,
+      "minimum_saved_postburn_history": 7059,
+      "next_history_trigger": 8471,
+      "posterior_qualified": false
+    },
+    {
+      "group": "old_B4095",
+      "snapshot_path": "runs/20261005_math_review_fresh_CAMB_tenth_old_B4095_diagnostics/snapshot_receipt.json",
+      "snapshot_sha256": "43d2cc86953685d019ef0d5d36ed5154a5c8264a9d75dd1b63a207e0e94e24a7",
+      "native_sha256": "373ada785c7e27750df716b0eface6c070bcfa35083ca8bf3fbb94bb4a7a65bf",
+      "diagnostic_sha256": "a91d7d3ef7a6a81bce883bd5e51c878221c93890df9957c029310c128ebc1f9a",
+      "self_review_sha256": "6805a920c34426829e6bc5b0cb3a9ea8f177624614d6d4772b56c0b2bdf09cf5",
+      "execution_sha256": "5e128695ee25c8df3f8eac372f89869dec5ff00a237c395e21b6084364ad014d",
+      "parameter_failed_gates": {
+        "omegabh2": [
+          "MCSE"
+        ],
+        "omegach2": [
+          "MCSE"
+        ],
+        "H0": [
+          "MCSE"
+        ],
+        "logA": [],
+        "ns": [
+          "MCSE"
+        ],
+        "tau": [
+          "MCSE"
+        ],
+        "mnu": [
+          "Rhat",
+          "MCSE"
+        ]
+      },
+      "union_failed_gates": [
+        "MCSE",
+        "Rhat"
+      ],
+      "only_precision_gates_fail_at_this_snapshot": false,
+      "mass_failed_gates": [
+        "Rhat",
+        "MCSE"
+      ],
+      "mass_Rhat": 1.010478924393212,
+      "mass_bulk_ESS": 728.7305126013853,
+      "mass_tail_ESS": 1031.9760744121384,
+      "mass_MCSE_eV": 0.0037721442767497115,
+      "required_mass_MCSE_eV": 0.001,
+      "minimum_saved_postburn_history": 6880,
+      "next_history_trigger": 8256,
+      "posterior_qualified": false
+    },
+    {
+      "group": "sigma_time_v3_A4095_cap20",
+      "snapshot_path": "runs/20261005_math_review_sigma_time_v3_first_A4095_cap20_diagnostics_v3/snapshot_receipt.json",
+      "snapshot_sha256": "28487f79f63a90f968660c894dc98205ee8410c132d217ec68a94199f88f9444",
+      "native_sha256": "54b75ff2f2d68766ac3a67882b696062ce233290e868c79f1b590970d8081546",
+      "diagnostic_sha256": "3472a88a37a7fd65fbfeccde3ff776166781849b310afc0612a79fe941ca1cf2",
+      "self_review_sha256": "3ffbef9b4ec84691f23d72006f4e9aaca5eebed47f72a2a2b70840d163e7cfc8",
+      "execution_sha256": "b3d8a524c59e26677f0be124fbbe850d8e5b7a76346964c80264970181e18942",
+      "parameter_failed_gates": {
+        "omegabh2": [
+          "Rhat",
+          "bulk_ESS",
+          "tail_ESS",
+          "quantile_ESS",
+          "equalized_selection"
+        ],
+        "omegach2": [
+          "Rhat",
+          "bulk_ESS",
+          "tail_ESS",
+          "quantile_ESS"
+        ],
+        "H0": [
+          "Rhat",
+          "bulk_ESS",
+          "tail_ESS",
+          "quantile_ESS"
+        ],
+        "logA": [
+          "Rhat",
+          "bulk_ESS",
+          "tail_ESS",
+          "quantile_ESS",
+          "MCSE",
+          "equalized_selection"
+        ],
+        "ns": [
+          "Rhat",
+          "bulk_ESS",
+          "tail_ESS",
+          "quantile_ESS",
+          "MCSE"
+        ],
+        "tau": [
+          "Rhat",
+          "bulk_ESS",
+          "tail_ESS",
+          "quantile_ESS",
+          "MCSE",
+          "chronological_drift",
+          "equalized_selection"
+        ],
+        "mnu": [
+          "Rhat",
+          "bulk_ESS",
+          "tail_ESS",
+          "quantile_ESS",
+          "MCSE",
+          "chronological_drift",
+          "equalized_selection"
+        ]
+      },
+      "union_failed_gates": [
+        "MCSE",
+        "Rhat",
+        "bulk_ESS",
+        "chronological_drift",
+        "equalized_selection",
+        "quantile_ESS",
+        "tail_ESS"
+      ],
+      "only_precision_gates_fail_at_this_snapshot": false,
+      "mass_failed_gates": [
+        "Rhat",
+        "bulk_ESS",
+        "tail_ESS",
+        "quantile_ESS",
+        "MCSE",
+        "chronological_drift",
+        "equalized_selection"
+      ],
+      "mass_Rhat": 2.2957877085293674,
+      "mass_bulk_ESS": 5.043928953249862,
+      "mass_tail_ESS": 21.820127267545814,
+      "mass_MCSE_eV": 0.0382822877341642,
+      "required_mass_MCSE_eV": 0.001,
+      "minimum_saved_postburn_history": 1004,
+      "next_history_trigger": 1205,
+      "posterior_qualified": false
+    },
+    {
+      "group": "sigma_time_v3_A4095_cap5",
+      "snapshot_path": "runs/20261005_math_review_sigma_time_v3_first_A4095_cap5_diagnostics/snapshot_receipt.json",
+      "snapshot_sha256": "ee997b191d75f76ba13446404b9f993e4ccf287386dfcf975907ca60f4cd888b",
+      "native_sha256": "26c1452b29965c2bd6383cb80ed6bae932507bea430ea0cafacfed749e2aa131",
+      "diagnostic_sha256": "ab5bbc53ac307a3652d5d1751b414401cfbb42e6aa77fdd632118c742cea91a8",
+      "self_review_sha256": "73d4e4f86cc8d72679ff0ca7dd2fbd6c496ece844ca2c74f70e1d8740f3302ba",
+      "execution_sha256": "3df1e78c5bce231b8cee76a9b2497eb5dc993c149c36aea776b1030bf165f1cf",
+      "parameter_failed_gates": {
+        "omegabh2": [
+          "Rhat",
+          "bulk_ESS",
+          "tail_ESS",
+          "quantile_ESS",
+          "MCSE",
+          "chronological_drift",
+          "equalized_selection"
+        ],
+        "omegach2": [
+          "Rhat",
+          "bulk_ESS",
+          "tail_ESS",
+          "quantile_ESS"
+        ],
+        "H0": [
+          "Rhat",
+          "bulk_ESS",
+          "tail_ESS",
+          "quantile_ESS"
+        ],
+        "logA": [
+          "Rhat",
+          "bulk_ESS",
+          "tail_ESS",
+          "quantile_ESS",
+          "MCSE"
+        ],
+        "ns": [
+          "Rhat",
+          "bulk_ESS",
+          "tail_ESS",
+          "quantile_ESS",
+          "MCSE"
+        ],
+        "tau": [
+          "Rhat",
+          "bulk_ESS",
+          "tail_ESS",
+          "quantile_ESS",
+          "MCSE",
+          "chronological_drift",
+          "equalized_selection"
+        ],
+        "mnu": [
+          "Rhat",
+          "bulk_ESS",
+          "tail_ESS",
+          "quantile_ESS",
+          "MCSE"
+        ]
+      },
+      "union_failed_gates": [
+        "MCSE",
+        "Rhat",
+        "bulk_ESS",
+        "chronological_drift",
+        "equalized_selection",
+        "quantile_ESS",
+        "tail_ESS"
+      ],
+      "only_precision_gates_fail_at_this_snapshot": false,
+      "mass_failed_gates": [
+        "Rhat",
+        "bulk_ESS",
+        "tail_ESS",
+        "quantile_ESS",
+        "MCSE"
+      ],
+      "mass_Rhat": 1.7378652240276848,
+      "mass_bulk_ESS": 6.547522890391784,
+      "mass_tail_ESS": 11.595754544226581,
+      "mass_MCSE_eV": 0.7989775546068281,
+      "required_mass_MCSE_eV": 0.001,
+      "minimum_saved_postburn_history": 1007,
+      "next_history_trigger": 1209,
+      "posterior_qualified": false
+    },
+    {
+      "group": "sigma_time_v3_B4095_cap20",
+      "snapshot_path": "runs/20261005_math_review_sigma_time_v3_first_B4095_cap20_diagnostics_v2/snapshot_receipt.json",
+      "snapshot_sha256": "7b07029e3bfd8e2a3a0b11cd3858d77933d5800c6890424f020b00b9088b96ae",
+      "native_sha256": "f45623810b8a2656784de7faabc5443a83c60a81da7003694db47e2be0d768fc",
+      "diagnostic_sha256": "28e6b2c8d668a071328e34c75a807a1ac21578dec29b419e558423368b5bfe45",
+      "self_review_sha256": "a7c856c2e2bc9bceb84e921922f3279299b62cf66cde87de810b88fecafde40a",
+      "execution_sha256": "daf12f0495627851eb09a10cb7adf3118e957c112f3367178ec604ccf32be613",
+      "parameter_failed_gates": {
+        "omegabh2": [
+          "Rhat",
+          "bulk_ESS",
+          "tail_ESS",
+          "quantile_ESS",
+          "MCSE"
+        ],
+        "omegach2": [
+          "Rhat",
+          "bulk_ESS",
+          "tail_ESS",
+          "quantile_ESS"
+        ],
+        "H0": [
+          "Rhat",
+          "bulk_ESS",
+          "tail_ESS",
+          "quantile_ESS"
+        ],
+        "logA": [
+          "Rhat",
+          "bulk_ESS",
+          "tail_ESS",
+          "quantile_ESS",
+          "MCSE"
+        ],
+        "ns": [
+          "Rhat",
+          "bulk_ESS",
+          "tail_ESS",
+          "quantile_ESS",
+          "chronological_drift",
+          "equalized_selection"
+        ],
+        "tau": [
+          "Rhat",
+          "bulk_ESS",
+          "tail_ESS",
+          "quantile_ESS",
+          "MCSE"
+        ],
+        "mnu": [
+          "Rhat",
+          "bulk_ESS",
+          "tail_ESS",
+          "quantile_ESS",
+          "MCSE"
+        ]
+      },
+      "union_failed_gates": [
+        "MCSE",
+        "Rhat",
+        "bulk_ESS",
+        "chronological_drift",
+        "equalized_selection",
+        "quantile_ESS",
+        "tail_ESS"
+      ],
+      "only_precision_gates_fail_at_this_snapshot": false,
+      "mass_failed_gates": [
+        "Rhat",
+        "bulk_ESS",
+        "tail_ESS",
+        "quantile_ESS",
+        "MCSE"
+      ],
+      "mass_Rhat": 2.4077299420544294,
+      "mass_bulk_ESS": 4.923391521510644,
+      "mass_tail_ESS": 11.54568099199417,
+      "mass_MCSE_eV": 0.489763674778958,
+      "required_mass_MCSE_eV": 0.001,
+      "minimum_saved_postburn_history": 1005,
+      "next_history_trigger": 1206,
+      "posterior_qualified": false
+    },
+    {
+      "group": "sigma_time_v3_B4095_cap5",
+      "snapshot_path": "runs/20261005_math_review_sigma_time_v3_first_B4095_cap5_diagnostics/snapshot_receipt.json",
+      "snapshot_sha256": "1bf244ccbd15a590e8ca1215fadfa8ef23cca903459fa96b2e349121bfb82012",
+      "native_sha256": "dfd0c6ffb1ffb88fe0d8ec35afbec05c049e349192550cf95b68186fc7d4bbf2",
+      "diagnostic_sha256": "b88e84a249591889d46775613e7b7e56c05a74f783e2dd406a23205e80836711",
+      "self_review_sha256": "c3c2ab2cbd1a8abb2f74dbda626f75cdcf52eeeec4e40612c6b238b6c6f840a3",
+      "execution_sha256": "6535909f3da832a364f1711031cc73890be8fc54f526a26ebef0b72de0e4693b",
+      "parameter_failed_gates": {
+        "omegabh2": [
+          "Rhat",
+          "bulk_ESS",
+          "tail_ESS",
+          "quantile_ESS",
+          "MCSE"
+        ],
+        "omegach2": [
+          "Rhat",
+          "bulk_ESS",
+          "tail_ESS",
+          "quantile_ESS"
+        ],
+        "H0": [
+          "Rhat",
+          "bulk_ESS",
+          "tail_ESS",
+          "quantile_ESS"
+        ],
+        "logA": [
+          "Rhat",
+          "bulk_ESS",
+          "tail_ESS",
+          "quantile_ESS",
+          "MCSE"
+        ],
+        "ns": [
+          "Rhat",
+          "bulk_ESS",
+          "tail_ESS",
+          "quantile_ESS",
+          "MCSE"
+        ],
+        "tau": [
+          "Rhat",
+          "bulk_ESS",
+          "tail_ESS",
+          "quantile_ESS",
+          "MCSE"
+        ],
+        "mnu": [
+          "Rhat",
+          "bulk_ESS",
+          "tail_ESS",
+          "quantile_ESS",
+          "MCSE"
+        ]
+      },
+      "union_failed_gates": [
+        "MCSE",
+        "Rhat",
+        "bulk_ESS",
+        "quantile_ESS",
+        "tail_ESS"
+      ],
+      "only_precision_gates_fail_at_this_snapshot": false,
+      "mass_failed_gates": [
+        "Rhat",
+        "bulk_ESS",
+        "tail_ESS",
+        "quantile_ESS",
+        "MCSE"
+      ],
+      "mass_Rhat": 1.9364217391251282,
+      "mass_bulk_ESS": 5.573113940886553,
+      "mass_tail_ESS": 13.492516967072806,
+      "mass_MCSE_eV": 0.16176893614103438,
+      "required_mass_MCSE_eV": 0.001,
+      "minimum_saved_postburn_history": 1022,
+      "next_history_trigger": 1227,
+      "posterior_qualified": false
+    }
+  ],
+  "nine_numerical_targets_kept_separate": true,
+  "all_sixty_three_parameter_gate_sets_bound": true,
+  "all_one_hundred_eight_selected_native_rows_exact": true,
+  "passing_Rhat_or_drift_not_read_as_stationarity": true,
+  "MCSE_estimates_not_uniform_or_certified_physical_error_bounds": true,
+  "distinct_starts_not_read_as_PRNG_independence": true,
+  "no_sampling_length_or_completion_time_extrapolation": true,
+  "precision_limits_unchanged": true,
+  "main_claim_revision_adopted": false
+}

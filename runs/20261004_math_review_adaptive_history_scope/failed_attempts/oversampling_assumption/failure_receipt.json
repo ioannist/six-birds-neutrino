@@ -1,0 +1,7 @@
+{
+  "exit_code": 1,
+  "location": "audit_adaptation.py:55",
+  "failure": "AssertionError: assumed oversample_power == 0 for all cohorts",
+  "repair": "Only output thinning affects stored-row coordinates; oversample_thin is disabled in all reviewed histories. Preserve actual oversampling settings, including medium drag variants.",
+  "production_inputs_changed": false
+}

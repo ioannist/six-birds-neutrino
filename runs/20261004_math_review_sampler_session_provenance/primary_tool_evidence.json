@@ -1,0 +1,88 @@
+{
+  "launch_call": {
+    "line": 1716,
+    "utc": "2026-10-03T10:04:11.790Z",
+    "call_id": "[redacted: AI-agent tool-call transcript content]",
+    "input": "[redacted: AI-agent tool-call transcript content]"
+  },
+  "launch_reply": {
+    "line": 1719,
+    "utc": "2026-10-03T10:04:13.118Z",
+    "values": [
+      {
+        "chunk_id": "faf899",
+        "wall_time_seconds": 1.6291e-05,
+        "exit_code": 0,
+        "original_token_count": 0,
+        "output": ""
+      },
+      {
+        "chunk_id": "7f8d19",
+        "wall_time_seconds": 1.4708e-05,
+        "exit_code": 0,
+        "original_token_count": 11,
+        "output": "Correlated parallel configurations ready.\n"
+      },
+      {
+        "lens": "A",
+        "seed": 401,
+        "chunk_id": "30dba7",
+        "wall_time_seconds": 1.000297853,
+        "session_id": 44762,
+        "original_token_count": 0,
+        "output": ""
+      },
+      {
+        "lens": "A",
+        "seed": 402,
+        "chunk_id": "b9e51a",
+        "wall_time_seconds": 1.001547707,
+        "session_id": 92240,
+        "original_token_count": 0,
+        "output": ""
+      },
+      {
+        "lens": "B",
+        "seed": 403,
+        "chunk_id": "3e63be",
+        "wall_time_seconds": 1.000227109,
+        "session_id": 19631,
+        "original_token_count": 0,
+        "output": ""
+      },
+      {
+        "lens": "B",
+        "seed": 404,
+        "chunk_id": "5d32c3",
+        "wall_time_seconds": 1.000825104,
+        "session_id": 26652,
+        "original_token_count": 0,
+        "output": ""
+      }
+    ]
+  },
+  "terminal_call": {
+    "line": 12805,
+    "utc": "2026-10-04T04:33:24.774Z",
+    "call_id": "[redacted: AI-agent tool-call transcript content]",
+    "input": "[redacted: AI-agent tool-call transcript content]"
+  },
+  "terminal_reply_metadata": [
+    {
+      "chunk_id": "f17167",
+      "wall_time_seconds": 7.605e-06,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    },
+    {
+      "chunk_id": "697cbf",
+      "wall_time_seconds": 1.8325e-05,
+      "exit_code": 0,
+      "original_token_count": 0,
+      "output": ""
+    }
+  ],
+  "terminal_reply_utc": "2026-10-04T04:33:24.923Z",
+  "redaction_note": "Agent tool-call inputs and call identifiers were removed before publication; program outputs, exit codes, timestamps and process numbers are retained."
+}

@@ -1,0 +1,54 @@
+{
+  "seed": 1801,
+  "lens": "A",
+  "group": "current_A4095",
+  "kind": "spt_desi_fresh_CAMB",
+  "style": "restoration_style",
+  "solver_version": "2.0.4",
+  "Cobaya_version": "3.6.2",
+  "config": "runs/20261004_math_review_fresh_CAMB_posterior_preparation/seed1801/input.yaml",
+  "config_sha256": "4dd01290bcba5f5858cad52b8ee9d599b63815ad924b0f69e0e42799bc2773e4",
+  "run_dir": "runs/20261004_math_review_fresh_CAMB_current_A4095_seed1801",
+  "initial_point": {
+    "omegabh2": 0.023027917,
+    "omegach2": 0.11612066,
+    "H0": 68.927728,
+    "logA": 3.0162119,
+    "ns": 1.0113053,
+    "tau": 0.050845913,
+    "mnu": 0.071601591
+  },
+  "initial_point_label": "original_median",
+  "control": "runs/20261004_math_review_SPT_effective_CAMB_settings/A/evaluation_receipt.json",
+  "control_sha256": "e163836881a353b8abb04922be9e55531a57c426fba4f0670f2fdf30c12569b7",
+  "selection_sha256": "158846dadb465c84ef1a7294938ae10e793db34720a837caaab8daa5d81b66c7",
+  "module": "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/camb/camblib.so",
+  "module_sha256": "306640a8948cd5246fc9b21e76525f6adebdff5ba3bc792a57d50bba67225ad5",
+  "wrapper": "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/cobaya/theories/camb/camb.py",
+  "wrapper_sha256": "ed8a9ea708caa437e72732adb1cb32182330f55b4c3c9fb1e18e36e604424214",
+  "proposal": {
+    "source": "runs/20261003_math_review_chain_A_seed401/chains/math_restoration_A_seed401.covmat",
+    "path": "runs/20261004_math_review_fresh_CAMB_posterior_preparation/proposal_A.covmat",
+    "sha256": "27eebf2cb99c8b73aab845ce5d930a407ff4ebe7359ec8515bd8c939ec9cd4c2",
+    "completion_receipt": "runs/20261004_math_review_spt_sample_cap_completion/completion_receipt.json",
+    "completion_receipt_sha256": "63418a24af29123aed7f63f7cb3ce14ae8b36d832986ba7e1c9273d448e1f2e7",
+    "sampled_parameters": [
+      "omegabh2",
+      "omegach2",
+      "H0",
+      "logA",
+      "ns",
+      "tau",
+      "mnu"
+    ],
+    "maximum_asymmetry": 2.710505431213761e-20,
+    "role": "fixed proposal heuristic only; no posterior or precision evidence"
+  },
+  "implementation_sha256": {
+    "scripts/run_cobaya.py": "883640961f35a782bdec0979fe28c98eb92b96098d1d083a9d62a8b3382d0c11",
+    "src/sbt_spt_audit/boltzmann.py": "a2100f8f48f98988580c21ddaca04ed86a9b956f4b22135a942b05dd8265f355",
+    "src/sbt_spt_audit/samplers.py": "2a7c7e99597b6c5bc48f72bbaa9e8df81dd6987ba36e8ab0a81b8c36b10f33e9",
+    "runs/20261004_math_review_fresh_CAMB_posterior_preparation/launch_chain.py": "e7aedbcda46c5fcfb70b50be451c1ee845f171106a9402e0f95fdc924cea0188"
+  },
+  "launch_receipt": "runs/20261004_math_review_fresh_CAMB_posterior_preparation/seed1801/launch_receipt.json"
+}

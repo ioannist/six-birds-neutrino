@@ -1,0 +1,27 @@
+{
+  "utc": "2026-10-05T02:50:34.821090+00:00",
+  "build": {
+    "managed_session": 37002,
+    "exit_code": 0
+  },
+  "focused_initial_tests": {
+    "managed_session": 58535,
+    "exit_code": 0,
+    "passed": 18
+  },
+  "full_python_tests": {
+    "managed_session": 31768,
+    "exit_code": 0,
+    "passed": 234
+  },
+  "source_members": 113,
+  "changed_release_files": [
+    "camb-2.0.4/fortran/halofit.f90",
+    "camb-2.0.4/fortran/results.f90"
+  ],
+  "module_sha256": "85a091c53d9c81ee6443a1a4492ee45a35b487f7d360dfd6df190b9e3856cfc6",
+  "builder_sha256": "f648c0240768fd1c2aa3e9affda6c05424b4d33b0d6cdcf4130b205d6975f38b",
+  "tests_sha256": "ff65e90f0192dbc4457a2a09bfd1a979ad273bdcbe7feb8ec293855d370796de",
+  "build_and_test_workers_terminal": true,
+  "production_adopted": false
+}

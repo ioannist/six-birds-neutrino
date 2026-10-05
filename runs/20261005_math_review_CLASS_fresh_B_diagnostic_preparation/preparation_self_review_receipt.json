@@ -1,0 +1,28 @@
+{
+  "utc": "2026-10-05T05:49:27.443352+00:00",
+  "reviewer": "distinct_self_review_not_independent_agent",
+  "records": [
+    {
+      "group": "fresh_recovery_medium_B",
+      "selected_native_rows": 12,
+      "maximum_native_component_error": 0.0,
+      "native_receipt_sha256": "b472513d59e0879b8f49b7cf1edd59687768f5484db5132d69aae8a7363d8d92",
+      "self_review_receipt_sha256": "032cd154a3442b38d4a9e6e993064b94234b791e28557e2940c1833d23d95693"
+    },
+    {
+      "group": "fresh_recovery_quad_B",
+      "selected_native_rows": 12,
+      "maximum_native_component_error": 0.0,
+      "native_receipt_sha256": "75f060956a35acf06a67fe57db364ff4c500548b4af26dbc3974f13ca628cbd6",
+      "self_review_receipt_sha256": "e0561ef06a32c4160142902833fd365cbbe9e213966662917c4cc5994c220371"
+    }
+  ],
+  "all_thresholds_and_ten_parameter_coverage_reconstructed": true,
+  "all_eight_native_first_row_bindings_checked": true,
+  "recorded_unknown_version_not_replaced_by_installed_metadata": true,
+  "two_production_prethreshold_refusals": true,
+  "two_unsafe_predecessors_refused": true,
+  "wrong_loaded_native_environment_refused": true,
+  "production_assessments_completed": 0,
+  "posterior_or_uniform_accuracy_certified": false
+}

@@ -1,0 +1,48 @@
+{
+  "scope": "three_point_target_benchmark_not_inference",
+  "all_components_within_1e-8_abs_1e-12_rel": true,
+  "benchmarks": [
+    {
+      "omp_threads": 1,
+      "native_component_max_abs_errors": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "evaluation_seconds": [
+        7.642995912116021,
+        5.780511567834765,
+        6.238482458982617
+      ],
+      "total_seconds": 22.163141789846122
+    },
+    {
+      "omp_threads": 4,
+      "native_component_max_abs_errors": [
+        6.821210263296962e-13,
+        6.821210263296962e-13,
+        6.821210263296962e-13
+      ],
+      "evaluation_seconds": [
+        2.3474164730869234,
+        1.9696177686564624,
+        1.8563832063227892
+      ],
+      "total_seconds": 8.94233655417338
+    },
+    {
+      "omp_threads": 8,
+      "native_component_max_abs_errors": [
+        4.547473508864641e-13,
+        1.1368683772161603e-12,
+        9.094947017729282e-13
+      ],
+      "evaluation_seconds": [
+        1.5085129151120782,
+        1.2207239312119782,
+        1.171576552093029
+      ],
+      "total_seconds": 6.232836856041104
+    }
+  ]
+}

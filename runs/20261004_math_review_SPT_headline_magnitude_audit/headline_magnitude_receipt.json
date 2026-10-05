@@ -1,0 +1,135 @@
+{
+  "utc": "2026-10-04T09:48:54.832664+00:00",
+  "scope": "headline_magnitude_review_distinct_from_CMB_TT_localization_decision",
+  "manuscript_table_rounded_shift_eV": 0.109,
+  "canonical_exact_p95_shift_eV": 0.10860629275736843,
+  "latest_qualified_retained_p95_shift_eV": 0.029718800000000004,
+  "latest_qualified_full_postburn_p95_shift_eV": 0.03138551000000002,
+  "current_to_canonical_retained_shift_ratio": 0.2736379195484851,
+  "canonical_minus_current_retained_shift_eV": 0.07888749275736842,
+  "quantile_MCSE_quadrature_eV_assuming_independent_MC_errors": 0.004215399432073433,
+  "new_readout_supports_direction_of_tightening": true,
+  "new_readout_establishes_original_point109_magnitude": false,
+  "latest_A_and_B_assessments_use_distinct_snapshot_times": true,
+  "original_chain_diagnostic_sources": {
+    "spt2018_desi": {
+      "chains_prefix": "/home/repos/six-birds-neutrino/runs/20260212_060311_662922_cobaya_spt2018_desi_lcdm_mnu/chains/spt2018_desi_lcdm_mnu",
+      "param": "mnu",
+      "loader": "raw_per_chain",
+      "burnin_frac": 0.2,
+      "eps": 0.001,
+      "prior_lower_bound": 0.0,
+      "mnu_median": 0.071601591,
+      "mnu_p95_upper": 0.19452529,
+      "mnu_mode": 0.04967230035575,
+      "boundary_fraction": 0.0022263450834879408,
+      "n_samples_used": 200,
+      "n_chains": 1,
+      "n_represented_steps": 2695,
+      "quantile_definition": "inverse_weighted_empirical_cdf",
+      "diagnostic_method": "classical_chronological_split_rhat_integer_holding_times",
+      "ess_method": "sum_per_chain_scalar_initial_positive_monotone_fft_proxy",
+      "diagnostic_scope": "scalar_proxies_not_rank_normalized_or_multivariate_certificates",
+      "mnu_split_rhat": 1.8604233345661814,
+      "mnu_ess": 4.8073793022254305,
+      "mnu_p95_upper_first_half": 0.084156919,
+      "mnu_p95_upper_second_half": 0.21734975,
+      "mnu_p95_half_diff": 0.133192831,
+      "warnings": [
+        "Scalar ESS proxy below 400; tail quantile precision is not established.",
+        "Scalar chronological split-Rhat does not pass 1.05; posterior bounds are not verified stable."
+      ]
+    },
+    "sptd1_desi": {
+      "chains_prefix": "/home/repos/six-birds-neutrino/runs/20260212_072014_910159_cobaya_sptd1_desi_lcdm_mnu/chains/sptd1_desi_lcdm_mnu",
+      "param": "mnu",
+      "loader": "raw_per_chain",
+      "burnin_frac": 0.2,
+      "eps": 0.001,
+      "prior_lower_bound": 0.0,
+      "mnu_median": 0.043870311,
+      "mnu_p95_upper": 0.09807736,
+      "mnu_mode": 0.069622534915,
+      "boundary_fraction": 0.0,
+      "n_samples_used": 96,
+      "n_chains": 1,
+      "n_represented_steps": 2258,
+      "quantile_definition": "inverse_weighted_empirical_cdf",
+      "diagnostic_method": "classical_chronological_split_rhat_integer_holding_times",
+      "ess_method": "sum_per_chain_scalar_initial_positive_monotone_fft_proxy",
+      "diagnostic_scope": "scalar_proxies_not_rank_normalized_or_multivariate_certificates",
+      "mnu_split_rhat": 1.2010885838466545,
+      "mnu_ess": 11.386545039515662,
+      "mnu_p95_upper_first_half": 0.069211378,
+      "mnu_p95_upper_second_half": 0.09807736,
+      "mnu_p95_half_diff": 0.028865982,
+      "warnings": [
+        "Scalar ESS proxy below 400; tail quantile precision is not established.",
+        "Scalar chronological split-Rhat does not pass 1.05; posterior bounds are not verified stable."
+      ]
+    }
+  },
+  "all_difference_attributed_to_sampling_or_code_repairs": false,
+  "uniform_CAMB_accuracy_or_pure_completion_causality_certified": false,
+  "claim_magnitude_material_revision_decision": "pending_user_discussion_no_revision_adopted",
+  "next_action": "finish another growth-qualified stability assessment before a numerical claim decision if user selects that route",
+  "paper_or_canonical_results_modified": false,
+  "sources": [
+    {
+      "path": "docs/findings/canonical_results.json",
+      "sha256": "bb09d7fe655482218d7d75889338a0d9e48b140e47b8b51d9be876aff3a64811"
+    },
+    {
+      "path": "runs/20261004_math_review_spt_chain_snapshots_thirteenth_B/paired_SPT_readout.json",
+      "sha256": "300c453e920cc5e4380443dada258b6f1e2aec3585dbf39d6128fa5c5fc6e362"
+    },
+    {
+      "path": "paper/tables/tab_mnu_shift.tex",
+      "sha256": "ca3ab6466c5a311b1576e0be64e7b83fab42011b4917967df390887ef0e2aea7"
+    },
+    {
+      "path": "paper/sections/abstract.tex",
+      "sha256": "fd404a03c618d07fb6513005fd4dbd7e334911f9cfe37eee0583491514ae192d"
+    },
+    {
+      "path": "runs/20261004_math_review_spt_chain_snapshots_twelfth_A/completion_verification.json",
+      "sha256": "67123d199839c3256cdcd9d1b1b1df1f8c8b952e079154cbe8ef35d3daa78615"
+    },
+    {
+      "path": "runs/20261004_math_review_spt_chain_snapshots_twelfth_A/chain_A_diagnostics.json",
+      "sha256": "326667be558973e48a79bc5611830d5278f3fd55eda12381df74a1cafcb4f7b6"
+    },
+    {
+      "path": "runs/20261004_math_review_spt_chain_snapshots_twelfth_A/snapshot_receipt.json",
+      "sha256": "fde1943ef9013c7969bca05d20a20d992f79213de4a91e19fc24d4f6608b462a"
+    },
+    {
+      "path": "runs/20261004_math_review_spt_chain_snapshots_thirteenth_B/completion_verification.json",
+      "sha256": "c9784dd3d1523adae07bfd8ca9529c17d2c4d2103603674769d5fa0c63dd5029"
+    },
+    {
+      "path": "runs/20261004_math_review_spt_chain_snapshots_thirteenth_B/chain_B_diagnostics.json",
+      "sha256": "1f5b043d08e894c43cc8e1d89b8e302b52dd7110443eb8e9a4711e8ffb72a4e9"
+    },
+    {
+      "path": "runs/20261004_math_review_spt_chain_snapshots_thirteenth_B/snapshot_receipt.json",
+      "sha256": "dc7f012f6673fa5d7b4b2c2417425dbce1e7ceae93d2b81c7738bdb0fca8d4ce"
+    },
+    {
+      "path": "runs/20261004_math_review_spt_chain_snapshots_twelfth_A/chain_A_seed301/resolved.yaml",
+      "sha256": "428fc99e0e6dcc74b0de05b1fcd56300b9c25f8178422bed43c261c21baac8d0"
+    },
+    {
+      "path": "runs/20261004_math_review_spt_chain_snapshots_thirteenth_B/chain_B_seed305/resolved.yaml",
+      "sha256": "090bfd6007abb3b715f91f3fbc7fda4e9a3c191d395ec35df4ca2a889f0b23fe"
+    },
+    {
+      "path": "runs/20261003_math_review_chain_diagnostics/spt2018_desi.json",
+      "sha256": "ab3c48d2e2d62cd1ef8128da2d8712c32b57a29b3875ff57791b05e2682f5b25"
+    },
+    {
+      "path": "runs/20261003_math_review_chain_diagnostics/sptd1_desi.json",
+      "sha256": "dae8af4449d30ef7fda9b212f6d4d0d03a805a4d227e57a02e9ed6be2d8c705c"
+    }
+  ]
+}

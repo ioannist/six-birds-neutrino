@@ -1,0 +1,40 @@
+{
+  "utc": "2026-10-04T12:55:01.928784+00:00",
+  "review_type": "distinct_self_review_not_independent_review",
+  "four_distinct_initial_points_and_seeds_each": {
+    "A": [
+      1601,
+      1602,
+      1603,
+      1604
+    ],
+    "B": [
+      1605,
+      1606,
+      1607,
+      1608
+    ]
+  },
+  "unchanged_sampled_priors_fixed_nuisances_and_internal_likelihood_definitions": true,
+  "initial_native_checks": 8,
+  "largest_observed_component_replay_difference": 1.5916157281026244e-11,
+  "selected_native_replay_tolerance": 1e-09,
+  "bit_identical_reproduction_claimed": false,
+  "native_initial_points_from_other_target_are_starting_coordinates_only": true,
+  "two_original_sparse_chain_quantile_points_are_not_qualified_old_quantiles": true,
+  "configuration_versions_native_hash_and_original_effective_lmax_distinguished": true,
+  "current_qualified_chain_histories_pooled": false,
+  "native_global_accuracy_or_original_environment_identity_certified": false,
+  "sampling_or_prior_kernel_replaced": false,
+  "paper_modified": false,
+  "preflight_sessions": {
+    "A": {
+      "session": 2579,
+      "exit_code": 0
+    },
+    "B": {
+      "session": 23423,
+      "exit_code": 0
+    }
+  }
+}

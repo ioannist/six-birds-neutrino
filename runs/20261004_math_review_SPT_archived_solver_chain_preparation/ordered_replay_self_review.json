@@ -1,0 +1,72 @@
+{
+  "utc": "2026-10-04T13:59:48.406880+00:00",
+  "review_type": "distinct_self_review_not_independent_review",
+  "session": 39092,
+  "exit_code": 0,
+  "posterior_calls_replayed": 37,
+  "exactly_reproduced_call_count": 35,
+  "nonidentical_calls": [
+    {
+      "call": 2,
+      "point": {
+        "omegabh2": 0.022699735,
+        "omegach2": 0.11515536,
+        "H0": 68.530016,
+        "logA": 3.073414907600401,
+        "ns": 1.0614040764194057,
+        "tau": 0.060991682,
+        "mnu": 0.14275261
+      },
+      "replayed_loglikes": [
+        -1536.9338790316137,
+        -5.283605001873935
+      ],
+      "recorded_loglikes": [
+        -1536.9186992459045,
+        -5.283605001873935
+      ],
+      "replayed_minus_recorded_chi2_components": [
+        0.030359571418557607,
+        -0.0
+      ]
+    },
+    {
+      "call": 3,
+      "point": {
+        "omegabh2": 0.022699735,
+        "omegach2": 0.11515536,
+        "H0": 68.530016,
+        "logA": 2.9953895345524715,
+        "ns": 1.0335724889353353,
+        "tau": 0.060991682,
+        "mnu": 0.14275261
+      },
+      "replayed_loglikes": [
+        -1304.5086018192048,
+        -5.283605001873935
+      ],
+      "recorded_loglikes": [
+        -1304.4847488877153,
+        -5.283605001873935
+      ],
+      "replayed_minus_recorded_chi2_components": [
+        0.04770586297900081,
+        -0.0
+      ]
+    }
+  ],
+  "all37_exact_equality_assumption_rejected_before_sealing": true,
+  "failing_call35_reproduced_exactly": true,
+  "call35_cached_minus_fresh_component_chi2_exact_binary64": [
+    "107307688485/549755813888",
+    "0"
+  ],
+  "call35_cached_minus_fresh_total_chi2": 0.19519154827321472,
+  "fresh_matches_simple_initial_to_same_point_control": true,
+  "preceding_calculation_state_dependence_observed_at_fixed_point": true,
+  "speed_measurement_calls_required_to_reproduce_call35_failure": false,
+  "all_sampler_preparation_states_equivalent_or_replayed": false,
+  "specific_mutation_or_validated_repair_established": false,
+  "no_tolerance_relaxed_no_native_or_inference_sampler_modified": true,
+  "replay_receipt_sha256": "5a954dfbab6bcca1f0f69e1763ae7932039516abb695e0e8e50ca6ba12ead069"
+}

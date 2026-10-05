@@ -1,0 +1,72 @@
+{
+  "utc": "2026-10-04T21:59:16.594007+00:00",
+  "review_type": "distinct self-review",
+  "checked": [
+    {
+      "seed": 2001,
+      "group": "upper20_A4095",
+      "config_sha256": "643fd9f16bca16f9e4f8293111e507ea3d126ac284cbf33f3cd58be94b4a6bcb",
+      "initial_proof_sha256": "b7ae3de5002ea369eb5d326f42f8721ca8027cd0d3791b5107e612f276bcabd4",
+      "start_mass_eV": 0.071601591
+    },
+    {
+      "seed": 2002,
+      "group": "upper20_A4095",
+      "config_sha256": "131dff51c00165099bf4d6fb703bcc6214a2b8baa618d8078f25969525aa2e77",
+      "initial_proof_sha256": "fcc91e8c499f12f9f69f6950fb689b00d423a589994d6bb01094522488adee01",
+      "start_mass_eV": 0.05300723110956623
+    },
+    {
+      "seed": 2003,
+      "group": "upper20_A4095",
+      "config_sha256": "c05dfeafa339e71f6e4448ac9632b83d25df2f276d1aab689184a920af7cf6fc",
+      "initial_proof_sha256": "773e579f43aba8175368faa190ecfffd40a105a46ea1b15f20e798e6ceb9e336",
+      "start_mass_eV": 6.0
+    },
+    {
+      "seed": 2004,
+      "group": "upper20_A4095",
+      "config_sha256": "e1666b8d138328dd5551ca83ed647b218640813d8210124b2ed00821224a55e1",
+      "initial_proof_sha256": "057605a76b4de5899f689556cab0faad6de9dac5841cc090638acde02bbba6b8",
+      "start_mass_eV": 12.0
+    },
+    {
+      "seed": 2005,
+      "group": "upper20_B4095",
+      "config_sha256": "ac6e12c1de288f2615ca920a2bf0ed77450b0b82f758f59e89296555cc82cbab",
+      "initial_proof_sha256": "4e0ce12e0dd177a932403c403116a47785a27365bb7b534942a93cf028a7c391",
+      "start_mass_eV": 0.043870311
+    },
+    {
+      "seed": 2006,
+      "group": "upper20_B4095",
+      "config_sha256": "885d40245e9d46d7e157d8ec3085b72989b2e2d350a38c43671d977ff0b4486a",
+      "initial_proof_sha256": "70a2fb9943257352f152973cba6ad64b798ed4a7cdd0510a3e4ef70f075de340",
+      "start_mass_eV": 0.05217658822542334
+    },
+    {
+      "seed": 2007,
+      "group": "upper20_B4095",
+      "config_sha256": "8f774014979b8d8a326851505aa3758250c5e3911c7494dd656e8e2b03a7478b",
+      "initial_proof_sha256": "d08502b991bfd1be172362464765da156002af41654d6466ccbb62feb1b29b79",
+      "start_mass_eV": 6.0
+    },
+    {
+      "seed": 2008,
+      "group": "upper20_B4095",
+      "config_sha256": "c2b1f84860e45de1d3c57e358aa45b30342e170cbc0d09c76dee74584a5c49bd",
+      "initial_proof_sha256": "c06ea41cab90337814cad194cce2375cd35fcd30db3b2d9649b2912e6ff3b660",
+      "start_mass_eV": 12.0
+    }
+  ],
+  "targets": 2,
+  "native_initial_points": 8,
+  "only_target_change_is_prior_upper_endpoint": true,
+  "distinct_starts_per_target": 4,
+  "likelihood_other_priors_solver_and_sampler_options_preserved": true,
+  "proposal_changes_only_byte_identical_path": true,
+  "worker_source_transformations_reversed": true,
+  "primary_40_jobs_changed": false,
+  "posterior_qualified": false,
+  "tail_or_quantile_stability_inferred": false
+}

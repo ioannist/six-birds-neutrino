@@ -1,0 +1,37 @@
+{
+  "utc": "2026-10-05T03:02:51.574511+00:00",
+  "seed": 2116,
+  "group": "sigma_time_v3_B4095_cap20",
+  "initial_point": {
+    "omegabh2": 0.02208835,
+    "omegach2": 0.11613327,
+    "H0": 68.761625,
+    "logA": 3.0437372,
+    "ns": 0.97829051,
+    "tau": 0.05867819,
+    "mnu": 12.0
+  },
+  "config_sha256": "ce43b0c2395681ba8d3e8f86f54a592f1b29d59ab93c055ddba3b0be2ec3a838",
+  "module_sha256": "85a091c53d9c81ee6443a1a4492ee45a35b487f7d360dfd6df190b9e3856cfc6",
+  "policy_sha256": "d2869a552811ccd510cc7cb15bd945c9e3e5598a0d5ec298b87971576756fa27",
+  "loaded_CAMB_version": "2.0.4",
+  "source_PKG_INFO_sha256": "eb471728215eaef18c93cf84fe5289e0a725015ea165cbbba9a24c9bd1e59c8f",
+  "distribution_metadata_version": null,
+  "native_initial_point_verified": true,
+  "likelihood_components": {
+    "sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": -25225.790370794177,
+    "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": -265.4508788362939
+  },
+  "logpriors": [
+    -3.4908863374028734
+  ],
+  "logposterior": -25494.732135967875,
+  "upstream_forced_fresh_likes_and_priors_exact": true,
+  "provider_arrays_exact": true,
+  "provider_arrays_sha256": "60aacd69233bb80cf972982f7d37414dcc2fd9426d3980ad870b529eda3bd259",
+  "FreshCAMB_class": "sbt_spt_audit.boltzmann.FreshCAMB",
+  "sampler_cache_resize_challenge": 50,
+  "actual_launcher_native_guard_checked": true,
+  "wrong_module_hash_refused": true,
+  "posterior_certified": false
+}

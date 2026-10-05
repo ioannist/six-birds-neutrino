@@ -3,7 +3,6 @@ run_name: cmb_sptd1_plancksubset_desi_mnu
 likelihood:
   sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood:
     dataset_expr: spt_candl_data.SPT3G_D1_TnE_multifreq
-    input_params: [TT_tSZ_Amp, TT_kSZ_Amp]
 
   sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian:
     subset: all
@@ -30,6 +29,8 @@ theory:
     extra_args:
       N_ncdm: 3
       N_ur: 0.00641
+      # Background quadrature setting; the declared guarded backend repairs the native failure.
+      tol_ncdm_bg: 1.0e-8
 
 params:
   omegabh2:
@@ -68,7 +69,7 @@ params:
   mnu:
     derived: "lambda mnu_sample: mnu_sample"
   m_ncdm:
-    value: "lambda mnu_sample: '{0:.8f},{0:.8f},{0:.8f}'.format(mnu_sample/3.0)"
+    value: "lambda mnu_sample: '{0:.17g},{0:.17g},{0:.17g}'.format(mnu_sample/3.0)"
     derived: false
 
   A_planck:
@@ -94,6 +95,10 @@ sampler:
     Rminus1_stop: 0.05
 
 notes:
+  classy_backend:
+    build_receipt: runs/20261004_math_review_class_python_repair/build_verification_receipt.json
+    module_sha256: 7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539
+  class_precision: "Background quadrature tightened after a native default-precision startup failure. Historical default runs use different numerical settings; posterior accuracy remains uncertified."
   mnu_prior_choice: "N0 found explicit lower bound at 0 eV, but no explicit upper bound in 2601.16277; replication choice uses flat [0, 5] eV."
   mnu_class_mapping: "CLASS requires m_ncdm input. We sample mnu_sample, output derived mnu in chains, and map m_ncdm as 3 degenerate masses mnu_sample/3."
   planck_subset: "PR3 low-l TT/EE + PR3 high-l TT (Plik-lite native) with bins_for_L_range [30,756]; no high-l TE/EE."

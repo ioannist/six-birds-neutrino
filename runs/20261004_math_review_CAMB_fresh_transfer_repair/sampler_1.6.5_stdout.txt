@@ -1,0 +1,43 @@
+[output] Output to be read-from/written-into folder '/home/repos/six-birds-neutrino/runs/20261004_math_review_CAMB_fresh_transfer_repair/sampler_1.6.5_A/chains', with prefix 'finite_probe'
+[camb] `camb` module loaded successfully from /mnt/8tb/six-birds-ml/tmp/neutrino_spt_archived_solver_control_20261004/packages/camb
+[sbt_spt_audit.samplers.fullprecisionmcmc] *WARNING* This run has been SEEDED with seed 1604
+[sbt_spt_audit.samplers.fullprecisionmcmc] Getting initial point... (this may take a few seconds)
+[sbt_spt_audit.samplers.fullprecisionmcmc] Initial point: omegabh2:0.02269973, omegach2:0.1151554, H0:68.53002, logA:3.021181, ns:1.024457, tau:0.06099168, mnu:0.1427526
+[model] Measuring speeds... (this may take a few seconds)
+[model] Setting measured speeds (per sec): {sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood: 19.6, sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian: 384.0, camb.transfers: 0.231, camb: 0.656}
+[sbt_spt_audit.samplers.fullprecisionmcmc] Covariance matrix not present. We will start learning the covariance of the proposal earlier: R-1 = 30 (would be 2 if all params loaded).
+[sbt_spt_audit.samplers.fullprecisionmcmc] Sampling!
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-04 14:44:22 : 1 steps taken, and 0 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-04 14:45:26 : 12 steps taken, and 0 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-04 14:46:28 : 24 steps taken, and 0 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-04 14:47:30 : 35 steps taken, and 0 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Reached maximum number of accepted steps allowed (2). Stopping.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Sampling complete after 2 accepted steps.
+[camb] `camb` module loaded successfully from /mnt/8tb/six-birds-ml/tmp/neutrino_spt_archived_solver_control_20261004/packages/camb
+1.6.5 A finite sampler rows 2 all within1e-9 True
+[output] Output to be read-from/written-into folder '/home/repos/six-birds-neutrino/runs/20261004_math_review_CAMB_fresh_transfer_repair/sampler_1.6.5_B/chains', with prefix 'finite_probe'
+[camb] `camb` module loaded successfully from /mnt/8tb/six-birds-ml/tmp/neutrino_spt_archived_solver_control_20261004/packages/camb
+[sbt_spt_audit.samplers.fullprecisionmcmc] *WARNING* This run has been SEEDED with seed 1608
+[sbt_spt_audit.samplers.fullprecisionmcmc] Getting initial point... (this may take a few seconds)
+[sbt_spt_audit.samplers.fullprecisionmcmc] Initial point: omegabh2:0.02223533, omegach2:0.1160284, H0:68.35093, logA:3.027267, ns:0.965081, tau:0.04508802, mnu:0.1087454
+[model] Measuring speeds... (this may take a few seconds)
+[model] Setting measured speeds (per sec): {sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood: 8.16, sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian: 458.0, camb.transfers: 0.228, camb: 0.641}
+[sbt_spt_audit.samplers.fullprecisionmcmc] Covariance matrix not present. We will start learning the covariance of the proposal earlier: R-1 = 30 (would be 2 if all params loaded).
+[sbt_spt_audit.samplers.fullprecisionmcmc] Sampling!
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-04 14:48:59 : 1 steps taken, and 0 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-04 14:50:01 : 12 steps taken, and 0 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-04 14:51:01 : 23 steps taken, and 0 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-04 14:52:01 : 33 steps taken, and 0 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-04 14:53:07 : 44 steps taken, and 0 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-04 14:54:10 : 55 steps taken, and 0 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-04 14:55:16 : 66 steps taken, and 0 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-04 14:56:21 : 76 steps taken, and 0 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-04 14:57:27 : 87 steps taken, and 1 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-04 14:58:31 : 100 steps taken, and 1 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-04 14:59:36 : 110 steps taken, and 1 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-04 15:00:42 : 121 steps taken, and 1 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Progress @ 2026-10-04 15:01:47 : 132 steps taken, and 1 accepted.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Reached maximum number of accepted steps allowed (2). Stopping.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Sampling complete after 2 accepted steps.
+[camb] `camb` module loaded successfully from /mnt/8tb/six-birds-ml/tmp/neutrino_spt_archived_solver_control_20261004/packages/camb
+1.6.5 B finite sampler rows 2 all within1e-9 True

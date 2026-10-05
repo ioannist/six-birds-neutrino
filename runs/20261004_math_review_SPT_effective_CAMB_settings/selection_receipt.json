@@ -1,0 +1,251 @@
+{
+  "utc": "2026-10-04T12:27:27.638529+00:00",
+  "scope": "current_stack_configuration_style_controls",
+  "records": {
+    "A": {
+      "point_selection": {
+        "original_median": {
+          "source_chain": "runs/20260212_060311_662922_cobaya_spt2018_desi_lcdm_mnu/chains/spt2018_desi_lcdm_mnu.1.txt",
+          "stored_row_index": 85,
+          "burnin_stored_rows": 50,
+          "mass_quantile": "1/2",
+          "holding_time": 16,
+          "mass": 0.071601591,
+          "posterior_draw_claim": false
+        },
+        "original_p95": {
+          "source_chain": "runs/20260212_060311_662922_cobaya_spt2018_desi_lcdm_mnu/chains/spt2018_desi_lcdm_mnu.1.txt",
+          "stored_row_index": 187,
+          "burnin_stored_rows": 50,
+          "mass_quantile": "19/20",
+          "holding_time": 44,
+          "mass": 0.19452529,
+          "posterior_draw_claim": false
+        },
+        "restoration_median": {
+          "source_chain": "runs/20261004_math_review_spt_chain_snapshots_fourteenth_A/chain_A_seed301/chains/math_restoration_A_seed301.1.txt",
+          "stored_row_index": 4047,
+          "burnin_stored_rows": 954,
+          "mass_quantile": "1/2",
+          "holding_time": 12,
+          "mass": 0.04199897,
+          "posterior_draw_claim": true
+        },
+        "restoration_p95": {
+          "source_chain": "runs/20261004_math_review_spt_chain_snapshots_fourteenth_A/chain_A_seed301/chains/math_restoration_A_seed301.1.txt",
+          "stored_row_index": 3074,
+          "burnin_stored_rows": 954,
+          "mass_quantile": "19/20",
+          "holding_time": 11,
+          "mass": 0.14275261,
+          "posterior_draw_claim": true
+        }
+      },
+      "points": {
+        "original_median": {
+          "omegabh2": 0.023027917,
+          "omegach2": 0.11612066,
+          "H0": 68.927728,
+          "logA": 3.0162119,
+          "ns": 1.0113053,
+          "tau": 0.050845913,
+          "mnu": 0.071601591
+        },
+        "original_p95": {
+          "omegabh2": 0.022989503,
+          "omegach2": 0.11340565,
+          "H0": 68.664918,
+          "logA": 2.9898074,
+          "ns": 1.0253221,
+          "tau": 0.045125591,
+          "mnu": 0.19452529
+        },
+        "restoration_median": {
+          "omegabh2": 0.022795377,
+          "omegach2": 0.11601738,
+          "H0": 68.765303,
+          "logA": 3.0111656,
+          "ns": 1.027674,
+          "tau": 0.056772434,
+          "mnu": 0.04199897
+        },
+        "restoration_p95": {
+          "omegabh2": 0.022699735,
+          "omegach2": 0.11515536,
+          "H0": 68.530016,
+          "logA": 3.0211807,
+          "ns": 1.0244569,
+          "tau": 0.060991682,
+          "mnu": 0.14275261
+        },
+        "restoration_median_mass_plus_001": {
+          "omegabh2": 0.022795377,
+          "omegach2": 0.11601738,
+          "H0": 68.765303,
+          "logA": 3.0111656,
+          "ns": 1.027674,
+          "tau": 0.056772434,
+          "mnu": 0.05199897
+        }
+      }
+    },
+    "B": {
+      "point_selection": {
+        "original_median": {
+          "source_chain": "runs/20260212_072014_910159_cobaya_sptd1_desi_lcdm_mnu/chains/sptd1_desi_lcdm_mnu.1.txt",
+          "stored_row_index": 102,
+          "burnin_stored_rows": 24,
+          "mass_quantile": "1/2",
+          "holding_time": 15,
+          "mass": 0.043870311,
+          "posterior_draw_claim": false
+        },
+        "original_p95": {
+          "source_chain": "runs/20260212_072014_910159_cobaya_sptd1_desi_lcdm_mnu/chains/sptd1_desi_lcdm_mnu.1.txt",
+          "stored_row_index": 116,
+          "burnin_stored_rows": 24,
+          "mass_quantile": "19/20",
+          "holding_time": 95,
+          "mass": 0.09807736,
+          "posterior_draw_claim": false
+        },
+        "restoration_median": {
+          "source_chain": "runs/20261004_math_review_spt_chain_snapshots_fifteenth_B/chain_B_seed305/chains/math_restoration_B_seed305.1.txt",
+          "stored_row_index": 2279,
+          "burnin_stored_rows": 845,
+          "mass_quantile": "1/2",
+          "holding_time": 19,
+          "mass": 0.035568232,
+          "posterior_draw_claim": true
+        },
+        "restoration_p95": {
+          "source_chain": "runs/20261004_math_review_spt_chain_snapshots_fifteenth_B/chain_B_seed305/chains/math_restoration_B_seed305.1.txt",
+          "stored_row_index": 2822,
+          "burnin_stored_rows": 845,
+          "mass_quantile": "19/20",
+          "holding_time": 4,
+          "mass": 0.10874537,
+          "posterior_draw_claim": true
+        }
+      },
+      "points": {
+        "original_median": {
+          "omegabh2": 0.02208835,
+          "omegach2": 0.11613327,
+          "H0": 68.761625,
+          "logA": 3.0437372,
+          "ns": 0.97829051,
+          "tau": 0.05867819,
+          "mnu": 0.043870311
+        },
+        "original_p95": {
+          "omegabh2": 0.022120855,
+          "omegach2": 0.11597874,
+          "H0": 68.503086,
+          "logA": 3.0411487,
+          "ns": 0.98037252,
+          "tau": 0.058208856,
+          "mnu": 0.09807736
+        },
+        "restoration_median": {
+          "omegabh2": 0.022464771,
+          "omegach2": 0.11745252,
+          "H0": 68.556883,
+          "logA": 3.0717521,
+          "ns": 0.95011047,
+          "tau": 0.060983927,
+          "mnu": 0.035568232
+        },
+        "restoration_p95": {
+          "omegabh2": 0.022235335,
+          "omegach2": 0.1160284,
+          "H0": 68.350928,
+          "logA": 3.0272667,
+          "ns": 0.96508102,
+          "tau": 0.045088023,
+          "mnu": 0.10874537
+        },
+        "restoration_median_mass_plus_001": {
+          "omegabh2": 0.022464771,
+          "omegach2": 0.11745252,
+          "H0": 68.556883,
+          "logA": 3.0717521,
+          "ns": 0.95011047,
+          "tau": 0.060983927,
+          "mnu": 0.045568232
+        }
+      }
+    }
+  },
+  "archived_versions": {
+    "A": {
+      "archived_CAMB": "1.6.5",
+      "archived_Cobaya": "3.6.1"
+    },
+    "B": {
+      "archived_CAMB": "1.6.5",
+      "archived_Cobaya": "3.6.1"
+    }
+  },
+  "sources": [
+    {
+      "path": "runs/20260212_060311_662922_cobaya_spt2018_desi_lcdm_mnu/resolved.yaml",
+      "sha256": "b26281e0396a67bd0a10bcb77a42e36587c0f6df2d2dd10fa340293a5a6b6d3e"
+    },
+    {
+      "path": "runs/20261003_math_review_chain_A_seed301/resolved.yaml",
+      "sha256": "1a343262d702b8f36f914e9e2ce5376e798e21d3c4777e2c8880674d1d8dfed3"
+    },
+    {
+      "path": "runs/20260212_060311_662922_cobaya_spt2018_desi_lcdm_mnu/chains/spt2018_desi_lcdm_mnu.updated.yaml",
+      "sha256": "c175aea2f79d5a9ab716f35fd81d04b436c66de120220fa3fe30580b1b1934fb"
+    },
+    {
+      "path": "runs/20261004_math_review_spt_chain_snapshots_fourteenth_A/snapshot_receipt.json",
+      "sha256": "fa883a3297a1bc661b6e5165d6a1956445d58339da27e079b8450792160d4845"
+    },
+    {
+      "path": "runs/20260212_060311_662922_cobaya_spt2018_desi_lcdm_mnu/chains/spt2018_desi_lcdm_mnu.1.txt",
+      "sha256": "c3aeef75fd2b1f0caf839e4a2f5ed9d0dcc4ce79457d442bca73cfa28cdf1131"
+    },
+    {
+      "path": "runs/20261004_math_review_spt_chain_snapshots_fourteenth_A/chain_A_seed301/chains/math_restoration_A_seed301.1.txt",
+      "sha256": "e7980247039db9c7b82131a27fb3a5a48d4d186312cf17dbb73e7261c1507a7b"
+    },
+    {
+      "path": "runs/20260212_072014_910159_cobaya_sptd1_desi_lcdm_mnu/resolved.yaml",
+      "sha256": "bd5f7561ab793831546225ff2c1c2c6b5a1ff961fb6e2a8360721de341ad8b5c"
+    },
+    {
+      "path": "runs/20261003_math_review_chain_B_seed305/resolved.yaml",
+      "sha256": "74d076e2a991da943e9deffa95d56d6e080750900e8be5da8045584600881a77"
+    },
+    {
+      "path": "runs/20260212_072014_910159_cobaya_sptd1_desi_lcdm_mnu/chains/sptd1_desi_lcdm_mnu.updated.yaml",
+      "sha256": "6e4361636719a801915ec0478829a4063a55664093f4839be1e93374606d87a5"
+    },
+    {
+      "path": "runs/20261004_math_review_spt_chain_snapshots_fifteenth_B/snapshot_receipt.json",
+      "sha256": "c97c76181a8ca94cd5144507fc166dc6773d148655243a6216c4283418751e94"
+    },
+    {
+      "path": "runs/20260212_072014_910159_cobaya_sptd1_desi_lcdm_mnu/chains/sptd1_desi_lcdm_mnu.1.txt",
+      "sha256": "87c184a366950318d2be5944f3f0cfe59f9e3a7e47ff0e10f2e735fd19db623f"
+    },
+    {
+      "path": "runs/20261004_math_review_spt_chain_snapshots_fifteenth_B/chain_B_seed305/chains/math_restoration_B_seed305.1.txt",
+      "sha256": "76a120cc700b3b15202ef6c376ede8fda33c80975a4f2952a35292cc421a92d9"
+    },
+    {
+      "path": "src/sbt_spt_audit/likelihoods/candl_cobaya.py",
+      "sha256": "b695b32235d04a2b287786260c5c02fb87c43d787d0949907a7247518aa37a90"
+    },
+    {
+      "path": "src/sbt_spt_audit/likelihoods/desi_dr2_bao.py",
+      "sha256": "00fdc02856aa608d7b68c242a3cf46bd96200f61fd9b00adf3c0073598bfeaf9"
+    }
+  ],
+  "historical_stack_reconstructed": false,
+  "historical_numeric_target_identity_certified": false,
+  "samplers_or_paper_modified": false
+}

@@ -1,0 +1,239 @@
+{
+  "utc": "2026-10-04T02:35:33.969931+00:00",
+  "case": "seed701_intermediate",
+  "arguments": {
+    "omega_b": 0.02291175022269673,
+    "omega_cdm": 0.11675153446806505,
+    "H0": 68.6264574770633,
+    "A_s": 2.0513564352353405e-09,
+    "n_s": 0.9856032089306187,
+    "tau_reio": 0.05245284343330284,
+    "m_ncdm": "0.019305144202575886,0.019305144202575886,0.019305144202575886",
+    "N_ncdm": 3,
+    "N_ur": 0.00641,
+    "tol_ncdm_bg": 1e-08,
+    "tol_perturbations_integration": 1e-06,
+    "perturbations_sampling_stepsize": 0.01,
+    "tol_ncdm_synchronous": 1e-06,
+    "tol_ncdm_newtonian": 1e-06,
+    "l_logstep": 1.026,
+    "l_linstep": 25,
+    "l_max_scalars": 4095,
+    "output": "tCl lCl pCl",
+    "non_linear": "hmcode",
+    "lensing": "yes"
+  },
+  "source_sha256": "89b623f6591c1920e872b223fd2b1ee808f90dd2346c9c90ca7d3614bb52e257",
+  "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+  "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+  "omp_threads": "8",
+  "scope": "fixed_coordinate_native_Python_backend_validation",
+  "posterior_convergence_certified": false,
+  "uniform_numerical_accuracy_certified": false,
+  "spectra_sha256": "16914d6c67872c7c8bd0158d4c64e30476074771fd56c353292ab02a0de7316f",
+  "spectrum_ell_max": 4095,
+  "tables": {
+    "background": {
+      "z": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "5069715e04e4562dd3053b0eddf23b6170ba4e927c102d1146ccdf33e751f3b3"
+      },
+      "proper time [Gyr]": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "d4d21f0579c87b696cec7fd19aa89c3b7d3b9c16c8cd611525b3841b34fe269d"
+      },
+      "conf. time [Mpc]": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "f36d6e9ba1676ee03225083e5bfb80c2dfa2ed838329f0b75f88798e5a685a73"
+      },
+      "H [1/Mpc]": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "455f1504712158ef7a96782d934b009d22007870742ae47615b510e4650f1451"
+      },
+      "comov. dist.": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "b0552d07c24dd1974848591210d857cea7ceef0aec0e35935b7be01e2d2c3395"
+      },
+      "ang.diam.dist.": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "51f27b9a759b754d4d4a4e6cdfd51a03edc948607ad0a8c33dd3ed9da25f1424"
+      },
+      "lum. dist.": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "f3853bb5b5a342d7e5154704f555775a10f1ff69e208f9a05af43beeac894ca1"
+      },
+      "comov.snd.hrz.": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "53dcc5e2161f9d3cbae3f0ea06953babcfb45f776a7beaa7fc9d8a10a9d812ba"
+      },
+      "(.)rho_g": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "77fcea522d47133d7eee3baccb388fd48805596aa633b3495171f24a4e45b3a0"
+      },
+      "(.)rho_b": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "13368f4a2b11a0ac5eec4ed9b340f9b123701e581412a6e0483d7c7ba228bf40"
+      },
+      "(.)rho_cdm": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "e2d025f654a08568e3ad4ce48e7f063c260a83d789e5b0ec7176f4c5a0381880"
+      },
+      "(.)rho_ncdm[0]": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "a5108e4b91ac94ca0fb224c086b59568dc795a56b3b9e009012fd2b03b6f35a8"
+      },
+      "(.)p_ncdm[0]": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "fb266b8f5fb41279cf0bbec4b48c8d0d65238365ddb3293d9e8427c0ea10d485"
+      },
+      "(.)rho_ncdm[1]": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "a5108e4b91ac94ca0fb224c086b59568dc795a56b3b9e009012fd2b03b6f35a8"
+      },
+      "(.)p_ncdm[1]": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "fb266b8f5fb41279cf0bbec4b48c8d0d65238365ddb3293d9e8427c0ea10d485"
+      },
+      "(.)rho_ncdm[2]": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "a5108e4b91ac94ca0fb224c086b59568dc795a56b3b9e009012fd2b03b6f35a8"
+      },
+      "(.)p_ncdm[2]": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "fb266b8f5fb41279cf0bbec4b48c8d0d65238365ddb3293d9e8427c0ea10d485"
+      },
+      "(.)rho_lambda": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "c156a9a8a0e766fc2cab77907ff1380b560c71c80c8c5331ebc60b7938743162"
+      },
+      "(.)rho_ur": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "76221bfccb3a5fa4dce6dc203a5e6eec7cc6358ebe317841d5f05030b3710846"
+      },
+      "(.)rho_crit": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "6cefb1f55888cf55082c27666f08c2eeee272cacb0c8b1323b80b6eeb3abeb76"
+      },
+      "(.)rho_tot": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "6cefb1f55888cf55082c27666f08c2eeee272cacb0c8b1323b80b6eeb3abeb76"
+      },
+      "(.)p_tot": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "6c6fa99f9ec50b335bcaf1e6cb809b59c0044daf65851463aa5a7cc11e827a37"
+      },
+      "(.)p_tot_prime": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "14e161bcc8bdf2dbe8aa78cd35172a29587ba6ae932a2f9445e5e45948c997f3"
+      },
+      "Omega_r(z)": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "eb67e3fc0ebe1d54735a0f9d60263512ae60278f75222b8d1ec28fbcba3e50c0"
+      },
+      "Omega_m(z)": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "39ce3657f6875402c9615ead9b9db4c55dbcfbbd8e4a87452360c85c57706e0f"
+      },
+      "gr.fac. D": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "8b07d326eb6bcf9ccd174343962642a8447142a59b0a99c344cae77b127d1a41"
+      },
+      "gr.fac. f": {
+        "rows": 40000,
+        "nonfinite": 0,
+        "array_sha256": "57279884ef43562bcfee844a435ceb4836918ce5af7bec5944792e3953267578"
+      }
+    },
+    "thermodynamics": {
+      "scale factor a": {
+        "rows": 28333,
+        "nonfinite": 0,
+        "array_sha256": "9c32c67f307b33ea7c9b28c61c2843a231c9ab1f0c086d7486ddacb2a13976e0"
+      },
+      "z": {
+        "rows": 28333,
+        "nonfinite": 0,
+        "array_sha256": "d4a7dfcf01a141bda652d3f162402d0b1a4e7c9b716c7ad45495d23cc2bdfe3c"
+      },
+      "conf. time [Mpc]": {
+        "rows": 28333,
+        "nonfinite": 0,
+        "array_sha256": "1831e46e33adb1372c6da4cca807d0dfb727973982c4d871c7f7b0f614cf6c77"
+      },
+      "x_e": {
+        "rows": 28333,
+        "nonfinite": 0,
+        "array_sha256": "7e4514f4ea43ecbb8af91374b372ee0ca5c6ea26777b2053572d23ceb18358af"
+      },
+      "kappa' [Mpc^-1]": {
+        "rows": 28333,
+        "nonfinite": 0,
+        "array_sha256": "e1cff4d982aa2818c1cc3d4e7bfa88420dae229d9fc2f4127b519842b79edcf0"
+      },
+      "exp(-kappa)": {
+        "rows": 28333,
+        "nonfinite": 0,
+        "array_sha256": "00cbdf792589ebab87c191ecf04c520617741fc2bfa29db3bb83b608b45b0e4d"
+      },
+      "g [Mpc^-1]": {
+        "rows": 28333,
+        "nonfinite": 0,
+        "array_sha256": "2cd91bc01d069b943283312432683218cccfc10be5686f46ea52bfbd6c0f41c2"
+      },
+      "Tb [K]": {
+        "rows": 28333,
+        "nonfinite": 0,
+        "array_sha256": "31b4984b239accdbeb1d8f3ec1cc77e1d154b0d77fb1671a50949bfe9c022dba"
+      },
+      "dTb [K]": {
+        "rows": 28333,
+        "nonfinite": 0,
+        "array_sha256": "a9f208e7d765d9902539d63045eca37e17a282ed90412afa55acc3969d5ec584"
+      },
+      "w_b": {
+        "rows": 28333,
+        "nonfinite": 0,
+        "array_sha256": "5bf14f05ebb4c3d9c9cd46a133140687abbbe64e11c56d765bcc833b9a8b2129"
+      },
+      "c_b^2": {
+        "rows": 28333,
+        "nonfinite": 0,
+        "array_sha256": "231299177e6f582ea8de292d725689e8746c161881924928be12045c502f66b1"
+      },
+      "kappa_b": {
+        "rows": 28333,
+        "nonfinite": 0,
+        "array_sha256": "6be6dfb6fcac52e72d8180975a5d006af6a43e403a332d592ad016aabd081751"
+      }
+    }
+  },
+  "thermodynamics_sha256": "a27beb4d3cc7747ad1063da529a761e96a0b77d718ce3667ae4aaa34eaac8a1d",
+  "elapsed_seconds": 64.50969836302102,
+  "succeeded": true
+}

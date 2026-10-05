@@ -1,0 +1,33 @@
+[model] *WARNING* Ignored blocks/options: ['run_name', 'sampler', 'notes']
+[classy] `classy` module loaded successfully from /tmp/neutrino-math-review-venv/lib/python3.12/site-packages/classy
+Actual L range: 30 - 756
+[exception handler] ---------------------------------------
+
+Traceback (most recent call last):
+  File "<stdin>", line 5, in <module>
+  File "/home/repos/six-birds-neutrino/scripts/eval_cmb_plancksubset_desi.py", line 116, in _evaluate_one
+    out = model.loglikes(point, as_dict=True, return_derived=False)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/cobaya/model.py", line 532, in loglikes
+    return self._loglikes_input_params(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/cobaya/model.py", line 443, in _loglikes_input_params
+    compute_success = component.check_cache_and_compute(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/cobaya/theory.py", line 282, in check_cache_and_compute
+    if self.calculate(state, want_derived, **params_values_dict) is False:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/cobaya/likelihood.py", line 135, in calculate
+    state["logp"] = self.logp(_derived=derived, **params_values_dict)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/repos/six-birds-neutrino/src/sbt_spt_audit/likelihoods/desi_dr2_bao.py", line 259, in logp
+    pred = compute_theory_vector(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/repos/six-birds-neutrino/src/sbt_spt_audit/likelihoods/desi_dr2_bao.py", line 205, in compute_theory_vector
+    da = float(angular_diameter_distance_fn(p.z))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/repos/six-birds-neutrino/src/sbt_spt_audit/likelihoods/desi_dr2_bao.py", line 262, in <lambda>
+    angular_diameter_distance_fn=lambda z: float(self.provider.get_angular_diameter_distance(z)),
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: only 0-dimensional arrays can be converted to Python scalars
+-------------------------------------------------------------

@@ -1,0 +1,67 @@
+{
+  "utc": "2026-10-05T00:30:41.537008+00:00",
+  "compiler_packages": [
+    {
+      "path": "/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_native_debug_20261005/debs/gfortran-13-x86-64-linux-gnu_13.3.0-6ubuntu2~24.04.1_amd64.deb",
+      "sha256": "82382cb8506616ef7df5b9927694bfaacf97bdfb317b1f995453cc17c96aa071",
+      "bytes": 11408640
+    },
+    {
+      "path": "/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_native_debug_20261005/debs/libgfortran-13-dev_13.3.0-6ubuntu2~24.04.1_amd64.deb",
+      "sha256": "ce0fdf0d9e7eadb33947ca7cdd0fc3477b570603cb721b108c96ebdfbb7cd80a",
+      "bytes": 928110
+    },
+    {
+      "path": "/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_native_debug_20261005/debs/libgfortran5_14.2.0-4ubuntu2~24.04.1_amd64.deb",
+      "sha256": "2b05896c477275ad3473bb63a5ac5a5b8a7e4a6ad6ed7cb23c442ccd1abc28f5",
+      "bytes": 916316
+    }
+  ],
+  "compiler_wrapper": "/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_native_debug_20261005/bin/gfortran",
+  "compiler_wrapper_sha256": "3821484c18113de2c8958df94fab9077ca11fc2a296a082fc670afb2700a83a8",
+  "debug_module_sha256": "0307f4e97fc37ae4acec75f0a9c86813a51b3cddd4c3589fc0f6a9da7d402847",
+  "instrumented_module_sha256": "3bcd5be4d8734c07c402380f5fe9e1dad14912fb9fbc0c931040489d9f7bb813",
+  "builds": [
+    {
+      "attempt": 1,
+      "managed_session": 6002,
+      "exit_code": 2
+    },
+    {
+      "attempt": 2,
+      "direct_exec_exit_code": 2
+    },
+    {
+      "attempt": 3,
+      "direct_exec_exit_code": 0
+    },
+    {
+      "attempt": "instrumented",
+      "managed_session": 73637,
+      "exit_code": 0
+    }
+  ],
+  "workers": [
+    {
+      "seed": 2003,
+      "kind": "debug_baseline",
+      "managed_session": 95062,
+      "exit_code": 0
+    },
+    {
+      "seed": 2003,
+      "kind": "negative_base_guard",
+      "managed_session": 71113,
+      "exit_code": 1
+    },
+    {
+      "seed": 2004,
+      "kind": "negative_base_guard",
+      "managed_session": 26425,
+      "exit_code": 1
+    }
+  ],
+  "all_workers_terminal": true,
+  "private_scratch_only": true,
+  "production_module_changed": false
+}

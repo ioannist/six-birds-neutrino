@@ -1,0 +1,1842 @@
+{
+  "utc": "2026-10-05T01:26:18.132681+00:00",
+  "roots": [
+    "runs/20261005_math_review_CAMB204_sigma_integration_candidate12",
+    "runs/20261005_math_review_CAMB204_sigma_integration_candidate14",
+    "runs/20261005_math_review_CAMB204_sigma_probe_preparation",
+    "runs/20261005_math_review_CAMB204_sigma_probe_preparation_v2",
+    "runs/20261005_math_review_CAMB204_sigma_table_probe_preparation_v3",
+    "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics",
+    "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics_v2",
+    "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics",
+    "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics_v2",
+    "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics",
+    "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics_v2",
+    "runs/20261005_math_review_guarded_CLASS_ninth_quad_B_diagnostics",
+    "runs/20261005_math_review_sigma_candidate_low_mass_controls",
+    "runs/20261005_math_review_sigma_policy_checkpoint"
+  ],
+  "files": [
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_integration_candidate12/build_stderr.txt",
+      "bytes": 27,
+      "sha256": "ca221c7057c900fd0d3c7179302528edb5f615c1edf2d0cfe9dbc245faf61c7a"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_integration_candidate12/build_stdout.txt",
+      "bytes": 17120,
+      "sha256": "f20990feb8630ce30152d6eeba51b11e7c84114b24029fa9172581caf9c2d36c"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_integration_candidate12/candidate_halofit.f90",
+      "bytes": 118661,
+      "sha256": "ea847e6b24f46398db21c41dc8c6c1a993a2df58b279882fbd479c9035423295"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_integration_candidate12/evaluate_candidate.py",
+      "bytes": 5709,
+      "sha256": "d5e40f6374e47d5c2e24b7a7fdc698336f94f7399f2bfa5838f03e9fe01a4dbd"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_integration_candidate12/execution_receipt.json",
+      "bytes": 395,
+      "sha256": "6f3d3b1534c26894427417d53f4d5b23dc2647810d3933c861f7098632fae98b"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_integration_candidate12/seed2003_phase_classification/native_arrays.npz",
+      "bytes": 479299,
+      "sha256": "dd415b3b16f1d71416991855c28dd1a8f206bba23d7c704b0c306092a74b3d81"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_integration_candidate12/seed2003_phase_classification/phase_classification.json",
+      "bytes": 3730,
+      "sha256": "9e38dd6137b758b84a5287f107887a390e4f923c5e17a54665e7233caa5328a9"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_integration_candidate12/seed2003_stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_integration_candidate12/seed2003_stdout.txt",
+      "bytes": 822,
+      "sha256": "14dea1a2be508a4d0f29a61fda1986ce59bf2914553ab692564d19df5003af01"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_integration_candidate12/seed2004_phase_classification/native_arrays.npz",
+      "bytes": 479211,
+      "sha256": "2a5059a01abb6271cc909ee87097aa50dcc2e98c1a7a32c15f1cf0a2c1282c91"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_integration_candidate12/seed2004_phase_classification/phase_classification.json",
+      "bytes": 3720,
+      "sha256": "4f8883eafd8b58dad37672c3d72ce2b2ad0ee03e035819491f9ec72d6f3885d5"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_integration_candidate12/seed2004_stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_integration_candidate12/seed2004_stdout.txt",
+      "bytes": 820,
+      "sha256": "b0660f20251808be4c75bdbf9c16e1610ff0e3189e78d8acfa50dff0adead1aa"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_integration_candidate12/source_preparation.json",
+      "bytes": 1680,
+      "sha256": "ac4ef89b39e32d137733a699d3e208ac589e6b25d1adc4f488946b224f94367a"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_integration_candidate14/build_stderr.txt",
+      "bytes": 399,
+      "sha256": "470fec2deaf9bd4c5377d4f433faf483478cbb8a11aeed67ab031dc7aa5eb61f"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_integration_candidate14/build_stdout.txt",
+      "bytes": 1973,
+      "sha256": "15fac4b07084cc981aeb061f83ad73b5b70257b30640741530dfa7a6a5a6ced0"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_integration_candidate14/candidate_halofit.f90",
+      "bytes": 118661,
+      "sha256": "6f72e651c9faafc3d9ed6e6f68b159b3d186b178d69ad0412296c1797ab7717d"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_integration_candidate14/evaluate_candidate.py",
+      "bytes": 5709,
+      "sha256": "5987d0928078be2f047dafe29fa88aedab236121443e0f17b4f3d8a6f30eca8c"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_integration_candidate14/execution_receipt.json",
+      "bytes": 401,
+      "sha256": "ce9686882a89e0d0b7eeb3c43cb049c21e2dc09dabc768f2dd2af11027bc167e"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_integration_candidate14/seed2003_phase_classification/native_arrays.npz",
+      "bytes": 479315,
+      "sha256": "b1c381c242007b28f8dcf23d17616d5430079336a55f5b09dda10b3ddea43f10"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_integration_candidate14/seed2003_phase_classification/phase_classification.json",
+      "bytes": 3732,
+      "sha256": "6b728ff5a85f387a204371a53a94fe0176660def134bf48d2faae8d977d29042"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_integration_candidate14/seed2003_stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_integration_candidate14/seed2003_stdout.txt",
+      "bytes": 822,
+      "sha256": "f2de329f76f3bb08c2721d09f6e5386443751b62e93f5f1502ef659426925ac4"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_integration_candidate14/seed2004_phase_classification/native_arrays.npz",
+      "bytes": 479175,
+      "sha256": "7b7a4dcd5da9479000a7b68f99f37cba43dccd41f67e0b4c92ab2337a921c792"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_integration_candidate14/seed2004_phase_classification/phase_classification.json",
+      "bytes": 3721,
+      "sha256": "5fd67e34d5de59b7723cc906497be4a43120719d1ff9c5803b7fa8b846baae2c"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_integration_candidate14/seed2004_stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_integration_candidate14/seed2004_stdout.txt",
+      "bytes": 820,
+      "sha256": "65ed66ffb79d7d249fe541e8b3270e484d759b375c6abb9d96b8857c9f204723"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_integration_candidate14/source_preparation.json",
+      "bytes": 600,
+      "sha256": "fca3e9c60a12ae807b8d47c2a36cfda8161aeaaa9d365c44a879a56ded408f52"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_probe_preparation/all_runtime_verification.json",
+      "bytes": 40215,
+      "sha256": "323c8ebd212a2392e35758685e2e13e458f68753bc7c5789b7e619a8a57ecf1c"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_probe_preparation/build_attempt_failure_receipt.json",
+      "bytes": 296,
+      "sha256": "874824838d166ab8f4790bb6d485c7cce1c9b4a3c1379f377512d4dc1193ad3d"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_probe_preparation/build_stderr.txt",
+      "bytes": 1143,
+      "sha256": "7d4b03c8ddec518d8598a37e7256610d5a61fd716cc4b8c27a26fee3f36f78de"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_probe_preparation/build_stdout.txt",
+      "bytes": 12109,
+      "sha256": "f4271145cc3d7f4aaa370aa53a00e35c890a373738a64fef96ec66388e3b1178"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_probe_preparation/execution_receipt.json",
+      "bytes": 405,
+      "sha256": "185b9f9acb4f85c37f204da8be6eb744f644f32be7d23e2e7856f6742079e254"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_probe_preparation/observe_all_runtime.py",
+      "bytes": 14929,
+      "sha256": "e0de58ddd7b3ffd0055b5105ef1a1b5b5849c924c44c6c69a7476ca5ea84b282"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_probe_preparation/preparation_receipt.json",
+      "bytes": 2009,
+      "sha256": "6920eab0db5530711229cd0a2eef705006e94205164841a3a0e32af300dbe031"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_probe_preparation/self_review.py",
+      "bytes": 4529,
+      "sha256": "2f839584253a95f813fe82bb87a451a112d4c14181903d72e5272ba1306d650f"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_probe_preparation/self_review_receipt.json",
+      "bytes": 799,
+      "sha256": "008f7b17b2f0d4c525085eb43a0b5e6e826b9be1cc9ca89f6d8c352c388d8886"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_probe_preparation/sigma_probe_halofit.f90",
+      "bytes": 123085,
+      "sha256": "d9e5abdeb838507eae6dc11cc66dc85792dfe4571906ddd682379f211be1ab5c"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_probe_preparation/source_preparation.json",
+      "bytes": 5809,
+      "sha256": "937c36e48e67844b6b20ab1c1b46015d2045717605b2406780197997c1e1d289"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_probe_preparation_v2/build_stderr.txt",
+      "bytes": 399,
+      "sha256": "470fec2deaf9bd4c5377d4f433faf483478cbb8a11aeed67ab031dc7aa5eb61f"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_probe_preparation_v2/build_stdout.txt",
+      "bytes": 4749,
+      "sha256": "242993436390280cd670f2dae4109951258954d92999301f3a2c2b78192bfd42"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_probe_preparation_v2/correction_receipt.json",
+      "bytes": 715,
+      "sha256": "77bbd665d6c46cbe64b6750c1f937ae9594333697ca6264b2ad6d090b95cf596"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_probe_preparation_v2/execution_receipt.json",
+      "bytes": 394,
+      "sha256": "fa26f82dfd34bfc98b19b0c744e4621858dae3d8c012ad1ce09693d8d7740408"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_probe_preparation_v2/run_sigma_probe.py",
+      "bytes": 5719,
+      "sha256": "b76ca458385839aab5268aed04b60cba4763ca580f75098ffb747db32e66d2fb"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_probe_preparation_v2/seed2003_stderr.txt",
+      "bytes": 87,
+      "sha256": "a12f734b203c02bfc489dd70cdf73d6044800e8fdd30fda5b52e492fdd0cde08"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_probe_preparation_v2/seed2003_stdout.txt",
+      "bytes": 40169,
+      "sha256": "0b2e970ced882f4d804e574444aee679c06926e799991364e66d51edf74ce859"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_probe_preparation_v2/seed2004_stderr.txt",
+      "bytes": 87,
+      "sha256": "a12f734b203c02bfc489dd70cdf73d6044800e8fdd30fda5b52e492fdd0cde08"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_probe_preparation_v2/seed2004_stdout.txt",
+      "bytes": 40199,
+      "sha256": "747e8c24cf2e831f4007838e76dd44c47c85628dccfd4bbb79897a95067d3f43"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_probe_preparation_v2/sigma_probe_halofit.f90",
+      "bytes": 123056,
+      "sha256": "a4a5ed891a2a011a3e5c008b226ac666bc96dbaa9eacb6b95e455f1a1728de20"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_probe_preparation_v2/worker_preparation_receipt.json",
+      "bytes": 847,
+      "sha256": "8f2087488214738df2440931e93b39914308721c5da98544a34b6ebf0d584a77"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_table_probe_preparation_v3/build_stderr.txt",
+      "bytes": 399,
+      "sha256": "470fec2deaf9bd4c5377d4f433faf483478cbb8a11aeed67ab031dc7aa5eb61f"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_table_probe_preparation_v3/build_stdout.txt",
+      "bytes": 1919,
+      "sha256": "5ca844e9b9109085e21e7e96ca13912616c9bf3c3f56441c0e5fee3848d3aa6e"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_table_probe_preparation_v3/execution_receipt.json",
+      "bytes": 395,
+      "sha256": "08f9568506750896abf1e0c0924567c6259b21e83d721dc4ec2837c90e1a17d1"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_table_probe_preparation_v3/review_sigma_probes.py",
+      "bytes": 7439,
+      "sha256": "ecb9090551601da02014049a90b5306001727e4b85591c923fe9f94783a65b47"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_table_probe_preparation_v3/run_sigma_table_probe.py",
+      "bytes": 5719,
+      "sha256": "1f3810771fe0f12b607c241443e399d9fe3ac2d584dd0e441e60a4006d976c21"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_table_probe_preparation_v3/seed2003_reviewed_sigma_arrays.npz",
+      "bytes": 10811,
+      "sha256": "1ce093a6fd76d3cf1c5fe02ebbf41b95b76f78a8c711dbbf16503e1ecb2f864d"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_table_probe_preparation_v3/seed2003_stderr.txt",
+      "bytes": 87,
+      "sha256": "a12f734b203c02bfc489dd70cdf73d6044800e8fdd30fda5b52e492fdd0cde08"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_table_probe_preparation_v3/seed2003_stdout.txt",
+      "bytes": 50712,
+      "sha256": "50ecf4dc76e6416fab052fe9d146b4f1d5b90a839b1b1561030a6d8a45b1b419"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_table_probe_preparation_v3/seed2004_reviewed_sigma_arrays.npz",
+      "bytes": 11019,
+      "sha256": "96db25a562401aea3365bd02be82c7400163fa4a702b1d6a75f8ce8c1410b72d"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_table_probe_preparation_v3/seed2004_stderr.txt",
+      "bytes": 87,
+      "sha256": "a12f734b203c02bfc489dd70cdf73d6044800e8fdd30fda5b52e492fdd0cde08"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_table_probe_preparation_v3/seed2004_stdout.txt",
+      "bytes": 50577,
+      "sha256": "e7f336be90a66d66284b2e070d32d8be5219528fa117c38e57134b8ebc939767"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_table_probe_preparation_v3/sigma_probe_self_review_receipt.json",
+      "bytes": 2657,
+      "sha256": "c8af6844bc0dffbc0e9dde6e3c106e355fd178a457c1e62c3462c68985bf63cb"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_table_probe_preparation_v3/sigma_table_probe_halofit.f90",
+      "bytes": 123995,
+      "sha256": "3533ce298ddb0b67e9f88f2173b12d5bfbf6705e276e6b2933139084ca1688d9"
+    },
+    {
+      "path": "runs/20261005_math_review_CAMB204_sigma_table_probe_preparation_v3/source_preparation.json",
+      "bytes": 2046,
+      "sha256": "34691de1c9044d699636d447d9d2cbcd4de5432b066a215c028fdc18b3c148b0"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics/failure_receipt.json",
+      "bytes": 573,
+      "sha256": "ff743dadaf23fdba993bbe0aa5b015f6b308c4401d2abd60fecc44bc6ea755e7"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics/run_diagnostic.py.completion.json",
+      "bytes": 371,
+      "sha256": "6039774e9f01cd30a31165022d8fafb04f18b5af7333754d925832d0fa43cece"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics/run_diagnostic.py.stderr.txt",
+      "bytes": 917,
+      "sha256": "cbd69edf9cec277ef2fc63e9666294cb2641eb59e608898b2553e5a5943d4726"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics/run_diagnostic.py.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics/run_verification.py",
+      "bytes": 1225,
+      "sha256": "65533aec9617b0c025dbb38384a58574af9075afd2c2231b20012a042d4f54a2"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics/seed1701/chains/fresh_CAMB_old_A3200_seed1701.1.txt",
+      "bytes": 834936,
+      "sha256": "7e2ae61820000128bee8c45ab005f5dd84afcbc12741787469a5faa01ac6fdd7"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics/seed1701/chains/fresh_CAMB_old_A3200_seed1701.updated.yaml",
+      "bytes": 3597,
+      "sha256": "943855320729e562fb870fa6faca52f5255fe9eb1d3faf6ceacadbc543637773"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics/seed1701/input.yaml",
+      "bytes": 2016,
+      "sha256": "69754fe31cf8a571af8e94c3b651608abdfaa12c728c0d1059bd2e472d4517bd"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics/seed1701/resolved.yaml",
+      "bytes": 2203,
+      "sha256": "1e8735684244557132f103fe8ac715aaa1b42343504792f6a5c129e679833f0c"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics/seed1701/solver_backend.json",
+      "bytes": 251,
+      "sha256": "7dc98f9b23eac093fd17f33a1e0edc6f0103cdf9928bf4ce9112be7b8f22f63d"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics/seed1702/chains/fresh_CAMB_old_A3200_seed1702.1.txt",
+      "bytes": 836760,
+      "sha256": "5cada93b158de9408a8a55968328182e8f45ade9d81d2b2b64bf366152fc4593"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics/seed1702/chains/fresh_CAMB_old_A3200_seed1702.updated.yaml",
+      "bytes": 3593,
+      "sha256": "22a027c5fe8e4865a5e0d5ae0413c4c25dc693e06d65285a4305bbdadc846338"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics/seed1702/input.yaml",
+      "bytes": 2012,
+      "sha256": "0c38f3e95866e4381f9bb6b1aa082176e74e4c98e1706073e7a36cf9275b039d"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics/seed1702/resolved.yaml",
+      "bytes": 2199,
+      "sha256": "a837372d1f3c347b2072ef664ece4172741ed55f39334d41097f237ec22e52ba"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics/seed1702/solver_backend.json",
+      "bytes": 251,
+      "sha256": "7dc98f9b23eac093fd17f33a1e0edc6f0103cdf9928bf4ce9112be7b8f22f63d"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics/seed1703/chains/fresh_CAMB_old_A3200_seed1703.1.txt",
+      "bytes": 813048,
+      "sha256": "f96cfbb19b2fee526e245b7ecc2e2d8e42124184abcdc6b28ec49ae9ee15627c"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics/seed1703/chains/fresh_CAMB_old_A3200_seed1703.updated.yaml",
+      "bytes": 3598,
+      "sha256": "2e3f67b89358359f5d400eba1402f0971e7e5cf700d9f80e5c0be35bdd620cd2"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics/seed1703/input.yaml",
+      "bytes": 2017,
+      "sha256": "30fe2243019319a7c382330af09073581ede408c135bd4cd6fcd61dd3d8b85b2"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics/seed1703/resolved.yaml",
+      "bytes": 2204,
+      "sha256": "92b52ca2d8297494314d4c2e775ed5da1d325399fbe2f129b24c07e24cb54855"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics/seed1703/solver_backend.json",
+      "bytes": 251,
+      "sha256": "7dc98f9b23eac093fd17f33a1e0edc6f0103cdf9928bf4ce9112be7b8f22f63d"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics/seed1704/chains/fresh_CAMB_old_A3200_seed1704.1.txt",
+      "bytes": 813960,
+      "sha256": "532cf87215694617db2ab7f69e63a6927fa2165b2aa27cdacdfea5b2fc0eb08b"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics/seed1704/chains/fresh_CAMB_old_A3200_seed1704.updated.yaml",
+      "bytes": 3596,
+      "sha256": "4f1e39fbb05e95d75176c8fb57da6ba5705f1bfe1982d4cc9e3f5d074b133651"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics/seed1704/input.yaml",
+      "bytes": 2015,
+      "sha256": "c8e16b7bb09d7919329a3e4d5c5f6ea0c745e3a5be2abce5e56360a90a702576"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics/seed1704/resolved.yaml",
+      "bytes": 2202,
+      "sha256": "b3c5ebe56273be272aedc61a3dff52ab4c9f470197d61259cd2deb515a877612"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics/seed1704/solver_backend.json",
+      "bytes": 251,
+      "sha256": "7dc98f9b23eac093fd17f33a1e0edc6f0103cdf9928bf4ce9112be7b8f22f63d"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics/snapshot_receipt.json",
+      "bytes": 6995,
+      "sha256": "cdb050d10b844b5c48906eaeaa727f6e5c849090ad48c9bc481ed9fa322468c8"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics/verification_worker_stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics/verification_worker_stdout.txt",
+      "bytes": 25,
+      "sha256": "3865b0c0c00972de63215081819bcb7f874ad8711314db3da29e36a7435bf39b"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics/worker_preparation_receipt.json",
+      "bytes": 432,
+      "sha256": "8ff368e8b86eeb647da3236ee065e9ddf33d9f7d7055d8af00d984d452c561fb"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics_v2/diagnostic_completion.json",
+      "bytes": 999,
+      "sha256": "3ceb146d4165e9e035e1d8bf9576e14bde0c0d95bbdc50d6263ac8673da3247f"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics_v2/diagnostic_stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics_v2/diagnostic_stdout.txt",
+      "bytes": 160,
+      "sha256": "1cea9c8eae75ef721ba9cbbe756f47257549ce888e89cb18d83c1ab305e07b59"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics_v2/diagnostics.json",
+      "bytes": 14735,
+      "sha256": "c97e5e0abf7ce8bdd4fbe6b110f601978f6c770993f44f1fac0867c4b9b4c4e6"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics_v2/execution_receipt.json",
+      "bytes": 1409,
+      "sha256": "458e86ae30939948dec5c5782b93285c58a63aae83bf54d9669cc739209428ee"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics_v2/native_rows_verification.json",
+      "bytes": 9691,
+      "sha256": "6a14ee5f554d1b5d3ca040dd4fa43e075899af6cf1cd52f00b3a48bffd744860"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics_v2/run_diagnostic.py.completion.json",
+      "bytes": 374,
+      "sha256": "214945c9a4c6c0bf948eeb14bf65bf94d8ad6f2b25de357a7dec0e7e51aed66f"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics_v2/run_diagnostic.py.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics_v2/run_diagnostic.py.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics_v2/run_verification.py",
+      "bytes": 1250,
+      "sha256": "2faaf3a14f10bb1c2db8a3bf03adf17cabaa839dd3349df087943b364c4f4da9"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics_v2/seed1701/chains/fresh_CAMB_old_A3200_seed1701.1.txt",
+      "bytes": 836304,
+      "sha256": "4edd50efe59ead35249d2174a75e1cb24a06df7dacfd530d40d2670c094b89da"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics_v2/seed1701/chains/fresh_CAMB_old_A3200_seed1701.updated.yaml",
+      "bytes": 3597,
+      "sha256": "943855320729e562fb870fa6faca52f5255fe9eb1d3faf6ceacadbc543637773"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics_v2/seed1701/input.yaml",
+      "bytes": 2016,
+      "sha256": "69754fe31cf8a571af8e94c3b651608abdfaa12c728c0d1059bd2e472d4517bd"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics_v2/seed1701/resolved.yaml",
+      "bytes": 2206,
+      "sha256": "cb6ee6d23ecd2611b29342bb1a41895421e5209f3c8b79d49e7d20c2d523a88e"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics_v2/seed1701/solver_backend.json",
+      "bytes": 251,
+      "sha256": "7dc98f9b23eac093fd17f33a1e0edc6f0103cdf9928bf4ce9112be7b8f22f63d"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics_v2/seed1702/chains/fresh_CAMB_old_A3200_seed1702.1.txt",
+      "bytes": 837672,
+      "sha256": "20402e3cf7b248b2e9ab217a000d5410fd620efb0effad7e405d323b982b891a"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics_v2/seed1702/chains/fresh_CAMB_old_A3200_seed1702.updated.yaml",
+      "bytes": 3593,
+      "sha256": "22a027c5fe8e4865a5e0d5ae0413c4c25dc693e06d65285a4305bbdadc846338"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics_v2/seed1702/input.yaml",
+      "bytes": 2012,
+      "sha256": "0c38f3e95866e4381f9bb6b1aa082176e74e4c98e1706073e7a36cf9275b039d"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics_v2/seed1702/resolved.yaml",
+      "bytes": 2202,
+      "sha256": "45f3b7a5838fd176173b107b1272dc67eeac1959fe4167c762a1068e2e936448"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics_v2/seed1702/solver_backend.json",
+      "bytes": 251,
+      "sha256": "7dc98f9b23eac093fd17f33a1e0edc6f0103cdf9928bf4ce9112be7b8f22f63d"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics_v2/seed1703/chains/fresh_CAMB_old_A3200_seed1703.1.txt",
+      "bytes": 814416,
+      "sha256": "e96f1df1fc6c32bfba23dd3a2c657861185dcf975564f53348c893697610817d"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics_v2/seed1703/chains/fresh_CAMB_old_A3200_seed1703.updated.yaml",
+      "bytes": 3598,
+      "sha256": "2e3f67b89358359f5d400eba1402f0971e7e5cf700d9f80e5c0be35bdd620cd2"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics_v2/seed1703/input.yaml",
+      "bytes": 2017,
+      "sha256": "30fe2243019319a7c382330af09073581ede408c135bd4cd6fcd61dd3d8b85b2"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics_v2/seed1703/resolved.yaml",
+      "bytes": 2207,
+      "sha256": "f92a0cde4642f8f2b1b77a7330895c16949211170d9e6a1341e54d3fc61d51ef"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics_v2/seed1703/solver_backend.json",
+      "bytes": 251,
+      "sha256": "7dc98f9b23eac093fd17f33a1e0edc6f0103cdf9928bf4ce9112be7b8f22f63d"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics_v2/seed1704/chains/fresh_CAMB_old_A3200_seed1704.1.txt",
+      "bytes": 817608,
+      "sha256": "22e19ec06d2c6a089ad0c46e1acc5b9c28bca1cb78b5d74119faea85a92d9ede"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics_v2/seed1704/chains/fresh_CAMB_old_A3200_seed1704.updated.yaml",
+      "bytes": 3596,
+      "sha256": "4f1e39fbb05e95d75176c8fb57da6ba5705f1bfe1982d4cc9e3f5d074b133651"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics_v2/seed1704/input.yaml",
+      "bytes": 2015,
+      "sha256": "c8e16b7bb09d7919329a3e4d5c5f6ea0c745e3a5be2abce5e56360a90a702576"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics_v2/seed1704/resolved.yaml",
+      "bytes": 2205,
+      "sha256": "5491786110d304980d146c835853903fc9c4a55a5915cd5fe93f6d56d7cd18a6"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics_v2/seed1704/solver_backend.json",
+      "bytes": 251,
+      "sha256": "7dc98f9b23eac093fd17f33a1e0edc6f0103cdf9928bf4ce9112be7b8f22f63d"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics_v2/self_review_receipt.json",
+      "bytes": 2970,
+      "sha256": "56c598e8982ab777e38b55dc83764e62dc64c2994d5481f8d7c61b00e59a404b"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics_v2/snapshot_receipt.json",
+      "bytes": 7022,
+      "sha256": "e34c86aa39a01aafa6e9819afb011314ea7a6f1b5853c16d692d2deb690f54c9"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics_v2/unused_self_review_command_failure_receipt.json",
+      "bytes": 348,
+      "sha256": "8c0957976a8576a347df5b1a854a5e15e68f3c69d7320bbe4795896008f044b1"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics_v2/verification_worker_stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics_v2/verification_worker_stdout.txt",
+      "bytes": 80,
+      "sha256": "bc1aaf382d727139d98f616f09914eb4fdbc6622b13447a3b5486ef930d9d4d9"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics_v2/verify_native_rows.py.completion.json",
+      "bytes": 378,
+      "sha256": "381405484759b6b4ec38961ed15e16dc1b0336763b214b64f54c7d21ead4d016"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics_v2/verify_native_rows.py.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics_v2/verify_native_rows.py.stdout.txt",
+      "bytes": 272,
+      "sha256": "d6aee4d243b9f4a4e00c8cda40ea579fd3c8eaecd3de3ff05e6001f8dfde93a8"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics_v2/verify_snapshot.py.completion.json",
+      "bytes": 375,
+      "sha256": "b16959a921d0e997d5230380a9ab4d7eabb98ef30ca1511d3169ea55c69599ce"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics_v2/verify_snapshot.py.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics_v2/verify_snapshot.py.stdout.txt",
+      "bytes": 172,
+      "sha256": "0e685710d27e5fda3e9217a77f954a89f9c8b70b7e23a7a0fe8d12287a904767"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_A3200_diagnostics_v2/worker_preparation_receipt.json",
+      "bytes": 586,
+      "sha256": "747be2e7d03ebdaeb7a694e7449ab4c09bed4d38f0ed83a80ab62449e556f5da"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics/failure_receipt.json",
+      "bytes": 573,
+      "sha256": "a82ae641fb4e8ed19208442023c5340c53261d6ea1526328260a100f5477dd0a"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics/run_diagnostic.py.completion.json",
+      "bytes": 371,
+      "sha256": "d74601f360c780638d823c1f8a83e857cdf13144916ffdd6272a3a48868d7ad6"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics/run_diagnostic.py.stderr.txt",
+      "bytes": 917,
+      "sha256": "0d9a6ea55f8eb3d794dc40c25668b9f4ab16bbe4c0a5b334ed27cf701882273e"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics/run_diagnostic.py.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics/run_verification.py",
+      "bytes": 1225,
+      "sha256": "65533aec9617b0c025dbb38384a58574af9075afd2c2231b20012a042d4f54a2"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics/seed1705/chains/fresh_CAMB_old_B4095_seed1705.1.txt",
+      "bytes": 801192,
+      "sha256": "1582599ef264e85c799e21104f2a35fb1b9ac4590424d1dd741291fa98514391"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics/seed1705/chains/fresh_CAMB_old_B4095_seed1705.updated.yaml",
+      "bytes": 3595,
+      "sha256": "ade00180815a58b202592163326863798d3e689fffe91622c00983f705be241b"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics/seed1705/input.yaml",
+      "bytes": 2014,
+      "sha256": "4f9ff5511f997af91a0c842df086090c9a0240c457402cd008e45d8eed552dc5"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics/seed1705/resolved.yaml",
+      "bytes": 2201,
+      "sha256": "c0d6aaaa6198a06ba171506ce4fe4f6044aed27f44bba68b71849e772a2fc250"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics/seed1705/solver_backend.json",
+      "bytes": 251,
+      "sha256": "7dc98f9b23eac093fd17f33a1e0edc6f0103cdf9928bf4ce9112be7b8f22f63d"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics/seed1706/chains/fresh_CAMB_old_B4095_seed1706.1.txt",
+      "bytes": 768360,
+      "sha256": "f2a5a711f14573d8b6d1793a20e47632b5d991c07ab00edb9eb5612f86cc687f"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics/seed1706/chains/fresh_CAMB_old_B4095_seed1706.updated.yaml",
+      "bytes": 3593,
+      "sha256": "e29a8ea74f64eb1eb7df7ce0b17b9d1775dad83fb456f7251cc38657f03708b0"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics/seed1706/input.yaml",
+      "bytes": 2012,
+      "sha256": "fc55630960e689c462aa1508ea22773e13dde0a9c1b11dd88f9b05f4f2bdaff8"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics/seed1706/resolved.yaml",
+      "bytes": 2199,
+      "sha256": "0ab6a10689962c618a8da91319f816e9c5774f81f5e343f0ae5eb9be1342a96d"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics/seed1706/solver_backend.json",
+      "bytes": 251,
+      "sha256": "7dc98f9b23eac093fd17f33a1e0edc6f0103cdf9928bf4ce9112be7b8f22f63d"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics/seed1707/chains/fresh_CAMB_old_B4095_seed1707.1.txt",
+      "bytes": 791160,
+      "sha256": "e0ee37a06afaed8fdb88abb8ce165cab57bd4cf4454a34d9aa048db182163631"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics/seed1707/chains/fresh_CAMB_old_B4095_seed1707.updated.yaml",
+      "bytes": 3600,
+      "sha256": "bf9f4dd3ac1d44385982fa731a82ec0b74fe4882d1455da50401f320aff422c5"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics/seed1707/input.yaml",
+      "bytes": 2019,
+      "sha256": "eee356f8c7842b90234e3427701d8d8d8a11d80ec920cd80a71c676eb9a9f42c"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics/seed1707/resolved.yaml",
+      "bytes": 2206,
+      "sha256": "90d9af68c6478713f51184bdefc03f7300784a1eabf1a676acc0b700a00eb4d7"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics/seed1707/solver_backend.json",
+      "bytes": 251,
+      "sha256": "7dc98f9b23eac093fd17f33a1e0edc6f0103cdf9928bf4ce9112be7b8f22f63d"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics/seed1708/chains/fresh_CAMB_old_B4095_seed1708.1.txt",
+      "bytes": 761976,
+      "sha256": "5349da7bec6564f994cbb0b3610e3e3283f25242fad514eaaa3ad2ef2a7a0695"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics/seed1708/chains/fresh_CAMB_old_B4095_seed1708.updated.yaml",
+      "bytes": 3595,
+      "sha256": "0b28460a36b00f918dbc49458b57942d9c0c1443eb92f066a2ce0e0af250dbce"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics/seed1708/input.yaml",
+      "bytes": 2014,
+      "sha256": "6920f62b10af57c929d317551f1ca27d4707fc52159f0025206e087d746ff3dc"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics/seed1708/resolved.yaml",
+      "bytes": 2201,
+      "sha256": "be4a54c7d1cb39b3d80afff9ca72ed7cfb3d3eb30c58316f836e157dde67a494"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics/seed1708/solver_backend.json",
+      "bytes": 251,
+      "sha256": "7dc98f9b23eac093fd17f33a1e0edc6f0103cdf9928bf4ce9112be7b8f22f63d"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics/snapshot_receipt.json",
+      "bytes": 6995,
+      "sha256": "a8c38f1273c5b93ce00884e6dfd3b1caea38ee146fced985c57aa1500916365a"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics/verification_worker_stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics/verification_worker_stdout.txt",
+      "bytes": 25,
+      "sha256": "3865b0c0c00972de63215081819bcb7f874ad8711314db3da29e36a7435bf39b"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics/worker_preparation_receipt.json",
+      "bytes": 432,
+      "sha256": "910d2606b4e3796ecd798aaa0bcbc234fc9625c2ee98ac289960ff8f10cd3497"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics_v2/diagnostic_completion.json",
+      "bytes": 999,
+      "sha256": "887229f7cdca65363e07af817ce49cbfe5f6220f5d2a3136105d6a670f2e0579"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics_v2/diagnostic_stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics_v2/diagnostic_stdout.txt",
+      "bytes": 160,
+      "sha256": "7133ba54711511874c557fcf337290965fdcc11bcee00a8b3d081a9f576dbf77"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics_v2/diagnostics.json",
+      "bytes": 14559,
+      "sha256": "e44d9d5507b3da796e8b76d06968d376790c539cfbbeb20afa9b57bbcf05e800"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics_v2/execution_receipt.json",
+      "bytes": 1409,
+      "sha256": "18ab80da14cab9ec52ced4cd77040171288ab574219198a197f0778b359018f9"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics_v2/native_rows_verification.json",
+      "bytes": 9680,
+      "sha256": "6d00793156134b7233ea9d56c19a03b4a835d5ef230690f10902b841a59246e9"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics_v2/run_diagnostic.py.completion.json",
+      "bytes": 374,
+      "sha256": "6730b35dae6f9d0495201e7b3ef012d5ed3fa75fc306e37d6954be30957a8741"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics_v2/run_diagnostic.py.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics_v2/run_diagnostic.py.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics_v2/run_verification.py",
+      "bytes": 1250,
+      "sha256": "2faaf3a14f10bb1c2db8a3bf03adf17cabaa839dd3349df087943b364c4f4da9"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics_v2/seed1705/chains/fresh_CAMB_old_B4095_seed1705.1.txt",
+      "bytes": 802560,
+      "sha256": "1fb45047120e0ee564f96c5a365a4b5a8534a4cb0b11b8d565eee844b1d4ed37"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics_v2/seed1705/chains/fresh_CAMB_old_B4095_seed1705.updated.yaml",
+      "bytes": 3595,
+      "sha256": "ade00180815a58b202592163326863798d3e689fffe91622c00983f705be241b"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics_v2/seed1705/input.yaml",
+      "bytes": 2014,
+      "sha256": "4f9ff5511f997af91a0c842df086090c9a0240c457402cd008e45d8eed552dc5"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics_v2/seed1705/resolved.yaml",
+      "bytes": 2204,
+      "sha256": "badc92163699c2eab3ad69e344175ca63c19e0dcb34a3b9a5b589618d57087e6"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics_v2/seed1705/solver_backend.json",
+      "bytes": 251,
+      "sha256": "7dc98f9b23eac093fd17f33a1e0edc6f0103cdf9928bf4ce9112be7b8f22f63d"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics_v2/seed1706/chains/fresh_CAMB_old_B4095_seed1706.1.txt",
+      "bytes": 770184,
+      "sha256": "f1ce57ca19def4963f02bb23bfe888d5c35a5d8054ee3454f0714a267f9b2eb6"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics_v2/seed1706/chains/fresh_CAMB_old_B4095_seed1706.updated.yaml",
+      "bytes": 3593,
+      "sha256": "e29a8ea74f64eb1eb7df7ce0b17b9d1775dad83fb456f7251cc38657f03708b0"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics_v2/seed1706/input.yaml",
+      "bytes": 2012,
+      "sha256": "fc55630960e689c462aa1508ea22773e13dde0a9c1b11dd88f9b05f4f2bdaff8"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics_v2/seed1706/resolved.yaml",
+      "bytes": 2202,
+      "sha256": "e6282e9b5aec25ad9f18ad5c7b08f4676250b7b77305806e9672270229b9ffe6"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics_v2/seed1706/solver_backend.json",
+      "bytes": 251,
+      "sha256": "7dc98f9b23eac093fd17f33a1e0edc6f0103cdf9928bf4ce9112be7b8f22f63d"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics_v2/seed1707/chains/fresh_CAMB_old_B4095_seed1707.1.txt",
+      "bytes": 792072,
+      "sha256": "1b2927548d86adeb910cfa4c103118d3c74e8df2b0fd0ebe8210f3d81c6b19a2"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics_v2/seed1707/chains/fresh_CAMB_old_B4095_seed1707.updated.yaml",
+      "bytes": 3600,
+      "sha256": "bf9f4dd3ac1d44385982fa731a82ec0b74fe4882d1455da50401f320aff422c5"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics_v2/seed1707/input.yaml",
+      "bytes": 2019,
+      "sha256": "eee356f8c7842b90234e3427701d8d8d8a11d80ec920cd80a71c676eb9a9f42c"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics_v2/seed1707/resolved.yaml",
+      "bytes": 2209,
+      "sha256": "874b6bdf822bd6dae47fd693bb1679d7f98af48038090971ab8f3ffcd706f46b"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics_v2/seed1707/solver_backend.json",
+      "bytes": 251,
+      "sha256": "7dc98f9b23eac093fd17f33a1e0edc6f0103cdf9928bf4ce9112be7b8f22f63d"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics_v2/seed1708/chains/fresh_CAMB_old_B4095_seed1708.1.txt",
+      "bytes": 762888,
+      "sha256": "49bc39467205acc01e8357dd9ef5a295f53ddd25b8d3aadea06172b32b34b5ad"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics_v2/seed1708/chains/fresh_CAMB_old_B4095_seed1708.updated.yaml",
+      "bytes": 3595,
+      "sha256": "0b28460a36b00f918dbc49458b57942d9c0c1443eb92f066a2ce0e0af250dbce"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics_v2/seed1708/input.yaml",
+      "bytes": 2014,
+      "sha256": "6920f62b10af57c929d317551f1ca27d4707fc52159f0025206e087d746ff3dc"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics_v2/seed1708/resolved.yaml",
+      "bytes": 2204,
+      "sha256": "04d3183924eecc71e332620b477d22ee2d0c47fb9352774afb942be42b03f93c"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics_v2/seed1708/solver_backend.json",
+      "bytes": 251,
+      "sha256": "7dc98f9b23eac093fd17f33a1e0edc6f0103cdf9928bf4ce9112be7b8f22f63d"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics_v2/self_review_receipt.json",
+      "bytes": 2966,
+      "sha256": "aed7101df50c5bffb6e6b8bc2d5cf0db379c73a6173f4d39d62e1e83a0cd052b"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics_v2/snapshot_receipt.json",
+      "bytes": 7022,
+      "sha256": "a266e581ee6e420bad98f7fe2cb71061294750bcbd009bea15dccfd9b8d6028e"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics_v2/unused_self_review_command_failure_receipt.json",
+      "bytes": 348,
+      "sha256": "aa20db49a4b60ae9686c91a420b35ec38e44ea043ba2fca1098bd1ca4485fe2a"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics_v2/verification_worker_stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics_v2/verification_worker_stdout.txt",
+      "bytes": 80,
+      "sha256": "bc1aaf382d727139d98f616f09914eb4fdbc6622b13447a3b5486ef930d9d4d9"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics_v2/verify_native_rows.py.completion.json",
+      "bytes": 378,
+      "sha256": "4b1eff0dae14d6d239555bfef8f047facb1f9ae676e3ef3b6e3eeefc54205199"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics_v2/verify_native_rows.py.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics_v2/verify_native_rows.py.stdout.txt",
+      "bytes": 272,
+      "sha256": "0af4ecd727bed68b95e208bfa1cf0a1553cc3da84bd0022fb846e3d572ddd761"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics_v2/verify_snapshot.py.completion.json",
+      "bytes": 375,
+      "sha256": "164872108099c49b065f09327c3691a4c4f4629f0683a765b1ad48f7e771265e"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics_v2/verify_snapshot.py.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics_v2/verify_snapshot.py.stdout.txt",
+      "bytes": 171,
+      "sha256": "dd67111893ded4584256fff8e3972365784f716002b5b8e0e05d48b2ff9c9bbb"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_eighth_old_B4095_diagnostics_v2/worker_preparation_receipt.json",
+      "bytes": 586,
+      "sha256": "ee6fba84e6c6392dbc0afdaade13a753b33bf0c73e51208d4f081dfa3ea5ebc6"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics/failure_receipt.json",
+      "bytes": 573,
+      "sha256": "4d0e1d85a24081b44950897ef8844e8782634a2834ac21f907b2b9f55f6c5772"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics/run_diagnostic.py.completion.json",
+      "bytes": 374,
+      "sha256": "e3b41c015a0a05709eea3ed97e3c0a76a1fcc1634290530a0d650da0b7be9e76"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics/run_diagnostic.py.stderr.txt",
+      "bytes": 920,
+      "sha256": "b439291c7c047f294bfec2b6526b7971a21f44f540904f51d0ce2d6950d9bd07"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics/run_diagnostic.py.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics/run_verification.py",
+      "bytes": 1139,
+      "sha256": "c5748ba5fe734b5309548136d896a4e9899142fd801f83b8d7458c7c0aad17c0"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics/seed1901/chains/fresh_CAMB_current_A3200_seed1901.1.txt",
+      "bytes": 870048,
+      "sha256": "c7411b581f2745cfb05d614321d4cd1fd804a28d5c9ad89f2bf47560e2d770dd"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics/seed1901/chains/fresh_CAMB_current_A3200_seed1901.updated.yaml",
+      "bytes": 3641,
+      "sha256": "84036934a7ac9782a014af314b74baa8a0a1b3717826e2aab394a6b0d8240e72"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics/seed1901/input.yaml",
+      "bytes": 2024,
+      "sha256": "5ffc3e975b1be6bb13814a66621509779716457a96ea5ef8030a107892577549"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics/seed1901/resolved.yaml",
+      "bytes": 2218,
+      "sha256": "49a3ea7e4c597035d3e4905b488856619d756800c05c4ed7b8235e30f07eeb95"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics/seed1901/solver_backend.json",
+      "bytes": 230,
+      "sha256": "83d363c0bbc79c20d5a38c218709e85cdbf23571cdbb0e58b388b60042bf9053"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics/seed1902/chains/fresh_CAMB_current_A3200_seed1902.1.txt",
+      "bytes": 919296,
+      "sha256": "9c4faefb025999dae325392bbcc4050e23037114461a6175559c270578c44451"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics/seed1902/chains/fresh_CAMB_current_A3200_seed1902.updated.yaml",
+      "bytes": 3637,
+      "sha256": "d36101b614376c7977de28799375208aeb6ee319746eadd2dac407b317fd089a"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics/seed1902/input.yaml",
+      "bytes": 2020,
+      "sha256": "6588ce3b84f3c253e9cc2047020be38bab56295fc2190de56b974ae6630d52fa"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics/seed1902/resolved.yaml",
+      "bytes": 2214,
+      "sha256": "62619559bd5b80e503af7388313388601b11daf3713692a3e599626edf6de99d"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics/seed1902/solver_backend.json",
+      "bytes": 230,
+      "sha256": "83d363c0bbc79c20d5a38c218709e85cdbf23571cdbb0e58b388b60042bf9053"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics/seed1903/chains/fresh_CAMB_current_A3200_seed1903.1.txt",
+      "bytes": 858192,
+      "sha256": "3367290b13d26ffe2e1fd996bbb899bcecdc89b031a9e7461e77285522ac8a00"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics/seed1903/chains/fresh_CAMB_current_A3200_seed1903.updated.yaml",
+      "bytes": 3642,
+      "sha256": "b3e1d709e9e3b40c4b8266d6817c103fa0f7a24c939bb0b33d7f9eecb3632c90"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics/seed1903/input.yaml",
+      "bytes": 2025,
+      "sha256": "c0daa06816c62bcd5525fd03fc8d0b531734c3691bcb17a75bad0fe8a6d5c46b"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics/seed1903/resolved.yaml",
+      "bytes": 2219,
+      "sha256": "b83f5e9161c1ab4fdfc6c7b1994f476d55bc3289ba1344ccf2964db64590d4f1"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics/seed1903/solver_backend.json",
+      "bytes": 230,
+      "sha256": "83d363c0bbc79c20d5a38c218709e85cdbf23571cdbb0e58b388b60042bf9053"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics/seed1904/chains/fresh_CAMB_current_A3200_seed1904.1.txt",
+      "bytes": 878712,
+      "sha256": "2fc3f639b93ab68a3e23496c9dbe7f5bc47260777fcccefa1d7c7061794a88f1"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics/seed1904/chains/fresh_CAMB_current_A3200_seed1904.updated.yaml",
+      "bytes": 3640,
+      "sha256": "db31c0f4447ac311e5a7c422bec02b88f97eee004b6a3bb23caea6a9e0af6e1f"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics/seed1904/input.yaml",
+      "bytes": 2023,
+      "sha256": "3b018b5f33f1e2764644e47aa51edac9c16ac05b4098f8be28e2556e56b90746"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics/seed1904/resolved.yaml",
+      "bytes": 2217,
+      "sha256": "7b6f2b2333175aa4baf5f932c0e983fcc5c7617402e2ac51d45fd50fe61cf6c3"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics/seed1904/solver_backend.json",
+      "bytes": 230,
+      "sha256": "83d363c0bbc79c20d5a38c218709e85cdbf23571cdbb0e58b388b60042bf9053"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics/snapshot_receipt.json",
+      "bytes": 7077,
+      "sha256": "510ea8a69ba0e39bd6d5ed7be21cc35d5a0fdaf883e2aecf5259e0528ce7699a"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics/verification_worker_stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics/verification_worker_stdout.txt",
+      "bytes": 25,
+      "sha256": "3865b0c0c00972de63215081819bcb7f874ad8711314db3da29e36a7435bf39b"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics/worker_preparation_receipt.json",
+      "bytes": 435,
+      "sha256": "706385bf09c41434697e390a965ac1bdf5fe80b552ad92f0e6e5ab79b48894c4"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics_v2/diagnostic_completion.json",
+      "bytes": 1014,
+      "sha256": "54de8f2d6848d06cf1d7df750b62e182caf93358d2cb71b0ca2f3f32a5671eef"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics_v2/diagnostic_stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics_v2/diagnostic_stdout.txt",
+      "bytes": 163,
+      "sha256": "5db13f95255d25dd048c1a48c710eb020dbc7c460d9f30b854c4f22141a54da9"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics_v2/diagnostics.json",
+      "bytes": 14614,
+      "sha256": "980b2e4d48fdab4fda13ec21841b0a378b66bf9f5836bdf4b3914243390d94e0"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics_v2/execution_receipt.json",
+      "bytes": 1418,
+      "sha256": "dd2dbca2d5f13cded2c9f2822d034166739942974ba5a7a034d9bdc50daaff07"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics_v2/native_rows_verification.json",
+      "bytes": 9656,
+      "sha256": "414021bab0052ae79b01023829af3d1afc848082f6a1b822aafdb503ac3cb098"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics_v2/run_diagnostic.py.completion.json",
+      "bytes": 377,
+      "sha256": "289af10c67d09ed3c26759722fc30fb860ddd052f89bfe3dc39ea41d4a575fa1"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics_v2/run_diagnostic.py.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics_v2/run_diagnostic.py.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics_v2/run_verification.py",
+      "bytes": 1164,
+      "sha256": "f026bcba9d2e0593d8dd2d18d8da35edea5334be42b96cb67191951382c014d5"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics_v2/seed1901/chains/fresh_CAMB_current_A3200_seed1901.1.txt",
+      "bytes": 875064,
+      "sha256": "c32e23130a03e88051efbdccbf574c85bb474af996d112ecabc3e883d41c3cc5"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics_v2/seed1901/chains/fresh_CAMB_current_A3200_seed1901.updated.yaml",
+      "bytes": 3641,
+      "sha256": "84036934a7ac9782a014af314b74baa8a0a1b3717826e2aab394a6b0d8240e72"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics_v2/seed1901/input.yaml",
+      "bytes": 2024,
+      "sha256": "5ffc3e975b1be6bb13814a66621509779716457a96ea5ef8030a107892577549"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics_v2/seed1901/resolved.yaml",
+      "bytes": 2221,
+      "sha256": "d8d429616dda4264e1aa5fc860254a212ba66635d9bd0aa2e24d3addc1144f96"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics_v2/seed1901/solver_backend.json",
+      "bytes": 230,
+      "sha256": "83d363c0bbc79c20d5a38c218709e85cdbf23571cdbb0e58b388b60042bf9053"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics_v2/seed1902/chains/fresh_CAMB_current_A3200_seed1902.1.txt",
+      "bytes": 922944,
+      "sha256": "9ef5202bd5794820ddc41e136565cc939c4b2fa9b2c31b8771592f501a20704b"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics_v2/seed1902/chains/fresh_CAMB_current_A3200_seed1902.updated.yaml",
+      "bytes": 3637,
+      "sha256": "d36101b614376c7977de28799375208aeb6ee319746eadd2dac407b317fd089a"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics_v2/seed1902/input.yaml",
+      "bytes": 2020,
+      "sha256": "6588ce3b84f3c253e9cc2047020be38bab56295fc2190de56b974ae6630d52fa"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics_v2/seed1902/resolved.yaml",
+      "bytes": 2217,
+      "sha256": "02d65b24cfea581b0dce024e7fc8db3649d82b5c9f9b507c77b4b7f808e187a9"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics_v2/seed1902/solver_backend.json",
+      "bytes": 230,
+      "sha256": "83d363c0bbc79c20d5a38c218709e85cdbf23571cdbb0e58b388b60042bf9053"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics_v2/seed1903/chains/fresh_CAMB_current_A3200_seed1903.1.txt",
+      "bytes": 860928,
+      "sha256": "a7417cec2f3d1ba7ae5d07ecaa107d607aa0ca0cf098cef95e87b8a138f4293c"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics_v2/seed1903/chains/fresh_CAMB_current_A3200_seed1903.updated.yaml",
+      "bytes": 3642,
+      "sha256": "b3e1d709e9e3b40c4b8266d6817c103fa0f7a24c939bb0b33d7f9eecb3632c90"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics_v2/seed1903/input.yaml",
+      "bytes": 2025,
+      "sha256": "c0daa06816c62bcd5525fd03fc8d0b531734c3691bcb17a75bad0fe8a6d5c46b"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics_v2/seed1903/resolved.yaml",
+      "bytes": 2222,
+      "sha256": "c2f6a069220478f364c2d1fe3f5d5298b5308c141f024f441f91feec9b62c9ea"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics_v2/seed1903/solver_backend.json",
+      "bytes": 230,
+      "sha256": "83d363c0bbc79c20d5a38c218709e85cdbf23571cdbb0e58b388b60042bf9053"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics_v2/seed1904/chains/fresh_CAMB_current_A3200_seed1904.1.txt",
+      "bytes": 880080,
+      "sha256": "b235b0911b903a38330cc877998f768422e882544efc7d581d1aed8f5a4c2442"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics_v2/seed1904/chains/fresh_CAMB_current_A3200_seed1904.updated.yaml",
+      "bytes": 3640,
+      "sha256": "db31c0f4447ac311e5a7c422bec02b88f97eee004b6a3bb23caea6a9e0af6e1f"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics_v2/seed1904/input.yaml",
+      "bytes": 2023,
+      "sha256": "3b018b5f33f1e2764644e47aa51edac9c16ac05b4098f8be28e2556e56b90746"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics_v2/seed1904/resolved.yaml",
+      "bytes": 2220,
+      "sha256": "d18533993038c0f9840a98a4b304090766c6014374a5a5422aaead96e4018139"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics_v2/seed1904/solver_backend.json",
+      "bytes": 230,
+      "sha256": "83d363c0bbc79c20d5a38c218709e85cdbf23571cdbb0e58b388b60042bf9053"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics_v2/self_review_receipt.json",
+      "bytes": 2969,
+      "sha256": "21265024d412ccd6936c9f0817f29d4d530e12a81f0c2e03c6497760a98d455d"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics_v2/snapshot_receipt.json",
+      "bytes": 7104,
+      "sha256": "78fa34796c4cd4b32b0aa0ad89e716adc49137651c3eaad2eb6530af638ef63a"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics_v2/unused_self_review_command_failure_receipt.json",
+      "bytes": 348,
+      "sha256": "243b82eca682cc78826c05c23295d5b92d95fcf7c4d55e0f2126819d05dcf2df"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics_v2/verification_worker_stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics_v2/verification_worker_stdout.txt",
+      "bytes": 80,
+      "sha256": "bc1aaf382d727139d98f616f09914eb4fdbc6622b13447a3b5486ef930d9d4d9"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics_v2/verify_native_rows.py.completion.json",
+      "bytes": 381,
+      "sha256": "f831b879a89d9ba3ca4f091f9e0288b493e6eaff07eeef1663999c516c34698d"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics_v2/verify_native_rows.py.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics_v2/verify_native_rows.py.stdout.txt",
+      "bytes": 251,
+      "sha256": "72dda6a25a4f5e8534e9adbbccfea2198942b18b4b6290ff81579c964b23ca06"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics_v2/verify_snapshot.py.completion.json",
+      "bytes": 378,
+      "sha256": "692a1eeeb10b20c74b61670cca03fbd921f27cab67772650345adc9bc06e421b"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics_v2/verify_snapshot.py.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics_v2/verify_snapshot.py.stdout.txt",
+      "bytes": 175,
+      "sha256": "6581501f6e137636f82ce09e275701bbd86f91dc038bd382d35d225c79133c0b"
+    },
+    {
+      "path": "runs/20261005_math_review_fresh_CAMB_ninth_current_A3200_diagnostics_v2/worker_preparation_receipt.json",
+      "bytes": 595,
+      "sha256": "92619e717db12e8d081b0d1d920a5f9097cc409b85886d0a2b7ec0e4956473e5"
+    },
+    {
+      "path": "runs/20261005_math_review_guarded_CLASS_ninth_quad_B_diagnostics/completion_verification.json",
+      "bytes": 8485,
+      "sha256": "17f86036d56090f7987292de451a2e355f78c68e0d92261c83fa10169f524e3a"
+    },
+    {
+      "path": "runs/20261005_math_review_guarded_CLASS_ninth_quad_B_diagnostics/diagnostic_worker_stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261005_math_review_guarded_CLASS_ninth_quad_B_diagnostics/diagnostic_worker_stdout.txt",
+      "bytes": 24,
+      "sha256": "9a7c97bd8bfdc0c00db3ab895eeea21e2325026ce75c7da0327d4c0fdcf36c8d"
+    },
+    {
+      "path": "runs/20261005_math_review_guarded_CLASS_ninth_quad_B_diagnostics/execution_receipt.json",
+      "bytes": 499,
+      "sha256": "dab6f6a0cd937a5f5ff6bf94eec1228f8e699a6655f63cb53b2a3484abe3441c"
+    },
+    {
+      "path": "runs/20261005_math_review_guarded_CLASS_ninth_quad_B_diagnostics/observe_runtime.py",
+      "bytes": 4391,
+      "sha256": "64d27708c0c1ce5749b7e336746644926ae8a6b7f826be8ab2caa3f9f36afa6c"
+    },
+    {
+      "path": "runs/20261005_math_review_guarded_CLASS_ninth_quad_B_diagnostics/prepare_snapshot.py",
+      "bytes": 7575,
+      "sha256": "b3de4051cbe529714b5311b3ad8555a32bd050f16052f58b6b61b7a90fd581a5"
+    },
+    {
+      "path": "runs/20261005_math_review_guarded_CLASS_ninth_quad_B_diagnostics/quad_B/seed1305/chains/math_guarded_quad_B_seed1305.1.txt",
+      "bytes": 1691988,
+      "sha256": "99de3f5c78a93d5724496d61d871241aaba3dbd8dd307e9372126d8d5c6f44d6"
+    },
+    {
+      "path": "runs/20261005_math_review_guarded_CLASS_ninth_quad_B_diagnostics/quad_B/seed1305/input.yaml",
+      "bytes": 4164,
+      "sha256": "6434cca5c324e70d4a8d038a1fd33d0fe191fd02fd8a3785129796231b5e2cf8"
+    },
+    {
+      "path": "runs/20261005_math_review_guarded_CLASS_ninth_quad_B_diagnostics/quad_B/seed1305/resolved.yaml",
+      "bytes": 4320,
+      "sha256": "a586e25b68f7b0e7b7367eee254a268d30500d3f8f911e6925a3a6b71c8e9d10"
+    },
+    {
+      "path": "runs/20261005_math_review_guarded_CLASS_ninth_quad_B_diagnostics/quad_B/seed1305/runtime_state.json",
+      "bytes": 2078,
+      "sha256": "be8ab1d8e46c415beb431f429e8321cd8a57df4a39319f5a890aeef8798e9887"
+    },
+    {
+      "path": "runs/20261005_math_review_guarded_CLASS_ninth_quad_B_diagnostics/quad_B/seed1306/chains/math_guarded_quad_B_seed1306.1.txt",
+      "bytes": 1693436,
+      "sha256": "cce9864bee3d6b09bd17d69af59ef398e4e9837daa9d5f85ea6572b7e10953b0"
+    },
+    {
+      "path": "runs/20261005_math_review_guarded_CLASS_ninth_quad_B_diagnostics/quad_B/seed1306/input.yaml",
+      "bytes": 4167,
+      "sha256": "8c3ea12f595b0487ba69c7f104f10ae9df861bece7434e92cf2a4d51ab5ecf72"
+    },
+    {
+      "path": "runs/20261005_math_review_guarded_CLASS_ninth_quad_B_diagnostics/quad_B/seed1306/resolved.yaml",
+      "bytes": 4323,
+      "sha256": "98cc38bb7a07cd6e2beb1ae0ec575c5526fa96de7d5c00d6c99c52d7f4a9ec6f"
+    },
+    {
+      "path": "runs/20261005_math_review_guarded_CLASS_ninth_quad_B_diagnostics/quad_B/seed1306/runtime_state.json",
+      "bytes": 2078,
+      "sha256": "aad2f5a893278bdca796b9cac5205f6529ad8446ad1b9620ce1169cce641c003"
+    },
+    {
+      "path": "runs/20261005_math_review_guarded_CLASS_ninth_quad_B_diagnostics/quad_B/seed1307/chains/math_guarded_quad_B_seed1307.1.txt",
+      "bytes": 1696332,
+      "sha256": "f75d3e0d7e3ae8a2f1bdf834139a01e1dd7f490c32930c58dbf2eb5997eb4b0a"
+    },
+    {
+      "path": "runs/20261005_math_review_guarded_CLASS_ninth_quad_B_diagnostics/quad_B/seed1307/input.yaml",
+      "bytes": 4164,
+      "sha256": "d1c453eb09a01181c41935cbcbff01b8acae962ca9e18d30fc8ad4215b377033"
+    },
+    {
+      "path": "runs/20261005_math_review_guarded_CLASS_ninth_quad_B_diagnostics/quad_B/seed1307/resolved.yaml",
+      "bytes": 4320,
+      "sha256": "f7e6390e3eed98892b2c7033ae71645f1fdd220d76a3709f3142ecba142b3576"
+    },
+    {
+      "path": "runs/20261005_math_review_guarded_CLASS_ninth_quad_B_diagnostics/quad_B/seed1307/runtime_state.json",
+      "bytes": 2078,
+      "sha256": "c5e53cae7fe3c247db063df394b15871cb060affccc9a5798de81b175e82855b"
+    },
+    {
+      "path": "runs/20261005_math_review_guarded_CLASS_ninth_quad_B_diagnostics/quad_B/seed1308/chains/math_guarded_quad_B_seed1308.1.txt",
+      "bytes": 1735428,
+      "sha256": "641cb36aad8ea930fd0d304fef8feca1f211823fd23498e415602fac944e8d79"
+    },
+    {
+      "path": "runs/20261005_math_review_guarded_CLASS_ninth_quad_B_diagnostics/quad_B/seed1308/input.yaml",
+      "bytes": 4165,
+      "sha256": "7ed284eaca0c71be375c63d8141c99e03e749a1fe4a38e9d3bc43c08faa39205"
+    },
+    {
+      "path": "runs/20261005_math_review_guarded_CLASS_ninth_quad_B_diagnostics/quad_B/seed1308/resolved.yaml",
+      "bytes": 4321,
+      "sha256": "16694b8a68413c36f759adf28e7d8d8ce4247f63bbefdea7d9f704395be16da5"
+    },
+    {
+      "path": "runs/20261005_math_review_guarded_CLASS_ninth_quad_B_diagnostics/quad_B/seed1308/runtime_state.json",
+      "bytes": 2078,
+      "sha256": "58cfd4ec761fb4dfffdf852488b226d3362c2d96eda816fdcc6d844cd4008d14"
+    },
+    {
+      "path": "runs/20261005_math_review_guarded_CLASS_ninth_quad_B_diagnostics/quad_B_completion.json",
+      "bytes": 1014,
+      "sha256": "4dba6b649e9f33595a631e2927271eddd10487d3d26ef9cd6f471c1d75d57ece"
+    },
+    {
+      "path": "runs/20261005_math_review_guarded_CLASS_ninth_quad_B_diagnostics/quad_B_diagnostics.json",
+      "bytes": 16073,
+      "sha256": "d561e327339342e1d6c269a66cb1966489300caf67ecdaedf4ac8d8d255bbfda"
+    },
+    {
+      "path": "runs/20261005_math_review_guarded_CLASS_ninth_quad_B_diagnostics/quad_B_stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261005_math_review_guarded_CLASS_ninth_quad_B_diagnostics/quad_B_stdout.txt",
+      "bytes": 163,
+      "sha256": "1fcdb88ccc93a715a602a0fa8335313862811a00142d90af71934d85a6848b99"
+    },
+    {
+      "path": "runs/20261005_math_review_guarded_CLASS_ninth_quad_B_diagnostics/run_diagnostics.py",
+      "bytes": 833,
+      "sha256": "21d3c1584c115d84e6d21ea094e3755d8087d88076f19fa5489f3ad4aac74656"
+    },
+    {
+      "path": "runs/20261005_math_review_guarded_CLASS_ninth_quad_B_diagnostics/runtime_observation.json",
+      "bytes": 28042,
+      "sha256": "50ca165b9fdb1d5ae87e471aa2c6b6565eafffafccfc58665e3fb9bdd7b08181"
+    },
+    {
+      "path": "runs/20261005_math_review_guarded_CLASS_ninth_quad_B_diagnostics/self_review.py",
+      "bytes": 3760,
+      "sha256": "bac3b448c3a3ef5310d327331b66c14704374f56e8a992997b69bc31997a8e70"
+    },
+    {
+      "path": "runs/20261005_math_review_guarded_CLASS_ninth_quad_B_diagnostics/self_review_receipt.json",
+      "bytes": 3856,
+      "sha256": "6557fcb922158a4291c2bd4920dcb25891dcaf31a8bda1c64de586804288809d"
+    },
+    {
+      "path": "runs/20261005_math_review_guarded_CLASS_ninth_quad_B_diagnostics/snapshot_receipt.json",
+      "bytes": 12064,
+      "sha256": "a69f7dedeeed790b32233f5eaafa5c2e55fc91730cc9a0d6ec47c96be185e801"
+    },
+    {
+      "path": "runs/20261005_math_review_guarded_CLASS_ninth_quad_B_diagnostics/verify_snapshot.py",
+      "bytes": 7449,
+      "sha256": "274095674ef23765d5d1e315dc52251280a4f2c1da6bdc22fb86b6035fcdb3eb"
+    },
+    {
+      "path": "runs/20261005_math_review_guarded_CLASS_ninth_quad_B_diagnostics/worker_preparation_receipt.json",
+      "bytes": 2570,
+      "sha256": "62e79aa9d3b4965797c6dcc779af879856a3ede81b0c5975adf899b214dd7cda"
+    },
+    {
+      "path": "runs/20261005_math_review_sigma_candidate_low_mass_controls/all_runtime_verification.json",
+      "bytes": 40212,
+      "sha256": "96f85214e30873bd780fc26d27147e148b54f93be8d81b7712fea11a791a4db2"
+    },
+    {
+      "path": "runs/20261005_math_review_sigma_candidate_low_mass_controls/candidate12/evaluation_receipt.json",
+      "bytes": 5251,
+      "sha256": "cd6fc6d0b65ae3301ff68d969a3b1a72b96fcc74e3b668640eb5208dd1355acc"
+    },
+    {
+      "path": "runs/20261005_math_review_sigma_candidate_low_mass_controls/candidate12/point0_provider_arrays.npz",
+      "bytes": 162587,
+      "sha256": "411f005023f22419e6dff18d78793864f7d51889fd2d3ca90d7033b642b01dc3"
+    },
+    {
+      "path": "runs/20261005_math_review_sigma_candidate_low_mass_controls/candidate12/point1_provider_arrays.npz",
+      "bytes": 162544,
+      "sha256": "df735b02029be26dac6da37906280f86520e2c13143be37c482064289d4498fa"
+    },
+    {
+      "path": "runs/20261005_math_review_sigma_candidate_low_mass_controls/candidate12/point2_provider_arrays.npz",
+      "bytes": 162505,
+      "sha256": "30a3d7b9dbb9d129c3e2ae82f4ded60118cf3d94e63a754226761203271a953c"
+    },
+    {
+      "path": "runs/20261005_math_review_sigma_candidate_low_mass_controls/candidate12/point3_provider_arrays.npz",
+      "bytes": 162491,
+      "sha256": "eaf9a7e806982c6eac9a159d8161dc7d38764c723c7621d0118af92d2f328632"
+    },
+    {
+      "path": "runs/20261005_math_review_sigma_candidate_low_mass_controls/candidate12/point4_provider_arrays.npz",
+      "bytes": 162448,
+      "sha256": "6c32b4975f0c943c208ec7e895d60753c09adbbdf8312b0fec62b89f02e28151"
+    },
+    {
+      "path": "runs/20261005_math_review_sigma_candidate_low_mass_controls/candidate12/point5_provider_arrays.npz",
+      "bytes": 162500,
+      "sha256": "33b61640a77b66c5356c6f27a79e8009d459db0680ba56975def7c7e21d60977"
+    },
+    {
+      "path": "runs/20261005_math_review_sigma_candidate_low_mass_controls/candidate12_stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261005_math_review_sigma_candidate_low_mass_controls/candidate12_stdout.txt",
+      "bytes": 334,
+      "sha256": "160e5e44b5569b17e5d3d4e51bb41b9f113a6c9c6cce7823315812f71bd0e235"
+    },
+    {
+      "path": "runs/20261005_math_review_sigma_candidate_low_mass_controls/candidate14/evaluation_receipt.json",
+      "bytes": 5254,
+      "sha256": "e06fa75280537a37764b5f4c4109d09f32cb62b6b9dc884e2de5679476a993a7"
+    },
+    {
+      "path": "runs/20261005_math_review_sigma_candidate_low_mass_controls/candidate14/point0_provider_arrays.npz",
+      "bytes": 162552,
+      "sha256": "46d96e46fe7e90b68985813ef2bbd52388bc01a3ad5d75fd63107758c41ffddc"
+    },
+    {
+      "path": "runs/20261005_math_review_sigma_candidate_low_mass_controls/candidate14/point1_provider_arrays.npz",
+      "bytes": 162587,
+      "sha256": "33c7874ae65de9d9670c5f2eccc283d9e0ed6f979b1e58c0a43ecc54eff3618a"
+    },
+    {
+      "path": "runs/20261005_math_review_sigma_candidate_low_mass_controls/candidate14/point2_provider_arrays.npz",
+      "bytes": 162594,
+      "sha256": "9b54f1e342b741620299ef1e728e0919f224776243c57b6da4dc651d64b0c727"
+    },
+    {
+      "path": "runs/20261005_math_review_sigma_candidate_low_mass_controls/candidate14/point3_provider_arrays.npz",
+      "bytes": 162586,
+      "sha256": "0be2cb5b33bc42c4cdb33546cd28cd4303f6f44801d43d483c646a2db2a6ecc0"
+    },
+    {
+      "path": "runs/20261005_math_review_sigma_candidate_low_mass_controls/candidate14/point4_provider_arrays.npz",
+      "bytes": 162452,
+      "sha256": "04be976aa89f4714f7fc76e68f7224244132514872d494caed4c514935440752"
+    },
+    {
+      "path": "runs/20261005_math_review_sigma_candidate_low_mass_controls/candidate14/point5_provider_arrays.npz",
+      "bytes": 162503,
+      "sha256": "fa79634038e96bbec1f332b1ea7fc4c410b0aad6ae69071f27cff845936a93fd"
+    },
+    {
+      "path": "runs/20261005_math_review_sigma_candidate_low_mass_controls/candidate14_stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261005_math_review_sigma_candidate_low_mass_controls/candidate14_stdout.txt",
+      "bytes": 336,
+      "sha256": "72ab5d30e2cde5ae7df3ed9642cc83f1938ef71352cc7b5f42e5a94ddfd581d9"
+    },
+    {
+      "path": "runs/20261005_math_review_sigma_candidate_low_mass_controls/candidate_comparison_self_review_receipt.json",
+      "bytes": 17599,
+      "sha256": "ab25c44b51478a49686587c8ddb8230648de1e6833a8b57eeecc48b47ee7f8dc"
+    },
+    {
+      "path": "runs/20261005_math_review_sigma_candidate_low_mass_controls/evaluate_controls.py",
+      "bytes": 3693,
+      "sha256": "def77d21a1b2028cd18f5318001e0bcf0fa7e1a58af72141c0831bc5f86ebd02"
+    },
+    {
+      "path": "runs/20261005_math_review_sigma_candidate_low_mass_controls/execution_receipt.json",
+      "bytes": 495,
+      "sha256": "b53d90d1e145d529a0d2985e15ab5a5eafd76d055791f0a42c8c2ec3e9a9e55d"
+    },
+    {
+      "path": "runs/20261005_math_review_sigma_candidate_low_mass_controls/observe_all_runtime.py",
+      "bytes": 14929,
+      "sha256": "e0de58ddd7b3ffd0055b5105ef1a1b5b5849c924c44c6c69a7476ca5ea84b282"
+    },
+    {
+      "path": "runs/20261005_math_review_sigma_candidate_low_mass_controls/original_debug/evaluation_receipt.json",
+      "bytes": 5263,
+      "sha256": "545e2c41f9b7f5bb355094ee3139f4cb4b11dc6c0025485ca31eb178e71a4a91"
+    },
+    {
+      "path": "runs/20261005_math_review_sigma_candidate_low_mass_controls/original_debug/point0_provider_arrays.npz",
+      "bytes": 162600,
+      "sha256": "36a2603b1b737e6ca2246a23c4531c536d73bdb2a7efb75206484e35252641ff"
+    },
+    {
+      "path": "runs/20261005_math_review_sigma_candidate_low_mass_controls/original_debug/point1_provider_arrays.npz",
+      "bytes": 162586,
+      "sha256": "e7e53eec286132510c1bd9e575cb7adc49e433298f11198e52f9492dbd20fcb9"
+    },
+    {
+      "path": "runs/20261005_math_review_sigma_candidate_low_mass_controls/original_debug/point2_provider_arrays.npz",
+      "bytes": 162524,
+      "sha256": "21c038eee973f54da18cee51e57606d3b3f46fb676ae1a34924f876738a39ea3"
+    },
+    {
+      "path": "runs/20261005_math_review_sigma_candidate_low_mass_controls/original_debug/point3_provider_arrays.npz",
+      "bytes": 162509,
+      "sha256": "680d1fd3f68e3e7ca7f7d501145a7dd460ada9224b809080d9c9e691ab7d0430"
+    },
+    {
+      "path": "runs/20261005_math_review_sigma_candidate_low_mass_controls/original_debug/point4_provider_arrays.npz",
+      "bytes": 162548,
+      "sha256": "a3df2e3701f1ce98b384dc162de9984fb7b45d19e48cbec3c31daa2d5114e2f3"
+    },
+    {
+      "path": "runs/20261005_math_review_sigma_candidate_low_mass_controls/original_debug/point5_provider_arrays.npz",
+      "bytes": 162483,
+      "sha256": "f2df1d35c82f891e45dddb556e244775b37d43fd83ba1d8a2927fd37705cd815"
+    },
+    {
+      "path": "runs/20261005_math_review_sigma_candidate_low_mass_controls/original_debug_stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261005_math_review_sigma_candidate_low_mass_controls/original_debug_stdout.txt",
+      "bytes": 342,
+      "sha256": "65db16e7824f834731d4e87f9e1f9c1470663b7256d62e8c1d3415c08ff3a4fe"
+    },
+    {
+      "path": "runs/20261005_math_review_sigma_candidate_low_mass_controls/preparation_receipt.json",
+      "bytes": 2015,
+      "sha256": "7425380378e2b4536c79a835107269ee330928e89c2f7cad3c36a672ef504716"
+    },
+    {
+      "path": "runs/20261005_math_review_sigma_candidate_low_mass_controls/review_candidates.py",
+      "bytes": 6921,
+      "sha256": "12d9d9ac469f18f484ba51359a3739e1ec75b2c288f4e54942fb9e547f3ea27e"
+    },
+    {
+      "path": "runs/20261005_math_review_sigma_candidate_low_mass_controls/selection_receipt.json",
+      "bytes": 4498,
+      "sha256": "225f33a84fd5e464b99ade6e63cf814ed4fd45a2232c300698cdb6dc22f5b1ac"
+    },
+    {
+      "path": "runs/20261005_math_review_sigma_candidate_low_mass_controls/self_review.py",
+      "bytes": 4529,
+      "sha256": "2f839584253a95f813fe82bb87a451a112d4c14181903d72e5272ba1306d650f"
+    },
+    {
+      "path": "runs/20261005_math_review_sigma_candidate_low_mass_controls/self_review_receipt.json",
+      "bytes": 799,
+      "sha256": "319a446ebc295040048d872476466e24e6986aad7481aa3a44e978384f66140b"
+    },
+    {
+      "path": "runs/20261005_math_review_sigma_policy_checkpoint/CAMB_LICENCE.txt",
+      "bytes": 67416,
+      "sha256": "1d1550a9a86bb8d72ae11bdb2e54644242c51cd16e6015320896e2ecb45a78ed"
+    },
+    {
+      "path": "runs/20261005_math_review_sigma_policy_checkpoint/all_runtime_verification.json",
+      "bytes": 40215,
+      "sha256": "db975232979911b50b6dfbe75dd33ed825e383c23983e21199afca70f65f11ea"
+    },
+    {
+      "path": "runs/20261005_math_review_sigma_policy_checkpoint/checkpoint_audit_initial_assertion_failure_receipt.json",
+      "bytes": 1899,
+      "sha256": "13e248373b96400165f0521a43ea5499c82ba557a5888c6b7ac1db8f3ea442f0"
+    },
+    {
+      "path": "runs/20261005_math_review_sigma_policy_checkpoint/checkpoint_scope_self_review_receipt.json",
+      "bytes": 4635,
+      "sha256": "1917ff7a489257af8327bfc574a003c2ad3a1b8aa006b5b0b6b04dee0994d5d0"
+    },
+    {
+      "path": "runs/20261005_math_review_sigma_policy_checkpoint/execution_receipt.json",
+      "bytes": 530,
+      "sha256": "5d5d2da83b572bc21fc6f5f7fb51f9ccc58fbe6933ccc6079e7de3ed05834d63"
+    },
+    {
+      "path": "runs/20261005_math_review_sigma_policy_checkpoint/initial_full_whitespace_check.txt",
+      "bytes": 1060,
+      "sha256": "35962cfee55de349a4cba6028089d79bc57c80960a47b16268ab36471af287d5"
+    },
+    {
+      "path": "runs/20261005_math_review_sigma_policy_checkpoint/initial_full_whitespace_check_receipt.json",
+      "bytes": 200,
+      "sha256": "b427e0b842c39330b171a3f2397dfa54a8fb6a2019107601fea91497c032adfc"
+    },
+    {
+      "path": "runs/20261005_math_review_sigma_policy_checkpoint/observe_all_runtime.py",
+      "bytes": 14929,
+      "sha256": "e0de58ddd7b3ffd0055b5105ef1a1b5b5849c924c44c6c69a7476ca5ea84b282"
+    },
+    {
+      "path": "runs/20261005_math_review_sigma_policy_checkpoint/preparation_receipt.json",
+      "bytes": 2017,
+      "sha256": "c4285ef3bfb22e7c30c4f03059a13db7ee6f5ee64744878a4581d1a9aed17c95"
+    },
+    {
+      "path": "runs/20261005_math_review_sigma_policy_checkpoint/review_checkpoint_scope_v2.py",
+      "bytes": 6414,
+      "sha256": "f86a141df687dfa84a1833014f85d40d94158b303b00b64b42739d821637d326"
+    },
+    {
+      "path": "runs/20261005_math_review_sigma_policy_checkpoint/scoped_check_initial_failure_receipt.json",
+      "bytes": 1398,
+      "sha256": "f1203be08f9abba8740f62293153ffb682640e347a33547e77f8e4da096d239d"
+    },
+    {
+      "path": "runs/20261005_math_review_sigma_policy_checkpoint/scoped_whitespace_check_receipt.json",
+      "bytes": 1272,
+      "sha256": "52c11d3ea036435d7a2e09cbe558ba7e7fb5c46864b89ed145cc7101a9747882"
+    },
+    {
+      "path": "runs/20261005_math_review_sigma_policy_checkpoint/self_review.py",
+      "bytes": 4529,
+      "sha256": "2f839584253a95f813fe82bb87a451a112d4c14181903d72e5272ba1306d650f"
+    },
+    {
+      "path": "runs/20261005_math_review_sigma_policy_checkpoint/self_review_receipt.json",
+      "bytes": 799,
+      "sha256": "c9ad66e8e70e5e367a26b7b4077ff312c6a482e51567a838de7d8309e97ecb12"
+    }
+  ],
+  "static_files": [
+    {
+      "path": "docs/findings/math_review.md",
+      "bytes": 289934,
+      "sha256": "f043dacc5eb283e8ea4ccc98b90ecaa04326baa8fd9213f8311f3def1f7359ea"
+    },
+    {
+      "path": "runs/20261003_math_review_validation/review_state.json",
+      "bytes": 286188,
+      "sha256": "3054dd77feacf53d84068feb4e78e434c26e7fb3ad0ccc75e8315dae41e55cd9"
+    }
+  ],
+  "verification_workers_complete": true,
+  "active_inference_outputs_excluded": true,
+  "paper_or_canonical_unchanged": true,
+  "core_unchanged_since": "9f36b14"
+}

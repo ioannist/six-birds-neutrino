@@ -1,0 +1,123 @@
+{
+  "utc": "2026-10-04T06:27:59.411063+00:00",
+  "seed": 403,
+  "scientific_pid": 2333860,
+  "managed_session": 19631,
+  "managed_exit_code": 0,
+  "scientific_process_absent": true,
+  "reason": "configured_maximum_accepted_samples_20000",
+  "accepted_samples": 20000,
+  "checkpoint": {
+    "sampler": {
+      "mcmc": {
+        "converged": false,
+        "Rminus1_last": 0.014765278265439942,
+        "burn_in": 0,
+        "mpi_size": 0
+      }
+    }
+  },
+  "complete_output_bundle_preserved": true,
+  "files": [
+    {
+      "source": "runs/20261003_math_review_chain_B_seed403/chains/math_restoration_B_seed403.1.txt",
+      "archive": "runs/20261004_math_review_spt_sample_cap_completion_B403/seed403/chains/math_restoration_B_seed403.1.txt",
+      "sha256": "9ca2db996f97428052de80c77c7234fa1ae9d8a9d31788267781ca67ba1e5a53",
+      "bytes": 6800340
+    },
+    {
+      "source": "runs/20261003_math_review_chain_B_seed403/chains/math_restoration_B_seed403.checkpoint",
+      "archive": "runs/20261004_math_review_spt_sample_cap_completion_B403/seed403/chains/math_restoration_B_seed403.checkpoint",
+      "sha256": "d56c47ca755c86badd72b9bec588868776adfa871c585e466876ef223d6248e3",
+      "bytes": 108
+    },
+    {
+      "source": "runs/20261003_math_review_chain_B_seed403/chains/math_restoration_B_seed403.covmat",
+      "archive": "runs/20261004_math_review_spt_sample_cap_completion_B403/seed403/chains/math_restoration_B_seed403.covmat",
+      "sha256": "9aa09f215d49afd11ef06ceb93ad6b731d257fa0a82908b9cc39d2ae2d8463e5",
+      "bytes": 1288
+    },
+    {
+      "source": "runs/20261003_math_review_chain_B_seed403/chains/math_restoration_B_seed403.input.yaml",
+      "archive": "runs/20261004_math_review_spt_sample_cap_completion_B403/seed403/chains/math_restoration_B_seed403.input.yaml",
+      "sha256": "406298b98e63da023fc738f707cae42d035f67f10edac9273fad31601d50b051",
+      "bytes": 2420
+    },
+    {
+      "source": "runs/20261003_math_review_chain_B_seed403/chains/math_restoration_B_seed403.progress",
+      "archive": "runs/20261004_math_review_spt_sample_cap_completion_B403/seed403/chains/math_restoration_B_seed403.progress",
+      "sha256": "226f45057d15fced05354def52e300014b8b0a7730701c8175adb09fe181dcb0",
+      "bytes": 16943
+    },
+    {
+      "source": "runs/20261003_math_review_chain_B_seed403/chains/math_restoration_B_seed403.updated.yaml",
+      "archive": "runs/20261004_math_review_spt_sample_cap_completion_B403/seed403/chains/math_restoration_B_seed403.updated.yaml",
+      "sha256": "4fd5d671f6108eb68051c0008fad45b0dab198025f84da31ca23e0c39e394b23",
+      "bytes": 3952
+    },
+    {
+      "source": "runs/20261003_math_review_chain_B_seed403/env.txt",
+      "archive": "runs/20261004_math_review_spt_sample_cap_completion_B403/seed403/env.txt",
+      "sha256": "cc7a46f68bd718569a21ec9259a88e216914867ea9386149b078d6f80307251e",
+      "bytes": 433
+    },
+    {
+      "source": "runs/20261003_math_review_chain_B_seed403/extract_stderr.txt",
+      "archive": "runs/20261004_math_review_spt_sample_cap_completion_B403/seed403/extract_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "source": "runs/20261003_math_review_chain_B_seed403/extract_stdout.txt",
+      "archive": "runs/20261004_math_review_spt_sample_cap_completion_B403/seed403/extract_stdout.txt",
+      "sha256": "644b3720b00096b03379b18a6cfea46d7bd70462f447430d61e9cde37812f86c",
+      "bytes": 988
+    },
+    {
+      "source": "runs/20261003_math_review_chain_B_seed403/input.yaml",
+      "archive": "runs/20261004_math_review_spt_sample_cap_completion_B403/seed403/input.yaml",
+      "sha256": "a9681c55406e232fd0fa87a848dda8862dc365d62acf5cddc5949fe2fbaa87de",
+      "bytes": 2294
+    },
+    {
+      "source": "runs/20261003_math_review_chain_B_seed403/metrics.json",
+      "archive": "runs/20261004_math_review_spt_sample_cap_completion_B403/seed403/metrics.json",
+      "sha256": "7190ef6230d841dfdd51965f72395f2e6a853f2bb2331c04788891349fe4f181",
+      "bytes": 987
+    },
+    {
+      "source": "runs/20261003_math_review_chain_B_seed403/resolved.yaml",
+      "archive": "runs/20261004_math_review_spt_sample_cap_completion_B403/seed403/resolved.yaml",
+      "sha256": "89ffb7bfbf85a8066650784ec35c3959451eb6d3b88f74ae6d01334d481e6684",
+      "bytes": 2480
+    },
+    {
+      "source": "runs/20261003_math_review_chain_B_seed403/runtime_state.json",
+      "archive": "runs/20261004_math_review_spt_sample_cap_completion_B403/seed403/runtime_state.json",
+      "sha256": "5e7c12b2e6d8683eda35680133dfe00253ee936de1dd30681cd8b54900dada78",
+      "bytes": 407
+    },
+    {
+      "source": "runs/20261003_math_review_chain_B_seed403/stderr.txt",
+      "archive": "runs/20261004_math_review_spt_sample_cap_completion_B403/seed403/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "source": "runs/20261003_math_review_chain_B_seed403/stdout.txt",
+      "archive": "runs/20261004_math_review_spt_sample_cap_completion_B403/seed403/stdout.txt",
+      "sha256": "75fb24f1bc3e1e981086cfec9a887e314a1f7e369b9b7a582a6ff9103d116f8b",
+      "bytes": 157378
+    },
+    {
+      "source": "runs/20261003_math_review_chain_B_seed403/summary.md",
+      "archive": "runs/20261004_math_review_spt_sample_cap_completion_B403/seed403/summary.md",
+      "sha256": "5fed566a4f2210b4869c4970b09870664412eab2c066bd5f056a2b4e4909ad60",
+      "bytes": 424
+    }
+  ],
+  "retain_family_in_next_twelve_family_SPT_assessment": true,
+  "independent_ensemble_gates_changed": false,
+  "independent_ensemble_convergence_verified": false,
+  "posterior_bound_replacement_authorized_by_this_completion": false
+}

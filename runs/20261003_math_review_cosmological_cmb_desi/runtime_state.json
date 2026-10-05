@@ -1,0 +1,18 @@
+{
+  "status": "complete_fresh_verified_candidates_no_global_optimum_certificate",
+  "pid": 228288,
+  "exec_session": 10954,
+  "process_log": "/tmp/neutrino-cosmological-cmb-audit.log",
+  "implementation_sha256": {
+    "src/sbt_spt_audit/likelihoods/candl_cobaya.py": "59d776670e246f4fccebc966e45225f1873411f6f49a38c3f6e4bfa55f20b85e",
+    "src/sbt_spt_audit/likelihoods/desi_dr2_bao.py": "bf7b9b816f158aaabfc12ba8f6ea75ed8c7fa0bc0bbfe73b7aa8e75d9a999bf4",
+    "src/sbt_spt_audit/candl_support.py": "ddf70460d7662a2f1e4e5130635b6c09cdc2381ef78f0febaa0c88391533f162",
+    "src/sbt_spt_audit/localization.py": "286fc0be0e3120b29d32a4eae5597baeaa224f187414186e5191845147b14d3a",
+    "src/sbt_spt_audit/metrics.py": "bb2ced58a93439bb5cfbee4de00b4b4b164da47460f2d09884dd90492dc4c9ea"
+  },
+  "captured_runner_sha256": "8932cd78e5e34476a8d5bee374a7ebec764bfe4915fcb7dba0611a563f3937d0",
+  "next_required_step": "finish numerical accuracy controls and posterior precision checks",
+  "terminal_exec_exit_code": 0,
+  "fresh_verification_exec_exit_code": 0,
+  "utc_checked": "2026-10-03T14:57:26.453038+00:00"
+}

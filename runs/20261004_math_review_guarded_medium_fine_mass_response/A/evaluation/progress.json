@@ -1,0 +1,114 @@
+{
+  "baseline": {
+    "quad_q50": {
+      "point": {
+        "omegabh2": 0.02260935002679238,
+        "omegach2": 0.11605663728281738,
+        "H0": 68.80187683044863,
+        "logA": 3.0437224374941154,
+        "ns": 0.9745074839989533,
+        "tau": 0.05653921715322658,
+        "mnu_sample": 0.028913276035634886,
+        "A_planck": 1.002900358688043,
+        "TT_tSZ_Amp": 2.1116707285303513,
+        "TT_kSZ_Amp": 9.515331070038263
+      },
+      "native_chi2": {
+        "sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 2519.185395556446,
+        "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 10.55600503586666,
+        "planck_2018_lowl.TT": 21.60062135799302,
+        "planck_2018_lowl.EE_sroll2": 390.2018333872735,
+        "planck_2018_highl_plik.TT_lite_native": 72.16269062150093,
+        "planckpr4lensing.PlanckPR4Lensing": 8.930175279671131
+      },
+      "spectrum_ell_max": {
+        "tt": 3200,
+        "ee": 3200
+      },
+      "elapsed_seconds": 105.03674972895533
+    },
+    "quad_q50_mass_plus": {
+      "point": {
+        "omegabh2": 0.02260935002679238,
+        "omegach2": 0.11605663728281738,
+        "H0": 68.80187683044863,
+        "logA": 3.0437224374941154,
+        "ns": 0.9745074839989533,
+        "tau": 0.05653921715322658,
+        "mnu_sample": 0.03891327603563489,
+        "A_planck": 1.002900358688043,
+        "TT_tSZ_Amp": 2.1116707285303513,
+        "TT_kSZ_Amp": 9.515331070038263
+      },
+      "native_chi2": {
+        "sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 2519.209001935867,
+        "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 10.499754565845661,
+        "planck_2018_lowl.TT": 21.602291206439077,
+        "planck_2018_lowl.EE_sroll2": 390.1706738452021,
+        "planck_2018_highl_plik.TT_lite_native": 71.35659419263894,
+        "planckpr4lensing.PlanckPR4Lensing": 9.223051190667386
+      },
+      "spectrum_ell_max": {
+        "tt": 3200,
+        "ee": 3200
+      },
+      "elapsed_seconds": 109.91539593413472
+    }
+  },
+  "selected_reference_settings": {
+    "quad_q50": {
+      "point": {
+        "omegabh2": 0.02260935002679238,
+        "omegach2": 0.11605663728281738,
+        "H0": 68.80187683044863,
+        "logA": 3.0437224374941154,
+        "ns": 0.9745074839989533,
+        "tau": 0.05653921715322658,
+        "mnu_sample": 0.028913276035634886,
+        "A_planck": 1.002900358688043,
+        "TT_tSZ_Amp": 2.1116707285303513,
+        "TT_kSZ_Amp": 9.515331070038263
+      },
+      "native_chi2": {
+        "sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 2519.170126206547,
+        "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 10.55600503586666,
+        "planck_2018_lowl.TT": 21.600337513429622,
+        "planck_2018_lowl.EE_sroll2": 390.2018333872735,
+        "planck_2018_highl_plik.TT_lite_native": 72.157867400268,
+        "planckpr4lensing.PlanckPR4Lensing": 8.927727503961558
+      },
+      "spectrum_ell_max": {
+        "tt": 3200,
+        "ee": 3200
+      },
+      "elapsed_seconds": 243.75039640720934
+    },
+    "quad_q50_mass_plus": {
+      "point": {
+        "omegabh2": 0.02260935002679238,
+        "omegach2": 0.11605663728281738,
+        "H0": 68.80187683044863,
+        "logA": 3.0437224374941154,
+        "ns": 0.9745074839989533,
+        "tau": 0.05653921715322658,
+        "mnu_sample": 0.03891327603563489,
+        "A_planck": 1.002900358688043,
+        "TT_tSZ_Amp": 2.1116707285303513,
+        "TT_kSZ_Amp": 9.515331070038263
+      },
+      "native_chi2": {
+        "sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 2519.1949491481296,
+        "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 10.499754565845661,
+        "planck_2018_lowl.TT": 21.60200727253084,
+        "planck_2018_lowl.EE_sroll2": 390.1706738452021,
+        "planck_2018_highl_plik.TT_lite_native": 71.35038752071283,
+        "planckpr4lensing.PlanckPR4Lensing": 9.220622280335398
+      },
+      "spectrum_ell_max": {
+        "tt": 3200,
+        "ee": 3200
+      },
+      "elapsed_seconds": 240.12507453700528
+    }
+  }
+}

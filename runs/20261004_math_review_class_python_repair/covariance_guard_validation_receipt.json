@@ -1,0 +1,28 @@
+{
+  "scope": "finite_covariance_output_guards_and_BAO_validation_callers",
+  "math_check_session": 47787,
+  "math_check_exit_code": 0,
+  "math_check_at_that_stage_python_tests": 69,
+  "final_all_python_tests_session": 94642,
+  "final_all_python_tests_exit_code": 0,
+  "final_all_python_tests_passed": 73,
+  "focused_tests_session": 75413,
+  "focused_tests_exit_code": 0,
+  "focused_tests_passed": 16,
+  "Lean_exported_theorems_checked": 20,
+  "Lean_allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "Lean_sources_unchanged_after_axiom_check": true,
+  "source_sha256": {
+    "src/sbt_spt_audit/metrics.py": "af96ec7f08f9acaea313e5416229ca33df1abd927b73311438c4ecd9b7cea406",
+    "src/sbt_spt_audit/likelihoods/desi_dr2_bao.py": "00fdc02856aa608d7b68c242a3cf46bd96200f61fd9b00adf3c0073598bfeaf9",
+    "tests/test_metrics.py": "1e156c6d10f42da769c4e7fa40f2ae75f41fcc0d9c297d76ac577f1120dfce51",
+    "tests/test_desi_dr2_bao.py": "a7d8a7e109acb05d7788aeb19bab8d89efa32c2f5f097e90f70fc4f2ad12c0af"
+  },
+  "guarded_sampler_loaded_before_covariance_guard_changes": true,
+  "finite_BAO_quadratic_formula_unchanged": true,
+  "posterior_convergence_certified": false
+}

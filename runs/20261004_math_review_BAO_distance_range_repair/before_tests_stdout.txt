@@ -1,0 +1,176 @@
+.........FFFFFF.FFF.                                                     [100%]
+=================================== FAILURES ===================================
+_ test_volume_distance_ratio_survives_unrepresentable_intermediates[1.0-1e+200-1e+200-1e+200] _
+
+z = 1.0, rd = 1e+200, dm = 1e+200, dh = 1e+200
+
+    @pytest.mark.parametrize('z,rd,dm,dh', [
+        (1., 1e200, 1e200, 1e200),
+        (1., 1e-200, 1e-200, 1e-200),
+        (2.**600, 2.**200, 2.**-300, 2.**600),
+        (2.**-600, 2.**-200, 2.**300, 2.**-600),
+        (1., float.fromhex('0x0.0000000000001p-1022'),
+         float.fromhex('0x0.0000000000001p-1022'),
+         float.fromhex('0x0.0000000000001p-1022')),
+    ])
+    def test_volume_distance_ratio_survives_unrepresentable_intermediates(z, rd, dm, dh) -> None:
+        # These identities follow from DV^3 = z*DH*DM^2, rather than from a
+        # floating-point implementation of the same overflowing product.
+>       assert compute_observable_value('DV_over_rd', z, rd, dm, dh) == pytest.approx(1., rel=3e-15)
+E       assert inf == 1.0 ± 1.0e-12
+E         
+E         comparison failed
+E         Obtained: inf
+E         Expected: 1.0 ± 1.0e-12
+
+tests/test_desi_dr2_bao.py:129: AssertionError
+_ test_volume_distance_ratio_survives_unrepresentable_intermediates[1.0-1e-200-1e-200-1e-200] _
+
+z = 1.0, rd = 1e-200, dm = 1e-200, dh = 1e-200
+
+    @pytest.mark.parametrize('z,rd,dm,dh', [
+        (1., 1e200, 1e200, 1e200),
+        (1., 1e-200, 1e-200, 1e-200),
+        (2.**600, 2.**200, 2.**-300, 2.**600),
+        (2.**-600, 2.**-200, 2.**300, 2.**-600),
+        (1., float.fromhex('0x0.0000000000001p-1022'),
+         float.fromhex('0x0.0000000000001p-1022'),
+         float.fromhex('0x0.0000000000001p-1022')),
+    ])
+    def test_volume_distance_ratio_survives_unrepresentable_intermediates(z, rd, dm, dh) -> None:
+        # These identities follow from DV^3 = z*DH*DM^2, rather than from a
+        # floating-point implementation of the same overflowing product.
+>       assert compute_observable_value('DV_over_rd', z, rd, dm, dh) == pytest.approx(1., rel=3e-15)
+E       assert 0.0 == 1.0 ± 1.0e-12
+E         
+E         comparison failed
+E         Obtained: 0.0
+E         Expected: 1.0 ± 1.0e-12
+
+tests/test_desi_dr2_bao.py:129: AssertionError
+_ test_volume_distance_ratio_survives_unrepresentable_intermediates[4.149515568880993e+180-1.6069380442589903e+60-4.909093465297727e-91-4.149515568880993e+180] _
+
+z = 4.149515568880993e+180, rd = 1.6069380442589903e+60
+dm = 4.909093465297727e-91, dh = 4.149515568880993e+180
+
+    @pytest.mark.parametrize('z,rd,dm,dh', [
+        (1., 1e200, 1e200, 1e200),
+        (1., 1e-200, 1e-200, 1e-200),
+        (2.**600, 2.**200, 2.**-300, 2.**600),
+        (2.**-600, 2.**-200, 2.**300, 2.**-600),
+        (1., float.fromhex('0x0.0000000000001p-1022'),
+         float.fromhex('0x0.0000000000001p-1022'),
+         float.fromhex('0x0.0000000000001p-1022')),
+    ])
+    def test_volume_distance_ratio_survives_unrepresentable_intermediates(z, rd, dm, dh) -> None:
+        # These identities follow from DV^3 = z*DH*DM^2, rather than from a
+        # floating-point implementation of the same overflowing product.
+>       assert compute_observable_value('DV_over_rd', z, rd, dm, dh) == pytest.approx(1., rel=3e-15)
+E       assert inf == 1.0 ± 1.0e-12
+E         
+E         comparison failed
+E         Obtained: inf
+E         Expected: 1.0 ± 1.0e-12
+
+tests/test_desi_dr2_bao.py:129: AssertionError
+_ test_volume_distance_ratio_survives_unrepresentable_intermediates[2.409919865102884e-181-6.223015277861142e-61-2.037035976334486e+90-2.409919865102884e-181] _
+
+z = 2.409919865102884e-181, rd = 6.223015277861142e-61
+dm = 2.037035976334486e+90, dh = 2.409919865102884e-181
+
+    @pytest.mark.parametrize('z,rd,dm,dh', [
+        (1., 1e200, 1e200, 1e200),
+        (1., 1e-200, 1e-200, 1e-200),
+        (2.**600, 2.**200, 2.**-300, 2.**600),
+        (2.**-600, 2.**-200, 2.**300, 2.**-600),
+        (1., float.fromhex('0x0.0000000000001p-1022'),
+         float.fromhex('0x0.0000000000001p-1022'),
+         float.fromhex('0x0.0000000000001p-1022')),
+    ])
+    def test_volume_distance_ratio_survives_unrepresentable_intermediates(z, rd, dm, dh) -> None:
+        # These identities follow from DV^3 = z*DH*DM^2, rather than from a
+        # floating-point implementation of the same overflowing product.
+>       assert compute_observable_value('DV_over_rd', z, rd, dm, dh) == pytest.approx(1., rel=3e-15)
+E       assert 0.0 == 1.0 ± 1.0e-12
+E         
+E         comparison failed
+E         Obtained: 0.0
+E         Expected: 1.0 ± 1.0e-12
+
+tests/test_desi_dr2_bao.py:129: AssertionError
+_ test_volume_distance_ratio_survives_unrepresentable_intermediates[1.0-5e-324-5e-324-5e-324] _
+
+z = 1.0, rd = 5e-324, dm = 5e-324, dh = 5e-324
+
+    @pytest.mark.parametrize('z,rd,dm,dh', [
+        (1., 1e200, 1e200, 1e200),
+        (1., 1e-200, 1e-200, 1e-200),
+        (2.**600, 2.**200, 2.**-300, 2.**600),
+        (2.**-600, 2.**-200, 2.**300, 2.**-600),
+        (1., float.fromhex('0x0.0000000000001p-1022'),
+         float.fromhex('0x0.0000000000001p-1022'),
+         float.fromhex('0x0.0000000000001p-1022')),
+    ])
+    def test_volume_distance_ratio_survives_unrepresentable_intermediates(z, rd, dm, dh) -> None:
+        # These identities follow from DV^3 = z*DH*DM^2, rather than from a
+        # floating-point implementation of the same overflowing product.
+>       assert compute_observable_value('DV_over_rd', z, rd, dm, dh) == pytest.approx(1., rel=3e-15)
+E       assert 0.0 == 1.0 ± 1.0e-12
+E         
+E         comparison failed
+E         Obtained: 0.0
+E         Expected: 1.0 ± 1.0e-12
+
+tests/test_desi_dr2_bao.py:129: AssertionError
+___ test_zero_volume_distance_precedes_overflowing_products[10.0-0.0-1e+308] ___
+
+z = 10.0, dm = 0.0, dh = 1e+308
+
+    @pytest.mark.parametrize('z,dm,dh', [(10., 0., 1e308), (0., 1e308, 1e308)])
+    def test_zero_volume_distance_precedes_overflowing_products(z, dm, dh) -> None:
+>       assert compute_observable_value('DV_over_rd', z, 1., dm, dh) == 0.
+E       AssertionError: assert nan == 0.0
+E        +  where nan = compute_observable_value('DV_over_rd', 10.0, 1.0, 0.0, 1e+308)
+
+tests/test_desi_dr2_bao.py:134: AssertionError
+____ test_unrepresentable_bao_observable_is_explicitly_rejected[DM_over_rd] ____
+
+obs = 'DM_over_rd'
+
+    @pytest.mark.parametrize('obs', ['DM_over_rd', 'DH_over_rd', 'DV_over_rd'])
+    def test_unrepresentable_bao_observable_is_explicitly_rejected(obs) -> None:
+>       with pytest.raises(ValueError, match='representable finite'):
+E       Failed: DID NOT RAISE <class 'ValueError'>
+
+tests/test_desi_dr2_bao.py:139: Failed
+____ test_unrepresentable_bao_observable_is_explicitly_rejected[DH_over_rd] ____
+
+obs = 'DH_over_rd'
+
+    @pytest.mark.parametrize('obs', ['DM_over_rd', 'DH_over_rd', 'DV_over_rd'])
+    def test_unrepresentable_bao_observable_is_explicitly_rejected(obs) -> None:
+>       with pytest.raises(ValueError, match='representable finite'):
+E       Failed: DID NOT RAISE <class 'ValueError'>
+
+tests/test_desi_dr2_bao.py:139: Failed
+____ test_unrepresentable_bao_observable_is_explicitly_rejected[DV_over_rd] ____
+
+obs = 'DV_over_rd'
+
+    @pytest.mark.parametrize('obs', ['DM_over_rd', 'DH_over_rd', 'DV_over_rd'])
+    def test_unrepresentable_bao_observable_is_explicitly_rejected(obs) -> None:
+>       with pytest.raises(ValueError, match='representable finite'):
+E       Failed: DID NOT RAISE <class 'ValueError'>
+
+tests/test_desi_dr2_bao.py:139: Failed
+=========================== short test summary info ============================
+FAILED tests/test_desi_dr2_bao.py::test_volume_distance_ratio_survives_unrepresentable_intermediates[1.0-1e+200-1e+200-1e+200]
+FAILED tests/test_desi_dr2_bao.py::test_volume_distance_ratio_survives_unrepresentable_intermediates[1.0-1e-200-1e-200-1e-200]
+FAILED tests/test_desi_dr2_bao.py::test_volume_distance_ratio_survives_unrepresentable_intermediates[4.149515568880993e+180-1.6069380442589903e+60-4.909093465297727e-91-4.149515568880993e+180]
+FAILED tests/test_desi_dr2_bao.py::test_volume_distance_ratio_survives_unrepresentable_intermediates[2.409919865102884e-181-6.223015277861142e-61-2.037035976334486e+90-2.409919865102884e-181]
+FAILED tests/test_desi_dr2_bao.py::test_volume_distance_ratio_survives_unrepresentable_intermediates[1.0-5e-324-5e-324-5e-324]
+FAILED tests/test_desi_dr2_bao.py::test_zero_volume_distance_precedes_overflowing_products[10.0-0.0-1e+308]
+FAILED tests/test_desi_dr2_bao.py::test_unrepresentable_bao_observable_is_explicitly_rejected[DM_over_rd]
+FAILED tests/test_desi_dr2_bao.py::test_unrepresentable_bao_observable_is_explicitly_rejected[DH_over_rd]
+FAILED tests/test_desi_dr2_bao.py::test_unrepresentable_bao_observable_is_explicitly_rejected[DV_over_rd]
+9 failed, 11 passed in 2.25s

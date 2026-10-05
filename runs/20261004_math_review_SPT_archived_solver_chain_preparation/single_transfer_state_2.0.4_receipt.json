@@ -1,0 +1,178 @@
+{
+  "utc": "2026-10-04T14:11:58.989744+00:00",
+  "CAMB_version": "2.0.4",
+  "Cobaya_version": "3.6.2",
+  "records": [
+    {
+      "case": "slow_return",
+      "transfer_cache_size": 3,
+      "values": [
+        {
+          "call": 0,
+          "loglikes": [
+            -1283.3739225912432,
+            -5.281649578430443
+          ]
+        },
+        {
+          "call": 1,
+          "loglikes": [
+            -1344.9399010388406,
+            -5.3032349907536265
+          ]
+        },
+        {
+          "call": 35,
+          "loglikes": [
+            -1284.0282602555424,
+            -5.281649578430443
+          ]
+        }
+      ],
+      "fresh_loglikes": [
+        -1284.0280065153381,
+        -5.281649578430443
+      ],
+      "cached_minus_fresh_chi2": [
+        0.0005074804084870266,
+        -0.0
+      ]
+    },
+    {
+      "case": "late_window",
+      "transfer_cache_size": 3,
+      "values": [
+        {
+          "call": 0,
+          "loglikes": [
+            -1283.3739225912432,
+            -5.281649578430443
+          ]
+        },
+        {
+          "call": 32,
+          "loglikes": [
+            -2059.743798408185,
+            -5.281649578430443
+          ]
+        },
+        {
+          "call": 33,
+          "loglikes": [
+            -1295.352660200185,
+            -5.34492892487207
+          ]
+        },
+        {
+          "call": 34,
+          "loglikes": [
+            -1437.061304597417,
+            -7.559290105312249
+          ]
+        },
+        {
+          "call": 35,
+          "loglikes": [
+            -1284.0291903131579,
+            -5.281649578430443
+          ]
+        }
+      ],
+      "fresh_loglikes": [
+        -1284.0280065153381,
+        -5.281649578430443
+      ],
+      "cached_minus_fresh_chi2": [
+        0.0023675956394981768,
+        -0.0
+      ]
+    },
+    {
+      "case": "slow_return",
+      "transfer_cache_size": 1,
+      "values": [
+        {
+          "call": 0,
+          "loglikes": [
+            -1283.3739225912432,
+            -5.281649578430443
+          ]
+        },
+        {
+          "call": 1,
+          "loglikes": [
+            -1344.9399010388406,
+            -5.3032349907536265
+          ]
+        },
+        {
+          "call": 35,
+          "loglikes": [
+            -1284.0280065153381,
+            -5.281649578430443
+          ]
+        }
+      ],
+      "fresh_loglikes": [
+        -1284.0280065153381,
+        -5.281649578430443
+      ],
+      "cached_minus_fresh_chi2": [
+        -0.0,
+        -0.0
+      ]
+    },
+    {
+      "case": "late_window",
+      "transfer_cache_size": 1,
+      "values": [
+        {
+          "call": 0,
+          "loglikes": [
+            -1283.3739225912432,
+            -5.281649578430443
+          ]
+        },
+        {
+          "call": 32,
+          "loglikes": [
+            -2059.743798408185,
+            -5.281649578430443
+          ]
+        },
+        {
+          "call": 33,
+          "loglikes": [
+            -1295.352660200185,
+            -5.34492892487207
+          ]
+        },
+        {
+          "call": 34,
+          "loglikes": [
+            -1437.061304597417,
+            -7.559290105312249
+          ]
+        },
+        {
+          "call": 35,
+          "loglikes": [
+            -1284.0280065153381,
+            -5.281649578430443
+          ]
+        }
+      ],
+      "fresh_loglikes": [
+        -1284.0280065153381,
+        -5.281649578430443
+      ],
+      "cached_minus_fresh_chi2": [
+        -0.0,
+        -0.0
+      ]
+    }
+  ],
+  "native_path": "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/camb/camblib.so",
+  "native_sha256": "306640a8948cd5246fc9b21e76525f6adebdff5ba3bc792a57d50bba67225ad5",
+  "scope": "private selected-point cache control; no production or live sampler changes"
+}

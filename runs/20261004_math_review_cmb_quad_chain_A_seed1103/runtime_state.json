@@ -1,0 +1,28 @@
+{
+  "lens": "A",
+  "seed": 1103,
+  "pid": 3382839,
+  "exec_session": 96644,
+  "run_dir": "runs/20261004_math_review_cmb_quad_chain_A_seed1103",
+  "omp_threads": 4,
+  "status": "retired_agent_requested_SIGTERM_unmodified_CLASS_archived",
+  "parent_family_seed": 503,
+  "numerical_target": "tol_ncdm_bg1e-8_other_CLASS_defaults_common_lmax4095",
+  "output_precision_digits": 17,
+  "launch_observed_utc": "2026-10-04T00:52:31.682415+00:00",
+  "source_config_sha256": "b99ec2c86642a4129f25eb9f9d56f2b56bd7aeee0aa5518938bf08f743790346",
+  "implementation_sha256": {
+    "scripts/run_cobaya.py": "744581e1e7493ecf5c1d1c71871d16558eb7ff2229c9c4ff68c9eb8d136fac5b",
+    "src/sbt_spt_audit/samplers.py": "2a7c7e99597b6c5bc48f72bbaa9e8df81dd6987ba36e8ab0a81b8c36b10f33e9",
+    "src/sbt_spt_audit/mcmc.py": "e00c832f911a9233bce6c3ada930113affb436e52272bb704e47706c8df22898",
+    "src/sbt_spt_audit/likelihoods/candl_cobaya.py": "b695b32235d04a2b287786260c5c02fb87c43d787d0949907a7247518aa37a90",
+    "src/sbt_spt_audit/likelihoods/desi_dr2_bao.py": "bf7b9b816f158aaabfc12ba8f6ea75ed8c7fa0bc0bbfe73b7aa8e75d9a999bf4"
+  },
+  "native_target_checks": "runs/20261004_math_review_cmb_quad_chain_configs/first_saved_row_snapshots/seed1103/native_target_verification.json",
+  "active_retired_pid": 3382839,
+  "active_retired_exec_session": 96644,
+  "active_retired_exit_code": 143,
+  "retirement_archive": "runs/20261004_math_review_class_backend_transition/archives/seed1103",
+  "replacement_seed": 1303,
+  "replacement_is_same_solver_resume": false
+}

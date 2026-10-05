@@ -1,0 +1,53 @@
+{
+  "utc": "2026-10-05T02:46:13.505446+00:00",
+  "reviewer": "distinct_self_review_not_independent_agent",
+  "closed_roots": [
+    {
+      "root": "runs/20261005_math_review_sigma_limit22_candidate",
+      "execution_receipt_sha256": "8c0df9a4d6381730c5e409c12b4607162eac220eb16c864b29ac5d2897ea40e6"
+    },
+    {
+      "root": "runs/20261005_math_review_sigma_limit24_candidate",
+      "execution_receipt_sha256": "c59dea6d26fabf97a3b5b93103fea47ab99f31044ee0f918b519f97bc6e40b88"
+    },
+    {
+      "root": "runs/20261005_math_review_sigma_v2_optimized_build",
+      "execution_receipt_sha256": "4aa594b7f4748fa77b846ffd143eed34566c77fb15233a81dd6266f6c55909b8"
+    },
+    {
+      "root": "runs/20261005_math_review_sigma_limit22_stop_probe",
+      "execution_receipt_sha256": "301abd1458c6f9b6ebd9c4e69b88358507684b0d0ffefa46b85bfd4d95d8c3c9"
+    },
+    {
+      "root": "runs/20261005_math_review_sigma_v2_transfer_time_probe",
+      "execution_receipt_sha256": "2bb8c11b1d9522b2c00385d266ff209ef1b07863f024bd10e85be40d188b3b21"
+    },
+    {
+      "root": "runs/20261005_math_review_sigma_time_endpoint_candidate",
+      "execution_receipt_sha256": "5906bc34437ad20bac4ec7df4bccd1581801c648c19fa8ff8242a6405c330d16"
+    },
+    {
+      "root": "runs/20261005_math_review_sigma_time_endpoint_candidate_v2",
+      "execution_receipt_sha256": "466090b1999614424be07b00e196e2109eedcaced82e058187b4370ae0dfbef6"
+    },
+    {
+      "root": "runs/20261005_math_review_sigma_time_endpoint_candidate_v3",
+      "execution_receipt_sha256": "ec803520a7d2ec4cbce0126fc6defcabc034f8e19af64c6a5801bc7d1a652398"
+    },
+    {
+      "root": "runs/20261005_math_review_sigma_limit_extension_checkpoint",
+      "execution_receipt_sha256": "b5ed5b52b9a3af8ace7c6521cf94d73ee6db8c4921fa7147d1b97c8e7de9e76e"
+    },
+    {
+      "root": "runs/20261005_math_review_guarded_CLASS_eighth_medium_B_diagnostics",
+      "execution_receipt_sha256": "5a18288fdc5ac605a6c9548e4240b939a590b3981dd74c4326bc821337946ee5"
+    }
+  ],
+  "python_tests_passed": 226,
+  "math_modules_and_Lean_unchanged_since": "9f36b14",
+  "paper_and_canonical_unchanged_since": "ffdaf4b",
+  "production_CAMB_module_sha256": "306640a8948cd5246fc9b21e76525f6adebdff5ba3bc792a57d50bba67225ad5",
+  "production_adopted": false,
+  "posterior_or_uniform_accuracy_certified": false,
+  "all_verification_workers_terminal": true
+}

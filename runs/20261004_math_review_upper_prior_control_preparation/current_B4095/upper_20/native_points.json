@@ -1,0 +1,84 @@
+{
+  "utc": "2026-10-04T21:37:10.933003+00:00",
+  "group": "current_B4095",
+  "upper_eV": 20.0,
+  "config_sha256": "47fa970d3da6f65e236b55024a412dba5016339807857e8c2251fc5613bd30ca",
+  "points": {
+    "original_reference": {
+      "point": {
+        "omegabh2": 0.02208835,
+        "omegach2": 0.11613327,
+        "H0": 68.761625,
+        "logA": 3.0437372,
+        "ns": 0.97829051,
+        "tau": 0.05867819,
+        "mnu": 0.043870311
+      },
+      "status": "finite_native_target",
+      "logposterior": -700.7328088023726,
+      "logprior": -3.4908863374028734,
+      "likelihood_components": {
+        "sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": -691.6981577255252,
+        "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": -5.543764739444497
+      },
+      "upstream_forced_fresh_exact": true
+    },
+    "selected_latest_frozen_row": {
+      "point": {
+        "omegabh2": 0.02203745797876923,
+        "omegach2": 0.11735623798381303,
+        "H0": 68.22119099383418,
+        "logA": 3.024620732055907,
+        "ns": 0.9790422612585956,
+        "tau": 0.04962586886117272,
+        "mnu": 0.05217658822542334
+      },
+      "status": "finite_native_target",
+      "logposterior": -700.0964243544422,
+      "logprior": -3.4908863374028734,
+      "likelihood_components": {
+        "sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": -691.1621740926736,
+        "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": -5.443363924365743
+      },
+      "upstream_forced_fresh_exact": true
+    },
+    "mass_6_eV": {
+      "point": {
+        "omegabh2": 0.02208835,
+        "omegach2": 0.11613327,
+        "H0": 68.761625,
+        "logA": 3.0437372,
+        "ns": 0.97829051,
+        "tau": 0.05867819,
+        "mnu": 6.0
+      },
+      "status": "finite_native_target",
+      "logposterior": -19524.094730548222,
+      "logprior": -3.4908863374028734,
+      "likelihood_components": {
+        "sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": -19380.699981950493,
+        "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": -139.90386226032416
+      },
+      "upstream_forced_fresh_exact": true
+    },
+    "mass_12_eV": {
+      "point": {
+        "omegabh2": 0.02208835,
+        "omegach2": 0.11613327,
+        "H0": 68.761625,
+        "logA": 3.0437372,
+        "ns": 0.97829051,
+        "tau": 0.05867819,
+        "mnu": 12.0
+      },
+      "status": "finite_native_target",
+      "logposterior": -25494.73200962106,
+      "logprior": -3.4908863374028734,
+      "likelihood_components": {
+        "sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": -25225.790244447362,
+        "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": -265.4508788362939
+      },
+      "upstream_forced_fresh_exact": true
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "scope": "same_target_thread_benchmark_not_inference",
+  "config": "runs/20261003_math_review_spt_desi_chain_configs/A_seed303.yaml",
+  "omp_threads": 8,
+  "total_seconds": 6.232836856041104,
+  "evaluations": [
+    {
+      "point": {
+        "omegabh2": 0.02267181103868432,
+        "omegach2": 0.11701987403028599,
+        "H0": 68.7645627062782,
+        "logA": 3.005944464174175,
+        "ns": 1.0292346445390579,
+        "tau": 0.05437119496798635,
+        "mnu": 0.005918390346731512
+      },
+      "native_components": {
+        "sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": -1279.3579679506847,
+        "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": -5.446724399709025
+      },
+      "evaluation_seconds": 1.5085129151120782
+    },
+    {
+      "point": {
+        "omegabh2": 0.02267181103868432,
+        "omegach2": 0.11701987403028599,
+        "H0": 68.7765627062782,
+        "logA": 3.005944464174175,
+        "ns": 1.0292346445390579,
+        "tau": 0.05437119496798635,
+        "mnu": 0.005918390346731512
+      },
+      "native_components": {
+        "sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": -1279.3779230366115,
+        "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": -5.423960884659075
+      },
+      "evaluation_seconds": 1.2207239312119782
+    },
+    {
+      "point": {
+        "omegabh2": 0.02267181103868432,
+        "omegach2": 0.11701987403028599,
+        "H0": 68.7885627062782,
+        "logA": 3.005944464174175,
+        "ns": 1.0292346445390579,
+        "tau": 0.05437119496798635,
+        "mnu": 0.005918390346731512
+      },
+      "native_components": {
+        "sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": -1279.403010830797,
+        "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": -5.402503720327678
+      },
+      "evaluation_seconds": 1.171576552093029
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "runs": [
+    "/home/repos/six-birds-neutrino/runs/20261004_math_review_relative_MCSE_scale_repair/fixtures/tiny/101",
+    "/home/repos/six-birds-neutrino/runs/20261004_math_review_relative_MCSE_scale_repair/fixtures/tiny/102",
+    "/home/repos/six-birds-neutrino/runs/20261004_math_review_relative_MCSE_scale_repair/fixtures/tiny/103",
+    "/home/repos/six-birds-neutrino/runs/20261004_math_review_relative_MCSE_scale_repair/fixtures/tiny/104"
+  ],
+  "prefixes": [
+    "/home/repos/six-birds-neutrino/runs/20261004_math_review_relative_MCSE_scale_repair/fixtures/tiny/101/chains/sample",
+    "/home/repos/six-birds-neutrino/runs/20261004_math_review_relative_MCSE_scale_repair/fixtures/tiny/102/chains/sample",
+    "/home/repos/six-birds-neutrino/runs/20261004_math_review_relative_MCSE_scale_repair/fixtures/tiny/103/chains/sample",
+    "/home/repos/six-birds-neutrino/runs/20261004_math_review_relative_MCSE_scale_repair/fixtures/tiny/104/chains/sample"
+  ],
+  "seeds": [
+    101,
+    102,
+    103,
+    104
+  ],
+  "burnin_fraction_of_stored_rows": 0.0,
+  "diagnostics": {
+    "x": {
+      "method": "ArviZ_rank_folded_split_rhat_bulk_tail_quantile_ESS_and_MCSE",
+      "arviz_version": "1.3.0",
+      "n_chains": 4,
+      "draws_per_chain": 2000,
+      "dropped_prefix_draws_per_chain": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "quantile_probability": 0.95,
+      "quantile_full_draws": 3.044055334463157e-211,
+      "quantile_retained_draws": 3.044055334463157e-211,
+      "quantile_half_difference": 1.536292460466737e-213,
+      "quantile_mcse_limit": 9.403227728044582e-213,
+      "quantile_mcse_scope": "population_quantile_estimated_from_equal_length_last_draws",
+      "rank_folded_split_rhat": 0.9999870393768802,
+      "bulk_ess": 8084.369989000812,
+      "tail_ess_05_95": 7874.609524903462,
+      "quantile_ess": 7972.601242810128,
+      "quantile_mcse": 4.48285304184677e-213,
+      "diagnostic_thresholds_pass": true,
+      "mathematical_convergence_certificate": false,
+      "warnings": [],
+      "precision_target_scope": "fraction_of_empirical_posterior_standard_deviation"
+    }
+  },
+  "all_diagnostic_thresholds_pass": true,
+  "independence_scope": "separate recorded seeds and chain files; initialization independence assumed",
+  "native_backend_provenance": [],
+  "native_backend_identity_scope": "configuration_only_native_build_identity_not_recorded",
+  "packages": {
+    "arviz": "1.3.0",
+    "arviz_stats": "1.3.3",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1"
+  }
+}

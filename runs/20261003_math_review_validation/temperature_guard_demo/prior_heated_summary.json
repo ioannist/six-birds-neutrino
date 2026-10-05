@@ -1,0 +1,28 @@
+{
+  "chains_prefix": "/home/repos/six-birds-neutrino/runs/20261003_math_review_validation/temperature_guard_demo/heated/chains/sample",
+  "param": "mnu",
+  "loader": "raw_per_chain",
+  "burnin_frac": 0.2,
+  "eps": 0.001,
+  "prior_lower_bound": 0.0,
+  "mnu_median": 1.1589509949163597,
+  "mnu_p95_upper": 2.941958001073758,
+  "mnu_mode": 0.4074721246454099,
+  "boundary_fraction": 0.0,
+  "n_samples_used": 32,
+  "n_chains": 1,
+  "n_represented_steps": 32,
+  "quantile_definition": "inverse_weighted_empirical_cdf",
+  "diagnostic_method": "classical_chronological_split_rhat_integer_holding_times",
+  "ess_method": "sum_per_chain_scalar_initial_positive_monotone_fft_proxy",
+  "diagnostic_scope": "scalar_proxies_not_rank_normalized_or_multivariate_certificates",
+  "mnu_split_rhat": 2.004507152024712,
+  "mnu_ess": 3.327197394007669,
+  "mnu_p95_upper_first_half": 1.1589509949163597,
+  "mnu_p95_upper_second_half": 3.532288956727505,
+  "mnu_p95_half_diff": 2.3733379618111456,
+  "warnings": [
+    "Scalar ESS proxy below 400; tail quantile precision is not established.",
+    "Scalar chronological split-Rhat does not pass 1.05; posterior bounds are not verified stable."
+  ]
+}

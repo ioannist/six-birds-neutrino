@@ -1,0 +1,38 @@
+{
+  "utc": "2026-10-05T05:11:24.110866+00:00",
+  "records": [
+    {
+      "seed": 2401,
+      "command": [
+        "/usr/bin/nice",
+        "-n",
+        "5",
+        "/tmp/neutrino-math-review-venv/bin/python",
+        "/home/repos/six-birds-neutrino/runs/20261005_math_review_CLASS_fresh_B_preparation/launch.py",
+        "2401"
+      ],
+      "actual_terminal_exit_code": 1,
+      "refusal_before_launch_receipt_or_output": true,
+      "positive_native_proof_unchanged": true,
+      "stderr_sha256": "2250d2f7f915fd04bb2fa67f9d21eb32ee7bcc3c738fc71bbd882982d567b13b"
+    },
+    {
+      "seed": 2405,
+      "command": [
+        "/usr/bin/nice",
+        "-n",
+        "5",
+        "/tmp/neutrino-math-review-venv/bin/python",
+        "/home/repos/six-birds-neutrino/runs/20261005_math_review_CLASS_fresh_B_preparation/launch.py",
+        "2405"
+      ],
+      "actual_terminal_exit_code": 1,
+      "refusal_before_launch_receipt_or_output": true,
+      "positive_native_proof_unchanged": true,
+      "stderr_sha256": "2250d2f7f915fd04bb2fa67f9d21eb32ee7bcc3c738fc71bbd882982d567b13b"
+    }
+  ],
+  "samplers_launched": 0,
+  "initial_control_wrapper_exit_code": 1,
+  "initial_wrapper_failure": "After actual seed2401 exit1, the diagnostic assertion expected an incorrect error-message substring. The native guard had refused correctly. Original capture retained and checked without rerunning seed2401."
+}

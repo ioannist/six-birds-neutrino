@@ -1,0 +1,27 @@
+{
+  "utc": "2026-10-04T14:11:51.991128+00:00",
+  "records": [
+    {
+      "case": "archived_native_contract",
+      "accepted": false,
+      "error": "CAMB native backend does not match the declared build and version. Loaded /tmp/neutrino-math-review-venv/lib/python3.12/site-packages/camb/camblib.so with SHA256 306640a8948cd5246fc9b21e76525f6adebdff5ba3bc792a57d50bba67225ad5 and version 2.0.4."
+    },
+    {
+      "case": "matching_actual_native",
+      "accepted": true,
+      "witness": {
+        "solver": "camb",
+        "module": "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/camb/camblib.so",
+        "module_sha256": "306640a8948cd5246fc9b21e76525f6adebdff5ba3bc792a57d50bba67225ad5",
+        "solver_version": "2.0.4"
+      }
+    }
+  ],
+  "native_path": "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/camb/camblib.so",
+  "native_sha256": "306640a8948cd5246fc9b21e76525f6adebdff5ba3bc792a57d50bba67225ad5",
+  "solver_version": "2.0.4",
+  "implementation_sha256": "330bbef043ee87b200c448b1291f78a2b144452daa9c7f9b373a87daded3e307",
+  "source_sha256": "54fdb5ddfc77b89d32f742980db2041f7c06d212480635158952ad1132f1ce4b",
+  "scope": "actual-import native identity guard; no numerical accuracy or posterior claim",
+  "inference_launched": false
+}

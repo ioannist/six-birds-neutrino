@@ -1,0 +1,38 @@
+{
+  "variant": "takahashi",
+  "NonLinear": "NonLinear_lens",
+  "halofit_version": "takahashi",
+  "parameters_sha256": "3cf14c25e616b7886b643a5eac3a9420a4d5219e0cda79a4d598d2bc2c23e09f",
+  "unlensed_scalar": {
+    "shape": [
+      4096,
+      4
+    ],
+    "all_finite": true,
+    "nan_count": 0,
+    "inf_count": 0,
+    "equal_to_original_with_nan": true
+  },
+  "lensed_scalar": {
+    "shape": [
+      4096,
+      4
+    ],
+    "all_finite": true,
+    "nan_count": 0,
+    "inf_count": 0,
+    "equal_to_original_with_nan": false
+  },
+  "lens_potential": {
+    "shape": [
+      4096,
+      3
+    ],
+    "all_finite": true,
+    "nan_count": 0,
+    "inf_count": 0,
+    "equal_to_original_with_nan": false
+  },
+  "status": "arrays_returned",
+  "arrays_sha256": "d52e453aba1ac70af7ab710da038876fd073bd00946d367d854d61fdd4cc9414"
+}

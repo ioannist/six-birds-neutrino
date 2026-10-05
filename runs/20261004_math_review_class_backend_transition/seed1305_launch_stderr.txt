@@ -1,0 +1,20 @@
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/__init__.py", line 1163, in emit
+    stream.write(msg + self.terminator)
+ValueError: I/O operation on closed file.
+Call stack:
+  File "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/cobaya/log.py", line 190, in exception_handler
+    log.critical(
+Message: '---------------------------------------\n\nTraceback (most recent call last):\n  File "/home/repos/six-birds-neutrino/runs/20261004_math_review_class_backend_transition/launch_guarded_replica.py", line 78, in <module>\n    main()\n  File "/home/repos/six-birds-neutrino/runs/20261004_math_review_class_backend_transition/launch_guarded_replica.py", line 74, in main\n    runpy.run_path(str(ROOT / \'scripts/run_cobaya.py\'), run_name=\'__main__\')\n  File "<frozen runpy>", line 286, in run_path\n  File "<frozen runpy>", line 98, in _run_module_code\n  File "<frozen runpy>", line 88, in _run_code\n  File "/home/repos/six-birds-neutrino/scripts/run_cobaya.py", line 195, in <module>\n    try:\n         \n  File "/home/repos/six-birds-neutrino/scripts/run_cobaya.py", line 132, in main\n    if solver == "classy":\n                ^^^^^^^^^^^\n  File "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/cobaya/run.py", line 182, in run\n    sampler.run()\n  File "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/cobaya/samplers/mcmc/mcmc.py", line 471, in run\n    self.get_new_sample()\n  File "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/cobaya/samplers/mcmc/mcmc.py", line 559, in get_new_sample_metropolis\n    trial_results = self.model.logposterior(trial)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/cobaya/model.py", line 659, in logposterior\n    like = self._loglikes_input_params(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/cobaya/model.py", line 443, in _loglikes_input_params\n    compute_success = component.check_cache_and_compute(\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/cobaya/theory.py", line 282, in check_cache_and_compute\n    if self.calculate(state, want_derived, **params_values_dict) is False:\n       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/cobaya/theories/classy/classy.py", line 661, in calculate\n    self.classy.compute()\nKeyboardInterrupt\n-------------------------------------------------------------\n'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/__init__.py", line 1163, in emit
+    stream.write(msg + self.terminator)
+ValueError: I/O operation on closed file.
+Call stack:
+  File "/tmp/neutrino-math-review-venv/lib/python3.12/site-packages/cobaya/log.py", line 199, in exception_handler
+    log.critical("Interrupted by the user.")
+Message: 'Interrupted by the user.'
+Arguments: ()

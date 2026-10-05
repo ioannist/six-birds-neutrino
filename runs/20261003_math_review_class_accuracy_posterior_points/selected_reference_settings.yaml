@@ -1,0 +1,172 @@
+params:
+  omegabh2:
+    prior:
+      min: 0.005
+      max: 0.04
+    ref: 0.02237
+    proposal: 0.0002
+  omegach2:
+    prior:
+      min: 0.001
+      max: 0.99
+    ref: 0.12
+    proposal: 0.002
+  H0:
+    prior:
+      min: 40
+      max: 100
+    ref: 67.36
+    proposal: 0.6
+  logA:
+    prior:
+      min: 1.5
+      max: 4.0
+    ref: 3.044
+    proposal: 0.02
+    drop: true
+  As:
+    value: 'lambda logA: 1e-10*np.exp(logA)'
+  ns:
+    prior:
+      min: 0.8
+      max: 1.2
+    ref: 0.9649
+    proposal: 0.01
+  tau:
+    prior:
+      min: 0.01
+      max: 0.8
+    ref: 0.0544
+    proposal: 0.01
+  mnu_sample:
+    prior:
+      min: 0.0
+      max: 5.0
+    ref: 0.06
+    proposal: 0.03
+    drop: true
+  mnu:
+    derived: 'lambda mnu_sample: mnu_sample'
+  m_ncdm:
+    value: 'lambda mnu_sample: ''{0:.17g},{0:.17g},{0:.17g}''.format(mnu_sample/3.0)'
+    derived: false
+  A_planck:
+    prior:
+      min: 0.8
+      max: 1.2
+    ref: 1.0
+    proposal: 0.01
+  TT_tSZ_Amp:
+    prior:
+      min: 0.0
+      max: 10.0
+    ref: 2.0
+    proposal: 0.2
+  TT_kSZ_Amp:
+    prior:
+      min: 0.0
+      max: 10.0
+    ref: 2.0
+    proposal: 0.2
+theory:
+  classy:
+    input_params:
+    - omegabh2
+    - omegach2
+    - H0
+    - As
+    - ns
+    - tau
+    - m_ncdm
+    extra_args:
+      N_ncdm: 3
+      N_ur: 0.00641
+      tol_ncdm_bg: 1.0e-10
+      tol_perturbations_integration: 1.0e-06
+      perturbations_sampling_stepsize: 0.01
+      tol_ncdm_synchronous: 1.0e-10
+      tol_ncdm_newtonian: 1.0e-10
+      l_logstep: 1.026
+      l_linstep: 25
+      tol_thermo_integration: 1.0e-05
+      recfast_x_He0_trigger_delta: 0.01
+      recfast_x_H0_trigger_delta: 0.01
+      evolver: 0
+      k_min_tau0: 0.002
+      k_max_tau0_over_l_max: 3.0
+      k_step_sub: 0.015
+      k_step_super: 0.0001
+      k_step_super_reduction: 0.1
+      start_small_k_at_tau_c_over_tau_h: 0.0004
+      start_large_k_at_tau_h_over_tau_k: 0.05
+      tight_coupling_trigger_tau_c_over_tau_h: 0.005
+      tight_coupling_trigger_tau_c_over_tau_k: 0.008
+      start_sources_at_tau_c_over_tau_h: 0.006
+      l_max_g: 50
+      l_max_pol_g: 25
+      l_max_ur: 50
+      l_max_ncdm: 50
+      l_max_g_ten: 50
+      l_max_pol_g_ten: 25
+      l_max_ur_ten: 50
+      l_max_g_vec: 50
+      l_max_pol_g_vec: 25
+      l_max_ur_vec: 50
+      radiation_streaming_approximation: 2
+      radiation_streaming_trigger_tau_over_tau_k: 240.0
+      radiation_streaming_trigger_tau_c_over_tau: 100.0
+      ur_fluid_approximation: 2
+      ur_fluid_trigger_tau_over_tau_k: 50.0
+      ncdm_fluid_approximation: 3
+      ncdm_fluid_trigger_tau_over_tau_k: 51.0
+      hyper_sampling_flat: 12.0
+      hyper_sampling_curved_low_nu: 10.0
+      hyper_sampling_curved_high_nu: 10.0
+      hyper_nu_sampling_step: 10.0
+      hyper_phi_min_abs: 1.0e-10
+      hyper_x_tol: 0.0001
+      hyper_flat_approximation_nu: 1000000.0
+      q_linstep: 0.2
+      q_logstep_spline: 20.0
+      q_logstep_trapzd: 0.5
+      q_numstep_transition: 250.0
+      transfer_neglect_delta_k_S_t0: 100.0
+      transfer_neglect_delta_k_S_t1: 100.0
+      transfer_neglect_delta_k_S_t2: 100.0
+      transfer_neglect_delta_k_S_e: 100.0
+      transfer_neglect_delta_k_V_t1: 100.0
+      transfer_neglect_delta_k_V_t2: 100.0
+      transfer_neglect_delta_k_V_e: 100.0
+      transfer_neglect_delta_k_V_b: 100.0
+      transfer_neglect_delta_k_T_t2: 100.0
+      transfer_neglect_delta_k_T_e: 100.0
+      transfer_neglect_delta_k_T_b: 100.0
+      neglect_CMB_sources_below_visibility: 1.0e-30
+      transfer_neglect_late_source: 3000.0
+      halofit_k_per_decade: 3000.0
+      l_switch_limber: 40.0
+      accurate_lensing: 1
+      num_mu_minus_lmax: 1000
+      delta_l_max: 1000
+likelihood:
+  sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian:
+    subset: all
+    data_dir: data/desi_dr2_bao/desi_bao_dr2
+  planck_2018_lowl.TT: {}
+  planck_2018_lowl.EE_sroll2: {}
+  planck_2018_highl_plik.TT_lite_native:
+    path: external/cobaya_packages/data/planck_2018_pliklite_native
+    dataset_params:
+      use_cl: tt
+      bins_for_L_range:
+      - 30
+      - 756
+  planckpr4lensing.PlanckPR4Lensing:
+    python_path: external/cobaya_packages/code/planck_PR4_lensing
+  lensA:
+    dataset_expr: candl_data.SPT3G_2018_TTTEEE_multifreq
+    class: sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood
+  lensB:
+    dataset_expr: spt_candl_data.SPT3G_D1_TnE_multifreq
+    class: sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood
+packages_path: /home/repos/six-birds-neutrino/external/cobaya_packages

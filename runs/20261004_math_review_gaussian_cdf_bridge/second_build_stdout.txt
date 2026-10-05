@@ -1,0 +1,43 @@
+✖ [7893/7895] Building TruncGaussProof.GaussianSweep (9.7s)
+trace: .> LEAN_PATH=/home/repos/six-birds-neutrino/lean/trunc_gauss_proof/.lake/packages/Cli/.lake/build/lib/lean:/home/repos/six-birds-neutrino/lean/trunc_gauss_proof/.lake/packages/batteries/.lake/build/lib/lean:/home/repos/six-birds-neutrino/lean/trunc_gauss_proof/.lake/packages/Qq/.lake/build/lib/lean:/home/repos/six-birds-neutrino/lean/trunc_gauss_proof/.lake/packages/aesop/.lake/build/lib/lean:/home/repos/six-birds-neutrino/lean/trunc_gauss_proof/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/repos/six-birds-neutrino/lean/trunc_gauss_proof/.lake/packages/importGraph/.lake/build/lib/lean:/home/repos/six-birds-neutrino/lean/trunc_gauss_proof/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/repos/six-birds-neutrino/lean/trunc_gauss_proof/.lake/packages/plausible/.lake/build/lib/lean:/home/repos/six-birds-neutrino/lean/trunc_gauss_proof/.lake/packages/mathlib/.lake/build/lib/lean:/home/repos/six-birds-neutrino/lean/trunc_gauss_proof/.lake/build/lib/lean /home/ioannis/.elan/toolchains/leanprover--lean4---v4.27.0/bin/lean /home/repos/six-birds-neutrino/lean/trunc_gauss_proof/TruncGaussProof/GaussianSweep.lean -o /home/repos/six-birds-neutrino/lean/trunc_gauss_proof/.lake/build/lib/lean/TruncGaussProof/GaussianSweep.olean -i /home/repos/six-birds-neutrino/lean/trunc_gauss_proof/.lake/build/lib/lean/TruncGaussProof/GaussianSweep.ilean -c /home/repos/six-birds-neutrino/lean/trunc_gauss_proof/.lake/build/ir/TruncGaussProof/GaussianSweep.c --setup /home/repos/six-birds-neutrino/lean/trunc_gauss_proof/.lake/build/ir/TruncGaussProof/GaussianSweep.setup.json --json
+error: TruncGaussProof/GaussianSweep.lean:50:2: No applicable extensionality theorem found for type
+  ENNReal
+
+Note: Extensionality theorems can be registered by marking them with the `[ext]` attribute
+error: TruncGaussProof/GaussianSweep.lean:74:6: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  (gaussianOffsetLaw d s).real (standardDeviationBoundaryEvent σ₁ σ₂ μ)
+in the target expression
+  (fun σ₂ ↦ (gaussianOffsetLaw d s).real (standardDeviationBoundaryEvent σ₁ σ₂ μ)) σ₂' <
+    (fun σ₂ ↦ (gaussianOffsetLaw d s).real (standardDeviationBoundaryEvent σ₁ σ₂ μ)) σ₂
+
+σ₁ μ d s : ℝ
+hσ₁ : 0 < σ₁
+hμ : 0 < μ
+hs : 0 < s
+σ₂ : ℝ
+hσ₂ : σ₂ ∈ Set.Ioi 0
+σ₂' : ℝ
+hσ₂' : σ₂' ∈ Set.Ioi 0
+hlt : σ₂ < σ₂'
+⊢ (fun σ₂ ↦ (gaussianOffsetLaw d s).real (standardDeviationBoundaryEvent σ₁ σ₂ μ)) σ₂' <
+    (fun σ₂ ↦ (gaussianOffsetLaw d s).real (standardDeviationBoundaryEvent σ₁ σ₂ μ)) σ₂
+error: TruncGaussProof/GaussianSweep.lean:90:6: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  (gaussianOffsetLaw d s).real (standardDeviationBoundaryEvent σ₁ σ₂ μ)
+in the target expression
+  (fun σ₂ ↦ (gaussianOffsetLaw d s).real (standardDeviationBoundaryEvent σ₁ σ₂ μ)) σ₂ <
+    (fun σ₂ ↦ (gaussianOffsetLaw d s).real (standardDeviationBoundaryEvent σ₁ σ₂ μ)) σ₂'
+
+σ₁ μ d s : ℝ
+hσ₁ : 0 < σ₁
+hμ : μ < 0
+hs : 0 < s
+σ₂ : ℝ
+hσ₂ : σ₂ ∈ Set.Ioi 0
+σ₂' : ℝ
+hσ₂' : σ₂' ∈ Set.Ioi 0
+hlt : σ₂ < σ₂'
+⊢ (fun σ₂ ↦ (gaussianOffsetLaw d s).real (standardDeviationBoundaryEvent σ₁ σ₂ μ)) σ₂ <
+    (fun σ₂ ↦ (gaussianOffsetLaw d s).real (standardDeviationBoundaryEvent σ₁ σ₂ μ)) σ₂'
+error: Lean exited with code 1
+Some required targets logged failures:
+- TruncGaussProof.GaussianSweep

@@ -1,0 +1,15 @@
+[model] *WARNING* Ignored blocks/options: ['run_name', 'sampler', 'notes', 'output']
+[classy] `classy` module loaded successfully from /tmp/neutrino-math-review-venv/lib/python3.12/site-packages/classy
+Actual L range: 30 - 756
+[exception handler] ---------------------------------------
+
+Traceback (most recent call last):
+  File "/home/repos/six-birds-neutrino/scripts/verify_chain_targets.py", line 89, in <module>
+    main()
+  File "/home/repos/six-birds-neutrino/scripts/verify_chain_targets.py", line 76, in main
+    checks = [dict(row_index=int(i), **compare_native_row(
+                                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/repos/six-birds-neutrino/scripts/verify_chain_targets.py", line 39, in compare_native_row
+    raise ValueError(f'Fresh native target differs for {name}: '
+ValueError: Fresh native target differs for minuslogpost: stored 1610.2615, fresh 1610.3250393917056
+-------------------------------------------------------------

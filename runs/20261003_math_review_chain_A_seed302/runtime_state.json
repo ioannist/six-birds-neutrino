@@ -1,0 +1,13 @@
+{
+  "status": "running_no_posterior_claims",
+  "pid": 370439,
+  "exec_session": 58672,
+  "omp_threads": 1,
+  "next_step": "Diagnose matched independent chains and all sampled variables; no bound before rank/tail and quantile precision checks pass.",
+  "implementation_sha256": {
+    "scripts/run_cobaya.py": "9d33ddd36a89b291ef9f68a6082e5fe1bc3e8829430e8627328191082a86bb3b",
+    "src/sbt_spt_audit/likelihoods/candl_cobaya.py": "59d776670e246f4fccebc966e45225f1873411f6f49a38c3f6e4bfa55f20b85e",
+    "src/sbt_spt_audit/likelihoods/desi_dr2_bao.py": "bf7b9b816f158aaabfc12ba8f6ea75ed8c7fa0bc0bbfe73b7aa8e75d9a999bf4"
+  },
+  "input_sha256": "dd512cce3d50be3bedeed3712f958b74a35361c4d9b171bbb9616b545e56a7eb"
+}

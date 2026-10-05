@@ -1,0 +1,14 @@
+{
+  "utc": "2026-10-05T02:12:50.397377+00:00",
+  "original_source": "/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_sigma_v2_optimized_20261005/camb-2.0.4/fortran/results.f90",
+  "original_sha256": "884a2942ee946b03982cc0be7e809f4acde62e7a69ce4906a94934ffc29abb33",
+  "candidate_source": "/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_sigma_time_endpoint_20261005/fortran/results.f90",
+  "candidate_sha256": "4a80e386db5a97c3abc5dc9febc221086ab90ccad73559c98c41e6421418dd3b",
+  "changes": [
+    [
+      "    do i = 2, n\n        arr(i) = arr(i) + arr(i - 1)\n    end do\n\n    end subroutine CAMBdata_TimeOfzArr",
+      "    do i = 2, n\n        arr(i) = arr(i) + arr(i - 1)\n    end do\n    ! An initialized background defines the present-day coordinate once.\n    ! Reuse it at z=0 rather than a separately accumulated quadrature.\n    do i = 1, n\n        if (z(i) == 0._dl) arr(i) = this%tau0\n    end do\n\n    end subroutine CAMBdata_TimeOfzArr"
+    ]
+  ],
+  "scope": "For initialized background, replace only array TimeOfz at exactlyz0 by the existing tau0 coordinate. All nonzero redshift values and whole-interval quadratures unchanged. Sigma policyv2 unchanged; physical model and priors unchanged; empirical private candidate, no production adoption."
+}

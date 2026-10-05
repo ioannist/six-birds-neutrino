@@ -1,0 +1,24 @@
+{
+  "utc": "2026-10-05T08:26:40.588554+00:00",
+  "managed_session": 2761,
+  "exit_code": 0,
+  "all_verification_workers_terminal": true,
+  "terminal_observation": "write_stdin returned actual managed exit_code 0",
+  "stages": [
+    {
+      "stage": "verify_native_rows.py",
+      "actual_exit_code": 0,
+      "completion": "runs/20261005_math_review_CLASS_fresh_first_quad_A_diagnostics/verify_native_rows.py.completion.json"
+    },
+    {
+      "stage": "run_diagnostic.py",
+      "actual_exit_code": 0,
+      "completion": "runs/20261005_math_review_CLASS_fresh_first_quad_A_diagnostics/run_diagnostic.py.completion.json"
+    },
+    {
+      "stage": "verify_snapshot.py",
+      "actual_exit_code": 0,
+      "completion": "runs/20261005_math_review_CLASS_fresh_first_quad_A_diagnostics/verify_snapshot.py.completion.json"
+    }
+  ]
+}

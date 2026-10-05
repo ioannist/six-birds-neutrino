@@ -1,0 +1,190 @@
+{
+  "utc": "2026-10-04T07:45:42.270354+00:00",
+  "scope": "two_fixed_B_mass_coordinates_spectrum_grid_levels12_6_3",
+  "managed_exits": [
+    {
+      "variant": "grid6",
+      "session": 16841,
+      "exit_code": 0
+    },
+    {
+      "variant": "grid3",
+      "session": 98306,
+      "exit_code": 0
+    }
+  ],
+  "native_mass_plus_0_01_responses": {
+    "grid12": 3.07979172796154,
+    "grid6": 3.082343483679008,
+    "grid3": 3.0801467536654794
+  },
+  "native_component_mass_responses": {
+    "grid12": {
+      "sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 2.6924264823262547,
+      "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": -0.020053204932414914,
+      "planck_2018_lowl.TT": 0.005147677239790482,
+      "planck_2018_lowl.EE_sroll2": 0.004858099909029079,
+      "planck_2018_highl_plik.TT_lite_native": 0.05582352354753084,
+      "planckpr4lensing.PlanckPR4Lensing": 0.3415891498713499
+    },
+    "grid6": {
+      "sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 2.695141453730912,
+      "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": -0.020053204932414914,
+      "planck_2018_lowl.TT": 0.0051476783351063204,
+      "planck_2018_lowl.EE_sroll2": 0.004858099909029079,
+      "planck_2018_highl_plik.TT_lite_native": 0.05572124359672159,
+      "planckpr4lensing.PlanckPR4Lensing": 0.34152821303965375
+    },
+    "grid3": {
+      "sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 2.6931916233877473,
+      "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": -0.020053204932414914,
+      "planck_2018_lowl.TT": 0.005147677606260004,
+      "planck_2018_lowl.EE_sroll2": 0.004858099909029079,
+      "planck_2018_highl_plik.TT_lite_native": 0.05548109229300735,
+      "planckpr4lensing.PlanckPR4Lensing": 0.3415214654018506
+    }
+  },
+  "mass_response_changes": {
+    "grid6_minus_grid12": 0.0025517557174676853,
+    "grid3_minus_grid6": -0.0021967300135283807
+  },
+  "native_chi2_offsets_relative_to_grid12": {
+    "grid12": {
+      "quad_q50": 0.0,
+      "quad_q50_mass_plus": 0.0
+    },
+    "grid6": {
+      "quad_q50": -0.003173335361594809,
+      "quad_q50_mass_plus": -0.0006215796441271237
+    },
+    "grid3": {
+      "quad_q50": -0.0037421735617009233,
+      "quad_q50_mass_plus": -0.0033871478577616188
+    }
+  },
+  "maximum_fractional_spectrum_changes_relative_to_grid12": {
+    "grid6": {
+      "quad_q50": {
+        "pp": 0.001410046995585823,
+        "ee": 0.00013852477580960797,
+        "tt": 0.001185664077192754
+      },
+      "quad_q50_mass_plus": {
+        "pp": 0.001336397799589067,
+        "ee": 6.296774985159364e-05,
+        "tt": 0.0007914025899836629
+      }
+    },
+    "grid3": {
+      "quad_q50": {
+        "pp": 0.0015155830495104695,
+        "tt": 0.0011950543452283803,
+        "ee": 0.00013867849166245496
+      },
+      "quad_q50_mass_plus": {
+        "pp": 0.001464322872162258,
+        "tt": 0.0007725047869889953,
+        "ee": 0.00010219737123644841
+      }
+    }
+  },
+  "physical_likelihood_prior_and_dynamics_settings_unchanged": true,
+  "grid12_anchor_reused_not_new_evaluation": true,
+  "convergence_rate_or_uniform_error_bound_certified": false,
+  "posterior_convergence_certified": false,
+  "paper_modified": false,
+  "files": [
+    {
+      "path": "runs/20261004_math_review_guarded_B_spectrum_grid_refinement/grid3/evaluation/metrics.json",
+      "sha256": "af9feba48441194f5261871b9d8d31e8ee12a2ec5429696669973380b878a21c"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_B_spectrum_grid_refinement/grid3/evaluation/progress.json",
+      "sha256": "7497f3c349d8e426cb8374923887fd08d61a43b5868ac440902160e632a8e7e6"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_B_spectrum_grid_refinement/grid3/evaluation/quad_q50_mass_plus_spectra.npz",
+      "sha256": "49a198a35aa22e5731aeaf7148f51be5864e572be50308010ebc68a0e4ca3445"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_B_spectrum_grid_refinement/grid3/evaluation/quad_q50_spectra.npz",
+      "sha256": "ed9fb1944150389f4a4bbab618337ddfd4891943bf2f95c7eb148c947c3f6f43"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_B_spectrum_grid_refinement/grid3/evaluation/runtime_state.json",
+      "sha256": "65d5827f4c6420cca31081b5c00ea78a7d7c649982d3d1b1288bf431172a080a"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_B_spectrum_grid_refinement/grid3/input.yaml",
+      "sha256": "72f017c10477764e26dc43ff06653cffe30638dc0aee831cd2c3b361ad3eb94b"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_B_spectrum_grid_refinement/grid3/points.json",
+      "sha256": "5c706baad7bb8a1e0d30a789e2de8c4bbeb74f7f6a45867a3bc99695e0fedacc"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_B_spectrum_grid_refinement/grid3/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_B_spectrum_grid_refinement/grid3/stdout.txt",
+      "sha256": "466d6a8d21f296ba7734541918bc7b5852a5a297aa7e45e0ba7af69bbcc7e507"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_B_spectrum_grid_refinement/grid6/evaluation/metrics.json",
+      "sha256": "167c1677cabea1dce7621771c746d4102190ea0e0314ad30490ffe4f93583259"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_B_spectrum_grid_refinement/grid6/evaluation/progress.json",
+      "sha256": "1eb4c069874b943f3d0ca1eb462b52bf6b811e8b8e597060f76f11e9530d509e"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_B_spectrum_grid_refinement/grid6/evaluation/quad_q50_mass_plus_spectra.npz",
+      "sha256": "1dffaecc9066272268d785db3ca2195182e587ddc008f830455f0e39409a11d5"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_B_spectrum_grid_refinement/grid6/evaluation/quad_q50_spectra.npz",
+      "sha256": "4f968f7d0db9665a7257170805ee9b06560a38cc34a6befc9c1c755285fef3eb"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_B_spectrum_grid_refinement/grid6/evaluation/runtime_state.json",
+      "sha256": "9c5977a49a12b9ab53f8356bec1b4c72cbec1a13fea4503915b7e5a6871657d3"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_B_spectrum_grid_refinement/grid6/input.yaml",
+      "sha256": "ace5996f4948c998d3563141de7a8b3b33d9bc42b1156267bab8e7782b2f483a"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_B_spectrum_grid_refinement/grid6/points.json",
+      "sha256": "5c706baad7bb8a1e0d30a789e2de8c4bbeb74f7f6a45867a3bc99695e0fedacc"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_B_spectrum_grid_refinement/grid6/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_B_spectrum_grid_refinement/grid6/stdout.txt",
+      "sha256": "a980be60b4c667ec80eeb3096528d339c0aa8cc2bb6573f40d73747921bbecd9"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_B_spectrum_grid_refinement/launch_receipt.json",
+      "sha256": "94889a1297cf1f9cb9203c73181a3f8b1386a95d5b0e3ec70c4559a03ba4effb"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_B_spectrum_grid_refinement/prepare.py",
+      "sha256": "49567ee82cddfde560e5fbc43c531c2c95698ad8789b17668fa7b1df6fe2afc7"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_B_spectrum_grid_refinement/runner.py",
+      "sha256": "2aad77047a14b74f4d9f65f4e4582c4153bcb78dcd4607d61e0c8b09a7201e6f"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_B_spectrum_grid_refinement/selection_receipt.json",
+      "sha256": "b401c4a65067c6b818bb5c8be8361386f0ef5372b7de3946e8cc661e33845f28"
+    },
+    {
+      "path": "runs/20261004_math_review_guarded_B_spectrum_grid_refinement/verify_completed.py",
+      "sha256": "21131b16364e401325f3753f32bdade8ae83509d80c3362696a6be3b62b35628"
+    }
+  ]
+}

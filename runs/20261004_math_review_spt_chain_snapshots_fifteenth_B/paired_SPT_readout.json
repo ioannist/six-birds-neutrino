@@ -1,0 +1,67 @@
+{
+  "utc": "2026-10-04T12:06:10.589682+00:00",
+  "scope": "reused_A_fourteenth_and_fresh_B_fifteenth_qualified_SPT_readouts",
+  "A_snapshot_time": "2026-10-04T10:10:23.257981+00:00",
+  "B_snapshot_time": "2026-10-04T12:02:03.817065+00:00",
+  "A_reused_not_reassessed": true,
+  "B_reused_not_reassessed": false,
+  "simultaneous_joint_snapshot": false,
+  "all_seven_fixed_gates_pass_both_targets": true,
+  "A": {
+    "p95_equalized_retained_eV": 0.14240484,
+    "p95_full_postburn_eV": 0.14031501,
+    "p95_MCSE_eV": 0.002562914999999999,
+    "represented_draws_per_chain": 13388
+  },
+  "B": {
+    "p95_equalized_retained_eV": 0.11220337,
+    "p95_full_postburn_eV": 0.10958005,
+    "p95_MCSE_eV": 0.0027267100000000002,
+    "represented_draws_per_chain": 11712
+  },
+  "A_minus_B_retained_p95_eV": 0.030201470000000008,
+  "A_minus_B_full_postburn_p95_eV": 0.03073495999999999,
+  "quadrature_combined_quantile_MCSE_eV_assuming_independent_MC_errors": 0.003742122488819012,
+  "B_retained_p95_change_from_thirteenth_eV": -0.00024633000000000294,
+  "B_full_postburn_p95_change_from_thirteenth_eV": 0.0004184700000000041,
+  "canonical_original_shift_eV": 0.10860629275736843,
+  "same_CAMB_configuration_and_sampled_cosmological_prior_ranges": true,
+  "dataset_bundle_and_fixed_nuisance_definitions_are_target_specific": true,
+  "pure_completion_causality_or_cosmological_significance_established": false,
+  "mathematical_MCMC_convergence_or_uniform_accuracy_certified": false,
+  "material_claim_revision_adopted": false,
+  "sources": [
+    {
+      "path": "runs/20261004_math_review_spt_chain_snapshots_fifteenth_B/snapshot_receipt.json",
+      "sha256": "c97c76181a8ca94cd5144507fc166dc6773d148655243a6216c4283418751e94"
+    },
+    {
+      "path": "runs/20261004_math_review_spt_chain_snapshots_fifteenth_B/completion_verification.json",
+      "sha256": "74da72c90bc793f8fddf8cafc47b9ca4d2830fa82a07bf9a689b5aae99c85c46"
+    },
+    {
+      "path": "runs/20261004_math_review_spt_chain_snapshots_fifteenth_B/chain_B_diagnostics.json",
+      "sha256": "954209d0192d15321477600905ee237e18dd5af436803fdd8e982b9827b9a4c6"
+    },
+    {
+      "path": "runs/20261004_math_review_spt_chain_snapshots_fourteenth_A/snapshot_receipt.json",
+      "sha256": "fa883a3297a1bc661b6e5165d6a1956445d58339da27e079b8450792160d4845"
+    },
+    {
+      "path": "runs/20261004_math_review_spt_chain_snapshots_fourteenth_A/completion_verification.json",
+      "sha256": "def1a386a69c6aed62c738eda98ff6107d4574add4271548d3c9e3854e89e998"
+    },
+    {
+      "path": "runs/20261004_math_review_spt_chain_snapshots_fourteenth_A/chain_A_diagnostics.json",
+      "sha256": "8704d12d7be32027e4afade01f0f9b1a3e685596666903fe60ca2c4e0e984a6d"
+    },
+    {
+      "path": "runs/20261004_math_review_spt_chain_snapshots_thirteenth_B/chain_B_diagnostics.json",
+      "sha256": "1f5b043d08e894c43cc8e1d89b8e302b52dd7110443eb8e9a4711e8ffb72a4e9"
+    },
+    {
+      "path": "docs/findings/canonical_results.json",
+      "sha256": "bb09d7fe655482218d7d75889338a0d9e48b140e47b8b51d9be876aff3a64811"
+    }
+  ]
+}

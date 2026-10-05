@@ -1,0 +1,26 @@
+{
+  "seed": 1603,
+  "lens": "A",
+  "kind": "spt_desi_archived_solver",
+  "config": "runs/20261004_math_review_SPT_archived_solver_chain_preparation/seed1603/input.yaml",
+  "config_sha256": "e8a604ee469b63dee4a764d481699df80fc7323fa94f308b983b2c346393898f",
+  "run_dir": "runs/20261004_math_review_archived_CAMB_chain_A_seed1603",
+  "initial_point": {
+    "omegabh2": 0.022795377,
+    "omegach2": 0.11601738,
+    "H0": 68.765303,
+    "logA": 3.0111656,
+    "ns": 1.027674,
+    "tau": 0.056772434,
+    "mnu": 0.04199897
+  },
+  "initial_point_label": "restoration_median",
+  "source_native_control_sha256": "85a8068dc22fd33cfba7738568db0149c936bd247966c0b712b0e8b88c31c81b",
+  "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_spt_archived_solver_control_20261004/packages/camb/camblib.so",
+  "module_sha256": "6a54f98bcc65601fd1ad5e760a99a0072cdc45fe49197ba5c3a1282889c2ee0d",
+  "solver_version": "1.6.5",
+  "Cobaya_version": "3.6.1",
+  "wrapper": "/mnt/8tb/six-birds-ml/tmp/neutrino_spt_archived_solver_control_20261004/packages/cobaya/theories/camb/camb.py",
+  "wrapper_sha256": "0f39f32f678ce7f237d727b79b86cda85976798a535d096a2ddf2e8598bc147a",
+  "launch_receipt": "runs/20261004_math_review_SPT_archived_solver_chain_preparation/seed1603/launch_receipt.json"
+}

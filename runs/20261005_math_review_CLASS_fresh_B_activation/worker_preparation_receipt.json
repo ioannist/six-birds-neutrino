@@ -1,0 +1,63 @@
+{
+  "utc": "2026-10-05T05:12:54.962486+00:00",
+  "records": [
+    {
+      "name": "verify_activation.py",
+      "source": "runs/20261005_math_review_CLASS_recovery_cohort_activation/verify_activation.py",
+      "source_sha256": "3d768a6e16dca562524d41d579823c5dfa1a91d848ca86a4a1db5fa742835a5c",
+      "changes": [
+        [
+          "runs/20261005_math_review_CLASS_recovery_cohort_companions_v3",
+          "runs/20261005_math_review_CLASS_fresh_B_preparation"
+        ],
+        [
+          "'owned_live_recovery_trials': 6",
+          "'owned_live_recovery_trials': 8"
+        ],
+        [
+          "running_fresh_CLASS_recovery_companion_initial_native_point_verified_first_saved_row_pending",
+          "running_fresh_CLASS_B_initial_native_point_verified_first_saved_row_pending"
+        ],
+        [
+          "Six companion process identities, mapped libraries and effective configurations verified.",
+          "Eight B process identities, mapped libraries and effective configurations verified."
+        ]
+      ]
+    },
+    {
+      "name": "verify_first_row.py",
+      "source": "runs/20261005_math_review_CLASS_recovery_cohort_activation/verify_first_row.py",
+      "source_sha256": "55e46df8015fff7bb347dd36bc9400807186fdca39499bb054f70b3ade137586",
+      "changes": [
+        [
+          "runs/20261005_math_review_CLASS_recovery_cohort_companions_v3",
+          "runs/20261005_math_review_CLASS_fresh_B_preparation"
+        ],
+        [
+          "CLASS_recovery_companion_",
+          "CLASS_fresh_B_"
+        ],
+        [
+          "with get_model(model_cfg, stop_at_error=True) as model:",
+          "import run_cobaya as launcher\nimport os\nassert launcher._validate_native_backend(yaml.safe_load((out / 'input.yaml').read_text()))['module_sha256'] == entry['module_sha256']\nassert os.environ['OMP_NUM_THREADS'] == entry['OMP_NUM_THREADS']\nassert os.environ['OPENBLAS_NUM_THREADS'] == os.environ['MKL_NUM_THREADS'] == '1'\nwith get_model(model_cfg, stop_at_error=True) as model:"
+        ]
+      ]
+    },
+    {
+      "name": "self_review_selected_rows.py",
+      "source": "runs/20261005_math_review_CLASS_recovery_cohort_activation/self_review_selected_rows.py",
+      "source_sha256": "ab5bf0ba8ef43ee449d8788a5afc37cc6f92a37cb74ae99eb9dea419a239ad68",
+      "changes": [
+        [
+          "{2301, 2302, 2303, 2304, 2305, 2306}",
+          "{2401, 2402, 2403, 2404, 2405, 2406, 2407, 2408}"
+        ],
+        [
+          "Selected companion row receipts reconstructed; no posterior qualification.",
+          "Selected B row receipts reconstructed; no posterior qualification."
+        ]
+      ]
+    }
+  ],
+  "scope": "Eight new B process identities and same first-row obligations; actual replay worker guard checked."
+}

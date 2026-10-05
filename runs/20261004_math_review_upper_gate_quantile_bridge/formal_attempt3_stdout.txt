@@ -1,0 +1,31 @@
+/home/repos/six-birds-neutrino/runs/20261004_math_review_upper_gate_quantile_bridge/FormalSelfReview.lean:143:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ENNReal.ofReal ?m.9 + ENNReal.ofReal ?m.10
+in the target expression
+  ENNReal.ofReal (1 / 4) • 1 + ENNReal.ofReal (1 / 4) • 1 + ENNReal.ofReal (1 / 2) • 1 = 1
+
+case measure_univ
+L : ℝ
+⊢ ENNReal.ofReal (1 / 4) • 1 + ENNReal.ofReal (1 / 4) • 1 + ENNReal.ofReal (1 / 2) • 1 = 1
+/home/repos/six-birds-neutrino/runs/20261004_math_review_upper_gate_quantile_bridge/FormalSelfReview.lean:142:49: warning: This simp argument is unused:
+  mul_one
+
+Hint: Omit it from the simp argument list.
+  simp only [threeAtomLaw, Measure.add_apply, Measure.smul_apply,
+      Measure.dirac_apply_of_mem (Set.mem_univ _),̵ ̵m̵u̵l̵_̵o̵n̵e̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/repos/six-birds-neutrino/runs/20261004_math_review_upper_gate_quantile_bridge/FormalSelfReview.lean:193:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ENNReal.ofReal ?m.9 + ENNReal.ofReal ?m.10
+in the target expression
+  ENNReal.ofReal (1 / 2) • 1 + ENNReal.ofReal (1 / 2) • 1 = 1
+
+case measure_univ
+⊢ ENNReal.ofReal (1 / 2) • 1 + ENNReal.ofReal (1 / 2) • 1 = 1
+/home/repos/six-birds-neutrino/runs/20261004_math_review_upper_gate_quantile_bridge/FormalSelfReview.lean:192:49: warning: This simp argument is unused:
+  mul_one
+
+Hint: Omit it from the simp argument list.
+  simp only [plateauLaw, Measure.add_apply, Measure.smul_apply,
+      Measure.dirac_apply_of_mem (Set.mem_univ _),̵ ̵m̵u̵l̵_̵o̵n̵e̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

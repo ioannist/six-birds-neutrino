@@ -1,0 +1,39 @@
+{
+  "utc": "2026-10-03T13:26:20.485302+00:00",
+  "scope": "source_bridge_and_local_mass_sensitivity",
+  "source_metrics_sha256": "6908fc36809df5ecf02ac9c9bd782c0714a22b0985268e3ee745d7d4accf1f42",
+  "all_twelve_native_records_equal_earlier_evaluations": true,
+  "requested_TT_EE_ell_max": 4095,
+  "managed_exec_exit_code": 0,
+  "results": {
+    "A": {
+      "source_baseline_loglike_error": 6.821210263296962e-13,
+      "own_joint_refined_minus_baseline": -0.2200397997685304,
+      "local_mass_curve": {
+        "baseline": {
+          "minus": -0.008967370783043549,
+          "plus": 0.012574495521912255
+        },
+        "selected_reference_settings": {
+          "minus": -0.00811143455537433,
+          "plus": 0.011585922015173722
+        }
+      }
+    },
+    "B": {
+      "source_baseline_loglike_error": 3.979039320256561e-12,
+      "own_joint_refined_minus_baseline": 0.19694305475615437,
+      "local_mass_curve": {
+        "baseline": {
+          "minus": -0.0028332614076358453,
+          "plus": 0.006753498274258973
+        },
+        "selected_reference_settings": {
+          "minus": -0.002416206110837038,
+          "plus": 0.006033750655378256
+        }
+      }
+    }
+  },
+  "numerical_error_certified": false
+}

@@ -1,0 +1,102 @@
+{
+  "utc": "2026-10-04T03:45:36.460458+00:00",
+  "scope": "selected_original_endpoints_evaluated_on_fresh_guarded_target",
+  "parent_seed": 1101,
+  "replacement_seed": 1301,
+  "config_sha256": "0001c468d6a7fc37fd58790a22bbae2e5c09d7f44ffcd6a7af1860fc0cf01947",
+  "chain_sha256": "40fa77fd4c1662025b6fa2b35a0d33fda33bc9ca34f30afceb30d69a52f15c1a",
+  "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+  "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+  "actual_initialized_native_extra_args": {
+    "N_ncdm": 3,
+    "N_ur": 0.00641,
+    "l_max_scalars": 4095,
+    "tol_ncdm_bg": 1e-08,
+    "output": "lCl pCl tCl",
+    "non_linear": "hmcode",
+    "lensing": "yes"
+  },
+  "checks": [
+    {
+      "row_index": 0,
+      "point": {
+        "omegabh2": 0.022628239,
+        "omegach2": 0.11730861,
+        "H0": 68.612514,
+        "logA": 3.0317306,
+        "ns": 0.97513345,
+        "tau": 0.05080748,
+        "mnu_sample": 0.01220271,
+        "A_planck": 1.0001601571497272,
+        "TT_tSZ_Amp": 2.7063517,
+        "TT_kSZ_Amp": 9.7643923
+      },
+      "fresh_native": {
+        "minuslogpost": 1516.9914199103864,
+        "minuslogprior": 5.793471430396919,
+        "chi2": 3022.395896959979,
+        "chi2__sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 2517.5499242411465,
+        "chi2__sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 11.407650640629935,
+        "chi2__planck_2018_lowl.TT": 21.55376532304797,
+        "chi2__planck_2018_lowl.EE_sroll2": 391.54583074444713,
+        "chi2__planck_2018_highl_plik.TT_lite_native": 71.78040970678512,
+        "chi2__planckpr4lensing.PlanckPR4Lensing": 8.558316303922242
+      },
+      "fresh_minus_original": {
+        "minuslogpost": 0.0,
+        "minuslogprior": 0.0,
+        "chi2": 0.0,
+        "chi2__sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 0.0,
+        "chi2__sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 0.0,
+        "chi2__planck_2018_lowl.TT": 0.0,
+        "chi2__planck_2018_lowl.EE_sroll2": 0.0,
+        "chi2__planck_2018_highl_plik.TT_lite_native": 0.0,
+        "chi2__planckpr4lensing.PlanckPR4Lensing": 0.0
+      },
+      "matches_original_at_atol_1e7_rtol_1e10": true
+    },
+    {
+      "row_index": 299,
+      "point": {
+        "omegabh2": 0.022707056818869798,
+        "omegach2": 0.11742311989178986,
+        "H0": 69.02455774541946,
+        "logA": 3.056368303290997,
+        "ns": 0.9776011188882036,
+        "tau": 0.06116350080808311,
+        "mnu_sample": 0.007667677026103182,
+        "A_planck": 1.00041017042509,
+        "TT_tSZ_Amp": 1.647246948716732,
+        "TT_kSZ_Amp": 9.884139685576114
+      },
+      "fresh_native": {
+        "minuslogpost": 1518.3983730049615,
+        "minuslogprior": 5.793471430396919,
+        "chi2": 3025.209803149129,
+        "chi2__sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 2522.051674546567,
+        "chi2__sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 10.407568063783208,
+        "chi2__planck_2018_lowl.TT": 21.686002346020246,
+        "chi2__planck_2018_lowl.EE_sroll2": 390.609589785943,
+        "chi2__planck_2018_highl_plik.TT_lite_native": 71.93146238147278,
+        "chi2__planckpr4lensing.PlanckPR4Lensing": 8.523506025342337
+      },
+      "fresh_minus_original": {
+        "minuslogpost": 0.0,
+        "minuslogprior": 0.0,
+        "chi2": 0.0,
+        "chi2__sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 0.0,
+        "chi2__sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 0.0,
+        "chi2__planck_2018_lowl.TT": 0.0,
+        "chi2__planck_2018_lowl.EE_sroll2": 0.0,
+        "chi2__planck_2018_highl_plik.TT_lite_native": 0.0,
+        "chi2__planckpr4lensing.PlanckPR4Lensing": 0.0
+      },
+      "matches_original_at_atol_1e7_rtol_1e10": true
+    }
+  ],
+  "fresh_initial_point_finite_native_target_verified": true,
+  "selected_original_rows_match_at_declared_tolerance": true,
+  "full_domain_original_backend_identity_asserted": false,
+  "posterior_convergence_certified": false,
+  "uniform_numerical_accuracy_certified": false
+}

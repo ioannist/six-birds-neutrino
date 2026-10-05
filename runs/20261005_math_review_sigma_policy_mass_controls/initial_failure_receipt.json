@@ -1,0 +1,46 @@
+{
+  "utc": "2026-10-05T01:36:24.840925+00:00",
+  "workers": [
+    {
+      "variant": "candidate12",
+      "managed_session": 9264,
+      "exit_code": 1
+    },
+    {
+      "variant": "packaged14",
+      "managed_session": 55393,
+      "exit_code": 1
+    }
+  ],
+  "all_workers_terminal": true,
+  "first_point": {
+    "source_point_receipt": "runs/20261004_math_review_upper_prior_native_failure_reproduction_preparation/seed2003/failed_proposal.json",
+    "source_point_receipt_sha256": "b9f0e84c0945084e286e2c132d43418c9cd7c06ec1c73a0674ffd8900819aa0b",
+    "anchor_seed": 2003,
+    "original_anchor_point": {
+      "omegabh2": 0.029575663512100336,
+      "omegach2": 0.0028630562619511857,
+      "H0": 54.38876723029562,
+      "logA": 2.9440199295646825,
+      "ns": 0.9141040602339817,
+      "tau": 0.07344339439339485,
+      "mnu": 11.436878239360212
+    },
+    "only_coordinate_change": "mnu",
+    "point": {
+      "omegabh2": 0.029575663512100336,
+      "omegach2": 0.0028630562619511857,
+      "H0": 54.38876723029562,
+      "logA": 2.9440199295646825,
+      "ns": 0.9141040602339817,
+      "tau": 0.07344339439339485,
+      "mnu": 0.05
+    }
+  },
+  "first_selection_index": 0,
+  "error": "CAMBError: HMCode INTEGRATE, Integration timed out",
+  "completed_point_receipts": 0,
+  "remaining_grid_points_not_evaluated": 11,
+  "native_error_is_posterior_rejection": false,
+  "production_adopted": false
+}

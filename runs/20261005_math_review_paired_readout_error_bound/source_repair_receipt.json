@@ -1,0 +1,18 @@
+{
+  "utc": "2026-10-05T07:14:49.409347+00:00",
+  "original_sha256": "fcfe50e6d08f5d55a5f7287c8d278427d940656957349f9061f71a17ba6590e9",
+  "source": "lean/trunc_gauss_proof/TruncGaussProof/Readout.lean",
+  "repaired_source_sha256": "f70d07025341d18070107cd1ca0fdb5bb5219e409d9424b98595f9a67d169e69",
+  "changes": [
+    [
+      " := abs_add _ _",
+      " := abs_add_le _ _"
+    ],
+    [
+      "(\u03b1A \u03b1B : \u211d\u22650\u221e)",
+      "(\u03b1A \u03b1B : ENNReal)"
+    ]
+  ],
+  "mathematical_claims_or_hypotheses_changed": false,
+  "independence_assumed": false
+}

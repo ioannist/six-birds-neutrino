@@ -1,0 +1,6 @@
+- run_name: math_restoration_A_seed402
+- config: /home/repos/six-birds-neutrino/runs/20261003_math_review_spt_parallel_chain_configs/A_seed402.yaml
+- output_prefix: /home/repos/six-birds-neutrino/runs/20261003_math_review_chain_A_seed402/chains/math_restoration_A_seed402
+- cobaya_success: True
+- extraction_success: True
+- metrics_path: /home/repos/six-birds-neutrino/runs/20261003_math_review_chain_A_seed402/metrics.json

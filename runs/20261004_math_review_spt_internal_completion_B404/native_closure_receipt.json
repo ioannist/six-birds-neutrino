@@ -1,0 +1,43 @@
+{
+  "utc": "2026-10-04T05:33:54.173606+00:00",
+  "managed_native_session": 10086,
+  "managed_native_exit_code": 0,
+  "checked_first_and_last_rows": true,
+  "checked_file_is_completed_source": true,
+  "source_file_sha256_matches_frozen_chain": true,
+  "native_maximum_component_absolute_discrepancy": 0.00019577964962991246,
+  "atol": 0.002,
+  "rtol": 1e-06,
+  "text_rounding_tolerance_retained": true,
+  "independent_ensemble_convergence_verified": false,
+  "files": [
+    {
+      "path": "runs/20261004_math_review_spt_internal_completion_B404/archive_completion.py",
+      "sha256": "ab370472d36a19ad00349e1ad1d6e73eca4c81df2c93df39b241ef442b691624"
+    },
+    {
+      "path": "runs/20261004_math_review_spt_internal_completion_B404/completion_receipt.json",
+      "sha256": "686cb3cb261b4c8b79fc5073b640ac37bd06e7aec89db31548b3818792e3b5c2"
+    },
+    {
+      "path": "runs/20261004_math_review_spt_internal_completion_B404/native_endpoint_verification.json",
+      "sha256": "fc68d95ccf9294c732355230cde8d8c87f75577ae7196b285e8c0a6e02f380e3"
+    },
+    {
+      "path": "runs/20261004_math_review_spt_internal_completion_B404/native_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261004_math_review_spt_internal_completion_B404/native_stdout.txt",
+      "sha256": "3a21b04aa43d46572646872a9ecc5e74baadf67c33c54a68a523b47e5de59ce6"
+    },
+    {
+      "path": "runs/20261004_math_review_spt_internal_completion_B404/observe_runtime.py",
+      "sha256": "34887478eb0348213b789eae2e2a27d81fa5c3a0d736415841f2bc58dfbb3c83"
+    },
+    {
+      "path": "runs/20261004_math_review_spt_internal_completion_B404/runtime_observation.json",
+      "sha256": "eb41ff2bbb2826e50e9ba593cca05a083754d4655346711bb467ff04c116ab1a"
+    }
+  ]
+}

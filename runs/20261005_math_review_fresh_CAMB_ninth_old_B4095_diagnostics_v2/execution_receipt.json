@@ -1,0 +1,22 @@
+{
+  "utc": "2026-10-05T03:11:12.204538+00:00",
+  "managed_session": 50536,
+  "exit_code": 0,
+  "stages": [
+    {
+      "script": "verify_native_rows.py",
+      "actual_exit_code": 0
+    },
+    {
+      "script": "run_diagnostic.py",
+      "actual_exit_code": 0
+    },
+    {
+      "script": "verify_snapshot.py",
+      "actual_exit_code": 0
+    }
+  ],
+  "all_verification_workers_terminal": true,
+  "passing_parameters": [],
+  "posterior_qualified": false
+}

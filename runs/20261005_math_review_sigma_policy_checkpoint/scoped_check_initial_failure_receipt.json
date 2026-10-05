@@ -1,0 +1,7 @@
+{
+  "utc": "2026-10-05T01:26:17.958301+00:00",
+  "exit_code": 2,
+  "stdout_utf8": "runs/20261005_math_review_sigma_policy_checkpoint/initial_full_whitespace_check.txt:2: trailing whitespace.\n++ AUDIT_NEGATIVE_HALO_BASE  0.71590930908396533        1.2889334357168983E-005  -7.6451290422500535E-081   1.7728578091704033E-015  0.50000000000000000     \nruns/20261005_math_review_sigma_policy_checkpoint/initial_full_whitespace_check.txt:4: trailing whitespace.\n++ AUDIT_NEGATIVE_HALO_BASE   6.6074977571208553        1.5398929463117370E-005  -6.4249294190361037E-237   2.4890755540887103E-016  0.50000000000000000     \nruns/20261005_math_review_sigma_policy_checkpoint/initial_full_whitespace_check.txt:6: trailing whitespace.\n++ AUDIT_NEGATIVE_HALO_BASE  0.71590930908396533        1.2889334357168983E-005  -7.6451290422500535E-081   1.7728578091704033E-015  0.50000000000000000     \nruns/20261005_math_review_sigma_policy_checkpoint/initial_full_whitespace_check.txt:8: trailing whitespace.\n++ AUDIT_NEGATIVE_HALO_BASE   6.6074977571208553        1.5398929463117370E-005  -6.4249294190361037E-237   2.4890755540887103E-016  0.50000000000000000     \n",
+  "cause": "Raw full-check output itself quotes Fortran trailing whitespace; initial scope omitted this captured check output.",
+  "next_scope": "Four original native outputs and the immutable full-check raw output; all bound by hashes."
+}

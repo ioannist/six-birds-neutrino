@@ -1,0 +1,46 @@
+{
+  "scope": "empirical_chain_summary_comparison",
+  "posterior_convergence_verified": false,
+  "run2018": {
+    "path": "/home/repos/six-birds-neutrino/runs/20261003_math_review_comparison_scope/cmb2018_desi",
+    "chains_prefix": "/home/repos/six-birds-neutrino/runs/20260212_093731_416464_cobaya_cmb_spt2018_plancksubset_desi_mnu/chains/cmb_spt2018_plancksubset_desi_mnu",
+    "mnu_median": 0.067766928,
+    "mnu_p95_upper": 0.079818013,
+    "mnu_mode": 0.074695958475,
+    "boundary_fraction": 0.0,
+    "n_samples_used": 480,
+    "mnu_split_rhat": 0.9997898142604631,
+    "mnu_ess": 8.987732786804878,
+    "mnu_p95_half_diff": 0.004139836000000008,
+    "warnings": [
+      "Scalar ESS proxy below 400; tail quantile precision is not established."
+    ],
+    "diagnostic_method": "classical_chronological_split_rhat_integer_holding_times"
+  },
+  "runD1": {
+    "path": "/home/repos/six-birds-neutrino/runs/20261003_math_review_comparison_scope/cmbd1_desi",
+    "chains_prefix": "/home/repos/six-birds-neutrino/runs/20260212_100807_462875_cobaya_cmb_sptd1_plancksubset_desi_mnu/chains/cmb_sptd1_plancksubset_desi_mnu",
+    "mnu_median": 0.054341514,
+    "mnu_p95_upper": 0.067653162,
+    "mnu_mode": 0.054431916875,
+    "boundary_fraction": 0.0,
+    "n_samples_used": 480,
+    "mnu_split_rhat": 1.4835249609183858,
+    "mnu_ess": 5.03917834711618,
+    "mnu_p95_half_diff": 0.013540960999999997,
+    "warnings": [
+      "Scalar ESS proxy below 400; tail quantile precision is not established.",
+      "Scalar chronological split-Rhat does not pass 1.05; posterior bounds are not verified stable."
+    ],
+    "diagnostic_method": "classical_chronological_split_rhat_integer_holding_times"
+  },
+  "shift": {
+    "delta_p95_upper": 0.01216485099999999,
+    "delta_median": 0.013425414000000004
+  },
+  "warnings": [
+    "SPT2018: Scalar ESS proxy below 400; tail quantile precision is not established.",
+    "D1: Scalar ESS proxy below 400; tail quantile precision is not established.",
+    "D1: Scalar chronological split-Rhat does not pass 1.05; posterior bounds are not verified stable."
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "configA": "/home/repos/six-birds-neutrino/configs/neutrino/cmb_spt2018_plancksubset_desi_mnu.yaml",
+  "configB": "/home/repos/six-birds-neutrino/configs/neutrino/cmb_sptd1_plancksubset_desi_mnu.yaml",
+  "sha256A": "d11bc6f52b9900a0171ad14e992badc301f731676d289e35584cfabcb683cecf",
+  "sha256B": "c717cca3ddafd6c74e01566cec38d6a63554fde56b33603308b6dcf513036f4d",
+  "runner_sha256": "4daa7572dc141241bee0f971cf53d0dbef16fc4aec9eb39ace06e74060f986d8",
+  "source_commit": "02f76fef11dc5c949a00824b1681d0347cb8e706",
+  "working_tree_diff": "",
+  "arguments": {
+    "configA": "configs/neutrino/cmb_spt2018_plancksubset_desi_mnu.yaml",
+    "configB": "configs/neutrino/cmb_sptd1_plancksubset_desi_mnu.yaml",
+    "start_runA": null,
+    "start_runB": null,
+    "start_fitA": "runs/20261003_math_review_cosmological_cmb_desi/lensA_fit_0.json",
+    "start_fitB": "runs/20261003_math_review_cosmological_cmb_desi/lensB_warm_start_only.json",
+    "no_ref_start": true,
+    "outdir": "runs/20261003_math_review_cosmological_cmb_desi_warm",
+    "packages_path": "/home/repos/six-birds-neutrino/external/cobaya_packages",
+    "maxfun": 450,
+    "rhoend": 0.02,
+    "common_cuts": false,
+    "d1_support_cut": false
+  }
+}

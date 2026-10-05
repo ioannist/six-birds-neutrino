@@ -1,0 +1,24 @@
+{
+  "utc": "2026-10-05T03:31:07.150299+00:00",
+  "command": [
+    "/tmp/neutrino-math-review-venv/bin/python",
+    "/home/repos/six-birds-neutrino/scripts/diagnose_cobaya_chains.py",
+    "--run-dir",
+    "/home/repos/six-birds-neutrino/runs/20261005_math_review_sigma_time_v3_prethreshold_workflow_controls/sigma_time_v3_A4095_cap20/seed2105",
+    "--run-dir",
+    "/home/repos/six-birds-neutrino/runs/20261005_math_review_sigma_time_v3_prethreshold_workflow_controls/sigma_time_v3_A4095_cap20/seed2106",
+    "--run-dir",
+    "/home/repos/six-birds-neutrino/runs/20261005_math_review_sigma_time_v3_prethreshold_workflow_controls/sigma_time_v3_A4095_cap20/seed2107",
+    "--run-dir",
+    "/home/repos/six-birds-neutrino/runs/20261005_math_review_sigma_time_v3_prethreshold_workflow_controls/sigma_time_v3_A4095_cap20/seed2108",
+    "--burnin-frac",
+    ".2",
+    "--quantile-mcse-limit",
+    ".001",
+    "--relative-quantile-mcse-limit",
+    ".05",
+    "--output",
+    "/home/repos/six-birds-neutrino/runs/20261005_math_review_sigma_time_v3_prethreshold_workflow_controls/sigma_time_v3_A4095_cap20/diagnostics.json"
+  ],
+  "exit_code": 0
+}

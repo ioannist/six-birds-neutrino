@@ -1,0 +1,12 @@
+✖ [7890/7892] Building TruncGaussProof.Tightening (11s)
+trace: .> LEAN_PATH=/home/repos/six-birds-neutrino/lean/trunc_gauss_proof/.lake/packages/Cli/.lake/build/lib/lean:/home/repos/six-birds-neutrino/lean/trunc_gauss_proof/.lake/packages/batteries/.lake/build/lib/lean:/home/repos/six-birds-neutrino/lean/trunc_gauss_proof/.lake/packages/Qq/.lake/build/lib/lean:/home/repos/six-birds-neutrino/lean/trunc_gauss_proof/.lake/packages/aesop/.lake/build/lib/lean:/home/repos/six-birds-neutrino/lean/trunc_gauss_proof/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/repos/six-birds-neutrino/lean/trunc_gauss_proof/.lake/packages/importGraph/.lake/build/lib/lean:/home/repos/six-birds-neutrino/lean/trunc_gauss_proof/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/repos/six-birds-neutrino/lean/trunc_gauss_proof/.lake/packages/plausible/.lake/build/lib/lean:/home/repos/six-birds-neutrino/lean/trunc_gauss_proof/.lake/packages/mathlib/.lake/build/lib/lean:/home/repos/six-birds-neutrino/lean/trunc_gauss_proof/.lake/build/lib/lean /home/ioannis/.elan/toolchains/leanprover--lean4---v4.27.0/bin/lean /home/repos/six-birds-neutrino/lean/trunc_gauss_proof/TruncGaussProof/Tightening.lean -o /home/repos/six-birds-neutrino/lean/trunc_gauss_proof/.lake/build/lib/lean/TruncGaussProof/Tightening.olean -i /home/repos/six-birds-neutrino/lean/trunc_gauss_proof/.lake/build/lib/lean/TruncGaussProof/Tightening.ilean -c /home/repos/six-birds-neutrino/lean/trunc_gauss_proof/.lake/build/ir/TruncGaussProof/Tightening.c --setup /home/repos/six-birds-neutrino/lean/trunc_gauss_proof/.lake/build/ir/TruncGaussProof/Tightening.setup.json --json
+warning: TruncGaussProof/Tightening.lean:112:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+error: TruncGaussProof/Tightening.lean:130:8: failed to prove strict positivity, but it would be possible to prove nonnegativity if desired
+error: TruncGaussProof/Tightening.lean:130:24: failed to prove strict positivity, but it would be possible to prove nonnegativity if desired
+error: TruncGaussProof/Tightening.lean:141:8: failed to prove strict positivity, but it would be possible to prove nonnegativity if desired
+error: TruncGaussProof/Tightening.lean:141:24: failed to prove strict positivity, but it would be possible to prove nonnegativity if desired
+error: Lean exited with code 1
+Some required targets logged failures:
+- TruncGaussProof.Tightening

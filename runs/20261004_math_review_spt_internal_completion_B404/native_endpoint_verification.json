@@ -1,0 +1,58 @@
+{
+  "scope": "selected_native_target_consistency_only",
+  "atol": 0.002,
+  "rtol": 1e-06,
+  "tolerance_accounts_for_text_rounding": true,
+  "interval_error_certified": false,
+  "posterior_convergence_certified": false,
+  "chains": [
+    {
+      "run": "/home/repos/six-birds-neutrino/runs/20261004_math_review_spt_internal_completion_B404/seed404",
+      "file": "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_B_seed404/chains/math_restoration_B_seed404.1.txt",
+      "file_sha256": "37cf3e4b9e3eccb85b6cf0ebfa777d054539c74136c03a2f774267d728638d0d",
+      "total_stored_rows": 18760,
+      "checks": [
+        {
+          "row_index": 0,
+          "point": {
+            "omegabh2": 0.022148948,
+            "omegach2": 0.11720573,
+            "H0": 69.046082,
+            "logA": 3.014818,
+            "ns": 0.96494994,
+            "tau": 0.063040787,
+            "mnu": 0.031188533
+          },
+          "fresh_minuslogpost": 997.5998898661078,
+          "fresh_minus_recorded": {
+            "minuslogpost": 9.986610780288174e-05,
+            "minuslogprior": -2.3717017239022198e-08,
+            "chi2": 0.00019577964962991246,
+            "chi2__sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 0.00015477866941182583,
+            "chi2__sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": -3.9990198317241266e-06
+          }
+        },
+        {
+          "row_index": 18759,
+          "point": {
+            "omegabh2": 0.02240875,
+            "omegach2": 0.11838886,
+            "H0": 68.241822,
+            "logA": 3.0387821,
+            "ns": 0.95709358,
+            "tau": 0.048681247,
+            "mnu": 0.065725203
+          },
+          "fresh_minuslogpost": 702.1781355990489,
+          "fresh_minus_recorded": {
+            "minuslogpost": -1.4400951044990506e-05,
+            "minuslogprior": -2.3717017239022198e-08,
+            "chi2": -1.2754468116327189e-05,
+            "chi2__sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": -6.934506677680474e-05,
+            "chi2__sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 3.590598584679583e-06
+          }
+        }
+      ]
+    }
+  ]
+}

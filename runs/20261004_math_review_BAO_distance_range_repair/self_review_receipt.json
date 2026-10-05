@@ -1,0 +1,23 @@
+{
+  "utc": "2026-10-04T17:29:18.930698+00:00",
+  "reviewer": "distinct_self_review_not_independent_agent",
+  "mathematical_scaling": "z=mz*2^ez, DH=mh*2^eh, DM=mm*2^em, rd=mr*2^er; E=ez+eh+2em-3er=3q+r; DV/rd=cbrt(mz*mh*mm^2*2^r)/mr*2^q",
+  "fallback_scope": "positive finite inputs with unusable intermediate product; zero numerator handled separately; nonrepresentable final output refused",
+  "ordinary_arithmetic_AST_matches_before": true,
+  "new_math_cbrt_dependency_removed": true,
+  "before_failing_regressions": 9,
+  "final_full_Python_tests": 186,
+  "fresh_Lean_public_axiom_outputs": 83,
+  "validation_scope": "combined make check for initial cbrt attempt; final full Python suite, high-precision controls and native controls rerun after compatibility repair; Lean sources unchanged",
+  "final_high_precision_controls": 108,
+  "maximum_relative_control_error": 3.3306690738754696e-16,
+  "final_native_rows_checked": 4,
+  "ordinary_native_BAO_vectors_identical": true,
+  "source_sha256": {
+    "src/sbt_spt_audit/likelihoods/desi_dr2_bao.py": "f9e8872fd1c4c737b9e4e9a143cb8ac1d8e31b8a087d687db9ebe14b076939aa",
+    "tests/test_desi_dr2_bao.py": "aa0a29d5f1e4477d1dcc4978af30944b9979e3a7c10b0b91347e2b20b16f5c33"
+  },
+  "self_review_script_sha256": "107dbad60cfab02d457e0f3df430bba7eaf1b5f758da46adff2bb20d90ea0b5d",
+  "uniform_interval_error_or_posterior_convergence_certified": false,
+  "paper_or_canonical_results_changed": false
+}

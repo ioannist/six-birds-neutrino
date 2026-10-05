@@ -1,0 +1,150 @@
+{
+  "utc": "2026-10-05T04:23:00.919181+00:00",
+  "registered_entry": {
+    "lens": "B",
+    "seed": 1308,
+    "parent_seed": 1108,
+    "pid": 320418,
+    "exec_session": 88023,
+    "run_dir": "runs/20261004_math_review_guarded_quad_chain_B_seed1308",
+    "native_module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+    "launch_receipt": "runs/20261004_math_review_class_backend_transition/launches/seed1308.json",
+    "status": "running_guarded_quad_selected_new_native_rows_exactly_verified"
+  },
+  "last_verified_live_identity": {
+    "seed": 1308,
+    "pid": 320418,
+    "process_start_ticks": 335536353,
+    "command": "/tmp/neutrino-math-review-venv/bin/python runs/20261004_math_review_class_backend_transition/launch_guarded_replica.py 1308 ",
+    "module": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_finite_jacobian_20261004/python_backend/classy/_classy.cpython-312-x86_64-linux-gnu.so",
+    "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+    "status": "live_same_owned_native_identity",
+    "retained_represented_steps": 6884,
+    "group": null,
+    "posterior_qualified": false
+  },
+  "last_runtime_snapshot": "runs/20261005_math_review_registered66_recovery_checkpoint/combined_runtime_verification.json",
+  "last_runtime_snapshot_sha256": "e0d895cc08100e651baf0a687debecdf3610f5c5ae89eefe46373452718ea4e0",
+  "identity_observation": {
+    "pid": 320418,
+    "expected_start_ticks": 335536353,
+    "status": "PID_not_present",
+    "original_identity_absent": true
+  },
+  "managed_handle_observation": "write_stdin failed: Unknown process id 88023",
+  "exit_code": null,
+  "exit_reason": null,
+  "native_failure_established": false,
+  "terminal_output_files": [
+    {
+      "source": "runs/20261004_math_review_guarded_quad_chain_B_seed1308/chains/math_guarded_quad_B_seed1308.1.txt",
+      "frozen": "runs/20261005_math_review_CLASS_additional_unavailable_terminal_preservation/seed1308/outputs/chains/math_guarded_quad_B_seed1308.1.txt",
+      "bytes": 1982312,
+      "sha256": "06f674176c5dd971c99dfec3577c997a74cf8f20cf866e6ea472b5dd0deeb10b"
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_quad_chain_B_seed1308/chains/math_guarded_quad_B_seed1308.checkpoint",
+      "frozen": "runs/20261005_math_review_CLASS_additional_unavailable_terminal_preservation/seed1308/outputs/chains/math_guarded_quad_B_seed1308.checkpoint",
+      "bytes": 143,
+      "sha256": "4d0c83a5445179d36b49bc3417bd872c5f0eea3ac71878440406daf65f0a3b27"
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_quad_chain_B_seed1308/chains/math_guarded_quad_B_seed1308.covmat",
+      "frozen": "runs/20261005_math_review_CLASS_additional_unavailable_terminal_preservation/seed1308/outputs/chains/math_guarded_quad_B_seed1308.covmat",
+      "bytes": 2627,
+      "sha256": "7a7939649024104e58babe745931abd3d5cfcd4e724b14c40d8ec8147bb72977"
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_quad_chain_B_seed1308/chains/math_guarded_quad_B_seed1308.input.yaml",
+      "frozen": "runs/20261005_math_review_CLASS_additional_unavailable_terminal_preservation/seed1308/outputs/chains/math_guarded_quad_B_seed1308.input.yaml",
+      "bytes": 4222,
+      "sha256": "453666543924bbfbd7217ff94b64ee983954777a18c67971fa23ded1e8549aaa"
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_quad_chain_B_seed1308/chains/math_guarded_quad_B_seed1308.input.yaml.locked",
+      "frozen": "runs/20261005_math_review_CLASS_additional_unavailable_terminal_preservation/seed1308/outputs/chains/math_guarded_quad_B_seed1308.input.yaml.locked",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_quad_chain_B_seed1308/chains/math_guarded_quad_B_seed1308.progress",
+      "frozen": "runs/20261005_math_review_CLASS_additional_unavailable_terminal_preservation/seed1308/outputs/chains/math_guarded_quad_B_seed1308.progress",
+      "bytes": 1661,
+      "sha256": "e8da6a755ca687f83e44cec418ca61be740b5a8142400879ec60455ae6650dbb"
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_quad_chain_B_seed1308/chains/math_guarded_quad_B_seed1308.updated.yaml",
+      "frozen": "runs/20261005_math_review_CLASS_additional_unavailable_terminal_preservation/seed1308/outputs/chains/math_guarded_quad_B_seed1308.updated.yaml",
+      "bytes": 7098,
+      "sha256": "7add3f5c044afcefed8a884c342a60c7a99604b3d4537f45ba071e283b50b182"
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_quad_chain_B_seed1308/env.txt",
+      "frozen": "runs/20261005_math_review_CLASS_additional_unavailable_terminal_preservation/seed1308/outputs/env.txt",
+      "bytes": 433,
+      "sha256": "537c45a0f68d6a729ff182055923bd7bfe6dccde048b43998b1721b12f4a462e"
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_quad_chain_B_seed1308/input.yaml",
+      "frozen": "runs/20261005_math_review_CLASS_additional_unavailable_terminal_preservation/seed1308/outputs/input.yaml",
+      "bytes": 4165,
+      "sha256": "7ed284eaca0c71be375c63d8141c99e03e749a1fe4a38e9d3bc43c08faa39205"
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_quad_chain_B_seed1308/resolved.yaml",
+      "frozen": "runs/20261005_math_review_CLASS_additional_unavailable_terminal_preservation/seed1308/outputs/resolved.yaml",
+      "bytes": 4296,
+      "sha256": "4cc4bf526d8411bd6374ad206ea6b24bc8557c8e6bf01156687cb306c2e258d9"
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_quad_chain_B_seed1308/runtime_state.json",
+      "frozen": "runs/20261005_math_review_CLASS_additional_unavailable_terminal_preservation/seed1308/outputs/runtime_state.json",
+      "bytes": 2078,
+      "sha256": "58cfd4ec761fb4dfffdf852488b226d3362c2d96eda816fdcc6d844cd4008d14"
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_quad_chain_B_seed1308/stderr.txt",
+      "frozen": "runs/20261005_math_review_CLASS_additional_unavailable_terminal_preservation/seed1308/outputs/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_quad_chain_B_seed1308/stdout.txt",
+      "frozen": "runs/20261005_math_review_CLASS_additional_unavailable_terminal_preservation/seed1308/outputs/stdout.txt",
+      "bytes": 155999,
+      "sha256": "28b15d470ddd02df27567d966ef14284814a55a441300c5c99cc7540f56333a3"
+    }
+  ],
+  "original_launch_receipt_sha256": "538d98ca603aead444356d4e40d2a270ba01c6eb97b69f758ef32d081e0c8982",
+  "complete_chain_prefix_sha256": "06f674176c5dd971c99dfec3577c997a74cf8f20cf866e6ea472b5dd0deeb10b",
+  "stored_complete_rows": 2737,
+  "retained_represented_steps": 6992,
+  "last_complete_row": {
+    "weight": "6",
+    "minuslogpost": "949.91589830461112",
+    "omegabh2": "0.021972060122908851",
+    "omegach2": "0.11690300813407252",
+    "H0": "68.428810695349952",
+    "logA": "3.0438216174356878",
+    "ns": "0.96741247579346012",
+    "tau": "0.055765069144737035",
+    "mnu_sample": "0.041394005393096338",
+    "A_planck": "1.0019802012810757",
+    "TT_tSZ_Amp": "1.2873127983988979",
+    "TT_kSZ_Amp": "2.8320734276187594",
+    "As": "2.0985287929818343e-09",
+    "mnu": "0.041394005393096338",
+    "chi2__CMB": "495.17183170548395",
+    "minuslogprior": "5.7934714303969193",
+    "minuslogprior__0": "5.7934714303969193",
+    "chi2": "1888.2448537484283",
+    "chi2__sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": "1382.7921826968509",
+    "chi2__sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": "10.280839346093513",
+    "chi2__planck_2018_lowl.TT": "22.943795057706154",
+    "chi2__planck_2018_lowl.EE_sroll2": "390.03146840605007",
+    "chi2__planck_2018_highl_plik.TT_lite_native": "73.244094939996344",
+    "chi2__planckpr4lensing.PlanckPR4Lensing": "8.9524733017313949"
+  },
+  "exact_resume_state_available": false,
+  "scope": "Original identity absent and managed handle unavailable. Output preserved; no exit cause or successful completion inferred."
+}

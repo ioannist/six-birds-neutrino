@@ -1,0 +1,53 @@
+{
+  "runs": [
+    "/home/repos/six-birds-neutrino/runs/20260212_093731_416464_cobaya_cmb_spt2018_plancksubset_desi_mnu",
+    "/home/repos/six-birds-neutrino/runs/20260212_105410_338944_cobaya_cmb_spt2018_plancksubset_desi_mnu_seed1_short"
+  ],
+  "prefixes": [
+    "/home/repos/six-birds-neutrino/runs/20260212_093731_416464_cobaya_cmb_spt2018_plancksubset_desi_mnu/chains/cmb_spt2018_plancksubset_desi_mnu",
+    "/home/repos/six-birds-neutrino/runs/20260212_105410_338944_cobaya_cmb_spt2018_plancksubset_desi_mnu_seed1_short/chains/cmb_spt2018_plancksubset_desi_mnu_seed1_short"
+  ],
+  "seeds": [
+    0,
+    1
+  ],
+  "burnin_fraction_of_stored_rows": 0.2,
+  "diagnostics": {
+    "mnu": {
+      "method": "ArviZ_rank_folded_split_rhat_bulk_tail_quantile_ESS_and_MCSE",
+      "arviz_version": "1.3.0",
+      "n_chains": 2,
+      "draws_per_chain": 492,
+      "dropped_prefix_draws_per_chain": [
+        230,
+        0
+      ],
+      "quantile_probability": 0.95,
+      "quantile_full_draws": 0.089262826,
+      "quantile_retained_draws": 0.089262826,
+      "quantile_half_difference": 0.010054612000000004,
+      "quantile_mcse_limit": 0.001,
+      "rank_folded_split_rhat": 1.1848354702774677,
+      "bulk_ess": 9.882765414269192,
+      "tail_ess_05_95": 35.256874636909146,
+      "quantile_ess": 247.5399937370124,
+      "quantile_mcse": 0.0,
+      "diagnostic_thresholds_pass": false,
+      "mathematical_convergence_certificate": false,
+      "warnings": [
+        "Rank/folded split Rhat exceeds 1.01.",
+        "Bulk, tail, or quantile ESS is below 400.",
+        "Zero quantile MCSE from tied empirical order statistics does not establish continuous-posterior precision.",
+        "Chronological quantile drift exceeds four times the precision scale."
+      ]
+    }
+  },
+  "all_diagnostic_thresholds_pass": false,
+  "independence_scope": "separate recorded seeds and chain files; initialization independence assumed",
+  "packages": {
+    "arviz": "1.3.0",
+    "arviz_stats": "1.3.3",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1"
+  }
+}

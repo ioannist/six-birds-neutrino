@@ -1,0 +1,23 @@
+{
+  "utc": "2026-10-03T22:53:37.269310+00:00",
+  "scope": "completed_replay_with_fresh_native_endpoint_and_consistent_pair_checks",
+  "replay_pid": 3542137,
+  "replay_managed_session": 21005,
+  "replay_exit_code": 0,
+  "native_verifier_pid": 2352691,
+  "native_verifier_managed_session": 36783,
+  "native_verifier_exit_code": 0,
+  "comparison_exit_code": 0,
+  "terminal_pids_missing": true,
+  "file_sha256": {
+    "metrics.json": "0e7affa257cc8383dd56ebdfbe7d6758b9f6a0ace6b5ca23716270ff7d21c55e",
+    "runtime_state.json": "7d23dfe718b6773ffb86c4717068489a1f778faf27d1052c18e9cf547fa877eb",
+    "accounting_verification.json": "24290d702d1ce725c3d4a8ae46bdd537ffe985c9c27c922fdffb97c7532bd90f",
+    "verification_runtime_state.json": "f9840c5f815040955db0093b2587193dd62572f9008ac40b0bae4182b7dcd8bf",
+    "comparison_verification.json": "db528df73c6507cf7b45ef214155bacda07b4c75af373e0c6b8cd21915d9aa84",
+    "B_given_A_spectra.npz": "2eb7db65d32b541ace9a1f10549a1b55e658ca50dca37073cc6e71c2cb87635b",
+    "verify_replay_comparison.py": "ea8137b7c2148a787bcaab8c620fa40b53d4bffeccd7ec09ef6e250e9763d87b"
+  },
+  "posterior_convergence_verified": false,
+  "global_optimum_certified": false
+}

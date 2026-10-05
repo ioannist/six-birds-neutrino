@@ -2,6 +2,13 @@ SHELL := /bin/bash
 
 PLANCK_ASSETS_DIR ?= external/cobaya_packages
 MNU_FULL_FAST ?= 0
+PYTHON ?= python3
+
+.PHONY: math_check
+math_check:
+	$(PYTHON) -m pytest -q
+	cd lean/trunc_gauss_proof && lake build
+	cd lean/trunc_gauss_proof && lake env lean AuditAxioms.lean
 
 .PHONY: help env toy audit validate tables paper paper-clean paper_check arxiv_bundle researchsquare_bundle mnu_smoke mnu_full freeze_check
 

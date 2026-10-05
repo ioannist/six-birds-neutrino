@@ -1,0 +1,6 @@
+ar: creating libforutils.a
+x86_64-linux-gnu-gfortran-13: fatal error: ‘-fuse-linker-plugin’, but liblto_plugin.so not found
+compilation terminated.
+make[2]: *** [Makefile_main:141: Releaselib/camblib.so] Error 1
+make[1]: *** [/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_native_debug_20261005/source/fortran/Makefile_main:134: camblib.so] Error 2
+make: *** [Makefile_main:122: python] Error 2

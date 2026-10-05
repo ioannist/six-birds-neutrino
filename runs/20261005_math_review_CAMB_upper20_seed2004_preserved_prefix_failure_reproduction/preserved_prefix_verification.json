@@ -1,0 +1,175 @@
+{
+  "utc": "2026-10-05T00:13:23.741011+00:00",
+  "seed": 2004,
+  "managed_session": 62208,
+  "actual_terminal_exit_code": 1,
+  "identity_observation": {
+    "pid": 3108409,
+    "expected_start_ticks": 342500645,
+    "status": "PID_not_present",
+    "original_identity_absent": true
+  },
+  "terminal_replay_files": [
+    {
+      "source": "runs/20261004_math_review_upper_prior_seed2004_seeded_failure_reproduction/chains/fresh_CAMB_upper20_A4095_seed2004.1.txt",
+      "frozen": "runs/20261005_math_review_CAMB_upper20_seed2004_preserved_prefix_failure_reproduction/terminal_replay_bundle/chains/fresh_CAMB_upper20_A4095_seed2004.1.txt",
+      "sha256": "5e5f13908b306b6524080e3d62829ef3edd0f86f248cd08166235e8ddfbbd528",
+      "bytes": 103968
+    },
+    {
+      "source": "runs/20261004_math_review_upper_prior_seed2004_seeded_failure_reproduction/chains/fresh_CAMB_upper20_A4095_seed2004.checkpoint",
+      "frozen": "runs/20261005_math_review_CAMB_upper20_seed2004_preserved_prefix_failure_reproduction/terminal_replay_bundle/chains/fresh_CAMB_upper20_A4095_seed2004.checkpoint",
+      "sha256": "df769a2482a3212c4abd099bb9bc3bf8fe5738dff2a6b9ff168498628ef80799",
+      "bytes": 130
+    },
+    {
+      "source": "runs/20261004_math_review_upper_prior_seed2004_seeded_failure_reproduction/chains/fresh_CAMB_upper20_A4095_seed2004.covmat",
+      "frozen": "runs/20261005_math_review_CAMB_upper20_seed2004_preserved_prefix_failure_reproduction/terminal_replay_bundle/chains/fresh_CAMB_upper20_A4095_seed2004.covmat",
+      "sha256": "27eebf2cb99c8b73aab845ce5d930a407ff4ebe7359ec8515bd8c939ec9cd4c2",
+      "bytes": 1284
+    },
+    {
+      "source": "runs/20261004_math_review_upper_prior_seed2004_seeded_failure_reproduction/chains/fresh_CAMB_upper20_A4095_seed2004.input.yaml",
+      "frozen": "runs/20261005_math_review_CAMB_upper20_seed2004_preserved_prefix_failure_reproduction/terminal_replay_bundle/chains/fresh_CAMB_upper20_A4095_seed2004.input.yaml",
+      "sha256": "206cb1cb5a9104767f9a104fcf7166c27971563fab7ba0aeafd8f1ed2f270231",
+      "bytes": 2060
+    },
+    {
+      "source": "runs/20261004_math_review_upper_prior_seed2004_seeded_failure_reproduction/chains/fresh_CAMB_upper20_A4095_seed2004.progress",
+      "frozen": "runs/20261005_math_review_CAMB_upper20_seed2004_preserved_prefix_failure_reproduction/terminal_replay_bundle/chains/fresh_CAMB_upper20_A4095_seed2004.progress",
+      "sha256": "262b11d51972ad0508cb8537d164d8864d1b656c52edc3b6a9c6963763510716",
+      "bytes": 85
+    },
+    {
+      "source": "runs/20261004_math_review_upper_prior_seed2004_seeded_failure_reproduction/chains/fresh_CAMB_upper20_A4095_seed2004.updated.yaml",
+      "frozen": "runs/20261005_math_review_CAMB_upper20_seed2004_preserved_prefix_failure_reproduction/terminal_replay_bundle/chains/fresh_CAMB_upper20_A4095_seed2004.updated.yaml",
+      "sha256": "7e55cbda8b5cb5f2544e894dd753635534033278bdf00718a6824d79a5c81112",
+      "bytes": 3579
+    },
+    {
+      "source": "runs/20261004_math_review_upper_prior_seed2004_seeded_failure_reproduction/env.txt",
+      "frozen": "runs/20261005_math_review_CAMB_upper20_seed2004_preserved_prefix_failure_reproduction/terminal_replay_bundle/env.txt",
+      "sha256": "d15c4eede15f4650b9b228d873faf766b5c61e2b396f16fd98808af31a7afb9f",
+      "bytes": 437
+    },
+    {
+      "source": "runs/20261004_math_review_upper_prior_seed2004_seeded_failure_reproduction/input.yaml",
+      "frozen": "runs/20261005_math_review_CAMB_upper20_seed2004_preserved_prefix_failure_reproduction/terminal_replay_bundle/input.yaml",
+      "sha256": "e1666b8d138328dd5551ca83ed647b218640813d8210124b2ed00821224a55e1",
+      "bytes": 1962
+    },
+    {
+      "source": "runs/20261004_math_review_upper_prior_seed2004_seeded_failure_reproduction/resolved.yaml",
+      "frozen": "runs/20261005_math_review_CAMB_upper20_seed2004_preserved_prefix_failure_reproduction/terminal_replay_bundle/resolved.yaml",
+      "sha256": "def4e091572d0537134c56f7389b19cf76a39af03c44ba24cb137129dba518be",
+      "bytes": 2153
+    },
+    {
+      "source": "runs/20261004_math_review_upper_prior_seed2004_seeded_failure_reproduction/solver_backend.json",
+      "frozen": "runs/20261005_math_review_CAMB_upper20_seed2004_preserved_prefix_failure_reproduction/terminal_replay_bundle/solver_backend.json",
+      "sha256": "83d363c0bbc79c20d5a38c218709e85cdbf23571cdbb0e58b388b60042bf9053",
+      "bytes": 230
+    },
+    {
+      "source": "runs/20261004_math_review_upper_prior_seed2004_seeded_failure_reproduction/stderr.txt",
+      "frozen": "runs/20261005_math_review_CAMB_upper20_seed2004_preserved_prefix_failure_reproduction/terminal_replay_bundle/stderr.txt",
+      "sha256": "b024cee53215528f97e70479c592c22c1d54bf1dba4382fe4d142db3a32cbe3c",
+      "bytes": 56
+    },
+    {
+      "source": "runs/20261004_math_review_upper_prior_seed2004_seeded_failure_reproduction/stdout.txt",
+      "frozen": "runs/20261005_math_review_CAMB_upper20_seed2004_preserved_prefix_failure_reproduction/terminal_replay_bundle/stdout.txt",
+      "sha256": "e80dec0737dff277bcfa588596d83f2da6c856f4b808944c88259c01c442c492",
+      "bytes": 7429
+    },
+    {
+      "source": "runs/20261004_math_review_upper_prior_seed2004_seeded_failure_reproduction/summary.md",
+      "frozen": "runs/20261005_math_review_CAMB_upper20_seed2004_preserved_prefix_failure_reproduction/terminal_replay_bundle/summary.md",
+      "sha256": "cc770cd7cc5ca4cafe3970d326d969555f0a7d10daf8ed33e464917789bbbb55",
+      "bytes": 472
+    },
+    {
+      "source": "runs/20261004_math_review_upper_prior_native_failure_reproduction_preparation/seed2004/failed_proposal.json",
+      "frozen": "runs/20261005_math_review_CAMB_upper20_seed2004_preserved_prefix_failure_reproduction/recording_bundle/failed_proposal.json",
+      "sha256": "1cddef994d8f0c805590ec4e34b6f2a3fa8469dcf39185e3f7ddadb6f59b3639",
+      "bytes": 285321
+    },
+    {
+      "source": "runs/20261004_math_review_upper_prior_native_failure_reproduction_preparation/seed2004/failed_provider_spectra.npz",
+      "frozen": "runs/20261005_math_review_CAMB_upper20_seed2004_preserved_prefix_failure_reproduction/recording_bundle/failed_provider_spectra.npz",
+      "sha256": "91a0c6389da6e6fc34cc0038d1dc02cf5940c4ed99418195f8fc1fcc5bb04dbc",
+      "bytes": 7361
+    },
+    {
+      "source": "runs/20261004_math_review_upper_prior_native_failure_reproduction_preparation/seed2004/launch_receipt.json",
+      "frozen": "runs/20261005_math_review_CAMB_upper20_seed2004_preserved_prefix_failure_reproduction/recording_bundle/launch_receipt.json",
+      "sha256": "a54e7f552e3a189eb329b3e482e523385fc5c0f654e9026972318df47e479923",
+      "bytes": 803
+    },
+    {
+      "source": "runs/20261004_math_review_upper_prior_native_failure_reproduction_preparation/seed2004/launcher_stderr.txt",
+      "frozen": "runs/20261005_math_review_CAMB_upper20_seed2004_preserved_prefix_failure_reproduction/recording_bundle/launcher_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "source": "runs/20261004_math_review_upper_prior_native_failure_reproduction_preparation/seed2004/launcher_stdout.txt",
+      "frozen": "runs/20261005_math_review_CAMB_upper20_seed2004_preserved_prefix_failure_reproduction/recording_bundle/launcher_stdout.txt",
+      "sha256": "305490471738119f3256f09a066ec16ae74454bb14533efb6474fe155e165235",
+      "bytes": 118
+    }
+  ],
+  "original_saved_chain": "runs/20261004_math_review_upper_prior_seed2004_native_failure/terminal_bundle/chains/fresh_CAMB_upper20_A4095_seed2004.1.txt",
+  "original_saved_chain_sha256": "b340c5b525a1a9193cad93b8f3f23efec7af35c175b711b8235e633a2cbe8b29",
+  "replay_saved_chain": "runs/20261005_math_review_CAMB_upper20_seed2004_preserved_prefix_failure_reproduction/terminal_replay_bundle/chains/fresh_CAMB_upper20_A4095_seed2004.1.txt",
+  "replay_saved_chain_sha256": "5e5f13908b306b6524080e3d62829ef3edd0f86f248cd08166235e8ddfbbd528",
+  "original_saved_rows": 225,
+  "replay_saved_rows": 227,
+  "additional_replay_saved_rows": 2,
+  "all_original_saved_bytes_preserved_as_prefix": true,
+  "all_original_saved_binary64_values_equal": true,
+  "original_unflushed_tail_or_exact_original_failing_proposal_known": false,
+  "entire_internal_trajectory_equality_proved": false,
+  "sampled": {
+    "omegabh2": 0.039722417435190734,
+    "omegach2": 0.02050757593546919,
+    "H0": 55.63518294861832,
+    "logA": 3.4029050190597663,
+    "ns": 0.8333775835517003,
+    "tau": 0.20267279146734776,
+    "mnu": 17.67540797501886
+  },
+  "sampled_point_strictly_inside_declared_prior": true,
+  "captured_spectra": {
+    "tt": {
+      "dimensions": 1,
+      "nan_count": 4099,
+      "inf_count": 0
+    },
+    "ee": {
+      "dimensions": 1,
+      "nan_count": 4099,
+      "inf_count": 0
+    },
+    "bb": {
+      "dimensions": 1,
+      "nan_count": 4099,
+      "inf_count": 0
+    },
+    "te": {
+      "dimensions": 1,
+      "nan_count": 4099,
+      "inf_count": 0
+    },
+    "et": {
+      "dimensions": 1,
+      "nan_count": 4099,
+      "inf_count": 0
+    }
+  },
+  "validation_cause_at_replayed_point": "NaNs, with valid one-dimensional arrays",
+  "posterior_qualified": false,
+  "native_error_counted_as_posterior_rejection": false,
+  "review_type": "self_review_no_independent_agent",
+  "scope": "same seeded diagnostic exception preserving every original saved row; unsaved original trajectory unavailable"
+}

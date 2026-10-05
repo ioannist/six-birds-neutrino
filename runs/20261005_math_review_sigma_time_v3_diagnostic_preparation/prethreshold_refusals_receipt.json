@@ -1,0 +1,67 @@
+{
+  "utc": "2026-10-05T03:28:13.260080+00:00",
+  "records": [
+    {
+      "group": "sigma_time_v3_A4095_cap20",
+      "command": [
+        "/tmp/neutrino-math-review-venv/bin/python",
+        "runs/20261005_math_review_sigma_time_v3_diagnostic_preparation/prepare_snapshot.py",
+        "sigma_time_v3_A4095_cap20",
+        "--outdir",
+        "runs/20261005_math_review_sigma_time_v3_diagnostic_preparation/sigma_time_v3_A4095_cap20_refused_snapshot"
+      ],
+      "actual_exit_code": 3,
+      "minimum_retained_represented_steps": 104,
+      "threshold": 1000,
+      "snapshot_written": false,
+      "scope": "live identity and saved-growth check only"
+    },
+    {
+      "group": "sigma_time_v3_A4095_cap5",
+      "command": [
+        "/tmp/neutrino-math-review-venv/bin/python",
+        "runs/20261005_math_review_sigma_time_v3_diagnostic_preparation/prepare_snapshot.py",
+        "sigma_time_v3_A4095_cap5",
+        "--outdir",
+        "runs/20261005_math_review_sigma_time_v3_diagnostic_preparation/sigma_time_v3_A4095_cap5_refused_snapshot"
+      ],
+      "actual_exit_code": 3,
+      "minimum_retained_represented_steps": 112,
+      "threshold": 1000,
+      "snapshot_written": false,
+      "scope": "live identity and saved-growth check only"
+    },
+    {
+      "group": "sigma_time_v3_B4095_cap20",
+      "command": [
+        "/tmp/neutrino-math-review-venv/bin/python",
+        "runs/20261005_math_review_sigma_time_v3_diagnostic_preparation/prepare_snapshot.py",
+        "sigma_time_v3_B4095_cap20",
+        "--outdir",
+        "runs/20261005_math_review_sigma_time_v3_diagnostic_preparation/sigma_time_v3_B4095_cap20_refused_snapshot"
+      ],
+      "actual_exit_code": 3,
+      "minimum_retained_represented_steps": 103,
+      "threshold": 1000,
+      "snapshot_written": false,
+      "scope": "live identity and saved-growth check only"
+    },
+    {
+      "group": "sigma_time_v3_B4095_cap5",
+      "command": [
+        "/tmp/neutrino-math-review-venv/bin/python",
+        "runs/20261005_math_review_sigma_time_v3_diagnostic_preparation/prepare_snapshot.py",
+        "sigma_time_v3_B4095_cap5",
+        "--outdir",
+        "runs/20261005_math_review_sigma_time_v3_diagnostic_preparation/sigma_time_v3_B4095_cap5_refused_snapshot"
+      ],
+      "actual_exit_code": 3,
+      "minimum_retained_represented_steps": 98,
+      "threshold": 1000,
+      "snapshot_written": false,
+      "scope": "live identity and saved-growth check only"
+    }
+  ],
+  "all_four_output_directories_absent": true,
+  "production_threshold_unchanged": 1000
+}

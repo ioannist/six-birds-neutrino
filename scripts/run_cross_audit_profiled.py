@@ -21,8 +21,11 @@ SRC_DIR = REPO_ROOT / "src"
 if str(SRC_DIR) not in sys.path:
     sys.path.insert(0, str(SRC_DIR))
 
+from sbt_spt_audit.localization import localize_quadratic_difference
+
 from sbt_spt_audit.candl_support import (  # noqa: E402
-    compute_residual_from_base,
+    compute_gaussian_residual_and_covariance,
+    gaussian_native_adjustment,
     evaluate_loglike_from_base,
     get_bin_spec_types,
     get_required_params_and_defaults,
@@ -225,7 +228,7 @@ def _shared_values_for_direction(
         if key in source_theta:
             out[key] = float(source_theta[key])
         else:
-            out[key] = float(test_defaults[key])
+            raise ValueError(f"source fit does not supply shared parameter {key}; cannot substitute a test-lens default.")
     return out
 
 
@@ -237,7 +240,7 @@ def _bound_for_param(name: str) -> tuple[float | None, float | None]:
         return (0.5, 1.5)
     if re.fullmatch(r"beta_[0-9]+", name):
         return (-5.0, 5.0)
-    if any(tok in name for tok in ["Amp", "Poisson", "CIB", "tSZ", "kSZ"]):
+    if "Amp" in name or "Poisson" in name:
         return (0.0, 50.0)
     return (None, None)
 
@@ -347,11 +350,14 @@ def _profile_test_lens(
     shared_values: dict[str, float],
     profile_params: list[str],
     maxiter: int,
+    initial_params: dict[str, float] | None = None,
 ) -> ProfileResult:
     params = dict(test_ctx.defaults)
     for k, v in test_ctx.theta_hat.items():
         if k in params:
             params[k] = float(v)
+    if initial_params is not None:
+        params.update(initial_params)
     for k, v in shared_values.items():
         if k in params:
             params[k] = float(v)
@@ -395,6 +401,11 @@ def _profile_test_lens(
         options={"maxiter": int(maxiter), "ftol": 1e-6, "gtol": 1e-6},
     )
 
+    if not bool(res.success) or not np.isfinite(res.fun):
+        raise ValueError(f"nuisance profiling failed: {res.message}")
+    if float(res.fun) > objective(x0) + 1e-6:
+        raise ValueError("profiling worsened its feasible initial point.")
+
     best_params = dict(params)
     for p, val in zip(profile_params, np.asarray(res.x, dtype=float)):
         best_params[p] = float(val)
@@ -411,64 +422,63 @@ def _profile_test_lens(
     )
 
 
-def _safe_q(cov: np.ndarray, residual: np.ndarray) -> float:
-    try:
-        sol = np.linalg.solve(cov, residual)
-    except np.linalg.LinAlgError:
-        sol = np.linalg.pinv(cov) @ residual
-    return float(residual @ sol)
+def _profile_reference(
+    test_ctx: LensContext,
+    cross: ProfileResult,
+    profile_params: list[str],
+    shared_keys: list[str],
+    maxiter: int,
+) -> ProfileResult:
+    """Optimize a common reference domain from both cross and own-fit starts.
+
+    Unoptimized parameters stay fixed at the cross point in both starts.
+    This is numerical multistart optimization, not global optimality proof.
+    """
+    free = profile_params + shared_keys
+    from_cross = _profile_test_lens(test_ctx, {}, free, maxiter,
+                                    initial_params=cross.params)
+    own_start = dict(cross.params)
+    for key in free:
+        if key in test_ctx.theta_hat:
+            own_start[key] = test_ctx.theta_hat[key]
+    from_own = _profile_test_lens(test_ctx, {}, free, maxiter,
+                                  initial_params=own_start)
+    return max([from_cross, from_own], key=lambda result: result.loglike)
 
 
 def _localize_profiled_direction(
     test_ctx: LensContext,
     params_train_profiled: dict[str, float],
     params_best_profiled: dict[str, float],
-) -> tuple[dict[str, list[float]], list[dict[str, Any]], list[str]]:
+) -> tuple[dict[str, list[float]], list[dict[str, Any]], list[str], dict[str, Any]]:
     like = test_ctx.like_obj
     spec_by_bin = get_bin_spec_types(like)
     eff_ells = np.asarray(getattr(like, "effective_ells"), dtype=float)
     cov = np.asarray(getattr(like, "covariance"), dtype=float)
 
-    r_train = compute_residual_from_base(
+    r_train, cov_r_train = compute_gaussian_residual_and_covariance(
         like_obj=like,
         base_params=test_ctx.base_params,
         overrides=params_train_profiled,
     )
-    r_best = compute_residual_from_base(
+    r_best, cov_r_best = compute_gaussian_residual_and_covariance(
         like_obj=like,
         base_params=test_ctx.base_params,
         overrides=params_best_profiled,
     )
 
-    spectra_present = [s for s in ["TT", "TE", "EE"] if np.any(spec_by_bin == s)]
-    delta_by_spec_ell: dict[str, list[float]] = {}
-    groups: list[dict[str, Any]] = []
-    for spec in spectra_present:
-        spec_mask = spec_by_bin == spec
-        vals: list[float] = []
-        for i in range(len(ELL_BIN_EDGES) - 1):
-            lo = ELL_BIN_EDGES[i]
-            hi = ELL_BIN_EDGES[i + 1]
-            idx = np.where(spec_mask & (eff_ells >= lo) & (eff_ells < hi))[0]
-            if idx.size == 0:
-                vals.append(0.0)
-                continue
-            cov_g = cov[np.ix_(idx, idx)]
-            q_train = _safe_q(cov_g, r_train[idx])
-            q_best = _safe_q(cov_g, r_best[idx])
-            dq = float(q_train - q_best)
-            vals.append(dq)
-            groups.append(
-                {
-                    "spec": spec,
-                    "ell": [int(lo), int(hi)],
-                    "deltaQ": dq,
-                    "n_bins": int(idx.size),
-                }
-            )
-        delta_by_spec_ell[spec] = vals
-    groups.sort(key=lambda x: x["deltaQ"], reverse=True)
-    return delta_by_spec_ell, groups[:10], spectra_present
+    native_train = gaussian_native_adjustment(like, test_ctx.base_params, params_train_profiled, r_train, cov_r_train)
+    native_best = gaussian_native_adjustment(like, test_ctx.base_params, params_best_profiled, r_best, cov_r_best)
+    result = localize_quadratic_difference(
+        cov_r_train, r_train, r_best, spec_by_bin, eff_ells, ELL_BIN_EDGES,
+        best_cov=cov_r_best,
+    )
+    ledger = result[3]
+    ledger["delta_prior_penalty"] = native_train["prior_penalty"] - native_best["prior_penalty"]
+    ledger["delta_covariance_normalization"] = native_train["covariance_normalization"] - native_best["covariance_normalization"]
+    ledger["native_bridge_error_at_train"] = native_train["native_reconstruction_error"]
+    ledger["native_bridge_error_at_reference"] = native_best["native_reconstruction_error"]
+    return result
 
 
 def _plot_profiled_delta_bars(
@@ -576,6 +586,10 @@ def main() -> int:
     explicit_shared = _parse_explicit_shared(args.shared_params)
     if explicit_shared is not None:
         shared_keys = explicit_shared
+    if not shared_keys or not set(shared_keys).issubset(set(ctx_a.required_params) & set(ctx_b.required_params)):
+        return _fail("shared parameters must be non-empty and present in both lenses; fixed test spectra do not implement cosmological parameter transfer.", EXIT_INPUT_ERROR)
+    if set(shared_keys) & set(COSMO_SHARED_CANDIDATES):
+        return _fail("cosmological shared parameters require recomputed theory spectra; this runner only transfers scalar nuisance parameters.", EXIT_INPUT_ERROR)
 
     # B|A: train=A, test=B
     try:
@@ -589,8 +603,11 @@ def main() -> int:
             warnings,
         )
         logl_b_at_a, params_unprofiled_b_at_a = _evaluate_unprofiled_loglike(ctx_b, ctx_a.theta_hat)
-        prof_b_at_a = _profile_test_lens(ctx_b, shared_from_a_for_b, profile_params_b, args.maxiter)
-        prof_b_best = _profile_test_lens(ctx_b, shared_from_b_for_b, profile_params_b, args.maxiter)
+        prof_b_at_a = _profile_test_lens(ctx_b, shared_from_a_for_b, profile_params_b, args.maxiter,
+                                       initial_params=params_unprofiled_b_at_a)
+        # Release the shared parameters in the test-lens reference optimization.
+        # The cross-profile point is a feasible start, preserving nested domains.
+        prof_b_best = _profile_reference(ctx_b, prof_b_at_a, profile_params_b, shared_keys_b, args.maxiter)
         delta_un_ba = _clamp_zero(float(-2.0 * (logl_b_at_a - prof_b_best.loglike)))
         delta_pr_ba = _clamp_zero(float(-2.0 * (prof_b_at_a.loglike - prof_b_best.loglike)))
         assert delta_un_ba is not None and delta_pr_ba is not None
@@ -599,11 +616,12 @@ def main() -> int:
                 f"B|A profiled delta exceeded unprofiled ({delta_pr_ba} > {delta_un_ba})."
             )
         red_ba = None if delta_un_ba <= 0 else _clamp_zero(100.0 * (delta_un_ba - delta_pr_ba) / delta_un_ba)
-        b_delta_grid, b_top_groups, b_specs = _localize_profiled_direction(
+        b_delta_grid, b_top_groups, b_specs, b_accounting = _localize_profiled_direction(
             ctx_b,
             params_train_profiled=prof_b_at_a.params,
             params_best_profiled=prof_b_best.params,
         )
+        b_accounting["native_likelihood_adjustment"] = delta_pr_ba - b_accounting["deltaQ_full"]
     except Exception as exc:  # noqa: BLE001
         direction_errors["B_given_A"] = f"{type(exc).__name__}: {exc}"
         logl_b_at_a = None
@@ -617,6 +635,7 @@ def main() -> int:
         b_delta_grid = {}
         b_top_groups = []
         b_specs = []
+        b_accounting = {}
         shared_keys_b = []
 
     # A|B: train=B, test=A
@@ -631,8 +650,9 @@ def main() -> int:
             warnings,
         )
         logl_a_at_b, params_unprofiled_a_at_b = _evaluate_unprofiled_loglike(ctx_a, ctx_b.theta_hat)
-        prof_a_at_b = _profile_test_lens(ctx_a, shared_from_b_for_a, profile_params_a, args.maxiter)
-        prof_a_best = _profile_test_lens(ctx_a, shared_from_a_for_a, profile_params_a, args.maxiter)
+        prof_a_at_b = _profile_test_lens(ctx_a, shared_from_b_for_a, profile_params_a, args.maxiter,
+                                       initial_params=params_unprofiled_a_at_b)
+        prof_a_best = _profile_reference(ctx_a, prof_a_at_b, profile_params_a, shared_keys_a, args.maxiter)
         delta_un_ab = _clamp_zero(float(-2.0 * (logl_a_at_b - prof_a_best.loglike)))
         delta_pr_ab = _clamp_zero(float(-2.0 * (prof_a_at_b.loglike - prof_a_best.loglike)))
         assert delta_un_ab is not None and delta_pr_ab is not None
@@ -641,11 +661,12 @@ def main() -> int:
                 f"A|B profiled delta exceeded unprofiled ({delta_pr_ab} > {delta_un_ab})."
             )
         red_ab = None if delta_un_ab <= 0 else _clamp_zero(100.0 * (delta_un_ab - delta_pr_ab) / delta_un_ab)
-        a_delta_grid, a_top_groups, a_specs = _localize_profiled_direction(
+        a_delta_grid, a_top_groups, a_specs, a_accounting = _localize_profiled_direction(
             ctx_a,
             params_train_profiled=prof_a_at_b.params,
             params_best_profiled=prof_a_best.params,
         )
+        a_accounting["native_likelihood_adjustment"] = delta_pr_ab - a_accounting["deltaQ_full"]
     except Exception as exc:  # noqa: BLE001
         direction_errors["A_given_B"] = f"{type(exc).__name__}: {exc}"
         logl_a_at_b = None
@@ -659,6 +680,7 @@ def main() -> int:
         a_delta_grid = {}
         a_top_groups = []
         a_specs = []
+        a_accounting = {}
         shared_keys_a = []
 
     spectra_present = [s for s in ["TT", "TE", "EE"] if s in set(b_specs) | set(a_specs)]
@@ -690,6 +712,8 @@ def main() -> int:
     metrics: dict[str, Any] = {
         "shared_param_keys": shared_keys,
         "shared_param_keys_explicit": explicit_shared,
+        "audit_scope": "fixed_packaged_test_spectra_scalar_nuisance_transfer",
+        "reference_scope": "numerical_two_start_optimization_shared_plus_capped_nuisance",
         "profile_set_requested": args.profile_set,
         "profile_set_used": {"B_given_A": used_set_b, "A_given_B": used_set_a},
         "B_given_A": {
@@ -706,6 +730,8 @@ def main() -> int:
             "reduction_pct": red_ba,
             "profiling_train_diag": None if prof_b_at_a is None else _diag_payload(prof_b_at_a),
             "profiling_best_diag": None if prof_b_best is None else _diag_payload(prof_b_best),
+            "profiled_params_at_train": None if prof_b_at_a is None else prof_b_at_a.params,
+            "profiled_params_at_reference": None if prof_b_best is None else prof_b_best.params,
         },
         "A_given_B": {
             "shared_keys_test_lens": shared_keys_a,
@@ -721,6 +747,8 @@ def main() -> int:
             "reduction_pct": red_ab,
             "profiling_train_diag": None if prof_a_at_b is None else _diag_payload(prof_a_at_b),
             "profiling_best_diag": None if prof_a_best is None else _diag_payload(prof_a_best),
+            "profiled_params_at_train": None if prof_a_at_b is None else prof_a_at_b.params,
+            "profiled_params_at_reference": None if prof_a_best is None else prof_a_best.params,
         },
         "localization": {
             "ell_bin_edges": ELL_BIN_EDGES,
@@ -728,10 +756,12 @@ def main() -> int:
             "B_given_A": {
                 "deltaQ_by_spec_ell": b_delta_grid,
                 "top_groups": b_top_groups,
+                "accounting": b_accounting,
             },
             "A_given_B": {
                 "deltaQ_by_spec_ell": a_delta_grid,
                 "top_groups": a_top_groups,
+                "accounting": a_accounting,
             },
         },
         "warnings": warnings,
@@ -768,7 +798,7 @@ def main() -> int:
     ]
     (outdir / "summary.md").write_text("\n".join(summary_lines) + "\n", encoding="utf-8")
 
-    catastrophic = len(direction_errors) == 2
+    catastrophic = bool(direction_errors)
     print(f"Run bundle: {outdir}")
     print(f"B|A: unprofiled={delta_un_ba}, profiled={delta_pr_ba}, reduction_pct={red_ba}")
     print(f"A|B: unprofiled={delta_un_ab}, profiled={delta_pr_ab}, reduction_pct={red_ab}")

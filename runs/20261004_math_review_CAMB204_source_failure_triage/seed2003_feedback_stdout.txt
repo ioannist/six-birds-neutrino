@@ -1,0 +1,149 @@
+[camb] `camb` module loaded successfully from /tmp/neutrino-math-review-venv/lib/python3.12/site-packages/camb
+[sbt_spt_audit.likelihoods.candl_cobaya.candlcobayalikelihood] *ERROR* Error at evaluation. See error information below.
+2003 isolated captured point: exception
+{
+  "unlensed_scalar": {
+    "shape": [
+      4096,
+      4
+    ],
+    "all_finite": true,
+    "nan_count": 0,
+    "inf_count": 0,
+    "finite_min": -0.015120634045969498,
+    "finite_max": 1022.2405281910505
+  },
+  "lensed_scalar": {
+    "shape": [
+      4096,
+      4
+    ],
+    "all_finite": false,
+    "nan_count": 16376,
+    "inf_count": 0,
+    "finite_min": 0.0,
+    "finite_max": 0.0
+  },
+  "lens_potential": {
+    "shape": [
+      4096,
+      3
+    ],
+    "all_finite": false,
+    "nan_count": 12282,
+    "inf_count": 0,
+    "finite_min": 0.0,
+    "finite_max": 0.0
+  }
+}
+Reion redshift       =   7.966
+Integrated opt depth =  0.0734
+ kmax changed to    6.5490689247229614     
+Om_b h^2             =  0.029576
+Om_c h^2             =  0.002863
+Om_nu h^2            =  0.122921
+Om_darkenergy        =  0.474722
+Om_K                 =  0.000000
+Om_m (inc Om_u)      =  0.525194
+100 theta (CosmoMC)  =  1.049523
+N_eff (total)        =  3.046000
+ 3 nu, g= 3.0440 m_nu*c^2/k_B/T_nu0=  22658.47 (m_nu=  3.812 eV)
+Reion opt depth      =  0.0734
+Age of universe/GYr  =  14.714
+zstar                =  1082.44
+r_s(zstar)/Mpc       =  146.63
+100*theta            =  1.049522
+DA(zstar)/Gpc        =  13.97141
+zdrag                =  1074.42
+r_s(zdrag)/Mpc       =  147.31
+k_D(zstar) Mpc       =  0.1491
+100*theta_D          =  0.150790
+z_EQ (if v_nu=1)     =   774.36
+k_EQ Mpc (if v_nu=1) =  0.003891
+100*theta_EQ         =  2.659323
+100*theta_rs_EQ      =  1.279271
+tau_recomb/Mpc       =  293.07  tau_now/Mpc =  14264.6
+
+ HMcode: Running HMcode
+
+ HM_cosmology: Om_m:  0.52519432413432865     
+ HM_cosmology: Om_c:   9.6785757160302403E-003
+ HM_cosmology: Om_b:   9.9980675356555901E-002
+ HM_cosmology: Om_nu:  0.41553507306174253     
+ HM_cosmology: Om_v:  0.47472203884168068     
+ HM_cosmology: w_0:  -1.0000000000000000     
+ HM_cosmology: w_a:   0.0000000000000000     
+ HM_cosmology: f_nu:  0.79120252060351925     
+ HM_cosmology: n_s:  0.91410406023398172     
+ HM_cosmology: h:  0.54388767230295620     
+ HM_cosmology: T_CMB [K]:   2.7254999999999998     
+ HM_cosmology: N_nu (massive):   3.0000000000000000     
+
+ GROWTH: Solving growth equation
+ GROWTH: ODE done
+ GROWTH: Unnormalised g(a=1):  0.88150897615024892     
+ GROWTH: Accumulated G(a=1):  0.96622257359359132     
+ GROWTH: Done
+
+ LINEAR POWER: Filling linear power HM_tables
+ LINEAR POWER: k_min:   1.0000000000000002E-003
+ LINEAR POWER: k_max:   100.00000000000004     
+ LINEAR POWER: nk:         512
+ LINEAR POWER: z of input:   10.000000000000000     
+ LINEAR POWER: Delta2_min:   1.0709573234167186E-009
+ LINEAR POWER: Delta2_max:   2.0234535267181326E-008
+ LINEAR POWER: sigma_8:  0.13498128280345451     
+ LINEAR POWER: Done
+
+ SIGTAB: Filling sigma interpolation table
+ SIGTAB: R_min:   9.9999997473787516E-005
+ SIGTAB: R_max:   1000.0000000000000     
+ SIGTAB: Values:          64
+ SIGTAB: sigma_min:   1.1219513756160076E-003
+ SIGTAB: sigma_max:  0.14641014821371831     
+ SIGTAB: Done
+
+ INIT_WIGGLE: Starting
+ INIT_WIGGLE: kmin [h/Mpc]:   5.0000000000000018E-003
+ INIT_WIGGLE: kmax [h/Mpc]:   5.0000000000000018     
+ INIT_WIGGLE: nk:         512
+ INIT_WIGGLE: Splitting into wiggle and broad-band
+ INIT_WIGGLE: Isolating wiggle
+ INIT_WIGGLE: Done
+
+ HALOMOD: Filling look-up HM_tables
+ HALOMOD: HM_tables being filled at redshift:   10.000000000000000     
+ HALOMOD: sigv [Mpc/h]:  0.29251269601363833     
+ HALOMOD: sigv100 [Mpc/h]:  0.18618178703001348     
+ HALOMOD: sig8(z):   1.3918646038416355E-002
+ HALOMOD: cold sig8(z):   1.4693059314829933E-002
+ HALOMOD: M_min [log10(Msun/h)]:   0.0000000000000000     
+ HALOMOD: M_max [log10(Msun/h)]:   17.999999993184506     
+ HALOMOD: m, r, nu, sig, sigf HM_tables filled
+ HALOMOD: rv HM_tables filled
+ HALOMOD: nu min:   108.14174973682381     
+ HALOMOD: nu max:   394.61240960700167     
+ HALOMOD: sig min:   4.1354979681853098E-003
+ HALOMOD: sig max:   1.5090553113131042E-002
+ HALOMOD: R_v min [Mpc/h]:   1.7913380532099459E-005
+ HALOMOD: R_v max [Mpc/h]:   17.913387813947754     
+ HALOMOD: r_nl [Mpc/h]:   1.1788069183020226E-004
+ HALOMOD: k_nl [h/Mpc]:   8483.1534704633414     
+ HALOMOD: n_eff:  -2.9952037930597024     
+ HALOMOD: c HM_tables filled
+ HALOMOD: c min [Msun/h]:   5.1960000991821289     
+ HALOMOD: c max [Msun/h]:   5.1960000991821289     
+ HALOMOD: Done
+
+ WRITE_PARAMETERS: at this redshift
+ ==================================
+        z:  10.00000
+       Dv: 284.96753
+       dc:   1.63192
+      eta:   0.59628
+       k*:   4.03922
+        A:   5.19600
+    fdamp:   0.00510
+    alpha:   0.50000
+ ==================================
+

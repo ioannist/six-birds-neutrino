@@ -1,0 +1,13 @@
+{
+  "utc": "2026-10-04T07:35:25.556956+00:00",
+  "reviewer": "distinct_self_review_no_independent_agent",
+  "judgment": "grid factor dominates the selected B mass-response discrepancy; dynamics factor and interaction are smaller but nonzero",
+  "scope": "two fixed B coordinates, numerical 2x2 factor comparison, six native likelihood components; no global parameter-space statement",
+  "factor_identity": "grid two controls and dynamics four controls independently checked against medium/fine source configurations; model/prior/nuisance definitions fixed",
+  "anchor_provenance": "medium and fine anchors are reused completed native outputs with hashes, not fresh evaluations",
+  "interaction": "explicit four-cell interaction retained; factor effects are not assumed additive",
+  "spectra": "all newly requested spectra and coverage verified finite; TT/TE/EE/BB4095 and PP2500",
+  "next_obligation": "refine spectrum grid with medium dynamics held fixed; convergence rate and uniform error bounds remain unestablished",
+  "paper_modified": false,
+  "accuracy_or_convergence_certified": false
+}

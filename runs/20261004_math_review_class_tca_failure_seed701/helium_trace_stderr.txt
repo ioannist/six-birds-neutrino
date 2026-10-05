@@ -1,0 +1,16 @@
+NONFINITE_HELIUM_RATE z=0.3207440245121288 x_He=1.2203574475113401e-05 fHe=0.081943204945369844 xHeII=1.0000000042803016e-06 limit=9.9999999999999995e-07 H=2.6206717253601709e-18 Tmat=0.73520264776347277 Trad=3.5996878388078066 rate=inf
+NONFINITE_JACOBIAN t=-0.3207440245121288 neq=3 i=2 j=2 y_j=1.2203574293265973e-05 increment=1.8184742821530497e-13 f_base=-0 f_perturbed=-inf difference=-inf derivative=-inf
+NONFINITE_LU_INPUT neq=3 i=2 j=2 hinvGak=0.1478224980948841 dfdy=-inf LU=inf
+FIRST_INVALID_OPERATION signal=8 code=7 address=0x6198635fbb90
+/mnt/8tb/six-birds-ml/tmp/neutrino_class_tca_diagnostic_20261004/trace_invalid.so(+0x127a)[0x73f7ce28b27a]
+/lib/x86_64-linux-gnu/libc.so.6(+0x45330)[0x73f7cdc45330]
+/mnt/8tb/six-birds-ml/tmp/neutrino_class_tca_diagnostic_20261004/class_lu_diagnostic_helium(+0x20b90)[0x6198635fbb90]
+/mnt/8tb/six-birds-ml/tmp/neutrino_class_tca_diagnostic_20261004/class_lu_diagnostic_helium(+0x20fbb)[0x6198635fbfbb]
+/mnt/8tb/six-birds-ml/tmp/neutrino_class_tca_diagnostic_20261004/class_lu_diagnostic_helium(+0x2579c)[0x61986360079c]
+/mnt/8tb/six-birds-ml/tmp/neutrino_class_tca_diagnostic_20261004/class_lu_diagnostic_helium(+0x80736)[0x61986365b736]
+/mnt/8tb/six-birds-ml/tmp/neutrino_class_tca_diagnostic_20261004/class_lu_diagnostic_helium(+0x88341)[0x619863663341]
+/mnt/8tb/six-birds-ml/tmp/neutrino_class_tca_diagnostic_20261004/class_lu_diagnostic_helium(+0x88915)[0x619863663915]
+/mnt/8tb/six-birds-ml/tmp/neutrino_class_tca_diagnostic_20261004/class_lu_diagnostic_helium(+0xac0b)[0x6198635e5c0b]
+/lib/x86_64-linux-gnu/libc.so.6(+0x2a1ca)[0x73f7cdc2a1ca]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x8b)[0x73f7cdc2a28b]
+/mnt/8tb/six-birds-ml/tmp/neutrino_class_tca_diagnostic_20261004/class_lu_diagnostic_helium(+0xb095)[0x6198635e6095]

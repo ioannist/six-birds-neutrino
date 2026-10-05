@@ -1,0 +1,73 @@
+{
+  "scope": "new_posterior_chains_not_certified_converged",
+  "shared_backend_lmax": 4095,
+  "runs": [
+    {
+      "lens": "A",
+      "seed": 301,
+      "config": "/home/repos/six-birds-neutrino/runs/20261003_math_review_spt_desi_chain_configs/A_seed301.yaml"
+    },
+    {
+      "lens": "A",
+      "seed": 302,
+      "config": "/home/repos/six-birds-neutrino/runs/20261003_math_review_spt_desi_chain_configs/A_seed302.yaml"
+    },
+    {
+      "lens": "A",
+      "seed": 303,
+      "config": "/home/repos/six-birds-neutrino/runs/20261003_math_review_spt_desi_chain_configs/A_seed303.yaml"
+    },
+    {
+      "lens": "A",
+      "seed": 304,
+      "config": "/home/repos/six-birds-neutrino/runs/20261003_math_review_spt_desi_chain_configs/A_seed304.yaml"
+    },
+    {
+      "lens": "B",
+      "seed": 305,
+      "config": "/home/repos/six-birds-neutrino/runs/20261003_math_review_spt_desi_chain_configs/B_seed305.yaml"
+    },
+    {
+      "lens": "B",
+      "seed": 306,
+      "config": "/home/repos/six-birds-neutrino/runs/20261003_math_review_spt_desi_chain_configs/B_seed306.yaml"
+    },
+    {
+      "lens": "B",
+      "seed": 307,
+      "config": "/home/repos/six-birds-neutrino/runs/20261003_math_review_spt_desi_chain_configs/B_seed307.yaml"
+    },
+    {
+      "lens": "B",
+      "seed": 308,
+      "config": "/home/repos/six-birds-neutrino/runs/20261003_math_review_spt_desi_chain_configs/B_seed308.yaml"
+    }
+  ],
+  "starting_fits": [
+    "/home/repos/six-birds-neutrino/runs/20261003_math_review_cosmological_spt_desi/lensA_fit_0.json",
+    "/home/repos/six-birds-neutrino/runs/20261003_math_review_cosmological_spt_desi/lensB_fit_0_progress.json"
+  ],
+  "fit_scope": "numerical_candidate_used_only_to_initialize_sampler",
+  "sampler_weights": "integer_holding_times_no_oversampling_thinning",
+  "starting_points_used": {
+    "A": {
+      "omegabh2": 0.02267181103868432,
+      "omegach2": 0.11701987403028599,
+      "H0": 68.7645627062782,
+      "logA": 3.005944464174175,
+      "ns": 1.0292346445390579,
+      "tau": 0.05437119496798635,
+      "mnu": 0.005918390346731512
+    },
+    "B": {
+      "omegabh2": 0.0222738908495002,
+      "omegach2": 0.11769279350528805,
+      "H0": 68.63692415436259,
+      "logA": 3.0516353081594625,
+      "ns": 0.9597292852673998,
+      "tau": 0.05514271068733354,
+      "mnu": 0.0019692579555459777
+    }
+  },
+  "independence_note": "Distinct seeds across all prepared replicas; only A301,A302,B305,B306 launched initially."
+}

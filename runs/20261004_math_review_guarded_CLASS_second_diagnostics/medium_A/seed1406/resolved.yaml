@@ -1,0 +1,143 @@
+run_name: math_guarded_medium_A_seed1406
+likelihood:
+  sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood:
+    dataset_expr: candl_data.SPT3G_2018_TTTEEE_multifreq
+  sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian:
+    subset: all
+    data_dir: data/desi_dr2_bao/desi_bao_dr2
+  planck_2018_lowl.TT: {}
+  planck_2018_lowl.EE_sroll2: {}
+  planck_2018_highl_plik.TT_lite_native:
+    path: external/cobaya_packages/data/planck_2018_pliklite_native
+    dataset_params:
+      use_cl: tt
+      bins_for_L_range:
+      - 30
+      - 756
+  planckpr4lensing.PlanckPR4Lensing:
+    python_path: external/cobaya_packages/code/planck_PR4_lensing
+theory:
+  classy:
+    input_params:
+    - omegabh2
+    - omegach2
+    - H0
+    - As
+    - ns
+    - tau
+    - m_ncdm
+    extra_args:
+      N_ncdm: 3
+      N_ur: 0.00641
+      tol_ncdm_bg: 1.0e-08
+      tol_perturbations_integration: 1.0e-06
+      perturbations_sampling_stepsize: 0.01
+      tol_ncdm_synchronous: 1.0e-06
+      tol_ncdm_newtonian: 1.0e-06
+      l_logstep: 1.026
+      l_linstep: 25
+      l_max_scalars: 4095
+params:
+  omegabh2:
+    prior:
+      min: 0.005
+      max: 0.04
+    ref: 0.022675834352729723
+    proposal: 0.0002
+  omegach2:
+    prior:
+      min: 0.001
+      max: 0.99
+    ref: 0.11684366483399818
+    proposal: 0.002
+  H0:
+    prior:
+      min: 40
+      max: 100
+    ref: 68.80854776436395
+    proposal: 0.6
+  logA:
+    prior:
+      min: 1.5
+      max: 4.0
+    ref: 3.02822160013458
+    proposal: 0.02
+    drop: true
+  As:
+    value: 'lambda logA: 1e-10*np.exp(logA)'
+  ns:
+    prior:
+      min: 0.8
+      max: 1.2
+    ref: 0.9864154934745688
+    proposal: 0.01
+  tau:
+    prior:
+      min: 0.01
+      max: 0.8
+    ref: 0.05179751885844441
+    proposal: 0.01
+  mnu_sample:
+    prior:
+      min: 0.0
+      max: 5.0
+    ref: 0.037877858404402664
+    proposal: 0.03
+    drop: true
+  mnu:
+    derived: 'lambda mnu_sample: mnu_sample'
+  m_ncdm:
+    value: 'lambda mnu_sample: ''{0:.17g},{0:.17g},{0:.17g}''.format(mnu_sample/3.0)'
+    derived: false
+  A_planck:
+    prior:
+      min: 0.8
+      max: 1.2
+    ref: 0.9972917227575724
+    proposal: 0.01
+  TT_tSZ_Amp:
+    prior:
+      min: 0.0
+      max: 10.0
+    ref: 2.2637945432525757
+    proposal: 0.2
+  TT_kSZ_Amp:
+    prior:
+      min: 0.0
+      max: 10.0
+    ref: 9.939614874974312
+    proposal: 0.2
+sampler:
+  sbt_spt_audit.samplers.FullPrecisionMCMC:
+    seed: 1406
+    max_samples: 20000
+    learn_proposal: true
+    Rminus1_stop: 0.01
+    Rminus1_cl_stop: 0.05
+    Rminus1_cl_level: 0.95
+    oversample_power: 0
+    oversample_thin: false
+    covmat: /home/repos/six-birds-neutrino/runs/20261004_math_review_class_backend_transition/archives/seed811/run/chains/math_accuracy_learned_proposal_A_seed811.covmat
+    learn_every: 10d
+    temperature: 1
+notes:
+  mnu_prior_choice: N0 found explicit lower bound at 0 eV, but no explicit upper bound
+    in 2601.16277; replication choice uses flat [0, 5] eV.
+  mnu_class_mapping: CLASS requires m_ncdm input. We sample mnu_sample, output derived
+    mnu in chains, and map m_ncdm as 3 degenerate masses mnu_sample/3.
+  planck_subset: PR3 low-l TT/EE + PR3 high-l TT (Plik-lite native) with bins_for_L_range
+    [30,756]; no high-l TE/EE.
+  numerical_control: Same physical model, priors, and likelihoods as default-precision
+    restoration; seven intermediate CLASS precision settings. Do not pool with default-target
+    chains.
+  warm_start_fit: /home/repos/six-birds-neutrino/runs/20261003_math_review_cosmological_cmb_desi_accuracy/lensA_fit_0.json
+  proposal_scope: Archived covariance learned by an unconverged default-target chain;
+    proposal initialization only, not a posterior covariance certificate.
+  output_precision: 17 significant figures preserve binary64 sampled coordinates.
+  sampler_scope: Independent seed and integer holding times; termination is not a
+    convergence certificate.
+  solver_backend: Requires pinned private CLASS finite-Jacobian build; fresh seed
+    and files. Do not pool unmodified-backend histories. Initial point and covariance
+    are proposal inputs, not posterior certificates.
+packages_path: /home/repos/six-birds-neutrino/external/cobaya_packages
+output: /home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_CLASS_second_diagnostics/medium_A/seed1406/chains/math_guarded_medium_A_seed1406

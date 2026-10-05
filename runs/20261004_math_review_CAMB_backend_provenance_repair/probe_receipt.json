@@ -1,0 +1,884 @@
+{
+  "utc": "2026-10-04T12:48:21.376046+00:00",
+  "negative_and_positive_controls": [
+    {
+      "case": "different_native_builds",
+      "scope": "provenance_only_fixtures_not_inference_chains",
+      "before_guard_accepted_incompatible_evidence": true,
+      "before": [
+        [],
+        "configuration_only_native_build_identity_not_recorded"
+      ],
+      "after": {
+        "rejected": true,
+        "error": "Bundles do not use the same recorded native backend; different builds or recorded/unknown identities cannot be pooled."
+      }
+    },
+    {
+      "case": "different_recorded_versions",
+      "scope": "provenance_only_fixtures_not_inference_chains",
+      "before_guard_accepted_incompatible_evidence": true,
+      "before": [
+        [],
+        "configuration_only_native_build_identity_not_recorded"
+      ],
+      "after": {
+        "rejected": true,
+        "error": "Bundles do not use the same recorded native backend version; different or recorded/unknown versions cannot be pooled."
+      }
+    },
+    {
+      "case": "matching_recorded_targets",
+      "scope": "provenance_only_fixtures_not_inference_chains",
+      "before_guard_accepted_incompatible_evidence": false,
+      "before": [
+        [],
+        "configuration_only_native_build_identity_not_recorded"
+      ],
+      "after": [
+        [
+          {
+            "run": "/home/repos/six-birds-neutrino/runs/20261004_math_review_CAMB_backend_provenance_repair/fixtures/matching_recorded_targets/0",
+            "module_sha256": "6a54f98bcc65601fd1ad5e760a99a0072cdc45fe49197ba5c3a1282889c2ee0d",
+            "witnesses": [
+              {
+                "path": "/home/repos/six-birds-neutrino/runs/20261004_math_review_CAMB_backend_provenance_repair/fixtures/matching_recorded_targets/0/solver_backend.json",
+                "sha256": "16d4181cadc8425ddcdbff4d2eb9b37966d50d30525d6e46fddf5afc59fc6621",
+                "module_sha256": "6a54f98bcc65601fd1ad5e760a99a0072cdc45fe49197ba5c3a1282889c2ee0d"
+              }
+            ],
+            "solver_version": "1.6.5",
+            "version_witnesses": [
+              {
+                "path": "/home/repos/six-birds-neutrino/runs/20261004_math_review_CAMB_backend_provenance_repair/fixtures/matching_recorded_targets/0/solver_backend.json",
+                "version": "1.6.5",
+                "sha256": "16d4181cadc8425ddcdbff4d2eb9b37966d50d30525d6e46fddf5afc59fc6621"
+              },
+              {
+                "path": "/home/repos/six-birds-neutrino/runs/20261004_math_review_CAMB_backend_provenance_repair/fixtures/matching_recorded_targets/0/sample.updated.yaml",
+                "version": "1.6.5",
+                "sha256": "665ef1f447feee6b4f5569e348e8fb74f8ac2bc7f31d08a1642d962e0a4991db"
+              }
+            ]
+          },
+          {
+            "run": "/home/repos/six-birds-neutrino/runs/20261004_math_review_CAMB_backend_provenance_repair/fixtures/matching_recorded_targets/1",
+            "module_sha256": "6a54f98bcc65601fd1ad5e760a99a0072cdc45fe49197ba5c3a1282889c2ee0d",
+            "witnesses": [
+              {
+                "path": "/home/repos/six-birds-neutrino/runs/20261004_math_review_CAMB_backend_provenance_repair/fixtures/matching_recorded_targets/1/solver_backend.json",
+                "sha256": "16d4181cadc8425ddcdbff4d2eb9b37966d50d30525d6e46fddf5afc59fc6621",
+                "module_sha256": "6a54f98bcc65601fd1ad5e760a99a0072cdc45fe49197ba5c3a1282889c2ee0d"
+              }
+            ],
+            "solver_version": "1.6.5",
+            "version_witnesses": [
+              {
+                "path": "/home/repos/six-birds-neutrino/runs/20261004_math_review_CAMB_backend_provenance_repair/fixtures/matching_recorded_targets/1/solver_backend.json",
+                "version": "1.6.5",
+                "sha256": "16d4181cadc8425ddcdbff4d2eb9b37966d50d30525d6e46fddf5afc59fc6621"
+              },
+              {
+                "path": "/home/repos/six-birds-neutrino/runs/20261004_math_review_CAMB_backend_provenance_repair/fixtures/matching_recorded_targets/1/sample.updated.yaml",
+                "version": "1.6.5",
+                "sha256": "665ef1f447feee6b4f5569e348e8fb74f8ac2bc7f31d08a1642d962e0a4991db"
+              }
+            ]
+          }
+        ],
+        "recorded_native_module_hash_agreement_not_uniform_solver_accuracy"
+      ]
+    }
+  ],
+  "valid_cohort_impact": {
+    "SPT_A": {
+      "runs": [
+        "runs/20261004_math_review_spt_chain_snapshots_fourteenth_A/chain_A_seed301",
+        "runs/20261004_math_review_spt_chain_snapshots_fourteenth_A/chain_A_seed302",
+        "runs/20261004_math_review_spt_chain_snapshots_fourteenth_A/chain_A_seed303",
+        "runs/20261004_math_review_spt_chain_snapshots_fourteenth_A/chain_A_seed304",
+        "runs/20261004_math_review_spt_chain_snapshots_fourteenth_A/chain_A_seed401",
+        "runs/20261004_math_review_spt_chain_snapshots_fourteenth_A/chain_A_seed402"
+      ],
+      "accepted": true,
+      "guard_result": [
+        [
+          {
+            "run": "/home/repos/six-birds-neutrino/runs/20261004_math_review_spt_chain_snapshots_fourteenth_A/chain_A_seed301",
+            "module_sha256": null,
+            "witnesses": [],
+            "solver_version": null,
+            "version_witnesses": []
+          },
+          {
+            "run": "/home/repos/six-birds-neutrino/runs/20261004_math_review_spt_chain_snapshots_fourteenth_A/chain_A_seed302",
+            "module_sha256": null,
+            "witnesses": [],
+            "solver_version": null,
+            "version_witnesses": []
+          },
+          {
+            "run": "/home/repos/six-birds-neutrino/runs/20261004_math_review_spt_chain_snapshots_fourteenth_A/chain_A_seed303",
+            "module_sha256": null,
+            "witnesses": [],
+            "solver_version": null,
+            "version_witnesses": []
+          },
+          {
+            "run": "/home/repos/six-birds-neutrino/runs/20261004_math_review_spt_chain_snapshots_fourteenth_A/chain_A_seed304",
+            "module_sha256": null,
+            "witnesses": [],
+            "solver_version": null,
+            "version_witnesses": []
+          },
+          {
+            "run": "/home/repos/six-birds-neutrino/runs/20261004_math_review_spt_chain_snapshots_fourteenth_A/chain_A_seed401",
+            "module_sha256": null,
+            "witnesses": [],
+            "solver_version": null,
+            "version_witnesses": []
+          },
+          {
+            "run": "/home/repos/six-birds-neutrino/runs/20261004_math_review_spt_chain_snapshots_fourteenth_A/chain_A_seed402",
+            "module_sha256": null,
+            "witnesses": [],
+            "solver_version": null,
+            "version_witnesses": []
+          }
+        ],
+        "unrecorded_native_builds_target_identity_assumed"
+      ],
+      "resolved_sources": [
+        {
+          "path": "runs/20261004_math_review_spt_chain_snapshots_fourteenth_A/chain_A_seed301/resolved.yaml",
+          "sha256": "3e0274d11637efaeff80efa2388450d6f582be849a6001c09c0657420940c65e"
+        },
+        {
+          "path": "runs/20261004_math_review_spt_chain_snapshots_fourteenth_A/chain_A_seed302/resolved.yaml",
+          "sha256": "cfd4f6fbc627d42305a5d220e10b86217e2b68c92edcf0ff6d5a8915fb2559cd"
+        },
+        {
+          "path": "runs/20261004_math_review_spt_chain_snapshots_fourteenth_A/chain_A_seed303/resolved.yaml",
+          "sha256": "071bef435b9fbe8bae0051509b29ad3d808d1da3873caa30fdc0317adc33cd14"
+        },
+        {
+          "path": "runs/20261004_math_review_spt_chain_snapshots_fourteenth_A/chain_A_seed304/resolved.yaml",
+          "sha256": "768b0195fd272735c5cb136211b04e6157e70267fddc62fd0047bcf4f0ade9d4"
+        },
+        {
+          "path": "runs/20261004_math_review_spt_chain_snapshots_fourteenth_A/chain_A_seed401/resolved.yaml",
+          "sha256": "cf67f8431d09690f7a5bdb50f7417b354661bc843f5b287407713945a11d3a4c"
+        },
+        {
+          "path": "runs/20261004_math_review_spt_chain_snapshots_fourteenth_A/chain_A_seed402/resolved.yaml",
+          "sha256": "b88e3a8775f423825fbf73d33d0d8d66e707559b6ae6f8af6a28d8db0198ccc1"
+        }
+      ]
+    },
+    "SPT_B": {
+      "runs": [
+        "runs/20261004_math_review_spt_chain_snapshots_fifteenth_B/chain_B_seed305",
+        "runs/20261004_math_review_spt_chain_snapshots_fifteenth_B/chain_B_seed306",
+        "runs/20261004_math_review_spt_chain_snapshots_fifteenth_B/chain_B_seed307",
+        "runs/20261004_math_review_spt_chain_snapshots_fifteenth_B/chain_B_seed308",
+        "runs/20261004_math_review_spt_chain_snapshots_fifteenth_B/chain_B_seed403",
+        "runs/20261004_math_review_spt_chain_snapshots_fifteenth_B/chain_B_seed404"
+      ],
+      "accepted": true,
+      "guard_result": [
+        [
+          {
+            "run": "/home/repos/six-birds-neutrino/runs/20261004_math_review_spt_chain_snapshots_fifteenth_B/chain_B_seed305",
+            "module_sha256": null,
+            "witnesses": [],
+            "solver_version": null,
+            "version_witnesses": []
+          },
+          {
+            "run": "/home/repos/six-birds-neutrino/runs/20261004_math_review_spt_chain_snapshots_fifteenth_B/chain_B_seed306",
+            "module_sha256": null,
+            "witnesses": [],
+            "solver_version": null,
+            "version_witnesses": []
+          },
+          {
+            "run": "/home/repos/six-birds-neutrino/runs/20261004_math_review_spt_chain_snapshots_fifteenth_B/chain_B_seed307",
+            "module_sha256": null,
+            "witnesses": [],
+            "solver_version": null,
+            "version_witnesses": []
+          },
+          {
+            "run": "/home/repos/six-birds-neutrino/runs/20261004_math_review_spt_chain_snapshots_fifteenth_B/chain_B_seed308",
+            "module_sha256": null,
+            "witnesses": [],
+            "solver_version": null,
+            "version_witnesses": []
+          },
+          {
+            "run": "/home/repos/six-birds-neutrino/runs/20261004_math_review_spt_chain_snapshots_fifteenth_B/chain_B_seed403",
+            "module_sha256": null,
+            "witnesses": [],
+            "solver_version": null,
+            "version_witnesses": []
+          },
+          {
+            "run": "/home/repos/six-birds-neutrino/runs/20261004_math_review_spt_chain_snapshots_fifteenth_B/chain_B_seed404",
+            "module_sha256": null,
+            "witnesses": [],
+            "solver_version": null,
+            "version_witnesses": []
+          }
+        ],
+        "unrecorded_native_builds_target_identity_assumed"
+      ],
+      "resolved_sources": [
+        {
+          "path": "runs/20261004_math_review_spt_chain_snapshots_fifteenth_B/chain_B_seed305/resolved.yaml",
+          "sha256": "c0529a183f55e89202af90f1e1d7d40686fc933e29b8fd83f4daaf509dc949e9"
+        },
+        {
+          "path": "runs/20261004_math_review_spt_chain_snapshots_fifteenth_B/chain_B_seed306/resolved.yaml",
+          "sha256": "567f3991e0efa54848796da49382dabfc38405d95443e23b57cc5e12c389615e"
+        },
+        {
+          "path": "runs/20261004_math_review_spt_chain_snapshots_fifteenth_B/chain_B_seed307/resolved.yaml",
+          "sha256": "6016ae07e845ff4dba8af9338775801f5e4300a3489a2c4a82dfb8f2ce069f2d"
+        },
+        {
+          "path": "runs/20261004_math_review_spt_chain_snapshots_fifteenth_B/chain_B_seed308/resolved.yaml",
+          "sha256": "beaca013b1c11dc6a835d1a208a4931e4951c65fc24635045c0e1a281e72c347"
+        },
+        {
+          "path": "runs/20261004_math_review_spt_chain_snapshots_fifteenth_B/chain_B_seed403/resolved.yaml",
+          "sha256": "16890e3f784045c5bb9094418305be4701484e6dbea52e9e57aff72a939bea9c"
+        },
+        {
+          "path": "runs/20261004_math_review_spt_chain_snapshots_fifteenth_B/chain_B_seed404/resolved.yaml",
+          "sha256": "5809ce66eabc5bb1a948a56e69c911ae5dc069b4dc3db9920f2511c8fb321395"
+        }
+      ]
+    },
+    "quad_A": {
+      "runs": [
+        "runs/20261004_math_review_guarded_CLASS_fourth_quad_A_diagnostics/quad_A/seed1301",
+        "runs/20261004_math_review_guarded_CLASS_fourth_quad_A_diagnostics/quad_A/seed1302",
+        "runs/20261004_math_review_guarded_CLASS_fourth_quad_A_diagnostics/quad_A/seed1303",
+        "runs/20261004_math_review_guarded_CLASS_fourth_quad_A_diagnostics/quad_A/seed1304"
+      ],
+      "accepted": true,
+      "guard_result": [
+        [
+          {
+            "run": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_CLASS_fourth_quad_A_diagnostics/quad_A/seed1301",
+            "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+            "witnesses": [
+              {
+                "path": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_CLASS_fourth_quad_A_diagnostics/quad_A/seed1301/runtime_state.json",
+                "sha256": "7ffbfb14363a9ea136725a71e2a3dcaac9a29b5bb791ee2f7974b050c8f1dfdb",
+                "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539"
+              }
+            ],
+            "solver_version": null,
+            "version_witnesses": []
+          },
+          {
+            "run": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_CLASS_fourth_quad_A_diagnostics/quad_A/seed1302",
+            "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+            "witnesses": [
+              {
+                "path": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_CLASS_fourth_quad_A_diagnostics/quad_A/seed1302/runtime_state.json",
+                "sha256": "a640270c1e7394837d61541b422f82af064ad61b679180be26cf9adb86dc127d",
+                "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539"
+              }
+            ],
+            "solver_version": null,
+            "version_witnesses": []
+          },
+          {
+            "run": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_CLASS_fourth_quad_A_diagnostics/quad_A/seed1303",
+            "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+            "witnesses": [
+              {
+                "path": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_CLASS_fourth_quad_A_diagnostics/quad_A/seed1303/runtime_state.json",
+                "sha256": "bc61d9919878dc2dbdaf9587f3828d1fb1a379bab1a4c6a4a077cebc5aaeab80",
+                "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539"
+              }
+            ],
+            "solver_version": null,
+            "version_witnesses": []
+          },
+          {
+            "run": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_CLASS_fourth_quad_A_diagnostics/quad_A/seed1304",
+            "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+            "witnesses": [
+              {
+                "path": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_CLASS_fourth_quad_A_diagnostics/quad_A/seed1304/runtime_state.json",
+                "sha256": "295c004a9a2670f17d0db643900dce66131ff1c4e44a826f40ee2ccdd06c04cc",
+                "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539"
+              }
+            ],
+            "solver_version": null,
+            "version_witnesses": []
+          }
+        ],
+        "recorded_native_module_hash_agreement_not_uniform_solver_accuracy"
+      ],
+      "resolved_sources": [
+        {
+          "path": "runs/20261004_math_review_guarded_CLASS_fourth_quad_A_diagnostics/quad_A/seed1301/resolved.yaml",
+          "sha256": "43d4835f2a6410fd5d1b6f9beb9b36ca7c3de1236fdf694d711590f422fa1f42"
+        },
+        {
+          "path": "runs/20261004_math_review_guarded_CLASS_fourth_quad_A_diagnostics/quad_A/seed1302/resolved.yaml",
+          "sha256": "ed8405df29347d8374e5c1e8b09cba4ad657dc6a40be39beaae5d4a266c358b6"
+        },
+        {
+          "path": "runs/20261004_math_review_guarded_CLASS_fourth_quad_A_diagnostics/quad_A/seed1303/resolved.yaml",
+          "sha256": "3800215884a5ca3d06a72a4c1df5a084753702cca08de4ba3eccd81a90771c14"
+        },
+        {
+          "path": "runs/20261004_math_review_guarded_CLASS_fourth_quad_A_diagnostics/quad_A/seed1304/resolved.yaml",
+          "sha256": "a18a308a0256f04d31de180d5c0a40b5bd2107a3c0e685a0f578759b1b698fa5"
+        }
+      ]
+    },
+    "quad_B": {
+      "runs": [
+        "runs/20261004_math_review_guarded_CLASS_fourth_quad_B_diagnostics/quad_B/seed1305",
+        "runs/20261004_math_review_guarded_CLASS_fourth_quad_B_diagnostics/quad_B/seed1306",
+        "runs/20261004_math_review_guarded_CLASS_fourth_quad_B_diagnostics/quad_B/seed1307",
+        "runs/20261004_math_review_guarded_CLASS_fourth_quad_B_diagnostics/quad_B/seed1308"
+      ],
+      "accepted": true,
+      "guard_result": [
+        [
+          {
+            "run": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_CLASS_fourth_quad_B_diagnostics/quad_B/seed1305",
+            "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+            "witnesses": [
+              {
+                "path": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_CLASS_fourth_quad_B_diagnostics/quad_B/seed1305/runtime_state.json",
+                "sha256": "be8ab1d8e46c415beb431f429e8321cd8a57df4a39319f5a890aeef8798e9887",
+                "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539"
+              }
+            ],
+            "solver_version": null,
+            "version_witnesses": []
+          },
+          {
+            "run": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_CLASS_fourth_quad_B_diagnostics/quad_B/seed1306",
+            "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+            "witnesses": [
+              {
+                "path": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_CLASS_fourth_quad_B_diagnostics/quad_B/seed1306/runtime_state.json",
+                "sha256": "aad2f5a893278bdca796b9cac5205f6529ad8446ad1b9620ce1169cce641c003",
+                "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539"
+              }
+            ],
+            "solver_version": null,
+            "version_witnesses": []
+          },
+          {
+            "run": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_CLASS_fourth_quad_B_diagnostics/quad_B/seed1307",
+            "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+            "witnesses": [
+              {
+                "path": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_CLASS_fourth_quad_B_diagnostics/quad_B/seed1307/runtime_state.json",
+                "sha256": "c5e53cae7fe3c247db063df394b15871cb060affccc9a5798de81b175e82855b",
+                "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539"
+              }
+            ],
+            "solver_version": null,
+            "version_witnesses": []
+          },
+          {
+            "run": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_CLASS_fourth_quad_B_diagnostics/quad_B/seed1308",
+            "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+            "witnesses": [
+              {
+                "path": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_CLASS_fourth_quad_B_diagnostics/quad_B/seed1308/runtime_state.json",
+                "sha256": "58cfd4ec761fb4dfffdf852488b226d3362c2d96eda816fdcc6d844cd4008d14",
+                "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539"
+              }
+            ],
+            "solver_version": null,
+            "version_witnesses": []
+          }
+        ],
+        "recorded_native_module_hash_agreement_not_uniform_solver_accuracy"
+      ],
+      "resolved_sources": [
+        {
+          "path": "runs/20261004_math_review_guarded_CLASS_fourth_quad_B_diagnostics/quad_B/seed1305/resolved.yaml",
+          "sha256": "cffb8128f12767ac0770643f6c97e6df741659c60c5e40167a4dbd3ca067e08b"
+        },
+        {
+          "path": "runs/20261004_math_review_guarded_CLASS_fourth_quad_B_diagnostics/quad_B/seed1306/resolved.yaml",
+          "sha256": "61c95c5d9bf0f64bb97595c6b0e42fc277516d13f093133d19457f13e33adb0d"
+        },
+        {
+          "path": "runs/20261004_math_review_guarded_CLASS_fourth_quad_B_diagnostics/quad_B/seed1307/resolved.yaml",
+          "sha256": "1dc517d23498562dbc42f1a4789f43a34e7a98d1d095df1b41f1eaf7b05823da"
+        },
+        {
+          "path": "runs/20261004_math_review_guarded_CLASS_fourth_quad_B_diagnostics/quad_B/seed1308/resolved.yaml",
+          "sha256": "7205730b8d90fb5795797c5baba8088b9506fe610ba85ef326b52e94f5d6b96a"
+        }
+      ]
+    },
+    "medium_A": {
+      "runs": [
+        "runs/20261004_math_review_guarded_CLASS_fourth_medium_A_diagnostics/medium_A/seed1201",
+        "runs/20261004_math_review_guarded_CLASS_fourth_medium_A_diagnostics/medium_A/seed1401",
+        "runs/20261004_math_review_guarded_CLASS_fourth_medium_A_diagnostics/medium_A/seed1402",
+        "runs/20261004_math_review_guarded_CLASS_fourth_medium_A_diagnostics/medium_A/seed1406"
+      ],
+      "accepted": true,
+      "guard_result": [
+        [
+          {
+            "run": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_CLASS_fourth_medium_A_diagnostics/medium_A/seed1201",
+            "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+            "witnesses": [
+              {
+                "path": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_CLASS_fourth_medium_A_diagnostics/medium_A/seed1201/runtime_state.json",
+                "sha256": "013c4b2a95d32fe75ae848a34286211dbeae1d8a903927b710b9191678a573b8",
+                "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539"
+              }
+            ],
+            "solver_version": null,
+            "version_witnesses": []
+          },
+          {
+            "run": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_CLASS_fourth_medium_A_diagnostics/medium_A/seed1401",
+            "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+            "witnesses": [
+              {
+                "path": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_CLASS_fourth_medium_A_diagnostics/medium_A/seed1401/runtime_state.json",
+                "sha256": "d8b040dfe298e67135a52cd94bbb4aebae2290e4a7a0f5d4c25be6e1f98eb04b",
+                "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539"
+              }
+            ],
+            "solver_version": null,
+            "version_witnesses": []
+          },
+          {
+            "run": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_CLASS_fourth_medium_A_diagnostics/medium_A/seed1402",
+            "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+            "witnesses": [
+              {
+                "path": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_CLASS_fourth_medium_A_diagnostics/medium_A/seed1402/runtime_state.json",
+                "sha256": "ae75150a398dbbf64ff4046453261cffce56bf4b884223b0b5ed53354114a1c1",
+                "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539"
+              }
+            ],
+            "solver_version": null,
+            "version_witnesses": []
+          },
+          {
+            "run": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_CLASS_fourth_medium_A_diagnostics/medium_A/seed1406",
+            "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+            "witnesses": [
+              {
+                "path": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_CLASS_fourth_medium_A_diagnostics/medium_A/seed1406/runtime_state.json",
+                "sha256": "e1e1a2b55daf99d4be3db7d7b937fb21baa25b06ca9b9257dea636f2ee03b41a",
+                "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539"
+              }
+            ],
+            "solver_version": null,
+            "version_witnesses": []
+          }
+        ],
+        "recorded_native_module_hash_agreement_not_uniform_solver_accuracy"
+      ],
+      "resolved_sources": [
+        {
+          "path": "runs/20261004_math_review_guarded_CLASS_fourth_medium_A_diagnostics/medium_A/seed1201/resolved.yaml",
+          "sha256": "3f543c33e581972b0e55ca3a1c04f0cb75c35816956a28ea1fe1e3f64b5ca12e"
+        },
+        {
+          "path": "runs/20261004_math_review_guarded_CLASS_fourth_medium_A_diagnostics/medium_A/seed1401/resolved.yaml",
+          "sha256": "68e3f73e264476bf7be238c0cc7ce2ee43d128466705206554ffe3e841fe7576"
+        },
+        {
+          "path": "runs/20261004_math_review_guarded_CLASS_fourth_medium_A_diagnostics/medium_A/seed1402/resolved.yaml",
+          "sha256": "99078cb64d275c6ba95c94620271f662787daa3f4fde603b0731e2a257d690f5"
+        },
+        {
+          "path": "runs/20261004_math_review_guarded_CLASS_fourth_medium_A_diagnostics/medium_A/seed1406/resolved.yaml",
+          "sha256": "cd4577677a9ff449d31370984fc44d6fbf38944b9e7e8b8096de01e3ab349b8c"
+        }
+      ]
+    },
+    "medium_B": {
+      "runs": [
+        "runs/20261004_math_review_guarded_CLASS_fourth_medium_B_diagnostics/medium_B/seed1403",
+        "runs/20261004_math_review_guarded_CLASS_fourth_medium_B_diagnostics/medium_B/seed1404",
+        "runs/20261004_math_review_guarded_CLASS_fourth_medium_B_diagnostics/medium_B/seed1405",
+        "runs/20261004_math_review_guarded_CLASS_fourth_medium_B_diagnostics/medium_B/seed1407"
+      ],
+      "accepted": true,
+      "guard_result": [
+        [
+          {
+            "run": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_CLASS_fourth_medium_B_diagnostics/medium_B/seed1403",
+            "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+            "witnesses": [
+              {
+                "path": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_CLASS_fourth_medium_B_diagnostics/medium_B/seed1403/runtime_state.json",
+                "sha256": "cc58668c7fb1e2ac9524f0f3e28641f8417fdc36e7d4f32461c5db88db7fab44",
+                "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539"
+              }
+            ],
+            "solver_version": null,
+            "version_witnesses": []
+          },
+          {
+            "run": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_CLASS_fourth_medium_B_diagnostics/medium_B/seed1404",
+            "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+            "witnesses": [
+              {
+                "path": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_CLASS_fourth_medium_B_diagnostics/medium_B/seed1404/runtime_state.json",
+                "sha256": "fbe72d8b93a7114e3edc336819b79a35f26b7f3935d384bf9d9b796e2011e197",
+                "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539"
+              }
+            ],
+            "solver_version": null,
+            "version_witnesses": []
+          },
+          {
+            "run": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_CLASS_fourth_medium_B_diagnostics/medium_B/seed1405",
+            "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+            "witnesses": [
+              {
+                "path": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_CLASS_fourth_medium_B_diagnostics/medium_B/seed1405/runtime_state.json",
+                "sha256": "805b0d0ed275f7915c9af477f1d2da25f9eaa3b6074e06be6b87e501597f30ad",
+                "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539"
+              }
+            ],
+            "solver_version": null,
+            "version_witnesses": []
+          },
+          {
+            "run": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_CLASS_fourth_medium_B_diagnostics/medium_B/seed1407",
+            "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+            "witnesses": [
+              {
+                "path": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_CLASS_fourth_medium_B_diagnostics/medium_B/seed1407/runtime_state.json",
+                "sha256": "2e8bdd4f39141e9889cd56486a212859990fff37a673447260227f43af6cf642",
+                "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539"
+              }
+            ],
+            "solver_version": null,
+            "version_witnesses": []
+          }
+        ],
+        "recorded_native_module_hash_agreement_not_uniform_solver_accuracy"
+      ],
+      "resolved_sources": [
+        {
+          "path": "runs/20261004_math_review_guarded_CLASS_fourth_medium_B_diagnostics/medium_B/seed1403/resolved.yaml",
+          "sha256": "0f3a806b01c9ccac0f8e537c1996ec3cbd595d7aff9ed1e9944b4eed8b7347f4"
+        },
+        {
+          "path": "runs/20261004_math_review_guarded_CLASS_fourth_medium_B_diagnostics/medium_B/seed1404/resolved.yaml",
+          "sha256": "12f21073e80bc66a9dedec1f07dd649527cc57fd1511ad9892834bf8149ffcb2"
+        },
+        {
+          "path": "runs/20261004_math_review_guarded_CLASS_fourth_medium_B_diagnostics/medium_B/seed1405/resolved.yaml",
+          "sha256": "5b1fd0f11076cc708b9c61bd4ba4c9f19b0de45cc38fee488c2d2a20020786f1"
+        },
+        {
+          "path": "runs/20261004_math_review_guarded_CLASS_fourth_medium_B_diagnostics/medium_B/seed1407/resolved.yaml",
+          "sha256": "041053798a6f51fa96f68374ffc231e3dc3009904e676193e5456551433bbdfb"
+        }
+      ]
+    },
+    "grid12_B_initial_rows": {
+      "runs": [
+        "runs/20261004_math_review_guarded_grid12_trial_B_seed1501/first_saved_rows",
+        "runs/20261004_math_review_guarded_grid12_trial_B_seed1502/first_saved_rows",
+        "runs/20261004_math_review_guarded_grid12_trial_B_seed1503/first_saved_rows",
+        "runs/20261004_math_review_guarded_grid12_trial_B_seed1504/first_saved_rows"
+      ],
+      "accepted": true,
+      "guard_result": [
+        [
+          {
+            "run": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_grid12_trial_B_seed1501/first_saved_rows",
+            "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+            "witnesses": [
+              {
+                "path": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_grid12_trial_B_seed1501/first_saved_rows/solver_backend.json",
+                "sha256": "d06b850a890ec397c3c8b81510d6331e447e5d094236b3363385327f8581e502",
+                "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539"
+              },
+              {
+                "path": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_grid12_trial_B_seed1501/first_saved_rows/runtime_state.json",
+                "sha256": "36e0c844f86498cd89e8c482c83f3988f448a1bb472747e4b5d115cc03d74d55",
+                "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539"
+              }
+            ],
+            "solver_version": null,
+            "version_witnesses": []
+          },
+          {
+            "run": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_grid12_trial_B_seed1502/first_saved_rows",
+            "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+            "witnesses": [
+              {
+                "path": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_grid12_trial_B_seed1502/first_saved_rows/solver_backend.json",
+                "sha256": "d06b850a890ec397c3c8b81510d6331e447e5d094236b3363385327f8581e502",
+                "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539"
+              },
+              {
+                "path": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_grid12_trial_B_seed1502/first_saved_rows/runtime_state.json",
+                "sha256": "ae167d1834127c479a584eac03adb23df95102a168c24ffdcad5f2ebc7f57e0b",
+                "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539"
+              }
+            ],
+            "solver_version": null,
+            "version_witnesses": []
+          },
+          {
+            "run": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_grid12_trial_B_seed1503/first_saved_rows",
+            "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+            "witnesses": [
+              {
+                "path": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_grid12_trial_B_seed1503/first_saved_rows/solver_backend.json",
+                "sha256": "d06b850a890ec397c3c8b81510d6331e447e5d094236b3363385327f8581e502",
+                "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539"
+              },
+              {
+                "path": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_grid12_trial_B_seed1503/first_saved_rows/runtime_state.json",
+                "sha256": "08f43c532594255c8e508f1dde5bcd591f29ffb42b74b98c41cc97404a7b5317",
+                "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539"
+              }
+            ],
+            "solver_version": null,
+            "version_witnesses": []
+          },
+          {
+            "run": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_grid12_trial_B_seed1504/first_saved_rows",
+            "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+            "witnesses": [
+              {
+                "path": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_grid12_trial_B_seed1504/first_saved_rows/solver_backend.json",
+                "sha256": "d06b850a890ec397c3c8b81510d6331e447e5d094236b3363385327f8581e502",
+                "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539"
+              },
+              {
+                "path": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_grid12_trial_B_seed1504/first_saved_rows/runtime_state.json",
+                "sha256": "9d4ea5c16b60dee5927da8ba9a9aeff6e8e7e108175a2526d035fd597a7872cd",
+                "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539"
+              }
+            ],
+            "solver_version": null,
+            "version_witnesses": []
+          }
+        ],
+        "recorded_native_module_hash_agreement_not_uniform_solver_accuracy"
+      ],
+      "resolved_sources": [
+        {
+          "path": "runs/20261004_math_review_guarded_grid12_trial_B_seed1501/first_saved_rows/resolved.yaml",
+          "sha256": "4298ba911db24bf63cf43530f97bb4b93414d712ccce2140f9e5e694502a03a0"
+        },
+        {
+          "path": "runs/20261004_math_review_guarded_grid12_trial_B_seed1502/first_saved_rows/resolved.yaml",
+          "sha256": "a1d3f9c1db4fae2bfdc8be39d70254dec9a7d6667d2b4ea9d4622cf4820081ac"
+        },
+        {
+          "path": "runs/20261004_math_review_guarded_grid12_trial_B_seed1503/first_saved_rows/resolved.yaml",
+          "sha256": "a6e469411f5301b50585cc2a89430c2eb83eed00ca5b10aaa86acb04952d33b9"
+        },
+        {
+          "path": "runs/20261004_math_review_guarded_grid12_trial_B_seed1504/first_saved_rows/resolved.yaml",
+          "sha256": "6d43b11b741f2e7587c2806f96a03abe70b0dc620bee34f22d5d4c20f5dc25a2"
+        }
+      ]
+    }
+  },
+  "valid_frozen_or_first_row_bundle_count": 32,
+  "existing_SPT_version_evidence": {
+    "A": [
+      [
+        {
+          "run": "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_A_seed301",
+          "module_sha256": null,
+          "witnesses": [],
+          "solver_version": "2.0.4",
+          "version_witnesses": [
+            {
+              "path": "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_A_seed301/chains/math_restoration_A_seed301.updated.yaml",
+              "version": "2.0.4",
+              "sha256": "b978b97219a678ba01d17ed9a8299c9f78140996af39254411a2cfdd609d1874"
+            }
+          ]
+        },
+        {
+          "run": "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_A_seed302",
+          "module_sha256": null,
+          "witnesses": [],
+          "solver_version": "2.0.4",
+          "version_witnesses": [
+            {
+              "path": "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_A_seed302/chains/math_restoration_A_seed302.updated.yaml",
+              "version": "2.0.4",
+              "sha256": "9e32c821baaf4b6f69780c6819fe175b0e07227e2d095cd7af58478049bbad95"
+            }
+          ]
+        },
+        {
+          "run": "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_A_seed303",
+          "module_sha256": null,
+          "witnesses": [],
+          "solver_version": "2.0.4",
+          "version_witnesses": [
+            {
+              "path": "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_A_seed303/chains/math_restoration_A_seed303.updated.yaml",
+              "version": "2.0.4",
+              "sha256": "2f640a55c58ecc23c1a68876edb5c4146c49faee58004e7b0c25bbda37fe52f7"
+            }
+          ]
+        },
+        {
+          "run": "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_A_seed304",
+          "module_sha256": null,
+          "witnesses": [],
+          "solver_version": "2.0.4",
+          "version_witnesses": [
+            {
+              "path": "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_A_seed304/chains/math_restoration_A_seed304.updated.yaml",
+              "version": "2.0.4",
+              "sha256": "0f87acb2e3ea00d5a42dfeb291b9ba619ee4c1d4e96b274b2f268f0992b8a104"
+            }
+          ]
+        },
+        {
+          "run": "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_A_seed402",
+          "module_sha256": null,
+          "witnesses": [],
+          "solver_version": "2.0.4",
+          "version_witnesses": [
+            {
+              "path": "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_A_seed402/chains/math_restoration_A_seed402.updated.yaml",
+              "version": "2.0.4",
+              "sha256": "bf1ef2b491d75ff26f20fec9bf243984db372031dcc4c41e4e4af1da46dd877d"
+            }
+          ]
+        },
+        {
+          "run": "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_A_seed401",
+          "module_sha256": null,
+          "witnesses": [],
+          "solver_version": "2.0.4",
+          "version_witnesses": [
+            {
+              "path": "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_A_seed401/chains/math_restoration_A_seed401.updated.yaml",
+              "version": "2.0.4",
+              "sha256": "0576f9c7a4ceb5eb921b74392d250a1fdc8b377adc08b3eed8cb0c4c46920a59"
+            }
+          ]
+        }
+      ],
+      "unrecorded_native_builds_target_identity_assumed"
+    ],
+    "B": [
+      [
+        {
+          "run": "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_B_seed305",
+          "module_sha256": null,
+          "witnesses": [],
+          "solver_version": "2.0.4",
+          "version_witnesses": [
+            {
+              "path": "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_B_seed305/chains/math_restoration_B_seed305.updated.yaml",
+              "version": "2.0.4",
+              "sha256": "43494cc4532c280495c97f716b2cedfc07328c67004cd681c7f185702ecbb63a"
+            }
+          ]
+        },
+        {
+          "run": "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_B_seed306",
+          "module_sha256": null,
+          "witnesses": [],
+          "solver_version": "2.0.4",
+          "version_witnesses": [
+            {
+              "path": "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_B_seed306/chains/math_restoration_B_seed306.updated.yaml",
+              "version": "2.0.4",
+              "sha256": "3b2cadd885bfc8bd9fb5fe2c112eafb6bc5350d25c2faff4540bac746be04ed8"
+            }
+          ]
+        },
+        {
+          "run": "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_B_seed307",
+          "module_sha256": null,
+          "witnesses": [],
+          "solver_version": "2.0.4",
+          "version_witnesses": [
+            {
+              "path": "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_B_seed307/chains/math_restoration_B_seed307.updated.yaml",
+              "version": "2.0.4",
+              "sha256": "93d41c783cf0d3af52b5133cf0c5ba77511309a102b5b8a83744e116c2548492"
+            }
+          ]
+        },
+        {
+          "run": "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_B_seed308",
+          "module_sha256": null,
+          "witnesses": [],
+          "solver_version": "2.0.4",
+          "version_witnesses": [
+            {
+              "path": "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_B_seed308/chains/math_restoration_B_seed308.updated.yaml",
+              "version": "2.0.4",
+              "sha256": "6e07b2c20a867b070154ff50aabfb4f237ed2c417163a267970b19f2b4bb6902"
+            }
+          ]
+        },
+        {
+          "run": "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_B_seed404",
+          "module_sha256": null,
+          "witnesses": [],
+          "solver_version": "2.0.4",
+          "version_witnesses": [
+            {
+              "path": "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_B_seed404/chains/math_restoration_B_seed404.updated.yaml",
+              "version": "2.0.4",
+              "sha256": "59aad0e509990662117786d2260595cd507dddcd727021062b79926c9839a0b5"
+            }
+          ]
+        },
+        {
+          "run": "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_B_seed403",
+          "module_sha256": null,
+          "witnesses": [],
+          "solver_version": "2.0.4",
+          "version_witnesses": [
+            {
+              "path": "/home/repos/six-birds-neutrino/runs/20261003_math_review_chain_B_seed403/chains/math_restoration_B_seed403.updated.yaml",
+              "version": "2.0.4",
+              "sha256": "4fd5d671f6108eb68051c0008fad45b0dab198025f84da31ca23e0c39e394b23"
+            }
+          ]
+        }
+      ],
+      "unrecorded_native_builds_target_identity_assumed"
+    ]
+  },
+  "rank_algorithms_or_empirical_gates_modified": false,
+  "earlier_native_sources": [
+    {
+      "path": "runs/20261004_math_review_SPT_archived_solver_version_control/A/evaluation_receipt.json",
+      "sha256": "85a8068dc22fd33cfba7738568db0149c936bd247966c0b712b0e8b88c31c81b"
+    },
+    {
+      "path": "runs/20261004_math_review_SPT_effective_CAMB_settings/A/evaluation_receipt.json",
+      "sha256": "e163836881a353b8abb04922be9e55531a57c426fba4f0670f2fdf30c12569b7"
+    }
+  ],
+  "legacy_native_identity_assumption_retained_and_explicit": true
+}

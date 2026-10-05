@@ -3,7 +3,9 @@ from __future__ import annotations
 
 import argparse
 from datetime import datetime
+from fractions import Fraction
 import json
+from math import fsum, sqrt
 from pathlib import Path
 import re
 import subprocess
@@ -12,10 +14,13 @@ from typing import Any
 
 import matplotlib.pyplot as plt
 import numpy as np
+from scipy.linalg import solve_triangular
 import yaml
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(REPO_ROOT / "src"))
+from sbt_spt_audit.metrics import _covariance_cholesky
 
 EXIT_OK = 0
 EXIT_INPUT_ERROR = 2
@@ -97,6 +102,10 @@ def _parse_gaussian_lens(config: dict[str, Any]) -> tuple[str, list[str], np.nda
             raise ValueError("lens.cov rows must all have len(params)")
     mu = np.asarray(mean, dtype=float)
     c = np.asarray(cov, dtype=float)
+    if not np.all(np.isfinite(mu)):
+        raise ValueError("Gaussian mean must be finite.")
+    # Validating C does not require the unrelated inverse solve C^-1 mu.
+    _covariance_cholesky(c, np.zeros_like(mu))
     return run_name.strip(), params, mu, c
 
 
@@ -120,8 +129,9 @@ def _template_vector(
     if mode == "full_residual":
         return residual.copy(), None
 
-    chol = np.linalg.cholesky(cov)
-    z = np.linalg.solve(chol, residual)
+    factor, residual = _covariance_cholesky(cov, residual)
+    chol = np.tril(factor[0])
+    z = _whiten(residual, chol)
 
     if mode == "dominant_whitened":
         k = int(np.argmax(np.abs(z)))
@@ -142,9 +152,37 @@ def _template_vector(
     return t, k
 
 
+def _whiten(vec: np.ndarray, chol: np.ndarray) -> np.ndarray:
+    vec = np.asarray(vec, dtype=float)
+    if vec.ndim != 1 or not np.all(np.isfinite(vec)):
+        raise ValueError("Rewrite vectors must be finite and one-dimensional.")
+    result = solve_triangular(chol, vec, lower=True)
+    if not np.all(np.isfinite(result)):
+        raise ValueError("Rewrite covariance whitening produced nonfinite values.")
+    if np.any(vec != 0) and not np.any(result != 0):
+        raise ValueError("Nonzero rewrite vector whitening underflows binary64.")
+    return result
+
+
+def _squared_norm(vec: np.ndarray) -> float:
+    # Exact accumulation of the represented whitened coordinates avoids
+    # overflow/underflow in intermediate squares. This does not certify the
+    # floating-point Cholesky factor or its relation to the exact covariance.
+    exact = sum((Fraction(float(value)) ** 2 for value in vec), Fraction(0))
+    try:
+        result = float(exact)
+    except OverflowError as error:
+        raise ValueError("Rewrite quadratic is not representable as finite binary64.") from error
+    if not np.isfinite(result):
+        raise ValueError("Rewrite quadratic is not representable as finite binary64.")
+    if exact != 0 and result == 0:
+        raise ValueError("Nonzero rewrite quadratic underflows binary64.")
+    return result
+
+
 def _chi2(vec: np.ndarray, cov: np.ndarray) -> float:
-    solved = np.linalg.solve(cov, vec)
-    return float(vec @ solved)
+    factor, vec = _covariance_cholesky(cov, vec)
+    return _squared_norm(_whiten(vec, np.tril(factor[0])))
 
 
 def _direction_metrics(
@@ -155,23 +193,47 @@ def _direction_metrics(
     template_mode: str,
 ) -> tuple[dict[str, Any], list[str]]:
     warnings: list[str] = []
-    residual = theta_train - mu_test
-    chi2_before = _chi2(residual, cov_test)
+    theta_train, theta_test_best, mu_test = (
+        np.asarray(value, dtype=float) for value in (theta_train, theta_test_best, mu_test))
+    if (mu_test.ndim != 1 or theta_train.shape != mu_test.shape
+            or theta_test_best.shape != mu_test.shape
+            or not all(np.all(np.isfinite(value)) for value in (theta_train, theta_test_best, mu_test))):
+        raise ValueError("Rewrite endpoints and mean must be finite vectors of the same shape.")
+    with np.errstate(over="ignore", invalid="ignore"):
+        residual = theta_train - mu_test
+        reference_residual = theta_test_best - mu_test
+    factor, residual = _covariance_cholesky(cov_test, residual)
+    chol = np.tril(factor[0])
+    z = _whiten(residual, chol)
+    chi2_before = _squared_norm(z)
 
     t, dominant_mode_index = _template_vector(residual, cov_test, template_mode)
-    cinv_r = np.linalg.solve(cov_test, residual)
-    cinv_t = np.linalg.solve(cov_test, t)
-
-    numerator = float(t @ cinv_r)
-    denominator = float(t @ cinv_t)
-    if abs(denominator) < 1e-18:
+    whitened_template = _whiten(t, chol)
+    scale = float(np.max(np.abs(whitened_template)))
+    if scale == 0.0:
         a_star = 0.0
-        warnings.append("Template denominator near zero; using a_star=0.")
+        alignment_cos = 0.0
+        warnings.append("Zero template; using a_star=0.")
     else:
-        a_star = numerator / denominator
+        # Normalize the template before taking inner products. A nonzero
+        # template has no arbitrary small-norm exception, and t^T C^-1 t
+        # need not be representable before its scale cancels from the ratio.
+        with np.errstate(under="ignore"):
+            unit = whitened_template / scale
+        denominator = fsum(float(value) ** 2 for value in unit)
+        numerator = fsum(float(u) * float(v) for u, v in zip(unit, z))
+        with np.errstate(over="ignore", under="ignore", invalid="ignore"):
+            a_star = float(np.longdouble(numerator) / np.longdouble(denominator) / np.longdouble(scale))
+        if not np.isfinite(a_star) or (numerator != 0 and a_star == 0):
+            raise ValueError("Rewrite coefficient overflows or underflows binary64.")
+        if template_mode == "full_residual" and np.array_equal(t, residual):
+            a_star = 1.0
+        alignment_cos = (0.0 if chi2_before == 0 else
+                         float(np.clip((numerator / sqrt(denominator)) / sqrt(chi2_before), -1., 1.)))
 
-    residual_after = residual - a_star * t
-    chi2_after = _chi2(residual_after, cov_test)
+    with np.errstate(over="ignore", invalid="ignore", under="ignore"):
+        residual_after = residual - a_star * t
+    chi2_after = _squared_norm(_whiten(residual_after, chol))
     improvement = chi2_before - chi2_after
     if improvement < 0 and improvement > -1e-10:
         improvement = 0.0
@@ -180,16 +242,13 @@ def _direction_metrics(
             f"Negative improvement beyond tolerance (improvement={improvement}); check numerical stability."
         )
 
-    cond_cov = float(np.linalg.cond(cov_test))
-    if cond_cov > 1e10:
+    with np.errstate(over="ignore", divide="ignore", invalid="ignore"):
+        cond_cov = float(np.linalg.cond(cov_test))
+    if not np.isfinite(cond_cov):
+        cond_cov = None
+        warnings.append("Covariance condition number is not representable as a finite binary64 value.")
+    elif cond_cov > 1e10:
         warnings.append(f"Ill-conditioned covariance (cond_cov={cond_cov:.3e}).")
-
-    denom_align = np.sqrt(max(float(t @ cinv_t) * max(float(residual @ cinv_r), 0.0), 0.0))
-    if denom_align <= 0.0:
-        alignment_cos = 0.0
-    else:
-        alignment_cos = float((t @ cinv_r) / denom_align)
-    alignment_cos = float(np.clip(alignment_cos, -1.0, 1.0))
 
     residual_driven = template_mode in {"dominant_whitened", "full_residual"}
     if residual_driven and alignment_cos > 0.95:
@@ -209,7 +268,7 @@ def _direction_metrics(
         "dominant_mode_index": dominant_mode_index,
         "alignment_cos": float(alignment_cos),
         "cond_cov": cond_cov,
-        "chi2_test_best_reference": float(_chi2(theta_test_best - mu_test, cov_test)),
+        "chi2_test_best_reference": _squared_norm(_whiten(reference_residual, chol)),
     }
     return metrics, warnings
 
@@ -328,7 +387,7 @@ def main() -> int:
         "template": args.template,
     }
     (outdir / "inputs.yaml").write_text(yaml.safe_dump(inputs_payload, sort_keys=False), encoding="utf-8")
-    (outdir / "metrics.json").write_text(json.dumps(metrics, indent=2), encoding="utf-8")
+    (outdir / "metrics.json").write_text(json.dumps(metrics, indent=2, allow_nan=False), encoding="utf-8")
 
     fig_path = figures_dir / "template_rewrite_before_after.png"
     plot_data = {}
@@ -349,6 +408,7 @@ def main() -> int:
     for key in ("B_given_A", "A_given_B"):
         if key in metrics:
             m = metrics[key]
+            condition_text = "unknown" if m["cond_cov"] is None else f"{m['cond_cov']:.12g}"
             summary_lines.extend(
                 [
                     f"- {key}.chi2_before: `{m['chi2_before']:.12g}`",
@@ -358,7 +418,7 @@ def main() -> int:
                     f"- {key}.a_star: `{m['a_star']:.12g}`",
                     f"- {key}.dominant_mode_index: `{m['dominant_mode_index']}`",
                     f"- {key}.alignment_cos: `{m['alignment_cos']:.12g}`",
-                    f"- {key}.cond_cov: `{m['cond_cov']:.12g}`",
+                    f"- {key}.cond_cov: `{condition_text}`",
                 ]
             )
     summary_lines.append(f"- figure: `{fig_path}`")

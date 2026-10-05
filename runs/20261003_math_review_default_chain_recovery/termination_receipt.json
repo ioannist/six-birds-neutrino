@@ -1,0 +1,58 @@
+{
+  "utc": "2026-10-03T23:17:09.671025+00:00",
+  "records": [
+    {
+      "lens": "A",
+      "seed": 503,
+      "kind": "cmb_desi",
+      "run_dir": "runs/20261003_math_review_cmb_chain_A_seed503",
+      "pid": 3485455,
+      "exec_session": 41501,
+      "exit_code": 143,
+      "termination_reason": "SIGTERM_consistent_exit_external_cause_unestablished",
+      "resume_seed": 1003,
+      "source_file_sha256": {
+        "seed503/chains/math_restoration_A_seed503.checkpoint": "88528d423217f99da5e4b7636441224453c4e4b9f09797db385442ea322b9c74",
+        "seed503/chains/math_restoration_A_seed503.progress": "90d1d827b0c07155d1836465cbd0e661bd84d7b82707a16215c8b1c26822e2c7",
+        "seed503/chains/math_restoration_A_seed503.covmat": "c623d830d893a386ef5b5ae4fef29e74a1288f6fa62672b672d375906691c904",
+        "seed503/chains/math_restoration_A_seed503.updated.yaml": "bdd82facbae7c926bc41583ca239aa1539db7a5c24e65c7b9e5afd98047eea8c",
+        "seed503/chains/math_restoration_A_seed503.input.yaml": "c407ff52c575de10957a862c2b9b3616199a8c858d891ea16ca23d85bb9b8e8b",
+        "seed503/chains/math_restoration_A_seed503.1.txt": "67ad7b1e122295b18ae1c2c3e9b4b195e0fe01a8e460caac90c5fbaf8346e211",
+        "seed503/chains/math_restoration_A_seed503.input.yaml.locked": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "seed503/input.yaml": "f697cddc18b1bf76de52c9e5007b74612e49f9a6066d364395ff91433ff786a3",
+        "seed503/resolved.yaml": "a67cca83e035c24aba596f494413e893bed1a03b57012ea96758f0815d7a3980",
+        "seed503/stdout.txt": "307b9a9a1c91c9490ebe8f36a82eefb094007dd35e74759d033a375a42a959a2",
+        "seed503/stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "seed503/runtime_state.json": "c1ff2e3a19c1d3c79cfaf6b6ed23e2ab499b215acc442c9f909f0dd63f6b6361"
+      },
+      "archived_directory": "runs/20261003_math_review_default_chain_recovery/seed503"
+    },
+    {
+      "lens": "B",
+      "seed": 507,
+      "kind": "cmb_desi",
+      "run_dir": "runs/20261003_math_review_cmb_chain_B_seed507",
+      "pid": 3485466,
+      "exec_session": 31658,
+      "exit_code": 143,
+      "termination_reason": "SIGTERM_consistent_exit_external_cause_unestablished",
+      "resume_seed": 1007,
+      "source_file_sha256": {
+        "seed507/chains/math_restoration_B_seed507.checkpoint": "286b56f5df742a3690f5026f22b9795c49455324701977ddc78c7bc3e9a2cd49",
+        "seed507/chains/math_restoration_B_seed507.1.txt": "dab1c370043bfa43cebfd7b93d7cee786cbef7b1e5c1c6b107596ff8d0c39ff9",
+        "seed507/chains/math_restoration_B_seed507.updated.yaml": "6567a776d60b41a60c1dd8e8d49dddb66fc55d7e1bf77bde239651fcd3ccb6e4",
+        "seed507/chains/math_restoration_B_seed507.input.yaml": "1459dc4cc944bd5d9ac91262c424d9ffe9f7015fb0a61575e497404c756fc8a2",
+        "seed507/chains/math_restoration_B_seed507.progress": "10519fb99967f4c95995a0145fb916a1c5c742e7ed117edd26b236c592aaa785",
+        "seed507/chains/math_restoration_B_seed507.input.yaml.locked": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "seed507/chains/math_restoration_B_seed507.covmat": "385fc0c4d4f6bc0e4e79fbc42836e7f5578ca2fd3aa0652ba1b263feadf58322",
+        "seed507/input.yaml": "6011adc6d03f1518b7c75dd5cc0b8272bd0723b686490c28a07317a8705134e4",
+        "seed507/resolved.yaml": "5951354a8c52466b841e9b2d83f8b3dbb81b6ea8166b8b200c1989eeacd09314",
+        "seed507/stdout.txt": "2291b8bcf302668c995c0fccded27050604c980679b0d8e5bee8da7899fd05da",
+        "seed507/stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "seed507/runtime_state.json": "63b2c0e690769ffa234b69295b03065dc0f23be3654cc9d9b825a030293c0735"
+      },
+      "archived_directory": "runs/20261003_math_review_default_chain_recovery/seed507"
+    }
+  ],
+  "other_24_owned_sampler_identities_live_at_check": true
+}

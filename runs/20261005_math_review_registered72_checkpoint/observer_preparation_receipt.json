@@ -1,0 +1,48 @@
+{
+  "utc": "2026-10-05T04:20:16.745050+00:00",
+  "source": "runs/20261005_math_review_registered66_recovery_checkpoint/observe_registered_runtime.py",
+  "source_sha256": "a22c810b6af3d355e7ec520479f0042fac73560186995fa17daa9dd8c85e9a01",
+  "changes": [
+    [
+      "'native_candidate_posterior_chains', 'guarded_CLASS_fresh_recovery_trials']",
+      "'native_candidate_posterior_chains', 'guarded_CLASS_fresh_recovery_trials', 'CLASS_recovery_companion_posterior_chains']"
+    ],
+    [
+      "== 66",
+      "== 72"
+    ],
+    [
+      "if e['seed'] >= 2100:",
+      "if e['seed'] >= 2100 and e.get('first_saved_row_receipt'):"
+    ],
+    [
+      "activation_name = 'sigma_time_v3_posterior_activation' if e['seed'] < 2200 else 'CLASS_fresh_recovery_activation'",
+      "activation_name = ('sigma_time_v3_posterior_activation' if e['seed'] < 2200 else\n                           'CLASS_fresh_recovery_activation' if e['seed'] < 2300 else\n                           'CLASS_recovery_cohort_activation')"
+    ],
+    [
+      "assert chain is not None",
+      "assert chain is not None or (e['seed'] >= 2300 and e['status'].endswith('first_saved_row_pending'))"
+    ],
+    [
+      "assert weights and all(w > 0 and w.denominator == 1 for w in weights)",
+      "assert (weights or (e['seed'] >= 2300 and e['status'].endswith('first_saved_row_pending'))) and all(w > 0 and w.denominator == 1 for w in weights)"
+    ],
+    [
+      "for group, seeds in groups.items():",
+      "groups.update({g: c['seeds'] for g, c in state['fresh_CLASS_recovery_cohorts'].items()})\nfor group, seeds in groups.items():"
+    ],
+    [
+      "assert len(growth) == 16",
+      "assert len(growth) == 18"
+    ],
+    [
+      "'registered_families': 66",
+      "'registered_families': 72"
+    ],
+    [
+      "'recovery_trials_are_not_qualified_four_family_cohorts': True",
+      "'fresh_recovery_cohorts_declared_but_not_qualified': True"
+    ]
+  ],
+  "scope": "All72 registrations and all18 declared cohorts; initial saved rows permitted pending only for six newly activated companions."
+}

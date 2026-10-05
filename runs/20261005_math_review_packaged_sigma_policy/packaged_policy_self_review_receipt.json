@@ -1,0 +1,185 @@
+{
+  "utc": "2026-10-05T01:37:31.822540+00:00",
+  "reviewer": "distinct_self_review_not_independent_agent",
+  "policy_sha256": "656106bcfc7c5ea01de58a084152ccdd0a9af52fc62d83c86bd2b71c79cfd283",
+  "builder_sha256_at_review": "13177afcab1bd60a4175cee8f4ce363e7e7fb8b015a52b7da9c96a1dfd1cd791",
+  "reviewed_candidate_byte_identical": true,
+  "archive_members_checked": 113,
+  "only_changed_archive_member": {
+    "path": "camb-2.0.4/fortran/halofit.f90",
+    "original_sha256": "78dab0862709a94346c5cb300ad790836b5144f1b2f803ae9c6599ee7f1a9257",
+    "prepared_sha256": "6f72e651c9faafc3d9ed6e6f68b159b3d186b178d69ad0412296c1797ab7717d"
+  },
+  "module_sha256": "a15a848cb235ed6312660b830e04d3b770db6dd6b9847c2e269fcb5110c91d13",
+  "checks": [
+    {
+      "kind": "low_mass",
+      "selection_index": 0,
+      "point": {
+        "omegabh2": 0.023027917,
+        "omegach2": 0.11612066,
+        "H0": 68.927728,
+        "logA": 3.001454952164164,
+        "ns": 1.0140642054328897,
+        "tau": 0.050845913,
+        "mnu": 0.071601591
+      },
+      "identical_arrays": [
+        "bb",
+        "ee",
+        "ell",
+        "et",
+        "te",
+        "tt"
+      ],
+      "identical_posterior_components": true
+    },
+    {
+      "kind": "low_mass",
+      "selection_index": 1,
+      "point": {
+        "omegabh2": 0.022734239369355425,
+        "omegach2": 0.11565855549914986,
+        "H0": 68.60889420134944,
+        "logA": 2.993455056393338,
+        "ns": 1.0368344643361398,
+        "tau": 0.05280893393638526,
+        "mnu": 0.077003390079904
+      },
+      "identical_arrays": [
+        "bb",
+        "ee",
+        "ell",
+        "et",
+        "te",
+        "tt"
+      ],
+      "identical_posterior_components": true
+    },
+    {
+      "kind": "low_mass",
+      "selection_index": 2,
+      "point": {
+        "omegabh2": 0.02285715756080193,
+        "omegach2": 0.117453181247565,
+        "H0": 68.60662862057427,
+        "logA": 2.995476959089847,
+        "ns": 1.0320751716778127,
+        "tau": 0.0477232798109113,
+        "mnu": 0.008608952959254384
+      },
+      "identical_arrays": [
+        "bb",
+        "ee",
+        "ell",
+        "et",
+        "te",
+        "tt"
+      ],
+      "identical_posterior_components": true
+    },
+    {
+      "kind": "low_mass",
+      "selection_index": 3,
+      "point": {
+        "omegabh2": 0.02208835,
+        "omegach2": 0.11613327,
+        "H0": 68.761625,
+        "logA": 3.0431775963340426,
+        "ns": 0.9779809833959313,
+        "tau": 0.05867819,
+        "mnu": 0.043870311
+      },
+      "identical_arrays": [
+        "bb",
+        "ee",
+        "ell",
+        "et",
+        "te",
+        "tt"
+      ],
+      "identical_posterior_components": true
+    },
+    {
+      "kind": "low_mass",
+      "selection_index": 4,
+      "point": {
+        "omegabh2": 0.02229508659134042,
+        "omegach2": 0.11756634516688139,
+        "H0": 68.43629857611299,
+        "logA": 3.039627142531277,
+        "ns": 0.9610391601448661,
+        "tau": 0.05083002945055451,
+        "mnu": 0.03567493833996502
+      },
+      "identical_arrays": [
+        "bb",
+        "ee",
+        "ell",
+        "et",
+        "te",
+        "tt"
+      ],
+      "identical_posterior_components": true
+    },
+    {
+      "kind": "low_mass",
+      "selection_index": 5,
+      "point": {
+        "omegabh2": 0.02226667347275189,
+        "omegach2": 0.11854609845872062,
+        "H0": 68.39627970218578,
+        "logA": 3.05103751940621,
+        "ns": 0.9605809252776596,
+        "tau": 0.05355413791222377,
+        "mnu": 0.009021653446876868
+      },
+      "identical_arrays": [
+        "bb",
+        "ee",
+        "ell",
+        "et",
+        "te",
+        "tt"
+      ],
+      "identical_posterior_components": true
+    },
+    {
+      "kind": "captured_failure",
+      "seed": 2003,
+      "identical_arrays": [
+        "lens_potential",
+        "lensed_scalar",
+        "provider_bb",
+        "provider_ee",
+        "provider_ell",
+        "provider_et",
+        "provider_te",
+        "provider_tt",
+        "unlensed_scalar"
+      ],
+      "identical_posterior_components": true
+    },
+    {
+      "kind": "captured_failure",
+      "seed": 2004,
+      "identical_arrays": [
+        "lens_potential",
+        "lensed_scalar",
+        "provider_bb",
+        "provider_ee",
+        "provider_ell",
+        "provider_et",
+        "provider_te",
+        "provider_tt",
+        "unlensed_scalar"
+      ],
+      "identical_posterior_components": true
+    }
+  ],
+  "selected_controls": 8,
+  "python_tests_passed": 222,
+  "broader_domain_support_certified": false,
+  "uniform_error_or_posterior_certified": false,
+  "production_adopted": false
+}

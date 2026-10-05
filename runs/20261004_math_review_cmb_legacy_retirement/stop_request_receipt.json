@@ -1,0 +1,17 @@
+{
+  "utc": "2026-10-04T00:49:48.775521+00:00",
+  "reason": "replace default numerical target that reproducibly fails inside prior support with explicit quadrature-repaired target",
+  "process_identity_and_pidfd_verified": true,
+  "agent_requested_sigterm": true,
+  "seeds": [
+    501,
+    502,
+    503,
+    504,
+    506,
+    507,
+    508
+  ],
+  "new_target_verification_sha256": "1b23412bcf27049d9d83edcb210238827b9a571242b015203c900e9d0c3838cf",
+  "old_trajectories_will_not_be_appended_to_new_target": true
+}

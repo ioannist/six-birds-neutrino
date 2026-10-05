@@ -1,0 +1,59 @@
+{
+  "utc": "2026-10-04T20:20:03.524332+00:00",
+  "files": [
+    {
+      "source": "runs/20261004_math_review_guarded_CLASS_sixth_medium_B_diagnostics/prepare_snapshot.py",
+      "source_sha256": "419593ed2211db9366af9aeb52a6b1430fe6d4ab51c23f775074eecbb6bf6d92",
+      "destination": "runs/20261004_math_review_guarded_CLASS_seventh_medium_B_diagnostics/prepare_snapshot.py",
+      "destination_sha256": "0bcab307eac7761e3466790fed237bcb2be7480ab4c0241bd0f750a965868347",
+      "byte_identical": false,
+      "changes": [
+        [
+          "20261004_math_review_guarded_CLASS_fifth_medium_B_diagnostics",
+          "20261004_math_review_guarded_CLASS_sixth_medium_B_diagnostics"
+        ],
+        [
+          "sixth_guarded_CLASS_medium_B_cohort_diagnostics",
+          "seventh_guarded_CLASS_medium_B_cohort_diagnostics"
+        ],
+        [
+          "CLASS quadrature B cohort.",
+          "CLASS medium B cohort."
+        ]
+      ]
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_CLASS_sixth_medium_B_diagnostics/verify_snapshot.py",
+      "source_sha256": "8819cc57180c4609ba50b01a2ce08f957cc2a40847314793bc0945ba26118a04",
+      "destination": "runs/20261004_math_review_guarded_CLASS_seventh_medium_B_diagnostics/verify_snapshot.py",
+      "destination_sha256": "8819cc57180c4609ba50b01a2ce08f957cc2a40847314793bc0945ba26118a04",
+      "byte_identical": true,
+      "changes": []
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_CLASS_sixth_medium_B_diagnostics/self_review.py",
+      "source_sha256": "81561639ecd113e8a970b9ae323d16c6fb0e7bd48a580945465a9f2d57a40279",
+      "destination": "runs/20261004_math_review_guarded_CLASS_seventh_medium_B_diagnostics/self_review.py",
+      "destination_sha256": "81561639ecd113e8a970b9ae323d16c6fb0e7bd48a580945465a9f2d57a40279",
+      "byte_identical": true,
+      "changes": []
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_CLASS_sixth_medium_B_diagnostics/run_diagnostics.py",
+      "source_sha256": "21d3c1584c115d84e6d21ea094e3755d8087d88076f19fa5489f3ad4aac74656",
+      "destination": "runs/20261004_math_review_guarded_CLASS_seventh_medium_B_diagnostics/run_diagnostics.py",
+      "destination_sha256": "21d3c1584c115d84e6d21ea094e3755d8087d88076f19fa5489f3ad4aac74656",
+      "byte_identical": true,
+      "changes": []
+    },
+    {
+      "source": "runs/20261004_math_review_guarded_CLASS_sixth_medium_B_diagnostics/observe_runtime.py",
+      "source_sha256": "9f837ddfd65bffadb8f66c1e0b45d7e4dbd0d969f07f42659b64758dd4f99ddd",
+      "destination": "runs/20261004_math_review_guarded_CLASS_seventh_medium_B_diagnostics/observe_runtime.py",
+      "destination_sha256": "9f837ddfd65bffadb8f66c1e0b45d7e4dbd0d969f07f42659b64758dd4f99ddd",
+      "byte_identical": true,
+      "changes": []
+    }
+  ],
+  "gates_or_precision_settings_changed": false
+}

@@ -1,0 +1,29 @@
+{
+  "utc": "2026-10-05T07:41:07.164252+00:00",
+  "source": "runs/20261005_math_review_sigma_time_v3_second_assessments_combined_review/review.py",
+  "source_sha256": "518b9bc8f884ec5cb31200e7248ff213f5015016b05687d956ab86ad03e7e5ae",
+  "changes": [
+    [
+      "Reconstruct three expanded-history assessments without promoting a posterior.",
+      "Reconstruct two expanded A assessments without promoting a posterior."
+    ],
+    [
+      "for group in (\"sigma_time_v3_A4095_cap5\", \"sigma_time_v3_B4095_cap5\", \"sigma_time_v3_B4095_cap20\"):",
+      "for group in (\"sigma_time_v3_A4095_cap5\", \"sigma_time_v3_A4095_cap20\"):"
+    ],
+    [
+      "\"selected_native_rows_exact\": 36",
+      "\"selected_native_rows_exact\": 24"
+    ],
+    [
+      "\"all_three_posteriors_unqualified\"",
+      "\"both_A_posteriors_unqualified\""
+    ],
+    [
+      "Three second sigma_time_v3 assessments reviewed; 36 native rows exact, all posteriors unqualified.",
+      "Two expanded sigma_time_v3 A assessments reviewed; 24 native rows exact, both posteriors unqualified."
+    ]
+  ],
+  "same_target_predecessor_and_history_gates_preserved": true,
+  "two_groups_not_pooled": true
+}

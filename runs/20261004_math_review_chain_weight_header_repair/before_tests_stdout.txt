@@ -1,0 +1,117 @@
+FFFFF..                                                                  [100%]
+=================================== FAILURES ===================================
+_____ test_chain_loader_rejects_mislabeled_weight_column[header_fallback] ______
+
+tmp_path = PosixPath('/tmp/pytest-of-ioannis/pytest-891/test_chain_loader_rejects_misl0')
+case = 'header_fallback'
+
+    @pytest.mark.parametrize('case', ['header_fallback', 'paramnames', 'later_chain'])
+    def test_chain_loader_rejects_mislabeled_weight_column(tmp_path, case):
+        prefix = tmp_path / 'sample'
+        if case != 'header_fallback':
+            Path(str(prefix) + '.paramnames').write_text('mnu mass\n')
+        index = 2 if case == 'later_chain' else 1
+        if index == 2:
+            Path(str(prefix) + '.1.txt').write_text('# weight minuslogpost mnu\n1 99 .1\n1 1 .2\n')
+        Path(str(prefix) + f'.{index}.txt').write_text('# minuslogpost weight mnu\n99 1 .1\n1 1 .2\n')
+        # The old reader uses 99:1 rather than the labeled 1:1 weights, changing
+        # the empirical p95 from .2 to .1 and inventing extra represented steps.
+>       with pytest.raises(ValueError, match='first.*weight'):
+E       Failed: DID NOT RAISE <class 'ValueError'>
+
+tests/test_math_repairs.py:236: Failed
+________ test_chain_loader_rejects_mislabeled_weight_column[paramnames] ________
+
+tmp_path = PosixPath('/tmp/pytest-of-ioannis/pytest-891/test_chain_loader_rejects_misl1')
+case = 'paramnames'
+
+    @pytest.mark.parametrize('case', ['header_fallback', 'paramnames', 'later_chain'])
+    def test_chain_loader_rejects_mislabeled_weight_column(tmp_path, case):
+        prefix = tmp_path / 'sample'
+        if case != 'header_fallback':
+            Path(str(prefix) + '.paramnames').write_text('mnu mass\n')
+        index = 2 if case == 'later_chain' else 1
+        if index == 2:
+            Path(str(prefix) + '.1.txt').write_text('# weight minuslogpost mnu\n1 99 .1\n1 1 .2\n')
+        Path(str(prefix) + f'.{index}.txt').write_text('# minuslogpost weight mnu\n99 1 .1\n1 1 .2\n')
+        # The old reader uses 99:1 rather than the labeled 1:1 weights, changing
+        # the empirical p95 from .2 to .1 and inventing extra represented steps.
+>       with pytest.raises(ValueError, match='first.*weight'):
+E       Failed: DID NOT RAISE <class 'ValueError'>
+
+tests/test_math_repairs.py:236: Failed
+_______ test_chain_loader_rejects_mislabeled_weight_column[later_chain] ________
+
+tmp_path = PosixPath('/tmp/pytest-of-ioannis/pytest-891/test_chain_loader_rejects_misl2')
+case = 'later_chain'
+
+    @pytest.mark.parametrize('case', ['header_fallback', 'paramnames', 'later_chain'])
+    def test_chain_loader_rejects_mislabeled_weight_column(tmp_path, case):
+        prefix = tmp_path / 'sample'
+        if case != 'header_fallback':
+            Path(str(prefix) + '.paramnames').write_text('mnu mass\n')
+        index = 2 if case == 'later_chain' else 1
+        if index == 2:
+            Path(str(prefix) + '.1.txt').write_text('# weight minuslogpost mnu\n1 99 .1\n1 1 .2\n')
+        Path(str(prefix) + f'.{index}.txt').write_text('# minuslogpost weight mnu\n99 1 .1\n1 1 .2\n')
+        # The old reader uses 99:1 rather than the labeled 1:1 weights, changing
+        # the empirical p95 from .2 to .1 and inventing extra represented steps.
+>       with pytest.raises(ValueError, match='first.*weight'):
+E       Failed: DID NOT RAISE <class 'ValueError'>
+
+tests/test_math_repairs.py:236: Failed
+___________ test_diagnostics_reject_mislabeled_weights_before_report ___________
+
+tmp_path = PosixPath('/tmp/pytest-of-ioannis/pytest-891/test_diagnostics_reject_mislab0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7b304b1a7a10>
+
+    def test_diagnostics_reject_mislabeled_weights_before_report(tmp_path, monkeypatch):
+        run = tmp_path / 'run'
+        prefix = _write_temperature_chain(run, 'mcmc', 11, 1)
+        Path(str(prefix) + '.1.txt').write_text('# minuslogpost weight mnu\n99 1 .1\n1 1 .2\n')
+        output = tmp_path / 'diagnostics.json'
+        monkeypatch.setattr(sys, 'argv', ['diagnose', '--run-dir', str(run), '--output', str(output)])
+>       with pytest.raises(ValueError, match='first.*weight'):
+E       Failed: DID NOT RAISE <class 'ValueError'>
+
+tests/test_math_repairs.py:246: Failed
+----------------------------- Captured stdout call -----------------------------
+Diagnostic thresholds pass: False; report: /tmp/pytest-of-ioannis/pytest-891/test_diagnostics_reject_mislab0/diagnostics.json
+____________ test_density_rejects_mislabeled_weights_before_getdist ____________
+
+tmp_path = PosixPath('/tmp/pytest-of-ioannis/pytest-891/test_density_rejects_mislabele0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7b304a699c40>
+
+    def test_density_rejects_mislabeled_weights_before_getdist(tmp_path, monkeypatch):
+        import getdist.mcsamples as backend
+        prefix = tmp_path / 'sample'
+        Path(str(prefix) + '.paramnames').write_text('mnu mass\n')
+        Path(str(prefix) + '.1.txt').write_text('# minuslogpost weight mnu\n99 1 .1\n1 1 .2\n')
+        def forbidden(*args, **kwargs):
+            pytest.fail('GetDist must not consume mislabeled weights.')
+        monkeypatch.setattr(backend, 'loadMCSamples', forbidden)
+        with pytest.raises(ValueError, match='first.*weight'):
+>           compare_mnu_posteriors._load_density(prefix, 0)
+
+tests/test_math_repairs.py:260: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+scripts/compare_mnu_posteriors.py:62: in _load_density
+    samples = loadMCSamples(str(prefix), settings={"ignore_rows": burnin_frac})
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+args = ('/tmp/pytest-of-ioannis/pytest-891/test_density_rejects_mislabele0/sample',)
+kwargs = {'settings': {'ignore_rows': 0}}
+
+    def forbidden(*args, **kwargs):
+>       pytest.fail('GetDist must not consume mislabeled weights.')
+E       Failed: GetDist must not consume mislabeled weights.
+
+tests/test_math_repairs.py:257: Failed
+=========================== short test summary info ============================
+FAILED tests/test_math_repairs.py::test_chain_loader_rejects_mislabeled_weight_column[header_fallback]
+FAILED tests/test_math_repairs.py::test_chain_loader_rejects_mislabeled_weight_column[paramnames]
+FAILED tests/test_math_repairs.py::test_chain_loader_rejects_mislabeled_weight_column[later_chain]
+FAILED tests/test_math_repairs.py::test_diagnostics_reject_mislabeled_weights_before_report
+FAILED tests/test_math_repairs.py::test_density_rejects_mislabeled_weights_before_getdist
+5 failed, 2 passed, 94 deselected in 3.77s

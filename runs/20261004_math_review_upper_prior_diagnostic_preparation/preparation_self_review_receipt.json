@@ -1,0 +1,88 @@
+{
+  "utc": "2026-10-04T22:07:23.327767+00:00",
+  "review_type": "distinct self-review",
+  "source_contract": "runs/20261004_math_review_fresh_CAMB_weighted_summary_diagnostic_preparation/assessment_contract.json",
+  "source_contract_sha256": "dfc3372b273042de5bb94465bd70fc51c8a102b47bab65d2ef61fdca3ed738ed",
+  "contract_sha256": "0f8880e9be8f3aea9cd979830acb7a6bc87117cf63b4ea3d5e0373431928e345",
+  "helper_files": [
+    {
+      "source": "runs/20261004_math_review_fresh_CAMB_weighted_summary_diagnostic_preparation/prepare_snapshot.py",
+      "destination": "runs/20261004_math_review_upper_prior_diagnostic_preparation/prepare_snapshot.py",
+      "sha256": "d9397740c609c3cb9ffcdce3c50a04fcb1fbb860c8dc3deea4773aad76b010b4",
+      "byte_identical": true
+    },
+    {
+      "source": "runs/20261004_math_review_fresh_CAMB_weighted_summary_diagnostic_preparation/verify_native_rows.py",
+      "destination": "runs/20261004_math_review_upper_prior_diagnostic_preparation/verify_native_rows.py",
+      "sha256": "9bcf1f1073ed098ef787e65510b859f61f510c0911b0071f6008cea26c79cca9",
+      "byte_identical": true
+    },
+    {
+      "source": "runs/20261004_math_review_fresh_CAMB_weighted_summary_diagnostic_preparation/run_diagnostic.py",
+      "destination": "runs/20261004_math_review_upper_prior_diagnostic_preparation/run_diagnostic.py",
+      "sha256": "ab760f7bde8806f0c82ed515e57278a5751a0842c9b9116df866d5421597b327",
+      "byte_identical": true
+    },
+    {
+      "source": "runs/20261004_math_review_fresh_CAMB_weighted_summary_diagnostic_preparation/verify_snapshot.py",
+      "destination": "runs/20261004_math_review_upper_prior_diagnostic_preparation/verify_snapshot.py",
+      "sha256": "f8d580e0f4222fd07e015266265761b6c7c789f66ef9f1bc7fa6a7e77098e1b9",
+      "byte_identical": true
+    },
+    {
+      "source": "runs/20261004_math_review_fresh_CAMB_weighted_summary_diagnostic_preparation/contract_compatibility.py",
+      "destination": "runs/20261004_math_review_upper_prior_diagnostic_preparation/contract_compatibility.py",
+      "sha256": "0185acd13c2c2b5fd3669a490e68eda69edb0d23e7960dd76c81c7771cc43ace",
+      "byte_identical": true
+    }
+  ],
+  "all_thresholds_native_checks_and_diagnostic_sources_unchanged": true,
+  "only_contract_changes": [
+    "timestamp",
+    "two separately registered wider-prior groups",
+    "no primary-contract predecessors allowed"
+  ],
+  "actual_prethreshold_refusals": [
+    {
+      "group": "upper20_A4095",
+      "command": [
+        "/tmp/neutrino-math-review-venv/bin/python",
+        "runs/20261004_math_review_upper_prior_diagnostic_preparation/prepare_snapshot.py",
+        "upper20_A4095",
+        "--outdir",
+        "runs/20261004_math_review_upper_prior_diagnostic_preparation/upper20_A4095_not_due_snapshot"
+      ],
+      "actual_exit_code": 3,
+      "output_directory_created": false,
+      "refusal": {
+        "group": "upper20_A4095",
+        "minimum_retained_represented_steps": 34,
+        "threshold": 1000,
+        "snapshot_written": false,
+        "scope": "live identity and saved-growth check only"
+      }
+    },
+    {
+      "group": "upper20_B4095",
+      "command": [
+        "/tmp/neutrino-math-review-venv/bin/python",
+        "runs/20261004_math_review_upper_prior_diagnostic_preparation/prepare_snapshot.py",
+        "upper20_B4095",
+        "--outdir",
+        "runs/20261004_math_review_upper_prior_diagnostic_preparation/upper20_B4095_not_due_snapshot"
+      ],
+      "actual_exit_code": 3,
+      "output_directory_created": false,
+      "refusal": {
+        "group": "upper20_B4095",
+        "minimum_retained_represented_steps": 24,
+        "threshold": 1000,
+        "snapshot_written": false,
+        "scope": "live identity and saved-growth check only"
+      }
+    }
+  ],
+  "same_contract_predecessor_accepted": true,
+  "primary_5_eV_history_as_predecessor_refused": true,
+  "posterior_qualification_or_prior_insensitivity_certified": false
+}

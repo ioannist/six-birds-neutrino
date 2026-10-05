@@ -1,0 +1,67 @@
+{
+  "utc": "2026-10-04T02:54:56.514179+00:00",
+  "scope": "selected_archived_rows_full_guarded_native_target",
+  "module_sha256": "7a5d736220b3d236f3dc7c89944d025fe3e4c7cb4c8e4473ef807c898fc71539",
+  "chain_sha256": "2f89da3cf0498c533576f013a7ece0178d45f603d13e2608741037bddd154c7e",
+  "atol": 1e-07,
+  "rtol": 1e-10,
+  "checks": [
+    {
+      "row_index": 0,
+      "point": {
+        "omegabh2": 0.022705909314640633,
+        "omegach2": 0.11646270981087711,
+        "H0": 68.21744352367017,
+        "logA": 3.025948761686533,
+        "ns": 0.9587550601709601,
+        "tau": 0.038231976715413334,
+        "mnu_sample": 0.06648549159682049,
+        "A_planck": 1.00747026697314,
+        "TT_tSZ_Amp": 2.1243395560929863,
+        "TT_kSZ_Amp": 9.989371351471112
+      },
+      "fresh_minuslogpost": 1550.7771752182168,
+      "fresh_minus_recorded": {
+        "minuslogpost": 0.0,
+        "minuslogprior": 0.0,
+        "chi2": 0.0,
+        "chi2__sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 0.0,
+        "chi2__sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 0.0,
+        "chi2__planck_2018_lowl.TT": 0.0,
+        "chi2__planck_2018_lowl.EE_sroll2": 0.0,
+        "chi2__planck_2018_highl_plik.TT_lite_native": 0.0,
+        "chi2__planckpr4lensing.PlanckPR4Lensing": 0.0
+      }
+    },
+    {
+      "row_index": 151,
+      "point": {
+        "omegabh2": 0.022764762455151383,
+        "omegach2": 0.1168380627859882,
+        "H0": 68.46693369407772,
+        "logA": 3.0258163921568677,
+        "ns": 0.9807560314639605,
+        "tau": 0.052117217994625965,
+        "mnu_sample": 0.062042087843432715,
+        "A_planck": 0.9933086722873586,
+        "TT_tSZ_Amp": 2.3630422013359205,
+        "TT_kSZ_Amp": 9.398496883855332
+      },
+      "fresh_minuslogpost": 1520.6952296761344,
+      "fresh_minus_recorded": {
+        "minuslogpost": 0.0,
+        "minuslogprior": 0.0,
+        "chi2": 0.0,
+        "chi2__sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": 0.0,
+        "chi2__sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 0.0,
+        "chi2__planck_2018_lowl.TT": 0.0,
+        "chi2__planck_2018_lowl.EE_sroll2": 0.0,
+        "chi2__planck_2018_highl_plik.TT_lite_native": 0.0,
+        "chi2__planckpr4lensing.PlanckPR4Lensing": 0.0
+      }
+    }
+  ],
+  "config_sha256": "dd9c2d5d99869b952c0f43440c152902d4f4a13f4539caae0b3feebafad3327c",
+  "all_old_rows_same_numerical_target_asserted": false,
+  "posterior_convergence_certified": false
+}

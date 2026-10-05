@@ -1,0 +1,25 @@
+{
+  "runA": {
+    "path": "/home/repos/six-birds-neutrino/runs/20261003_math_review_toy_audit/lensA",
+    "run_name": "toy_lensA"
+  },
+  "runB": {
+    "path": "/home/repos/six-birds-neutrino/runs/20261003_math_review_toy_audit/lensB",
+    "run_name": "toy_lensB"
+  },
+  "lens_type": "gaussian",
+  "delta_chi2": {
+    "B_given_A": 2.2908164189989595,
+    "A_given_B": 4.290815943877553
+  },
+  "blockwise": {
+    "B_given_A": {
+      "mode0": 0.24999999999999686,
+      "mode1": 2.040816418998963
+    },
+    "A_given_B": {
+      "mode0": 2.249999719387759,
+      "mode1": 2.0408162244897965
+    }
+  }
+}

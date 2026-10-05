@@ -1,0 +1,10 @@
+[camb] `camb` module loaded successfully from /mnt/8tb/six-birds-ml/tmp/neutrino_spt_archived_solver_control_20261004/packages/camb
+[exception handler] ---------------------------------------
+
+Traceback (most recent call last):
+  File "/home/repos/six-birds-neutrino/runs/20261004_math_review_SPT_archived_solver_chain_preparation/preflight.py", line 46, in <module>
+    assert chi==expected['chi2_components'] and prior==expected['logpriors']
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+-------------------------------------------------------------
+

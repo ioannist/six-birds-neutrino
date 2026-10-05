@@ -1,0 +1,5 @@
+CosmoComputationError: 
+
+Error in Class: operator()(L:1047) :error in perturbations_solve(ppr, pba, pth, ppt, index_md, index_ic, index_k, &pw);
+=>perturbations_solve(L:3210) :error in perturbations_vector_init(ppr, pba, pth, ppt, index_md, index_ic, k, interval_limit[index_interval], ppw, previous_approx);
+=>perturbations_vector_init(L:4602) :condition (ppw->approx[ppw->index_ap_tca] == (int)tca_off) is true; scalar initial conditions assume tight-coupling approximation turned on

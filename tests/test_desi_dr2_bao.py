@@ -8,6 +8,8 @@ import pytest
 from sbt_spt_audit.likelihoods.desi_dr2_bao import (
     BAOPoint,
     compute_gaussian_chi2,
+    compute_observable_value,
+    compute_theory_vector,
     load_desi_dr2_dataset_from_files,
 )
 
@@ -79,3 +81,67 @@ def test_loader_rejects_cov_dimension_mismatch(tmp_path: Path) -> None:
 def test_baopoint_dataclass_fields() -> None:
     p = BAOPoint(z=0.5, obs="DM_over_rd", value=10.0, label="x")
     assert p.obs == "DM_over_rd"
+
+
+def test_distance_provider_arrays_are_single_observations() -> None:
+    points = [BAOPoint(z=0.5, obs="DM_over_rd", value=0.0, label="x")]
+    pred = compute_theory_vector(points, 150.0,
+                                 lambda z: np.array([1000.0]),
+                                 lambda z: np.array([100.0]))
+    assert pred == pytest.approx([10.0])
+    with pytest.raises(ValueError, match="single finite"):
+        compute_theory_vector(points, 150.0, lambda z: [1000.0, 1100.0], lambda z: 100.0)
+
+
+def test_small_precision_does_not_require_representable_inverse_residual() -> None:
+    # The precision solve overflows, but the requested quadratic form is finite.
+    got = compute_gaussian_chi2(np.array([0.]), np.array([[1e-320]]), np.array([1.]))
+    assert got == 1e-320
+
+
+@pytest.mark.parametrize("mean,pred", [(0., 1e200), (-1e308, 1e308)])
+def test_gaussian_quadratic_overflow_is_rejected(mean, pred) -> None:
+    with pytest.raises(ValueError, match="quadratic form must be finite"):
+        compute_gaussian_chi2(np.array([mean]), np.eye(1), np.array([pred]))
+
+
+def test_loader_does_not_require_representable_covariance_solve_for_mean(tmp_path) -> None:
+    mean_file, cov_file = tmp_path / 'mean.txt', tmp_path / 'cov.txt'
+    mean_file.write_text('0.5 1e308 DM_over_rs\n')
+    np.savetxt(cov_file, np.array([[1e-308]]))
+    dataset = load_desi_dr2_dataset_from_files(mean_file, cov_file, label='extreme')
+    assert np.isfinite(dataset.invcov).all()
+    assert compute_gaussian_chi2(dataset.mean, dataset.invcov, dataset.mean) == 0.
+
+
+@pytest.mark.parametrize('z,rd,dm,dh', [
+    (1., 1e200, 1e200, 1e200),
+    (1., 1e-200, 1e-200, 1e-200),
+    (2.**600, 2.**200, 2.**-300, 2.**600),
+    (2.**-600, 2.**-200, 2.**300, 2.**-600),
+    (1., float.fromhex('0x0.0000000000001p-1022'),
+     float.fromhex('0x0.0000000000001p-1022'),
+     float.fromhex('0x0.0000000000001p-1022')),
+])
+def test_volume_distance_ratio_survives_unrepresentable_intermediates(z, rd, dm, dh) -> None:
+    # These identities follow from DV^3 = z*DH*DM^2, rather than from a
+    # floating-point implementation of the same overflowing product.
+    assert compute_observable_value('DV_over_rd', z, rd, dm, dh) == pytest.approx(1., rel=3e-15)
+
+
+@pytest.mark.parametrize('z,dm,dh', [(10., 0., 1e308), (0., 1e308, 1e308)])
+def test_zero_volume_distance_precedes_overflowing_products(z, dm, dh) -> None:
+    assert compute_observable_value('DV_over_rd', z, 1., dm, dh) == 0.
+
+
+@pytest.mark.parametrize('obs', ['DM_over_rd', 'DH_over_rd', 'DV_over_rd'])
+def test_unrepresentable_bao_observable_is_explicitly_rejected(obs) -> None:
+    with pytest.raises(ValueError, match='representable finite'):
+        compute_observable_value(obs, 1., 1e-300, 1e300, 1e300)
+
+
+def test_ordinary_bao_volume_distance_keeps_legacy_arithmetic() -> None:
+    for z in [.295, .51, .706, .934, 1.317, 1.491, 2.33]:
+        for rd, dm, dh in [(147., 3000., 3500.), (140., 2000., 4100.)]:
+            expected = (z * dh * dm * dm)**(1./3.) / rd
+            assert compute_observable_value('DV_over_rd', z, rd, dm, dh) == expected

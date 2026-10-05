@@ -1,0 +1,194 @@
+{
+  "utc": "2026-10-04T12:02:03.817065+00:00",
+  "scope": "fifteenth_SPT_B_six_family_growth_qualified_diagnostics",
+  "previous_snapshot_receipt": "runs/20261004_math_review_spt_chain_snapshots_thirteenth_B/snapshot_receipt.json",
+  "previous_snapshot_receipt_sha256": "dc7f012f6673fa5d7b4b2c2417425dbce1e7ceae93d2b81c7738bdb0fca8d4ce",
+  "files": [
+    {
+      "source": "runs/20261003_math_review_chain_B_seed305/chains/math_restoration_B_seed305.1.txt",
+      "snapshot": "runs/20261004_math_review_spt_chain_snapshots_fifteenth_B/chain_B_seed305/chains/math_restoration_B_seed305.1.txt",
+      "sha256": "76a120cc700b3b15202ef6c376ede8fda33c80975a4f2952a35292cc421a92d9",
+      "snapshot_bytes": 1438200,
+      "stored_rows": 4229,
+      "retained_represented_steps": 12140,
+      "original_seed": 305,
+      "active_segment_seed": 305,
+      "trajectory_scope": "uninterrupted_saved_prefix",
+      "completed_family": false
+    },
+    {
+      "source": "runs/20261003_math_review_chain_B_seed306/chains/math_restoration_B_seed306.1.txt",
+      "snapshot": "runs/20261004_math_review_spt_chain_snapshots_fifteenth_B/chain_B_seed306/chains/math_restoration_B_seed306.1.txt",
+      "sha256": "0236a936de54d29a828cf1beb020281361faba64beac68402ff25fe6cbfa35f6",
+      "snapshot_bytes": 1410320,
+      "stored_rows": 4147,
+      "retained_represented_steps": 11712,
+      "original_seed": 306,
+      "active_segment_seed": 306,
+      "trajectory_scope": "uninterrupted_saved_prefix",
+      "completed_family": false
+    },
+    {
+      "source": "runs/20261003_math_review_chain_B_seed307/chains/math_restoration_B_seed307.1.txt",
+      "snapshot": "runs/20261004_math_review_spt_chain_snapshots_fifteenth_B/chain_B_seed307/chains/math_restoration_B_seed307.1.txt",
+      "sha256": "27adde942470ec4f8365802f12b66fd92b4415b8ec7ed7e112711f73227963ae",
+      "snapshot_bytes": 1860480,
+      "stored_rows": 5471,
+      "retained_represented_steps": 15577,
+      "original_seed": 307,
+      "active_segment_seed": 307,
+      "trajectory_scope": "uninterrupted_saved_prefix",
+      "completed_family": false
+    },
+    {
+      "source": "runs/20261003_math_review_chain_B_seed308/chains/math_restoration_B_seed308.1.txt",
+      "snapshot": "runs/20261004_math_review_spt_chain_snapshots_fifteenth_B/chain_B_seed308/chains/math_restoration_B_seed308.1.txt",
+      "sha256": "4d9f4c52e705db5d07c378e19f94786bd45ee22e0b53cb9f10003f642c97bca5",
+      "snapshot_bytes": 1822060,
+      "stored_rows": 5358,
+      "retained_represented_steps": 15649,
+      "original_seed": 308,
+      "active_segment_seed": 308,
+      "trajectory_scope": "uninterrupted_saved_prefix",
+      "completed_family": false
+    },
+    {
+      "source": "runs/20261003_math_review_chain_B_seed403/chains/math_restoration_B_seed403.1.txt",
+      "snapshot": "runs/20261004_math_review_spt_chain_snapshots_fifteenth_B/chain_B_seed403/chains/math_restoration_B_seed403.1.txt",
+      "sha256": "9ca2db996f97428052de80c77c7234fa1ae9d8a9d31788267781ca67ba1e5a53",
+      "snapshot_bytes": 6800340,
+      "stored_rows": 20000,
+      "retained_represented_steps": 57773,
+      "original_seed": 403,
+      "active_segment_seed": 403,
+      "trajectory_scope": "uninterrupted_saved_prefix",
+      "completed_family": true
+    },
+    {
+      "source": "runs/20261003_math_review_chain_B_seed404/chains/math_restoration_B_seed404.1.txt",
+      "snapshot": "runs/20261004_math_review_spt_chain_snapshots_fifteenth_B/chain_B_seed404/chains/math_restoration_B_seed404.1.txt",
+      "sha256": "37cf3e4b9e3eccb85b6cf0ebfa777d054539c74136c03a2f774267d728638d0d",
+      "snapshot_bytes": 6378740,
+      "stored_rows": 18760,
+      "retained_represented_steps": 54654,
+      "original_seed": 404,
+      "active_segment_seed": 404,
+      "trajectory_scope": "uninterrupted_saved_prefix",
+      "completed_family": true
+    }
+  ],
+  "configurations": [
+    {
+      "source": "runs/20261003_math_review_chain_B_seed305/input.yaml",
+      "snapshot": "runs/20261004_math_review_spt_chain_snapshots_fifteenth_B/chain_B_seed305/input.yaml",
+      "source_sha256": "7141c928ae2f8401c8510730f98ee5e7650c073aa1f5ba3995339b95b84c1678",
+      "snapshot_sha256": "7141c928ae2f8401c8510730f98ee5e7650c073aa1f5ba3995339b95b84c1678"
+    },
+    {
+      "source": "runs/20261003_math_review_chain_B_seed305/resolved.yaml",
+      "snapshot": "runs/20261004_math_review_spt_chain_snapshots_fifteenth_B/chain_B_seed305/resolved.yaml",
+      "source_sha256": "74d076e2a991da943e9deffa95d56d6e080750900e8be5da8045584600881a77",
+      "snapshot_sha256": "c0529a183f55e89202af90f1e1d7d40686fc933e29b8fd83f4daaf509dc949e9"
+    },
+    {
+      "source": "runs/20261003_math_review_chain_B_seed306/input.yaml",
+      "snapshot": "runs/20261004_math_review_spt_chain_snapshots_fifteenth_B/chain_B_seed306/input.yaml",
+      "source_sha256": "8e428eb25e2216ef2de726b248aa45a759b34c72358604c066e8e6461cb40a90",
+      "snapshot_sha256": "8e428eb25e2216ef2de726b248aa45a759b34c72358604c066e8e6461cb40a90"
+    },
+    {
+      "source": "runs/20261003_math_review_chain_B_seed306/resolved.yaml",
+      "snapshot": "runs/20261004_math_review_spt_chain_snapshots_fifteenth_B/chain_B_seed306/resolved.yaml",
+      "source_sha256": "7620f08fd87220dfbb8f41b56989c01a8ade5ba72ce8fc1b01151fa1d804aa43",
+      "snapshot_sha256": "567f3991e0efa54848796da49382dabfc38405d95443e23b57cc5e12c389615e"
+    },
+    {
+      "source": "runs/20261003_math_review_chain_B_seed307/input.yaml",
+      "snapshot": "runs/20261004_math_review_spt_chain_snapshots_fifteenth_B/chain_B_seed307/input.yaml",
+      "source_sha256": "1de771462d2ba82645b4abe623c567d2a1a3f6c5c2751a4f1b4c4e4b688efcaf",
+      "snapshot_sha256": "1de771462d2ba82645b4abe623c567d2a1a3f6c5c2751a4f1b4c4e4b688efcaf"
+    },
+    {
+      "source": "runs/20261003_math_review_chain_B_seed307/resolved.yaml",
+      "snapshot": "runs/20261004_math_review_spt_chain_snapshots_fifteenth_B/chain_B_seed307/resolved.yaml",
+      "source_sha256": "9dc261c8b287ace8d93ac42ab1c3a9a06191b6cc64d9623b5df9514b22a2f6eb",
+      "snapshot_sha256": "6016ae07e845ff4dba8af9338775801f5e4300a3489a2c4a82dfb8f2ce069f2d"
+    },
+    {
+      "source": "runs/20261003_math_review_chain_B_seed308/input.yaml",
+      "snapshot": "runs/20261004_math_review_spt_chain_snapshots_fifteenth_B/chain_B_seed308/input.yaml",
+      "source_sha256": "a6529a798fd43c59a66e9749864a5a5dad7457c3dfbbcc2af784241d08eb7b27",
+      "snapshot_sha256": "a6529a798fd43c59a66e9749864a5a5dad7457c3dfbbcc2af784241d08eb7b27"
+    },
+    {
+      "source": "runs/20261003_math_review_chain_B_seed308/resolved.yaml",
+      "snapshot": "runs/20261004_math_review_spt_chain_snapshots_fifteenth_B/chain_B_seed308/resolved.yaml",
+      "source_sha256": "0c858a1f686f05722fcf1e99288db3c39c9262a571a0e1ef7ddc142c9b3255da",
+      "snapshot_sha256": "beaca013b1c11dc6a835d1a208a4931e4951c65fc24635045c0e1a281e72c347"
+    },
+    {
+      "source": "runs/20261003_math_review_chain_B_seed403/input.yaml",
+      "snapshot": "runs/20261004_math_review_spt_chain_snapshots_fifteenth_B/chain_B_seed403/input.yaml",
+      "source_sha256": "a9681c55406e232fd0fa87a848dda8862dc365d62acf5cddc5949fe2fbaa87de",
+      "snapshot_sha256": "a9681c55406e232fd0fa87a848dda8862dc365d62acf5cddc5949fe2fbaa87de"
+    },
+    {
+      "source": "runs/20261003_math_review_chain_B_seed403/resolved.yaml",
+      "snapshot": "runs/20261004_math_review_spt_chain_snapshots_fifteenth_B/chain_B_seed403/resolved.yaml",
+      "source_sha256": "89ffb7bfbf85a8066650784ec35c3959451eb6d3b88f74ae6d01334d481e6684",
+      "snapshot_sha256": "16890e3f784045c5bb9094418305be4701484e6dbea52e9e57aff72a939bea9c"
+    },
+    {
+      "source": "runs/20261003_math_review_chain_B_seed404/input.yaml",
+      "snapshot": "runs/20261004_math_review_spt_chain_snapshots_fifteenth_B/chain_B_seed404/input.yaml",
+      "source_sha256": "fbcd5d1daa962adb4d8bdd34b91b109852b70085607351ea2dc4c59931c931df",
+      "snapshot_sha256": "fbcd5d1daa962adb4d8bdd34b91b109852b70085607351ea2dc4c59931c931df"
+    },
+    {
+      "source": "runs/20261003_math_review_chain_B_seed404/resolved.yaml",
+      "snapshot": "runs/20261004_math_review_spt_chain_snapshots_fifteenth_B/chain_B_seed404/resolved.yaml",
+      "source_sha256": "95e726f01d042f4dfd4e1d790934a70a7a3fa2a7bf4b21aaad4048de58d620d8",
+      "snapshot_sha256": "5809ce66eabc5bb1a948a56e69c911ae5dc069b4dc3db9920f2511c8fb321395"
+    }
+  ],
+  "complete_lines_only": true,
+  "previous_draws_per_chain": 9703,
+  "current_draws_per_chain": 11712,
+  "growth_fraction": 0.2070493661754096,
+  "completed_families_403_404_retained": true,
+  "SPT_A_reassessed": false,
+  "CLASS_cohorts_included": false,
+  "diagnostic_gates_changed": false,
+  "diagnostic_commands": {
+    "chain_B": [
+      "/tmp/neutrino-math-review-venv/bin/python",
+      "/home/repos/six-birds-neutrino/scripts/diagnose_cobaya_chains.py",
+      "--run-dir",
+      "/home/repos/six-birds-neutrino/runs/20261004_math_review_spt_chain_snapshots_fifteenth_B/chain_B_seed305",
+      "--run-dir",
+      "/home/repos/six-birds-neutrino/runs/20261004_math_review_spt_chain_snapshots_fifteenth_B/chain_B_seed306",
+      "--run-dir",
+      "/home/repos/six-birds-neutrino/runs/20261004_math_review_spt_chain_snapshots_fifteenth_B/chain_B_seed307",
+      "--run-dir",
+      "/home/repos/six-birds-neutrino/runs/20261004_math_review_spt_chain_snapshots_fifteenth_B/chain_B_seed308",
+      "--run-dir",
+      "/home/repos/six-birds-neutrino/runs/20261004_math_review_spt_chain_snapshots_fifteenth_B/chain_B_seed403",
+      "--run-dir",
+      "/home/repos/six-birds-neutrino/runs/20261004_math_review_spt_chain_snapshots_fifteenth_B/chain_B_seed404",
+      "--burnin-frac",
+      "0.2",
+      "--quantile-mcse-limit",
+      "0.005",
+      "--relative-quantile-mcse-limit",
+      "0.05",
+      "--output",
+      "/home/repos/six-birds-neutrino/runs/20261004_math_review_spt_chain_snapshots_fifteenth_B/chain_B_diagnostics.json"
+    ]
+  },
+  "diagnostic_dependency_sha256": {
+    "scripts/extract_mnu_limits.py": "c25681709477d455b8a123363b54e21e689c3af665c1764ab2760ae86b2122b5",
+    "src/sbt_spt_audit/mcmc.py": "557006c5101152322564810dcba6c4c8a536164486973a0326275464c551862c",
+    "src/sbt_spt_audit/mcmc_diagnostics.py": "babe3e043fdb7fa0062f71d47446e6e0109444fd83050625124a50dc1fc1ac53"
+  },
+  "diagnostic_script_sha256": "8f18ac0742e02170e3c37cb7b29ab59ae38842aae6cc4b6996a13135586c17ba"
+}

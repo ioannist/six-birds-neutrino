@@ -1,0 +1,60 @@
+{
+  "utc": "2026-10-05T01:39:58.210924+00:00",
+  "reviewer": "distinct_self_review_not_independent_agent",
+  "source_patch_reversed_exactly": true,
+  "sigma_only_call_identified_by_active_minimum14": true,
+  "native_timeout_witnesses": [
+    {
+      "radius_Mpc_over_h": 9.999999747378746e-05,
+      "redshift": 0.0,
+      "itype": 1,
+      "tolerance": 9.999999974752427e-07,
+      "level": 20,
+      "grid_points": 524289,
+      "minimum_level": 14,
+      "latest_integral": 0.03799971432696258,
+      "previous_integral": 0.03799982985403729,
+      "relative_adjacent_change": 3.0401997892504085e-06
+    },
+    {
+      "radius_Mpc_over_h": 0.0001291549632905487,
+      "redshift": 0.0,
+      "itype": 1,
+      "tolerance": 9.999999974752427e-07,
+      "level": 20,
+      "grid_points": 524289,
+      "minimum_level": 14,
+      "latest_integral": 0.036454334942382705,
+      "previous_integral": 0.03645438054057895,
+      "relative_adjacent_change": 1.2508289969348496e-06
+    },
+    {
+      "radius_Mpc_over_h": 0.0004641588727523655,
+      "redshift": 0.0,
+      "itype": 1,
+      "tolerance": 9.999999974752427e-07,
+      "level": 20,
+      "grid_points": 524289,
+      "minimum_level": 14,
+      "latest_integral": 0.029782231376539434,
+      "previous_integral": 0.029782281057658486,
+      "relative_adjacent_change": 1.6681435164311864e-06
+    }
+  ],
+  "point": {
+    "omegabh2": 0.029575663512100336,
+    "omegach2": 0.0028630562619511857,
+    "H0": 54.38876723029562,
+    "logA": 2.9440199295646825,
+    "ns": 0.9141040602339817,
+    "tau": 0.07344339439339485,
+    "mnu": 0.05
+  },
+  "strict_prior_interior": true,
+  "source_preparation_sha256": "f43ac86990489044ecc006c3370e7588623cf06f7b9ec06fe1a63a81cfe29623",
+  "diagnostic_output_sha256": "616cb98782cb215389921e147184defb7ed0259d1125595f7ef0bf93a33d6b8f",
+  "failure_mechanism": "Three sigma-table integrations do not meet1e-6 adjacent-grid stop by level20. Native GlobalError propagated unchanged. This is a refinement-limit error, not a wall-clock or model-rejection event.",
+  "remaining_grid_points_tested": false,
+  "production_adopted": false,
+  "uniform_error_bound_or_posterior_certificate": false
+}

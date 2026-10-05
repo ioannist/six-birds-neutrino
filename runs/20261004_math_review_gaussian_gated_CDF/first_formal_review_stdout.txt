@@ -1,0 +1,26 @@
+../../runs/20261004_math_review_gaussian_gated_CDF/GaussianGatedCDFReview.lean:10:26: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+../../runs/20261004_math_review_gaussian_gated_CDF/GaussianGatedCDFReview.lean:17:26: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+../../runs/20261004_math_review_gaussian_gated_CDF/GaussianGatedCDFReview.lean:34:35: error: Type mismatch
+  le_refl ?m.29
+has type
+  ?m.29 ≤ ?m.29
+but is expected to have type
+  0 ∈ Set.Ici 0
+../../runs/20261004_math_review_gaussian_gated_CDF/GaussianGatedCDFReview.lean:62:10: warning: This simp argument is unused:
+  Set.Ioc_eq_empty_of_le (show (1 : ℝ) ≤ 2 by norm_num)
+
+Hint: Omit it from the simp argument list.
+  simp ̵[̵S̵e̵t̵.̵I̵o̵c̵_̵e̵q̵_̵e̵m̵p̵t̵y̵_̵o̵f̵_̵l̵e̵ ̵(̵s̵h̵o̵w̵ ̵(̵1̵ ̵:̵ ̵ℝ̵)̵ ̵≤̵ ̵2̵ ̵b̵y̵ ̵n̵o̵r̵m̵_̵n̵u̵m̵)̵]̵
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+../../runs/20261004_math_review_gaussian_gated_CDF/GaussianGatedCDFReview.lean:69:32: warning: This simp argument is unused:
+  zero_div
+
+Hint: Omit it from the simp argument list.
+  simp only [sub_zero, div_one,̵ ̵z̵e̵r̵o̵_̵d̵i̵v̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

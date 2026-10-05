@@ -1,0 +1,31 @@
+{
+  "utc": "2026-10-05T03:04:48.527711+00:00",
+  "prepare_direct_exit_code": 0,
+  "preflight_workers": [
+    {
+      "group": "sigma_time_v3_A4095_cap5",
+      "managed_session": 13497,
+      "exit_code": 0
+    },
+    {
+      "group": "sigma_time_v3_A4095_cap20",
+      "managed_session": 75436,
+      "exit_code": 0
+    },
+    {
+      "group": "sigma_time_v3_B4095_cap5",
+      "managed_session": 54949,
+      "exit_code": 0
+    },
+    {
+      "group": "sigma_time_v3_B4095_cap20",
+      "managed_session": 16942,
+      "exit_code": 0
+    }
+  ],
+  "distinct_self_review_direct_exit_code": 0,
+  "all_verification_workers_terminal": true,
+  "samplers_launched_at_preparation_close": 0,
+  "production_adopted": false,
+  "posterior_or_uniform_accuracy_certified": false
+}

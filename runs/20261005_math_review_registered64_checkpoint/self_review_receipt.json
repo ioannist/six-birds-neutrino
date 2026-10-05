@@ -1,0 +1,28 @@
+{
+  "utc": "2026-10-05T03:19:54.055005+00:00",
+  "reviewer": "distinct_self_review_not_independent_agent",
+  "runtime_sha256": "8fef2ba88dc3a493b76b37a0cd91c31fe3254af04be0583ea51cad52be11bc37",
+  "registrations_reconstructed": 64,
+  "live_identities": 58,
+  "known_native_failure_families": 4,
+  "unknown_exit_families": 2,
+  "unknown_exit_preservation_checks": [
+    {
+      "seed": 1201,
+      "terminal_receipt_sha256": "7e59519f1038342187fc649e2f2db72c9983612813bf1b77ca1af4f4f3d0b21f",
+      "complete_rows": 492,
+      "retained_represented_steps": 1664
+    },
+    {
+      "seed": 1301,
+      "terminal_receipt_sha256": "e94b271b7406c6b94fbfbff37646210f01703f717a35d724fa21b9d7a88fd0d6",
+      "complete_rows": 2772,
+      "retained_represented_steps": 7236
+    }
+  ],
+  "all_sixteen_candidate_first_rows_bound": true,
+  "all_sixteen_cohort_status_sets_reconstructed": true,
+  "unknown_exit_reason_or_code_invented": false,
+  "native_error_is_posterior_rejection": false,
+  "posterior_or_prior_stability_certified": false
+}

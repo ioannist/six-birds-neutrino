@@ -1,0 +1,37 @@
+{
+  "runs": [
+    "/home/repos/six-birds-neutrino/runs/20261004_math_review_relative_MCSE_scale_repair/fixtures/tiny/101",
+    "/home/repos/six-birds-neutrino/runs/20261004_math_review_relative_MCSE_scale_repair/fixtures/tiny/102",
+    "/home/repos/six-birds-neutrino/runs/20261004_math_review_relative_MCSE_scale_repair/fixtures/tiny/103",
+    "/home/repos/six-birds-neutrino/runs/20261004_math_review_relative_MCSE_scale_repair/fixtures/tiny/104"
+  ],
+  "prefixes": [
+    "/home/repos/six-birds-neutrino/runs/20261004_math_review_relative_MCSE_scale_repair/fixtures/tiny/101/chains/sample",
+    "/home/repos/six-birds-neutrino/runs/20261004_math_review_relative_MCSE_scale_repair/fixtures/tiny/102/chains/sample",
+    "/home/repos/six-birds-neutrino/runs/20261004_math_review_relative_MCSE_scale_repair/fixtures/tiny/103/chains/sample",
+    "/home/repos/six-birds-neutrino/runs/20261004_math_review_relative_MCSE_scale_repair/fixtures/tiny/104/chains/sample"
+  ],
+  "seeds": [
+    101,
+    102,
+    103,
+    104
+  ],
+  "burnin_fraction_of_stored_rows": 0.0,
+  "diagnostics": {
+    "x": {
+      "diagnostic_thresholds_pass": false,
+      "error": "A quantile in (0,1) and positive finite MCSE limit are required."
+    }
+  },
+  "all_diagnostic_thresholds_pass": false,
+  "independence_scope": "separate recorded seeds and chain files; initialization independence assumed",
+  "native_backend_provenance": [],
+  "native_backend_identity_scope": "configuration_only_native_build_identity_not_recorded",
+  "packages": {
+    "arviz": "1.3.0",
+    "arviz_stats": "1.3.3",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1"
+  }
+}

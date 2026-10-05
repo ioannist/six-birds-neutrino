@@ -1,0 +1,24 @@
+# Template Rewrite Summary
+
+- runA: `toy_lensA` (/home/repos/six-birds-neutrino/runs/20261003_math_review_toy_audit/lensA)
+- runB: `toy_lensB` (/home/repos/six-birds-neutrino/runs/20261003_math_review_toy_audit/lensB)
+- direction: `both`
+- template_mode: `dominant_whitened`
+- B_given_A.chi2_before: `2.290816419`
+- B_given_A.chi2_after: `0.25`
+- B_given_A.improvement: `2.040816419`
+- B_given_A.fraction_removed: `0.890868601287`
+- B_given_A.a_star: `1.42857146094`
+- B_given_A.dominant_mode_index: `1`
+- B_given_A.alignment_cos: `0.9438583587`
+- B_given_A.cond_cov: `2.12017828681`
+- A_given_B.chi2_before: `8.29081594388`
+- A_given_B.chi2_after: `2.04081622449`
+- A_given_B.improvement: `6.24999971939`
+- A_given_B.fraction_removed: `0.753846154793`
+- A_given_B.a_star: `2.49999994388`
+- A_given_B.dominant_mode_index: `0`
+- A_given_B.alignment_cos: `0.86824314267`
+- A_given_B.cond_cov: `2.12017828681`
+- figure: `/home/repos/six-birds-neutrino/runs/20261005_math_review_template_rewrite_repair/cli_dominant_whitened/figures/template_rewrite_before_after.png`
+- warnings: none

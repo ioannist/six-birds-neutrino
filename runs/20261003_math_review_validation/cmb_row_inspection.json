@@ -1,0 +1,66 @@
+[
+  {
+    "point": {
+      "omegabh2": 0.022695052,
+      "omegach2": 0.11717386,
+      "H0": 68.478798,
+      "logA": 3.0664782,
+      "ns": 1.00385,
+      "tau": 0.055117866,
+      "mnu_sample": 0.075995362,
+      "A_planck": 1.0120451,
+      "TT_tSZ_Amp": 2.9226144,
+      "TT_kSZ_Amp": 7.8607516
+    },
+    "minuslogpost": 1610.3250393917056,
+    "errors": {
+      "sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": -0.008814608650482114,
+      "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 6.003448996594329e-06,
+      "planck_2018_lowl.TT": -0.0023415937659372332,
+      "planck_2018_lowl.EE_sroll2": -3.0752318025406566e-07,
+      "planck_2018_highl_plik.TT_lite_native": 0.13902836812481212,
+      "planckpr4lensing.PlanckPR4Lensing": -0.000859939017150424
+    },
+    "prior_error": 3.03969196480125e-08,
+    "native_loglikes": {
+      "sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": -1335.6691426956747,
+      "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": -5.883296001724498,
+      "planck_2018_lowl.TT": -10.04086170311703,
+      "planck_2018_lowl.EE_sroll2": -195.6835748462384,
+      "planck_2018_highl_plik.TT_lite_native": -52.64200918406241,
+      "planckpr4lensing.PlanckPR4Lensing": -4.612683530491425
+    }
+  },
+  {
+    "point": {
+      "omegabh2": 0.022695052,
+      "omegach2": 0.11717386,
+      "H0": 68.478798,
+      "logA": 3.0664782,
+      "ns": 1.00385,
+      "tau": 0.055117866,
+      "mnu_sample": 0.075995362,
+      "A_planck": 1.0120451,
+      "TT_tSZ_Amp": 2.9226144,
+      "TT_kSZ_Amp": 7.8607516
+    },
+    "minuslogpost": 1610.3250393917056,
+    "errors": {
+      "sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": -0.008814608650482114,
+      "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": 6.003448996594329e-06,
+      "planck_2018_lowl.TT": -0.0023415937659372332,
+      "planck_2018_lowl.EE_sroll2": -3.0752318025406566e-07,
+      "planck_2018_highl_plik.TT_lite_native": 0.13902836812481212,
+      "planckpr4lensing.PlanckPR4Lensing": -0.000859939017150424
+    },
+    "prior_error": 3.03969196480125e-08,
+    "native_loglikes": {
+      "sbt_spt_audit.likelihoods.candl_cobaya.CandlCobayaLikelihood": -1335.6691426956747,
+      "sbt_spt_audit.likelihoods.desi_dr2_bao.DESIDR2BAOGaussian": -5.883296001724498,
+      "planck_2018_lowl.TT": -10.04086170311703,
+      "planck_2018_lowl.EE_sroll2": -195.6835748462384,
+      "planck_2018_highl_plik.TT_lite_native": -52.64200918406241,
+      "planckpr4lensing.PlanckPR4Lensing": -4.612683530491425
+    }
+  }
+]

@@ -1,0 +1,61 @@
+{
+  "utc": "2026-10-04T11:00:17.767574+00:00",
+  "scope": "mathematical_upper_prior_claim_scope_audit_with_exact_counterexample_and_current_fixed_prior_observations",
+  "files": [
+    {
+      "path": "runs/20261004_math_review_upper_prior_scope/audit_upper_prior.py",
+      "sha256": "32d0881de616da004f92beafac18d8f2bc745a33a8b44b4f6be1bf81b1e5e579",
+      "bytes": 5982
+    },
+    {
+      "path": "runs/20261004_math_review_upper_prior_scope/observe_runtime.py",
+      "sha256": "939d0d1c5205236985847e43eb4081e5dc9d6f81febb407bbb87589a73525dd0",
+      "bytes": 4244
+    },
+    {
+      "path": "runs/20261004_math_review_upper_prior_scope/runtime_observation.json",
+      "sha256": "adad7d4fedef8d56d627768f602169ebeb08624fc28d29c451ce1b015d68cdcb",
+      "bytes": 17990
+    },
+    {
+      "path": "runs/20261004_math_review_upper_prior_scope/scope_clarification.json",
+      "sha256": "629c1bbb53a4d35849a48a0069e91afea0b3ca9d078a238240e03f30977316b2",
+      "bytes": 647
+    },
+    {
+      "path": "runs/20261004_math_review_upper_prior_scope/self_review.py",
+      "sha256": "466de1d7c3dbe49d892ce2983a741d9b1c1927f2e23f67521757789358a572cf",
+      "bytes": 3982
+    },
+    {
+      "path": "runs/20261004_math_review_upper_prior_scope/self_review_receipt.json",
+      "sha256": "26d2bdc54ce10a72d91d6865b4158340d655bf9b7973b02f871889403ef41831",
+      "bytes": 1987
+    },
+    {
+      "path": "runs/20261004_math_review_upper_prior_scope/upper_prior_receipt.json",
+      "sha256": "351f676f8b92eb9ca7915f611fd2c44f42fb18752f3be4aa774f7a8f93c2e8ad",
+      "bytes": 20305
+    }
+  ],
+  "managed_phases": [
+    {
+      "session": 30395,
+      "phase": "six_frozen_cohort_support_and_exact_continuous_counterexample",
+      "exit_code": 0
+    },
+    {
+      "session": 88183,
+      "phase": "distinct_integer_recount_and_rational_rectangle_self_review",
+      "exit_code": 0
+    }
+  ],
+  "frozen_families_checked": 28,
+  "owned_live_samplers_verified": 28,
+  "production_code_changed": false,
+  "Lean_sources_changed": false,
+  "tests_or_Lean_build_rerun": false,
+  "existing_combined_verification": "runs/20261004_math_review_gaussian_gated_CDF/validation_receipt.json",
+  "paper_modified": false,
+  "scope_or_magnitude_revision_adopted": false
+}

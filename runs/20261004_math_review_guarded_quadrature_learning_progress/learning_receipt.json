@@ -1,0 +1,404 @@
+{
+  "utc": "2026-10-04T07:12:23.408111+00:00",
+  "scope": "guarded_quadrature_internal_proposal_learning_progress_only",
+  "files_individually_frozen_not_an_atomic_sampler_state": true,
+  "records": [
+    {
+      "seed": 1301,
+      "proposal_updates_in_log_snapshot": 2,
+      "last_internal_mean_Rminus1": 1.071819,
+      "current_covariance_changed_from_initial": true,
+      "current_covariance_finite_SPD": true,
+      "Rminus1_stop": 0.01,
+      "Rminus1_cl_stop": 0.05,
+      "learn_proposal_Rminus1_max": 2.0,
+      "files": [
+        {
+          "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_class_backend_transition/archives/seed1101/run/chains/math_quad_A_seed1101.covmat",
+          "snapshot": "runs/20261004_math_review_guarded_quadrature_learning_progress/seed1301/initial.covmat",
+          "sha256": "fd7d6e7cff0b8f996f87f2b5215b90afcc1c245916047011992542abf9859fc3",
+          "utc": "2026-10-04T07:12:23.005945+00:00"
+        },
+        {
+          "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_quad_chain_A_seed1301/chains/math_guarded_quad_A_seed1301.covmat",
+          "snapshot": "runs/20261004_math_review_guarded_quadrature_learning_progress/seed1301/current.covmat",
+          "sha256": "b200bb94f3fdf37413958c0eb470a170db90a383f38e560a82edcbfd921a3586",
+          "utc": "2026-10-04T07:12:23.006218+00:00"
+        },
+        {
+          "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_quad_chain_A_seed1301/chains/math_guarded_quad_A_seed1301.updated.yaml",
+          "snapshot": "runs/20261004_math_review_guarded_quadrature_learning_progress/seed1301/updated.yaml",
+          "sha256": "c39b631c932a910cda5d778994d51b7f5d15e374d2fb5718ecf32e4b8d750878",
+          "utc": "2026-10-04T07:12:23.006470+00:00"
+        },
+        {
+          "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_quad_chain_A_seed1301/runtime_state.json",
+          "snapshot": "runs/20261004_math_review_guarded_quadrature_learning_progress/seed1301/launch_runtime_state.json",
+          "sha256": "7ffbfb14363a9ea136725a71e2a3dcaac9a29b5bb791ee2f7974b050c8f1dfdb",
+          "utc": "2026-10-04T07:12:23.006731+00:00"
+        },
+        {
+          "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_quad_chain_A_seed1301/resolved.yaml",
+          "snapshot": "runs/20261004_math_review_guarded_quadrature_learning_progress/seed1301/resolved.yaml",
+          "sha256": "571fe6a856543d3d9260f734058e1f69961a7d5e38c0d4e4d64f968c7a714e87",
+          "utc": "2026-10-04T07:12:23.007003+00:00"
+        },
+        {
+          "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_quad_chain_A_seed1301/stdout.txt",
+          "snapshot": "runs/20261004_math_review_guarded_quadrature_learning_progress/seed1301/stdout_prefix.txt",
+          "sha256": "4870f5d31ba239f8f846b3fdcec42d5cc456d90faa6dcf544d914b8acf630f44",
+          "utc": "2026-10-04T07:12:23.007314+00:00"
+        }
+      ],
+      "accepted_steps_at_last_internal_check": 320
+    },
+    {
+      "seed": 1302,
+      "proposal_updates_in_log_snapshot": 1,
+      "last_internal_mean_Rminus1": 1.82894,
+      "current_covariance_changed_from_initial": true,
+      "current_covariance_finite_SPD": true,
+      "Rminus1_stop": 0.01,
+      "Rminus1_cl_stop": 0.05,
+      "learn_proposal_Rminus1_max": 2.0,
+      "files": [
+        {
+          "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_class_backend_transition/archives/seed1102/run/chains/math_quad_A_seed1102.covmat",
+          "snapshot": "runs/20261004_math_review_guarded_quadrature_learning_progress/seed1302/initial.covmat",
+          "sha256": "fd7d6e7cff0b8f996f87f2b5215b90afcc1c245916047011992542abf9859fc3",
+          "utc": "2026-10-04T07:12:23.053948+00:00"
+        },
+        {
+          "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_quad_chain_A_seed1302/chains/math_guarded_quad_A_seed1302.covmat",
+          "snapshot": "runs/20261004_math_review_guarded_quadrature_learning_progress/seed1302/current.covmat",
+          "sha256": "547a22641e018fbcce0150c728e3e32c4090ba897ce9cd90f34b0cffe8643b71",
+          "utc": "2026-10-04T07:12:23.054220+00:00"
+        },
+        {
+          "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_quad_chain_A_seed1302/chains/math_guarded_quad_A_seed1302.updated.yaml",
+          "snapshot": "runs/20261004_math_review_guarded_quadrature_learning_progress/seed1302/updated.yaml",
+          "sha256": "60fb96452ed80451b2bbcda2a283a4b46f22ed6da439d254d6bcf345f433af7e",
+          "utc": "2026-10-04T07:12:23.054633+00:00"
+        },
+        {
+          "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_quad_chain_A_seed1302/runtime_state.json",
+          "snapshot": "runs/20261004_math_review_guarded_quadrature_learning_progress/seed1302/launch_runtime_state.json",
+          "sha256": "a640270c1e7394837d61541b422f82af064ad61b679180be26cf9adb86dc127d",
+          "utc": "2026-10-04T07:12:23.054880+00:00"
+        },
+        {
+          "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_quad_chain_A_seed1302/resolved.yaml",
+          "snapshot": "runs/20261004_math_review_guarded_quadrature_learning_progress/seed1302/resolved.yaml",
+          "sha256": "8e74641f56a0fcceb9b4506ea489cb802bb5352b7b816d9602bdb1f2c0c1ef24",
+          "utc": "2026-10-04T07:12:23.055132+00:00"
+        },
+        {
+          "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_quad_chain_A_seed1302/stdout.txt",
+          "snapshot": "runs/20261004_math_review_guarded_quadrature_learning_progress/seed1302/stdout_prefix.txt",
+          "sha256": "dbba246666ba3c5bf6cb1775a068c551577267ddcd9a85904adb472fd07516c5",
+          "utc": "2026-10-04T07:12:23.055449+00:00"
+        }
+      ],
+      "accepted_steps_at_last_internal_check": 320
+    },
+    {
+      "seed": 1303,
+      "proposal_updates_in_log_snapshot": 1,
+      "last_internal_mean_Rminus1": 3.521305,
+      "current_covariance_changed_from_initial": true,
+      "current_covariance_finite_SPD": true,
+      "Rminus1_stop": 0.01,
+      "Rminus1_cl_stop": 0.05,
+      "learn_proposal_Rminus1_max": 2.0,
+      "files": [
+        {
+          "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_class_backend_transition/archives/seed1103/run/chains/math_quad_A_seed1103.covmat",
+          "snapshot": "runs/20261004_math_review_guarded_quadrature_learning_progress/seed1303/initial.covmat",
+          "sha256": "fd7d6e7cff0b8f996f87f2b5215b90afcc1c245916047011992542abf9859fc3",
+          "utc": "2026-10-04T07:12:23.098387+00:00"
+        },
+        {
+          "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_quad_chain_A_seed1303/chains/math_guarded_quad_A_seed1303.covmat",
+          "snapshot": "runs/20261004_math_review_guarded_quadrature_learning_progress/seed1303/current.covmat",
+          "sha256": "a4b6cc6094c21180c2b90fc424b07637441e0527bfb9f9852a918da523f9bcfe",
+          "utc": "2026-10-04T07:12:23.098665+00:00"
+        },
+        {
+          "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_quad_chain_A_seed1303/chains/math_guarded_quad_A_seed1303.updated.yaml",
+          "snapshot": "runs/20261004_math_review_guarded_quadrature_learning_progress/seed1303/updated.yaml",
+          "sha256": "147e50edf96d9d1433e05a100413da5f53c50d3327744555b18c0821a2975b2a",
+          "utc": "2026-10-04T07:12:23.099163+00:00"
+        },
+        {
+          "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_quad_chain_A_seed1303/runtime_state.json",
+          "snapshot": "runs/20261004_math_review_guarded_quadrature_learning_progress/seed1303/launch_runtime_state.json",
+          "sha256": "bc61d9919878dc2dbdaf9587f3828d1fb1a379bab1a4c6a4a077cebc5aaeab80",
+          "utc": "2026-10-04T07:12:23.099386+00:00"
+        },
+        {
+          "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_quad_chain_A_seed1303/resolved.yaml",
+          "snapshot": "runs/20261004_math_review_guarded_quadrature_learning_progress/seed1303/resolved.yaml",
+          "sha256": "97e6199aea8416893b6fd8da6f18320a1316c19932e3d97cfb1890f5214308ca",
+          "utc": "2026-10-04T07:12:23.100128+00:00"
+        },
+        {
+          "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_quad_chain_A_seed1303/stdout.txt",
+          "snapshot": "runs/20261004_math_review_guarded_quadrature_learning_progress/seed1303/stdout_prefix.txt",
+          "sha256": "af210fb6e9cec9cee368e116272d193a58f25a248a4c0679f0ef4a0c8d04bd23",
+          "utc": "2026-10-04T07:12:23.100413+00:00"
+        }
+      ],
+      "accepted_steps_at_last_internal_check": 320
+    },
+    {
+      "seed": 1304,
+      "proposal_updates_in_log_snapshot": 2,
+      "last_internal_mean_Rminus1": 1.714956,
+      "current_covariance_changed_from_initial": true,
+      "current_covariance_finite_SPD": true,
+      "Rminus1_stop": 0.01,
+      "Rminus1_cl_stop": 0.05,
+      "learn_proposal_Rminus1_max": 2.0,
+      "files": [
+        {
+          "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_class_backend_transition/archives/seed1104/run/chains/math_quad_A_seed1104.covmat",
+          "snapshot": "runs/20261004_math_review_guarded_quadrature_learning_progress/seed1304/initial.covmat",
+          "sha256": "fd7d6e7cff0b8f996f87f2b5215b90afcc1c245916047011992542abf9859fc3",
+          "utc": "2026-10-04T07:12:23.141971+00:00"
+        },
+        {
+          "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_quad_chain_A_seed1304/chains/math_guarded_quad_A_seed1304.covmat",
+          "snapshot": "runs/20261004_math_review_guarded_quadrature_learning_progress/seed1304/current.covmat",
+          "sha256": "ef3cb6d33cc695e9d8e687e84d3fdd0af132dbebd7dab181e7b77fee186b039e",
+          "utc": "2026-10-04T07:12:23.142282+00:00"
+        },
+        {
+          "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_quad_chain_A_seed1304/chains/math_guarded_quad_A_seed1304.updated.yaml",
+          "snapshot": "runs/20261004_math_review_guarded_quadrature_learning_progress/seed1304/updated.yaml",
+          "sha256": "447f127632b6e9e0cc39077564799e7e1bc64397f984603eb2510471a4d9a0ec",
+          "utc": "2026-10-04T07:12:23.144643+00:00"
+        },
+        {
+          "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_quad_chain_A_seed1304/runtime_state.json",
+          "snapshot": "runs/20261004_math_review_guarded_quadrature_learning_progress/seed1304/launch_runtime_state.json",
+          "sha256": "295c004a9a2670f17d0db643900dce66131ff1c4e44a826f40ee2ccdd06c04cc",
+          "utc": "2026-10-04T07:12:23.144916+00:00"
+        },
+        {
+          "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_quad_chain_A_seed1304/resolved.yaml",
+          "snapshot": "runs/20261004_math_review_guarded_quadrature_learning_progress/seed1304/resolved.yaml",
+          "sha256": "44b0a3a17c62c65b8affee3400f8718619b4b979013949b460e8588538a091aa",
+          "utc": "2026-10-04T07:12:23.145175+00:00"
+        },
+        {
+          "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_quad_chain_A_seed1304/stdout.txt",
+          "snapshot": "runs/20261004_math_review_guarded_quadrature_learning_progress/seed1304/stdout_prefix.txt",
+          "sha256": "fc9d50ba4eaf1b27ea047fe4c4a9d6d1e1732df19a034ea9c410a48db463912b",
+          "utc": "2026-10-04T07:12:23.146788+00:00"
+        }
+      ],
+      "accepted_steps_at_last_internal_check": 320
+    },
+    {
+      "seed": 1305,
+      "proposal_updates_in_log_snapshot": 0,
+      "last_internal_mean_Rminus1": 2.524426,
+      "current_covariance_changed_from_initial": false,
+      "current_covariance_finite_SPD": true,
+      "Rminus1_stop": 0.01,
+      "Rminus1_cl_stop": 0.05,
+      "learn_proposal_Rminus1_max": 2.0,
+      "files": [
+        {
+          "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_class_backend_transition/archives/seed1105/run/chains/math_quad_B_seed1105.covmat",
+          "snapshot": "runs/20261004_math_review_guarded_quadrature_learning_progress/seed1305/initial.covmat",
+          "sha256": "1644982bf1a966b873a48fd62aaed2095d33467e801292d042ffeee09baf63ff",
+          "utc": "2026-10-04T07:12:23.197954+00:00"
+        },
+        {
+          "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_quad_chain_B_seed1305/chains/math_guarded_quad_B_seed1305.covmat",
+          "snapshot": "runs/20261004_math_review_guarded_quadrature_learning_progress/seed1305/current.covmat",
+          "sha256": "1644982bf1a966b873a48fd62aaed2095d33467e801292d042ffeee09baf63ff",
+          "utc": "2026-10-04T07:12:23.198325+00:00"
+        },
+        {
+          "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_quad_chain_B_seed1305/chains/math_guarded_quad_B_seed1305.updated.yaml",
+          "snapshot": "runs/20261004_math_review_guarded_quadrature_learning_progress/seed1305/updated.yaml",
+          "sha256": "1b92591dbe8b7b90ba048138bc8128e0f3489cc5772b97cd579713eef31a9ae8",
+          "utc": "2026-10-04T07:12:23.198983+00:00"
+        },
+        {
+          "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_quad_chain_B_seed1305/runtime_state.json",
+          "snapshot": "runs/20261004_math_review_guarded_quadrature_learning_progress/seed1305/launch_runtime_state.json",
+          "sha256": "be8ab1d8e46c415beb431f429e8321cd8a57df4a39319f5a890aeef8798e9887",
+          "utc": "2026-10-04T07:12:23.199236+00:00"
+        },
+        {
+          "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_quad_chain_B_seed1305/resolved.yaml",
+          "snapshot": "runs/20261004_math_review_guarded_quadrature_learning_progress/seed1305/resolved.yaml",
+          "sha256": "ee7a94783d41651d7a80c8167e1d5a407ba8482b12fce611bdb2609ce00d49cd",
+          "utc": "2026-10-04T07:12:23.199470+00:00"
+        },
+        {
+          "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_quad_chain_B_seed1305/stdout.txt",
+          "snapshot": "runs/20261004_math_review_guarded_quadrature_learning_progress/seed1305/stdout_prefix.txt",
+          "sha256": "5d655224aba8c58a212a8db7df1445cd2f1482405bf14d8b1b4b8086ba98223f",
+          "utc": "2026-10-04T07:12:23.199773+00:00"
+        }
+      ],
+      "accepted_steps_at_last_internal_check": 320
+    },
+    {
+      "seed": 1306,
+      "proposal_updates_in_log_snapshot": 1,
+      "last_internal_mean_Rminus1": 1.48134,
+      "current_covariance_changed_from_initial": true,
+      "current_covariance_finite_SPD": true,
+      "Rminus1_stop": 0.01,
+      "Rminus1_cl_stop": 0.05,
+      "learn_proposal_Rminus1_max": 2.0,
+      "files": [
+        {
+          "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_class_backend_transition/archives/seed1106/run/chains/math_quad_B_seed1106.covmat",
+          "snapshot": "runs/20261004_math_review_guarded_quadrature_learning_progress/seed1306/initial.covmat",
+          "sha256": "1644982bf1a966b873a48fd62aaed2095d33467e801292d042ffeee09baf63ff",
+          "utc": "2026-10-04T07:12:23.249225+00:00"
+        },
+        {
+          "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_quad_chain_B_seed1306/chains/math_guarded_quad_B_seed1306.covmat",
+          "snapshot": "runs/20261004_math_review_guarded_quadrature_learning_progress/seed1306/current.covmat",
+          "sha256": "a729b1cce91fe5542632a6e632c076f6b594789ae5bdce90023b64d7c8e9968d",
+          "utc": "2026-10-04T07:12:23.249499+00:00"
+        },
+        {
+          "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_quad_chain_B_seed1306/chains/math_guarded_quad_B_seed1306.updated.yaml",
+          "snapshot": "runs/20261004_math_review_guarded_quadrature_learning_progress/seed1306/updated.yaml",
+          "sha256": "0714998d6ebbfb94cf54b6817cce9563f8cc1490afe5440e6e8e63984d092a72",
+          "utc": "2026-10-04T07:12:23.250135+00:00"
+        },
+        {
+          "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_quad_chain_B_seed1306/runtime_state.json",
+          "snapshot": "runs/20261004_math_review_guarded_quadrature_learning_progress/seed1306/launch_runtime_state.json",
+          "sha256": "aad2f5a893278bdca796b9cac5205f6529ad8446ad1b9620ce1169cce641c003",
+          "utc": "2026-10-04T07:12:23.250470+00:00"
+        },
+        {
+          "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_quad_chain_B_seed1306/resolved.yaml",
+          "snapshot": "runs/20261004_math_review_guarded_quadrature_learning_progress/seed1306/resolved.yaml",
+          "sha256": "190903c516b89978aa8f05a3f564dee43242afec4390af6722a3a84498f2c0fb",
+          "utc": "2026-10-04T07:12:23.250903+00:00"
+        },
+        {
+          "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_quad_chain_B_seed1306/stdout.txt",
+          "snapshot": "runs/20261004_math_review_guarded_quadrature_learning_progress/seed1306/stdout_prefix.txt",
+          "sha256": "69677dadbaffbf32a0ba927d2d40cab3415cbe87e05751acebb247c0dcc6522e",
+          "utc": "2026-10-04T07:12:23.251303+00:00"
+        }
+      ],
+      "accepted_steps_at_last_internal_check": 240
+    },
+    {
+      "seed": 1307,
+      "proposal_updates_in_log_snapshot": 2,
+      "last_internal_mean_Rminus1": 1.659365,
+      "current_covariance_changed_from_initial": true,
+      "current_covariance_finite_SPD": true,
+      "Rminus1_stop": 0.01,
+      "Rminus1_cl_stop": 0.05,
+      "learn_proposal_Rminus1_max": 2.0,
+      "files": [
+        {
+          "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_class_backend_transition/archives/seed1107/run/chains/math_quad_B_seed1107.covmat",
+          "snapshot": "runs/20261004_math_review_guarded_quadrature_learning_progress/seed1307/initial.covmat",
+          "sha256": "1644982bf1a966b873a48fd62aaed2095d33467e801292d042ffeee09baf63ff",
+          "utc": "2026-10-04T07:12:23.307797+00:00"
+        },
+        {
+          "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_quad_chain_B_seed1307/chains/math_guarded_quad_B_seed1307.covmat",
+          "snapshot": "runs/20261004_math_review_guarded_quadrature_learning_progress/seed1307/current.covmat",
+          "sha256": "36465cec09bed44f90830f296f87216774d2d6739cb6255e01cc988aa31964d6",
+          "utc": "2026-10-04T07:12:23.308162+00:00"
+        },
+        {
+          "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_quad_chain_B_seed1307/chains/math_guarded_quad_B_seed1307.updated.yaml",
+          "snapshot": "runs/20261004_math_review_guarded_quadrature_learning_progress/seed1307/updated.yaml",
+          "sha256": "c93edbf6d678c369bd48a6f061628a2dcabc11b91486c01d30bb6ce0af6d13cc",
+          "utc": "2026-10-04T07:12:23.308770+00:00"
+        },
+        {
+          "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_quad_chain_B_seed1307/runtime_state.json",
+          "snapshot": "runs/20261004_math_review_guarded_quadrature_learning_progress/seed1307/launch_runtime_state.json",
+          "sha256": "c5e53cae7fe3c247db063df394b15871cb060affccc9a5798de81b175e82855b",
+          "utc": "2026-10-04T07:12:23.309186+00:00"
+        },
+        {
+          "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_quad_chain_B_seed1307/resolved.yaml",
+          "snapshot": "runs/20261004_math_review_guarded_quadrature_learning_progress/seed1307/resolved.yaml",
+          "sha256": "b4d6e1558b7875a5f87981f596402bfdf1c8ef6178f10a702878873a92ec6043",
+          "utc": "2026-10-04T07:12:23.309515+00:00"
+        },
+        {
+          "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_quad_chain_B_seed1307/stdout.txt",
+          "snapshot": "runs/20261004_math_review_guarded_quadrature_learning_progress/seed1307/stdout_prefix.txt",
+          "sha256": "4cff5975243872111c85838e618f0ff96a148fe5a76889871bd60203ecb09e79",
+          "utc": "2026-10-04T07:12:23.309922+00:00"
+        }
+      ],
+      "accepted_steps_at_last_internal_check": 320
+    },
+    {
+      "seed": 1308,
+      "proposal_updates_in_log_snapshot": 1,
+      "last_internal_mean_Rminus1": 1.789353,
+      "current_covariance_changed_from_initial": true,
+      "current_covariance_finite_SPD": true,
+      "Rminus1_stop": 0.01,
+      "Rminus1_cl_stop": 0.05,
+      "learn_proposal_Rminus1_max": 2.0,
+      "files": [
+        {
+          "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_class_backend_transition/archives/seed1108/run/chains/math_quad_B_seed1108.covmat",
+          "snapshot": "runs/20261004_math_review_guarded_quadrature_learning_progress/seed1308/initial.covmat",
+          "sha256": "b2b12a986713156442f73b354e8c4e6471bb838d49454edecc83bd55221b6a07",
+          "utc": "2026-10-04T07:12:23.373857+00:00"
+        },
+        {
+          "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_quad_chain_B_seed1308/chains/math_guarded_quad_B_seed1308.covmat",
+          "snapshot": "runs/20261004_math_review_guarded_quadrature_learning_progress/seed1308/current.covmat",
+          "sha256": "ea1ad57097ce142f27dd69931e606f5f463985bb3dc9986fa6770356f9cb050e",
+          "utc": "2026-10-04T07:12:23.377082+00:00"
+        },
+        {
+          "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_quad_chain_B_seed1308/chains/math_guarded_quad_B_seed1308.updated.yaml",
+          "snapshot": "runs/20261004_math_review_guarded_quadrature_learning_progress/seed1308/updated.yaml",
+          "sha256": "7add3f5c044afcefed8a884c342a60c7a99604b3d4537f45ba071e283b50b182",
+          "utc": "2026-10-04T07:12:23.379325+00:00"
+        },
+        {
+          "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_quad_chain_B_seed1308/runtime_state.json",
+          "snapshot": "runs/20261004_math_review_guarded_quadrature_learning_progress/seed1308/launch_runtime_state.json",
+          "sha256": "58cfd4ec761fb4dfffdf852488b226d3362c2d96eda816fdcc6d844cd4008d14",
+          "utc": "2026-10-04T07:12:23.380513+00:00"
+        },
+        {
+          "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_quad_chain_B_seed1308/resolved.yaml",
+          "snapshot": "runs/20261004_math_review_guarded_quadrature_learning_progress/seed1308/resolved.yaml",
+          "sha256": "4cc4bf526d8411bd6374ad206ea6b24bc8557c8e6bf01156687cb306c2e258d9",
+          "utc": "2026-10-04T07:12:23.380896+00:00"
+        },
+        {
+          "source": "/home/repos/six-birds-neutrino/runs/20261004_math_review_guarded_quad_chain_B_seed1308/stdout.txt",
+          "snapshot": "runs/20261004_math_review_guarded_quadrature_learning_progress/seed1308/stdout_prefix.txt",
+          "sha256": "6f5bdb3bee05baedf563f4c93984e95f79170f8951af17d304a053a7eda08f14",
+          "utc": "2026-10-04T07:12:23.381262+00:00"
+        }
+      ],
+      "accepted_steps_at_last_internal_check": 320
+    }
+  ],
+  "families_with_updates": 7,
+  "sampler_rules_changed": false,
+  "posterior_convergence_certified": false,
+  "module_changed": false,
+  "paper_modified": false
+}

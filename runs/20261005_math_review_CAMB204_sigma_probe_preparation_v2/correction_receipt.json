@@ -1,0 +1,16 @@
+{
+  "failed_source_sha256": "d9e5abdeb838507eae6dc11cc66dc85792dfe4571906ddd682379f211be1ab5c",
+  "corrected_source_sha256": "a4a5ed891a2a011a3e5c008b226ac666bc96dbaa9eacb6b95e455f1a1728de20",
+  "changes": [
+    [
+      "real(dl) :: integrate",
+      "real(dl) :: integrate_audit"
+    ],
+    [
+      "                    stopping_level = j\n                    stopping_level = j\n                integrate_audit = sum_new",
+      "                    stopping_level = j\n                    integrate_audit = sum_new"
+    ]
+  ],
+  "correction_scope": "result declaration and observational duplicate assignment only",
+  "scratch_source": "/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_sigma_probe_20261005/source_v2"
+}

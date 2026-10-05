@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/repos/six-birds-neutrino/runs/20261004_math_review_fresh_CAMB_weighted_summary_diagnostic_preparation/run_diagnostic.py", line 21, in <module>
+    with (out/'diagnostic_stdout.txt').open('x') as stdout,(out/'diagnostic_stderr.txt').open('x') as stderr:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileExistsError: [Errno 17] File exists: '/home/repos/six-birds-neutrino/runs/20261004_math_review_fresh_CAMB_eighth_current_A3200_diagnostics/diagnostic_stdout.txt'

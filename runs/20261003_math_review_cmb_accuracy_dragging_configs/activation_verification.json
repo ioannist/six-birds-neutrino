@@ -1,0 +1,31 @@
+{
+  "utc": "2026-10-03T17:08:41.421689+00:00",
+  "scope": "actual_upstream_dragging_activation_and_slow_fast_blocks_only",
+  "runs": [
+    {
+      "lens": "A",
+      "seed": 701,
+      "actual_dragging_activation_verified": true,
+      "block_lines": [
+        "[sbt_spt_audit.samplers.fullprecisionmcmc] * 1 : [['omegabh2', 'omegach2', 'H0', 'logA', 'ns', 'tau', 'mnu_sample']]",
+        "[sbt_spt_audit.samplers.fullprecisionmcmc] * 8 : [['TT_tSZ_Amp', 'TT_kSZ_Amp'], ['A_planck']]"
+      ],
+      "stdout_sha256_at_observation": "86d5ce6891de1593f229d1d06a0347db3f2fdf390d23fce76c2bb16423ede037",
+      "stderr_bytes": 0
+    },
+    {
+      "lens": "B",
+      "seed": 702,
+      "actual_dragging_activation_verified": true,
+      "block_lines": [
+        "[sbt_spt_audit.samplers.fullprecisionmcmc] * 1 : [['omegabh2', 'omegach2', 'H0', 'logA', 'ns', 'tau', 'mnu_sample']]",
+        "[sbt_spt_audit.samplers.fullprecisionmcmc] * 5 : [['TT_tSZ_Amp', 'TT_kSZ_Amp'], ['A_planck']]"
+      ],
+      "stdout_sha256_at_observation": "a9eb5a857d351d03a79d64271c40d6b1f2221fedc862a5726cd9973913e38d42",
+      "stderr_bytes": 0
+    }
+  ],
+  "native_target_replay_pending": true,
+  "efficiency_improvement_verified": false,
+  "posterior_convergence_verified": false
+}

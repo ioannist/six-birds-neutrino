@@ -1,0 +1,23 @@
+{
+  "utc": "2026-10-04T06:44:42.926943+00:00",
+  "reviewer": "distinct_self_review_no_independent_agent",
+  "judgment": "finite_additive_helper_repair_verified_with_unchanged_tolerance_and_explicit_rounding_residual",
+  "aggregate_semantics": "exact rational sum of supplied finite binary64 loglike terms; single final aggregate rounding; cannot recover information absent from inputs",
+  "per_block_semantics": "rounded finite binary64 statistics; totals outside declared reconstruction tolerance rejected",
+  "scope_exclusions": [
+    "correlated covariance blocks are not assumed additive",
+    "no native cosmological likelihood rerun for unchanged shared signed accumulator",
+    "no new Lean declarations this continuation",
+    "sample cap and selected endpoint consistency do not certify posterior convergence"
+  ],
+  "shared_signed_accumulator": "moved implementation preserves quadratic context and numerical behavior; four before/after controls and full 94-test suite pass",
+  "provenance": "primary original ordered launch/exit records resolve swapped A401/A402 labels; existing chain hashes unchanged",
+  "baseline_note": "Python 3.12 compensated builtin sum already passes the insertion-order control; common offset and intermediate overflow failures and lost-signal returns reproduced",
+  "verifier_development_corrections": [
+    "launch needs PYTHONPATH=src",
+    "insertion-order expectation corrected for Python 3.12",
+    "ordinary control expected sign corrected to +6; delta=-2*(train-test)"
+  ],
+  "paper_modified": false,
+  "gates_changed": false
+}

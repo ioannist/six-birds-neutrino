@@ -1,0 +1,35 @@
+{
+  "native_input_params": {
+    "omegabh2": 0.02225891404331876,
+    "omegach2": 0.11776947724676447,
+    "H0": 68.46760971622076,
+    "As": 2.1219159399068406e-09,
+    "ns": 0.9574692565988652,
+    "tau": 0.05665132037440848,
+    "m_ncdm": "0.0088989885790305336,0.0088989885790305336,0.0088989885790305336"
+  },
+  "native_extra_args": {
+    "N_ncdm": 3,
+    "N_ur": 0.00641,
+    "l_max_scalars": 4095,
+    "output": "tCl pCl lCl",
+    "non_linear": "hmcode",
+    "lensing": "yes"
+  },
+  "translated_class_arguments": {
+    "omega_b": 0.02225891404331876,
+    "omega_cdm": 0.11776947724676447,
+    "H0": 68.46760971622076,
+    "A_s": 2.1219159399068406e-09,
+    "n_s": 0.9574692565988652,
+    "tau_reio": 0.05665132037440848,
+    "m_ncdm": "0.0088989885790305336,0.0088989885790305336,0.0088989885790305336",
+    "N_ncdm": 3,
+    "N_ur": 0.00641,
+    "l_max_scalars": 4095,
+    "output": "tCl pCl lCl",
+    "non_linear": "hmcode",
+    "lensing": "yes"
+  },
+  "failure_log_line": "[classy] *ERROR* Computation error (see traceback below)! Parameters sent to CLASS: {'omegabh2': np.float64(0.02225891404331876), 'omegach2': np.float64(0.11776947724676447), 'H0': np.float64(68.46760971622076), 'As': np.float64(2.1219159399068406e-09), 'ns': np.float64(0.9574692565988652), 'tau': np.float64(0.05665132037440848), 'm_ncdm': '0.0088989885790305336,0.0088989885790305336,0.0088989885790305336'} and {'N_ncdm': 3, 'N_ur': 0.00641, 'l_max_scalars': 4095, 'output': 'tCl pCl lCl', 'non_linear': 'hmcode', 'lensing': 'yes'}."
+}

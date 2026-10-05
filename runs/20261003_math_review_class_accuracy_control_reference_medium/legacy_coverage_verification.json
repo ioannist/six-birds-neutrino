@@ -1,0 +1,51 @@
+{
+  "scope": "initialized_legacy_saved_model_requirements",
+  "records": {
+    "reference": {
+      "metrics_sha256": "1199e5daca6ffbbec3b4222f222ce1ae0e5893bddef3eef967e55c7346aed64e",
+      "baseline_matches_completed_control": true,
+      "selected_config_differs_only_by_declared_settings": true,
+      "phases": {
+        "baseline": {
+          "configuration_sha256": "1cb9d4d84fa60146be82a7bede3dbdacfa9adb62b6ff42dd5f112b533d418993",
+          "requested_spectrum_ell_max": {
+            "tt": 4095,
+            "ee": 4095
+          }
+        },
+        "selected_reference_settings": {
+          "configuration_sha256": "034d0b128cb5b73e10cdcab8650dfd9eb4db1d8ea4cd57fcea68565cda141bbf",
+          "requested_spectrum_ell_max": {
+            "tt": 4095,
+            "ee": 4095
+          }
+        }
+      }
+    },
+    "medium": {
+      "metrics_sha256": "ba87edfa5dadbbf2975ef7310f071640a431c428002dbe3ed2b77ab9796ec898",
+      "baseline_matches_completed_control": true,
+      "selected_config_differs_only_by_declared_settings": true,
+      "phases": {
+        "baseline": {
+          "configuration_sha256": "1cb9d4d84fa60146be82a7bede3dbdacfa9adb62b6ff42dd5f112b533d418993",
+          "requested_spectrum_ell_max": {
+            "tt": 4095,
+            "ee": 4095
+          }
+        },
+        "selected_reference_settings": {
+          "configuration_sha256": "7db0752f6947517eb2b7df484e346a01eeca48c9f7fe26468edd32334fab4ef5",
+          "requested_spectrum_ell_max": {
+            "tt": 4095,
+            "ee": 4095
+          }
+        }
+      }
+    }
+  },
+  "completed_control_baseline_sha256": "1cb9d4d84fa60146be82a7bede3dbdacfa9adb62b6ff42dd5f112b533d418993",
+  "new_theory_or_likelihood_evaluations": false,
+  "interval_error_certified": false,
+  "posterior_accuracy_certified": false
+}

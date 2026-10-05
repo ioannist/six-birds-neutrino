@@ -1,0 +1,18 @@
+{
+  "original_script": "runs/20261004_math_review_CAMB204_source_failure_triage/classify_reproduced_point.py",
+  "original_script_sha256": "7f08bd490a1a0c2994cb3c893e002819c006c2ab3e23f801e5748a1b2539a258",
+  "changes": [
+    [
+      "import yaml",
+      "import yaml\nimport camb\nimport resource\nimport faulthandler\nresource.setrlimit(resource.RLIMIT_CORE, (0, 0))\nfaulthandler.enable()\nDEBUG_PACKAGE = Path(\"/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_native_debug_20261005/source\")\nassert Path(camb.__file__).parent == DEBUG_PACKAGE / \"camb\""
+    ],
+    [
+      "'scope': 'captured point replay and native-array phase inspection; no solver repair or posterior qualification'",
+      "'debug_module': str(DEBUG_PACKAGE / 'camb/camblib.so'),\n       'debug_module_sha256': sha(DEBUG_PACKAGE / 'camb/camblib.so'),\n       'scope': 'isolated debug-compiled official source replay; debug flags change native implementation; no production repair or posterior qualification'"
+    ]
+  ],
+  "debug_script_sha256": "2f591f48cb2aada13fb966d1272ae22a69f8c2b79017797245b4fd126d8ef4e2",
+  "debug_native_module": "/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_native_debug_20261005/source/camb/camblib.so",
+  "production_module_changed": false,
+  "build_v3_exit_code": 0
+}

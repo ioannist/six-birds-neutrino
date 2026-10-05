@@ -1,0 +1,12 @@
+{
+  "utc": "2026-10-05T03:43:38.568012+00:00",
+  "runtime_worker": {
+    "managed_session": 8538,
+    "actual_exit_code": 1
+  },
+  "all_verification_workers_terminal": true,
+  "runtime_snapshot_written": false,
+  "objection": "Recovery entries carry terminal_receipt as parent provenance. A key-presence test incorrectly classified live recovery identities as terminal.",
+  "repair": "Use explicit registered terminal status, preserving parent terminal provenance and all prior family identities.",
+  "native_failure_or_restart_inferred": false
+}

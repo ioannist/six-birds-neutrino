@@ -1,0 +1,23 @@
+{
+  "utc": "2026-10-05T09:08:35.508163+00:00",
+  "full_Python_suite": {
+    "managed_session": 26806,
+    "actual_terminal_exit_code": 0,
+    "passed": 245,
+    "seconds": 5.96
+  },
+  "final_targeted_tests": {
+    "managed_session": 19776,
+    "actual_terminal_exit_code": 0,
+    "passed": 11
+  },
+  "distinct_self_review_final_direct_exit_code": 0,
+  "all_verification_workers_terminal": true,
+  "current_source_sha256": "f194983dc67f3dc0c34e26c963cf48a2270526c80e10f2a87c0075a03a5fe3e1",
+  "regression_tests_sha256": "ba600d88684de2c814028b301b11a7bae99adcee5ab819ccbfd5b60ac38003e8",
+  "initial_execution_receipt_preserved": "runs/20261005_math_review_template_rewrite_repair/execution_receipt.json",
+  "reason_for_fresh_validation": "Nullable condition estimate was correctly represented in metrics but still formatted numerically in the CLI summary; final repair and actual main-path test added.",
+  "Lean_sources_changed": false,
+  "paper_modified": false,
+  "samplers_restarted": false
+}

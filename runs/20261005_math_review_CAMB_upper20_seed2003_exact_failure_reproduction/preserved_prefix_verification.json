@@ -1,0 +1,175 @@
+{
+  "utc": "2026-10-05T00:13:23.698798+00:00",
+  "seed": 2003,
+  "managed_session": 39055,
+  "actual_terminal_exit_code": 1,
+  "identity_observation": {
+    "pid": 3108408,
+    "expected_start_ticks": 342500644,
+    "status": "PID_not_present",
+    "original_identity_absent": true
+  },
+  "terminal_replay_files": [
+    {
+      "source": "runs/20261004_math_review_upper_prior_seed2003_seeded_failure_reproduction/chains/fresh_CAMB_upper20_A4095_seed2003.1.txt",
+      "frozen": "runs/20261005_math_review_CAMB_upper20_seed2003_exact_failure_reproduction/terminal_replay_bundle/chains/fresh_CAMB_upper20_A4095_seed2003.1.txt",
+      "sha256": "648186a42cfc7ae4a2d47dd6669c63687fdcacd44cdf04dd20dc8ca813a7a31b",
+      "bytes": 100776
+    },
+    {
+      "source": "runs/20261004_math_review_upper_prior_seed2003_seeded_failure_reproduction/chains/fresh_CAMB_upper20_A4095_seed2003.checkpoint",
+      "frozen": "runs/20261005_math_review_CAMB_upper20_seed2003_exact_failure_reproduction/terminal_replay_bundle/chains/fresh_CAMB_upper20_A4095_seed2003.checkpoint",
+      "sha256": "df769a2482a3212c4abd099bb9bc3bf8fe5738dff2a6b9ff168498628ef80799",
+      "bytes": 130
+    },
+    {
+      "source": "runs/20261004_math_review_upper_prior_seed2003_seeded_failure_reproduction/chains/fresh_CAMB_upper20_A4095_seed2003.covmat",
+      "frozen": "runs/20261005_math_review_CAMB_upper20_seed2003_exact_failure_reproduction/terminal_replay_bundle/chains/fresh_CAMB_upper20_A4095_seed2003.covmat",
+      "sha256": "27eebf2cb99c8b73aab845ce5d930a407ff4ebe7359ec8515bd8c939ec9cd4c2",
+      "bytes": 1284
+    },
+    {
+      "source": "runs/20261004_math_review_upper_prior_seed2003_seeded_failure_reproduction/chains/fresh_CAMB_upper20_A4095_seed2003.input.yaml",
+      "frozen": "runs/20261005_math_review_CAMB_upper20_seed2003_exact_failure_reproduction/terminal_replay_bundle/chains/fresh_CAMB_upper20_A4095_seed2003.input.yaml",
+      "sha256": "7f731be1c515b0965135d271fbc27eb628554262c11b69a7b87e63f41f4e8567",
+      "bytes": 2058
+    },
+    {
+      "source": "runs/20261004_math_review_upper_prior_seed2003_seeded_failure_reproduction/chains/fresh_CAMB_upper20_A4095_seed2003.progress",
+      "frozen": "runs/20261005_math_review_CAMB_upper20_seed2003_exact_failure_reproduction/terminal_replay_bundle/chains/fresh_CAMB_upper20_A4095_seed2003.progress",
+      "sha256": "262b11d51972ad0508cb8537d164d8864d1b656c52edc3b6a9c6963763510716",
+      "bytes": 85
+    },
+    {
+      "source": "runs/20261004_math_review_upper_prior_seed2003_seeded_failure_reproduction/chains/fresh_CAMB_upper20_A4095_seed2003.updated.yaml",
+      "frozen": "runs/20261005_math_review_CAMB_upper20_seed2003_exact_failure_reproduction/terminal_replay_bundle/chains/fresh_CAMB_upper20_A4095_seed2003.updated.yaml",
+      "sha256": "bc28799beafb8bbdaecd54bfb25b1f6b9b31845d444a46e9b94f0dd5e5113d7c",
+      "bytes": 3577
+    },
+    {
+      "source": "runs/20261004_math_review_upper_prior_seed2003_seeded_failure_reproduction/env.txt",
+      "frozen": "runs/20261005_math_review_CAMB_upper20_seed2003_exact_failure_reproduction/terminal_replay_bundle/env.txt",
+      "sha256": "d15c4eede15f4650b9b228d873faf766b5c61e2b396f16fd98808af31a7afb9f",
+      "bytes": 437
+    },
+    {
+      "source": "runs/20261004_math_review_upper_prior_seed2003_seeded_failure_reproduction/input.yaml",
+      "frozen": "runs/20261005_math_review_CAMB_upper20_seed2003_exact_failure_reproduction/terminal_replay_bundle/input.yaml",
+      "sha256": "c05dfeafa339e71f6e4448ac9632b83d25df2f276d1aab689184a920af7cf6fc",
+      "bytes": 1960
+    },
+    {
+      "source": "runs/20261004_math_review_upper_prior_seed2003_seeded_failure_reproduction/resolved.yaml",
+      "frozen": "runs/20261005_math_review_CAMB_upper20_seed2003_exact_failure_reproduction/terminal_replay_bundle/resolved.yaml",
+      "sha256": "e8d94164f98ec5ec9ea7d7c414cddb3ea417b8ad15e9e507f5d0e0bb0454d338",
+      "bytes": 2151
+    },
+    {
+      "source": "runs/20261004_math_review_upper_prior_seed2003_seeded_failure_reproduction/solver_backend.json",
+      "frozen": "runs/20261005_math_review_CAMB_upper20_seed2003_exact_failure_reproduction/terminal_replay_bundle/solver_backend.json",
+      "sha256": "83d363c0bbc79c20d5a38c218709e85cdbf23571cdbb0e58b388b60042bf9053",
+      "bytes": 230
+    },
+    {
+      "source": "runs/20261004_math_review_upper_prior_seed2003_seeded_failure_reproduction/stderr.txt",
+      "frozen": "runs/20261005_math_review_CAMB_upper20_seed2003_exact_failure_reproduction/terminal_replay_bundle/stderr.txt",
+      "sha256": "b024cee53215528f97e70479c592c22c1d54bf1dba4382fe4d142db3a32cbe3c",
+      "bytes": 56
+    },
+    {
+      "source": "runs/20261004_math_review_upper_prior_seed2003_seeded_failure_reproduction/stdout.txt",
+      "frozen": "runs/20261005_math_review_CAMB_upper20_seed2003_exact_failure_reproduction/terminal_replay_bundle/stdout.txt",
+      "sha256": "b50dd65edb722e75641eca6548c8a94f20ba086b2fd7f182cb18b2a5421d2f87",
+      "bytes": 6542
+    },
+    {
+      "source": "runs/20261004_math_review_upper_prior_seed2003_seeded_failure_reproduction/summary.md",
+      "frozen": "runs/20261005_math_review_CAMB_upper20_seed2003_exact_failure_reproduction/terminal_replay_bundle/summary.md",
+      "sha256": "c8aec84d622e6fa2f7855abae8e94190be4ecaad31a9ef00f710861bd08aad65",
+      "bytes": 472
+    },
+    {
+      "source": "runs/20261004_math_review_upper_prior_native_failure_reproduction_preparation/seed2003/failed_proposal.json",
+      "frozen": "runs/20261005_math_review_CAMB_upper20_seed2003_exact_failure_reproduction/recording_bundle/failed_proposal.json",
+      "sha256": "b9f0e84c0945084e286e2c132d43418c9cd7c06ec1c73a0674ffd8900819aa0b",
+      "bytes": 285324
+    },
+    {
+      "source": "runs/20261004_math_review_upper_prior_native_failure_reproduction_preparation/seed2003/failed_provider_spectra.npz",
+      "frozen": "runs/20261005_math_review_CAMB_upper20_seed2003_exact_failure_reproduction/recording_bundle/failed_provider_spectra.npz",
+      "sha256": "91a0c6389da6e6fc34cc0038d1dc02cf5940c4ed99418195f8fc1fcc5bb04dbc",
+      "bytes": 7361
+    },
+    {
+      "source": "runs/20261004_math_review_upper_prior_native_failure_reproduction_preparation/seed2003/launch_receipt.json",
+      "frozen": "runs/20261005_math_review_CAMB_upper20_seed2003_exact_failure_reproduction/recording_bundle/launch_receipt.json",
+      "sha256": "3b16a3a62127b7933d5385feac43390abffa07c0d8adf120c28eb1964e96335d",
+      "bytes": 803
+    },
+    {
+      "source": "runs/20261004_math_review_upper_prior_native_failure_reproduction_preparation/seed2003/launcher_stderr.txt",
+      "frozen": "runs/20261005_math_review_CAMB_upper20_seed2003_exact_failure_reproduction/recording_bundle/launcher_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "source": "runs/20261004_math_review_upper_prior_native_failure_reproduction_preparation/seed2003/launcher_stdout.txt",
+      "frozen": "runs/20261005_math_review_CAMB_upper20_seed2003_exact_failure_reproduction/recording_bundle/launcher_stdout.txt",
+      "sha256": "a10b4e018895924f26b9386ae501b5f1d181f5eb02377af5702d8ca450edfd1e",
+      "bytes": 118
+    }
+  ],
+  "original_saved_chain": "runs/20261004_math_review_upper_prior_seed2003_native_failure_v2/terminal_bundle/chains/fresh_CAMB_upper20_A4095_seed2003.1.txt",
+  "original_saved_chain_sha256": "e9a9651f289df70e8dc66cc9f6c0a8569787a277a98aca37d4ba78d3da678f9d",
+  "replay_saved_chain": "runs/20261005_math_review_CAMB_upper20_seed2003_exact_failure_reproduction/terminal_replay_bundle/chains/fresh_CAMB_upper20_A4095_seed2003.1.txt",
+  "replay_saved_chain_sha256": "648186a42cfc7ae4a2d47dd6669c63687fdcacd44cdf04dd20dc8ca813a7a31b",
+  "original_saved_rows": 217,
+  "replay_saved_rows": 220,
+  "additional_replay_saved_rows": 3,
+  "all_original_saved_bytes_preserved_as_prefix": true,
+  "all_original_saved_binary64_values_equal": true,
+  "original_unflushed_tail_or_exact_original_failing_proposal_known": false,
+  "entire_internal_trajectory_equality_proved": false,
+  "sampled": {
+    "omegabh2": 0.029575663512100336,
+    "omegach2": 0.0028630562619511857,
+    "H0": 54.38876723029562,
+    "logA": 2.9440199295646825,
+    "ns": 0.9141040602339817,
+    "tau": 0.07344339439339485,
+    "mnu": 11.436878239360212
+  },
+  "sampled_point_strictly_inside_declared_prior": true,
+  "captured_spectra": {
+    "tt": {
+      "dimensions": 1,
+      "nan_count": 4099,
+      "inf_count": 0
+    },
+    "ee": {
+      "dimensions": 1,
+      "nan_count": 4099,
+      "inf_count": 0
+    },
+    "bb": {
+      "dimensions": 1,
+      "nan_count": 4099,
+      "inf_count": 0
+    },
+    "te": {
+      "dimensions": 1,
+      "nan_count": 4099,
+      "inf_count": 0
+    },
+    "et": {
+      "dimensions": 1,
+      "nan_count": 4099,
+      "inf_count": 0
+    }
+  },
+  "validation_cause_at_replayed_point": "NaNs, with valid one-dimensional arrays",
+  "posterior_qualified": false,
+  "native_error_counted_as_posterior_rejection": false,
+  "review_type": "self_review_no_independent_agent",
+  "scope": "same seeded diagnostic exception preserving every original saved row; unsaved original trajectory unavailable"
+}

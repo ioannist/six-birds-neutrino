@@ -1,0 +1,98 @@
+{
+  "utc": "2026-10-04T02:01:03.578308+00:00",
+  "binary_sha256": "fd4c915f4837508745a675b4edeb21f7b0be9d1ee89561762523d2fcf6bdc04b",
+  "scope": "isolated_candidate_repair_at_one_fixed_native_point",
+  "active_inference_backend_changed": false,
+  "uniform_numerical_accuracy_certified": false,
+  "posterior_convergence_certified": false,
+  "cases": {
+    "default": {
+      "exit_code": 0,
+      "elapsed_seconds": 15.869296004064381,
+      "input_sha256": "c2e309f4395a7bb579d2b8946025967a97d8186b6ee076011a2a1ef928e53b35",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "5172d4d8bace5c15755029cfb146b2ea7b017803efd3a92d8a0acc20d8db027f",
+      "retry_primary_count": 1,
+      "retry_secondary_count": 0,
+      "outputs": {
+        "default_finite_retry_00_cl.dat": {
+          "source": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_tca_diagnostic_20261004/default_finite_retry_00_cl.dat",
+          "source_sha256": "7d6f0af0d93b0070515462b641da293133a5608a464b039aa679e2c0e7065352",
+          "artifact": "default_finite_retry_cl.dat.npz",
+          "artifact_sha256": "56a0c2e9c1fd4bcc4f1d35daae0e527697bf83cb6b385f651eb46e7132d6981d",
+          "shape": [
+            5445,
+            8
+          ],
+          "nonfinite_values": 0
+        },
+        "default_finite_retry_00_cl_lensed.dat": {
+          "source": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_tca_diagnostic_20261004/default_finite_retry_00_cl_lensed.dat",
+          "source_sha256": "28c961723af42a8a61f0c2647b32318ee3eeb825b2304310ff38415db05f294e",
+          "artifact": "default_finite_retry_cl_lensed.dat.npz",
+          "artifact_sha256": "b0716a6b60a63d96d62445206503e1077e1961bfbb36f0420f5ca772cc415ff9",
+          "shape": [
+            4094,
+            8
+          ],
+          "nonfinite_values": 0
+        },
+        "default_finite_retry_00_thermodynamics.dat": {
+          "source": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_tca_diagnostic_20261004/default_finite_retry_00_thermodynamics.dat",
+          "source_sha256": "0bd5f1488647019b4812158c1d0bbdcedbf7add8d9513b5b6839c723396b120a",
+          "artifact": "default_finite_retry_thermodynamics.dat.npz",
+          "artifact_sha256": "ccea2978365cb2a1259f641360aec271653939ebd49fdae37ad3c2aeefcc8ff9",
+          "shape": [
+            28333,
+            12
+          ],
+          "nonfinite_values": 0
+        }
+      }
+    },
+    "background_quadrature": {
+      "exit_code": 0,
+      "elapsed_seconds": 17.833283979911357,
+      "input_sha256": "685e4d2719f72213f6c1addbd8161e44784134846dc08c93f58cbc9d40c01f1a",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "retry_primary_count": 0,
+      "retry_secondary_count": 0,
+      "outputs": {
+        "background_quadrature_finite_retry_00_cl.dat": {
+          "source": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_tca_diagnostic_20261004/background_quadrature_finite_retry_00_cl.dat",
+          "source_sha256": "bc4b3056d494aaed19820ce745a8a9d3f6b0f7e0d783ef84a7475c1bc04984f4",
+          "artifact": "background_quadrature_finite_retry_cl.dat.npz",
+          "artifact_sha256": "d0dd15def78f495e8691223cb2afcba1846c24f08b8918972ba571cb588922a1",
+          "shape": [
+            5445,
+            8
+          ],
+          "nonfinite_values": 0
+        },
+        "background_quadrature_finite_retry_00_cl_lensed.dat": {
+          "source": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_tca_diagnostic_20261004/background_quadrature_finite_retry_00_cl_lensed.dat",
+          "source_sha256": "45fff5a3484c3bfae91585e5a127b5ff86404e48482194257dcd27ccb8581af1",
+          "artifact": "background_quadrature_finite_retry_cl_lensed.dat.npz",
+          "artifact_sha256": "a79fa742e2b8c3f20e0596fc09eead4ffe14ab47b655b155622b0527d71743b5",
+          "shape": [
+            4094,
+            8
+          ],
+          "nonfinite_values": 0
+        },
+        "background_quadrature_finite_retry_00_thermodynamics.dat": {
+          "source": "/mnt/8tb/six-birds-ml/tmp/neutrino_class_tca_diagnostic_20261004/background_quadrature_finite_retry_00_thermodynamics.dat",
+          "source_sha256": "4ad6f7f703f60e919062fa66d0626caa9f08bf53580a371d51926409858e9d2e",
+          "artifact": "background_quadrature_finite_retry_thermodynamics.dat.npz",
+          "artifact_sha256": "8bcb9520d4f4d9cac8573ec88cf6bd08d5cd25a0aab4838ac47307fbe07e134f",
+          "shape": [
+            28333,
+            12
+          ],
+          "nonfinite_values": 0
+        }
+      }
+    }
+  }
+}

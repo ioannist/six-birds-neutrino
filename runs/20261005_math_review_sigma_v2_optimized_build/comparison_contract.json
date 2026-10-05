@@ -1,0 +1,10 @@
+{
+  "scope": "Selected twenty-point comparison only; not a uniform error bound or posterior certificate.",
+  "limit22_vs24": "Require all20 finite; exact posterior components and arrays compared and reported.",
+  "optimized_vs_audit_logpost_absolute_tolerance": 1e-05,
+  "optimized_vs_audit_array_normalized_infinity_tolerance": 1e-08,
+  "normalized_infinity_definition": "max(abs(a-b))/max(abs(reference)); if reference is identically zero require exact zero difference.",
+  "prior_and_BAO_components": "Require binary64 equality.",
+  "production_adopted": false,
+  "declaration_timing": "After first optimized control and first nine audit controls; before remaining optimized controls complete. No gate tuning on remaining results."
+}

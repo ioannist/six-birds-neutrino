@@ -1,0 +1,115 @@
+{
+  "utc": "2026-10-05T09:02:17.618067+00:00",
+  "scope": "Completion of the requested mathematical/code/Lean review and repairs, with the user's evidence-led withdrawal of claim restoration. Not approval of the original manuscript as written.",
+  "instruction_sha256": "a29c1d0fc5e69067d1734243313e9238a4d9823a8f7f401f5c22e5d93ee9b866",
+  "requirements": [
+    {
+      "requirement": "Checkpoint before review",
+      "status": "verified",
+      "evidence": "ffdaf4b is an existing ancestor checkpoint; the original review record and retained source history identify it as pre-review."
+    },
+    {
+      "requirement": "Thorough mathematical statement and applicability review",
+      "status": "verified",
+      "evidence": "All11 displayed equation labels and five additional mathematical families are mapped to actual premises, implementation/proof and limits; the full review report covers Gaussian, covariance, profiling, BAO, posterior and native-backend issues."
+    },
+    {
+      "requirement": "Correct mechanizations without hidden axioms or substituted targets",
+      "status": "verified",
+      "evidence": "All97 public declarations match97 successful dependency outputs and requests; unchanged sources, actual terminal build/check receipts and all pinned clean package commits are checked. Statement coverage retains explicit supplied hypotheses."
+    },
+    {
+      "requirement": "Repair mathematical implementation errors and verify them",
+      "status": "verified",
+      "evidence": "244-test current suite, preserved failing controls, native/provenance ledgers and distinct self-reviews; latest toy repair also has80 exact-rational comparisons and both actual CLI modes. No uniform floating or physical certificate is inferred."
+    },
+    {
+      "requirement": "Retain claim strength where support permits; discuss material downgrades",
+      "status": "verified",
+      "evidence": "Conditional mathematical coverage strengthened from the original two lemmas to97 declarations. Main magnitude/localization problems and alternatives were discussed; the user then directed dropping attempts to justify wrong or likely wrong claims. Current disposition withdraws unsupported/broad empirical claims without asserting unsupported numerical disproof."
+    },
+    {
+      "requirement": "No smuggling or misinterpretation",
+      "status": "verified_with_explicit_evidence_limits",
+      "evidence": "Empirical summaries, signed covariance allocations, best-found endpoints, supplied error premises and local native controls keep distinct roles. The suspended historical near0.030eV readout is withheld. No current qualified mass replacement, optimizer/global proof, independence/PRNG proof, null calibration or packaging-only causal attribution is claimed."
+    },
+    {
+      "requirement": "Do not edit the paper; leave manuscript revision for later",
+      "status": "verified",
+      "evidence": "Entire paper tree and canonical results are byte-identical in Git to ffdaf4b; the later manuscript phase remains excluded from this review."
+    },
+    {
+      "requirement": "Honor the subsequent withdrawal of claim-rescue work",
+      "status": "verified",
+      "evidence": "All61 then-live owned samplers have actual terminal exits and frozen outputs; all80 registrations and20 cohort memberships remain accounted for. Restoration obligations and obsolete magnitude options are preserved historically and superseded in current state."
+    }
+  ],
+  "paper_equation_labels_covered": [
+    "eq:toy_gaussian_constraints",
+    "eq:toy_combined_gaussian",
+    "eq:toy_trunc_mode",
+    "eq:block_decomp",
+    "eq:block_dchi",
+    "eq:profile_loglike",
+    "eq:profile_dchi",
+    "eq:lens_map",
+    "eq:packaging_def",
+    "eq:theta_hat_def",
+    "eq:dchi_def"
+  ],
+  "public_formal_declarations_covered": 97,
+  "Python_tests_passed": 244,
+  "pinned_dependencies_verified": [
+    {
+      "name": "mathlib",
+      "verified_commit": "a3a10db0e9d66acbebf76c5e6a135066525ac900"
+    },
+    {
+      "name": "plausible",
+      "verified_commit": "009dc1e6f2feb2c96c081537d80a0905b2c6498f"
+    },
+    {
+      "name": "LeanSearchClient",
+      "verified_commit": "5ce7f0a355f522a952a3d678d696bd563bb4fd28"
+    },
+    {
+      "name": "importGraph",
+      "verified_commit": "8f497d55985a189cea8020d9dc51260af1e41ad2"
+    },
+    {
+      "name": "proofwidgets",
+      "verified_commit": "c04225ee7c0585effbd933662b3151f01b600e40"
+    },
+    {
+      "name": "aesop",
+      "verified_commit": "cb837cc26236ada03c81837bebe0acd9c70ced7d"
+    },
+    {
+      "name": "Qq",
+      "verified_commit": "bd58c9efe2086d56ca361807014141a860ddbf8c"
+    },
+    {
+      "name": "batteries",
+      "verified_commit": "b25b36a7caf8e237e7d1e6121543078a06777c8a"
+    },
+    {
+      "name": "Cli",
+      "verified_commit": "55c37290ff6186e2e965d68cf853a57c0702db82"
+    }
+  ],
+  "statement_inventory_sha256": "f56bd6b65aeebf2f9c05d90c8799ed3c56b8bdeceaffe0cde7e7de6d86255c99",
+  "source_inventory_sha256": "1250ffcb77cf7391c510b0e1c34ff49641933448ffe5f7c7892f3a42eea94c63",
+  "scientific_results_withheld": [
+    "advertised posterior-tightening magnitudes",
+    "historical suspended near0.030eV replacement",
+    "broad full-CMB TT dominance",
+    "uniform solver/CDF/tail accuracy",
+    "global optimizer or causal packaging identification"
+  ],
+  "known_required_work_remaining_in_requested_review": [],
+  "later_phase": "Edit the paper to adopt supported conditional/scoped content and remove unsupported empirical claims.",
+  "independent_external_review_performed": false,
+  "distinct_self_review_performed": true,
+  "original_empirical_claims_validated": false,
+  "review_completion_requirements_satisfied": true
+}

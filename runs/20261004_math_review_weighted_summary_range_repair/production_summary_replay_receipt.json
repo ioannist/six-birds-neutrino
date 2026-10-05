@@ -1,0 +1,696 @@
+{
+  "utc": "2026-10-04T19:18:40.760375+00:00",
+  "records": [
+    {
+      "group": "quad_A",
+      "chain": "runs/20261004_math_review_guarded_CLASS_sixth_quad_A_diagnostics/quad_A/seed1301/chains/math_guarded_quad_A_seed1301.1.txt",
+      "chain_sha256": "db3f57ffe8d157b7d2f337e730641818d90d01a3f9c957cc3c08b2f189c53ac9",
+      "original": {
+        "median": 0.03356836788098661,
+        "p95": 0.08645341288242427,
+        "boundary_fraction": 0.005255613951266125,
+        "histogram_mode": 0.02174980190594003
+      },
+      "repaired": {
+        "median": 0.03356836788098661,
+        "p95": 0.08645341288242427,
+        "boundary_fraction": 0.005255613951266125,
+        "histogram_mode": 0.02174980190594003
+      },
+      "histogram_mode_absolute_difference": 0.0,
+      "histogram_mode_difference_in_old_ULPs": 0.0
+    },
+    {
+      "group": "quad_A",
+      "chain": "runs/20261004_math_review_guarded_CLASS_sixth_quad_A_diagnostics/quad_A/seed1302/chains/math_guarded_quad_A_seed1302.1.txt",
+      "chain_sha256": "645abeb8e5438107c802ef6567715a86cd564c042081fc486ed02da51071f02b",
+      "original": {
+        "median": 0.035939018642350856,
+        "p95": 0.11743908229001641,
+        "boundary_fraction": 0.018177787630237197,
+        "histogram_mode": 0.006661180774515784
+      },
+      "repaired": {
+        "median": 0.035939018642350856,
+        "p95": 0.11743908229001641,
+        "boundary_fraction": 0.018177787630237197,
+        "histogram_mode": 0.006661180774515784
+      },
+      "histogram_mode_absolute_difference": 0.0,
+      "histogram_mode_difference_in_old_ULPs": 0.0
+    },
+    {
+      "group": "quad_A",
+      "chain": "runs/20261004_math_review_guarded_CLASS_sixth_quad_A_diagnostics/quad_A/seed1303/chains/math_guarded_quad_A_seed1303.1.txt",
+      "chain_sha256": "f4884c5ba7bb515b8b75894afbfe34219f5f4b7434da88eb08d0ff8a9ba09fef",
+      "original": {
+        "median": 0.04494917133182071,
+        "p95": 0.10875792649801287,
+        "boundary_fraction": 0.0070788107597923545,
+        "histogram_mode": 0.01254403518962828
+      },
+      "repaired": {
+        "median": 0.04494917133182071,
+        "p95": 0.10875792649801287,
+        "boundary_fraction": 0.0070788107597923545,
+        "histogram_mode": 0.01254403518962828
+      },
+      "histogram_mode_absolute_difference": 0.0,
+      "histogram_mode_difference_in_old_ULPs": 0.0
+    },
+    {
+      "group": "quad_A",
+      "chain": "runs/20261004_math_review_guarded_CLASS_sixth_quad_A_diagnostics/quad_A/seed1304/chains/math_guarded_quad_A_seed1304.1.txt",
+      "chain_sha256": "54179219f9eb356a55eea093f276afec52f016b8d3b59d11629424255f60ad98",
+      "original": {
+        "median": 0.033340492659385886,
+        "p95": 0.09579668052384423,
+        "boundary_fraction": 0.013224332772301034,
+        "histogram_mode": 0.024749002176941454
+      },
+      "repaired": {
+        "median": 0.033340492659385886,
+        "p95": 0.09579668052384423,
+        "boundary_fraction": 0.013224332772301034,
+        "histogram_mode": 0.024749002176941454
+      },
+      "histogram_mode_absolute_difference": 0.0,
+      "histogram_mode_difference_in_old_ULPs": 0.0
+    },
+    {
+      "group": "quad_B",
+      "chain": "runs/20261004_math_review_guarded_CLASS_seventh_quad_B_diagnostics/quad_B/seed1305/chains/math_guarded_quad_B_seed1305.1.txt",
+      "chain_sha256": "3444d9490804dd3eea006876c49f07e7daba37b0f5ea55792e892c7ff6465274",
+      "original": {
+        "median": 0.02277194509895234,
+        "p95": 0.0673919658082796,
+        "boundary_fraction": 0.02803083391730904,
+        "histogram_mode": 0.005270118399566702
+      },
+      "repaired": {
+        "median": 0.02277194509895234,
+        "p95": 0.0673919658082796,
+        "boundary_fraction": 0.02803083391730904,
+        "histogram_mode": 0.005270118399566702
+      },
+      "histogram_mode_absolute_difference": 0.0,
+      "histogram_mode_difference_in_old_ULPs": 0.0
+    },
+    {
+      "group": "quad_B",
+      "chain": "runs/20261004_math_review_guarded_CLASS_seventh_quad_B_diagnostics/quad_B/seed1306/chains/math_guarded_quad_B_seed1306.1.txt",
+      "chain_sha256": "cd6b6006c3924eb0c53f6b8494b5d2d7c40dff023ad53c57dc0101ecc701c95d",
+      "original": {
+        "median": 0.029212247092175642,
+        "p95": 0.08643996633795269,
+        "boundary_fraction": 0.014747859181731684,
+        "histogram_mode": 0.0054264211167608534
+      },
+      "repaired": {
+        "median": 0.029212247092175642,
+        "p95": 0.08643996633795269,
+        "boundary_fraction": 0.014747859181731684,
+        "histogram_mode": 0.0054264211167608534
+      },
+      "histogram_mode_absolute_difference": 0.0,
+      "histogram_mode_difference_in_old_ULPs": 0.0
+    },
+    {
+      "group": "quad_B",
+      "chain": "runs/20261004_math_review_guarded_CLASS_seventh_quad_B_diagnostics/quad_B/seed1307/chains/math_guarded_quad_B_seed1307.1.txt",
+      "chain_sha256": "862f9ba9c3421c2be941a7fdace481835b06482255abc5bc912e36f73f5d602f",
+      "original": {
+        "median": 0.024217886704476943,
+        "p95": 0.08780970327947783,
+        "boundary_fraction": 0.025889967637540454,
+        "histogram_mode": 0.010362171218436621
+      },
+      "repaired": {
+        "median": 0.024217886704476943,
+        "p95": 0.08780970327947783,
+        "boundary_fraction": 0.025889967637540454,
+        "histogram_mode": 0.010362171218436621
+      },
+      "histogram_mode_absolute_difference": 0.0,
+      "histogram_mode_difference_in_old_ULPs": 0.0
+    },
+    {
+      "group": "quad_B",
+      "chain": "runs/20261004_math_review_guarded_CLASS_seventh_quad_B_diagnostics/quad_B/seed1308/chains/math_guarded_quad_B_seed1308.1.txt",
+      "chain_sha256": "c343c92d908cc77dd4cd1623e3b67300d2b4fed4c5c78c28db6073708e6cff4e",
+      "original": {
+        "median": 0.02985981732602771,
+        "p95": 0.08476431660167862,
+        "boundary_fraction": 0.004369992716678805,
+        "histogram_mode": 0.033279900018280933
+      },
+      "repaired": {
+        "median": 0.02985981732602771,
+        "p95": 0.08476431660167862,
+        "boundary_fraction": 0.004369992716678805,
+        "histogram_mode": 0.033279900018280933
+      },
+      "histogram_mode_absolute_difference": 0.0,
+      "histogram_mode_difference_in_old_ULPs": 0.0
+    },
+    {
+      "group": "medium_A",
+      "chain": "runs/20261004_math_review_guarded_CLASS_sixth_medium_A_diagnostics/medium_A/seed1201/chains/math_guarded_dragging_A_seed1201.1.txt",
+      "chain_sha256": "47607daf11f85b172d49b1bbbe7600931609a7ffc348f849fd0b3e8a2f204162",
+      "original": {
+        "median": 0.042088838770704094,
+        "p95": 0.11343885572292604,
+        "boundary_fraction": 0.00253592561284869,
+        "histogram_mode": 0.023151311586018436
+      },
+      "repaired": {
+        "median": 0.042088838770704094,
+        "p95": 0.11343885572292604,
+        "boundary_fraction": 0.00253592561284869,
+        "histogram_mode": 0.023151311586018436
+      },
+      "histogram_mode_absolute_difference": 0.0,
+      "histogram_mode_difference_in_old_ULPs": 0.0
+    },
+    {
+      "group": "medium_A",
+      "chain": "runs/20261004_math_review_guarded_CLASS_sixth_medium_A_diagnostics/medium_A/seed1401/chains/math_guarded_medium_A_seed1401.1.txt",
+      "chain_sha256": "ec61e7d1551a4cdde4b643c93edc59548377afebf3e97a60f9f55b83f4815d5a",
+      "original": {
+        "median": 0.04045116017448185,
+        "p95": 0.09693418284908152,
+        "boundary_fraction": 0.014243323442136498,
+        "histogram_mode": 0.005649357228682622
+      },
+      "repaired": {
+        "median": 0.04045116017448185,
+        "p95": 0.09693418284908152,
+        "boundary_fraction": 0.014243323442136498,
+        "histogram_mode": 0.005649357228682622
+      },
+      "histogram_mode_absolute_difference": 0.0,
+      "histogram_mode_difference_in_old_ULPs": 0.0
+    },
+    {
+      "group": "medium_A",
+      "chain": "runs/20261004_math_review_guarded_CLASS_sixth_medium_A_diagnostics/medium_A/seed1402/chains/math_guarded_medium_A_seed1402.1.txt",
+      "chain_sha256": "3e65d431bd6a84e07b3f94b22a06458f6ab6fcd891a4eb223fdc5826db56fc98",
+      "original": {
+        "median": 0.04734066835211381,
+        "p95": 0.10747763699902382,
+        "boundary_fraction": 0.0,
+        "histogram_mode": 0.044280556856245046
+      },
+      "repaired": {
+        "median": 0.04734066835211381,
+        "p95": 0.10747763699902382,
+        "boundary_fraction": 0.0,
+        "histogram_mode": 0.044280556856245046
+      },
+      "histogram_mode_absolute_difference": 0.0,
+      "histogram_mode_difference_in_old_ULPs": 0.0
+    },
+    {
+      "group": "medium_A",
+      "chain": "runs/20261004_math_review_guarded_CLASS_sixth_medium_A_diagnostics/medium_A/seed1406/chains/math_guarded_medium_A_seed1406.1.txt",
+      "chain_sha256": "a3078146a5b4006468be04fc917257f2f0b812559cdab7127dd2bb2b2f94442d",
+      "original": {
+        "median": 0.025568387949786393,
+        "p95": 0.1299072159862905,
+        "boundary_fraction": 0.01700404858299595,
+        "histogram_mode": 0.019620585491811234
+      },
+      "repaired": {
+        "median": 0.025568387949786393,
+        "p95": 0.1299072159862905,
+        "boundary_fraction": 0.01700404858299595,
+        "histogram_mode": 0.019620585491811234
+      },
+      "histogram_mode_absolute_difference": 0.0,
+      "histogram_mode_difference_in_old_ULPs": 0.0
+    },
+    {
+      "group": "medium_B",
+      "chain": "runs/20261004_math_review_guarded_CLASS_sixth_medium_B_diagnostics/medium_B/seed1403/chains/math_guarded_medium_B_seed1403.1.txt",
+      "chain_sha256": "bb1c8b9e574c025243feed1a3bfda92005004a7e31deeac1d833e03fbda4de2d",
+      "original": {
+        "median": 0.03145772633570064,
+        "p95": 0.08079525220937965,
+        "boundary_fraction": 0.02081447963800905,
+        "histogram_mode": 0.03223852512806298
+      },
+      "repaired": {
+        "median": 0.03145772633570064,
+        "p95": 0.08079525220937965,
+        "boundary_fraction": 0.02081447963800905,
+        "histogram_mode": 0.03223852512806298
+      },
+      "histogram_mode_absolute_difference": 0.0,
+      "histogram_mode_difference_in_old_ULPs": 0.0
+    },
+    {
+      "group": "medium_B",
+      "chain": "runs/20261004_math_review_guarded_CLASS_sixth_medium_B_diagnostics/medium_B/seed1404/chains/math_guarded_medium_B_seed1404.1.txt",
+      "chain_sha256": "020fdffdc08986bed8a3cd738d8b09a0d4c50269f8eee068f3df445c04b6e672",
+      "original": {
+        "median": 0.02725449999487736,
+        "p95": 0.0750478872717911,
+        "boundary_fraction": 0.028291621327529923,
+        "histogram_mode": 0.002844061014528141
+      },
+      "repaired": {
+        "median": 0.02725449999487736,
+        "p95": 0.0750478872717911,
+        "boundary_fraction": 0.028291621327529923,
+        "histogram_mode": 0.002844061014528141
+      },
+      "histogram_mode_absolute_difference": 0.0,
+      "histogram_mode_difference_in_old_ULPs": 0.0
+    },
+    {
+      "group": "medium_B",
+      "chain": "runs/20261004_math_review_guarded_CLASS_sixth_medium_B_diagnostics/medium_B/seed1405/chains/math_guarded_medium_B_seed1405.1.txt",
+      "chain_sha256": "3642410d3f3f42a71b25ae7511d6f34103a01bfc85b82a5faa2589b44b83b039",
+      "original": {
+        "median": 0.0172776020147037,
+        "p95": 0.082326308096118,
+        "boundary_fraction": 0.018427518427518427,
+        "histogram_mode": 0.00302185250809256
+      },
+      "repaired": {
+        "median": 0.0172776020147037,
+        "p95": 0.082326308096118,
+        "boundary_fraction": 0.018427518427518427,
+        "histogram_mode": 0.00302185250809256
+      },
+      "histogram_mode_absolute_difference": 0.0,
+      "histogram_mode_difference_in_old_ULPs": 0.0
+    },
+    {
+      "group": "medium_B",
+      "chain": "runs/20261004_math_review_guarded_CLASS_sixth_medium_B_diagnostics/medium_B/seed1407/chains/math_guarded_medium_B_seed1407.1.txt",
+      "chain_sha256": "350e6344cf6f033efbf9108465092ecf3603d120cd3cf1b59defe1b0f0fba648",
+      "original": {
+        "median": 0.014797447330520715,
+        "p95": 0.053731662753713355,
+        "boundary_fraction": 0.006903353057199211,
+        "histogram_mode": 0.00400775495310836
+      },
+      "repaired": {
+        "median": 0.014797447330520715,
+        "p95": 0.053731662753713355,
+        "boundary_fraction": 0.006903353057199211,
+        "histogram_mode": 0.00400775495310836
+      },
+      "histogram_mode_absolute_difference": 0.0,
+      "histogram_mode_difference_in_old_ULPs": 0.0
+    },
+    {
+      "group": "current_A3200",
+      "chain": "runs/20261004_math_review_fresh_CAMB_fourth_current_A3200_diagnostics/seed1901/chains/fresh_CAMB_current_A3200_seed1901.1.txt",
+      "chain_sha256": "dd324d2cb011071853225ca4407091917011503fe921c786331696baefd8f317",
+      "original": {
+        "median": 0.032339366726077526,
+        "p95": 0.10729629242489494,
+        "boundary_fraction": 0.03281949278965689,
+        "histogram_mode": 0.0015835447003546353
+      },
+      "repaired": {
+        "median": 0.032339366726077526,
+        "p95": 0.10729629242489494,
+        "boundary_fraction": 0.03281949278965689,
+        "histogram_mode": 0.0015835447003546353
+      },
+      "histogram_mode_absolute_difference": 0.0,
+      "histogram_mode_difference_in_old_ULPs": 0.0
+    },
+    {
+      "group": "current_A3200",
+      "chain": "runs/20261004_math_review_fresh_CAMB_fourth_current_A3200_diagnostics/seed1902/chains/fresh_CAMB_current_A3200_seed1902.1.txt",
+      "chain_sha256": "4678207e53d52fbfce2c7e39c27b7896a96a7d665e23bca581235adb6aa8d2ed",
+      "original": {
+        "median": 0.03924806767024755,
+        "p95": 0.12635960069257057,
+        "boundary_fraction": 0.0266793711291091,
+        "histogram_mode": 0.012136566065339792
+      },
+      "repaired": {
+        "median": 0.03924806767024755,
+        "p95": 0.12635960069257057,
+        "boundary_fraction": 0.0266793711291091,
+        "histogram_mode": 0.012136566065339792
+      },
+      "histogram_mode_absolute_difference": 0.0,
+      "histogram_mode_difference_in_old_ULPs": 0.0
+    },
+    {
+      "group": "current_A3200",
+      "chain": "runs/20261004_math_review_fresh_CAMB_fourth_current_A3200_diagnostics/seed1903/chains/fresh_CAMB_current_A3200_seed1903.1.txt",
+      "chain_sha256": "cb63b1c2aacabefc8827e21506cfbdd50f3d83456300cf94d8f3523ab82f366f",
+      "original": {
+        "median": 0.040772709599568364,
+        "p95": 0.19354617513280425,
+        "boundary_fraction": 0.01674052191038897,
+        "histogram_mode": 0.0030059959414240212
+      },
+      "repaired": {
+        "median": 0.040772709599568364,
+        "p95": 0.19354617513280425,
+        "boundary_fraction": 0.01674052191038897,
+        "histogram_mode": 0.0030059959414240212
+      },
+      "histogram_mode_absolute_difference": 0.0,
+      "histogram_mode_difference_in_old_ULPs": 0.0
+    },
+    {
+      "group": "current_A3200",
+      "chain": "runs/20261004_math_review_fresh_CAMB_fourth_current_A3200_diagnostics/seed1904/chains/fresh_CAMB_current_A3200_seed1904.1.txt",
+      "chain_sha256": "0da7a9ebfe108fb3983709daf46985f41f79f3c91bd19251289c0ccd674bc0e9",
+      "original": {
+        "median": 0.037110762820566384,
+        "p95": 0.15134605024361808,
+        "boundary_fraction": 0.013366336633663366,
+        "histogram_mode": 0.0026488665611436625
+      },
+      "repaired": {
+        "median": 0.037110762820566384,
+        "p95": 0.15134605024361808,
+        "boundary_fraction": 0.013366336633663366,
+        "histogram_mode": 0.0026488665611436625
+      },
+      "histogram_mode_absolute_difference": 0.0,
+      "histogram_mode_difference_in_old_ULPs": 0.0
+    },
+    {
+      "group": "old_A3200",
+      "chain": "runs/20261004_math_review_fresh_CAMB_third_old_A3200_diagnostics/seed1701/chains/fresh_CAMB_old_A3200_seed1701.1.txt",
+      "chain_sha256": "f2e8f510fbc4ddc39d809d279de0e3c68bcd4cfa483b9ed366148c2f3b44577e",
+      "original": {
+        "median": 0.034283177844668875,
+        "p95": 0.13557882153959813,
+        "boundary_fraction": 0.03540833809251856,
+        "histogram_mode": 0.0021147126857998196
+      },
+      "repaired": {
+        "median": 0.034283177844668875,
+        "p95": 0.13557882153959813,
+        "boundary_fraction": 0.03540833809251856,
+        "histogram_mode": 0.0021147126857998196
+      },
+      "histogram_mode_absolute_difference": 0.0,
+      "histogram_mode_difference_in_old_ULPs": 0.0
+    },
+    {
+      "group": "old_A3200",
+      "chain": "runs/20261004_math_review_fresh_CAMB_third_old_A3200_diagnostics/seed1702/chains/fresh_CAMB_old_A3200_seed1702.1.txt",
+      "chain_sha256": "042a165f74f8006b60ddb79f6e8184dcf69749cb6e178e4b4849e7de058875c7",
+      "original": {
+        "median": 0.04175007230167257,
+        "p95": 0.10116251409941607,
+        "boundary_fraction": 0.009079903147699757,
+        "histogram_mode": 0.02357229636067482
+      },
+      "repaired": {
+        "median": 0.04175007230167257,
+        "p95": 0.10116251409941607,
+        "boundary_fraction": 0.009079903147699757,
+        "histogram_mode": 0.02357229636067482
+      },
+      "histogram_mode_absolute_difference": 0.0,
+      "histogram_mode_difference_in_old_ULPs": 0.0
+    },
+    {
+      "group": "old_A3200",
+      "chain": "runs/20261004_math_review_fresh_CAMB_third_old_A3200_diagnostics/seed1703/chains/fresh_CAMB_old_A3200_seed1703.1.txt",
+      "chain_sha256": "769e29eee354db9779e5a238059740588252fd41f91d2cf4c126f724bd49d866",
+      "original": {
+        "median": 0.04896895245477735,
+        "p95": 0.15258419148735378,
+        "boundary_fraction": 0.013285024154589372,
+        "histogram_mode": 0.06708770026412761
+      },
+      "repaired": {
+        "median": 0.04896895245477735,
+        "p95": 0.15258419148735378,
+        "boundary_fraction": 0.013285024154589372,
+        "histogram_mode": 0.06708770026412761
+      },
+      "histogram_mode_absolute_difference": 0.0,
+      "histogram_mode_difference_in_old_ULPs": 0.0
+    },
+    {
+      "group": "old_A3200",
+      "chain": "runs/20261004_math_review_fresh_CAMB_third_old_A3200_diagnostics/seed1704/chains/fresh_CAMB_old_A3200_seed1704.1.txt",
+      "chain_sha256": "e20ed7858000f6280d5c98a5274ae5e0fafc9ab0cc37b20d106e751957da949c",
+      "original": {
+        "median": 0.03628818101124091,
+        "p95": 0.12186420742521496,
+        "boundary_fraction": 0.012404016538688719,
+        "histogram_mode": 0.04934948704579838
+      },
+      "repaired": {
+        "median": 0.03628818101124091,
+        "p95": 0.12186420742521496,
+        "boundary_fraction": 0.012404016538688719,
+        "histogram_mode": 0.04934948704579838
+      },
+      "histogram_mode_absolute_difference": 0.0,
+      "histogram_mode_difference_in_old_ULPs": 0.0
+    },
+    {
+      "group": "old_B4095",
+      "chain": "runs/20261004_math_review_fresh_CAMB_third_old_B4095_diagnostics/seed1705/chains/fresh_CAMB_old_B4095_seed1705.1.txt",
+      "chain_sha256": "71d5b27060051214fc23b2219a83231db40eba54462452948d44e1bbfb718f3e",
+      "original": {
+        "median": 0.031099254872092162,
+        "p95": 0.10605189735550229,
+        "boundary_fraction": 0.004394224733207784,
+        "histogram_mode": 0.014418961912453968
+      },
+      "repaired": {
+        "median": 0.031099254872092162,
+        "p95": 0.10605189735550229,
+        "boundary_fraction": 0.004394224733207784,
+        "histogram_mode": 0.014418961912453968
+      },
+      "histogram_mode_absolute_difference": 0.0,
+      "histogram_mode_difference_in_old_ULPs": 0.0
+    },
+    {
+      "group": "old_B4095",
+      "chain": "runs/20261004_math_review_fresh_CAMB_third_old_B4095_diagnostics/seed1706/chains/fresh_CAMB_old_B4095_seed1706.1.txt",
+      "chain_sha256": "f6e4ee39af0295aac70703d81b307045bd62581a531f88d4f3f5f5036adea814",
+      "original": {
+        "median": 0.027361113274366834,
+        "p95": 0.09750878530649476,
+        "boundary_fraction": 0.028238182934315532,
+        "histogram_mode": 0.013322304929477592
+      },
+      "repaired": {
+        "median": 0.027361113274366834,
+        "p95": 0.09750878530649476,
+        "boundary_fraction": 0.028238182934315532,
+        "histogram_mode": 0.013322304929477592
+      },
+      "histogram_mode_absolute_difference": 0.0,
+      "histogram_mode_difference_in_old_ULPs": 0.0
+    },
+    {
+      "group": "old_B4095",
+      "chain": "runs/20261004_math_review_fresh_CAMB_third_old_B4095_diagnostics/seed1707/chains/fresh_CAMB_old_B4095_seed1707.1.txt",
+      "chain_sha256": "68cbfd0fb4341eb3bdd43961deeb23108fc696d53b8aa39e84a71835f38b011b",
+      "original": {
+        "median": 0.03124619997259846,
+        "p95": 0.08264926226940889,
+        "boundary_fraction": 0.046065259117082535,
+        "histogram_mode": 0.0010504607726586404
+      },
+      "repaired": {
+        "median": 0.03124619997259846,
+        "p95": 0.08264926226940889,
+        "boundary_fraction": 0.046065259117082535,
+        "histogram_mode": 0.0010504607726586404
+      },
+      "histogram_mode_absolute_difference": 0.0,
+      "histogram_mode_difference_in_old_ULPs": 0.0
+    },
+    {
+      "group": "old_B4095",
+      "chain": "runs/20261004_math_review_fresh_CAMB_third_old_B4095_diagnostics/seed1708/chains/fresh_CAMB_old_B4095_seed1708.1.txt",
+      "chain_sha256": "f2750af47236a6b5e082354fc56926be9aba7107eb1461024b2d4b1fe9c0931b",
+      "original": {
+        "median": 0.0375792861561364,
+        "p95": 0.10590136921653774,
+        "boundary_fraction": 0.017769607843137254,
+        "histogram_mode": 0.022520527822034675
+      },
+      "repaired": {
+        "median": 0.0375792861561364,
+        "p95": 0.10590136921653774,
+        "boundary_fraction": 0.017769607843137254,
+        "histogram_mode": 0.022520527822034675
+      },
+      "histogram_mode_absolute_difference": 0.0,
+      "histogram_mode_difference_in_old_ULPs": 0.0
+    },
+    {
+      "group": "current_A4095",
+      "chain": "runs/20261004_math_review_fresh_CAMB_second_current_A4095_diagnostics/seed1801/chains/fresh_CAMB_current_A4095_seed1801.1.txt",
+      "chain_sha256": "1614208afc9ee059688614c03e29f428478c74c6107056b4db52f88afe22f0a7",
+      "original": {
+        "median": 0.044969826090429856,
+        "p95": 0.15441597953204314,
+        "boundary_fraction": 0.01452599388379205,
+        "histogram_mode": 0.023272405874808513
+      },
+      "repaired": {
+        "median": 0.044969826090429856,
+        "p95": 0.15441597953204314,
+        "boundary_fraction": 0.01452599388379205,
+        "histogram_mode": 0.023272405874808513
+      },
+      "histogram_mode_absolute_difference": 0.0,
+      "histogram_mode_difference_in_old_ULPs": 0.0
+    },
+    {
+      "group": "current_A4095",
+      "chain": "runs/20261004_math_review_fresh_CAMB_second_current_A4095_diagnostics/seed1802/chains/fresh_CAMB_current_A4095_seed1802.1.txt",
+      "chain_sha256": "32cc1b630ec2b5f3cbe813752f87c008775c752dd45a2d7fc78c50d91755fb6a",
+      "original": {
+        "median": 0.03033550364230122,
+        "p95": 0.10382421113816083,
+        "boundary_fraction": 0.019969278033794162,
+        "histogram_mode": 0.01279212942177779
+      },
+      "repaired": {
+        "median": 0.03033550364230122,
+        "p95": 0.10382421113816083,
+        "boundary_fraction": 0.019969278033794162,
+        "histogram_mode": 0.01279212942177779
+      },
+      "histogram_mode_absolute_difference": 0.0,
+      "histogram_mode_difference_in_old_ULPs": 0.0
+    },
+    {
+      "group": "current_A4095",
+      "chain": "runs/20261004_math_review_fresh_CAMB_second_current_A4095_diagnostics/seed1803/chains/fresh_CAMB_current_A4095_seed1803.1.txt",
+      "chain_sha256": "5c8aaba793845024994b3ecc5f64bd50f4a4348644a05292eea7bb199a483ff5",
+      "original": {
+        "median": 0.03635792659451194,
+        "p95": 0.11471554805853,
+        "boundary_fraction": 0.00702576112412178,
+        "histogram_mode": 0.004169983970910909
+      },
+      "repaired": {
+        "median": 0.03635792659451194,
+        "p95": 0.11471554805853,
+        "boundary_fraction": 0.00702576112412178,
+        "histogram_mode": 0.004169983970910909
+      },
+      "histogram_mode_absolute_difference": 0.0,
+      "histogram_mode_difference_in_old_ULPs": 0.0
+    },
+    {
+      "group": "current_A4095",
+      "chain": "runs/20261004_math_review_fresh_CAMB_second_current_A4095_diagnostics/seed1804/chains/fresh_CAMB_current_A4095_seed1804.1.txt",
+      "chain_sha256": "452f1278a31a69cdbe6740212725e197a38fa81fb1606accce33f0a80c4bbc31",
+      "original": {
+        "median": 0.03231942443978134,
+        "p95": 0.12335400738208212,
+        "boundary_fraction": 0.0,
+        "histogram_mode": 0.012221614014657968
+      },
+      "repaired": {
+        "median": 0.03231942443978134,
+        "p95": 0.12335400738208212,
+        "boundary_fraction": 0.0,
+        "histogram_mode": 0.012221614014657968
+      },
+      "histogram_mode_absolute_difference": 0.0,
+      "histogram_mode_difference_in_old_ULPs": 0.0
+    },
+    {
+      "group": "current_B4095",
+      "chain": "runs/20261004_math_review_fresh_CAMB_second_current_B4095_diagnostics/seed1805/chains/fresh_CAMB_current_B4095_seed1805.1.txt",
+      "chain_sha256": "30b9cc8b6d5a50065931f3a398be757f36820fab09ab8e74b8f9becf457f776d",
+      "original": {
+        "median": 0.040927887546601656,
+        "p95": 0.12441836767745895,
+        "boundary_fraction": 0.020440251572327043,
+        "histogram_mode": 0.04172682748080228
+      },
+      "repaired": {
+        "median": 0.040927887546601656,
+        "p95": 0.12441836767745895,
+        "boundary_fraction": 0.020440251572327043,
+        "histogram_mode": 0.04172682748080228
+      },
+      "histogram_mode_absolute_difference": 0.0,
+      "histogram_mode_difference_in_old_ULPs": 0.0
+    },
+    {
+      "group": "current_B4095",
+      "chain": "runs/20261004_math_review_fresh_CAMB_second_current_B4095_diagnostics/seed1806/chains/fresh_CAMB_current_B4095_seed1806.1.txt",
+      "chain_sha256": "df72d5ee744ceeb44eaf661177f644e412c1b9f0b949724113d53e2a857f756e",
+      "original": {
+        "median": 0.03369644652079644,
+        "p95": 0.10263614074806271,
+        "boundary_fraction": 0.012335526315789474,
+        "histogram_mode": 0.007990435445002043
+      },
+      "repaired": {
+        "median": 0.03369644652079644,
+        "p95": 0.10263614074806271,
+        "boundary_fraction": 0.012335526315789474,
+        "histogram_mode": 0.007990435445002043
+      },
+      "histogram_mode_absolute_difference": 0.0,
+      "histogram_mode_difference_in_old_ULPs": 0.0
+    },
+    {
+      "group": "current_B4095",
+      "chain": "runs/20261004_math_review_fresh_CAMB_second_current_B4095_diagnostics/seed1807/chains/fresh_CAMB_current_B4095_seed1807.1.txt",
+      "chain_sha256": "cf961727a17e9fee9163b7dfa51dd56ec85ba949a735dbf331930ab2f3dcf394",
+      "original": {
+        "median": 0.03445676614716724,
+        "p95": 0.09202874199389036,
+        "boundary_fraction": 0.02620802620802621,
+        "histogram_mode": 0.009367483914103917
+      },
+      "repaired": {
+        "median": 0.03445676614716724,
+        "p95": 0.09202874199389036,
+        "boundary_fraction": 0.02620802620802621,
+        "histogram_mode": 0.009367483914103917
+      },
+      "histogram_mode_absolute_difference": 0.0,
+      "histogram_mode_difference_in_old_ULPs": 0.0
+    },
+    {
+      "group": "current_B4095",
+      "chain": "runs/20261004_math_review_fresh_CAMB_second_current_B4095_diagnostics/seed1808/chains/fresh_CAMB_current_B4095_seed1808.1.txt",
+      "chain_sha256": "e7ed64c1bc56b8b8b9aaaabbd6d3730d2b45ca0fdcf9dbc83169fefbeefb08c3",
+      "original": {
+        "median": 0.03543579307848786,
+        "p95": 0.09223219635234065,
+        "boundary_fraction": 0.0,
+        "histogram_mode": 0.0023517528719987123
+      },
+      "repaired": {
+        "median": 0.03543579307848786,
+        "p95": 0.09223219635234065,
+        "boundary_fraction": 0.0,
+        "histogram_mode": 0.0023517528719987123
+      },
+      "histogram_mode_absolute_difference": 0.0,
+      "histogram_mode_difference_in_old_ULPs": 0.0
+    }
+  ],
+  "families": 36,
+  "all_medians_p95_and_boundary_fractions_identical": true,
+  "all_histogram_modes_within_one_ULP": true,
+  "maximum_histogram_mode_change_ULPs": 0.0,
+  "reader_source_sha256": "53552a6e127e04d89733e743abe35b354173294ec6c5547e167259a852614992",
+  "historical_reader_source_sha256": "8a44b2db4ec04eaac54be523090a105e2c7e27bc5a2db297f5b94974d309fa4c",
+  "posterior_qualification_inferred": false
+}

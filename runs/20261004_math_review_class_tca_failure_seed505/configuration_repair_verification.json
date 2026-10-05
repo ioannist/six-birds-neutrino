@@ -1,0 +1,52 @@
+{
+  "utc": "2026-10-04T00:28:08.888296+00:00",
+  "scope": "known_failure_point_and_future_configuration_repair_only",
+  "records": [
+    {
+      "configuration": "configs/neutrino/cmb_spt2018_plancksubset_desi_mnu.yaml",
+      "old_configuration_sha256": "d11bc6f52b9900a0171ad14e992badc301f731676d289e35584cfabcb683cecf",
+      "new_configuration_sha256": "3882c07c3bd44b468d770316902af933f88c74129e330bac03c6668a7823cc3b",
+      "only_declared_precision_and_explanatory_note_changed": true,
+      "initialized_native_extra_args_match_successful_replay": true,
+      "initialized_native_l_max_scalars": 3200,
+      "native_replay_file": "canonical_background_quadrature_ell3200_omp8.json",
+      "native_replay_sha256": "30c623370df182a43ebd6b3b73103b044b3417c320ac0c1ec94816bfc680890b"
+    },
+    {
+      "configuration": "configs/neutrino/cmb_sptd1_plancksubset_desi_mnu.yaml",
+      "old_configuration_sha256": "c717cca3ddafd6c74e01566cec38d6a63554fde56b33603308b6dcf513036f4d",
+      "new_configuration_sha256": "ddff40cd91db64f5953075fafcac5aa05c4887c4841552b5c4ae7ebe9a048332",
+      "only_declared_precision_and_explanatory_note_changed": true,
+      "initialized_native_extra_args_match_successful_replay": true,
+      "initialized_native_l_max_scalars": 4095,
+      "native_replay_file": "background_quadrature_omp8.json",
+      "native_replay_sha256": "9ef9bef81e280ff71ae5fdd5dbea4f8b587b25c09291765d4ad5875ac6354232"
+    },
+    {
+      "configuration": "configs/neutrino/cmb_baseline_spt2018_plancksubset_mnu.yaml",
+      "old_configuration_sha256": "7d65b5a745bc892efd5ee441c05dcaa3a982a914ff2b8ab2f648edf4c2250822",
+      "new_configuration_sha256": "65c5bdc060c92843479f27674faf233ce35c21e5672ec82ab0b12fdd256f5ef0",
+      "only_declared_precision_and_explanatory_note_changed": true,
+      "initialized_native_extra_args_match_successful_replay": true,
+      "initialized_native_l_max_scalars": 3200,
+      "native_replay_file": "canonical_background_quadrature_ell3200_omp8.json",
+      "native_replay_sha256": "30c623370df182a43ebd6b3b73103b044b3417c320ac0c1ec94816bfc680890b"
+    },
+    {
+      "configuration": "configs/neutrino/cmb_baseline_sptd1_plancksubset_mnu.yaml",
+      "old_configuration_sha256": "fdf3bdb7b45d1477e7d7bde1e1018f1142c36409e352c22805c3b6ad1850f169",
+      "new_configuration_sha256": "8e4c50af4514115ffc069f21a159a660897a24968e0da34e1126d5610ca49613",
+      "only_declared_precision_and_explanatory_note_changed": true,
+      "initialized_native_extra_args_match_successful_replay": true,
+      "initialized_native_l_max_scalars": 4095,
+      "native_replay_file": "background_quadrature_omp8.json",
+      "native_replay_sha256": "9ef9bef81e280ff71ae5fdd5dbea4f8b587b25c09291765d4ad5875ac6354232"
+    }
+  ],
+  "native_successful_replay": "background_quadrature_omp8.json",
+  "native_successful_replay_sha256": "9ef9bef81e280ff71ae5fdd5dbea4f8b587b25c09291765d4ad5875ac6354232",
+  "historical_runs_rewritten": false,
+  "stopped_default_chain_resumed": false,
+  "uniform_numerical_accuracy_certified": false,
+  "posterior_convergence_verified": false
+}

@@ -1,0 +1,62 @@
+{
+  "utc": "2026-10-05T08:52:50.042578+00:00",
+  "records": [
+    {
+      "mode": "dominant_whitened",
+      "command": [
+        "/tmp/neutrino-math-review-venv/bin/python",
+        "/home/repos/six-birds-neutrino/scripts/run_template_rewrite.py",
+        "--runA",
+        "/home/repos/six-birds-neutrino/runs/20261003_math_review_toy_audit/lensA",
+        "--runB",
+        "/home/repos/six-birds-neutrino/runs/20261003_math_review_toy_audit/lensB",
+        "--template",
+        "dominant_whitened",
+        "--outdir",
+        "/home/repos/six-birds-neutrino/runs/20261005_math_review_template_rewrite_repair/cli_dominant_whitened"
+      ],
+      "actual_exit_code": 0,
+      "utc": "2026-10-05T08:52:49.207053+00:00",
+      "metrics_sha256": "992da0848ceaa0166c4408f8a10255f911d2e667d1b28bf8dd390b75533cc5ea"
+    },
+    {
+      "mode": "full_residual",
+      "command": [
+        "/tmp/neutrino-math-review-venv/bin/python",
+        "/home/repos/six-birds-neutrino/scripts/run_template_rewrite.py",
+        "--runA",
+        "/home/repos/six-birds-neutrino/runs/20261003_math_review_toy_audit/lensA",
+        "--runB",
+        "/home/repos/six-birds-neutrino/runs/20261003_math_review_toy_audit/lensB",
+        "--template",
+        "full_residual",
+        "--outdir",
+        "/home/repos/six-birds-neutrino/runs/20261005_math_review_template_rewrite_repair/cli_full_residual"
+      ],
+      "actual_exit_code": 0,
+      "utc": "2026-10-05T08:52:50.041604+00:00",
+      "metrics_sha256": "a0a192d013d7c444617f904e2dd93751dda9efe9f7d2dc3b3cf2d090b0254de8"
+    }
+  ],
+  "source_files": [
+    {
+      "path": "runs/20261003_math_review_toy_audit/lensA/config.yaml",
+      "sha256": "d82cb3ff06649c4f938be5e96b789ee02c95989d7fcd0c69e152fb655949537c"
+    },
+    {
+      "path": "runs/20261003_math_review_toy_audit/lensA/bestfit.json",
+      "sha256": "d2fceb7af662824c0f7cb62c0a2d5c84f87fee98b19fa9a0d669a168b8e88228"
+    },
+    {
+      "path": "runs/20261003_math_review_toy_audit/lensB/config.yaml",
+      "sha256": "7d2cfa8f02ae349593556e1a0b9dc225a3c60c74d0371c51c4e1a0938623f311"
+    },
+    {
+      "path": "runs/20261003_math_review_toy_audit/lensB/bestfit.json",
+      "sha256": "54315a1948e566cd3385a491fcf459a7c0ebcda24520392e635cb5607b4695bf"
+    }
+  ],
+  "original_source_bundles_unchanged": true,
+  "fitting_or_cosmological_sampling_launched": false,
+  "strict_JSON_outputs_verified": true
+}

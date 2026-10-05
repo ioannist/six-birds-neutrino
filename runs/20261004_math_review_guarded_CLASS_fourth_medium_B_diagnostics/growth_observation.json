@@ -1,0 +1,236 @@
+{
+  "utc": "2026-10-04T12:09:57.144046+00:00",
+  "scope": "individual_saved_prefix_observations_not_new_diagnostics",
+  "progress": {
+    "SPT_A": {
+      "minimum_saved_postburn_history": 14566,
+      "required": 16066,
+      "assessment_due": false
+    },
+    "SPT_B": {
+      "minimum_saved_postburn_history": 11790,
+      "required": 14055,
+      "assessment_due": false
+    },
+    "quad_A": {
+      "minimum_saved_postburn_history": 2549,
+      "required": 2943,
+      "assessment_due": false
+    },
+    "quad_B": {
+      "minimum_saved_postburn_history": 2327,
+      "required": 2554,
+      "assessment_due": false
+    },
+    "medium_A": {
+      "minimum_saved_postburn_history": 718,
+      "required": 712,
+      "assessment_due": true
+    },
+    "medium_B": {
+      "minimum_saved_postburn_history": 507,
+      "required": 599,
+      "assessment_due": false
+    }
+  },
+  "records": [
+    {
+      "seed": 301,
+      "cohort": "SPT_A",
+      "complete_saved_prefix_sha256": "c047895ab2bbf19e496f2f019996aa0dc114c99ed1403013825637453a882c49",
+      "stored_rows": 5211,
+      "postburn_represented_steps": 14566
+    },
+    {
+      "seed": 302,
+      "cohort": "SPT_A",
+      "complete_saved_prefix_sha256": "953a12d934c03e39e46577ee25d1fc924ae54b49c62f3189200fe68de0cd961c",
+      "stored_rows": 5113,
+      "postburn_represented_steps": 14999
+    },
+    {
+      "seed": 303,
+      "cohort": "SPT_A",
+      "complete_saved_prefix_sha256": "92497ed053a06aa410e7aa094d724a8ffd7b15b6eb199325d26fdb23a12c317e",
+      "stored_rows": 5747,
+      "postburn_represented_steps": 16413
+    },
+    {
+      "seed": 304,
+      "cohort": "SPT_A",
+      "complete_saved_prefix_sha256": "7a05c5c2f26936cd66173a9169ba6bb748ffee50ea1896c6eadac10120a93a96",
+      "stored_rows": 5689,
+      "postburn_represented_steps": 16403
+    },
+    {
+      "seed": 401,
+      "cohort": "SPT_A",
+      "complete_saved_prefix_sha256": "b3303e11fd1dacc428318642812d3a5cae9f67a78bd39db59277f40f004b3b07",
+      "stored_rows": 20000,
+      "postburn_represented_steps": 57668
+    },
+    {
+      "seed": 402,
+      "cohort": "SPT_A",
+      "complete_saved_prefix_sha256": "e95bbfdd0f37e67c74d28e9a909a42b4c4e89e5602a9a5622fa846022c1e5b9e",
+      "stored_rows": 20000,
+      "postburn_represented_steps": 57731
+    },
+    {
+      "seed": 305,
+      "cohort": "SPT_B",
+      "complete_saved_prefix_sha256": "22a873a3778c25be3b2dc1cfcf2e8164fdeac0a9483083ad537376a1ae0a05f7",
+      "stored_rows": 4250,
+      "postburn_represented_steps": 12189
+    },
+    {
+      "seed": 306,
+      "cohort": "SPT_B",
+      "complete_saved_prefix_sha256": "9e0929742d4ca2c8b720c8902c8290553c8fad28b754c34e6c048c66f441455b",
+      "stored_rows": 4175,
+      "postburn_represented_steps": 11790
+    },
+    {
+      "seed": 307,
+      "cohort": "SPT_B",
+      "complete_saved_prefix_sha256": "756b86e6498b8e8a7349415acd4fca26d9995b83a5ff2ea263c31f725302e4d3",
+      "stored_rows": 5499,
+      "postburn_represented_steps": 15669
+    },
+    {
+      "seed": 308,
+      "cohort": "SPT_B",
+      "complete_saved_prefix_sha256": "7ef38d98ec5d9bec267d5c20d1be1b5ef055db557f45f08b271e2e27900533b3",
+      "stored_rows": 5386,
+      "postburn_represented_steps": 15722
+    },
+    {
+      "seed": 403,
+      "cohort": "SPT_B",
+      "complete_saved_prefix_sha256": "9ca2db996f97428052de80c77c7234fa1ae9d8a9d31788267781ca67ba1e5a53",
+      "stored_rows": 20000,
+      "postburn_represented_steps": 57773
+    },
+    {
+      "seed": 404,
+      "cohort": "SPT_B",
+      "complete_saved_prefix_sha256": "37cf3e4b9e3eccb85b6cf0ebfa777d054539c74136c03a2f774267d728638d0d",
+      "stored_rows": 18760,
+      "postburn_represented_steps": 54654
+    },
+    {
+      "seed": 1301,
+      "cohort": "quad_A",
+      "complete_saved_prefix_sha256": "dbdbdfa599a0ecb86324c7a4a429a81df0061827c325ae343e7aeb1b3c1e38ea",
+      "stored_rows": 1079,
+      "postburn_represented_steps": 2575
+    },
+    {
+      "seed": 1302,
+      "cohort": "quad_A",
+      "complete_saved_prefix_sha256": "fbc8f621b0cde67fb84205f6fcc687fce46cd682ba745491b7c709c3d817b4af",
+      "stored_rows": 1013,
+      "postburn_represented_steps": 2820
+    },
+    {
+      "seed": 1303,
+      "cohort": "quad_A",
+      "complete_saved_prefix_sha256": "b2b9f899784b85e13c1c042aa3f3728ea1892fa2fe7b1df01b0e2d4f3c6e00bd",
+      "stored_rows": 1042,
+      "postburn_represented_steps": 2722
+    },
+    {
+      "seed": 1304,
+      "cohort": "quad_A",
+      "complete_saved_prefix_sha256": "cb2a88e6168cbdc62c0eaab1ef4decd79c18e611a542bc78d6f1b47348d4e1c1",
+      "stored_rows": 1046,
+      "postburn_represented_steps": 2549
+    },
+    {
+      "seed": 1305,
+      "cohort": "quad_B",
+      "complete_saved_prefix_sha256": "308fba3c95450e0e2514ea1e21cb8c07d0bc2be27cf5bc1182f1c2300e97d800",
+      "stored_rows": 965,
+      "postburn_represented_steps": 2484
+    },
+    {
+      "seed": 1306,
+      "cohort": "quad_B",
+      "complete_saved_prefix_sha256": "1c9bac51690a63b33c8f316fd18c44b74c8cfd4a743bd3a65fa923818086ce6b",
+      "stored_rows": 914,
+      "postburn_represented_steps": 2406
+    },
+    {
+      "seed": 1307,
+      "cohort": "quad_B",
+      "complete_saved_prefix_sha256": "8d2cc68e69b7847faa190648661e5a2d6cfe3139c4e9353dd9f244f0e09d3997",
+      "stored_rows": 978,
+      "postburn_represented_steps": 2451
+    },
+    {
+      "seed": 1308,
+      "cohort": "quad_B",
+      "complete_saved_prefix_sha256": "33c32fb36361f6d3336271bc3576cfb19ead3fa42c35f38e85004a2f04317dac",
+      "stored_rows": 947,
+      "postburn_represented_steps": 2327
+    },
+    {
+      "seed": 1201,
+      "cohort": "medium_A",
+      "complete_saved_prefix_sha256": "0fd60592b69074363fb73cdf5a9920f5e95a938d75504fd02885eba48819ac9a",
+      "stored_rows": 184,
+      "postburn_represented_steps": 738
+    },
+    {
+      "seed": 1401,
+      "cohort": "medium_A",
+      "complete_saved_prefix_sha256": "2ad994073ab816df2d029c2f95bef910a849b1a3a1b957e4d363bef3e4934b83",
+      "stored_rows": 226,
+      "postburn_represented_steps": 972
+    },
+    {
+      "seed": 1402,
+      "cohort": "medium_A",
+      "complete_saved_prefix_sha256": "44b15d70e92f46c6c2b8fb2445652791165e7f873735056b1b70e8ce0d3fb320",
+      "stored_rows": 252,
+      "postburn_represented_steps": 950
+    },
+    {
+      "seed": 1406,
+      "cohort": "medium_A",
+      "complete_saved_prefix_sha256": "188cc0214e6c27ba8fd321bff4e146ba55d79313a1670b18c4670244a6e00733",
+      "stored_rows": 220,
+      "postburn_represented_steps": 718
+    },
+    {
+      "seed": 1403,
+      "cohort": "medium_B",
+      "complete_saved_prefix_sha256": "d88891a3fe79d4644ac3d3f7eeb3fbce52f3dfcce1847a259e30b123bd588ba4",
+      "stored_rows": 260,
+      "postburn_represented_steps": 753
+    },
+    {
+      "seed": 1404,
+      "cohort": "medium_B",
+      "complete_saved_prefix_sha256": "8653e86a731e83aeb36698a6f038c9d802837c327afcea78ee81ec473306b374",
+      "stored_rows": 239,
+      "postburn_represented_steps": 596
+    },
+    {
+      "seed": 1405,
+      "cohort": "medium_B",
+      "complete_saved_prefix_sha256": "07bd832edeae009ab221816868c77833be599cd511e4dfcc4c3e26e78615a478",
+      "stored_rows": 143,
+      "postburn_represented_steps": 507
+    },
+    {
+      "seed": 1407,
+      "cohort": "medium_B",
+      "complete_saved_prefix_sha256": "25b7974b6613359915b465432fb4396bccf7f6f1a42e7b8134ba4696fd2c7be3",
+      "stored_rows": 228,
+      "postburn_represented_steps": 651
+    }
+  ],
+  "unwritten_holding_times_reconstructed": false,
+  "existing_diagnostic_receipts_changed": false
+}

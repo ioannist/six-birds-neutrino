@@ -1,0 +1,62 @@
+{
+  "utc": "2026-10-04T23:06:16.065170+00:00",
+  "source_preparation": "runs/20261004_math_review_status_aware_runtime_preparation_v2/prepare_observer.py",
+  "source_preparation_sha256": "e9b4b6b3e5a474ebd129ce6d6ee1f8a3f616281dd37ee16dce1bfeb715d9464b",
+  "terminal_paths": {
+    "2003": "runs/20261004_math_review_upper_prior_seed2003_native_failure_v2/terminal_receipt.json",
+    "2004": "runs/20261004_math_review_upper_prior_seed2004_native_failure/terminal_receipt.json"
+  },
+  "terminal_receipt_shas": {
+    "2003": "a08c9435e740684e57926a56a4105a4e77f233c5c3a803b2a3886f6c7dd02900",
+    "2004": "8a3b35ae7d3ad47469b603c6be6fdcbd9944d10e5f5e64ca331edf1e383f82c1"
+  },
+  "terminal_self_review_shas": {
+    "2003": "0ef19c2fb3d10f34c2f4072e0bf6d96ea8cd70106583250ba164058e4a101977",
+    "2004": "542253ac75087ee23cb0edaedf6bcf6cc2ec4cb5a22c3fc24ec63acf337f55e9"
+  },
+  "preparation_changes": [
+    [
+      "    if e['seed'] == 2003:",
+      "    if e['seed'] in [2003, 2004]:"
+    ],
+    [
+      "        terminal_path = ROOT / 'runs/20261004_math_review_upper_prior_seed2003_native_failure_v2/terminal_receipt.json'",
+      "        terminal_path = ROOT / {2003: 'runs/20261004_math_review_upper_prior_seed2003_native_failure_v2/terminal_receipt.json', 2004: 'runs/20261004_math_review_upper_prior_seed2004_native_failure/terminal_receipt.json'}[e['seed']]"
+    ],
+    [
+      "'''.replace('TERMINAL_REVIEW_SHA', repr(sha(terminal_review))).replace('TERMINAL_SHA', repr(terminal_sha))",
+      "'''.replace('TERMINAL_REVIEW_SHA', {2003: '0ef19c2fb3d10f34c2f4072e0bf6d96ea8cd70106583250ba164058e4a101977', 2004: '542253ac75087ee23cb0edaedf6bcf6cc2ec4cb5a22c3fc24ec63acf337f55e9'}.__repr__() + \"[e['seed']]\").replace('TERMINAL_SHA', {2003: 'a08c9435e740684e57926a56a4105a4e77f233c5c3a803b2a3886f6c7dd02900', 2004: '8a3b35ae7d3ad47469b603c6be6fdcbd9944d10e5f5e64ca331edf1e383f82c1'}.__repr__() + \"[e['seed']]\")"
+    ],
+    [
+      "for r in wide_records) == 7",
+      "for r in wide_records) == 6"
+    ],
+    [
+      "'terminal_native_failure_preserved'] == [2003]",
+      "'terminal_native_failure_preserved'] == [2003, 2004]"
+    ],
+    [
+      "'owned_live_samplers': 47, 'terminal_sampler_families': 1",
+      "'owned_live_samplers': 46, 'terminal_sampler_families': 2"
+    ],
+    [
+      "'upper_prior_owned_live_samplers': 7",
+      "'upper_prior_owned_live_samplers': 6"
+    ],
+    [
+      "'fresh_CAMB_SPT_live': 27",
+      "'fresh_CAMB_SPT_live': 26"
+    ],
+    [
+      "40 primary and 7 wider-prior live; seed2003 explicitly terminal",
+      "40 primary and 6 wider-prior live; seeds2003/2004 explicitly terminal"
+    ]
+  ],
+  "all48_families_accounted_for": true,
+  "expected_primary_live": 40,
+  "expected_wide_live": 6,
+  "terminal_seeds": [
+    2003,
+    2004
+  ]
+}

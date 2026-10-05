@@ -1,0 +1,9 @@
+{
+  "source_script": "runs/20261005_math_review_sigma_candidate_low_mass_controls/evaluate_controls.py",
+  "source_script_sha256": "def77d21a1b2028cd18f5318001e0bcf0fa7e1a58af72141c0831bc5f86ebd02",
+  "new_script_sha256": "328d5226d229a7492220567f58f965b9c2b685d3f754432c1c52e03766af3764",
+  "changes": "variant name and private package path only; point selection and evaluation configuration byte-identical",
+  "builder_policy": "native_policies/camb204_sigma_refinement_v1.json",
+  "builder_script": "scripts/build_camb_sigma_policy.py",
+  "production_adopted": false
+}

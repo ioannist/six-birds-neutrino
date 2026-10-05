@@ -1,0 +1,88 @@
+{
+  "scope": "regularized_Gauss_Newton_MCMC_proposal_only",
+  "posterior_covariance_certified": false,
+  "parameter_names": [
+    "omegabh2",
+    "omegach2",
+    "H0",
+    "logA",
+    "ns",
+    "tau",
+    "mnu_sample",
+    "A_planck",
+    "TT_tSZ_Amp",
+    "TT_kSZ_Amp"
+  ],
+  "anchor": {
+    "omegabh2": 0.022693650877739228,
+    "omegach2": 0.11622279713796975,
+    "H0": 68.76533806180566,
+    "logA": 3.0422362404163663,
+    "ns": 0.9807168340413199,
+    "tau": 0.05705188223237627,
+    "mnu_sample": 0.06074824368611051,
+    "A_planck": 1.0001591497379776,
+    "TT_tSZ_Amp": 2.130911433335396,
+    "TT_kSZ_Amp": 9.899
+  },
+  "step_in_proposal_units": 0.5,
+  "source_config": "/home/repos/six-birds-neutrino/runs/20261003_math_review_cmb_desi_chain_configs/A_seed501.yaml",
+  "source_config_sha256": "dcf87005aaf1094e8ccf439e579a7e2ddc68ab1cf7258ac6ccb7e67ba823f75e",
+  "native_gaussian_completion_bridges_verified": [
+    "planck_2018_highl_plik.TT_lite_native",
+    "planckpr4lensing.PlanckPR4Lensing"
+  ],
+  "lowell_diagonal_curvature_scaled": {
+    "planck_2018_lowl.EE_sroll2": [
+      0.13258998447986414,
+      0.15380198408047363,
+      0.08218281510426095,
+      0.0842167961341147,
+      0.15329304549459266,
+      2.9266185878461783,
+      0.04488477330733076,
+      0.0842167961341147,
+      -0.0,
+      -0.0
+    ],
+    "planck_2018_lowl.TT": [
+      0.002398739623686197,
+      0.047246023713000795,
+      0.0029321646434254944,
+      0.15267763985684724,
+      0.35280288887304323,
+      0.09402344209956937,
+      -0.0033461897651250183,
+      0.1568917758064572,
+      -0.0,
+      -0.0
+    ]
+  },
+  "elapsed_seconds": 414.9079380519688,
+  "fisher_eigenvalues_scaled": [
+    0.04795574203635063,
+    0.32355782523646454,
+    0.37769377770751417,
+    1.2937541250017264,
+    2.596770286659048,
+    3.5917727699021778,
+    5.195840926870824,
+    23.214628979442033,
+    44.1225871677489,
+    276.1650792690044
+  ],
+  "regularized_eigenvalues_scaled": [
+    0.04795574203635063,
+    0.32355782523646454,
+    0.37769377770751417,
+    1.2937541250017264,
+    2.596770286659048,
+    3.5917727699021778,
+    5.195840926870824,
+    23.214628979442033,
+    44.1225871677489,
+    276.1650792690044
+  ],
+  "eigenvalue_floor": 0.00027616507926900443,
+  "n_regularized_directions": 0
+}

@@ -1,0 +1,41 @@
+{
+  "utc": "2026-10-04T22:05:42.020219+00:00",
+  "verification_workers": [
+    {
+      "group": "upper20_A4095",
+      "kind": "preflight",
+      "managed_session": 95412,
+      "actual_terminal_exit_code": 0,
+      "receipt": "runs/20261004_math_review_upper_prior_posterior_preparation/upper20_A4095_preflight_completion.json"
+    },
+    {
+      "group": "upper20_A4095",
+      "kind": "first_rows",
+      "managed_session": 23665,
+      "actual_terminal_exit_code": 0,
+      "receipt": "runs/20261004_math_review_upper_prior_posterior_preparation/first_rows_upper20_A4095_completion.json"
+    },
+    {
+      "group": "upper20_B4095",
+      "kind": "preflight",
+      "managed_session": 30080,
+      "actual_terminal_exit_code": 0,
+      "receipt": "runs/20261004_math_review_upper_prior_posterior_preparation/upper20_B4095_preflight_completion.json"
+    },
+    {
+      "group": "upper20_B4095",
+      "kind": "first_rows",
+      "managed_session": 19676,
+      "actual_terminal_exit_code": 0,
+      "receipt": "runs/20261004_math_review_upper_prior_posterior_preparation/first_rows_upper20_B4095_completion.json"
+    }
+  ],
+  "preparation_command_actual_exit_code": 0,
+  "preparation_self_review_actual_exit_code": 0,
+  "activation_verification_actual_exit_code": 0,
+  "first_rows_self_review_actual_exit_code": 0,
+  "all_finite_verification_workers_complete": true,
+  "eight_inference_samplers_live": true,
+  "maximum_first_saved_row_replay_error": 0.0,
+  "live_inference_outputs_excluded_from_checkpoint": true
+}

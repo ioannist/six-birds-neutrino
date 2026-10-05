@@ -1,0 +1,56 @@
+{
+  "utc": "2026-10-05T05:37:39.011286+00:00",
+  "records": [
+    {
+      "name": "preserve.py",
+      "source": "runs/20261005_math_review_CLASS_B_activation_unavailable_preservation/preserve.py",
+      "source_sha256": "d2e97cd883cc13ce94e1cd1afdfcd9924fb7a3e977b564c5dba258c0188934f7",
+      "changes": [
+        [
+          "three absent",
+          "one absent"
+        ],
+        [
+          "runs/20261005_math_review_registered72_post_CLASS_recovery_workflow/combined_runtime_verification.json",
+          "runs/20261005_math_review_registered80_B_activation_v2/combined_runtime_verification.json"
+        ],
+        [
+          "seeds = [1406, 1407, 1502]",
+          "seeds = [1503]"
+        ],
+        [
+          "'new_unknown_exit_registrations': 3",
+          "'new_unknown_exit_registrations': 1"
+        ],
+        [
+          "Three additional unknown exits",
+          "One additional unknown exit"
+        ]
+      ]
+    },
+    {
+      "name": "self_review.py",
+      "source": "runs/20261005_math_review_CLASS_B_activation_unavailable_preservation/self_review.py",
+      "source_sha256": "6d9d3204f40bfd7d3bc6bc3a291bb12fe18a520bdbdca42764114779cd1745de",
+      "changes": [
+        [
+          "{1406, 1407, 1502}",
+          "{1503}"
+        ],
+        [
+          "for group in ['medium_A', 'medium_B', 'grid12_B']:",
+          "for group in ['grid12_B']:"
+        ],
+        [
+          "'all_three_output_trees_and_complete_histories_reconstructed'",
+          "'output_tree_and_complete_history_reconstructed'"
+        ],
+        [
+          "Three unknown exits reconstructed",
+          "One unknown exit reconstructed"
+        ]
+      ]
+    }
+  ],
+  "scope": "One additional absent original grid12B identity and actual unavailable handle; no cause inferred."
+}

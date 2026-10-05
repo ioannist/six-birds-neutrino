@@ -1,0 +1,29 @@
+{
+  "utc": "2026-10-04T17:43:16.006205+00:00",
+  "sources": [
+    {
+      "source": "scripts/extract_mnu_limits.py",
+      "before": "runs/20261004_math_review_chain_weight_header_repair/before_extract_mnu_limits.py",
+      "sha256": "e7ae24109521b204acee2aef13614e7db8b8aca86038534914e2b47488514ae1"
+    },
+    {
+      "source": "tests/test_math_repairs.py",
+      "before": "runs/20261004_math_review_chain_weight_header_repair/before_test_math_repairs.py",
+      "sha256": "b55e5483ecc89ee0381b9860d9d21d5a9a395f7b14fadad0f87b1b3dcbbc8a7f"
+    }
+  ],
+  "counterexample": {
+    "header_declared_weights": [
+      1,
+      1
+    ],
+    "actual_reader_weights": [
+      99.0,
+      1.0
+    ],
+    "expected_empirical_p95": 0.2,
+    "actual_reader_empirical_p95": 0.1
+  },
+  "scope": "reject header-labeled files whose first column is not weight; retain standard unheaded GetDist format",
+  "paper_modified": false
+}

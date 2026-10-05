@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "/home/repos/six-birds-neutrino/runs/20261005_math_review_sigma_time_v3_packaged/evaluate_controls.py", line 12, in <module>
+    import camb
+  File "/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_sigma_time_v3_packaged_20261005/camb-2.0.4/camb/__init__.py", line 13, in <module>
+    from . import baseconfig
+  File "/mnt/8tb/six-birds-ml/tmp/neutrino_CAMB204_sigma_time_v3_packaged_20261005/camb-2.0.4/camb/baseconfig.py", line 94, in <module>
+    camblib = ctypes.LibraryLoader(MultiCompilerLoader).LoadLibrary(CAMBL)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/ctypes/__init__.py", line 460, in LoadLibrary
+    return self._dlltype(name)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/ctypes/__init__.py", line 379, in __init__
+    self._handle = _dlopen(self._name, mode)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: libgfortran.so.5: cannot open shared object file: No such file or directory

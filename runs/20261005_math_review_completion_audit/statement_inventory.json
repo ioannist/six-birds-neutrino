@@ -1,0 +1,106 @@
+{
+  "utc": "2026-10-05T08:58:57.112007+00:00",
+  "equations": [
+    {
+      "label": "eq:lens_map",
+      "judgment": "operational definition",
+      "premises_and_limits": "A lens is a declared map to a likelihood object. No theorem says the two release maps have identical noise, observing seasons or nuisance completions.",
+      "implementation_or_formalization": "paper/sections/sbt_framework.tex"
+    },
+    {
+      "label": "eq:packaging_def",
+      "judgment": "operational definition",
+      "premises_and_limits": "Composition of declared lens and completion maps; no formal Six Birds theorem supplies a physical error bound or a causal diagnosis here.",
+      "implementation_or_formalization": "paper/sections/sbt_framework.tex"
+    },
+    {
+      "label": "eq:theta_hat_def",
+      "judgment": "conditional idealization, numerical surrogate explicitly scoped",
+      "premises_and_limits": "A maximizer must actually exist and be attained to instantiate argmax. Recorded optimizer successes are best-found endpoints, not constructions of global maxima.",
+      "implementation_or_formalization": "lean/trunc_gauss_proof/TruncGaussProof/Audit.lean"
+    },
+    {
+      "label": "eq:dchi_def",
+      "judgment": "correct conditional algebra",
+      "premises_and_limits": "Nonnegativity follows from the actual endpoint likelihood ordering; directional asymmetry is allowed. No null-test calibration or global optimizer certificate.",
+      "implementation_or_formalization": "lean/trunc_gauss_proof/TruncGaussProof/Audit.lean"
+    },
+    {
+      "label": "eq:block_decomp",
+      "judgment": "hypothesis must be supplied or exact native ledger used",
+      "premises_and_limits": "True additive terms have an exact sum law. Correlated covariance subblocks are not independent likelihood terms; repaired signed allocations retain the remainder, priors and normalization.",
+      "implementation_or_formalization": "lean/trunc_gauss_proof/TruncGaussProof/CovarianceLedger.lean"
+    },
+    {
+      "label": "eq:block_dchi",
+      "judgment": "correct under actual additive decomposition",
+      "premises_and_limits": "Endpoint differences sum exactly over exhaustive terms. Signed coordinate accounting can be negative and needs native completion adjustments.",
+      "implementation_or_formalization": "src/sbt_spt_audit/localization.py"
+    },
+    {
+      "label": "eq:profile_loglike",
+      "judgment": "conditional idealization, capped best-found implementation",
+      "premises_and_limits": "The exact maximum requires existence/attainment on its declared nuisance domain. Actual capped nuisance runs do not certify all-nuisance or global profiling.",
+      "implementation_or_formalization": "scripts/run_cross_audit_profiled.py"
+    },
+    {
+      "label": "eq:profile_dchi",
+      "judgment": "conditional endpoint comparison",
+      "premises_and_limits": "Actual reference and cross endpoints share frozen values and appropriate nested free domains. No optimizer API success substitutes for extremality. Stored within-run unprofiled/profiled gaps use the same improved reference.",
+      "implementation_or_formalization": "scripts/run_cross_audit_profiled.py"
+    },
+    {
+      "label": "eq:toy_gaussian_constraints",
+      "judgment": "explicit toy assumptions",
+      "premises_and_limits": "Exactly Gaussian factors, positive widths and their declared product. A posterior interpretation requires a constant prior on the gated domain; real-data Gaussian adequacy is not established.",
+      "implementation_or_formalization": "lean/trunc_gauss_proof/TruncGaussProof/Product.lean"
+    },
+    {
+      "label": "eq:toy_combined_gaussian",
+      "judgment": "derived identity",
+      "premises_and_limits": "Completing the square derives the weighted mean and reciprocal summed precision. Nonnegative component means cannot produce a negative weighted mean; common precision scaling does not change it.",
+      "implementation_or_formalization": "lean/trunc_gauss_proof/TruncGaussProof/Mode.lean"
+    },
+    {
+      "label": "eq:toy_trunc_mode",
+      "judgment": "derived exact-real theorem",
+      "premises_and_limits": "Unique constrained mode is max(0,mean). Positive normalization is derived for the actual Gaussian law; a boundary density mode is distinct from an atom or a finite-bin frequency.",
+      "implementation_or_formalization": "lean/trunc_gauss_proof/TruncGaussProof/Normalization.lean"
+    }
+  ],
+  "additional_mathematical_claims": [
+    {
+      "claim": "Tightening increases boundary-mode frequency",
+      "judgment": "Conditional, not universal",
+      "evidence": "lean/trunc_gauss_proof/TruncGaussProof/GaussianSweep.lean",
+      "limits": "Hold first width and offset law fixed. Direction increases for positive first mean, reverses for negative first mean, is constant at zero; exact real probabilities need not change after binary64 rounding."
+    },
+    {
+      "claim": "Truncated density, CDF and quantile",
+      "judgment": "Actual constructed Gaussian probability law, not an assumed normalizer",
+      "evidence": "lean/trunc_gauss_proof/TruncGaussProof/GaussianQuantile.lean",
+      "limits": "Positive sigma and interior quantile level; quantile existence is not a certified numerical inversion or real posterior approximation."
+    },
+    {
+      "claim": "Finite upper-prior effects",
+      "judgment": "Conditional law and exact CDF/tail identities",
+      "evidence": "lean/trunc_gauss_proof/TruncGaussProof/UpperGate.lean",
+      "limits": "Retained CDF must be positive. An omitted-tail bound or positive lower CDF slope remains a required input for coordinate-error claims."
+    },
+    {
+      "claim": "Paired tightening error",
+      "judgment": "Derived bound and probability subadditivity without independence",
+      "evidence": "lean/trunc_gauss_proof/TruncGaussProof/Readout.lean",
+      "limits": "Actual marginal coordinate errors/risks remain supplied, not inferred from posterior credibility or MCSE."
+    },
+    {
+      "claim": "Toy rewrite improvement",
+      "judgment": "Covariance-weighted fitted projection",
+      "evidence": "runs/20261005_math_review_template_rewrite_repair/self_review_receipt.json",
+      "limits": "Residual-selected templates can remove the fitted discrepancy by construction. No predictive success, cosmological repair or uniform floating-point accuracy follows."
+    }
+  ],
+  "empirical_claim_disposition": "runs/20261005_math_review_user_directed_restoration_shutdown/claim_disposition.json",
+  "historical_paper_tables_not_current_qualified_results": true,
+  "paper_unchanged_for_later_phase": true
+}

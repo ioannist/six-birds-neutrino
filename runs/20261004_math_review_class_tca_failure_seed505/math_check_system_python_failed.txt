@@ -1,0 +1,20 @@
+python3 -m pytest -q
+
+==================================== ERRORS ====================================
+_________________ ERROR collecting tests/test_math_repairs.py __________________
+ImportError while importing test module '/home/repos/six-birds-neutrino/tests/test_math_repairs.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/test_math_repairs.py:16: in <module>
+    from toy_truncated_gaussian import (
+scripts/toy_truncated_gaussian.py:12: in <module>
+    import matplotlib.pyplot as plt
+E   ModuleNotFoundError: No module named 'matplotlib'
+=========================== short test summary info ============================
+ERROR tests/test_math_repairs.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+6 skipped, 1 error in 2.77s
+make: *** [Makefile:9: math_check] Error 2

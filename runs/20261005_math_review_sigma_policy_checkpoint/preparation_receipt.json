@@ -1,0 +1,37 @@
+{
+  "utc": "2026-10-05T01:12:54.925841+00:00",
+  "source": "runs/20261005_math_review_sigma_candidate_low_mass_controls/observe_all_runtime.py",
+  "source_sha256": "e0de58ddd7b3ffd0055b5105ef1a1b5b5849c924c44c6c69a7476ca5ea84b282",
+  "observer_sha256": "e0de58ddd7b3ffd0055b5105ef1a1b5b5849c924c44c6c69a7476ca5ea84b282",
+  "changes": [],
+  "reverse_byte_identity_verified": true,
+  "terminal_contracts": [
+    {
+      "seed": 2003,
+      "terminal_receipt": "runs/20261004_math_review_upper_prior_seed2003_native_failure_v2/terminal_receipt.json",
+      "terminal_receipt_sha256": "a08c9435e740684e57926a56a4105a4e77f233c5c3a803b2a3886f6c7dd02900",
+      "terminal_self_review_sha256": "0ef19c2fb3d10f34c2f4072e0bf6d96ea8cd70106583250ba164058e4a101977"
+    },
+    {
+      "seed": 2004,
+      "terminal_receipt": "runs/20261004_math_review_upper_prior_seed2004_native_failure/terminal_receipt.json",
+      "terminal_receipt_sha256": "8a3b35ae7d3ad47469b603c6be6fdcbd9944d10e5f5e64ca331edf1e383f82c1",
+      "terminal_self_review_sha256": "542253ac75087ee23cb0edaedf6bcf6cc2ec4cb5a22c3fc24ec63acf337f55e9"
+    },
+    {
+      "seed": 2007,
+      "terminal_receipt": "runs/20261004_math_review_upper_prior_B_terminal_failure_preservation/seed2007/terminal_receipt.json",
+      "terminal_receipt_sha256": "3a2edd06ec5b3b9ed7d057d2918c342fba11ce647dcc644079541d82f70de226",
+      "terminal_self_review_sha256": "b215c5b511359e2c1ef9223f0c5081575d2415bd3ac485c464f63ea5da930c5b"
+    },
+    {
+      "seed": 2008,
+      "terminal_receipt": "runs/20261004_math_review_upper_prior_B_terminal_failure_preservation/seed2008/terminal_receipt.json",
+      "terminal_receipt_sha256": "51ab16b1a9456c050b46980f4029ef781bab743a1030ccf19e1a34d47f78c3f0",
+      "terminal_self_review_sha256": "b3ac1a5c405f46e38d1f4af8cc03f0ffd1adb9464a312bdad353d17f42a84901"
+    }
+  ],
+  "all_primary40_and_remaining_wide_live_checks_preserved": true,
+  "all48_families_accounted_for": true,
+  "terminal_native_failure_not_posterior_rejection": true
+}

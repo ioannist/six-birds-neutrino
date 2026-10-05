@@ -1,0 +1,16 @@
+[output] Output to be read-from/written-into folder '/home/repos/six-birds-neutrino/runs/20261003_math_review_cmb_accuracy_dragging_chain_B_seed702/chains', with prefix 'math_accuracy_dragging_B_seed702'
+[output] Found existing info files with the requested output prefix: '/home/repos/six-birds-neutrino/runs/20261003_math_review_cmb_accuracy_dragging_chain_B_seed702/chains/math_accuracy_dragging_B_seed702'
+[output] Let's try to resume/load.
+[output] Found an old sample. Resuming.
+[classy] `classy` module loaded successfully from /tmp/neutrino-math-review-venv/lib/python3.12/site-packages/classy
+Actual L range: 30 - 756
+[sbt_spt_audit.samplers.fullprecisionmcmc] Resuming from previous sample!
+[sbt_spt_audit.samplers.fullprecisionmcmc] *WARNING* This run has been SEEDED with seed 902
+[samplecollection] Loaded 64 sample points from '/home/repos/six-birds-neutrino/runs/20261003_math_review_cmb_accuracy_dragging_chain_B_seed702/chains/math_accuracy_dragging_B_seed702.1.txt'
+[sbt_spt_audit.samplers.fullprecisionmcmc] Initial point: omegabh2:0.02214794, omegach2:0.1177251, H0:68.39537, logA:3.036123, ns:0.9751577, tau:0.05360277, mnu_sample:0.03941945, A_planck:1.001627, TT_tSZ_Amp:1.133188, TT_kSZ_Amp:2.223176
+[sbt_spt_audit.samplers.fullprecisionmcmc] *WARNING* Parameter blocking manually/previously fixed: speeds will not be measured.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Dragging with number of interpolating steps:
+[sbt_spt_audit.samplers.fullprecisionmcmc] * 1 : (['omegabh2', 'omegach2', 'H0', 'logA', 'ns', 'tau', 'mnu_sample'],)
+[sbt_spt_audit.samplers.fullprecisionmcmc] * 5 : (['TT_tSZ_Amp', 'TT_kSZ_Amp'], ['A_planck'])
+[sbt_spt_audit.samplers.fullprecisionmcmc] Covariance matrix from previous sample.
+[sbt_spt_audit.samplers.fullprecisionmcmc] Sampling!

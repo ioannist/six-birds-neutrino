@@ -1,0 +1,14 @@
+{
+  "utc": "2026-10-04T08:12:13.889739+00:00",
+  "reviewer": "distinct_self_review_no_independent_agent",
+  "scope": "two_fixed_B_coordinates_unit_integer_transfer_multipole_grid_with_medium_dynamics",
+  "judgment": "unit-grid mass response differs from grid3 by -0.000498045 native chi2; selected grid sensitivity is smaller than prior coarse-grid discrepancy",
+  "independent_sum": "six native component changes recomputed with math.fsum agree within 1e-12",
+  "source_bridge": "actual primary transfer list function compiled with matching local headers; zero mode count isolates list construction, not a full solver fixture; sparse-grid negative control is nonconsecutive",
+  "native_geometry_bridge": "both recorded native geometry rescalings satisfy 3*rescaling>1, the exact source condition for logstep1 to retain unit increments; representative6142 endpoint probe is not a recorded native internal multipole cap",
+  "source_build_corrections": "successful fixture uses C++ compilation and local common.o; failed compiler attempts preserved; source and helper hashes checked",
+  "limitations": "sparse transfer multipole sampling addressed at these coordinates; integration, wavenumber, lensing and posterior-wide numerical errors remain uncertified",
+  "accuracy_or_convergence_certified": false,
+  "paper_modified": false,
+  "next_obligation": "converged guarded posterior diagnostics and a posterior-wide numerical precision assessment"
+}

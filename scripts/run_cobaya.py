@@ -5,6 +5,8 @@ import argparse
 from contextlib import redirect_stderr, redirect_stdout
 from copy import deepcopy
 from datetime import datetime
+import hashlib
+import importlib
 import json
 from pathlib import Path
 import subprocess
@@ -19,6 +21,8 @@ if str(SRC_DIR) not in sys.path:
     sys.path.insert(0, str(SRC_DIR))
 
 from cobaya.run import run as cobaya_run  # noqa: E402
+from sbt_spt_audit.mcmc import mcmc_config_options  # noqa: E402
+from sbt_spt_audit.boltzmann import configure_fresh_camb_transfers  # noqa: E402
 
 
 def parse_args() -> argparse.Namespace:
@@ -62,12 +66,7 @@ def _resolve_outdir(config: dict[str, Any], explicit: str | None) -> Path:
 
 
 def _inject_seed(config: dict[str, Any], seed: int) -> None:
-    sampler = config.get("sampler")
-    if not isinstance(sampler, dict):
-        raise ValueError("config missing sampler mapping")
-    if "mcmc" not in sampler or not isinstance(sampler["mcmc"], dict):
-        raise ValueError("config must define sampler.mcmc mapping")
-    sampler["mcmc"]["seed"] = int(seed)
+    mcmc_config_options(config)["seed"] = int(seed)
 
 
 def _inject_max_samples_override(config: dict[str, Any], max_samples: int | None) -> None:
@@ -75,12 +74,88 @@ def _inject_max_samples_override(config: dict[str, Any], max_samples: int | None
         return
     if max_samples <= 0:
         raise ValueError("--max_samples_override must be > 0")
-    sampler = config.get("sampler")
-    if not isinstance(sampler, dict):
-        raise ValueError("config missing sampler mapping")
-    if "mcmc" not in sampler or not isinstance(sampler["mcmc"], dict):
-        raise ValueError("config must define sampler.mcmc mapping")
-    sampler["mcmc"]["max_samples"] = int(max_samples)
+    mcmc_config_options(config)["max_samples"] = int(max_samples)
+
+
+def _configure_chain_output(config: dict[str, Any]) -> None:
+    # Preserve every MCMC option and the target, while making saved floating
+    # point witnesses round-trip-safe. The resolved bundle records this choice.
+    options = mcmc_config_options(config)
+    config["sampler"] = {"sbt_spt_audit.samplers.FullPrecisionMCMC": options}
+
+
+def _validate_classy_backend(config: dict[str, Any]) -> dict[str, Any] | None:
+    """Enforce an explicitly declared native solver build before creating output."""
+    notes = config.get("notes", {})
+    requirement = notes.get("classy_backend") if isinstance(notes, dict) else None
+    if requirement is None:
+        return None
+    if not isinstance(requirement, dict) or "classy" not in config.get("theory", {}):
+        raise ValueError("classy_backend requires a declared CLASS theory and a backend contract.")
+    if config["theory"]["classy"].get("path") not in (None, "global"):
+        raise ValueError("The guarded CLASS contract requires the verified Python import; remove the conflicting theory path.")
+    receipt_path = Path(requirement["build_receipt"]).expanduser()
+    if not receipt_path.is_absolute():
+        receipt_path = REPO_ROOT / receipt_path
+    receipt = json.loads(receipt_path.read_text(encoding="utf-8"))
+    expected = requirement["module_sha256"]
+    if receipt["module_sha256"] != expected:
+        raise ValueError("CLASS build receipt disagrees with the configured native module hash.")
+    classy = importlib.import_module("classy")
+    module_path = Path(importlib.import_module(classy.Class.__module__).__file__).resolve()
+    actual = hashlib.sha256(module_path.read_bytes()).hexdigest()
+    if actual != expected or module_path != Path(receipt["module"]).resolve():
+        overlay = Path(receipt["module"]).resolve().parent.parent
+        raise ValueError(
+            "CLASS native backend does not match the declared verified guarded build. "
+            f"Set PYTHONPATH to {overlay} before launching, or declare and validate a new build. "
+            f"Loaded {module_path} with SHA256 {actual}."
+        )
+    return {"module": str(module_path), "module_sha256": actual,
+            "build_receipt": str(receipt_path.resolve()),
+            "build_receipt_sha256": hashlib.sha256(receipt_path.read_bytes()).hexdigest()}
+
+
+def _validate_native_backend(config: dict[str, Any]) -> dict[str, Any] | None:
+    """Check declared build identity against the solver this process will use."""
+    notes = config.get("notes", {})
+    if not isinstance(notes, dict):
+        return None
+    contracts = [name for name in ("classy", "camb") if notes.get(name + "_backend") is not None]
+    if not contracts:
+        return None
+    theory = config.get("theory", {})
+    solvers = [name for name in ("classy", "camb") if name in theory]
+    if len(contracts) != 1 or solvers != contracts:
+        raise ValueError("Native backend contract requires one matching Boltzmann solver.")
+    solver = contracts[0]
+    if solver == "classy":
+        backend = _validate_classy_backend(config)
+        return {**backend, "solver": solver}
+    requirement = notes["camb_backend"]
+    options = theory["camb"] or {}
+    if not isinstance(requirement, dict) or not isinstance(options, dict):
+        raise ValueError("camb_backend requires a CAMB theory and a backend contract.")
+    if options.get("path") not in (None, "global"):
+        raise ValueError("The guarded CAMB contract requires the verified Python import; remove the conflicting theory path.")
+    expected = requirement.get("module_sha256")
+    version = requirement.get("solver_version")
+    if (not isinstance(expected, str) or len(expected) != 64
+            or any(c not in "0123456789abcdef" for c in expected)
+            or not isinstance(version, str) or not version.strip()):
+        raise ValueError("CAMB backend contract requires a native SHA256 and solver version.")
+    if options.get("version", version) != version:
+        raise ValueError("CAMB theory version disagrees with the native backend contract.")
+    camb = importlib.import_module("camb")
+    module_path = Path(camb.baseconfig.camblib._name).resolve()
+    actual = hashlib.sha256(module_path.read_bytes()).hexdigest()
+    if actual != expected or camb.__version__ != version:
+        raise ValueError(
+            "CAMB native backend does not match the declared build and version. "
+            f"Loaded {module_path} with SHA256 {actual} and version {camb.__version__}."
+        )
+    return {"solver": solver, "module": str(module_path),
+            "module_sha256": actual, "solver_version": camb.__version__}
 
 
 def _write_summary(outdir: Path, lines: list[str]) -> None:
@@ -100,9 +175,19 @@ def main() -> int:
         print(f"Failed to parse config: {exc}", file=sys.stderr)
         return 2
 
+    try:
+        backend = _validate_native_backend(config)
+        resolved = deepcopy(config)
+        configure_fresh_camb_transfers(resolved)
+    except Exception as exc:  # noqa: BLE001
+        print(f"Failed native solver configuration: {exc}", file=sys.stderr)
+        return 2
+
     outdir = _resolve_outdir(config, args.outdir)
     outdir.mkdir(parents=True, exist_ok=False)
     (outdir / "chains").mkdir(parents=True, exist_ok=True)
+    if backend is not None:
+        (outdir / "solver_backend.json").write_text(json.dumps(backend, indent=2) + "\n", encoding="utf-8")
 
     run_name = config.get("run_name", "run") if isinstance(config.get("run_name"), str) else "run"
     chains_prefix = outdir / "chains" / run_name
@@ -115,11 +200,15 @@ def main() -> int:
 
     (outdir / "input.yaml").write_text(config_path.read_text(encoding="utf-8"), encoding="utf-8")
 
-    resolved = deepcopy(config)
+    if backend is not None:
+        # Cobaya otherwise prefers a solver under packages_path. The checked
+        # import is already loaded, and global loading preserves that identity.
+        resolved["theory"][backend["solver"]]["path"] = "global"
     resolved["output"] = str(chains_prefix)
     resolved["packages_path"] = str(Path(args.packages_path).expanduser().resolve())
     _inject_seed(resolved, args.seed)
     _inject_max_samples_override(resolved, args.max_samples_override)
+    _configure_chain_output(resolved)
     (outdir / "resolved.yaml").write_text(yaml.safe_dump(resolved, sort_keys=False), encoding="utf-8")
 
     stdout_path = outdir / "stdout.txt"
@@ -185,6 +274,8 @@ def main() -> int:
             f"p95={metrics.get('mnu_p95_upper')}",
             f"boundary={metrics.get('boundary_fraction')}",
         )
+        for warning in metrics.get("warnings", []):
+            print(f"Diagnostic warning: {warning}")
     except Exception:
         pass
     return 0
